@@ -67,6 +67,8 @@ init 1 python:
     sh_sprites("doctor", ["bigsmile"])
 
     phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo"])
+    phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)
+    phonebox_sprites("hanako", ["emb_smile", "emb_timid", "emb_blushing"])
     phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
@@ -79,7 +81,7 @@ init 1 python:
 init 1:
     # backgrounds
     image bg inverness_backyard = f"{sh_bgs}/backyard.jpg"
-    image bg inverness_shore = f"{sh_bgs}/shore_2.png"
+    image bg inverness_shore = f"{sh_bgs}/shore.jpg"
     image bg inverness_house_front = f"{sh_bgs}/house_front.png"
     image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
     image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"

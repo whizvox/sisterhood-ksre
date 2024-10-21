@@ -32,7 +32,7 @@ init python:
 
     def sh_sfx(name):
         return sh_path + "/sfx/" + name + ".ogg"
-
+    
     persistent.sh_nsfwlevel = 0
 
 
@@ -88,6 +88,7 @@ init:
     define sfx_rockskip_fail = sh_sfx("rockskip_fail")
     define sfx_rocksplash = sh_sfx("rocksplash")
     define sfx_phonedial = sh_sfx("phonedial")
+    define sfx_phonepickup = sh_sfx("phonepickup")
     define sfx_crickets = sh_sfx("crickets")
     define sfx_gostone_soft = sh_sfx("gostone_soft")
     define sfx_gostone = sh_sfx("gostone_medium")
