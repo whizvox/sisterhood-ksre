@@ -30,71 +30,8 @@ init python:
     sh_path = "mods/sisterhood"
     sh_bgs = sh_path + "/bgs"
 
-    def sh_sprites(char, variants):
-        for variant in variants:
-            imgpath = f"{sh_path}/sprites/{char}/{char}_{variant.replace(' ', '_')}.png"
-            closeimgpath = f"{sh_path}/sprites/{char}/close/{char}_{variant.replace(' ', '_')}_close.png"
-            if renpy.loadable(imgpath):
-                renpy.image(char + " " + variant, imgpath)
-                renpy.image(char + " " + variant + "_ss", sp_sunset(imgpath))
-                renpy.image(char + " " + variant + "_ni", sp_night(imgpath))
-                renpy.image(char + " " + variant + "_rn", sp_rain(imgpath))
-            else:
-                renpy.log("[SISTERHOOD] Could not load sprite: " + imgpath)
-            if renpy.loadable(closeimgpath):
-                renpy.image(char + " " + variant + "_close", closeimgpath)
-                renpy.image(char + " " + variant + "_close_ss", sp_sunset(closeimgpath))
-                renpy.image(char + " " + variant + "_close_ni", sp_night(closeimgpath))
-                renpy.image(char + " " + variant + "_close_rn", sp_rain(closeimgpath))
-            else:
-                renpy.log("[SISTERHOOD] Could not load close-up sprite: " + closeimgpath)
-
-    def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0):
-        for variant in variants:
-            imgpath = f"sprites/{char}/{char}_{variant.replace(' ', '_')}.png"
-            if not vanilla:
-                imgpath = f"{sh_path}/{imgpath}"
-            renpy.image(char + " " + variant + "_phone", Composite(
-                (436, 436),
-                (0, 0), f"{sh_path}/gui/phonebox.png",
-                (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
-            ))
-
     def sh_sfx(name):
         return sh_path + "/sfx/" + name + ".ogg"
-
-    # def sh_event(name, variants):
-    #     for variant in variants:
-    #         imgpath = f"{sh_path}/event/{name}/{name}_{variant}.png"
-    #         if renpy.loadable(imgpath):
-    #             renpy.image("ev " + name + "_" + variant, imgpath)
-    
-    def sh_fireflies():
-        for i in range(0, 15):
-            imgpath = f"{sh_path}/vfx/fireflies/ff{i:02}.png"
-            if renpy.loadable(imgpath):
-                renpy.image(f"firefly b{i}", imgpath)
-            else:
-                renpy.log(f"[SISTERHOOD] Could not load firefly image: {imgpath}")
-    
-    def randpair():
-        return (random.random(), random.random())
-        
-    
-    # CHARACTERS
-    
-    sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
-    sh_sprites("hanako", ["basic_bashful_clip", "basic_distant_clip"])
-    sh_sprites("hisao", ["neutral", "smile", "grin"])
-    sh_sprites("naomi", ["neutral", "smile", "laugh", "shock"])
-    sh_sprites("natsume", ["neutral", "smile"])
-    sh_sprites("mishashort", ["sign_sad_cas"])
-    sh_sprites("lilly", ["cane_sad_close"])
-    #sh_event("wheatfield", ["smile"])
-    phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo"])
-    phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
-    phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
-    sh_fireflies()
 
     persistent.sh_nsfwlevel = 0
 
@@ -126,7 +63,6 @@ init:
 
     # TRANSFORMS
 
-    #define charamoveslow = MoveTransition(1.0, _ease_time_warp, _ease_in_time_warp, _ease_out_time_warp)
     transform phonebox:
         xanchor 1.0 xpos 0.95 yanchor 1.0 ypos 0.81
     transform sittingpos:
@@ -139,42 +75,6 @@ init:
     #define chchangefast = charachangefast #Dissolve(0.2)
     define chchange = charachangealways
     define chchangefast = Dissolve(0.2)
-    define ffp = 0.4
-    define fftr = Dissolve(ffp)
-
-    # LOGOS
-
-    image shlogo quill = f"{sh_path}/logo/logo_quill.png"
-    image shlogo title = f"{sh_path}/logo/logo_title.png"
-
-    # BACKGROUNDS
-
-    image bg inverness_backyard = f"{sh_bgs}/backyard.jpg"
-    image bg inverness_shore = f"{sh_bgs}/shore_2.png"
-    image bg inverness_house_front = f"{sh_bgs}/house_front.png"
-    image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
-    image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"
-    image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
-    image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
-    image bg newspaper_club = f"{sh_bgs}/newspaper_club.jpg"
-    image bg hotel_bathroom = f"{sh_bgs}/hotel_bathroom.jpg"
-    image bg hotel_room = f"{sh_bgs}/hotel_room.jpg"
-    image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
-    image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
-    image bg hotel_hallway = f"{sh_bgs}/hotel_hallway.jpg"
-    image bg hotel_room2 = f"{sh_bgs}/hotel_room2.jpg"
-    image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
-    image rainmemory = Composite(
-        (1920, 1080),
-        (0, 0), "bg suburb_roadcenter_rn",
-        (0, 0), "rain normal"
-    )
-
-    image ev wheatfield = f"{sh_path}/event/wheatfield/wheatfield_smile.png"
-
-    # VFX
-
-    image go_board = f"{sh_path}/vfx/go_board.png"
 
     # BGM
 

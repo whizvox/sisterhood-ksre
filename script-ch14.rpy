@@ -70,6 +70,10 @@ with Dissolve(2.0)
 "The owner of the voice is a middle-aged man in a white coat standing in front of me."
 "A hospital. Probably the hospital near Yamaku as the landscape outside the window has a familiar look."
 "I'm in a hospital room."
+
+# show doctor bigsmile at center
+# with charaenter
+
 dc "I see you're awake, Mister Nakai. How are you feeling?"
 "I open my mouth to reply, but my mouth is too dry to speak clearly and a feeling of nausea boils up, forcing me to close my eyes until it passes."
 "I swallow a few times, open my eyes and make attempt number two."

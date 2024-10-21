@@ -1,2 +1,8 @@
 # Compiled Ren'Py scripts
 *.rpyc
+
+# Reference folder for original assets
+/reference
+
+# Zipped reference file
+/reference.zip
