@@ -73,7 +73,7 @@ init 1 python:
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
-    sh_event("hotel", ["1", "2", "3"])
+    sh_event("hotel", ["1", "2", "3", "4", "4a"])
     sh_event("caress", ["1"])
 
     sh_fireflies()

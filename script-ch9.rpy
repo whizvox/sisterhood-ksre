@@ -3,13 +3,12 @@ label sisterhood_ch9:
 call sisterhood_timeskip
 
 play sound sfx_shower fadein 0.5
+
 scene bg hotel_bathroom
-#show steam
 show steam2
 with Dissolve(2.0)
 with Pause(5)
 
-#hide steam
 hide steam2
 with Dissolve(2.0)
 
@@ -38,6 +37,9 @@ nvl hide dissolve
 "I walk over to the place where our clothes are piled up and fish my hair clip out of the pockets of my pants."
 "I apply the clip, say a little prayer for good luck and leave the bathroom."
 
+# if not skipping through the text, this sfx should already be stopped by this point
+stop sound fadeout 0.5
+
 scene bg hotel_room
 with Dissolve(2.0)
 
@@ -51,14 +53,14 @@ play music music_one fadein 0.5
 "Does he want to do it on the floor? Isn't that uncomfortable?"
 ha "Hisao?"
 
-show hisao smile_robe
+show hisao basic_smile_bath
 with charaenter
 
 "Hisao looks in my direction and beckons."
 "As I approach him, I notice he's spread one of the blankets on the floor and put the towels he took from the bathroom on top of it, creating what almost looks like a make-shift picnic blanket."
 ha "A… A moonlight picnic?"
 
-show hisao laugh_robe
+show hisao basic_grin_bath
 with chchange
 
 hi "It kinda resembles it, doesn't it?"
@@ -66,49 +68,71 @@ hi "It kinda resembles it, doesn't it?"
 "…What's in there anyway? And what's in that large flat bowl nearby?"
 "I walk over to Hisao and sit next to him, still trying to make sense of things."
 
-show hisao smile_robe_close
+show hisao basic_smile_bath_close
 with chchange
 
 ha "What do you have there? Where did that bowl come from? And what's in the bottle?"
 "He gives me a sheepish grin."
 
-show hisao grin_robe_close
+show hisao basic_grin_bath_close
 with chchange
 
 hi "The stuff from the bottle needed to be mixed with some hot water, so I got this bowl. It's actually a fruit bowl."
 hi "As for the bottle…"
 "Are we going to be intimate or practice science together?"
+
+show hisao basic_blush_bath_close
+with chchange
+
 hi "…in a way, you could call it lubricant and in a way…"
-"{i}Lubricant?{/i}"
+"{i}LUBRICANT?!{/i}"
 "Does he plan to skip foreplay? Or is he planning something else…?"
 
-show hisao smile_robe_close
+show hisao basic_smile_bath_close
 with chchange
 
 "My expression must have given me away as Hisao puts his hand on my shoulder as if to reassure me."
 hi "Relax, we're not going to do anything weird."
 "Are you sure about that?"
 ha "S-sorry."
-hi "Anyway… You enjoyed the shoulder rubs and massages we've shared, didn't you?"
-ha "Y-yes, I did."
-hi "I was thinking we could do a more… intimate… massage. That stuff in the bottle is a special type of massage gel."
-ha "D-didn't you just say it was lubricant?"
-hi "It's both actually. Its main purpose is to act as a massage lotion, but since it's so smooth and slippery, it can double as a lubricant."
-"I try to digest what Hisao's saying. He has put more thought into this whole thing than I expected."
-"A massage… So we'll be rubbing that stuff on each other? That explains why we're sitting on the floor and why he has covered the area with towels."
-ha "Where did you get this?"
-hi "A little shop in the city last weekend. I was actually going for some ordinary massage lotion, but the guy behind the counter said this was the ultimate experience for a couple."
 
-show hisao emb_robe_close
+show hisao basic_speak_bath_close
 with chchange
 
+hi "Anyway… You enjoyed the shoulder rubs and massages we've shared, didn't you?"
+ha "Y-yes, I did."
+
+show hisao basic_neutral_bath_close
+with chchange
+
+hi "I was thinking we could do a more… intimate… massage. That stuff in the bottle is a special type of massage gel."
+ha "D-didn't you just say it was lubricant?"
+
+show hisao basic_smile_bath_close
+with chchange
+
+hi "It's both actually. Its main purpose is to act as a massage lotion, but since it's so smooth and slippery, it can double as a lubricant."
+"I try to digest what Hisao's saying. He has put more thought into this whole thing than I expected."
+"A massage… So we'll be rubbing that stuff on each other?"
+"That explains why we're sitting on the floor and why he has covered the area with towels."
+ha "Where did you get this?"
+hi "A little shop in the city last weekend."
+
+show hisao basic_grin_bath_close
+with chchange
+
+hi "I was actually going for some ordinary massage lotion, but the guy behind the counter said this was the ultimate experience for a couple."
 hi "I didn't tell him we were fairly new at this though."
 "Couple.{w} I really like the sound of that word."
+
+show hisao basic_blush_bath_close
+with chchange
+
 hi "I tried to get some more information about this kind of thing, but… heh… Most sites that came up wouldn't make it through the computer lab's content filter."
 "That's not exactly reassuring."
 ha "So… ummm… H-how does this w-work?"
 
-show hisao grin_robe_close
+show hisao basic_smile_bath_close
 with chchange
 
 hi "Do you want to try it?"
@@ -116,7 +140,8 @@ ha "Y-you went through a lot of effort to arrange all this."
 hi "We can stop at any time you want."
 "I meekly nod."
 
-show hisao smile_robe_close
+show hisao basic_smile_bath_close:
+    zoom 1.3 ypos 1.2
 with chchange
 
 "Hisao pulls me closer in a gentle hug and carefully puts his lips on mine."
@@ -132,7 +157,7 @@ with shuteye
 "This is the first time since that one night in my room we'll be able to see each other pretty clearly. Obviously if the room were pitch black, we'd end up toppling the bowl with lotion sooner or later."
 
 scene bg hotel_room
-show hisao emb_robe_close
+show hisao basic_smile_bath_close
 with openeye
 
 "Parting his lips from mine, Hisao breaks his hug, gives me a quick kiss on my left cheek and holds out the bowl to me."
@@ -143,16 +168,20 @@ hi "Do you want to sample a bit, Hanako?"
 "I hold my finger under my nose and sniff shortly, but don't smell anything. What surprises me most is its temperature."
 ha "It's… really warm."
 
-show hisao smile_robe_close
+show hisao basic_speak_bath_close
 with chchange
 
 hi "Yeah, I mixed the gel from the bottle with hot water, and I've been covering the bowl until you came out of the bathroom."
 hi "You don't think it's too hot, do you?"
 ha "N-no."
-hi "So… shall we?"
-ha "…w-what would you l-like me to do?"
 
-show hisao smile_robe
+show hisao basic_smile_bath_close
+with chchange
+
+hi "So… shall we?"
+ha "…W-what would you l-like me to do?"
+
+show hisao basic_speak_bath
 with chchange
 
 "Hisao puts the bowl away, moves off the blanket and points at a small bump beneath the towels."
@@ -160,14 +189,21 @@ hi "I've put the small cushion from one of the chairs there for you to rest your
 hi "Could you undo the belt of your bathrobe and then lie down on your stomach?"
 "Nervously, I remove the belt of my bathrobe and lie down, putting my head on the pillow beneath the towels and laying my arms at my side."
 ha "Like this?"
+
+show hisao basic_smile_bath
+with chchange
+
 hi "Yes. Now just take a deep breath and relax."
 "I inhale deeply and then slowly exhale, trying to slow the nervous beating of my heart a bit."
 
-# TODO show Hisao straddling Hanako CG
 hide hisao
 with charaexit
 
-"I feel my hips being pressed down as Hisao straddles me. He takes the shoulders of my bathrobe, slowly pulls them aside and slides it down until just beneath my waist."
+scene ev hotel_1
+with flash
+
+"I feel my hips being pressed down as Hisao straddles me."
+"He takes the shoulders of my bathrobe, slowly pulls them aside and slides it down until just beneath my waist."
 "His hands gently run through my hair before moving it to one side, exposing my back."
 "He then slowly strokes my neck and shoulders."
 hi "I'm going to apply some gel. Don't get startled."
@@ -205,26 +241,27 @@ ha "Hisao… Should I… turn around?"
 hi "Just a little while longer, Hanako. There's one spot left to go."
 "I feel him move back just a little bit and the next moment I feel my bathrobe being pulled down further, exposing my bottom."
 "I swallow hard, but don't resist as he starts rubbing, stroking and fondling my buttocks."
-"…{w}I don't exactly hate it."
+"…"
+"…I don't exactly hate it."
 "In fact, I kind of like it, but what makes me feel awkward is the fact I just {i}know{/i} he's staring."
 "It makes me nervous. Not only is my right buttock pretty heavily scarred, but I also have rather small hips for my size."
 ha "A-are you s-staring?"
 hi "Sorry. I can't exactly say it's a bad view."
 "Having finished applying the gel, Hisao raises his hips in order to allow me room to turn around, but before I can get up, he kneads my buttocks one last time and then gets off me."
 "I pull my bathrobe up a bit, turn around and lie back."
-
-# TODO show Hisao straddling Hanako facing up CG
-
 "Hisao straddles me again, holding a handful of gel in his cupped hands that's gently trickling upon my stomach."
 hi "Ready?"
 ha "Y-yes."
 "I can feel Hisao's hands spreading the warm gel across my neck and my collarbone before they move down to my breasts, stroking them gently, then more and more firmly."
-"My breathing gets heavier as his hands pet and fondle my breasts, running my erect nipples between his fingers in a way that certainly would have hurt if they hadn't been this slippery, but now feels really good."
+"My breathing gets heavier as his hands pet and fondle my breasts, running my erect nipples between his fingers."
+"It would have hurt if they hadn't been this slippery, but right now this feels really good."
 "After covering my belly, he gets off me, gently takes my ankles and lays my feet onto his lap."
-"I can't help but giggle again. The soles of my feet are so ticklish that I have to use all my willpower to prevent myself from accidentally kicking Hisao, but the way he lovingly fondles each separate toe feels wonderful."
+"I can't help but giggle again."
+"The soles of my feet are so ticklish that I have to use all my willpower to prevent myself from accidentally kicking Hisao, but the way he lovingly fondles each separate toe feels wonderful."
 "He carefully raises my legs, letting my ankles rest on his shoulders, and starts stroking my shins and the back of my knees, causing me to make a sound that's part giggle and part moan."
 "As he slowly, teasingly, moves down to my thighs I cannot help but remember how I was depressed not too long ago because part of my body is numb to sensations."
-"Hisao told me that evening that I still had plenty of sensitive spots left and this night I realize more than ever how right he was about that. Even in the last few minutes we've found several sweet spots I never knew I had."
+"Hisao told me that evening that I still had plenty of sensitive spots left and this night I realize more than ever how right he was about that."
+"Even in the last few minutes we've found several sweet spots I never knew I had."
 hi "Is it okay?"
 "I respond with a reassuring nod and brush aside the parts of my bathrobe still covering my body."
 "He takes another handful of gel, I close my eyes and moments later I can feel his hands moving from my thighs down to the place between them."
@@ -253,7 +290,8 @@ ha "Can I r-rub you in first?"
 "He nods and lets go of me, letting me move aside before taking up the spot I was occupying before."
 "He loosens his belt and lies down on his stomach in front of me."
 
-# TODO show Hanako straddling Hisao CG
+scene ev hotel_2
+with Dissolve(1.5)
 
 "For a moment I consider putting my bathrobe back on but then decide that doing so would feel really uncomfortable with my entire body covered in lotion."
 "The room temperature itself is high enough for me to comfortably continue without my bathrobe, though I'm a bit squeamish about the part where he'll be able to see me rubbing him in."
@@ -274,9 +312,6 @@ ha "I-I'm not."
 "I am, of course."
 "I swallow nervously as I finish with his butt and raise my hips so he can turn around."
 "This is going to be the most awkward part."
-
-# TODO show Hanako straddling Hisao facing up CG
-
 "As he turns around and I gently sit down on top of him, I notice he's staring."
 "Not a quick, sneaky peek, but a thorough almost analyzing look."
 "Uncomfortably, I cross my arms in front of my breasts, even though he's not looking at them specifically."
@@ -294,7 +329,8 @@ hi "Just really quick."
 "Or at least, part of my body. Specifically the part of my body that isn't scarred."
 "Of course the scar tissue is still there, but due to the rough texture, it doesn't reflect the nearby light very well despite being covered in lotion and merely appears as a dark area covering part of me."
 "The other parts of my body and my freshly washed hair, on the other hand, are accentuated like never before, sparkling in the moonlight coming through the window due to the gel turning my smoothened skin into a semi-reflective surface."
-"A little befuddled, I slowly turn around once. A chuckle comes from my boyfriend who's still in the same spot as I left him."
+"A little befuddled, I slowly turn around once."
+"A chuckle comes from my boyfriend who's still in the same spot as I left him."
 hi "I don't mind if you want to keep admiring yourself in the mirror a little while longer, Hanako."
 "My mood lifted, I get back on top of him again, taking a handful of lotion to apply to his chest."
 "He's still looking me over like before, but for the time being, I actually feel a little bit beautiful."
@@ -322,7 +358,8 @@ hi "Just lie down on top of me."
 ha "Like this?"
 "I carefully lie down on top of him, my chin now hovering closely above his chest."
 
-# TODO show Hanako and Hisao on the bed CG
+scene ev hotel_3
+with Dissolve(1.5)
 
 hi "Could you move up a little bit so we're at the same eye level?"
 "I brace my feet and push myself up his body a bit…"
@@ -336,8 +373,9 @@ hi "Looks like you're picking it up pretty quickly."
 "I push myself up again, more gently this time, and now we level out well."
 ha "P-picking what up?"
 hi "Applying the lotion was just preparation."
-"Preparation?{w} I'm a bit puzzled.{w} What am I picking up? Sliding up and down?"
-"Suddenly, I have a bright moment.{w} I smile bashfully."
+"Preparation? I'm a bit puzzled."
+"What am I picking up? Sliding up and down?"
+"Suddenly, I have a bright moment. I smile bashfully."
 ha "You w-want me to g-give you a f-full b-body massage?"
 hi "This gel is made specifically for that purpose. That's why it's so extremely slippery."
 hi "Do you want to give it a try?"
@@ -356,20 +394,21 @@ ha "…H-Hisao…?"
 hi "…H-Hanako…?"
 ha "…could you…do something…?"
 hi "…what…?"
-ha "…s-spread… your… legs…?"
+ha "…s-spread…your…legs…?"
 hi "Huh?"
 ha "…p-please?"
 "He looks at me with a puzzled expression for a moment but then complies while doing his best not to look too uncomfortable."
 "I move myself up a bit, take hold of his erect member, point it at the ceiling and then move down until it's resting against my crotch."
 
-# TODO show Hanako giving Hisao and thigh-job CG
+scene ev hotel_4
+with Dissolve(1.5)
 
 "I carefully close my legs, then cross my feet and squeeze my thighs together as tightly as I can."
 "Hisao tenses up and lets out a loud groan in response."
 "Did that feel good or did I just really hurt him?"
 hi "…Hanako…"
 ha "Y-yes?"
-hi "…can you… try moving?…"
+hi "…can you…try moving…?"
 "Whew…"
 "I lean on my arms, pressing myself against his base and with a bit of trial and error find an angle that allows me to enjoy the friction as well."
 "As I start swaying my hips, Hisao wraps his legs around mine and starts caressing my neck and chest with his hands."
@@ -386,6 +425,10 @@ hi "{cps=20}S-slow down… hah… slow down a bit…{/cps}"
 "I consider slowing down, but then speed up the movement of my hips and try to get as much stimulation for myself out of it as I can."
 hi "Ugh… H-H-Hanako… W-what…"
 "For a second it seems like he's going to protest, but then he gives in and starts thrusting his hips himself until reaches his climax in a frenzy of frantic grinding."
+
+scene ev hotel_4a
+with flash
+with Pause(4.0)
 
 scene bg hotel_room
 with locationchange
