@@ -73,7 +73,7 @@ init 1 python:
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
-    sh_event("hotel", ["1", "2", "3", "4", "4a"])
+    sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4", "4a", "5", "5a"])
     sh_event("caress", ["1"])
 
     sh_fireflies()
@@ -89,12 +89,17 @@ init 1:
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
     image bg newspaper_club = f"{sh_bgs}/newspaper_club.jpg"
     image bg hotel_bathroom = f"{sh_bgs}/hotel_bathroom.jpg"
-    image bg hotel_room = f"{sh_bgs}/hotel_room.jpg"
+    image bg hotel_room = f"{sh_bgs}/hotel_room2.jpg"
     image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
     image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
     image bg hotel_hallway = f"{sh_bgs}/hotel_hallway.jpg"
-    image bg hotel_room2 = f"{sh_bgs}/hotel_room2.jpg"
     image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
+
+    # special events
+    image ev rainyroad:
+        f"{sh_path}/event/rainyroad_a.jpg" with Dissolve(0.5)
+        f"{sh_path}/event/rainyroad_b.jpg" with Dissolve(0.5)
+        repeat
     image rainmemory = Composite(
         (1920, 1080),
         (0, 0), "bg suburb_roadcenter_rn",
