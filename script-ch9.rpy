@@ -228,7 +228,7 @@ hi "Hanako, could you put your arms by your side so your palms are facing up?"
 show ev hotel_1:
     zoom 1.2 align (0.5, 0.5)
     ease 10.0 zoom 1.0
-with Fade(1, 0, 1, color="#FFF")
+with mediumflash
 
 "For the most part, I don't feel much of it, but I shudder a bit when he reaches my hand and starts caressing my palm with his fingers."
 hi "That's not unpleasant, is it?"
@@ -304,7 +304,7 @@ ha "Can I r-rub you in first?"
 
 scene ev hotel_2_large:
     align (0.6, 0.0)
-with Fade(1, 0, 1, color="#FFF")
+with mediumflash
 
 "For a moment I consider putting my bathrobe back on but then decide that doing so would feel really uncomfortable with my entire body covered in lotion."
 "The room temperature itself is high enough for me to comfortably continue without my bathrobe, though I'm a bit squeamish about the part where he'll be able to see me rubbing him in."
@@ -359,7 +359,7 @@ hi "I don't mind if you want to keep admiring yourself in the mirror a little wh
 scene ev hotel_2:
     zoom 1.2 align (0.5, 0.5)
     ease 10.0 zoom 1.0
-with Fade(1, 0, 1, color="#FFF")
+with mediumflash
 
 "He's still looking me over like before, but for the time being, I actually feel a little bit beautiful."
 "I lovingly fondle his chest and nipples, tickling his scar while applying the gel and watching with playful amusement whenever I reach a spot that forces a reaction out of him."
@@ -388,7 +388,7 @@ ha "Like this?"
 "I carefully lie down on top of him, my chin now hovering closely above his chest."
 
 scene ev hotel_3
-with Fade(1, 0, 1, color="#FFF")
+with mediumflash
 
 hi "Could you move up a little bit so we're at the same eye level?"
 "I brace my feet and push myself up his body a bit…"
@@ -429,8 +429,9 @@ ha "…p-please?"
 "He looks at me with a puzzled expression for a moment but then complies while doing his best not to look too uncomfortable."
 "I move myself up a bit, take hold of his erect member, point it at the ceiling and then move down until it's resting against my crotch."
 
-scene ev hotel_4
-with Dissolve(1.5)
+scene ev hotel_4_large:
+    align (0.8, 0.0)
+with Dissolve(1.0)
 
 "I carefully close my legs, then cross my feet and squeeze my thighs together as tightly as I can."
 "Hisao tenses up and lets out a loud groan in response."
@@ -439,6 +440,12 @@ hi "…Hanako…"
 ha "Y-yes?"
 hi "…can you…try moving…?"
 "Whew…"
+
+show ev hotel_4:
+    zoom 1.2 align (0.5, 0.5)
+    ease 10.0 zoom 1.0
+with mediumflash
+
 "I lean on my arms, pressing myself against his base and with a bit of trial and error find an angle that allows me to enjoy the friction as well."
 "As I start swaying my hips, Hisao wraps his legs around mine and starts caressing my neck and chest with his hands."
 "This is… pretty good."
@@ -456,15 +463,12 @@ hi "Ugh… H-H-Hanako… W-what…"
 "For a second it seems like he's going to protest, but then he gives in and starts thrusting his hips himself until reaches his climax in a frenzy of frantic grinding."
 
 scene ev hotel_4a
-with Dissolve(1.0)
+with Fade(1.0, 0, 0.3, color="#FFF")
+with Pause(2.0)
 
-scene white
-with Dissolve(2.0)
-with Pause(1.0)
-
-stop music fadeout 2.0
+stop music fadeout 5.0
 scene bg hotel_room
-with locationchange
+with Dissolve(2.0)
 
 "After Hisao catches his breath, I let go of him, and we sit upright, still in a bit of a daze from our unusual experience together."
 "Now we're sitting on the floor next to the bed, Hisao leaning back against it and me sitting in front of him and gently leaning back against his chest."
@@ -483,7 +487,8 @@ with chchange
 
 hi "It's not that, it's just…"
 "I follow his gaze as it rests on the towel I just used to wipe my thighs clean after his ejaculation."
-hi "…what we did just now wasn't exactly safe, even if the odds are very low of you getting… you know… pregnant from this."
+hi "…what we did just now wasn't exactly safe."
+hi "Even if the odds are very low of you getting… you know… pregnant from this."
 "Pregnant…"
 ha "Ummm… Hisao?"
 hi "Yeah?"
@@ -496,7 +501,7 @@ with chchange
 hi "Huh? You mean to say that you're on the pill? Since when?"
 ha "S-since Hokkaido."
 
-show hisao basic_smile_nak_close_ni
+show hisao basic_grin_nak_close_ni
 with chchange
 
 hi "Wow… I didn't imagine you making the effort to get them."
@@ -566,10 +571,10 @@ ha "I won't be if you aren't."
 hide hisao
 with charaexit
 
-stop music fadeout 0.5
-
-scene ev hotel_5
-with Pause(2.0)
+scene ev hotel_5:
+    zoom 1.2 align (0.5, 0.5)
+    ease 10.0 zoom 1.0
+with mediumflash
 
 play music music_romance fadein 0.5
 
@@ -583,6 +588,12 @@ ha "N-no."
 "I raise my legs, letting them rest on his calves and wrap my arms around him."
 "He slowly starts grinding his pelvis against mine, and I do my best to adapt my movements to his, tilting my hips until the friction starts feeling good."
 "It takes us a bit of effort to find a workable rhythm, my scar tissue occasionally hampering us a bit. Fortunately, since we're still really slippery from before, it's a lot easier than last time."
+
+show ev hotel_5a:
+    zoom 1.05 align (0.5, 0.5)
+    ease 0.5 zoom 1.0
+with dissolve
+
 "I lie back and close my eyes, basking in the amazing sensation we're experiencing, wiggling my upper body as much as Hisao's weight allows me to in order to increase the stimulation."
 "This couldn't be more different from the last time our bodies became one."
 "The last time, we were distant, neither of us really knowing what we were feeling, whether we really wanted this and whether the other really wanted this. Our bodies had minimal contact, and we experienced more than a little bit of discomfort, physically and emotionally."
@@ -591,23 +602,25 @@ ha "N-no."
 "As I feel my orgasm approaching inevitably, I tighten my arms around him as strongly as I can as if to draw him into myself."
 "I lose control and the first convulsion hits my body, letting out an involuntary cry that contains both physical pleasure and emotional joy at the same time."
 
-stop music fadeout 1.0
-scene ev hotel_5a
-with Dissolve(2.0)
+stop music fadeout 6.0
+scene black
+with Fade(3, 0, 1, color="#FFF")
+
+"After our climax, Hisao uses the last of his strength to slide off of me and roll on his back."
 
 play music music_twinkle fadein 1.0
 
-"After our climax, Hisao uses the last of his strength to slide off of me and roll on his back."
 "With some effort, I manage to pull up the covers and press myself close to him before every muscle in my body relaxes and a feeling of bliss washes over me that makes me want to laugh and cry at the same time."
 "Despite already knowing that he came through our act of passion in one piece, I place my hand on his chest as if to acknowledge his heart remained steady."
 "Hisao's already slipping away into slumber, and I find myself getting sleepier by the second as well."
 "But I still want to say something - something to thank him for the moments we just shared."
 "I softly kiss his cheek in order to get his attention and whisper in his ear."
 ha "Thank you, Hisao. That was a very memorable first time."
-hi "…first …time …Hanako?"
-ha "Yes…"
-ha "First time making love."
+hi "{cps=20}…first …time …Hanako?{/cps}"
+ha "{cps=20}Yes…{/cps}"
+ha "{cps=20}First time making love.{/cps}"
 
+stop music fadeout 3.0
 scene black
 with Dissolve(3.0)
 

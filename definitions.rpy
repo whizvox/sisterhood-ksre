@@ -75,6 +75,7 @@ init:
     #define chchangefast = charachangefast #Dissolve(0.2)
     define chchange = charachangealways
     define chchangefast = Dissolve(0.2)
+    define mediumflash = Fade(1, 0, 1, color="#FFF")
 
     # BGM
 
