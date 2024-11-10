@@ -58,6 +58,11 @@ init 1 python:
                 renpy.log(f"[SISTERHOOD] Could not load firefly image: {imgpath}")
     
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
+    # takawa blurred sprites
+    renpy.image("takawa smile_close_blur1", f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur1.png")
+    renpy.image("takawa serious_close_blur1", f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur1.png")
+    renpy.image("takawa smile_close_blur2", f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur2.png")
+    renpy.image("takawa serious_close_blur2", f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur2.png")
     sh_sprites("hanako", ["basic_bashful_clip", "basic_distant_clip"])
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile"], poses=["basic", "bend"])
@@ -84,6 +89,8 @@ init 1:
     image bg inverness_shore = f"{sh_bgs}/shore.jpg"
     image bg inverness_house_front = f"{sh_bgs}/house_front.png"
     image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
+    image bg therapist_office_blur1 = f"{sh_bgs}/therapist_office_blur1.jpg"
+    image bg therapist_office_blur2 = f"{sh_bgs}/therapist_office_blur2.jpg"
     image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"
     image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
