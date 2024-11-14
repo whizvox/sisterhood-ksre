@@ -59,11 +59,15 @@ init 1 python:
     
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
     # takawa blurred sprites
-    renpy.image("takawa smile_close_blur1", f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur1.png")
-    renpy.image("takawa serious_close_blur1", f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur1.png")
-    renpy.image("takawa smile_close_blur2", f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur2.png")
-    renpy.image("takawa serious_close_blur2", f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur2.png")
-    sh_sprites("hanako", ["basic_bashful_clip", "basic_distant_clip"])
+    for face in ("smile", "serious"):
+        for i in range(1, 3):
+            renpy.image(f"takawa {face}_close_blur{i}", f"{sh_path}/sprites/takawa/close/takawa_{face}_close_blur{i}.png")
+    # renpy.image("takawa smile_close_blur1", f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur1.png")
+    # renpy.image("takawa serious_close_blur1", f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur1.png")
+    # renpy.image("takawa smile_close_blur2", f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur2.png")
+    # renpy.image("takawa serious_close_blur2", f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur2.png")
+    sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb"], poses=["basic"], outfits=["clip"])
+    sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile"], poses=["emb"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])

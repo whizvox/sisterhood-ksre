@@ -368,7 +368,7 @@ ha "I-It's p-probably for the better though. It c-could have been w-worse. I-It'
 hi "You know, maybe it's not as bad as you think it is."
 
 show bg hok_field_ni behind ev
-show hanako emb_sad_cas_close_ni behind ev
+show hanako emb_sad_cas_nohat_clip_close_ni behind ev
 with None
 hide ev
 hide firefly_v1
@@ -384,29 +384,46 @@ play music music_comedy fadein 0.5
 "Hanako looks at me with a puzzled expression, clearly having expected a different response."
 "Keeping my left arm around her, I gently move my right hand downward to a point just above her hip and start tickling her side."
 
-show hanako defarms_shock_cas_close_ni at onebounce
-with chchange
-show hanako cover_bashful_cas_close_ni
-with chchange
+show hanako emb_blushtimid_cas_nohat_clip_close_ni at onebounce
+with None
 
 "Hanako's puzzled expression gets uncomfortable and she suddenly lets out a forced giggle."
 "I smile inwardly. This was the reaction I was hoping for."
 
 ha "H-hey, t-that tickles."
 "I give her a mischievous grin and keep going. Hanako's body begins to squirm, and she starts trying to push herself away from me."
+
+show hanako emb_downsmile_cas_nohat_clip_close_ni:
+    align (0.4, 1.0)
+with Dissolvemove(0.5)
+
 ha "D-don't do that."
+
+show hanako:
+    transform_anchor True
+    parallel:
+        easeout 0.7 rotate 90
+    parallel:
+        linear 0.5 yalign 1.5
+with None
+
 "I let her try to get away for a moment, then unexpectedly let go of her, causing Hanako to fall backwards."
 
-show hanako emb_blushtimid_cas_close
-with chchangefast
+show hanako:
+    rotate 0 ypos 2.4
+with None
+show hanako emb_blushtimid_cas_nohat_clip_close_ni at center
+with charamovefast
 
 "Before she can sit upright again, I move over to her and quickly straddle her."
 ha "H-Hisao!?"
 hi "Hanako, I bet you still have plenty of sensitive spots left."
 "I quickly reach down and start tickling her left side again, drawing out another giggle."
 
-show hanako emb_smile_cas_close
-with chchangefast
+show hanako emb_smile_cas_nohat_clip_close_ni:
+    ease 0.3 xalign 0.6
+    ease 0.5 xalign 0.5
+with Dissolvemove(1.0)
 
 ha "D-don't."
 hi "And I won't stop until you admit that."
@@ -415,8 +432,8 @@ ha "S-stop."
 hi "I don't even have to look very hard, Hanako."
 "When she moves her arms up to ward off my hand, I swiftly go for her armpit instead."
 
-show hanako emb_downsmile_cas_close
-with chchangefast
+show hanako emb_downsmile_cas_nohat_clip_close_ni at onebounce
+with None
 
 ha "Hi-hee hee-sao, c-cut it out hee hee hee."
 hi "Admit it and I'll stop."
@@ -424,13 +441,15 @@ hi "Admit it and I'll stop."
 "As she lowers her arm, I grab it and start tickling the lower part of her arm…"
 ha "Hee hee hee…"
 
-show hanako emb_smile_cas_close
-with chchangefast
+show hanako emb_smile_cas_nohat_clip_close_ni:
+    xalign 0.4
+with Dissolvemove(0.3)
 
 "A gasp."
 
-show hanako emb_blushtimid_cas_close
-with chchangefast
+show hanako emb_blushtimid_cas_nohat_clip_close_ni:
+    xalign 0.6
+with Dissolvemove(0.4)
 
 "…then her collarbone when she yanks her arm away…"
 
@@ -438,46 +457,71 @@ ha "P-please *snort* st-stop."
 "She's now giggling uncontrollably."
 "…Then her tummy…"
 
-show hanako emb_downsmile_cas_close
-with chchangefast
+show hanako emb_downsmile_cas_nohat_clip_close_ni:
+    xalign 0.5
+with Dissolvemove(0.3)
 
 ha "Hahahahaha!"
 "…then her ribs just beneath her breasts."
+
+show hanako:
+    ease 0.3 yalign 1.3 rotate -10
+with Pause(0.3)
+
 ha "S-stop, h-h-hee-hee-hee!"
 "At this point I'm using both hands to tickle several areas at once. Hanako is literally crying with laughter."
 "I realize I'm taking a bit of a risk right now. If one of her flailing arms accidentally hits me in the chest, I'll probably go out like a light and I doubt an ambulance could get here very quickly."
 "Still, seeing the usually subdued Hanako like this is an interesting experience."
 ha "Hahaha st-stop, I hee hee a-admit hee hee it! I admit it!"
 
-show hanako emb_downtimid_cas_close
-with chchange
+show hanako emb_downtimid_cas_nohat_clip_close_ni:
+    rotate 0 align (0.5, 1.1)
+with Dissolve(1.0)
+
+stop music fadeout 1.0
+
+"I immediately stop tickling her, get off of her and sit across from her as she tries her hardest to catch her breath."
 
 play music music_pearly fadein 0.5
 
-"I immediately stop tickling her, get off of her and sit across from her as she tries her hardest to catch her breath."
 hi "I never knew you were this ticklish."
 "Hanako's now panting as if she just sprinted a kilometer uphill."
-"As her breathing slowly returns to normal, she sits up and wipes the tears from her eyes. I half expect her to angrily walk away, but instead she just sits there."
+
+show hanako at center
+with charamove
+
+"As her breathing slowly returns to normal, she sits up and wipes the tears from her eyes."
+"I half expect her to angrily walk away, but instead she just sits there."
+
+show hanako emb_blushtimid_cas_nohat_clip_close_ni
+with chchange
+
 ha "I think this kind of proves my point, don't you agree?"
 hi "Ummm…"
 "Not willing to let her back down, I reach out and make a tickling motion in the air with my fingers."
 
-show hanako emb_emb_cas_close
-with chchange
+show hanako emb_emb_cas_nohat_clip_close_ni:
+    xalign 0.6
+with Dissolvemove(0.3)
 
 "Hanako immediately shivers, crosses her arms in front of her chest and lets out an involuntary giggle."
 ha "Th-that tickles. D-don't get near me."
 hi "I didn't even touch you just now. Anyway, don't you agree?"
 
-show hanako emb_smile_cas_close
+show hanako emb_smile_cas_nohat_clip_close_ni at center
 with chchange
 
 "She doesn't say anything, but she carefully leans forward and gives me a kiss on the lips."
-"As unorthodox as it may have been, I think my method of cheering her up worked. I've never heard Hanako laugh like that before. I hope that someday she'll be able to laugh like that without being forced into it."
+"As unorthodox as it may have been, I think my method of cheering her up worked."
+"I've never heard Hanako laugh like that before. I hope that someday she'll be able to laugh like that without being forced into it."
 ha "Hisao?"
 hi "Yes?"
 ha "I'm okay now. Just d-don't do that again, promise?"
 hi "It's a big temptation, but okay. I promise."
+
+show hanako emb_blushtimid_cas_nohat_clip_close_ni
+with chchange
+
 ha "Shall we go back now? I'm a bit tired after all this."
 hi "Lead the way."
 
@@ -490,31 +534,29 @@ with locationskip
 "We slowly walk back to the summer home at the far end of the wheat field."
 "As we approach the patio, which is pitch-black due to being in the shadow of the building, we hear Lilly's familiar voice from somewhere."
 
-show lilly back_pout_cas
-with charaenter
+# show lilly back_pout_cas_ni at left
+# with charaenter
 
-show lilly basic_cheerful_cas
-with chchange
+# show lilly basic_cheerful_cas_ni
+# with chchange
 
 li "Welcome back, Hanako, Hisao. Have you enjoyed your walk?"
 
 with vpunch
 
-show lilly basic_oops_cas
-with chchange
+# show lilly basic_oops_cas_ni
+# with chchangefast
 
 "I am about to ask Lilly where she is when I hear a soft thud followed by a startled yelp."
 "Seems like Hanako, who was walking slightly ahead, has already found her."
 
-show lilly at twoleft
-with charamove
-
-show hanako cover_worry_cas at tworight
+show lilly basic_oops_cas_ni at twoleft
+show hanako cover_worry_cas_ni at tworight
 with charaenter
 
 ha "I-I'm sorry, Lilly. I didn't see you."
 
-show lilly basic_cheerful_cas
+show lilly basic_cheerful_cas_ni
 with chchange
 
 li "My, is it that late already? Please wait here for a moment."
@@ -525,18 +567,18 @@ with charaexit
 "We hear measured steps head towards the house followed by the sound of an opening door."
 "A few seconds later, a light near the patio door flicks on as Lilly emerges and heads back towards the chair she was sitting in before Hanako nearly tripped over her."
 
-show lilly basic_smile_cas at twoleft
+show lilly basic_smile_cas_ni at twoleft
 with charaenter
 
 "Lilly picks up a discarded book lying near the chair and holds it up for a moment."
 li "I only have a few pages left. I will be with you in a few minutes. Please make yourselves comfortable."
 
-show lilly basic_satisfied_cas
+show lilly basic_satisfied_cas_ni
 with chchange
 
 li "And ah… Hanako?"
 
-show hanako cover_bashful_cas
+show hanako cover_bashful_cas_ni
 with chchange
 
 ha "Yes, Lilly?"

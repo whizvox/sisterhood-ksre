@@ -146,6 +146,24 @@ natsume = [
     ("sprites2/Ooe Natsume/Natsume h smile", "hands_smile"),
 ]
 
+hanako = [
+    ("hanako sprites upscaled/mednoise/hanako_basic_bashful_clip", "basic_bashful_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_basic_distant_clip", "basic_distant_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_blushtimid_cas_clip", "emb_blushtimid_cas_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_blushtimid_cas_nohat_clip", "emb_blushtimid_cas_nohat_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_downsmile_cas_clip", "emb_downsmile_cas_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_downsmile_cas_nohat_clip", "emb_downsmile_cas_nohat_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_downsmile_clip", "emb_downsmile_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_downtimid_cas_nohat_clip", "emb_downtimid_cas_nohat_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_emb_cas_clip", "emb_emb_cas_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_emb_cas_nohat_clip", "emb_emb_cas_nohat_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_emb_clip", "emb_emb_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_sad_cas_clip", "emb_sad_cas_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_sad_cas_nohat_clip", "emb_sad_cas_nohat_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_smile_cas_clip", "emb_smile_cas_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_emb_smile_cas_nohat_clip", "emb_smile_cas_nohat_clip"),
+]
+
 def main():
     import sys
 
@@ -155,7 +173,7 @@ def main():
         if arg.startswith("--replace="):
             chars = arg[10:].lower()
             if chars == "all":
-                replace.extend(["hisao", "takawa", "naomi", "natsume"])
+                replace.extend(["hisao", "takawa", "naomi", "natsume", "hanako"])
             else:
                 replace.extend(chars.split(","))
     
@@ -163,6 +181,7 @@ def main():
     replace_takawa = "takawa" in replace
     replace_naomi = "naomi" in replace
     replace_natsume = "natsume" in replace
+    replace_hanako = "hanako" in replace
 
     for entry in hisao:
         if "Naked" not in entry[0]:
@@ -180,6 +199,9 @@ def main():
     for entry in natsume:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/natsume_{entry[1]}.png", replace=replace_natsume, target_height=950)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/close/natsume_{entry[1]}_close.png", replace=replace_natsume, crop=(0, 0, 1350, 1800), target_height=1030)
+
+    for entry in hanako:
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hanako/close/hanako_{entry[1]}_close.png", replace=replace_hanako, crop=(0, 272, 878, 1614), target_height=1080)
     
 if __name__ == "__main__":
     main()
