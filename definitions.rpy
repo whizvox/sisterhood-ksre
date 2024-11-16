@@ -24,9 +24,6 @@ init python:
     # 0 = skip, 1 = text w/ black cg, 2 = text w/ blurred cg, 3 = show all
     sh_r18_level = 3
 
-    # for chapter in sisterhood_chapters:
-    #     scene_labels[chapter[1]] = (__("[Sisterhood] ") + __(chapter[0]), chapter[1], __(chapter[2]))
-
     sh_path = "mods/sisterhood"
     sh_bgs = sh_path + "/bgs"
 
@@ -35,30 +32,34 @@ init python:
     
     persistent.sh_nsfwlevel = 0
 
+init 1 python:
+    for chapter in sisterhood_chapters:
+        scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
+    _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
 
 init:
     $ mods["sisterhood"] = "Sisterhood"
     $ mods_with_menus["sisterhood"] = True
 
     define sisterhood_chapters = [
-        (_("Chapter 1"), "sisterhood_ch1", _("Lilly and Akira discuss the future from Inverness."), "lilly"),
-        (_("Chapter 2"), "sisterhood_ch2", _("Hisao recounts his relationship with Hanako as he and Emi run on the track."), "hisao"),
-        (_("Chapter 3"), "sisterhood_ch3", _("Hisao is introduced to someone special by the nurse."), "hisao"),
-        (_("Chapter 4"), "sisterhood_ch4", _("Hisao and Hanako welcome Lilly and Akira back to Japan."), "hisao"),
-        (_("Chapter 5"), "sisterhood_ch5", _("Hisao, Hanako, and Lilly take a trip to Hokkaido."), "hisao"),
-        (_("Chapter 0"), "sisterhood_ch0", _("Hanako has a personal conversation with Miss Yumi."), "hanako"),
-        (_("Chapter 6"), "sisterhood_ch6", _("Hanako and Hisao spend the night in Hokkaido together."), "hanako"),
-        (_("Chapter 7"), "sisterhood_ch7", _("Hanako helps with a favor from Naomi and Natsume."), "hanako"),
-        (_("Chapter 8"), "sisterhood_ch8", _("Hanako and Hisao go to the arcade."), "hanako"),
-        (_("Chapter 9"), "sisterhood_ch9", _("Hanako and Hisao spend the night in a fancy hotel."), "hanako"),
-        (_("Chapter 10"), "sisterhood_ch10", _("Hisao and Hanako learn of Lilly's summons."), "hisao"),
-        (_("Chapter 11"), "sisterhood_ch11", _("Hanako and Lilly have a memorable night at a fancy restaurant."), "hanako"),
-        (_("Chapter 12"), "sisterhood_ch12", _("Lilly makes a difficult decision."), "lilly"),
-        (_("Chapter 13"), "sisterhood_ch13", _("Hanako and Lilly make preparations for Lilly's going-away party."), "hanako"),
-        (_("Chapter 14"), "sisterhood_ch14", _("Hisao wakes up to an unfamiliar yet familiar ceiling."), "hisao"),
-        (_("Chapter 15"), "sisterhood_ch15", _("Hisao is determined to reconcile with Hanako."), "hisao"),
-        (_("Chapter 16"), "sisterhood_ch16", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
-        (_("Chapter 17"), "sisterhood_ch17", _("Lilly and Hanako talk it out."), "lilly")
+        (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Lilly and Akira discuss the future from Inverness."), "lilly"),
+        (_("Chapter 2"), "sisterhood_ch2.sh_ch2", _("Hisao recounts his relationship with Hanako as he and Emi run on the track."), "hisao"),
+        (_("Chapter 3"), "sisterhood_ch3.sh_ch3", _("Hisao is introduced to someone special by the nurse."), "hisao"),
+        (_("Chapter 4"), "sisterhood_ch4.sh_ch4", _("Hisao and Hanako welcome Lilly and Akira back to Japan."), "hisao"),
+        (_("Chapter 5"), "sisterhood_ch5.sh_ch5", _("Hisao, Hanako, and Lilly take a trip to Hokkaido."), "hisao"),
+        (_("Chapter 0"), "sisterhood_ch0.sh_ch0", _("Hanako has a personal conversation with Miss Yumi."), "hanako"),
+        (_("Chapter 6"), "sisterhood_ch6.sh_ch6", _("Hanako and Hisao spend the night in Hokkaido together."), "hanako"),
+        (_("Chapter 7"), "sisterhood_ch7.sh_ch7", _("Hanako helps with a favor from Naomi and Natsume."), "hanako"),
+        (_("Chapter 8"), "sisterhood_ch8.sh_ch8", _("Hanako and Hisao go to the arcade."), "hanako"),
+        (_("Chapter 9"), "sisterhood_ch9.sh_ch9", _("Hanako and Hisao spend the night in a fancy hotel."), "hanako"),
+        (_("Chapter 10"), "sisterhood_ch10.sh_ch10", _("Hisao and Hanako learn of Lilly's summons."), "hisao"),
+        (_("Chapter 11"), "sisterhood_ch11.sh_ch11", _("Hanako and Lilly have a memorable night at a fancy restaurant."), "hanako"),
+        (_("Chapter 12"), "sisterhood_ch12.sh_ch12", _("Lilly makes a difficult decision."), "lilly"),
+        (_("Chapter 13"), "sisterhood_ch13.sh_ch13", _("Hanako and Lilly make preparations for Lilly's going-away party."), "hanako"),
+        (_("Chapter 14"), "sisterhood_ch14.sh_ch14", _("Hisao wakes up to an unfamiliar yet familiar ceiling."), "hisao"),
+        (_("Chapter 15"), "sisterhood_ch15.sh_ch15", _("Hisao is determined to reconcile with Hanako."), "hisao"),
+        (_("Chapter 16"), "sisterhood_ch16.sh_ch16", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
+        (_("Chapter 17"), "sisterhood_ch17.sh_ch17", _("Lilly and Hanako talk it out."), "lilly")
     ]
 
     # TRANSFORMS

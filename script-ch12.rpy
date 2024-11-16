@@ -1,4 +1,5 @@
 label sisterhood_ch12:
+label .sh_ch12:
 
 stop music fadeout 1.0
 scene bg school_dormlilly

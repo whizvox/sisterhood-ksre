@@ -1,4 +1,5 @@
 label sisterhood_ch16:
+label .sh_ch16:
 
 scene black
 with None

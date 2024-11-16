@@ -1,4 +1,5 @@
 label sisterhood_ch14:
+label .sh_ch14:
 
 scene black
 stop music

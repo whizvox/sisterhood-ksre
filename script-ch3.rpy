@@ -1,4 +1,5 @@
 label sisterhood_ch3:
+label .sh_ch3:
 
 scene bg school_nurseoffice
 with Dissolve(2.0)

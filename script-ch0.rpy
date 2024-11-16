@@ -1,4 +1,5 @@
 label sisterhood_ch0:
+label .sh_ch0:
 
 stop music fadeout 1.0
 scene bg school_staircase1

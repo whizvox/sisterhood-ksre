@@ -17,10 +17,10 @@ screen sisterhood():
             has vbox
 
             vbox:
-                textbutton _("Start") action ShowMenu("sisterhood_nsfw_choice")
+                textbutton _("Start") action If(main_menu, true=ShowMenu("sisterhood_nsfw_choice"), false=None)
             
             vbox:
-                textbutton _("Chapter Select") action ShowMenu("sisterhood_chapter_select")
+                textbutton _("Chapter Select") action If(main_menu, true=ShowMenu("sisterhood_chapter_select"), false=None)
 
             vbox:
                 textbutton _("About") action ShowMenu("sisterhood_about")
@@ -62,8 +62,9 @@ screen sisterhood_chapter_select():
                         textbutton chapter[0]:
                             left_margin 30
                             action [
+                                SetVariable("_current_replay", chapter[1]),
                                 SetVariable("current_scene", chapter[1]),
-                                Start(chapter[1])
+                                Start("replay_start")
                             ]
                             hovered SetScreenVariable("current_desc", chapter[2])
                             unhovered SetScreenVariable("current_desc", None)

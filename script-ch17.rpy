@@ -1,4 +1,5 @@
 label sisterhood_ch17:
+label .sh_ch17:
 
 call sisterhood_timeskip
 

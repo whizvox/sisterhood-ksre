@@ -21,6 +21,8 @@ label sisterhood_start:
     call sisterhood_ch13
     call sisterhood_ch14
     call sisterhood_ch15
+    call sisterhood_ch16
+    call sisterhood_ch17
 
     return
 

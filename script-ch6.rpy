@@ -1,4 +1,5 @@
 label sisterhood_ch6:
+label .sh_ch6:
 
 scene bg hok_bedroom
 with flashback
