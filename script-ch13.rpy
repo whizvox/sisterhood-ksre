@@ -8,10 +8,10 @@ with Dissolve(2.0)
 
 play music music_comedy fadein 0.5
 
-show naomi laugh at offscreenright
+show naomi bend_laugh at offscreenright
 with None
 show naomi at tworight
-with charamove
+with charamovefaster
 
 na "Hey, Hanako."
 "I deliver a quick nod as the president and editor-in-chief of the newspaper club comes barging into the computer room."
@@ -21,7 +21,7 @@ ha "N-Naomi."
 "One thing that's usually an advantage is that there are hardly any silences, uncomfortable or otherwise, around her."
 "I suppose we could be called semi-friends now, though our contact is a lot more casual than my bond with Hisao and Lilly, and I still have trouble dealing with her occasionally hyperactive moods and bouts of distraction from time to time."
 
-show naomi smile
+show naomi bend_smile
 with chchange
 
 na "Hey, how's page four coming along?"
@@ -30,81 +30,84 @@ na "Cool. Get me a print-out when it's finished. I can't wait to check it out."
 "I don't think she's here just to ask about one of the pages."
 "Either she's bored, which usually causes her to start chattering up whoever happens to be nearby, or there's more she wants to discuss."
 
-show naomi neutral
+show naomi basic_neutral
 with chchange
 
 na "Oh hey, about your article. I read it through just before the weekend."
 ha "Y-yes?"
 
-show naomi smile
+show naomi basic_smile
 with chchange
 
-na "I like it.{w} I took a lot of rewording, didn't it? I mean, that text doesn't look like stuff Mutou would say."
+na "I like it. I took a lot of rewording, didn't it? I mean, that text doesn't look like stuff Mutou would say."
 ha "He gets a b-bit technical at times. I tried to make it easier to understand. I had to trim a lot though."
 na "I could get you some more space if you can use it."
 ha "Oh?"
 
 show naomi at center
 with charamove
-show naomi:
-    yanchor 1.0 ypos 1.1
-with charamove
-show naomi focus
+show naomi basic_neutral_close
 with chchange
 
 "She sits on my desk and tosses me a wink."
 na "I've been thinking. Maybe instead of making it a short article, we could turn it into a column."
 na "A permanent one. Or semi-permanent until we got a few test runs. We could put it on the columns page, or let it sit on page five. Each issue would cover a different club here at school."
 na "The idea would be to give a short overview of each club written in a way to encourage casual readers to check it out. Like you've been doing."
-"Looks like Naomi's been thinking about this a lot more than I have.{w} All I wanted was to do a little piece on Hisao's club and hopefully get him a new member or two as a little 'I love you'-gesture towards him."
+"Looks like Naomi's been thinking about this a lot more than I have."
+"All I wanted was to do a little piece on Hisao's club and hopefully get him a new member or two as a little 'I love you'-gesture towards him."
 "Naomi's ambitions, however, seem to reach further."
 
-show naomi grin
+show naomi basic_grin_close
 with chchange
 
 na "In fact, seeing that we'd be benefitting the school by actively encouraging club membership, that'd give me a lot of extra clout to get our budget raised when the time comes to negotiate with the student council about club budgets again."
 "Quite a bit further."
 na "In fact, I bet if we offer to cover the student council itself in there, Queen Hakamichi might throw in a personal bonus. I know she'd certainly welcome extra membership."
+"Naomi scratches her cheek, chuckles and sends me a clownish grin."
 
-show naomi laugh
+show naomi basic_laugh_close
 with chchange
 
-"Naomi scratches her cheek, chuckles and sends me a clownish grin."
-na "The question remains of course whether the extra membership would welcome {i}her{/i}.{w} If you can write something up that gets Hakamichi additional personnel, I'll personally nominate you for a Pulitzer."
+na "The question remains of course whether the extra membership would welcome {i}her{/i}. If you can write something up that gets Hakamichi additional personnel, I'll personally nominate you for a Pulitzer."
 "Me… writing?"
 ha "Of course, I'm not really in a position to nominate people for that."
 "Slow down a bit."
 ha "And even if I was, isn't that prize US-exclusive?"
 
-show naomi neutral
+show naomi basic_focus_close
 with chchange
 
 na "Err… Where was I?"
 ha "Ummm… M-me writing something up?"
 
-show naomi smile
+show naomi basic_neutral_close
 with chchange
 
 na "Right. Seeing that this started with your initiative, it's fair to ask you first if you're interested in being the one in charge of writing it up every issue."
-na "I mean, you're a pretty good text writer, I've seen that much in class already.{w} It's a shame if all you do here is data entry and fiddling with the layout. It's also good if the one writing it is always the same person, so the writing style remains consistent."
+na "I mean, you're a pretty good text writer, I've seen that much in class already."
+
+show naomi basic_smile_close
+with chchange
+
+na "It's a shame if all you do here is data entry and fiddling with the layout. It's also good if the one writing it is always the same person, so the writing style remains consistent."
 "Me?"
 na "You liked writing that piece. Why not do more with it?"
 ha "…maybe…"
 
-show naomi neutral
+show naomi basic_neutral_close
 with chchange
 
 na "Not overly enthusiastic, I see."
 ha "…It's not that…"
 
-show naomi at center
-with charamove
+show naomi basic_neutral
+with chchange
 show naomi at twoleft
 with charamove
 show naomi at center
 with charamove
-show naomi at sittingpos
-with charamove
+show naomi basic_neutral_close
+with chchange
 
 "Naomi gets off the desk, pulls a chair over, turns it around and sits down on it, her elbows resting on the back rest."
 na "You've been kinda gloomy lately."
@@ -117,7 +120,7 @@ ha "…yes…"
 na "In the upcoming half year, I bet a lot of third year students will be thinking that as graduation approaches. With you, it just comes around a little earlier."
 ha "…you too?"
 
-show naomi smile
+show naomi basic_smile_close
 with chchange
 
 na "Well, I don't think after school, I'll have time to play newspaper anymore, that's for sure. Pity too."
@@ -126,56 +129,72 @@ ha "Y-you're not going to b-become a journalist?"
 na "Dunno. Maybe. It might not work. The loose wiring upstairs might cause problems."
 "Her epilepsy? I admit her case is a pretty severe one, but…"
 
-show naomi neutral
+show naomi basic_laugh_close
 with chchange
 
 na "The episodes itself are one thing. I've heard it's pretty freaky for others."
 na "Me, I just go out like a light and wake up feeling like crap for a while without remembering what happened. But it comes with restrictions."
 ha "Restrictions?"
+
+show naomi basic_smile_close
+with chchange
+
 na "You know, don't sit in front of a screen for too long, don't get your driver's license, live your life as regularly as possible, no all-nighters… That sort of thing."
+
+show naomi basic_neutral_close
+with chchange
+
 na "Going professional… may not work out very well."
 "Every student has a history. I've just learned part of one more."
 "I wish the situation was different for me right now. With enough on my mind as it is, I really don't know what to say to her."
 "Listening is something I can do well. Comforting is a whole different matter."
 ha "…"
 
-show naomi smile
+show naomi bend_smile_close
 with chchange
 
 na "You know, I hope at least you get to enjoy your little party tonight?"
 ha "Y-you know… about… that?"
 na "Yeah, your boyfriend said you two were going shopping for that after you're done here."
 na "He's waiting for you at the school gate. I couldn't let him in to tell you in person, 'cause I was afraid he'd spot your article lying on my desk."
-"Why didn't you tell me until now?"
+"Why didn't you tell me until now!?"
 
-show naomi neutral
+show naomi basic_focus_close
 with chchange
-with Pause(1.0)
-show naomi grin
+with Pause(0.5)
+show naomi basic_smile_close
 with charachangealways
 
 "She looks pensive for a moment and suddenly snaps her fingers, causing me to flinch."
 na "Oh right, that's why I came in here. To tell you that."
+
+show naomi bend_laugh_close
+with chchange
+
 na "Ha ha… I guess I got a little sidetracked, huh?"
 "OH, FOR CRYING OUT LOUD!"
 
 stop music fadeout 0.5
 
 scene bg school_gate_rn
-show hisao grin_rn
+show hisao basic_grin_uni_rn
 with locationskip
 
 play music music_soothing fadein 0.5
 
 hi "Couldn't get away from Naomi, could you?"
 "Hisao seems amused by my tardiness and the fact I'm clearly winded from my mad dash to the gates."
-"After handing me one of the two shopping bags he's carrying, he bends forward and gives me a quick peck on the cheek while I'm busy catching my breath."
-ha "She… forgot… for a while."
 
-show hisao smile_rn
+show hisao basic_smile_uni_close_rn
 with chchange
 
-"Hisao nods.{w} He doesn't interact with Naomi much, but has heard several stories from me over the last few weeks."
+"After handing me one of the two shopping bags he's carrying, he bends forward and gives me a quick peck on the cheek while I'm busy catching my breath."
+ha "She… forgot… for a while."
+"Hisao nods. He doesn't interact with Naomi much, but has heard several stories from me over the last few weeks."
+
+show hisao basic_neutral_uni_close_rn
+with chchange
+
 hi "We'd better get going quickly if we want to finish everything in time."
 ha "Yes."
 
@@ -183,7 +202,8 @@ hide hisao
 with charaexit
 
 "We leave the school grounds and walk down the road to town."
-"Despite the fact that it's summer, the sky is a bit dark and about as gloomy as my mood.{w} I'd be surprised if we make it through the evening without a major downpour."
+"Despite the fact that it's summer, the sky is a bit dark and about as gloomy as my mood."
+"I'd be surprised if we make it through the evening without a major downpour."
 
 scene bg suburb_roadcenter_rn
 with locationskip
@@ -191,8 +211,8 @@ with locationskip
 hi "Hanako?"
 ha "S-sorry, what were you saying?"
 
-show hisao neutral_rn
-with chchange
+show hisao basic_neutral_uni_close_rn at twoleft
+with charaenter
 
 hi "I was asking if we should get an additional bag of sweets. She seemed to like that brand last time, and we went through it pretty quickly."
 ha "If you think so."
@@ -202,23 +222,23 @@ hi "You've been gloomy all week, and frankly I'm been getting a bit worried."
 "He's worried about me. Almost seems like old times…"
 "No, I shouldn't think like that."
 
-show hisao smile_rn
+show hisao basic_smile_uni_close_rn
 with chchange
 
 hi "You know I'm here for you if you need me, right? If you want to talk about something…"
 "Part of me wants to share the anxiety I've been feeling with Hisao. If I can't even trust him with it, who can I trust? But I'm also afraid he'll just tell me I'm imagining things."
 ha "Erm… Hisao. Do you think the time I spent with Lilly lately was… a good idea?"
-hi "I think so. Why do you ask?"
 
-show hisao neutral_rn
+show hisao basic_speak_uni_close_rn
 with chchange
 
+hi "I think so. Why do you ask?"
 hi "Do you regret all those activities? I thought you had a good time yourself."
 ha "I did enjoy them. It's just…"
 ha "…they… didn't really… help things."
 hi "Well, if you look at pure end results, they didn't do anything to change Lilly's mind, but we'll never know what the odds of that happening were to begin with."
 
-show hisao smile_rn
+show hisao basic_smile_uni_close_rn
 with chchange
 
 hi "Regardless of that, at least you and Lilly made some wonderful memories together, didn't you?"
@@ -227,7 +247,7 @@ hi "I mean, isn't that kinda the key to enjoying life? Making fond memories beca
 ha "I suppose so…"
 hi "Hanako?"
 
-show hisao neutral_close_rn
+show hisao basic_neutral_uni_close_rn at center
 with chchange
 
 "He stops me and faces me. He looks at me for a moment and then gives me a gentle hug."
@@ -242,24 +262,45 @@ with shuteye
 ha "Hisao?"
 hi "Yeah?"
 
-show hisao smile_rn
+show hisao
 with None
 hide black
 with openeye
 
 ha "Parties are for celebrating something, right?"
 ha "B-but, is there really something to celebrate?"
+
+show hisao cross_grin_uni_close_rn
+with chchange
+
 hi "Her class will be throwing her a surprise party tomorrow. Kenji was complaining about it earlier. We can't really fall behind, can we?"
 ha "We're supposed to be cheerful and smile. Even if we don't feel that way."
 ha "It feels… fake. Like…"
+
+show hisao cross_neutral_uni_close_rn
+with chchange
+
 hi "Like…?"
 ha "Like… many of my previous b-birthday celebrations. I'm… not very good at pretending."
+
+show hisao cross_speak_uni_close_rn
+with chchange
+
 hi "Maybe we shouldn't call it a party or a celebration then. It's just… one last opportunity to spend time together."
 hi "You'd want to make the most out of an occasion such as that, wouldn't you?"
-"That makes me think for a bit.{w} If I see it as just hanging out together… It's a silly game of words, but it worked with my birthday party."
+"That makes me think for a bit."
+"If I see it as just hanging out together… It's a silly game of words, but it worked with my birthday party."
+
+show hisao basic_smile_uni_close_rn
+with chchange
+
 hi "So, Hanako, do you think one bag of sweets is enough for an entire evening?"
 ha "Ummm… We can probably get a second one just to be sure."
 hi "Got it."
+
+show hisao basic_grin_uni_close_rn
+with chchange
+
 "He ruffles my hair for a bit and is about to let go when he suddenly freezes."
 
 stop music fadeout 0.5

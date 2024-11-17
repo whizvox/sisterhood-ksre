@@ -32,7 +32,7 @@ init 1 python:
                         renpy.image(f"{char} {variant}_close", closeimgpath)
                         renpy.image(f"{char} {variant}_close_ss", sp_sunset(closeimgpath))
                         renpy.image(f"{char} {variant}_close_ni", sp_night(closeimgpath))
-                        renpy.image(f"{char} {variant}_close_rn", sp_rain(imgpath))
+                        renpy.image(f"{char} {variant}_close_rn", sp_rain(closeimgpath))
             
     def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0):
         for variant in variants:

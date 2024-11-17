@@ -61,10 +61,15 @@ screen sisterhood_chapter_select():
                     for chapter in sisterhood_chapters:
                         textbutton chapter[0]:
                             left_margin 30
+                            # TODO SWAP THIS IN RELEASE. Ren'Py disables reloading in replays.
+                            # action [
+                            #     SetVariable("_current_replay", chapter[1]),
+                            #     SetVariable("current_scene", chapter[1]),
+                            #     Start("replay_start")
+                            # ]
                             action [
-                                SetVariable("_current_replay", chapter[1]),
                                 SetVariable("current_scene", chapter[1]),
-                                Start("replay_start")
+                                Start(chapter[1])
                             ]
                             hovered SetScreenVariable("current_desc", chapter[2])
                             unhovered SetScreenVariable("current_desc", None)
