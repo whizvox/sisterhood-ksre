@@ -108,6 +108,7 @@ init:
     define sfx_lightswitch_on = sh_sfx("lightswitch_on")
     define sfx_lightswitch_off = sh_sfx("lightswitch_off")
     define sfx_cellphonering = sh_sfx("cellphonering")
+    define sfx_bicyclecrash = sh_sfx("bicyclecrash")
     define sfx_hospital = sh_sfx("hospital")
 
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"

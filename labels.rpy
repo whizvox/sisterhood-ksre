@@ -23,6 +23,7 @@ label sisterhood_start:
     call sisterhood_ch15
     call sisterhood_ch16
     call sisterhood_ch17
+    call sisterhood_credits
 
     return
 
@@ -49,5 +50,44 @@ label sisterhood_timeskip:
     with clockwipe
 
     pause 2.0
+
+    return
+
+label sisterhood_credits:
+    $ config.skipping = False
+    $ config.allow_skipping = False
+
+    stop music
+    stop ambient
+
+    scene black
+    show credits mask
+    with Dissolve(2.0)
+
+    play music music_innocence
+
+    show sh_credits behind credits at Transform(xalign=0.5, yalign=0.0)
+    with Dissolve(2.0)
+
+    pause 1.0
+
+    show sh_credits behind credits:
+        xalign 0.5 yalign 0.0
+        acdc20_warp 60.0 yalign 1.0
+    
+    pause 62.5
+
+    hide sh_credits
+    with Dissolve(2.0)
+    show expression Text(_("To be continued..."), text_align=1.0, size=32) zorder 999 at Transform(xalign=0.92, yalign=0.92)
+    with Dissolve(2.0)
+
+    pause 5.0
+
+    stop music fadeout 5.0
+    scene black
+    with Dissolve(5.0)
+
+    $ config.allow_skipping = True
 
     return

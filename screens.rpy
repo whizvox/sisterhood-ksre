@@ -24,6 +24,9 @@ screen sisterhood():
 
             vbox:
                 textbutton _("About") action ShowMenu("sisterhood_about")
+            
+            vbox:
+                textbutton _("Credits") action If(main_menu, true=Start("sisterhood_credits"), false=None)
         
         textbutton _("Return"):
             style "return_button"

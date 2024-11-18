@@ -305,22 +305,22 @@ with chchange
 
 stop music fadeout 0.5
 
-show hisao neutral_rn
-with chchange
+show hisao basic_neutral_uni_close_rn
+with chchangefast
 
 hi "…Did you just feel something?"
 ha "Hmmm?"
-
-show hisao neutral_rn
-with chchange
-
 "I look up towards the sky and sure enough a droplet lands on my nose causing me to back out of our embrace and rub it off."
 
-show hisao frown_rn
+show hisao basic_frown_uni_close_rn
 with chchange
 
 hi "Oh great, just what we needed. And it's still nearly ten minutes to the store."
 ha "Should we go back?"
+
+show hisao basic_speak_uni_close_rn
+with chchange
+
 hi "I'm not sure, it's also about ten minutes back to Yamaku and it'll be ten minutes uphill. And we still need to get goods from the store."
 ha "But we might get trapped in town."
 hi "If it continues to rain, we might be able to get an umbrella. Maybe Yuuko can lend us one if she's on duty in the Shanghai."
@@ -336,23 +336,29 @@ with Dissolve(5.0)
 
 "My hopes that we'll reach the store relatively dry shrink with every passing minute as the drizzle changes to rain and the rain then turns into a downpour."
 
-show hisao frown_close_rn
+show hisao basic_frown_uni_close_rn behind rain
 with charaenter
 
-hi "Damnit, we're gonna get soaked and spend the next few days with pneumonia if this keeps up. Hanako, do you think you can manage to sprint the last stretch?"
+hi "Damnit, we're gonna get soaked and spend the next few days with pneumonia if this keeps up."
+
+show hisao basic_speak_uni_close_rn
+with chchange
+
+hi "Hanako, do you think you can manage to sprint the last stretch?"
 ha "S-sprint? That's irresponsible, Hisao. Your heart…"
 
-show hisao smile_close_rn
+show hisao basic_grin_uni_close_rn
 with chchange
 
 hi "Look, I run nearly every morning, and I haven't had a single flutter. I can handle it. Now can you manage to run for a bit?"
 ha "I-I'll try."
 
-show hisao at offscreenleft:
+show hisao at offscreenright:
     alpha 0.0
 with charamovechangefastest
 
-"Hisao nods and launches into a run that I try my hardest to keep up with. He's in much better shape than I am, that's for sure."
+"Hisao nods and launches into a run that I try my hardest to keep up with."
+"He's in much better shape than I am, that's for sure."
 
 show bg suburb_roadcenter_blur_rn behind rain
 with locationchange
@@ -360,21 +366,31 @@ with locationchange
 "Despite the fact Hisao once joked that I could probably outrun Emi Ibarazaki under the right circumstances, I'm not particularly athletic by anyone's standards, except maybe Lilly's."
 "The head nurse was so kind as to spare me the horrors of having to walk in gym shorts and a shirt and have my stiff movement, caused by my scar tissue, laughed at and mocked by classmates, as was the case in middle school."
 "As it is, the question isn't whether I'll fall behind but when."
+
+show hisao basic_speak_uni_close_rn behind rain at twoleft
+with charaenter
+
 hi "You okay?"
 "I barely have enough breath to manage a reply."
 ha "Y-yes. Don't mind me."
+
+hide hisao
+with charaexit
+
 "We're reaching the edge of town. Just another minute or two and we can take shelter."
 "I'm panting heavily and I'm betting that my clothes aren't just soaked with rain right now."
 "We're running as fast as we can, heads down, hand carrying the shopping bag raised in an attempt to shield ourselves from the ruthless elements."
-"I look at Hisao who's running slightly ahead of me.{w} He's looking back at me over his shoulder, probably about to ask if I'm alright and if I can manage for just a little longer."
+"I look at Hisao who's running slightly ahead of me. He's looking back at me over his shoulder, probably about to ask if I'm alright and if I can manage for just a little longer."
 "That's when I suddenly see a silhouette appear in front of him, approaching us at breakneck speed."
 "My eyes grow large and I try to shout a warning."
 ha "{size=+10}WATCH OUT!{/size}"
 
+play sound sfx_bicyclecrash
+
 $ renpy.music.set_volume(0.0, channel="ambient")
+with Pause(0.6)
 scene black
 with None
-play sound sfx_impact2
 with Pause(3.0)
 
 $ renpy.music.set_volume(1.0, delay=5.0, channel="ambient")
@@ -392,6 +408,9 @@ with openeye
 "I hurry over to him and kneel at his side."
 "{size=+10}{i}He's clutching his chest!{/i}{/size}"
 
+show ev rainyroad
+with mediumflash
+
 $ renpy.music.set_volume(0.7, channel="ambient")
 play music music_tragic
 
@@ -399,29 +418,22 @@ ha "{i}No!{/i}"
 "A single, desperate exclamation escapes my mouth as I realize what's happening to Hisao."
 "With that realization comes a sharp pain in my own chest as if one of my ribs just snapped and punctured my heart."
 "{i}This can't be happening!{/i}"
-
-show bg:
-    blur 5
-    xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate 5
-    zoom 1.15
-with Dissolve(1.5)
-
 "Hisao's breathing is strained. I want to help him, but I'm completely lost at what to do."
 "{i}He's going to die!{/i}"
 "He raises his head for a moment and looks up at me."
 "I want to reach out to him, but my body won't obey… Its only reaction a frantic trembling."
-"{i}Why can't I move?{w} Somebody help him! Please!{/i}"
-"His eyes close again.{w} The pain in my chest grows so intense that tears are forced out of my eyes, joining the raindrops on my cheeks."
-
-show bg:
-    blur 10
-    xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate 10
-    zoom 1.29
-with Dissolve(1.5)
-
+"{i}Why can't I move? Somebody help him! Please!{/i}"
+"His eyes close again. The pain in my chest grows so intense that tears are forced out of my eyes, joining the raindrops on my cheeks."
 "Am I having a heart attack as well?"
 om "Young lady, is your friend alright? I'm sorry I didn't see you two in time. I was in a hurry. That blasted rain."
-"{i}He's dying.{w} I'm losing him.{w} Like I'm losing Lilly.{/i}"
+
+show ev:
+    zoom 1.2 align (0.39, 0.22)
+with Dissolve(1.0)
+
+"{i}He's dying.{/i}"
+"{i}I'm losing him.{/i}"
+"{i}Like I'm losing Lilly.{/i}"
 "I'm overcome by an intense sensation of fear, like ten years ago when Mother scrambled in front of me, and we screamed as the flames got to us."
 
 show black:
@@ -443,7 +455,14 @@ show black:
 with Dissolve(1.0)
 
 "I feel like I'm suffocating. With each fruitless gasp for breath I'm getting more and more terrified."
-"{i}Stop!{w} Make this stop!{w} Help me!{/i}"
+
+show ev:
+    zoom 1.5
+with Dissolve(1.0)
+
+"{i}Stop!{/i}"
+"{i}Make this stop!{/i}"
+"{i}Help me!{/i}"
 om "Young lady, I think we should call an ambulance."
 
 $ renpy.music.set_volume(0.5, 1.0, "ambient")
@@ -454,6 +473,11 @@ with Dissolve(1.0)
 "I still can't move."
 "I can't breathe, but I can't faint either as if some twisted deity has decided it's more amusing to keep me fully aware as the love of my life is dying in front of me and is keeping me conscious for the sheer cruel fun of it."
 om "Young lady?"
+
+show ev:
+    zoom 1.8
+with Dissolve(1.0)
+
 "{i}I can't breathe.{/i}"
 om "Young lady, can you hear me?"
 "{i}Why can't I breathe?{/i}"

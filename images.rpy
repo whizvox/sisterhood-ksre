@@ -103,9 +103,12 @@ init 1:
 
     # special events
     image ev rainyroad:
-        f"{sh_path}/event/rainyroad_a.jpg" with Dissolve(0.5)
-        f"{sh_path}/event/rainyroad_b.jpg" with Dissolve(0.5)
-        repeat
+        block:
+            rain(f"{sh_path}/event/rainyroad/rainyroad_a.jpg") with Dissolve(0.5)
+            0.5
+            rain(f"{sh_path}/event/rainyroad/rainyroad_b.jpg") with Dissolve(0.5)
+            0.5
+            repeat
     image rainmemory = Composite(
         (1920, 1080),
         (0, 0), "bg suburb_roadcenter_rn",
@@ -118,3 +121,83 @@ init 1:
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
     image shlogo title = f"{sh_path}/logo/logo_title.png"
+
+    # credits
+    image sh_credits = Text(_("""
+    {image=mods/sisterhood/logo/logo_title.png}
+    \n\n\n\n
+    {b}Backgrounds{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    deemur on Pixabay
+    Bernard Schuermann on Pixabay
+    Zencare Group Inc.
+    Jeremy Bishop on Unsplash
+    StockSnap on Pixabay
+    Massachusettes College of Art and Design
+    Harris' The San Francisco Steak Restaurant
+    Christina Mueller
+    GoodFreePhotos.com
+    LegendarySoul
+    whizvox
+    \n\n
+    {b}Sound Effects{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    EmpressKathryne on Pixabay
+    CaganCelik on FreeSound
+    bevibeldesign on FreeSound
+    Kraftaggregat on FreeSound
+    ShidenBeatsMusic on Pixabay
+    ellie.vanderlip on FreeSound
+    Kelieon on YouTube
+    Yuval on FreeSound
+    G.Lamont on FreeSound
+    amszala on FreeSound
+    Adam_Joseph on FreeSound
+    PNMCarrieRailfan on FreeSound
+    Juan_Merie_Venter on FreeSound
+    plivesey on FreeSound
+    whizvox
+    \n\n
+    {b}Music{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    "Waltz in A Minor" by CalvinClavier on Pixabay
+    \n\n
+    {b}Event Art{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    ZenMaruki
+    PrinceG07
+    Likhos
+    LegendarySoul
+    \n\n
+    {b}Sprite Art{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    DIZZEN
+    \n\n
+    {b}Sprite Edits{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    nijo
+    Alex
+    whizvox
+    \n\n
+    {b}Special Thanks{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    Alex
+    Grayest
+    Ikariya
+    Faken
+    Vladimir Hodakov
+    EurobeatJester
+    Haiti
+    Fleeting Heartbeat Studios
+    Four Leaf Studios
+    The Katawa Shoujo Community
+    \n\n\n\n
+    {b}Original Work{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    "Sisterhood" by Guest Poster
+    \n\n\n\n
+    {b}Directing, Engineering, Administration{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    whizvox
+    \n\n\n\n
+    """), color="#FFF", text_align=0.5, xalign=0.5, size=42)
