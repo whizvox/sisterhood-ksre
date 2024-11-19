@@ -64,7 +64,7 @@ label sisterhood_credits:
     show credits mask
     with Dissolve(2.0)
 
-    play music music_innocence
+    play music music_credits
 
     show sh_credits behind credits at Transform(xalign=0.5, yalign=0.0)
     with Dissolve(2.0)
@@ -73,9 +73,9 @@ label sisterhood_credits:
 
     show sh_credits behind credits:
         xalign 0.5 yalign 0.0
-        acdc20_warp 60.0 yalign 1.0
+        acdc20_warp 55 yalign 1.0
     
-    pause 62.5
+    pause 55
 
     hide sh_credits
     with Dissolve(2.0)

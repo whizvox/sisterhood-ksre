@@ -61,9 +61,9 @@ init 1 python:
     for face in ("smile", "serious"):
         for i in range(1, 3):
             renpy.image(f"takawa {face}_close_blur{i}", f"{sh_path}/sprites/takawa/close/takawa_{face}_close_blur{i}.png")
-    sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb"], poses=["basic", "emb"], outfits=["clip"])
+    sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile"], poses=["emb"], outfits=["cas_clip", "cas_nohat_clip"])
-    sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
+    sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("mishashort", ["sign_sad_cas"])
@@ -78,7 +78,7 @@ init 1 python:
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4_large", "4", "4a", "5", "5a"])
-    sh_event("caress", ["1"])
+    sh_event("caress", ["normal", "large"])
 
     sh_fireflies()
 
@@ -121,6 +121,9 @@ init 1:
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
     image shlogo title = f"{sh_path}/logo/logo_title.png"
+
+    # extra gui
+    image white_vignette = f"{sh_path}/gui/white_vignette.png"
 
     # credits
     image sh_credits = Text(_("""

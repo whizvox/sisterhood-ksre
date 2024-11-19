@@ -53,6 +53,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Uniform/Uni Pout", "basic_pout_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uni Speak", "basic_speak_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uni Worry", "basic_worry_uni"),
+    ("sprite edits/hisao/Uni Neutral-Blush", "basic_neutralblush_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Annoy", "cross_annoy_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Blush", "cross_blush_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Frown", "cross_frown_uni"),
@@ -149,6 +150,7 @@ natsume = [
 hanako = [
     ("hanako sprites upscaled/mednoise/hanako_basic_bashful_clip", "basic_bashful_clip"),
     ("hanako sprites upscaled/mednoise/hanako_basic_distant_clip", "basic_distant_clip"),
+    ("hanako sprites upscaled/mednoise/hanako_basic_worry_clip", "basic_worry_clip"),
     ("hanako sprites upscaled/mednoise/hanako_emb_blushtimid_cas_clip", "emb_blushtimid_cas_clip"),
     ("hanako sprites upscaled/mednoise/hanako_emb_blushtimid_cas_nohat_clip", "emb_blushtimid_cas_nohat_clip"),
     ("hanako sprites upscaled/mednoise/hanako_emb_downsmile_cas_clip", "emb_downsmile_cas_clip"),
