@@ -17,7 +17,7 @@ screen sisterhood():
             has vbox
 
             vbox:
-                textbutton _("Start") action If(main_menu, true=ShowMenu("sisterhood_nsfw_choice"), false=None)
+                textbutton _("Start") action If(main_menu, true=Start("sisterhood_start"), false=None)
             
             vbox:
                 textbutton _("Chapter Select") action If(main_menu, true=ShowMenu("sisterhood_chapter_select"), false=None)
@@ -113,37 +113,6 @@ screen sisterhood_about():
                 text _("A port of Guest Poster's famous fan fiction.")
                 text _("Ported by whizvox")
         
-        textbutton _("Return"):
-            style "return_button"
-            action ShowMenu("sisterhood")
-
-screen sisterhood_nsfw_choice():
-    tag menu
-    style_prefix "pxt_about"
-    if main_menu:
-        add "main_menu_bg"
-    add "blind"
-
-    frame:
-        style_suffix "interface"
-        xsize 1200
-        has vbox
-        text _("Important!"):
-            bold True
-            size bold_size
-        frame:
-            has vbox
-            vbox:
-                spacing 20
-                text _("Warning: There are several explicit adult scenes in this experience. How do you wish to view them?")
-                vbox:
-                    style_prefix "check"
-                    textbutton _("Skip scenes") action SetVariable("persistent.sh_nsfwlevel", 0)
-                    textbutton _("Show text only") action SetVariable("persistent.sh_nsfwlevel", 1)
-                    textbutton _("Show all") action SetVariable("persistent.sh_nsfwlevel", 2)
-                textbutton _("Confirm and begin"):
-                    style "gui_button"
-                    action Start("sisterhood_start")
         textbutton _("Return"):
             style "return_button"
             action ShowMenu("sisterhood")

@@ -21,7 +21,7 @@ init 1 python:
                     variant += face
                     if outfit != "":
                         variant += "_" + outfit
-                    imgpath = f"{sh_path}/sprites/{char}/{char}_{variant}.png"
+                    print(imgpath)
                     if renpy.loadable(imgpath):
                         renpy.image(f"{char} {variant}", imgpath)
                         renpy.image(f"{char} {variant}_ss", sp_sunset(imgpath))
@@ -45,8 +45,8 @@ init 1 python:
                 (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
             ))
 
-    def sh_event(base_name, variants):
-        sh_image_variants(sh_path + "/event", base_name, variants, lambda variant, path: renpy.image(f"ev {base_name}_{variant}", path))
+    def sh_event(base_name, variants, mark_adult=False):
+        sh_image_variants(sh_path + "/event", base_name, variants, lambda variant, path: renpy.image(f"ev {base_name}_{variant}", adult(path) if mark_adult else path))
     
     def sh_fireflies():
         for i in range(0, 15):
@@ -69,6 +69,7 @@ init 1 python:
     sh_sprites("mishashort", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close"])
     sh_sprites("doctor", ["bigsmile"])
+    sh_sprites("kenji", ["happy", "neutral", "tsun"], [""], ["gym"])
 
     phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo"])
     phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)
@@ -77,7 +78,7 @@ init 1 python:
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
-    sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4_large", "4", "4a", "5", "5a"])
+    sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4_large", "4", "4a", "5", "5a"], mark_adult=True)
     sh_event("caress", ["normal", "large"])
 
     sh_fireflies()

@@ -20,17 +20,11 @@ init python:
     # unknown characters
     ta_ = Character(_("Old Woman"), who_color="#f3ccff")
 
-    # preferences
-    # 0 = skip, 1 = text w/ black cg, 2 = text w/ blurred cg, 3 = show all
-    sh_r18_level = 3
-
     sh_path = "mods/sisterhood"
     sh_bgs = sh_path + "/bgs"
 
     def sh_sfx(name):
         return sh_path + "/sfx/" + name + ".ogg"
-    
-    persistent.sh_nsfwlevel = 0
 
 init 1 python:
     for chapter in sisterhood_chapters:
@@ -59,7 +53,8 @@ init:
         (_("Chapter 14"), "sisterhood_ch14.sh_ch14", _("Hisao wakes up to an unfamiliar yet familiar ceiling."), "hisao"),
         (_("Chapter 15"), "sisterhood_ch15.sh_ch15", _("Hisao is determined to reconcile with Hanako."), "hisao"),
         (_("Chapter 16"), "sisterhood_ch16.sh_ch16", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
-        (_("Chapter 17"), "sisterhood_ch17.sh_ch17", _("Lilly and Hanako talk it out."), "lilly")
+        (_("Chapter 17"), "sisterhood_ch17.sh_ch17", _("Lilly and Hanako talk it out."), "lilly"),
+        (_("Chapter 17 Alt"), "sh_ch17alt.sh17alt", _("Hisao talks to Kenji and Miss Takawa."), "hisao")
     ]
 
     # TRANSFORMS

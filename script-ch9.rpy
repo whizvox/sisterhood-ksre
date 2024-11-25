@@ -321,6 +321,7 @@ hi "H-hey!"
 
 show ev hotel_2_large:
     zoom 0.9 align (0.1, 0.9)
+show black behind ev # fix transparent bg showing up if H-scenes are disabled
 with Dissolve(1.0)
 
 hi "That feels really nice, Hanako."
