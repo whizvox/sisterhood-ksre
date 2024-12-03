@@ -21,7 +21,7 @@ init 1 python:
                     variant += face
                     if outfit != "":
                         variant += "_" + outfit
-                    print(imgpath)
+                    imgpath = f"{sh_path}/sprites/{char}/{char}_{variant}.png"
                     if renpy.loadable(imgpath):
                         renpy.image(f"{char} {variant}", imgpath)
                         renpy.image(f"{char} {variant}_ss", sp_sunset(imgpath))
@@ -101,6 +101,8 @@ init 1:
     image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
     image bg hotel_hallway = f"{sh_bgs}/hotel_hallway.jpg"
     image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
+    image bg hosp_room2_blur = f"{sh_bgs}/hosp_room2_blur.jpg"
+    image bg hosp_ceiling_blur = f"{sh_bgs}/hosp_ceiling_blur.jpg"
 
     # special events
     image ev rainyroad:
