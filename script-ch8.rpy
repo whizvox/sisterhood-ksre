@@ -3,10 +3,11 @@ label .sh_ch8:
 
 call sisterhood_timeskip
 
-scene bg arcade
+scene bg arcade_shooter
 with Dissolve(2.0)
 
 play music music_ease fadein 0.5
+play ambient sfx_arcadeambience fadein 0.5 volume 0.4
 
 hi "The right one, focus on the right one!"
 ha "Y-yes!"
@@ -20,27 +21,25 @@ ha "A-affirmative, Sergeant Nakai."
 "At the mechanical announcement, we both drop the gun-shaped controllers we've been holding while the next mission starts loading up."
 ha "H-Hisao?"
 
-show hisao smile_cas
+show hisao basic_smile_polo_close
 with charaenter
 
 hi "Yeah?"
 ha "Have you played these kinds of games before?"
 
-show hisao neutral_cas
+show hisao basic_speak_polo_close
 with chchange
 
 hi "Before I had my heart attack, I sometimes visited game centers with friends. These rail shooters were among the kinds of things we used to play."
 
-show hisao smile_cas
+show hisao cross_smile_polo_close
 with chchange
 
 hi "The ones I played were much more primitive than this one though. Technology sure speeds along."
 "{font=pixel}\"Get ready!\"{/font}"
 "As another droning announcement indicates we're about the start the next level, we take up the gun units again and ready them."
 
-show hisao at tworight
-with charamove
-show hisao laugh_cas
+show hisao cross_grin_polo at tworight
 with chchange
 
 hi "You know, I never suspected that the next time I'd be visiting a game center, it'd be as part of a date."
@@ -51,7 +50,7 @@ hi "You know, I never suspected that the next time I'd be visiting a game center
 ha "I… I really like it so far."
 "This time we're on top of some vehicle chasing an enemy truck."
 
-show hisao neutral_cas
+show hisao basic_neutral_polo
 with chchange
 
 hi "Have you played many video games in the past, Hanako?"
@@ -63,27 +62,35 @@ hi "They have a retro section here as well. We could check it out later. We migh
 ha "Sure."
 "Suddenly explosive charges are being tossed at us from inside the truck. A big blast and our life meters drop down by 20\%."
 
-show hisao surprised_cas
+show hisao basic_annoy_polo
 with chchange
 
 hi "Hey, how the heck are we supposed to deal with that?"
+
+show hisao basic_frown_polo
+with chchange
+
 "We both try shooting the vehicle, but nothing happens. Another charge is tossed and now our life meters are at 60\%."
 ha "T-the tires perhaps?"
 "Again, nothing. Another charge gets tossed, but as Hisao shoots at it, it explodes prematurely and the enemy truck shakes from the blast."
 hi "We're supposed to shoot the charges before they reach us!"
 "Another charge gets tossed. This time I intercept it and the truck shakes even more."
 
-show hisao grin_cas
+show hisao cross_grin_polo
 with chchange
 
 hi "Good shot, Hanako."
 ha "They're always coming from the same point."
 "Another charge is blown, but this time the truck starts moving from side to side."
 
-show hisao surprised_cas
+show hisao basic_annoy_polo
 with chchange
 
 hi "Oh come on!"
+
+show hisao basic_frown_polo
+with chchange
+
 "We miss the next two charges and now we're at 20\%. Hisao gets the next one and the back of the truck ignites."
 ha "D-did we do it?"
 "Then one more charge is thrown from the burning truck, the screen turns red and a big countdown appears."
@@ -92,8 +99,15 @@ hi "Blast!"
 hide hisao
 with charaexit
 
-"I hastily reach for my purse and take out a coin, so we can continue. But as I bend down to slide it into the slot…"
+"I hastily reach for my purse and take out a coin, so we can continue."
 
+show bg:
+    zoom 1.1 align (0.1, 1.0)
+with locationchange
+
+"But as I bend down to slide it into the slot…"
+
+play sound sfx_impact
 with hpunch
 
 ha "Ouch!"
@@ -109,7 +123,7 @@ hi "OW!!!"
 "We both did the exact same thing at the exact same time."
 "Hisao lets out a resigned sigh."
 
-show hisao smile_cas
+show hisao cross_smile_polo_close
 with charaenter
 
 hi "I don't know about you, but I don't feel like playing through those previous stages again. Let's go and do something else."
@@ -122,7 +136,8 @@ with charaexit
 "He's not wearing the usual sweater vest he usually has on when not wearing his school uniform. Instead, he's wearing a shirt I picked out for him during our shopping trip in Hokkaido."
 "I kinda like the way it looks on him, though I suspect he's also wearing it to stand out less in our current environment."
 
-scene bg arcade_airhockey
+scene bg arcade_floor:
+    zoom 1.0
 with locationchange
 
 "As we reach a quieter area, Hisao suddenly stops. This corner of the hall contains several air hockey tables."

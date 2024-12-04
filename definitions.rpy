@@ -95,6 +95,7 @@ init:
     define sfx_gostone_stress1 = sh_sfx("gostone_medium_stress1")
     define sfx_gostone_stress2 = sh_sfx("gostone_medium_stress2")
     define sfx_bedsheets = sh_sfx("bedsheets")
+    define sfx_arcadeambience = sh_sfx("arcade_ambient")
     define sfx_shower = sh_sfx("shower")
     define sfx_taps1 = sh_sfx("taps1")
     define sfx_taps2 = sh_sfx("taps2")

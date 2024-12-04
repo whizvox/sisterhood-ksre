@@ -95,6 +95,10 @@ init 1:
     image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
     image bg newspaper_club = f"{sh_bgs}/newspaper_club.jpg"
+    image bg arcade_shooter = f"{sh_bgs}/arcade_shooter.jpg"
+    image bg arcade_floor = f"{sh_bgs}/arcade_floor.jpg"
+    image bg arcade_crane = f"{sh_bgs}/arcade_crane.jpg"
+    image bg arcade_bike = f"{sh_bgs}/arcade_bike.jpg"
     image bg hotel_bathroom = f"{sh_bgs}/hotel_bathroom.jpg"
     image bg hotel_room = f"{sh_bgs}/hotel_room3.jpg"
     image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
@@ -156,6 +160,7 @@ init 1:
     ellie.vanderlip on FreeSound
     Kelieon on YouTube
     Yuval on FreeSound
+    USBMED Ambiences Sound Library on FreeSound
     G.Lamont on FreeSound
     amszala on FreeSound
     Adam_Joseph on FreeSound
