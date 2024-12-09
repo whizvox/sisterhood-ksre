@@ -136,13 +136,13 @@ with charaexit
 "He's not wearing the usual sweater vest he usually has on when not wearing his school uniform. Instead, he's wearing a shirt I picked out for him during our shopping trip in Hokkaido."
 "I kinda like the way it looks on him, though I suspect he's also wearing it to stand out less in our current environment."
 
-scene bg arcade_floor:
+scene bg arcade_airhockey:
     zoom 1.0
 with locationchange
 
 "As we reach a quieter area, Hisao suddenly stops. This corner of the hall contains several air hockey tables."
 
-show hisao smile_cas
+show hisao cross_smile_polo
 with chchange
 
 hi "Wanna play a little match, Hanako?"
@@ -157,83 +157,160 @@ with charaexit
 "I pick up a mallet, take the puck from the tray beneath my goal and place it on the table."
 ha "Ready, Hisao?"
 
-show hisao grin_cas
+show hisao basic_grin_polo
 with chchange
 
 hi "Bring it on."
+
+play sound sfx_airhockey_rally loop
+
 "I launch the puck towards him. He hits it towards the right railing. I deflect the puck with more luck than skill. Then he sends the puck straight ahead before I can react."
-# TODO play air hockey puck score SFX
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}1:0{/font}"
 "I fish the puck out of my tray and place it in front of my mallet again."
 
-show hisao neutral_cas
+show hisao basic_neutral_polo
 with chchange
+
+play sound sfx_airhockey_rally loop
 
 hi "Hey Hanako, it wasn't necessary for you to pay up back there."
 "I bat the puck across the field. It ricochets off his mallet and goes straight towards me again. I aim for the left rail and hit the puck towards it."
 ha "But you were the one who paid for the first credit."
+
+play sound sfx_airhockey_score2
+
 "{font=pixel}1:1{/font}"
 hi "I offered to foot the bill for this entire visit, didn't I?"
 ha "Y-you really don't have to."
+
+play sound sfx_airhockey_rally loop
+
 "I launch the puck towards him again, but this time he tilts his mallet causing the puck to get stuck under it."
 "Isn't that officially a foul?"
+
+show hisao basic_speak_polo
+with chchange
+
 hi "You'd rather I didn't or you really don't want me to?"
 ha "Huh?"
 hi "That day we started our relationship, you were worried that you were useless. That you weren't able to do anything for the people you cared about."
 hi "Do you still feel that way?"
+
+show hisao basic_neutral_polo
+with chchange
+
 "He takes his mallet off the puck and gently bats it in my direction. I stop it with my hand, take aim and hit it towards the rail near me, causing it to fly across the field in a frantic zigzag, but he catches it and hits it back in a similar manner."
 "I try to deflect it, but accidentally bounce it into my own goal."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}2:1{/font}"
 ha "I'm not really sure. I… don't… think… I… do."
+
+play sound sfx_airhockey_rally loop
+
 "He picks up the puck and launches it towards the right rail, but this time I deflect it towards the left rail in time."
 "He hits it under the same angle and we repeat this pattern several times until I change the angle just a little bit and the puck slides into his goal."
+
+play sound sfx_airhockey_score2
+
 "{font=pixel}2:2{/font}"
 
-show hisao smile_cas
+show hisao basic_smile_polo
 with chchange
 
 hi "I don't think there's need to doubt yourself."
 hi "I mean, we often study together. You supported me in getting into the science club. And I have lots of fun hanging out with you."
 ha "S-so, isn't everything okay then?"
+
+play sound sfx_airhockey_rally loop
+
 "He bats the puck hard into my left corner so it bounces out of my reach before I can react. Then the right corner. Then the left again. Then the right."
 "As I move my mallet to the left in order to catch where I predict the puck will go next, he sends a straight shot right into my goal."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}3:2{/font}"
 
-show hisao neutral_cas
+show hisao basic_neutral_polo
 with chchange
 
 hi "There's something I noticed lately. Something about our relationship."
+
+play sound sfx_airhockey_rally loop
+
 "I try the zigzag shot again. He deflects it, so I try the zigzag on the other rail. This breaks through his guard."
+
+play sound sfx_airhockey_score2
+
 "{font=pixel}3:3{/font}"
 ha "W-what is it?"
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}4:3{/font}"
+
+show hisao basic_speak_polo
+with chchange
+
 hi "Whenever I help you with your science homework…"
+
+play sound sfx_airhockey_score2
+
 "{font=pixel}4:4{/font}"
-$ renpy.music.set_volume(0.8)
+$ renpy.music.set_volume(0.8, delay=1.0)
 hi "…you insist on doing some Japanese exercises with me in return."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}5:4{/font}"
 hi "Whenever I give you a shoulder rub to ease your stress…"
+
+play sound sfx_airhockey_score2
+
 "{font=pixel}5:5{/font}"
-$ renpy.music.set_volume(0.6)
+$ renpy.music.set_volume(0.6, delay=1.0)
 hi "…you insist on returning the favor, even if I'm not stressed myself."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}6:5{/font}"
 hi "Whenever we go on a date…"
+
+play sound sfx_airhockey_score2
+
 "{font=pixel}6:6{/font}"
-$ renpy.music.set_volume(0.4)
+$ renpy.music.set_volume(0.4, delay=1.0)
 hi "…you always insist on paying at least half. Even if I say the whole thing's on me."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}7:6{/font}"
 ha "What's wrong with having a give-and-receive relationship?"
+
+play sound sfx_airhockey_score2
+
+show hisao basic_neutral_polo
+with chchange
+
 "{font=pixel}7:7{/font}"
 "Hisao takes the puck out of the tray, but doesn't immediately place it onto the field."
 
 stop music fadeout 0.5
 
-show hisao sad_cas
+show hisao basic_speak_polo
 with chchange
 
 hi "It feels off sometimes. As if you're keeping a tally. Trying to carefully balance things out each time. Making sure you never receive more than you give."
 hi "That's not a give-and-receive relationship. That's more like a give-and-pay-back-relationship."
 hi "I enjoy doing things for you, but only if you don't see those things as debts that must be paid off as quickly as possible."
+
+show hisao basic_neutral_polo
+with chchange
+
 "I fall silent as I try to recall those moments and what I felt at the time."
 "Was it fear?"
 "Fear of us once more slipping into a caretaker-caretakee relationship if I didn't actively prevent it from happening?"
@@ -241,31 +318,55 @@ hi "I enjoy doing things for you, but only if you don't see those things as debt
 "Fear of being deemed useless?"
 "I feel embarrassed upon being called out on this, as if I got caught with my hand in a cookie jar."
 
-show hisao neutral_cas
+show hisao basic_speak_polo
 with chchange
 
 hi "You have faith in me, don't you Hanako? I'm not gonna walk out on you just like that."
 hi "I feel there's a whole lot more between us than just a list of favors and counter favors. This isn't how intimate relationships are supposed to work."
+
+show hisao basic_neutral_polo
+with chchange
+
 "I know that, of course."
 "Just like I know that whenever I have to pass through a crowd, the odds of everyone in there noticing my scarring at exactly the same moment and all of them staring at me at once is pretty close to non-existent, but I'm still terrified of it happening."
 "None of my anxieties really make sense from a rational point of view, but that doesn't make them any less real for me."
 "If Miss Yumi is to be believed, anxieties don't go away overnight just like that, nor can they be dismissed with logic."
 "What was it she said? Something about the heart not listening to reason, only to experiences?"
-"I watch Hisao place the puck back on the table and prepare for another assault. We pass it back and forth several times before it slips past my mallet."
+"I watch Hisao place the puck back on the table and prepare for another assault."
+
+play sound sfx_airhockey_rally loop
+
+"We pass it back and forth several times before it slips past my mallet."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}8:7{/font}"
 
-play music music_ease volume 0.2 fadein 0.5
+play music music_ease volume 0.6 fadein 0.5
+play sound sfx_airhockey_rally loop
+
+show hisao basic_speak_polo
+with chchange
 
 hi "I'm not saying I don't enjoy getting a backrub in return on occasion, but it shouldn't be mandatory."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}9:7{/font}"
+
+play sound sfx_airhockey_rally loop
+
 hi "I really enjoy the lunches you bring along for me every so often. I'm not sure if you were expecting…"
 ha "No, no, no, no, no… I really d-don't need you to r-return the favor. I r-really enjoy m-making them f-for you."
 "As I blurt out a denial of his suggestion, the puck zips into my goal slot. Looks like Hisao made his winning point."
+
+play sound sfx_airhockey_score1
+
 "{font=pixel}10:7{/font}"
 
-show hisao smile_cas
+show hisao basic_smile_polo
 with chchange
-$ renpy.music.set_volume(0.4, delay=0.5)
+$ renpy.music.set_volume(0.8, delay=0.5)
 
 hi "Just like I enjoy doing things for you on occasion. Giving and receiving can both be fun in their own way."
 hi "I don't think we should keep score… Trying to keep things exactly even will only make our relation appear rigid and unnatural."
@@ -275,12 +376,12 @@ hi "I do, Hanako."
 ha "I-I'm trying, and I promise to t-try even harder from n-now on."
 "Hisao walks over to me and puts a hand on my shoulder."
 
-show hisao smile_cas_close
+show hisao basic_smile_polo_close
 with chchange
 
 hi "That's enough for me, Hanako. Thanks."
 
-show hisao grin_cas_close
+show hisao basic_grin_polo_close
 with chchange
 $ renpy.music.set_volume(1.0, delay=0.5)
 
@@ -397,7 +498,7 @@ with chchange
 hi "That was pretty fun. Where to now?"
 ha "Hmmm…"
 
-scene bg arcade
+scene bg arcade_bike
 with locationskip
 
 "We spend the next hours, among other things, beating up cyborg soldiers with ninja weapons, navigating monster-filled dungeons in search for food and treasure, popping balloons with harpoon guns, popping bubbles with monsters inside and watching the attract mode of every cabinet in the area."
@@ -467,6 +568,7 @@ with charaenter
 hi "So, what do you want to do next?"
 
 stop music fadeout 0.5
+stop ambient fadeout 0.5
 
 scene bg coffeeshop
 with locationskip

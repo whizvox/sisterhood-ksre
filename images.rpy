@@ -87,7 +87,7 @@ init 1:
     # backgrounds
     image bg inverness_backyard = f"{sh_bgs}/backyard.jpg"
     image bg inverness_shore = f"{sh_bgs}/shore.jpg"
-    image bg inverness_house_front = f"{sh_bgs}/house_front.png"
+    image bg inverness_house_front = f"{sh_bgs}/house_front.jpg"
     image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
     image bg therapist_office_blur1 = f"{sh_bgs}/therapist_office_blur1.jpg"
     image bg therapist_office_blur2 = f"{sh_bgs}/therapist_office_blur2.jpg"
@@ -95,10 +95,13 @@ init 1:
     image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
     image bg newspaper_club = f"{sh_bgs}/newspaper_club.jpg"
+    image bg arcade_airhockey = f"{sh_bgs}/arcade_airhockey.jpg"
+    image bg arcade_fightgame = f"{sh_bgs}/arcade_fightgame.jpg"
     image bg arcade_shooter = f"{sh_bgs}/arcade_shooter.jpg"
     image bg arcade_floor = f"{sh_bgs}/arcade_floor.jpg"
     image bg arcade_crane = f"{sh_bgs}/arcade_crane.jpg"
     image bg arcade_bike = f"{sh_bgs}/arcade_bike.jpg"
+    image bg coffeeshop = f"{sh_bgs}/coffeeshop.jpg"
     image bg hotel_bathroom = f"{sh_bgs}/hotel_bathroom.jpg"
     image bg hotel_room = f"{sh_bgs}/hotel_room3.jpg"
     image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
@@ -161,6 +164,8 @@ init 1:
     Kelieon on YouTube
     Yuval on FreeSound
     USBMED Ambiences Sound Library on FreeSound
+    Ataraxy ASMR on YouTube
+    Drobot Dean
     G.Lamont on FreeSound
     amszala on FreeSound
     Adam_Joseph on FreeSound
