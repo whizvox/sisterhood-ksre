@@ -147,6 +147,7 @@ init 1:
     Jeremy Bishop on Unsplash
     StockSnap on Pixabay
     Massachusettes College of Art and Design
+    Drobot Dean
     Harris' The San Francisco Steak Restaurant
     Christina Mueller
     GoodFreePhotos.com
@@ -165,7 +166,8 @@ init 1:
     Yuval on FreeSound
     USBMED Ambiences Sound Library on FreeSound
     Ataraxy ASMR on YouTube
-    Drobot Dean
+    Super Street Figher II
+    Halo: Combat Evolved
     G.Lamont on FreeSound
     amszala on FreeSound
     Adam_Joseph on FreeSound
