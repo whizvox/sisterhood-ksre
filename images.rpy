@@ -79,15 +79,16 @@ init 1 python:
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4_large", "4", "4a", "5", "5a"], mark_adult=True)
+    sh_event("dance", ["large", "normal"])
     sh_event("caress", ["normal", "large"])
 
     sh_fireflies()
 
 init 1:
     # backgrounds
-    image bg inverness_backyard = f"{sh_bgs}/backyard.jpg"
+    image bg satou_house_patio = f"{sh_bgs}/satou_house_patio.jpg"
     image bg inverness_shore = f"{sh_bgs}/shore.jpg"
-    image bg inverness_house_front = f"{sh_bgs}/house_front.jpg"
+    image bg satou_house_entrance = f"{sh_bgs}/satou_house_entrance.jpg"
     image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
     image bg therapist_office_blur1 = f"{sh_bgs}/therapist_office_blur1.jpg"
     image bg therapist_office_blur2 = f"{sh_bgs}/therapist_office_blur2.jpg"

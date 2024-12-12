@@ -3,7 +3,7 @@ label .sh_ch1:
 
 call sisterhood_timeskip
 
-scene bg inverness_backyard
+scene bg satou_house_patio
 with Dissolve(2.0)
 
 play music music_happiness fadein 0.5
@@ -20,29 +20,33 @@ play sound sfx_can
 "I turn my head towards the source of the sound and do my best to appear as disapproving as I can."
 li "Akira, do you really think it's a wise idea to be drinking this early? How can you think of drinking alcohol before we've even had lunch?"
 
-show akira basic_smile at center
+show akira basic_smile at tworight
 with charaenter
 
 aki "Hey, unlike you I've been up and about for four hours already."
 aki "Besides, I have a reason to celebrate. Check out what I got this morning."
+
+show akira basic_smile_close at center
+with chchange
+
 "As I hold out my hand, my sister passes me a rectangular piece of paper that has a familiar size. I remember having held a similar piece not too long ago."
 li "A plane ticket! So you have finished making arrangements for our trip back to Japan?"
 aki "Not just that. I managed to convince the old man to let us fly business class!"
 
-show akira basic_laugh
-with chchange
+show akira basic_laugh_close
+with chchangefast
 
 aki "We'll be travelling back in STYLE, BABY!!!"
 "I wince a little at my sister's overly enthusiastic announcement, but manage to compose myself and smile."
 li "Fitting accommodations for your new position in the legal affairs department at head office, are they not?"
 
-show akira basic_lost
+show akira basic_lost_close
 with chchange
 
 "The playful retort I was expecting doesn't come."
 "Uncomfortable silences aren't exactly common around Akira. Did I misjudge her yesterday evening?"
 
-show akira basic_resigned
+show akira basic_resigned_close
 with chchange
 
 aki "Why don't we have a little walk, Sis? A little stroll by the bay shore'll do you good."
@@ -295,19 +299,20 @@ li "Hmmm… would you be willing to elaborate on who 'we' might be?"
 show hanako def_worry_phone
 with chchange
 
-ha "Ah… no, I mean… I meant to say 'I could tell you in person'."
+ha "Ah… no, I mean… I meant to say ‘I could tell you in person’."
 li "Hanako, do you mind if I make a few guesses?"
 
+$ _window = False
 hide hanako
 with charaexit
 
 stop ambient fadeout 1.0
 
-scene bg inverness_house_front
+scene bg satou_house_entrance
+show akira basic_laugh
 with locationskip
 
-show akira basic_laugh
-with charaenter
+$ _window_auto = True
 
 "By the time Akira and I arrive at the driveway of our parents' mansion, we're both wearing a huge smile on our face."
 aki "Hah, I still can't believe she got herself a boyfriend."

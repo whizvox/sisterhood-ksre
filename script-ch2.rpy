@@ -45,7 +45,8 @@ nvl show dissolve
 
 "As I reach the track, I see a familiar girl sitting on the bleachers."
 
-show emi sad_shy_gym
+show emi sad_shy_gym:
+    zoom 0.85 align (0.7, 1.0)
 with charaenter
 
 show emi excited_joy_gym
@@ -123,9 +124,6 @@ with chchange
 
 "That sounded a little bit grumpier than I intended, but Emi doesn't seem to pay it any heed and cheerfully accepts my suggestion to start the morning run."
 
-hide emi
-with charamovefast
-
 scene bg school_track_on
 with shorttimeskip
 
@@ -141,11 +139,10 @@ nvl clear
 n "I wonder how Emi and the nurse would react if they knew their teasing had an element of truth in it."
 n "Getting healthy enough to have sex wasn't the only reason behind my resolve to start working out, but the brief hiccup my heart experienced during the night Hanako and I slept together was enough to scare us both for a moment, and my condition hanging over our newly formed relationship like a dark cloud was something I wanted to avoid at all costs."
 
+nvl hide dissolve
+
 stop ambient fadeout 1.0
 queue ambient sfx_emijogging fadein 1.0
-
-nvl hide dissolve
-nvl clear
 
 "Emi politely waited for me at the finish line, and now we are casually doing our cool down lap. She doesn't waste any time bringing up a subject to talk about."
 

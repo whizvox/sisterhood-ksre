@@ -11,7 +11,7 @@ play music music_pearly fadein 0.5
 
 ha "C-could you let me check the directions one more time?"
 li "I don't think there's any need to hurry. I'm sure they'll have a table for us even if we don't show up exactly on time."
-"Lilly must have sensed the hint of frustration in my voice.{w} She has a point of course, but I don't want to risk them giving our reserved table to someone else."
+"Lilly must have sensed the hint of frustration in my voice. She has a point of course, but I don't want to risk them giving our reserved table to someone else."
 "I take another look at the small map I printed out and try to pinpoint our current location."
 "My orientation skills aren't particularly bad. In fact, they're probably better than my boyfriend's, but walking through an unfamiliar (and {i}crowded{/i}) part of the city keeping a keen eye on the surroundings while keeping my head down to avoid people's gazes has proven to be tough."
 "The fact that I'm holding onto Lilly, both for her benefit and my own assurance, and the fact that Lilly tends to attract people's attention due to her height and hair color aren't making things easier."
@@ -34,7 +34,7 @@ re "Welcome to our humble establishment. Do you wish to have a table for two?"
 ha "I arranged the reservation in your name."
 "I keep my voice barely above a whisper, but Lilly replies with a subtle nod and bows to the man who addressed us."
 
-show lilly basic_smile_cas_close
+show lilly basic_smile_cas_close at twoleft
 with charaenter
 
 li "Good evening. My name is Lilly Satou. I believe a reservation was made in my name."
@@ -56,8 +56,6 @@ with locationchange
 $ renpy.music.set_volume(1.0, 2.0)
 
 "As we get seated in what is indeed a relatively quiet corner of the restaurant, I let out a relieved sigh."
-
-# arablush, cheerful, displeased, emb, giggle, listen, oops, planned, pout, reminisce, sad, satisfied, sleepy, smileclosed, surprised, veryemb, weaksmile, behind_cheerful
 
 show lilly basic_satisfied_cas_close
 with charaenter
@@ -116,8 +114,7 @@ ha "Ummm, let's see…"
 show lilly basic_listen_cas_close
 with chchange
 
-"I can't say this place has the cheapest food in the world on offer."
-"It's a good thing Lilly offered to pay for a large share of the costs or my funds would have been completely drained by now."
+"I can't say this place has the cheapest food in the world on offer. It's a good thing Lilly offered to pay for a large share of the costs or my funds would have been completely drained by now."
 ha "Lilly?"
 
 show lilly basic_smile_cas_close
@@ -168,7 +165,7 @@ show lilly basic_smile_cas_close
 with chchange
 
 li "Does that surprise you?"
-"It does indeed.{w} Lilly's one of the most popular girls in school, and it's a miracle nobody ever set up a fan club at Yamaku dedicated to her."
+"It does indeed. Lilly's one of the most popular girls in school, and it's a miracle nobody ever set up a fan club at Yamaku dedicated to her."
 ha "You've never received any confessions?"
 
 show lilly basic_cheerfulblush_cas_close
@@ -178,7 +175,7 @@ li "I did. And not all of them from boys. Puberty can be a funny thing, particul
 "{i}Holy crap!{/i}"
 ha "And you turned them all down?"
 li "I suppose I am… very particular… about the people I get close to."
-"I guess she is.{w} I remember Hisao pointed out that he and I are the only people she spends her evenings with."
+"I guess she is. I remember Hisao pointed out that he and I are the only people she spends her evenings with."
 "I suppose a lot of the people she's on good terms with share a more superficial bond with her."
 ha "But you did let me get close… and Hisao, who's a boy."
 
@@ -192,7 +189,7 @@ show lilly basic_weaksmile_cas_close
 with chchange
 
 li "That question brings back memories."
-"It does.{w} A few days after the festival, I asked Lilly what she thought of Hisao. But she ended up reversing the question, and I ended up admitting I had a crush on him."
+"It does. A few days after the festival, I asked Lilly what she thought of Hisao. But she ended up reversing the question, and I ended up admitting I had a crush on him."
 "That was something out of the ordinary for me. I'm not someone who quickly takes a liking to other people, and yet I developed feelings for a person whom I had known for only a little more than a week."
 "I've never been able to completely explain it. He was kind to me, of course, but there was something else that probably played a larger role."
 "Even before I came to know that he faced a few circumstances similar to my own and that we shared several hobbies, there was something about him that felt familiar… comfortable. Like a kindred spirit."
@@ -242,7 +239,7 @@ show lilly basic_smile_cas_close
 with chchange
 
 li "I've come to know and like him, but it quickly became clear to me he was more interested in you than in me, so I did not allow myself to be open to the possibility. Thus, I did not fall in love with him."
-"That sounds so rational.{w} I still feel Lilly dismissed the opportunity prematurely because she wanted me to have a chance at love. And she didn't stop there."
+"That sounds so rational. I still feel Lilly dismissed the opportunity prematurely because she wanted me to have a chance at love. And she didn't stop there."
 ha "L-Lilly… I… I feel my relationship with Hisao would… never have happened without your efforts. And I never really thanked you for that."
 
 show lilly basic_surprised_cas_close
@@ -252,7 +249,7 @@ li "That isn't true, Hanako. The two of you fell in love on your own accord and 
 ha "But he never even would have spent enough time near me to start liking me if it hadn't been for you."
 ha "You're the one who was so nice to him and had him join our lunch breaks, and you're the one who started inviting him to our tea parties in the evening, and you got him involved in shopping for my presents and took us along for that night on the town,{nw}"
 ha "and he told me you were also the one who convinced him to keep having faith in me after I locked myself up in my room, and…{nw}"
-"{cps=3}…{w=0.5}{/cps}I suddenly realize I've started to ramble.{w} I cut myself off and take a deep breath."
+"{cps=3}…{w=0.5}{/cps}I suddenly realize I've started to ramble. I cut myself off and take a deep breath."
 ha "Lilly, is there… anything I can do for you in return? Anything at all?"
 
 show lilly basic_weaksmile_cas_close
@@ -272,7 +269,7 @@ with chchange
 li "I've heard Hisao has been looking into brochures for different universities."
 li "The last time I asked him what he wanted to do after Yamaku, he said he didn't know. Now he seems to have a clear idea on what to do after graduation."
 
-show lilly basic_satisfied_cas_close
+show lilly basic_smile_cas_close
 with chchange
 
 li "I think your support played a large role in that."
@@ -284,21 +281,25 @@ with chchange
 li "Is Hisao still enjoying those one-on-one discussion sessions with Mutou?"
 ha "I believe so, though they're not one-on-one anymore since last week."
 
-show lilly basic_surprised_cas_close
+show lilly basic_satisfied_cas_close
 with chchange
 
 li "More people joined?"
 ha "Yes, Hisao convinced his hall-mate to give the science club a try. He's the person from your class who worked with us on the main banner for the festival."
-li "Kenji Setou? Fascinating.{w} His science marks aren't bad, but I never knew he had a special interest in the subject."
+li "Kenji Setou? Fascinating. His science marks aren't bad, but I never knew he had a special interest in the subject."
+
+show lilly basic_surprised_cas_close
+with chchange
+
 li "Then again, I don't really know him very well. He rarely speaks in class."
 ha "I don't know him well either, but apparently he's rather talkative in private."
-ha "He's kind of a friend to Hisao, I think, but Hisao usually asks me to wait outside earshot range when Kenji comes up to talk, so I don't know what they talk about together.{w} 'Guy talk' is what Hisao calls it."
+ha "He's kind of a friend to Hisao, I think, but Hisao usually asks me to wait outside earshot range when Kenji comes up to talk, so I don't know what they talk about together. 'Guy talk' is what Hisao calls it."
 
 show lilly basic_cheerful_cas_close
 with chchange
 
 li "I wonder how Hisao managed to convince him."
-ha "Ummm… I… might know.{w} While Hisao was talking to Kenji, I tried listening in a bit."
+ha "Ummm… I… might know. While Hisao was talking to Kenji, I tried listening in a bit."
 ha "I couldn't hear very well, but suddenly Kenji raised his voice and said something like 'Alright! If it's really an all-guys club, I'd be crazy not to join.' Or something similar."
 
 show lilly basic_giggle_cas_close
@@ -343,12 +344,12 @@ ha "P-power corrupts and absolute power corrupts absolutely?"
 show lilly basic_giggle_cas_close
 with chchange
 
-"Lilly laughs heartily for a moment at the silly use of a term like 'absolute power' in combination with the student council presidency, before taking a sip of her drink and continuing."
+"Lilly laughs heartily for a moment at the silly use of a term like ‘absolute power’ in combination with the student council presidency, before taking a sip of her drink and continuing."
 
 show lilly basic_weaksmile_cas_close
 with chchange
 
-li "I do not think so in this case.{w} I don't think Shizune has ever really changed at all. She's still the exact same person she was half a decade ago."
+li "I do not think so in this case. I don't think Shizune has ever really changed at all. She's still the exact same person she was half a decade ago."
 
 show lilly basic_smileclosed_cas_close
 with chchange
@@ -404,8 +405,8 @@ show lilly basic_displeased_cas_close
 with chchange
 
 li "These days she regards my attempts to convince her to slow down and look before leaping as hypocritical."
-"Lilly's story has made me think.{w} I don't have exactly great chemistry with Shizune and Misha; Shizune's brashness and Misha's loudness are traits that tend to put me off."
-"But I don't dislike them either.{w} Hisao is on very good terms with both of them, a good thing since he often has to do assignments with them, even if he admits Shizune is sometimes a pain to deal with."
+"Lilly's story has made me think. I don't have exactly great chemistry with Shizune and Misha; Shizune's brashness and Misha's loudness are traits that tend to put me off."
+"But I don't dislike them either. Hisao is on very good terms with both of them, a good thing since he often has to do assignments with them, even if he admits Shizune is sometimes a pain to deal with."
 "Still, even though Hisao tends to butt heads with Shizune on a very regular basis, neither seems to walk away from those conflicts with hard feelings towards the other."
 "It's a pity the same can't true for Lilly and Shizune. Someone who dreams about setting up orphanages can't be a bad person in my book."
 ha "It's… ummm… a s-shame things have gotten so p-personal between you two."
@@ -416,7 +417,7 @@ with chchange
 
 li "It's nice to believe so, but I don't think a lot is bound to change anytime soon."
 li "It's a whole lot more likely that the science club will soon overshadow the student council in terms of membership."
-"Funny she says that, because if my \"secret project\" succeeds that could be the case soon."
+"Funny she says that, because if my “secret project” succeeds that could be the case soon."
 ha "Ummm… Lilly, can you… k-keep a secret?"
 
 show lilly basic_surprised_cas_close
@@ -445,7 +446,7 @@ show lilly basic_satisfied_cas_close
 with charachangealways
 
 "Lilly is silent for a moment before breaking out into a huge smile."
-"I see something on her face that I haven't seen there before.{w} A look of admiration."
+"I see something on her face that I haven't seen there before. A look of admiration."
 li "Hanako… What a clever initiative. I never would have thought of that myself. Hisao will love this."
 ha "T-thanks. I really hope so."
 li "What did the newspaper club say about your idea?"
@@ -610,8 +611,8 @@ li "We could go over to the dance floor and see if there are any open spots away
 "I sigh."
 ha "J-just a look then."
 
-show lilly at offscreenright
-with charamovefast
+hide lilly
+with charaexit
 
 "I get up, take Lilly's arm and slowly lead her to the area bordering the dance floor."
 
@@ -619,8 +620,8 @@ scene bg fanres_entrance
 with locationchange
 
 "As we circle the area in search of a bit of space, I try to wrap my head around this uncharacteristically forward move."
-"It isn't like Lilly at all to try and push against my boundaries like this.{w} For as long as I've known her, she's been protective, sometimes even over-protective, of me."
-"But tonight, more than ever before, I feel like we've been interacting as equals.{w} We both spoke candidly about ourselves; Lilly of her past and I of my future."
+"It isn't like Lilly at all to try and push against my boundaries like this. For as long as I've known her, she's been protective, sometimes even over-protective, of me."
+"But tonight, more than ever before, I feel like we've been interacting as equals. We both spoke candidly about ourselves; Lilly of her past and I of my future."
 "This kind of interaction between us wouldn't have been possible two months ago. This kind of outing wouldn't have been possible two months ago."
 "Is Lilly trying to find out how far I will go in defying my own anxieties?"
 "Is she… testing me?"
@@ -629,33 +630,42 @@ show lilly basic_smile_cas_close
 with charaenter
 
 li "Do you want to give it a try?"
+
+scene ev dance_large:
+    align (0.5, 0.1) zoom 1.1
+    ease 5.0 zoom 1.0
+with mediumflash
+
 "We reach a corner of the dance floor near the ensemble and away from the tables that isn't particularly crowded."
 "My eyes warily skim the crowd, but nobody seems to be paying us any attention."
 ha "V-very quickly then."
-
-show lilly basic_cheerful_cas_close
-with chchange
-
 "Picking out a somewhat secluded spot near the edge, I walk Lilly in place and turn to face her."
 "She's wearing a reassuring smile on her face that's not quite catching on yet."
 
-hide lilly
-with charaexit
-
-#stop music fadeout 0.5
-# TODO show CG of Lilly and Hanako dancing
-#play music music_lilly fadein 0.5
+show ev:
+    ease 4.0 xalign 0.4
 
 li "Could you give me your right hand, Hanako?"
 "I place my hand in hers, shivering a bit as her fingers briefly touch my scar tissue."
 li "Now, can you place your left hand on my shoulder?"
-"I do so, but can't help feeling really weird.{w} A feeling worsened by the fact she's wearing her off-the-shoulder sweater and my hand is touching her bare skin."
+"I do so, but can't help feeling really weird. A feeling worsened by the fact she's wearing her off-the-shoulder sweater and my hand is touching her bare skin."
 ha "A-and now?"
 li "Please place your right foot between my feet."
 "I follow suit and stiffen for a moment as Lilly places her right hand onto my left shoulder blade."
 "I look around nervously, but it doesn't seem like people around us are taking notice of us. Either that or they really don't care."
+
+show ev:
+    ease 2.0 xalign 0.45
+
 li "Let's begin. Could you take a step back with your left foot, count to two and put your right foot beside it?"
-ha "Umm… Like this{cps=3}…?{/cps}{w} Eek!"
+ha "Umm… Like this{cps=3}…?{/cps}{nw}"
+
+show ev:
+    linear 0.05 xalign 0.455
+    linear 0.05 xalign 0.45
+    repeat 5
+
+ha "Umm… Like this…?{fast} Eek!"
 "The moment I take a step back, Lilly lifts her right foot, presumably to let me drag her forward a bit and determine the length of my steps."
 "Since I wasn't expecting this lack of resistance, I try to put my foot back and almost lose my balance, which would have resulted in me dragging us both to the floor and her ending up on top of me."
 "That'd be enough reason for me to run out of here and deny this evening ever happened."
@@ -664,7 +674,11 @@ ha "I-I-I'm sorry!"
 li "Don't worry. Everybody tends to stumble a bit at first."
 li "Let's try again. Take a step back as slowly as you can now."
 "I take another step back, trying to move in slow motion this time."
-"Sure enough, Lilly moves her foot again and fluidly advances to close the distance.{w} I move my other foot back and Lilly follows up, lightly brushing her foot against mine."
+
+show ev:
+    ease 30.0 xalign 0.5 zoom 0.75
+
+"Sure enough, Lilly moves her foot again and fluidly advances to close the distance. I move my other foot back and Lilly follows up, lightly brushing her foot against mine."
 li "Much better, Hanako. But try to keep the distance between your feet consistent."
 ha "Like this?"
 "One more step back and this one goes without incidents."
@@ -683,6 +697,10 @@ li "Are you up for some variation, Hanako?"
 ha "Ummm… what do you mean?"
 li "Next, try making a slow sidestep to your right, followed by a sidestep to the left."
 ha "That doesn't s-sound too difficult."
+
+show ev:
+    ease 30.0 zoom 0.5
+
 "I move left and right several times, letting Lilly get used to the steps I take."
 "This is much easier than the backwards and forward movement."
 li "Not too hard, is it?"
@@ -694,15 +712,19 @@ ha "B-back, right…"
 "I slowly try to adopt the new pattern, struggling at first to memorize the order."
 ha "Forward, left…"
 "After several minutes, Lilly stops me."
-li "You have very consistent movement, Hanako. That's a good thing.{w} I think I'll be able to take it from here."
+li "You have very consistent movement, Hanako. That's a good thing. I think I'll be able to take it from here."
 ha "T-take it from here?"
 li "The steps I'm taking belong to the leading partner. I needed to get used to your movement patterns a bit, but I think I have the timing down now. Just continue as you did before."
 "We resume, but this time Lilly starts making more active movements instead of going along with mine, occasionally shifting her weight to correct me."
 "At first, I'm positive we're going to trip and fall, but as we continue I realize that as long as I don't deviate from the step length I've been going with, our movements are nearly perfectly synchronized."
-"I can't believe that Lilly got a feeling for my movements that quickly.{w} She really is good at this."
+"I can't believe that Lilly got a feeling for my movements that quickly. She really is good at this."
 li "Left, back, right, forward."
-"I'm starting to risk the occasional glance away from our feet.{w} Nobody's paying us any attention, thank goodness."
+"I'm starting to risk the occasional glance away from our feet. Nobody's paying us any attention, thank goodness."
 "I giggle nervously."
+
+show ev:
+    ease 30.0 zoom 0.4
+
 ha "R-right, forward, back…"
 li "Try to relax your upper body a little bit more, Hanako."
 ha "R-right."
@@ -723,7 +745,7 @@ li "Let's try a natural turn next."
 stop music fadeout 0.5
 
 scene bg school_girlsdormhall
-with locationskip
+with Fade(1.0, 0, 1.0)
 
 play music music_twinkle fadein 0.5
 
@@ -738,7 +760,7 @@ li "Hanako, thank you very much for tonight. I truly had a great time."
 
 play sound sfx_dooropen
 show lilly at twoleft
-with charamove
+with chchange
 
 "Lilly has found her keys and has opened her door."
 ha "Same here. I also think I've learned a few things about you I didn't know before."
@@ -747,7 +769,7 @@ ha "Same here. I also think I've learned a few things about you I didn't know be
 show lilly basic_smile_cas_close
 with chchange
 
-li "The same goes for me.{w} You've… really changed lately, Hanako."
+li "The same goes for me. You've… really changed lately, Hanako."
 ha "F-for the better?"
 li "Definitely."
 "Lilly's smile is warm and genuine, but I don't think it's my imagination that there's a subtle trace of wistfulness in her voice, and that for a moment, no more than a split-second, there's a hint of sadness on her face."
