@@ -60,7 +60,8 @@ init 1 python:
     # takawa blurred sprites
     for face in ("smile", "serious"):
         for i in range(1, 3):
-            renpy.image(f"takawa {face}_close_blur{i}", f"{sh_path}/sprites/takawa/close/takawa_{face}_close_blur{i}.png")
+            renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
+            #renpy.image(f"takawa {face}_close_blur{i}", f"{sh_path}/sprites/takawa/close/takawa_{face}_close_blur{i}.png")
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile"], poses=["emb"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
@@ -78,8 +79,9 @@ init 1 python:
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
+    sh_event("funindark", ["hug1", "hug2", "hug3", "hug4", "hug5", "hug6", "hug7"])
     sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4_large", "4", "4a", "5", "5a"], mark_adult=True)
-    sh_event("dance", ["large", "normal"])
+    sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
     sh_event("caress", ["normal", "large"])
 
     sh_fireflies()
@@ -90,8 +92,8 @@ init 1:
     image bg inverness_shore = f"{sh_bgs}/shore.jpg"
     image bg satou_house_entrance = f"{sh_bgs}/satou_house_entrance.jpg"
     image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
-    image bg therapist_office_blur1 = f"{sh_bgs}/therapist_office_blur1.jpg"
-    image bg therapist_office_blur2 = f"{sh_bgs}/therapist_office_blur2.jpg"
+    image bg therapist_office_blur1 = im.Blur(f"{sh_bgs}/therapist_office.jpg", 1)
+    image bg therapist_office_blur2 = im.Blur(f"{sh_bgs}/therapist_office.jpg", 2)
     image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"
     image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
@@ -109,8 +111,8 @@ init 1:
     image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
     image bg hotel_hallway = f"{sh_bgs}/hotel_hallway.jpg"
     image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
-    image bg hosp_room2_blur = f"{sh_bgs}/hosp_room2_blur.jpg"
-    image bg hosp_ceiling_blur = f"{sh_bgs}/hosp_ceiling_blur.jpg"
+    image bg hosp_room2_blur = im.Blur(f"bgs/hosp_room2.jpg", 2)
+    image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
 
     # special events
     image ev rainyroad:
@@ -142,8 +144,8 @@ init 1:
     \n\n\n\n
     {b}Backgrounds{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
+    Francis York Media Inc.
     deemur on Pixabay
-    Bernard Schuermann on Pixabay
     Zencare Group Inc.
     Jeremy Bishop on Unsplash
     StockSnap on Pixabay

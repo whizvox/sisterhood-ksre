@@ -214,7 +214,8 @@ queue music music_heart fadein 0.5
 
 hi "Could you lie on top of me?"
 
-# TODO show hanako lying on hisao with hisao combing through hanako's hair CG
+show ev funindark_hug1
+with Fade(1, 0, 1, color="#000")
 
 "I take a deep breath, feel my way over to him, carefully straddle him, lie down and adjust my position until I'm fairly certain my face is about on the same level as his."
 hi "Now just take your time and try to relax."
@@ -251,6 +252,10 @@ ha "Y-Yes."
 "Would he like it?"
 "…"
 "Maybe I should try it out."
+
+show ev funindark_hug2
+with Dissolve(1.0)
+
 "I move my body a bit to get more comfortable and raise my head a bit more, then place my hand on the side of his face."
 "As Hisao resumes stroking my hair, I nervously start running my fingers through his, hoping he'll start feeling the same thing I am."
 hi "That feels good, Hanako."
@@ -266,10 +271,19 @@ hi "That feels good, Hanako."
 "So far Hisao hasn't taken much initiative, content to let me determine the pace - a role I'm slowly growing into."
 "Deciding to take another step closer, I lean in and kiss him on his left cheek."
 
-# TODO show hanako kissing hisao's cheek while her and him are laughing CG
+show ev funindark_hug4
+with Dissolve(0.5)
 
 "For a second there's no reaction, before he unexpectedly turns his head, causing his lips to touch mine and making me pull back with a surprised gasp."
+
+show ev funindark_hug5
+with Dissolve(0.5)
+
 "As I get ready to return the kiss, a playful idea gets into my head."
+
+show ev funindark_hug3
+with Dissolve(1.0)
+
 "I carefully approach his mouth with mine until I can feel his breath tickling my lips, stopping what I think is barely an inch away from his face."
 "I quietly count to three in my head and then place an unexpected kiss on his right cheek."
 "As he turns his head again, I swiftly move my head back just a bit so my lips remain just out of his reach."
@@ -285,10 +299,15 @@ hi "That feels good, Hanako."
 "Another kiss on his right cheek…"
 "One on his left ear…"
 hi "I-I give up already!"
+
+show ev funindark_hug5
+with Dissolve(0.5)
+
 "I giggle at his mock-desperate claim of surrender. I wouldn't have minded keeping this up a little longer, but it looks like Hisao wants to move on."
 ha "Please keep still, Hisao."
 
-# TODO show hanako and hisao making out CG
+show ev funindark_hug4
+with Dissolve(1.0)
 
 "I limit myself to a few quick pecks on his mouth first, but when I feel his arms wrap around me I move in for a longer kiss, this time welcoming the touch of his lips."
 "I feel him open his mouth just slightly as we press our lips together."
@@ -296,16 +315,32 @@ ha "Please keep still, Hisao."
 "I move in again, this time going for his upper lip. This time he starts returning my kisses."
 "…"
 "We're really getting into this."
-"…--{nw}"
+"{cps=3}...{/cps}--{nw}"
+
+show ev funindark_hug6
+with Dissolve(0.5)
+
 hi "Ow!"
 ha "Sorry."
 "We mumble a quick apology to each other after we accidentally clash teeth during a slightly too enthusiastic kiss."
+
+show ev funindark_hug4
+with Dissolve(0.5)
+
 "…"
 "I wonder if I should…"
 "During the next kiss, I softly tickle his lower lip with my tongue."
+
+show ev funindark_hug5
+with Dissolve(0.5)
+
 "As we press our lips together, I bashfully move my tongue past his lips, only to retreat with a gasp the moment it meets his."
 hi "Go ahead, Hanako."
 "Attempt number two then."
+
+show ev funindark_hug4
+with Dissolve(0.5)
+
 "I do my best to relax and slip my tongue into his mouth again. This time I let his tongue touch mine, though it's mostly passive contact."
 "Is there a right way to do this? It looks so easy on television."
 "Attempt number three. I try to stroke his tongue with mine a bit."
@@ -339,10 +374,11 @@ ha "I… I…"
 "I decide that killing the mood is better than betraying his trust."
 
 stop music fadeout 1.0
+show ev funindark_hug6
+with Dissolve(1.0)
 
 ha "I'm s-sorry, Hisao. I c-can't do it y-yet."
-"He sighs."
-"That was to be expected."
+"He sighs. That was to be expected."
 hi "I understand Hanako. We've already gotten really far."
 "That's the problem. We've gotten this far and now I'm blue balling you."
 "That has to be frustrating. Please don't pretend it's not. Please don't pretend to be understanding."
@@ -357,7 +393,15 @@ hi "I appreciate you being honest about this. It's okay."
 "I can do this."
 "The hardest part is bringing it up. I have to act quickly."
 "For you, Hisao."
+
+show ev funindark_hug4
+with locationchange
+
 "I seek out his lips again and give him a long kiss in an attempt to salvage the mood before it vanishes completely."
+
+show ev funindark_hug6
+with locationchange
+
 ha "Hisao… I… ummm… I could…"
 hi "Hanako?"
 ha "…if you'd like… I c-could…"
@@ -366,6 +410,10 @@ ha "{cps=20}…I c-could… s-s-stroke y-you… d-d-down t-t-there… and m-make
 "A silence."
 "…"
 "Say something already before I break down and start apologizing for saying this."
+
+show ev funindark_hug5
+with locationchange
+
 hi "Would you do that, Hanako?"
 ha "Y-yes… Yes."
 hi "In that case… I'm all yours."

@@ -516,7 +516,7 @@ with chchange
 show takawa serious_close
 with chchange
 
-ta "Supporting your recovery, or 'fixing you' to use your own words, is what I'm here for."
+ta "Supporting your recovery, or ‘fixing you’ to use your own words, is what I'm here for."
 ta "It'd be disingenuous of me to pretend otherwise. I am a therapist after all."
 "I freeze. That's not the reaction I expected at all."
 ta "Miss Hanako, the desire for friendship you expressed just now is undeniably a good thing, and I'd greatly encourage you to hold onto it, but not all friendships are undeniably good."
@@ -579,7 +579,7 @@ play sound sfx_dooropen
 
 "As I open the door and turn around to bid her farewell, Miss Yumi performs what has to be the deepest and most prolonged bow I've ever seen from her."
 
-show takawa worried
+show takawa worried at tworight
 with charaenter
 
 "When she rises I'm shocked to see an expression of genuine sadness on her face."

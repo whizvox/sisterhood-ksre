@@ -25,6 +25,7 @@ label sisterhood_start:
     call sisterhood_ch17
     call sisterhood_credits
     call sh_ch17alt
+    call sisterhood_postcredits
 
     return
 
@@ -78,17 +79,27 @@ label sisterhood_credits:
     
     pause 55
 
-    hide sh_credits
-    with Dissolve(2.0)
-    show expression Text(_("To be continued..."), text_align=1.0, size=32) zorder 999 at Transform(xalign=0.92, yalign=0.92)
-    with Dissolve(2.0)
-
-    pause 5.0
-
     stop music fadeout 5.0
+    hide sh_credits
     scene black
     with Dissolve(5.0)
 
     $ config.allow_skipping = True
 
     return
+
+label sisterhood_postcredits:
+
+    $ config.skipping = False
+    $ config.allow_skipping = False
+
+    scene black
+    show expression Text(_("To be continued..."), text_align=1.0, size=32) zorder 999 at Transform(xalign=0.92, yalign=0.92)
+    with Dissolve(2.0)
+
+    pause 5.0
+
+    scene black
+    with Dissolve(5.0)
+
+    $ config.allow_skipping = True

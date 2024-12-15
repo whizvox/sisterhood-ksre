@@ -631,7 +631,7 @@ with charaenter
 
 li "Do you want to give it a try?"
 
-scene ev dance_large:
+scene ev ballroomdance_emb_large:
     align (0.5, 0.1) zoom 1.1
     ease 5.0 zoom 1.0
 with mediumflash
@@ -722,8 +722,9 @@ li "Left, back, right, forward."
 "I'm starting to risk the occasional glance away from our feet. Nobody's paying us any attention, thank goodness."
 "I giggle nervously."
 
-show ev:
+show ev ballroomdance_smile_large:
     ease 30.0 zoom 0.4
+with Dissolve(1.0)
 
 ha "R-right, forward, back…"
 li "Try to relax your upper body a little bit more, Hanako."

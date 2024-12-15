@@ -148,4 +148,8 @@ with charaexit
 "I can't help but roll my eyes at the irony of it all."
 "There's a guy out there who believes in mind control devices searching the bushes for spies and cameras right now, and yet I'm the one about to see a therapist."
 
+stop music fadeout 3.0
+scene black
+with Dissolve(3.0)
+
 return
