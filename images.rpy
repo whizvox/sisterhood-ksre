@@ -61,7 +61,6 @@ init 1 python:
     for face in ("smile", "serious"):
         for i in range(1, 3):
             renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
-            #renpy.image(f"takawa {face}_close_blur{i}", f"{sh_path}/sprites/takawa/close/takawa_{face}_close_blur{i}.png")
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile"], poses=["emb"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])

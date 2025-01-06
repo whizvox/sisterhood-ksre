@@ -1,3 +1,5 @@
+default persistent.sh_slowtransitions = True
+
 init python:
 
     ta = Character(_("Takawa"), who_color="#f3ccff")
@@ -35,6 +37,9 @@ init:
     $ mods["sisterhood"] = "Sisterhood"
     $ mods_with_menus["sisterhood"] = True
 
+    # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
+    define sh_debug = True
+
     define sisterhood_chapters = [
         (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Lilly and Akira discuss the future from Inverness."), "lilly"),
         (_("Chapter 2"), "sisterhood_ch2.sh_ch2", _("Hisao recounts his relationship with Hanako as he and Emi run on the track."), "hisao"),
@@ -67,10 +72,8 @@ init:
         xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     transform tworight_sittingpos:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    #define chchange = charachange #charachangealways
-    #define chchangefast = charachangefast #Dissolve(0.2)
-    define chchange = charachangealways
-    define chchangefast = Dissolve(0.2)
+    define chchange = charachangealways if persistent.sh_slowtransitions else charachange
+    define chchangefast = Dissolve(0.2) if persistent.sh_slowtransitions else charachangefast
     define mediumflash = Fade(1, 0, 1, color="#FFF")
 
     # BGM
