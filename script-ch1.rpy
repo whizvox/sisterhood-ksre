@@ -27,7 +27,7 @@ aki "Hey, unlike you I've been up and about for four hours already."
 aki "Besides, I have a reason to celebrate. Check out what I got this morning."
 
 show akira basic_smile_close at center
-with chchange
+with characlose
 
 "As I hold out my hand, my sister passes me a rectangular piece of paper that has a familiar size. I remember having held a similar piece not too long ago."
 li "A plane ticket! So you have finished making arrangements for our trip back to Japan?"
@@ -73,10 +73,13 @@ aki "Be honest, Lils. You think my decision was made a little too hastily, don't
 "Within a week, she'll be back in Japan breaking up a relationship that she seemed happy with before."
 li "I don't think I can deny you've made your choice extremely quickly. For how long have you been dating…"
 
-show akira at twoleft
-with { "master": charamovefast }
+show akira:
+    ease 1.5 twoleft
 
 aki "I've been making quick decisions since I started working, Sis. I went with my gut instinct there, but I've been sleeping on it and I think I managed to work out why my gut told me to do what I did."
+
+show akira basic_annoyed at twoleft
+with chchange
 
 play sound sfx_rockskip
 
@@ -105,7 +108,7 @@ with chchange
 "We both get a good laugh out of that."
 
 show akira basic_smile_close at center
-with chchange
+with characlose
 
 "I suddenly feel how she takes my hand and pushes a small flat rock into it before turning me around."
 aki "Here, give it a try."
@@ -122,7 +125,7 @@ aki "And they definitely seem more open to part-time employment than the managem
 "I've never really felt comfortable when she vented about our parents, but I've never denied her a chance to do so, even though my own feelings are more nuanced."
 
 show akira basic_annoyed at twoleft
-with chchange
+with charamovechangefaster
 
 aki "Of course, the old man didn't exactly hide the fact he pulled some strings to help me get this job, so I think we both know what'll be expected of me in return for taking it."
 li "Wh-what would that be?"
@@ -134,7 +137,8 @@ show akira basic_resigned
 with chchange
 
 aki "I'll be expected to stop giving him a hard time about leaving us to fend for ourselves. He'll have paid me back, so all's fine and dandy again. Like every person has his price."
-"I want to deny it, but I too have the impression Mother and Father are trying to make up for their sudden migration six years ago. A migration that Akira always interpreted as an escape. An escape from us… from me."
+"I want to deny it, but I too have the impression Mother and Father are trying to make up for their sudden migration six years ago. A migration that Akira always interpreted as an escape."
+"An escape from us… from me."
 
 play sound sfx_rockskip
 "{i}*splash* *splash* *splash*{/i}"
@@ -157,7 +161,7 @@ aki "I was extremely lucky to get as far as I already got, but I only have to pu
 
 play sound sfx_rocksplash
 show akira:
-    linear 0.1 xpos 0.25
+    linear 0.1 xpos 0.26
     linear 0.1 xpos 0.3
 "{i}*SPLOOSH*{/i}"
 
@@ -178,14 +182,15 @@ with chchange
 aki "This is why I hate the notion of office politics. I cannot even begin to imagine how I would feel in that kind of situation."
 
 show akira basic_laugh_close at center
-with chchangefast
+with charamovechangefastest
 
 "I stifle a cry as Akira gives me a cheerful slap on the back."
 aki "Probably like a goldfish in a shark tank."
 aki "Stick with your own dream, Lils. You'll thank yourself later."
 
 show akira basic_smile at twoleft
-with chchange
+with charamovechangefaster
+
 play sound sfx_rockskip
 "{i}*splash* *splash* *splash*{/i}"
 
@@ -247,7 +252,7 @@ aki "Hey, how badly could they screw up in the short time we've been here? You'r
 li "You're probably right."
 
 show akira basic_smile_close at center
-with chchange
+with charamovechangefaster
 
 "Suddenly, something smooth is pushed into my hand. I recognize the feeling of a cell phone."
 aki "If you wanna ease your mind, why not contact them? I've got the tickets, which means you've got an official excuse."
@@ -274,6 +279,7 @@ with chchange
 
 ha "Lilly!"
 "Hanako sounds delighted to hear from me. That's good. It means she must have bounced back from last week sooner than expected."
+li "It is good to hear from you, Hanako. How are you doing right now? And how is Hisao?"
 ha "W-we're doing very well. And how are you doing, Lilly? D-Do you have any idea when you'll be heading back?"
 "It takes me a moment to place Hanako's tone."
 "While I've known Hanako for about a year and have been around during her good moods, this is the first time in a long while she's sounding outright cheerful."
@@ -294,7 +300,7 @@ show hanako emb_blushing_phone
 with chchange
 
 ha "I… I can't tell you yet. I promised to keep it a secret until we could tell you in person."
-li "Hmmm… would you be willing to elaborate on who 'we' might be?"
+li "Hmmm… would you be willing to elaborate on who ‘we’ might be?"
 
 show hanako def_worry_phone
 with chchange
@@ -309,18 +315,21 @@ with charaexit
 stop ambient fadeout 1.0
 
 scene bg satou_house_entrance
-show akira basic_laugh
+show akira basic_laugh:
+    tworight
+    ease 4.0 center
 with locationskip
 
-$ _window_auto = True
-
 "By the time Akira and I arrive at the driveway of our parents' mansion, we're both wearing a huge smile on our face."
+
+show akira at center
+
 aki "Hah, I still can't believe she got herself a boyfriend."
 aki "Who would have known? Didn't think she had it in her."
 li "I think it's very sweet. They have so much in common. I am sure they'll be a very nice couple."
 
 show akira basic_smile_close
-with chchange
+with characlose
 
 "As we enter the mansion through the patio doors, Akira turns around and gives me a playful poke in the ribs."
 aki "How about I go down to the cellar and fetch us something to celebrate?"

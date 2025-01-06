@@ -2,7 +2,7 @@ label sisterhood_ch3:
 label .sh_ch3:
 
 scene bg school_nurseoffice
-with Dissolve(2.0)
+with shorttimeskip
 
 show nurse concern_close at center
 with charaenter
@@ -44,7 +44,7 @@ nk "More like a P.E. teacher. She might make a lively colleague, don't you think
 play sound sfx_snap
 
 show nurse grin_close
-with chchange
+with Dissolve(0.2)
 
 nk "Speaking of which… that reminds me. A colleague of mine has been asking me about you and wanted to meet you."
 nk "Do you have some time to spare later this day?"

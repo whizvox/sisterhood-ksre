@@ -30,14 +30,12 @@ n "But it was also this very process that allowed the two of us to make a fresh 
 nvl hide dissolve
 nvl clear
 
+play sound sfx_whiteout
 scene white
 with dissolve
 
-play sound sfx_whiteout
 scene bg school_track
 with dissolve
-
-nvl show dissolve
 
 "My new relationship with Hanako is also the reason I approached the nurse yesterday with a request for a training schedule."
 "A week ago, I would have seen a heart flutter as something that was nobody's problem but my own, but now that I have a girlfriend I feel a newfound responsibility to stay in shape."
@@ -76,7 +74,7 @@ with chchange
 emi "Nurse told me about your visit yesterday. He asked me to keep an eye on you, just in case something happens."
 
 show emi excited_hesitant_gym
-with chchange
+with charachangealways
 
 "…"
 "She looks at me quizzically."
@@ -88,7 +86,7 @@ hi "I'm at this school because I have a heart condition, so for me shaping up is
 hi "Until recently, I just walked some short distances every now and then, but I recently picked up dating, so I have an additional reason to improve my health and stay in shape. I'd hate to leave a grieving girlfriend behind."
 
 show emi excited_happy_gym
-with chchange
+with charachangefast
 
 "Emi responds with a smile, but suddenly makes wide eyes and mouths a soundless \"ahah\" as if she just had a revelation of some kind."
 
@@ -120,7 +118,7 @@ emi "You know, keeping the species going and all?"
 hi "Whatever. Can we save the rest of the small talk for the cool down lap?"
 
 show emi excited_happy_gym
-with chchange
+with chchangefast
 
 "That sounded a little bit grumpier than I intended, but Emi doesn't seem to pay it any heed and cheerfully accepts my suggestion to start the morning run."
 
@@ -177,9 +175,7 @@ hi "More like the sixth. Which isn't too bad. Given the fact the entire school s
 
 stop ambient fadeout 2.0
 scene bg school_track
-with Dissolve(2.0)
-
-nvl show dissolve
+with locationchange
 
 "As we finish our lap, we walk to the bleachers and take a few sips from the water bottles we brought along."
 "We sit down for a moment, and Emi gently starts rubbing the spots where her legs meet her prosthetics."
@@ -247,7 +243,7 @@ with chchange
 emi "You think I'm shallow or an airhead or something?"
 
 show emi excited_amused_gym
-with chchange
+with chchangefast
 
 "Her frown quickly makes way for a mischievous grin."
 
