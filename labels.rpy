@@ -38,18 +38,17 @@ label sisterhood_timeskip:
     play music music_timeskip
 
     show shlogo quill at Transform(xalign=0.5, yalign=0.5)
-    with clockwipe
+    with CropMove(2.0, "wipedown")
 
-    scene black
     show shlogo title at Transform(xalign=0.5, yalign=0.5)
-    with clockwipe
+    with CropMove(2.0, "wiperight")
 
     pause 2.0
 
     stop music fadeout 2.0
 
     scene black
-    with clockwipe
+    with erase
 
     pause 2.0
 

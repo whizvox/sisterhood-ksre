@@ -133,6 +133,8 @@ init 1:
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
     image shlogo title = f"{sh_path}/logo/logo_title.png"
+    image shlogo quill_outline = f"{sh_path}/logo/logo_quill_outline.png"
+    image shlogo title_outline = f"{sh_path}/logo/logo_text_outline.png"
 
     # extra gui
     image white_vignette = f"{sh_path}/gui/white_vignette.png"

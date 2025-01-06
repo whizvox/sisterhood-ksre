@@ -145,13 +145,13 @@ with charaexit
 play sound sfx_doorclose
 
 show takawa calculating
-with chchange
+with charachangealways
 
 ta "You'll have to excuse my colleague. He is a fine young man, but I believe he enjoys his own jokes a little bit too much sometimes."
 "She makes an inviting gesture over to the table in the middle of the room."
 
 hide takawa
-show takawa smile_close at center
+show takawa smile_close at sittingpos
 with charaenter
 
 stop music fadeout 0.5
@@ -166,7 +166,7 @@ hi "Uh… sure. I mean… please."
 "But unlike Lilly's unfocused and cloudy gaze, Miss Takawa's gaze is sharp and analytical."
 
 show takawa calculating_close
-with chchange
+with charachangealways
 
 ta "If I may ask, Mister Nakai… Did my colleague tell you why I wanted to meet you?"
 hi "No, not really. All he said was that it was informal."
@@ -209,7 +209,7 @@ ta "If she hadn't consented to this, you would not be sitting here right now."
 hi "So what exactly are you expecting of me?"
 
 show takawa calculating_close
-with chchange
+with charachangealways
 
 ta "I merely wish to get a general impression of you. Would you be willing to tell me a few things about how your relationship with Miss Ikezawa came to be from your perspective?"
 "There are plenty of things and events that took place regarding our relationship that I don't care to talk about with this person, especially since I don't know what Hanako has told her."
@@ -239,10 +239,10 @@ ta "By all means."
 hi "For how long have you worked here at Yamaku?"
 
 show takawa serious_close
-with chchange
+with charachangealways
 with Pause(0.5)
 show takawa smile_close
-with chchange
+with charachangealways
 
 "Miss Takawa raises her eyebrows for a second and then smiles."
 ta "Very well played, Mister Nakai. I have only worked here for a little over a year."
@@ -285,6 +285,8 @@ with chchange
 ta "I have no further questions for you, Mister Nakai. You can take your leave if you wish."
 hi "Then I'll be going now. Hanako and I are planning to welcome Lilly back this evening."
 
+show takawa at center
+with charamove
 show takawa at left
 with charamove
 
@@ -294,7 +296,7 @@ ta "I hope Miss Satou has had a pleasant trip abroad. Take care of yourself, Mis
 hide takawa
 with charaexit
 
-"After a polite greeting I leave the secluded \"office\" and hurry back to the exit of the staff building."
+"After a polite greeting I leave the secluded “office” and hurry back to the exit of the staff building."
 "There are still plenty of things to do before tonight."
 
 stop music fadeout 2.0

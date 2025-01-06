@@ -118,12 +118,12 @@ hisao = [
 ]
 
 takawa = [
-    ("sprites/Yumi Takawa/takawa_calculating", "calculating"),
-    ("sprites/Yumi Takawa/takawa_happy", "happy"),
-    ("sprites/Yumi Takawa/takawa_serious", "serious"),
-    ("sprites/Yumi Takawa/takawa_smile", "smile"),
-    ("sprites/Yumi Takawa/takawa_stern", "stern"),
-    ("sprites/Yumi Takawa/takawa_worried", "worried"),
+    ("sprites/Yumi Takawa fixed/takawa_calculating", "calculating"),
+    ("sprites/Yumi Takawa fixed/takawa_happy", "happy"),
+    ("sprites/Yumi Takawa fixed/takawa_serious", "serious"),
+    ("sprites/Yumi Takawa fixed/takawa_smile", "smile"),
+    ("sprites/Yumi Takawa fixed/takawa_stern", "stern"),
+    ("sprites/Yumi Takawa fixed/takawa_worried", "worried"),
 ]
 
 naomi = [
