@@ -79,7 +79,7 @@ init 1 python:
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("funindark", ["hug1", "hug2", "hug3", "hug4", "hug5", "hug6", "hug7"])
-    sh_event("hotel", ["1_large", "1", "2_large", "2", "3", "4_large", "4", "4a", "5", "5a"], mark_adult=True)
+    sh_event("hotel", ["onhanako", "onhanako_large", "onhisao", "onhisao_large", "mirror", "layontop", "thigh", "thigh_large", "thigh_climax", "masturbate", "masturbate_climax", "bed", "bed_climax"], mark_adult=True)
     sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
     sh_event("caress", ["normal", "large"])
 
