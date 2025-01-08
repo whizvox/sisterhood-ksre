@@ -12,7 +12,7 @@ play sound sfx_dooropen
 scene bg therapist_office
 with locationchange
 
-"After I hear the reply to my knocking, I hesitantly open the door leading into the 'office' where I have my sessions every other week."
+"After I hear the reply to my knocking, I hesitantly open the door leading into the “office” where I have my sessions every other week."
 "Office isn't really a good word to describe it. Den or living room seem more appropriate. Miss Yumi has very peculiar tastes when it comes to her work place."
 
 show takawa smile
@@ -40,12 +40,9 @@ n "I sensed that they expected me to go along with this in return for the lenien
 
 nvl clear
 
-n "My first therapist was a middle-aged man with thick glasses and a scruffy beard."
-n "He was polite enough, but also really intimidating. I always felt a bit like a research specimen during our sessions."
-n "Eventually I was referred to another person; a rather young man with a stubble, sneakers and an awful sweater."
-n "He was nice enough, but I always felt uneasy around him."
-n "The third person was Miss Takawa, who was new to Yamaku at the time."
-n "She told me I could start calling her Miss Yumi as a sign of trust once I felt we established such a thing. And since a few weeks I've been calling her that."
+n "My first therapist was a middle-aged man with thick glasses and a scruffy beard. He was polite enough, but also really intimidating. I always felt a bit like a research specimen during our sessions."
+n "{vspace=60}Eventually I was referred to another person; a rather young man with a stubble, sneakers and an awful sweater. He was nice enough, but I always felt uneasy around him."
+n "{vspace=90}The third person was Miss Takawa, who was new to Yamaku at the time. She told me I could start calling her Miss Yumi as a sign of trust once I felt we established such a thing. And since a few weeks I've been calling her that."
 
 nvl hide dissolve
 nvl clear
@@ -60,16 +57,13 @@ ha "Y-yes, please."
 hide takawa
 with charaexit
 
-show bg therapist_office:
-    blur 20
-with Dissolve(0.5)
-
+show bg therapist_office_blur2
 show go_board:
     truecenter
     zoom 0.5
     ypos 0.7 alpha 0.0
     easeout 0.5 ypos 0.5 alpha 1.0
-with Pause(0.5)
+with Dissolve(0.5)
 
 play sound sfx_gostone_soft
 
@@ -82,10 +76,8 @@ play sound sfx_gostone
 show go_board:
     easeout 0.5 ypos 0.7 alpha 0.0
 with None
-
-show bg therapist_office:
-    blur 0
-with Dissolve(1.0)
+show bg therapist_office
+with Dissolve(0.5)
 
 hide go_board
 with None
@@ -199,7 +191,7 @@ play sound sfx_gostone_soft
 "{i}*tap*{/i}"
 
 show takawa calculating_close
-with chchange
+with charachangealways
 
 ta "That's not a bad move, Miss Hanako. You're getting much better at this."
 
@@ -255,7 +247,7 @@ with chchange
 ta "Playing aggressively doesn't suit you. It would be better for you to stick to what comes naturally to you and improve upon it."
 
 show takawa calculating_close
-with chchange
+with charachangealways
 
 ta "A good offensive player forces opportunities. A good defensive player takes advantage of opportunities as they arise."
 
@@ -297,8 +289,6 @@ play sound sfx_gostone
 stop music fadeout 0.5
 
 with Pause(1.0)
-
-#queue music music_friendship fadein 0.5
 
 "That news makes me feel sad."
 "I didn't think about it at first, but I've come to enjoy these sessions."
@@ -365,14 +355,14 @@ play sound sfx_heartslow
 with Pause(1.0)
 
 show takawa smile_close
-with chchange
+with charachangealways
 
 ha "{cps=20}M-Miss Yumi…c-c-can I…c-c-come o-over n-next…w-week and p-p-play a…a g-game w-with y-y-you?{/cps}"
 
 with Pause(1.0)
 
 show takawa serious_close
-with chchange
+with charachangealways
 
 play sound sfx_heartslow
 
@@ -403,7 +393,7 @@ with chchange
 ta "Miss Hanako, your friendship is the second most valuable gift in the world you can offer another person… and a priceless gift it is."
 
 show takawa serious_close
-with chchange
+with charachangealways
 
 "Her gaze suddenly lowers and shifts to one of the corners of the table."
 "A feeling of dread starts to well up inside me."
@@ -415,7 +405,7 @@ play music music_sadness
 ha "Of… of course not."
 
 show takawa serious_close_blur2
-with chchange
+with charachangealways
 
 "I try to think of something more to say. Some way to change the subject."
 "But I can't."
@@ -485,7 +475,7 @@ ta "Miss Hanako!"
 "When I look at her, I notice she has a tissue in her hand which she offers me while her eyes look sadly, but compassionately at me."
 
 show takawa serious_close
-with chchange
+with charachangealways
 
 ta "Before you draw your own conclusions, please let me explain."
 "Explain? Is this where she's going to make up excuses? Tell me she's not worthy or something?"
@@ -508,13 +498,13 @@ ha "{cps=20}I-I'm j-just another br-broken human being f-for you to f-fix.{/cps}
 "I regret those vitriolic words the instant they leave my mouth."
 
 show takawa serious_close_blur1
-with chchange
+with charachangealways
 
 "But… Miss Yumi doesn't flinch."
 "Instead, she refills the tea bowl and calmly looks back at me."
 
 show takawa serious_close
-with chchange
+with charachangealways
 
 ta "Supporting your recovery, or ‘fixing you’ to use your own words, is what I'm here for."
 ta "It'd be disingenuous of me to pretend otherwise. I am a therapist after all."
@@ -522,8 +512,8 @@ ta "It'd be disingenuous of me to pretend otherwise. I am a therapist after all.
 ta "Miss Hanako, the desire for friendship you expressed just now is undeniably a good thing, and I'd greatly encourage you to hold onto it, but not all friendships are undeniably good."
 ta "Some friendships can be downright unhealthy. And friendships with therapists are the unhealthiest of them all."
 
-show bg therapist_office_blur1
-with Dissolve(1.0)
+show bg:
+    "bg therapist_office_blur1" with Dissolve(2.0)
 
 ha "I… I don't understand."
 ta "Friendship is a bond of mutually accepted equality, Miss Hanako."
@@ -547,13 +537,13 @@ ta "I believe that a good therapist will never try to become your friend, and a 
 ta "No person should try to fulfill both roles for you."
 
 show takawa calculating_close
-with chchange
+with charachangealways
 
 ta "I believe I can serve you best as a therapist because we work well together… unless you can no longer believe in me after today."
 ha "I…I'm not sure."
 
 show takawa serious_close
-with chchange
+with charachangealways
 
 ta "Please let me assure you right now, Miss Hanako, that still I believe in you."
 ta "Just because I cannot be your friend doesn't mean I'm going to give up on you. I believe that you'll get the friendships you desire in time."
@@ -561,9 +551,10 @@ ha "W-why?"
 ta "Because I learned one more thing from watching you play."
 ha "What's that?"
 
-show bg therapist_office
 show takawa smile_close
-with Dissolve(1.0)
+with charachangealways
+show bg therapist_office
+with { "master": Dissolve(2.0) }
 
 ta "That you're not a quitter."
 ta "Even though life, like me, hasn't been going easy on you, you do not quit."

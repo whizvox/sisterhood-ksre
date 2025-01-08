@@ -37,16 +37,18 @@ hi "It's your choice."
 ha "Y…yes."
 
 show hanako emb_downtimid
-with chchange
+with charachangealways
 
 "Neither of us really knows how to continue the discussion."
 "While the silences between us are no longer as frequent or awkward as they once were, they still rear their head every now and again. This is one of those times."
 "We went to town the other day to do some shopping for this evening. Neither of us thought Lilly would have much energy for a party, but we wanted to make the evening a bit special nevertheless and bought a batch of fragrant tea as well as a box of sweets for her."
-# TODO play car pull up sfx
+
+play sound sfx_car_driveup
+
 "Hanako is still toying around with her little trinket as I spot a car heading up the parking lot and approaching us."
 
 show hanako emb_downsmile
-with chchange
+with charachangealways
 
 "As it gets closer, I see the distinctive hair color of the Satou sisters behind the windshield. The car stops in front of us, and Hanako lets out a small sigh, putting the trinket back in her pocket."
 "Looks like she isn't ready yet to let Akira see her new look."
@@ -62,10 +64,9 @@ queue music music_ease fadein 1.0
 
 ha "Lilly!"
 
-show hanako:
-    easeout 0.5 offscreenleft alpha 0.0
-
-pause 0.5
+show hanako at offscreenleft:
+    easeout 0.5 alpha 0.0
+with charamovefastest
 
 hide hanako
 
@@ -74,14 +75,15 @@ hide hanako
 "I can't help but smile myself as I see this display of unrestricted affection between them."
 
 show lilly basic_cheerful_cas at twoleft
-show hanako basic_smile at center
+show hanako basic_smile:
+    xalign 0.4
 with charaenter
 
 li "It's so good to meet you again, Hanako."
 ha "I'm so happy to see you again, Lilly."
 
-show hanako at tworight
-with charamove
+show hanako at center
+with charamovefaster
 
 "Lilly carefully signals Hanako to break her embrace and then places both hands on her shoulders."
 li "Hanako, I'm very happy for you. Happy and proud."
@@ -98,38 +100,25 @@ with chchange
 "I shoot Hanako a suspicious look and notice she's started fidgeting again."
 hi "Both of us? Wait, did you…?"
 
-hide hanako
-with charaexit
-
 show akira basic_laugh at tworight
-with charaenter
-
 show lilly basic_cheerful_cas
-with chchange
+with charaenter
 
 "Lilly doesn't reply and merely maintains a cheeky grin on her face."
 "Akira is noticeably less subtle."
 aki "Congratulations, lover boy! Looks like ya caught yourself a nice fish while we were gone."
+
+show akira basic_ending
+with chchange
+
 "I'm starting to understand why Hanako seemed nervous while I was considering how to announce our relationship."
 "Lilly probably sweet talked the news out of her days ago."
 hi "Hanako, didn't we agree to tell them the news in person?"
-
-hide lilly
-hide akira
-with charaexit
-
-show hanako emb_blushing at center
-with charaenter
-
 "Hanako gives me such a guilty look I'm starting to feel heartless for scolding her."
 ha "I…I'm sorry, Hisao. I meant to keep it a secret, but…"
 
-hide hanako
-with charaexit
-
-show akira basic_ending at tworight
-show lilly basic_cheerful_cas at twoleft
-with charaenter
+show lilly basic_smile_cas
+with chchange
 
 li "Don't be upset, Hisao. It took me a great deal of effort to convince Hanako that keeping such happy news bottled up is an unhealthy and frustrating thing to do to herself."
 li "She seemed genuinely relieved when she finally decided to break the news to us ahead of time."
@@ -141,20 +130,29 @@ show akira basic_smile
 with chchange
 
 aki "My sis can be pushy in her own polite and passive way, you know?"
+
+hide hanako
+hide lilly
+hide akira
+with charaexit
+
 "Akira walks back to the car, opens the trunk, fishes Lilly's luggage out and beckons me to take on the role of porter."
+
+show akira basic_smile at tworight
+with charaenter
+
 aki "I'd like to stick around, but I still have a big distance to drive and a boyfriend to catch up with."
 hi "Aren't you at least a little bit tired after travelling for so long?"
 aki "Nope. When I was born, I hogged all the genetic jet-lag immunity I could get."
 aki "As you'll find out soon, there wasn't anything left for Lilly afterwards."
 
-show lilly basic_displeased_cas
-with chchange
+show lilly basic_displeased_cas at twoleft
+with charaenter
+show lilly basic_weaksmile_cas:
+    xalign 0.6
+with Dissolvemove(1.0)
 
 "Lilly let out a light groan before carefully walking over to Akira and giving her a polite hug."
-
-show lilly basic_weaksmile_cas
-with chchange
-
 li "Stay in touch."
 
 show akira basic_ending
@@ -168,19 +166,19 @@ with charaexit
 
 "With that, Lilly and Akira part ways, and a minute later we're watching the car drive off into the distance."
 
-show lilly at center
-with charamove
+show lilly basic_weaksmile_cas_close at center
+with characlose
 
 "I walk over to Lilly and give her a quick hug."
 
-show lilly basic_smile_cas
+show lilly basic_smile_cas_close
 with chchange
 
 hi "Welcome back, Lilly. You're probably tired, but Hanako and I planned a little private party for you to celebrate your return."
 hi "If you wish to go to bed right now, we'd understand, but if you can bear with us for another hour or so, we can take the opportunity to catch up."
 "Lilly smiles gratefully at us."
 
-show lilly basic_weaksmile_cas
+show lilly basic_weaksmile_cas_close
 with chchange
 
 li "I accept the offer as long as you don't mind me being a little less talkative than usual."
@@ -188,19 +186,21 @@ hi "Hanako, I'll help Lilly carry her luggage back to the dorms. Would you go ah
 ha "Sure!"
 "As Hanako dashes off to the girl's dorm, I turn to Lilly."
 hi "What was with Akira's remark about the upcoming weekend?"
-"Lilly smiles mysteriously."
 
-show lilly basic_smile_cas
+show lilly basic_smile_cas_close
 with chchange
 
+"Lilly smiles mysteriously."
 li "Later."
 
-scene bg school_dormlilly
-with locationskip
+stop music fadeout 1.0
 
+scene bg school_dormlilly
 show lilly basic_weaksmile_cas at twoleft
 show hanako basic_bashful at tworight
-with charaenter
+with locationskip
+
+play music music_lilly fadein 2.0
 
 li "I needed that."
 "As Lilly puts her second cup of tea down, she lets out a satisfied sigh. She still looks a bit tired, but the caffeine seems to have taken the edge off."
@@ -224,12 +224,20 @@ show hanako emb_blushing
 with chchange
 
 "I look at Hanako who's sitting next to me, still looking a little guilty."
-li "Go ahead."
+hi "Go ahead."
+
+show hanako at center
+with charamovefast
+
 "Hanako bashfully nods and gently takes Lilly's hand. She reaches into her pocket, fishes something out of it and puts it into Lilly's hand."
 ha "This is a gift Hisao gave me."
+
+show lilly basic_listen_cas
+with chchange
+
 "Lilly takes the object and softly runs her sensitive fingertips alongside it."
 
-show lilly basic_smile_cas
+show lilly basic_satisfied_cas
 with chchange
 
 "After careful examination, she smiles."
@@ -239,7 +247,7 @@ ha "N..no. Not yet. I could wear it now if you like."
 "I look at Hanako as she takes back the clip from Lilly, pauses for a moment, carefully brushes aside the lock of hair that's usually covering the right side of her face and applies the clip to pin it in place."
 
 show hanako basic_bashful_clip
-with chchange
+with charachangealways
 
 "I'm still a bit unused to the sight of Hanako's face being completely exposed, but that's more because I've been staring at that lock for so long I've gotten used to it."
 
@@ -254,9 +262,9 @@ nvl clear
 
 show lilly basic_cheerful_cas
 show hanako emb_downsmile_clip
-with chchange
+with { "master": charachangealways }
 
-n "I sit back and nibble on a piece of candy myself as Hanako gives Lilly a brief summary of our date."
+n "{w=0.5}I sit back and nibble on a piece of candy myself as Hanako gives Lilly a brief summary of our date."
 n "I can't help but be a bit amused as her retelling actually makes it sound much more spectacular than it really was. In fact, it was probably as tried-and-true a date as we could have managed."
 n "This was a bit intentional on my part as I wanted our first date to be as comfortable as possible."
 
@@ -265,7 +273,7 @@ nvl clear
 n "We started with a quiet little dinner at the Shanghai, a familiar place without a lot of people around. It was here that I gave Hanako the hair clip that she's now carrying with her all the time."
 n "After finishing our meal, I took her to a small movie theatre in the city. The movie we went to was actually a film adaption of a book we both read before, so neither of us was very surprised by most of the twists in the plot, but we had the benefit of having additional discussion material on our way home, and being able to avoid awkward silences with Hanako is always a good thing."
 n "I was even entertained at how passionate she got for a moment while we were debating the way the director changed a few things about the ending before slipping back into her usual meek demeanor."
-n "One thing about our date that stood out was Hanako's uneasiness with the idea of me paying for everything, so we ended up paying for each other's meal and movie ticket."
+n "{vspace=60}One thing about our date that stood out was Hanako's uneasiness with the idea of me paying for everything, so we ended up paying for each other's meal and movie ticket."
 
 nvl hide dissolve
 nvl clear
@@ -293,11 +301,11 @@ with chchange
 li "Which means that if we go there… we will probably end up cleaning the place up for them."
 "I share a brief look with Hanako. Having to do some cleaning seems a small price to pay for a cheap vacation, and spending that vacation with Hanako and Lilly only makes the prospect even more attractive."
 hi "I'd love to go. I've never been to Hokkaido before. How about you, Hanako?"
-"Hanako beams."
 
 show hanako emb_emb_clip
 with chchange
 
+"Hanako beams."
 ha "Me neither. I'd really like to go too."
 
 show lilly basic_satisfied_cas
@@ -325,6 +333,8 @@ li "Hisao, would you mind helping me unpack a few things? I'd like to get some s
 "But then I realize that this may very well be Lilly's roundabout way of asking me to stick around for a small talk, which is fine because there's something I've been meaning to ask her as well."
 
 show lilly basic_weaksmile_cas at center
+with charamove
+show lilly at sittingpos
 with charamove
 
 "As I start messing with the lock of the suitcase, Lilly sits down on her bed with a tired but cheerful expression on her face."
@@ -359,7 +369,7 @@ li "I promised Hanako not to tell you about how she felt about you. I caught mys
 hi "I'm a bit surprised she told you about that. I would have expected her to keep something like that to herself."
 
 show lilly basic_listen_cas
-with chchange
+with charachangealways
 
 "Lilly remains silent for a few seconds, carefully choosing her words before answering."
 
@@ -384,19 +394,19 @@ with chchange
 li "…regardless of how you felt about her. That's the kind of person she is."
 "That does sound like something Hanako would do."
 
-show lilly basic_oops_cas
-with chchange
+show lilly basic_oops_cas_close
+with characlose
 
 "I put a hand on Lilly's shoulder."
 hi "Well, things worked out in the end. We got together, and I'm happy I'm able to call her my girlfriend."
 
-show lilly basic_weaksmile_cas
+show lilly basic_weaksmile_cas_close
 with chchange
 
 "Lilly nods silently before smiling inquisitively at me."
 
 show lilly basic_smile_cas
-with chchange
+with charadistant
 
 li "Hisao… if I may ask. How did you two get together? How did things… fall into place between you two?"
 li "I asked Hanako, but she wouldn't tell me much about it."
@@ -427,14 +437,18 @@ show lilly basic_smile_cas
 with chchange
 
 hi "Let's focus on what's ahead of us. Starting with a few days in Hokkaido."
+
+show lilly at center
+with charamove
+
 "Lilly gets up from the bed and gives a polite bow."
 li "Thank you for tonight, Hisao. I'm looking forward to tomorrow."
 hi "Me too. Goodnight Lilly."
 li "Goodnight Hisao."
 
+stop music fadeout 3.0
+
 scene black
 with Dissolve(3.0)
-
-stop music fadeout 3.0
 
 return

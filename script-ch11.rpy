@@ -643,6 +643,7 @@ ha "V-very quickly then."
 "She's wearing a reassuring smile on her face that's not quite catching on yet."
 
 show ev:
+    zoom 1.0
     ease 4.0 xalign 0.4
 
 li "Could you give me your right hand, Hanako?"
@@ -655,6 +656,7 @@ li "Please place your right foot between my feet."
 "I look around nervously, but it doesn't seem like people around us are taking notice of us. Either that or they really don't care."
 
 show ev:
+    xalign 0.4
     ease 2.0 xalign 0.45
 
 li "Let's begin. Could you take a step back with your left foot, count to two and put your right foot beside it?"
@@ -699,6 +701,7 @@ li "Next, try making a slow sidestep to your right, followed by a sidestep to th
 ha "That doesn't s-sound too difficult."
 
 show ev:
+    xalign 0.5 zoom 0.75
     ease 30.0 zoom 0.5
 
 "I move left and right several times, letting Lilly get used to the steps I take."
@@ -723,6 +726,7 @@ li "Left, back, right, forward."
 "I giggle nervously."
 
 show ev ballroomdance_smile_large:
+    zoom 0.5
     ease 30.0 zoom 0.4
 with Dissolve(1.0)
 
@@ -748,7 +752,7 @@ stop music fadeout 0.5
 scene bg school_girlsdormhall
 with Fade(1.0, 0, 1.0)
 
-play music music_twinkle fadein 0.5
+play music music_twinkle fadein 2.0
 
 "I patiently wait as Lilly runs through her bag in search of her room keys."
 "Tonight was great fun. The dancing part was maybe a bit much, but I'd be lying if I said it wasn't interesting to try."
@@ -760,10 +764,13 @@ with charaenter
 li "Hanako, thank you very much for tonight. I truly had a great time."
 
 play sound sfx_dooropen
-show lilly at twoleft
-with chchange
+show lilly:
+    ease 1.0 twoleft
 
 "Lilly has found her keys and has opened her door."
+
+show lilly at twoleft
+
 ha "Same here. I also think I've learned a few things about you I didn't know before."
 "Before she enters her room, she turns to address me."
 

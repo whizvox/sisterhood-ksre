@@ -35,6 +35,8 @@ screen sisterhood():
             style "return_button"
             action ShowMenu("mods")
 
+    key "game_menu" action ShowMenu("mods")
+
 init python:
     def sh_update_sprite_transitions():
         if persistent.sh_slowtransitions:
@@ -85,6 +87,8 @@ screen sisterhood_options():
             top_margin 20
 
             action ShowMenu("sisterhood")
+
+    key "game_menu" action ShowMenu("sisterhood")
     
 
 screen sisterhood_chapter_select():
@@ -146,6 +150,8 @@ screen sisterhood_chapter_select():
             xalign 0.5
             yalign 1.0
 
+    key "game_menu" action ShowMenu("sisterhood")
+
 screen sisterhood_about():
     tag menu
     style_prefix "pxt_about"
@@ -176,3 +182,5 @@ screen sisterhood_about():
         textbutton _("Return"):
             style "return_button"
             action ShowMenu("sisterhood")
+
+    key "game_menu" action ShowMenu("sisterhood")
