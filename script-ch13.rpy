@@ -3,7 +3,7 @@ label .sh_ch13:
 
 call sisterhood_timeskip
 
-scene bg newspaper_club
+scene bg school_newspaperclub
 with Dissolve(2.0)
 
 play music music_comedy fadein 0.5

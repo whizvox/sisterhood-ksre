@@ -97,7 +97,7 @@ init 1:
     image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"
     image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
-    image bg newspaper_club = f"{sh_bgs}/newspaper_club.jpg"
+    image bg school_newspaperclub = f"{sh_bgs}/school_newspaperclub.jpg"
     image bg arcade_airhockey = f"{sh_bgs}/arcade_airhockey.jpg"
     image bg arcade_fightgame = f"{sh_bgs}/arcade_fightgame.jpg"
     image bg arcade_shooter = f"{sh_bgs}/arcade_shooter.jpg"
@@ -151,7 +151,7 @@ init 1:
     Zencare Group Inc.
     Jeremy Bishop on Unsplash
     StockSnap on Pixabay
-    Massachusettes College of Art and Design
+    TUS PRESS
     Drobot Dean
     Harris' The San Francisco Steak Restaurant
     Christina Mueller
@@ -170,6 +170,7 @@ init 1:
     ellie.vanderlip on FreeSound
     Kelieon on YouTube
     Yuval on FreeSound
+    Pagey1969
     USBMED Ambiences Sound Library on FreeSound
     Ataraxy ASMR on YouTube
     Super Street Figher II
@@ -182,9 +183,14 @@ init 1:
     plivesey on FreeSound
     whizvox
     \n\n
-    {b}Music{/b}
+    {b}Background Music{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     "Waltz in A Minor" by CalvinClavier on Pixabay
+    \n\n
+    {b}End Credits Song{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    {size=+10}Bloom{/size}
+    Composed and Arranged by Castillerian
     \n\n
     {b}Event Art{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}

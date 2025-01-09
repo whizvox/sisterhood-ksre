@@ -3,16 +3,17 @@ label .sh_ch7:
 
 call sisterhood_timeskip
 
-scene bg school_scienceroom at bgleft
+scene bg school_scienceroom at left
 with Dissolve(1.0)
 
 play music music_normal fadein 0.5
 
+nvl clear
 nvl show dissolve
 
 n "Ten more minutes until lunch break."
 n "We've already completed the assignment we were given, so now I've taken out one of my library books and am trying to finish a chapter before the school bell rings."
-n "Truth be told I'm still a little tense, so it's not going as quickly as I had been hoping for. The reason for the tension I feel is the fact I just completed my first group assignment in class -- the occasional assignments I do with Hisao notwithstanding."
+n "Truth be told I'm still a little tense, so it's not going as quickly as I had been hoping for. The reason for the tension I feel is the fact I just completed my first group assignment in class - the occasional assignments I do with Hisao notwithstanding."
 n "Or rather, my first group assignment that didn't end in disaster, like some time ago in science class, when I was struck with a panic attack. And Hisao wasn't even part of the group I worked with today, or things probably would have been less awkward."
 
 nvl clear
@@ -26,48 +27,75 @@ nvl clear
 n "Just as I got ready to start the assignment on my own, I noticed Hisao was making a gesture with his head towards a point to my right."
 n "I followed his gaze and noticed my two neighbors on the right side were the only students not part of a group of three yet."
 n "My eyes grew wide as I realized his intention. Was he telling me to join some other group just like that?"
-n "I quickly shook my head and gave him a begging look, but he just made a gesture towards Shizune as if to say 'matters are out of my hands'."
+n "I quickly shook my head and gave him a begging look, but he just made a gesture towards Shizune as if to say “matters are out of my hands”."
 n "Later on, I started wondering whether he was really unable to ditch the student council duo or whether this was a subtle attempt on his part to help me widen the circle of people I could have social interaction with."
 
 nvl clear
 
-show naomi basic_neutral at right
-show natsume basic_neutral at tworight
-with charaenter
+show natsume basic_neutral_close:
+    xanchor 1.0 yalign 1.0 xpos 1.15 alpha 0.0
+show naomi basic_neutral_close:
+    xanchor 1.0 yalign 1.0 xpos 1.4 alpha 0.0
+with None
+
+show bg at right
+show natsume:
+    xpos 0.80
+    ease 1.0 alpha 1.0
+show naomi:
+    xpos 1.05
+    ease 1.0 alpha 1.0
+with charamove
+
 with Pause(0.5)
-hide naomi
-hide natsume
-with charaexit
+
+show natsume:
+    ease 1.0 xpos 1.15 alpha 0.0
+show naomi:
+    ease 1.0 xpos 1.4 alpha 0.0
+with None
+
+show bg at left
+with charamove
 
 "I took another look at my neighbors only to quickly look away when they caught my gaze."
 
-show hisao basic_smile_uni at left
+hide natsume
+hide naomi
+with None
+
+show hisao basic_smile_uni at center:
+    zoom 0.85 xalign 0.2 yalign 1.1
 with charaenter
 show hisao basic_grin_uni
 with charachangealways
 
 "I looked back at Hisao again, and this time he was smiling at me."
-"I knew that expression; I came to know it as his 'everything will be alright'-smile."
+"I knew that expression; I came to know it as his “everything will be alright”-smile."
 
 hide hisao
 with charaexit
 
 "It didn't do a lot to inspire confidence in me this time, though."
 "In all my time in this class, I could count the words I exchanged with my neighbors on one hand, and I had no clue why they would even want to work with me after I spent the better part of two years trying to avoid even basic interaction with them."
+
+show bg at right
+with charamove
+
 ha "Ummm…"
 "As usual when faced with an unexpected social situation, my mind completely froze up, and I couldn't come up with even a single way to formulate that simple request that most people could make without even having to think about it."
 "The fact that my neighbor is a very outgoing person herself didn't exactly ease my mind."
 ha "E-exc…e-excuse me…"
 
-show naomi basic_neutral at tworight
-show natsume basic_neutral at twoleft
+show naomi basic_neutral_close at tworight
+show natsume hands_neutral_close at twoleft
 with charaenter
 
 "That got their attention."
 "The girls looked at me, and when I didn't reply, they looked at Hisao who gave them a quick nod."
 
-show naomi bend_smile
-show natsume basic_smile
+show naomi bend_smile_close
+show natsume hands_smile_close
 with chchange
 
 "My neighbor gave me a cheerful grin."
@@ -77,7 +105,6 @@ na "No probs. Feel free to tag along. Three know more than two, right?"
 "As I moved my desk over to theirs, my neighbor Naomi wasted no time in making conversation."
 
 show naomi basic_grin_close at tworight
-show natsume basic_neutral_close at twoleft
 with chchange
 
 na "Bet you were disappointed you couldn't work with Nakai this time, weren't you? You two usually do assignments together these days."
@@ -91,7 +118,7 @@ with chchange
 na "Don't worry, stuff like that happens to the best of us."
 na "But you know that, don't you? You're usually stuck with the front row seat when I short out."
 "The last statement was accompanied by a cheerful wink."
-"Too many questions!"
+"{i}Too many questions!{/i}"
 "While I was still reeling from Naomi's verbal machinegun fire, her neighbor Natsume cut in with a question of her own."
 
 show natsume basic_smile_close
@@ -107,7 +134,7 @@ na "Great, then we'll finish this all the sooner."
 
 show naomi basic_focus_close
 show natsume basic_neutral_close
-with chchange
+with charachangealways
 
 "While writing my section of the piece, I occasionally observed my new group mates."
 "Natsume and Naomi remind me a bit of less extreme versions of Shizune and Misha."
@@ -124,16 +151,17 @@ with charaexit
 "If I had been working with Hisao, we'd probably have spent the remaining time talking with one another, but I don't think I'd be able to have small talk with my new group mates."
 "Keeping semi-normal interaction going with them had already drained most of my energy, and the tension I felt during our working session isn't fading nearly as quickly as I hoped."
 
-# TODO play SFX of two compasses clinking together
+play sound sfx_metalclink
+
 show naomi basic_shock_close at tworight
-with chchangefast
+with Dissolve(0.2)
 
 na "Well, CRAP!"
 "I look at Naomi from behind my book, startled by her sudden exclamation, and see her wrestling with a pair of compasses."
 "She's been playfully fiddling with them over the course of the entire assignment and now she seems to have jammed them somehow."
 na "Natsumeee…!"
 
-show natsume basic_neutral_close at twoleft
+show natsume hands_neutral_close at twoleft
 with charaenter
 
 nt "They were never meant to be used to grind little pieces of your eraser into powder."
@@ -157,7 +185,6 @@ ha "I t-t-typed it up."
 na "Huh?"
 "I sigh inwardly."
 "I don't think I'd be able to finish a verbal explanation without it taking another hour, so I reach into my bag and just show her the answer sheet I put together the day before."
-# TODO send for review
 "It's all neatly typed out using one of the school's computers, and I used the word processor's graph features to generate the pie chart."
 
 show naomi basic_shock_close
@@ -210,7 +237,7 @@ with chchange
 
 na "It's kinda sad there's still only one member though. I suppose you're not joining to flesh out membership?"
 "I did actually offer to join, but Hisao shot that suggestion down almost immediately."
-"\"Science isn't really your thing, Hanako,\" he told me. \"It'd just feel like class to you. If you want to join a club, you'd be better off finding something that actually captures your interest.\""
+"“Science isn't really your thing, Hanako,” he told me. “It'd just feel like class to you. If you want to join a club, you'd be better off finding something that actually captures your interest.”"
 "I couldn't really argue with that. Unlike Hisao, who seems to have a knack for deciphering Mutou's convoluted lectures, I'm not exactly a star pupil in science class, and it's hardly my favorite subject."
 ha "N-no, I'm n-not."
 na "But you won't be able to hang out with your boyfriend after school hours, because he's in a club and you're not, right?"
@@ -278,13 +305,19 @@ with charaexit
 "While I'm still fumbling with my words, the school bell sounds, and most people immediately start getting up."
 "Hisao collects his things, quickly gets away from Shizune and Misha and approaches my desk."
 
-show hisao basic_smile_uni_close at center
-with charaenter
+show hisao basic_smile_uni_close:
+    xanchor 1.0 xpos 0.0 yalign 1.0 alpha 0.0
+    ease 1.0 xalign 0.1 alpha 1.0
+with None
+
+show bg at left
+with charamove
 
 hi "Hey Hanako. Sorry about not being able to team up. Did you complete the assignment?"
 ha "Y-yes, we even managed to finish ahead of time."
 
-show hisao cross_smile_uni_close
+show hisao cross_smile_uni_close:
+    xalign 0.1 alpha 1.0
 with chchange
 
 hi "Great. Let's head to the tea room, then."
@@ -296,14 +329,17 @@ with charaexit
 
 "As Hisao starts heading towards the exit, Naomi suddenly addresses me again."
 
-show naomi bend_smile_close at center
-with charaenter
+show naomi bend_smile_close:
+    offscreenright alpha 0.0
+    ease 1.0 xalign 0.9 alpha 1.0
+with None
+
+show bg at right
+with charamove
 
 na "Hey Ikezawa, just to reassure you; this isn't a recruiting attempt, though we always welcome new members of course."
 na "But if you'd be willing to help out the newspaper club, we'd be really thankful."
 na "Think about it, okay?"
-# TODO maybe remove this line, or alter the dialogue above to better reflect Naomi shouting
-"Why is she shouting like that? I'm sitting right in front of her."
 
 hide naomi
 with charaexit
@@ -354,7 +390,7 @@ hi "You could choose to see it as a sign that fate is extending you a helping ha
 "By breaking somebody else's? That's kind of a cruel way to motivate someone. Fate must know how easily I can be guilt tripped."
 "I merely nod. I don't believe the work itself will give me much trouble."
 "What scares me is the idea of being thrown into a group of unfamiliar people who might stare at my scars, who might be put off by my stammering -- which always gets worse whenever I'm feeling nervous -- my shyness and inability to make conversation."
-"A few weeks ago, I was still the 'shy kid who kissed her first boyfriend in public' to people, but tomorrow I might be the 'shy kid who panics at the most mundane things' once again."
+"A few weeks ago, I was still the “shy kid who kissed her first boyfriend in public” to people, but tomorrow I might be the “shy kid who panics at the most mundane things” once again."
 
 show hisao cross_speak_uni_close
 with chchange
@@ -383,7 +419,7 @@ hi "We'll be there, Lilly."
 
 stop music fadeout 0.5
 
-scene bg newspaper_club
+scene bg school_newspaperclub
 show naomi basic_smile at tworight
 with locationskip
 
@@ -440,7 +476,7 @@ show naomi basic_neutral
 with chchange
 
 na "Several of our members use these to compose their contributions."
-na "Hideki's completely blind and not too techno-savvy, so he just dictates his articles. Natsume uses these too whenever her joints are hurting."
+na "Hideki's completely blind and not too tech-savvy, so he just dictates his articles. Natsume uses these too whenever her joints are hurting."
 na "Like… the last few days. Anyway, just plug one of these in with this cable here, and the application for playing the contents should start automatically. It'll be easier than rewinding and replaying manually."
 na "Always check the sections at the very end first. They often contain comments on whether to omit or alter certain portions. And the written notes here just contain articles and interviews by the rest."
 ha "I-I'll s-start p-putting these in then."
@@ -473,13 +509,14 @@ play music music_dreamy fadein 0.5
 hi "Can I come in for a little while?"
 ha "S-sure."
 
+play sound sfx_dooropen
+
 scene bg school_dormhanako
-with locationskip
+with locationchange
 
 "We go in, and he sits next to me on the bed."
 
-show hisao basic_speak_uni_close:
-    ypos 1.1
+show hisao basic_speak_uni_close at sittingpos
 with charaenter
 
 hi "You're going back to the newspaper club tomorrow, aren't you? Even though you said you didn't know yet."
@@ -496,7 +533,7 @@ hi "You look tired. And tensed up."
 ha "D-do you think I s-should skip tomorrow?"
 hi "I don't think I can make that decision for you."
 
-show hisao basic_grin_uni_close at twoleft
+show hisao basic_smile_uni_close
 with chchange
 
 hi "But if it helps, I might be able to help you relax a little bit. Do you want to?"
@@ -590,9 +627,9 @@ hi "Alright then, Hanako."
 
 stop music fadeout 0.5
 
-scene bg newspaper_club
+scene bg school_newspaperclub
 show naomi bend_laugh
-with locationchange
+with locationskip
 
 play music music_comedy fadein 0.5
 
@@ -612,7 +649,7 @@ na "I can't force you to do more than you want, but there's still something else
 
 stop music fadeout 0.5
 
-scene bg newspaper_club
+scene bg school_newspaperclub
 show naomi basic_focus
 with shorttimeskip
 
@@ -622,7 +659,7 @@ play music music_comedy fadein 0.5
 "Naomi is usually loud and somewhat chaotic, but in her role of editor-in-chief she becomes a bit more serious and structured than usual and I have an easier time keeping up (and putting up) with her."
 
 show naomi basic_focus_close
-with chchange
+with characlose
 
 na "So here's the templates we have for each page of the newspaper. Now we're gonna have to see what articles go where."
 na "We have the front page for the main article, five pages for internal news, three pages for external news, one page for advertisements, one page for columns and one page for sponsor-related stuff."
@@ -839,7 +876,7 @@ li "Yes, Hanako?"
 "I love you."
 "I love you both so much."
 "Please let me be here for you the way you're here for me."
-ha "{cps=20}…t-thank you.{/cps}"
+ha "…t-thank you."
 
 hide lilly
 hide hisao
@@ -849,7 +886,7 @@ with charaexit
 "As Lilly sees us off, she smiles at me."
 
 show lilly basic_smile at center
-with chchange
+with charaenter
 
 li "Enjoy your date tomorrow."
 ha "Thanks. I'm sure we will."
@@ -857,7 +894,7 @@ ha "And um… Lilly… I… um…"
 ha "I… really enjoyed our time together this week. W-we should hold these tea ceremonies more often again."
 
 show lilly basic_sad
-with chchangefast
+with Dissolve(0.2)
 
 scene bg school_girlsdormhall
 with locationchange
@@ -867,10 +904,12 @@ play sound sfx_doorclose
 "For a split-second Lilly's expression seems sad, but before I can react the door closes, and the moment is gone."
 
 show hisao basic_smile_uni_close
-with chchange
+with charaenter
 
 hi "Can I come in for a little while?"
 ha "S-sure."
+
+play sound sfx_dooropen
 
 scene bg school_dormhanako
 with locationchange
@@ -878,7 +917,7 @@ with locationchange
 "We go in and he places his hands on my shoulders."
 
 show hisao basic_smile_uni_close
-with chchange
+with charaenter
 
 hi "I thought I felt it earlier. You're not nearly as tense as you were during the last few days."
 ha "Today I didn't have much stress, just the printing process and delivery of the papers - and then the tea ceremony with you and Lilly."
@@ -895,8 +934,7 @@ ha "I-I'm not sure yet."
 "I kinda made another important step this week."
 "Maybe I've earned a little something extra."
 "Maybe we've both earned something."
-"Should I…?"
-
+"…Should I…?"
 ha "H-H-Hisao…?"
 
 show hisao cross_smile_uni_close
@@ -925,7 +963,8 @@ play sound sfx_rustling
 "He removes his socks and shoes and sits on my bed."
 "I open one of my drawers, take a few tissues to avoid us messing up my blanket too much…"
 
-scene black
+with Pause(0.5)
+show black
 with None
 
 play sound sfx_lightswitch_off

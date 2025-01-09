@@ -81,6 +81,7 @@ init:
     # BGM
 
     define music_waltz = f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"
+    define music_bloom = f"{sh_path}/bgm/Bloom.ogg"
 
     # SOUND EFFECTS
 
@@ -101,6 +102,7 @@ init:
     define sfx_gostone_stress1 = sh_sfx("gostone_medium_stress1")
     define sfx_gostone_stress2 = sh_sfx("gostone_medium_stress2")
     define sfx_bedsheets = sh_sfx("bedsheets")
+    define sfx_metalclink = sh_sfx("metalclink")
     define sfx_arcadeambience = sh_sfx("arcade_ambient")
     define sfx_airhockey_rally = sh_sfx("airhockey_rally2")
     define sfx_airhockey_score1 = sh_sfx("airhockey_score1")
