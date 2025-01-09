@@ -78,7 +78,8 @@ init 1 python:
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
-    sh_event("funindark", ["hug1", "hug2", "hug3", "hug4", "hug5", "hug6", "hug7"])
+    sh_event("funindark", ["hug_rest", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])
+    sh_event("funindark", ["naked_touch", "naked_touch_close", "naked_hand", "naked_hand_close", "naked_breast", "naked_breast_large", "naked_grab", "naked_grab_close", "naked_masturbate", "naked_climax", "naked_climax_close"], mark_adult=True)
     sh_event("hotel", ["onhanako", "onhanako_large", "onhisao", "onhisao_large", "mirror", "layontop", "thigh", "thigh_large", "thigh_climax", "masturbate", "masturbate_climax", "bed", "bed_climax"], mark_adult=True)
     sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
     sh_event("caress", ["normal", "large"])

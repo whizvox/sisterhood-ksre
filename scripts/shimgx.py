@@ -143,14 +143,29 @@ class ImageProcess:
             img.save(outpath, **self.saveparams)
 
 JPEGS = (
+    # chapter 5
+    ("reference/wheatfield ev/HanakoxHisao2_2.png", "event/wheatfield/wheatfield_smile.jpg", [RESIZE_1080P]),
+    ("reference/wheatfield ev/wheatfield_awkward.png", "event/wheatfield/wheatfield_awkward.jpg", [RESIZE_1080P]),
+    ("reference/wheatfield ev/wheatfield_dreamy.png", "event/wheatfield/wheatfield_dreamy.jpg", [RESIZE_1080P]),
+    ("reference/wheatfield ev/wheatfield_talk.png", "event/wheatfield/wheatfield_talk.jpg", [RESIZE_1080P]),
     # chapter 6
-    ("reference/funindark cgs/hug1.png", "event/funindark/funindark_hug1.jpg", [RESIZE_1080P]),
-    ("reference/funindark cgs/hug2.png", "event/funindark/funindark_hug2.jpg", [RESIZE_1080P]),
-    ("reference/funindark cgs/hug3.png", "event/funindark/funindark_hug3.jpg", [RESIZE_1080P]),
-    ("reference/funindark cgs/hug4.png", "event/funindark/funindark_hug4.jpg", [RESIZE_1080P]),
-    ("reference/funindark cgs/hug5.png", "event/funindark/funindark_hug5.jpg", [RESIZE_1080P]),
-    ("reference/funindark cgs/hug6.png", "event/funindark/funindark_hug6.jpg", [RESIZE_1080P]),
-    ("reference/funindark cgs/hug7.png", "event/funindark/funindark_hug7.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/hug1.png", "event/funindark/funindark_hug_rest.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/hug2.png", "event/funindark/funindark_hug_neck.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/hug3.png", "event/funindark/funindark_hug_cheek.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/hug4.png", "event/funindark/funindark_hug_kiss.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/hug5.png", "event/funindark/funindark_hug_look.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/hug6.png", "event/funindark/funindark_hug_awkward.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/fap1.png", "event/funindark/funindark_naked_touch.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/fap1.png", "event/funindark/funindark_naked_touch_close.jpg", [crop(0, 0, 1920, 1080)]),
+    ("reference/funindark cgs/fap2.png", "event/funindark/funindark_naked_hand.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/fap2.png", "event/funindark/funindark_naked_hand_close.jpg", [crop(0, 0, 1920, 1080)]),
+    ("reference/funindark cgs/fap3.png", "event/funindark/funindark_naked_breast_large.jpg"),
+    ("reference/funindark cgs/fap3.png", "event/funindark/funindark_naked_breast.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/fap4.png", "event/funindark/funindark_naked_grab.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/fap4.png", "event/funindark/funindark_naked_grab_close.jpg", [crop(0, 0, 1920, 1080)]),
+    ("reference/funindark cgs/fap5.png", "event/funindark/funindark_naked_masturbate.jpg", [RESIZE_1080P]),
+    ("reference/funindark cgs/fap6.png", "event/funindark/funindark_naked_climax_close.jpg", [crop(0, 0, 1920, 1080)]),
+    ("reference/funindark cgs/fap6.png", "event/funindark/funindark_naked_climax.jpg", [RESIZE_1080P]),
     # chapter 9
     ("reference/hotel cgs/SPOILER_Hisao_straddles_Hanako.png", "event/hotel/hotel_onhanako_large.jpg"),
     ("reference/hotel cgs/SPOILER_Hisao_straddles_Hanako.png", "event/hotel/hotel_onhanako.jpg", [RESIZE_1080P]),
