@@ -40,7 +40,7 @@ hi "The ones I played were much more primitive than this one though. Technology 
 "As another droning announcement indicates we're about the start the next level, we take up the gun units again and ready them."
 
 show hisao cross_grin_polo at tworight
-with chchange
+with charadistant
 
 hi "You know, I never suspected that the next time I'd be visiting a game center, it'd be as part of a date."
 "I smile."
@@ -119,7 +119,7 @@ hi "OW!!!"
 "Something hits me in the head, causing me to drop the coin."
 "I quickly get down on my knees to retrieve it before it rolls under one of the cabinets."
 "As I grab it and look behind me, two things draw my attention."
-"One is the arcade cabinet we were standing in front of with a big \"GAME OVER\" message on the screen."
+"One is the arcade cabinet we were standing in front of with a big “GAME OVER” message on the screen."
 "The other is my boyfriend, also kneeling on the floor and looking at the screen, then looking at me."
 "His one hand is holding a coin as well. His other hand is rubbing his forehead."
 "As the ridiculousness of the situation sinks in, I press my hand to my mouth in order to stifle a burst of laugher that would surely attract the attention of the other people around us."
@@ -133,8 +133,8 @@ with charaenter
 hi "I don't know about you, but I don't feel like playing through those previous stages again. Let's go and do something else."
 ha "O-okay."
 
-hide hisao
-with charaexit
+scene bg arcade_floor
+with locationchange
 
 "I look at Hisao as he makes his way past the rows of arcade machines with me in tow."
 "He's not wearing the usual sweater vest he usually has on when not wearing his school uniform. Instead, he's wearing a shirt I picked out for him during our shopping trip in Hokkaido."
@@ -147,7 +147,7 @@ with locationchange
 "As we reach a quieter area, Hisao suddenly stops. This corner of the hall contains several air hockey tables."
 
 show hisao cross_smile_polo
-with chchange
+with charaenter
 
 hi "Wanna play a little match, Hanako?"
 ha "Sure."
@@ -162,7 +162,7 @@ with charaexit
 ha "Ready, Hisao?"
 
 show hisao basic_grin_polo
-with chchange
+with charaenter
 
 hi "Bring it on."
 
@@ -306,14 +306,14 @@ with chchange
 
 stop music fadeout 0.5
 
-show hisao basic_speak_polo
+show hisao cross_speak_polo
 with chchange
 
 hi "It feels off sometimes. As if you're keeping a tally. Trying to carefully balance things out each time. Making sure you never receive more than you give."
 hi "That's not a give-and-receive relationship. That's more like a give-and-pay-back-relationship."
 hi "I enjoy doing things for you, but only if you don't see those things as debts that must be paid off as quickly as possible."
 
-show hisao basic_neutral_polo
+show hisao cross_neutral_polo
 with chchange
 
 "I fall silent as I try to recall those moments and what I felt at the time."
@@ -323,13 +323,13 @@ with chchange
 "Fear of being deemed useless?"
 "I feel embarrassed upon being called out on this, as if I got caught with my hand in a cookie jar."
 
-show hisao basic_speak_polo
+show hisao cross_speak_polo
 with chchange
 
 hi "You have faith in me, don't you Hanako? I'm not gonna walk out on you just like that."
 hi "I feel there's a whole lot more between us than just a list of favors and counter favors. This isn't how intimate relationships are supposed to work."
 
-show hisao basic_neutral_polo
+show hisao cross_neutral_polo
 with chchange
 
 "I know that, of course."
@@ -338,6 +338,9 @@ with chchange
 "If Miss Yumi is to be believed, anxieties don't go away overnight just like that, nor can they be dismissed with logic."
 "What was it she said? Something about the heart not listening to reason, only to experiences?"
 "I watch Hisao place the puck back on the table and prepare for another assault."
+
+show hisao basic_neutral_polo
+with chchange
 
 play sound sfx_airhockey_rally loop
 
@@ -379,11 +382,11 @@ hi "I don't think we should keep score… Trying to keep things exactly even wil
 ha "I-I have faith in you, Hisao. Do you also h-have faith in me?"
 hi "I do, Hanako."
 ha "I-I'm trying, and I promise to t-try even harder from n-now on."
-"Hisao walks over to me and puts a hand on my shoulder."
 
 show hisao basic_smile_polo_close
-with chchange
+with characlose
 
+"Hisao walks over to me and puts a hand on my shoulder."
 hi "That's enough for me, Hanako. Thanks."
 
 show hisao basic_grin_polo_close
@@ -414,7 +417,7 @@ with locationchange
 "We decide on sides and then head over to the retro section Hisao brought up earlier."
 
 show hisao basic_smile_polo_close
-with chchange
+with charaenter
 
 hi "See anything you like?"
 ha "Hmmm… let's try that one."
@@ -524,20 +527,20 @@ with chchange
 hi "That was pretty fun. Where to now?"
 ha "Hmmm…"
 
-scene bg arcade_bike
+scene bg arcade_floor
 with locationskip
 
 "We spend the next hours, among other things, beating up cyborg soldiers, navigating monster-filled dungeons, popping balloons with harpoon guns, popping bubbles with monsters inside and watching the attract mode of every cabinet in the area."
 "As we leave the retro corner, Hisao points to a big cabinet with two motorbike-shaped seats in front of it."
 
 show hisao cross_grin_polo_close
-with chchange
+with charaenter
 
 hi "Want to take part in a little race, Hanako?"
 ha "Sure."
 
-hide hisao
-with shorttimeskip
+scene bg arcade_bike
+with shorttimeskipsilent
 
 ha "That was close."
 
@@ -550,7 +553,7 @@ show hisao basic_smile_polo_close
 with charaenter
 
 hi "Hey Hanako, why don't we try the single player race? Might be fun too."
-"How are 'we' supposed to participate in the single player mode? You can only take part in the race with one bike."
+"How are {i}we{/i} supposed to participate in the single player mode? You can only take part in the race with one bike."
 ha "Ummm… how?"
 "Hisao taps the back of his motorbike with his fingers."
 hi "Hop on board before your countdown's finished."
@@ -565,7 +568,7 @@ hi "I mean, have you seen the size of some of the regular visitors here?"
 ha "O-okay then."
 
 hide hisao
-with chchange
+with charaexit
 
 "I quickly move over to the seat Hisao is sitting on and sit down behind him."
 "It's still a tight fit because the seats have a depression in the middle for the player to sit and it's not quite made for two pairs of hips. I don't think either of us are sitting in a particularly stable or comfortable position."
@@ -593,7 +596,7 @@ with charaexit
 "As I press the start button and Hisao hugs me from behind, a thought springs up in my mind."
 ha "Ummm… Hisao? W-was this whole thing j-just an excuse to hug in public?"
 
-show hisao basic_grin_polo_close
+show hisao basic_grin_polo_close at left
 with charaenter
 
 hi "No, just an extremely welcome addition."
@@ -620,14 +623,16 @@ play music music_dreamy fadein 0.5
 "The peaceful corner of the coffee shop where we decided to take a breather after leaving the arcade is a refreshing change from the bustling of the crowded arcade hall."
 "While my difficulty with crowds hasn't raised its head enough to ruin my fun this evening, it still feels good to relax in a quiet place for a while."
 
-show hisao basic_neutral_polo
+show hisao basic_neutral_polo at left
 with charaenter
 
 hi "Sorry it took so long."
 "Hisao returns from the counter holding a bottle of soda and a cup of hot cocoa."
 
-show hisao basic_frown_polo_close
-with chchange
+show hisao basic_frown_polo_close at center
+with charamovechangefaster
+show hisao at sittingpos
+with charamove
 
 "He sits down next to me, puts the soda in front of himself and shows me a frustrated frown for a moment before giving me the cocoa."
 
@@ -643,7 +648,7 @@ with chchange
 "We both look at the plush puppy we liberated from the crane game near the arcade's entrance through our combined efforts."
 hi "We could have obtained several other stuffed toys for the number of efforts it took us to get this specific one."
 ha "He's special. I'm sure he'll feel at home at Yamaku."
-"What's 'special' about the dog in question is actually the fact that his left eye is missing."
+"What's “special” about the dog in question is actually the fact that his left eye is missing."
 "It probably got damaged at some point. When I noticed that, I made a special effort to obtain him despite the fact he was lying pretty far away from the crane's starting point."
 hi "A new member of our little, disabled family, huh?"
 "I nod."
@@ -660,13 +665,13 @@ show hisao cross_smile_polo_close
 with chchange
 
 hi "So, have you already decided on a name for him?"
-ha "Hmmmm… I think I'll call him 'Niji'."
+ha "Hmmmm… I think I'll call him ‘Niji’."
 
 show hisao basic_neutral_polo_close
 with chchange
 
 hi "Niji?"
-ha "At the orphanage… they had a dog that some of the children there took care of. 'Niji' is what they called him."
+ha "At the orphanage… they had a dog that some of the children there took care of. ‘Niji’ is what they called him."
 hi "Were you one of those children?"
 "I shake my head."
 hi "You don't like animals? I've once heard that a lot of people who… well… are not good with other people tend to form strong bonds with their pets."
@@ -688,7 +693,7 @@ show hisao basic_grin_polo_close
 with chchange
 
 hi "Great. Good. I'm happy to hear that. I wouldn't mind going back there myself either."
-"Is he getting nervous? And what does he mean by 'so far'? Won't we going back to Yamaku yet?"
+"Is he getting nervous? And what does he mean by ‘so far’? Won't we going back to Yamaku yet?"
 ha "H-Hisao… Did you have more planned?"
 ha "Does it have to do with that backpack you've been carrying around all the time?"
 
