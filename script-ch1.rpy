@@ -3,7 +3,7 @@ label .sh_ch1:
 
 call sisterhood_timeskip
 
-scene bg satou_house_patio
+scene bg satou_patio
 with Dissolve(2.0)
 
 play music music_happiness fadein 0.5
@@ -27,7 +27,7 @@ aki "Hey, unlike you I've been up and about for four hours already."
 aki "Besides, I have a reason to celebrate. Check out what I got this morning."
 
 show akira basic_smile_close at center
-with characlose
+with charamovechangefaster
 
 "As I hold out my hand, my sister passes me a rectangular piece of paper that has a familiar size. I remember having held a similar piece not too long ago."
 li "A plane ticket! So you have finished making arrangements for our trip back to Japan?"
@@ -314,7 +314,7 @@ with charaexit
 
 stop ambient fadeout 1.0
 
-scene bg satou_house_entrance
+scene bg satou_entrance
 show akira basic_laugh:
     tworight
     ease 4.0 center

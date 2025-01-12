@@ -76,7 +76,7 @@ init:
     define chchangefast = Dissolve(0.2) if persistent.sh_slowtransitions else charachangefast
     define mediumflash = Fade(1, 0, 1, color="#FFF")
 
-    define erase = ImageDissolve(f"{sh_path}/gui/trans/erase_2.png", 2.0)
+    define erase = ImageDissolve(f"{sh_path}/gui/trans/erase.png", 2.0)
 
     # BGM
 

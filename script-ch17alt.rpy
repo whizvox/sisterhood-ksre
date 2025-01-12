@@ -1,8 +1,6 @@
 label sh_ch17alt:
 label .sh17alt:
 
-call sisterhood_timeskip
-
 scene bg school_track_on
 with Dissolve(1.0)
 

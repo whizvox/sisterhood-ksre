@@ -88,28 +88,27 @@ init 1 python:
 
 init 1:
     # backgrounds
-    image bg satou_house_patio = f"{sh_bgs}/satou_house_patio.jpg"
-    image bg inverness_shore = f"{sh_bgs}/shore.jpg"
-    image bg satou_house_entrance = f"{sh_bgs}/satou_house_entrance.jpg"
-    image bg therapist_office = f"{sh_bgs}/therapist_office.jpg"
-    image bg therapist_office_blur1 = im.Blur(f"{sh_bgs}/therapist_office.jpg", 1)
-    image bg therapist_office_blur2 = im.Blur(f"{sh_bgs}/therapist_office.jpg", 2)
+    image bg satou_patio = f"{sh_bgs}/satou_patio.jpg"
+    image bg inverness_shore = f"{sh_bgs}/inverness_shore.jpg"
+    image bg satou_entrance = f"{sh_bgs}/satou_entrance.jpg"
+    image bg school_therapist = f"{sh_bgs}/school_therapist.jpg"
+    image bg school_therapist_blur1 = im.Blur(f"{sh_bgs}/school_therapist.jpg", 1)
+    image bg school_therapist_blur2 = im.Blur(f"{sh_bgs}/school_therapist.jpg", 2)
     image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"
     image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
     image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
-    image bg school_newspaperclub = f"{sh_bgs}/school_newspaperclub.jpg"
+    image bg school_newspaper = f"{sh_bgs}/school_newspaper.jpg"
     image bg arcade_airhockey = f"{sh_bgs}/arcade_airhockey.jpg"
     image bg arcade_fightgame = f"{sh_bgs}/arcade_fightgame.jpg"
     image bg arcade_shooter = f"{sh_bgs}/arcade_shooter.jpg"
     image bg arcade_floor = f"{sh_bgs}/arcade_floor.jpg"
     image bg arcade_crane = f"{sh_bgs}/arcade_crane.jpg"
     image bg arcade_bike = f"{sh_bgs}/arcade_bike.jpg"
-    image bg coffeeshop = f"{sh_bgs}/coffeeshop.jpg"
+    image bg city_coffeeshop = f"{sh_bgs}/city_coffeeshop.jpg"
     image bg hotel_bathroom = f"{sh_bgs}/hotel_bathroom.jpg"
-    image bg hotel_room = f"{sh_bgs}/hotel_room3.jpg"
+    image bg hotel_room = f"{sh_bgs}/hotel_room.jpg"
     image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
     image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
-    image bg hotel_hallway = f"{sh_bgs}/hotel_hallway.jpg"
     image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
     image bg hosp_room2_blur = im.Blur(f"bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
@@ -185,7 +184,7 @@ init 1:
     \n\n
     {b}Additional Writing{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
-    Alex
+    Alex FRD
     \n\n
     {b}Background Music{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
@@ -210,12 +209,12 @@ init 1:
     {b}Sprite Edits{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
-    Alex
+    Alex FRD
     whizvox
     \n\n
     {b}Special Thanks{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
-    Alex
+    Alex FRD
     Grayest
     Ikariya
     Faken

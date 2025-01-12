@@ -9,7 +9,7 @@ ta "Come in, please!"
 
 play sound sfx_dooropen
 
-scene bg therapist_office
+scene bg school_therapist
 with locationchange
 
 "After I hear the reply to my knocking, I hesitantly open the door leading into the “office” where I have my sessions every other week."
@@ -57,7 +57,7 @@ ha "Y-yes, please."
 hide takawa
 with charaexit
 
-show bg therapist_office_blur2
+show bg school_therapist_blur2
 show go_board:
     truecenter
     zoom 0.5
@@ -76,7 +76,7 @@ play sound sfx_gostone
 show go_board:
     easeout 0.5 ypos 0.7 alpha 0.0
 with None
-show bg therapist_office
+show bg school_therapist
 with Dissolve(0.5)
 
 hide go_board
@@ -304,7 +304,7 @@ play sound sfx_gostone
 
 "Should I ask if I can visit her sometime? Just to play a few more games?"
 
-show bg therapist_office_blur1
+show bg school_therapist_blur1
 show takawa serious_close_blur1
 with Dissolve(1.0)
 
@@ -328,7 +328,7 @@ play sound sfx_gostone_stress2
 
 ha "Umm… I…"
 
-show bg therapist_office_blur2
+show bg school_therapist_blur2
 show takawa serious_close_blur2
 with Dissolve(1.0)
 
@@ -466,7 +466,7 @@ with Dissolve(1.0)
 
 stop music
 hide black
-show bg therapist_office
+show bg school_therapist
 show takawa stern_close
 play sound sfx_impact2
 
@@ -482,7 +482,7 @@ ta "Before you draw your own conclusions, please let me explain."
 ta "I'm not refusing your gift because I don't enjoy spending time with you or because you're not a sweet and caring girl. I do and you are."
 ta "I cannot accept your gift because… a friendship between us would be inappropriate."
 
-show bg therapist_office_blur2
+show bg school_therapist_blur2
 show takawa serious_close_blur2
 with Dissolve(1.0)
 
@@ -513,7 +513,7 @@ ta "Miss Hanako, the desire for friendship you expressed just now is undeniably 
 ta "Some friendships can be downright unhealthy. And friendships with therapists are the unhealthiest of them all."
 
 show bg:
-    "bg therapist_office_blur1" with Dissolve(2.0)
+    "bg school_therapist_blur1" with Dissolve(2.0)
 
 ha "I… I don't understand."
 ta "Friendship is a bond of mutually accepted equality, Miss Hanako."
@@ -553,7 +553,7 @@ ha "What's that?"
 
 show takawa smile_close
 with charachangealways
-show bg therapist_office
+show bg school_therapist
 with { "master": Dissolve(2.0) }
 
 ta "That you're not a quitter."

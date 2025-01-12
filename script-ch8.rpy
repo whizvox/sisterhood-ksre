@@ -615,7 +615,7 @@ hi "So, what do you want to do next?"
 stop music fadeout 0.5
 stop ambient fadeout 0.5
 
-scene bg coffeeshop
+scene bg city_coffeeshop
 with locationskip
 
 play music music_dreamy fadein 0.5

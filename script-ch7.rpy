@@ -419,7 +419,7 @@ hi "We'll be there, Lilly."
 
 stop music fadeout 0.5
 
-scene bg school_newspaperclub
+scene bg school_newspaper
 show naomi basic_smile at tworight
 with locationskip
 
@@ -627,7 +627,7 @@ hi "Alright then, Hanako."
 
 stop music fadeout 0.5
 
-scene bg school_newspaperclub
+scene bg school_newspaper
 show naomi bend_laugh
 with locationskip
 
@@ -649,7 +649,7 @@ na "I can't force you to do more than you want, but there's still something else
 
 stop music fadeout 0.5
 
-scene bg school_newspaperclub
+scene bg school_newspaper
 show naomi basic_focus
 with shorttimeskip
 

@@ -89,7 +89,7 @@ nk "After you."
 
 play sound sfx_dooropen
 
-scene bg therapist_office
+scene bg school_therapist
 with Dissolve(2.0)
 
 "I expected to see just another office on the other side of the door. Maybe a variation of the nurse's home turf. But the room I step into fits neither a medical staff building nor a school."
