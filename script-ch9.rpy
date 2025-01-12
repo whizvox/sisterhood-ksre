@@ -20,14 +20,14 @@ n "After taking a break at a coffee shop near the game center we visited, I expe
 
 nvl clear
 
-n "We ended up splitting the costs -- which Hisao didn't object to this time -- and got a nice room on the eighth floor with a soft carpet, a double bed and a clean bathroom. Hisao took a rather quick bath, but told me I could take my time, and I was happy to take some time in order to get myself cleaned up."
-n "As fun as the game center has been, the smell there wasn't exactly heavenly, and I felt like the odor of perspiration rubbed off on me.{w} Well, maybe some of it is my own. The cabinet in the bathroom contained a few small flasks of fragrant shampoo that I gratefully made use of."
+n "We ended up splitting the costs—Hisao didn't object this time—and got a nice room on the eighth floor with a soft carpet, a double bed and a clean bathroom. Hisao took a rather quick bath, but told me I could take my time, and I was happy to take some time in order to get myself cleaned up."
+n "As fun as the game center has been, the smell there wasn't exactly heavenly, and I felt like the odor of perspiration rubbed off on me. Well, maybe some of it is my own. The cabinet in the bathroom contained a few small flasks of fragrant shampoo that I gratefully made use of."
 
 nvl clear
 
 n "Consummating the relationship."
-n "Hisao never said anything specific, but I'm not so naïve as to believe we're merely here to sleep in a bigger bed. Nor do I think we got ourselves a room far from the noisy dorm rooms in order to just give each other a 'helping hand' in the dark, like we've done a few times before now."
-n "If we go all the way tonight and I can manage to enjoy it, we'll be closer than before."
+n "{vspace=60}Hisao never said anything specific, but I'm not so naïve as to believe we're merely here to sleep in a bigger bed. Nor do I think we got ourselves a room far from the noisy dorm rooms in order to just give each other a “helping hand” in the dark, like we've done a few times before now."
+n "{vspace=30}If we go all the way tonight and I can manage to enjoy it, we'll be closer than before."
 n "If not, we'll probably spend the next few days apologizing to each other."
 
 nvl hide dissolve
@@ -59,7 +59,7 @@ with charaenter
 
 "Hisao looks in my direction and beckons."
 "As I approach him, I notice he's spread one of the blankets on the floor and put the towels he took from the bathroom on top of it, creating what almost looks like a make-shift picnic blanket."
-ha "A… A moonlight picnic?"
+ha "A…a moonlight picnic?"
 
 show hisao basic_grin_bath_ni
 with chchange
@@ -70,7 +70,7 @@ hi "It kinda resembles it, doesn't it?"
 "I walk over to Hisao and sit next to him, still trying to make sense of things."
 
 show hisao basic_smile_bath_close_ni
-with chchange
+with characlose
 
 ha "What do you have there? Where did that bowl come from? And what's in the bottle?"
 "He gives me a sheepish grin."
@@ -124,7 +124,8 @@ with chchange
 
 hi "I was actually going for some ordinary massage lotion, but the guy behind the counter said this was the ultimate experience for a couple."
 hi "I didn't tell him we were fairly new at this though."
-"Couple.{w} I really like the sound of that word."
+"“Couple”."
+"I really like the sound of that word."
 
 show hisao basic_blush_bath_close_ni
 with chchange
@@ -143,7 +144,7 @@ hi "We can stop at any time you want."
 
 show hisao basic_smile_bath_close_ni:
     zoom 1.3 ypos 1.2
-with chchange
+with characlose
 
 "Hisao pulls me closer in a gentle hug and carefully puts his lips on mine."
 hi "We can start with this."
@@ -183,7 +184,7 @@ hi "So… shall we?"
 ha "…W-what would you l-like me to do?"
 
 show hisao basic_speak_bath_ni
-with chchange
+with charadistant
 
 "Hisao puts the bowl away, moves off the blanket and points at a small bump beneath the towels."
 hi "I've put the small cushion from one of the chairs there for you to rest your head on."
@@ -201,7 +202,7 @@ hide hisao
 with charaexit
 
 scene ev hotel_onhanako_large:
-    crop (302, 594, 1920, 1080)
+    crop (302, 700, 1920, 1080)
 with mediumflash
 
 "I feel my hips being pressed down as Hisao straddles me."
@@ -285,7 +286,7 @@ hi "Is it okay?"
 "…long, swift ones…"
 hi "What way do you like best?"
 "…short, swift ones…"
-ha "Hhhh-"
+ha "Hhhh—"
 "Too much direct stimulation."
 "…slow firm ones…"
 ha "B-better already."
@@ -457,8 +458,7 @@ with mediumflash
 "I lean on my arms, pressing myself against his base and with a bit of trial and error find an angle that allows me to enjoy the friction as well."
 "As I start swaying my hips, Hisao wraps his legs around mine and starts caressing my neck and chest with his hands."
 "This is… pretty good."
-"This almost feels like we're having intercourse."
-"Expect I'm the one doing the thrusting."
+"This almost feels like we're having intercourse. Except I'm the one doing the thrusting."
 "Hmmmm… really good…"
 "Because I have my back arched I can't see Hisao's face very well, but I can tell by the sounds he's making that he's getting close."
 "Good thing my inner thighs are still slippery or he'd be groaning in pain right now."
@@ -474,7 +474,8 @@ scene ev hotel_thigh_climax
 with Fade(1.0, 0, 0.3, color="#FFF")
 with Pause(2.0)
 
-stop music fadeout 5.0
+stop music fadeout 4.0
+
 scene bg hotel_room
 with Dissolve(2.0)
 
@@ -550,14 +551,81 @@ show hisao basic_smile_nak_close_ni
 with chchange
 
 hi "Then let's give it a try."
+
+play music music_one fadein 4.0
+
+scene ev hotel_masturbate:
+    align (0.5, 0.5) zoom 1.2
+    ease 10.0 zoom 1.0
+with mediumflash
+
 "He places his legs in front of mine, preventing me from closing them. Then he takes a bit of lotion and starts fondling me with both hands while kissing the left side of my neck and earlobe."
 "I gasp and giggle at his attentions."
 ha "H-hey…"
+hi "…let's get you warmed up a little."
+"Our earlier actions already got me “warmed up” quite a bit, but I'm not going to refuse a chance to be pampered by him a bit more."
+"I sit back and let out a little cry as his left hand sneaks down and starts fingering me."
+"For a while he keeps quiet, content to just listen to my heavy breathing. Then he moves his lips to my ear and softly whispers to me."
+hi "Hanako, I want you to try and relax as much as you can."
+ha "…s-sure… ahhhh…"
+"I can feel how his right hand slowly moves down as well."
+ha "W-what are you… hmmm… g-going to do—{i}WHAAaa!{/i}"
+"Before I realize what's happening, his right hand has reached my lady bits and he's slowly pushing one of his fingers inside me."
+"I let out a yelp and reflexively grab his arm though because we're both still pretty slippery, I can't get enough grip to pull it away. He keeps his finger in place for a second and then slowly pulls out again, causing me to exhale in relief."
+hi "Sorry, did that hurt?"
+"I don't think it did. It felt really weird and awkward, but it wasn't exactly painful."
+ha "N-no."
+"Upon hearing my reply he pushes back in…"
+"I try to suppress a gasp, but fail."
+hi "Try to relax your muscles, Hanako."
+"…and back out. Then back in again…"
+hi "Don't hold your breath. Just keep breathing in and out normally."
+"…and out."
+"I nod weakly and try to focus on the sensation his other hand instills in me."
+"At first, my body jumps each time he pushes forth his finger, but as he continues with what he called my “warming up”, I slowly manage to relax and enjoy his touch again, even as he slightly speeds up the movement of both hands."
+"… Upon seeing that my signals of discomfort are disappearing, he whispers in my ear."
+hi "You're doing well, Hanako. Now… let's try with two…"
+# custom start
+"I really like how soothing his voice is when he does that."
+"True to his word, the number of digits inside me doubles. It doesn't take me by surprise as much this time, though I'm not entirely used to the sensation quite yet. Still, I'll take unfamiliarity over pain."
+"In and out, and in again…"
+"Unfamiliarity makes way for growing pleasure as time passes. Small coos of satisfaction escape my lips, which Hisao takes as an indication to go faster. This, combined with his other hand on my breast and his kisses on my neck, are nothing short of pure euphoria."
 
-# TODO Re-add masturbation scene
+show ev hotel_masturbate_climax
+with charachangeev
 
+"After a few minutes, my body begins to squirm, an indication of what's to come. My hands find their way to Hisao's hips in order to help steady myself, my previously quiet moans growing louder and more frequent."
+ha "H-ha… Hi…"
+"For his part, Hisao increases the speed of his fingers, bringing me ever closer to the edge. I can feel that familiar buildup between my legs, and my breathing is increasing in both speed and raggedness."
+"After a couple of seconds, I can't hold it any longer."
+ha "Hi… Hisao!"
+"I feel a surge of pleasure from my lower regions that quickly spreads all over my body. Hisao hasn't stopped, even as my lower lips contract rhythmically around his fingers."
+
+stop music fadeout 4.0
+
+scene bg hotel_room
+with Fade(3, 0, 1, color="#FFF")
+
+"It begins to subside all too quickly, and as much as I'd like to continue, my body is demanding respite."
+# custom end
+ha "S-s-stop..."
+"As the sensations of the last contraction die down and Hisao ceases providing the intense stimulation I just endured, I breathe a long sigh of relief."
+"Hisao moves his legs away, wraps his arms around my waist and lets me catch my bearings while kissing my heavily flushed cheek and softly chuckling a bit to himself."
+ha "P-please d-don't laugh at me…"
+"It wasn't as obvious when we were still keeping the lights off, but being pleasured can draw some pretty entertaining reactions out of people. It's really best not to think too hard about how you must have looked to someone else afterwards."
+
+show hisao basic_grin_nak_close_ni
+with charaenter
+
+hi "I recall you laughing to yourself while I was making faces."
+"I guess I'm not in a position to say anything."
+"…"
 "I give him a quick kiss back as a quiet admission and then look at him expectantly."
 "Now what?"
+
+show hisao basic_speak_nak_close_ni
+with chchange
+
 hi "Can you get onto the bed?"
 
 hide hisao
@@ -579,12 +647,12 @@ ha "I won't be if you aren't."
 hide hisao
 with charaexit
 
+play music music_romance fadein 4.0
+
 scene ev hotel_bed:
     zoom 1.2 align (0.5, 0.5)
     ease 10.0 zoom 1.0
 with mediumflash
-
-play music music_romance fadein 0.5
 
 "I close my eyes and he gently spreads my legs, stroking the inside just a little and then I feel the sensation of something just a little larger than his two fingers smoothly sliding into me."
 "For a moment we both take a surprised look at the place where we're joined now, and Hisao makes a few reluctant movements to check for signs of discomfort on my part."
@@ -599,7 +667,8 @@ ha "N-no."
 
 show ev hotel_bed_climax:
     zoom 1.05 align (0.5, 0.5)
-    ease 0.4 zoom 1.0
+    ease 0.3 zoom 1.0
+    ease 0.2 zoom 1.05
 with dissolve
 
 "I lie back and close my eyes, basking in the amazing sensation we're experiencing, wiggling my upper body as much as Hisao's weight allows me to in order to increase the stimulation."
@@ -611,6 +680,7 @@ with dissolve
 "I lose control and the first convulsion hits my body, letting out an involuntary cry that contains both physical pleasure and emotional joy at the same time."
 
 stop music fadeout 6.0
+
 scene black
 with Fade(3, 0, 1, color="#FFF")
 
@@ -625,9 +695,9 @@ play sound sfx_rustling volume 0.8
 "But I still want to say something - something to thank him for the moments we just shared."
 "I softly kiss his cheek in order to get his attention and whisper in his ear."
 ha "Thank you, Hisao. That was a very memorable first time."
-hi "{cps=20}…first …time …Hanako?{/cps}"
-ha "{cps=20}Yes…{/cps}"
-ha "{cps=20}First time making love.{/cps}"
+hi "…first …time …Hanako?"
+ha "Yes…"
+ha "First time making love."
 
 stop music fadeout 3.0
 scene black

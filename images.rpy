@@ -183,6 +183,10 @@ init 1:
     plivesey on FreeSound
     whizvox
     \n\n
+    {b}Additional Writing{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    Alex
+    \n\n
     {b}Background Music{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     "Waltz in A Minor" by CalvinClavier on Pixabay
