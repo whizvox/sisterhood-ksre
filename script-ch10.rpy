@@ -4,15 +4,11 @@ label .sh_ch10:
 call sisterhood_timeskip
 
 scene bg school_nurseoffice:
-    xcenter 0.5
-    ycenter 0.5
-    zoom 1.1
-show nurse concern:
-    xpos 0.5
-    xanchor 0.5
-    ypos 1.05
-    yanchor 1.0
-with Dissolve(2.0)
+    yalign 0.5 zoom 1.05
+show nurse concern_close:
+    center
+    zoom 1.05 ypos 1.02
+with Dissolve(1.0)
 
 play music music_nurse fadein 0.5
 
@@ -20,9 +16,9 @@ nk "So, no lightheadedness, chest pains or tingling feet this morning? No irregu
 "The nurse casually slurps some coffee while asking me the typical routine questions, to which I respond with the typical routine answers."
 hi "None at all. I set a good pace this morning. The coach was pretty pleased."
 nk "No problems at all? Are you sure?"
-hi "Uhuh. Why would I suddenly get complications? I've been sticking to the schedule, and I haven't had a single flutter since I started training."
+hi "Uh huh. Why would I suddenly get complications? I've been sticking to the schedule, and I haven't had a single flutter since I started training."
 
-show nurse neutral
+show nurse neutral_close
 with chchange
 
 nk "Emi said you tried to skip our check-up this morning."
@@ -31,7 +27,7 @@ nk "Emi said you tried to skip our check-up this morning."
 hi "I have some homework I have to look over before class, and I figured I could afford to skip this once."
 hi "This whole thing has become such an automated routine for both of us, I sometimes wonder if it's still necessary."
 
-show nurse concern
+show nurse concern_close
 with chchange
 
 nk "I can't blame you for thinking like that, but the moment we start making these sessions optional, we're setting you up for adopting bad habits."
@@ -39,13 +35,13 @@ nk "I've had this kind of thing with Emi a little while back, and in the end she
 nk "And in her case, it wasn't even potentially life-threatening. I can't really afford to take those kinds of risks with you."
 "I had a feeling my excuse was going to provoke a lecture like that. I learned long ago that the best thing to do is just nod and agree whenever the nurse drops the lame jokes and gets into serious mode."
 
-show nurse neutral
+show nurse neutral_close
 with chchange
 
 nk "Now, if you just take your shirt off and let me check your heart beat, you can go back to your homework in a minute."
 "I shrug and instead of taking my shirt off, I simply pull it up until my chest scar is completely revealed."
 
-show nurse concern
+show nurse concern_close
 with chchange
 
 "The nurse frowns a bit at this deviation from the usual protocol, but then gives in and presses his stethoscope against my chest without further questions."
@@ -53,22 +49,22 @@ nk "Well, I'm not picking up anything out of the ordinary."
 nk "Although…"
 hi "Yes?"
 
-show nurse fabulous
+show nurse fabulous_close
 with chchange
 
 nk "You just wanted to go straight back to your dorm because of homework?"
 hi "Yes. Is there something wrong with that?"
 
-show nurse grin
+show nurse grin_close
 with chchange
 
 "The nurse's smile turns slightly wicked as he taps the chest piece of the stethoscope."
-nk "It's just that your heart rate just said something else.{w} You're not exactly a good liar."
+nk "It's just that your heart rate just said something else. You're not exactly a good liar."
 hi "It's nothing related to my heart. Isn't that enough?"
 nk "Fine, fine. Let me check your heart beat one last time and then you can go."
 "Eager to get it over with, I lift my shirt again, but the nurse shakes his head."
 
-show nurse concern
+show nurse concern_close
 with chchange
 
 nk "I'll go with a different angle this time. Your back."
@@ -76,7 +72,7 @@ hi "Huh?"
 "I consider protesting, but can't make up a valid excuse in time, so I let him lift up the back of my shirt and press the chest piece just left of my spine."
 "He listens for a second, then takes off the stethoscope and gives a satisfied nod."
 
-show nurse grin
+show nurse grin_close
 with chchange
 
 nk "Your heart rate sounds steady enough. Must have been the additional exercise that did it."
@@ -89,8 +85,16 @@ play sound sfx_impact2
 with vpunch
 
 hi "D-don't you have any shame at all?!"
+
+hide nurse
+with charaexit
+
 "I turn around and prepare to leave before he comes up with more ways to fluster me."
 "Before I can turn the doorknob, I hear him call out to me."
+
+show nurse grin
+with charaenter
+
 nk "Hisao, can I have just one more moment?"
 "I turn around and the nurse motions me to sit down again."
 
@@ -100,6 +104,10 @@ with chchange
 nk "Sorry about the joke. You can't deny that the opportunity was too good to ignore. If I upset you, we can talk tomorrow."
 "So he's not gonna drop it. I might as well get it over with now."
 "With an emphasized sigh, I sit down in the chair in front of him."
+
+show nurse neutral_close
+with characlose
+
 nk "You started sleeping with her?"
 hi "If I say no, are you going to take out the stethoscope again?"
 "He grins an amused grin, then shakes his head."
@@ -110,14 +118,14 @@ nk "I'm not going to give you a hard time over that. Enforcing those regulations
 hi "You're not gonna demand a check-up after every time we…, are you?"
 "He laughs out loud at this, before winking at me."
 
-show nurse fabulous
+show nurse fabulous_close
 with chchange
 
 nk "I could, if you'd like me to."
 hi "Not freaking likely."
 nk "Heheh, probably not."
 
-show nurse concern
+show nurse concern_close
 with chchange
 
 nk "The only thing I'd like to know is if your heart ever acted up during one of those times."
@@ -129,20 +137,20 @@ nk "Just be sure not to ignore the warning signs and stop if you feel something'
 hi "My girlfriend's very vigilant about that kind of stuff. She noticed it the first time too."
 hi "She'd definitely stop me if she suspected something to be wrong. She even thought up a safe word I can use if my chest suddenly starts hurting."
 
-show nurse neutral
+show nurse neutral_close
 with chchange
 
 nk "It's a relief to hear she's looking out for you."
 hi "You're more laid-back about this than I expected."
-"He chuckles.{w} I suspect this is not the first time he's having this kind of discussion with a student."
+"He chuckles. I suspect this is not the first time he's had this kind of discussion with a student."
 nk "I prefer the term pragmatic. When kids become adolescents and develop a healthy sex drive, they're not gonna pay much attention to a preachy guy in a white coat telling them to stop having fun. Might as well make sure they at least go about it in a responsible way."
 
-show nurse concern
+show nurse concern_close
 with chchange
 
 nk "But if something does happen, even if it's a minor red flag, I want you to bring it to my attention immediately. That's not a mere request."
 
-show nurse grin
+show nurse grin_close
 with chchange
 
 "His grin returns as he gives me a playful pat on the shoulder."
@@ -150,13 +158,15 @@ with chchange
 nk "I promise I won't try to embarrass you."
 "He tries his best to look trustworthy, though I'm not completely sure how well he'd be able to keep that promise."
 
-show nurse neutral
+show nurse neutral_close
 with chchange
 
 nk "Well, that's all. See you tomorrow."
 
 hide nurse
 with charaexit
+
+play sound sfx_dooropen
 
 "I nod, get up and head for the door. As I'm about to leave, the nurse gives me one more sly look."
 
@@ -174,8 +184,9 @@ with charaexit
 
 stop music fadeout 0.5
 
-scene bg school_miyagi at bgright:
-    xpos 1.0 xanchor 1.0 zoom 1.4
+scene bg school_miyagi:
+    right
+    zoom 1.2
 with locationskip
 
 play music music_another fadein 0.5
@@ -198,12 +209,8 @@ with chchange
 ha "I'd like to wait for Lilly if that's okay with you."
 hi "Why don't you have a seat in the meantime?"
 
-hide hanako
-with charaexit
-
 show hanako emb_smile_close at closeright
-    
-with charaenter
+with charamovechangefaster
 
 "She approaches the table, takes a moment to decide and then sits down next to me, putting her hand on top of mine."
 hi "Can I have one little bite, just to sample?"
@@ -221,7 +228,7 @@ ha "When Lilly gets here."
 "After class, I have club activities to tend to, and Hanako's decided to help out the newspaper club for another week."
 
 show hanako emb_downtimid_close
-with chchange
+with charachangealways
 
 "I stroke her hand for a bit before noticing her other hand is fixed on the lower part of her neck. I remember she was in a similar posture for the entire duration of class."
 "I give her an amused smile."
@@ -297,10 +304,11 @@ show hanako at closeright
 with charamove
 
 "I turn to Hanako, who's still in the same position as she was when we first noticed Lilly, as if time had stopped around her."
-hi "Ummm… Hanako. She's gone.{w} Let's… just… have our tea now and play a little match."
+hi "Ummm… Hanako. She's gone."
+hi "Let's… just… have our tea now and play a little match."
 
 show hanako emb_downtimid_close
-with chchange
+with charachangealways
 
 show hanako at offscreenright
 with charamove
@@ -311,7 +319,7 @@ with charamove
 stop music fadeout 0.5
 
 scene bg school_gate
-show hanako basic_worry
+show hanako basic_worry_close
 with locationskip
 
 play music music_pearly fadein 0.5
@@ -328,7 +336,7 @@ hi "You asked one of her classmates?"
 "That's an interesting development."
 "Despite the fact that Hanako has become quite a bit less passive than she used to be while being around me, she still has a tendency to try and avoid interaction with most other people and is still uncomfortable around the people with whom interaction is unavoidable."
 
-show hanako basic_normal
+show hanako basic_normal_close
 with chchange
 
 ha "H-he's a member of the newspaper club and c-came over to submit some material to me, s-so I asked him if he thought things were busier than usual in class."
@@ -357,14 +365,12 @@ hi "I hope you at least enjoyed your time off in Scotland then."
 aki "Meh, best thing about it was our folks' beachside home."
 
 show akira basic_smile
-with chchange
+with charachangealways
 
 "As Akira and I are exchanging small talk, I start noticing she's sneaking the occasional glance at Hanako, which is strange since Akira knows Hanako dislikes being stared at."
 "And it wasn't just me who picked it up."
 
 show akira at twoleft
-with charamove
-
 show hanako emb_downtimid at tworight
 with charaenter
 
@@ -373,7 +379,7 @@ ha "Ummm… I-is there s-something o-on m-my…"
 show hanako defarms_shock
 with chchangefast 
 
-"Hanako gasps before she can finish her sentence, and we have a mutual moment of clarity as we both realize what it is Akira is looking at.{w} Or rather, looking for."
+"Hanako gasps before she can finish her sentence, and we have a mutual moment of clarity as we both realize what it is Akira is looking at. Or rather, looking for."
 "Hanako's eyes grow wide in an expression that's a mixture of desperation and horror. I myself am mostly just annoyed."
 hi "Look, her blouse is covering it up, so could you stop looking for it already?"
 
@@ -391,7 +397,7 @@ with chchange
 aki "She didn't invite me, I invited myself. And no, it wasn't to poke fun at you."
 aki "Though if it makes you feel better, I've had a few crummy weeks behind me, and that silly little story cheered me up for the day."
 aki "Besides, it's not a big deal. Take this from someone with experience in attending meetings with one of those things peeking out from under her collar."
-"While part of me is eager to satisfy my morbid curiosity regarding the 'experience' Akira is talking about, I haven't forgotten the reason we came here in the first place, and I eagerly take advantage of the opening she just gave me."
+"While part of me is eager to satisfy my morbid curiosity regarding the “experience” Akira is talking about, I haven't forgotten the reason we came here in the first place, and I eagerly take advantage of the opening she just gave me."
 hi "Crummy weeks, huh? Is it about something that also involves Lilly?"
 
 show akira basic_resigned
@@ -414,16 +420,16 @@ stop music fadeout 0.5
 
 scene bg school_dormlilly
 show akira basic_laugh:
-    xpos 0.1 xanchor 0.0
-show lilly basic_ara at center
+    xpos 0.1 xanchor 0.0 yanchor 1.0 ypos 1.1
+show lilly basic_ara at sittingpos
 show hanako emb_emb:
-    xpos 0.9 xanchor 1.0
+    xpos 0.9 xanchor 1.0 yanchor 1.0 ypos 1.1
 with locationskip
 
 play music music_lilly fadein 0.5
 
 li "An arcade center, huh? That's a pretty unusual destination for a date."
-"Since lunch today got so uncomfortable, we decided to use this opportunity to tell Lilly and Akira about our date last weekend.{w} At least the first part. They already knew more about the second half than they needed to know."
+"Since lunch today got so uncomfortable, we decided to use this opportunity to tell Lilly and Akira about our date last weekend. At least the first part. They already knew more about the second half than they needed to know."
 hi "We had a pretty good time. She may not seem like it at first, but Hanako has quite the competitive streak."
 ha "W-we didn't just play competitive games though. We also teamed up in a lot of games. Both are great fun in their own way."
 
@@ -488,7 +494,7 @@ show hanako basic_worry
 with chchange
 
 "I could ask her, but right now Hanako's gaze towards me tells me she's expecting me to help her capitalize on the opening she just created."
-hi "Lilly, about what Hanako said earlier… I noticed it as well.{w} If something's bugging you, you could tell the plush dog, but remember we're also here for you."
+hi "Lilly, about what Hanako said earlier… I noticed it as well. If something's bugging you, you could tell the plush dog, but remember we're also here for you."
 
 show lilly basic_weaksmile
 with chchange
@@ -500,7 +506,7 @@ show akira basic_resigned
 with chchange
 
 aki "Hey Sis…"
-"Akira's tone has changed from the light-hearted one she usually uses, and for a moment we can see her carefully contemplating and measuring her words - a trait that until now we thought belonged exclusively to the younger of the Satou siblings."
+"Akira's tone has changed from the light-hearted one she usually uses, and for a moment we can see her carefully contemplating and measuring her words—a trait that until now we thought belonged exclusively to the younger of the Satou siblings."
 aki "…don't you think now would probably be a good time to tell them? I certainly think so myself."
 "So not only is there something, but Akira has known about it too."
 
@@ -509,7 +515,7 @@ with chchange
 
 li "Before we left Scotland, you told me I had to determine my choice and the right moment to tell others myself."
 "I can tell that Lilly's not happy with her sister butting in."
-"Her tone is polite as usual, but also a little irritated.{w} Akira is unfazed, however."
+"Her tone is polite as usual, but also a little irritated. Akira is unfazed, however."
 aki "Yeah, but your friends are worried about you, and keeping 'em in the dark doesn't seem like the right thing to do."
 li "Even so…"
 aki "What's more, I went over to uncle's place yesterday and told Hideaki, who may have told his sister about it."
@@ -525,15 +531,15 @@ with chchange
 show lilly basic_displeased
 with chchange
 
+stop music fadeout 2.0
+
 li "…very well then…"
 
-stop music fadeout 0.5
-with Pause(1.0)
-play music music_night fadein 0.5
+play music music_night fadein 4.0
 
 "Lilly takes some time to determine what she wants to say, occasionally fidgeting with Hanako's puppy as she does."
 li "As you know, our parents live in the city of Inverness in Scotland. It's the town where the head office of our family's company is located."
-li "Father decided to move there six years ago in order to fill the executive position that opened up there, which resulted in Mother moving there as well.{w} Akira and I stayed behind for the sake of her job at the Japanese branch of the company and my education."
+li "Father decided to move there six years ago in order to fill the executive position that opened up there, which resulted in Mother moving there as well. Akira and I stayed behind for the sake of her job at the Japanese branch of the company and my education."
 hi "Is education really that much better here in Japan than in Scotland?"
 li "I'm not really sure, though our family has good ties with Yamaku here. The family's company is among its donors."
 li "Anyway, Akira and I were summoned there to visit an aunt of ours who had fallen ill. It was the first time in six years we met with our parents again."
@@ -562,8 +568,8 @@ hi "You're kinda making it sound like you didn't have a choice in this at all."
 aki "Don't get me wrong, it's still my own decision. But a side effect of the old man's recommendation was that my current career was pretty likely to hit a dead end if I declined."
 aki "There were still plenty of steps on the corporate ladder I wanted to take, but in the end my promotion could have taken place under far better circumstances."
 hi "So when exactly are you leaving?"
-aki "Around the time your summer break starts. I've been working hard to try and tie up all the loose ends here over the last few weeks.{w} I'd be lying if I pretended it hasn't been stressful."
-"Loose ends?{w} Are we a loose end as well?{w} What about Lilly?"
+aki "Around the time your summer break starts. I've been working hard to try and tie up all the loose ends here over the last few weeks. I'd be lying if I pretended it hasn't been stressful."
+"Loose ends? Are we a loose end as well? What about Lilly?"
 "Hanako, who has been quiet for some time now, suddenly speaks up again."
 
 show hanako emb_sad
@@ -580,25 +586,23 @@ aki "Same here. It was fun hanging out with you guys. It's nice to see my sister
 ha "L-Lilly, w-what was t-that decision you mentioned b-before about?"
 
 show lilly basic_sad
+show akira basic_resigned
 with chchange
 
+stop music fadeout 2.0
+
 "Lilly pauses for a few seconds before speaking, clearly not completely comfortable."
-
-stop music fadeout 0.5
-with Pause(1.0)
-
 li "The truth is, Hanako, that my parents also summoned me back."
 li "They want me to move back in with them when Akira transfers."
 
-with Pause(0.5)
-play music music_rain fadein 0.5
+play music music_rain fadein 4.0
 
-show akira basic_lost
 show hanako emb_downtimid
-with chchange
+with charachangealways
 
 "Despite the fact I'm not really that surprised by Lilly's revelation after she brought up Akira's departure, this news still hits us like a bombshell."
-"Not too long ago Hanako and I were still talking about how it felt like the three of us were like a small family.{w} And now, one member of that family is about to leave for good.{w} Or is she?"
+"Not too long ago Hanako and I were still talking about how it felt like the three of us were like a small family. And now, one member of that family is about to leave for good."
+"Or is she?" # vsauce, michael here
 
 show hanako emb_timid
 with chchange
@@ -613,11 +617,7 @@ with chchange
 
 li "…I… haven't made my decision yet, Hisao. In fact, I wasn't really planning on breaking this news to you two until I made up my mind."
 li "I didn't want this matter to ruin the joy of your newly-found relationship. Especially since I'm still in the process of trying to decide."
-
-show akira basic_resigned
-with chchange
-
-aki "I'd be the last one who'd want to rush you Sis, but that process has been going on for quite some time, and I'm not getting the impression there's much progress."
+aki "I'd be the last one who'd want to rush you Sis, but that process has been going on for quite some time, and I'm not getting the impression much progress has been made."
 aki "It'd be nice if I knew whether to cancel your ticket or not."
 
 show lilly basic_concerned
@@ -632,7 +632,6 @@ with chchange
 li "Akira, please…"
 aki "Sorry."
 
-# TODO show edit of Akira's sprite with "weary smile"
 show akira basic_smile
 with chchange
 
@@ -642,8 +641,9 @@ hi "Are you here to help her make a decision as well?"
 aki "Naw, just to catch up on things. It's been a while since we've met face to face."
 aki "I feel I've already influenced her decision too much as it is."
 
-show hanako emb_sad
-with chchange
+show hanako emb_sad:
+    ypos 1.0
+with charamovechangefaster
 
 "Upon hearing that, Hanako slowly rises to her feet. I notice she's looking very tired."
 ha "W-we'll give you two some time alone then."
@@ -658,15 +658,12 @@ li "I genuinely wanted you two to spend more time together in order to deepen yo
 li "In that regard, I have no regrets."
 li "But it is also true that this matter has been on my mind a lot and I've been needing time alone in order to sort things out for myself."
 hi "Just take care not to get stuck in permanent worry-mode."
-hi "Seeing that we know now, you can count on Hanako and me if you want a listening ear or a shoulder to support you. Both of us would happily sacrifice our 'time together' for your sake at this point."
+hi "Seeing that we know now, you can count on Hanako and me if you want a listening ear or a shoulder to support you. Both of us would happily sacrifice our ‘time together’ for your sake at this point."
 
 show hanako basic_worry
 with chchange
 
 "I take a side-look at Hanako who's nodding fervently, before remembering Lilly can't see that."
-
-# TODO get a writer to check this line
-# original line: I take a side-look at Hanako who's nodding fervently, before remembering Lilly can't see that and following it up with a curt but determined 'yes'.
 ha "Y-yes. W-we'll support you, Lilly."
 
 show lilly basic_smile
@@ -695,53 +692,56 @@ play sound sfx_doorclose
 "I would have liked to accompany her, but I guess she wants to be alone for a while."
 "I just hope she's not going to bottle up whatever she's feeling right now."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_dormhisao_blurred_ni:
-    xpos 1.0 xanchor 1.0 zoom 1.3
+    right
+    zoom 1.2
 with locationskip
 
+nvl clear
 nvl show dissolve
 
 n "As I put on my pajamas and take my dose of pills for the night, my mind continues wandering on Lilly's revelation and what it means for us and especially for Hanako."
 n "Until I came to Yamaku, Lilly was the only friend Hanako had here, possibly the only person Hanako had here or pretty much anywhere else."
 n "What kind of effect would the loss of such a person have on Hanako?"
 
-play sound sfx_rustling
-
-n "After getting into bed, I spend some time staring at the ceiling and trying to digest this evening's events."
-n "Maybe it's still too early to jump to conclusions."
-
+nvl hide dissolve
 nvl clear
 
-play sound sfx_taps1
-n "{i}*tap* *tap*{/i}"
+play sound sfx_rustling
 
-n "Lilly said she was still deciding, and I doubt she'd just say that to ease our minds while she's already certain what she's going to do."
+"After getting into bed, I spend some time staring at the ceiling and trying to digest this evening's events."
+"Maybe it's still too early to jump to conclusions."
+
+play sound sfx_taps1
+
+centered "*tap* *tap*"
+"Lilly said she was still deciding, and I doubt she'd just say that to ease our minds while she's already certain what she's going to do."
 
 play sound sfx_taps2
-n "{i}*tap* *tap* *tap*{/i}"
 
-n "Especially not with Akira sitting nearby."
+centered "*tap* *tap* *tap*"
+"Especially not with Akira sitting nearby."
 
 play sound sfx_taps3
-n "{i}*tap* *tap* *tap* *tap* *tap*{/i}"
 
-nvl hide dissolve
+centered "*tap* *tap* *tap* *tap* *tap*"
 
 show bg school_dormhisao_ni:
-    xpos 1.0 xanchor 1.0 zoom 1.3
+    right
+    zoom 1.2
 with dissolve
 
 "It takes another moment before I realize the strange sound is coming from my door. It's as if a dog is scratching it on the other side."
 "Is that Kenji? It's kinda late for him to try and bug me about something."
 
 play sound sfx_taps4
-"{i}*tap* *tap* *tap*{/i}"
+
+centered "*tap* *tap* *tap*"
 "At least he's being more considerate than usual. Usually he bangs on the door with enough force to wake up everyone in the building."
 
-show bg:
-    xpos 0.0 xanchor 0.0
+show bg at left
 with charamove
 
 play sound sfx_lightswitch_on
@@ -783,7 +783,7 @@ hi "It's okay."
 hi "Do you want to stay here for the night? I'm okay with it if you do."
 
 show hanako emb_smile_close_ss
-with chchange
+with charachangealways
 
 "She gives me a faint smile and nods softly."
 ha "T-thanks. I could use some… comfort."
@@ -793,9 +793,9 @@ with charaexit
 play sound sfx_rustling
 
 "She sits on my bed and starts removing her shoes and stockings."
-"I swallow a lump in my throat.{w} Does she mean {i}that{/i} kind of comfort?{w} She's not even asking me to turn around."
-hi "H-Hanako, by 'comfort', do you mean {w=0.5}{i}comfort{/i}?"
-"She unbuttons her blouse and pulls it off in a single move, revealing her{cps=10}…{/cps} nightgown?"
+"I swallow a lump in my throat. Does she mean {i}that{/i} kind of comfort? She's not even asking me to turn around."
+hi "H-Hanako, by ‘comfort’, do you mean {w=0.5}{i}comfort{/i}?"
+"She unbuttons her blouse and pulls it off in a single move, revealing her…{w=0.5} nightgown?"
 
 show hanagown worry_close_ss
 with charaenter
@@ -808,12 +808,13 @@ hi "Of course."
 hide hanagown
 with charaexit
 
+with Pause(0.5)
 play sound sfx_lightswitch_off
 with Pause(0.1)
 show bg school_dormhisao_ni
 with Pause(1.0)
 
-play music music_night fadein 0.5
+play music music_night fadein 4.0
 
 "After Hanako has finished taking off her blouse and skirt and putting them in a neat pile beside my clothes, I turn off the lights and get back into bed."
 "Moments later, I can feel her lying down next to me and snuggling up to me."
@@ -821,7 +822,7 @@ play music music_night fadein 0.5
 "On my first impression I didn't really have Hanako pegged for a very physical person. She already tended to get nervous when people came near her, and I expected being touched would probably cause her to flee the scene in a heartbeat."
 "I started having second thoughts about that impression when she got drunk and really clingy with me during her birthday party. And after I started dating her, I discovered that beneath her skittish nature, Hanako's actually quite the snuggle bunny in private."
 "I continue running my hand through her hair until I can feel her relax and lay her head on my chest so she can listen to my heartbeat; another thing she likes to do."
-"I'm not sure if she wants to talk to me about this or simply wants physical comfort.{w} In a way, it's already a good thing she came here instead of pretending nothing's wrong and bottling up things inside."
+"I'm not sure if she wants to talk to me about this or simply wants physical comfort. In a way, it's already a good thing she came here instead of pretending nothing's wrong and bottling up things inside."
 hi "Do you want to talk for a bit?"
 
 show hanagown smile_close_ni
@@ -833,7 +834,7 @@ hi "How do you feel about Lilly's announcement."
 show hanagown distant_close_ni
 with chchange
 
-ha "I f-feel sad. My first thought was 'why now?'"
+ha "I f-feel sad. My first thought was ‘why now?’"
 hi "Huh?"
 ha "L-lately I've started to become more motivated to turn my life around. L-like you have. That i-includes my friendship with Lilly."
 ha "B-but now I wonder if I'll even get the chance for that."
@@ -854,8 +855,8 @@ with chchange
 ha "Yes. She wants to be an English teacher."
 hi "She can study English in Scotland as well. It doesn't matter what she does concerning her education."
 hi "Heck, her parents might just hire private tutors, seeing that they seem well-off. And she can find a job as a teacher either here or there. Over there, she could also teach Japanese if she liked."
-ha "Uhuh…"
-hi "So what else could determine her choice?{w} There's relatives, I guess. Lilly said it's been six years since she last met her parents before that last trip."
+ha "Uh huh…"
+hi "So what else could determine her choice? There's relatives, I guess. Lilly said it's been six years since she last met her parents before that last trip."
 hi "I had the impression this evening that Lilly and Akira are estranged from their family. Did Lilly ever mention them to you?"
 
 show hanagown distant_close_ni
@@ -872,15 +873,15 @@ show hanagown worry_close_ni
 with chchange
 
 ha "She seemed uncomfortable by Akira's outbursts about their parents, but didn't defend them in any way."
-hi "She's definitely not neutral towards Akira though. And Akira will be migrating.{w} The only other family she has contact with around here seems to be Shizune and that's hardly positive contact."
-hi "So if she doesn't dislike her parents and the sister she loves is leaving for a country where Lilly herself will have no problems finishing her education, why exactly {i}is{/i} she still trying to make up her mind?{w} Shouldn't the decision be easy?"
+hi "She's definitely not neutral towards Akira though. And Akira will be migrating. The only other family she has contact with around here seems to be Shizune and that's hardly positive contact."
+hi "So if she doesn't dislike her parents and the sister she loves is leaving for a country where Lilly herself will have no problems finishing her education, why exactly {i}is{/i} she still trying to make up her mind? Shouldn't the decision be easy?"
 ha "S-she has many friends here too."
 hi "True, but the two of us seem to be the only ones she regularly invites to her room, and we're the ones she took along to her family's summerhouse in Hokkaido."
 hi "And while I'm sure Lilly considers me a good friend, I think the title of best friend goes unavoidably to you."
 hi "If there's one person she could be considering staying here for, it has to be you."
 
 show hanagown distant_close_ni
-with chchange
+with charachangealways
 
 "Hanako falls silent for a long while, the gentle rubbing of her feet against mine the only indication she hasn't spontaneously fallen asleep."
 "I don't think she disagrees with the logic behind my argument. It's probably her own unsteady sense of self-worth that's denying the possibility someone else could consider her important enough to decline an emigration opportunity for."
@@ -910,7 +911,7 @@ hi "I can't hear you very well."
 show hanagown worry_close_ni
 with chchange
 
-ha "B-because that would r-ruin what our f-friendship is about.{w} Or rather… what I'd l-like our friendship to b-be about."
+ha "B-because that would r-ruin what our f-friendship is about. Or rather… what I'd l-like our friendship to b-be about."
 hi "Could you explain that to me?"
 
 show hanagown distant_close_ni
@@ -952,7 +953,7 @@ hi "Then maybe it should be just you spending some additional time with her for 
 show hanagown worry_close_ni
 with chchange
 
-ha "B-But you're my boyfriend."
+ha "B-but you're my boyfriend."
 hi "I'm not going anywhere."
 hi "You just hang out with Lilly, and maybe you'll get around to convincing her to stay here, even if you don't end up asking her directly."
 
@@ -968,8 +969,9 @@ hi "Goodnight, Hanako."
 ha "And Hisao?"
 hi "Yes?"
 "She gives me a quick kiss."
-ha "{w=1.0}…thank you."
+ha "…thank you."
 
+stop music fadeout 3.0
 scene black
 with Dissolve(3.0)
 
