@@ -3,11 +3,13 @@ label .sh_ch11:
 
 call sisterhood_timeskip
 
+play ambient sfx_carsambient fadein 2.0
+play sound sfx_crowd_outdoors loop fadein 2.0
+play music music_pearly fadein 2.0
+
 scene bg city_street2_ni
 show lilly basic_oops_cas_close
 with locationskip
-
-play music music_pearly fadein 0.5
 
 ha "C-could you let me check the directions one more time?"
 li "I don't think there's any need to hurry. I'm sure they'll have a table for us even if we don't show up exactly on time."
@@ -22,12 +24,14 @@ with chchange
 
 li "Let's go then."
 
-stop music fadeout 0.5
+stop ambient fadeout 1.0
+stop sound fadeout 1.0
+stop music fadeout 1.0
 
 scene bg fanres_entrance
 with locationskip
 
-play music music_waltz fadein 0.5 volume 0.5
+play music music_waltz fadein 2.0 volume 0.5
 
 re "Welcome to our humble establishment. Do you wish to have a table for two?"
 "The young man at the door makes a deep bow before noticing Lilly's cane and fidgeting a bit, unsure on how to proceed."
@@ -90,7 +94,7 @@ ha "Hmmm, okay."
 "I take a careful look around."
 
 show lilly basic_listen_cas_close
-with chchange
+with charachangealways
 
 ha "The room itself is rather large and tall…"
 ha "…there's a spacious dance floor near the center of the room…"
@@ -152,8 +156,7 @@ with chchange
 show lilly basic_giggle_cas_close
 with chchange
 
-li "It's funny. I never imagined you to outpace me in the boys department."
-li "Perhaps someday it'll be me approaching you for relationship advice."
+li "It's funny. I never imagined you to outpace me in the boys department. Perhaps someday it'll be me approaching you for relationship advice."
 "I can't help but chuckle at that before rolling my eyes in a self-deprecating way."
 ha "I-I don't think you'll want to go about things the way I did. It's a miracle everything worked out the way it did."
 li "A miracle or perhaps merely fate."
@@ -247,9 +250,11 @@ with chchange
 
 li "That isn't true, Hanako. The two of you fell in love on your own accord and started a relationship through your own choices and efforts."
 ha "But he never even would have spent enough time near me to start liking me if it hadn't been for you."
-ha "You're the one who was so nice to him and had him join our lunch breaks, and you're the one who started inviting him to our tea parties in the evening, and you got him involved in shopping for my presents and took us along for that night on the town,{nw}"
+ha "You're the one who was so nice to him and had him join our lunch breaks, and you're the one who started inviting him to our tea parties in the evening,{nw}"
+ha "and you got him involved in shopping for my presents and took us along for that night on the town,{nw}"
 ha "and he told me you were also the one who convinced him to keep having faith in me after I locked myself up in my room, and…{nw}"
-"{cps=3}…{w=0.5}{/cps}I suddenly realize I've started to ramble. I cut myself off and take a deep breath."
+"…"
+"I suddenly realize I've started to ramble. I cut myself off and take a deep breath."
 ha "Lilly, is there… anything I can do for you in return? Anything at all?"
 
 show lilly basic_weaksmile_cas_close
@@ -293,14 +298,14 @@ with chchange
 
 li "Then again, I don't really know him very well. He rarely speaks in class."
 ha "I don't know him well either, but apparently he's rather talkative in private."
-ha "He's kind of a friend to Hisao, I think, but Hisao usually asks me to wait outside earshot range when Kenji comes up to talk, so I don't know what they talk about together. 'Guy talk' is what Hisao calls it."
+ha "He's kind of a friend to Hisao, I think, but Hisao usually asks me to wait outside earshot range when Kenji comes up to talk, so I don't know what they talk about together. ‘Guy talk’ is what Hisao calls it."
 
 show lilly basic_cheerful_cas_close
 with chchange
 
 li "I wonder how Hisao managed to convince him."
 ha "Ummm… I… might know. While Hisao was talking to Kenji, I tried listening in a bit."
-ha "I couldn't hear very well, but suddenly Kenji raised his voice and said something like 'Alright! If it's really an all-guys club, I'd be crazy not to join.' Or something similar."
+ha "I couldn't hear very well, but suddenly Kenji raised his voice and said something like ‘Alright! If it's really an all-guys club, I'd be crazy not to join.’ Or something similar."
 
 show lilly basic_giggle_cas_close
 with chchange
@@ -313,7 +318,7 @@ with chchange
 
 li "Hisao's not uncomfortable with homosexuality, is he? I always thought he was too easy-going to be offended by that."
 ha "I don't think so. Maybe it's just Kenji."
-ha "He likes to get really close to people when speaking to them, and - heh - they do have to share a bathroom and shower."
+ha "He likes to get really close to people when speaking to them, and… heh… they do have to share a bathroom and shower."
 li "Do you think Hisao knows about his neighbor in class?"
 ha "Misha? I don't think he does, even though he's pretty good friends with her."
 ha "He wasn't around when she changed her haircut. He probably thinks she's always had her hair like that. I didn't tell him about it."
@@ -511,11 +516,11 @@ ha "I wouldn't have been able to do it."
 "A quick and definite answer, but I know myself well enough to sense that it's true."
 ha "T-they say it's easier to be selfish than to be selfless."
 ha "If it was for Hisao's sake I… I… I feel like I'd be able to do anything, but…"
+"That was the worst ad lib ever."
 
 show lilly basic_listen_cas_close
-with chchange
+with charachangealways
 
-"That was the worst ad lib ever."
 "Lilly's reaction isn't the amused smile I was expecting though. Instead, she just looks lost in thought. Lost in thought and just a little bit sad."
 
 show lilly basic_weaksmile_cas_close
@@ -577,18 +582,14 @@ li "Very well then. I hear they're playing a slow waltz right now."
 li "That's fortunate, for that's a rather easy one to perform."
 ha "Ummm… but, don't you need a partner to…"
 
-show lilly basic_smile_cas_close
-with chchange
-
-show lilly:
-    ypos 1.0
-with charamove
+show lilly basic_smile_cas_close at center
+with charamovechangefaster
 
 "Before I can finish my sentence, Lilly gets up and extends her hand to me with a playful expression on her face."
 li "May I have this dance, Miss Ikezawa?"
 "{i}Wait a minute!{/i}"
 "I curse myself for not seeing this one coming after such a shamelessly obvious lead-in."
-ha "W-w-wait Lilly, w-w-we're two g-girls, aren't w-we?"
+ha "W-w-wait Lilly, w-w-we're two g-girls, aren't w-we?" # even better, hanako
 
 show lilly basic_planned_cas_close
 with chchange
@@ -620,7 +621,7 @@ scene bg fanres_entrance
 with locationchange
 
 "As we circle the area in search of a bit of space, I try to wrap my head around this uncharacteristically forward move."
-"It isn't like Lilly at all to try and push against my boundaries like this. For as long as I've known her, she's been protective, sometimes even over-protective, of me."
+"It isn't like Lilly at all to try and push against my boundaries like this. For as long as I've known her, she's been protective—sometimes even over-protective—of me."
 "But tonight, more than ever before, I feel like we've been interacting as equals. We both spoke candidly about ourselves; Lilly of her past and I of my future."
 "This kind of interaction between us wouldn't have been possible two months ago. This kind of outing wouldn't have been possible two months ago."
 "Is Lilly trying to find out how far I will go in defying my own anxieties?"
@@ -660,14 +661,14 @@ show ev:
     ease 2.0 xalign 0.45
 
 li "Let's begin. Could you take a step back with your left foot, count to two and put your right foot beside it?"
-ha "Umm… Like this{cps=3}…?{/cps}{nw}"
+ha "Umm… Like this{cps=3}...? {/cps}{nw}"
 
 show ev:
     linear 0.05 xalign 0.455
     linear 0.05 xalign 0.45
     repeat 5
 
-ha "Umm… Like this…?{fast} Eek!"
+extend "Eek!"
 "The moment I take a step back, Lilly lifts her right foot, presumably to let me drag her forward a bit and determine the length of my steps."
 "Since I wasn't expecting this lack of resistance, I try to put my foot back and almost lose my balance, which would have resulted in me dragging us both to the floor and her ending up on top of me."
 "That'd be enough reason for me to run out of here and deny this evening ever happened."

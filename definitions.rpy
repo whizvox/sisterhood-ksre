@@ -59,7 +59,7 @@ init:
         (_("Chapter 15"), "sisterhood_ch15.sh_ch15", _("Hisao is determined to reconcile with Hanako."), "hisao"),
         (_("Chapter 16"), "sisterhood_ch16.sh_ch16", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
         (_("Chapter 17"), "sisterhood_ch17.sh_ch17", _("Lilly and Hanako talk it out."), "lilly"),
-        (_("Chapter 17 Alt"), "sh_ch17alt.sh17alt", _("Hisao talks to Kenji and Miss Takawa."), "hisao")
+        (_("Chapter 17 Alt"), "sisterhood_ch17alt.sh_ch17alt", _("Hisao talks to Kenji and Miss Takawa."), "hisao")
     ]
 
     # TRANSFORMS
@@ -116,6 +116,7 @@ init:
     define sfx_taps4 = sh_sfx("taps4")
     define sfx_lightswitch_on = sh_sfx("lightswitch_on")
     define sfx_lightswitch_off = sh_sfx("lightswitch_off")
+    define sfx_carsambient = sh_sfx("carsambient")
     define sfx_cellphonering = sh_sfx("cellphonering")
     define sfx_bicyclecrash = sh_sfx("bicyclecrash")
     define sfx_hospital = sh_sfx("hospital")

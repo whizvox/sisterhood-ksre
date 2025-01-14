@@ -24,7 +24,7 @@ label sisterhood_start:
     call sisterhood_ch16
     call sisterhood_ch17
     call sisterhood_credits
-    call sh_ch17alt
+    call sisterhood_ch17alt
     call sisterhood_postcredits
 
     return

@@ -1,5 +1,5 @@
-label sh_ch17alt:
-label .sh17alt:
+label sisterhood_ch17alt:
+label .sh_ch17alt:
 
 scene bg school_track_on
 with Dissolve(1.0)

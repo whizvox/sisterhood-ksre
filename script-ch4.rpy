@@ -251,6 +251,7 @@ with charachangealways
 
 "I'm still a bit unused to the sight of Hanako's face being completely exposed, but that's more because I've been staring at that lock for so long I've gotten used to it."
 
+nvl clear
 nvl show dissolve
 
 n "The clip, its flower decoration a miniature version of the one on Hanako's phone strap, was something I gave to her just before our first date with the request to wear it on occasion when we were alone."
