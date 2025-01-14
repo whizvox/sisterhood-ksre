@@ -259,7 +259,7 @@ ha "W-w-what!?"
 hi "It might be a good idea to avoid the nurse for a week or so."
 ha "H-he n-noticed?"
 "I relate my experience in the nurse office to Hanako."
-"When I finish my story, the result is a muffled giggle - except the sound isn't coming from Hanako but from beyond the doorway."
+"When I finish my story, the result is a muffled giggle. Except the sound isn't coming from Hanako but from beyond the doorway."
 
 show lilly:
     xpos -0.5 xanchor 0.0

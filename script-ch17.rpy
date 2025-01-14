@@ -17,7 +17,7 @@ n "Hisao asked Shizune, Misha and me to give his mother and father a tour of the
 nvl clear
 
 n "I was heartened and relieved when I received a phone call from Hisao that he hadn't merely succeeded in finding Hanako, but he also managed to reconcile with her. According to Hisao, Hanako was still in the process of recovering from the stress of last week, but he had no doubts that they were going to pick up where they left off."
-n "It appears that their relationship is very much like Hanako herself - easy to crack, but impossible to break."
+n "It appears that their relationship is very much like Hanako herself—easy to crack, but impossible to break."
 n "Unfortunately, my own relation with Hanako seems a different matter altogether. We're still avoiding each other, and tomorrow evening Akira will arrive here to pick me up."
 
 nvl clear
@@ -769,7 +769,7 @@ with chchange
 "…and finally the stress of having to confront Mother with what I truly wanted for myself in life."
 "We stay locked in the embrace for a long time, and as the adrenaline in my system dies down, my quiet sobs are replaced by laughs of relief." 
 "Relief that all of this is behind me now."
-"And through it all, I become aware of another sound - a sound I've never heard before."
+"And through it all, I become aware of another sound—a sound I've never heard before."
 "It's the sound of my best friend laughing out loud in joy."
 
 stop music fadeout 0.5

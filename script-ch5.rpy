@@ -121,7 +121,7 @@ show firefly_v6:
         ease 12.92 pos (0.36,0.13) knot (0.22,0.23) knot (0.24,0.42) knot (0.23,0.56) knot (0.34,0.65) knot (0.36,0.53) knot (0.33,0.66)
         repeat
 
-"After getting up early - too early - yesterday morning we took the train to Hokkaido and arrived at the Satou summer home late in the afternoon."
+"After getting up early—too early—yesterday morning we took the train to Hokkaido and arrived at the Satou summer home late in the afternoon."
 "I failed to get a great deal of sleep the night before, so I spent a large part of the evening napping while Lilly and Hanako cleaned up the house and made supper. I felt a bit guilty about it, but neither seemed to mind it very much."
 "The day afterwards, we walked to the nearby town which was more exhausting than I thought due to the heat. We had ice-cream to cool down once we reached our destination, and Hanako spent most of the time afterwards browsing clothes for Lilly, herself and me."
 "After a filling lunch in town and more shopping, we walked back to the summer home, had a delicious dinner and then went out for an evening walk while Lilly remained behind in order to finish the book she started on the train a day ago."

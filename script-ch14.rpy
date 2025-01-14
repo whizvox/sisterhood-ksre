@@ -10,8 +10,7 @@ stop music
 
 play ambient sfx_hospital fadein 2.0
 scene bg hosp_ceiling_blur:
-    blur 20
-    matrixcolor BrightnessMatrix(0.7)
+    matrixcolor BrightnessMatrix(0.5)
 with openeye
 
 show black
@@ -26,9 +25,9 @@ $ renpy.music.set_volume(0.0, 0.5, "ambient")
 $ renpy.music.set_volume(1.0, 2.0, "ambient")
 show bg hosp_room2_blur:
     block:
-        ease 2.0 matrixcolor BrightnessMatrix(0.5)
+        ease 2.0 matrixcolor BrightnessMatrix(0.6)
         2.0
-        ease 2.0 matrixcolor BrightnessMatrix(0.4)
+        ease 2.0 matrixcolor BrightnessMatrix(0.5)
         2.0
         repeat
 with None
@@ -58,21 +57,22 @@ with openeye
 show bg hosp_ceiling
 with Dissolve(2.0)
 
-play music music_rain fadein 0.5
+play music music_rain fadein 4.0
 
 "I rub my eyes, and as my vision starts to focus I notice I'm staring at a white ceiling, one I haven't seen before yet is still disturbingly familiar."
 
 show heartattack:
-    alpha 0.1
-with Dissolve(0.2)
+    alpha 0.15
+with Dissolve(0.3)
 hide heartattack
-with Dissolve(0.2)
+with Dissolve(0.3)
 
 "As I try to rise, a painful sensation wells up in my chest."
 "I bring my hand to my chest only to find something stuck to it."
 dc "Please don't touch the bandage, Mister Nakai. It'll still take some time for the wound to heal. Let me help you sit upright."
 
-scene bg hosp_room2
+scene bg hosp_room2:
+    yalign 0.5 zoom 1.02
 with Dissolve(2.0)
 
 "I hear a click and the head of the bed I'm lying in slowly tilts upwards, allowing me to see more of the room I'm in."
@@ -81,10 +81,6 @@ with Dissolve(2.0)
 "A hospital."
 "Probably the hospital near Yamaku as the landscape outside the window has a familiar look."
 "I'm in a hospital room."
-
-# show doctor bigsmile at center
-# with charaenter
-
 dc "I see you're awake, Mister Nakai. How are you feeling?"
 "I open my mouth to reply, but my mouth is too dry to speak clearly and a feeling of nausea boils up, forcing me to close my eyes until it passes."
 "I swallow a few times, open my eyes and make attempt number two."
@@ -158,7 +154,7 @@ with Pause(0.6)
 dc "Any further questions, Mister Nakai?"
 
 $ renpy.music.set_pause(False)
-$ renpy.music.set_volume(1.0, 0.5)
+$ renpy.music.set_volume(1.0, 2.0)
 hide ev
 with Dissolve(0.5)
 
@@ -192,7 +188,7 @@ dc "It turns out you were correct."
 dc "I'm afraid I don't know the details, but there was indeed another person who was taken here together with you."
 dc "She wasn't injured in any way, though the ambulance staff noted she was acting rather oddly. Eventually someone from Yamaku arrived to pick her up."
 "I appreciate the fact he took the time to check, but I wish he could be more specific about Hanako."
-"'Oddly' is a very vague term, and to some people even Hanako's usual behavior would probably qualify as odd."
+"“Oddly” is a very vague term, and to some people even Hanako's usual behavior would probably qualify as odd."
 "It doesn't really do much to relieve my anxiety. I take a look at the chair near the bed that holds my school uniform."
 hi "Doctor, could you please hand me my cell phone? It should be in one of the pockets of my pants."
 dc "I'm afraid the use of cell phones is prohibited in the building. They can interfere with some of the equipment we use. You can use the phone on your nightstand if you wish to make a call."
@@ -200,6 +196,9 @@ hi "I'll use that one then. Thank you doctor."
 "It's a good thing I know Hanako's and Lilly's number by heart. Hopefully, talking to Hanako will put me at ease. And if I can't get back to Yamaku before the weekend, I'll just have to say goodbye to Lilly this way."
 "It's hardly ideal, but at least I can get a hold of her before her plane takes off."
 "I hope she'll pick up if she's called by a number she doesn't recognize."
+
+play sound sfx_phonedial volume 0.7
+
 "I dial Hanako's number and anxiously wait for her to pick up."
 "As far as I know, my condition is stable right now."
 "While we both know from personal experience that that's hardly a guarantee, it at least gives me something to tell her, assuming she doesn't already know."
@@ -271,7 +270,7 @@ with chchange
 stop music fadeout 0.5
 with Pause(0.5)
 
-ha "{cps=10}…I… can't… be… your… girlfriend… anymore…{/cps}"
+ha "{cps=20}…I… can't… be… your… girlfriend… anymore…{/cps}"
 
 play music music_rain
 
@@ -293,10 +292,10 @@ n "Did Hanako really just break up with me?"
 n "But why?"
 n "This is crazy."
 n "Or is it?"
-n "Hanako lost both of her parents at young age. They died right in front of her. I wouldn't be surprised if she still has nightmares about that every now and then."
+n "{vspace=30}Hanako lost both of her parents at young age. They died right in front of her. I wouldn't be surprised if she still has nightmares about that every now and then."
 n "Yesterday, I also nearly died in front of her. I wouldn't be surprised if this thing had a greater impact on her than it had on most other people."
 n "And if yesterday taught me anything, it's that no matter how hard I try, I can't make any guarantees it won't happen again."
-n "Can I expect Hanako to stay with someone who might rip her old wounds open again and again?"
+n "{vspace=30}Can I expect Hanako to stay with someone who might rip her old wounds open again and again?"
 
 nvl hide dissolve
 
@@ -348,7 +347,7 @@ li "Her door has been locked ever since. If she's in there, she's not responding
 hi "So you have no idea what's wrong with her either?"
 li "Wrong?"
 hi "I just got off the phone with her."
-hi "She acted… shell-shocked. She… She said she couldn't be with me anymore."
+hi "She acted… shell-shocked. She… she said she couldn't be with me anymore."
 
 show lilly basic_concerned_phone
 with chchange
@@ -385,9 +384,9 @@ with charaexit
 nvl clear
 nvl show dissolve
 
-n "\"I can't be your girlfriend anymore.\""
+n "“I can't be your girlfriend anymore.”"
 n "What does that mean?"
-n "Not \"I don't want to\", but \"I can't\"."
+n "Not “I don't want to”, but “I can't”."
 n "It really feels like she feels compelled by the circumstances. It might not be a spur of the moment as Lilly suggested."
 n "This had quite an impact on Lilly as well. She didn't sound as calm and in control as she usually does."
 n "I can't blame her though. She's scheduled to leave Yamaku this evening. If Akira is unable to cancel the trip, Lily will be leaving Japan in the middle of a big mess. Knowing her motherly nature, that'll seriously burden her."
@@ -396,18 +395,22 @@ nvl clear
 
 n "I feel so powerless."
 n "I should be there at Yamaku confronting Hanako. Comforting her. Instead, I'm being trapped in here for at least several more days."
-n "I slam my fist hard onto the side of the bed. The increased frequency of beeps from my heart monitor draws my attention."
-n "I'm getting too worked up right now. I'm stuck here, and nothing I can do will change that."
+
+play sound sfx_impact2
+with vpunch
+
+n "{vspace=60}I slam my fist hard onto the side of the bed. The increased frequency of beeps from my heart monitor draws my attention."
+n "{vspace=30}I'm getting too worked up right now. I'm stuck here, and nothing I can do will change that."
 n "The best thing I can do is focus on my recovery right now. If I stay on edge all the time, the doctors may decide to keep me here longer."
 n "If the upcoming weekend is the earliest time I can leave here then that's what I should aim for."
 n "I'll just ask for some sleeping pills or something to get more rest."
 
-stop music fadeout 0.5
+stop music fadeout 1.0
 
 scene bg hosp_room2
 with Fade(1.0, 1.0, 1.0)
 
-play music music_night fadein 0.5
+play music music_night fadein 2.0
 
 "The evening and the rest of the next day are completely uneventful, so I just try to get as much rest as I can. Having just finished my evening meal, I lie back and close my eyes."
 "It's been a day since I've called Hanako and Lilly, and I haven't heard a reply from either."
@@ -514,14 +517,14 @@ with chchange
 mi "H-Hicchan, what's in there?"
 "I take the object from the envelope and carefully hold it in the palm of my hand."
 
-play music music_sadness fadein 0.5
+play music music_sadness fadein 2.0
 
 hi "I-it's Hanako's hairclip."
 hi "I… I gave it to her when we started dating."
 
 show mishashort perky_sad_cas
 show shizu behind_sad
-with chchange
+with charachangealways
 
 "That revelation is enough to kill the atmosphere in the room on the spot."
 "For a moment, everyone merely stares at the floor, unsure of what to say."
@@ -534,7 +537,7 @@ with chchange
 show mishashort sign_sad_cas
 with chchange
 
-mi "R-right. Umm…Hicchan. We went to the nurse's office today to see if we could find out some more for you, and um…"
+mi "R-right. Umm… Hicchan. We went to the nurse's office today to see if we could find out some more for you, and um…"
 mi "Do you remember that incident in science class some time ago?"
 "I do remember."
 "Hanako, Shizune, Misha and I were working on an assignment together when Shizune and Misha started grilling me for information about my activities during the weekend and made me reveal Lilly and I were buying something for Hanako's upcoming birthday."
@@ -547,7 +550,7 @@ with chchange
 mi "It seems something similar happened on Monday."
 mi "It was… pretty bad, apparently. That's all the nurse would tell us, and he only told us because we said it was for your sake."
 "So things are even worse than I thought. My accident two days ago didn't just give Hanako a scare, it gave her a panic attack."
-"Was that what the doctor was talking about when he said she was behaving 'oddly'?"
+"Was that what the doctor was talking about when he said she was behaving “oddly”?"
 "This at least explains why she sounded the way she did when I phoned her. It was very much like the last time Lilly and I visited her shortly after that occurrence in class."
 
 show lilly at right:
@@ -577,9 +580,17 @@ with charachangealways
 mi "Ummm… Hicchan, I think we'll leave the two of you alone for a while. We'll be in the cafeteria downstairs."
 mi "When you're done, you can give them a call and ask them to notify us."
 
+show shizu:
+    xpos 1.0
+    ease 1.0 alpha 0.0
+show mishashort:
+    xpos 0.6
+    ease 1.0 alpha 0.0
+with charamove
+
 hide shizu
 hide mishashort
-with charaexit
+with None
 
 "Without waiting for a reply, Shizune and Misha get up, give me a quick nod and then walk out of my room with quick determined steps, leaving me alone in the room with Lilly."
 "This looks rather ominous. Do they know something I don't?"
@@ -591,7 +602,9 @@ with chchange
 li "Thank you."
 
 show lilly at center
-with charaenter
+with charamovefast
+show lilly at sittingpos
+with charamove
 
 "Lilly takes out her cane and carefully approaches while waving it in front of her until she finds the chair I mentioned."
 "As she walks towards me, I take a moment to look her over."
@@ -636,7 +649,7 @@ with chchange
 show lilly cane_reminisce
 with chchange
 
-li "I…I should have left. But at that time I didn't. I couldn't."
+li "I… I should have left. But at that time I didn't. I couldn't."
 li "I kept reminding her of all the wonderful times you two had together. I kept trying to find out what caused her to act the way she did. I kept trying to convince her to go and see you."
 li "I thought… I thought if she would just go and see you, she'd change her mind."
 li "She kept telling me to leave her alone. I-I must have pressured her too much, because suddenly she… she…"
@@ -661,18 +674,18 @@ with chchange
 li "I… I was terrified of her at that moment."
 li "I turned around and fled the room. I haven't been back since. I don't think I could even if the door wasn't locked."
 
-show lilly cane_sad
-with chchange
+show lilly cane_sad at center
+with charachangealways
 
 "Unable to keep her emotions in check any longer Lilly stands up and holds her face in her hands before bursting into tears."
-li "I'm sorry, Hisao…I-I've messed up everything."
+li "I'm sorry, Hisao… I-I've messed up everything."
 "I can barely believe what I'm hearing."
 "Hanako screaming at someone else, at Lilly of all people, is almost impossible for me to imagine."
 "She's such a meek and subdued girl she usually has trouble even raising her voice. But the sight of the sobbing Lilly in front of me leaves me very little doubt that this is what has happened."
 hi "Lilly…"
 
 show lilly cane_sad_close
-with chchange
+with characlose
 
 "I sit upright, gently wrap my arms around her and hold her as she cries, her carefully crafted lady exterior completely shattered."
 
@@ -691,7 +704,7 @@ hi "We'll find a way, Lilly."
 show lilly cane_sad_close
 with chchange
 
-li "I…I disappointed you, didn't I Hisao?"
+li "I… I disappointed you, didn't I Hisao?"
 hi "Don't be so hard on yourself."
 "Truth be told, I wouldn't have expected Lilly's attempt to talk Hanako out of her depression to backfire like this."
 "For as long as I've known her, Lilly has always been a steady pillar of support for both Hanako and me. Whenever I was lost at what to do, Lilly would always nudge me in the right direction in that calm, confident and motherly manner of hers."
@@ -704,8 +717,8 @@ with chchange
 li "I-I feel I failed both of you."
 hi "You've always been there to support us, Lilly. And you've been doing a great job. But you're only human."
 
-show lilly cane_sad
-with chchange
+show lilly cane_sad at sittingpos
+with charadistant
 
 "Her flood of tears slowly subsiding, Lilly lets go of me and sits down again next to my bed, taking out a fancy embroidered handkerchief to dry her tears."
 li "I probably shouldn't have pressured her the way I did."
@@ -751,13 +764,13 @@ li "In the end, I felt responsible for this situation and felt it as my duty to 
 li "There may be some truth in Hanako's point about my actions merely serving to ease my own conscience."
 hi "That may be so, but I think I would have acted exactly the same in your situation. And I'm willing to bet all my limbs on it that the same is true for Hanako."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg hosp_room2
-show lilly cane_listen
+show lilly cane_listen at sittingpos
 with shorttimeskipsilent
 
-play music music_comfort fadein 0.5
+play music music_comfort fadein 4.0
 
 "We stay quiet for a long time, neither of us really knowing what more to say."
 "Eventually, I see a doctor passing by in the hallway, looking into my room and checking his watch."

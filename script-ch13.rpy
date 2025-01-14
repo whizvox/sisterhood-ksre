@@ -11,7 +11,7 @@ play music music_comedy fadein 0.5
 show naomi bend_laugh at offscreenright
 with None
 show naomi at tworight
-with charamovefaster
+with charamovefastest
 
 na "Hey, Hanako."
 "I deliver a quick nod as the president and editor-in-chief of the newspaper club comes barging into the computer room."
@@ -44,17 +44,15 @@ ha "He gets a b-bit technical at times. I tried to make it easier to understand.
 na "I could get you some more space if you can use it."
 ha "Oh?"
 
-show naomi at center
-with charamove
-show naomi basic_neutral_close
-with chchange
+show naomi basic_neutral_close at center
+with charamovechangefaster
 
 "She sits on my desk and tosses me a wink."
 na "I've been thinking. Maybe instead of making it a short article, we could turn it into a column."
 na "A permanent one. Or semi-permanent until we got a few test runs. We could put it on the columns page, or let it sit on page five. Each issue would cover a different club here at school."
 na "The idea would be to give a short overview of each club written in a way to encourage casual readers to check it out. Like you've been doing."
 "Looks like Naomi's been thinking about this a lot more than I have."
-"All I wanted was to do a little piece on Hisao's club and hopefully get him a new member or two as a little 'I love you'-gesture towards him."
+"All I wanted was to do a little piece on Hisao's club and hopefully get him a new member or two as a little ‘I love you’-gesture towards him."
 "Naomi's ambitions, however, seem to reach further."
 
 show naomi basic_grin_close
@@ -100,14 +98,8 @@ with chchange
 na "Not overly enthusiastic, I see."
 ha "…It's not that…"
 
-show naomi basic_neutral
-with chchange
-show naomi at twoleft
+show naomi at sittingpos
 with charamove
-show naomi at center
-with charamove
-show naomi basic_neutral_close
-with chchange
 
 "Naomi gets off the desk, pulls a chair over, turns it around and sits down on it, her elbows resting on the back rest."
 na "You've been kinda gloomy lately."
@@ -124,7 +116,7 @@ show naomi basic_smile_close
 with chchange
 
 na "Well, I don't think after school, I'll have time to play newspaper anymore, that's for sure. Pity too."
-"That's new to me. I always assumed Naomi was going to go into journalism. If anybody was into the subject, it'd be her."
+"That's news to me. I always assumed Naomi was going to go into journalism. If anybody was into the subject, it'd be her."
 ha "Y-you're not going to b-become a journalist?"
 na "Dunno. Maybe. It might not work. The loose wiring upstairs might cause problems."
 "Her epilepsy? I admit her case is a pretty severe one, but…"
@@ -163,7 +155,7 @@ show naomi basic_focus_close
 with chchange
 with Pause(0.5)
 show naomi basic_smile_close
-with charachangealways
+with Dissolve(0.2)
 
 "She looks pensive for a moment and suddenly snaps her fingers, causing me to flinch."
 na "Oh right, that's why I came in here. To tell you that."
@@ -186,7 +178,7 @@ hi "Couldn't get away from Naomi, could you?"
 "Hisao seems amused by my tardiness and the fact I'm clearly winded from my mad dash to the gates."
 
 show hisao basic_smile_uni_close_rn
-with chchange
+with characlose
 
 "After handing me one of the two shopping bags he's carrying, he bends forward and gives me a quick peck on the cheek while I'm busy catching my breath."
 ha "She… forgot… for a while."
@@ -248,7 +240,7 @@ ha "I suppose so…"
 hi "Hanako?"
 
 show hisao basic_neutral_uni_close_rn at center
-with chchange
+with charamovechangefaster
 
 "He stops me and faces me. He looks at me for a moment and then gives me a gentle hug."
 hi "I'm not gonna tell you to cheer up, because you have a good reason to feel down."

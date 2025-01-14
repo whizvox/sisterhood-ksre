@@ -189,6 +189,7 @@ def main():
         if "Naked" not in entry[0]:
             crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/hisao_{entry[1]}.png", replace=replace_hisao, crop=(0, 0, 1350, 2325), target_height=1080)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/close/hisao_{entry[1]}_close.png", replace=replace_hisao, crop=(0, 0, 1350, 1650), target_height=1080)
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/superclose/hisao_{entry[1]}_superclose.png", replace=replace_hisao, crop=(0, 0, 1350, 1312), target_height=1080)
 
     for entry in takawa:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/takawa/takawa_{entry[1]}.png", replace=replace_takawa, crop=(0, 0, 1350, 2295), target_height=935)

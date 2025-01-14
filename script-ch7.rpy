@@ -13,7 +13,7 @@ nvl show dissolve
 
 n "Ten more minutes until lunch break."
 n "We've already completed the assignment we were given, so now I've taken out one of my library books and am trying to finish a chapter before the school bell rings."
-n "Truth be told I'm still a little tense, so it's not going as quickly as I had been hoping for. The reason for the tension I feel is the fact I just completed my first group assignment in class - the occasional assignments I do with Hisao notwithstanding."
+n "Truth be told I'm still a little tense, so it's not going as quickly as I had been hoping for. The reason for the tension I feel is the fact I just completed my first group assignment in class—the occasional assignments I do with Hisao notwithstanding."
 n "Or rather, my first group assignment that didn't end in disaster, like some time ago in science class, when I was struck with a panic attack. And Hisao wasn't even part of the group I worked with today, or things probably would have been less awkward."
 
 nvl clear
@@ -140,7 +140,7 @@ with charachangealways
 "Natsume and Naomi remind me a bit of less extreme versions of Shizune and Misha."
 "Natsume wears glasses and has a stern appearance, but isn't as bossy or forceful as Shizune."
 "The most striking part of Naomi's appearance is her hair which, while not dyed like Misha's, is bleached to a distinct light blonde color."
-"Her personality is a bit like Misha's as well - up-beat, loud and a bit hyper, though Naomi's volume control button doesn't seem to be permanently stuck on the max setting."
+"Her personality is a bit like Misha's as well; up-beat, loud and a bit hyper. Although Naomi's volume control button doesn't seem to be permanently stuck on the max setting."
 "Also, like Shizune and Misha, the two seem together constantly."
 
 hide naomi
@@ -920,7 +920,7 @@ show hisao basic_smile_uni_close
 with charaenter
 
 hi "I thought I felt it earlier. You're not nearly as tense as you were during the last few days."
-ha "Today I didn't have much stress, just the printing process and delivery of the papers - and then the tea ceremony with you and Lilly."
+ha "Today I didn't have much stress, just the printing process, the delivery of the papers, and then the tea ceremony with you and Lilly."
 
 show hisao cross_grin_uni_close
 with chchange

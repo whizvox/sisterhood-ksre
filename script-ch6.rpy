@@ -271,7 +271,7 @@ hi "That feels good, Hanako."
 "It also feels more intimate than that time we actually had sex."
 "…"
 "After what feels like an hour of petting and caressing, I turn my head to the side."
-"So far Hisao hasn't taken much initiative, content to let me determine the pace - a role I'm slowly growing into."
+"So far Hisao hasn't taken much initiative, content to let me determine the pace—a role I'm slowly growing into."
 "Deciding to take another step closer, I lean in and kiss him on his left cheek."
 
 show ev funindark_hug_kiss

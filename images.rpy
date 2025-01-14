@@ -33,6 +33,12 @@ init 1 python:
                         renpy.image(f"{char} {variant}_close_ss", sp_sunset(closeimgpath))
                         renpy.image(f"{char} {variant}_close_ni", sp_night(closeimgpath))
                         renpy.image(f"{char} {variant}_close_rn", sp_rain(closeimgpath))
+                    supercloseimgpath = f"{sh_path}/sprites/{char}/superclose/{char}_{variant}_superclose.png"
+                    if renpy.loadable(supercloseimgpath):
+                        renpy.image(f"{char} {variant}_superclose", supercloseimgpath)
+                        renpy.image(f"{char} {variant}_superclose_ss", sp_sunset(supercloseimgpath))
+                        renpy.image(f"{char} {variant}_superclose_ni", sp_night(supercloseimgpath))
+                        renpy.image(f"{char} {variant}_superclose_rn", sp_rain(supercloseimgpath))
             
     def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0):
         for variant in variants:
@@ -110,7 +116,7 @@ init 1:
     image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
     image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
     image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
-    image bg hosp_room2_blur = im.Blur(f"bgs/hosp_room2.jpg", 2)
+    image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
 
     # special events
@@ -129,6 +135,8 @@ init 1:
 
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"
+    image hisao_roof_blur = f"{sh_path}/vfx/hisao_roof_blur.png"
+    image bouquet = f"{sh_path}/vfx/bouquet.png"
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
@@ -180,6 +188,8 @@ init 1:
     PNMCarrieRailfan on FreeSound
     Juan_Merie_Venter on FreeSound
     plivesey on FreeSound
+    mrrap4food on FreeSound
+    megashroom on FreeSound
     whizvox
     \n\n
     {b}Additional Writing{/b}

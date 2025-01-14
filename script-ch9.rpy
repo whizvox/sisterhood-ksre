@@ -692,7 +692,7 @@ play sound sfx_rustling volume 0.8
 "With some effort, I manage to pull up the covers and press myself close to him before every muscle in my body relaxes and a feeling of bliss washes over me that makes me want to laugh and cry at the same time."
 "Despite already knowing that he came through our act of passion in one piece, I place my hand on his chest as if to acknowledge his heart remained steady."
 "Hisao's already slipping away into slumber, and I find myself getting sleepier by the second as well."
-"But I still want to say something - something to thank him for the moments we just shared."
+"But I still want to say something; something to thank him for the moments we just shared."
 "I softly kiss his cheek in order to get his attention and whisper in his ear."
 ha "Thank you, Hisao. That was a very memorable first time."
 hi "…first …time …Hanako?"

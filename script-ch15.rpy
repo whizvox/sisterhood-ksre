@@ -6,21 +6,21 @@ call sisterhood_timeskip
 scene bg hosp_room2
 with Dissolve(2.0)
 
-play music music_night fadein 0.5
+play music music_night fadein 4.0
 
 nvl clear
 nvl show dissolve
 
 n "Upon finishing the last page of the book I've been reading since morning, I close it with a decisive snap."
 n "I'm thankful to Shizune and Misha for bringing along my books. Time passes a lot more quickly while I'm absorbed in one of them. With luck, I'll be allowed to leave the hospital tomorrow around noon."
-n "My heart, after the initial episode four days ago, has decided to abstain from causing me further trouble, though that seems like a small comfort."
+n "{vspace=60}My heart, after the initial episode four days ago, has decided to abstain from causing me further trouble, though that seems like a small comfort."
 
 nvl clear
 
 n "Yesterday was pretty eventful with my parents dropping by at noon and Lilly, Shizune, Misha and Akira visiting in the evening."
-n "For some time, it seemed like nothing was out of the ordinary, with Akira playfully mentioning how interesting it was to see Lilly and Shizune made peace with one another, to which Shizune replied that 'striking a wounded adversary' was simply against her moral code; a provocation which Lilly then used to refute Akira's suggestion. Both eventually got upset at my observation that the two of them were really too proud for their own good sometimes, a remark that amused Misha and Akira to no end."
+n "{vspace=30}For some time, it seemed like nothing was out of the ordinary, with Akira playfully mentioning how interesting it was to see Lilly and Shizune made peace with one another, to which Shizune replied that “striking a wounded adversary” was simply against her moral code; a provocation which Lilly then used to refute Akira's suggestion. Both eventually got upset at my observation that the two of them were really too proud for their own good sometimes, a remark that amused Misha and Akira to no end."
 n "After Lilly and I were left alone again though, it quickly became clear she had simply been doing her best to keep up appearances, a trait of hers that both tends to impress and unnerve me."
-n "It turned out that not much had changed.{w} Lilly was still in a very depressed mood although she took my word for it when I assured her that Hanako hadn't been secretly resenting her all along as she had come to believe over the last two days."
+n "It turned out that not much had changed. Lilly was still in a very depressed mood although she took my word for it when I assured her that Hanako hadn't been secretly resenting her all along as she had come to believe over the last two days."
 n "I also learned that Akira has only been able to postpone their departure to Scotland for one week, and she won't be able to hold things off any longer."
 
 nvl clear
@@ -29,7 +29,7 @@ n "In addition to the rift between Hanako and Lilly, I also have my own relation
 n "Can our relationship still be mended? Is it fair to expect her to deal with events like last Monday after all she's been through already?"
 n "If that's not possible, can we still be friends? We've been through many highs and lows together. Would ordinary friendship even be possible? I don't want her to be just a friend to me."
 n "Is she going to avoid me from now on? It seems an impossible task, seeing that we're in the same class, but Hanako has been keeping up a wall between herself and the rest of the class since she started attending here. She could pull it off if she wanted to."
-n "Lilly, Shizune and Misha are probably going to visit again, but neither Lilly nor I have a clear idea on how to get through to Hanako."
+n "{vspace=30}Lilly, Shizune and Misha are probably going to visit again, but neither Lilly nor I have a clear idea on how to get through to Hanako."
 
 nvl hide dissolve
 
@@ -38,12 +38,10 @@ nvl hide dissolve
 hi "Lilly? Hey, Lilly!"
 "Having picked up my voice, Lilly turns in my direction for a moment to acknowledge my greeting and then turns around to talk to someone who was apparently standing behind her."
 
-show lilly basic_oops at offscreenright:
-    alpha 0.0
-with None
-show lilly at center:
-    alpha 1.1
-with charamovechange
+show lilly cane_oops:
+    offscreenright
+    ease 2.0 center
+with Pause(2.0)
 
 "After a few seconds, she turns back to me and carefully navigates herself to my bed."
 hi "Are you here all on your own? Aren't Shizune and Misha with you?"
@@ -97,25 +95,29 @@ with chchange
 
 ta "Good evening, Mister Nakai. It grieves me that we meet again under such trying circumstances, but I'm nevertheless most pleased to see you again."
 
-show takawa at sittingpos
+show takawa at center
 with charamove
 
 "Ever the polite one, she makes a bow and places the tray on my nightstand before putting one of the tea cups into Lilly's outstretched hands and making another bow. She then does the same with my cup of juice."
 ta "Please enjoy."
 
+show takawa:
+    ease 1.0 tworight
+    ease 1.0 tworight_sittingpos
+with None
 show lilly basic_smileclosed
 with chchange
 
 "Lilly, recognizing the old lady's gesture as a make-shift tea party, makes a bow of her own with an appreciative smile on her face."
 li "Thank you for the trouble."
-"I'm still trying to wrap my head around the old lady's sudden appearance.{w} Is she here with news from Hanako?"
+"I'm still trying to wrap my head around the old lady's sudden appearance. Is she here with news from Hanako?"
 hi "I suppose your visit here is not a coincidence?"
 
-show takawa pensive
+show takawa calculating
 with chchange
 
 "The old lady takes another careful sip before responding."
-ta "Yes and no.{w} It was a coincidence I saw Miss Satou on my way home sitting there at the bus stop and deciding she was looking so troubled that the least thing I could do was give her a ride."
+ta "Yes and no. It was a coincidence I saw Miss Satou on my way home sitting there at the bus stop and deciding she was looking so troubled that the least thing I could do was give her a ride."
 
 show takawa smile
 with chchange
@@ -129,14 +131,14 @@ li "I take it you have met this person before?"
 hi "Only once. Miss Takawa is Hanako's therapist."
 
 show lilly:
-    linear 0.1 yanchor 1.0 ypos 1.05
-    linear 0.1 yanchor 1.0 ypos 1.1
+    linear 0.1 yanchor 1.0 ypos 1.07
+    linear 0.1 sittingpos
 
 "That news certainly surprises Lilly, for her hands shake for a moment, and she nearly drops her cup."
 "Looks like Miss Takawa doesn't have the habit of mentioning her patients in her introductions to others."
 li "Ah… Excuse me. I had no idea. I'm afraid Hanako never mentioned a name to me."
 
-show takawa laugh
+show takawa happy
 with chchange
 
 ta "That's alright. I usually tell my clients that therapy sessions are among the least interesting things to talk about with their friends."
@@ -144,9 +146,9 @@ ta "That's alright. I usually tell my clients that therapy sessions are among th
 hi "I take it that you are aware of what has happened to Hanako and me this Monday?"
 
 hide lilly
-show takawa pensive at sittingpos:
+show takawa calculating at sittingpos:
     xanchor 0.5 xpos 0.5
-with chchange
+with charaenter
 
 ta "That's correct. The head nurse notified me as soon as he received the news."
 hi "Would you also happen to be the person who picked her up after the ambulance brought her here?"
@@ -156,13 +158,9 @@ ta "When we heard the news that your condition had stabilized, I took her back t
 hi "Have you spoken to her since then?"
 ta "I'm afraid I haven't. I informed her that I could supply her with a sleeping pill or anti-depressant for the night if she wanted one and that I'd be available if she wanted to talk, but she hasn't made use of those offers so far."
 hi "Didn't you place her… you know… under supervision?"
-
-show takawa pensiveclosed
-with chchange
-
 "The old lady sighs."
 
-show takawa pensive
+show takawa serious
 with chchange
 
 ta "Yamaku is not a mental hospital, Mister Nakai. We can do very little without a client's explicit consent. I can only make exceptions if I have determined that a client is prone to suicidal tendencies."
@@ -172,35 +170,27 @@ ta "Indeed, or I highly doubt any of us would have even had the opportunity to m
 hi "Miss Takawa, we're not really sure what happened to Hanako."
 hi "Can you tell me what a panic attack is like? Hanako had one last Monday, didn't she?"
 
-show takawa pensiveclosed
-with chchange
+stop music fadeout 2.0
 
-stop music fadeout 0.5
+show takawa calculating
+with charachangealways
 
 "Miss Takawa looks lost in thought for a second."
 
-queue music music_drama fadein 0.5
+queue music music_drama fadein 4.0
 
 ta "Yes, the most severe one since she enrolled here. And it lasted for quite some time too. I can only assume your accident stirred some extremely ugly memories inside her."
-
-show takawa pensive
-with chchange
-
 ta "I cannot speak from personal experience regarding what it's like. The people who've had one themselves described it to me as the most frightening experience of their life."
 ta "Some compared it to a heart attack of some kind."
 ta "Chest pain, difficulty breathing, flashing vision and sometimes the sensation of dying."
-ta "I think, Mister Nakai, you may be one of the few people in school who can somewhat relate to what Miss Ikezawa must have been going through.{w} Try to recall your own experience, except more prolonged and without passing out."
+ta "I think, Mister Nakai, you may be one of the few people in school who can somewhat relate to what Miss Ikezawa must have been going through. Try to recall your own experience, except more prolonged and without passing out."
 "I let out a dejected sigh."
 hi "That bad? No wonder she broke up with me."
 
-show takawa pensiveclosed
+show takawa serious
 with chchange
 
 "The old woman raises a curious eyebrow at that news, but doesn't seem overly shocked."
-
-show takawa pensive
-with chchange
-
 ta "Did she break up with you?"
 hi "…I phoned her last Tuesday and she said she couldn't be my girlfriend anymore. Then she hung up. But she seems to be serious about it."
 ta "I see. And how about you, Mister Nakai? Are you planning to break up with her?"
@@ -217,52 +207,46 @@ hi "Nothing except all the progress she has made since we met."
 hi "Before that heart attack ruined things, she was organizing stuff, joining a club, going on dates, trying new things… and now she seems to be back to hiding away in her room and avoiding everyone and everything."
 hi "If she had been with someone who wasn't suffering from this condition, maybe she could have…"
 
-show takawa shout
+play sound sfx_teacup_loudclink
+
+show takawa stern
 with chchangefast
 
 ta "AHEM!"
 "For a moment I'm startled by the sound of Miss Takawa loudly scraping her throat and setting down her tea cup with a loud cling."
 "As I look upon her face, I can tell she's glaring knives at me, though I'm not sure why."
-
-show takawa angry
-with chchange
-
 ta "Maybe she could have a chance to recover fully is what you were going to say, Mister Nakai?"
 hi "Ummm… Well…"
 ta "Did you really believe that a few months of dating you was all it would take for Miss Ikezawa's trauma to disappear just like that? Or a few months of dating anybody for that matter?"
 ta "Were you counting on that when you started going out with her? Do you even know why I'm treating her?"
 "Her voice is barely raised, yet I feel as if the sudden authoritive tone in her voice and her stern gaze are pinning me against a wall."
 
-show takawa pensive
-with chchange
+show takawa serious
+with charachangealways
 
 "She keeps up her gaze for a few more seconds, then softens her expression, takes another sip and reverts back to her grandmotherly tone."
+
+show takawa calculating
+with chchange
+
 ta "Perhaps I should explain a few things."
 ta "What I'd like you to understand is that what happened last Monday had nothing to do with her self-confidence, which has indeed improved a bit lately."
 ta "I've worked with war veterans who were usually strong and confident men, yet they too had breakdowns in situations where their post traumatic stress was triggered."
-
-show takawa pensiveclosed
-with chchange
-
 "She pauses for a second, puts her cup on the tray and absentmindedly fiddles with her shawl for a bit."
-
-show takawa pensive
-with chchange
-
-ta "If you can manage to convince her to pick things up where you left off, you may find that much of the recent progress she has made has remained intact."
-ta "It might take her a little while to sort things out, but she'll get back on her feet eventually."
 
 show takawa smile
 with chchange
 
-"That's because I have found that Miss Ikezawa has a resilience that even many seemingly stronger people do not have."
-"I can attest to that.{w} She's been through hell after the fire that scarred her, but she still managed to keep going. It's one of the things I admire about her."
+ta "If you can manage to convince her to pick things up where you left off, you may find that much of the recent progress she has made has remained intact."
+ta "It might take her a little while to sort things out, but she'll get back on her feet eventually."
+ta "That's because I have found that Miss Ikezawa has a resilience that even many seemingly stronger people do not have."
+"I can attest to that. She's been through hell after the fire that scarred her, but she still managed to keep going. It's one of the things I admire about her."
 
-show takawa pensive
+show takawa calculating
 with chchange
 
 ta "Finally, take note that emotional trauma takes a long time to recover from."
-ta "It takes time, therapy and support. One cannot always judge this recovery process by short-term results as you've been doing.{w} What's important is that progress is made in the long run."
+ta "It takes time, therapy and support. One cannot always judge this recovery process by short-term results as you've been doing. What's important is that progress is made in the long run."
 ta "Many people who are recovering from trauma have relapses every now and again. It's not necessarily a problem as long as they eventually take more steps forward than backwards."
 ta "It's important that you understand that about her, but it's equally important that Miss Ikezawa understands that about herself."
 ta "I could help her with that, but it might good if you can remind her of that as well."
@@ -271,12 +255,12 @@ hi "Long-term thinking, huh?"
 show takawa smile
 with chchange
 
-ta "That's right.{w} Do not believe you have failed her and give up if something happens that causes her to temporarily regress."
+ta "That's right. Do not believe you have failed her and give up if something happens that causes her to temporarily regress."
 ta "Some people can do well for years and then suddenly relapse unexpectedly. Just support her to the best of your ability until she can get back on her feet again."
 ta "I do not wish to deny the good influence you've had on her. Just don't look upon yourself as a miracle worker, or even as someone whose responsibility it is to assure her recovery."
 hi "I haven't really been doing a great job supporting her this week."
 
-show takawa pensive
+show takawa calculating
 with chchange
 
 ta "To the best of your ability may not be as much as you like, just like she may not always be able to support you as much as she likes."
@@ -294,24 +278,28 @@ hi "It comes down to the same thing, doesn't it?"
 ta "I don't believe it does, but that's up to you to find out for sure."
 
 show lilly basic_oops at twoleft_sittingpos
-show takawa pensive at tworight_sittingpos
+show takawa calculating at tworight_sittingpos
 with charaenter
 
 "My gaze wanders between Lilly and Miss Takawa who both have an expectant expression on their face."
 "Are they expecting me to take action right here and now?"
 "I take a deep breath."
 hi "I guess I could reach out to her like you're suggesting."
+
+show takawa smile
+with chchange
+
 "I turn to the old lady who's doing her best to give me the most encouraging look she can muster."
 hi "I don't suppose you have any helpful tips? You're the expert here."
 
 hide lilly
-show takawa smile at sittingpos
-with chchange
+show takawa at sittingpos
+with charaenter
 
 ta "I'm afraid I have to disappoint you there. Relationship therapy isn't my field. The real expert in the room would be you, Mister Nakai."
 hi "Me?"
 
-show takawa laugh
+show takawa happy
 with chchange
 
 ta "Certainly. When it comes to winning Miss Ikezawa's heart, you're the world's leading expert."
@@ -332,17 +320,13 @@ show takawa at center
 with charamove
 
 "As I reach for the phone and pick up the receiver, Miss Takawa gets up from her chair."
-
-show takawa pensive
-with chchange
-
 ta "Would you like Miss Satou and me to excuse ourselves?"
 hi "It's fine. I'm not really expecting her to pick up."
 
 hide takawa
 with charaexit
 
-play sound sfx_phonedial volume 0.6
+play sound sfx_phonedial volume 0.7
 
 "I dial Hanako's number and wait, my heart racing."
 "One look at Lilly tells me she's probably as tense as I am."
@@ -357,15 +341,15 @@ hi "I hope to see you tomorrow. Bye…"
 "I hang up, still feeling apprehensive."
 "No turning back now. The rest is up to Hanako. I can only hope she'll bother to listen to her voicemail."
 
-show takawa laugh at tworight_sittingpos
+show takawa happy at tworight_sittingpos
 show lilly basic_smileclosed at twoleft_sittingpos
 with charaenter
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 "As my attention shifts back to my two visitors, I am greeted by two smiling faces."
 
-play music music_comfort fadein 0.5
+play music music_comfort fadein 4.0
 
 ta "My, my… That certainly would have won me over if I were forty years younger."
 
@@ -381,9 +365,9 @@ with chchange
 
 ta "If it is alright with you, I'll be taking my leave, Mister Nakai. I'm sure you'll need all the rest you can get."
 ta "After that message you really can't afford the doctors to keep you here, now can you?"
-hi "Thanks for the advice, Miss Takawa.{w} I'm sure you'll find out soon whether things worked out or not."
+hi "Thanks for the advice, Miss Takawa. I'm sure you'll find out soon whether things worked out or not."
 ta "I'd appreciate it if you could keep me informed, Mister Nakai."
-ta "If you manage to reconcile with Miss Ikezawa, I may have a small gift for her that I'd like to present to you - nothing serious, just something I just thought of."
+ta "If you manage to reconcile with Miss Ikezawa, I may have a small gift for her that I'd like to present to you. Nothing serious, just something I just thought of."
 hi "You're making me curious."
 ta "All the more reason to try and sort things out as soon as you can, isn't it?"
 
@@ -401,7 +385,7 @@ with chchange
 "Lilly gets up, makes a polite bow at the old woman and smiles."
 li "May I have the pleasure of treating you to a cup of tea first, Miss Takawa?"
 
-show takawa laugh
+show takawa happy
 with chchange
 
 ta "I humbly accept. Please lead the way, Miss Satou."
@@ -412,10 +396,10 @@ with charaexit
 
 "As Lilly and Miss Takawa say their goodbyes and leave the room, I can't help but think that these two would probably get along pretty well."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_nursehall
-with locationskip
+with Fade(1.0, 1.0, 1.0)
 
 "Only thirty more minutes."
 
@@ -423,7 +407,7 @@ nvl clear
 nvl show dissolve
 
 n "I pace around the hallway restlessly."
-n "After finishing breakfast this morning, the doctor came by, performed a few minor check-ups and informed me that we'd be having a short meeting in his office at twelve o' clock and that I was free to go back to Yamaku afterwards."
+n "{vspace=60}After finishing breakfast this morning, the doctor came by, performed a few minor check-ups and informed me that we'd be having a short meeting in his office at twelve o' clock and that I was free to go back to Yamaku afterwards."
 n "At least I don't need to stay here any longer."
 
 nvl clear
@@ -447,21 +431,24 @@ dc "Come in, please."
 play sound sfx_doorclose
 
 scene bg school_nurseoffice
-with chchange
+with locationchange
 
-play music music_pearly fadein 0.5
+play music music_pearly fadein 4.0
 
-"I follow him into his office and sit down, but instead of giving me the expected 'be careful in the future'-talk, the doctor merely stands there and checks his watch."
+"I follow him into his office and sit down, but instead of giving me the expected “be careful in the future”-talk, the doctor merely stands there and checks his watch."
 "What is he waiting for?"
 hi "Excuse me, aren't we ready to begin yet?"
 dc "You sound like you are in a hurry."
 hi "I am. Very much."
 dc "I'm afraid that you'll have to hold back for a while. If you exhaust yourself at this point, you may be in for another stay here."
 hi "I understand."
+
+play sound sfx_dooropen
+
 dc "I was merely waiting for… Ah… Good morning."
 "I turn around and watch two more people enter the room."
 hi "Mom? Dad?"
-"I just sit there with my mouth open.{w} I don't recall them saying they'd be here to pick me up when they visited two days ago."
+"I just sit there with my mouth open. I don't recall them saying they'd be here to pick me up when they visited two days ago."
 dad "Hello, son. We're not late, are we?"
 dc "No, you're just in time. I've only called in your son a minute ago."
 dad "I apologize. We live rather far away from here."
@@ -491,16 +478,14 @@ dad "Hopefully we can catch up a bit in the upcoming days. We barely know what's
 hi "Huh? I don't understand."
 dad "We were planning to take you with us and let you rest at home for a few days."
 
-$ renpy.music.set_volume(0.0, 0.5)
-$ renpy.music.set_pause(True)
+stop music fadeout 1.0
 
 "WHAT? NO!"
 
 scene bg school_dormext_full
 with locationskip
 
-$ renpy.music.set_pause(False)
-$ renpy.music.set_volume(1.0, 0.5)
+play music music_pearly fadein 2.0
 
 mom "I'm sorry, Hisao. We had no idea one of your friends was going to move away in the upcoming days. You should have let us know."
 hi "It's… okay, Mom."
@@ -509,11 +494,13 @@ dad "I was already surprised. At first you hated the idea of going here, and now
 hi "I guess I found my place here, Dad."
 dad "You sure did. What's in that plastic bag you're carrying with you?"
 hi "Ah, nothing important."
-"As we reach the dorm entrance, we're greeted by an ear-shattering \"HICCHAN! WELCOME BACK!\" that could only originate from one person in Japan."
+"As we reach the dorm entrance, we're greeted by an ear-shattering “HICCHAN! WELCOME BACK!” that could only originate from one person in Japan."
 
-show mishashort hips_grin at right
+show mishashort hips_grin:
+    xalign 0.5 xpos 0.75
 show shizu basic_happy at center
-show lilly basic_cheerful at left
+show lilly basic_cheerful:
+    xalign 0.5 xpos 0.25
 with charaenter
 
 "In front of the dorm are Shizune, Misha and Lilly. Shizune cheerfully makes a small saluting gesture, Misha excitedly jumps up and down and Lilly calmly stands next to them."
@@ -527,7 +514,7 @@ hi "The girl on the left is Lilly Satou who attends the class next to ours and o
 show mishashort perky_smile
 show shizu behind_smile
 show lilly basic_smileclosed
-with chchange
+with charachangealways
 
 "Shizune, Misha and Lilly make polite bows towards my parents, Lilly's slightly more graceful and Misha's slightly more energetic than the rest."
 
@@ -542,7 +529,7 @@ with chchange
 
 mi "Hey Hicchan. Maybe I missed something here, but… why isn't Hanako with you?"
 
-stop music fadeout 0.5
+stop music fadeout 1.0
 
 "The fake smile I have been wearing since we reached Yamaku is wiped off my face in an instant."
 hi "I… haven't seen Hanako anywhere, Misha."
@@ -555,6 +542,6 @@ with chchange
 mi "WHAT???"
 
 scene black
-with Dissolve(3.0)
+with Dissolve(2.0)
 
 return

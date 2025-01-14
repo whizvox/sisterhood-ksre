@@ -245,7 +245,7 @@ aki "True, you got our little family over here, but you got your little family o
 aki "Heh. And I'm not referring to that competitive cousin of ours with whom you get along so well."
 "I sigh."
 "Akira is correct, unfortunately. When Mother and Father told me they liked me to move to Scotland and live with them again, Hanako and Hisao were the first thought that came to my mind."
-"We were almost our own little family, the three of us - at least that is how I feel. And right now I am very worried about how they are doing."
+"We were almost our own little family, the three of us—at least that is how I feel. And right now I am very worried about how they are doing."
 li "Hisao called last week to tell me Hanako had withdrawn within herself, just like last year."
 li "He's been showing interest in her lately, but I'm not certain if it's the kind of interest she would appreciate. All in all, I've been worried."
 aki "Hey, how badly could they screw up in the short time we've been here? You're probably worrying about nothing."
