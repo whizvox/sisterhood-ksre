@@ -3,10 +3,10 @@ label .sh_ch12:
 
 stop music fadeout 1.0
 scene bg school_dormlilly
-with locationchange
+with Dissolve(2.0)
 
-"As I close the door, I wait a while to hear if Hanako's door is being opened or not.{w} As expected, I hear the sound of footsteps hurrying down the hall instead."
-"I laugh quietly.{w} It hasn't been the first time Hanako's snuck off like this lately."
+"As I close the door, I wait a while to hear if Hanako's door is being opened or not. As expected, I hear the sound of footsteps hurrying down the hall instead."
+"I laugh quietly. It hasn't been the first time Hanako's snuck off like this lately."
 "I really hope she's not going to run into any patrolling staff."
 
 play sound sfx_rustling
@@ -15,20 +15,19 @@ nvl clear
 nvl show dissolve
 
 n "I take off my clothes, put on my pajamas and sit on the edge of my bed."
-n "Tonight's been only the most recent of several outings Hanako and I have made lately. It's almost as if she's become my girlfriend instead of Hisao's."
+n "{vspace=60}Tonight's been only the most recent of several outings Hanako and I have made lately. It's almost as if she's become my girlfriend instead of Hisao's."
 n "Just recently we've had two picnics in the park, a visit to a play in a local theater, a shopping trip and yesterday a visit to a local petting zoo."
 n "That last one was particularly memorable for both of us, and I'm positive that if they didn't have closing hours there, I'd still be sitting there holding the 2-months old lamb who took a liking to me and Hanako'd still be sitting next to me cuddling with the three members of the local rabbit population."
-n "And then there was this night."
+n "{vspace=30}And then there was this night."
 n "We made an agreement that I'd pay the majority of the costs. My parents never left us wanting for money, and I presumed Hanako's budget, as a ward of the state, was quite a bit tighter, but she would organize the various outings."
 n "All in all, I've made some wonderful memories."
 
 nvl clear
 
-n "\"You have… one… new voicemail.\""
-n "The droning message from my cell phone tugs me back to reality, and I hear a voice that's become slightly more familiar to me since my trip to Europe."
-# TODO should this be ??? or Karla? Lilly knows who this is, but the reader doesn't
-n "\"…Lilly, dear. Are you there? If you get this message before morning, could you call us back?…\""
-n "I let out a tired sigh.{w} The problem with wonderful things is that they always end too soon."
+n "“You have… one… new voicemail.”"
+n "{vspace=30}The droning message from my cell phone tugs me back to reality, and I hear a voice that's become slightly more familiar to me since my trip to Europe."
+n "“…Lilly, dear. Are you there? If you get this message before morning, could you call us back?…”"
+n "{vspace=90}I let out a tired sigh. The problem with wonderful things is that they always end too soon."
 
 scene black
 with Dissolve(2.0)
@@ -51,24 +50,28 @@ n "{cps=20}My cell phone?"
 
 nvl hide dissolve
 
-scene bg school_dormlilly
+scene bg school_dormlilly:
+    center
+    yalign 0.5 zoom 1.05
 with Dissolve(2.0)
 
 stop ambient
-play music music_serene fadein 0.5
+play music music_serene fadein 4.0
 
 "I groggily crawl out of bed, but just before I can get to my phone, the ringing stops."
 "Now I'm vexed…"
-"\"You have… one… new voicemail.\""
+"“You have… one… new voicemail.”"
 "Voice… mail?"
-"\"…Yo, it's me. I expected to get the voicemail. Hehe, still no early riser, eh?\""
+"“…Yo, it's me. I expected to get the voicemail. Hehe, still no early riser, eh?”"
 "I let out a pained groan."
-"\"I wanted to talk to you, so maybe you could call me back…\""
+"“I wanted to talk to you, so maybe you could call me back…”"
 "Not now…"
-"\"…eh, scratch that. I'll just wait a minute and try again…\""
+"“…eh, scratch that. I'll just wait a minute and try again…”"
 "Minute? What minute?"
 
 play ambient sfx_cellphonering loop
+
+with vpunch
 
 "I can't suppress a cry of surprise when my phone suddenly rings again, barely an inch away from my ear."
 
@@ -99,7 +102,7 @@ show akira basic_smile_phone
 with chchange
 
 aki "Eh?"
-li "When I first met her, she was barely functioning at all.{w} Instead of living, it seemed like she was just existing."
+li "When I first met her, she was barely functioning at all. Instead of living, it seemed like she was just existing."
 li "And now, she shows initiatives, has club activities, a love life, even plans for the future. She's opened herself up to new experiences."
 li "It all happened… so quickly."
 
@@ -143,10 +146,12 @@ aki "Between the two of us, you were always the diplomatic one."
 li "I'm not exactly that confident about it myself."
 aki "Let me know how it goes. And remind me to call the school administration to take care of the paperwork regarding the transfer."
 
+$ _window = False
+
 hide akira
 with charaexit
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_dormlilly
 with Fade(1.0, 1.0, 1.0)
@@ -157,10 +162,13 @@ nvl show dissolve
 n "Part of me probably would have liked to keep this to myself for a little while longer, but I don't think that'd be a good idea."
 n "Hanako and Hisao already sensed something was afoot last time, and I don't feel it's fair to keep them in the dark unnecessarily."
 n "Even so, I'll be glad when this evening is over. I invited them over to my room during lunch break. They'll probably arrive together."
+
+nvl clear
+
 n "They'll probably be disappointed in me. Especially Hanako."
-n "Should I try to lift their spirits? Or will that seem hypocritical?"
-n "I hate situations like these. But I can't just sneak away in silence and never return."
-n "I'm going to miss you two."
+n "{vspace=30}Should I try to lift their spirits? Or will that seem hypocritical?"
+n "{vspace=30}I hate situations like these. But I can't just sneak away in silence and never return."
+n "{vspace=90}I'm going to miss you two."
 n "Especially you, Hanako."
 
 nvl hide dissolve
@@ -173,7 +181,7 @@ play sound sfx_dooropen
 
 "My invitation to come in is followed by the sounds of the door opening and two people walking in."
 
-show hisao neutral:
+show hisao basic_neutral_uni:
     xanchor 1.0 xpos 1.3
 show hanako basic_worry:
     xanchor 1.0 xpos 1.7
@@ -181,33 +189,38 @@ with None
 show hisao at twoleft
 show hanako at tworight
 with MoveTransition(3.0, time_warp=_ease_time_warp)
-with Pause(1.5)
+with Pause(1.0)
+show hisao:
+    ypos 1.1
+show hanako:
+    ypos 1.1
+with charamove
 
 "I notice they're unusually quiet while I pour the tea."
 "I ask them both how things are going at their respective clubs, but from the short answers I get, it appears neither is eager for a lot of small talk."
 "As I search for an opportune way to bring up the obvious subject, Hisao suddenly speaks up."
 
-play music music_drama fadein 0.5
+play music music_drama fadein 2.0
 
 hi "Lilly, from the hesitant way you invited us here during lunch, we got the impression you wanted to tell us something important."
 hi "We all know what it is about, so maybe we should just get it out of the way without further ado."
 li "You're correct, Hisao. It is about the matter of my parents' summons."
 hi "You've made a definite decision then?"
-li "Yes.{w} I wanted the two of you to know about it before I tell anyone else."
+li "Yes. I wanted the two of you to know about it before I tell anyone else."
 "In a way, I've already broken the news to them. Why would I need to tell anyone else I'd be staying here?"
 hi "You've decided to answer it."
 "Not a question, but an observation."
 "I merely nod quietly."
 li "My family dearly wants me to join them, and Akira will be going there as well. I can still fulfill my dream of becoming a teacher there."
 
-show hisao sad
+show hisao basic_worry_uni
 show hanako emb_downsad
-with chchange
+with charachangealways
 with Pause(1.0)
 
-"Silence follows.{w} Probably the most painful silence I've ever endured."
+"Silence follows. Probably the most painful silence I've ever endured."
 "When Hisao speaks again, his voice is a lot softer than before."
-hi "If that's the choice you've made and that choice makes you happy, then we'll support it.{w} Although, the both of us will miss you terribly."
+hi "If that's the choice you've made and that choice makes you happy, then we'll support it. Although, the both of us will miss you terribly."
 li "I won't be gone forever, Hisao. I can still call you two, and with Akira's help I could exchange things over the internet."
 
 show hanako emb_sad
@@ -221,7 +234,7 @@ li "Hanako, remember when we first met? When you entered my room for the first t
 li "Even as I poured you tea and talked, you sat silently and simply listened to what I said."
 li "It took many quiet meetings like that before you began to open up to me, but as you began to, I felt some of the happiest moments I've ever felt."
 "I take a sip of my drink, before continuing."
-li "I didn't become your friend because I pitied you, Hanako.{w} I became your friend because I knew you were hiding not just from me, but from everyone."
+li "I didn't become your friend because I pitied you, Hanako. I became your friend because I knew you were hiding not just from me, but from everyone."
 li "Your ambitions, personality, interests, tastes… I didn't know any of them and neither did anybody else."
 li "As you showed yourself to me, though I began to realize the person that you were and became sure that our meeting was a very special moment."
 
@@ -230,26 +243,26 @@ with chchange
 
 "I feel a small lump in my throat, but go on anyway."
 li "I believe you are a very beautiful person, Hanako, and I am certain that you will become a strong and confident woman…"
-"I have more to say, but cut myself off as I realize that what I'm saying isn't accurate.{w} What I'm saying will happen eventually has actually already come to pass."
-li "No, that's not correct.{w} You already have become a strong and confident woman, Hanako."
+"I have more to say, but cut myself off as I realize that what I'm saying isn't accurate. What I'm saying will happen eventually has actually already come to pass."
+li "No, that's not correct. You already have become a strong and confident woman, Hanako."
 li "You have shown you have obtained your own friends and hobbies, your own hopes for after graduation and your own love live from which to draw strength."
 li "I want you to devote yourself to them, even after I'm not around anymore, for others will draw strength from you as well."
 li "Especially in the last weeks, you have shown how much you have to offer to those around you."
-li "That's why I think you will be okay, Hanako.{w} Because you are your own self with your own life. You yourself have proven that to me."
+li "That's why I think you will be okay, Hanako. Because you are your own self with your own life. You yourself have proven that to me."
 li "I've learned many new things about you since I came back to Japan, but the most significant thing I've come to witness is how strong and independent you truly have become."
 "We remain silent for a long time, but eventually Hanako speaks softly."
 
 show hanako emb_timid
-with chchange
+with charachangealways
 
-ha "{cps=20}I…{w} I… understand.{/cps}"
+ha "{cps=20}I… I… understand.{/cps}"
 li "Will you be okay?"
 ha "I will."
 "I truly believe she will."
 "We spend some time quietly drinking tea, small talk seeming inappropriate after the moments we just had."
 "Eventually, Hisao addresses me."
 
-show hisao neutral
+show hisao basic_speak_uni
 with chchange
 
 hi "So when exactly will you be leaving? And how?"
@@ -257,7 +270,7 @@ li "On Tuesday the week after this one. Akira will be picking me up here, and we
 hi "So I guess we won't be coming along to the airport to see you off."
 li "I do not think that will be practical. However, I'd like to save the Monday evening for a little get-together in my room if that's okay. A small seeing-off party as it were."
 
-show hisao smile
+show hisao basic_smile_uni
 with chchange
 
 hi "That seems like a good idea, Lilly. We'll be there."
@@ -266,7 +279,7 @@ li "The upcoming week will be very busy for me. I have very limited time to tie 
 "A busy time indeed. The fact that summer break is approaching makes the upcoming workload even larger."
 "It doesn't seem like I'll be able to relax for a while."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_council
 show mishashort perky_sad at twoleft
@@ -274,14 +287,14 @@ show shizu behind_blank at tworight
 with locationskip
 
 mi "Awww… That's a shame, Lilly. I bet Hanako and Hisao are really sad, aren't they?"
-"I smile at Misha's reaction to my announced departure.{w} It's easy for many people to forget that Misha is more than merely Shizune's mouthpiece, and this reaction is obviously her own."
+"I smile at Misha's reaction to my announced departure. It's easy for many people to forget that Misha is more than merely Shizune's mouthpiece, and this reaction is obviously her own."
 li "Saying goodbye is never easy, Misha."
 li "But I draw relief from the fact that they still have each other. They'll be fine, you'll see."
 
 show mishashort hips_smile
 with chchange
 
-play music music_shizune fadein 0.5
+play music music_shizune fadein 4.0
 
 mi "Yeah, I'm sure they will."
 
@@ -307,7 +320,7 @@ show shizu behind_frown
 with chchange
 
 mi "Dictatorships are effective. Running a tight ship produces timely results."
-mi "Do you really think our classmates' future employers will coddle them and tack on a 'pretty please' each time something needs to be done?"
+mi "Do you really think our classmates' future employers will coddle them and tack on a ‘pretty please’ each time something needs to be done?"
 li "Your classmates are not paid employees, and your class is not a commercial company nor a police state. People acting out of a sense of duty will always work more efficiently than people ordered to do something."
 
 show shizu adjust_smug
@@ -329,16 +342,15 @@ with chchange
 
 mi "I need to go take a bathroom break, I'll be back in a few minutes."
 
-hide misha
-with charaexit
+hide mishashort
 show shizu adjust_frown
-with chchange
+with charaexit
 
 "It seems Misha has finally had enough of being a vessel to our argument, and I hear her walk briskly towards the exit of the room."
 "I slump my shoulders dejectedly. It's silly, I'm about to leave this school permanently, and Shizune and I are still going at it as if nothing has changed."
 
 show shizu basic_angry at center
-with charamovechangefaster
+with charachangealways
 
 shi "…"
 "Misha walking out on us has now left Shizune and me simply standing there, our argument cut off, unable to get through to the other to either continue the fight or simply get back to business."
@@ -348,14 +360,17 @@ shi "…"
 "I don't like the idea of simply turning my back on Shizune and walking away, but our communicative means are severally limited right now, so I simply bow in her direction, wait a few seconds to give her an opportunity to return the favor and then turn to leave."
 
 show shizu behind_blank
-with chchange
+with charachangealways
 show shizu at left
 with charamove
+
+play sound sfx_dooropen
 
 "As I take out my cane, I hear her footsteps walking towards the door, followed by the sound of the door opening."
 "I think that's her way of acknowledging my gesture, so I give a quick nod in her direction and leave the council room."
 "This is one thing I won't miss about this place."
 
+stop music fadeout 3.0
 scene black
 with Dissolve(3.0)
 
