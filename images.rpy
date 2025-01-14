@@ -155,7 +155,7 @@ init 1:
     Harris' The San Francisco Steak Restaurant
     Christina Mueller
     GoodFreePhotos.com
-    LegendarySoul
+    legendarysoulII
     whizvox
     \n\n
     {b}Sound Effects{/b}
@@ -200,7 +200,7 @@ init 1:
     ZenMaruki
     PrinceG07
     Likhos
-    LegendarySoul
+    legendarysoulII
     \n\n
     {b}Sprite Art{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
