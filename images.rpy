@@ -137,6 +137,7 @@ init 1:
     image go_board = f"{sh_path}/vfx/go_board.png"
     image hisao_roof_blur = f"{sh_path}/vfx/hisao_roof_blur.png"
     image bouquet = f"{sh_path}/vfx/bouquet.png"
+    image hanako_dormhisao_blur = f"{sh_path}/vfx/hanako_dormhisao_blur.jpg"
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"

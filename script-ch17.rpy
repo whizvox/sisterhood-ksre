@@ -10,21 +10,21 @@ nvl clear
 nvl show dissolve
 
 n "One more day."
-n "As I operate the Brailler in the student council room, my thoughts occasionally drift to last week's events."
+n "{vspace=60}As I operate the Brailler in the student council room, my thoughts occasionally drift to last week's events."
 n "Hisao was released from the hospital last Saturday and was dropped off at Yamaku by his parents. Hanako had been waiting for him at the gates all morning, but she was afraid to approach him with his parents being present and ran off."
-n "Hisao asked Shizune, Misha and me to give his mother and father a tour of the school while he went to do something important. The message was clear: 'Keep them occupied for as long as necessary while I search for Hanako.'"
+n "Hisao asked Shizune, Misha and me to give his mother and father a tour of the school while he went to do something important. The message was clear: “Keep them occupied for as long as necessary while I search for Hanako.”"
 
 nvl clear
 
 n "I was heartened and relieved when I received a phone call from Hisao that he hadn't merely succeeded in finding Hanako, but he also managed to reconcile with her. According to Hisao, Hanako was still in the process of recovering from the stress of last week, but he had no doubts that they were going to pick up where they left off."
 n "It appears that their relationship is very much like Hanako herself—easy to crack, but impossible to break."
-n "Unfortunately, my own relation with Hanako seems a different matter altogether. We're still avoiding each other, and tomorrow evening Akira will arrive here to pick me up."
+n "{vspace=60}Unfortunately, my own relation with Hanako seems a different matter altogether. We're still avoiding each other, and tomorrow evening Akira will arrive here to pick me up."
 
 nvl clear
 
 n "Hisao has assured me that he's been trying to bring the matter up with Hanako, but time seems to be against us. I'd be lying if I denied that the whole situation has left me more than a little bit on edge."
 n "When I informed Hanako and Hisao about the fact I'd be leaving, I believed Hanako and I could remain in contact with each other. There's no doubt in my mind, however, that if things don't improve between us before I take my plane, there won't be any more contact. We'll simply go our own way, and that'll be the end of it."
-n "I'm not afraid to admit that the idea of Hanako's angry cry to go away and never come back remaining the last words I'll ever hear from her frightens me more than anything else."
+n "{vspace=30}I'm not afraid to admit that the idea of Hanako's angry cry to go away and never come back remaining the last words I'll ever hear from her frightens me more than anything else."
 
 nvl hide dissolve
 
@@ -101,14 +101,14 @@ mi "WAHAHAHA~ HAHAHAHAHA~, looks like she's got you there, Shicchan!"
 "Maybe we really are more alike than either of us cares to admit."
 
 show mishashort sign_smile
-show shizu behind_frown
+show shizu adjust_frown
 with chchange
 
 mi "Looks like you did manage to surprise me today, class rep. I admit defeat this time. But that doesn't mean I will ever agree with your methods."
 "I let out a tired smile."
 li "I had hoped that after last week, we'd be able to get along slightly better. But perhaps our differences really are too great."
 
-show shizu adjust_frown
+show shizu adjust_angry
 with chchange
 
 mi "Last week was a different matter. There's no reason we cannot both help out a mutual friend without antipathy, but that doesn't mean we will ever be able to work together on something productively."
@@ -142,15 +142,19 @@ with chchange
 
 mi "I only added the last part. She's okay with the handshake."
 
-show shizu behind_blank
-with chchange
+show shizu basic_normal_close
+with characlose
 
 "I stick out my hand and moments later another hand grasps mine. The handshake is short and formal, but also polite and sincere."
+
+show shizu basic_normal
+with charadistant
+
 "With the paperwork finished prematurely, I accept Misha's offer to have some juice as we take a moment to sit back, and I realize it's been a long time since I was able to feel at ease in this room."
 li "So, I suppose with student council duties, you haven't been able to give your plans for that charity festival much thought."
 
 show mishashort sign_smile
-show shizu basic_normal2
+show shizu adjust_happy
 with chchange
 
 mi "That one is only on temporary hold. I'm taking full advantage of the fact I can use the festivals here as a learning experience and become familiar with all the organizational aspects."
@@ -183,26 +187,26 @@ with charamove
 
 hi "Am I interrupting?"
 
-show hisao basic_smile_uni at left:
-    yanchor 1.0 ypos 1.05
+show hisao basic_smile_uni at left
 show mishashort hips_smile:
     xalign 0.6
 show shizu behind_smile at right
-with chchange
+with charachangealways
 
 mi "Hicchan! Hey there."
 hi "I'd like to talk to Lilly."
 li "I'll be right with you, Hisao."
-"I make a short bow, grab my belongings and follow Hisao out of the room."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
+
+"I make a short bow, grab my belongings and follow Hisao out of the room."
 
 play sound sfx_doorclose
 
 scene bg school_lobby
 with locationchange
 
-play music music_dreamy fadein 0.5
+play music music_dreamy fadein 4.0
 
 show hisao basic_grin_uni at center:
     yanchor 1.0 ypos 1.05
@@ -227,11 +231,11 @@ hi "Are you up for it?"
 li "Does she want to talk to me?"
 hi "I managed to convince her to hear you out. She doesn't really want things to end on such a sordid note either."
 li "Thank you, Hisao."
-"He remains silent for a second and then places his hand on my shoulder."
 
 show hisao basic_neutral_uni_close
-with chchange
+with characlose
 
+"He remains silent for a second and then places his hand on my shoulder."
 hi "Lilly, I'm not really sure how this is going to play out. I have tried to avoid taking sides here, and I refrained from prying, so I don't know what she's thinking."
 hi "We had a talk like this one ourselves while you were in Scotland. Eventually we came out of it as a couple, but I'd be lying if I said it wasn't one of the most difficult and painful experiences I've ever been through."
 li "I don't think I have much to lose, Hisao."
@@ -266,7 +270,7 @@ hi "W-what was that for?"
 li "Everything."
 "Decisively, I take out my cane and make my way to the boys' dormitory."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_dormhallway
 with locationskip
@@ -288,12 +292,12 @@ play sound sfx_doorclose
 "I uneasily take a seat and fold up my cane."
 
 show hanako at center
-with chchange
+with charachangealways
 
 ha "..."
 "What should we do now? I suppose I'd better make the first move."
 
-play music music_moonlight fadein 0.5
+play music music_moonlight fadein 4.0
 
 li "Hanako, I'd like to apologize for my actions last Tuesday. I once argued the importance of giving someone space, but when push came to shove I forgot about that myself."
 
@@ -337,7 +341,7 @@ li "I believe there was also a reason behind your other words."
 li "I… I really want to know what it is."
 
 show hanako def_strain
-with chchange
+with Dissolve(0.2)
 
 ha "W-why don't you believe me?"
 li "Because you would never want to hurt me. And maybe the reason you said what you said is something that would hurt."
@@ -368,12 +372,12 @@ ha "You w-won't hate me if I'm w-wrong?"
 li "I could never hate you, Hanako."
 
 show hanako emb_downtimid
-with chchange
+with charachangealways
 
 "I'm not sure if she's completely convinced, but she seems willing to give me the benefit of the doubt as she takes a deep breath."
 
 show hanako emb_timid
-with chchange
+with charachangealways
 
 ha "I've always been… really thankful… that you became my friend. You became… a very important p-person in my life."
 
@@ -394,7 +398,7 @@ show hanako emb_sad
 with chchange
 
 ha "But that's not what I w-wanted us to b-be. That's never what I w-wanted us to be."
-"I knew our relationship appeared like this. Akira has even joked about it in the past, about Hanako being 'my Hanako'."
+"I knew our relationship appeared like this. Akira has even joked about it in the past, about Hanako being “my Hanako”."
 "What I hadn't realized was how unhappy Hanako herself was with the dynamic of our relationship."
 "How many times have I made her feel worse about herself by showering her with affection and comfort? I'm afraid to ask."
 li "Hanako, I apologize. I admit I have the tendency to mother the people dearest to me. Akira has often scolded me when I mothered her, despite her being seven years older."
@@ -441,7 +445,7 @@ ha "Did you… make the d-decision to go when you felt I was no longer r-reliant
 "How did she…?"
 
 show hanako def_worry
-with chchange
+with Dissolve(0.2)
 
 "It appears Hanako has been watching my face closely, because my reaction to her question causes her to gasp and her tone becomes strained with a very subtle hint of anger."
 
@@ -465,7 +469,7 @@ show hanako def_worry:
     ease 0.2 xalign 0.55
 with None
 stop music
-play sound sfx_impact
+play sound sfx_chairscrape
 
 li "NO, IT'S NOT!"
 "I get up forcefully as I say these words, and I hear the chair Hanako's sitting on scrape across the floor as if my sudden reaction made her flinch."
@@ -475,7 +479,7 @@ li "NO, IT'S NOT!"
 li "Hanako, please listen to me. You really are my friend. Nothing less. I don't think of you as a child."
 
 show hanako emb_timid at center
-with chchange
+with charachangealways
 
 ha "…"
 li "You are my friend, Hanako. My best friend. You are a very special person to me."
@@ -489,26 +493,18 @@ ha "I believe you, Lilly."
 "She doesn't. I can tell by her voice that she doesn't. She's back to telling me what she thinks I want to hear."
 "She's made up her mind about me, and now she's just looking to end the conversation."
 li "Hanako…"
-
-show hanako emb_timid
-with chchange
-
 "Part of what she suggested is true, but her conclusions are off. But how do I tell her that?"
 "Hisao said to be as open and sincere as possible. I might still be able to change her mind."
 "Hanako will probably see me as a weak person, but that's better than what she's probably thinking of me now."
 
-play music music_friendship fadein 0.5
+play music music_friendship fadein 4.0
 
 li "There's some truth in what you said. I won't deny that. But there's something I want to tell you that's relevant to this matter."
 li "You always were a good listener. Will you listen now? You can walk away afterwards and never speak to me again if you wish, but please hear me out until the end."
-
-show hanako emb_downtimid
-with chchange
-
 ha "…"
 
 show hanako emb_timid
-with chchange
+with charachangealways
 
 ha "…O-okay."
 li "Hanako, do you know why my parents are living in Scotland and Akira and I are living in Japan?"
@@ -590,15 +586,17 @@ with chchange
 ha "I… I understand, Lilly. There's no need to say more."
 ha "T-thank you for telling me all this."
 "Hanako's voice is different now. The anxious undertone is gone now, and she sounds relieved and sincere."
-"The next moment, I hear her get up and approach the bed. Then she sits down next to me."
 
-stop music fadeout 0.5
-queue music music_drama fadein 0.5
+stop music fadeout 2.0
 
 show hanako basic_worry_close
-with chchange
+with characlose
 
-ha "Lilly, I… have a lot of p-problems doing things for myself and s-speaking up. I have trouble being 'selfish', just l-like you."
+"The next moment, I hear her get up and approach the bed. Then she sits down next to me."
+
+queue music music_drama fadein 4.0
+
+ha "Lilly, I… have a lot of p-problems doing things for myself and s-speaking up. I have trouble being ‘selfish’, just l-like you."
 ha "So I understand this is hard, but… I think you're making a very b-big mistake."
 "It appears that within a matter of seconds Hanako has completely dismissed the original topic of our conversation and is now getting ready to dismantle my decision to migrate."
 li "Why do you think that, Hanako?"
@@ -628,7 +626,7 @@ ha "Also, I r-really want you to s-stay here with us. It w-would make me… real
 "Judging by the determination in her voice, she really isn't going to give up."
 "To be honest, if the roles were reversed, I'd probably be doing the same thing."
 "I replay Hanako's words in my head."
-"'I wanted to become real friends with you.'"
+"“I wanted to become real friends with you.”"
 "I've always thought of our relationship as give-and-take myself."
 "But the things Hanako did for me were small things. Picking articles while shopping. Navigation in an unknown area."
 "Things that only required eyesight, not devoted friendship. Not the kind of friendship she wanted to give me so desperately."
@@ -647,14 +645,14 @@ with chchange
 
 "I take out my phone and dial the number, trying to press the buttons as quickly as I can."
 
-show hanako emb_timid_close
-with chchange
+hide hanako
+with charaexit
 
 "Try not to think about this too much, Lilly. If you start pondering, you'll probably lose heart."
 "I hear a quick string of beeps as I finish inputting the number and the call is made."
 "Just try to go with your instincts."
 kam "Good morning, Satou speaking."
-li "M-Mother, good morning."
+li "M-mother, good morning."
 kam "Lilly! How nice of you to call. How are you doing?"
 li "I'm doing fine, Mother. How are you?"
 kam "Very well. I'm really looking forward to seeing you again later this week."
@@ -684,12 +682,16 @@ li "Mother, I…"
 "I'm tired of having to choose between loved ones. I don't want to have to do that anymore. Not now, not ever again."
 
 show hanako emb_emb_close
-with chchange
+with charaenter
 
 ha "(Lilly…)"
 "I suddenly become aware of Hanako again, who's still sitting next to me on the bed and who has suddenly taken my left hand in hers, squeezing it gently."
 "It's a gesture. A gesture of support. A sign that she's rooting for me. She must have read my expression."
 "Hanako's quiet intervention calms my nerves a bit."
+
+hide hanako
+with charaexit
+
 "Don't blurt things out. Think first."
 "There was something Hanako said earlier. What was it?"
 "I take a few seconds to gather my thoughts, give Hanako's hand a quick squeeze in response and then take a deep breath."
@@ -713,7 +715,7 @@ stop music fadeout 3.0
 kam "If you really want to stay there, we can't really force you to come here against your will. That will only make things worse."
 kam "Just… remember you're always welcome here."
 
-play music music_romance fadein 0.5
+play music music_romance fadein 4.0
 
 li "That makes me very happy, Mother."
 kam "So, when can we see each other again?"
@@ -730,24 +732,18 @@ li "If I need help with something, I can always count on her to be there."
 kam "Very well. Then… please take care of yourself, dear."
 li "Thank you Mother. You too."
 
-show bg:
-    blur 5
-show hanako:
-    blur 5
+show hanako_dormhisao_blur
 with Dissolve(1.0)
 
 "As I hang up, I suddenly feel extremely tired."
 "The reality of the situation is still in the process of setting in and my mind is struggling to wrap itself around the enormity of the change my life has just undergone within the last hour."
 "Through the daze, I can barely hear Hanako's voice whispering to me."
 
-show bg:
-    blur 0
-show hanako:
-    blur 0
-with Dissolve(1.0)
+show hanako emb_emb_close behind hanako_dormhisao_blur
+with None
 
-show hanako emb_smile_close
-with chchange
+hide hanako_dormhisao_blur
+with Dissolve(1.0)
 
 ha "Lilly… You… You've done it."
 li "I'm… staying… here."
@@ -772,12 +768,12 @@ with chchange
 "And through it all, I become aware of another sound—a sound I've never heard before."
 "It's the sound of my best friend laughing out loud in joy."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_dormlilly
 with shorttimeskip
 
-play music music_lilly fadein 0.5
+play music music_lilly fadein 4.0
 
 "{nw}"
 
@@ -788,7 +784,7 @@ aki "So, you're really sure you're staying here, huh?"
 li "I am."
 
 show akira basic_laugh_phone
-with charaenter
+with chchange
 
 "Akira lets out a slightly deriding snort that's loud and clear even over the phone."
 li "W-what is it?"
@@ -874,8 +870,9 @@ with chchange
 ha "It's… not a guarantee of anything. Miss Yumi stressed that as well."
 ha "But even if I can reduce the odds of freezing up during an emergency just a little bit, that will already be a big reassurance for me."
 
+scene bg school_dormlilly
 show hanako basic_bashful_close
-with chchange
+with shorttimeskipsilent
 
 "We spend some time drinking tea, sitting next to each other, leaning back against the side of my bed."
 "We talk about Hanako's upcoming training courses, and she manages to get me to tell a few stories about Hisao that his mother shared with Shizune, Misha and me."
@@ -926,22 +923,18 @@ with charaexit
 
 play music music_innocence
 
-show hanako emb_emb_clip_close
+show hanako basic_worry_clip_close
 with charaenter
 
 "She gets closer again. From the location where the sound of her breathing is coming from, I determine she's sitting on her knees right in front of me. If she were to lower herself, she'd be sitting on my lap."
 "This is getting really awkward."
 li "Ah… Hanako?"
-
-show hanako basic_worry_clip_close
-with chchange
-
 ha "P-please… don't say anything."
 "Hanako's breathing is slightly deeper than usual as if she's nervous about something."
 "Is she planning to kiss me?"
 
 show hanako emb_emb_clip_close
-with chchange
+with charachangealways
 
 "Hanako must have guessed my thoughts or read my expression, for she lets out an amused giggle that makes me feel a bit silly, but at least manages to relieve the tension."
 "A few seconds later, I feel her hands gently take hold of mine and tenderly guide them upwards."

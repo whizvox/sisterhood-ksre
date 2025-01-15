@@ -1,8 +1,30 @@
-from PIL import Image
+from PIL import Image, ImageFilter
 from pathlib import Path
 import math
 import argparse
 import sys
+
+sh_path = None
+ks_path = None
+
+def _update_paths(args):
+    global sh_path
+    global ks_path
+    if "shdir" in args and args["shdir"] is not None:
+        sh_path = Path(args["shdir"])
+    else:
+        sh_path = Path(__file__).parent.parent
+    ks_path = sh_path.parent.parent
+    print(f"sh_path: {sh_path}")
+    print(f"ks_path: {ks_path}")
+
+def resolve_path(plainpath):
+    # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
+    if len(plainpath) > 0 and plainpath[0] == "~":
+        return Path(ks_path, plainpath[1:])
+    # otherwise, by default, paths will be in reference to the sisterhood directory
+    else:
+        return Path(sh_path, plainpath)
 
 class ImageTransformation:
     def __init__(self, name: str):
@@ -47,11 +69,11 @@ class BlurTransformation(ImageTransformation):
         radius = self.radius
         algorithm = self.algorithm
         if algorithm == "gaussian":
-            return img.filter(Image.ImageFilter.GaussianBlur(radius))
+            return img.filter(ImageFilter.GaussianBlur(radius))
         elif algorithm == "box":
-            return img.filter(Image.ImageFilter.BoxBlur(radius))
+            return img.filter(ImageFilter.BoxBlur(radius))
         elif algorithm == "default":
-            return img.filter(Image.ImageFilter.BLUR)
+            return img.filter(ImageFilter.BLUR)
         else:
             raise RuntimeError("Unknown blur algorithm: " + algorithm)
 
@@ -68,7 +90,7 @@ class ConvertTransformation(ImageTransformation):
         super().__init__("convert")
         self.mode = mode
     
-    def transform(self, img):
+    def transform(self, img: Image):
         return img.convert(mode=self.mode)
 
 class CheckSizeTransformation(ImageTransformation):
@@ -77,7 +99,7 @@ class CheckSizeTransformation(ImageTransformation):
         self.minwidth = minwidth
         self.minheight = minheight
     
-    def transform(self, img):
+    def transform(self, img: Image):
         minwidth = self.minwidth
         minheight = self.minheight
         check = True
@@ -93,6 +115,20 @@ class CheckSizeTransformation(ImageTransformation):
             minheightstr = "any" if minheight == -1 else str(minheight)
             raise Exception(f"Image does not meet valid size requirements! minimum={minwidthstr}x{minheightstr}, actual={img.width}x{img.height}")
         return img
+
+class CompositeTransformation(ImageTransformation):
+    def __init__(self, layers: list[tuple[int, int, str]]):
+        super().__init__("composite")
+        self.layers = layers
+    
+    def transform(self, img: Image):
+        for layer in self.layers:
+            x = layer[0]
+            y = layer[1]
+            toppath = layer[2]
+            with Image.open(resolve_path(toppath)) as topimg:
+                img.paste(topimg, (x, y), topimg.convert("RGBA"))
+                return img
 
 def resize(targetwidth: int = -1, targetheight: int = -1):
     return ResizeTransformation(targetwidth, targetheight)
@@ -189,20 +225,13 @@ JPEGS = (
     ("reference/road cgs/Whizvox_CG2_HisaoxHanako_F1.jpg", "event/rainyroad/rainyroad_a.jpg", [crop(0, 268, 7880, 4700), RESIZE_1080P]),
     ("reference/road cgs/Whizvox_CG2_HisaoxHanako_F2.jpg", "event/rainyroad/rainyroad_b.jpg", [crop(0, 268, 7880, 4700), RESIZE_1080P]),
     # chapter 17
+    ("~bgs/school_dormhisao.jpg", "vfx/hanako_dormhisao_blur.jpg", [CompositeTransformation([(606, 0, "~sprites/hanako/close/hanako_emb_emb_close.png")]), blur(5)]),
     ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_large.jpg", [crop(0, 0, 8031, 4518)]),
     ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_normal.jpg", [crop(0, 0, 8031, 4518), RESIZE_1080P])
 )
 
 def main(args):
-    sh_path = None
-    ks_path = None
-    if "shdir" in args and args["shdir"] is not None:
-        sh_path = Path(args["shdir"])
-    else:
-        sh_path = Path(__file__).parent.parent
-    ks_path = sh_path.parent.parent
-    print(f"sh_path: {sh_path}")
-    print(f"ks_path: {ks_path}")
+    _update_paths(args)
     force = False
     if "force" in args:
         force = args["force"]
@@ -211,13 +240,7 @@ def main(args):
         transforms = []
         if len(entry) == 3:
             transforms = entry[2]
-        inpath = None
-        # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
-        if entry[0][0] == "~":
-            inpath = Path(ks_path, entry[0][1:])
-        # otherwise, by default, paths will be in reference to the sisterhood directory
-        else:
-            inpath = Path(sh_path, entry[0])
+        inpath = resolve_path(entry[0])
         outpath = Path(sh_path, entry[1])
         transforms.append(CHECK_1080P)
         transforms.append(convert_rgb())

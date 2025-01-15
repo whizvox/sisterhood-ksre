@@ -121,5 +121,6 @@ init:
     define sfx_bicyclecrash = sh_sfx("bicyclecrash")
     define sfx_hospital = sh_sfx("hospital")
     define sfx_teacup_loudclink = sh_sfx("teacup_loudclink")
+    define sfx_chairscrape = sh_sfx("chairscrape")
 
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
