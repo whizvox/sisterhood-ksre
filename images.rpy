@@ -191,6 +191,8 @@ init 1:
     plivesey on FreeSound
     mrrap4food on FreeSound
     megashroom on FreeSound
+    aUREa on FreeSound
+    yake01 on FreeSound
     whizvox
     \n\n
     {b}Additional Writing{/b}
