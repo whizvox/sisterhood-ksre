@@ -6,3 +6,8 @@
 
 # Zipped reference file
 /reference.zip
+
+# Stuff used by scripts
+/scripts/__pycache__
+/scripts/build
+/scripts/usage.json

@@ -25,7 +25,7 @@ init:
     define sfx_bedsheets = sh_sfx("bedsheets")
     define sfx_metalclink = sh_sfx("metalclink")
     define sfx_arcadeambience = sh_sfx("arcade_ambient")
-    define sfx_airhockey_rally = sh_sfx("airhockey_rally2")
+    define sfx_airhockey_rally = sh_sfx("airhockey_rally")
     define sfx_airhockey_score1 = sh_sfx("airhockey_score1")
     define sfx_airhockey_score2 = sh_sfx("airhockey_score2")
     define sfx_hadouken = sh_sfx("hadouken")
