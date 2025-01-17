@@ -56,7 +56,8 @@ aki "Why don't we have a little walk, Sis? A little stroll by the bay shore'll d
 stop music fadeout 2.0
 stop ambient fadeout 2.0
 
-scene bg inverness_shore
+scene bg inverness_shore:
+    yalign 0.5 zoom 1.02
 with locationskip
 
 play music music_serene fadein 0.5
@@ -177,14 +178,13 @@ aki "All things considered, this new position is something I probably wouldn't h
 aki "Now it has a bitter aftertaste I'm still trying to get out of my mouth."
 "I didn't see it like that before. I want to say it is just paranoia on her part, but I know I'm not going to win that discussion."
 "Akira has been in the business long enough to get a feel for the unwritten rules of the place. I don't really have any reason to doubt her assessment of her own situation."
+li "This is why I dislike the notion of office politics. I cannot even begin to imagine how I would feel in that kind of situation."
 
-show akira basic_annoyed
-with chchange
-
-aki "This is why I hate the notion of office politics. I cannot even begin to imagine how I would feel in that kind of situation."
-
-show akira basic_laugh_close at center
+show akira basic_laugh_close at center:
+    ypos 1.02
 with charamovechangefastest
+
+with vpunch
 
 "I stifle a cry as Akira gives me a cheerful slap on the back."
 aki "Probably like a goldfish in a shark tank."
