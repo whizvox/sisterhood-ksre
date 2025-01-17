@@ -40,9 +40,8 @@ scene bg school_track
 with dissolve
 
 "My new relationship with Hanako is also the reason I approached the nurse yesterday with a request for a training schedule."
-"A week ago, I would have seen a heart flutter as something that was nobody's problem but my own, but now that I have a girlfriend I feel a newfound responsibility to stay in shape."
+"A week ago, I would have seen a heart flutter as something that was nobody's problem but my own, but now that I have a girlfriend, I feel a newfound responsibility to stay in shape."
 "The nurse had been quick to draw, in addition to his own conclusions about my motivations, a training regimen for me to follow."
-
 "As I reach the track, I see a familiar girl sitting on the bleachers."
 
 show emi sad_shy_gym:
@@ -57,7 +56,7 @@ with charachangealways
 hide emi
 with charaexit
 
-"I remember running with her on the track before, during my first week here. But since she's not in my class and I have spent most of my free time in the library, the tea room or my dorm, we haven't really talked much since then."
+"I remember running with her on the track before, during my first week here. But since she's not in my class and I have spent most of my free time in the library, the tea room, or my dorm, we haven't really talked much since then."
 "I guess if my determination to get in shape holds out, we'll get to know each other better soon enough. According to the nurse, running is pretty much a daily ritual for Emi."
 
 stop music fadeout 1.0
@@ -88,9 +87,9 @@ hi "I'm at this school because I have a heart condition, so for me shaping up is
 hi "Until recently, I just walked some short distances every now and then, but I recently picked up dating, so I have an additional reason to improve my health and stay in shape. I'd hate to leave a grieving girlfriend behind."
 
 show emi excited_happy_gym
-with charachangefast
+with Dissolve(0.2)
 
-"Emi responds with a smile, but suddenly makes wide eyes and mouths a soundless \"ahah\" as if she just had a revelation of some kind."
+"Emi responds with a smile, but suddenly makes wide eyes and mouths a soundless “ahah” as if she just had a revelation of some kind."
 
 show emi excited_joy_gym
 with chchange
@@ -153,7 +152,7 @@ emi "So, Hisao… are the rumors I've heard true?"
 hi "What rumors would that be?"
 emi "Don't tell me you don't know. I don't keep up with gossip much, and even I have heard about it."
 "I sigh. Of course I knew."
-"After Hanako and I bared our souls to one another in the park and we were walking through town to get something to drink, Hanako gave me what she called her first gift to me: a sweet kiss on the lips that marked the official start of our relationship."
+"After Hanako and I bared our souls to one another in the park and we were walking through town to get something to drink. Along the way, Hanako gave me what she called her first gift to me—a sweet kiss on the lips that marked the official start of our relationship."
 "But it turned out that our little public display of affection had been spotted by some fellow students, and a day later the rumor mill was working overtime spreading the news throughout the hallways of Yamaku."
 hi "What have you heard?"
 
@@ -199,8 +198,9 @@ with chchange
 emi "I don't think anyone except you and Lilly Satou really know her. But I bet most students know who she is. Sometimes, when you try hard enough to avoid being noticed, you end up standing out all the more."
 "We get up and take another sip. Emi lets out a cute little burp that most people would only associate with infants and we start walking towards the staff building."
 
+scene bg school_gardens
 show emi basic_happy_gym
-with chchange
+with locationchange
 
 emi "How did she react to the attention?"
 hi "She hates it. What did you expect?"
@@ -213,6 +213,11 @@ with chchange
 "Emi looks down for a moment as she hears this and gives me a sad smile."
 emi "That's too bad. I mean, I get that she hates people staring, but I don't think this kind of attention is a bad thing. It's a shame she can't enjoy it."
 hi "What do you mean?"
+
+scene bg school_courtyard
+show emi sad_grin_gym
+with locationchange
+
 emi "Every student here has baggage of some kind. Some have gotten accustomed to things, but others are still working on it."
 emi "But we all have… you know… milestones we have reached or still want to reach."
 
@@ -226,6 +231,13 @@ with chchange
 
 emi "When I first heard the rumor, I was reminded of the time I took my first few steps with these. Or the first time I successfully navigated a staircase."
 emi "For people like me, it brings back a pleasant memory. For people who are still coping, it's a little glimmer of hope, I think."
+
+play sound sfx_dooropen
+
+scene bg school_nursehall
+show emi basic_grin_gym
+with locationchange
+
 emi "Anyway, maybe I'm too optimistic, but I think right now most students, even though they don't know her, are genuinely happy for her."
 emi "If she doesn't realize that and can't enjoy that, she's missing out."
 "Emi's words sound oddly logical to me. Without exception, all students here must have dealt with hardships in their life, some more than others."
@@ -239,7 +251,7 @@ hi "That actually makes a lot of sense. I don't think it'll change the way she f
 hi "You know, you're a lot deeper than I expected."
 
 show emi basic_annoyed_gym
-with chchange
+with chchangefast
 
 "Emi looks annoyed at this."
 emi "You think I'm shallow or an airhead or something?"
@@ -259,6 +271,9 @@ show emi excited_laugh_gym
 with chchange
 
 "Emi laughs at me calling her bluff."
+
+play sound sfx_dooropen
+
 "As she opens the door of the nurse's office, she playfully pokes me in the ribs with her finger."
 
 show emi excited_proud_gym
@@ -269,10 +284,12 @@ emi "Let's hope you still have that drive tomorrow morning. The second days are 
 hide emi
 with charaexit
 
+play sound sfx_doorclose
+
 "After delivering that ominous premonition, she closes the door behind her."
 
-stop music fadeout 2.0
+stop music fadeout 3.0
 scene black
-with Dissolve(2.0)
+with Dissolve(3.0)
 
 return

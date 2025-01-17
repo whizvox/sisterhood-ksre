@@ -3,13 +3,13 @@ label .sh_ch3:
 
 $ set_window_tint(TINT_HISAO)
 
+call sisterhood_timeskip
+
 scene bg school_nurseoffice
-with shorttimeskip
+show nurse concern_close
+with Dissolve(2.0)
 
-show nurse concern_close at center
-with charaenter
-
-play music music_nurse fadein 0.5
+play music music_nurse fadein 4.0
 
 "After listening for a moment, the nurse puts away his stethoscope and gives a satisfied nod to indicate I can put my shirt back on."
 nk "You sound good to me. No chest pains or dizziness this morning?"
@@ -48,6 +48,7 @@ play sound sfx_snap
 show nurse grin_close
 with Dissolve(0.2)
 
+"The nurse suddenly looks pensive and snaps his fingers with a guilty look on his face."
 nk "Speaking of which… that reminds me. A colleague of mine has been asking me about you and wanted to meet you."
 nk "Do you have some time to spare later this day?"
 hi "I have obligations today, but that's early in the evening. I could manage right after the last class. But what is this about?"
@@ -117,7 +118,7 @@ show nurse grin_close
 with chchange
 
 "The nurse acknowledges her words with a cheerful nod and a slightly apologetic gesture."
-nk "This young man next to me is Hisao Nakai whom I'm certain you've heard plenty about by now. My colleague here who wanted to meet you is called Miss Takawa."
+nk "This young man next to me is Hisao Nakai, whom I'm certain you've heard plenty about by now. My colleague here who wanted to meet you is called Miss Takawa."
 
 show takawa smile
 with chchange
@@ -223,7 +224,7 @@ with chchange
 
 ta "Thank you for your account of these events, Mister Nakai. I very much appreciate your time."
 hi "I suppose you aren't willing to tell me a few things in return? Or is that all covered under patient confidentiality?"
-"I don't have high hopes for any attempts to learn more about Hanako from a therapist, especially since the nurse was already so tight-lipped about it, but for some reason it seems unfair for me to be the only one giving out information."
+"I don't have high hopes for any attempts to learn more about Hanako from a therapist, especially since the nurse was already so tight-lipped about it. But for some reason, it seems unfair for me to be the only one giving out information."
 
 show takawa calculating_close
 with chchange
@@ -231,7 +232,7 @@ with chchange
 ta "Client confidentiality, Mister Nakai. And I'm afraid that I'm indeed not at liberty to tell you anything that was confided in me during closed sessions."
 ta "All I can tell you is that I'm content with Miss Ikezawa's progress so far."
 "I can't resist a frown at that statement."
-"If the nurse was correct, Hanako must have been in therapy at Yamaku since she came here two and a half years ago, but when I first met her she was still too skittish to even hold a conversation with me."
+"If the nurse was correct, Hanako must have been in therapy at Yamaku since she came here two and a half years ago. But when I first met her, she was still too skittish to even hold a conversation with me."
 "Was Hanako even worse when she first came here, or is this therapist exaggerating the progress that was made?"
 "Of course, there was also a third possibility."
 hi "May I ask for how long you've been treating Hanako? Are you the only person who's been treating her?"
@@ -249,7 +250,7 @@ with charachangealways
 "Miss Takawa raises her eyebrows for a second and then smiles."
 ta "Very well played, Mister Nakai. I have only worked here for a little over a year."
 "That means Hanako must have been meeting with at least one previous therapist in the past to whom she presumably didn't open up."
-"Somehow I'm not really that surprised. I am still a bit skeptical about Miss Takawa's claim of the therapy's effectiveness though."
+"Somehow I'm not really that surprised. I am still a bit skeptical about Miss Takawa's claim of the therapy's effectiveness, though."
 "Was it just a coincidence Hanako started opening up more when I befriended her? I don't think so."
 
 show takawa calculating_close
@@ -271,7 +272,7 @@ with chchange
 ta "What is it that drew you to Miss Ikezawa? Why is it that you are attracted to her?"
 "That's kind of a personal question. Fortunately, it's something I've often thought over myself, so I don't have difficulty coming up with an answer."
 hi "Multiple things, I guess. We both enjoy reading and playing games. We both like spending time away from the bustle of the rest of the world."
-hi "She's also a really sweet girl and once you get used to the scars, she's actually pretty attractive too."
+hi "She's also a really sweet girl and once you get used to the scars, she's actually pretty attractive, too."
 hi "Also… I can't really describe it very well but I feel some kind of kinship with her. Like she's a kindred spirit. It's hard to explain."
 hi "We figured we could both use support from someone and we made a promise to be that someone for each other during tough times."
 
@@ -298,7 +299,7 @@ ta "I hope Miss Satou has had a pleasant trip abroad. Take care of yourself, Mis
 hide takawa
 with charaexit
 
-"After a polite greeting I leave the secluded “office” and hurry back to the exit of the staff building."
+"After a polite greeting, I leave the secluded “office” and hurry back to the exit of the staff building."
 "There are still plenty of things to do before tonight."
 
 stop music fadeout 2.0

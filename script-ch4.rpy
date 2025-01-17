@@ -3,15 +3,11 @@ label .sh_ch4:
 
 $ set_window_tint(TINT_HISAO)
 
-call sisterhood_timeskip
-
 scene bg school_gate_ss
+show hanako emb_smile
 with Dissolve(2.0)
 
-play music music_pearly fadein 0.5
-
-show hanako emb_smile
-with charaenter
+play music music_pearly fadein 4.0
 
 "The sun is already setting by the time Hanako and I make our way to the parking lot."
 "Hanako received a text message from Akira confirming they landed safely, and Akira is going to drop Lilly off at the school gates."
