@@ -81,6 +81,11 @@ screen sisterhood_options():
                     Function(sh_update_sprite_transitions)
                 ]
             
+            vbox:
+                style_prefix "check"
+
+                textbutton _("Tinted textboxes") action ToggleVariable("persistent.sh_windowtint", True, False)
+            
         textbutton _("Return"):
             style "return_button"
 

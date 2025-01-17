@@ -1,4 +1,5 @@
 default persistent.sh_slowtransitions = True
+default persistent.sh_windowtint = True
 
 init python:
     sh_path = "mods/sisterhood"
@@ -12,6 +13,8 @@ init python:
         store.sh_window_tint = tint_color
     
     def tint_image(image):
+        if not persistent.sh_windowtint:
+            return image
         return Transform(image, matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
 
 init 1 python:
