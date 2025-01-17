@@ -11,8 +11,8 @@ init python:
     def set_window_tint(tint_color):
         store.sh_window_tint = tint_color
     
-    def get_tinted_window(st, at):
-        return Transform("gui/bg/nvl.png", matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint)), 1.0
+    def tint_image(image):
+        return Transform(image, matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
 
 init 1 python:
     for chapter in sisterhood_chapters:
@@ -90,7 +90,7 @@ init:
     define mi = Character(kind=mi, screen="say_sh")
     define aki = Character(kind=aki, screen="say_sh")
     define mystery = Character(kind=mystery, screen="say_sh")
-    define n = Character(kind=n, window_background=DynamicDisplayable(get_tinted_window))
+    define n = Character(kind=n, window_background=DynamicDisplayable(lambda st, at: (tint_image("gui/bg/nvl.png"), 1.0)))
 
     define ta = Character(_("Takawa"), who_color="#f3ccff")
     define na = Character(_("Naomi"), who_color="#ad4545")

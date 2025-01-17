@@ -6,7 +6,7 @@ init 1 python:
                 on_find(variant, imgpath)
             else:
                 renpy.log("[SISTERHOOD] Could not load image: " + imgpath)
-    
+
     def sh_sprites(char, faces, poses=None, outfits=None):
         if poses is None:
             poses = [""]
@@ -39,7 +39,7 @@ init 1 python:
                         renpy.image(f"{char} {variant}_superclose_ss", sp_sunset(supercloseimgpath))
                         renpy.image(f"{char} {variant}_superclose_ni", sp_night(supercloseimgpath))
                         renpy.image(f"{char} {variant}_superclose_rn", sp_rain(supercloseimgpath))
-            
+
     def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0):
         for variant in variants:
             imgpath = f"sprites/{char}/{char}_{variant.replace(' ', '_')}.png"
@@ -47,7 +47,7 @@ init 1 python:
                 imgpath = f"{sh_path}/{imgpath}"
             renpy.image(char + " " + variant + "_phone", Composite(
                 (436, 436),
-                (0, 0), f"{sh_path}/gui/phonebox.png",
+                (0, 0), DynamicDisplayable(lambda st, at: (tint_image(f"{sh_path}/gui/phonebox.png"), 1.0)),
                 (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
             ))
 
@@ -61,7 +61,7 @@ init 1 python:
                 renpy.image(f"firefly b{i}", imgpath)
             else:
                 renpy.log(f"[SISTERHOOD] Could not load firefly image: {imgpath}")
-    
+
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
     # takawa blurred sprites
     for face in ("smile", "serious"):

@@ -192,12 +192,12 @@ screen say_sh(who, what):
     if who and who.strip():
         window id "namebox":
             at colorblind(persistent.colorblind)
-            background Transform(Frame("gui/bg/namebox.png"), matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
+            background tint_image(Frame("gui/bg/namebox.png"))
             style_suffix "namebox"
             text who id "who":
                 size 40
                 bold True
 
     window id "window":
-        background Transform(Frame("gui/bg/saybox.png"), matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
+        background tint_image(Frame("gui/bg/saybox.png"))
         text what id "what"
