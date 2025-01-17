@@ -17,6 +17,14 @@ init python:
             return image
         return Transform(image, matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
 
+    # renpy doesnt like lambas :(
+
+    def _sh_get_nvl_bg(st, at):
+        return (tint_image("gui/bg/nvl.png"), 1.0)
+
+    def _sh_get_phonebox_bg(st, at):
+        return (tint_image(f"{sh_path}/gui/phonebox.png"), 1.0)
+
 init 1 python:
     for chapter in sisterhood_chapters:
         scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
@@ -93,7 +101,7 @@ init:
     define mi = Character(kind=mi, screen="say_sh")
     define aki = Character(kind=aki, screen="say_sh")
     define mystery = Character(kind=mystery, screen="say_sh")
-    define n = Character(kind=n, window_background=DynamicDisplayable(lambda st, at: (tint_image("gui/bg/nvl.png"), 1.0)))
+    define n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
 
     define ta = Character(_("Takawa"), who_color="#f3ccff")
     define na = Character(_("Naomi"), who_color="#ad4545")

@@ -47,7 +47,7 @@ init 1 python:
                 imgpath = f"{sh_path}/{imgpath}"
             renpy.image(char + " " + variant + "_phone", Composite(
                 (436, 436),
-                (0, 0), DynamicDisplayable(lambda st, at: (tint_image(f"{sh_path}/gui/phonebox.png"), 1.0)),
+                (0, 0), DynamicDisplayable(_sh_get_phonebox_bg),
                 (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
             ))
 
