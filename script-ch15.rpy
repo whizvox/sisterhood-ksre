@@ -1,6 +1,8 @@
 label sisterhood_ch15:
 label .sh_ch15:
 
+$ set_window_tint(TINT_HISAO)
+
 call sisterhood_timeskip
 
 scene bg hosp_room2

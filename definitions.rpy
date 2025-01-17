@@ -1,31 +1,18 @@
 default persistent.sh_slowtransitions = True
 
 init python:
-    ta = Character(_("Takawa"), who_color="#f3ccff")
-    na = Character(_("Naomi"), who_color="#ad4545")
-    nt = Character(_("Natsume"), who_color="#a57d33")
-    ka = Character(_("Karla"), who_color="#dfc46d")
-
-    schar = Character(who_color="#FFFFFF") # small-role character, given white character name
-    re = Character(_("Receptionist"), kind=schar)
-    om = Character(_("Old Man"), kind=schar)
-    dc = Character(_("Doctor"), kind=schar)
-    mom = Character(_("Mom"), kind=schar)
-    dad = Character(_("Dad"), kind=schar)
-    kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
-
-    nchar = Character(kind=n, who_suffix=" ", what_prefix=_("“"), what_suffix=_("”")) # NVL character
-    nhi = Character(_("Hisao"), kind=nchar, who_color="#629276")
-    nha = Character(_("Hanako"), kind=nchar, who_color="#897CBF")
-
-    # unknown characters
-    ta_ = Character(_("Old Woman"), who_color="#f3ccff")
-
     sh_path = "mods/sisterhood"
     sh_bgs = sh_path + "/bgs"
+    sh_window_tint = "#FFFFFF"
 
     def sh_sfx(name):
         return f"{sh_path}/sfx/{name}.ogg"
+
+    def set_window_tint(tint_color):
+        store.sh_window_tint = tint_color
+    
+    def get_tinted_window(st, at):
+        return Transform("gui/bg/nvl.png", matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint)), 1.0
 
 init 1 python:
     for chapter in sisterhood_chapters:
@@ -37,7 +24,7 @@ init:
     $ mods_with_menus["sisterhood"] = True
 
     # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
-    define sh_debug = False
+    define sh_debug = True
 
     define sisterhood_chapters = [
         (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Lilly and Akira discuss the future from Inverness."), "lilly"),
@@ -77,6 +64,50 @@ init:
 
     define erase = ImageDissolve(f"{sh_path}/gui/trans/erase.png", 2.0)
 
+    # TINT COLORS
+
+    define TINT_HISAO = "#FFFFFF"
+    define TINT_HANAKO = "#897CBF"
+    define TINT_LILLY = "#fffc60"
+    define TINT_AKIRA = "#c56060"
+    define TINT_UNKNOWN = "#8d8d8d"
+
     # MISCELANEOUS
 
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
+
+init:
+    init offset = 999
+
+    define adv = ADVCharacter(kind=adv, screen="say_sh")
+    define name_only = Character(kind=name_only, screen="say_sh")
+    define narrator = Character(kind=narrator, screen="say_sh")
+    define hi = Character(kind=hi, screen="say_sh")
+    define ha = Character(kind=ha, screen="say_sh")
+    define emi = Character(kind=emi, screen="say_sh")
+    define li = Character(kind=li, screen="say_sh")
+    define shi = Character(kind=shi, screen="say_sh")
+    define mi = Character(kind=mi, screen="say_sh")
+    define aki = Character(kind=aki, screen="say_sh")
+    define mystery = Character(kind=mystery, screen="say_sh")
+    define n = Character(kind=n, window_background=DynamicDisplayable(get_tinted_window))
+
+    define ta = Character(_("Takawa"), who_color="#f3ccff")
+    define na = Character(_("Naomi"), who_color="#ad4545")
+    define nt = Character(_("Natsume"), who_color="#a57d33")
+    define ka = Character(_("Karla"), who_color="#dfc46d")
+
+    define schar = Character(who_color="#FFFFFF") # small-role character, given white character name
+    define re = Character(_("Receptionist"), kind=schar)
+    define om = Character(_("Old Man"), kind=schar)
+    define dc = Character(_("Doctor"), kind=schar)
+    define mom = Character(_("Mom"), kind=schar)
+    define dad = Character(_("Dad"), kind=schar)
+    define kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
+
+    define nchar = Character(kind=n, who_suffix=" ", what_prefix=_("“"), what_suffix=_("”"), screen="nvl_sh") # NVL character
+    define nhi = Character(_("Hisao"), kind=nchar, who_color="#629276")
+    define nha = Character(_("Hanako"), kind=nchar, who_color="#897CBF")
+
+    # unknown characters
+    define ta_ = Character(_("Old Woman"), who_color="#f3ccff")

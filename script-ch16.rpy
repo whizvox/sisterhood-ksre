@@ -1,6 +1,8 @@
 label sisterhood_ch16:
 label .sh_ch16:
 
+$ set_window_tint(TINT_HANAKO)
+
 scene black
 with None
 stop music

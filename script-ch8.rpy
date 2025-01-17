@@ -1,6 +1,8 @@
 label sisterhood_ch8:
 label .sh_ch8:
 
+$ set_window_tint(TINT_HANAKO)
+
 call sisterhood_timeskip
 
 scene bg arcade_shooter

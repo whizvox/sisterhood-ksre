@@ -1,6 +1,8 @@
 label sisterhood_ch9:
 label .sh_ch9:
 
+$ set_window_tint(TINT_HANAKO)
+
 call sisterhood_timeskip
 
 play sound sfx_shower fadein 0.5

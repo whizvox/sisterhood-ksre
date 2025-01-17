@@ -1,6 +1,8 @@
 label sisterhood_ch14:
 label .sh_ch14:
 
+$ set_window_tint(TINT_HISAO)
+
 scene black
 stop music
 

@@ -1,6 +1,8 @@
 label sisterhood_ch5:
 label .sh_ch5:
 
+$ set_window_tint(TINT_HISAO)
+
 call sisterhood_timeskip
 
 scene bg hok_field_ni

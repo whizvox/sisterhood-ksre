@@ -1,6 +1,8 @@
 label sisterhood_ch12:
 label .sh_ch12:
 
+$ set_window_tint(TINT_LILLY)
+
 stop music fadeout 1.0
 scene bg school_dormlilly
 with Dissolve(2.0)

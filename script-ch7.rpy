@@ -1,6 +1,8 @@
 label sisterhood_ch7:
 label .sh_ch7:
 
+$ set_window_tint(TINT_HANAKO)
+
 call sisterhood_timeskip
 
 scene bg school_scienceroom at left

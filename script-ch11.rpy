@@ -1,6 +1,8 @@
 label sisterhood_ch11:
 label .sh_ch11:
 
+$ set_window_tint(TINT_HANAKO)
+
 call sisterhood_timeskip
 
 play ambient sfx_carsambient fadein 2.0

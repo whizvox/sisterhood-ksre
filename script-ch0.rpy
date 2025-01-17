@@ -1,6 +1,8 @@
 label sisterhood_ch0:
 label .sh_ch0:
 
+$ set_window_tint(TINT_HANAKO)
+
 stop music fadeout 1.0
 scene bg school_staircase1
 with flashback

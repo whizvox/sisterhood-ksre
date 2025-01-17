@@ -1,6 +1,8 @@
 label sisterhood_ch1:
 label .sh_ch1:
 
+$ set_window_tint(TINT_LILLY)
+
 call sisterhood_timeskip
 
 scene bg satou_patio
@@ -108,7 +110,7 @@ with chchange
 "We both get a good laugh out of that."
 
 show akira basic_smile_close at center
-with characlose
+with charamovechangefaster
 
 "I suddenly feel how she takes my hand and pushes a small flat rock into it before turning me around."
 aki "Here, give it a try."
@@ -213,7 +215,7 @@ show akira basic_smile
 with chchange
 
 aki "Anyway, let's start walking back."
-li "D-Did you really consider all these things during the few seconds between when Father asked you and you accepted?"
+li "D-did you really consider all these things during the few seconds between when Father asked you and you accepted?"
 aki "Like I said, it was a gut feeling. It took me a whole night of mulling to figure out the specifics."
 "I am impressed. Akira wasn't the only one who was asked to move from Japan to Scotland."
 "I too have been asked to move back in with our parents. But where she accepted almost immediately, I have been trying to avoid even thinking about the choice that has been offered to me."
@@ -272,7 +274,7 @@ with charaenter
 
 ha "A-Akira?"
 "Hanako's voice sounds very far away, but the reception isn't all that bad."
-li "Hello Hanako."
+li "Hello, Hanako."
 
 show hanako emb_smile_phone
 with chchange
@@ -318,7 +320,7 @@ scene bg satou_entrance
 show akira basic_laugh:
     tworight
     ease 4.0 center
-with locationskip
+with shorttimeskipsilent
 
 "By the time Akira and I arrive at the driveway of our parents' mansion, we're both wearing a huge smile on our face."
 

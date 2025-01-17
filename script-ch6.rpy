@@ -1,6 +1,8 @@
 label sisterhood_ch6:
 label .sh_ch6:
 
+$ set_window_tint(TINT_HANAKO)
+
 scene bg hok_bedroom
 with flashback
 

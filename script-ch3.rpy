@@ -1,6 +1,8 @@
 label sisterhood_ch3:
 label .sh_ch3:
 
+$ set_window_tint(TINT_HISAO)
+
 scene bg school_nurseoffice
 with shorttimeskip
 

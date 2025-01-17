@@ -185,3 +185,19 @@ screen sisterhood_about():
             action ShowMenu("sisterhood")
 
     key "game_menu" action ShowMenu("sisterhood")
+
+screen say_sh(who, what):
+    style_prefix "say"
+
+    if who and who.strip():
+        window id "namebox":
+            at colorblind(persistent.colorblind)
+            background Transform(Frame("gui/bg/namebox.png"), matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
+            style_suffix "namebox"
+            text who id "who":
+                size 40
+                bold True
+
+    window id "window":
+        background Transform(Frame("gui/bg/saybox.png"), matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
+        text what id "what"

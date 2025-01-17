@@ -1,6 +1,8 @@
 label sisterhood_ch2:
 label .sh_ch2:
 
+$ set_window_tint(TINT_HISAO)
+
 call sisterhood_timeskip
 
 scene bg school_track

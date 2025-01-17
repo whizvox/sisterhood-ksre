@@ -1,6 +1,8 @@
 label sisterhood_ch17alt:
 label .sh_ch17alt:
 
+$ set_window_tint(TINT_HISAO)
+
 scene bg school_track_on
 with Dissolve(2.0)
 
