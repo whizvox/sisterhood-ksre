@@ -378,9 +378,8 @@ hi "Yeah, they even wanted to take me home to get some rest after picking me up 
 show hisao basic_smile_swt_close_rn
 with chchange
 
-hi "But they meant well."
-ha "I guess I should spend some time with them before they leave, shouldn't I?"
-hi "Yes. I won't be going anywhere."
+hi "But they meant well. I guess I should spend some time with them before they leave, shouldn't I?"
+ha "Yes. I won't be going anywhere."
 
 play sound sfx_phonedial
 
@@ -466,7 +465,7 @@ ha "T-thanks."
 hi "Did you want to come along just in case those clouds above us decide to drop a rainstorm down on me?"
 ha "N-not really. I mean… Not just that."
 
-scene bg suburb_roadcenter_rn
+scene bg school_road_rn
 with locationchange
 
 "We head down the road and true to his word, Hisao adopts a pace that's barely distinguishable from Lilly's."
@@ -503,7 +502,12 @@ ha "…"
 hide hisao
 with charaexit
 
-"Hisao gets up, and we prepare to walk the rest of the way down, but after a few minutes he suddenly turns around and looks me straight in the eye."
+"Hisao gets up, and we begin walking the rest of the way down."
+
+scene bg suburb_roadcenter_rn
+with locationchange
+
+"After a few minutes, Hisao suddenly turns around and looks me straight in the eye."
 
 show hisao basic_neutral_swt_rn
 with charaenter

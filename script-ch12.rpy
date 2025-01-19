@@ -4,6 +4,7 @@ label .sh_ch12:
 $ set_window_tint(TINT_LILLY)
 
 stop music fadeout 1.0
+
 scene bg school_dormlilly
 with Dissolve(2.0)
 
@@ -19,7 +20,7 @@ nvl show dissolve
 n "I take off my clothes, put on my pajamas and sit on the edge of my bed."
 n "{vspace=60}Tonight's been only the most recent of several outings Hanako and I have made lately. It's almost as if she's become my girlfriend instead of Hisao's."
 n "Just recently we've had two picnics in the park, a visit to a play in a local theater, a shopping trip and yesterday a visit to a local petting zoo."
-n "That last one was particularly memorable for both of us, and I'm positive that if they didn't have closing hours there, I'd still be sitting there holding the 2-months old lamb who took a liking to me and Hanako'd still be sitting next to me cuddling with the three members of the local rabbit population."
+n "That last one was particularly memorable for both of us, and I'm positive that if they didn't have closing hours there, I'd still be sitting there holding the 2-months old lamb who took a liking to me and Hanako'd still be sitting next to me cuddling with three members of the local rabbit population."
 n "{vspace=30}And then there was this night."
 n "We made an agreement that I'd pay the majority of the costs. My parents never left us wanting for money, and I presumed Hanako's budget, as a ward of the state, was quite a bit tighter, but she would organize the various outings."
 n "All in all, I've made some wonderful memories."
@@ -284,7 +285,7 @@ li "The upcoming week will be very busy for me. I have very limited time to tie 
 stop music fadeout 2.0
 
 scene bg school_council
-show mishashort perky_sad at twoleft
+show misha perky_sad at twoleft
 show shizu behind_blank at tworight
 with locationskip
 
@@ -293,7 +294,7 @@ mi "Awww… That's a shame, Lilly. I bet Hanako and Hisao are really sad, aren't
 li "Saying goodbye is never easy, Misha."
 li "But I draw relief from the fact that they still have each other. They'll be fine, you'll see."
 
-show mishashort hips_smile
+show misha hips_smile
 with chchange
 
 play music music_shizune fadein 4.0
@@ -301,7 +302,7 @@ play music music_shizune fadein 4.0
 mi "Yeah, I'm sure they will."
 
 show shizu adjust_frown
-show mishashort sign_smile
+show misha sign_smile
 with chchange
 
 mi "I will not pass judgment on your decision to migrate, that is your own choice."
@@ -311,7 +312,7 @@ li "After my departure, my classmate Aki Sujishi will function as representative
 "And please try to treat her with what other people would call common decency."
 
 show shizu adjust_smug
-show mishashort sign_smile
+show misha sign_smile
 with chchange
 
 mi "I'm pleased to see you've managed to transfer your duties to one of your classmates this quickly. Then again, seeing that you've had quite a bit of practice with that over the years, I shouldn't be too surprised."
@@ -332,19 +333,19 @@ mi "I'm afraid you do not have the data to back that up, class rep. If you want 
 li "It's good to hear that you've managed your schedule so well that you can afford to take part in these kinds of petty games."
 
 show shizu adjust_angry
-show mishashort sign_confused
+show misha sign_confused
 with chchange
 
 mi "My schedule is not the problem right now. Yours is. There are still absence summaries, score charts and rosters to cover."
 mi "I presume you'll be responsible and fill them all in a few hours before leaving instead of delegating them to your successor?"
 li "I have reserved the last two days of my stay here for those tasks, so I am sure to have all the latest data. The time I'll be taking is about twice as much as I predict will be needed, so I will be able to take care of the paperwork even if distractions are to be present."
 
-show mishashort perky_confused
+show misha perky_confused
 with chchange
 
 mi "I need to go take a bathroom break, I'll be back in a few minutes."
 
-hide mishashort
+hide misha
 show shizu adjust_frown
 with charaexit
 

@@ -252,9 +252,8 @@ with chchange
 
 li "That isn't true, Hanako. The two of you fell in love on your own accord and started a relationship through your own choices and efforts."
 ha "But he never even would have spent enough time near me to start liking me if it hadn't been for you."
-ha "You're the one who was so nice to him and had him join our lunch breaks, and you're the one who started inviting him to our tea parties in the evening,{nw}"
-ha "and you got him involved in shopping for my presents and took us along for that night on the town,{nw}"
-ha "and he told me you were also the one who convinced him to keep having faith in me after I locked myself up in my room, and…{nw}"
+ha "You're the one who was so nice to him and had him join our lunch breaks, and you're the one who started inviting him to our tea parties in the evening…"
+ha "…and you got him involved in shopping for my presents and took us along for that night on the town, and he told me you were also the one who convinced him to keep having faith in me after I locked myself up in my room, and…"
 "…"
 "I suddenly realize I've started to ramble. I cut myself off and take a deep breath."
 ha "Lilly, is there… anything I can do for you in return? Anything at all?"
@@ -804,8 +803,8 @@ play sound sfx_doorclose
 
 "Our farewells behind us, Lilly closes the door, and I take a glance at the door of my own dorm room, check the time on my cell phone and then briskly walk down the hallway."
 
-stop music fadeout 3.0
+stop music fadeout 2.0
 scene black
-with Dissolve(3.0)
+with Dissolve(2.0)
 
 return

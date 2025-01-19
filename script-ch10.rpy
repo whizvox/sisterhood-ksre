@@ -332,7 +332,7 @@ hi "So now the plan is to ask her sister behind her back?"
 ha "I-I don't really like it either. B-but I'm a bit worried."
 "After I finished my homework for the day and headed over to Lilly's dorm room, I ran into Hanako who was waiting outside the girl's dorm building and who wanted to take a little walk with me first."
 "And now we're standing near the school gate, waiting for Akira to arrive."
-hi "I realize Lilly's been absent from lunch more often than usual, and we didn't have many get-togethers until last week, but does that that really suggest that there's something wrong? She could simply have more than usual class rep duties to tend to."
+hi "I realize Lilly's been absent from lunch more often than usual, and we didn't have many get-togethers until last week, but does that really suggest that there's something wrong? She could simply have more than usual class rep duties to tend to."
 ha "I don't think that's the case. I-I asked one of her classmates today, and he said things weren't any busier than usual in class. Nothing out of the ordinary happened recently that could result in more work for her."
 hi "You asked one of her classmates?"
 "That's an interesting development."
@@ -418,7 +418,7 @@ with chchange
 aki "Why don't you join us? You can ask her yourself."
 hi "We were already invited, so let's go to her place together then."
 
-stop music fadeout 0.5
+stop music fadeout 1.0
 
 scene bg school_dormlilly
 show akira basic_laugh:
@@ -428,9 +428,9 @@ show hanako emb_emb:
     xpos 0.9 xanchor 1.0 yanchor 1.0 ypos 1.1
 with locationskip
 
-play music music_lilly fadein 0.5
+queue music music_lilly fadein 2.0
 
-li "An arcade center, huh? That's a pretty unusual destination for a date."
+aki "An arcade center, huh? That's a pretty unusual destination for a date."
 "Since lunch today got so uncomfortable, we decided to use this opportunity to tell Lilly and Akira about our date last weekend. At least the first part. They already knew more about the second half than they needed to know."
 hi "We had a pretty good time. She may not seem like it at first, but Hanako has quite the competitive streak."
 ha "W-we didn't just play competitive games though. We also teamed up in a lot of games. Both are great fun in their own way."
@@ -453,7 +453,7 @@ aki "Yeah, keeping the place in order was already enough work for the two of us 
 show hanako basic_bashful
 with chchange
 
-ha "Ummm… Well, this one is not a guide dog, but here's very sweet regardless. Would you like to adopt him, Lilly?"
+ha "Ummm… Well, this one is not a guide dog, but he's very sweet regardless. Would you like to adopt him, Lilly?"
 
 show lilly basic_oops
 with chchange
@@ -621,11 +621,7 @@ li "…I… haven't made my decision yet, Hisao. In fact, I wasn't really planni
 li "I didn't want this matter to ruin the joy of your newly-found relationship. Especially since I'm still in the process of trying to decide."
 aki "I'd be the last one who'd want to rush you Sis, but that process has been going on for quite some time, and I'm not getting the impression much progress has been made."
 aki "It'd be nice if I knew whether to cancel your ticket or not."
-
-show lilly basic_concerned
-with chchange
-
-li "You have a ticket already?"
+hi "You have a ticket already?"
 aki "Yeah, proof that the folks are eager to help her make a decision."
 
 show lilly basic_sad

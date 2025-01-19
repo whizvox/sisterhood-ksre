@@ -72,7 +72,7 @@ init 1 python:
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
-    sh_sprites("mishashort", ["sign_sad_cas"])
+    sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], [""], ["gym"])
@@ -115,7 +115,8 @@ init 1:
     image bg hotel_room = f"{sh_bgs}/hotel_room.jpg"
     image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
     image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
-    image bg suburb_roadcenter_blur_rn = rain(f"{sh_bgs}/suburb_roadcenter_blur.jpg")
+    image bg school_road_run_rn = rain(f"{sh_bgs}/school_road_run.jpg")
+    image bg suburb_roadcenter_run_rn = rain(f"{sh_bgs}/suburb_roadcenter_run.jpg")
     image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
 

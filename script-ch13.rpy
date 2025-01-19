@@ -54,7 +54,7 @@ na "I've been thinking. Maybe instead of making it a short article, we could tur
 na "A permanent one. Or semi-permanent until we got a few test runs. We could put it on the columns page, or let it sit on page five. Each issue would cover a different club here at school."
 na "The idea would be to give a short overview of each club written in a way to encourage casual readers to check it out. Like you've been doing."
 "Looks like Naomi's been thinking about this a lot more than I have."
-"All I wanted was to do a little piece on Hisao's club and hopefully get him a new member or two as a little ‘I love you’-gesture towards him."
+"All I wanted was to do a little piece on Hisao's club and hopefully get him a new member or two as a little “I love you”-gesture towards him."
 "Naomi's ambitions, however, seem to reach further."
 
 show naomi basic_grin_close
@@ -70,9 +70,9 @@ with chchange
 
 na "The question remains of course whether the extra membership would welcome {i}her{/i}. If you can write something up that gets Hakamichi additional personnel, I'll personally nominate you for a Pulitzer."
 "Me… writing?"
-ha "Of course, I'm not really in a position to nominate people for that."
+na "Of course, I'm not really in a position to nominate people for that."
 "Slow down a bit."
-ha "And even if I was, isn't that prize US-exclusive?"
+na "And even if I was, isn't that prize US-exclusive?"
 
 show naomi basic_focus_close
 with chchange
@@ -199,8 +199,8 @@ with charaexit
 "Despite the fact that it's summer, the sky is a bit dark and about as gloomy as my mood."
 "I'd be surprised if we make it through the evening without a major downpour."
 
-scene bg suburb_roadcenter_rn
-with locationskip
+scene bg school_road_rn
+with locationchange
 
 hi "Hanako?"
 ha "S-sorry, what were you saying?"
@@ -354,7 +354,7 @@ with charamovechangefastest
 "Hisao nods and launches into a run that I try my hardest to keep up with."
 "He's in much better shape than I am, that's for sure."
 
-show bg suburb_roadcenter_blur_rn behind rain
+show bg school_road_run_rn behind rain
 with locationchange
 
 "Despite the fact Hisao once joked that I could probably outrun Emi Ibarazaki under the right circumstances, I'm not particularly athletic by anyone's standards, except maybe Lilly's."
@@ -368,8 +368,9 @@ hi "You okay?"
 "I barely have enough breath to manage a reply."
 ha "Y-yes. Don't mind me."
 
-hide hisao
-with charaexit
+scene bg suburb_roadcenter_run_rn
+show rain normal
+with locationchange
 
 "We're reaching the edge of town. Just another minute or two and we can take shelter."
 "I'm panting heavily and I'm betting that my clothes aren't just soaked with rain right now."

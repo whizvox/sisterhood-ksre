@@ -444,6 +444,8 @@ with charaexit
 "He moves in again and we trade several blows. I manage to grab him and throw him away from me."
 "I think it was a quarter-circle motion with the joystick."
 
+# TODO Replace with "authentic" Street Fighter II SFX. according to Guest Poster:
+# Hisao is playing Blanka (unruly hair) and Sagat. (chest scar) Hanako is playing Dhalsim (fire-themed, keepaway) and Vega. (hides face)
 play sound sfx_hadouken volume 0.4
 
 "After two tries, I manage to shoot a projectile at him. He jumps over it, but I manage to nail him with a kick as he lands."

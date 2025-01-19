@@ -30,7 +30,7 @@ n "{vspace=30}I'm not afraid to admit that the idea of Hanako's angry cry to go 
 
 nvl hide dissolve
 
-show mishashort sign_smile at twoleft
+show misha sign_smile at twoleft
 show shizu behind_frown at tworight
 with charaenter
 
@@ -40,7 +40,7 @@ mi "Class rep, or perhaps I should say former class rep; you're working really s
 mi "It wouldn't be fair of me to hold the delay of last week against you, considering the circumstances, but if you don't want to be remembered as the black sheep among the class representatives, you'd better make sure to have everything wrapped up before you leave."
 mi "That's not going to happen at the rate you're working now."
 
-show mishashort perky_smile
+show misha perky_smile
 with chchange
 
 "I let out a frustrated sigh before I can stop myself."
@@ -54,7 +54,7 @@ li "Or are you now concerned with other things besides cold, hard results all of
 "And here I am taking the bait again."
 "I'm not sure why I can't take Shizune's provocations with a grain of salt like Hisao seems able to do without any significant effort. Perhaps the fact that we're family makes it more difficult to back down."
 
-show mishashort sign_smile
+show misha sign_smile
 show shizu adjust_frown
 with chchange
 
@@ -78,7 +78,7 @@ with chchange
 mi "The approach you suggest is overrated. People will always get to tasks more quickly if you direct them properly. My goal isn't to win a popularity contest, but to keep my class functioning smoothly."
 "Without saying another word, I open my bag and take several large envelopes out of them. Taking a moment to pile them up neatly, I hold out my hand and let go of them when I feel Misha taking them from me."
 
-show mishashort sign_confused
+show misha sign_confused
 with chchange
 
 mi "Hey, what's in the envelopes, Lilly?"
@@ -87,14 +87,14 @@ li "It turned out that while I was occupied with Hisao and Hanako last week, sev
 li "They did this without me even having to ask them. All that remained for me to do was to type up a small summary."
 li "Do you not agree with me that no class is running more smoothly than a class where the representative can afford to take an unexpected leave of absence, and things still get done on a timely basis?"
 
-show mishashort perky_confused
+show misha perky_confused
 show shizu behind_frustrated
 with chchange
 
 "There's a moment of silence in the room, beyond the sound of a shocked gasp."
 "I allow myself to send a sweet, but triumphant smile in Shizune's general direction."
 
-show mishashort cross_laugh
+show misha cross_laugh
 with chchange
 
 mi "WAHAHAHA~ HAHAHAHAHA~, looks like she's got you there, Shicchan!"
@@ -102,7 +102,7 @@ mi "WAHAHAHA~ HAHAHAHAHA~, looks like she's got you there, Shicchan!"
 "Of course, my classmates' action was a surprise to me as well rather than anything planned, but I must admit getting a small victory over Shizune feels surprisingly good to me."
 "Maybe we really are more alike than either of us cares to admit."
 
-show mishashort sign_smile
+show misha sign_smile
 show shizu adjust_frown
 with chchange
 
@@ -124,7 +124,7 @@ with chchange
 mi "I suppose the fact that you're a bad class rep doesn't really take away from the fact we've also had a few good memories in the past."
 mi "We could probably learn to appreciate each other as family and not follow too far in our fathers' footsteps."
 
-show mishashort hips_grin
+show misha hips_grin
 with chchange
 
 mi "Though I object to the handshake. I'm afraid nothing but a hug will do."
@@ -132,14 +132,14 @@ li "Oh my…"
 "I find myself flustered for a second, then break out into an amused grin."
 li "Misha, please translate properly."
 
-show mishashort cross_laugh
+show misha cross_laugh
 show shizu behind_frustrated
 with chchange
 
 mi "WAHAHAHAHAHA~! Awww, you noticed?"
 li "What did she really say?"
 
-show mishashort perky_smile
+show misha perky_smile
 with chchange
 
 mi "I only added the last part. She's okay with the handshake."
@@ -155,7 +155,7 @@ with charadistant
 "With the paperwork finished prematurely, I accept Misha's offer to have some juice as we take a moment to sit back, and I realize it's been a long time since I was able to feel at ease in this room."
 li "So, I suppose with student council duties, you haven't been able to give your plans for that charity festival much thought."
 
-show mishashort sign_smile
+show misha sign_smile
 show shizu adjust_happy
 with chchange
 
@@ -169,12 +169,12 @@ mi "And those orphanage plans are not off the table either, though I suspect tha
 "I grin playfully."
 li "How about taking over the world one city council at a time?"
 
-show mishashort cross_laugh
+show misha cross_laugh
 with chchange
 
 mi "WAHAHAHAHAHA~! Really, Shicchan?"
 
-show mishashort sign_smile
+show misha sign_smile
 show shizu basic_sparkle
 with chchange
 
@@ -190,7 +190,7 @@ with charamove
 hi "Am I interrupting?"
 
 show hisao basic_smile_uni at left
-show mishashort hips_smile:
+show misha hips_smile:
     xalign 0.6
 show shizu behind_smile at right
 with charachangealways

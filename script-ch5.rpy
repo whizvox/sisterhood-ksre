@@ -425,12 +425,12 @@ hi "I never knew you were this ticklish."
 "Hanako's now panting as if she just sprinted a kilometer uphill."
 "As her breathing slowly returns to normal, she sits up and wipes the tears from her eyes."
 "I half expect her to angrily walk away, but instead she just sits there."
+hi "I think this kind of proves my point, don't you agree?"
 
 show hanako emb_blushtimid_cas_nohat_clip_close_ni
 with chchange
 
-ha "I think this kind of proves my point, don't you agree?"
-hi "Ummm…"
+ha "Ummm…"
 "Not willing to let her back down, I reach out and make a tickling motion in the air with my fingers."
 
 show hanako emb_emb_cas_nohat_clip_close_ni:

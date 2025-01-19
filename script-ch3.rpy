@@ -132,9 +132,6 @@ with chchange
 nk "Here at Yamaku, our primary focus is to help students deal with the physical implications of their conditions."
 nk "But in certain cases where a student's condition is the result of an accident of some sort, some additional support can be desired, and if I feel their circumstances warrant it, I usually refer them to Miss Takawa here or one of her co-workers."
 nk "Eventually the final decision lies with the students, but most of them accept the additional help we offer them here."
-
-# TODO should nurse sprite change here?
-
 "I notice how his smile shortly fades for a moment during the last part of his statement, but before I can ponder on whether he had some specific people in mind, his jovial expression returns, and he reaches for the door handle."
 
 show nurse grin_close
@@ -151,14 +148,16 @@ show takawa calculating
 with charachangealways
 
 ta "You'll have to excuse my colleague. He is a fine young man, but I believe he enjoys his own jokes a little bit too much sometimes."
+
+stop music fadeout 2.0
+
 "She makes an inviting gesture over to the table in the middle of the room."
 
 hide takawa
 show takawa smile_close at sittingpos
 with charaenter
 
-stop music fadeout 0.5
-queue music music_another fadein 0.5
+queue music music_another fadein 4.0
 
 ta "May I have the honor of getting you some green tea, Mister Nakai?"
 hi "Uh… sure. I mean… please."

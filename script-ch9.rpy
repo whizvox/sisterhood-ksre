@@ -3,13 +3,11 @@ label .sh_ch9:
 
 $ set_window_tint(TINT_HANAKO)
 
-call sisterhood_timeskip
-
-play sound sfx_shower fadein 0.5
+play sound sfx_shower fadein 2.0
 
 scene bg hotel_bathroom
 show steam2
-with Dissolve(2.0)
+with Fade(1, 0, 1)
 with Pause(5)
 
 hide steam2
@@ -40,7 +38,6 @@ nvl hide dissolve
 "I walk over to the place where our clothes are piled up and fish my hair clip out of the pockets of my pants."
 "I apply the clip, say a little prayer for good luck and leave the bathroom."
 
-# if not skipping through the text, this sfx should already be stopped by this point
 stop sound fadeout 0.5
 
 scene bg hotel_room

@@ -13,7 +13,7 @@ with Dissolve(2.0)
 "While I'm not completely sure how much of it can be salvaged in the 24 hours that remain until Lilly's departure to Scotland, I don't want to risk things being ruined by my eccentric neighbor bursting into my room unannounced."
 hi "I'm sorry. What did you say?"
 
-show kenji neutral_gym
+show kenji neutral
 with charaenter
 
 play music music_kenji fadein 4.0
@@ -23,7 +23,7 @@ ke "How can you be so sure that the person who assaulted you wasn't a woman? A f
 hi "It was a guy. A slightly older man on a bicycle."
 hi "Hana… I mean, people at the scene confirmed it to me later. I don't think he was a feminist."
 
-show kenji tsun_gym
+show kenji tsun
 with chchange
 
 ke "The whole thing still smells extremely fishy to me. I mean... Getting body checked in the middle of the street and carried off to who-knows-where... Does that sound normal to you?"
@@ -33,9 +33,13 @@ hi "We were in the middle of a downpour, and neither one of us was paying attent
 "I sigh inwardly."
 "The idea was to just get an update on what Mutou and Kenji discussed at the science club meetings last week, but it turns out that after my accident, Kenji came to his own conclusions about my absence and shut himself in for the rest of the week."
 "It's still a mystery to me how Kenji can act so ordinary during club meetings and so irrational when we're alone."
+
+show kenji rage
+with chchangefast
+
 ke "Accident my ass! You were on somebody's hit list, man. It was a coordinated operation."
 
-show kenji neutral_gym
+show kenji neutral
 with chchange
 
 ke "The feminist movement is onto you. I bet that wasn't even a real ambulance that picked you up."
@@ -43,7 +47,7 @@ ke "The feminist movement is onto you. I bet that wasn't even a real ambulance t
 "Since she's still very reluctant to talk about what happened that afternoon, I can't really get into the details."
 hi "It was a pretty real hospital I woke up in though."
 
-show kenji happy_gym
+show kenji happy
 with chchange
 
 ke "They sent some goons the day after to ransack your room. Or maybe to bug the hell out of it. They're watching you now, man."
@@ -52,13 +56,13 @@ ke "They sent some goons the day after to ransack your room. Or maybe to bug the
 "I feel once again that getting Kenji away from the dorm building today has been a very wise move."
 hi "Those were just some girls from my class, picking some stuff up for me."
 
-show kenji tsun_gym
+show kenji tsun
 with chchange
 
 ke "You really think I can't tell the difference between students and trained spies? They were dressed like female students for sure, but their mannerisms gave them away."
 hi "How so?"
 
-show kenji happy_gym
+show kenji happy
 with chchange
 
 ke "They didn't say a single word during the whole operation. They were only communicating in coded gestures, like commandos on a mission."
@@ -74,19 +78,19 @@ with charaexit
 "She was seeing a client earlier this day though and made it clear she didn't want me to wait outside her office, presumably for the sake of her client's privacy."
 "So until her last appointment is over, at four o' clock apparently, I'm stuck playing along with Kenji's conspiracy theories."
 
-show kenji tsun_gym
+show kenji tsun
 with charaenter
 
 ke "After they left your room, I knew they'd be coming for me next. I knew they were gonna kidnap me, imprison me somewhere and then send a squad to my room to steal my blueprints and plans for resistance activities."
 ke "So I locked my door, moved my bed in front of it and got to work on developing a defense mechanism. It's not finished yet, so maybe you can take a look at the designs at the next club meeting."
 hi "Really?"
 
-show kenji happy_gym
+show kenji happy
 with chchange
 
 ke "It's a very clever contraption. I've hidden my papers in a secret compartment in my desk drawer."
 
-show kenji neutral_gym
+show kenji neutral
 with chchange
 
 ke "To open it, you gotta lift the compartment lid through a hole in the bottom of the drawer using a pen or pencil."
@@ -95,12 +99,12 @@ ke "I saw it on TV once and thought it was a stroke of genius."
 "I make a mental note to sabotage that insidious thing (if it even exists) the first chance I get and keep any and all flammable substances far away from Kenji before he accidentally sets the guys' dorm building on fire."
 hi "Sure, I'll help."
 
-show kenji happy_gym
+show kenji happy
 with chchange
 
 ke "Hey, thanks!"
 
-show kenji tsun_gym
+show kenji tsun
 with chchange
 
 "Kenji seems delighted at my quick offer of assistence, but then suddenly narrows his eyes and takes a step back."
@@ -112,7 +116,7 @@ ke "How can I be sure that they didn't install a mind control device while you w
 hi "They operated on my chest. Doesn't a mind control device usually go in the brain?"
 "Why am I even arguing with him as if this is a serious conversation topic?"
 
-show kenji neutral_gym
+show kenji neutral
 with chchange
 
 ke "Hmmm… Maybe not a mind control device then. Probably a tracking device. Definitely a tracking device."
@@ -122,7 +126,7 @@ ke "If they were confident enough of the success of their ambush to go and taunt
 "It's kinda scary how seamlessly he manages to fit all of last weeks events into one big narrative and still get things completely wrong."
 hi "I'm not sure I want to know but… Since you knew they were setting up an ambush for me, did you do anything to try and thwart them?"
 
-show kenji tsun_gym
+show kenji tsun
 with chchange
 
 ke "Sorry man, but I had to set up my own defenses first. In this harsh world, it's every man for himself."
@@ -134,7 +138,7 @@ ke "Maybe we shouldn't be seen together."
 hi "Maybe you should do a perimeter check if that's what worries you. I have an appointment at the nurse's building. I'll have them check me for tracking devices."
 hi "Why don't you stay behind and make sure I'm not followed? Then you can check your theories for yourself."
 
-show kenji happy_gym
+show kenji happy
 with chchange
 
 ke "Hey man, that's a great idea. Go ahead and leave. I'll watch your back and then check this place for spies or bugs."

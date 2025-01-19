@@ -38,7 +38,7 @@ init:
     define sh_debug = True
 
     define sisterhood_chapters = [
-        (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Lilly and Akira discuss the future from Inverness."), "lilly"),
+        (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Still in Scotland, Lilly and Akira discuss the future."), "lilly"),
         (_("Chapter 2"), "sisterhood_ch2.sh_ch2", _("Hisao recounts his relationship with Hanako as he and Emi run on the track."), "hisao"),
         (_("Chapter 3"), "sisterhood_ch3.sh_ch3", _("Hisao is introduced to someone special by the nurse."), "hisao"),
         (_("Chapter 4"), "sisterhood_ch4.sh_ch4", _("Hisao and Hanako welcome Lilly and Akira back to Japan."), "hisao"),
@@ -48,7 +48,7 @@ init:
         (_("Chapter 7"), "sisterhood_ch7.sh_ch7", _("Hanako helps with a favor from the newspaper club."), "hanako"),
         (_("Chapter 8"), "sisterhood_ch8.sh_ch8", _("Hanako and Hisao spend the day at the arcade."), "hanako"),
         (_("Chapter 9"), "sisterhood_ch9.sh_ch9", _("Hanako and Hisao spend the night in a fancy hotel."), "hanako"),
-        (_("Chapter 10"), "sisterhood_ch10.sh_ch10", _("Hisao and Hanako learn of Lilly's summons."), "hisao"),
+        (_("Chapter 10"), "sisterhood_ch10.sh_ch10", _("Hisao and Hanako learn of Akira's leave and Lilly's summons."), "hisao"),
         (_("Chapter 11"), "sisterhood_ch11.sh_ch11", _("Hanako and Lilly have a memorable night at a fancy restaurant."), "hanako"),
         (_("Chapter 12"), "sisterhood_ch12.sh_ch12", _("Lilly makes a difficult decision."), "lilly"),
         (_("Chapter 13"), "sisterhood_ch13.sh_ch13", _("Hanako and Lilly make preparations for Lilly's going-away party."), "hanako"),
@@ -56,7 +56,7 @@ init:
         (_("Chapter 15"), "sisterhood_ch15.sh_ch15", _("Hisao is determined to reconcile with Hanako."), "hisao"),
         (_("Chapter 16"), "sisterhood_ch16.sh_ch16", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
         (_("Chapter 17"), "sisterhood_ch17.sh_ch17", _("Lilly and Hanako make amends."), "lilly"),
-        (_("Chapter 17 Alt"), "sisterhood_ch17alt.sh_ch17alt", _("Hisao keeps Kenji busy before talking to Miss Takawa."), "hisao")
+        #(_("Chapter 17 Alt"), "sisterhood_ch17alt.sh_ch17alt", _("Hisao keeps Kenji busy before talking to Miss Takawa."), "hisao")
     ]
 
     # TRANSFORMS

@@ -355,16 +355,16 @@ with charaenter
 hi "That sounded pretty interesting, Hanako."
 "I can only sit there with my mouth agape as I realize that my cavalry has just been turned into Naomi's cavalry instead."
 
-stop music fadeout 0.5
-stop ambient fadeout 0.5
+stop music fadeout 1.0
+stop ambient fadeout 1.0
 
 scene bg school_miyagi
 show lilly basic_surprised_close at twoleft:
-    zoom 0.9
+    zoom 0.92
 show hisao basic_neutral_uni_close at tworight
 with locationskip
 
-play music music_lilly fadein 0.5
+play music music_lilly fadein 2.0
 
 li "Were you really asked to join a club?"
 "As expected, the main talk of our lunch break was Naomi's proposal. Lilly was understandably surprised to hear of this sudden development."
@@ -385,13 +385,13 @@ hi "Someone told me not too long ago that it's important to seize opportunities 
 "I knew the subject interested him, and I hoped this would also encourage him to make more definite plans for his future. He consistently scores the highest marks in class in Mutou's subject, and I genuinely believe that he'd do very well if he went for a career in that direction."
 ha "I-I know I said that last week. I'm not ruling the opportunity out r-right away."
 
-show hisao basic_smile_uni_close
+show lilly basic_smile_close
 with chchange
 
-hi "You could choose to see it as a sign that fate is extending you a helping hand."
+li "You could choose to see it as a sign that fate is extending you a helping hand."
 "By breaking somebody else's? That's kind of a cruel way to motivate someone. Fate must know how easily I can be guilt tripped."
 "I merely nod. I don't believe the work itself will give me much trouble."
-"What scares me is the idea of being thrown into a group of unfamiliar people who might stare at my scars, who might be put off by my stammering -- which always gets worse whenever I'm feeling nervous -- my shyness and inability to make conversation."
+"What scares me is the idea of being thrown into a group of unfamiliar people who might stare at my scars, who might be put off by my stammering—which always gets worse whenever I'm feeling nervous—my shyness and inability to make conversation."
 "A few weeks ago, I was still the “shy kid who kissed her first boyfriend in public” to people, but tomorrow I might be the “shy kid who panics at the most mundane things” once again."
 
 show hisao cross_speak_uni_close
@@ -627,13 +627,13 @@ with chchange
 
 hi "Alright then, Hanako."
 
-stop music fadeout 0.5
+stop music fadeout 1.0
 
 scene bg school_newspaper
 show naomi bend_laugh
-with locationskip
+with Fade(1, 0, 1)
 
-play music music_comedy fadein 0.5
+play music music_comedy fadein 2.0
 
 na "Nice! You got all content digital now?"
 ha "Y-yes. Everything."
@@ -647,15 +647,11 @@ with chchange
 na "Could you print them all out? The pictures and templates for all the pages too. And then come and sit here next to me."
 ha "I-I'm not done yet?"
 na "I can't force you to do more than you want, but there's still something else to do and we're getting to the part that I think you'll like."
-"I simply nod and return to the computer room."
-
-stop music fadeout 0.5
+"I simply nod and return to my seat."
 
 scene bg school_newspaper
 show naomi basic_focus
 with shorttimeskip
-
-play music music_comedy fadein 0.5
 
 "A few minutes later I return to Naomi with a stack of paper containing everything I digitized over the last two days."
 "Naomi is usually loud and somewhat chaotic, but in her role of editor-in-chief she becomes a bit more serious and structured than usual and I have an easier time keeping up (and putting up) with her."
@@ -774,7 +770,7 @@ with chchange
 
 "Hisao's only reply is a mock-offended huff that makes both of us burst out in giggles."
 hi "I'm not going to argue that point."
-ha "A wise decision, Hisao."
+li "A wise decision, Hisao."
 
 show lilly basic_smile_close
 with chchange

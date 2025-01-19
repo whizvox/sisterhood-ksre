@@ -498,7 +498,7 @@ dad "You sure did. What's in that plastic bag you're carrying with you?"
 hi "Ah, nothing important."
 "As we reach the dorm entrance, we're greeted by an ear-shattering “HICCHAN! WELCOME BACK!” that could only originate from one person in Japan."
 
-show mishashort hips_grin:
+show misha hips_grin:
     xalign 0.5 xpos 0.75
 show shizu basic_happy at center
 show lilly basic_cheerful:
@@ -513,7 +513,7 @@ hi "The person in the middle is Shizune Hakamichi, our class representative and 
 hi "The one on the right is Shiina Mikado, my neighbor in class. We usually just call her Misha."
 hi "The girl on the left is Lilly Satou who attends the class next to ours and often shares lunch with me."
 
-show mishashort perky_smile
+show misha perky_smile
 show shizu behind_smile
 show lilly basic_smileclosed
 with charachangealways
@@ -526,7 +526,7 @@ with chchange
 li "I'm sorry, Hisao. I tried to get your neighbor Kenji to join us as well, but he seemed preoccupied and wouldn't come out of his room."
 hi "That's okay, Lilly."
 
-show mishashort sign_confused
+show misha sign_confused
 with chchange
 
 mi "Hey Hicchan. Maybe I missed something here, but… why isn't Hanako with you?"
@@ -536,7 +536,7 @@ stop music fadeout 1.0
 "The fake smile I have been wearing since we reached Yamaku is wiped off my face in an instant."
 hi "I… haven't seen Hanako anywhere, Misha."
 
-show mishashort cross_frown
+show misha cross_frown
 show shizu basic_angry
 show lilly basic_reminisce
 with chchange

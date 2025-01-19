@@ -150,7 +150,7 @@ show lilly basic_weaksmile_cas:
     xalign 0.6
 with Dissolvemove(1.0)
 
-"Lilly let out a light groan before carefully walking over to Akira and giving her a polite hug."
+"Lilly lets out a light groan before carefully walking over to Akira and giving her a polite hug."
 li "Stay in touch."
 
 show akira basic_ending
@@ -191,14 +191,14 @@ with chchange
 "Lilly smiles mysteriously."
 li "Later."
 
-stop music fadeout 1.0
+stop music fadeout 2.0
 
 scene bg school_dormlilly
 show lilly basic_weaksmile_cas at twoleft
 show hanako basic_bashful at tworight
-with locationskip
+with shorttimeskip
 
-play music music_lilly fadein 2.0
+queue music music_lilly fadein 2.0
 
 li "I needed that."
 "As Lilly puts her second cup of tea down, she lets out a satisfied sigh. She still looks a bit tired, but the caffeine seems to have taken the edge off."
@@ -305,7 +305,7 @@ show hanako emb_emb_clip
 with chchange
 
 "Hanako beams."
-ha "Me neither. I'd really like to go too."
+ha "Me neither. I'd really like to go, too."
 
 show lilly basic_satisfied_cas
 with chchange
@@ -383,7 +383,7 @@ hi "And you in return wanted to know why she was so interested?"
 show lilly basic_oops_cas
 with chchange
 
-li "Yes. After some digging on my part I got her to admit to me that she was in love with you herself."
+li "Yes. After some digging on my part, I got her to admit to me that she was in love with you herself."
 hi "So it was like she was asking you if it was safe for her to pursue me without becoming a rival to you?"
 li "I do not think she had any plans to pursue you. But in the case I liked you as well, she would have tried to push her own feelings away for my benefit…"
 
@@ -425,7 +425,7 @@ li "Oh."
 show lilly basic_listen_cas
 with chchange
 
-"One more thing bothered me though. There were many things Hanako told me during our confession in the park that day; many things that I didn't think Lilly was aware of, and some of them applied to her as well."
+"One more thing bothered me, though. There were many things Hanako told me during our confession in the park that day—many things that I didn't think Lilly was aware of—and some of them applied to her as well."
 "The difficulty with trusting friends Hanako admitted to having was one thing that came to mind, and part of me wants to let Lilly in on this. But I'm not certain yet if the risk would be worth it."
 "The things Hanako told me in the park were things she confided in me, because she trusted me. Earning her trust has been a ride through hell, and something tells me it won't be easily regained if she feels I betrayed it."
 "With luck and Hanako's slowly growing confidence, she'll be able to improve her friendship with Lilly on her own without me having to meddle in it."
@@ -442,8 +442,8 @@ with charamove
 
 "Lilly gets up from the bed and gives a polite bow."
 li "Thank you for tonight, Hisao. I'm looking forward to tomorrow."
-hi "Me too. Goodnight Lilly."
-li "Goodnight Hisao."
+hi "Me too. Goodnight, Lilly."
+li "Goodnight, Hisao."
 
 stop music fadeout 3.0
 

@@ -429,7 +429,7 @@ mi "Guess who, Hicchan!"
 hi "Misha, what are you doing in my dream?"
 mi "Wahaha~, it isn't a dream! I'm right here!"
 
-show mishashort hips_grin_cas behind black
+show misha hips_grin_cas behind black
 with None
 hide black
 with openeyefast
@@ -437,7 +437,7 @@ with openeyefast
 mi "Hey there, Hicchan! How are you feeling?"
 hi "Slightly better than yesterday. Are you here on your own?"
 
-show mishashort hips_smile_cas
+show misha hips_smile_cas
 with chchange
 
 mi "No. I brought company."
@@ -448,7 +448,7 @@ show lilly cane_displeased:
     xanchor 0.0 xpos 1.3
 with None
 
-show mishashort at twoleft
+show misha at twoleft
 show shizu at tworight
 show lilly at right
 with charamovefast
@@ -467,7 +467,7 @@ with charamovechangefaster
 
 hi "Misha, did you walk on ahead?"
 
-show mishashort hips_grin_cas at twoleft
+show misha hips_grin_cas at twoleft
 show shizu at tworight
 with chchange
 
@@ -478,7 +478,7 @@ with chchange
 
 "I merely roll my eyes and focus on Shizune who has reached my bed as well and gives me curt nod as a greeting, the modest smile on her face indicating she's happy to see me."
 
-show mishashort sign_smile_cas
+show misha sign_smile_cas
 with chchange
 
 mi "Good to see you, Hicchan. You certainly gave us a scare."
@@ -486,14 +486,14 @@ hi "Nice to see you too, Shizune. And thanks for dropping by."
 mi "Not a problem. We made sure to bring you a few things you may appreciate during your stay here."
 
 show shizu basic_normal2
-show mishashort perky_smile_cas
+show misha perky_smile_cas
 with chchange
 
 "Shizune gestures to Misha who grabs the bag lying at her feet and drops it on the bed. Inside are my own pajamas, toothbrush and several books I got from the library last week."
 "I guess it would appear ungrateful to ask Shizune how the heck they managed to get into my room."
 hi "Thanks guys. This'll make the rest of my time a lot easier to sit out."
 
-show mishashort hips_smile_cas
+show misha hips_smile_cas
 show shizu adjust_happy
 with chchange
 
@@ -501,7 +501,7 @@ with chchange
 "Curiously, I look at Shizune."
 hi "What's in the envelope?"
 
-show mishashort sign_confused_cas
+show misha sign_confused_cas
 show shizu basic_normal
 with chchange
 
@@ -512,7 +512,7 @@ stop music fadeout 0.5
 
 "But when I feel what's inside I feel my blood curdle, and both Misha and Lilly cringe when the beeping of my EKG monitor suddenly spikes."
 
-show mishashort perky_confused_cas
+show misha perky_confused_cas
 show shizu behind_blank
 with chchange
 
@@ -524,7 +524,7 @@ play music music_sadness fadein 2.0
 hi "I-it's Hanako's hairclip."
 hi "I… I gave it to her when we started dating."
 
-show mishashort perky_sad_cas
+show misha perky_sad_cas
 show shizu behind_sad
 with charachangealways
 
@@ -536,7 +536,7 @@ with chchange
 
 "Shizune is the first one to recollect herself, and she starts signing, giving Misha a gentle shove in order to shake her out of the dazed state she was just in before repeating herself."
 
-show mishashort sign_sad_cas
+show misha sign_sad_cas
 with chchange
 
 mi "R-right. Umm… Hicchan. We went to the nurse's office today to see if we could find out some more for you, and um…"
@@ -546,7 +546,7 @@ mi "Do you remember that incident in science class some time ago?"
 "That triggered a panic attack with Hanako, and although we were able to get her out of the class with a minimum of attention from the rest, the whole experience was very unsettling."
 hi "How could I forget about that?"
 
-show mishashort perky_sad_cas
+show misha perky_sad_cas
 with chchange
 
 mi "It seems something similar happened on Monday."
@@ -559,7 +559,7 @@ show lilly at right:
     alpha 1.0
 show shizu:
     xalign 0.5 xpos 0.4
-show mishashort at left
+show misha at left
 with charaenter
 
 "I turn to Lilly, who has been standing some distance away from the bed the whole time and who has been strangely quiet during my interaction with the student council duo."
@@ -575,7 +575,7 @@ show lilly basic_sad
 with chchange
 show shizu adjust_frown
 with charachangealways
-show mishashort sign_sad_cas
+show misha sign_sad_cas
 with charachangealways
 
 "After fiddling with her glasses for a second, Shizune nods and makes a flurry of gestures in Misha's direction."
@@ -585,18 +585,18 @@ mi "When you're done, you can give them a call and ask them to notify us."
 show shizu:
     xpos 1.0
     ease 1.0 alpha 0.0
-show mishashort:
+show misha:
     xpos 0.6
     ease 1.0 alpha 0.0
 with charamove
 
 hide shizu
-hide mishashort
+hide misha
 with None
 
 "Without waiting for a reply, Shizune and Misha get up, give me a quick nod and then walk out of my room with quick determined steps, leaving me alone in the room with Lilly."
 "This looks rather ominous. Do they know something I don't?"
-hi "Err…you'd better sit down. There's a chair a few steps away from my bed on the right side."
+hi "Err… You'd better sit down. There's a chair a few steps away from my bed on the right side."
 
 show lilly cane_reminisce
 with chchange

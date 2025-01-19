@@ -3,219 +3,154 @@ label .sh_ch6:
 
 $ set_window_tint(TINT_HANAKO)
 
+stop music fadeout 2.0
+
 scene bg hok_bedroom
 with flashback
 
-play music music_dreamy fadein 0.5
+play music music_dreamy fadein 4.0
 
-nvl show dissolve
-
-nha "…Hisao?"
-nhi "Hanako. Are you still awake?"
-nha "I… had a bad dream just now. I couldn't get back to sleep right away. Then I heard you tossing and turning."
-nhi "Sorry about that."
-nha "You don't have to apologize."
-
-nvl clear
-
-n "…"
-n "A silence."
-n "Should I try to talk to Hisao some more, or would he dislike being kept awake?"
-n "This is the second consecutive night we spent sleeping in the same bedroom; a result of Lilly's match making mood. I was given the double bed Lilly's parents must have used in the past while Hisao has been using the smaller bed in the corner."
-
-nvl clear
-
-nha "H-Hisao, d-do you want to talk for a bit?"
-nhi "Sure."
-n "I'm wondering if Hisao is thinking about the same thing I am right now."
-n "Even though we're girlfriend and boyfriend, we're currently not exactly acting as a couple. Are we supposed to right now?"
-
-nvl clear
-
-nha "Umm… I w-wouldn't mind if you got a little closer."
-nhi "Like sit on the edge of your bed? That would indeed talk a little bit easier."
-nha "Y-you c-can lie n-next to m-me if you want."
-nhi "I-if you don't mind."
+ha "…Hisao?"
+hi "Hanako. Are you still awake?"
+ha "I… had a bad dream just now. I couldn't get back to sleep right away. Then I heard you tossing and turning."
+hi "Sorry about that."
+ha "You don't have to apologize."
+"…"
+"A silence."
+"Should I try to talk to Hisao some more, or would he dislike being kept awake?"
+"This is the second consecutive night we spent sleeping in the same bedroom; a result of Lilly's match making mood. I was given the double bed Lilly's parents must have used in the past while Hisao has been using the smaller bed in the corner."
+ha "H-Hisao, d-do you want to talk for a bit?"
+hi "Sure."
+"I'm wondering if Hisao is thinking about the same thing I am right now."
+"Even though we're girlfriend and boyfriend, we're currently not exactly acting as a couple. Are we supposed to right now?"
+ha "Umm… I w-wouldn't mind if you got a little closer."
+hi "Like sit on the edge of your bed? That would indeed talk a little bit easier."
+ha "Y-you c-can lie n-next to m-me if you want."
+hi "I-if you don't mind."
 
 play sound sfx_bedsheets volume 0.5
 
-n "{vspace=60}I hear the sound of shuffling steps slowly coming closer."
-n "Due to the heavy curtains covering the windows and the absence of street lights outside, the room is pitch black. I hope Hisao won't bump into something like I did when I nearly knocked over Lilly earlier this night."
+"I hear the sound of shuffling steps slowly coming closer."
+"Due to the heavy curtains covering the windows and the absence of street lights outside, the room is pitch black. I hope Hisao won't bump into something like I did when I nearly knocked over Lilly earlier this night."
 
 stop sound fadeout 0.5
 
-n "{vspace=60}As the shuffling stops, I move a bit to my right to give him some space, and a moment later I hear him get into the bed."
-
-nvl clear
-
-nhi "…"
-nha "…"
-n "…"
-n "This feels awkward."
-n "I try to make conversation by asking the first question that pops into my mind."
-
-nvl clear
-
-nha "H-Hisao, do you often have trouble sleeping?"
-nhi "On occasion. It's my medication. It sometimes messes with my sleeping patterns. Sometimes I just wake up in the middle of the night, and sometimes I can't fall asleep no matter how tired I feel."
-nha "I'm sorry."
-nhi "How about you? Do you often have bad dreams?"
-nha "S-sometimes. A-about the accident or a-about elementary school. It used to be worse than it is now."
-nhi "You've been getting better?"
-nha "Therapy is helping a bit. Though I still take sleeping pills sometimes during periods when things get especially bad, I'm trying not to rely on them too much."
-
-nvl clear
-
-nhi "I met Miss Takawa a few days ago."
-nha "I know. She asked me if she could meet you."
-nhi "She seems nice. A bit odd, but nice."
-nha "She… is."
-
-nvl clear
-
-n "…"
-n "Another silence."
-n "I want to say what's on my mind, but I'm not sure how to put it.{vspace=30}"
-nha "Hisao… How has your h-heart been lately?"
-nhi "Not bad. I've responded well to those early morning jogs."
-nha "Nothing happened like… during… that night?"
-n "{vspace=60}I feel him freezing for a moment."
-n "We never mentioned “that night” again after we started dating. Even the memory is still painfully awkward for us both."
-
-nvl clear
-
-nhi "No… Not even a small flutter. With luck it'll stay that way."
-nhi "Look at today. We walked to town and back in warm weather, and we had another long walk this evening. I'm not saying I'm in perfect shape yet, but I'm slowly getting better at handling physical activity."
-nha "Because… we're… in a r-relation right now, but I thought you… were worried about your heart and… erm…"
-n "{vspace=30}I hear him sigh."
-n "He probably understands where I am going."
-
-nvl clear
-
-nhi "You want to know why I picked my own bed if I wasn't worried about my heart."
-nha "…we have shared a bed before."
-nhi "It's pretty confusing, isn't it? We just started dating. We haven't done anything besides kissing and hugging. And yet we've lost our virginity to one another. Sharing a bed shouldn't be a problem, right? We've gone further than just sleeping next to each other."
-nha "It… is a bit confusing."
-
-nvl clear
-
-nhi "I wasn't sure how you felt about physical intimacy beyond what we've done so far. I don't want to feel the way I felt last time ever again."
-nha "I d-don't understand."
-n "{vspace=30}Hisao takes a long pause."
-nhi "…I feel that last time, sleeping with me was just a means to an end to you. You didn't want the experience itself, you just wanted me to see you in a different light."
-nhi "I did something to you that you didn't really want. Something very intimate that you didn't really want."
-nhi "Afterwards, when I learned your motivation, I felt like I had my way with you. Like I took advantage of you."
-n "{vspace=60}I had no idea he felt this bad about it."
-n "It's true I let him have sex with me, but I didn't feel like he forced me to."
-
-nvl clear
-
-nha "…I… don't really see it that way. I… feel it was me who was t-taking advantage of you."
-nha "I had ulterior m-motives I didn't tell you about. At least not until later."
-nhi "Even so, the whole thing was painful for you, wasn't it?"
-nha "That… last part was kind of painful, to be honest. But…. I've read that… it hurts for most girls during their first time, so I don't think it was your fault."
-nha "And there was one thing I enjoyed about the whole thing."
-nhi "What was that?"
-
-nvl clear
-
-nha "People often recoil when they see even part of my face. You… saw much more of me that night."
-nha "But you still… wanted me."
+"As the shuffling stops, I move a bit to my right to give him some space, and a moment later I hear him get into the bed."
+hi "…"
+ha "…"
+"…"
+"This feels awkward."
+"I try to make conversation by asking the first question that pops into my mind."
+ha "H-Hisao, do you often have trouble sleeping?"
+hi "On occasion. It's my medication. It sometimes messes with my sleeping patterns. Sometimes I just wake up in the middle of the night, and sometimes I can't fall asleep no matter how tired I feel."
+ha "I'm sorry."
+hi "How about you? Do you often have bad dreams?"
+ha "S-sometimes. A-about the accident or a-about elementary school. It used to be worse than it is now."
+hi "You've been getting better?"
+ha "Therapy is helping a bit. Though I still take sleeping pills sometimes during periods when things get especially bad, I'm trying not to rely on them too much."
+hi "I met Miss Takawa a few days ago."
+ha "I know. She asked me if she could meet you."
+hi "She seems nice. A bit odd, but nice."
+ha "She… is."
+"…"
+"Another silence."
+"I want to say what's on my mind, but I'm not sure how to put it."
+ha "Hisao… How has your h-heart been lately?"
+hi "Not bad. I've responded well to those early morning jogs."
+ha "Nothing happened like… during… that night?"
+"I feel him freezing for a moment."
+"We never mentioned “that night” again after we started dating. Even the memory is still painfully awkward for us both."
+hi "No… Not even a small flutter. With luck it'll stay that way."
+hi "Look at today. We walked to town and back in warm weather, and we had another long walk this evening. I'm not saying I'm in perfect shape yet, but I'm slowly getting better at handling physical activity."
+ha "Because… we're… in a r-relation right now, but I thought you… were worried about your heart and… erm…"
+"I hear him sigh."
+"He probably understands where I am going."
+hi "You want to know why I picked my own bed if I wasn't worried about my heart."
+ha "…we have shared a bed before."
+hi "It's pretty confusing, isn't it? We just started dating. We haven't done anything besides kissing and hugging. And yet we've lost our virginity to one another. Sharing a bed shouldn't be a problem, right? We've gone further than just sleeping next to each other."
+ha "It… is a bit confusing."
+hi "I wasn't sure how you felt about physical intimacy beyond what we've done so far. I don't want to feel the way I felt last time ever again."
+ha "I d-don't understand."
+"Hisao takes a long pause."
+hi "…I feel that last time, sleeping with me was just a means to an end to you. You didn't want the experience itself, you just wanted me to see you in a different light."
+hi "I did something to you that you didn't really want. Something very intimate that you didn't really want."
+hi "Afterwards, when I learned your motivation, I felt like I had my way with you. Like I took advantage of you."
+"I had no idea he felt this bad about it."
+"It's true I let him have sex with me, but I didn't feel like he forced me to."
+ha "…I… don't really see it that way. I… feel it was me who was t-taking advantage of you."
+ha "I had ulterior m-motives I didn't tell you about. At least not until later."
+hi "Even so, the whole thing was painful for you, wasn't it?"
+ha "That… last part was kind of painful, to be honest. But…. I've read that… it hurts for most girls during their first time, so I don't think it was your fault."
+ha "And there was one thing I enjoyed about the whole thing."
+hi "What was that?"
+ha "People often recoil when they see even part of my face. You… saw much more of me that night."
+ha "But you still… wanted me."
 # smooth, hisao
-nhi "Your scars really don't do much to diminish your beauty, Hanako."
-n "{vspace=30}He says it with such sincerity that I can't help but smile."
-
-nvl clear
-
-n "I'm still not quite used to the idea of being attractive to someone, but it always feels good when Hisao is flattering me."
-n "It makes me want to ease his anxiety in return."
-nha "Hisao… What happened that night… It wasn't the right t-time."
-nha "But for me, it was at least with the right p-person. I'm happy it was with you."
-nha "As awkward as it was, it was with someone I r-really, really liked. That's what's important to me."
-nha "So p-please don't feel bad about this anymore."
-
-nvl clear
-
-n "…"
+hi "Your scars really don't do much to diminish your beauty, Hanako."
+"He says it with such sincerity that I can't help but smile."
+"I'm still not quite used to the idea of being attractive to someone, but it always feels good when Hisao is flattering me."
+"It makes me want to ease his anxiety in return."
+ha "Hisao… What happened that night… It wasn't the right t-time."
+ha "But for me, it was at least with the right p-person. I'm happy it was with you."
+ha "As awkward as it was, it was with someone I r-really, really liked. That's what's important to me."
+ha "So p-please don't feel bad about this anymore."
+"…"
 
 play sound sfx_bedsheets volume 0.5
 
-n "I hear him shift, and I suddenly feel a soft kiss on my… nose?"
-n "I giggle."
-n "It has to be tough to kiss someone when you can't see your hand in front of your face."
+"I hear him shift, and I suddenly feel a soft kiss on my… nose?"
+"I giggle."
+"It has to be tough to kiss someone when you can't see your hand in front of your face."
 
 stop sound fadeout 0.5
 
-nvl clear
-
-nhi "Hanako… Have you ever thought about… you know… what it'd be like if we went a step further?"
-n "{vspace=60}I feel my cheeks burning when he asks me this question."
-n "It seems he's trying to find out if I have a sex drive without actually having to ask me directly.{vspace=30}"
-nha "I'm not really sure…"
-nha "Not too long ago, I was still considering intimacy something that other people had, but I w-would never have. So I told myself it was something I neither needed nor wanted."
-nha "But when you showed me the scar on your chest and allowed me to touch it… I found out I enjoyed the physical contact. It really surprised me when I discovered that aspect of myself."
-
-nvl clear
-
-nhi "Was it a pleasant discovery?"
-nha "I… don't really know. I'm still in the process of getting used to the idea."
-nha "I… do occasionally wonder what it would b-be like if we… became more intimate. But when I think about it for too long, I still get a bit scared."
-nha "How about you, Hisao? Aren't you scared you'd get heart trouble if you got too carried away?"
-nhi "I'm kinda trying to lower the chances of that happening. At this point, I think I should be able to handle something not too intense."
-
-nvl clear
-
-nha "…Are you… proposing something?"
-nhi "Until now, I simply assumed you weren't up to it anyway, but then I realized I should at least make the effort to ask if you'd like to…"
-nha "…l-like to what?"
-nhi "Like to make out."
-n "{vspace=30}I smile."
-n "I realize I still come across as fragile and shy despite my new-found resolve to try and become more confident."
-n "I appreciate the fact Hisao is at least making the effort to find out what I really feel and want instead of making assumptions about me, even if they're probably largely correct."
-
-nvl clear
-
-nha "W-Why so sudden?"
-nhi "Circumstances, I guess. We have a big room and a big bed all to ourselves right now. The only person within a mile is Lilly, who's a pretty heavy sleeper and isn't going to barge in on us."
-nhi "We don't get this kind of convenience and privacy at Yamaku. It kinda feels like a shame to waste the opportunity."
-nhi "But on the other hand, I'd hate to do something you're not ready for… again."
-
-nvl clear
-
-n "I take some time to consider Hisao's words."
-n "I enjoy kissing and hugging him. It turned out that I'm not quite as frightened of physical contact as I'd always thought I'd be. I'm admittedly a bit curious."
-n "Hisao's right that right now would not be a bad opportunity. The fact that it's too dark for him to actually see me might make me feel more at ease too. But if I want to relax, I have to be sure about one thing."
-
-nvl clear
-
-nha "W-we c-could g-give it a try. But I… I'm not too sure what I… am or am not… ready for."
+hi "Hanako… Have you ever thought about… you know… what it'd be like if we went a step further?"
+"I feel my cheeks burning when he asks me this question."
+"It seems he's trying to find out if I have a sex drive without actually having to ask me directly."
+ha "I'm not really sure…"
+ha "Not too long ago, I was still considering intimacy something that other people had, but I w-would never have. So I told myself it was something I neither needed nor wanted."
+ha "But when you showed me the scar on your chest and allowed me to touch it… I found out I enjoyed the physical contact. It really surprised me when I discovered that aspect of myself."
+hi "Was it a pleasant discovery?"
+ha "I… don't really know. I'm still in the process of getting used to the idea."
+ha "I… do occasionally wonder what it would b-be like if we… became more intimate. But when I think about it for too long, I still get a bit scared."
+ha "How about you, Hisao? Aren't you scared you'd get heart trouble if you got too carried away?"
+hi "I'm kinda trying to lower the chances of that happening. At this point, I think I should be able to handle something not too intense."
+ha "…Are you… proposing something?"
+hi "Until now, I simply assumed you weren't up to it anyway, but then I realized I should at least make the effort to ask if you'd like to…"
+ha "…l-like to what?"
+hi "Like to make out."
+"I smile."
+"I realize I still come across as fragile and shy despite my new-found resolve to try and become more confident."
+"I appreciate the fact Hisao is at least making the effort to find out what I really feel and want instead of making assumptions about me, even if they're probably largely correct."
+ha "W-Why so sudden?"
+hi "Circumstances, I guess. We have a big room and a big bed all to ourselves right now. The only person within a mile is Lilly, who's a pretty heavy sleeper and isn't going to barge in on us."
+hi "We don't get this kind of convenience and privacy at Yamaku. It kinda feels like a shame to waste the opportunity."
+hi "But on the other hand, I'd hate to do something you're not ready for… again."
+"I take some time to consider Hisao's words."
+"I enjoy kissing and hugging him. It turned out that I'm not quite as frightened of physical contact as I'd always thought I'd be. I'm admittedly a bit curious."
+"Hisao's right that right now would not be a bad opportunity. The fact that it's too dark for him to actually see me might make me feel more at ease too. But if I want to relax, I have to be sure about one thing."
+ha "W-we c-could g-give it a try. But I… I'm not too sure what I… am or am not… ready for."
 
 play sound sfx_bedsheets
 
-n "{vspace=30}I hear Hisao shifting a bit next to me."
-n "{vspace=30}I then feel him touching my arm and then bringing my hand to his face.{vspace=30}"
+"I hear Hisao shifting a bit next to me."
+"I then feel him touching my arm and then bringing my hand to his face."
 
 stop sound fadeout 0.5
 
-nhi "Any time you feel like it's too much, just pinch my cheek really sharply, and I'll stop right away. Got that?"
-nha "Y-yes."
-nhi "Also, it's probably best if you take the active role."
-nha "Ah… M-me t-taking…?"
-
-nvl clear
-
-n "Judging from Hisao's tone, he likes that idea, but I'm not so thrilled myself."
-n "I'm not exactly the most pro-active person in the world, and having this rely on me might make for a very passive experience."
-n "Still, since I was the one who voiced reluctance, it makes sense to do it this way."
+hi "Any time you feel like it's too much, just pinch my cheek really sharply, and I'll stop right away. Got that?"
+ha "Y-yes."
+hi "Also, it's probably best if you take the active role."
+ha "Ah… M-me t-taking…?"
+"Judging from Hisao's tone, he likes that idea, but I'm not so thrilled myself."
+"I'm not exactly the most pro-active person in the world, and having this rely on me might make for a very passive experience."
+"Still, since I was the one who voiced reluctance, it makes sense to do it this way."
 
 stop music fadeout 2.0
 
-n "I lean over to the nightstand, pick up and put in my hair clip and turn my head in Hisao's general direction."
+"I lean over to the nightstand, pick up and put in my hair clip and turn my head in Hisao's general direction."
 
-nvl hide dissolve
-nvl clear
-
-queue music music_heart fadein 2.0
+queue music music_heart fadein 4.0
 
 hi "Could you lie on top of me?"
 
@@ -428,7 +363,7 @@ play music music_one fadein 0.5
 
 "Giving him another quick kiss, I move off of him to give him some room and grin as a thought comes to me."
 ha "H-Hisao… I-I think we should take off your c-clothes. Those pajamas you're wearing are b-borrowed, aren't they?"
-"I chuckle."
+"He chuckles."
 hi "Yeah, getting these soiled might call down Lilly's ancestors from the heavens to place an ancient Scottish curse on me."
 "The ridiculous mental image that remark conjures up combined with the tension I was feeling before is too much for me to bear, and I snort with laughter."
 "When I catch my breath, I can hear the rustling of his pajamas as they're being taken off."
@@ -436,7 +371,6 @@ hi "Yeah, getting these soiled might call down Lilly's ancestors from the heaven
 ha "Hisao?"
 hi "Go ahead, Hanako."
 "I nervously take hold of his boxers, and he lifts his hips as I take them off before dropping them over the side of the bed."
-# TODO add some dialogue here with Hanako taking off her nightgown
 
 scene ev funindark_naked_hand_close
 with Fade(1, 0, 2, color="#000")
@@ -528,7 +462,6 @@ hi "I won't press you if really don't want to. But if possible, I'd like this to
 "Would this be the same? Can I do this without freaking out?"
 "Hisao entrusted himself to me. I'd like to give him the same level of trust."
 ha "O-okay, let's… try… together… then."
-# TODO Get someone else to review this
 "I place my hand on top of his and gently guide it down to my neck. As I let go, Hisao begins stroking the side of my neck."
 "Following in my footsteps, Hisao starts kissing me in order to increase the stimulation."
 "I take his hand again and speed up the motion slightly."
@@ -622,72 +555,68 @@ stop music fadeout 4.0
 
 hide ev
 show bg hok_bedroom
-with Fade(3, 0, 1, color="#221f77")
+with Fade(3, 0, 2, color="#221f77")
 
 "Hisao's body relaxes and slumps against me."
 "For a moment, all that's audible in the room is the sound of our heavy breathing."
 "…"
 
-play music music_twinkle fadein 2.0
+play music music_twinkle fadein 4.0
+
+ha "Hisao? Are you… alright?"
+hi "I-I'm fine… I think."
+ha "Thank goodness."
+
+play sound sfx_rustling volume 0.6
+
+"He shifts and I suddenly feel the covers being pulled back."
+ha "Hisao… You aren't going to…?"
+"Just then I feel something soft rubbing against my stomach."
+ha "What's that?"
+hi "Handkerchief. I didn't want that stuff to dry up on your tummy."
+"I giggle. That sounded so sweet."
+ha "You're a real gentleman, Hisao."
+hi "I try."
+
+play sound sfx_bedsheets volume 0.4
+
+"He pulls the sheets back up, and I snuggle up against him. Laying my head on his chest, I can hear his heartbeat."
+"Still swift, but steady. I sigh contentedly as he puts his arm around me and strokes my head once more."
+hi "What were you about to ask before?"
+ha "Ummm… I was afraid you wanted to sleep in your own bed after this."
+hi "Don't be silly."
+
+nvl clear
+
+"…"
+hi "Hanako, can you do something for me?"
+ha "What is it?"
+hi "Please still be here when I wake up next morning."
+"I give him a quick kiss."
+ha "I promise."
+
+nvl clear
+
+"…"
+hi "Hanako, did you…"
+ha "I-I enjoyed this, Hisao. Thanks for being so patient with me."
+hi "Me too, Hanako. And I don't mind the slow pace. Gotta watch the old ticker, after all."
+"I think he was just being polite there."
 
 nvl clear
 nvl show dissolve
 
-nha "Hisao? Are you… alright?"
-nhi "I-I'm fine… I think."
-nha "Thank goodness."
-
-play sound sfx_rustling volume 0.6
-
-n "He shifts and I suddenly feel the covers being pulled back.{vspace=30}"
-nha "Hisao… You aren't going to…?"
-n "Just then I feel something soft rubbing against my stomach."
-nha "What's that?"
-nhi "Handkerchief. I didn't want that stuff to dry up on your tummy."
-n "I giggle. That sounded so sweet."
-nha "You're a real gentleman, Hisao."
-nhi "I try."
-
-play sound sfx_bedsheets volume 0.4
-
-nvl clear
-
-n "He pulls the sheets back up, and I snuggle up against him. Laying my head on his chest, I can hear his heartbeat."
-n "Still swift, but steady. I sigh contentedly as he puts his arm around me and strokes my head once more.{vspace=60}"
-nhi "What were you about to ask before?"
-nha "Ummm… I was afraid you wanted to sleep in your own bed after this."
-nhi "Don't be silly."
-
-nvl clear
-
-n "…{vspace=60}"
-nhi "Hanako, can you do something for me?"
-nha "What is it?"
-nhi "Please still be here when I wake up next morning."
-n "I give him a quick kiss."
-nha "I promise."
-
-nvl clear
-
-n "…{vspace=60}"
-nhi "Hanako, did you…"
-nha "I-I enjoyed this, Hisao. Thanks for being so patient with me."
-nhi "Me too, Hanako. And I don't mind the slow pace. Gotta watch the old ticker, after all."
-n "{vspace=30}I think he was just being polite there."
-
-nvl clear
-
 n "How long did this whole thing take? And how many guys would really want to do the long-winded approach of one baby step at a time until their girlfriend would finally manage to keep her nerves in check?"
 n "I don't have any personal experience, but I'm pretty sure most guys would get bored with the slow pace and get the desire to quickly skip to the end. It makes me appreciate Hisao all the more."
-n "Tomorrow morning will probably be very awkward, but I promise myself to wake him up with a smile tomorrow."
+n "{vspace=60}Tomorrow morning will probably be very awkward, but I promise myself to wake him up with a smile."
 
 nvl clear
 
 n "…"
 n "Hisao's breathing has already changed to the slow and steady rhythm of slumber."
-n "Right before I join him, one final though goes through my mind."
+n "{vspace=30}Right before I join him, one final though goes through my mind."
 n "Just before he nudged me over the edge, for only a single second, I wanted to go further… wanted him to go further."
-n "I smile."
+n "{vspace=30}I smile."
 n "With luck, it won't be too long before I'm ready to take another step with him."
 
 nvl hide dissolve
