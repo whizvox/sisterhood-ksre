@@ -119,6 +119,8 @@ init 1:
     image bg suburb_roadcenter_run_rn = rain(f"{sh_bgs}/suburb_roadcenter_run.jpg")
     image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
+    image bg hosp_hallway = f"{sh_bgs}/hosp_hallway.jpg"
+    image bg hosp_office = f"{sh_bgs}/hosp_office.jpg"
 
     # special events
     image ev rainyroad:

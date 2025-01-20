@@ -400,7 +400,7 @@ with charaexit
 
 stop music fadeout 2.0
 
-scene bg school_nursehall
+scene bg hosp_hallway
 with Fade(1.0, 1.0, 1.0)
 
 "Only thirty more minutes."
@@ -432,7 +432,7 @@ dc "Come in, please."
 
 play sound sfx_doorclose
 
-scene bg school_nurseoffice
+scene bg hosp_office
 with locationchange
 
 play music music_pearly fadein 4.0
@@ -468,7 +468,7 @@ hi "Ah? Oh, thank you."
 
 play sound sfx_dooropen
 
-scene bg school_nursehall
+scene bg hosp_hallway
 with locationchange
 
 "As we leave the doctor's office, my father addresses me."
