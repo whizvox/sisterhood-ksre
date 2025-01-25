@@ -12,6 +12,8 @@ def get_project_files() -> list[Path]:
     for dirname in INCLUDED_DIRS:
         for path in sh_glob(f"{dirname}/**/*.*"):
             files.append(path)
+    for scriptpath in sh_glob("tl/**/*.rpyc"):
+        files.append(scriptpath)
     for scriptpath in sh_glob("*.rpyc"):
         files.append(scriptpath)
     return files

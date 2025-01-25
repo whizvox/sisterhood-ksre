@@ -315,16 +315,16 @@ with charachangealways
 show hanako at offscreenright
 with charamove
 
+stop music fadeout 2.0
+
 "Hanako, still covering her face, manages to give a nod and stiffly gets up to get the teapot."
 "Fifteen minutes later I score my first easy victory on her in two months."
 
-stop music fadeout 0.5
-
-scene bg school_gate
-show hanako basic_worry_close
+scene bg school_gate_ss
+show hanako basic_worry_close_ss
 with locationskip
 
-play music music_pearly fadein 0.5
+queue music music_pearly fadein 4.0
 
 hi "We could just ask her directly."
 ha "I-I know. But I'm… afraid she'll just smile and dismiss it."
@@ -338,7 +338,7 @@ hi "You asked one of her classmates?"
 "That's an interesting development."
 "Despite the fact that Hanako has become quite a bit less passive than she used to be while being around me, she still has a tendency to try and avoid interaction with most other people and is still uncomfortable around the people with whom interaction is unavoidable."
 
-show hanako basic_normal_close
+show hanako basic_normal_close_ss
 with chchange
 
 ha "H-he's a member of the newspaper club and c-came over to submit some material to me, s-so I asked him if he thought things were busier than usual in class."
@@ -352,48 +352,48 @@ with charaexit
 
 "And after a few minutes of waiting…"
 
-show akira basic_laugh
+show akira basic_laugh_ss
 with charaenter
 
 aki "Yo!"
 "Upon noticing us, Akira greets us with a friendly wave."
 hi "Nice to see you again. It's been a while since we last saw you. Have you been busy?"
 
-show akira basic_annoyed
+show akira basic_annoyed_ss
 with chchange
 
 aki "Extremely. And that's probably not gonna change much in the upcoming weeks."
 hi "I hope you at least enjoyed your time off in Scotland then."
 aki "Meh, best thing about it was our folks' beachside home."
 
-show akira basic_smile
+show akira basic_smile_ss
 with charachangealways
 
 "As Akira and I are exchanging small talk, I start noticing she's sneaking the occasional glance at Hanako, which is strange since Akira knows Hanako dislikes being stared at."
 "And it wasn't just me who picked it up."
 
 show akira at twoleft
-show hanako emb_downtimid at tworight
+show hanako emb_downtimid_ss at tworight
 with charaenter
 
 ha "Ummm… I-is there s-something o-on m-my…"
 
-show hanako defarms_shock
+show hanako defarms_shock_ss
 with chchangefast 
 
 "Hanako gasps before she can finish her sentence, and we have a mutual moment of clarity as we both realize what it is Akira is looking at. Or rather, looking for."
 "Hanako's eyes grow wide in an expression that's a mixture of desperation and horror. I myself am mostly just annoyed."
 hi "Look, her blouse is covering it up, so could you stop looking for it already?"
 
-show akira basic_laugh
-show hanako emb_downtimid
+show akira basic_laugh_ss
+show hanako emb_downtimid_ss
 with chchange
 
 "Akira laughs heartily at my reaction."
 aki "Looks like I got busted. Sorry. I wasn't sure of its exact location. Lilly obviously couldn't tell me."
 hi "Lilly told you about this, huh? I hope she didn't merely invite you for a chance to poke fun at us."
 
-show akira basic_smile
+show akira basic_smile_ss
 with chchange
 
 aki "She didn't invite me, I invited myself. And no, it wasn't to poke fun at you."
@@ -402,8 +402,8 @@ aki "Besides, it's not a big deal. Take this from someone with experience in att
 "While part of me is eager to satisfy my morbid curiosity regarding the “experience” Akira is talking about, I haven't forgotten the reason we came here in the first place, and I eagerly take advantage of the opening she just gave me."
 hi "Crummy weeks, huh? Is it about something that also involves Lilly?"
 
-show akira basic_resigned
-show hanako emb_timid
+show akira basic_resigned_ss
+show hanako emb_timid_ss
 with chchange
 
 aki "Huh? What makes you think that?"
@@ -412,7 +412,7 @@ hi "Seeing that you two share so much, we thought maybe you had a clue."
 aki "Really?"
 "Akira looks pensive for a second."
 
-show akira basic_smile
+show akira basic_smile_ss
 with chchange
 
 aki "Why don't you join us? You can ask her yourself."

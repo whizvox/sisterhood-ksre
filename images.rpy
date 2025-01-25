@@ -50,6 +50,9 @@ init 1 python:
                 (0, 0), DynamicDisplayable(_sh_get_phonebox_bg),
                 (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
             ))
+    
+    def sh_bg(base_name):
+        return f"{sh_bgs}/{base_name}.jpg"
 
     def sh_event(base_name, variants, mark_adult=False):
         sh_image_variants(sh_path + "/event", base_name, variants, lambda variant, path: renpy.image(f"ev {base_name}_{variant}", adult(path) if mark_adult else path))
@@ -94,33 +97,36 @@ init 1 python:
 
 init 1:
     # backgrounds
-    image bg satou_patio = f"{sh_bgs}/satou_patio.jpg"
-    image bg inverness_shore = f"{sh_bgs}/inverness_shore.jpg"
-    image bg satou_entrance = f"{sh_bgs}/satou_entrance.jpg"
-    image bg school_therapist = f"{sh_bgs}/school_therapist.jpg"
-    image bg school_therapist_blur1 = im.Blur(f"{sh_bgs}/school_therapist.jpg", 1)
-    image bg school_therapist_blur2 = im.Blur(f"{sh_bgs}/school_therapist.jpg", 2)
-    image bg hok_field_ni = f"{sh_bgs}/hok_field_ni.jpg"
-    image bg hok_houseext_ni = f"{sh_bgs}/hok_houseext_ni.jpg"
-    image bg hok_bedroom = f"{sh_bgs}/hok_bedroom.jpg"
-    image bg school_newspaper = f"{sh_bgs}/school_newspaper.jpg"
-    image bg arcade_airhockey = f"{sh_bgs}/arcade_airhockey.jpg"
-    image bg arcade_fightgame = f"{sh_bgs}/arcade_fightgame.jpg"
-    image bg arcade_shooter = f"{sh_bgs}/arcade_shooter.jpg"
-    image bg arcade_floor = f"{sh_bgs}/arcade_floor.jpg"
-    image bg arcade_crane = f"{sh_bgs}/arcade_crane.jpg"
-    image bg arcade_bike = f"{sh_bgs}/arcade_bike.jpg"
-    image bg city_coffeeshop = f"{sh_bgs}/city_coffeeshop.jpg"
-    image bg hotel_bathroom = f"{sh_bgs}/hotel_bathroom.jpg"
-    image bg hotel_room = f"{sh_bgs}/hotel_room.jpg"
-    image bg fanres_entrance = f"{sh_bgs}/fanres_entrance.jpg"
-    image bg fanres_table = f"{sh_bgs}/fanres_table.jpg"
-    image bg school_road_run_rn = rain(f"{sh_bgs}/school_road_run.jpg")
-    image bg suburb_roadcenter_run_rn = rain(f"{sh_bgs}/suburb_roadcenter_run.jpg")
+    image bg satou_patio = sh_bg("satou_patio")
+    image bg inverness_shore = sh_bg("inverness_shore")
+    image bg satou_entrance = sh_bg("satou_entrance")
+    image bg satou_grounds = sh_bg("satou_grounds")
+    image bg satou_livingroom = sh_bg("satou_livingroom")
+    image bg satou_stairs = sh_bg("satou_stairs")
+    image bg school_therapist = sh_bg("school_therapist")
+    image bg school_therapist_blur1 = im.Blur(sh_bg("school_therapist"), 1)
+    image bg school_therapist_blur2 = im.Blur(sh_bg("school_therapist"), 2)
+    image bg hok_field_ni = sh_bg("hok_field_ni")
+    image bg hok_houseext_ni = sh_bg("hok_houseext_ni")
+    image bg hok_bedroom = sh_bg("hok_bedroom")
+    image bg school_newspaper = sh_bg("school_newspaper")
+    image bg arcade_airhockey = sh_bg("arcade_airhockey")
+    image bg arcade_fightgame = sh_bg("arcade_fightgame")
+    image bg arcade_shooter = sh_bg("arcade_shooter")
+    image bg arcade_floor = sh_bg("arcade_floor")
+    image bg arcade_crane = sh_bg("arcade_crane")
+    image bg arcade_bike = sh_bg("arcade_bike")
+    image bg city_coffeeshop = sh_bg("city_coffeeshop")
+    image bg hotel_bathroom = sh_bg("hotel_bathroom")
+    image bg hotel_room = sh_bg("hotel_room")
+    image bg fanres_entrance = sh_bg("fanres_entrance")
+    image bg fanres_table = sh_bg("fanres_table")
+    image bg school_road_run_rn = rain(sh_bg("school_road_run"))
+    image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
     image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
-    image bg hosp_hallway = f"{sh_bgs}/hosp_hallway.jpg"
-    image bg hosp_office = f"{sh_bgs}/hosp_office.jpg"
+    image bg hosp_hallway = sh_bg("hosp_hallway")
+    image bg hosp_office = sh_bg("hosp_office")
 
     # special events
     image ev rainyroad:
@@ -228,6 +234,12 @@ init 1:
     Alex FRD
     whizvox
     \n\n
+    {b}Beta Testing{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    Guest Poster
+    Alex FRD
+    ZenMaruki
+    \n\n
     {b}Special Thanks{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     Alex FRD
@@ -243,7 +255,7 @@ init 1:
     \n\n\n\n
     {b}Original Work{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
-    "Sisterhood" by Guest Poster
+    “Sisterhood” by Guest Poster
     \n\n\n\n
     {b}Directing, Engineering, Administration{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}

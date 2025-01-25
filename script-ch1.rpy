@@ -286,7 +286,7 @@ ha "W-we're doing very well. And how are you doing, Lilly? D-Do you have any ide
 "It takes me a moment to place Hanako's tone."
 "While I've known Hanako for about a year and have been around during her good moods, this is the first time in a long while she's sounding outright cheerful."
 li "We'll be returning to Japan near the end of the week. Akira will be dropping me off, so I'm hoping the two of you will be welcoming us at the gate."
-ha "S-Sure, we'll be there."
+ha "S-sure, we'll be there."
 "…I wonder…"
 li "Hanako, you sound like you're in an unusually good mood right now."
 
@@ -316,7 +316,7 @@ with charaexit
 
 stop ambient fadeout 1.0
 
-scene bg satou_entrance
+scene bg satou_grounds
 show akira basic_laugh:
     tworight
     ease 4.0 center
@@ -330,8 +330,11 @@ aki "Hah, I still can't believe she got herself a boyfriend."
 aki "Who would have known? Didn't think she had it in her."
 li "I think it's very sweet. They have so much in common. I am sure they'll be a very nice couple."
 
+play sound sfx_dooropen
+
+scene bg satou_stairs
 show akira basic_smile_close
-with characlose
+with locationchange
 
 "As we enter the mansion through the patio doors, Akira turns around and gives me a playful poke in the ribs."
 aki "How about I go down to the cellar and fetch us something to celebrate?"

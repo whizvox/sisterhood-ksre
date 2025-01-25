@@ -88,7 +88,7 @@ init:
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
 
 init:
-    init offset = 999
+    init offset = 1
 
     define adv = ADVCharacter(kind=adv, screen="say_sh")
     define name_only = Character(kind=name_only, screen="say_sh")

@@ -785,7 +785,7 @@ with charaenter
 aki "So, you're really sure you're staying here, huh?"
 li "I am."
 
-show akira basic_laugh_phone
+show akira basic_boo_phone
 with chchange
 
 "Akira lets out a slightly deriding snort that's loud and clear even over the phone."
