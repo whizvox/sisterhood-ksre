@@ -563,7 +563,7 @@ translate es sisterhood_ch0_sh_ch0_737333f2:
 # game/mods/sisterhood/script-ch0.rpy:269
 translate es sisterhood_ch0_sh_ch0_c193d12f:
 
-    # ta "Quizás descubras que juegos como estos y la vida en general tienen muchos paralelismos."
+    # ta "You might find that games like these and life in general have quite a few parallels."
     ta "Quizás descubras que juegos como estos y la vida en general tienen muchos paralelismos."
 
 # game/mods/sisterhood/script-ch0.rpy:272
