@@ -366,11 +366,32 @@ ha "H-Hisao… I-I think we should take off your c-clothes. Those pajamas you're
 "He chuckles."
 hi "Yeah, getting these soiled might call down Lilly's ancestors from the heavens to place an ancient Scottish curse on me."
 "The ridiculous mental image that remark conjures up combined with the tension I was feeling before is too much for me to bear, and I snort with laughter."
+
+scene bg hok_bedroom
+with locationchange
+
+play sound sfx_rustling
+
 "When I catch my breath, I can hear the rustling of his pajamas as they're being taken off."
 "I softly stroke his leg, and as my hand runs across his boxers, I whisper a final request for confirmation."
 ha "Hisao?"
 hi "Go ahead, Hanako."
 "I nervously take hold of his boxers, and he lifts his hips as I take them off before dropping them over the side of the bed."
+hi "Hey, uh… Hanako. Can I ask one more thing?"
+ha "S-sure. What is it?"
+hi "I… uh… don't really want to dirty your nightgown either. Would you… be okay with taking your clothes off as well?"
+"My heart nearly jumps out of my throat upon hearing this."
+ha "M-m-my clothes?! B-but… w-why? Just b-because you're afraid of g-getting them dirty?"
+"He lets out a slightly guilty chuckle."
+hi "In all honesty it would just make all of this feel a little bit less awkward for me. And a hundred times more enjoyable. Or maybe a thousand times more enjoyable."
+"Now he's just exaggerating. But I can see how it'd make things less awkward for him if it's not just him wearing his birthday suit. And the idea of me making this even better for him is a tempting one."
+ha "A… a thousand times?"
+"He puts his hand on mine and softly squeezes it."
+hi "A thousand times."
+
+play sound sfx_rustling
+
+"Pushing my reservations to the back of my mind, I take off my nightgown, nervously pull down his boxers and drop them, along with my panties, over the side of the bed."
 
 scene ev funindark_naked_hand_close
 with Fade(1, 0, 2, color="#000")
@@ -445,7 +466,7 @@ hi "Hanako… I was actually serious just now."
 ha "About what?"
 hi "When we were making out earlier, I felt good both from giving and receiving. I'd like to keep this going."
 ha "What do you mean?"
-hi "If you… ah… were to switch places with me, I think we can both… you know…"
+hi "If you… ah… allow me to return the favor, I think we can both… you know…"
 ha "{i}W-what?!{/i}"
 hi "The last time we shared a bed, when I tried to… um… get you ready for intercourse… did that feel good?"
 "I feel awkward thinking back on that."
