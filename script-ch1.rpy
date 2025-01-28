@@ -8,11 +8,11 @@ call sisterhood_timeskip
 scene bg satou_patio
 with Dissolve(2.0)
 
-play music music_happiness fadein 0.5
-play ambient sfx_nature fadein 1.0
+play music music_happiness fadein 4.0
+play ambient sfx_nature fadein 4.0
 
 "It has been a little over a week since Akira and I arrived at our parents' home."
-"Although the official reason for coming over was seeing Mother's ailing sister, our whole time here has felt more like a vacation. Thankfully, my aunt's situation stabilized shortly before our arrival, so I didn't feel too guilty about that thought."
+"Although the official reason for coming over was seeing off Mother's ailing sister, our whole time here has felt more like a vacation. Thankfully, my aunt's situation stabilized shortly before our arrival, so I didn't feel too guilty about that thought."
 "I've spent most of our time here sitting in the backyard reading the books I brought along and occasionally chatting with Akira."
 "After finishing the remainders of breakfast, I navigate my way to the yard hoping for an opportunity to catch a few rays."
 
@@ -58,7 +58,7 @@ stop ambient fadeout 2.0
 
 scene bg inverness_shore:
     yalign 0.5 zoom 1.02
-with locationskip
+with shorttimeskip
 
 play music music_serene fadein 0.5
 play ambient sfx_waves fadein 1.0 volume 0.2
@@ -184,6 +184,7 @@ show akira basic_laugh_close at center:
     ypos 1.02
 with charamovechangefastest
 
+play sound sfx_impact
 with vpunch
 
 "I stifle a cry as Akira gives me a cheerful slap on the back."
@@ -305,7 +306,7 @@ ha "I… I can't tell you yet. I promised to keep it a secret until we could tel
 li "Hmmm… would you be willing to elaborate on who ‘we’ might be?"
 
 show hanako def_worry_phone
-with chchange
+with chchangefast
 
 ha "Ah… no, I mean… I meant to say ‘I could tell you in person’."
 li "Hanako, do you mind if I make a few guesses?"
@@ -320,7 +321,7 @@ scene bg satou_grounds
 show akira basic_laugh:
     tworight
     ease 4.0 center
-with shorttimeskipsilent
+with shorttimeskip
 
 "By the time Akira and I arrive at the driveway of our parents' mansion, we're both wearing a huge smile on our face."
 
