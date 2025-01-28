@@ -29,6 +29,7 @@ init:
     define sfx_airhockey_score1 = sh_sfx("airhockey_score1")
     define sfx_airhockey_score2 = sh_sfx("airhockey_score2")
     define sfx_hadouken = sh_sfx("hadouken")
+    define sfx_yogafire = sh_sfx("yogafire")
     define sfx_gameover = sh_sfx("gameover")
     define sfx_shower = sh_sfx("shower")
     define sfx_taps1 = sh_sfx("taps1")

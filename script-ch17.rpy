@@ -70,7 +70,7 @@ mi "I may be a dictator in your eyes, but I like to think of myself as a respons
 "Despite Shizune's retort being very much an accusation, I smile a little bit."
 "I have to admit she did act responsibly. It seems Hisao wasn't exaggerating when he said he considered Shizune and Misha friends despite their occasional pushiness."
 li "I realize you don't value my opinion very much, but I don't think it would hurt if your classmates were to witness that responsible streak a little more often."
-"It might make them more willing to voluntarily lend you a hand on occasion without having to be pressured into it."
+li "It might make them more willing to voluntarily lend you a hand on occasion without having to be pressured into it."
 
 show shizu adjust_frown
 with chchange

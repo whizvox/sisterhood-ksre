@@ -76,7 +76,7 @@ init 1 python:
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
-    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close"])
+    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], [""], ["gym"])
 

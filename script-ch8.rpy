@@ -446,7 +446,7 @@ with charaexit
 
 # TODO Replace with "authentic" Street Fighter II SFX. according to Guest Poster:
 # Hisao is playing Blanka (unruly hair) and Sagat. (chest scar) Hanako is playing Dhalsim (fire-themed, keepaway) and Vega. (hides face)
-play sound sfx_hadouken volume 0.4
+play sound sfx_yogafire volume 0.4
 
 "After two tries, I manage to shoot a projectile at him. He jumps over it, but I manage to nail him with a kick as he lands."
 "The game's announcer confirms my victory. The second round begins, and I manage to block another flying attack from Hisao."
@@ -546,7 +546,7 @@ ha "Sure."
 scene bg arcade_bike
 with shorttimeskipsilent
 
-ha "That was close."
+hi "That was close."
 
 play sound sfx_gameover volume 0.8
 

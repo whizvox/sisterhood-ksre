@@ -425,11 +425,11 @@ with shuteye
 "I'm not sure if it's my imagination or not. A doctor wouldn't walk with such loud pronounced steps."
 "Suddenly I feel something on my face. I open my eyes, but there's still nothing but darkness."
 
-mi "Guess who, Hicchan!"
+mystery "Guess who, Hicchan!"
 hi "Misha, what are you doing in my dream?"
 mi "Wahaha~, it isn't a dream! I'm right here!"
 
-show misha hips_grin_cas behind black
+show misha hips_grin behind black
 with None
 hide black
 with openeyefast
@@ -437,7 +437,7 @@ with openeyefast
 mi "Hey there, Hicchan! How are you feeling?"
 hi "Slightly better than yesterday. Are you here on your own?"
 
-show misha hips_smile_cas
+show misha hips_smile
 with chchange
 
 mi "No. I brought company."
@@ -467,7 +467,7 @@ with charamovechangefaster
 
 hi "Misha, did you walk on ahead?"
 
-show misha hips_grin_cas at twoleft
+show misha hips_grin at twoleft
 show shizu at tworight
 with chchange
 
@@ -478,7 +478,7 @@ with chchange
 
 "I merely roll my eyes and focus on Shizune who has reached my bed as well and gives me curt nod as a greeting, the modest smile on her face indicating she's happy to see me."
 
-show misha sign_smile_cas
+show misha sign_smile
 with chchange
 
 mi "Good to see you, Hicchan. You certainly gave us a scare."
@@ -486,14 +486,14 @@ hi "Nice to see you too, Shizune. And thanks for dropping by."
 mi "Not a problem. We made sure to bring you a few things you may appreciate during your stay here."
 
 show shizu basic_normal2
-show misha perky_smile_cas
+show misha perky_smile
 with chchange
 
 "Shizune gestures to Misha who grabs the bag lying at her feet and drops it on the bed. Inside are my own pajamas, toothbrush and several books I got from the library last week."
 "I guess it would appear ungrateful to ask Shizune how the heck they managed to get into my room."
 hi "Thanks guys. This'll make the rest of my time a lot easier to sit out."
 
-show misha hips_smile_cas
+show misha hips_smile
 show shizu adjust_happy
 with chchange
 
@@ -501,30 +501,30 @@ with chchange
 "Curiously, I look at Shizune."
 hi "What's in the envelope?"
 
-show misha sign_confused_cas
+show misha sign_confused
 show shizu basic_normal
 with chchange
 
 mi "I don't know. We found it in the student council's mailbox. We don't know who left it there."
 "Intrigued, I open the envelope."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 "But when I feel what's inside I feel my blood curdle, and both Misha and Lilly cringe when the beeping of my EKG monitor suddenly spikes."
 
-show misha perky_confused_cas
+show misha perky_confused
 show shizu behind_blank
 with chchange
 
 mi "H-Hicchan, what's in there?"
 "I take the object from the envelope and carefully hold it in the palm of my hand."
 
-play music music_sadness fadein 2.0
+play music music_sadness fadein 4.0
 
 hi "I-it's Hanako's hairclip."
 hi "I… I gave it to her when we started dating."
 
-show misha perky_sad_cas
+show misha perky_sad
 show shizu behind_sad
 with charachangealways
 
@@ -536,7 +536,7 @@ with chchange
 
 "Shizune is the first one to recollect herself, and she starts signing, giving Misha a gentle shove in order to shake her out of the dazed state she was just in before repeating herself."
 
-show misha sign_sad_cas
+show misha sign_sad
 with chchange
 
 mi "R-right. Umm… Hicchan. We went to the nurse's office today to see if we could find out some more for you, and um…"
@@ -546,7 +546,7 @@ mi "Do you remember that incident in science class some time ago?"
 "That triggered a panic attack with Hanako, and although we were able to get her out of the class with a minimum of attention from the rest, the whole experience was very unsettling."
 hi "How could I forget about that?"
 
-show misha perky_sad_cas
+show misha perky_sad
 with chchange
 
 mi "It seems something similar happened on Monday."
@@ -575,7 +575,7 @@ show lilly basic_sad
 with chchange
 show shizu adjust_frown
 with charachangealways
-show misha sign_sad_cas
+show misha sign_sad
 with charachangealways
 
 "After fiddling with her glasses for a second, Shizune nods and makes a flurry of gestures in Misha's direction."
@@ -665,7 +665,7 @@ with chchange
 show lilly cane_concerned
 with chchange
 
-li "She…{w=1.0} lashed out at me."
+li "She… lashed out at me."
 li "She screamed at me to leave her alone. She said I was only here to make myself feel better. I said I was here because I wanted to support her. Because she is my best friend."
 li "Then she snapped that I had never been interested in her as a friend. That I had only been interested in fixing her. That she was nothing but a project to me."
 li "And then she told me to go away… and to never come back."
@@ -676,7 +676,7 @@ with chchange
 li "I… I was terrified of her at that moment."
 li "I turned around and fled the room. I haven't been back since. I don't think I could even if the door wasn't locked."
 
-show lilly cane_sad at center
+show lilly cane_cry at center
 with charachangealways
 
 "Unable to keep her emotions in check any longer Lilly stands up and holds her face in her hands before bursting into tears."
@@ -686,14 +686,10 @@ li "I'm sorry, Hisao… I-I've messed up everything."
 "She's such a meek and subdued girl she usually has trouble even raising her voice. But the sight of the sobbing Lilly in front of me leaves me very little doubt that this is what has happened."
 hi "Lilly…"
 
-show lilly cane_sad_close
+show lilly cane_cry_close
 with characlose
 
 "I sit upright, gently wrap my arms around her and hold her as she cries, her carefully crafted lady exterior completely shattered."
-
-show lilly cane_reminisce_close
-with chchange
-
 li "I-I could hear her last night, Hisao."
 li "I… I could hear her cry on the other side of the wall."
 li "And I couldn't do anything to help her."
@@ -702,10 +698,6 @@ hi "We'll find a way, Lilly."
 "Are there any other ways to approach Hanako now that she's pushed both me and Lilly away? Is this really how our little family was meant to end? Is this how our relationship was meant to end?"
 "Was the whole thing doomed from the start? Were things never meant to last beyond my first episode?"
 "Lilly sniffles, obviously not convinced."
-
-show lilly cane_sad_close
-with chchange
-
 li "I… I disappointed you, didn't I Hisao?"
 hi "Don't be so hard on yourself."
 "Truth be told, I wouldn't have expected Lilly's attempt to talk Hanako out of her depression to backfire like this."
