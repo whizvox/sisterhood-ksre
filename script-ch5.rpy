@@ -154,6 +154,7 @@ hi "It feels like what?"
 ha "It… feels like…"
 ha "I… have a family again…"
 hi "A family huh?"
+ha "Y-yes. A small, disabled family, but a family all the same."
 "I think about Hanako's words for a bit. The atmosphere between us really has felt like that over the last two days."
 "The way Hanako and Lilly looked while preparing our meals together. The way we had breakfast and dinner together."
 "The way we huddled on the couch while watching television together. The way we relaxed in the back yard, reading books or playing games."
@@ -190,7 +191,6 @@ ha "F-for me it's probably been years."
 "A silence."
 "While she didn't sound sad while saying it, the reminder of how stagnant Hanako's life has been until recently depresses me a bit."
 "Eager to steer the discussion away from that topic, I return to what we were talking about previously."
-
 hi "So, if we're like a family, what would that make Akira? The loud and feisty aunt?"
 
 show ev wheatfield_smile
@@ -214,7 +214,7 @@ hi "Same here. We could have asked Lilly if she were here right now."
 
 ha "About Lilly… Have you noticed as well?"
 hi "It'd be really hard to miss it. She's kind of acting like she accidentally joined us on our honeymoon."
-"The length Lilly's going to to give Hanako and me private time together seems a bit much."
+"The lengths Lilly's going to in order to give Hanako and me private time together seems a bit much."
 "It's been mostly small things, like deciding to finish a book when we asked her to take a walk with us or suddenly wanting to take a break and catch a tan for an hour while we were in town, leaving Hanako and I to do the shopping without her."
 "Although small, they have started adding up."
 ha "Is she avoiding us?"
@@ -483,27 +483,34 @@ with chchange
 
 li "My, is it that late already? Please wait here for a moment."
 
+play sound sfx_dooropen volume 0.4
+
 hide lilly
 with charaexit
 
 "We hear measured steps head towards the house followed by the sound of an opening door."
-"A few seconds later, a light near the patio door flicks on as Lilly emerges and heads back towards the chair she was sitting in before Hanako nearly tripped over her."
 
 show lilly basic_smile_cas_ni at twoleft
 with charaenter
 
-"Lilly picks up a discarded book lying near the chair and holds it up for a moment."
-li "I only have a few pages left. I will be with you in a few minutes. Please make yourselves comfortable."
+"A few seconds later, a light near the patio door flicks on as Lilly emerges and heads back towards the chair she was sitting in before Hanako nearly tripped over her."
+hi "We'll be going inside, Lilly. Care to join us?"
 
 show lilly basic_satisfied_cas_ni
 with chchange
 
+"Lilly picks up a discarded book lying near the chair and holds it up for a moment."
+li "I only have a few pages left. I will be with you in a few minutes. Please make yourselves comfortable."
 li "And ah… Hanako?"
 
 show hanako cover_bashful_cas_ni
 with chchange
 
 ha "Yes, Lilly?"
+
+show lilly basic_cheerful_cas_ni
+with chchange
+
 "She sends us a playful grin."
 li "Can you retrieve the bottle we opened this morning? I believe a glass before bedtime will help us sleep all the better."
 

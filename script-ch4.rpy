@@ -50,6 +50,9 @@ with charachangealways
 
 "As it gets closer, I see the distinctive hair color of the Satou sisters behind the windshield. The car stops in front of us, and Hanako lets out a small sigh, putting the trinket back in her pocket."
 "Looks like she isn't ready yet to let Akira see her new look."
+
+stop sound fadeout 0.5
+
 "The car door opens, and Akira steps out, giving an enthusiastic wave."
 "I have no idea how much energy this woman has, but an intercontinental flight and a ride from the airport to Yamaku seem insufficient to diminish it."
 "Lilly, on the other hand, looks a little worse for wear."
@@ -134,7 +137,7 @@ hide lilly
 hide akira
 with charaexit
 
-"Akira walks back to the car, opens the trunk, fishes Lilly's luggage out and beckons me to take on the role of porter."
+"Akira walks back to the car, fishes Lilly's luggage out of the trunk, and beckons me to take on the role of porter."
 
 show akira basic_smile at tworight
 with charaenter
@@ -280,7 +283,7 @@ nvl clear
 show lilly basic_satisfied_cas
 with chchange
 
-li "It sounds like you both had a really good time."
+li "It sounds like you both had a wonderful time."
 "Lilly seems pleased with Hanako's story."
 
 show lilly basic_weaksmile_cas
@@ -307,12 +310,14 @@ with chchange
 "Hanako beams."
 ha "Me neither. I'd really like to go, too."
 
+play sound sfx_clap
+
 show lilly basic_satisfied_cas
-with chchange
+with chchangefast
 
 "Lilly claps her hands together."
 li "I suppose it's settled then. We'll have to leave early in the morning in order to catch the train there."
-li "Maybe it's best if we retire for the evening for now. We won't be able to sleep in tomorrow."
+li "Maybe it'd be best if we retire for the evening for now. We won't be able to sleep in tomorrow."
 "Hanako gets up and gathers the tea cups and tea pot from the table."
 ha "I'll go and clean the tea service downstairs. And I think I'll go to bed afterwards."
 
@@ -397,7 +402,7 @@ show lilly basic_oops_cas_close
 with characlose
 
 "I put a hand on Lilly's shoulder."
-hi "Well, things worked out in the end. We got together, and I'm happy I'm able to call her my girlfriend."
+hi "Well, things worked out in the end. We got together, and I'm happy that I'm able to call her my girlfriend."
 
 show lilly basic_weaksmile_cas_close
 with chchange
