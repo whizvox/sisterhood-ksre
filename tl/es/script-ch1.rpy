@@ -5,10 +5,11 @@ translate es sisterhood_ch1_sh_ch1_b28172fc:
 
     # "It has been a little over a week since Akira and I arrived at our parents' home."
     "Ha pasado poco más de una semana desde que Akira y yo llegamos a la casa de nuestros padres."
-# game/mods/sisterhood/script-ch1.rpy:13
-translate es sisterhood_ch1_sh_ch1_e1896809:
 
-    # "Although the official reason for coming over was seeing Mother's ailing sister, our whole time here has felt more like a vacation. Thankfully, my aunt's situation stabilized shortly before our arrival, so I didn't feel too guilty about that thought."
+# game/mods/sisterhood/script-ch1.rpy:15
+translate es sisterhood_ch1_sh_ch1_44cf1577:
+
+    # "Although the official reason for coming over was seeing off Mother's ailing sister, our whole time here has felt more like a vacation. Thankfully, my aunt's situation stabilized shortly before our arrival, so I didn't feel too guilty about that thought."
     "Aunque la razón oficial para venir fue ver a la hermana enferma de mamá, todo el tiempo que pasamos aquí se sintió más como unas vacaciones. Afortunadamente, la situación de mi tía se estabilizó poco antes de nuestra llegada, así que no me sentí demasiado culpable por ese pensamiento."
 
 # game/mods/sisterhood/script-ch1.rpy:14
