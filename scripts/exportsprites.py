@@ -108,13 +108,13 @@ hisao = [
     ("sprites/Hisao Nakai/Bathrobe/Bathrb-Smile-Happy", "basic_smile_bath"),
     ("sprites/Hisao Nakai/Bathrobe/Bathrb-Speak", "basic_speak_bath"),
     # Naked
-    ("sprites/Hisao Nakai/Naked/Naked-Blush", "basic_blush_nak"),
-    ("sprites/Hisao Nakai/Naked/Naked-Frown", "basic_frown_nak"),
-    ("sprites/Hisao Nakai/Naked/Naked-Grin", "basic_grin_nak"),
-    ("sprites/Hisao Nakai/Naked/Naked-Neutral", "basic_neutral_nak"),
-    ("sprites/Hisao Nakai/Naked/Naked-Smile-Happy", "basic_smile_nak"),
-    ("sprites/Hisao Nakai/Naked/Naked-Speak", "basic_speak_nak"),
-    ("sprites/Hisao Nakai/Naked/Naked-Worry", "basic_worry_nak")
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV3-Blush", "basic_blush_nak"),
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV4-Frown", "basic_frown_nak"),
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV5-Grin", "basic_grin_nak"),
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV1-Neutral", "basic_neutral_nak"),
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV6-Smile-Happy", "basic_smile_nak"),
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV2-Speak", "basic_speak_nak"),
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV7-Worry", "basic_worry_nak")
 ]
 
 takawa = [
