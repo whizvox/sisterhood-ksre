@@ -206,11 +206,12 @@ init 1:
     \n\n
     {b}Additional Writing{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
+    Guest Poster
     Alex FRD
     \n\n
     {b}Background Music{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
-    "Waltz in A Minor" by CalvinClavier on Pixabay
+    “Waltz in A Minor” by CalvinClavier on Pixabay
     \n\n
     {b}End Credits Song{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
@@ -244,11 +245,11 @@ init 1:
     {b}Special Thanks{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     Alex FRD
-    Grayest
     Ikariya
     Vladimir Hodakov
-    EurobeatJester
     nijo
+    Grayest
+    EurobeatJester
     Fleeting Heartbeat Studios
     Four Leaf Studios
     The Katawa Shoujo Community
