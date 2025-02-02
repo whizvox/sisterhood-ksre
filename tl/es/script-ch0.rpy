@@ -18,10 +18,10 @@ translate es sisterhood_ch0_sh_ch0_d36dab52:
     # "Office isn't really a good word to describe it. Den or living room seem more appropriate. Miss Yumi has very peculiar tastes when it comes to her work place."
     "Oficina no es realmente una buena palabra para describirlo. Estudio o sala parecen más apropiados. La señorita Yumi tiene gustos muy peculiares en cuanto se refiere a su lugar de trabajo."
 
-# game/mods/sisterhood/script-ch0.rpy:23
-translate es sisterhood_ch0_sh_ch0_4b749dda:
+# game/mods/sisterhood/script-ch0.rpy:25
+translate es sisterhood_ch0_sh_ch0_7ad9c1de:
 
-    # ta "Good day, Hanako."
+    # ta "Good day, Miss Hanako."
     ta "Buen día, señorita Hanako."
 
 # game/mods/sisterhood/script-ch0.rpy:24

@@ -17,14 +17,14 @@ nk "You sound good to me. No chest pains or dizziness this morning?"
 "I've been doing these morning jogs for several days now, and so far my heart hasn't acted up a single time despite the exhaustion I feel at the end of each practice session."
 nk "And what do you think of the coach I assigned you?"
 hi "When I got overconfident and tried to keep up with her yesterday morning, she immediately started yelling at me to stick to my schedule."
-hi "She can be pretty intimidating despite her short stature."
+hi "She can be pretty intimidating, despite her short stature."
 
 show nurse grin_close
 with chchange
 
 "The nurse laughs at this."
 nk "Is that a compliment?"
-hi "I can't really complain about her. She can be harsh, but fair and pretty fun to chat with. Why are you so interested?"
+hi "I can't really complain about her. She can be harsh, but fair, and pretty fun to chat with. Why are you so interested?"
 "As I finish putting my shirt back on, the nurse leans in and speaks in a conspiring tone."
 
 show nurse concern_close
@@ -38,7 +38,7 @@ show nurse neutral_close
 with chchange
 
 nk "Graduation is less than a year away, and Emi doesn't have any clear plans on what to do afterwards."
-nk "She kind of likes to live by the day. She's not exactly a bookworm if you know what I mean. But sports are something she's genuinely passionate about."
+nk "She kind of likes to live by the day. She's not exactly a bookworm, if you know what I mean. But sports are something she's genuinely passionate about."
 "You don't have to tell me that."
 hi "Are you trying to talk her into becoming a trainer or a coach? Aren't those usually retired athletes?"
 nk "More like a P.E. teacher. She might make a lively colleague, don't you think?"
@@ -54,7 +54,7 @@ nk "Do you have some time to spare later this day?"
 hi "I have obligations today, but that's early in the evening. I could manage right after the last class. But what is this about?"
 "Today is a special day as Lilly called us from Scotland a few days ago, saying she and Akira would be flying in today, and Hanako and I are planning to welcome them back."
 "But I'm pretty curious why someone on Yamaku's staff would call on the nurse to arrange a meeting."
-"I don't recall getting particularly bad marks lately, and even if that were the case, a teacher would be more likely to approach Mutou or Shizune in order to get in touch with me."
+"I don't recall getting particularly bad grades lately, and even if that were the case, a teacher would be more likely to approach Mutou or Shizune in order to get in touch with me."
 
 show nurse neutral_close
 with chchange
@@ -75,7 +75,7 @@ show nurse neutral
 with charaenter
 
 "I can see he's already waiting for me outside. He greets me with his usual fox-like smile."
-nk "Good to see you could come so quickly. This way please."
+nk "Good to see you could come so quickly. This way, please."
 
 hide nurse
 with charaexit
@@ -95,7 +95,7 @@ play sound sfx_dooropen
 scene bg school_therapist
 with Dissolve(2.0)
 
-"I expected to see just another office on the other side of the door. Maybe a variation of the nurse's home turf. But the room I step into fits neither a medical staff building nor a school."
+"I expected to see just another office on the other side of the door—maybe a variation of the nurse's home turf. But the room I step into fits neither a medical staff building nor a school."
 "The best way to describe it would be a rather old-fashioned living room filled with nothing but wooden furniture and curtains in a style similar to ones my grandparents used to own."
 "The only piece of technology in plain sight is the phone on a small table in one of the corners."
 
@@ -249,7 +249,7 @@ with charachangealways
 "Miss Takawa raises her eyebrows for a second and then smiles."
 ta "Very well played, Mister Nakai. I have only worked here for a little over a year."
 "That means Hanako must have been meeting with at least one previous therapist in the past to whom she presumably didn't open up."
-"Somehow I'm not really that surprised. I am still a bit skeptical about Miss Takawa's claim of the therapy's effectiveness, though."
+"Somehow, I'm not really that surprised. I am still a bit skeptical about Miss Takawa's claim of the therapy's effectiveness, though."
 "Was it just a coincidence Hanako started opening up more when I befriended her? I don't think so."
 
 show takawa calculating_close
@@ -271,9 +271,9 @@ with chchange
 ta "What is it that drew you to Miss Ikezawa? Why is it that you are attracted to her?"
 "That's kind of a personal question. Fortunately, it's something I've often thought over myself, so I don't have difficulty coming up with an answer."
 hi "Multiple things, I guess. We both enjoy reading and playing games. We both like spending time away from the bustle of the rest of the world."
-hi "She's also a really sweet girl and once you get used to the scars, she's actually pretty attractive, too."
+hi "She's also a really sweet girl, and once you get used to the scars, she's actually pretty attractive, too."
 hi "Also… I can't really describe it very well but I feel some kind of kinship with her. Like she's a kindred spirit. It's hard to explain."
-hi "We figured we could both use support from someone and we made a promise to be that someone for each other during tough times."
+hi "We figured we could both use support from someone, and we made a promise to be that someone for each other during tough times."
 
 show takawa happy_close
 with chchange

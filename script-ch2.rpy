@@ -106,20 +106,16 @@ emi "I have reason to believe young Hisao is being driven by the oldest motivati
 "I don't know whether to be amused by Emi's over-the-top yet somehow frighteningly accurate imitation of the nurse or annoyed by the insinuation she's making."
 hi "I don't really see what's wrong with the desire to stay alive."
 
-show emi basic_closedsweat_gym
+show emi excited_proud_gym
 with chchange
 
 "Emi gives me an impish smile that indicates she really isn't buying my attempt to sidestep her remark."
-
-show emi basic_grin_gym
-with chchange
-
 emi "I think he was talking about sex, Hisao."
 emi "You know, keeping the species going and all?"
 hi "Whatever. Can we save the rest of the small talk for the cool down lap?"
 
 show emi excited_happy_gym
-with chchangefast
+with chchange
 
 "That sounded a little bit grumpier than I intended, but Emi doesn't seem to pay it any heed and cheerfully accepts my suggestion to start the morning run."
 

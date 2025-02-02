@@ -20,9 +20,9 @@ with locationchange
 show takawa smile
 with charaenter
 
-play music music_another fadein 0.5
+play music music_another fadein 4.0
 
-ta "Good day, Hanako."
+ta "Good day, Miss Hanako."
 ha "G-good day, Miss Yumi."
 "As I enter, Miss Yumi gets up, approaches me and we exchange greetings and polite bows."
 ta "May I have the honor of getting you some tea, Miss Hanako?"
@@ -288,7 +288,7 @@ ta "If anything happens, you can always contact the head nurse here. I have no p
 play sound sfx_gostone
 "{i}*tap*{/i}"
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 with Pause(1.0)
 
@@ -484,11 +484,11 @@ ta "Before you draw your own conclusions, please let me explain."
 ta "I'm not refusing your gift because I don't enjoy spending time with you or because you're not a sweet and caring girl. I do and you are."
 ta "I cannot accept your gift because… a friendship between us would be inappropriate."
 
+play music music_hanako fadein 2.0
+
 show bg school_therapist_blur2
 show takawa serious_close_blur2
 with Dissolve(1.0)
-
-play music music_hanako fadein 0.5
 
 "Inappropriate? You know what's inappropriate? Your friendliness!"
 "Playing games with me and acting all interested in me!"

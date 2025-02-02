@@ -422,6 +422,8 @@ ha "{i}No!{/i}"
 "Am I having a heart attack as well?"
 om "Young lady, is your friend alright? I'm sorry I didn't see you two in time. I was in a hurry. That blasted rain."
 
+play sound sfx_heartslow
+
 show ev:
     zoom 1.2 align (0.39, 0.22)
 with Dissolve(1.0)
@@ -431,25 +433,26 @@ with Dissolve(1.0)
 "{i}Like I'm losing Lilly.{/i}"
 "I'm overcome by an intense sensation of fear, like ten years ago when Mother scrambled in front of me, and we screamed as the flames got to us."
 
+play sound sfx_heartslow
+
 show black:
-    alpha 0.2
+    alpha 0.25
 with Dissolve(1.0)
 
 "Like I lost Father. And Mother."
-
-show black:
-    alpha 0.4
-with Dissolve(1.0)
-
 "I'm breathing in and out like crazy, yet it feels like all oxygen has suddenly vanished from the air."
 om "Young lady, your friend looks like he's hurt."
-"Like I lost everyone."
+
+play sound sfx_heartslow
 
 show black:
-    alpha 0.6
+    alpha 0.5
 with Dissolve(1.0)
 
+"Like I lost everyone."
 "I feel like I'm suffocating. With each fruitless gasp for breath I'm getting more and more terrified."
+
+play sound sfx_heartslow
 
 show ev:
     zoom 1.5
@@ -460,14 +463,18 @@ with Dissolve(1.0)
 "{i}Help me!{/i}"
 om "Young lady, I think we should call an ambulance."
 
+queue sound [ sfx_heartfast, sfx_heartfast ]
+
 $ renpy.music.set_volume(0.5, 1.0, "ambient")
 show black:
-    alpha 0.8
+    alpha 0.75
 with Dissolve(1.0)
 
 "I still can't move."
 "I can't breathe, but I can't faint either as if some twisted deity has decided it's more amusing to keep me fully aware as the love of my life is dying in front of me and is keeping me conscious for the sheer cruel fun of it."
 om "Young lady?"
+
+queue sound [ sfx_heartfast, sfx_heartfast, sfx_heartfast ]
 
 show ev:
     zoom 1.8
@@ -483,6 +490,7 @@ show black:
 with None
 stop music
 stop ambient
+stop sound
 
 with Pause(1.0)
 

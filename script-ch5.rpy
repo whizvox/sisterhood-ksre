@@ -473,7 +473,7 @@ with vpunch
 "Seems like Hanako, who was walking slightly ahead, has already found her."
 
 show lilly basic_oops_cas_ni at twoleft
-show hanako cover_worry_cas_ni at tworight
+show hanako cover_worry_cas_clip_ni at tworight
 with charaenter
 
 ha "I-I'm sorry, Lilly. I didn't see you."
@@ -503,7 +503,7 @@ with chchange
 li "I only have a few pages left. I will be with you in a few minutes. Please make yourselves comfortable."
 li "And ah… Hanako?"
 
-show hanako cover_bashful_cas_ni
+show hanako basic_bashful_cas_clip_ni
 with chchange
 
 ha "Yes, Lilly?"
