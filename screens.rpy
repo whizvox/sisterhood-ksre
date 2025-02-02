@@ -179,7 +179,7 @@ screen sisterhood_about():
 
             vbox:
                 text _("A visual novel adaptation of Guest Poster's fan fiction, featuring custom artwork and music.\n")
-                text _("Version: beta-20200202\n")
+                text _("Version: beta-20250202\n")
                 # TODO Replace this text before public release
                 # text _("To learn about future updates or submit a bug report, check out the website:")
                 # textbutton _("https://whizvox.me/sisterhood") action OpenURL("https://whizvox.me/sisterhood"):
