@@ -262,7 +262,7 @@ with chchangefast
 na "Hey, I was still getting to that point!"
 ha "H-help out?"
 "Is this a veiled recruiting attempt?"
-ha "And why me? There's probably dozens of other students more suitable."
+"And why me? There's probably dozens of other students more suitable."
 
 show naomi basic_smile_close
 with chchange

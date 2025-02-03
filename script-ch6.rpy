@@ -391,12 +391,12 @@ hi "A thousand times."
 
 play sound sfx_rustling
 
-"Pushing my reservations to the back of my mind, I take off my nightgown, nervously pull down his boxers and drop them, along with my panties, over the side of the bed."
+"Pushing my reservations to the back of my mind, I take off my nightgown, along with my panties, and drop them over the side of the bed as well."
 
 scene ev funindark_naked_hand_close
 with Fade(1, 0, 2, color="#000")
 
-"I lie on my side next to him, wrap my left arm around him and sneak my right hand down to his abdomen."
+"I lie on my side next to him, wrap my right arm around him and sneak my left hand down to his abdomen."
 "Making an attempt to get back in the mood as it was before I got cold feet, I seek out his lips with my own and start kissing him again as I gently tickle his stomach."
 "The fact that he's naked, vulnerable leaving himself in my hands, and the fact we can't see each other, gives me enough confidence to take the lead."
 "As I start caressing his thighs and hear his breathing accelerate, I suddenly think of something."

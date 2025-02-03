@@ -4,7 +4,7 @@ label .sh_ch0:
 $ set_window_tint(TINT_HANAKO)
 
 stop music fadeout 1.0
-scene bg school_staircase1
+scene bg school_staircase3
 with flashback
 
 ta "Come in, please!"
@@ -588,7 +588,7 @@ ta "I hope to see you here again in three weeks."
 ta "Please take care."
 
 play sound sfx_doorclose
-scene bg school_staircase1
+scene bg school_staircase3
 with locationchange
 
 "My head understands her words, but my heart is still feeling miserable."

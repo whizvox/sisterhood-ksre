@@ -497,7 +497,7 @@ hi "Lilly having feelings for me?"
 show hisao basic_neutral_polo_close
 with chchange
 
-"The first round is quickly devolves into a slugfest with me taking some time to get used to fight without projectiles and Hisao taking some time to learn how to deal with a faster opponent."
+"The first round quickly devolves into a slugfest with me taking some time to get used to fight without projectiles and Hisao taking some time to learn how to deal with a faster opponent."
 "The round ends with us taking a simultaneous blow that depletes the last of my energy."
 ha "If t-that were true… being with you and me would be p-painful for her, right?"
 "The second round ends more favorably for me as I start figuring out a pattern in the altitude of Hisao's projectiles and am able to evade them with slidings and quick jumps long enough to whittle down his health."

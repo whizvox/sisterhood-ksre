@@ -121,4 +121,4 @@ init:
     define nha = Character(_("Hanako"), kind=nchar, who_color="#897CBF")
 
     # unknown characters
-    define ta_ = Character(_("Old Woman"), who_color="#f3ccff")
+    define ta_ = Character(_("Old woman"), who_color="#f3ccff")

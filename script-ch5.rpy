@@ -173,7 +173,7 @@ n "On the other hand, I'm now so familiar with both Lilly and Hanako that I find
 
 nvl clear
 
-n "Life here has been very relaxed. Lilly's familiarity with the building has allowed her to get around without needing her cane. Having no other people in a one-mile radius has allowed Hanako to relax to the point where she's been wearing her hairclip almost constantly, and although she's still not as chatty as Emi or Misha usually is, she's calm enough to hold conversations with us without her usual stammering."
+n "Life here has been very relaxed. Lilly's familiarity with the building has allowed her to get around without needing her cane. Having no other people in a one-mile radius has allowed Hanako to relax to the point where she's been wearing her hairclip almost constantly, and although she's still not as chatty as Emi or Misha usually are, she's calm enough to hold conversations with us without her usual stammering."
 n "The only time I was reminded of my own condition was when I was forced to admit to Hanako yesterday evening that I hadn't thought about taking my medication for the day yet after she asked me about it."
 n "While taking my pills has become an automatism for me at Yamaku, I was confronted by the fact I become prone to forgetting about them when suddenly taken out of my usual daily routine."
 n "While I'm thankful that Hanako takes her promise of mutual support so seriously, I'm not thrilled by the prospect of her watching me like a hawk for the remainder of the trip."
@@ -234,7 +234,7 @@ nvl clear
 nvl show dissolve
 
 n "One thing remains on my mind. Even though most of Lilly's actions to give Hanako and me some time alone were rather small, one of them was decidedly less so."
-n "When we arrived at the summer home and made preparations to unpack, Lilly gave us a small tour of the house ending up in the house's only bedroom: a fairly large room with a double bed near the window and a smaller single bed near the corner."
+n "When we arrived at the summer home and made preparations to unpack, Lilly gave us a small tour of the house, ending up in the house's only bedroom—a fairly large room with a double bed near the window and a smaller single bed near the corner."
 n "She then dropped a bombshell by announcing that she herself would be using the convertible futon in the living room to spend the night on before casually walking out of the room, leaving Hanako beet red and me baffled at this uncharacteristically unsubtle move on her part."
 n "{vspace=60}I later questioned her about it, but she replied by saying she wasn't forcing us to sleep in the same bed, and the sight of Hanako in her nightgown wasn't anything new to me. When I realized that in order to continue the discussion I'd have to get into how far along Hanako and I were in that area, I decided not to paint myself into corner and dropped the subject while I was still ahead."
 n "{vspace=60}I was, of course, a gentleman, so Hanako was given the double bed while I spent the first night in the smaller one. All in all, it was still a pretty comfortable place to sleep."
@@ -242,7 +242,7 @@ n "{vspace=60}I was, of course, a gentleman, so Hanako was given the double bed 
 nvl clear
 
 n "Still, the question how far Hanako and I were in “that” area lingers on my mind."
-n "We have kissed each other of course and sometimes shared a tight hug, but I'm not really sure if that was any indicator on the rest. We slept together once, but Hanako merely initiated that because she thought it was the only way to prevent me from drifting away from her, and she was so uncomfortable during the whole experience that it is clear to me in hindsight that she certainly wasn't ready for the act itself."
+n "We have kissed each other of course, and sometimes shared a tight hug, but I'm not really sure if that was any indicator on the rest. We slept together once, but Hanako merely initiated that because she thought it was the only way to prevent me from drifting away from her, and she was so uncomfortable during the whole experience that it is clear to me in hindsight that she certainly wasn't ready for the act itself."
 n "{vspace=90}Is having that kind of intimacy something Hanako will ever be doing for her own enjoyment to begin with?"
 n "We have never mentioned that night we spent together again after we started dating, and I don't really know how Hanako sees sex."
 

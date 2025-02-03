@@ -116,13 +116,14 @@ hide bouquet
 with None
 
 "After a moment of hesitation, I get up and slowly take a step forward. And then another one."
-"{i}They look beautiful. I don't deserve these.{/i}"
+"{i}They look beautiful.{/i}"
+"{i}I don't deserve these.{/i}"
 "And another one."
 "{i}I should have been the one giving you these.{/i}"
 "And another one."
 
 show hisao basic_smile_swt_close_rn
-with characlose
+with Dissolve(1.0)
 
 "An expectant smile appears on his face."
 "I slowly stretch out my hand, grab the bouquet and gently take it from him when he loosens his own grip on it."

@@ -3,6 +3,7 @@ label .sh_ch9:
 
 $ set_window_tint(TINT_HANAKO)
 
+stop music fadeout 1.0
 play sound sfx_shower fadein 2.0
 
 scene bg hotel_bathroom
@@ -15,13 +16,13 @@ with Dissolve(2.0)
 
 nvl show dissolve
 
-n "As I step out of the bath, I can't help but thinking that this is like one of those romance novels where a guy and a girl go out, have dinner and a date and then spend the night at a hotel consummating the relationship."
-n "After taking a break at a coffee shop near the game center we visited, I expected us to return to Yamaku. Then Hisao proposed spending the night at a hotel nearby. And that's exactly what we ended up doing."
+n "As I step out of the bath, I can't help but think that this is like one of those romance novels where a guy and a girl go out, have dinner and a date, and then spend the night at a hotel consummating the relationship."
+n "After taking a break at a coffee shop near the arcade we visited, I expected us to return to Yamaku. Then Hisao proposed spending the night at a hotel nearby. And that's exactly what we ended up doing."
 
 nvl clear
 
-n "We ended up splitting the costs—Hisao didn't object this time—and got a nice room on the eighth floor with a soft carpet, a double bed and a clean bathroom. Hisao took a rather quick bath, but told me I could take my time, and I was happy to take some time in order to get myself cleaned up."
-n "As fun as the game center has been, the smell there wasn't exactly heavenly, and I felt like the odor of perspiration rubbed off on me. Well, maybe some of it is my own. The cabinet in the bathroom contained a few small flasks of fragrant shampoo that I gratefully made use of."
+n "We ended up splitting the costs—Hisao didn't object this time—and got a nice room on the eighth floor with a soft carpet, a double bed, and a clean bathroom. Hisao took a rather quick bath, but told me I could take my time, and I was happy to take some time in order to get myself cleaned up."
+n "As fun as the arcade had been, the smell there wasn't exactly heavenly, and I felt like the odor of perspiration rubbed off on me. Well, maybe some of it is my own. The cabinet in the bathroom contained a few small flasks of fragrant shampoo that I gratefully made use of."
 
 nvl clear
 

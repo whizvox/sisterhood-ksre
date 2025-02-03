@@ -103,6 +103,8 @@ init 1:
     image bg satou_grounds = sh_bg("satou_grounds")
     image bg satou_livingroom = sh_bg("satou_livingroom")
     image bg satou_stairs = sh_bg("satou_stairs")
+    image bg school_staircase3 = sh_bg("school_staircase3")
+    image bg school_hallway4 = sh_bg("school_hallway4")
     image bg school_therapist = sh_bg("school_therapist")
     image bg school_therapist_blur1 = im.Blur(sh_bg("school_therapist"), 1)
     image bg school_therapist_blur2 = im.Blur(sh_bg("school_therapist"), 2)

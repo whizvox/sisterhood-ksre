@@ -322,7 +322,7 @@ with charaexit
 
 "She gets up and makes a beckoning motion towards the door to indicate she wants me to follow her downstairs."
 
-scene bg school_staircase1
+scene bg school_staircase3
 with locationchange
 
 play sound sfx_doorclose

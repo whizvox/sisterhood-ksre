@@ -80,7 +80,7 @@ nk "Good to see you could come so quickly. This way, please."
 hide nurse
 with charaexit
 
-scene bg school_staircase1
+scene bg school_staircase3
 with Dissolve(1.0)
 
 "He leads me through a few hallways and up two sets of stairs to a part of the staff building I've never been to before."
@@ -109,7 +109,7 @@ with charaenter
 nk "I feel that over the last few days we've grown close enough to each other for me to introduce you to my mother."
 
 show takawa stern
-with chchange
+with chchangefast
 
 "Before I can fully digest his extremely out-of-place joke, the old lady behind the table rises to her feet and approaches us while shooting the nurse a stern glare."
 ta_ "If I was truly your mother, dear colleague, I would have taught you how impolite it is to make these kinds of remarks before even introducing us properly."
