@@ -209,7 +209,7 @@ init 1:
     {b}Additional Writing{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     Guest Poster
-    Alex FRD
+    Celestial Caesar
     \n\n
     {b}Background Music{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
@@ -234,19 +234,19 @@ init 1:
     {b}Sprite Edits{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
-    Alex FRD
+    Celestial Caesar
     whizvox
     \n\n
     {b}Beta Testing{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     Guest Poster
-    Alex FRD
+    Celestial Caesar
     Melad
     ZenMaruki
     \n\n
     {b}Special Thanks{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
-    Alex FRD
+    Celestial Caesar
     Ikariya
     Vladimir Hodakov
     nijo
