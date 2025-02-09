@@ -8,8 +8,6 @@ stop music fadeout 2.0
 scene bg hok_bedroom
 with flashback
 
-play music music_dreamy fadein 4.0
-
 ha "…Hisao?"
 hi "Hanako. Are you still awake?"
 ha "I… had a bad dream just now. I couldn't get back to sleep right away. Then I heard you tossing and turning."
@@ -18,9 +16,12 @@ ha "You don't have to apologize."
 "…"
 "A silence."
 "Should I try to talk to Hisao some more, or would he dislike being kept awake?"
-"This is the second consecutive night we spent sleeping in the same bedroom; a result of Lilly's match making mood. I was given the double bed Lilly's parents must have used in the past while Hisao has been using the smaller bed in the corner."
+"This is the second consecutive night we spent sleeping in the same bedroom—a result of Lilly's match making mood. I was given the double bed Lilly's parents must have used in the past, while Hisao has been using the smaller bed in the corner."
 ha "H-Hisao, d-do you want to talk for a bit?"
 hi "Sure."
+
+play music music_dreamy fadein 4.0
+
 "I'm wondering if Hisao is thinking about the same thing I am right now."
 "Even though we're girlfriend and boyfriend, we're currently not exactly acting as a couple. Are we supposed to right now?"
 ha "Umm… I w-wouldn't mind if you got a little closer."

@@ -8,15 +8,14 @@ call sisterhood_timeskip
 scene bg school_scienceroom at left
 with Dissolve(1.0)
 
-play music music_normal fadein 0.5
+play music music_normal fadein 4.0
 
 nvl clear
 nvl show dissolve
 
-n "Ten more minutes until lunch break."
-n "We've already completed the assignment we were given, so now I've taken out one of my library books and am trying to finish a chapter before the school bell rings."
-n "Truth be told I'm still a little tense, so it's not going as quickly as I had been hoping for. The reason for the tension I feel is the fact I just completed my first group assignment in class—the occasional assignments I do with Hisao notwithstanding."
-n "Or rather, my first group assignment that didn't end in disaster, like some time ago in science class, when I was struck with a panic attack. And Hisao wasn't even part of the group I worked with today, or things probably would have been less awkward."
+n "{vspace=60}Ten more minutes until lunch break."
+n "{vspace=60}We've already completed the assignment we were given, so now I've taken out one of my library books and am trying to finish a chapter before the school bell rings. Truth be told I'm still a little tense, so it's not going as quickly as I had been hoping for."
+n "The reason for the tension I feel is the fact I just completed my first group assignment in class—the occasional assignments I do with Hisao notwithstanding. Rather, my first group assignment that didn't end in disaster, like some time ago in science class, when I was struck with a panic attack. And Hisao wasn't even part of the group I worked with today, or things probably would have been less awkward."
 
 nvl clear
 
@@ -28,16 +27,16 @@ nvl clear
 
 n "Just as I got ready to start the assignment on my own, I noticed Hisao was making a gesture with his head towards a point to my right."
 n "I followed his gaze and noticed my two neighbors on the right side were the only students not part of a group of three yet."
-n "My eyes grew wide as I realized his intention. Was he telling me to join some other group just like that?"
+n "{vspace=30}My eyes grew wide as I realized his intention. Was he telling me to join some other group just like that?"
 n "I quickly shook my head and gave him a begging look, but he just made a gesture towards Shizune as if to say “matters are out of my hands”."
-n "Later on, I started wondering whether he was really unable to ditch the student council duo or whether this was a subtle attempt on his part to help me widen the circle of people I could have social interaction with."
+n "{vspace=60}Later on, I started wondering whether he was really unable to ditch the student council duo or whether this was a subtle attempt on his part to help me widen the circle of people I could have social interaction with."
 
-nvl clear
+nvl hide dissolve
 
-show natsume basic_neutral_close:
-    xanchor 1.0 yalign 1.0 xpos 1.15 alpha 0.0
-show naomi basic_neutral_close:
-    xanchor 1.0 yalign 1.0 xpos 1.4 alpha 0.0
+show natsume basic_neutral:
+    xanchor 1.0 yalign 1.0 ypos 1.1 xpos 1.15 alpha 0.0
+show naomi basic_neutral:
+    xanchor 1.0 yalign 1.0 ypos 1.1 xpos 1.4 alpha 0.0
 with None
 
 show bg at right
@@ -89,24 +88,31 @@ ha "Ummm…"
 "The fact that my neighbor is a very outgoing person herself didn't exactly ease my mind."
 ha "E-exc…e-excuse me…"
 
-show naomi basic_neutral_close at tworight
-show natsume hands_neutral_close at twoleft
+show naomi basic_neutral at tworight:
+    ypos 1.1
+show natsume hands_neutral at center:
+    ypos 1.1
 with charaenter
 
 "That got their attention."
 "The girls looked at me, and when I didn't reply, they looked at Hisao who gave them a quick nod."
 
-show naomi bend_smile_close
-show natsume hands_smile_close
+show naomi bend_smile
+show natsume hands_smile
 with chchange
 
 "My neighbor gave me a cheerful grin."
 na "Looking for a group to work with, Ikezawa?"
 "I gave them a timid nod."
 na "No probs. Feel free to tag along. Three know more than two, right?"
+
+show naomi bend_smile_close at tworight
+show natsume hands_smile_close at twoleft
+with characlose
+
 "As I moved my desk over to theirs, my neighbor Naomi wasted no time in making conversation."
 
-show naomi basic_grin_close at tworight
+show naomi basic_grin_close
 with chchange
 
 na "Bet you were disappointed you couldn't work with Nakai this time, weren't you? You two usually do assignments together these days."
@@ -498,16 +504,13 @@ na "Anyway, be sure to let the computer do a spelling and grammar check on every
 na "You have any questions, Natsume and I'll be in the other room."
 ha "A-alright."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_girlsdormhall
 show hisao basic_smile_uni_close
-with locationskip
-
-play music music_dreamy fadein 0.5
+with shorttimeskip
 
 "Having left Lilly's room, I unlock the door to my own bedroom and prepare to kiss Hisao goodnight and retire for the day when he stops me."
-
 hi "Can I come in for a little while?"
 ha "S-sure."
 
@@ -515,6 +518,8 @@ play sound sfx_dooropen
 
 scene bg school_dormhanako
 with locationchange
+
+play music music_dreamy fadein 4.0
 
 "We go in, and he sits next to me on the bed."
 
