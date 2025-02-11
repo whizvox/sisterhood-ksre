@@ -646,14 +646,39 @@ with chchange
 hi "The couple in front of me took ages to make up their mind about their order. I was about to give up and take you somewhere else."
 ha "It's okay. I had someone to keep me company."
 
-show hisao basic_smile_polo_close
-with chchange
+$ renpy.music.set_volume(0.7, 1.0, channel="music")
+
+hide hisao
+with charaexit
+
+show niji_plush:
+    truecenter
+    ypos 0.7 alpha 0.0
+    ease 1.0 truecenter alpha 1.0
+with Pause(1.0)
+
+show niji_plush at truecenter:
+    alpha 1.0
+with None
 
 "We both look at the plush puppy we liberated from the crane game near the arcade's entrance through our combined efforts."
 hi "We could have obtained several other stuffed toys for the number of efforts it took us to get this specific one."
 ha "He's special. I'm sure he'll feel at home at Yamaku."
 "What's “special” about the dog in question is actually the fact that his left eye is missing."
 "It probably got damaged at some point. When I noticed that, I made a special effort to obtain him despite the fact he was lying pretty far away from the crane's starting point."
+
+$ renpy.music.set_volume(1.0, 1.0, channel="music")
+
+show niji_plush:
+    ease 1.0 ypos 0.7 alpha 0.0
+with Pause(1.0)
+
+hide niji_plush
+with None
+
+show hisao basic_smile_polo_close at sittingpos
+with charaenter
+
 hi "A new member of our little, disabled family, huh?"
 "I nod."
 ha "I'm still deciding whether to let him live in my room or let Lilly take care of him."

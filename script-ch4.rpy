@@ -233,6 +233,19 @@ with charamovefast
 "Hanako bashfully nods and gently takes Lilly's hand. She reaches into her pocket, fishes something out of it and puts it into Lilly's hand."
 ha "This is a gift Hisao gave me."
 
+$ renpy.music.set_volume(0.7, 1.0, channel="music")
+
+show hanako_hairclip:
+    truecenter
+    ypos 0.7 alpha 0.0
+    easein 1.0 truecenter alpha 1.0
+with Pause(1.0)
+
+show hanako_hairclip:
+    truecenter
+    alpha 1.0
+with None
+
 show lilly basic_listen_cas
 with chchange
 
@@ -242,10 +255,19 @@ show lilly basic_satisfied_cas
 with chchange
 
 "After careful examination, she smiles."
-
 li "A little hair clip. With a small flower on top. What a nice gift. Were you wearing it when we arrived?"
-ha "N..no. Not yet. I could wear it now if you like."
-"I look at Hanako as she takes back the clip from Lilly, pauses for a moment, carefully brushes aside the lock of hair that's usually covering the right side of her face and applies the clip to pin it in place."
+ha "N-no. Not yet. I could wear it now if you like."
+
+$ renpy.music.set_volume(1.0, 1.0, channel="music")
+
+show hanako_hairclip:
+    easeout 1.0 ypos 0.7 alpha 0.0
+with Pause(1.0)
+
+hide hanako_hairclip
+with None
+
+"I look at Hanako as she takes back the clip from Lilly, pauses for a moment, carefully brushes aside the lock of hair that's usually covering the right side of her face, and applies the clip to pin it in place."
 
 show hanako basic_bashful_clip
 with charachangealways

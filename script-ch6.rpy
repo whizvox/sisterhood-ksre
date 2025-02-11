@@ -531,7 +531,7 @@ ha "C-could you try… continuing… like… this, Hisao?"
 "This time, it's much stronger, and I reel from each sensation his hand sends through my abdomen."
 "I'm getting so absorbed in the experience that I almost miss him calling out to me."
 hi "H-Hanako… ahh… s-stop, stop."
-"I quickly let go of him. Judging from his heavy breathing, he wouldn't have lasted longer than a few more seconds."
+"I quickly let go of him. Judging from his heaving breath, he wouldn't have lasted longer than a few more seconds."
 ha "D-do you… hahh… want to take a… hah… break, Hisao?"
 hi "I'll take some time to catch my bearings, Hanako. You just lie back and enjoy."
 

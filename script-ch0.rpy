@@ -59,13 +59,14 @@ ha "Y-yes, please."
 hide takawa
 with charaexit
 
-show bg school_therapist_blur2
 show go_board:
     truecenter
-    zoom 0.5
     ypos 0.7 alpha 0.0
-    easeout 0.5 ypos 0.5 alpha 1.0
-with Dissolve(0.5)
+    easeout 1.0 truecenter alpha 1.0
+with Pause(1.0)
+
+# show bg school_therapist_blur2
+# with Dissolve(1.0)
 
 play sound sfx_gostone_soft
 
@@ -76,10 +77,11 @@ play sound sfx_gostone
 "Miss Yumi takes one of her white stones and puts it in place with a dull tap."
 
 show go_board:
-    easeout 0.5 ypos 0.7 alpha 0.0
-with None
-show bg school_therapist
-with Dissolve(0.5)
+    easeout 1.0 ypos 0.7 alpha 0.0
+with Pause(1.0)
+
+# show bg school_therapist
+# with Dissolve(0.5)
 
 hide go_board
 with None
