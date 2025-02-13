@@ -185,6 +185,7 @@ JPEGS = (
     ("reference/wheatfield ev/wheatfield_dreamy.png", "event/wheatfield/wheatfield_dreamy.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_talk.png", "event/wheatfield/wheatfield_talk.jpg", [RESIZE_1080P]),
     # chapter 6
+    ("reference/funindark cgs/hug1.png", "event/funindark/funindark_hug_rest_large.jpg"),
     ("reference/funindark cgs/hug1.png", "event/funindark/funindark_hug_rest.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/hug2.png", "event/funindark/funindark_hug_neck.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/hug3.png", "event/funindark/funindark_hug_cheek.jpg", [RESIZE_1080P]),

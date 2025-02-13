@@ -56,7 +56,6 @@ label sisterhood_timeskip:
 
 label sisterhood_credits:
     $ config.skipping = False
-    $ config.allow_skipping = False
 
     stop music
     stop ambient
@@ -68,29 +67,100 @@ label sisterhood_credits:
     play music music_bloom noloop
 
     show sh_credits behind credits at Transform(xalign=0.5, yalign=0.0)
+    show sh_credits_overlay behind sh_credits
     with Dissolve(2.0)
 
     pause 1.0
 
     show sh_credits behind credits:
         xalign 0.5 yalign 0.0
-        acdc20_warp 93 yalign 1.0
+        acdc20_warp 93.0 yalign 1.0
     
-    pause 93
+    pause 10.0
+
+    show ev wheatfield_dreamy behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (617, 0, 758, 426)
+        linear 10.0 crop (1120, 246, 758, 426)
+    with Dissolve(3.0)
+
+    pause 4.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    show ev funindark_hug_rest_large behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (0, 159, 2013, 1131)
+        linear 10.0 crop (1024, 546, 2013, 1131)
+    with Dissolve(3.0)
+
+    pause 4.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    show ev hotel_onhisao_large behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (0, 826, 1493, 840)
+        linear 10.0 crop (430, 826, 1493, 840)
+    with Dissolve(3.0)
+
+    pause 4.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    show ev ballroomdance_smile_large behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (1869, 198, 1326, 745)
+        linear 10.0 crop (1263, 444, 1326, 745)
+    with Dissolve(3.0)
+
+    pause 4.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    show ev rainyroad behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (353, 0, 866, 493)
+        linear 10.0 crop (353, 294, 866, 493)
+    with Dissolve(3.0)
+
+    pause 4.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    # TODO replace with rooftop CG
+    show ev rainyroad behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (353, 0, 866, 493)
+        linear 10.0 crop (353, 294, 866, 493)
+    with Dissolve(3.0)
+
+    pause 4.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    show ev caress_large behind sh_credits_overlay:
+        subpixel True pos (64, 294) xysize (866, 493) crop (2520, 740, 2821, 1587)
+        linear 12.0 crop (1886, 383, 4089, 2301)
+    with Dissolve(3.0)
+
+    pause 6.0
+
+    hide ev
+    with Dissolve(3.0)
+
+    pause 11.0
 
     hide sh_credits
     scene black
     with Dissolve(5.0)
     stop music
 
-    $ config.allow_skipping = True
-
     return
 
 label sisterhood_postcredits:
 
     $ config.skipping = False
-    $ config.allow_skipping = False
 
     scene black
     show expression Text(_("To be continued..."), text_align=1.0, size=32) zorder 999 at Transform(xalign=0.92, yalign=0.92)
@@ -100,5 +170,3 @@ label sisterhood_postcredits:
 
     scene black
     with Dissolve(5.0)
-
-    $ config.allow_skipping = True

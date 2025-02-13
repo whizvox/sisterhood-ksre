@@ -87,7 +87,7 @@ init 1 python:
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
-    sh_event("funindark", ["hug_rest", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])
+    sh_event("funindark", ["hug_rest", "hug_rest_large", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])
     sh_event("funindark", ["naked_touch", "naked_touch_close", "naked_hand", "naked_hand_close", "naked_breast", "naked_breast_large", "naked_grab", "naked_grab_close", "naked_masturbate", "naked_climax", "naked_climax_close"], mark_adult=True)
     sh_event("hotel", ["onhanako", "onhanako_large", "onhisao", "onhisao_large", "mirror", "layontop", "thigh", "thigh_large", "thigh_climax", "masturbate", "masturbate_climax", "bed", "bed_climax"], mark_adult=True)
     sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
@@ -162,9 +162,9 @@ init 1:
     image white_vignette = f"{sh_path}/gui/white_vignette.png"
 
     # credits
-    image sh_credits = Text(_("""
-    {image=mods/sisterhood/logo/logo_title.png}
-    \n\n\n\n
+    image sh_credits_overlay = f"{sh_path}/gui/credits/vignette_overlay.png"
+
+    image sh_credits_text = Text(_("""
     {b}Backgrounds{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     Francis York Media Inc.
@@ -258,6 +258,9 @@ init 1:
     Four Leaf Studios
     The Katawa Shoujo Community
     \n\n\n\n
+    """), color="#FFF", text_align=0.5, xalign=0.9, size=42)
+
+    image sh_credits_end = Text(_("""
     {b}Original Work{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     “Sisterhood” by Guest Poster
@@ -267,3 +270,5 @@ init 1:
     whizvox
     \n\n\n\n
     """), color="#FFF", text_align=0.5, xalign=0.5, size=42)
+
+    image sh_credits = VBox(f"{sh_path}/logo/logo_title_credits.png", "sh_credits_text", "sh_credits_end")
