@@ -45,6 +45,8 @@ li "Fitting accommodations for your new position in the legal affairs department
 show akira basic_lost_close
 with chchange
 
+stop music fadeout 2.0
+
 "The playful retort I was expecting doesn't come."
 "Uncomfortable silences aren't exactly common around Akira. Did I misjudge her yesterday evening?"
 
@@ -53,15 +55,14 @@ with chchange
 
 aki "Why don't we have a little walk, Sis? A little stroll by the bay shore'll do you good."
 
-stop music fadeout 2.0
 stop ambient fadeout 2.0
 
 scene bg inverness_shore:
     yalign 0.5 zoom 1.02
 with shorttimeskip
 
-play music music_serene fadein 0.5
-play ambient sfx_waves fadein 1.0 volume 0.2
+play music music_serene fadein 4.0
+play ambient sfx_waves fadein 4.0 volume 0.2
 
 "The area near the bay shore where we're taking a break is pleasant to be sure, but the atmosphere remains somewhat heavy."
 "As I am still determining the best way to bring up the obvious subject, my sister turns to me."
@@ -97,7 +98,7 @@ aki "You know, there's a part of this whole deal that I don't like… at all."
 show akira basic_smile
 with chchange
 
-aki "But I've made a clear choice on what to do with my life years ago and this seems like the best road to take."
+aki "But I've made a clear choice on what to do with my life years ago, and this seems like the best road to take."
 "I nod silently."
 "She may not seem like it at first impression, but Akira's pretty ambitious. And there are still several rungs of the corporate ladder left that she wants to climb."
 aki "This might seem a tad weird to you, but in a way I'm securing my future stability. You can't get any higher than head office."

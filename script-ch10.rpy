@@ -12,7 +12,7 @@ show nurse concern_close:
     zoom 1.05 ypos 1.02
 with Dissolve(1.0)
 
-play music music_nurse fadein 0.5
+play music music_nurse fadein 4.0
 
 nk "So, no lightheadedness, chest pains or tingling feet this morning? No irregularities during the weekend?"
 "The nurse casually slurps some coffee while asking me the typical routine questions, to which I respond with the typical routine answers."
@@ -182,16 +182,16 @@ nk "Didn't think you'd fall for it."
 hide nurse
 with charaexit
 
-"He lets out a maniacal laugh before turning back to his computer, leaving me flabbergasted."
+stop music fadeout 2.0
 
-stop music fadeout 0.5
+"He lets out a maniacal laugh before turning back to his computer, leaving me flabbergasted."
 
 scene bg school_miyagi:
     right
     zoom 1.2
 with locationskip
 
-play music music_another fadein 0.5
+play music music_another fadein 4.0
 
 "As I finish setting up the pawns, a delicious smell teases my nostrils."
 hi "Wow, that smells pretty good."

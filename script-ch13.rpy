@@ -8,7 +8,7 @@ call sisterhood_timeskip
 scene bg school_newspaper
 with Dissolve(2.0)
 
-play music music_comedy fadein 0.5
+play music music_comedy fadein 4.0
 
 show naomi bend_laugh at offscreenright
 with None
@@ -166,15 +166,16 @@ show naomi bend_laugh_close
 with chchange
 
 na "Ha ha… I guess I got a little sidetracked, huh?"
-"OH, FOR CRYING OUT LOUD!"
 
-stop music fadeout 0.5
+stop music fadeout 2.0
+
+"OH, FOR CRYING OUT LOUD!"
 
 scene bg school_gate_rn
 show hisao basic_grin_uni_rn
 with locationskip
 
-play music music_soothing fadein 0.5
+play music music_soothing fadein 4.0
 
 hi "Couldn't get away from Naomi, could you?"
 "Hisao seems amused by my tardiness and the fact I'm clearly winded from my mad dash to the gates."
@@ -295,9 +296,9 @@ hi "Got it."
 show hisao basic_grin_uni_close_rn
 with chchange
 
-"He ruffles my hair for a bit and is about to let go when he suddenly freezes."
+stop music fadeout 2.0
 
-stop music fadeout 0.5
+"He ruffles my hair for a bit and is about to let go when he suddenly freezes."
 
 show hisao basic_neutral_uni_close_rn
 with chchangefast

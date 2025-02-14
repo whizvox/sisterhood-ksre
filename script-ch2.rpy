@@ -8,7 +8,7 @@ call sisterhood_timeskip
 scene bg school_track
 with Dissolve(2.0)
 
-play music music_daily fadein 2.0
+play music music_daily fadein 4.0
 
 "I let out a loud yawn as I approach the running track wearing my gym shorts."
 "It's been a while since I wore them as I am still exempted from P.E. classes, and that running session during my first week was also the last time I made an active attempt to improve my health."
@@ -59,11 +59,11 @@ with charaexit
 "I remember running with her on the track before, during my first week here. But since she's not in my class and I have spent most of my free time in the library, the tea room, or my dorm, we haven't really talked much since then."
 "I guess if my determination to get in shape holds out, we'll get to know each other better soon enough. According to the nurse, running is pretty much a daily ritual for Emi."
 
-stop music fadeout 1.0
-queue music music_emi fadein 1.0
-
 show emi excited_joy_gym
 with charaenter
+
+stop music fadeout 1.0
+queue music music_emi fadein 2.0
 
 emi "Hey there! It's been forever since I've seen you here."
 hi "Yeah, I've been making some early New Year resolutions and decided to make a serious attempt to get into shape."

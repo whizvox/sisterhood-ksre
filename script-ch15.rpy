@@ -78,7 +78,7 @@ li "Thanks to you, I was able to earn us both a free drink. Apparently they sell
 hi "I don't think the doctors will be thrilled with me drinking caffeine right now."
 "???" "I feared that as well, Mister Nakai, so I bought you some fresh orange juice instead. It's the healthiest drink they had."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 "When I look up to greet Lilly's mysterious benefactor, I notice a familiar face."
 
@@ -87,7 +87,7 @@ show lilly at twoleft:
 show takawa smile at tworight
 with charaenter
 
-play music music_another fadein 0.5
+play music music_another fadein 4.0
 
 "It's been a while since I've last seen her, but the old lady walking into the room carrying a tray with three drinks on it is wearing the same violet shawl and black skirt as she was when the nurse took me to see her on that day Lilly and Akira arrived back in Japan."
 hi "Miss Takawa!"

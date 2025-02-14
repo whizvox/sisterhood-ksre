@@ -206,7 +206,7 @@ play sound sfx_phonedial volume 0.7
 "While we both know from personal experience that that's hardly a guarantee, it at least gives me something to tell her, assuming she doesn't already know."
 "And who was it who picked her up? The nurse?"
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 ha "…H-h-hello?…"
 "Just when I'm about to give up and speak a message into Hanako's voicemail, I hear a small voice on the other end of the line… soft, hesitant and nervous."
@@ -217,7 +217,7 @@ hi "Hanako, it's me."
 show hanagown worry_phone at phonebox
 with charaenter
 
-play music music_hanako fadein 0.5
+play music music_hanako fadein 4.0
 
 ha "H-H-Hisao…"
 "This is odd. I expected her to be relieved, but her voice actually sounds frightened."
@@ -407,12 +407,12 @@ n "The best thing I can do is focus on my recovery right now. If I stay on edge 
 n "If the upcoming weekend is the earliest time I can leave here then that's what I should aim for."
 n "I'll just ask for some sleeping pills or something to get more rest."
 
-stop music fadeout 1.0
+stop music fadeout 2.0
 
 scene bg hosp_room2
 with Fade(1.0, 1.0, 1.0)
 
-play music music_night fadein 2.0
+play music music_night fadein 4.0
 
 "The evening and the rest of the next day are completely uneventful, so I just try to get as much rest as I can. Having just finished my evening meal, I lie back and close my eyes."
 "It's been a day since I've called Hanako and Lilly, and I haven't heard a reply from either."
@@ -508,7 +508,7 @@ with chchange
 mi "I don't know. We found it in the student council's mailbox. We don't know who left it there."
 "Intrigued, I open the envelope."
 
-stop music fadeout 2.0
+stop music fadeout 1.0
 
 "But when I feel what's inside I feel my blood curdle, and both Misha and Lilly cringe when the beeping of my EKG monitor suddenly spikes."
 

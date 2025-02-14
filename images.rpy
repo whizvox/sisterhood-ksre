@@ -91,6 +91,7 @@ init 1 python:
     sh_event("funindark", ["naked_touch", "naked_touch_close", "naked_hand", "naked_hand_close", "naked_breast", "naked_breast_large", "naked_grab", "naked_grab_close", "naked_masturbate", "naked_climax", "naked_climax_close"], mark_adult=True)
     sh_event("hotel", ["onhanako", "onhanako_large", "onhisao", "onhisao_large", "mirror", "layontop", "thigh", "thigh_large", "thigh_climax", "masturbate", "masturbate_climax", "bed", "bed_climax"], mark_adult=True)
     sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
+    sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
 
     sh_fireflies()

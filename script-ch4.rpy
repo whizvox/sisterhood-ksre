@@ -57,11 +57,11 @@ stop sound fadeout 0.5
 "I have no idea how much energy this woman has, but an intercontinental flight and a ride from the airport to Yamaku seem insufficient to diminish it."
 "Lilly, on the other hand, looks a little worse for wear."
 
+stop music fadeout 1.0
+queue music music_ease fadein 4.0
+
 show hanako basic_bashful
 with chchange
-
-stop music fadeout 1.0
-queue music music_ease fadein 1.0
 
 ha "Lilly!"
 
@@ -201,7 +201,7 @@ show lilly basic_weaksmile_cas at twoleft
 show hanako basic_bashful at tworight
 with shorttimeskip
 
-queue music music_lilly fadein 2.0
+queue music music_lilly fadein 4.0
 
 li "I needed that."
 "As Lilly puts her second cup of tea down, she lets out a satisfied sigh. She still looks a bit tired, but the caffeine seems to have taken the edge off."

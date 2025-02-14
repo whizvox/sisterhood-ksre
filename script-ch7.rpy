@@ -19,7 +19,7 @@ n "The reason for the tension I feel is the fact I just completed my first group
 
 nvl clear
 
-n "Today in Japanese class, we were instructed to work in groups of three people maximum and write a short piece on parliament elections. Hisao immediately got up to join me, only to be pushed back into his seat by Misha and being forced into a heated discussion about having dodged a student council assignment the other day."
+n "Today in Japanese class, we were instructed to work in groups of three people maximum and write a short piece on parliamentary elections. Hisao immediately got up to join me, only to be pushed back into his seat by Misha and being forced into a heated discussion about having dodged a student council assignment the other day."
 n "I don't think it was meant to be a public argument, but Misha is very easy to eavesdrop on. I was familiar enough with Shizune and Misha, as well as Hisao's playfully tense relationship with them, to figure out that they were going to use that group assignment as an excuse to drag a promise out of him to make up for it somehow."
 n "All of this meaning the chances of Hisao doing group work with me just dropped to exactly zero; a suspicion confirmed by an apologetic shrug on his part."
 
@@ -72,7 +72,7 @@ show hisao basic_grin_uni
 with charachangealways
 
 "I looked back at Hisao again, and this time he was smiling at me."
-"I knew that expression; I came to know it as his “everything will be alright”-smile."
+"I knew that expression; I came to know it as his “everything will be alright” smile."
 
 hide hisao
 with charaexit
@@ -235,7 +235,7 @@ with chchange
 
 na "You know, as of last week you're officially dating a geek. You're not put off by nerdy traits in your guys, are you?"
 "Your guys? She's talking as if I've been dating boys ever since I enrolled here."
-"I know what this is about though. A new club was formed last week and our homeroom teacher Mutou is in charge of it."
+"I know what this is about, though. A new club was formed last week and our homeroom teacher Mutou is in charge of it."
 "It's a science club, of course… The only kind of club he'd have interest in setting up. And I'm currently dating its sole member."
 "It's a bit weird, but Hisao said the club's main activity, reading and discussing scientific literature, has been pretty fun so far."
 ha "Er…"
@@ -243,7 +243,7 @@ ha "Er…"
 show naomi bend_smile_close
 with chchange
 
-na "It's kinda sad there's still only one member though. I suppose you're not joining to flesh out membership?"
+na "It's kinda sad there's still only one member, though. I suppose you're not joining to flesh out membership?"
 "I did actually offer to join, but Hisao shot that suggestion down almost immediately."
 "“Science isn't really your thing, Hanako,” he told me. “It'd just feel like class to you. If you want to join a club, you'd be better off finding something that actually captures your interest.”"
 "I couldn't really argue with that. Unlike Hisao, who seems to have a knack for deciphering Mutou's convoluted lectures, I'm not exactly a star pupil in science class, and it's hardly my favorite subject."
@@ -251,7 +251,9 @@ ha "N-no, I'm n-not."
 na "But you won't be able to hang out with your boyfriend after school hours, because he's in a club and you're not, right?"
 "What is she trying to get at?"
 
-show naomi at tworight
+show naomi:
+    ease 0.5 tworight
+with None
 show natsume basic_neutral_close at twoleft
 with charaenter
 
@@ -288,13 +290,13 @@ nt "Unfortunately, the girl who usually does the job is out of commission for a 
 na "Yeah, she broke her hand after tripping outside her dorm room. She has this thing called os{cps=5}…{/cps}osto-{w=0.7}something."
 na "Anyway she breaks easily. And now we need someone who can do the data entry and some minor editing jobs in her place for a few days."
 ha "B-but w-w-why me?"
-nt "There aren't that many students here who aren't already part of another club or don't have other tasks like class representative duties to tend to and who are also capable with computers."
+nt "There aren't that many students here who aren't already part of another club or don't have other tasks, like class representative duties to tend to, and who are also capable with computers."
 nt "When we saw the way you made a digital print of your homework, we thought you might be able to help us out."
 
 show naomi basic_smile_close
 with chchange
 
-na "Yeah, I mean, it's not a really complex task. And there's not a lot of distractions there either. The place the club uses has a small side room where we keep the computers and archives."
+na "Yeah, I mean, it's not a really complex task. And there's not a lot of distractions there, either. The place the club uses has a small side room where we keep the computers and archives."
 "I really don't know about this. The idea of getting involved in a club with nothing but people I'm unfamiliar with sounds terrifying."
 
 show naomi bend_smile_close
@@ -345,14 +347,14 @@ with None
 show bg at right
 with charamove
 
-na "Hey Ikezawa, just to reassure you; this isn't a recruiting attempt, though we always welcome new members of course."
+na "Hey Ikezawa, just to reassure you; this isn't a recruiting attempt, though we always welcome new members, of course."
 na "But if you'd be willing to help out the newspaper club, we'd be really thankful."
 na "Think about it, okay?"
 
 hide naomi
 with charaexit
 
-"Without waiting for a reply, Naomi and Natsume gather their belongings and walk off past Hisao who has turned around and is looking at me with a curious expression on his face."
+"Without waiting for a reply, Naomi and Natsume gather their belongings and walk off past Hisao, who has turned around and is looking at me with a curious expression on his face."
 "Wait… Did he overhear?"
 
 show hisao cross_grin_uni_close
@@ -385,7 +387,7 @@ show hisao basic_grin_uni_close
 with chchange
 
 hi "Someone told me not too long ago that it's important to seize opportunities if they're handed to you on a platter like this."
-"Hisao has decided to jump into the fray too."
+"Hisao has decided to jump into the fray, too."
 "I roll my eyes at his remark. Those are the exact same words I used last week to convince him to give Mutou's science club idea a chance."
 "At first he was reluctant, afraid he'd have less time to spend with me. The last thing I wanted to do was hold him back, so I did my best to convince him to give the whole thing a try."
 "I knew the subject interested him, and I hoped this would also encourage him to make more definite plans for his future. He consistently scores the highest marks in class in Mutou's subject, and I genuinely believe that he'd do very well if he went for a career in that direction."
@@ -397,7 +399,7 @@ with chchange
 li "You could choose to see it as a sign that fate is extending you a helping hand."
 "By breaking somebody else's? That's kind of a cruel way to motivate someone. Fate must know how easily I can be guilt tripped."
 "I merely nod. I don't believe the work itself will give me much trouble."
-"What scares me is the idea of being thrown into a group of unfamiliar people who might stare at my scars, who might be put off by my stammering—which always gets worse whenever I'm feeling nervous—my shyness and inability to make conversation."
+"What scares me is the idea of being thrown into a group of unfamiliar people who might stare at my scars, who might be put off by my stammering—which always gets worse whenever I'm feeling nervous—my shyness, and inability to make conversation."
 "A few weeks ago, I was still the “shy kid who kissed her first boyfriend in public” to people, but tomorrow I might be the “shy kid who panics at the most mundane things” once again."
 
 show hisao cross_speak_uni_close
@@ -425,13 +427,13 @@ li "I hope you two will be willing to join me for some tea tonight. I'd really l
 ha "T-that would be nice."
 hi "We'll be there, Lilly."
 
-stop music fadeout 0.5
+stop music fadeout 1.0
 
 scene bg school_newspaper
 show naomi basic_smile at tworight
 with locationskip
 
-play music music_comedy fadein 0.5
+play music music_comedy fadein 2.0
 
 na "So while the classroom is the place we use as an editorial office, most of the editing takes place here."
 
@@ -443,7 +445,7 @@ na "We have two computers here, though only one is regularly used. The other's m
 show naomi at center
 with charamove
 
-na "And here's the cabinet where we store most of our equipment. It isn't very large as you can see."
+na "And here's the cabinet where we store most of our equipment. It isn't very large, as you can see."
 
 show naomi basic_neutral
 with chchange
@@ -484,7 +486,7 @@ show naomi basic_neutral
 with chchange
 
 na "Several of our members use these to compose their contributions."
-na "Hideki's completely blind and not too tech-savvy, so he just dictates his articles. Natsume uses these too whenever her joints are hurting."
+na "Hideki's completely blind and not too tech-savvy, so he just dictates his articles. Natsume uses these, too, whenever her joints are hurting."
 na "Like… the last few days. Anyway, just plug one of these in with this cable here, and the application for playing the contents should start automatically. It'll be easier than rewinding and replaying manually."
 na "Always check the sections at the very end first. They often contain comments on whether to omit or alter certain portions. And the written notes here just contain articles and interviews by the rest."
 ha "I-I'll s-start p-putting these in then."
@@ -494,7 +496,7 @@ with chchange
 
 na "Cool. I'd do this myself, but I can't sit in front of monitors for very long for a while."
 na "Nurse's latest orders. I can be a bit sensitive to them. They sometimes cause, you know, short-circuiting."
-"I know alright. Naomi's reason for attending Yamaku is a pretty heavy case of epilepsy, and over the years, she's had several harsh episodes right next to me in class."
+"I know, alright. Naomi's reason for attending Yamaku is a pretty heavy case of epilepsy, and over the years, she's had several harsh episodes right next to me in class."
 "The first time she fell out of her chair and started thrashing around on the floor got me so riled up I couldn't sleep for days. I'm still not completely used to it."
 
 show naomi basic_smile
@@ -580,7 +582,7 @@ hi "Hanako?"
 ha "Hmmm?"
 hi "Do you have any plans for the upcoming weekend?"
 ha "Not really."
-hi "Would you like to go on a date the upcoming Saturday?"
+hi "Would you like to go on a date this Saturday?"
 ha "Sure."
 hi "Great. We'll have a bite to eat at the Shanghai around six and then be on our way."
 ha "Do you already have something planned?"
@@ -601,7 +603,7 @@ with charaenter
 
 "As I turn around to face him, Hisao gives me a playful wink."
 hi "If you want me to give you a more extensive massage…"
-"As I grasp the meaning behind his remark, I reflexively turn my head away although I doubt my attempt at hiding my extensive blush is successful."
+"As I grasp the meaning behind his remark, I reflexively turn my head away, although I doubt my attempt at hiding my extensive blush is successful."
 "Lately there have been a few times we started with a mutual backrub and ended up… doing… what we did that night in Hokkaido."
 ha "N-n-not t-this t-time."
 
@@ -640,7 +642,7 @@ with Fade(1, 0, 1)
 
 play music music_comedy fadein 2.0
 
-na "Nice! You got all content digital now?"
+na "Nice! You got all the content digital now?"
 ha "Y-yes. Everything."
 na "Great, that was pretty quick overall."
 "It was more work than I expected. Especially the audio recordings took a while to type up. But now all articles and interviews are saved as documents."
@@ -649,7 +651,7 @@ ha "T-thanks."
 show naomi bend_smile
 with chchange
 
-na "Could you print them all out? The pictures and templates for all the pages too. And then come and sit here next to me."
+na "Could you print them all out? The pictures and templates for all the pages, too. And then come and sit here next to me."
 ha "I-I'm not done yet?"
 na "I can't force you to do more than you want, but there's still something else to do and we're getting to the part that I think you'll like."
 "I simply nod and return to my seat."
@@ -658,14 +660,14 @@ scene bg school_newspaper
 show naomi basic_focus
 with shorttimeskip
 
-"A few minutes later I return to Naomi with a stack of paper containing everything I digitized over the last two days."
+"A few minutes later, I return to Naomi with a stack of paper containing everything I digitized over the last two days."
 "Naomi is usually loud and somewhat chaotic, but in her role of editor-in-chief she becomes a bit more serious and structured than usual and I have an easier time keeping up (and putting up) with her."
 
 show naomi basic_focus_close
 with characlose
 
 na "So here's the templates we have for each page of the newspaper. Now we're gonna have to see what articles go where."
-na "We have the front page for the main article, five pages for internal news, three pages for external news, one page for advertisements, one page for columns and one page for sponsor-related stuff."
+na "We have the front page for the main article, five pages for internal news, three pages for external news, one page for advertisements, one page for columns, and one page for sponsor-related stuff."
 ha "So n-now what?"
 
 show naomi basic_neutral_close
@@ -707,7 +709,7 @@ with chchange
 
 na "Okay, we'll go with my layout with the exposition story moved from page five to page eight instead."
 na "Could you paste the contents into the template pages? You'll run outside the borders in several places, but we need to know what articles to trim or reword a bit."
-na "You can fiddle a bit with the pictures on page two, five and six as long as the faces remain recognizable."
+na "You can fiddle a bit with the pictures on page two, five, and six as long as the faces remain recognizable."
 
 show naomi basic_laugh_close
 with chchange
@@ -715,9 +717,10 @@ with chchange
 na "Let's get started."
 ha "Y-yes."
 "I quickly get to work. We only have one and a half days to get everything done."
-"I'll have time to relax this evening, but until then, I feel pressed to work as swiftly as possible."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
+
+"I'll have time to relax this evening, but until then, I feel pressed to work as swiftly as possible."
 
 scene bg school_dormlilly
 show lilly basic_listen_close at twoleft:
@@ -738,7 +741,7 @@ with chchange
 
 li "Assistant Editor: Hanako Ikezawa."
 
-play music music_dreamy fadein 0.5
+play music music_dreamy fadein 4.0
 
 show lilly basic_cheerful_close
 show hisao basic_grin_uni_close
@@ -748,14 +751,14 @@ with chchange
 li "Hanako, this is great."
 "I nod humbly, but in truth I'm very proud of the result."
 "It took a lot of effort, but we managed to meet the deadline and get the newspaper printed today. Everyone at the newspaper club was very satisfied with this latest issue."
-"Tomorrow, the student council will be distributing it among the rest of the student body, but I couldn't wait that long and took three copies in advance: one for Hisao, one for myself and a Braille edition for Lilly."
+"Tomorrow, the student council will be distributing it among the rest of the student body, but I couldn't wait that long and took three copies in advance: one for Hisao, one for myself, and a Braille edition for Lilly."
 
 show hisao basic_smile_uni_close
 with chchange
 
 hi "Hey Hanako, is it difficult to create a newspaper in Braille?"
 "I nod my head."
-ha "The newspaper club has software that can convert normal documents into a file type that a Braille printer can work with. I've used it myself yesterday."
+ha "The newspaper club has software that can convert normal documents into a file type that a Braille printer can work with. I've used it myself, yesterday."
 ha "It's a lot of work, but there's a member at the club who can read Braille and helps us with this. I just operate the s-software according to his instructions."
 "Hisao laughs and playfully ruffles my hair."
 
@@ -844,7 +847,7 @@ li "Hanako…"
 hide lilly
 with charaexit
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 "Suddenly, Lilly gets close to me and wraps her arms around me in a warm embrace."
 "I let out a startled gasp."
@@ -853,7 +856,7 @@ show lilly basic_smileclosed_close at center:
     zoom 1.1 yanchor 0.9
 with charaenter
 
-play music music_friendship fadein 0.5
+play music music_friendship fadein 4.0
 
 li "…I think you did a terrific job this week."
 hi "Lilly's right. You really did."

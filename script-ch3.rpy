@@ -80,7 +80,7 @@ nk "Good to see you could come so quickly. This way, please."
 hide nurse
 with charaexit
 
-scene bg school_staircase3
+scene bg school_hallway4
 with Dissolve(1.0)
 
 "He leads me through a few hallways and up two sets of stairs to a part of the staff building I've never been to before."

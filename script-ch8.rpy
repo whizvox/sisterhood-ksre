@@ -8,12 +8,12 @@ call sisterhood_timeskip
 scene bg arcade_shooter
 with Dissolve(2.0)
 
-play music music_ease fadein 0.5
-play ambient sfx_arcadeambience fadein 0.5 volume 0.4
+play music music_ease fadein 4.0
+play ambient sfx_arcadeambience fadein 4.0 volume 0.4
 
 hi "The right one, focus on the right one!"
 ha "Y-yes!"
-"I aim my gun and a moment later the cyborg who just ambushed us from the nearby niche goes down in a hail of sparks."
+"I aim my gun, and a moment later the cyborg who just ambushed us from the nearby niche goes down in a hail of sparks."
 "In the meantime, Hisao is struggling to hit another cyborg shooting at us from a vehicle straight ahead, but he has difficulty getting a clear shot due to several allied soldiers running ahead of us and blocking the line of fire."
 hi "Cover me, Corporal Ikezawa!"
 "I giggle, more than eager to play along."
@@ -306,7 +306,7 @@ with chchange
 
 "Hisao takes the puck out of the tray, but doesn't immediately place it onto the field."
 
-stop music fadeout 0.5
+stop music fadeout 3.0
 
 show hisao cross_speak_polo
 with chchange
@@ -352,7 +352,7 @@ play sound sfx_airhockey_score1
 
 "{font=pixel}8:7{/font}"
 
-play music music_ease volume 0.6 fadein 0.5
+play music music_ease volume 0.6 fadein 4.0
 play sound sfx_airhockey_rally loop
 
 show hisao basic_speak_polo
@@ -376,7 +376,7 @@ play sound sfx_airhockey_score1
 
 show hisao basic_smile_polo
 with chchange
-$ renpy.music.set_volume(0.8, delay=0.5)
+$ renpy.music.set_volume(0.8, delay=2.0)
 
 hi "Just like I enjoy doing things for you on occasion. Giving and receiving can both be fun in their own way."
 hi "I don't think we should keep score… Trying to keep things exactly even will only make our relation appear rigid and unnatural."
@@ -393,7 +393,7 @@ hi "That's enough for me, Hanako. Thanks."
 
 show hisao basic_grin_polo_close
 with chchange
-$ renpy.music.set_volume(1.0, delay=0.5)
+$ renpy.music.set_volume(1.0, delay=2.0)
 
 hi "We could give a try right now if you like."
 ha "Ummm… what do you mean?"
@@ -446,7 +446,7 @@ with charaexit
 
 # TODO Replace with "authentic" Street Fighter II SFX. according to Guest Poster:
 # Hisao is playing Blanka (unruly hair) and Sagat. (chest scar) Hanako is playing Dhalsim (fire-themed, keepaway) and Vega. (hides face)
-play sound sfx_yogafire volume 0.4
+play sound sfx_yogafire volume 0.2
 
 "After two tries, I manage to shoot a projectile at him. He jumps over it, but I manage to nail him with a kick as he lands."
 "The game's announcer confirms my victory. The second round begins, and I manage to block another flying attack from Hisao."
@@ -614,15 +614,16 @@ with charaexit
 show hisao cross_smile_polo_close
 with charaenter
 
+stop music fadeout 2.0
+
 hi "So, what do you want to do next?"
 
-stop music fadeout 0.5
-stop ambient fadeout 0.5
+stop ambient fadeout 1.0
 
 scene bg city_coffeeshop
 with locationskip
 
-play music music_dreamy fadein 0.5
+queue music music_dreamy fadein 4.0
 
 "The peaceful corner of the coffee shop where we decided to take a breather after leaving the arcade is a refreshing change from the bustling of the crowded arcade hall."
 "While my difficulty with crowds hasn't raised its head enough to ruin my fun this evening, it still feels good to relax in a quiet place for a while."

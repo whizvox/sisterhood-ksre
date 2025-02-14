@@ -3,7 +3,7 @@ label .sh_ch9:
 
 $ set_window_tint(TINT_HANAKO)
 
-stop music fadeout 1.0
+stop music fadeout 2.0
 play sound sfx_shower fadein 2.0
 
 scene bg hotel_bathroom
@@ -36,7 +36,7 @@ nvl hide dissolve
 "I put on the soft bathrobe that Hisao left here for my perusal. It feels very nice to the touch."
 "Where are all the other towels? I saw Hisao carrying some of them."
 "What exactly is he planning?"
-"I walk over to the place where our clothes are piled up and fish my hair clip out of the pockets of my pants."
+"I walk over to the place where our clothes are piled up, and fish my hair clip out of the pockets of my pants."
 "I apply the clip, say a little prayer for good luck and leave the bathroom."
 
 stop sound fadeout 0.5
@@ -44,7 +44,7 @@ stop sound fadeout 0.5
 scene bg hotel_room
 with Dissolve(2.0)
 
-play music music_one fadein 0.5
+play music music_one fadein 4.0
 
 "The first thing I notice is that the room isn't quite like I expected it to be."
 "I thought it'd either be completely dark or the lights near the bed being lit, but neither is the case. None of the lights are on, yet I can still make out the interior somewhat, particularly near the window, due to the curtains still being drawn back."
@@ -686,7 +686,7 @@ with Fade(3, 0, 1, color="#FFF")
 
 "After our climax, Hisao uses the last of his strength to slide off of me and roll on his back."
 
-play music music_twinkle fadein 1.0
+play music music_twinkle fadein 4.0
 play sound sfx_rustling volume 0.8
 
 "With some effort, I manage to pull up the covers and press myself close to him before every muscle in my body relaxes and a feeling of bliss washes over me that makes me want to laugh and cry at the same time."

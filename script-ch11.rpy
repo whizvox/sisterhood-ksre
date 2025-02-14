@@ -749,12 +749,12 @@ li "Hanako?"
 ha "Yes?"
 li "Let's try a natural turn next."
 
-stop music fadeout 0.5
+stop music fadeout 2.0
 
 scene bg school_girlsdormhall
 with Fade(1.0, 0, 1.0)
 
-play music music_twinkle fadein 2.0
+play music music_twinkle fadein 4.0
 
 "I patiently wait as Lilly runs through her bag in search of her room keys."
 "Tonight was great fun. The dancing part was maybe a bit much, but I'd be lying if I said it wasn't interesting to try."

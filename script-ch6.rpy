@@ -26,7 +26,7 @@ play music music_dreamy fadein 4.0
 "Even though we're girlfriend and boyfriend, we're currently not exactly acting as a couple. Are we supposed to right now?"
 ha "Umm… I w-wouldn't mind if you got a little closer."
 hi "Like sit on the edge of your bed? That would indeed make talking a little bit easier."
-ha "Y-you c-can lie n-next to m-me if you want."
+ha "Y-you c-can lie n-next to m-me, if you want."
 hi "I-if you don't mind."
 
 play sound sfx_bedsheets volume 0.5
@@ -36,7 +36,7 @@ play sound sfx_bedsheets volume 0.5
 
 stop sound fadeout 0.5
 
-"As the shuffling stops, I move a bit to my right to give him some space, and a moment later I hear him get into the bed."
+"As the shuffling stops, I move a bit to my right to give him some space. A moment later I hear him get into the bed."
 hi "…"
 ha "…"
 "…"
@@ -79,7 +79,7 @@ hi "Afterwards, when I learned your motivation, I felt like I had my way with yo
 "I had no idea he felt this bad about it."
 "It's true I let him have sex with me, but I didn't feel like he forced me to."
 ha "…I… don't really see it that way. I… feel it was me who was t-taking advantage of you."
-ha "I had ulterior m-motives I didn't tell you about. At least not until later."
+ha "I had ulterior m-motives I didn't tell you about. At least, not until later."
 hi "Even so, the whole thing was painful for you, wasn't it?"
 ha "That… last part was kind of painful, to be honest. But…. I've read that… it hurts for most girls during their first time, so I don't think it was your fault."
 ha "And there was one thing I enjoyed about the whole thing."
@@ -158,7 +158,7 @@ hi "Could you lie on top of me?"
 show ev funindark_hug_rest
 with Fade(1, 0, 2, color="#000")
 
-"I take a deep breath, feel my way over to him, carefully straddle him, lie down and adjust my position until I'm fairly certain my face is about on the same level as his."
+"I take a deep breath, feel my way over to him, carefully straddle him, lie down, and adjust my position until I'm fairly certain my face is about on the same level as his."
 hi "Now just take your time and try to relax."
 "I rest my head on his shoulder, letting his left cheek brush against my own and wait for my heart to stop racing."
 "…"
@@ -360,7 +360,7 @@ ha "Y-yes… Yes."
 hi "In that case… I'm all yours."
 "Yes!"
 
-play music music_one fadein 0.5
+play music music_one fadein 4.0
 
 "Giving him another quick kiss, I move off of him to give him some room and grin as a thought comes to me."
 ha "H-Hisao… I-I think we should take off your c-clothes. Those pajamas you're wearing are b-borrowed, aren't they?"

@@ -8,7 +8,7 @@ call sisterhood_timeskip
 scene bg hok_field_ni
 with Dissolve(3.0)
 
-play music music_serene fadein 1.0
+play music music_serene fadein 4.0
 play ambient sfx_crickets loop
 
 "I lift my arm, hold my watch in front of my face and press a button on the side, causing the display to light up."
@@ -313,7 +313,7 @@ hide firefly_v5
 hide firefly_v6
 with charachangeev
 
-play music music_comedy fadein 0.5
+play music music_comedy fadein 4.0
 
 "Hanako looks at me with a puzzled expression, clearly having expected a different response."
 "Keeping my left arm around her, I gently move my right hand downward to a point just above her hip and start tickling her side."
@@ -415,11 +415,11 @@ show hanako emb_downtimid_cas_nohat_clip_close_ni at center:
     rotate 0
 with charachangealways
 
-stop music fadeout 1.0
+stop music fadeout 2.0
 
 "I immediately stop tickling her, get off of her and sit across from her as she tries her hardest to catch her breath."
 
-play music music_pearly fadein 0.5
+play music music_pearly fadein 4.0
 
 hi "I never knew you were this ticklish."
 "Hanako's now panting as if she just sprinted a kilometer uphill."

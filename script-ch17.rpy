@@ -34,7 +34,7 @@ show misha sign_smile at twoleft
 show shizu behind_frown at tworight
 with charaenter
 
-play music music_shizune fadein 0.5
+play music music_shizune fadein 4.0
 
 mi "Class rep, or perhaps I should say former class rep; you're working really slowly."
 mi "It wouldn't be fair of me to hold the delay of last week against you, considering the circumstances, but if you don't want to be remembered as the black sheep among the class representatives, you'd better make sure to have everything wrapped up before you leave."

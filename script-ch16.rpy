@@ -9,7 +9,7 @@ stop music
 scene bg school_roof_rn
 with Dissolve(2.0)
 
-play music music_hanako fadein 0.5
+play music music_hanako fadein 4.0
 
 nvl clear
 nvl show dissolve
@@ -115,16 +115,28 @@ with Dissolve(1.0)
 hide bouquet
 with None
 
-"After a moment of hesitation, I get up and slowly take a step forward. And then another one."
+"After a moment of hesitation, I get up and slowly take a step forward."
+
+show hisao:
+    yalign 0.0 zoom 1.15
+with charachangealways
+
+"And then another one."
 "{i}They look beautiful.{/i}"
 "{i}I don't deserve these.{/i}"
+
+show hisao:
+    yalign 0.0 zoom 1.3
+with charachangealways
+
 "And another one."
 "{i}I should have been the one giving you these.{/i}"
+
+show hisao basic_smile_swt_close_rn:
+    zoom 1.0
+with characlose
+
 "And another one."
-
-show hisao basic_smile_swt_close_rn
-with Dissolve(1.0)
-
 "An expectant smile appears on his face."
 "I slowly stretch out my hand, grab the bouquet and gently take it from him when he loosens his own grip on it."
 "I hold the flowers to my chest, smelling the really nice odor coming from them."
@@ -165,9 +177,9 @@ show hisao basic_speak_swt_close_rn
 with chchange
 
 hi "For all the misery this week has brought, we have plenty of good memories to compensate, Hanako. I know I can't force you of all people, who has lost so much already, to stay with a person who could theoretically die at any moment…"
-"Wait! What…?"
+"{i}Wait! What…?{/i}"
 hi "…I just want you to know how terribly sorry I am to have put you through all of this…"
-"Wait! No, Hisao, that's not what… Did you think I…?"
+"{i}Wait! No, Hisao, that's not what… Did you think I…?{/i}"
 hi "…I know I'm being selfish for asking you this, but…"
 ha "You're wrong!"
 
@@ -226,7 +238,7 @@ ha "When we started dating, we promised to support each other in times of need."
 ha "But while you were l-lying there on the street, I couldn't do a thing for you. I saw you looking at m-me… but I couldn't m-move. I couldn't p-phone for an ambulance, I couldn't call for h-help… I couldn't even hold your h-hand to reassure you."
 ha "I'm… worthless."
 "Despite my best efforts to contain them, tears are flowing down my cheeks, and my shoulders shake as all the guilt and shame that have been eating me up all week long come flowing out of me."
-ha "I t-thought, maybe it was better if I broke up with you, so you could be with someone who could make you happy and also wouldn't f-fail you like I did."
+ha "I t-thought, maybe it was better if I broke up with you, so you could be with someone who could make you happy, and also wouldn't f-fail you like I did."
 ha "What g-good are all the small things like homemade m-meals and games and caresses when I can't even be there for you… the very moment you need me most?"
 
 show hisao basic_smile_swt_superclose_rn
@@ -234,7 +246,7 @@ with charaenter
 
 "I can feel his arms wrap around me and pull me close."
 hi "Hanako, it's… It's okay."
-ha "It's n-not okay. *sniff* W-what do you think would have h-happened *sniff* if we had been alone? You c-could have *sniff* died right in f-front of me while I just s-sat there doing n-nothing."
+ha "It's n-not okay. {i}*sniff*{/i} W-what do you think would have h-happened {i}*sniff*{/i} if we had been alone? You c-could have {i}*sniff*{/i} died right in f-front of me while I just s-sat there doing n-nothing."
 
 show hisao basic_worry_swt_superclose_rn
 with chchange
@@ -338,24 +350,32 @@ with charachangealways
 "Hisao doesn't say anything, but I can tell by his smile how much my words mean to him."
 "I let go of him, gently take his face in my hands and give him a short, sweet kiss on the lips."
 ha "Welcome back, Hisao. I've missed you."
+
+scene ev rooftopkiss_normal:
+    truecenter
+    yalign 0.0 zoom 1.1
+    easein 10.0 zoom 1.0
+with mediumflash
+
 "Again, he doesn't respond, but I see a small tear from one of his eyes. He then brings one hand up to my face, softly brushes my hair lock aside and then presses his other hand to the side of my head until I hear a familiar click."
 "My hairclip. He's kept it with him."
 "He doesn't ask me to be his girlfriend again. I don't bring it up either. We don't need words for this moment."
-
-show black
-with shuteye
-
 "Instead, he simply presses his lips on mine, and we kiss again, longingly, passionately this time, throwing off the weights that have been on our shoulders the whole week."
 
 stop music fadeout 2.0
 
+scene black
+with Fade(2.0, 0.0, 1.0, color="#FFF")
+
+pause 1.0
+
 scene bg school_roof_rn
-with Fade(1.0, 0.0, 1.0)
+with Dissolve(1.0)
 
 play music music_comfort fadein 4.0
 
 "I'm not sure how long we've been sitting here. An hour? An hour and a half? We've barely spoken a word the entire time."
-"He's just been sitting here on the ground, leaning against the wall and I'm sitting on his lap, my head against his chest while he's stroking my hair."
+"He's just been sitting here on the ground, leaning against the wall, and I'm sitting on his lap, my head against his chest while he's stroking my hair."
 ha "Hisao?"
 
 show hisao basic_smile_swt_close_rn
@@ -382,7 +402,7 @@ with chchange
 hi "But they meant well. I guess I should spend some time with them before they leave, shouldn't I?"
 ha "Yes. I won't be going anywhere."
 
-play sound sfx_phonedial
+play sound sfx_phonedial volume 0.6
 
 "Hisao takes out his cell phone, and I see him call Lilly's number. He waits a few seconds, and then I vaguely hear a voice on the other side."
 

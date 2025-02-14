@@ -76,11 +76,11 @@ label sisterhood_credits:
         xalign 0.5 yalign 0.0
         acdc20_warp 93.0 yalign 1.0
     
-    pause 10.0
+    pause 11.0
 
     show ev wheatfield_dreamy behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (617, 0, 758, 426)
-        linear 10.0 crop (1120, 246, 758, 426)
+        subpixel True pos (-618, 285)
+        linear 10.0 pos (-775, 126)
     with Dissolve(3.0)
 
     pause 4.0
@@ -88,9 +88,9 @@ label sisterhood_credits:
     hide ev
     with Dissolve(3.0)
 
-    show ev funindark_hug_rest_large behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (0, 159, 2013, 1131)
-        linear 10.0 crop (1024, 546, 2013, 1131)
+    show ev funindark_hug_rest behind sh_credits_overlay:
+        subpixel True pos (64, 298)
+        linear 10.0 pos (-222, 147)
     with Dissolve(3.0)
 
     pause 4.0
@@ -98,9 +98,9 @@ label sisterhood_credits:
     hide ev
     with Dissolve(3.0)
 
-    show ev hotel_onhisao_large behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (0, 826, 1493, 840)
-        linear 10.0 crop (430, 826, 1493, 840)
+    show ev hotel_layontop behind sh_credits_overlay:
+        subpixel True pos (-195, 94)
+        linear 10.0 pos (-394, 230)
     with Dissolve(3.0)
 
     pause 4.0
@@ -108,9 +108,9 @@ label sisterhood_credits:
     hide ev
     with Dissolve(3.0)
 
-    show ev ballroomdance_smile_large behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (1869, 198, 1326, 745)
-        linear 10.0 crop (1263, 444, 1326, 745)
+    show ev ballroomdance_smile_normal behind sh_credits_overlay:
+        subpixel True pos (-438, 289)
+        linear 10.0 pos (-260, 241)
     with Dissolve(3.0)
 
     pause 4.0
@@ -119,8 +119,8 @@ label sisterhood_credits:
     with Dissolve(3.0)
 
     show ev rainyroad behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (353, 0, 866, 493)
-        linear 10.0 crop (353, 294, 866, 493)
+        subpixel True pos (-317, 286)
+        linear 10.0 pos (-317, 111)
     with Dissolve(3.0)
 
     pause 4.0
@@ -128,10 +128,9 @@ label sisterhood_credits:
     hide ev
     with Dissolve(3.0)
 
-    # TODO replace with rooftop CG
-    show ev rainyroad behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (353, 0, 866, 493)
-        linear 10.0 crop (353, 294, 866, 493)
+    show ev rooftopkiss_normal behind sh_credits_overlay:
+        subpixel True pos (-260, 263)
+        linear 10.0 pos (-445, 193)
     with Dissolve(3.0)
 
     pause 4.0
@@ -139,17 +138,17 @@ label sisterhood_credits:
     hide ev
     with Dissolve(3.0)
 
-    show ev caress_large behind sh_credits_overlay:
-        subpixel True pos (64, 294) xysize (866, 493) crop (2520, 740, 2821, 1587)
-        linear 12.0 crop (1886, 383, 4089, 2301)
+    show ev caress_normal behind sh_credits_overlay:
+        subpixel True pos (-527, 262)
+        linear 10.0 pos (-349, 193)
     with Dissolve(3.0)
 
-    pause 6.0
+    pause 4.0
 
     hide ev
     with Dissolve(3.0)
 
-    pause 11.0
+    pause 12.0
 
     hide sh_credits
     scene black
