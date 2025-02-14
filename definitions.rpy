@@ -35,7 +35,7 @@ init:
     $ mods_with_menus["sisterhood"] = True
 
     # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
-    define sh_debug = True
+    define sh_debug = False
 
     define sisterhood_chapters = [
         (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Still in Scotland, Lilly and Akira discuss the future."), "lilly"),

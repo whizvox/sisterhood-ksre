@@ -206,6 +206,8 @@ play sound sfx_phonedial volume 0.7
 "While we both know from personal experience that that's hardly a guarantee, it at least gives me something to tell her, assuming she doesn't already know."
 "And who was it who picked her up? The nurse?"
 
+play sound sfx_phonepickup
+
 stop music fadeout 2.0
 
 ha "…H-h-hello?…"
@@ -301,8 +303,12 @@ n "{vspace=30}Can I expect Hanako to stay with someone who might rip her old wou
 
 nvl hide dissolve
 
+play sound sfx_phonedial
+
 "As my mind is still making somersaults in an attempt to digest this unexpected turn of events, my fingers are already pressing the buttons in order to call another number."
 "I don't expect Lilly to be able to help, seeing that she's set to leave Yamaku in a matter of hours, but maybe she has some advice for me."
+
+play sound sfx_phonepickup
 
 show lilly basic_smile_phone at phonebox
 with charaenter
@@ -464,7 +470,6 @@ with charamovechangefaster
 
 # TODO original dialogue, check
 "As Shizune heads further into the room, Lilly hangs back in the doorframe."
-
 hi "Misha, did you walk on ahead?"
 
 show misha hips_grin at twoleft
@@ -519,10 +524,28 @@ with chchange
 mi "H-Hicchan, what's in there?"
 "I take the object from the envelope and carefully hold it in the palm of my hand."
 
+show hanako_hairclip:
+    truecenter
+    ypos 0.7 alpha 0.0
+    easein 1.0 truecenter alpha 1.0
+with Pause(1.0)
+
+show hanako_hairclip:
+    truecenter
+    alpha 1.0
+with None
+
 play music music_sadness fadein 4.0
 
 hi "I-it's Hanako's hairclip."
 hi "I… I gave it to her when we started dating."
+
+show hanako_hairclip:
+    easeout 1.0 ypos 0.7 alpha 0.0
+with Pause(1.0)
+
+hide hanako_hairclip
+with None
 
 show misha perky_sad
 show shizu behind_sad

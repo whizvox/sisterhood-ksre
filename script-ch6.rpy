@@ -123,7 +123,7 @@ hi "Like to make out."
 "I smile."
 "I realize I still come across as fragile and shy despite my new-found resolve to try and become more confident."
 "I appreciate the fact Hisao is at least making the effort to find out what I really feel and want instead of making assumptions about me, even if they're probably largely correct."
-ha "W-Why so sudden?"
+ha "W-why so sudden?"
 hi "Circumstances, I guess. We have a big room and a big bed all to ourselves right now. The only person within a mile is Lilly, who's a pretty heavy sleeper and isn't going to barge in on us."
 hi "We don't get this kind of convenience and privacy at Yamaku. It kinda feels like a shame to waste the opportunity."
 hi "But on the other hand, I'd hate to do something you're not ready for… again."
@@ -160,7 +160,7 @@ with Fade(1, 0, 2, color="#000")
 
 "I take a deep breath, feel my way over to him, carefully straddle him, lie down, and adjust my position until I'm fairly certain my face is about on the same level as his."
 hi "Now just take your time and try to relax."
-"I rest my head on his shoulder, letting his left cheek brush against my own and wait for my heart to stop racing."
+"I rest my head on his shoulder, letting his left cheek brush against my own, and wait for my heart to stop racing."
 "…"
 "I'm not sure how long we spend lying like this. Two minutes? Five?"
 "…"
@@ -282,7 +282,7 @@ hi "Go ahead, Hanako."
 show ev funindark_hug_kiss
 with charachangeev
 
-"I do my best to relax and slip my tongue into his mouth again. This time I let his tongue touch mine, though it's mostly passive contact."
+"I do my best to relax and slip my tongue into his mouth again. This time, I let his tongue touch mine, though it's mostly passive contact."
 "Is there a right way to do this? It looks so easy on television."
 "Attempt number three. I try to stroke his tongue with mine a bit."
 "Am I doing this correctly?"
@@ -321,7 +321,7 @@ with charachangeev
 ha "I'm s-sorry, Hisao. I c-can't do it y-yet."
 "He sighs. That was to be expected."
 hi "I understand Hanako. We've already gotten really far."
-"That's the problem. We've gotten this far and now I'm blue balling you."
+"That's the problem. We've gotten this far, and now I'm blue balling you."
 "That has to be frustrating. Please don't pretend it's not. Please don't pretend to be understanding."
 hi "I appreciate you being honest about this. It's okay."
 "Except that it's not okay. I felt that bulge in your pants just now while we were grinding against each other."
@@ -397,7 +397,7 @@ play sound sfx_rustling
 scene ev funindark_naked_hand_close
 with Fade(1, 0, 2, color="#000")
 
-"I lie on my side next to him, wrap my right arm around him and sneak my left hand down to his abdomen."
+"I lie on my side next to him, wrap my right arm around him, and sneak my left hand down to his abdomen."
 "Making an attempt to get back in the mood as it was before I got cold feet, I seek out his lips with my own and start kissing him again as I gently tickle his stomach."
 "The fact that he's naked, vulnerable leaving himself in my hands, and the fact we can't see each other, gives me enough confidence to take the lead."
 "As I start caressing his thighs and hear his breathing accelerate, I suddenly think of something."

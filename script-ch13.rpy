@@ -41,7 +41,7 @@ ha "Y-yes?"
 show naomi basic_smile
 with chchange
 
-na "I like it. I took a lot of rewording, didn't it? I mean, that text doesn't look like stuff Mutou would say."
+na "I like it. It took a lot of rewording, didn't it? I mean, that text doesn't look like stuff Mutou would say."
 ha "He gets a b-bit technical at times. I tried to make it easier to understand. I had to trim a lot though."
 na "I could get you some more space if you can use it."
 ha "Oh?"
@@ -156,6 +156,9 @@ na "He's waiting for you at the school gate. I couldn't let him in to tell you i
 show naomi basic_focus_close
 with chchange
 with Pause(0.5)
+
+play sound sfx_snap
+
 show naomi basic_smile_close
 with Dissolve(0.2)
 

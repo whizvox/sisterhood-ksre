@@ -36,7 +36,7 @@ with charaenter
 
 play music music_shizune fadein 4.0
 
-mi "Class rep, or perhaps I should say former class rep; you're working really slowly."
+mi "Class rep, or perhaps I should say former class rep, you're working really slowly."
 mi "It wouldn't be fair of me to hold the delay of last week against you, considering the circumstances, but if you don't want to be remembered as the black sheep among the class representatives, you'd better make sure to have everything wrapped up before you leave."
 mi "That's not going to happen at the rate you're working now."
 
@@ -653,6 +653,9 @@ with charaexit
 "Try not to think about this too much, Lilly. If you start pondering, you'll probably lose heart."
 "I hear a quick string of beeps as I finish inputting the number and the call is made."
 "Just try to go with your instincts."
+
+play sound sfx_phonepickup
+
 kam "Good morning, Satou speaking."
 li "M-mother, good morning."
 kam "Lilly! How nice of you to call. How are you doing?"
@@ -964,7 +967,7 @@ with None
 
 "I've wanted to know for so long."
 "She must have noticed the effect this has on me, for the corners of her mouth turn slightly upwards, and what appears on her face is the most beautiful smile I've ever witnessed."
-"It's like a child's smile; sweet, innocent and sincere."
+"It's like a child's smile: sweet, innocent, and sincere."
 "As I etch that too in my memory, I find it impossible to resist smiling back."
 "I never knew she could smile like that."
 

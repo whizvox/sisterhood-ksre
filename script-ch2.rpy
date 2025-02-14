@@ -59,11 +59,11 @@ with charaexit
 "I remember running with her on the track before, during my first week here. But since she's not in my class and I have spent most of my free time in the library, the tea room, or my dorm, we haven't really talked much since then."
 "I guess if my determination to get in shape holds out, we'll get to know each other better soon enough. According to the nurse, running is pretty much a daily ritual for Emi."
 
-show emi excited_joy_gym
-with charaenter
-
 stop music fadeout 1.0
 queue music music_emi fadein 2.0
+
+show emi excited_joy_gym
+with charaenter
 
 emi "Hey there! It's been forever since I've seen you here."
 hi "Yeah, I've been making some early New Year resolutions and decided to make a serious attempt to get into shape."
@@ -101,7 +101,7 @@ hi "What exactly did he tell you?"
 show emi basic_closedgrin_gym
 with chchange
 
-"Emi strikes a pose, puts her hands in the pockets of an imaginative coat and squeezes her eyes shut while contorting her face in a grin that is as wide as it is artificial."
+"Emi strikes a pose, puts her hands in the pockets of an imaginative coat, and squeezes her eyes shut while contorting her face in a grin that is as wide as it is artificial."
 emi "I have reason to believe young Hisao is being driven by the oldest motivation known to man."
 "I don't know whether to be amused by Emi's over-the-top yet somehow frighteningly accurate imitation of the nurse or annoyed by the insinuation she's making."
 hi "I don't really see what's wrong with the desire to stay alive."
@@ -145,7 +145,7 @@ emi "So, Hisao… are the rumors I've heard true?"
 hi "What rumors would that be?"
 emi "Don't tell me you don't know. I don't keep up with gossip much, and even I have heard about it."
 "I sigh. Of course I knew."
-"After Hanako and I bared our souls to one another in the park and we were walking through town to get something to drink. Along the way, Hanako gave me what she called her first gift to me—a sweet kiss on the lips that marked the official start of our relationship."
+"After Hanako and I bared our souls to one another in the park, we were walking through town to get something to drink. Along the way, Hanako gave me what she called her first gift to me—a sweet kiss on the lips that marked the official start of our relationship."
 "But it turned out that our little public display of affection had been spotted by some fellow students, and a day later the rumor mill was working overtime spreading the news throughout the hallways of Yamaku."
 hi "What have you heard?"
 
@@ -165,7 +165,7 @@ with chchange
 
 "She giggled and gave me a wink."
 emi "I bet I'm not the first one to bother you about this, am I?"
-hi "More like the sixth. Which isn't too bad. Given the fact the entire school seems to know about it, I was prepared for more interrogations than I've received so far."
+hi "More like the sixth, which isn't too bad. Given the fact the entire school seems to know about it, I was prepared for more interrogations than I've received so far."
 
 stop ambient fadeout 2.0
 scene bg school_track
@@ -189,7 +189,7 @@ show emi basic_grin_gym
 with chchange
 
 emi "I don't think anyone except you and Lilly Satou really know her. But I bet most students know who she is. Sometimes, when you try hard enough to avoid being noticed, you end up standing out all the more."
-"We get up and take another sip. Emi lets out a cute little burp that most people would only associate with infants and we start walking towards the staff building."
+"We get up and take another sip. Emi lets out a cute little burp that most people would only associate with infants, and we start walking towards the staff building."
 
 scene bg school_gardens
 show emi basic_happy_gym
@@ -249,14 +249,10 @@ with chchangefast
 "Emi looks annoyed at this."
 emi "You think I'm shallow or an airhead or something?"
 
-show emi excited_amused_gym
-with chchangefast
-
-"Her frown quickly makes way for a mischievous grin."
-
 show emi excited_proud_gym
 with chchange
 
+"Her frown quickly makes way for a mischievous grin."
 emi "You'd better watch what you say to me. I bet I could convince the nurse to tack on a few extra laps to that daily training schedule of yours."
 hi "Bring it on. It'll only make me healthy sooner."
 

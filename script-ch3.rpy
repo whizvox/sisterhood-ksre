@@ -173,7 +173,7 @@ with charachangealways
 ta "If I may ask, Mister Nakai… Did my colleague tell you why I wanted to meet you?"
 hi "No, not really. All he said was that it was informal."
 ta "Correct. I have no reason to believe you yourself are in need of my services."
-"Services? The nurse said that this Miss Takawa gives \"additional support\" after accidents. Did he mean psychiatric help? Is this old lady a shrink?"
+"Services? The nurse said that this Miss Takawa gives “additional support” after accidents. Did he mean psychiatric help? Is this old lady a shrink?"
 "Suddenly, a realization dawns on me."
 hi "You're a counselor, aren't you? Are you by any chance Hanako's therapist?"
 
@@ -182,7 +182,7 @@ with chchange
 
 #"The old lady gives an appreciative smile at my deduction."
 ta "Well reasoned, Mister Nakai. My specialty is cognitive behavioral therapy, and Miss Ikezawa does indeed happen to be one of my clients."
-"I have to admit I have wondered about the person Hanako was seeing ever since Lilly first brought up the subject, but this old lady was not what I was expecting a therapist to look like at all."
+"I have to admit, I have wondered about the person Hanako was seeing ever since Lilly first brought up the subject, but this old lady was not what I was expecting a therapist to look like at all."
 hi "Sorry for the reaction. I've always thought of therapists as bearded guys with thick glasses."
 
 show takawa smile_close
@@ -215,7 +215,7 @@ with charachangealways
 
 ta "I merely wish to get a general impression of you. Would you be willing to tell me a few things about how your relationship with Miss Ikezawa came to be from your perspective?"
 "There are plenty of things and events that took place regarding our relationship that I don't care to talk about with this person, especially since I don't know what Hanako has told her."
-"So I just end up describing a few moments I've had with Hanako to her: like our first meeting in the library, our first game of chess during the festival and our various outings in the city."
+"So I just end up describing a few moments I've had with Hanako to her—like our first meeting in the library, our first game of chess during the festival, and our various outings in the city."
 "As I relay these events, Miss Takawa listens to me without saying a single word."
 
 show takawa smile_close
@@ -272,7 +272,7 @@ ta "What is it that drew you to Miss Ikezawa? Why is it that you are attracted t
 "That's kind of a personal question. Fortunately, it's something I've often thought over myself, so I don't have difficulty coming up with an answer."
 hi "Multiple things, I guess. We both enjoy reading and playing games. We both like spending time away from the bustle of the rest of the world."
 hi "She's also a really sweet girl, and once you get used to the scars, she's actually pretty attractive, too."
-hi "Also… I can't really describe it very well but I feel some kind of kinship with her. Like she's a kindred spirit. It's hard to explain."
+hi "Also… I can't really describe it very well, but I feel some kind of kinship with her. Like she's a kindred spirit. It's hard to explain."
 hi "We figured we could both use support from someone, and we made a promise to be that someone for each other during tough times."
 
 show takawa happy_close
@@ -295,14 +295,18 @@ with charamove
 "She rises as well and walks me to the door before giving a polite bow as a farewell."
 ta "I hope Miss Satou has had a pleasant trip abroad. Take care of yourself, Mister Nakai."
 
-hide takawa
-with charaexit
+play sound sfx_doorclose
+
+scene bg school_hallway4
+with locationchange
 
 "After a polite greeting, I leave the secluded “office” and hurry back to the exit of the staff building."
-"There are still plenty of things to do before tonight."
 
 stop music fadeout 2.0
+
+"There are still plenty of things to do before tonight."
+
 scene black
-with Dissolve(2.0)
+with delayblinds
 
 return

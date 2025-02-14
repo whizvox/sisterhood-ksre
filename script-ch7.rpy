@@ -148,7 +148,7 @@ with charachangealways
 "Natsume and Naomi remind me a bit of less extreme versions of Shizune and Misha."
 "Natsume wears glasses and has a stern appearance, but isn't as bossy or forceful as Shizune."
 "The most striking part of Naomi's appearance is her hair which, while not dyed like Misha's, is bleached to a distinct light blonde color."
-"Her personality is a bit like Misha's as well; up-beat, loud and a bit hyper. Although Naomi's volume control button doesn't seem to be permanently stuck on the max setting."
+"Her personality is a bit like Misha's as well: up-beat, loud, and a bit hyper. Although Naomi's volume control button doesn't seem to be permanently stuck on the max setting."
 "Also, like Shizune and Misha, the two seem together constantly."
 
 hide naomi
@@ -726,7 +726,7 @@ scene bg school_dormlilly
 show lilly basic_listen_close at twoleft:
     zoom 0.9
 show hisao basic_neutral_uni_close at tworight
-with locationskip
+with shorttimeskip
 
 "Barely breathing, I wait as Lilly runs her slender fingers across the last page of the newspaper's Braille edition."
 "Since she appears to be getting close to the end, her fingers must be near the staff section right now."
@@ -982,6 +982,6 @@ hi "I'm all yours, Hanako."
 
 stop music fadeout 3.0
 scene black
-with Dissolve(3.0)
+with Dissolve(2.0)
 
 return

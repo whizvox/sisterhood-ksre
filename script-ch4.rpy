@@ -5,7 +5,7 @@ $ set_window_tint(TINT_HISAO)
 
 scene bg school_gate_ss
 show hanako emb_smile
-with Dissolve(2.0)
+with delayblinds
 
 play music music_pearly fadein 4.0
 
@@ -54,14 +54,15 @@ with charachangealways
 stop sound fadeout 0.5
 
 "The car door opens, and Akira steps out, giving an enthusiastic wave."
+
+show hanako basic_bashful
+with chchange
+
 "I have no idea how much energy this woman has, but an intercontinental flight and a ride from the airport to Yamaku seem insufficient to diminish it."
 "Lilly, on the other hand, looks a little worse for wear."
 
 stop music fadeout 1.0
 queue music music_ease fadein 4.0
-
-show hanako basic_bashful
-with chchange
 
 ha "Lilly!"
 
@@ -147,8 +148,10 @@ hi "Aren't you at least a little bit tired after travelling for so long?"
 aki "Nope. When I was born, I hogged all the genetic jet-lag immunity I could get."
 aki "As you'll find out soon, there wasn't anything left for Lilly afterwards."
 
-show lilly basic_displeased_cas at twoleft
+show lilly basic_displeased_cas:
+    xalign 0.4
 with charaenter
+
 show lilly basic_weaksmile_cas:
     xalign 0.6
 with Dissolvemove(1.0)
@@ -207,7 +210,7 @@ li "I needed that."
 "As Lilly puts her second cup of tea down, she lets out a satisfied sigh. She still looks a bit tired, but the caffeine seems to have taken the edge off."
 "None of us have said a lot since we reached Lilly's room and Hanako brought in a pot of fragrant tea, though it doesn't really matter much. Lilly's presence always seems to turn otherwise uncomfortable silences comfortable."
 hi "I suppose what I originally planned to talk about was the news that the two of us are dating now, but with that cat already out of the bag, maybe we could hear some tales from Scotland instead."
-"Lilly reaches down, takes a piece of candy from the box we bought and brings it to her lips as if to further justify leaving the talking to us."
+"Lilly reaches down, takes a piece of candy from the box we bought, and brings it to her lips as if to further justify leaving the talking to us."
 
 show lilly basic_cheerful_cas
 with chchange
@@ -323,12 +326,12 @@ with chchange
 
 "Her expression clouds for a moment."
 li "Which means that if we go there… we will probably end up cleaning the place up for them."
-"I share a brief look with Hanako. Having to do some cleaning seems a small price to pay for a cheap vacation, and spending that vacation with Hanako and Lilly only makes the prospect even more attractive."
-hi "I'd love to go. I've never been to Hokkaido before. How about you, Hanako?"
 
 show hanako emb_emb_clip
 with chchange
 
+"I share a brief look with Hanako. Having to do some cleaning seems a small price to pay for a cheap vacation, and spending that vacation with Hanako and Lilly only makes the prospect even more attractive."
+hi "I'd love to go. I've never been to Hokkaido before. How about you, Hanako?"
 "Hanako beams."
 ha "Me neither. I'd really like to go, too."
 
