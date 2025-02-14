@@ -234,6 +234,10 @@ init 1:
     {image=mods/sisterhood/gui/credits/section_underline.png}
     DIZZEN
     \n\n
+    {b}Additional Art{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    nijo
+    \n\n
     {b}Sprite Edits{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
