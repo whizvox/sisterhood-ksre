@@ -1,5 +1,6 @@
 default persistent.sh_slowtransitions = True
 default persistent.sh_windowtint = True
+default persistent.sh_show_disclaimer = True
 
 init python:
     sh_path = "mods/sisterhood"

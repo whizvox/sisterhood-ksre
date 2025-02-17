@@ -1,3 +1,15 @@
+init python:
+    def sh_should_show_disclaimer():
+        return persistent.sh_show_disclaimer and not renpy.seen_label("a4_hanako.adulthood")
+
+    def sh_update_sprite_transitions():
+        if persistent.sh_slowtransitions:
+            store.chchange = store.charachangealways
+            store.chchangefast = Dissolve(0.2)
+        else:
+            store.chchange = store.charachange
+            store.chchangefast = store.charachangefast
+
 screen sisterhood():
     tag menu
     style_prefix "pxt"
@@ -17,7 +29,7 @@ screen sisterhood():
             has vbox
 
             vbox:
-                textbutton _("Start") action If(main_menu, true=Start("sisterhood_start"), false=None)
+                textbutton _("Start") action If(main_menu, true=If(sh_should_show_disclaimer(), true=ShowMenu("sisterhood_disclaimer"), false=Start("sisterhood_start")), false=None)
 
             vbox:
                 textbutton _("Options") action ShowMenu("sisterhood_options")
@@ -37,14 +49,31 @@ screen sisterhood():
 
     key "game_menu" action ShowMenu("mods")
 
-init python:
-    def sh_update_sprite_transitions():
-        if persistent.sh_slowtransitions:
-            store.chchange = store.charachangealways
-            store.chchangefast = Dissolve(0.2)
-        else:
-            store.chchange = store.charachange
-            store.chchangefast = store.charachangefast
+screen sisterhood_disclaimer():
+    tag menu
+    style_prefix "pxt"
+    if main_menu:
+        add "main_menu_bg"
+    add "blind"
+
+    frame:
+        style_suffix "interface"
+        xsize 1200
+        has vbox
+
+        text _("{b}Attention!{/b}\n\nSisterhood is meant to be experienced after reading through Hanako's good ending. Do you wish to proceed?\n")
+
+        frame:
+            xalign 0.5
+            has hbox
+
+            textbutton _("No") action ShowMenu("sisterhood"):
+                right_padding 36
+
+            textbutton _("Yes") action [
+                SetVariable("persistent.sh_show_disclaimer", False),
+                Start("sisterhood_start")
+            ]
 
 screen sisterhood_options():
     tag menu
@@ -94,7 +123,7 @@ screen sisterhood_options():
             action ShowMenu("sisterhood")
 
     key "game_menu" action ShowMenu("sisterhood")
-    
+
 
 screen sisterhood_chapter_select():
     tag menu
@@ -179,7 +208,7 @@ screen sisterhood_about():
 
             vbox:
                 text _("The first act of a visual novel adaptation of Guest Poster's fan fiction, featuring custom artwork and music.\n")
-                text _("Version: 1.0\n")
+                text _("Version: 1.0.1\n")
                 text _("To learn about future updates or submit a bug report, check out the website:")
                 textbutton _("https://sisterhood.whizvox.me") action OpenURL("https://sisterhood.whizvox.me"):
                     style "gui_exturl"

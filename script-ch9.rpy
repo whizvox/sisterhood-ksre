@@ -14,6 +14,7 @@ with Pause(5)
 hide steam2
 with Dissolve(2.0)
 
+nvl clear
 nvl show dissolve
 
 n "As I step out of the bath, I can't help but think that this is like one of those romance novels where a guy and a girl go out, have dinner and a date, and then spend the night at a hotel consummating the relationship."
@@ -203,6 +204,7 @@ with charaexit
 
 scene ev hotel_onhanako_large:
     crop (302, 700, 1920, 1080)
+show black behind ev
 with mediumflash
 
 "I feel my hips being pressed down as Hisao straddles me."
@@ -306,6 +308,7 @@ ha "Can I r-rub you in first?"
 
 scene ev hotel_onhisao_large:
     crop (1046, 0, 1920, 1080)
+show black behind ev
 with mediumflash
 
 "For a moment I consider putting my bathrobe back on but then decide that doing so would feel really uncomfortable with my entire body covered in lotion."
@@ -322,7 +325,6 @@ hi "H-hey!"
 
 show ev:
     crop (0, 716, 1920, 1080)
-show black behind ev # fix transparent bg showing up if H-scenes are disabled
 with Dissolve(1.0)
 
 hi "That feels really nice, Hanako."
@@ -440,6 +442,7 @@ ha "…p-please?"
 
 scene ev hotel_thigh_large:
     crop (1618, 0, 1920, 1080)
+show black behind ev
 with Dissolve(1.0)
 
 "I carefully close my legs, then cross my feet and squeeze my thighs together as tightly as I can."
@@ -468,7 +471,7 @@ hi "{cps=20}S-slow down… hah… slow down a bit…{/cps}"
 "I can tell his heart's doing fine right now. From the look of ecstasy on his face, I can tell he's feeling really good and trying his hardest to hold back."
 "I consider slowing down, but then speed up the movement of my hips and try to get as much stimulation for myself out of it as I can."
 hi "Ugh… H-H-Hanako… W-what…"
-"For a second it seems like he's going to protest, but then he gives in and starts thrusting his hips himself until reaches his climax in a frenzy of frantic grinding."
+"For a second, it seems like he's going to protest, but then he gives in and starts thrusting until he reaches his climax in a frenzy of frantic grinding."
 
 scene ev hotel_thigh_climax
 with Fade(1.0, 0, 0.3, color="#FFF")
