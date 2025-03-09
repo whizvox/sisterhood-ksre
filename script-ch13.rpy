@@ -424,7 +424,7 @@ ha "{i}No!{/i}"
 "{i}Why can't I move? Somebody help him! Please!{/i}"
 "His eyes close again. The pain in my chest grows so intense that tears are forced out of my eyes, joining the raindrops on my cheeks."
 "Am I having a heart attack as well?"
-om "Young lady, is your friend alright? I'm sorry I didn't see you two in time. I was in a hurry. That blasted rain."
+"Old man" "Young lady, is your friend alright? I'm sorry I didn't see you two in time. I was in a hurry. That blasted rain."
 
 play sound sfx_heartslow
 
@@ -445,7 +445,7 @@ with Dissolve(1.0)
 
 "Like I lost Father. And Mother."
 "I'm breathing in and out like crazy, yet it feels like all oxygen has suddenly vanished from the air."
-om "Young lady, your friend looks like he's hurt."
+"Old man" "Young lady, your friend looks like he's hurt."
 
 play sound sfx_heartslow
 
@@ -465,7 +465,7 @@ with Dissolve(1.0)
 "{i}Stop!{/i}"
 "{i}Make this stop!{/i}"
 "{i}Help me!{/i}"
-om "Young lady, I think we should call an ambulance."
+"Old man" "Young lady, I think we should call an ambulance."
 
 queue sound [ sfx_heartfast, sfx_heartfast ]
 
@@ -476,7 +476,7 @@ with Dissolve(1.0)
 
 "I still can't move."
 "I can't breathe, but I can't faint either as if some twisted deity has decided it's more amusing to keep me fully aware as the love of my life is dying in front of me and is keeping me conscious for the sheer cruel fun of it."
-om "Young lady?"
+"Old man" "Young lady?"
 
 queue sound [ sfx_heartfast, sfx_heartfast, sfx_heartfast ]
 
@@ -485,9 +485,9 @@ show ev:
 with Dissolve(1.0)
 
 "{i}I can't breathe.{/i}"
-om "Young lady, can you hear me?"
+"Old man" "Young lady, can you hear me?"
 "{i}Why can't I breathe?{/i}"
-om "{i}Young lady!{/i}"
+"Old man" "{i}Young lady!{/i}"
 
 show black:
     alpha 1.0

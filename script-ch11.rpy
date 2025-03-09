@@ -35,7 +35,7 @@ with locationskip
 
 play music music_waltz fadein 2.0 volume 0.5
 
-re "Welcome to our humble establishment. Do you wish to have a table for two?"
+"Receptionist" "Welcome to our humble establishment. Do you wish to have a table for two?"
 "The young man at the door makes a deep bow before noticing Lilly's cane and fidgeting a bit, unsure on how to proceed."
 ha "I arranged the reservation in your name."
 "I keep my voice barely above a whisper, but Lilly replies with a subtle nod and bows to the man who addressed us."
@@ -44,9 +44,9 @@ show lilly basic_smile_cas_close at twoleft
 with charaenter
 
 li "Good evening. My name is Lilly Satou. I believe a reservation was made in my name."
-re "Satou? Ah yes, an e-mail was sent specifically requesting a table in the corner."
+"Receptionist" "Satou? Ah yes, an e-mail was sent specifically requesting a table in the corner."
 li "…That's correct. Would that be a problem?"
-re "Not at all. Please walk this way."
+"Receptionist" "Not at all. Please walk this way."
 "He makes a motion to follow him, then realizes again that Lilly can't see him, and I can see him ponder whether he should take Lilly's arm or not."
 
 show lilly basic_planned_cas_close
@@ -54,7 +54,7 @@ with chchange
 
 "Lilly seems to pick up on the man's dilemma as she gives him a reassuring smile."
 li "Please lead the way. My friend will assist me."
-re "As you wish. Please follow me."
+"Receptionist" "As you wish. Please follow me."
 
 scene bg fanres_table
 with locationchange

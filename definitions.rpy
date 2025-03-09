@@ -36,7 +36,7 @@ init:
     $ mods_with_menus["sisterhood"] = True
 
     # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
-    define sh_debug = False
+    define sh_debug = True
 
     define sisterhood_chapters = [
         (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Still in Scotland, Lilly and Akira discuss the future."), "lilly"),
@@ -108,18 +108,9 @@ init:
     define na = Character(_("Naomi"), who_color="#ad4545")
     define nt = Character(_("Natsume"), who_color="#a57d33")
     define ka = Character(_("Karla"), who_color="#dfc46d")
-
-    define schar = Character(who_color="#FFFFFF") # small-role character, given white character name
-    define re = Character(_("Receptionist"), kind=schar)
-    define om = Character(_("Old Man"), kind=schar)
-    define dc = Character(_("Doctor"), kind=schar)
-    define mom = Character(_("Mom"), kind=schar)
-    define dad = Character(_("Dad"), kind=schar)
     define kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
 
-    define nchar = Character(kind=n, who_suffix=" ", what_prefix=_("“"), what_suffix=_("”"), screen="nvl_sh") # NVL character
-    define nhi = Character(_("Hisao"), kind=nchar, who_color="#629276")
-    define nha = Character(_("Hanako"), kind=nchar, who_color="#897CBF")
+    define dc = Character(_("Doctor"), who_color="#FFFFFF")
 
     # unknown characters
-    define ta_ = Character(_("Old woman"), who_color="#f3ccff")
+    define ta_ = Character(_("Old woman"), kind=ta)

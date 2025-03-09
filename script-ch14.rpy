@@ -39,7 +39,7 @@ with openeye
 "I try to force my eyelids open again."
 "This time I see a few silhouettes against the white background."
 "I hear voices, but I can't focus enough to make out the conversation beyond a few loose words."
-"???" "…stable…narcosis…worn off yet…rest…tomorrow…"
+mystery "…stable…narcosis…worn off yet…rest…tomorrow…"
 "What's going on?"
 
 stop ambient fadeout 2.0

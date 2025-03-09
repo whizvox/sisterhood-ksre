@@ -76,7 +76,7 @@ with chchange
 li "The last hallway threw me off a bit. I might have lost if you hadn't called out to me."
 li "Thanks to you, I was able to earn us both a free drink. Apparently they sell some good tea down here."
 hi "I don't think the doctors will be thrilled with me drinking caffeine right now."
-"???" "I feared that as well, Mister Nakai, so I bought you some fresh orange juice instead. It's the healthiest drink they had."
+mystery "I feared that as well, Mister Nakai, so I bought you some fresh orange juice instead. It's the healthiest drink they had."
 
 stop music fadeout 2.0
 
@@ -451,9 +451,9 @@ dc "I was merely waiting for… Ah… Good morning."
 "I turn around and watch two more people enter the room."
 hi "Mom? Dad?"
 "I just sit there with my mouth open. I don't recall them saying they'd be here to pick me up when they visited two days ago."
-dad "Hello, son. We're not late, are we?"
+"Dad" "Hello, son. We're not late, are we?"
 dc "No, you're just in time. I've only called in your son a minute ago."
-dad "I apologize. We live rather far away from here."
+"Dad" "I apologize. We live rather far away from here."
 "My parents sit down next to me, and the doctor starts off with the predictable talk."
 "That collision could have ended a lot worse than it did. I was lucky an ambulance was nearby. Of course I am warned to be more careful in the future."
 "It turns out this hospital has a special arrangement with Yamaku. The ambulance personnel got instant access to my medical history by scanning in my student ID. Good thing I was carrying it and I was still wearing my school uniform."
@@ -472,13 +472,13 @@ scene bg hosp_hallway
 with locationchange
 
 "As we leave the doctor's office, my father addresses me."
-dad "We were expecting you to be a little bit more pleasantly surprised. We had to get up pretty early to make it here in time."
+"Dad" "We were expecting you to be a little bit more pleasantly surprised. We had to get up pretty early to make it here in time."
 hi "Sorry, I really do appreciate you coming here."
-dad "You were so tired two days ago we haven't really been able to talk much."
+"Dad" "You were so tired two days ago we haven't really been able to talk much."
 "I was partially pretending to be more tired than I really was. That may have been rude, but I was too distracted by the matter with Hanako to be very sociable with them, and I didn't want them to worry even more about me."
-dad "Hopefully we can catch up a bit in the upcoming days. We barely know what's going on in your life anymore."
+"Dad" "Hopefully we can catch up a bit in the upcoming days. We barely know what's going on in your life anymore."
 hi "Huh? I don't understand."
-dad "We were planning to take you with us and let you rest at home for a few days."
+"Dad" "We were planning to take you with us and let you rest at home for a few days."
 
 stop music fadeout 1.0
 
@@ -489,12 +489,12 @@ with locationskip
 
 play music music_pearly fadein 2.0
 
-mom "I'm sorry, Hisao. We had no idea one of your friends was going to move away in the upcoming days. You should have let us know."
+"Mom" "I'm sorry, Hisao. We had no idea one of your friends was going to move away in the upcoming days. You should have let us know."
 hi "It's… okay, Mom."
 "We've arrived at the grounds of Yamaku and are now wandering along the path to the boys' dormitories."
-dad "I was already surprised. At first you hated the idea of going here, and now you just couldn't wait to get back."
+"Dad" "I was already surprised. At first you hated the idea of going here, and now you just couldn't wait to get back."
 hi "I guess I found my place here, Dad."
-dad "You sure did. What's in that plastic bag you're carrying with you?"
+"Dad" "You sure did. What's in that plastic bag you're carrying with you?"
 hi "Ah, nothing important."
 "As we reach the dorm entrance, we're greeted by an ear-shattering “HICCHAN! WELCOME BACK!” that could only originate from one person in Japan."
 
@@ -506,7 +506,7 @@ show lilly basic_cheerful:
 with charaenter
 
 "In front of the dorm are Shizune, Misha and Lilly. Shizune cheerfully makes a small saluting gesture, Misha excitedly jumps up and down and Lilly calmly stands next to them."
-mom "Are these your friends, Hicchan?"
+"Mom" "Are these your friends, Hicchan?"
 mi "Are these your parents, Hicchan?"
 hi "Erm… Mom, Dad. These are indeed my friends."
 hi "The person in the middle is Shizune Hakamichi, our class representative and student council president."
