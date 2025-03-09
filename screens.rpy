@@ -158,14 +158,11 @@ screen sisterhood_chapter_select():
                         if renpy.seen_label(chapter[1]) or sh_debug:
                             textbutton chapter[0]:
                                 left_margin 30
-                                action If(sh_debug, true=[
-                                    SetVariable("current_scene", chapter[1]),
-                                    Start(chapter[1])
-                                ], false=[
+                                action [
                                     SetVariable("_current_replay", chapter[1]),
                                     SetVariable("current_scene", chapter[1]),
-                                    Start("replay_start")
-                                ])
+                                    Start("sisterhood_replay_start")
+                                ]
                                 hovered SetScreenVariable("current_desc", chapter[2])
                                 unhovered SetScreenVariable("current_desc", None)
                         else:
@@ -208,7 +205,7 @@ screen sisterhood_about():
 
             vbox:
                 text _("The first act of a visual novel adaptation of Guest Poster's fan fiction, featuring custom artwork and music.\n")
-                text _("Version: 1.0.1\n")
+                text _("Version: 2.0-dev\n")
                 text _("To learn about future updates or submit a bug report, check out the website:")
                 textbutton _("https://sisterhood.whizvox.me") action OpenURL("https://sisterhood.whizvox.me"):
                     style "gui_exturl"

@@ -1,3 +1,12 @@
+label sisterhood_replay_start:
+    if sh_debug:
+        $ _in_replay = True
+
+    stop music fadeout 1.0
+
+    $ renpy.transition(dissolve)
+    call expression _current_replay
+
 label sisterhood_start:
     stop music fadeout 1.0
     
@@ -5,24 +14,24 @@ label sisterhood_start:
     with config.game_main_transition
     pause 2.0
 
-    call sisterhood_ch1
-    call sisterhood_ch2
-    call sisterhood_ch3
-    call sisterhood_ch4
-    call sisterhood_ch5
-    call sisterhood_ch0
-    call sisterhood_ch6
-    call sisterhood_ch7
-    call sisterhood_ch8
-    call sisterhood_ch9
-    call sisterhood_ch10
-    call sisterhood_ch11
-    call sisterhood_ch12
-    call sisterhood_ch13
-    call sisterhood_ch14
-    call sisterhood_ch15
-    call sisterhood_ch16
-    call sisterhood_ch17
+    call sh_ch1
+    call sh_ch2
+    call sh_ch3
+    call sh_ch4
+    call sh_ch5
+    call sh_ch0
+    call sh_ch6
+    call sh_ch7
+    call sh_ch8
+    call sh_ch9
+    call sh_ch10
+    call sh_ch11
+    call sh_ch12
+    call sh_ch13
+    call sh_ch14
+    call sh_ch15
+    call sh_ch16
+    call sh_ch17
     call sisterhood_credits
     call sisterhood_postcredits
     #call sisterhood_ch17alt
