@@ -27,8 +27,9 @@ init python:
         return (tint_image(f"{sh_path}/gui/phonebox.png"), 1.0)
 
 init 1 python:
-    for chapter in sisterhood_chapters:
-        scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
+    for act in sisterhood_chapters:
+        for chapter in act[1]:
+            scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
     _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
 
 init:
@@ -39,39 +40,43 @@ init:
     define sh_debug = True
 
     define sisterhood_chapters = [
-        (_("Chapter 1"), "sh_ch1.s1", _("Still in Scotland, Lilly and Akira discuss the future."), "lilly"),
-        (_("Chapter 2"), "sh_ch2.s1", _("Hisao recounts his relationship with Hanako as he and Emi run on the track."), "hisao"),
-        (_("Chapter 3"), "sh_ch3.s1", _("Hisao is introduced to an unusual member of Yamaku's staff."), "hisao"),
-        (_("Chapter 4"), "sh_ch4.s1", _("Hisao and Hanako welcome the Satou sisters back to Japan."), "hisao"),
-        (_("Chapter 4.1"), "sh_ch4.s2", _("Hisao and Hanako are invited to the Satou's summer home."), "hisao"),
-        (_("Chapter 5"), "sh_ch5.s1", _("Hisao, Hanako, and Lilly take a trip to Hokkaido."), "hisao"),
-        (_("Chapter 0"), "sh_ch0.s1", _("Hanako recounts a difficult conversation with Miss Yumi."), "hanako"),
-        (_("Chapter 6"), "sh_ch6.s1", _("Hanako and Hisao spend the night in Hokkaido together."), "hanako"),
-        (_("Chapter 7"), "sh_ch7.s1", _("Hanako becomes acquainted with her classroom neighbors."), "hanako"),
-        (_("Chapter 7.1"), "sh_ch7.s2", _("Hanako deliberates working in the newspaper club."), "hanako"),
-        (_("Chapter 7.2"), "sh_ch7.s3", _("Hanako helps with a favor from the newspaper club."), "hanako"),
-        (_("Chapter 8"), "sh_ch8.s1", _("Hanako and Hisao go on a date at the local arcade."), "hanako"),
-        (_("Chapter 9"), "sh_ch9.s1", _("Hanako and Hisao spend an intimate night in a hotel together."), "hanako"),
-        (_("Chapter 10"), "sh_ch10.s1", _("Hisao and Hanako have trouble hiding their sex life."), "hisao"),
-        (_("Chapter 10.1"), "sh_ch10.s2", _("Hisao and Hanako learn of Akira's leave and Lilly's summons."), "hisao"),
-        (_("Chapter 11"), "sh_ch11.s1", _("Hanako and Lilly have a memorable night at a fancy restaurant."), "hanako"),
-        (_("Chapter 12"), "sh_ch11.s1", _("Akira pressures Lilly to make a decision."), "lilly"),
-        (_("Chapter 12.1"), "sh_ch12.s2", _("Lilly makes a difficult decision."), "lilly"),
-        (_("Chapter 13"), "sh_ch13.s1", _("Hanako is distracted by an airheaded Naomi."), "hanako"),
-        (_("Chapter 13.1"), "sh_ch13.s2", _("Hanako and Hisao head to town to prepare for Lilly's going-away party."), "hanako"),
-        (_("Chapter 14"), "sh_ch14.s1", _("Hisao wakes up to an unfamiliar yet familiar ceiling."), "hisao"),
-        (_("Chapter 14.1"), "sh_ch14.s2", _("The student council and Lilly visit Hisao in the hospital."), "hisao"),
-        (_("Chapter 15"), "sh_ch15.s1", _("Hisao makes an effort to reconcile with Hanako."), "hisao"),
-        (_("Chapter 15.1"), "sh_ch15.s2", _("Hisao is discharged from the hospital."), "hisao"),
-        (_("Chapter 16"), "sh_ch16.s1", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
-        (_("Chapter 16.1"), "sh_ch16.s2", _("Hisao takes Hanako to meet his parents."), "hanako"),
-        (_("Chapter 17"), "sh_ch17.s1", _("Lilly plays an all-too-familiar game with the student council."), "lilly"),
-        (_("Chapter 17.1"), "sh_ch17.s2", _("Lilly and Hanako reach out to each other."), "lilly"),
-        (_("Chapter 17.2"), "sh_ch17.s3", _("Lilly and Hanako share a special connection with each other."), "lilly"),
-        (_("Chapter 17 Alt"), "sh_ch17alt.s1", _("Hisao keeps Kenji busy on the track."), "hisao"),
-        (_("Chapter 17 Alt.1"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
-        (_("Chapter 18"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
-        (_("Chapter 18.1"), "sh_ch18.s2", _("The Satou sisters invite Hanako and Hisao to visit Scotland."), "hanako")
+        (_("Act 1"), [
+            (_("Chapter 1"), "sh_ch1.s1", _("Still in Scotland, Lilly and Akira discuss the future."), "lilly"),
+            (_("Chapter 2"), "sh_ch2.s1", _("Hisao recounts his relationship with Hanako as he and Emi run on the track."), "hisao"),
+            (_("Chapter 3"), "sh_ch3.s1", _("Hisao is introduced to an unusual member of Yamaku's staff."), "hisao"),
+            (_("Chapter 4"), "sh_ch4.s1", _("Hisao and Hanako welcome the Satou sisters back to Japan."), "hisao"),
+            (_("Chapter 4.1"), "sh_ch4.s2", _("Hisao and Hanako are invited to the Satou's summer home."), "hisao"),
+            (_("Chapter 5"), "sh_ch5.s1", _("Hisao, Hanako, and Lilly take a trip to Hokkaido."), "hisao"),
+            (_("Chapter 0"), "sh_ch0.s1", _("Hanako recounts a difficult conversation with Miss Yumi."), "hanako"),
+            (_("Chapter 6"), "sh_ch6.s1", _("Hanako and Hisao spend the night in Hokkaido together."), "hanako"),
+            (_("Chapter 7"), "sh_ch7.s1", _("Hanako becomes acquainted with her classroom neighbors."), "hanako"),
+            (_("Chapter 7.1"), "sh_ch7.s2", _("Hanako deliberates working in the newspaper club."), "hanako"),
+            (_("Chapter 7.2"), "sh_ch7.s3", _("Hanako helps with a favor from the newspaper club."), "hanako"),
+            (_("Chapter 8"), "sh_ch8.s1", _("Hanako and Hisao go on a date at the local arcade."), "hanako"),
+            (_("Chapter 9"), "sh_ch9.s1", _("Hanako and Hisao spend an intimate night in a hotel together."), "hanako"),
+            (_("Chapter 10"), "sh_ch10.s1", _("Hisao and Hanako have trouble hiding their sex life."), "hisao"),
+            (_("Chapter 10.1"), "sh_ch10.s2", _("Hisao and Hanako learn of Akira's leave and Lilly's summons."), "hisao"),
+            (_("Chapter 11"), "sh_ch11.s1", _("Hanako and Lilly have a memorable night at a fancy restaurant."), "hanako"),
+            (_("Chapter 12"), "sh_ch11.s1", _("Akira learns of Lilly's decision."), "lilly"),
+            (_("Chapter 12.1"), "sh_ch12.s2", _("Lilly announces her leave to Hisao and Hanako."), "lilly"),
+            (_("Chapter 13"), "sh_ch13.s1", _("Hanako is distracted by an airheaded Naomi."), "hanako"),
+            (_("Chapter 13.1"), "sh_ch13.s2", _("Hanako and Hisao head to town to prepare for Lilly's going-away party."), "hanako"),
+            (_("Chapter 14"), "sh_ch14.s1", _("Hisao wakes up to an unfamiliar yet familiar ceiling."), "hisao"),
+            (_("Chapter 14.1"), "sh_ch14.s2", _("The student council and Lilly visit Hisao in the hospital."), "hisao"),
+            (_("Chapter 15"), "sh_ch15.s1", _("Hisao makes an effort to reconcile with Hanako."), "hisao"),
+            (_("Chapter 15.1"), "sh_ch15.s2", _("Hisao is discharged from the hospital."), "hisao"),
+            (_("Chapter 16"), "sh_ch16.s1", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
+            (_("Chapter 16.1"), "sh_ch16.s2", _("Hisao takes Hanako to meet his parents."), "hanako"),
+            (_("Chapter 17"), "sh_ch17.s1", _("Lilly plays an all-too-familiar game with the student council."), "lilly"),
+            (_("Chapter 17.1"), "sh_ch17.s2", _("Lilly and Hanako reach out to each other."), "lilly"),
+            (_("Chapter 17.2"), "sh_ch17.s3", _("Lilly and Hanako share a special connection with each other."), "lilly")
+        ]),
+        (_("Act 2"), [
+            (_("Chapter 17 Alt"), "sh_ch17alt.s1", _("Hisao keeps Kenji busy on the track."), "hisao"),
+            (_("Chapter 17 Alt.1"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
+            (_("Chapter 18"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
+            (_("Chapter 18.1"), "sh_ch18.s2", _("The Satou sisters invite Hanako and Hisao to visit Scotland."), "hanako")
+        ])
     ]
 
     # TRANSFORMS

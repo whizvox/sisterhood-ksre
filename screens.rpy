@@ -125,7 +125,7 @@ screen sisterhood_options():
     key "game_menu" action ShowMenu("sisterhood")
 
 
-screen sisterhood_chapter_select():
+screen sisterhood_chapter_select(page=0):
     tag menu
     style_prefix "library"
     add "main_menu_bg" at colorblind(persistent.colorblind)
@@ -145,16 +145,29 @@ screen sisterhood_chapter_select():
         null height 8
 
         frame:
+            has hbox
+            spacing 40
+
+            for i, act in enumerate(sisterhood_chapters):
+                textbutton act[0]:
+                    if page == i:
+                        text_insensitive_color "#000"
+                    else:
+                        action ShowMenu("sisterhood_chapter_select", i)
+        
+        null height 5
+
+        frame:
             left_margin 8
             has hbox
 
-            viewport id "sisterhood_chapter_select":
+            viewport id "sisterhood_chapter_select_" + str(page):
                 mousewheel True
                 draggable True
                 xysize 705, 500
 
                 vbox:
-                    for chapter in sisterhood_chapters:
+                    for chapter in sisterhood_chapters[page][1]:
                         if renpy.seen_label(chapter[1]) or sh_debug:
                             textbutton chapter[0]:
                                 left_margin 30
@@ -168,12 +181,17 @@ screen sisterhood_chapter_select():
                         else:
                             textbutton _("???") action None:
                                 left_margin 30
+
             null width 25
-            vbar value YScrollValue("sisterhood_chapter_select") style "vslider"
+
+            vbar value YScrollValue("sisterhood_chapter_select_" + str(page)) style "vslider"
+
         null height 16
+
         textbutton _("Return"):
             style "return_button"
             action ShowMenu("sisterhood")
+
     if current_desc:
         text current_desc:
             color "#fff"
