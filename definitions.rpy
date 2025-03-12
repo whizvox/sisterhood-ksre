@@ -72,10 +72,10 @@ init:
             (_("Chapter 17.2"), "sh_ch17.s3", _("Lilly and Hanako share a special connection with each other."), "lilly")
         ]),
         (_("Act 2"), [
-            (_("Chapter 17 Alt"), "sh_ch17alt.s1", _("Hisao keeps Kenji busy on the track."), "hisao"),
-            (_("Chapter 17 Alt.1"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
-            (_("Chapter 18"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
-            (_("Chapter 18.1"), "sh_ch18.s2", _("The Satou sisters invite Hanako and Hisao to visit Scotland."), "hanako")
+            (_("Operation Distraction"), "sh_ch17alt.s1", _("Hisao keeps Kenji busy on the track."), "hisao"),
+            (_("Convergence"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
+            (_("A Second Sister"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
+            (_("Invitation"), "sh_ch18.s2", _("The Satou sisters invite Hanako and Hisao to visit Scotland."), "hanako")
         ])
     ]
 

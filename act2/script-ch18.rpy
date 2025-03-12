@@ -381,26 +381,34 @@ label sh_ch18:
 
         $ set_window_tint(TINT_HANAKO)
 
-        queue music music_ease fadein 4.0
         scene bg school_dormlilly
+        show akira basic_smile:
+            xalign 0.75
+        show lilly basic_cheerful
+        show hisao basic_grin_uni:
+            xalign 0.15
+        with locationskip
 
-        show akira basic_smile at tworight
-        show lilly basic_smile
-        show hisao basic_smile_uni at twoleft
+        queue music music_ease fadein 4.0
 
         aki "A first aid course?"
 
         nvl clear
         nvl show dissolve
 
-        n "{vspace=60}We've spent the last two hours hanging out in Lilly's room, eating the cake and sweets we obtained from the store in town this afternoon."
+        n "We've spent the last two hours hanging out in Lilly's room, eating the cake and sweets we obtained from the store in town this afternoon."
         n "{vspace=60}Despite it being a supposed farewell party, the mood has been surprisingly relaxed. Akira and Lilly spent most of the time exchanging cheerful banter with Hisao and each other."
-        n "{vspace=60}I, for my part, have been content to just sit and listen to the rest, treasuring the fact that even though Hisao, Lilly and I went through a week from hell, we were able to reconcile and we are able to sit here and spend time together once more, our bonds not just repaired but actually strengthened."
-        n "{vspace=60}Due to the fact that just a week ago I had been convinced that I'd never be able to face Lilly or Hisao again, I've grown to value the time we're spending together even more. Eventually the conversation turned to my upcoming training courses which Akira was keen on learning more about."
+        n "I, for my part, have been content to just sit and listen to the rest, treasuring the fact that, even though Hisao, Lilly and I went through a week from hell, we were able to reconcile and we are able to sit here and spend time together once more, our bonds not just repaired but actually strengthened."
+        n "Due to the fact that just a week ago I had been convinced that I'd never be able to face Lilly or Hisao again, I've grown to value the time we're spending together even more."
+        n "{vspace=90}Eventually the conversation turned to my upcoming training courses which Akira was keen on learning more about."
 
-        nvl clear
+        nvl hide dissolve
 
-        ha "Y-Yes. It's usually for staff members only, but the trainer will make an exception for me."
+        show hisao basic_smile_uni
+        show lilly basic_smile
+        with chchange
+
+        ha "Y-yes. It's usually for staff members only, but the trainer will make an exception for me."
         aki "Sounds interesting. Or at least useful. Especially around here. How long is it gonna take?"
         ha "Five days."
         aki "For just the basics? That seems kinda long."
@@ -409,16 +417,18 @@ label sh_ch18:
         ha "Next week."
 
         show akira basic_sweet
+        with chchange
 
         aki "Well, good luck. Let's hope you'll never be forced to make use of it."
 
         show akira basic_boo
+        with chchange
 
         "Akira gives Lilly a soft poke in the ribs with her elbow to get her attention."
         aki "Hey Sis, can I have another beer?"
 
         show lilly back_smileclosed
-        with chchange
+        with charachangealways
         show lilly basic_weaksmile
         with charachangealways
 
@@ -428,31 +438,35 @@ label sh_ch18:
         aki "A toast, huh? Didn't take you long to get hooked on the grape."
 
         show lilly basic_smileclosed
+        with chchange
 
         li "I will admit I like a glass every once in a while, but hooked is probably a bit of an exaggeration."
 
-        show hisao cross_grin_swt
+        show hisao cross_grin_uni
+        with chchange
 
         "That remark causes Hisao and me to exchange amused glances. Both of us remember the occasions when Lilly invited us to share a glass of wine together during our time in the Satou summerhouse, her eagerness pretty apparent even then."
 
         show akira basic_smug
+        with chchange
 
         "Akira doesn't miss our gesture and lets out a soft snicker at her sister's expense."
 
         show akira basic_laugh
-        show hisao basic_smile_uni
+        with chchange
 
         aki "Tell you what. We'll save the toasts until you get to Scotland, and I'll take you out for some truly tasty drinks."
-
         "This is the first time this evening that Lilly's upcoming trip to Scotland has been brought up."
         "Yesterday, after telling her mother she wanted to stay in Japan, Lilly promised to come over again in an attempt to bridge the divide between herself and her parents that was created over the last six years. Eager to hear more details, Hisao addresses Lilly."
 
         show akira basic_smile
         show hisao basic_speak_uni
+        with chchange
 
         hi "So, you're really going back there for a little while, huh?"
 
         show lilly basic_smile
+        with chchange
 
         li "Yes. I don't believe things are as black and white as me having to choose between sacrificing my life here or sacrificing the bond with my family."
         li "I hope I can do my part to repair the bond I used to have with my parents while I'm there and then maintain it through contact over the phone while I'm attending school here."
@@ -462,31 +476,37 @@ label sh_ch18:
         "It's not like she can visit her parents at any time she chooses. I suppose I should be glad she'll be here for the rest of the school year."
 
         show hisao basic_smile_uni
+        with chchange
 
         hi "I hope you'll have fun there."
 
         show lilly basic_smileclosed
+        with chchange
 
         li "Thank you Hisao. Do you and Hanako have any plans for the vacation?"
 
         show hisao basic_neutral_uni
+        with chchange
 
         "Hisao and I share a quick look, and then we both shake our heads."
-        hi "Not really. We've saved enough to go on a few dates, but other than that I don't have any plans."
+        hi "Not really. We've saved enough to go on a few dates, but other than that, I don't have any plans."
         ha "Me neither."
 
         show akira basic_sheepish
+        with chchange
 
         "Akira gives us a sheepish grin in response."
-        aki "We'd let you borrow the keys to the summer home, but unfortunately that place was sold around the time Lilly announced her departure to you guys, sooooo…"
+        aki "We'd let you borrow the keys to the summer home, but unfortunately that place was sold around the time Lilly announced her departure to you guys, {w=0.5}{cps=10}sooooo…{/cps}"
 
         show lilly basic_planned
+        with chchange
 
         "Lilly finishes her sister's sentence as if the two have been practicing the part."
         li "…we were wondering if you two would consider accompanying me to Scotland for a few weeks instead."
 
         show akira basic_ending
-        show hisao cross_neutral_polo
+        show hisao cross_neutral_uni
+        with chchange
 
         "Hisao and I exchange a puzzled glance, both of us trying to figure out if Lilly's serious or not. A round trip to Scotland is way beyond the budget of either of us, and Lilly must know that."
         hi "Err, Lilly… I'm not sure about the exact price of a plane ticket, but I'm positive they'd cost Hanako and me an arm and a leg. Not that we'd be hurting for potential buyers around here, but still…"
@@ -494,43 +514,53 @@ label sh_ch18:
         show akira basic_laugh
         show hisao basic_smile_uni
         show lilly basic_giggle
+        with chchange
 
         "Lilly, Akira and I all share a laugh at Hisao's remark, but then Lilly indicates that she likes to say something."
 
         show akira basic_smile
         show lilly basic_smile
+        with chchange
 
         li "Intercontinental flights are never particularly cheap, but would you two be willing to come along if the costs were not a concern?"
 
-        show hisao cross_speak_polo
+        show hisao cross_speak_uni
+        with chchange
 
         hi "What do you mean?"
 
         show lilly basic_smileclosed
+        with chchange
 
         li "What I mean is that my family is willing to cover the costs of the flight for the two of you."
-        "WHAT? I take a look at Hisao to see if his reaction is anything like mine, and his shocked expression tells me Lilly's announcement took him completely off guard as well."
+        "WHAT?"
+        "I take a look at Hisao to see if his reaction is anything like mine, and his shocked expression tells me Lilly's announcement took him completely off guard as well."
         ha "B-but… H-how did you… W-why w-would they…?"
 
         show akira basic_laugh
         show lilly basic_giggle
+        with chchange
 
         "The Satou sisters seem to have a lot of fun taking in our baffled reactions, and it feels like minutes until Akira speaks up, still grinning at the look of shock on Hisao's and my own face."
 
         show akira basic_sheepish
         show hisao basic_neutral_uni
         show lilly basic_smile
+        with chchange
 
         aki "Well, you probably knew this already, but our family's pretty well-off financially. Heck, the sale of the summer home alone probably brought in enough money to invite half the school along if we wanted to. So the costs of the tickets aren't that big a deal here."
         aki "And Lilly's going to need someone to accompany her to make sure she boards the right plane at the right time. We could try and arrange for people from the airline to do that, but that's kind of a hassle."
-        aki "Our folks would feel better if she's accompanied by friends instead who accompany her from Yamaku, through London Heathrow all the way to Inverness Airport. Frankly, I would too."
+        aki "Our folks would feel better if she's accompanied by friends instead who accompany her from Yamaku, through London Heathrow, all the way to Inverness Airport. Frankly, I would too."
         "That's a pretty good point. Lilly can get around Yamaku and the nearby town just fine and can even navigate the city with some effort, so I completely forgot about the fact that an airport would still be a daunting obstacle to her."
 
         show akira basic_boo
+        with chchange
 
-        aki "I would have liked to stay in Japan for another one and a half week and accompany her myself, but since I've already postponed my departure for a week, I can't afford any more delays. Heck, the folks are probably already out for my blood enough as it is."
+        aki "I would have liked to stay in Japan for another one and a half weeks and accompany her myself, but since I've already postponed my departure for a week, I can't afford any more delays."
+        aki "Heck, the folks are probably already out for my blood enough as it is."
 
         show lilly basic_concerned
+        with chchange
 
         "Lilly's smile drops for a moment."
         li "Was Father very upset?"
@@ -541,58 +571,68 @@ label sh_ch18:
 
         show akira basic_wistful
         show lilly basic_weaksmile
+        with chchange
 
-        aki "But I WILL be under pressure to make up for lost time once I'm there, and I won't be in a position to take two days out of my schedule to fly over to Japan and pick up Lilly. Not during the impeding takeover."
+        aki "But I {i}will{/i} be under pressure to make up for lost time once I'm there, and I won't be in a position to take two days out of my schedule to fly over to Japan and pick up Lilly. Not during the impeding takeover."
 
         show lilly basic_surprised
+        with chchange
 
         "I can see Lilly perk up at the last part of Akira's statement."
         li "Hmmm? A takeover? You've never mentioned that before. When did you hear about that?"
 
         show akira basic_boo
+        with chchange
 
-        aki "I didn't mention it before because it didn't seem relevant before. I've known about the plans for quite some time even though this doesn't directly concern the Japanese branch of the company. Head office is planning to acquire a business similar to ours located in the United States."
+        aki "I didn't mention it before because it didn't seem relevant before. I've known about the plans for quite some time, even though this doesn't directly concern the Japanese branch of the company. Head office is planning to acquire a business similar to ours located in the United States."
         aki "They're in the middle of negotiations with that company's board of directors and with possible investors. Things are bound to get pretty hectic for them and for me, it seems."
-        aki "While Mom said she and Dad are going to try their hardest to shuffle their schedule around to spend some time with you, I wouldn't count on getting to hang out with them 24/7 - particularly not with Dad. Some additional company may be desirable from time to time."
+        aki "While Mom said she and Dad are going to try their hardest to shuffle their schedule around to spend some time with you, I wouldn't count on getting to hang out with them 24/7—particularly not with Dad. Some additional company may be desirable from time to time."
 
         show akira basic_smile
         show lilly basic_satisfied
+        with chchange
 
         "Lilly smiles her warmest smile at both of us."
-        li "And no company could be more desirable than present company. For me, it would make the difference between a good vacation and a wonderful vacation. So, what do you think? Will you come to Scotland with me?"
-
+        li "And no company could be more desirable than present company. For me, it would make the difference between a good vacation and a wonderful vacation."
+        li "So, what do you think? Will you come to Scotland with me?"
         "I'm still trying to come to terms with Lilly's completely unexpected proposal. I shoot a quick glance at Hisao who turns to Akira."
 
-        show hisao cross_speak_polo
+        show hisao cross_speak_uni
+        with chchange
 
         hi "Are you expecting a definite decision from us right now?"
 
         show akira basic_sheepish
         show lilly basic_weaksmile
+        with chchange
 
         aki "I know it's sudden, but yeah, that'd be great. If you're not feeling up to it then no harm done, but then I'll have to arrange something else on a short notice."
 
         show akira basic_smile
         show lilly basic_smileclosed
+        with chchange
 
         aki "If you are, I'll be able to make all the necessary arrangements while I'm at the airport tomorrow. There's a lot of work piling up on my desk on the other side of the world as we speak, and I'd like to get this thing over and done with before I get there."
         "I start feeling a bit uneasy by the sudden pressure to make such a big decision here and now, but Hisao turns to me with an excited smile on his face."
 
         show hisao cross_smile_uni
+        with chchange
 
         hi "Hey Hanako, what do you say? Want to go on vacation to Scotland together with Lilly and me?"
-        "It sounds like one of us has already decided. This would be the first time for me to travel this far away from home. I've never even been out of the country before, and now we're given the opportunity to literally travel to the other end of the earth, to stay in an unfamiliar place."
+        "It sounds like one of us has already decided."
+        "This would be the first time for me to travel this far away from home. I've never even been out of the country before, and now we're given the opportunity to literally travel to the other end of the earth, to stay in an unfamiliar place."
         "The Satous' summer home in Hokkaido was also unfamiliar at first, but that was just the three of us. Now we'll be staying with other people, in a country with a completely different culture and a language I don't speak fluently."
         "And before we get there, we'll have to travel through several crowded airports, including one of the busiest airports in the world."
-        ha "Um…well…"
+        ha "Um… well…"
         "But then again, ever since I joined the newspaper club, I've been playing with the thought of studying journalism. I'd never be able to stand in front of a camera or push a microphone in someones face, but I think I'd like the writing aspect of it."
         "But what would I write about if I'm too nervous to go and explore the world beyond my familiar little room? If I can't even visit an unfamiliar place with my two closest friends by my side, I'd probably be best off seeking another educational road altogether."
         "If anyone can ease my nerves, it's Lilly and Hisao. And I think I'd genuinely enjoy taking a vacation with the two most important people in my life."
         ha "I…I think I'd l-like that."
 
         show akira basic_ending
-        show hisao cross_grin_polo
+        show hisao cross_grin_uni
         show lilly basic_cheerful
+        with chchange
 
         "The three dazzling smiles I get in return to my answer confirm I made the right decision."
 
