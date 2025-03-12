@@ -70,6 +70,7 @@ init 1 python:
     for face in ("smile", "serious"):
         for i in range(1, 3):
             renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
+    sh_sprites("akira", ["angry", "cheerful", "depressed", "peaceful", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
@@ -78,7 +79,7 @@ init 1 python:
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close"])
     sh_sprites("doctor", ["bigsmile"])
-    sh_sprites("kenji", ["happy", "neutral", "tsun"], [""], ["gym"])
+    sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
 
     phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo"])
     phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)

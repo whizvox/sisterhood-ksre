@@ -1,5 +1,5 @@
 label sisterhood_replay_start:
-    if sh_debug:
+    if not sh_debug:
         $ _in_replay = True
 
     stop music fadeout 1.0

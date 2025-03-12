@@ -152,7 +152,8 @@ label sh_ch17alt:
         "As I start making my way to the staff building and see Kenji sneak off into the nearby bushes, I feel a bit guilty about sending him off on a wild goose chase, but after what I've just heard, I can't have him return to the dorms just yet."
         "I can't help but roll my eyes at the irony of it all."
         "There's a guy out there who believes in mind control devices searching the bushes for spies and cameras right now, and yet I'm the one about to see a therapist."
-
+ 
+        stop ambient fadeout 1.0
         stop music fadeout 1.0
 
         if _in_replay:
