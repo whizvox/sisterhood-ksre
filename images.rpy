@@ -131,6 +131,7 @@ init 1:
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
     image bg hosp_hallway = sh_bg("hosp_hallway")
     image bg hosp_office = sh_bg("hosp_office")
+    image bg school_firstaidclass = sh_bg("school_firstaidclass")
 
     # special events
     image ev rainyroad:

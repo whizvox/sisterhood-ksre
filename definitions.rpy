@@ -75,7 +75,8 @@ init:
             (_("Operation Distraction"), "sh_ch17alt.s1", _("Hisao keeps Kenji busy on the track."), "hisao"),
             (_("Convergence"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
             (_("A Second Sister"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
-            (_("Invitation"), "sh_ch18.s2", _("The Satou sisters invite Hanako and Hisao to visit Scotland."), "hanako")
+            (_("Invitation"), "sh_ch18.s2", _("Hanako and Hisao receive a surprising offer from Lilly."), "hanako"),
+            (_("Chapter 19.1"), "sh_ch19.s1", _("Hanako attends her first day of first aid training."), "hanako")
         ])
     ]
 
@@ -91,6 +92,8 @@ init:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     define chchange = charachangealways if persistent.sh_slowtransitions else charachange
     define chchangefast = Dissolve(0.2) if persistent.sh_slowtransitions else charachangefast
+    define nextchapter = Dissolve(2.0)
+    define endchapter = Dissolve(3.0)
     define mediumflash = Fade(1, 0, 1, color="#FFF")
 
     define erase = ImageDissolve(f"{sh_path}/gui/trans/erase.png", 2.0)
@@ -120,6 +123,7 @@ init:
     define shi = Character(kind=shi, screen="say_sh")
     define mi = Character(kind=mi, screen="say_sh")
     define aki = Character(kind=aki, screen="say_sh")
+    define no = Character(kind=no, screen="say_sh")
     define mystery = Character(kind=mystery, screen="say_sh")
     define n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
 
@@ -128,8 +132,10 @@ init:
     define nt = Character(_("Natsume"), who_color="#a57d33")
     define ka = Character(_("Karla"), who_color="#dfc46d")
     define kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
+    define nak = Character(_("Nakamura"), who_color="#c6ec87")
 
     define dc = Character(_("Doctor"), who_color="#FFFFFF")
 
     # unknown characters
     define ta_ = Character(_("Old woman"), kind=ta)
+    define nak_ = Character(_("Mid-thirties man"), kind=nak)
