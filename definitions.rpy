@@ -124,6 +124,7 @@ init:
     define mi = Character(kind=mi, screen="say_sh")
     define aki = Character(kind=aki, screen="say_sh")
     define no = Character(kind=no, screen="say_sh")
+    define yu = Character(kind=yu, screen="say_sh")
     define mystery = Character(kind=mystery, screen="say_sh")
     define n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
 
