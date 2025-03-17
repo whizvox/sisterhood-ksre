@@ -76,7 +76,8 @@ init:
             (_("Convergence"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
             (_("A Second Sister"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
             (_("Invitation"), "sh_ch18.s2", _("Hanako and Hisao receive a surprising offer from Lilly."), "hanako"),
-            (_("Chapter 19.1"), "sh_ch19.s1", _("Hanako attends her first day of first aid training."), "hanako")
+            (_("Chapter 19.1"), "sh_ch19.s1", _("Hanako attends her first day of first aid training."), "hanako"),
+            (_("Chapter 19.2"), "sh_ch19.s2", _("Hanako returns from her first day of first-aid training."), "hanako")
         ])
     ]
 
@@ -125,6 +126,8 @@ init:
     define aki = Character(kind=aki, screen="say_sh")
     define no = Character(kind=no, screen="say_sh")
     define yu = Character(kind=yu, screen="say_sh")
+    define mu = Character(kind=mu, screen="say_sh")
+    define ke = Character(kind=ke, screen="say_sh")
     define mystery = Character(kind=mystery, screen="say_sh")
     define n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
 
@@ -133,7 +136,8 @@ init:
     define nt = Character(_("Natsume"), who_color="#a57d33")
     define ka = Character(_("Karla"), who_color="#dfc46d")
     define kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
-    define nak = Character(_("Nakamura"), who_color="#c6ec87")
+    define nak = Character(_("Nakamura"), who_color="#c6ec87") # alt color: f3ccff
+    define jun = Character(_("Jun"), who_color="#b37b7b")
 
     define dc = Character(_("Doctor"), who_color="#FFFFFF")
 

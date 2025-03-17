@@ -446,6 +446,13 @@ label sh_ch19:
 
         "Seeing that summer break has already started, I don't expect there to be much activity, but I still need to know if I missed anything important."
 
+        if _in_replay:
+            return
+
+    label .s2:
+
+        $ set_window_tint(TINT_HANAKO)
+
         scene bg school_newspaper
         show natsume hands_smile
         show naomi basic_smile at tworight
@@ -453,7 +460,8 @@ label sh_ch19:
         with locationskip
 
         play music music_another fadein 4.0
-
+        
+        # TODO Simplify description of Jun
         "As I slowly open the door to the classroom that's home to our club and peek inside, I can see Naomi and Natsume relaxing and sharing some drinks with a tall, but frail-looking girl with long, brown hair in a simple ponytail and a red-and-white cap on her head."
         
         nvl clear
@@ -475,17 +483,19 @@ label sh_ch19:
         show naomi bend_laugh
         with chchange
 
-        na "Hey there Hanako. All done for today? How was the training? What did you learn?"
+        na "Hey there, Hanako. All done for today? How was the training? What did you learn?"
         "As usual, Naomi's quick to fire off a verbal torrent of questions."
-        ha "It was pretty useful. We learned about…ummm…checking someone's pulse and doing CPR."
+        ha "It was pretty useful. We learned about… ummm… checking someone's pulse and doing CPR."
 
         show naomi basic_smile
+        show natsume hands_smile
+        show jun cast_smile
         with chchange
 
         na "Any familiar faces there?"
-        ha "Yuuko was there. And ummm…Miyagi. And Fujimoto. And erm… N-Nomiya as well."
+        ha "Yuuko was there. And ummm… Miyagi. And Fujimoto. And erm… N-Nomiya as well."
 
-        show naomi bend_wink
+        show naomi bend_grin
         with chchange
 
         "Naomi throws me a mischievious wink."
@@ -493,7 +503,7 @@ label sh_ch19:
 
         show naomi bend_laugh
         show natsume basic_annoyed
-        show jun cast_annoyed
+        show jun cast_frown
         with chchange
 
         "My eyes grow wide in disturbed shock at the mental image that Naomi's remark conjures up, but it's apparently highly amusing to her, for she bursts into giggles after a short moment of silence."
@@ -509,8 +519,8 @@ label sh_ch19:
         with chchange
 
         "Jun turns to me."
-        ju "They have big dolls for that kind of thing, don't they?"
-        "I sigh in relief at Jun's attampt to steer the subject in a different direction."
+        jun "They have big dolls for that kind of thing, don't they?"
+        "I sigh in relief at Jun's attempt to steer the subject in a different direction."
         ha "Y-yes. Practice dummies. We… used them t-to practice CPR too."
 
         show naomi basic_neutral
@@ -523,9 +533,8 @@ label sh_ch19:
         na "According to the official schedule, yeah. Practically speaking, waiting that long would have been really stupid."
         ha "How so?"
         "Naomi shrugs casually."
-
-        na "Well, summer break started this week. Right now, lots of students are still busy tying up loose ends and packing their bags, but I'm betting that within a matter of days nearly half of the student body will have gone home for the summer, and this school will be one hell of a lot emptier."
-        na "Meaning that half our batch would just end up gathering dust. But now we got people a copy just before they're leaving here…"
+        na "Well, summer break started this week. Right now, lots of students are still busy tying up loose ends and packing their bags, but I'm betting that within a smatter of days, nearly half of the student body will have gone home for the summer, and this school will be one hell of a lot emptier."
+        na "Meaning that half our batch would just end up gathering dust. But now, we got people a copy just before they're leaving here…"
         ha "…they're likely to take it along, so they h-have something to read during the trip back home."
 
         show naomi basic_laugh
@@ -534,7 +543,7 @@ label sh_ch19:
         "Naomi smiles, pleased that I picked up on her train of thought."
         na "Bingo."
 
-        show naomi bend_smile
+        show natsume hands_smile
         with chchange
 
         "Natsume fiddles with her glasses for a moment."
@@ -544,107 +553,138 @@ label sh_ch19:
 
         hide naomi
         hide jun
-        show natsume hands_smile at center
-        with chchange
+        show natsume hands_smile_close at center
+        with charachangealways
 
-        "As I turn to leave the room, Natsume gets up and hands me four copies of the latest edition - three ordinary ones and one with larger font for visually impaired students."
+        "As I turn to leave the room, Natsume gets up and hands me four copies of the latest edition—three ordinary ones and one with larger font for visually impaired students."
         nt "While we were out there handing out newspapers, Naomi deliberately skipped the science club. She thought you'd want to be the one to hand them the latest issue."
 
         scene bg school_scienceroom
-        show muto smile at tworight
-        show kenji neutral at twoleft
-        show hisao basic_smile_uni
-        with chchange
+        show muto smile
+        with locationskip
 
-        "I haven't seen Mutou smile very often. I think he looks a bit strange when he does. And as I hand him one of the newspapers I've brought along, which he very eagerly takes, his expression almost becomes a grin."
+        "I haven't seen Mutou smile very often; I think he looks a bit strange when he does."
+        "And as I hand him one of the newspapers I've brought along, which he very eagerly takes, his expression almost becomes a grin."
+
+        hide muto
+        show hisao basic_neutral_uni at twoleft
+        show kenji happy
+        with charachangealways
+
         "Feeling a bit unnerved by it, I quickly turn to Hisao who was working on a sophisticated-looking circuit diagram together with Kenji until I came into the room."
 
-        show hisao basic_neutral_uni
+        show hisao cross_neutral_uni
         with chchange
 
         hi "What's got him so excited?"
         "Hisao, unlike Kenji, has noticed Mutou's expression who's now gleefully thumbing through the paper, and he seems genuinely puzzled by it. In response, I simply hand him his copy."
         ha "It's on p-page 5."
 
+        show hisao basic_neutral_uni
+        show kenji neutral
+        with chchange
+
+        "As Hisao starts flipping the pages of his copy, I give Kenji his visually-impaired edition. He takes it with a suspicious look in his eyes that puts me slightly on edge."
+        "Hisao, having reached the page that contains my column, looks surprised."
+
         show hisao basic_speak_uni
         with chchange
 
-        "As Hisao starts flipping the pages of his copy, I give Kenji his visually-impaired edition. He takes it with a suspicious look in his eyes that puts me slightly on edge. Hisao, having reached the page that contains my column, looks surprised."
-        hi "'Club in the spotlight?' Hey, this is about the science club! But what…?"
+        hi "‘Club in the spotlight?’ Hey, this is about the science club! But what…?"
         "I smile bashfully."
         ha "M-my first article."
         hi "Huh? I thought you were merely helping out with the editing."
 
-        show muto normal
+        show muto normal behind hisao at tworight
+        with charaenter
+
+        mu "Ikezawa approached me a little while back for some information about this club for a small article in the next issue of the school newspaper."
+        
+        show muto smile
         with chchange
 
-        mu "Ikezawa approached me a little while back for some information about this club for a small article in the next issue of the school newspaper. But it's a lot larger than I thought. You never said it was going to be a column."
+        mu "But it's a lot larger than I thought. You never said it was going to be a column."
         ha "Naomi… liked the g-general idea, so we turned it into a c-column that will cover a new club each issue."
-
-        show muto smile
-
         "Mutou gives me an approving look."
         mu "This will certainly give our club some much-needed exposure. With luck, we'll get a few new members out of it."
 
         show hisao basic_grin_uni
         show kenji tsun
+        with chchange
 
         "Hisao looks delighted by Mutou's prediction, but I notice that Kenji suddenly looks terrified, and he taps Hisao on the shoulder."
         ke "We gotta talk, man. We can't be taken off guard by this thing. We gotta prepare."
 
         show hisao basic_neutral_uni
+        with chchange
 
         hi "Not now, Kenji. We'll have plenty of time to talk later. I doubt we'll get any reactions before the end of summer break."
 
         hide kenji
+        with charaexit
 
         "Kenji shrugs and walks out of the room. Though I don't get involved with Kenji a lot, I really can't wrap my head around his behavior. I've asked Hisao about it several times, but he usually just rolls his eyes and urges me not to think too much of it."
         "As the sound of Kenji's footsteps fades away, my attention shifts back to the other people in the room who seem significantly more appreciative of my actions."
         mu "I believe this club is indebted to you, Ikezawa. I obviously can't give you a straight 100%% for your next test as a sign of appreciation as that'd be against the regulations, but… hmmm…"
 
         show muto normal
+        with chchange
 
-        "He thinks for a moment, then snaps his fingers."
+        "He thinks for a moment, "
+
+        show muto smile
+        with chchange
+
+        play sound sfx_snap
+
+        extend "then snaps his fingers."
         mu "I will be going for some coffee. Nakai?"
 
         show hisao basic_speak_uni
+        with chchange
 
         hi "Sir?"
         mu "Please kiss Ikezawa on my behalf."
 
         show hisao basic_grin_uni
+        with chchange
+
+        stop music fadeout 2.0
 
         "Wait, what?"
         "Hisao chuckles."
         hi "With pleasure, sir."
 
-        play music music_comfort
+        play music music_comfort fadein 4.0
 
         hide muto
-
-        show hisao cross_smile_uni_close
+        show hisao cross_smile_uni_close at center
+        with charachangealways
 
         "Mutou walks out of the room and before I can react, Hisao has wrapped one of his arms around me and uses his other hand to gently push my chin up before giving me a tender kiss on the lips."
 
-        scene black
+        show black
         with shuteye
 
-        "I freeze up for a moment, more than a little bit embarassed by the fact that we're in a classroom, but I then close my eyes and accept the kiss. Not letting go of me just yet, Hisao pulls me even closer and softly whispers in my ear."
+        "I freeze up for a moment, more than a little bit embarassed by the fact that we're in a classroom, but I then close my eyes and accept the kiss."
+        "Not letting go of me just yet, Hisao pulls me even closer and softly whispers in my ear."
         hi "Hanako?"
         ha "Y-yes?"
         hi "You'll get my own kisses later today."
         ha "O-okay."
 
-        scene bg school_scienceroom
-        show hisao cross_smile_uni_close
+        hide black
+        with openeye
 
         hi "And Hanako?"
         ha "Yes?"
 
-        show hisao cross_happy_uni_close
+        show hisao cross_grin_uni_close
+        with chchange
 
         hi "I love you."
-        "A happy smile appears on my face as I return Hisao's hug. I hope Mutou is going to stay away for a little while, because I want to enjoy this moment for as long as I can."
+        "A happy smile appears on my face as I return Hisao's hug."
+        "I hope Mutou is going to stay away for a little while, because I want to enjoy this moment for as long as I can."
 
         stop music fadeout 3.0
 
