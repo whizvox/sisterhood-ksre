@@ -77,7 +77,10 @@ init:
             (_("A Second Sister"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
             (_("Invitation"), "sh_ch18.s2", _("Hanako and Hisao receive a surprising offer from Lilly."), "hanako"),
             (_("Chapter 19.1"), "sh_ch19.s1", _("Hanako attends her first day of first aid training."), "hanako"),
-            (_("Chapter 19.2"), "sh_ch19.s2", _("Hanako returns from her first day of first-aid training."), "hanako")
+            (_("Chapter 19.2"), "sh_ch19.s2", _("Hanako returns from her first day of first-aid training."), "hanako"),
+            (_("Chapter 20.1"), "sh_ch20.s1", _("Hanako's first-aid training comes to a startling close."), "hanako"),
+            (_("Chapter 20.2"), "sh_ch20.s2", _("Chapter 20 Scene 2"), "hanako"),
+            (_("Chapter 20.3"), "sh_ch20.s3", _("Chapter 20 Scene 3"), "hanako")
         ])
     ]
 

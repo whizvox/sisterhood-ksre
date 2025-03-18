@@ -47,3 +47,5 @@ init:
     define sfx_chairscrape = sh_sfx("chairscrape")
     define sfx_phonenotif = sh_sfx("phonenotif")
     define sfx_bushes = sh_sfx("bushes")
+    define sfx_alarmbeep = sh_sfx("alarmbeep")
+    define sfx_collapse = sh_sfx("collapse")
