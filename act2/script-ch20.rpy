@@ -261,6 +261,8 @@ label sh_ch20:
         nak "Glad to be of service. Have fun in Scotland."
         ha "I w-will."
 
+        stop music fadeout 2.0
+
         if _in_replay:
             return
     
@@ -268,32 +270,38 @@ label sh_ch20:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_tranquil
         scene bg school_newspaper
         show naomi bend_smile at tworight
         show jun cast_neutral at twoleft
+        with locationskip
 
-        ha "E-Excuse me?"
+        queue music music_tranquil fadein 4.0
+
+        ha "E-excuse me?"
         "After leaving the classroom, I decided to stop by at the newspaper club for just a few minutes and was greeted by Naomi and Jun who seem to be the only members still around the school grounds."
         "When I entered the room, Naomi greeted me with a series of sounds that sounded like total gibberish to me."
-        na "I said: 'Awrite! Hou's it gaun?' You don't know what that means?"
-        ha "S-Should I?"
+        na "I said: ‘Awrite! Hou's it gaun?’ You don't know what that means?"
+        ha "S-should I?"
 
         show naomi bend_laugh
+        with chchange
 
-        na "It means 'Hi. How are you?' in Scottish. You were supposed to answer with something like 'A'm fine, slainte!' "
+        na "It means ‘Hi! How are you?’ in Scottish. You were supposed to answer with something like ‘A'm fine, slainte!’"
 
-        show jun cast_annoyed
+        show jun cast_frown
+        with chchange
 
         "Naomi looks very pleased with her performance, but Jun gives me a tired look."
-        ju "I looked up some Scottish phrases on the internet for her this morning, and she's been practicing them out loud ever since. Hopefully she'll stop now."
+        jun "I looked up some Scottish phrases on the internet for her this morning, and she's been practicing them out loud ever since. Hopefully she'll stop now."
 
         show naomi basic_smile
+        with chchange
 
         "Naomi playfully sticks her tongue out at Jun."
         na "You're just jealous because my Scottish is better than yours."
 
         show jun cast_eyeroll
+        with chchange
 
         "Jun just rolls her eyes and Naomi takes the opportunity to continue the conversation."
         na "You haven't been practicing your Scottish?"
@@ -302,14 +310,17 @@ label sh_ch20:
         ha "This week was busy for me."
 
         show naomi bend_smile
+        with chchange
 
         na "Oh, right. Still that first aid training, huh? How'd it go?"
         ha "I finished it today."
 
-        show jun cast_smile
+        show jun cast_happy
         show naomi bend_laugh
+        with chchange
 
-        "I produce the certificate I got earlier from my bag and hand it to Naomi and Jun. Naomi looks it over for a second before passing it to Jun. They then smile and break out into a short but sincere applause. Or rather, Naomi's clapping while Jun's mimicking the motion as best as she can."
+        "I produce the certificate I got earlier from my bag and hand it to Naomi and Jun. Naomi looks it over for a second before passing it to Jun."
+        "They then smile and break out into a short but sincere applause. Or rather, Naomi's clapping while Jun's mimicking the motion as best as she can."
         na "Great job. I bet it's a little easier to go on vacation now with that one behind you, isn't it?"
         ha "Yes. I'm happy the two didn't overlap."
         na "Looking forward to it?"
@@ -317,62 +328,111 @@ label sh_ch20:
 
         show naomi basic_smile
         show jun cast_neutral
+        with chchange
 
         "Jun just shakes her head. Naomi, on the other hand, nods enthusiastically."
         na "I'm going on a trip across Japan. Natsume's coming too. We'll head north first, stay in Hokkaido for a bit, then head south towards Kyoto."
-        ha "That sounds enjoyable too."
+        ha "That sounds enjoyable, too."
         na "It will be. I'll be sure to take plenty of pictures. We can swap photos afterwards."
         "That might be a problem. My cell phone has a camera function, but it doesn't have enough capacity to store a large amount of photos, and I don't have an actual photo camera myself."
         ha "I could… buy a g-guidebook while I'm there."
 
         show naomi basic_neutral
+        with chchange
 
         "Naomi makes a face as if I just offered her a spoiled sandwich."
         na "That won't do. You're a member of the newspaper club now. That means you gotta walk the walk. No taking shortcuts."
         ha "Ah… B-but I…"
         na "Just a sec."
 
+        show naomi at offscreenright
+        with charamovefastest
         hide naomi
+        with None
 
-        "Naomi gets off the desk she's sitting on and sprints into the room we use as our archive. Jun scratches her arm and turns to me."
-        ju "Naomi asked me to come along with her, but I need to have this cast removed next week. They're probably going to wrap it in stiff bandages if it's healed sufficiently. I hate these heavy things. They really itch."
+        "Naomi gets off the desk she's sitting on and sprints into the room we use as our archive."
+
+        show jun cast_frown
+        with chchange
+
+        "Jun scratches her arm and turns to me."
+        jun "Naomi asked me to come along with her, but I need to have this cast removed next week. They're probably going to wrap it in stiff bandages if it's healed sufficiently."
+        jun "I hate these heavy things. They really itch."
         ha "I'm s-sorry to hear that."
 
         show jun cast_smile
+        with chchange
 
-        ju "It's okay. I have plenty of video games I still need to finish."
+        jun "It's okay. I have plenty of video games I still need to finish."
 
-        show naomi bend_smile at tworight
+        show naomi bend_smile at offscreenright
+        with None
+        show naomi at tworight
+        with charamovefastest
 
         na "Tadaah! Check this out!"
-        "Naomi comes running back in, carrying a black bag in her hands. She opens it and fishes a slick-looking camera out of it, along with several small plastic containers with memory cards inside. She then gives me a triumphant grin."
-        na "You don't have a camera yourself, do you? Well, what do you think of this baby? There's at least twelve gigabyte worth of memory cards in here too. You can take enough photos to wallpaper the entire classroom with and still have space to spare."
+        "Naomi comes running back in, carrying a black bag in her hands."
+
+        show hanako_camera:
+            truecenter
+            ypos 0.7 alpha 0.0
+            easein 1.0 truecenter alpha 1.0
+        with Pause(1.0)
+
+        show hanako_camera:
+            truecenter
+            alpha 1.0
+        with None
+
+        "She opens it and fishes a slick-looking camera out of it, along with several small plastic containers with memory cards inside."
+
+        show naomi bend_laugh
+        with chchange
+
+        na "You don't have a camera yourself, do you? Well, what do you think of this baby? There's at least twelve gigabytes worth of memory cards in here too. You can take enough photos to wallpaper the entire classroom with and still have space to spare."
         "Wow! Is she really lending me this? That camera looks really expensive."
-        ha "F-For m-me?"
+        ha "F-for m-me?"
+
+        show hanako_camera:
+            ease 1.0 ypos 0.7 alpha 0.0
+        with Pause(1.0)
+
+        hide hanako_camera
+        with None
+
         "Naomi simply gives a cheerful nod."
-        na "I was thinking of taking it myself, but since I'm dropping by at my parents' place before my own trip, I can simply take their camera instead. You can't fly to the other end of the world and not take any pictures. That's journalistic malpractice. And we won't have any of that around here."
-        ha "T-Thank you s-so much."
+
+        show naomi basic_smile
+        with chchange
+
+        na "I was thinking of taking it myself, but since I'm dropping by at my parents' place before my own trip, I can simply take their camera instead."
+        na "You can't fly to the other end of the world and not take any pictures. That's journalistic malpractice. And we won't have any of that around here."
+        ha "T-thank you s-so much."
         na "You're welcome. If you want to thank me, maybe you could take some requests from me."
         ha "Requests?"
 
         show naomi basic_grin
+        with chchange
 
         na "Since you're going to Scotland, are you going to visit that lake? You know, Loch Ness?"
         ha "I hope so. It's only a few kilometers away from Inverness."
         na "They say there's a monster in there. It would be grand if you could snap a picture."
 
         show jun cast_eyeroll
+        with chchange
 
         "Jun promptly makes a facepalm gesture with her hand, which looks rather absurd due to the huge cast wrapped around it."
-        ju "You know that's an urban legend, don't you?"
+        jun "You know that's an urban legend, don't you?"
         "Naomi shrugs."
 
         show naomi basic_smile
+        with chchange
 
         na "How about a picture of a Scotsman? You know, in traditional garb."
         ha "I might be able to do that."
 
         show naomi bend_wink
+        with chchange
 
         na "Great. But no phonies. It has to be a true Scotsman."
         ha "Ah… O-okay."
@@ -381,22 +441,27 @@ label sh_ch20:
 
         show naomi basic_smile
         show jun cast_smile
+        with chchange
 
-        "Naomi puts the camera back into its bag and hands it to me. I take it from her and put it into my own bag, being as careful as I can with it. This is a really pleasant surprise. I'm so happy I decided to drop by the club today."
+        "Naomi puts the camera back into its bag and hands it to me. I take it from her and put it into my own bag, being as careful as I can with it."
+        "This is a really pleasant surprise. I'm so happy I decided to drop by the club today."
         na "Now, in case taking those pictures gets your journalistic juices flowing, there's something you can brainstorm about. I've decided what the next club you'll be covering in your column will be."
         ha "Which one is it?"
 
         show naomi basic_neutral
+        with chchange
 
         "Naomi makes a face as if I just asked her a very stupid question."
-        na "This one of course. You'll have the advantage of not having to put together a question list for an interview."
+        na "This one, of course. You'll have the advantage of not having to put together a question list for an interview."
 
         show naomi bend_smile
+        with chchange
 
         na "Just write something up using your own experiences here, and we can take a look at it after the summer break to see if there's anything missing. Try to emulate the style of your previous column for consistency's sake."
         ha "I'll do that."
 
         show naomi bend_wink
+        with chchange
 
         "She winks at me."
         na "Don't make us look bad."
@@ -404,6 +469,7 @@ label sh_ch20:
         ha "I'll p-put some extra l-love into it."
 
         show naomi bend_laugh
+        with chchange
 
         "Naomi gives me a thumbs-up."
         na "Attagirl. Well, guid cheerio the nou then."
@@ -413,13 +479,17 @@ label sh_ch20:
 
         hide naomi
         show jun cast_smile at center
+        with charachangealways
 
         "As I leave the room, Jun comes after me with a conspiring expression on her face."
-        ju "If you DO take a picture of Loch Ness, could you mail it to me?"
+        jun "If you {i}do{/i} take a picture of Loch Ness, could you mail it to me?"
 
         show jun cast_cheeky
+        with chchange
 
-        ju "I can probably photoshop a monster in there."
+        jun "I can probably photoshop a monster in there."
+
+        stop music fadeout 2.0
 
         if _in_replay:
             return
@@ -428,10 +498,12 @@ label sh_ch20:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_dreamy
         scene bg school_dormlilly
         show lilly basic_smile at twoleft
         show hisao basic_smile_uni at tworight
+        with locationskip
+
+        queue music music_dreamy fadein 4.0
 
         li "I'll let you handle the tickets, Hisao."
         "Hisao takes the envelope containing our flight tickets from Lilly and carefully puts them away."
@@ -440,45 +512,59 @@ label sh_ch20:
         hi "I have. Hanako?"
         "Fortunately, I have too. Knowing this'd be a busy week, I've already tried to pack whatever I could last weekend."
         ha "Me too."
-        "Lilly gives a satisfied nod. As I look around her room where we've spent the last half hour drinking tea and discussing the final preparations, I notice that Lilly's own suitcase is still only half-full, though I doubt I'd be able to even pack a single thing without being able to see."
 
+        show lilly basic_cheerful
+        with chchange
+
+        "Lilly gives a satisfied nod."
+        "As I look around her room where we've spent the last half hour drinking tea and discussing the final preparations, I notice that Lilly's own suitcase is still only half-full, though I doubt I'd be able to even pack a single thing without being able to see."
         ha "Do you need some help with packing, Lilly?"
 
         show lilly basic_smileclosed
+        with chchange
 
         li "No, thank you, Hanako. I know exactly what items I still have left to pack, and I'll be sure to finish things up soon."
         ha "Okay then."
 
         show lilly basic_weaksmile
+        with chchange
 
         "Lilly lets out a short sigh."
         li "In other circumstances, we would be celebrating you getting your first aid certificate right now. I feel bad we lack the time for that at the moment."
         ha "It's okay. It's for a good reason after all."
 
         show lilly basic_smile
+        with chchange
 
         li "We will hold a celebration for you once we're in Scotland, Hanako. That is a promise."
         ha "T-Thank you, Lilly."
 
         show hisao basic_speak_uni
+        with chchange
 
         hi "I think it's probably best if Hanako and I take our leave now, Lilly. That'll give you time to wrap things up and get some rest."
 
         show lilly basic_smileclosed
+        with chchange
 
         li "That might not be a bad idea, Hisao. Let us assemble in my room tomorrow morning at ten o' clock. That'll leave us enough time to get to the station and take the train to the airport."
 
         show hisao basic_smile_uni
+        with chchange
 
         hi "Sounds like a plan. Good night, Lilly."
         ha "Good night, Lilly."
 
         show lilly basic_cheerful
+        with chchange
 
         li "Good night, Hanako, Hisao. Rest well. Tomorrow will be a very exhausting day for sure."
 
         scene bg school_girlsdormhall
         show hisao basic_smile_uni
+        with locationchange
+
+        play sound sfx_lock
 
         "As I unlock the door to my dorm room and turn around to kiss Hisao goodnight, he puts one arm around me."
         hi "Can I come in for a while?"
@@ -486,77 +572,96 @@ label sh_ch20:
 
         scene bg school_dormhanako
         show hisao basic_neutral_uni
+        with locationchange
 
-        "We enter the room, and I take a seat on my bed. I feel tired and tense at the same time. Today was stressful and exhausting. First the lesson on burns that hit several sensitive nerves and then the trainer's faked heart attack right in front of me. And tomorrow might even be more nervewracking."
+        play sound sfx_doorclose
+
+        "We enter the room, and I take a seat on my bed. I feel tired and tense at the same time."
+        "Today was stressful and exhausting. First the lesson on burns that hit several sensitive nerves, and then the trainer's faked heart attack right in front of me. And tomorrow might even be more nervewracking."
 
         show hisao basic_worry_uni
+        with charaenter
 
         hi "Wow, your shoulders are still really stiff. I guess that little get-together with Lilly didn't really help?"
         "Hisao has placed a hand on my shoulder and gives me a worried frown."
         ha "It helped… a little bit."
 
         show hisao basic_smile_uni
+        with chchange
 
         hi "Maybe this will help a little bit more."
+
+        hide hisao
+        with charaexit
+
         "He sits down behind me and gently starts massaging my shoulders."
         ha "That would be nice."
-        "I let my head hang forward and try to relax as much as possible as Hisao massages the muscles of my neck and shoulders. This is something he's been doing for me since we started dating - a way to take away whatever stress I built up over the day."
-
+        "I let my head hang forward and try to relax as much as possible as Hisao massages the muscles of my neck and shoulders."
+        "This is something he's been doing for me since we started dating—a way to take away whatever stress I built up over the day."
         ha "You can… d-do it a little more forcefully."
         hi "This might make a difference too."
         "Hisao reaches around and unbuttons my blouse. I let it slide off my shoulders while he rubs his hands together to warm them. Moments later, I feel a warm hand on my bare left shoulder stroking it and then kneading it firmly."
-
-        nvl show dissolve
-
-        n "{vspace=60}Minutes pass without either of us saying anything, but the silence fortunately isn't too uncomfortable."
-        n "{vspace=60}I've told Hisao all I cared to share about today earlier when I visited his room while he was in the process of packing his suitcase."
-        n "{vspace=60}Right now, there simply isn't much to say. After a while, Hisao gets off the bed."
-
-        nvl clear
-
+        "Minutes pass without either of us saying anything, but the silence fortunately isn't too uncomfortable."
+        "I've told Hisao all I cared to share about today earlier when I visited his room while he was in the process of packing his suitcase."
+        "Right now, there simply isn't much to say."
+        "After a while, Hisao gets off the bed."
         hi "Hanako, can you lie on your stomach now?"
         "I comply with his request and feel my hips being pressed down as Hisao straddles me. Then I feel his hands press down on my upper back and make long, firm strokes."
 
-        show hisao basic_sweet_uni
+        show hisao basic_sweet_uni_close
+        with charaenter
 
         hi "Hanako, I really appreciate the fact that you've made such a large effort this week on my behalf."
-        ha "It…wasn't just for you. It was also for myself."
+        ha "It… wasn't just for you. It was also for myself."
         hi "Well, regardless, I already feel a bit safer now than I did before."
-        "I don't really share his optimism yet. This afternoon I've just barely managed to hold off a panic attack and that involved someone I hardly even knew. I'm still not very confident in my ability to hold things together if something were to happen to Hisao."
-        "Still, I feel a bit of happiness from his words."
-        ha "T-Thanks."
+        "I don't really share his optimism yet. This afternoon I've just barely managed to hold off a panic attack, and that involved someone I hardly even knew."
+        "I'm still not very confident in my ability to hold things together if something were to happen to Hisao. Still, I feel a bit of happiness from his words."
+        ha "T-thanks."
 
-        show hisao basic_smile_uni
+        show hisao basic_speak_uni_close
+        with chchange
 
-        hi "You know, the last time I spoke with her, I asked Miss Takawa for advice on what to do if you got overwhelmed by stress or fear again. Because I don't want to feel helpless either. Like that time you had an episode in science class."
+        hi "You know, the last time I spoke with her, I asked Miss Takawa for advice on what to do if you got overwhelmed by stress or fear again. Because I don't want to feel helpless either, like that time you had an episode in science class."
         ha "What d-did she s-say?"
         "Hisao stops the backrub he's been giving me until now and gets off the bed."
 
         show hisao basic_grin_uni
+        with charadistant
 
         hi "I really liked her advice."
         ha "What w-was it then?"
 
         hide hisao
+        with charaexit
 
-        "He doesn't respond, but I hear a bit of rustling behind me. The moment I turn around, however, I feel a pleasant and warm sensation that elicits a surprised gasp from me."
+        play sound sfx_rustling
+
+        "He doesn't respond, but I hear a bit of rustling behind me."
+
+        stop music fadeout 2.0
+
+        play sound sfx_pillow
+
+        "The moment I turn around, however, I feel a pleasant and warm sensation that elicits a surprised gasp from me."
         ha "Hisao!"
 
-        play music music_heart
+        play music music_heart fadein 4.0
 
         "It takes me a moment to realize that the rustling sound I heard earlier was Hisao taking off his shirt and while I was turning around to face him, he got back onto the bed and is now lying next to me and hugging me tightly."
 
-        show hisao basic_sweet_nak_close
+        show hisao basic_sweet_nak_superclose
+        with charaenter
 
         hi "She suggested something like this."
         "I giggle."
         ha "She s-suggested taking your shirt off?"
 
-        show hisao basic_smile_nak_close
+        show hisao basic_grin_nak_superclose
+        with chchange
 
         hi "Hehe, not exactly. She suggested cuddling, though I don't think she'd object to some added intimacy if it helps the cause."
-        "I wouldn't know about that, and I doubt I'll ever find out. My sex life is the one thing I've kept my therapist out of and if possible I'd like it to stay that way."
-        ha "E-Even if she'd… object, I w-wouldn't."
+        "I wouldn't know about that, and I doubt I'll ever find out. My sex life is the one thing I've kept my therapist out of and, if possible, I'd like it to stay that way."
+        ha "E-even if she'd… object, I w-wouldn't."
 
         scene ev pillowtalk_placeholder_large
 

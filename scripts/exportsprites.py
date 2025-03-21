@@ -54,6 +54,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Uniform/Uni Speak", "basic_speak_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uni Worry", "basic_worry_uni"),
     ("sprite edits/hisao/Uni Neutral-Blush", "basic_neutralblush_uni"),
+    ("sprite edits/hisao/Uni Sweet", "basic_sweet_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Annoy", "cross_annoy_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Blush", "cross_blush_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Frown", "cross_frown_uni"),
@@ -114,7 +115,8 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Nak Revised/REV1-Neutral", "basic_neutral_nak"),
     ("sprites2/Re Hisao Nakai/Nak Revised/REV6-Smile-Happy", "basic_smile_nak"),
     ("sprites2/Re Hisao Nakai/Nak Revised/REV2-Speak", "basic_speak_nak"),
-    ("sprites2/Re Hisao Nakai/Nak Revised/REV7-Worry", "basic_worry_nak")
+    ("sprites2/Re Hisao Nakai/Nak Revised/REV7-Worry", "basic_worry_nak"),
+    ("sprite edits/hisao/Nak Sweet", "basic_sweet_nak")
 ]
 
 takawa = [
@@ -130,6 +132,7 @@ naomi = [
     ("sprites2/Naomi Inoue/Naomi bend grin", "bend_grin"),
     ("sprites2/Naomi Inoue/Naomi bend laugh", "bend_laugh"),
     ("sprites2/Naomi Inoue/Naomi bend smile", "bend_smile"),
+    ("sprites2/Naomi Inoue/Naomi bend wink", "bend_wink"),
     ("sprites2/Naomi Inoue/Naomi focused", "basic_focus"),
     ("sprites2/Naomi Inoue/Naomi grin", "basic_grin"),
     ("sprites2/Naomi Inoue/Naomi laugh", "basic_laugh"),
@@ -186,7 +189,7 @@ def main():
     replace_hanako = "hanako" in replace
 
     for entry in hisao:
-        if "Naked" not in entry[0]:
+        if "Nak" not in entry[0]:
             crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/hisao_{entry[1]}.png", replace=replace_hisao, crop=(0, 0, 1350, 2325), target_height=1080)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/close/hisao_{entry[1]}_close.png", replace=replace_hisao, crop=(0, 0, 1350, 1650), target_height=1080)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/superclose/hisao_{entry[1]}_superclose.png", replace=replace_hisao, crop=(0, 0, 1350, 1312), target_height=1080)

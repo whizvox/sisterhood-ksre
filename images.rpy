@@ -73,8 +73,8 @@ init 1 python:
     sh_sprites("akira", ["angry", "cheerful", "depressed", "peaceful", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
-    sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
-    sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile"], poses=["basic", "bend"])
+    sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
+    sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close", "basic_satisfied"])
@@ -154,6 +154,7 @@ init 1:
     image hanako_dormhisao_blur = f"{sh_path}/vfx/hanako_dormhisao_blur.jpg"
     image hanako_hairclip = f"{sh_path}/vfx/hanako_hairclip.png"
     image niji_plush = f"{sh_path}/vfx/niji_plush.png"
+    image hanako_camera = f"{sh_path}/vfx/hanako_camera.png"
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
