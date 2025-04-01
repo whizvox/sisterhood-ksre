@@ -132,6 +132,7 @@ init 1:
     image bg hosp_hallway = sh_bg("hosp_hallway")
     image bg hosp_office = sh_bg("hosp_office")
     image bg school_firstaidclass = sh_bg("school_firstaidclass")
+    image bg airport_coffeeshop = sh_bg("airport_coffeeshop")
 
     # special events
     image ev rainyroad:

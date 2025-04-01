@@ -80,7 +80,8 @@ init:
             (_("Chapter 19.2"), "sh_ch19.s2", _("Hanako returns from her first day of first-aid training."), "hanako"),
             (_("Passing Marks"), "sh_ch20.s1", _("Hanako's first-aid training comes to a startling close."), "hanako"),
             (_("A True Scotsman"), "sh_ch20.s2", _("Hanako receives a gift from the newspaper club."), "hanako"),
-            (_("Chapter 20.3"), "sh_ch20.s3", _("Chapter 20 Scene 3"), "hanako")
+            (_("Chapter 20.3"), "sh_ch20.s3", _("Chapter 20 Scene 3"), "hanako"),
+            (_("Chapter 21.1"), "sh_ch21.s1", _("Hisao and Hanako experience intercontinental travel."))
         ])
     ]
 

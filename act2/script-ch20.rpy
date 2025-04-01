@@ -663,6 +663,8 @@ label sh_ch20:
         "I wouldn't know about that, and I doubt I'll ever find out. My sex life is the one thing I've kept my therapist out of and, if possible, I'd like it to stay that way."
         ha "E-even if she'd… object, I w-wouldn't."
 
+        # TODO Use pillowtalk CGs
+
         scene ev pillowtalk_placeholder_large
 
         "Hisao laughs softly and then plants his lips on mine. At first, our kisses are gentle, and we're content to just hold on to each other tightly, but soon our kisses become more feverish, and we're rubbing our bodies against each other."
@@ -699,7 +701,6 @@ label sh_ch20:
         ha "It's n-not that. It's j-just…"
         "He seems to guess where this is going. Which is not surprising since we've had this kind of discussion before."
         hi "I've worked hard the last one and a half week to get back into shape. I did a light jog this morning without any troubles. My stamina's not at the point where it was prior to my accident just yet, but it's getting there. I'll probably be fine."
-
         ha "Did you… t-talk to the nurse?"
         hi "Not about this."
         "I let out a soft but still audible sigh. I can't say I blame him very much. I certainly wouldn't be able to do it. But Hisao's a lot more confident than I am, and he sees the nurse on an almost daily basis. But still…"
@@ -739,7 +740,6 @@ label sh_ch20:
         "Part of me would probably like that, but another part feels guilty about the idea of me having a good time without Hisao."
         "Ever since the first time we started our physical love life, we've done it on a strict give-and-take basis and even when we started having actual intercourse, we always tried to make certain that neither of us was missing out in any way."
         "Hisao seems to guess what I'm thinking."
-
         hi "Let's face facts, Hanako. You've had a trying day. Heck, you've had a trying week and tomorrow will be another day that'll probably push you way beyond your comfort zone."
         hi "Why not let me help you unwind a bit - get everything out of your system? I'd say you've earned it. Forget about the equal exchange thing for once."
         ha "Ummm… I-I think I'll b-be fine with c-cuddling."
@@ -751,7 +751,6 @@ label sh_ch20:
         hi "Like that night in the hotel?"
         ha "Yes, like that."
         hi "You want it to be a bit romantic?"
-
         "Something like that. I like romance. At least, I think I do. But since silences between us are still awkward, our dates have centered around doing things that don't leave many silences such as watching a movie or playing video games."
         "Fun, but not the most romantic way to spend time together. I'd argue that the most romantic moments we've shared are when we're together like this and we can communicate our affection for the other through cuddling, kisses and other non-verbal means."
         ha "Yes."
