@@ -133,6 +133,11 @@ init 1:
     image bg hosp_office = sh_bg("hosp_office")
     image bg school_firstaidclass = sh_bg("school_firstaidclass")
     image bg airport_coffeeshop = sh_bg("airport_coffeeshop")
+    image bg plane_cabin = sh_bg("plane_cabin")
+    image bg plane_seat = sh_bg("plane_seat")
+    image bg plane_window_runway = sh_bg("plane_window_runway")
+    image bg plane_window_city = sh_bg("plane_window_city")
+    image bg plane_window_clouds = sh_bg("plane_window_clouds")
 
     # special events
     image ev rainyroad:

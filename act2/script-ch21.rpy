@@ -5,6 +5,8 @@ label sh_ch21:
 
         call sisterhood_timeskip
 
+        play ambient sfx_airport_ambience fadein 2.0 volume 0.5
+
         scene bg airport_coffeeshop
         show lilly basic_listen_cas at twoleft
         show hanako emb_downsad_cas at tworight
@@ -34,15 +36,17 @@ label sh_ch21:
         hi "We still have about 45 minutes until our plane departs, Lilly."
         "Having made it through airport security, we're now sitting in the corner of a small coffee shop near the gate, enjoying a drink and a light meal."
         "The small talk between Lilly and myself is partially to kill time and partially to try and ease Hanako's tense mood."
-        "That Hanako would have a tough time navigating the airport was something to be expected - the terminal halls are quite a bit more crowded than the average street in the city, especially during this time of year."
+        "That Hanako would have a tough time navigating the airport was something to be expected—the terminal halls are quite a bit more crowded than the average street in the city, especially during this time of year."
 
         show lilly basic_displeased_cas
         with chchange
 
         li "I wonder if we should already head for our gate."
-        "During our trek through the main hall, we were suddenly approached by one of the security officials walking around the place who seemed drawn to Hanako in particular. A very uncomfortable pause took place when he walked up to us and then suddenly backed away for a moment upon noticing Hanako's facial scarring, though Lilly was quick to take control of the situation."
+        "During our trek through the main hall, we were suddenly approached by one of the security officials walking around the place who seemed drawn to Hanako in particular."
+        "A very uncomfortable pause took place when he walked up to us and then suddenly backed away for a moment upon noticing Hanako's facial scarring, though Lilly was quick to take control of the situation."
         "When asked by Lilly if there was a problem, the guard explained to us that part of his job was to look out for people who were showing signs of unusually nervous behavior, and Hanako's body language caught his attention."
-        "We got a profuse apology afterwards, but the damage had already been done, and whenever I cast a sidelong glance at Hanako, I could see her eyes darting left and right as if watching out for other security officers who might see a potential smuggler or someone with some other form of guilty conscience in her."
+        "We got a profuse apology afterwards, but the damage had already been done."
+        "Whenever I cast a sidelong glance at Hanako, I could see her eyes darting left and right as if watching out for other security officers who might see a potential smuggler or someone with some other form of guilty conscience in her."
         hi "Isn't that way too early?"
         "Neither Lilly nor I bothered suggesting to Hanako to try and act more casually. She'd be as likely to do that as she'd be to don a bikini in the middle of the terminal."
         "Both of us are aware she's emotionally in a bad place right now, but we also realize that openly worrying about her will only make her feel worse."
@@ -52,11 +56,16 @@ label sh_ch21:
         with chchange
 
         li "International flights often start the boarding process about 20 minutes prior to departure. I'd like to be one of the first in the boarding area."
-        li "Last time Akira and I got on a plane, we were among the very first people allowed to board. It's a courtesy policy of our airline towards disabled passengers. I see no reason not to take advantage of it. I would…"
+        li "Last time Akira and I got on a plane, we were among the very first people allowed to board. It's a courtesy policy of our airline towards disabled passengers. I see no reason not to take advantage of it."
+        li "I would also…"
+
+        show lilly basic_concerned_cas
+        with chchangefast
+
         "Lilly hesitates for a moment."
         hi "Yes?"
 
-        show lilly basic_concerned_cas
+        show lilly basic_displeased_cas
         with chchange
 
         li "I would also like to get past the security gate before a big line forms there."
@@ -77,21 +86,22 @@ label sh_ch21:
         nvl show dissolve
 
         n "When we accepted Lilly's offer to join her on her trip, we were asked if either of us had ever been abroad before. When this didn't turn out to be the case, Akira was quick to point out we'd need to get ourselves a passport in order to accompany her sister."
-        n "The process of getting a passport in itself wasn't that big of a problem. The whole thing had to be finished on a very short notice, but thankfully getting a passport doesn't take too long a time in this country and Akira gave us plenty of pointers on how to complete the application process as quickly as possible."
-        n "Hanako, Lilly and I skipped school the day afterwards in an attempt to get all the necessary steps on our part done before the end of the day. Everything went pretty well until it was time to submit the forms and the photos. There was a photo booth nearby, so getting mug shots wasn't a big deal, but we found out that there were some pretty strict guidelines regarding the pictures."
+        n "The process of getting a passport in itself wasn't that big of a problem. The whole thing had to be finished on a very short notice, but thankfully getting a passport doesn't take too long a time in this country and Akira gave us plenty of pointers on how to complete the application process as quickly as possible. Hanako, Lilly and I skipped school the day afterwards in an attempt to get all the necessary steps on our part done before the end of the day."
+        n "{vspace=60}Everything went pretty well until it was time to submit the forms and the photos. There was a photo booth nearby, so getting mug shots wasn't a big deal, but we found out that there were some pretty strict guidelines regarding the pictures."
 
         nvl clear
 
         n "When Hanako realized that she was expected to have a picture taken that showed a full frontal, unobscured closeup of her face, we could tell that she was seriously considering backing out of the whole trip."
         n "With a lot of effort, Lilly and I managed to convince her to grit her teeth and go through with the whole thing, though it still took over 10 tries before we managed to take a picture where Hanako was able to force herself into keeping a relatively neutral expression on her face. The expression on her face when she submitted her passport photos to the clerk behind the counter was beyond troubled."
-        n "The whole experience made me realize that for Hanako, willingly showing her face to someone was something she considered extremely intimate and she later confided in me that the whole thing very much felt to her like having a nude photo stuck on her passport."
+        n "{vspace=60}The whole experience made me realize that for Hanako, willingly showing her face to someone was something she considered extremely intimate and she later confided in me that the whole thing very much felt to her like having a nude photo stuck on her passport."
         n "Needless to say, the prospect of having to show her passport to yet one more security guard and getting the almost guaranteed shocked look in return is something that makes her more than a little bit anxious."
 
         nvl hide dissolve
 
         "I get up."
         hi "Best thing we can probably do is get it over with quickly."
-        "Hanako nods quietly though it's apparent she's not exactly eager about it. As Lilly also rises to her feet, she puts her hand on Hanako's shoulder."
+        "Hanako nods quietly though it's apparent she's not exactly eager about it."
+        "As Lilly also rises to her feet, she puts her hand on Hanako's shoulder."
 
         show lilly basic_weaksmile_cas
         with chchange
@@ -102,27 +112,40 @@ label sh_ch21:
         with chchange
 
         "For a moment, Hanako allows herself to smile softly."
+
+        stop music fadeout 2.0
+
         ha "T-Thank you, Lilly."
 
-        scene black
-        with Dissolve(3.0)
+        stop ambient fadeout 1.0
 
-        play music music_pearly
-        scene bg airplane_cabin
+        if _in_replay:
+            return
+    
+    label .s2:
 
+        $ set_window_tint(TINT_HISAO)
+
+        scene bg plane_cabin
         show lilly cane_smile_cas at twoleft
         show hanako cover_worry_cas at tworight
+        with locationskip
 
-        ste "Your seats are on the left all the way in the back. May I help you with the luggage?"
+        "Flight Attendant" "Your seats are on the left all the way in the back. May I help you with the luggage?"
         "Lilly smiles sweetly at the flight attendant welcoming us aboard."
         li "Thank you, but my friends and I will manage."
+
+        play music music_pearly fadein 4.0
+
         "As Lilly predicted, the airline allowed us to board the plane before anyone else in economy class and we were all relieved we had the opportunity to get to our seats before the plane started filling with people."
         "It looks like Akira put some thought into picking our seats. A place in the back meant there'd be fewer people around us and Hanako's scarred side would be facing the wall of the cabin."
-        "We walk down the aisle with me in the lead, Lilly behind me with one hand on my shoulder and Hanako following very close behind us. As we get to our seats, three chairs next to each other in one corner in the back of the plane, I turn around."
+        "We walk down the aisle with me in the lead, Lilly behind me with one hand on my shoulder, and Hanako following very close behind us."
+        "As we get to our seats, three chairs next to each other in one corner in the back of the plane, I turn around."
         hi "Ladies first."
 
         show lilly cane_smileclosed_cas
         show hanako basic_worry_cas
+        with chchange
 
         "Lilly smiles, but shows no sign of getting ready to sit down."
         li "Akira told me once that one's first plane flight is a very special moment, particularly the first takeoff when you see the land below slowly get smaller."
@@ -132,60 +155,88 @@ label sh_ch21:
         hi "That's you, Hanako. Go ahead and take the seat in the back. I'll put your and Lilly's luggage away."
 
         show hanako basic_normal_cas
+        with chchange
 
         "Hanako nods and quickly moves to her assigned seat while I put everyone's bag in the storage bin."
         hi "So I guess the second seat will be mine?"
 
         show lilly cane_smile_cas
+        with chchange
 
         li "Yes. You might still have the opportunity to enjoy the view a bit, assuming Hanako doesn't end up hogging all of it for herself."
 
         show lilly cane_cheerful_cas
         show hanako basic_bashful_cas
+        with chchange
 
         li "And better still, you'll get to spend the upcoming 12 hours with one lovely lady on each side. I'm sure many men would envy you."
         hi "How can I say no to such a tempting offer?"
 
-        show lilly basic_smileclosed_cas
+        scene bg plane_seat
+        with locationchange
 
-        nvl show dissolve
+        "I take my seat next to Hanako as Lilly folds up her cane, puts it in her bag and sits down in the seat to my left."
+        "During this moment, I take a look at my girlfriend."
 
-        n "{vspace=60}I take my seat next to Hanako as Lilly folds up her cane, puts it in her bag and sits down in the seat to my left. I take a look at my girlfriend."
-        n "{vspace=60}As expected, just before we could board the plane, she received another proverbial gut punch in the form of another security gate we had to pass. I can tell the whole thing has taken its toll on her as she's looking gloomy, exhausted and physically ill."
-        n "{vspace=60}I don't like the fact that we'll have to repeat this hassle again when we arrive in London, but I'm thankful that that moment is still about half a day away. Hopefully Hanako will be able to rest a bit during the flight and be less tense when we arrive at London Heathrow."
+        show hanako emb_downtimid_cas_close at tworight
+        with charaenter
 
-        nvl clear
-
+        "As expected, just before we could board the plane, she received another proverbial gut punch in the form of another security gate we had to pass. I can tell the whole thing has taken its toll on her as she's looking gloomy, exhausted, and physically ill."
+        "I don't like the fact that we'll have to repeat this hassle again when we arrive in London, but I'm thankful that that moment is still about half a day away. Hopefully Hanako will be able to rest a bit during the flight and be less tense when we arrive at London Heathrow."
         hi "Hanako?"
+
+        show hanako emb_timid_cas_close
+        with chchange
+
         ha "Yes?"
         hi "Can I have a book?"
         "This week, Hanako and I paid a visit to the library and made sure to borrow a few books that neither of us has read before, so we could swap them after we're finished with them."
         "Seeing that we'll be spending several weeks in a foreign country, getting new books in Japanese will be all but impossible."
 
-        show hanako basic_smile_cas
+        show hanako basic_smile_cas_close
+        with chchange
 
         ha "Sure."
-        "Hanako picks up her handbag and hands me one of our books. I expect her to get one for herself as well, but instead, she takes out a neat-looking photo camera."
+        "Hanako picks up her handbag and hands me one of our books."
+        
+        show hanako_camera at displayitemshow
+        with Pause(1.0)
+
+        show hanako_camera at displayitem
+        with None
+
+        "I expect her to get one for herself as well, but instead, she takes out a neat-looking photo camera."
         hi "Hey, that's a nice camera."
         ha "It is."
 
-        show lilly basic_satisfied_cas
+        show hanako_camera at displayitemhide
+        with Pause(1.0)
+
+        hide hanako_camera
+        with None
+
+        show lilly basic_satisfied_cas_close at twoleft
+        with charaenter
 
         "Lilly turns her head in our direction."
         li "I didn't know you owned one, Hanako. We should remember to register it at customs so you don't have to pay duty on it."
 
-        show hanako emb_smile_cas
+        show hanako emb_smile_cas_close
+        with chchange
 
         ha "It's… not really mine. It belongs to the n-newspaper club. Naomi let me borrow it."
         li "Really? That's really nice of her. Do you get along well with her, Hanako?"
 
-        show hanako basic_normal_cas
+        show hanako basic_normal_cas_close
+        with chchange
 
         "Hanako seems to think a bit on that."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
+        with chchange
 
-        ha "She… often comes up to talk to me these days, although she… does that with all members of the c-club. Most of the time, she just talks… and I just try to k-keep up with her. But I don't exactly hate spending time with her. I think she means well."
+        ha "She… often comes up to talk to me these days, although she… does that with all members of the c-club."
+        ha "Most of the time, she just talks… and I just try to k-keep up with her. But I don't exactly hate spending time with her. I think she means well."
         "Until Hanako joined the newspaper club, I never really interacted with Naomi even though we're both in the same class."
         "I wouldn't exactly call them a natural combination, seeing how talkative and forward Naomi often is and how quiet and reserved Hanako usually is."
         "On the other hand, the fact that moments with Naomi hardly contain any silences probably does a lot to hide Hanako's social handicap, and shared interests can go a long way in bridging gaps between people."
@@ -194,72 +245,84 @@ label sh_ch21:
         hi "Could I have your camera for a moment?"
         "With a puzzled expression on her face, Hanako hands over the camera. I take it from her, get up and beckon a stewardess who's walking down our aisle."
         hi "Excuse me. Would you mind taking a picture of the three of us?"
-        ste "Of course not."
+        "Flight Attendant" "Of course not."
         "As the stewardess readies the camera, I quickly wrap one arm around Hanako's waist, pulling her a little closer, and put my other hand on Lilly's shoulder. I give the stewardess a affirmative nod."
 
-        ste "Smile please!"
+        show lilly basic_cheerful_cas_close
+        show hanako cover_bashful_cas_close
+        with chchange
 
-        show lilly basic_cheerful_cas
-        show hanako cover_bashful_cas
+        "Flight Attendant" "Smile please!"
+
+        play sound sfx_camerashutter
 
         "The stewardess presses the button, we hear a sharp click, and then she hands the camera back to me. I thank her and return the camera to Hanako."
         hi "Let's take a look."
 
-        show hanako basic_bashful_cas
+        show hanako basic_bashful_cas_close
+        with chchange
 
-        "Hanako presses a button on the side, and I can see a picture of the three of us on the display. It's not perfect… Neither Lilly nor Hanako are completely facing the camera."
-        "Lilly was probably still in the process of determining the exact location of the camera, and Hanako was trying to look into the camera while at the same time trying to keep her scars out of view."
+        "Hanako presses a button on the side, and I can see a picture of the three of us on the display."
+        "It's not perfect… Neither Lilly nor Hanako are completely facing the camera. Lilly was probably still in the process of determining the exact location of the camera, and Hanako was trying to look into the camera while at the same time trying to keep her scars out of view."
         "Still, aside from those small snags, it's a nice picture and probably the first one ever taken that features all three of us."
         hi "I like it. The first picture of the three of us."
 
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
+        with chchange
 
         li "The first of many, I hope."
-
         ha "Y-yes."
+
+        play ambient sfx_plane_waiting fadein 4.0
+
         "I open my book and start reading, trying to ignore the steady flow of fellow-travelers filling up the plane."
 
-        show hanako basic_distant_cas
+        show hanako basic_distant_cas_close
+        with chchange
 
         "I shoot a sideway glance at Hanako, but she's too occupied with examining the various options on the camera's display screen to pay much attention to the ever-growing crowd."
         "That's probably a good thing. As I turn to page 12 and the flow of people starts slowly drying up, Hanako turns to Lilly."
-
         ha "Ummm… Lilly."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
+        with chchange
 
         li "Yes, Hanako?"
         ha "They have these… special clothes in Scotland, don't they? Like skirts?"
 
-        show lilly basic_planned_cas
+        show lilly basic_planned_cas_close
+        with chchange
 
         li "Not many Scottish would appreciate you referring to them as skirts. They're called kilts over there."
         ha "Do a lot of p-people wear them over there?"
 
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
+        with chchange
 
         "Lilly shakes her head."
         li "Think of them as traditional garments, like kimonos, that are worn during special events but are uncommon in everyday life."
         "I scratch my head."
         hi "Why the sudden interest in traditional local garments? Are you planning on getting one yourself?"
 
-        show hanako basic_bashful_cas
+        show hanako basic_bashful_cas_close
+        with chchange
 
         "Hanako shyly shakes her head."
         ha "Naomi wanted me to t-take a picture of a Scotsman. She m-meant a person in traditional clothes, I think."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
+        with chchange
 
         "Lilly thinks for a moment."
-
-        li "The ideal occasion to get pictures would have been the Inverness Highland Games - a traditional sports event held once a year. But unfortunately, that event has been held in July already."
+        li "The ideal occasion to get pictures would have been the Inverness Highland Games—a traditional sports event held once a year. But unfortunately, that event has been held in July already."
         li "I'm positive, however, that there are several tourist attractions in the area where you should be able to get a few shots of Scots in traditional garb."
         li "They are part of Scotland's national image after all, and we're in the middle of the tourist season."
         "I turn to Hanako."
         hi "It's a small price for the opportunity to get a free camera, but it's still an odd request."
         ha "She asked f-for a picture of the Loch Ness monster first, b-but then said a picture of a true Scotsman was fine too. She's a l-little strange sometimes."
 
-        show lilly basic_giggle_cas
+        show lilly basic_giggle_cas_close
+        with chchange
 
         li "A true Scotsman? Oh my!"
         "Lilly raises her hand and covers her mouth, but it's not enough to hide a giggle and the broad grin on her face."
@@ -267,80 +330,136 @@ label sh_ch21:
         hi "I'm afraid I don't quite follow. Care to enlighten us on what's so amusing?"
         "Lilly giggles once more, then scrapes her throat and composes herself."
 
-        show lilly basic_cheerful_cas
+        show lilly basic_cheerful_cas_close
+        with chchange
 
         li "By tradition, kilts are worn without any underwear underneath. Asking a Scotsman whether he's a true Scotsman or not is the same as asking him if he's naked underneath his kilt."
 
-        show hanako emb_blushing_cas
+        show hanako emb_blushtimid_cas_close
+        with chchange
 
-        "Upon hearing Lilly's explanation, Hanako lets out a shocked gasp before turning bright red. Looks like Lilly just helped us dodge a bullet here."
+        "Upon hearing Lilly's explanation, Hanako lets out a shocked gasp before turning bright red."
+        "Looks like Lilly just helped us dodge a bullet here."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
+        with chchange
+
         hi "Thanks for saving us a really awkward situation. Hanako, do you think Naomi was serious or do you think she was playing with you?"
         ha "It's d-difficult to t-tell with her sometimes. I t-think she was serious."
         hi "Eh, we'll just take a picture of a Scotsman and tell Naomi it's a true one. Let her prove otherwise."
 
-        show hanako emb_smile_cas
+        show hanako emb_smile_cas_close
+        with chchange
 
         ha "Okay."
-        "Before we can continue the discussion, the announcement system above our heads springs to life and we hear a chime followed by a male voice."
 
-        cap "Good afternoon ladies and gentlemen and welcome to flight OCN007 to London. Thank you for flying with Oceanic Airlines."
-        cap "In a few minutes, we'll receive permission from the control tower to access the runway."
-        cap "In the meantime, please make certain that your seat is in the upright position, and keep your seat belt fastened for as long as the sign above your seat is lit."
-        cap "We're about to show you a short video with safety instructions detailing how to act in an emergency situation."
+        stop ambient fadeout 2.0
+        queue ambient sfx_plane_beforetakeoff fadein 2.0
+        play sound sfx_plane_dingdong
+
+        show hanako emb_timid_cas_close
+        with chchange
+
+        "Before we can continue the discussion, the announcement system above our heads springs to life and we hear a chime followed by a male voice."
+        "Captain" "Good afternoon ladies and gentlemen and welcome to flight OCN007 to London. Thank you for flying with Oceanic Airlines."
+        "Captain" "In a few minutes, we'll receive permission from the control tower to access the runway."
+        "Captain" "In the meantime, please make certain that your seat is in the upright position, and keep your seat belt fastened for as long as the sign above your seat is lit."
+        "Captain" "We're about to show you a short video with safety instructions detailing how to act in an emergency situation."
         "The displays on the back of the seats in front of us suddenly turn on, and a flight attendant is seen going through the safety regulations like the smoking prohibition and the request to turn off cell phones."
-        cap "...please take note of the nearest emergency exit indicated by the signs that are currently lit up. In case of limited visibility, follow the trail of emergency lights on the floor..."
+        "Captain" "...please take note of the nearest emergency exit indicated by the signs that are currently lit up. In case of limited visibility, follow the trail of emergency lights on the floor..."
         "Judging from the seat chart the nearest emergency exit is right behind us although I seriously wonder if I'd be in a condition to even make it there in case of an emergency landing."
 
-        show hanako emb_downsad_cas
+        show hanako emb_downsad_cas_close
+        with chchange
 
-        cap "...in the case of the loss of cabin pressure, compartments above your head will open automatically to reveal oxygen masks. Always make sure to put on your own breathing masks before helping others with theirs..."
+        "Captain" "...in the case of the loss of cabin pressure, compartments above your head will open automatically to reveal oxygen masks. Always make sure to put on your own breathing masks before helping others with theirs..."
         "I wonder if I'm the only one who's a bit put off by how annoyingly cheerful the attendant in the video seems to be while describing a grave emergency situation."
 
         ha "That d-doesn't h-happen often, d-does it?"
 
-        show lilly basic_listen_cas
+        show lilly basic_listen_cas_close
+        with chchange
 
         "I'm surprised by Hanako unexpectedly chipping in and even grow a little concerned when I notice she's become pale and visibly shivering a bit."
         hi "Hey, are you alright?"
         "Hanako nods weakly, but looks more than a little bit uncomfortable."
         "While I'm still trying to figure out why Hanako, who hasn't shown any indications of flight anxiety before, is suddenly getting jittery, Lilly calmly answers her question."
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_cas_close
+        with chchange
 
         li "I wouldn't worry, Hanako. These worst-case scenarios are very rare, and air travel on the whole is a lot safer than travelling by car."
 
-        show hanako emb_sad_cas
+        show hanako emb_sad_cas_close
+        with chchange
 
         "Hanako seems to relax a bit. The information video ends, and a few minutes later I can hear the plane's engines starting, and we slowly start moving."
         "We keep moving for about a minute and then suddenly stop again, causing Hanako to give us a puzzled look. Lilly seems to guess her thoughts."
 
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
+        with chchange
 
         li "This is perfectly normal. We'll probably start moving again soon."
 
-        show hanako basic_normal_cas
+        show hanako basic_normal_cas_close
+        with chchange
 
         "Sure enough, after a short while we start moving again, and the plane makes a slow turn. As we stop momentarily, Lilly smiles."
+
+        stop music fadeout 3.0
+
         li "Here we go. You might experience some light ear pain during the takeoff or landing due to the changing pressure in the cabin. What I did last time was try to yawn a few times or chew some chewing gum. I have some in my handbag if you want it."
 
-        scene bg airplane_window
-        play music music_romance
+        stop music fadeout 2.0
+        stop ambient fadeout 2.0
+        queue ambient sfx_plane_takeoff2 fadein 2.0
 
-        nvl show dissolve
+        scene bg plane_window_runway
+        with locationchange
 
-        n "{vspace=60}Just as she finishes, the engines start roaring louder, and we're pressed into our seats as the plane starts accelerating. Faster and faster we go, and then I get a strange feeling in my stomach as our plane leaves the ground."
-        n "{vspace=60}I put my hands on Hanako's shoulders and softly move her aside just a little bit so I can look past her out the window as well. I move my right hand up to her face and use my index finger to gently brush her bangs aside so she can absorb the view with both eyes. And an amazing view it is, just like Lilly said."
-        n "{vspace=60}Tall buildings are turning small like playthings. The countryside turns into big green blanket. And then, just before the pilot informs us we've reached cruising altitude, Hanako and I are faced with a vast ocean of clouds as far as the eye can see."
-        n "{vspace=60}As we sit here, my arm around Hanako and her cheek pressed against mine, I occasionally look at the expression on her face which has turned from silent awe to a beautiful excited smile. Over the course of this day, I've had my doubts from time to time whether this whole trip was a good idea, but that doubt is completely gone now."
+        "Just as she finishes, the engines start roaring louder, and we're pressed into our seats as the plane starts accelerating."
 
-        nvl clear
+        pause 5.0
 
+        "Faster and faster we go, and then I get a strange feeling in my stomach as our plane leaves the ground."
+        
+        pause 5.0
+
+        "I put my hands on Hanako's shoulders and softly move her aside just a little bit so I can look past her out the window as well."
+
+        play music music_romance fadein 4.0
+
+        scene bg plane_window_city
+        with Dissolve(1.0)
+
+        "I move my right hand up to her face and use my index finger to gently brush her bangs aside so she can absorb the view with both eyes."
+        "And an amazing view it is, just like Lilly said."
+        "Tall buildings are turning small like playthings. The countryside turns into a big green blanket."
+        
+        show bg plane_window_clouds
+        with Dissolve(1.0)
+
+        "And then, just before the pilot informs us we've reached cruising altitude, Hanako and I are faced with a vast ocean of clouds as far as the eye can see."
+        "As we sit here, my arm around Hanako and her cheek pressed against mine, I occasionally look at the expression on her face which has turned from silent awe to a beautiful excited smile."
+        "Over the course of this day, I've had my doubts from time to time whether this whole trip was a good idea, but that doubt is completely gone now."
         "This experience, this moment we're sharing together, was totally worth it."
 
+        stop music fadeout 3.0
+        stop ambient fadeout 3.0
         scene black
         with Dissolve(3.0)
+
+        if _in_replay:
+            return
+    
+    label .s3:
+
+        $ set_window_tint(TINT_HISAO)
+
+        scene bg black
+        with Dissolve(2.0)
+
+        play ambient sfx_plane_inflight fadein 2.0
 
         play music music_lilly
         scene bg airplane_cabin

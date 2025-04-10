@@ -95,6 +95,17 @@ init:
         xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     transform tworight_sittingpos:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
+    
+    transform displayitemshow:
+        truecenter
+        ypos 0.7 alpha 0.0
+        easein 1.0 truecenter alpha 1.0
+    transform displayitem:
+        truecenter
+        alpha 1.0
+    transform displayitemhide:
+        ease 1.0 ypos 0.7 alpha 0.0
+
     define chchange = charachangealways if persistent.sh_slowtransitions else charachange
     define chchangefast = Dissolve(0.2) if persistent.sh_slowtransitions else charachangefast
     define nextchapter = Dissolve(2.0)

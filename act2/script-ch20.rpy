@@ -373,15 +373,10 @@ label sh_ch20:
         na "Tadaah! Check this out!"
         "Naomi comes running back in, carrying a black bag in her hands."
 
-        show hanako_camera:
-            truecenter
-            ypos 0.7 alpha 0.0
-            easein 1.0 truecenter alpha 1.0
+        show hanako_camera at displayitemshow
         with Pause(1.0)
 
-        show hanako_camera:
-            truecenter
-            alpha 1.0
+        show hanako_camera at displayitem
         with None
 
         "She opens it and fishes a slick-looking camera out of it, along with several small plastic containers with memory cards inside."
@@ -393,8 +388,7 @@ label sh_ch20:
         "Wow! Is she really lending me this? That camera looks really expensive."
         ha "F-for m-me?"
 
-        show hanako_camera:
-            ease 1.0 ypos 0.7 alpha 0.0
+        show hanako_camera at displayitemhide
         with Pause(1.0)
 
         hide hanako_camera
