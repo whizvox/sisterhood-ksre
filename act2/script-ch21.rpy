@@ -409,34 +409,57 @@ label sh_ch21:
         stop music fadeout 3.0
 
         li "Here we go. You might experience some light ear pain during the takeoff or landing due to the changing pressure in the cabin. What I did last time was try to yawn a few times or chew some chewing gum. I have some in my handbag if you want it."
-
+        
         stop music fadeout 2.0
         stop ambient fadeout 2.0
         queue ambient sfx_plane_takeoff2 fadein 2.0
 
-        scene bg plane_window_runway
+        window hide
+
+        scene bg plane_window_runway:
+            yalign 0.5 zoom 1.02
+            2.0
+            block:
+                linear 0.1 yalign 0.53
+                linear 0.1 yalign 0.47
+                repeat 50
+            block:
+                linear 0.1 yalign 0.58
+                linear 0.1 yalign 0.42
+                repeat 60
+            block:
+                ease 0.5 yalign 0.58
+                ease 0.5 yalign 0.42
+                repeat 2
+            block:
+                ease 1.0 yalign 0.58
+                ease 1.0 yalign 0.42
+                repeat
         with locationchange
 
-        "Just as she finishes, the engines start roaring louder, and we're pressed into our seats as the plane starts accelerating."
-
-        pause 5.0
-
-        "Faster and faster we go, and then I get a strange feeling in my stomach as our plane leaves the ground."
-        
-        pause 5.0
-
-        "I put my hands on Hanako's shoulders and softly move her aside just a little bit so I can look past her out the window as well."
+        centered "Just as she finishes, the engines start roaring louder, and we're pressed into our seats as the plane starts accelerating.{fast}{w=12.0}{nw}"
+        centered "Faster and faster we go...{fast}{w=6.0}{nw}"
+        centered "...and then I get a strange feeling in my stomach as our plane leaves the ground.{fast}{w=10.0}{nw}"
+        centered "I put my hands on Hanako's shoulders and softly move her aside just a little bit so I can look past her out the window as well.{fast}{w=10.0}{nw}"
 
         play music music_romance fadein 4.0
 
-        scene bg plane_window_city
+        scene bg plane_window_city:
+            zoom 1.02
+            ease 1.0 yalign 0.58
+            ease 1.0 yalign 0.42
+            repeat
         with Dissolve(1.0)
 
         "I move my right hand up to her face and use my index finger to gently brush her bangs aside so she can absorb the view with both eyes."
         "And an amazing view it is, just like Lilly said."
         "Tall buildings are turning small like playthings. The countryside turns into a big green blanket."
         
-        show bg plane_window_clouds
+        show bg plane_window_clouds:
+            zoom 1.02
+            ease 1.0 yalign 0.58
+            ease 1.0 yalign 0.42
+            repeat
         with Dissolve(1.0)
 
         "And then, just before the pilot informs us we've reached cruising altitude, Hanako and I are faced with a vast ocean of clouds as far as the eye can see."
