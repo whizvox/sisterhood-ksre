@@ -77,7 +77,7 @@ init 1 python:
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
-    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close", "basic_satisfied"])
+    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close", "basic_satisfied", "cane_satisfied_cas"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
 
@@ -138,6 +138,9 @@ init 1:
     image bg plane_window_runway = sh_bg("plane_window_runway")
     image bg plane_window_city = sh_bg("plane_window_city")
     image bg plane_window_clouds = sh_bg("plane_window_clouds")
+    image bg plane_bathroom = sh_bg("plane_bathroom")
+    image bg airport_baggageclaim = sh_bg("airport_baggageclaim")
+    image bg airport_inverness = sh_bg("airport_inverness")
 
     # special events
     image ev rainyroad:

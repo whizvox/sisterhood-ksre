@@ -374,7 +374,6 @@ label sh_ch21:
 
         "Captain" "...in the case of the loss of cabin pressure, compartments above your head will open automatically to reveal oxygen masks. Always make sure to put on your own breathing masks before helping others with theirs..."
         "I wonder if I'm the only one who's a bit put off by how annoyingly cheerful the attendant in the video seems to be while describing a grave emergency situation."
-
         ha "That d-doesn't h-happen often, d-does it?"
 
         show lilly basic_listen_cas_close
@@ -451,6 +450,8 @@ label sh_ch21:
             repeat
         with Dissolve(1.0)
 
+        window auto True
+
         "I move my right hand up to her face and use my index finger to gently brush her bangs aside so she can absorb the view with both eyes."
         "And an amazing view it is, just like Lilly said."
         "Tall buildings are turning small like playthings. The countryside turns into a big green blanket."
@@ -474,265 +475,240 @@ label sh_ch21:
 
         if _in_replay:
             return
-    
+        else:
+            pause 1.0
+
     label .s3:
 
         $ set_window_tint(TINT_HISAO)
 
-        scene bg black
-        with Dissolve(2.0)
-
         play ambient sfx_plane_inflight fadein 2.0
 
-        play music music_lilly
-        scene bg airplane_cabin
-        show lilly basic_smileclosed_cas at twoleft
+        play music music_lilly fadein 4.0
+
+        scene bg plane_seat
+        with Dissolve(2.0)
 
         hi "Lilly?"
 
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close at twoleft
+        with chchange
 
         li "What is it, Hisao?"
         hi "I didn't wake you up, did I?"
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
+        with chchange
 
         li "You didn't. I wasn't even sleeping. I already found out last time that I'm unable to sleep on airplanes."
         hi "I guess that makes two of us. It seems like only Hanako will be getting any sleep for the rest of the day."
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_cas_close
+        with chchange
 
         li "So she's asleep right now? I already suspected as much by the sound of her breathing."
         hi "She is. And what's more, she's currently using my shoulder as a pillow."
         li "It's not uncomfortable for you, is it?"
         hi "No, far from it. However, I need to take a restroom break and take my medication, but I don't want to wake her up."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smile_cas_close
+        with chchange
 
         li "What do you want me to do?"
         hi "I've moved the armrests up. I'd like you to trade places with me for a little while if you don't mind."
         li "I don't mind. Do you simply want me to move to my right?"
         hi "Just a second... Now."
 
-        show lilly basic_smileclosed_cas at tworight
+        show lilly at tworight
+        with charamove
 
-        "I gently nudge Hanako upright a bit, then quickly get up as Lilly moves onto my seat before Hanako can slump back. I move away, and Lilly stays still for several seconds without even breathing."
+        "I gently nudge Hanako upright a bit, then quickly get up as Lilly moves onto my seat before Hanako can slump back."
+        "I move away, and Lilly stays still for several seconds without even breathing."
         "Eventually Hanako mumbles something in her sleep before settling down on Lilly's shoulder."
         hi "Looks like we got away with it. I'll be back soon."
         li "Please don't rush yourself on my account."
 
-        hide lilly
+        stop music fadeout 2.0
 
+        scene bg plane_cabin
+        with locationchange
+
+        "I shake my legs, which have started tingling from the long bout of inactivity, back to life and wobble unsteadily towards the lavatory in the back."
+
+        scene bg plane_bathroom
+        with locationchange
+        
+        nvl clear
         nvl show dissolve
 
-        n "{vspace=60}I shake my legs, which have started tingling from the long bout of inactivity, back to life and wobble unsteadily towards the lavatory in the back."
-        n "{vspace=60}Opening the door, I'm taken aback for a moment at how cramped the thing is, but then take a deep breath and step inside. I'm pretty glad I'm not a claustrophobe right now. First taking the time to empty my bladder, I then open my backpack and get the usual dosage of pills out."
+        n "Opening the door, I'm taken aback for a moment at how cramped the thing is, but then take a deep breath and step inside. I'm pretty glad I'm not a claustrophobe right now."
+        n "First taking the time to empty my bladder, I then open my backpack and get the usual dosage of pills out."
         n "{vspace=60}A few hours earlier we had a modest meal (it was okay, though not exactly up to the standards of Lilly's cooking or Hanako's more succesful school lunches), and I made sure to order an additional flask of bottled mineral water for this occasion."
+        n "{vspace=60}I use the water to flush the pills down my throat and yawn a bit."
+        n "{vspace=30}It should probably be night already, but if you look through the windows it's still broad daylight. Since we're flying west, we're essentially keeping up with the sun, making this possibly the longest day of my life."
+        n "When we get to London, it'll be late in the afternoon. I hope I'm not going to experience jet lag while we're in Scotland."
 
-        nvl clear
-        nvl show dissolve
+        nvl hide dissolve
 
-        n "{vspace=60}I use the water to flush the pills down my throat and yawn a bit. It should probably be night already, but if you look through the windows it's still broad daylight. Since we're flying west, we're essentially keeping up with the sun, making this possibly the longest day of my life."
-        n "{vspace=60}When we get to London, it'll be late in the afternoon. I hope I'm not going to experience jet lag while we're in Scotland."
-
-        nvl clear
-
-        show lilly basic_smileclosed_cas at tworight
+        scene ev planeride
+        with mediumflash
 
         "When I get back to our seats, I see that Lilly made herself a bit more comfortable. She has her right arm wrapped around Hanako and holds Hanako's hand in her left hand. They look very cute together."
+        "I reach for Hanako's handbag near her feet, take out the camera and snap a quick picture."
+        
+        play sound sfx_camerashutter
 
-        show lilly basic_pout_cas
-
-        "I reach for Hanako's handbag near her feet, take out the camera and snap a quick picture. As Lilly recognizes the click from the camera she pouts with mock indignation."
+        "As Lilly recognizes the click from the camera she pouts with mock indignation."
         li "You should ask before taking pictures, Hisao. I probably looked a bit silly in this one."
-        hi "Nonsense, some of the best pictures are the ones taken spontanously. Ready to switch places again?"
-
-        show lilly basic_weaksmile_cas
-
+        hi "Nonsense, some of the best pictures are the ones taken spontanously."
+        hi "Ready to switch places again?"
         "Lilly considers for a moment."
         li "Actually, would you mind if I stayed like this a little longer?"
         hi "Not at all."
 
-        play music music_twinkle
-        scene ev planeride_normal
+        play music music_twinkle fadein 4.0
 
         "I take a seat and look at the girls again. Lilly has a peaceful smile on her face. I don't think her request was merely about not wanting to risk waking up Hanako."
-
         hi "There are blankets in the pockets of the seats in front of us. Would you…?"
-
         li "Yes please."
+
+        play sound sfx_rustling
 
         "I take the folded blankets and remove the plastic wrapping around them. I softly wrap one of them around Hanako's sleeping form and pass the second one to Lilly, who merely folds it out and covers her lap with it."
         "I sit down in Lilly's original seat and get my own blanket. I doubt I'll get any sleep, but I try to relax nevertheless."
-
         li "Hisao, how long is it until we reach our destination?"
-
-        "I take a look at one of the monitors hanging from the ceiling. The screen shows various bits of information, like the temperature outside, the altitude of the plane and the estimated time of arrival."
-
+        "I take a look at one of the monitors on the headrest in front of me. The screen shows various bits of information, like the temperature outside, the altitude of the plane and the estimated time of arrival."
         hi "Four and a half more hours. I hope Hanako will have recovered her energy a bit by the time we land."
-
         li "I'm relieved she was able to relax. She seemed anxious when we were about to take off. I was afraid she'd turn out to have a fear of flying."
-
         hi "I've been thinking that over and… I don't think it was the flight itself that got her nervous. In fact, she seemed to love the view. It's the first time I've really seen her smile today. It was probably…"
-
         li "Hmmm?"
-
         hi "Ever since my first heart attack, I've hated hospitals. I dislike the sterile appearance and the overly clean smell."
         hi "I've really come to dislike heart monitors as well as anything that sounds like them. It's those beeps that really grate on me. Probably stir up some unpleasant memories."
         hi "The same is true for Hanako, I think. She's been through a long stay in the hospital herself ten years ago. I was thinking that maybe…"
-
         "Lilly seems to get where I'm going."
-
         li "The oxygen masks?"
-
         hi "Exactly."
-
         "She sighs."
-
         li "Today was certainly confrontational for her."
-
         hi "Yeah and yesterday wasn't really all that much better, with her being forced to sit through a lecture about burn injuries and her trainer scaring the living daylights out of her by faking a heart attack."
         hi "I really can't wait for this day to end."
-
         li "Hisao, do you know if Hanako has gone on any trips before she came to Yamaku?"
-
         hi "I asked her that myself a few days ago. You probably know the answer already. She hasn't been on vacation since she lost her family."
         hi "The orphanage occasionally organized day trips for the children there, but Hanako skipped most of those. The closest thing she's had to a vacation in a decade was that trip to Hokkaido."
-
         "Lilly softly squeezes Hanako's hand and strokes her long, dark hair."
-
         li "Hisao… Let's both do our best to make this vacation the most memorable and wonderful experience of her life."
-
-        nvl show dissolve
-
-        n "{vspace=60}I take another look at Lilly and Hanako. Many of the people I know at school hang out in pairs."
-        n "{vspace=60}I know Emi often hangs out with her friend Rin, Naomi from the newspaper club is often seen together with Natsume, her neighbor in class, and I've hardly ever seen Shizune and Misha apart from one another."
-        n "{vspace=60}But none of them seem to have that intimate emotional connection that Lilly and Hanako seem to share, especially now that they've settled their differences."
-
-        nvl clear
-
+        "I take another look at Lilly and Hanako. Many of the people I know at school hang out in pairs."
+        "I know Emi often hangs out with her friend Rin, Naomi from the newspaper club is often seen together with Natsume, her neighbor in class, and I've hardly ever seen Shizune and Misha apart from one another."
+        "But none of them seem to have that intimate emotional connection that Lilly and Hanako seem to share, especially now that they've settled their differences."
         hi "You really love Hanako, don't you?"
-
         "She gives a deep nod, smiling warmly."
-
         li "I feel very fortunate to have her as my best friend."
-
         hi "I think she's very lucky to have you too. I don't think she could have wished for a better friend."
-
         "Lilly gives a self-deprecating sigh."
-
         li "I think I merely provided her with company and comfort."
         li "It was you who first broke through the barrier she erected around herself and convinced her to start opening up to others, including me."
         li "And it's been the people at the newspaper club who made her start thinking about what to do after graduation. In the end, I wasn't really able to help her grow as others have."
-
         "Something about what Lilly just said has a very familiar ring. I attempt to hold back a chuckle, but it's still loud enough for Lilly to catch it."
-
         li "Did I say something amusing?"
-
         hi "You're starting to sound a little bit like Hanako."
-
         li "I beg your pardon?"
-
         hi "The whole thing of 'How useful am I to my friends?' and 'Do my friends get as much out of me as I get out of them?' is how Hanako used to think all the time. Probably it's how she still thinks now and then."
         hi "But I don't think it matters. Maybe it's true that I helped Hanako grow more than you did, and maybe it isn't. Maybe it's true that the newspaper club helped Hanako grow more than you did, and maybe it isn't."
         hi "But I think that's completely irrelevant. I'd like to think that Hanako goes to the newspaper club because she enjoys the activities."
         hi "I'd like to think that the reason she hangs out with me is because she cares about me and feels appreciated and validated by me. That's probably also why she spends time with you."
         hi "Everything else is just a bonus. I don't think it matters to her. It probably shouldn't matter to us either."
-
         "Lilly breaks out into an amused smile."
-
         li "You sound so wise, Hisao."
-
         "I get the feeling she's poking fun at me, but she still sounds appreciative of my words."
-
         hi "What I'm trying to say is that you shouldn't sell yourself short. You're the first real friend Hanako's ever made in her life. That's got to count for something."
-
         li "The first real friend…"
-
         "Lilly seems lost in thought for a moment, then shakes her head as if dismissing some unspoken thought."
-
         li "I suppose I'd better do my best to prove myself worthy of that honor."
-
         hi "Just being yourself should be more than enough to pull that off."
-
         "Lilly smiles, but there's a sad quality to her expression."
-
         li "I'm not completely sure about that. The dilemma I faced concerning my parents' summoning weighed quite heavily on me, and the fact that Akira was involved in the whole situation as well meant that I couldn't go to her for objective advice."
         li "By facing that decision all on my own and by opting to keep everyone else out of it, I could argue that I was very much being myself. And it didn't bode particularly well for me."
-
         hi "I think that trying to address your own problems yourself is only human. We all like to be as independent as possible."
-
         "There's also the possibility that, given the way she acts, Lilly was probably raised and educated to behave as traditionally as possible and was taught that burdening others with one's problems is one of the biggest sins one can commit."
-
         li "True, but if it had been Hanako who had been in my predicament, I would have encouraged her to let others share the burden. I suppose... I don't always practice what I preach."
         li "If I had confided in Hanako sooner, I probably could have saved her a breakdown. And you a heart attack."
-
         hi "You're forgiven. This time."
-
         "Lilly chuckles and then carefully caresses Hanako's hair once more."
-
         li "I'd like to return the trust that Hanako has placed in me, Hisao. The next time she extends me a helping hand or a shoulder to lean on, I'll make sure not to turn it down."
-
         "I smile at Lilly and softly take her hand which is still holding Hanako's."
-
         hi "I'm sure she'd be very happy to hear that, Lilly."
+
+        stop music fadeout 2.0
+        stop ambient fadeout 2.0
 
         scene black
         with Dissolve(2.0)
 
-        play music music_dreamy
-        scene bg airport_baggagecarousel
+        if _in_replay:
+            return
+    
+    label .s4:
+
+        $ set_window_tint(TINT_HISAO)
+
+        play music music_dreamy fadein 4.0
+
+        play ambient sfx_airport_ambience fadein 2.0
+
+        scene bg airport_baggageclaim
+        with Dissolve(2.0)
 
         show hanako def_worry_cas at tworight
+        with chchange
 
         hi "Hey Hanako, I think this one is ours. Can you take a look at the other side of the carousel? I'm aching to get out of here."
-
         ha "O-Okay."
 
+        hide hanako
+        with charaexit
+
+        nvl clear
         nvl show dissolve
 
-        n "{vspace=60}Hanako walks over to the far side of the conveyor belt that has long strings of suitcases going in an endless circle, and we start looking for our baggage."
+        n "Hanako walks over to the far side of the conveyor belt that has long strings of suitcases going in an endless circle, and we start looking for our baggage."
         n "{vspace=60}When our plane landed here at Inverness Airport, we made sure to wait until all the other people on the plane got out."
-        n "{vspace=60}When we reached the baggage claim, I expected our suitcases to be the only ones left, but it seemed another flight had already finished unloading as well, and now we're rummaging through a large pile of bags and suitcases in search of our own."
+        n "When we reached the baggage claim, I expected our suitcases to be the only ones left, but it seemed another flight had already finished unloading as well, and now we're rummaging through a large pile of bags and suitcases in search of our own."
 
         nvl clear
 
-        "Lilly's suitcase is easy to recognize, containing both a sticker with the Japanese and a sticker with the Scottish flag on it, no doubt put there by Akira during their previous journey here."
-        "Hanako's suitcase, however, is as average as they come, and the only way it stands out is that it appears less used than most suitcases on the conveyor."
-
-        nvl show dissolve
-
+        n "Lilly's suitcase is easy to recognize, containing both a sticker with the Japanese and a sticker with the Scottish flag on it, no doubt put there by Akira during their previous journey here. Hanako's suitcase, however, is as average as they come, and the only way it stands out is that it appears less used than most suitcases on the conveyor."
         n "{vspace=60}As I rummage through the contents of the baggage carousel, I let out a loud yawn. It's nearly seven o' clock in the evening right now meaning it'd be about six o' clock in the morning in Japan. All three of us are about ready to faint from exhaustion."
-        n "{vspace=60}Neither Lilly nor I have slept for the last 22 hours or so, and while Hanako did get some sleep in during our flight to London, the sheer amount of stress she's had to deal with, both before and after our international flight, has pretty much negated the advantage she had."
-        n "{vspace=60}London Heathrow was even bigger and busier than the airport we departed from, and both the crowdedness and the process of having to go through customs and security took a harsh toll on her."
+        n "Neither Lilly nor I have slept for the last 22 hours or so, and while Hanako did get some sleep in during our flight to London, the sheer amount of stress she's had to deal with, both before and after our international flight, has pretty much negated the advantage she had."
+        n "London Heathrow was even bigger and busier than the airport we departed from, and both the crowdedness and the process of having to go through customs and security took a harsh toll on her."
 
-        nvl clear
+        nvl hide dissolve
 
-        show hanako defarms_worry_cas
+        show hanako defarms_worry_cas at tworight
+        with charaenter
 
-        "From the corner of my eye, I can see Hanako throw me a quick wave. As I look at her, I can see her dragging my suitcase off the conveyor belt. I get over to her side and notice there are two other suitcases at her feet."
-        "Either she got lucky or she's still sharper than I am right now."
+        "From the corner of my eye, I can see Hanako throw me a quick wave. As I look at her, I can see her dragging my suitcase off the conveyor belt."
+        "I get over to her side and notice there are two other suitcases at her feet. Either she got lucky or she's still sharper than I am right now."
 
-        show hanako basic_worry_cas
+        show hanako basic_worry_cas_close at center
+        with characlose
 
         hi "You just take your suitcase, and I'll carry mine and Lilly's."
-
         ha "Are you g-going to be okay?"
-
         hi "I'll be fine. You just guide Lilly for me."
-
         ha "Okay."
 
         show lilly basic_sleepy_cas at twoleft
         show hanako cover_worry_cas at tworight
+        with charaenter
 
-        "We head back to Lilly who's sitting on the floor leaning against one of the walls and talking into her cell phone. As we reach her, I clear my throat to get her attention."
+        "We head back to Lilly who's sitting on the floor leaning against one of the walls and talking into her cell phone."
+        "As we reach her, I clear my throat to get her attention."
         hi "We retrieved all our luggage, Lilly."
 
         show lilly cane_weaksmile_cas
+        with chchange
 
         "Sporting a weary smile, Lilly closes her cell phone and gets up."
-
         li "Very good, Hisao. Akira says she's almost at the airport. I asked her to wait for us at the parking space in front of the terminal."
         hi "I can't wait to get out of here. Is there anything we need to do before we leave, Lilly?"
         li "No, Hisao. We've already dealt with customs in London, so all we need to do now is leave the secure zone and get through the main hall of the terminal building."
@@ -741,65 +717,94 @@ label sh_ch21:
         "Lilly smiles wearily and nods."
         li "Yes, let's go."
 
-        show hanako emb_downsad_cas at tworight
+        show lilly cane_listen_cas
+        show hanako emb_downsad_cas
+        with chchange
 
-        "As we leave the baggage claim area through some automatic one-way doors, Hanako presses her hat down in preparation of another slow slog through the crowd. It looks like I'm not the only one who can't wait for this long day to end."
+        "As we leave the baggage claim area through some automatic one-way doors, Hanako presses her hat down in preparation of another slow slog through the crowd."
+        "It looks like I'm not the only one who can't wait for this long day to end."
         "Thankfully, Inverness airport isn't nearly as large as London's is, so it only takes us a few minutes to get to the main entrance."
 
-        scene bg inverness_airport
+        stop ambient fadeout 2.0
+
+        scene bg airport_inverness
+        with locationchange
+
+        queue ambient sfx_crowd_outdoors volume 0.7 fadein 2.0
 
         show lilly cane_smile_cas at twoleft
         show hanako basic_distant_cas at tworight
+        with chchange
 
         "We leave the building, and Hanako and I start looking around for Lilly's sister."
 
         show lilly cane_satisfied_cas
+        with chchange
 
         li "Do you see her anywhere?"
-
         "Despite her weariness, I can tell by the tone of Lilly's voice she's extremely eager to meet up with her older sister again, despite the fact it's been less than two weeks since she left Japan."
         hi "I don't see her. Hanako?"
+
+        show hanako basic_normal_cas
+        with chchange
+
         ha "Maybe she got h-held up in traffic."
-        "Lilly takes out her cell phone again and presses the recall button."
 
         show lilly cane_listen_cas
+        with chchange
+
+        play sound sfx_phonedial volume 0.5
+
+        "Lilly takes out her cell phone again and presses the recall button."
+
+        stop sound
 
         li "Akira? We're at the main entrance right now. Did you already make it here?"
 
         show lilly cane_surprised_cas
+        with chchange
 
         li "You did? Hisao and Hanako haven't seen you."
+
+        stop music fadeout 1.0
+
         li "What? You can see us?"
 
-        play music music_comedy
+        play music music_comedy fadein 2.0
 
         show hanako basic_smile_cas
+        with chchange
 
         "Hanako and I immediately start looking around, and, sure enough, less than 50 meters away from where we're standing we can see a person with blond hair holding a cell phone to her ear with one hand and waving enthusiastically in our direction with the other."
         hi "Nevermind, we spotted her. I guess neither of us thought of the possibility she'd be wearing plain clothes today."
 
         show lilly cane_cheerful_cas
         show akira basic_ending at center
+        with chchange
 
         "Lilly puts away her phone, and we hurry over to our welcoming committee. Hanako and I politely wait while Lilly steps forward and gives Akira a long and loving hug. Chuckling, Akira breaks off her sister's embrace."
 
+        # TODO replace Akira sprites with casual outfit
         show akira basic_smug
+        with chchange
 
         aki "Damn, you missed me that much? It hasn't even been two weeks."
         "I have the impression Akira's merely playing cool. She looks quite happy to see her sister again as well."
 
         show akira basic_smile
         show lilly cane_smileclosed_cas
+        with chchange
 
         li "I must admit it felt strange knowing that you were all the way on the other end of the world and I couldn't meet up with you whenever I wanted to anymore."
 
         show hanako emb_downsmile_cas
+        with chchange
 
-        "Turning to us, Akira gives me a friendly nod while playfully ruffling Hanako's hair - a slightly odd gesture that nevertheless makes Hanako smile."
-
+        "Turning to us, Akira gives me a friendly nod while playfully ruffling Hanako's hair—a slightly odd gesture that nevertheless makes Hanako smile."
         aki "Yo. Guess you were looking for someone in a business suit, huh?"
 
         show hanako emb_smile_cas
+        with chchange
 
         "We both look Akira over. She does look different from the way she usually does. Instead of her striped black suit, she's wearing jeans and a loose-fitting shirt. She also has a pair of sunglasses on her head."
         ha "You look… c-cool, Akira."
@@ -807,15 +812,18 @@ label sh_ch21:
         hi "No fair coming here in disguise."
 
         show akira basic_laugh
+        with chchange
 
         "Akira laughs heartily at my comment as she opens the trunk of her car and takes Lilly's suitcase from my hands."
 
         show akira basic_boo
+        with chchange
 
         aki "Unlike some people in this family, I can still occasionally get away from my job. And today's weather was too nice for the suit."
 
         show lilly cane_reminisce_cas
         show hanako basic_worry_cas
+        with chchange
 
         "She finishes putting Lilly's suitcase away and reaches for Hanako's. Lilly looks disappointed."
         li "So they really couldn't make it? Even though it's Saturday today?"
@@ -823,10 +831,12 @@ label sh_ch21:
         aki "A foreign business delegation came over two days ago, and Dad wants to impress them, so he's showing them the sights this weekend. He and Mom are essentially playing tour guide right now."
 
         show lilly cane_sad_cas
+        with chchange
 
         li "Couldn't he have delegated it to someone else?"
 
         show akira basic_annoyed
+        with chchange
 
         aki "It's Dad we're talking about, remember? He really, really likes to keep on top of his business."
         aki "Though I wonder if those people would still have been so impressed if they had known he put off an opportunity to greet his daughter who's been living on the other side of the world."
@@ -835,22 +845,33 @@ label sh_ch21:
         show akira basic_cheerful
         show lilly cane_weaksmile_cas
         show hanako basic_bashful_cas
+        with chchange
 
         aki "Are you guys hungry? I'll treat you."
         hi "I'm not. We've already had dinner on the plane and had another meal at the London airport. Hanako?"
         ha "Me neither."
         li "I think all three of us are merely very tired right now."
         aki "Fair enough. I'll treat you guys tomorrow then. A good night of sleep will do you a world of good."
+
+        # TODO Add BG of Akira's car int.
+
         "Hanako and I get in the back while Lilly gets into the passenger's seat next to Akira."
         aki "Our folks' home lies slightly to the northeast of Inverness. We keep following the shoreline, and we'll reach it in no time. All buckled up?"
         "Our last ride during that outing to a jazz club in the city near Yamaku showed us Akira's not particularly concerned with the speed limits, so we make sure to strap ourselves in firmly."
 
         show akira basic_laugh
+        with chchange
 
         aki "Good. Let's go, guys!"
+
+        stop ambient fadeout 2.0
+
+        # TODO play sqeaking tires SFX
+
         "As we leave the airport behind us, I breathe a sigh of relief. Looks like the hard part of our vacation is over. Now the fun part can begin."
 
         stop music fadeout 2.0
+
         scene black
         with Dissolve(2.0)
 
