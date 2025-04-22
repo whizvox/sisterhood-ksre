@@ -52,7 +52,11 @@ init 1 python:
             ))
     
     def sh_bg(base_name):
-        return f"{sh_bgs}/{base_name}.jpg"
+        return f"{sh_path}/bgs/{base_name}.jpg"
+    
+    def sh_bgs(category, locations):
+        for location in locations:
+            renpy.image(f"bg {category}_{location}", sh_bg(category + "_" + location))
 
     def sh_event(base_name, variants, mark_adult=False):
         sh_image_variants(sh_path + "/event", base_name, variants, lambda variant, path: renpy.image(f"ev {base_name}_{variant}", adult(path) if mark_adult else path))
@@ -73,6 +77,7 @@ init 1 python:
     sh_sprites("akira", ["angry", "cheerful", "depressed", "peaceful", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
+    sh_sprites("hanagown", ["worry_blush_close"])
     sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
@@ -97,50 +102,26 @@ init 1 python:
 
     sh_fireflies()
 
+    sh_bgs("inverness", ["shore"])
+    sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "stairs", "guestroom"])
+    sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
+    sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
+    sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
+    sh_bgs("city", ["coffeeshop"])
+    sh_bgs("hotel", ["bathroom", "room"])
+    sh_bgs("fanres", ["entrance", "table"])
+    sh_bgs("hosp", ["hallway", "office"])
+    sh_bgs("airport", ["coffeeshop", "baggageclaim", "inverness"])
+    sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
+
 init 1:
     # backgrounds
-    image bg satou_patio = sh_bg("satou_patio")
-    image bg inverness_shore = sh_bg("inverness_shore")
-    image bg satou_entrance = sh_bg("satou_entrance")
-    image bg satou_grounds = sh_bg("satou_grounds")
-    image bg satou_livingroom = sh_bg("satou_livingroom")
-    image bg satou_stairs = sh_bg("satou_stairs")
-    image bg school_staircase3 = sh_bg("school_staircase3")
-    image bg school_hallway4 = sh_bg("school_hallway4")
-    image bg school_therapist = sh_bg("school_therapist")
     image bg school_therapist_blur1 = im.Blur(sh_bg("school_therapist"), 1)
     image bg school_therapist_blur2 = im.Blur(sh_bg("school_therapist"), 2)
-    image bg hok_field_ni = sh_bg("hok_field_ni")
-    image bg hok_houseext_ni = sh_bg("hok_houseext_ni")
-    image bg hok_bedroom = sh_bg("hok_bedroom")
-    image bg school_newspaper = sh_bg("school_newspaper")
-    image bg arcade_airhockey = sh_bg("arcade_airhockey")
-    image bg arcade_fightgame = sh_bg("arcade_fightgame")
-    image bg arcade_shooter = sh_bg("arcade_shooter")
-    image bg arcade_floor = sh_bg("arcade_floor")
-    image bg arcade_crane = sh_bg("arcade_crane")
-    image bg arcade_bike = sh_bg("arcade_bike")
-    image bg city_coffeeshop = sh_bg("city_coffeeshop")
-    image bg hotel_bathroom = sh_bg("hotel_bathroom")
-    image bg hotel_room = sh_bg("hotel_room")
-    image bg fanres_entrance = sh_bg("fanres_entrance")
-    image bg fanres_table = sh_bg("fanres_table")
     image bg school_road_run_rn = rain(sh_bg("school_road_run"))
     image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
     image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
-    image bg hosp_hallway = sh_bg("hosp_hallway")
-    image bg hosp_office = sh_bg("hosp_office")
-    image bg school_firstaidclass = sh_bg("school_firstaidclass")
-    image bg airport_coffeeshop = sh_bg("airport_coffeeshop")
-    image bg plane_cabin = sh_bg("plane_cabin")
-    image bg plane_seat = sh_bg("plane_seat")
-    image bg plane_window_runway = sh_bg("plane_window_runway")
-    image bg plane_window_city = sh_bg("plane_window_city")
-    image bg plane_window_clouds = sh_bg("plane_window_clouds")
-    image bg plane_bathroom = sh_bg("plane_bathroom")
-    image bg airport_baggageclaim = sh_bg("airport_baggageclaim")
-    image bg airport_inverness = sh_bg("airport_inverness")
 
     # special events
     image ev rainyroad:

@@ -853,20 +853,17 @@ label sh_ch21:
         li "I think all three of us are merely very tired right now."
         aki "Fair enough. I'll treat you guys tomorrow then. A good night of sleep will do you a world of good."
 
-        # TODO Add BG of Akira's car int.
+        hide akira
+        hide lilly
+        hide hanako
+        with charaexit
 
         "Hanako and I get in the back while Lilly gets into the passenger's seat next to Akira."
         aki "Our folks' home lies slightly to the northeast of Inverness. We keep following the shoreline, and we'll reach it in no time. All buckled up?"
         "Our last ride during that outing to a jazz club in the city near Yamaku showed us Akira's not particularly concerned with the speed limits, so we make sure to strap ourselves in firmly."
-
-        show akira basic_laugh
-        with chchange
-
         aki "Good. Let's go, guys!"
 
         stop ambient fadeout 2.0
-
-        # TODO play sqeaking tires SFX
 
         "As we leave the airport behind us, I breathe a sigh of relief. Looks like the hard part of our vacation is over. Now the fun part can begin."
 

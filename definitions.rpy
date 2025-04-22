@@ -4,7 +4,6 @@ default persistent.sh_show_disclaimer = True
 
 init python:
     sh_path = "mods/sisterhood"
-    sh_bgs = sh_path + "/bgs"
     sh_window_tint = "#FFFFFF"
 
     def sh_sfx(name):
@@ -76,12 +75,16 @@ init:
             (_("Convergence"), "sh_ch17alt.s2", _("Hisao reconvenes with Miss Takawa."), "hisao"),
             (_("A Second Sister"), "sh_ch18.s1", _("Akira expresses her gratitude to Hanako."), "hanako"),
             (_("Invitation"), "sh_ch18.s2", _("Hanako and Hisao receive a surprising offer from Lilly."), "hanako"),
-            (_("Chapter 19.1"), "sh_ch19.s1", _("Hanako attends her first day of first aid training."), "hanako"),
-            (_("Chapter 19.2"), "sh_ch19.s2", _("Hanako returns from her first day of first-aid training."), "hanako"),
+            (_("Too Close to Home"), "sh_ch19.s1", _("Hanako attends her first day of first aid training."), "hanako"),
+            (_("Not So Easily Broken"), "sh_ch19.s2", _("Hanako returns from her first day of first-aid training."), "hanako"),
             (_("Passing Marks"), "sh_ch20.s1", _("Hanako's first-aid training comes to a startling close."), "hanako"),
             (_("A True Scotsman"), "sh_ch20.s2", _("Hanako receives a gift from the newspaper club."), "hanako"),
-            (_("Chapter 20.3"), "sh_ch20.s3", _("Chapter 20 Scene 3"), "hanako"),
-            (_("Chapter 21.1"), "sh_ch21.s1", _("Hisao and Hanako experience intercontinental travel."))
+            (_("Oxytocin Therapy"), "sh_ch20.s3", _("Hanako and Hisao prepare for the long day tomorrow."), "hanako"),
+            (_("Airport Blues"), "sh_ch21.s1", _("Hisao and Hanako get a taste of intercontinental travel.")),
+            (_("Roaring Engines"), "sh_ch21.s2", _("Hisao, Hanako, and Lilly take off."), "hisao"),
+            (_("Mile High"), "sh_ch21.s3", _("Hisao catches Lilly having an intimate moment with a sleeping Hanako."), "hisao"),
+            (_("Welcome to Inverness!"), "sh_ch21.s4", _("The trio arrive in Inverness airport."), "hisao"),
+            (_("Chapter 22.1"), "sh_ch22.s1", _("Chapter 22.1")),
         ])
     ]
 
