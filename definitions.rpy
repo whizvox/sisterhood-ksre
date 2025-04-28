@@ -84,7 +84,8 @@ init:
             (_("Roaring Engines"), "sh_ch21.s2", _("Hisao, Hanako, and Lilly take off."), "hisao"),
             (_("Mile High"), "sh_ch21.s3", _("Hisao catches Lilly having an intimate moment with a sleeping Hanako."), "hisao"),
             (_("Welcome to Inverness!"), "sh_ch21.s4", _("The trio arrive in Inverness airport."), "hisao"),
-            (_("Chapter 22.1"), "sh_ch22.s1", _("Chapter 22.1")),
+            (_("Chapter 22.1"), "sh_ch22.s1", _("Hisao and Hanako prepare to head to dinner."), "hisao"),
+            (_("Chapter 22.2"), "sh_ch22.s2", _("Lilly persuades Hanako and Hisao into the true Inverness experience."), "hisao")
         ])
     ]
 
