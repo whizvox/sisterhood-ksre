@@ -85,7 +85,8 @@ init:
             (_("Mile High"), "sh_ch21.s3", _("Hisao catches Lilly having an intimate moment with a sleeping Hanako."), "hisao"),
             (_("Welcome to Inverness!"), "sh_ch21.s4", _("The trio arrive in Inverness airport."), "hisao"),
             (_("Chapter 22.1"), "sh_ch22.s1", _("Hisao and Hanako prepare to head to dinner."), "hisao"),
-            (_("Chapter 22.2"), "sh_ch22.s2", _("Lilly persuades Hanako and Hisao into the true Inverness experience."), "hisao")
+            (_("Chapter 22.2"), "sh_ch22.s2", _("Lilly persuades Hanako and Hisao into the true Inverness experience."), "hisao"),
+            (_("Chapter 23.1"), "sh_ch23.s1", _("Ch23.1"), "hisao")
         ])
     ]
 
@@ -163,3 +164,4 @@ init:
     # unknown characters
     define ta_ = Character(_("Old woman"), kind=ta)
     define nak_ = Character(_("Mid-thirties man"), kind=nak)
+    define ka_ = Character(_("Pub patron"), kind=ka)
