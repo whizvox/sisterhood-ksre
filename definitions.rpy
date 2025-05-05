@@ -2,6 +2,8 @@ default persistent.sh_slowtransitions = True
 default persistent.sh_windowtint = True
 default persistent.sh_show_disclaimer = True
 
+define config.default_textshader = "typewriter"
+
 init python:
     sh_path = "mods/sisterhood"
     sh_window_tint = "#FFFFFF"
@@ -130,6 +132,7 @@ init:
     # MISCELANEOUS
 
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
+    define config.font_name_map["times"] = f"{sh_path}/font/Newsreader-VariableFont_opsz,wght.ttf"
 
 init:
     init offset = 1

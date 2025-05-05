@@ -102,7 +102,7 @@ init 1 python:
 
     sh_fireflies()
 
-    sh_bgs("inverness", ["shore", "street", "pubdoor", "pubbilliards"])
+    sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards"])
     sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "stairs", "guestroom"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
@@ -172,6 +172,7 @@ init 1:
     Christina Mueller
     GoodFreePhotos.com
     legendarysoulII
+    Firefall
     whizvox
     \n\n
     {b}Sound Effects{/b}

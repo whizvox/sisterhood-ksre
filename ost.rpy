@@ -58,3 +58,4 @@ init:
     define sfx_plane_aftertakeoff = sh_sfx("plane_aftertakeoff")
     define sfx_plane_dingdong = sh_sfx("plane_dingdong")
     define sfx_plane_inflight = sh_sfx("plane_inflight")
+    define sfx_billiards_blunder = sh_sfx("billiards_blunder")
