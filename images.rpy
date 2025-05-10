@@ -170,7 +170,9 @@ init 1:
     Drobot Dean
     Harris' The San Francisco Steak Restaurant
     Christina Mueller
-    GoodFreePhotos.com
+    B Lucava on Flickr
+    Visit Inverness Loch Ness
+    Highland News and Media Ltd.
     legendarysoulII
     Firefall
     whizvox
@@ -201,7 +203,15 @@ init 1:
     megashroom on FreeSound
     aUREa on FreeSound
     yake01 on FreeSound
+    theplax on FreeSound
+    tim.kahn on FreeSound
+    kwahmah_02 on FreeSound
     whizvox
+    \n\n
+    {b}Fonts{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    “QuinqueFive” by GGBotNet
+    “Newsreader” by Production Type
     \n\n
     {b}Additional Writing{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
@@ -231,11 +241,13 @@ init 1:
     {b}Additional Art{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
+    GoodFreePhotos.com
     \n\n
     {b}Sprite Edits{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
     Celestial Caesar
+    Guest Poster
     whizvox
     \n\n
     {b}Beta Testing{/b}

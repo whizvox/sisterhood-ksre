@@ -507,14 +507,14 @@ label sh_ch23:
         "But before I can take the ball, I hear the occupant of the barstool clear her throat. With a puzzled look I get back up."
         "She gets off the barstool, reaches down, takes the ball and drops it into my hand."
 
-        show karla smile
-        with charaenter
+        # show karla smile
+        # with charaenter
 
         ka_ "{font=times}There you are.{/font}"
         hi "{font=times}Thanks, but it really wasn't... necessary to...{/font}"
 
-        show karla laugh
-        with chchange
+        # show karla laugh
+        # with chchange
 
         "The woman stops me with a gesture and gives me a mischievous smile."
         ka_ "{font=times}You were just… retrieving something you dropped, correct?{/font}"
@@ -526,8 +526,8 @@ label sh_ch23:
         hi "{font=times}I wasn't trying to...{/font}"
         "The bartender and the other woman both laugh as they watch me blush."
 
-        show karla smile
-        with chchange
+        # show karla smile
+        # with chchange
 
         ka_ "{font=times}It's a joke, lad. I hope you're not angry.{/font}"
         "Not really knowing how to respond to her, I simply shake my head and walk back to the billiards table."
@@ -578,9 +578,9 @@ label sh_ch23:
         "I look up and notice the patron who flustered me earlier standing next to the time clock. She must have put some coins of her own into the slot."
         "She gives us a friendly smile."
 
-        show karla smile at tworight
-        show hanako at twoleft
-        with charaenter
+        # show karla smile at tworight
+        # show hanako at twoleft
+        # with charaenter
 
         ka_ "{font=times}To make up for {shader=wave:u__amplitude=2.0:u__frequency=0.5}????????? ?????{/shader}.{/font}"
         hi "{font=times}Ah, excuse me?{/font}"
@@ -616,19 +616,25 @@ label sh_ch23:
         "Both Hanako and I gasp in surprise since that last statement was delivered in accented but otherwise completely fluent Japanese."
         hi "Y-Y-You speak Japanese?"
 
-        show karla laugh
-        with chchange
+        # show karla laugh
+        # with chchange
 
         "The woman allows herself a brief laugh at our astonishment."
         ka_ "Hmm hmmm. I've lived in Japan for over 20 years. "
 
         show hanako def_worry
-        show karla smile
         with chchange
 
         "The woman makes a polite bow."
         ka_ "I'm very honored to meet my daughter's best friends."
         hi "Are you...?"
+
+        show hanako at twoleft
+        with charaenter
+
+        show karla smile at tworight
+        with Dissolve(1.0)
+
         ka_ "...Lilly's and Akira's mother? I am. Here in Scotland we're not as formal as people are in Japan. Would you mind if I address the two of you by your first names while you're here?"
         "I share a quick look with Hanako, who is still trying to digest what just happened and can only manage a flabbergasted nod."
         "When in Rome..."
@@ -680,6 +686,7 @@ label sh_ch23:
         "She chuckles modestly."
         ka "I'll take that as a compliment."
         "My words were more an honest appraisal than an attempt at flattery. I can instantly tell that Lilly gets most of her looks from her mother."
+        # TODO Should definitely reword this now that you can actually see her
         "Karla Satou is a tall woman, probably as tall or even slightly taller than Lilly with a similar figure."
         "Although her hair is significantly shorter than Lilly's—about neck-length from what I can see—there's a familiar waveyness to it, and its color is the same vibrant blond as that of her daughters, although it's already slightly grey near the roots."
         "Her eyes are deep blue like Lilly's, but unlike Lilly's cloudy and unreadable stare, Karla's eyes have a sharp and curious gaze to them, and I can see a twinkle in there that I've seen in Akira's eyes as well."
@@ -692,7 +699,7 @@ label sh_ch23:
         with chchange
 
         ka "They do. I made sure Akira spotted me when I came in here. Unfortunately I can't just walk up to them to say hello while the pub quiz is still going on. People might think I'm feeding answers to my daughters."
-        ka "So until that quiz is finished, it'll be just the three of us. If you don't mind some company while playing billiards, that is. I promise not to intrude."
+        ka "So until that quiz is finished, it'll be just the three of us—if you don't mind some company while playing billiards, that is. I promise not to intrude."
 
         show karla basic_smug_suit
         with chchange
@@ -723,7 +730,8 @@ label sh_ch23:
         show hanako emb_smile
         with chchange
 
-        "Hanako presses her hand to her mouth to hide a giggling fit. Looks like I wasn't the only one appraising Karla and trying to determine whether she's more like Lilly or Akira."
+        "Hanako presses her hand to her mouth to hide a giggling fit."
+        "Looks like I wasn't the only one appraising Karla and trying to determine whether she's more like Lilly or Akira."
         ha "Yes."
         hi "So, wanna go for another game? I believe I now owe you a rematch."
 
@@ -749,7 +757,7 @@ label sh_ch23:
         show karla basic_smileclosed_suit
         with chchange
 
-        ka "She is. If you get homesick, be sure to ask her to cook up some Japanese meals. She may not speak your language, but she knows a truckload of Japanese recipes. She IS employed by my husband after all. And don't be afraid to ask her if you need anything else."
+        ka "She is. If you get homesick, be sure to ask her to cook up some Japanese meals. She may not speak your language, but she knows a truckload of Japanese recipes. She {i}is{/i} employed by my husband after all. And don't be afraid to ask her if you need anything else."
         "It's nice to hear we're essentially having our own private restaurant. This vacation just keeps getting better and better."
 
         show karla basic_smile_suit
@@ -776,7 +784,7 @@ label sh_ch23:
         show karla basic_sheepish_suit
         with chchange
 
-        ka "Not familiar with pub quizzes, are you? It's sort of a tradition for each participating team to think up a creative name. Like erm...'Knuckleheads' or 'Intellectually Challenged' or 'B for Dyslexic'. That sort of thing."
+        ka "Not familiar with pub quizzes, are you? It's sort of a tradition for each participating team to think up a creative name. Like erm... ‘Knuckleheads’ or ‘Intellectually Challenged’ or ‘B for Dyslexic’. That sort of thing."
         hi "They've probably picked one without us. We'll just have to see."
 
         show karla basic_smile_suit
@@ -789,49 +797,58 @@ label sh_ch23:
         show karla basic_cheerful_suit
         with chchange
 
-        ka "Right now he's simply thanking everyone for participating. The people who came in third will get a free drink, the ones in second place will get three free drinks and the winners will get a special prize."
+        ka "Right now he's simply thanking everyone for participating. The people who came in third will get a free drink, the ones in second place will get three free drinks, and the winners will get a special prize."
         hi "And what would that be?"
 
         show karla basic_sweet_suit
         with chchange
 
         ka "Usually just drinks. This is a pub after all."
+
+        play sound sfx_applause
+
         "The quizmaster makes an enthusiastic gesture, and the people in the room burst into applause at his words."
 
         show karla basic_smile_suit
         with chchange
 
-        ka "Third place goes to 'The Masters of Romance'. I don't think that's them."
+        ka "Third place goes to ‘The Masters of Romance’. I don't think that's them."
         hi "Doesn't sound like it. Who on earth would think up such a name anyway?"
-        "Another announcement from the quizmaster and another applause follows. I can see Lilly's mother smirking briefly."
+
+        play sound sfx_applause
+
+        "Another announcement from the quizmaster and another applause follows."
 
         show karla basic_smug_suit
         with chchange
 
-        ka "Second place goes to 'The Master Baiters'. That had BETTER not be them."
+        ka "Second place goes to ‘The Master Baiters’. That had {i}better{/i} not be them."
         hi "Naw. Lilly's too classy for that."
 
         show karla basic_cheerful_suit
         with chchange
 
+        play sound sfx_applause
+
         "Finally the winner is announced and Karla brightens up."
-        ka "Well, well. Winner of tonight's quiz is 'Oriental Express'. Heh, clever."
+        ka "Well, well. Winner of tonight's quiz is ‘Oriental Express’. Heh, clever."
 
         scene bg inverness_pubdoor
         with locationchange
 
-        # show lilly basic_smile at twoleft
-        # show akira basic_ending at center
-
-        "Sure enough, I can see Akira and Lilly getting up as a thunderous applause fills the room. Karla, Hanako and I are happy to join in with the applauding crowd. Akira takes Lilly's hand and carefully guides her up the stage."
+        "Sure enough, I can see Akira and Lilly getting up as a thunderous applause fills the room. Karla, Hanako and I are happy to join in with the applauding crowd."
+        "Akira takes Lilly's hand and carefully guides her up the stage."
         hi "That’s pretty amazing. Two people who’ve lived in Japan their entire life beating what’s probably a bunch of locals."
         ka "Heh, the questions they use here are never about local tidbits during the summer break. Gotta give the tourists a fair chance, after all. It’s still impressive though."
 
-        show lilly basic_weaksmile
-        show akira basic_laugh
-        with chchange
+        show lilly basic_weaksmile at twoleft
+        show akira basic_laugh at tworight
+        with charaenter
 
-        "After the quiz host gives both of them a firm handshake, Akira feistily throws her hand up in the air and gives a 'V for victory' sign. Lilly merely gives a few modest waves as she's handed a bag presumably containing their prize."
+        "After the quiz host gives both of them a firm handshake, Akira feistily throws her hand up in the air and gives a ‘V for victory’ sign. Lilly merely gives a few modest waves as she's handed a bag presumably containing their prize."
+
+        play sound sfx_applause
+
         "Their presence on stage results in another wave of applause and more than a few wolf whistles as well."
         "Lilly and Akira seem to take the attention pretty well, but I'm happy Hanako and I decided not to join the team. I don't think getting up on stage would be Hanako's idea of a great time."
         "Knowing that Akira will eventually go back to where she left us, I decide to stay near the billiards table rather than meeting the sisters in the middle of a noisy crowd."
@@ -843,7 +860,7 @@ label sh_ch23:
         show karla basic_smile_suit at tworight
         with locationchange
 
-        "Eventually they get down from the podium and slowly make their way back to where we are. Akira is wearing a confident grin."
+        "Eventually they get down from the podium and slowly make their way back to where we are."
         aki "Man, those guys were no challenge at all. Imagine how easily we'd kick their asses if we'd take them on on our home turf."
         hi "Well done you two."
 
@@ -864,30 +881,35 @@ label sh_ch23:
         aki "Heh, Scotch whisky. Two bottles. I should've guessed."
         "I take a look at the name on the bottle's label and promptly get a headache."
         hi "Geez, can people around here actually pronounce that name?"
-        aki "Auchentoshan? Can't say I've tasted that one before, but this is not cheap liquor we've got here. Looks like we just won back our entry fee big time. Although..."
+        aki "Auchentoshan? Can't say I've tasted that one before, but this is not cheap liquor we've got here. Looks like we just won back our entry fee big time."
+
+        show akira basic_smug
+        with chchange
+
+        aki "Although..."
 
         show lilly cane_cheerful
         with chchange
 
-        "Lilly smiles playfully."
         li "I wonder..."
 
         show karla basic_angry_suit
         with chchange
 
         "I'm sure I know what Lilly's thinking. I'm not sure how serious she is, but I can see her mother's eyes narrowing."
-
-        show lilly cane_pout
-        with chchange
-
         ka "Lillian!"
+
+        show lilly cane_oops
+        with chchangefast
+
         li "Mother!"
 
         show hanako emb_downsmile
-        show akira basic_smug
+        show akira basic_laugh
         with chchange
 
-        "Lilly's pout and the slightly whiny tone of her reply, as if she just got caught with her hand in the cookie jar, seem so out of place for her that Hanako can't hold back a giggle. Lilly quickly recovers though and puts on her usual composed smile."
+        "Lilly's pout and the slightly whiny tone of her reply, as if she just got caught with her hand in the cookie jar, seem so out of place for her that Hanako can't hold back a giggle."
+        "Lilly quickly recovers though and puts on her usual composed smile."
 
         show lilly cane_weaksmile
         with chchange
@@ -933,6 +955,7 @@ label sh_ch23:
         ka "I'm personally fine with that. Just remember that we have a picnic scheduled for tomorrow, and you're coming along, whether you're feeling up to it or not."
 
         stop music fadeout 2.0
+        stop ambient fadeout 2.0
         scene black
         with Dissolve(2.0)
 
