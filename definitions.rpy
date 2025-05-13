@@ -58,7 +58,7 @@ init:
             (_("Chapter 10"), "sh_ch10.s1", _("Hisao and Hanako have trouble hiding their sex life."), "hisao"),
             (_("Chapter 10.1"), "sh_ch10.s2", _("Hisao and Hanako learn of Akira's leave and Lilly's summons."), "hisao"),
             (_("Chapter 11"), "sh_ch11.s1", _("Hanako and Lilly have a memorable night at a fancy restaurant."), "hanako"),
-            (_("Chapter 12"), "sh_ch11.s1", _("Akira learns of Lilly's decision."), "lilly"),
+            (_("Chapter 12"), "sh_ch12.s1", _("Akira learns of Lilly's decision."), "lilly"),
             (_("Chapter 12.1"), "sh_ch12.s2", _("Lilly announces her leave to Hisao and Hanako."), "lilly"),
             (_("Chapter 13"), "sh_ch13.s1", _("Hanako is distracted by an airheaded Naomi."), "hanako"),
             (_("Chapter 13.1"), "sh_ch13.s2", _("Hanako and Hisao head to town to prepare for Lilly's going-away party."), "hanako"),

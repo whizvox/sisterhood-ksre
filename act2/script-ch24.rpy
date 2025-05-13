@@ -4,7 +4,7 @@ label sh_ch24:
         $ set_window_tint(TINT_HISAO)
 
         scene bg satou_stairs
-        with Dissolve(2.0)
+        with nextchapter
 
         play music music_dreamy fadein 4.0
 
@@ -184,7 +184,7 @@ label sh_ch24:
         nvl show dissolve
 
         n "As Lilly finishes a story about a funny incident involving Akira, I can hear Hanako giggle and suddenly feel her hand ruffling my hair. That's probably the fourth time she's done this over the last fifteen minutes."
-        n "{vspace=60}We've been hanging out here in the living room for well over an hour, and we opened up the second bottle of wine a little while ago. To say that the atmosphere is cheerful is quickly becoming an understatement. I don't think anyone's actually completely drunk yet, but I'm sure we've reached the point where each of us is getting rather tipsy."
+        n "{vspace=90}We've been hanging out here in the living room for well over an hour, and we opened up the second bottle of wine a little while ago. To say that the atmosphere is cheerful is quickly becoming an understatement. I don't think anyone's actually completely drunk yet, but I'm sure we've reached the point where each of us is getting rather tipsy."
         n "The fact that the wine Akira obtained for us is really tasty, that the atmosphere between us is completely relaxed, and that we don't have to be secretive about having a few glasses this time around probably all contributed to that."
         n "I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticibly less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy. I'm starting to notice that aspect of her returning as the evening goes on."
 
@@ -207,6 +207,8 @@ label sh_ch24:
         "Lilly's smile fades just a little. For a moment her thoughts seem elsewhere. Then she takes a sip from her glass and sighs softly."
         li "It's not really that... It's just..."
         "Suddenly the atmosphere is starting to get gloomy. Did I touch some unknown nerve?"
+
+        play ambient sfx_ticktock volume 0.6
 
         show lilly basic_reminisce
         with chchange
@@ -238,8 +240,10 @@ label sh_ch24:
         show lilly basic_displeased
         with chchange
 
-        hi "That kind of explains your reaction to her remark. Then again, maybe all that attention in the pub wasn't for her but for you."
+        hi "That kind of explains your reaction to her remark."
+        hi "Then again, maybe all that attention in the pub wasn't for her but for you."
 
+        stop ambient fadeout 4.0
         play music music_ease fadein 4.0
 
         show lilly basic_planned
@@ -254,7 +258,8 @@ label sh_ch24:
 
         li "Perhaps I'm jumping to conclusions, but I do not think any person who wolf-whistles a lady would be my type."
         "Somehow that answer doesn't surprise me at all. Lilly is still a lady through and through."
-        "That does make me wonder about something else, though. Hanako mentioned once she didn't remember Lilly ever having had a boyfriend while she was attending Yamaku, despite the fact Lilly's a very popular student."
+        "That does make me wonder about something else, though."
+        "Hanako mentioned once she didn't remember Lilly ever having had a boyfriend while she was attending Yamaku, despite the fact Lilly's a very popular student."
         "Perhaps she has some very particular tastes?"
         hi "If you don't mind me asking a bold question... What kind of person would be your type, Lilly?"
 
@@ -292,7 +297,7 @@ label sh_ch24:
         with chchange
 
         li "It's fine if he doesn't share my musical tastes, although I'm not sure if I'd be able to be around someone who'd be playing... well... jackhammer music all the time."
-        "That's a pretty interesting way to describe music with a loud and heavy bass and percussion. I can get why Lilly, who mostly uses sounds around her as orientation dislikes overbearing music."
+        "That's a pretty interesting way to describe music with a loud and heavy bass and percussion. I can get why Lilly, who mostly uses sounds around her as orientation, dislikes overbearing music."
 
         show lilly basic_smile
         show hanako basic_worry
@@ -302,7 +307,7 @@ label sh_ch24:
         "I know for a fact that she's not the only person in the room who values that part."
         li "I would have to like the way he looks as well."
         "What?"
-        hi "I'm sorry, did you just say 'look'?"
+        hi "I'm sorry, did you just say ‘look’?"
 
         show lilly basic_pout
         with chchange
@@ -314,13 +319,14 @@ label sh_ch24:
         show lilly basic_smileclosed
         with chchange
 
-        li "I think it's very hard to explain to people who do not use their sense of touch to determine appearances. What I 'see' may be completely different from the way you see things or people."
-        li "I think the term 'I'll know it when I see it' applies here. Somewhat. I have a general idea of what most people I regularly interact with look like..."
+        li "I think it's very hard to explain to people who do not use their sense of touch to determine appearances. What I ‘see’ may be completely different from the way you see things or people."
+        li "I think the term ‘I'll know it when I see it’ applies here. Somewhat. I have a general idea of what most people I regularly interact with look like..."
 
         show hanako emb_downsmile_clip
         with chchange
 
-        "Does that include Hanako? I quickly look at her. Hanako seems to understand what I'm thinking for she nods in affirmation."
+        "Does that include Hanako? I quickly look at her."
+        "Hanako seems to understand what I'm thinking for she nods in affirmation."
         ha "A little while back."
 
         show lilly basic_cheerful
@@ -333,11 +339,14 @@ label sh_ch24:
         with chchange
 
         li "Hisao..."
-        "Lilly slowly gets up."
+        
+        show lilly at twoleft
+        with charamove
+
         hi "Yeah?"
 
         show hanako def_worry
-        with chchange
+        with chchangefast
 
         li "I was wondering... There's one dear friend whose face I still can't picture in my mind. Would it be okay if I...?"
         "I immediately look at Hanako."
@@ -348,21 +357,32 @@ label sh_ch24:
 
         "Hanako pouts slightly."
         ha "Why are you asking m-me?"
-        "She's right. Asking her for permission only makes it seem like an act of intimacy. Lilly's been a treasured friend since I came to Yamaku and having her take a look at me is nothing unreasonable although Hanako doesn't seem to enjoy the idea."
+        "She's right. Asking her for permission only makes it seem like an act of intimacy."
+        "Lilly's been a treasured friend since I came to Yamaku and having her take a look at me is nothing unreasonable, although Hanako doesn't seem to enjoy the idea."
         "Still, I don't think this is something I can reasonably refuse."
         hi "Alright then."
 
+        stop music fadeout 2.0
+        play ambient sfx_ticktock fadein 2.0
+
         hide hanako
-        show lilly basic_planned_close at center
+        show lilly basic_smileclosed_close at center
         with charaenter
 
         "I walk around the table and take Lilly's right hand which I then guide to my face before letting go."
         "None of us says a word as Lilly's hand moves over and around my features, from my chin, to my cheeks, to everywhere else including my hair."
         "I expected this to feel a lot more disquieting than it does. I suppose that's because the action is entirely a matter of practicality, being functionally no different to simply looking at someone's face."
+
+        show lilly basic_planned_close
+        with chchange
+
         "However, I notice that as she runs her fingers back and forth, a mischievous smile starts appearing on her face as if she's enjoying some private joke."
 
-        show hanako defarms_worry at twoleft
-        show lilly basic_planned at tworight
+        stop ambient fadeout 2.0
+        play music music_ease fadein 4.0
+
+        show hanako defarms_worry at tworight
+        show lilly basic_planned at twoleft
         with charaenter
 
         "Before I can figure out what it might be, I suddenly feel my arm being grabbed and pulled back just far enough for my face to retreat beyond the reach of Lilly's fingers."
@@ -370,7 +390,8 @@ label sh_ch24:
         show lilly basic_weaksmile
         with chchange
 
-        "As I look at Hanako, I notice that slightly disapproving pout is still on her face. I'm not sure how long this process usually takes, but from Lilly's slightly sheepish look, I'm almost beginning to wonder if she was... Can you accuse a blind person of staring?"
+        "As I look at Hanako, I notice that slightly disapproving pout is still on her face. I'm not sure how long this process usually takes, but from Lilly's slightly sheepish look, I'm almost beginning to wonder if she was..."
+        "...can you accuse a blind person of staring?"
 
         show lilly basic_cheerful
         with chchange
@@ -378,32 +399,43 @@ label sh_ch24:
         li "Thank you, Hisao."
         hi "Ah... Right. Have you memorized it all?"
         li "I have."
-        "I prepare to get back to the couch we were sitting on, but Hanako isn't moving yet. She's still waiting as if expecting Lilly to say more. Eventually, Lilly smiles playfully."
+        "I prepare to get back to the couch we were sitting on, but Hanako isn't moving yet. She's still waiting as if expecting Lilly to say more."
 
         show lilly basic_giggle
-        show hanako defarms_shock
         with chchange
 
+        "Eventually, Lilly smiles playfully."
         li "It seems you were spot-on about him, Hanako."
+
+        show hanako defarms_shock
+        with charachangealways
+        show hanako defarms_shock_close
+        with characlose
+        show hanako emb_timid_close
+        with charachangealways
+
         "I'm not sure what that's supposed to mean, but Hanako's eyes grow wide in horror, and she lets out a gasp, then immediately wraps both arms around me and pulls me back a little further before giving me a pleading look."
-
-        show hanako emb_timid
-
         hi "Hey, don't look at me like that. What did you say about me?"
 
         show lilly behind_cheerful
+        with chchange
 
         "Instead of answering, Lilly merely teasingly shakes her head."
         li "Sorry Hisao. That's girls' talk."
 
+        show lilly at twoleft_sittingpos
+        show hanako at tworight_sittingpos
+        with charamove
+
         "I get back on the couch, and Hanako sits down next to me, but still holds onto me."
         "I can only assume that Hanako confided in Lilly once that she thought I looked handsome or something and Lilly's statement of agreement, very likely combined with the wine that was consumed, has now triggered some sort of rival reflex in Hanako."
         "Eager to change course and steer out of this minefield, I latch onto the first safe subject that springs to mind."
+        hi "You mentioned musical tastes, Lilly. I suppose that excludes anything with a prominent bass. I guess your tastes are more traditional? Like ballroom music?"
 
         show lilly basic_smileclosed
-        show hanako basic_normal
+        show hanako basic_normal_close
+        with chchange
 
-        hi "You mentioned musical tastes, Lilly. I suppose that excludes anything with a prominent bass. I guess your tastes are more traditional? Like ballroom music?"
         "I recall Hanako taking Lilly on an outing to a night club that held a ballroom dance night a few weeks ago, so it's a safe bet that Lilly's into that kind of music."
         li "Ballroom music is among the things I like to listen to. Classical music in general is something I really enjoy listening to. Perhaps youth nostalgia plays a role as well."
         hi "Youth nostalgia?"
@@ -411,130 +443,157 @@ label sh_ch24:
         hi "What does your mother play? Would it be bagpipes or is that too cliché?"
 
         show lilly basic_pout
-        show hanako basic_bashful_clip
+        show hanako basic_bashful_clip_close
+        with chchange
 
         "Lilly makes a face."
         li "Not every Scotsman plays bagpipes, Hisao. And they're not very useful for anything other than Scottish folk music."
         hi "Then what instrument does she play?"
 
         show lilly basic_smileclosed
+        with chchange
 
         li "My mother's rather skilled at playing the cello. Perhaps I can convince her to give us a small performance this week. Assuming that she's kept up with her practice."
         "Cello, huh? I suddenly remember something I noticed when I was first shown this room."
-
         hi "I think she has. There's a black case standing in this very room. I bet it contains her instrument."
 
-        show lilly basic_smile
+        show lilly basic_satisfied
+        with chchange
 
         "Lilly's face lights up upon hearing this."
         li "Oh, she's keeping it here?"
         hi "Yeah, there's a large case standing in one of the corners. I'm pretty sure there's a cello in there."
         li "Hmmm, would you mind bringing it over here for a moment? Please be very careful with it."
 
-        nvl show dissolve
+        show lilly basic_cheerful at sittingpos
+        hide hanako
+        with charachangealways
 
-        n "{vspace=60}I walk over to the corner and carefully carry the cello case to the couch Lilly's sitting on. She kneels down next to it and slowly feels her way over to the small latches on the side."
-        n "{vspace=60}Opening the case, she takes the instrument out of it and gently, almost tenderly, feels its neck, fingerbox and strings. As she starts toying with the tuning pegs and occasionally plucking a string before carefully adjusting the corresponding peg, a nostalgic look appears on her face."
-        n "{vspace=60}The way she's tuning this thing gives me the impression this is far from the first time she's handled an instrument like this."
-
-        nvl clear
-
+        "I walk over to the corner and carefully carry the cello case to the couch Lilly's sitting on. She kneels down next to it and slowly feels her way over to the small latches on the side."
+        "Opening the case, she takes the instrument out of it and gently, almost tenderly, feels its neck, fingerbox and strings. As she starts toying with the tuning pegs and occasionally plucking a string before carefully adjusting the corresponding peg, a nostalgic look appears on her face."
+        "The way she's tuning this thing gives me the impression this is far from the first time she's handled an instrument like this."
         hi "From the looks of it this isn't the first time you've handled a cello."
 
         show lilly basic_satisfied
+        with chchange
 
         li "It is not. I had music lessons in middle school, and we were allowed to pick an instrument to familiarize ourselves with. I chose the cello, hoping my mother had passed her musical instincts onto me."
         hi "And did she?"
 
         show lilly basic_weaksmile
+        with chchange
 
         li "I don't think she did. I know how to play, but I'm not especially good at it. I haven't touched a cello after I graduated middle school."
         hi "But you do know a few pieces, right?"
         li "A few. It takes a bit of time to learn to play a song completely by ear and from one's memory, especially if you weren't familiar with it before."
-
         hi "Care to give us a demonstration?"
 
         show lilly basic_surprised
+        with chchange
 
         li "Now?"
         hi "If it's not a problem."
 
         show lilly basic_smileclosed
+        with chchange
 
         "Lilly thinks for a moment before taking her glass and taking another sip."
         li "Very well then. On one condition."
         hi "What condition?"
         li "Please close your eyes, and keep them closed until I stop playing."
+        "Huh? What an odd request. I'm a bit puzzled but decide not to think too hard on it."
+
+        stop music fadeout 2.0
 
         scene black
         with shuteye
 
-        "Huh? What an odd request. I'm a bit puzzled but decide not to think too hard on it and close my eyes."
         hi "Okay, my eyes are shut."
         ha "Mine too."
 
-        play music music_lilly
-
+        nvl clear
         nvl show dissolve
 
-        n "{vspace=60}I can hear ruffling sounds coming from Lilly's direction, followed by a squeaking sound that's probably her adjusting the screw securing the endpin, followed by some more ruffling and finally silence."
-        n "{vspace=60}Then I hear a few strings being plucked and the beginning of a soft melody. It sounds slow and uncertain at first, but gradually picks up."
+        n "I can hear ruffling sounds coming from Lilly's direction, followed by a squeaking sound that's probably her adjusting the screw securing the endpin, followed by some more ruffling and finally silence."
+
+        # TODO replace this with cello (rough) part of Concord
+        play music music_lilly
+
+        n "Then I hear a few strings being plucked and the beginning of a soft melody. It sounds slow and uncertain at first, but gradually picks up."
         n "{vspace=60}As I listen to the song, I can tell Lilly's earlier appraisal of her own skills was not inaccurate. She's handling the instrument itself well enough, which is something I'm positive I wouldn't be able to do, and she tuned the instrument correctly, but the pace of the song is a bit unsteady, and I can clearly make out the occasional wrong note in there."
-        n "{vspace=60}Then again, it's also possible she's occasionally messing up due to the alcohol having diminished her hand coordination a bit."
+        n "Then again, it's also possible she's occasionally messing up due to the alcohol having diminished her hand coordination a bit."
 
-        nvl clear
+        nvl hide dissolve
 
-        stop music
+        stop music fadeout 1.0
 
         "Suddenly, the song stops, and Lilly lets out a soft, but frustrated sigh."
 
         scene bg satou_livingroom_ni
-        show hanako def_worry at tworight
-        show lilly basic_displeased at twoleft
+        show lilly basic_displeased at twoleft_sittingpos
+        with openeye
 
-        nvl show dissolve
-
-        n "{vspace=60}I curiously open my eyes and see a frown of concentration on Lilly's face."
+        "I curiously open my eyes and see a frown of concentration on Lilly's face."
 
         play music music_lilly
-        show lilly basic_smileclosed
 
-        n "{vspace=60}After a few moments however, her face relaxes again and she picks up where she left off."
-        n "{vspace=60}The right notes must have slipped her mind for a few seconds. Memorizing an entire song seems like a massive task to me. I take advantage of the opportunity to quickly look Lilly over."
-        n "{vspace=60}She's still sitting in her usual spot on the couch, holding the cello in front of her. The fingers of her left hand are hard at work trying to keep up with the quick movements of the bow in her right hand."
-        n "{vspace=60}Her handling of the bow is remarkably fluid, considering the fact she's had several glasses of wine already."
+        show lilly basic_smileclosed
+        with chchange
+
+        "After a few moments however, her face relaxes again and she picks up where she left off."
 
         nvl clear
+        nvl show dissolve
 
-        "As my gaze lowers slightly, I manage to suppress a gulp with supreme effort as I suddenly realize why Lilly wanted us to close our eyes."
-        "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them."
-        "Nowadays women probably wear long dresses, but the knee-high summer skirt Lilly's been wearing this evening doesn't even remotely qualify as one."
-        "The cello is more than large enough to block the view of her panties, but I can definitely see way more of Lilly's long and shapely legs than anyone would consider appropriate."
+        n "The right notes must have slipped her mind for a few seconds. Memorizing an entire song seems like a massive task to me. I take advantage of the opportunity to quickly look Lilly over."
+        n "She's still sitting in her usual spot on the couch, holding the cello in front of her. The fingers of her left hand are hard at work trying to keep up with the quick movements of the bow in her right hand."
+        n "Her handling of the bow is remarkably fluid, considering the fact she's had several glasses of wine already."
+        
+        nvl clear
+        
+        n "As my gaze lowers slightly, I manage to suppress a gulp with supreme effort as I suddenly realize why Lilly wanted us to close our eyes."
+        n "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them. Nowadays women probably wear long dresses, but the knee-high summer skirt Lilly's been wearing this evening doesn't even remotely qualify as one."
+        n "The cello is more than large enough to block the view of her panties, but I can definitely see way more of Lilly's long and shapely legs than anyone would consider appropriate."
 
-        hide lilly
-        show hanako basic_shallnotpass at center
+        nvl hide dissolve
+
+        show hanako basic_shallnotpass:
+            offscreenright alpha 0.0
+            ease 0.5 center alpha 1.0
+        with charaexit
+        show hanako:
+            center alpha 1.0
+        with None
 
         "Before this latest image can sink into my mind, I feel movement on the couch next to me and the next moment, I can see Hanako getting up and positioning herself in front of me."
 
         scene black
-        with shuteye
+        with shuteyefast
 
-        "Getting the hint, I quickly close my eyes again. I don't feel her getting back on the couch though. Is she just going to stay in this position until Lilly stops playing?"
+        "Getting the hint, I quickly close my eyes again."
+        "..."
+        "I don't feel her getting back on the couch though. Is she just going to stay in this position until Lilly stops playing?"
 
         scene bg satou_livingroom_ni
         show hanako basic_shallnotpass at center
-        hide lilly
+        with openeye
 
-        "I cautiously take a peek and sure enough, Hanako is still in front of me, her arms spread wide as if to try and block as much of my view as possible. I fight to hold back a chuckle. Truth be told she looks more than a little silly."
+        "I cautiously take a peek and sure enough, Hanako is still in front of me, her arms spread wide as if to try and block as much of my view as possible."
+        "I fight to hold back a chuckle. Truth be told she looks more than a little silly."
         "There's just something... exaggerated... about her disapproving pout as if she's trying just a little bit too hard to be intimidating, and the result is more cute than threatening."
-
         "I open my mouth to tell her to sit back down and assure her that I have eyes for nobody but her, but I'm pretty sure Lilly would immediately pick up any attempts at conversation and figure out what's going on here."
         "I try to get my answer across to Hanako by using gestures, but she either doesn't understand their meaning or is simply refusing to pay attention to them."
-        "Resorting to other means, I reach up, carefully take her face in my hands and bring it down until her eyes are at the same level as mine. I give her a soft kiss on the lips, making sure to keep it as quiet as I can."
+
+        show hanako basic_shallnotpass_close
+        with characlose
+
+        "Resorting to other means, I reach up, carefully take her face in my hands and bring it down until her eyes are at the same level as mine."
+        "I give her a soft kiss on the lips, making sure to keep it as quiet as I can."
         "That makes her relax a bit, though she still shows no signs of sitting back on the couch next to me. My eyes wander along her body, and I quickly avert my eyes as she catches me staring down the neckline of her blouse for a moment."
 
-        show lilly basic_smileclosed at twoleft
+        # show lilly basic_smileclosed at twoleft
         show hanako emb_smile_cas_nohat_clip_close
+        with chchange
 
         "When I look back at her face, I'm taken aback by the change that has come over her expression. Her disapproving pout has made way for a broad and childish smile that makes me a bit wary."
 
@@ -547,6 +606,8 @@ label sh_ch24:
         scene bg satou_livingroom_ni
         show hanagown drunksmile_close at center
         show lilly basic_smileclosed at twoleft
+
+        # TODO Show chapter 24 CGs
 
         nvl show dissolve
         n "{vspace=60}What caught me off guard wasn't the fact that Hanako has straddled my lap; that much I felt the moment she lowered her hips, but what shocks me is the fact that she has unbuttoned several buttons of her blouse, giving me an ample view of her chest and even part of her belly while still hiding most of the scarring on her right side."
