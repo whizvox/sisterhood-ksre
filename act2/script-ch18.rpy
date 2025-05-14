@@ -343,7 +343,6 @@ label sh_ch18:
         aki "Hehe, I didn't tell her, but I could relate to how she felt. I've been there myself after all."
         ha "What do you mean?"
 
-        scene school_girlsdorm
         show akira basic_ponder
         with chchange
 

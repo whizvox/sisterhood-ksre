@@ -32,9 +32,17 @@ label sisterhood_start:
     call sh_ch15
     call sh_ch16
     call sh_ch17
+    call sh_ch17alt
+    call sh_ch18
+    call sh_ch19
+    call sh_ch20
+    call sh_ch21
+    call sh_ch22
+    call sh_ch23
+    call sh_ch24
+    call sh_ch25
     call sisterhood_credits
     call sisterhood_postcredits
-    #call sisterhood_ch17alt
 
     return
 

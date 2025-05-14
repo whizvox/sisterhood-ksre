@@ -3,6 +3,9 @@ label sh_ch17alt:
 
         $ set_window_tint(TINT_HISAO)
 
+        if not _in_replay:
+            pause 3.0
+
         scene bg school_track_on
         with Dissolve(2.0)
 
