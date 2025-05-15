@@ -90,7 +90,8 @@ init:
             (_("Chapter 22.2"), "sh_ch22.s2", _("Lilly persuades Hanako and Hisao into the true Inverness experience."), "hisao"),
             (_("Chapter 23.1"), "sh_ch23.s1", _("Ch23.1"), "hisao"),
             (_("Chapter 24.1"), "sh_ch24.s1", _("Ch24.1"), "hisao"),
-            (_("Chapter 25.1"), "sh_ch25.s1", _("Ch25.1"), "hisao")
+            (_("Chapter 25.1"), "sh_ch25.s1", _("Hisao, Hanako, and Lilly have a less-than-pleasant waking up."), "hisao"),
+            (_("Chapter 25.2"), "sh_ch25.s2", _("Hanako and Lilly prepare for the upcoming picnic."), "hisao")
         ])
     ]
 

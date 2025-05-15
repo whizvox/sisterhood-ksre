@@ -408,20 +408,32 @@ label sh_ch25:
         stop ambient fadeout 1.0
 
         scene bg inverness_shore
-        play music music_serene
         show hanako emb_downsad at right
+        with locationskip
+
+        play music music_serene fadein 4.0
+        play ambient sfx_waves volume 0.2
 
         hi "This looks like a good spot."
+        "The crisp morning air coupled with the gentle sound of the water lapping against the shore gives the area a calming atmosphere. There are a few large rocks nearby that seem perfect to use as a place to sit down."
+        "I look at Hanako and gesture her to sit down next to me."
 
-        nvl show dissolve
-        n "{vspace=60}The crisp morning air coupled with the gentle sound of the water lapping against the shore gives the area a calming atmosphere. There are a few large rocks nearby that seem perfect to use as a place to sit down. I look at Hanako and gesture her to sit down next to me."
-        n "{vspace=60}Since we left the kitchen she's been meekly following me without saying a single word like a bad pupil following a teacher to the detention room. Even as she sits down next to me, I notice she's sitting several paces away from me. Deciding that the elephant in the room can wait until after we've had breakfast, I take a bottle and a sandwich and hand them to Hanako who quietly takes them."
+        show hanako:
+            ease 5.0 center
+        with None
+
+        "Since we left the kitchen she's been meekly following me without saying a single word like a bad pupil following a teacher to the detention room. Even as she sits down next to me, I notice she's sitting several paces away from me."
+
+        show hanako at center
+        with None
+
+        "Deciding that the elephant in the room can wait until after we've had breakfast, I take a bottle and a sandwich and hand them to Hanako who quietly takes them."
 
         show hanako emb_sad
+        with chchange
 
-        n "{vspace=60}As we sit there, nibbling our sandwiches and then flushing the bread and meat down with the soft drinks we got, I can tell from her posture that Hanako is slowly relaxing a little bit. I figure now would be a good moment to start a conversation."
-        nvl clear
-
+        "As we sit there, nibbling our sandwiches and then flushing the bread and meat down with the soft drinks we got, I can tell from her posture that Hanako is slowly relaxing a little bit."
+        "I figure now would be a good moment to start a conversation."
         hi "I guess we're both a little under the weather after yesterday. How are you feeling right now?"
         ha "...M-My h-head hurts."
         hi "Same here. You're not nauseous, are you?"
@@ -429,11 +441,16 @@ label sh_ch25:
         hi "Me too, though the meat's a bit much. Lilly's mom said these sandwiches will ease hangovers though."
         ha "I h-hope so."
         hi "If it's a consolation, Lilly isn't any better off from the looks of it. At least we slept in a bed this night."
+
+        show hanako emb_timid
+        with chchange
+
         ha "W-What?"
         "I briefly tell Hanako about Lilly spending the night on the couch."
         hi "Heh, so it's a good thing I locked our door, or we'd have had a really uncomfortable moment in there."
 
         show hanako emb_downsad
+        with chchange
 
         ha "Ahahaha."
         "That has to be the most joyless laugh I've ever heard out of Hanako. I'm not sure if this is something Hanako will be able to laugh about later, but she certainly hasn't reached that stage right now yet."
@@ -441,138 +458,172 @@ label sh_ch25:
         hi "So... um... About what happened between us last night..."
 
         show hanako emb_blushing
+        with chchange
 
         "Hanako lets out a dejected sigh that makes me feel guilty about even finishing my sentence."
         hi "It's kinda awkward for me too, but Lilly's probably going to think strange stuff if we're this jumpy around one another all day long."
-        "That seems to get through to Hanako since she turns to me and gives me a resigned nod."
 
         show hanako emb_downtimid
+        with chchange
 
+        "That seems to get through to Hanako since she turns to me and gives me a resigned nod."
         ha "I'm... s-s-sorry."
         hi "It's okay. I giddily went along with it. We're both equally to blame."
 
         show hanako emb_sad
+        with chchange
 
         ha "But I... s-started it."
         hi "You don't really see Lilly as a rival, do you? Lilly's far too loyal to you to even consider trying to steal me away from you. And I wouldn't trade you in for her either."
         hi "She's a good friend. A wonderful friend. Like an older sister. But nothing more than that."
-        ha "I... I know."
+        ha "I...I know."
         "I think Hanako's gotten to the point by now where she can believe my words if she stops to think about them rationally."
-        "But on some deeper level a part of her is probably still convinced that Lilly could easily seduce me away from her if she made even a half-hearted effort. Which is probably why she got so territorial when Lilly praised my looks."
+        "But on some deeper level, a part of her is probably still convinced that Lilly could easily seduce me away from her if she made even a half-hearted effort—which is probably why she got so territorial when Lilly praised my looks."
         "I'm positive, however, that that fear will eventually disappear as we continue our relationship."
-
-        hi "This could have created an awkward situation with Lilly's parents, but in the end we got away in time and nothing bad happened. That's what matters."
+        hi "This could have created an awkward situation with Lilly's parents, but in the end, we got away in time and nothing bad happened. That's what matters."
         hi "I don't think any less of you after last night. The two of us will probably be able to laugh about this later."
 
         show hanako emb_timid
+        with chchange
 
         "Hanako doesn't seem too sure about that last part, but she still looks relieved by my words."
-
         ha "I'm... h-happy about that, but... w-we still s-shouldn't have d-done what we d-did."
         hi "Aside from the place where we started this, do you regret the act itself, Hanako?"
 
         show hanako emb_blushing
+        with chchange
 
         "Her face turns as red as the tomatos on the sandwiches, but eventually she manages to softly shake her head."
         ha "N-no, b-but I... d-don't w-want to do it... l-like that again. Umm... Y-you...?"
-
         "Since we're boyfriend and girlfriend now and since we've had sex before, I assumed that what we did was as consentual as we could make it, but maybe I'm wrong about that."
         "She seemed to be enjoying it a lot last night, but now that I think about it, I doubt a sober Hanako would ever let me do it with her in a position that puts just about all her scars on full display like that. She's still really sensitive about them."
         "I hope I didn't overstep my bounds. That would give this whole thing a very bitter aftertaste."
-
         hi "I can't exactly say I hated it, but I get that we got a little carried away. I enjoyed the act itself though."
         ha "M-me too, b-but if... If your chest s-started hurting, w-would you have stopped?"
-        "Suddenly I get where she's going with this. I hadn't even thought about that. But it's clear that Hanako did. At least, after the fact."
+        "Suddenly I get where she's going with this."
+        "I hadn't even thought about that, but it's clear that Hanako did. At least, after the fact."
+        hi "I'd like to say I would have stopped in time, but I'm not so sure about it now that I think about it. "
 
         show hanako emb_downtimid
+        with chchange
 
-        hi "I'd like to say I would have stopped in time, but I'm not so sure about it now that I think about it. "
         ha "I'm... n-not sure about m-myself either, s-so..."
         "I recall what the nurse told me some time back when he gave me the talk about keeping the big head in charge at all times. That certainly wasn't the case last night."
         "Damnit! Looks like that stunt in the living room wasn't even the most irresponsible thing we did that night. Given the way we went at it last night, I could have ended back in the hospital here. That would have been hard to explain."
-        "I really should have known better. Still, even though something could have happened, that wasn't the case. I put a hand on Hanako's shoulder."
-
+        "I really should have known better. Still, even though something could have happened, that wasn't the case."
+        "I put a hand on Hanako's shoulder."
         hi "I get what you're saying. We took a risk that we shouldn't have taken. But nothing happened, so it's probably best not to worry about what could have occurred. There's no point in that. At least we now that know my heart can handle it."
         "I suddenly remember something Hanako said a few days earlier."
         hi "I... guess this wasn't exactly the slow and romantic experience you wanted..."
 
         show hanako emb_downsad
+        with chchange
 
         "Seems like Hanako remembers that as well, and she seems genuinely disappointed."
-        hi "...but let's take a rain check on it. We have weeks ahead of us, we have our own private bedroom and Lilly's not gonna be around all the time. I'm sure we'll get plenty of opportunities."
+        hi "...but let's take a rain check on it. We have weeks ahead of us, we have our own private bedroom, and Lilly's not gonna be around all the time. I'm sure we'll get plenty of opportunities."
 
         show hanako emb_blushing
+        with chchange
 
         ha "O-Okay then."
         hi "Cheer up. Nobody but us knows about this little incident, and we'll just keep it that way. They say that shared secrets strengthen a couple's bond with one another."
 
-        show hanako emb_downsmile
+        show hanako emb_downsmile_close
+        with chchange
 
         "I give Hanako a kiss on the cheek, and for the first time this morning, there's a little smile on her face."
         ha "Okay. No telling anyone."
         hi "How are you feeling right now?"
 
-        show hanako emb_sad
+        show hanako emb_sad_close
+        with chchange
 
         ha "My h-head still hurts."
         hi "Let's take another sandwich and another soft drink."
 
         show hanako emb_downtimid
+        with chchange
 
         ha "I'm not really that hungry."
         hi "Lilly's mom said it helps against hangovers. Let's share this one."
-        "I break the sandwich in two and give Hanako one half. After eating my half, I finish my bottle of juice. I notice Hanako has only finished half her bottle."
+        "I break the sandwich in two and give Hanako one half."
+        "After eating my half, I finish my bottle of juice. I notice Hanako has only finished half her bottle."
         hi "You're not going to drink anymore?"
         ha "One bottle was enough for me. I'm not r-really thirsty anymore."
-        "We take a moment to just sit here and enjoy the fresh breeze blowing over the bay. It's still relatively early in the morning, and the picnic won't take place until after noon."
-        "I'm not really sure how long it'll take for Lilly and Hanako to prepare the snacks, but I doubt it'll take hours even in their current condition."
-
+        "We take a moment to just sit here and enjoy the fresh breeze blowing over the bay."
+        "It's still relatively early in the morning, and the picnic won't take place until after noon. I'm not really sure how long it'll take for Lilly and Hanako to prepare the snacks, but I doubt it'll take hours even in their current condition."
         hi "Hanako?"
-        ha "Yes?"
 
         show hanako emb_sad
+        with chchange
 
+        ha "Yes?"
         hi "I'm still kinda tired. What do you say we head back to our bedroom and get a few more hours of sleep. We'll probably feel better afterwards."
         ha "What about the snacks?"
         hi "It's not going to take hours, and I'll help out if necessary. I'll set the alarm function of my cell phone to wake us up at half past 11. Lilly's mother won't be back until noon anyway."
         ha "Just a few hours then."
         hi "Let's go."
-        "I take Hanako's hand, and we walk back to the mansion. As we enter, we're greeted by the housekeeper who informs us that Lilly went back to bed for a little while as well."
+        "I take Hanako's hand, and we walk back to the mansion."
+
+        stop ambient fadeout 1.0
+
+        scene bg satou_stairs
+        with locationchange
+
+        "As we enter, we're greeted by the housekeeper who informs us that Lilly went back to bed for a little while as well."
         "Deciding to follow her example, we make our way up the stairs. Let's hope we'll feel better at noon."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
 
+        if _in_replay:
+            return
+
+    label .s2:
+
+        $ set_window_tint(TINT_HISAO)
+
         scene bg satou_kitchen
-        play music music_daily
         show hanako basic_bashful at tworight
         show lilly basic_weaksmile at twoleft
+        with Dissolve(1.0)
+
+        play music music_daily fadein 4.0
 
         hi "Are you certain you don't need my help preparing all of this? There's a truckload of food on this table."
         li "Very certain, Hisao. You know what they say. Too many cooks in the kitchen spoil the broth. We might end up getting in each other's way."
         hi "I could help Hanako sort all this stuff out."
+
+        show hanako basic_normal
+        with chchange
+
         ha "Ummm..."
         li "The offer's appreciated, Hisao, but I think it won't be necessary. If I can think of something, I will let you know."
-        "I sigh softly and sit back down in the kitchen chair near the fridge. Lilly and Hanako do look like they can handle themselves with the picnic food, but I don't really like feeling like dead weight."
+        "I sigh softly and sit back down in the kitchen chair near the fridge."
 
-        nvl show dissolve
-        n "{vspace=60}Either Lilly's mother was right, and those sandwiches really helped or those hours of additional sleep worked their magic on us, but the gist of it is that all three of us are now feeling good enough to actually be looking forward to a little outing into the countryside."
-        n "{vspace=60}Nevertheless I can still feel the occasional painful throb dance around the insides of my skull, and I would welcome having something to do to distract from the sensation."
-        nvl clear
+        show lilly at center
+        with charachangealways
+
+        "Lilly and Hanako do look like they can handle themselves with the picnic food, but I don't really like feeling like dead weight."
+        "Either Lilly's mother was right, and those sandwiches really helped or those hours of additional sleep worked their magic on us, but the gist of it is that all three of us are now feeling good enough to actually be looking forward to a little outing into the countryside."
+        "Nevertheless, I can still feel the occasional painful throb dance around the insides of my skull, and I would welcome having something to do to distract from the sensation."
 
         show hanako basic_worry
+        with chchange
 
         ha "Ummm, Lilly... What's a f-ficelle?"
-        nvl show dissolve
-        n "{vspace=60}The kitchen table is filled with enough ingredients to prepare a buffet of, from pieces of bread to bottles filled with stuff like mustard and vinegar to various pieces of fruit and vegetables."
-        n "{vspace=60}We spent the last 15 minutes unpacking everything in the shopping bags supposedly left here by the housekeeper, and now Hanako is frantically switching back and forth between checking the pieces of paper in her hand containing recipes and putting the various items in order."
-        nvl clear
+        "The kitchen table is filled with enough ingredients to prepare a buffet of, from pieces of bread to bottles filled with stuff like mustard and vinegar, to various pieces of fruit and vegetables."
+        "We spent the last 15 minutes unpacking everything in the shopping bags supposedly left here by the housekeeper, and now Hanako is frantically switching back and forth between checking the pieces of paper in her hand containing recipes and putting the various items in order."
 
         show lilly basic_smileclosed
+        with chchange
 
-        li "It's a thinner variation of a baguette; a French loaf of bread."
+        li "It's a thinner variation of a baguette: a French loaf of bread."
 
         show hanako basic_distant
+        with chchange
 
         ha "Ah, okay."
         li "Has the oven already reached the right temperature? I believe it should be at 200 degrees."
@@ -580,117 +631,143 @@ label sh_ch25:
         li "We should put the bread in as soon as we can or we won't be able to finish the sandwiches in time."
 
         show hanako basic_worry
+        with chchange
 
         ha "I'll keep an eye on it."
-
-        nvl show dissolve
-        n "{vspace=60}We ended up getting out of bed slightly later than planned, and as a result Lilly seems to have stepped up her usual pace a bit, carving loaves of bread so quickly it makes me feel it's a miracle she hasn't cut her fingers off yet."
-        n "{vspace=60}Hanako, in the meantime, is working hard at fulfilling her role as Lilly's first mate, repeatedly reading the various recipes out loud and putting all the ingredients in a specific order on the table while cutting up pieces of bread, fruit and vegetable whenever she has the chance."
-        nvl clear
+        "We ended up getting out of bed slightly later than planned, and as a result, Lilly seems to have stepped up her usual pace a bit, carving loaves of bread so quickly it makes me feel it's a miracle she hasn't cut her fingers off yet."
+        "Hanako, in the meantime, is working hard at fulfilling her role as Lilly's first mate, repeatedly reading the various recipes out loud and putting all the ingredients in a specific order on the table while cutting up pieces of bread, fruit, and vegetable whenever she has the chance."
 
         show lilly basic_surprised
         show hanako basic_normal
+        with chchange
 
         li "It'd be best if we made sure the ingredients for the tartines and sandwiches are ready by the time we take the bread out of the oven so we can apply the butter while the bread is still hot."
         ha "For both the radish tartines and the avocado and ham sandwiches?"
         li "Do you think it's possible?"
         ha "If we both work to get the avocado and radishes c-cut up in time. But we must make sure the water with the macaroni d-doesn't boil over."
-        "Lilly turns her head in my general direction."
+        
+        show lilly basic_smile
+        with chchange
+
         li "Hisao, could you please keep an eye on the macaroni? It's supposed to cook for... ah... Hanako?"
         ha "Mmm... Four more minutes."
 
         show lilly basic_smileclosed
+        with chchange
 
         li "Four more minutes. If you could drain the water afterwards and put the macaroni in the bowl near the sink, that would be much appreciated."
         hi "I'm on it. Anything else?"
         li "Not at the moment."
-        "It's hardly active work, but it's better than nothing. I get up from my chair and get over to the kitchen island where a pan filled with water and macaroni is boiling on the fire."
+        "It's hardly active work, but it's better than nothing."
+
+        play ambient sfx_boilingwater
+
+        "I get up from my chair and get over to the kitchen island where a pan filled with water and macaroni is boiling on the fire."
 
         show lilly basic_smile
         show hanako basic_bashful
+        with chchange
 
         li "What more do we need again for the radish tartines, Hanako?"
         ha "Ah... Six tablespoons of soft, salted butter, sea salt and freshly ground pepper. Um... I was t-thinking that maybe we could add a bit of black pepper as well. We have plenty for the melon slaw."
 
         show lilly basic_weaksmile
+        with chchange
 
         li "I'm sorry, Hanako, but for this occasion I'd like to stick strictly to the recipes we have. This is the first time my mother gets to experience my cooking."
         ha "Oh... ummm... Okay."
 
         show lilly basic_smileclosed
+        with chchange
 
-        nvl show dissolve
-        n "{vspace=60}That certainly explains why Lilly is taking this whole thing so seriously and why she insisted on Hanako playing merely a supportive role in the whole thing. This isn't just a picnic to her, but an opportunity to prove herself to her mother."
-        n "{vspace=60}It kind of makes sense that she doesn't want to throw an unnecessary risk into the mix by going along with Hanako's hit-and-miss culinary instincts. Fortunately, Hanako doesn't take Lilly's comment personally, or at least she doesn't show it."
-        nvl clear
-
+        "That certainly explains why Lilly is taking this whole thing so seriously and why she insisted on Hanako playing merely a supportive role in the whole thing. This isn't just a picnic to her, but an opportunity to prove herself to her mother."
+        "It kind of makes sense that she doesn't want to throw an unnecessary risk into the mix by going along with Hanako's hit-and-miss culinary instincts. Fortunately, Hanako doesn't take Lilly's comment personally, or at least she doesn't show it."
+        
+        stop ambient fadeout 0.5
+        play sound sfx_boilingwater_pour
+        
         "I pour off the water and fill the bowl Lilly mentioned with the contents from the pan."
         hi "I'm finished with the macaroni, Lilly. Where do you want me to put it?"
         li "Just leave it with Hanako, Hisao."
 
         show hanako defarms_worry
+        with chchange
 
-        "Before I can approach the kitchen table, a high-pitched whine from the oven draws our attention. Hanako gets up from her chair, places the bread she and Lilly prepared into the oven and then takes the bowl of macaroni from my hands."
+        # TODO play oven beep
+
+        "Before I can approach the kitchen table, a high-pitched whine from the oven draws our attention. Hanako gets up from her chair, places the bread she and Lilly prepared into the oven, and then takes the bowl of macaroni from my hands."
         "She places it on the table some distance away from Lilly and herself."
 
         show lilly basic_cheerful
         show hanako basic_worry
+        with chchange
 
         li "Thank you, Hanako. Shall we proceed with the radishes for the tartines and the avocado and ham for the sandwiches?"
-        li "If it's not a problem with you, you can do the radishes and move on with the cucumber and pear for the melon slaw when you're done with them. I will handle the avocado, ham and shallots."
+        li "If it's not a problem with you, you can do the radishes and move on with the cucumber and pear for the melon slaw when you're done with them. I will handle the avocado, ham, and shallots."
         ha "Okay."
 
-        nvl show dissolve
-        n "{vspace=60}Having nothing more to do, I get back to watching Lilly and Hanako work. They do seem to work well together, and someone looking at Lilly without paying attention to her eyes probably wouldn't be able to tell that she's blind."
-        n "{vspace=60}Eventually, another sound from the oven alerts us to the fact the bread is ready, and after Hanako, armed with two oversized oven mitts, retrieves it she gets back to cutting up the vegetables and fruit while Lilly starts working on putting the sandwiches together."
-        nvl clear
+        play sound sfx_cuttingboard
+
+        "Having nothing more to do, I get back to watching Lilly and Hanako work. They do seem to work well together, and someone looking at Lilly without paying attention to her eyes probably wouldn't be able to tell that she's blind."
+
+        play sound sfx_cuttingboard
+
+        "Eventually, another sound from the oven alerts us to the fact the bread is ready, and after Hanako—armed with two oversized oven mitts—retrieves it, she gets back to cutting up the vegetables and fruit while Lilly starts working on putting the sandwiches together."
 
         show lilly basic_satisfied
+        with chchange
 
         li "Hisao?"
         hi "Yes, Lilly?"
         li "If you're still looking for something to do, would you be so kind as to get some cellophane wrapping from the drawer near the oven and wrap up the snacks as I finish them? Allison said that Mother left some saddlebags in the hallway. Would you...?"
         hi "Sure, I'll go and get them."
-
-        nvl show dissolve
-        n "{vspace=60}I retrieve the saddlebags from the hallway, take a seat near Lilly and start wrapping up the snacks. With Hanako preparing the ingredients, Lilly putting everything together and me wrapping up the snacks and putting them in the bags, it's almost as if we're running a miniature assembly line though my activities take considerably less time, and I'm still spending a lot of time watching the girls perform their respective tasks."
-        nvl clear
-
+        "I retrieve the saddlebags from the hallway, take a seat near Lilly, and start wrapping up the snacks."
+        "With Hanako preparing the ingredients, Lilly putting everything together, and me wrapping up the snacks and putting them in the bags, it's almost as if we're running a miniature assembly line."
+        "Although my activities take considerably less time, and I'm still spending a lot of time watching the girls perform their respective tasks."
         li "That should be all for the radish tartines. How far are you with the ingredients for the melon slaw, Hanako?"
 
         show hanako basic_smile
+        with chchange
 
         ha "I'm finished with them."
 
         show lilly basic_listen
+        with chchange
 
         li "Good. Could you walk me through the steps one more time?"
 
         show hanako basic_normal
+        with chchange
 
-        ha "The s-shallots, mint, vinegar, honey, salt and pepper have to be whisked together. The pieces of pear, cucumber, jicama and watermelon are added afterwards."
-        "As she says this, Hanako gets up and starts putting the various bowls, bottles and cans with ingredients in front of Lilly, occasionally thinking for a moment before swapping two. She finishes up by putting a large bowl and a whisk in front of Lilly."
+        ha "The s-shallots, mint, vinegar, honey, salt, and pepper have to be whisked together. The pieces of pear, cucumber, jicama, and watermelon are added afterwards."
+        "As she says this, Hanako gets up and starts putting the various bowls, bottles, and cans with ingredients in front of Lilly, occasionally thinking for a moment before swapping two."
+        "She finishes up by putting a large bowl and a whisk in front of Lilly."
         ha "I put all the ingredients in front of you. Anything else you w-want me to do?"
         li "How far are the preparations for the macaroni salad?"
 
         show hanako basic_worry
+        with chchange
 
         ha "Ah... Everything's done except for the cheese."
         li "If you could melt the cheese and mix it with the macaroni, that would probably save me a lot of time. I'll finish the rest once I'm done with the melon slaw."
         ha "Okay."
 
+        play sound sfx_whisking
+
         "With that, Hanako and Lilly get back to work, and since the melon slaw Lilly's working on will be contained in just one large bowl, there's not a lot for me to do until she finishes."
         "As I watch Lilly getting started on the meal in front of her, something suddenly draws my attention. Lilly's hands are sweeping across the surface of the bowls, but she doesn't put her hands inside to feel the contents."
-        "Come to think of it; while she was working on the avocado and ham sandwiches, she also seemed to immediately know what bowl contained which ingredients yet I didn't hear Hanako instruct her beforehand."
+        "Come to think of it, while she was working on the avocado and ham sandwiches, she also seemed to immediately know what bowl contained which ingredients yet I didn't hear Hanako instruct her beforehand."
         hi "Ah... Lilly?"
 
         show lilly basic_smileclosed
+        with chchange
 
         li "Yes, Hisao?"
         hi "How do you know which bottles and bowls contain what? I don't recall Hanako telling you in advance."
 
         show lilly basic_planned
         show hanako emb_downsmile
+        with chchange
 
         li "Hmmmm..."
         "Lilly's only answer is an amused smile. There's a little smile on Hanako's face too as if they're enjoying some private joke at my expense."
@@ -698,6 +775,7 @@ label sh_ch25:
 
         show lilly basic_giggle
         show hanako emb_smile
+        with chchange
 
         "Lilly lets out an amused giggle."
         li "Don't worry, Hisao. It's not. Hanako made sure to order the ingredients by type of container first and then alphabetically."
@@ -709,34 +787,43 @@ label sh_ch25:
 
         show lilly basic_weaksmile
         show hanako basic_smile
+        with chchange
 
         li "...Indeed. I appreciated the offer, but we weren't given a great deal of time to prepare everything, and it was important to work as efficiently as possible."
         hi "I guess there are some things that are better left to the pros, huh?"
 
         show lilly basic_giggle
         show hanako emb_smile
+        with chchange
 
         "Lilly laughs cheerfully at that remark, even though it makes Hanako blush a little."
 
         show lilly basic_surprised
         show hanako basic_normal
+        with chchange
+
+        play sound sfx_cellphonering
 
         "Lilly opens her mouth to say something, but before she can do so she's interrupted by a sudden sound that I recognize as the ringtone from her cell phone."
 
         show lilly back_listen
+        with chchange
 
         li "Please excuse me... Good morning. Lilly Satou speaking."
 
         show lilly back_smileclosed
+        with chchange
 
         li "Good morning, Mother."
 
         show lilly back_pout
+        with chchange
 
         "I hear Lilly letting out a sigh at the obvious question."
         li "Yes, I feel much better now."
 
         show lilly basic_weaksmile
+        with chchange
 
         "She puts down her phone for a moment and briefly turns her head in our direction."
         li "How about you?"
@@ -744,20 +831,24 @@ label sh_ch25:
         ha "M-Me too."
 
         show lilly back_smileclosed
+        with chchange
 
         li "Mother?... We're all looking forward to this afternoon."
         li "No, we're in the kitchen right now. We've been preparing the food for the picnic."
 
         show lilly back_listen
+        with chchange
 
         li "I'm sure Allison would have made some wonderful snacks too, but she's not the only person in the world who can cook. I'm sure it'll taste all the better for it."
 
         show lilly back_smileclosed
+        with chchange
 
         li "Half an hour? Yes, that's more than enough time."
         li "We will see you soon then. Bye."
 
         show lilly basic_smile
+        with chchange
 
         hi "She'll be here in half an hour?"
         li "Yes, she's just left the office, but still needs to arrange our transportation for today."
@@ -765,50 +856,66 @@ label sh_ch25:
 
         show lilly basic_cheerful
         show hanako basic_smile
+        with chchange
 
         "Lilly replies with an eager smile on her face."
         li "Let's get started quickly then."
 
+        stop music fadeout 2.0
+
         scene bg satou_grounds
-        with Dissolve(2.0)
-        show hanako basic_bashful at tworight
-        show lilly cane_smileclosed at twoleft
+        with shorttimeskip
+
+        play music music_tranquil fadein 4.0
+
+        play sound sfx_car_driveup
 
         hi "It sounds like we're right on time."
         "As we exit the house, we hear the noise of a car approaching, and moments later we can see a car with an open trailer behind it coming up the driveway."
 
-        show karla basic_cheerful_cas at right
+        show karla basic_cheerful_cas
+        with charaenter
 
         "Stopping the car near the garage door, Lilly's mother gets out and looks at our fully-packed saddlebags approvingly."
         ka "Looks like you went all-out with the food. I can't wait to taste it. Well, I guess I'll have to since we'll still have to make our way over to a suitable picnic spot."
         ka "Hisao, would you mind giving me a hand with the vehicles? They're kinda troublesome to handle on my own."
         hi "Sure."
-        "Lilly's mother walks up to the trailer, climbs inside and pulls one of the vehicles lying inside upright. I smile as I see what she's holding."
+        
+        hide karla
+        with charaexit
+        
+        "Lilly's mother walks up to the trailer, climbs inside, and pulls one of the vehicles lying inside upright."
+        "I smile as I see what she's holding."
         hi "Tandem bikes. Nice."
 
-        show karla basic_smileclosed_cas
+        show karla basic_smileclosed_cas at tworight
+        with charaenter
 
         "Lilly's mother smiles cheerfully."
         ka "I figured I'd rent two of them so you and Hanako won't have trouble keeping up with us. It might take a bit of getting used to at first, but I'm sure you'll pick it up in no time."
         "I walk up to her, and together we lift the two bikes out of the trailer. Lilly's mom reaches inside the car, retrieves a plastic bag and takes four water bottles out of it."
 
         show karla basic_smile_cas
+        with chchange
 
         ka "One water bottle per person isn't really all that much but we should have plenty of beverages to fall back on if needed and we might be able to refill on the way. Anybody's willing to go and fill these up?"
 
-        show lilly cane_smile
+        show lilly cane_smile at twoleft
+        with chchange
 
         li "I will do it. Perhaps you can get the saddlebags attached in the meantime?"
+        "Lilly steps forward and takes the bag from her mother."
 
         hide lilly
-
         show karla basic_lost_cas
+        with charaexit
 
-        "Lilly steps forward and takes the bag from her mother. As Lilly disappears into the house and we get started on putting the saddlebags on the tandems' baggage racks, Karla turns to me with her expression turning serious again."
+        "As Lilly disappears into the house and we get started on putting the saddlebags on the tandems' baggage racks, Karla turns to me with her expression turning serious again."
         ka "Hisao, yesterday's weather reports predicted reasonably warm weather for today, but the impression I got just by being outside for a little while is that they might have been off by several degrees."
         ka "It's not too late to call this off and take the car. It has a pretty solid air conditioning system if I say so myself."
 
-        show hanako emb_timid
+        show hanako emb_timid at twoleft
+        with chchange
 
         hi "I haven't had problems with my heart since I got out of the hospital. I'll probably be fine."
         ka "It's not necessarily your heart you need to watch out for in this kind of weather. Have you experienced heat stress recently?"
@@ -819,37 +926,54 @@ label sh_ch25:
         hi "I'll be sure to drink sufficiently and give a call if I'm feeling unwell."
 
         show karla basic_smile_cas
+        with chchange
+
+        play sound sfx_snap
 
         "Lilly's mother gives a satisfied nod and then suddenly snaps her fingers."
         ka "This might help as well. Just a second."
 
         show hanako basic_worry
+        hide karla
+        with charaexit
 
-        "She walks over to the car and gets some items from the backseat. As she walks back to us, I notice she's carrying two large sun hats in addition to a cap, the latter of which is promptly pressed on my head."
+        "She walks over to the car and gets some items from the backseat."
+
+        show karla basic_smile_cas at tworight
+        with charaenter
+
+        "As she walks back to us, I notice she's carrying two large sun hats in addition to a cap, the latter of which is promptly pressed on my head."
         "The sun hats, both of them made out of straw and each of them having a decorative ribbon wrapped around the top half, look very elegant."
 
         show hanako basic_smile
+        with chchange
 
         "However, when I take off the cap to take a closer look at it, I can see it's a rather cheap piece of headwear that's probably part of a promotional campaign or something. I read the letters on the front and give Karla an unsure look."
-        hi "Boyd's bike rental?"
+        hi "‘Boyd's bike rental’?"
 
         show karla basic_sheepish_cas
+        with chchange
 
         ka "They gave me this one after I rented those two tandem bikes. The visor'll at least keep the sun out of your eyes."
         "That's probably its one redeeming quality. I hesitantly put it back on again and look at Hanako."
         hi "This makes me look silly, doesn't it?"
 
         show hanako emb_downsmile
+        with chchange
 
-        "Hanako quietly shakes her head, but the fact that she's using her hand to try and cover her smile indicates she's probably thinking something else entirely. Karla gives me a playful slap on the shoulder."
+        "Hanako quietly shakes her head, but the fact that she's using her hand to try and cover her smile indicates she's probably thinking something else entirely."
+        "Karla gives me a playful slap on the shoulder."
         ka "I'd say it's still better than wearing a sun hat designed for ladies."
 
         show karla basic_smile_cas
+        with chchange
 
         "It's hard to argue with that. Neither of us seems to have much to add to the discussion so we focus on attaching the saddlebags to the bicycles until we see Lilly returning to us carrying four filled-up water bottles."
 
-        show lilly cane_smileclosed at twoleft
-        show hanako basic_smile
+        show lilly cane_smileclosed
+        show hanako basic_smile:
+            xalign 0.17
+        with charaenter
 
         "Karla takes the bottles from her daughter, places them in the bottle cages located on the frame and hands her one of the sun hats she took out of the car. She then gestures us to take our bike. I turn to Hanako."
         hi "So, do you want to go in the front or in the back?"
@@ -857,31 +981,47 @@ label sh_ch25:
         hi "I'll do the steering if you don't mind."
         ha "Okay."
 
-        show hanako defarms_worry
+        show hanako defarms_worry at center
         hide lilly
         hide karla
+        with charaexit
 
         "With that out of the way we both get in the saddle and I flip the kickstand."
-        hi "Alright, on the count of three... One... Two... Three."
+        hi "Alright, on the count of three... {w=0.5}One... {w=0.5}two... {w=0.5}three."
 
-        show hanako defarms_strain
+        show hanako defarms_strain:
+            parallel:
+                ease 0.2 ypos 1.05
+            parallel:
+                ease 0.05 xpos 0.49
+                ease 0.1 xpos 0.51
+                ease 0.05 xpos 0.5
+        with charachangefast
 
         ha "Ah!"
         hi "Whoa!"
         "That proved trickier than I thought. Keeping your balance is quite difficult when someone on the same bike is trying to do the same at the exact same moment."
         "Lilly and her mother seem to be doing slightly better mostly due to Karla seeming better at anticipating her daughter's movements."
 
-        show hanako defarms_worry
+        show hanako defarms_worry at center
+        with Dissolvemove(0.5)
 
-        hi "Okay, let's try that again. Try to stay straight up, Hanako. Let me do the correcting. One... Two... Three."
+        hi "Okay, let's try that again. Try to stay straight up, Hanako. Let me do the correcting. {w=0.5}One... {w=0.5}Two... {w=0.5}Three."
+
+        show hanako:
+            ease 0.2 ypos 1.02
+        with Pause(0.2)
+
         "Much better. As long as we keep moving at a decent pace we won't have to worry about our balance. Going around corners will still be tricky with such a long vehicle, so we'll just have to make sure to take wider turns."
         "As we reach the end of the driveway, Karla stops her bike and gives us an approving look."
+
         ka "It looks like you're doing okay. It might take some time to find a cadence that suits both of you, but I'm sure you'll figure out what works best."
         hi "So where are we headed?"
         ka "We'll go east to the village of Culloden, and then we'll head south from there."
         hi "Lead the way then."
 
         stop music fadeout 2.0
+
         scene black
         with Dissolve(2.0)
 

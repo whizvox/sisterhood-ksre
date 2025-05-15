@@ -61,3 +61,7 @@ init:
     define sfx_billiards_blunder = sh_sfx("billiards_blunder")
     define sfx_applause = sh_sfx("applause")
     define sfx_ticktock = sh_sfx("ticktock")
+    define sfx_boilingwater = sh_sfx("boilingwater")
+    define sfx_boilingwater_pour = sh_sfx("pourboilingwater")
+    define sfx_cuttingboard = sh_sfx("cuttingboard")
+    define sfx_whisking = sh_sfx("whisking")
