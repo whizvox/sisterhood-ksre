@@ -5,7 +5,7 @@ label sh_ch11:
 
         call sisterhood_timeskip
 
-        play ambient sfx_carsambient fadein 2.0
+        play ambient sfx_cars_ambience fadein 2.0
         play sound sfx_crowd_outdoors loop fadein 2.0
         play music music_pearly fadein 2.0
 

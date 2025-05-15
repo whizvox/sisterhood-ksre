@@ -9,7 +9,7 @@ label sh_ch8:
         with Dissolve(2.0)
 
         play music music_ease fadein 4.0
-        play ambient sfx_arcadeambience fadein 4.0 volume 0.4
+        play ambient sfx_arcade_ambience fadein 4.0 volume 0.4
 
         hi "The right one, focus on the right one!"
         ha "Y-yes!"

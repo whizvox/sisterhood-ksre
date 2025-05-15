@@ -37,7 +37,7 @@ label sh_ch12:
 
         with Pause(2.0)
 
-        play ambient sfx_cellphonering loop
+        play ambient sfx_phonering loop
         with Pause(3.0)
 
         nvl clear
@@ -72,7 +72,7 @@ label sh_ch12:
         "“…eh, scratch that. I'll just wait a minute and try again…”"
         "Minute? What minute?"
 
-        play ambient sfx_cellphonering loop
+        play ambient sfx_phonering loop
 
         with vpunch
 

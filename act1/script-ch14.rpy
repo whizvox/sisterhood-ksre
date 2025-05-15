@@ -10,7 +10,7 @@ label sh_ch14:
         "My dorm? My bedroom at home?"
         "My eyelids are unusually heavy and random thoughts zoom by like a passing train."
 
-        play ambient sfx_hospital fadein 2.0
+        play ambient sfx_hospital_ambience fadein 2.0
         scene bg hosp_ceiling_blur:
             matrixcolor BrightnessMatrix(0.5)
         with openeye

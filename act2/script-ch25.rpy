@@ -693,7 +693,7 @@ label sh_ch25:
         show hanako defarms_worry
         with chchange
 
-        # TODO play oven beep
+        play sound sfx_ovenbeep
 
         "Before I can approach the kitchen table, a high-pitched whine from the oven draws our attention. Hanako gets up from her chair, places the bread she and Lilly prepared into the oven, and then takes the bowl of macaroni from my hands."
         "She places it on the table some distance away from Lilly and herself."
@@ -802,7 +802,7 @@ label sh_ch25:
         show hanako basic_normal
         with chchange
 
-        play sound sfx_cellphonering
+        play sound sfx_phonering
 
         "Lilly opens her mouth to say something, but before she can do so she's interrupted by a sudden sound that I recognize as the ringtone from her cell phone."
 

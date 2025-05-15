@@ -411,7 +411,7 @@ label sh_ch21:
         
         stop music fadeout 2.0
         stop ambient fadeout 2.0
-        queue ambient sfx_plane_takeoff2 fadein 2.0
+        queue ambient sfx_plane_takeoff fadein 2.0
 
         window hide
 
