@@ -29,7 +29,7 @@ init 1 python:
         # tapping on door
         "taps1", "taps2", "taps3", "taps4",
         # misc ambience
-        "hospital_ambience", "ticktock",
+        "bikeride", "hospital_ambience", "ticktock", "windy",
         # other
         "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap", "collapse", "metalclink",
         "shower", "teacup_loudclink"
