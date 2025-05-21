@@ -1014,7 +1014,6 @@ label sh_ch25:
 
         "Much better. As long as we keep moving at a decent pace we won't have to worry about our balance. Going around corners will still be tricky with such a long vehicle, so we'll just have to make sure to take wider turns."
         "As we reach the end of the driveway, Karla stops her bike and gives us an approving look."
-
         ka "It looks like you're doing okay. It might take some time to find a cadence that suits both of you, but I'm sure you'll figure out what works best."
         hi "So where are we headed?"
         ka "We'll go east to the village of Culloden, and then we'll head south from there."

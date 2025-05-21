@@ -850,7 +850,7 @@ label sh_ch26:
 
         ka "She's not hurting badly, is she?"
         hi "She seems uncomfortable, but not in a lot of pain."
-        ka "We won’t be riding our bikes back. I phoned Allison a few minutes ago and she's on her way to pick us up."
+        ka "We won't be riding our bikes back. I phoned Allison a few minutes ago and she's on her way to pick us up."
 
         show karla basic_distant_cas
         with chchange
