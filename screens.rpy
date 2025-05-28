@@ -249,3 +249,23 @@ screen say_sh(who, what):
     window id "window":
         background tint_image(Frame("gui/bg/saybox.png"))
         text what id "what"
+
+screen sh_diary(left_dialogue, right_dialogue=None):
+    style_prefix "shdiary"
+
+    window id "window":
+        at colorblind(persistent.colorblind)
+
+        frame:
+            text left_dialogue id "diary_left"
+
+        if right_dialogue is not None:
+            frame:
+                xpos 0.57
+                text right_dialogue id "diary_right"
+    
+    use ctc
+
+    key ["dismiss", "skip"] action Return()
+
+    on "show" action If(renpy.is_skipping(), Return(), Play("sound", "sfx/paper.ogg"))
