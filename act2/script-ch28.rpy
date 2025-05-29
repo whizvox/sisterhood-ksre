@@ -223,7 +223,7 @@ label sh_ch28:
         stop ambient fadeout 3.0
 
         scene black
-        with Dissolve(3.0)
+        with endchapter
 
         if _in_replay:
             return

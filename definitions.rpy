@@ -94,7 +94,8 @@ init:
             (_("No Rest for the Weary"), "sh_ch25.s2", _("Hanako and Lilly prepare for the upcoming picnic."), "hisao"),
             (_("In Tandem"), "sh_ch26.s1", _("The awkward lovebirds and Satous ride through the Scottish countryside.")),
             (_("Model Maid"), "sh_ch27.s1", _("Hanako meets Mr. Satou."), "hanako"),
-            (_("Journalistic Habits"), "sh_ch28.s1", _("Hanako reads from her diary at the shore of Moray Firth."), "hanako")
+            (_("Journalistic Habits"), "sh_ch28.s1", _("Hanako reads from her diary at the shore of Moray Firth."), "hanako"),
+            (_("Chapter 29"), "sh_ch29.s1", _("idk"))
         ])
     ]
 

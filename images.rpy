@@ -103,7 +103,7 @@ init 1 python:
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "livingroom_ni", "stairs", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study"])
+    sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "livingroom_ni", "stairs", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "changingroom"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
@@ -173,6 +173,8 @@ init 1:
     B Lucava on Flickr
     Visit Inverness Loch Ness
     Highland News and Media Ltd.
+    kanagawa-hotels.com
+    TillTheMoneyRunsOut.com
     legendarysoulII
     Firefall
     whizvox
