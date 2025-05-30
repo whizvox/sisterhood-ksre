@@ -32,7 +32,7 @@ init 1 python:
         "bikeride", "hospital_ambience", "ticktock", "windy",
         # other
         "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap", "collapse", "metalclink",
-        "shower", "teacup_loudclink"
+        "shower", "teacup_loudclink", "waterpour"
     ])
 
 init:
