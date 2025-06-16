@@ -95,7 +95,9 @@ init:
             (_("In Tandem"), "sh_ch26.s1", _("The awkward lovebirds and Satous ride through the Scottish countryside.")),
             (_("Model Maid"), "sh_ch27.s1", _("Hanako meets Mr. Satou."), "hanako"),
             (_("Journalistic Habits"), "sh_ch28.s1", _("Hanako reads from her diary at the shore of Moray Firth."), "hanako"),
-            (_("Chapter 29"), "sh_ch29.s1", _("idk"))
+            (_("Soap Opera"), "sh_ch29.s1", _("Hanako and Hisao take a very intimate bath."), "hanako"),
+            (_("Shared Soak"), "sh_ch29.s2", _("Hanako and Hisao talk about their trip to Inverness."), "hanako"),
+            (_("Evening Snack"), "sh_ch29.s3", _("Hanako and Hisao round off the night with an evening snack."), "hanako")
         ])
     ]
 

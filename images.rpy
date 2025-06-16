@@ -78,7 +78,7 @@ init 1 python:
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanagown", ["worry_blush_close"])
-    sh_sprites("hisao", ["annoy", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
+    sh_sprites("hisao", ["annoy", "bashful", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
@@ -103,7 +103,7 @@ init 1 python:
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "livingroom_ni", "stairs", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "changingroom"])
+    sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "livingroom_ni", "stairs", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "changingroom", "guestroom_ni"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
