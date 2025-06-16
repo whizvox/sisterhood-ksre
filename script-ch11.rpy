@@ -360,7 +360,7 @@ li "I do not think so in this case. I don't think Shizune has ever really change
 show lilly basic_smileclosed_cas_close
 with chchange
 
-li "Maybe it is I who have changed."
+li "Maybe it is I who has changed."
 ha "You?"
 li "Shizune has always been ambitious and full of ideas."
 li "When we spent time together in the past, she'd often go over her plans for the future in detail, and we enjoyed chattering about them."
@@ -414,7 +414,7 @@ li "These days she regards my attempts to convince her to slow down and look bef
 "Lilly's story has made me think. I don't have exactly great chemistry with Shizune and Misha; Shizune's brashness and Misha's loudness are traits that tend to put me off."
 "But I don't dislike them either. Hisao is on very good terms with both of them, a good thing since he often has to do assignments with them, even if he admits Shizune is sometimes a pain to deal with."
 "Still, even though Hisao tends to butt heads with Shizune on a very regular basis, neither seems to walk away from those conflicts with hard feelings towards the other."
-"It's a pity the same can't true for Lilly and Shizune. Someone who dreams about setting up orphanages can't be a bad person in my book."
+"It's a pity the same can't be true for Lilly and Shizune. Someone who dreams about setting up orphanages can't be a bad person in my book."
 ha "It's… ummm… a s-shame things have gotten so p-personal between you two."
 ha "Y-you might still get along with each other as long as you weren't f-forced to work on something together."
 

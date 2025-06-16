@@ -216,7 +216,7 @@ hi "I was asking if we should get an additional bag of sweets. She seemed to lik
 ha "If you think so."
 hi "Maybe we should take some time off after this week."
 ha "Hmmm?"
-hi "You've been gloomy all week, and frankly I'm been getting a bit worried."
+hi "You've been gloomy all week, and frankly I've been getting a bit worried."
 "He's worried about me. Almost seems like old times…"
 "No, I shouldn't think like that."
 

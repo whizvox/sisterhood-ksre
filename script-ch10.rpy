@@ -583,7 +583,7 @@ show akira basic_smile
 with chchange
 
 aki "Same here. It was fun hanging out with you guys. It's nice to see my sister has such good friends here."
-"One thing still is still troubling me."
+"One thing is still troubling me."
 "Lilly spoke of a decision earlier. And I can see I'm not the only one who wonders about that."
 ha "L-Lilly, w-what was t-that decision you mentioned b-before about?"
 

@@ -39,10 +39,10 @@ screen sisterhood():
 
             vbox:
                 textbutton _("Chapter Select") action If(main_menu, true=ShowMenu("sisterhood_chapter_select"), false=None)
-            
+
             vbox:
                 textbutton _("Credits") action If(main_menu, true=Start("sisterhood_credits"), false=None)
-        
+
         textbutton _("Return"):
             style "return_button"
             action ShowMenu("mods")
@@ -109,12 +109,12 @@ screen sisterhood_options():
                     ToggleVariable("persistent.sh_slowtransitions", True, False),
                     Function(sh_update_sprite_transitions)
                 ]
-            
+
             vbox:
                 style_prefix "check"
 
                 textbutton _("Tinted textboxes") action ToggleVariable("persistent.sh_windowtint", True, False)
-            
+
         textbutton _("Return"):
             style "return_button"
 
@@ -202,17 +202,17 @@ screen sisterhood_about():
         text _("Mods > Sisterhood > About"):
             bold True
             size bold_size
-        
+
         frame:
             has vbox
 
             vbox:
                 text _("The first act of a visual novel adaptation of Guest Poster's fan fiction, featuring custom artwork and music.\n")
-                text _("Version: 1.0.1\n")
+                text _("Version: 1.0.2\n")
                 text _("To learn about future updates or submit a bug report, check out the website:")
                 textbutton _("https://sisterhood.whizvox.me") action OpenURL("https://sisterhood.whizvox.me"):
                     style "gui_exturl"
-        
+
         textbutton _("Return"):
             style "return_button"
             action ShowMenu("sisterhood")
