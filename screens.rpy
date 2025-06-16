@@ -222,15 +222,18 @@ screen sisterhood_about():
 screen say_sh(who, what):
     style_prefix "say"
 
-    if who and who.strip():
-        window id "namebox":
-            at colorblind(persistent.colorblind)
-            background tint_image(Frame("gui/bg/namebox.png"))
-            style_suffix "namebox"
-            text who id "who":
-                size 40
-                bold True
+    vbox:
+        style_suffix "vbox"
 
-    window id "window":
-        background tint_image(Frame("gui/bg/saybox.png"))
-        text what id "what"
+        if who and who.strip():
+            window id "namebox":
+                at colorblind(persistent.colorblind)
+                background tint_image(Frame("gui/bg/namebox.png"))
+                style_suffix "namebox"
+                text who id "who"
+        else:
+            null height 145
+
+        window id "window":
+            background tint_image(Frame("gui/bg/saybox.png"))
+            text what id "what"
