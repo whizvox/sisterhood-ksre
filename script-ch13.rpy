@@ -147,7 +147,7 @@ ha "…"
 show naomi bend_smile_close
 with chchange
 
-na "You know, I hope at least you get to enjoy your little party tonight?"
+na "You know, I hope at least you get to enjoy your little party tonight."
 ha "Y-you know… about… that?"
 na "Yeah, your boyfriend said you two were going shopping for that after you're done here."
 na "He's waiting for you at the school gate. I couldn't let him in to tell you in person, 'cause I was afraid he'd spot your article lying on my desk."

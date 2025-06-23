@@ -248,7 +248,7 @@ with chchange
 li "I believe you are a very beautiful person, Hanako, and I am certain that you will become a strong and confident woman…"
 "I have more to say, but cut myself off as I realize that what I'm saying isn't accurate. What I'm saying will happen eventually has actually already come to pass."
 li "No, that's not correct. You already have become a strong and confident woman, Hanako."
-li "You have shown you have obtained your own friends and hobbies, your own hopes for after graduation and your own love live from which to draw strength."
+li "You have shown you have obtained your own friends and hobbies, your own hopes for after graduation, and your own love life from which to draw strength."
 li "I want you to devote yourself to them, even after I'm not around anymore, for others will draw strength from you as well."
 li "Especially in the last weeks, you have shown how much you have to offer to those around you."
 li "That's why I think you will be okay, Hanako. Because you are your own self with your own life. You yourself have proven that to me."

@@ -827,7 +827,7 @@ show hanagown smile_close_ni
 with charaenter
 
 ha "Y-yes."
-hi "How do you feel about Lilly's announcement."
+hi "How do you feel about Lilly's announcement?"
 
 show hanagown distant_close_ni
 with chchange

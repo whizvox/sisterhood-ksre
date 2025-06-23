@@ -395,11 +395,12 @@ hi "We're not extremely close since they work long days, so I was often home alo
 ha "But they still took time to visit you this week."
 hi "Yeah, they even wanted to take me home to get some rest after picking me up from the hospital. You should have seen me freak out when they told me that."
 "I giggle at that mental image."
+ha "But they meant well."
 
 show hisao basic_smile_swt_close_rn
 with chchange
 
-hi "But they meant well. I guess I should spend some time with them before they leave, shouldn't I?"
+hi "I guess I should spend some time with them before they leave, shouldn't I?"
 ha "Yes. I won't be going anywhere."
 
 play sound sfx_phonedial volume 0.6
