@@ -91,6 +91,7 @@ init 1 python:
     phonebox_sprites("hanako", ["emb_smile", "emb_timid", "emb_blushing"])
     phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
+    phonebox_sprites("karla", ["basic_smile_cas", "basic_sheepish_cas", "basic_ponder_cas", "basic_distant_cas", "basic_lost_cas", "basic_resigned_cas", "basic_wistful_cas", "basic_cheerful_cas", "basic_sweet_cas"], vanilla=False)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("funindark", ["hug_rest", "hug_rest_large", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])

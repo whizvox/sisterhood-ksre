@@ -13,7 +13,7 @@ init 1 python:
         "gostone_hard", "gostone_stress1", "gostone_stress2", "gostone", "gostone_soft_stress1", "gostone_soft_stress2",
         "gostone_soft",
         # phone
-        "phonering", "phonedial", "phonenotif", "phonepickup",
+        "phonering", "phonering2", "phonedial", "phonenotif", "phonepickup",
         # plane
         "plane_aftertakeoff", "plane_beforetakeoff", "plane_dingdong", "plane_inflight", "plane_waiting",
         # pub

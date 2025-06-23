@@ -97,7 +97,8 @@ init:
             (_("Journalistic Habits"), "sh_ch28.s1", _("Hanako reads from her diary at the shore of Moray Firth."), "hanako"),
             (_("Soap Opera"), "sh_ch29.s1", _("Hanako and Hisao take a very intimate bath."), "hanako"),
             (_("Shared Soak"), "sh_ch29.s2", _("Hanako and Hisao talk about their trip to Inverness."), "hanako"),
-            (_("Evening Snack"), "sh_ch29.s3", _("Hanako and Hisao round off the night with an evening snack."), "hanako")
+            (_("Evening Snack"), "sh_ch29.s3", _("Hanako and Hisao round off the night with an evening snack."), "hanako"),
+            (_("Chapter 30.1"), "sh_ch30.s1", _("???"), "lilly")
         ])
     ]
 
