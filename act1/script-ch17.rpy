@@ -463,7 +463,7 @@ label sh_ch17:
 
         ha "I… I k-knew it. My efforts only served to make you more d-determined to go."
         li "Hanako…"
-        ha "If had remained as f-fragile as I w-was, you w-would have decided to s-stay in a heartbeat. But now…"
+        ha "If I had remained as f-fragile as I w-was, you w-would have decided to s-stay in a heartbeat. But now…"
         "So that's how she sees things. And my pep-talk about her independence and my decision to stay for a little while after her breakdown only reinforced her views."
         li "Hanako, please listen…"
 

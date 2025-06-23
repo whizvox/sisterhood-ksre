@@ -147,7 +147,7 @@ label sh_ch13:
         show naomi bend_smile_close
         with chchange
 
-        na "You know, I hope at least you get to enjoy your little party tonight?"
+        na "You know, I hope at least you get to enjoy your little party tonight."
         ha "Y-you know… about… that?"
         na "Yeah, your boyfriend said you two were going shopping for that after you're done here."
         na "He's waiting for you at the school gate. I couldn't let him in to tell you in person, 'cause I was afraid he'd spot your article lying on my desk."
@@ -223,7 +223,7 @@ label sh_ch13:
         ha "If you think so."
         hi "Maybe we should take some time off after this week."
         ha "Hmmm?"
-        hi "You've been gloomy all week, and frankly I'm been getting a bit worried."
+        hi "You've been gloomy all week, and frankly, I've been getting a bit worried."
         "He's worried about me. Almost seems like old times…"
         "No, I shouldn't think like that."
 

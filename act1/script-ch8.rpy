@@ -13,7 +13,7 @@ label sh_ch8:
 
         hi "The right one, focus on the right one!"
         ha "Y-yes!"
-        "I aim my gun, and a moment later the cyborg who just ambushed us from the nearby niche goes down in a hail of sparks."
+        "I aim my gun, and a moment later, the cyborg who just ambushed us from the nearby niche goes down in a hail of sparks."
         "In the meantime, Hisao is struggling to hit another cyborg shooting at us from a vehicle straight ahead, but he has difficulty getting a clear shot due to several allied soldiers running ahead of us and blocking the line of fire."
         hi "Cover me, Corporal Ikezawa!"
         "I giggle, more than eager to play along."
@@ -37,7 +37,7 @@ label sh_ch8:
         show hisao cross_smile_polo_close
         with chchange
 
-        hi "The ones I played were much more primitive than this one though. Technology sure speeds along."
+        hi "The ones I played were much more primitive than this one, though. Technology sure speeds along."
         "{font=pixel}\"Get ready!\"{/font}"
         "As another droning announcement indicates we're about the start the next level, we take up the gun units again and ready them."
 
@@ -48,9 +48,9 @@ label sh_ch8:
         "I smile."
         "An arcade center isn't exactly a place the average teenager would take his girlfriend to, but I guess I'm not exactly the average girlfriend either."
         "In a way, it was a pretty clever idea on Hisao's part."
-        "While there are quite a few people around, the hall itself is rather dark so my scarring isn't very noticeable, especially since I'm also wearing my hat. And while we're playing games, there's no need for small talk."
+        "While there are quite a few people around, the hall itself is rather dark, so my scarring isn't very noticeable, especially since I'm also wearing my hat. And while we're playing games, there's no need for small talk."
         ha "I… I really like it so far."
-        "This time we're on top of some vehicle chasing an enemy truck."
+        "This time, we're on top of some vehicle chasing an enemy truck."
 
         show hisao basic_neutral_polo
         with chchange
@@ -66,12 +66,12 @@ label sh_ch8:
 
         hi "They have a retro section here as well. We could check it out later. We might run into some familiar titles."
         ha "Sure."
-        "Suddenly explosive charges are being tossed at us from inside the truck. A big blast and our life meters drop down by 20\%."
+        "Suddenly, explosive charges are being tossed at us from inside the truck. A big blast and our life meters drop down by 20\%."
 
         show hisao basic_annoy_polo
         with chchange
 
-        hi "Hey, how the heck are we supposed to deal with that?"
+        hi "Hey, how the heck are we supposed to deal with that?!"
 
         show hisao basic_frown_polo
         with chchange
@@ -87,12 +87,12 @@ label sh_ch8:
 
         hi "Good shot, Hanako."
         ha "They're always coming from the same point."
-        "Another charge is blown, but this time the truck starts moving from side to side."
+        "Another charge is blown, but this time, the truck starts moving from side to side."
 
         show hisao basic_annoy_polo
         with chchange
 
-        hi "Oh come on!"
+        hi "Oh, come on!"
 
         show hisao basic_frown_polo
         with chchange
@@ -158,9 +158,9 @@ label sh_ch8:
         with charaexit
 
         "I walk over to the table closest to the corner and insert a coin."
-        "The table hums to life, the display on the rail around the playing field lights up to reveal two zeros, and a cool breeze starts to blow on the table's surface."
+        "The table hums to life; the display on the rail around the playing field lights up to reveal two zeros, and a cool breeze starts to blow on the table's surface."
         "I look around to confirm no other people are in the immediate vicinity and use my hair clip to move my hair lock out of the way just enough to prevent it from creating a blind spot in my peripheral vision."
-        "I pick up a mallet, take the puck from the tray beneath my goal and place it on the table."
+        "I pick up a mallet, take the puck from the tray beneath my goal, and place it on the table."
         ha "Ready, Hisao?"
 
         show hisao basic_grin_polo
@@ -170,7 +170,7 @@ label sh_ch8:
 
         play sound sfx_airhockey_rally loop
 
-        "I launch the puck towards him. He hits it towards the right railing. I deflect the puck with more luck than skill. Then he sends the puck straight ahead before I can react."
+        "I launch the puck towards him. He hits it towards the right railing. I deflect the puck with more luck than skill. Then, he sends the puck straight ahead before I can react."
 
         play sound sfx_airhockey_score1
 
@@ -194,7 +194,7 @@ label sh_ch8:
 
         play sound sfx_airhockey_rally loop
 
-        "I launch the puck towards him again, but this time he tilts his mallet causing the puck to get stuck under it."
+        "I launch the puck towards him again, but this time, he tilts his mallet causing the puck to get stuck under it."
         "Isn't that officially a foul?"
 
         show hisao basic_speak_polo
@@ -218,7 +218,7 @@ label sh_ch8:
 
         play sound sfx_airhockey_rally loop
 
-        "He picks up the puck and launches it towards the right rail, but this time I deflect it towards the left rail in time."
+        "He picks up the puck and launches it towards the right rail, but this time, I deflect it towards the left rail in time."
         "He hits it under the same angle and we repeat this pattern several times until I change the angle just a little bit and the puck slides into his goal."
 
         play sound sfx_airhockey_score2
@@ -439,7 +439,7 @@ label sh_ch8:
         "I think I remember how some of the moves are meant to be done."
         "As the announcer calls the start of the fight, Hisao's character lets out a roar and flies at me immediately."
         "Ouch. He's not kidding around. Pulling the stick away makes you block attacks, right?"
-        "He approaches me again, but this time I deliver a kick to push him back."
+        "He approaches me again, but this time, I deliver a kick to push him back."
         "Hisao is stronger and faster, but I've got better reach."
         "He moves in again and we trade several blows. I manage to grab him and throw him away from me."
         "I think it was a quarter-circle motion with the joystick."
@@ -469,7 +469,7 @@ label sh_ch8:
         "We're back at the character select screen and Hisao picks another fighter to play with."
         hi "Why would she be sad?"
         ha "I'm not sure. All I said was that I'd like to have these kinds of tea parties more often."
-        "The second match starts and I try the strategy I used to win the last battle, but this time Hisao shoots my projectiles out of the air with his own."
+        "The second match starts and I try the strategy I used to win the last battle, but this time, Hisao shoots my projectiles out of the air with his own."
         hi "I wouldn't call that a particularly depressing statement."
         "The round ends with a timeout after a long fireball war that I lose after messing up the motion a few times."
         ha "I'm… a bit worried, Hisao. I wonder if Lilly is really giving us space to be on our own or if there's something that's bothering her."
@@ -480,19 +480,19 @@ label sh_ch8:
 
         "This time I try to be more aggressive and trip him up by sliding under his projectiles. It works a few times until Hisao starts throwing projectiles at my feet instead."
         ha "C-causing her to spend less time with us than before."
-        ha "She's often missed lunch in the tea room these days in favor of class representative duties, and until this week, we haven't really been to her room either."
-        hi "Well, she has been scarcer than usual lately, but I'm not sure if that means something's on her mind and if so what it could be that bothers her."
+        ha "She's often missed lunch in the tea room these days in favor of class representative duties, and until this week, we haven't really been to her room, either."
+        hi "Well, she has been scarcer than usual lately, but I'm not sure if that means something's on her mind, and if so, what it could be that bothers her."
         "I try to switch to jumping attacks, only to find out my character is much too slow for that tactic, and I end up losing the second round as well after being knocked out of the air several times."
         ha "Maybe… us?"
         hi "Us?"
-        ha "I s-sometimes wonder if she… likes you too?"
+        ha "I s-sometimes wonder if she… likes you, too?"
         "I take a moment to pick my character for the final match and decide on a speedier fighter."
 
         show hisao basic_speak_polo_close
         with chchange
 
         hi "Lilly having feelings for me?"
-        "She never admitted it, but the last time I asked her she ended up reversing the question instead of answering it."
+        "She never admitted it, but the last time I asked her, she ended up reversing the question instead of answering it."
 
         show hisao basic_neutral_polo_close
         with chchange
@@ -722,7 +722,7 @@ label sh_ch8:
         show hisao basic_grin_polo_close
         with chchange
 
-        hi "Great. Good. I'm happy to hear that. I wouldn't mind going back there myself either."
+        hi "Great. Good. I'm happy to hear that. I wouldn't mind going back there myself, either."
         "Is he getting nervous? And what does he mean by ‘so far’? Won't we going back to Yamaku yet?"
         ha "H-Hisao… Did you have more planned?"
         ha "Does it have to do with that backpack you've been carrying around all the time?"

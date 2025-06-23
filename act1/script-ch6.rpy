@@ -81,7 +81,7 @@ label sh_ch6:
         ha "…I… don't really see it that way. I… feel it was me who was t-taking advantage of you."
         ha "I had ulterior m-motives I didn't tell you about. At least, not until later."
         hi "Even so, the whole thing was painful for you, wasn't it?"
-        ha "That… last part was kind of painful, to be honest. But…. I've read that… it hurts for most girls during their first time, so I don't think it was your fault."
+        ha "That… last part was kind of painful, to be honest. But… I've read that… it hurts for most girls during their first time, so I don't think it was your fault."
         ha "And there was one thing I enjoyed about the whole thing."
         hi "What was that?"
         ha "People often recoil when they see even part of my face. You… saw much more of me that night."
