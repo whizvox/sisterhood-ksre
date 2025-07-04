@@ -28,11 +28,13 @@ init 1 python:
         "lightswitch_off", "lightswitch_on",
         # tapping on door
         "taps1", "taps2", "taps3", "taps4",
+        # medical
+        "ambulance_arrive", "ambulance_close", "ambulance_distant", "brokenbone", "hospital_ambience",
         # misc ambience
-        "bikeride", "hospital_ambience", "ticktock", "windy",
+        "bikeride", "ticktock", "windy",
         # other
-        "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap", "collapse", "metalclink",
-        "shower", "teacup_loudclink", "waterpour"
+        "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap",
+        "collapse", "metalclink", "shower", "teacup_loudclink", "waterpour"
     ])
 
 init:

@@ -396,7 +396,7 @@ label sh_ch30:
         show hiroyuki basic_neutral_suit
         with charaenter
 
-        hyf "Lilly, Miss Ikezawa, Mister Nakai... Good evening."
+        hy "Lilly, Miss Ikezawa, Mister Nakai... Good evening."
         hi "Good evening, sir."
         ha "G-Good evening."
         li "Welcome back, Father. I'm happy to see you could make it back here sooner than usual."
@@ -406,7 +406,7 @@ label sh_ch30:
 
         stop music fadeout 4.0
 
-        hyf "I... am afraid I still have a few things to do. I will be retiring to my study. Please do not disturb me while I am working..."
+        hy "I... am afraid I still have a few things to do. I will be retiring to my study. Please do not disturb me while I am working..."
 
         show hisao basic_neutral_polo
         show hanako basic_worry
@@ -415,7 +415,7 @@ label sh_ch30:
         ha "..."
         hi "..."
         li "Ah... Of course, Father."
-        hyf "Good evening then."
+        hy "Good evening then."
 
         hide hiroyuki
         with charaexit
@@ -436,7 +436,21 @@ label sh_ch30:
         hi "Of course not, Lilly. Heck, this trip could end right here and now, and I'd still call it a grand success."
         ha "I agree."
         li "That is good to hear. I'll go and talk to him about it."
-        "I take my cane and slowly make my way to the study. I open the door just a little bit and hear the sound of someone typing on a keyboard. I knock a few times to announce my presence."
+        "I take my cane and slowly make my way to the study."
+
+        if _in_replay:
+            return
+
+    label .s2:
+
+        $ set_window_tint(TINT_LILLY)
+
+        if _in_replay:
+            scene satou_livingroom
+            with nextchapter
+
+        "I open the door just a little bit and hear the sound of someone typing on a keyboard."
+        "I knock a few times to announce my presence."
 
         scene bg satou_study
         show hiroyuki basic_strain_suit
@@ -445,49 +459,49 @@ label sh_ch30:
         play music music_happiness fadein 4.0
 
         "I'm greeted by a tired sigh as I enter."
-        hyf "Yes?"
+        hy "Yes?"
         li "Ah...Father?"
 
         show hiroyuki basic_stern_suit
         with chchange
 
-        hyf "Lilly, did you not hear what I said earlier?"
+        hy "Lilly, did you not hear what I said earlier?"
         li "I know, Father. This won't take long."
-        hyf "Go ahead."
+        hy "Go ahead."
         "I walk further into the room until I'm standing near the table where Father is working."
         "Father, is it... wise to keep working right now despite the fact that you were plagued by RSI earlier?"
 
         show hiroyuki basic_raisesternbrow_suit
         with chchange
 
-        hyf "Hmmm? Ah, my shoulder? Did your mother tell you about that?"
+        hy "Hmmm? Ah, my shoulder? Did your mother tell you about that?"
         li "She did. Are you... feeling alright?"
-        hyf "I am fine. Why are you suddenly so concerned about me?"
+        hy "I am fine. Why are you suddenly so concerned about me?"
         li "Hanako and Hisao said that you looked a little pale when you came in."
 
         show hiroyuki basic_strain_suit
         with chchange
 
         "Another weary sigh. He's obviously not pleased with my insistence."
-        hyf "I felt a bit unwell at the office, so I decided to return home earlier than planned. The sensation disappeared when I left the building. It has not returned since. I am fine right now."
+        hy "I felt a bit unwell at the office, so I decided to return home earlier than planned. The sensation disappeared when I left the building. It has not returned since. I am fine right now."
         li "I've been thinking, Father. Perhaps we should call off our trip to Edinburgh. Or at least postpone it until a more convenient time."
-        hyf "A more convenient time?"
+        hy "A more convenient time?"
         li "When you're... no longer under so much pressure."
 
         show hiroyuki basic_stern_suit
         with chchange
 
-        hyf "I have already made you a promise, have I not?"
+        hy "I have already made you a promise, have I not?"
         li "There will be other times."
-        hyf "I do not like to go back on my word. It is a matter of honor."
+        hy "I do not like to go back on my word. It is a matter of honor."
         li "B-But..."
-        hyf "Lilly, a proper lady... respects the will... of her elders."
+        hy "Lilly, a proper lady... respects the will... of her elders."
         li "Father, is anything wrong?"
 
         show hiroyuki basic_strain_suit
         with chchange
 
-        hyf "Perhaps... you could get me a glass... of water."
+        hy "Perhaps... you could get me a glass... of water."
         li "Right away, Father."
 
         scene bg satou_livingroom
@@ -552,57 +566,57 @@ label sh_ch30:
         with charaenter
 
         li "Father, I brought you your drink."
-        hyf "Thank you."
+        hy "Thank you."
         "He takes it from my hands and takes a few careful sips. This should be the moment where I take my leave, but I manage to stop myself from walking away."
 
         show hiroyuki basic_raisesternbrow_suit
         with chchange
 
-        hyf "Lilly, is there something else?"
+        hy "Lilly, is there something else?"
         "He must have spotted my fidgeting."
         li "Father... are you really feeling fine?"
-        hyf "This again?"
+        hy "This again?"
         li "It's just... m-maybe it would be a good idea to call a doctor if you're feeling unwell."
-        hyf "A doctor?"
+        hy "A doctor?"
         li "You say you're fine, but... I noticed... t-that your breathing is a bit more shallow than usual."
 
         show hiroyuki basic_stern_suit
         with chchangefast
 
-        hyf "Lillian, that is quite enough!"
+        hy "Lillian, that is quite enough!"
         "I cringe at his stern tone. I overstepped my boundaries, that's obvious."
         li "I... apologize. I'll be on my way. But..."
 
         show hiroyuki basic_neutral_suit
         with chchange
 
-        hyf "Yes?"
+        hy "Yes?"
         li "You told Mother you were fine, and she said she took your word for it. Would you... also give me your word that you'll be fine?"
 
         show hiroyuki basic_raisesternbrow_suit
         with chchange
 
-        hyf "My word...?"
+        hy "My word...?"
         li "Yes, please promise me that you'll be okay. Since keeping your word is a matter of honor, I will trust it."
 
         show hiroyuki basic_thinking_suit
         with chchange
 
-        hyf "..."
+        hy "..."
         "There's a long silence. I wonder if he's going to scold me, but to my surprise he eventually lets out a resigned sigh."
 
         show hiroyuki basic_strain_suit
         with chchange
 
-        hyf "If I talk to a doctor... on the phone... will that be enough to reassure you?"
+        hy "If I talk to a doctor... on the phone... will that be enough to reassure you?"
         li "It will."
-        hyf "The phone in the living room should contain our general practitioner's phone number. His name is Thompson."
+        hy "The phone in the living room should contain our general practitioner's phone number. His name is Thompson."
         li "Thank you, Father."
 
         show hiroyuki basic_stern_suit
         with chchange
 
-        hyf "Hrmmm..."
+        hy "Hrmmm..."
 
         scene bg satou_livingroom
         show hisao basic_neutral_polo at twoleft
@@ -614,6 +628,9 @@ label sh_ch30:
         li "Yes, Father said the number should be in the phone's memory. I suppose it's listed as either doctor or Thompson."
 
         show hanako basic_distant
+        with chchange
+
+        play sound sfx_phonedial
 
         "I hear a long series of beeps as Hanako starts browsing through the phone's contact list."
         ha "Here it is. Shall I call it?"
@@ -621,259 +638,340 @@ label sh_ch30:
 
         hide hisao
         hide hanako
+        with charaexit
 
-        "I hear one more beep and then the phone is handed back to me. Moments later, I hear someone on the other end of the line picking up."
-        dc "Thompson speaking."
+        "I hear one more beep and then the phone is handed back to me."
+        
+        play sound sfx_phonepickup
+
+        "Moments later, I hear someone on the other end of the line picking up."
+        "Doctor" "Thompson speaking."
         li "Doctor Thompson, good evening. This is Lilly Satou speaking. I hope I'm not intruding on you. I'm terribly sorry for calling you this late."
-        dc "Not a problem, Miss... Satou?"
+        "Doctor" "Not a problem, Miss... Satou?"
         li "Yes, you are my father's general practitioner, are you not?"
-        dc "Why yes, I am. Is there something wrong?"
+        "Doctor" "Why yes, I am. Is there something wrong?"
         li "Father's been extremely busy with work lately. There's a very important event in his business coming up, and he's under a large amount of pressure right now. It seems to be... taking a toll on him."
-        dc "Are there any specifics you can give me, Miss Satou?"
+        "Doctor" "Are there any specifics you can give me, Miss Satou?"
         li "Just... several things. He's been having trouble sleeping as of late. My mother said he complained about RSI in his shoulder earlier today. There's been talk of... hmmm... indigestion."
-        li "He actually came home earlier today because he felt a little unwell and my friends said he looked rather pale. I noticed his breathing was a bit shallower than usual. I'm... probably worrying about nothing, but I was wondering if you would..."
-        dc "Just a moment, Miss Satou. Did you say he felt unwell earlier?"
+        li "He actually came home earlier today because he felt a little unwell and my friends said he looked rather pale. I noticed his breathing was a bit shallower than usual."
+        li "I'm... probably worrying about nothing, but I was wondering if you would..."
+        "Doctor" "Just a moment, Miss Satou. Did you say he felt unwell earlier?"
         li "Yes, but the sensation disappeared eventually."
-        dc "What kind of sensation? Localized somewhere?"
+        "Doctor" "What kind of sensation? Localized somewhere?"
         li "He didn't say."
-        dc "..."
+        "Doctor" "..."
         "A long silence."
         li "Doctor?"
-        dc "Miss Satou, is there someone present with a driver's license aside from your father?"
-        li "Ah... there isn't. Mother is out of town this evening. I could perhaps call the housekeeper. She might be willing to take him to your place. But is there a reason why it'd be irresponsible for him to drive himself?"
-        dc "There is no need for him to come by my place, Miss Satou. But I think it would not be a bad idea to quickly stop by at Raigmore and have someone there take a look at him. It's not very far from where you live, is it?"
+        "Doctor" "Miss Satou, is there someone present with a driver's license aside from your father?"
+        li "Ah... there isn't. Mother is out of town this evening. I could perhaps call the housekeeper. She might be willing to take him to your place."
+        li "But is there a reason why it'd be irresponsible for him to drive himself?"
+        "Doctor" "There is no need for him to come by my place, Miss Satou. But I think it would not be a bad idea to quickly stop by at Raigmore and have someone there take a look at him. It's not very far from where you live, is it?"
         "I let out a surprised gasp."
         li "The hospital?"
         "First Hanako and now the doctor..."
-        dc "Yes. I'm going to make a quick phone call there and tell them to expect you. Have you been to Raigmore before? Do you know where the cardiology ward is located? Ah, then again, your father probably knows where it is, given his profession."
 
-        play music music_tension
+        stop music fadeout 10.0
+
+        "Doctor" "Yes. I'm going to make a quick phone call there and tell them to expect you. Have you been to Raigmore before? Do you know where the cardiology ward is located?"
+        "Doctor" "Ah, then again, your father probably knows where it is, given his profession."
+
+        #play music music_tension fadein 4.0
 
         "I feel my blood freeze in my veins and a heavy sensation in the pit of my stomach."
-        li "C-Cardiology?"
-        dc "Yes. The person on duty there will either be Doctor Morrison or Doctor McElroy."
+        li "C-cardiology?"
+        "Doctor" "Yes. The person on duty there will either be Doctor Morrison or Doctor McElroy."
         li "Doctor... What's going on?"
-        dc "...could I speak briefly with your father, Miss Satou?"
+        "Doctor" "...could I speak briefly with your father, Miss Satou?"
         li "Of course..."
 
         scene bg satou_study
+        with locationchange
 
         "A bit unsteadily, I head back to the study again."
         li "Father?"
         "There's no response. That's strange. I thought I heard a sound coming from the study while I was on my way there."
         li "Father, are you there?"
-        "Nothing. Not an acknowledgement, nor a typing sound. Not even a breath. Did he leave?"
+        "Nothing."
+        "Not an acknowledgement, nor a typing sound. Not even a breath."
+        "Did he leave?"
         li "Father, where are you?"
-        "I walk further into the room and almost immediately my foot hits something. Something on the floor that wasn't here before. I kneel and reach out to examine it."
-        "As my hand makes contact with it, I feel a shiver running down my spine. It's a person, lying on the floor near the door."
+        "I walk further into the room and almost immediately my foot hits something."
+        "Something on the floor that wasn't here before."
+        "I kneel and reach out to examine it."
+        "As my hand makes contact with it, I feel a shiver running down my spine."
+        "It's a person, lying on the floor near the door."
         li "Father?"
         "Not an acknowledgement, nor a typing sound. Not even a breath."
-        "NOT EVEN A BREATH!"
 
-        scene ev heartattack_lilly
+        stop ambient
+
+        "{i}NOT EVEN A BREATH!{/i}"
+
+        scene ev withoutthinking_lilly
+        with mediumflash
+
         play music music_tragic
 
-        li "FATHER!"
-        dc "Miss Satou!"
+        li "{i}FATHER!{/i}"
+        "Doctor" "Miss Satou!"
         "The sound of the doctor's voice on the phone reminds me that I was on my way to hand over the phone."
-        dc "Miss Satou, I'm going to hang up and call an ambulance to pick up your father this instant. Do not leave his side until they arrive."
+        "Doctor" "Miss Satou, I'm going to hang up and call an ambulance to pick up your father this instant. Do not leave his side until they arrive."
         "What's happening? What's going on? Is he...?"
         hi "Lilly? Is something wrong?"
+        "I hear Hisao's and Hanako's footsteps hurriedly approaching, probably drawn here by my shout."
 
-        scene ev heartattack_lilly_hisao_hanako
+        scene ev withoutthinking_crowd
+        with charachangeev
 
-        "I hear Hisao's and Hanako's footsteps hurriedly approaching, probably drawn here by my shout. As they come in, I hear two gasps."
+        "As they come in, I hear two gasps."
         hi "Mister Satou! Lilly, what's happened here?"
         li "I... I d-don't know. I c-can't hear him breathing."
         "Somebody do something! Please!"
         "Hanako's breathing, on the other hand, is becoming more pronounced by the second. I'd probably start worrying about her if I wasn't on the verge of panic myself."
         hi "Damn, should we give him artificial respiration? Does he even have a pulse?"
         li "I... I don't know. J-Just d-do something, please."
-        "I'm not sure what's more unsettling; Hisao's panicked tone or Hanako's ragged breathing."
+        "I'm not sure what's more unsettling—Hisao's panicked tone or Hanako's ragged breathing."
         hi "I can't feel any pulse in his wrist. Is there a better way to do this?"
         "She's almost hyperventilating."
         li "I don't know!"
 
-        scene ev heartattack_cpr
+        scene ev withoutthinking_cpr
+        with charachangeev
 
-        li "Aah!"
-        hi "Hey!"
+        call screen doublespeak(li, _("Aah!"), hi, _("Hey!"))
+
         "Hisao and I let out a surprised cry as we're suddenly violently being pushed aside, and I nearly hit my head on the table in the process."
         "When I catch my bearings, I become once again aware of Hanako's breathing, but it's different this time. Instead of the hyperventilating gasps she was letting out earlier, she's now letting out a steady stream of short, sharp breaths."
-        "(Huff - huff - huff)"
+        ha "{i}*huff* *huff* *huff*{/i}"
         li "H-Hanako?"
-        "(Huff - huff - huff)"
+        ha "{i}*huff* *huff* *huff*{/i}"
         li "What are you doing?"
         hi "She's pressing down on his chest. I think she's doing CPR, Lilly. Hanako, is there anything I can do?"
-        "(Huff - huff - huff)"
+        ha "{i}*huff* *huff* *huff*{/i}"
         hi "Hanako, can you hear me?"
-        "(Huff - huff - huff)"
-        "No answer. Hanako's breathing is so steady it's almost robotic. I wonder if she knows what she's doing. But what choice do we have? What's taking that accursed ambulance so long?"
-        li "Doctor Thompson said he'd call an ambulance. They... They should be on their way."
+        ha "{i}*huff* *huff* *huff*{/i}"
+        "No answer. Hanako's breathing is so steady it's almost robotic. I wonder if she knows what she's doing. But what choice do we have?"
+        "{i}What's taking that accursed ambulance so long?!{/i}"
+        li "Doctor Thompson said he'd call an ambulance. They... they should be on their way."
         hi "Then I'll go and open the gates and the front door, so they'll be able to get here as quickly as possible when they arrive."
-        li "Y-Yes, thank you Hisao."
-        "(Huff - huff - huff)"
+        li "Y-yes, thank you Hisao."
+        ha "{i}*huff* *huff* *huff*{/i}"
 
-        scene ev heartattack_cpr_nohisao
+        scene ev withoutthinking_cpr_nohisao
+        with charachangeev
 
-        "I hear Hisao running off, leaving me alone in the room with Hanako - and Father. It doesn't happen often, but right now I'm cursing my blindness. My friends are both doing their part, and here I am, unable to do anything."
+        "I hear Hisao running off, leaving me alone in the room with Hanako... and Father."
+        "It doesn't happen often, but right now I'm cursing my blindness. My friends are both doing their part, and here I am, unable to do anything."
         li "Please d-do your best, Hanako. Let me know if you need anything..."
         "Father..."
-        "Seeing how close to the door he was, I think he was trying to get out of the room before he collapsed. Did he call out for help, and did I fail to hear it?"
-        "(Huff - huff - huff)"
+        "Seeing how close to the door he was, I think he was trying to get out of the room before he collapsed."
+        "Did he call out for help, and did I fail to hear it?"
+        ha "{i}*huff* *huff* *huff*{/i}"
         "What's taking that ambulance so long?"
         "Am I going to lose him, just like Hanako lost her parents?"
         "Is that exasperated sigh he let out when I walked out of here going to be the last thing I'll ever hear from him?"
         "That's too cruel."
-        "(Huff - huff - huff)"
+        ha "{i}*huff* *huff* *huff*{/i}"
         "Please hang in there, Father."
         li "Hanako, please hang in there."
-        "Is that the best I can come up with? I used to have no trouble finding the right words to encourage Hanako. And now, now that it matters more than ever, I find myself lost for words."
-        "(Huff - huff - huff)"
+        "Is that the best I can come up with?"
+        "I used to have no trouble finding the right words to encourage Hanako. And now, now that it matters more than ever, I find myself lost for words."
+        ha "{i}*huff* *huff* *huff*{/i}"
         "Hanako's breathing is getting less steady. Is she getting worn out? What she's doing must be pretty tiring."
         "What if she gets too tired to continue and the ambulance hasn't arrived yet?"
         "How will she feel?"
-        "What's keeping that ambulance?"
-        "(Huff - huff - huff)"
+        "{i}What's keeping that ambulance?{/i}"
+        ha "{i}*huff* *huff* *huff*{/i}"
 
-        scene ev heartattack_cpr_coverears
+        play sound sfx_brokenbone
 
-        "A wave of nausea washes over me as I hear a soft crunch coming from the place where Father's lying. It's barely audible yet it chills me to the bone. Is this the sound of someone's ribs being fractured? That sounded really painful."
+        scene ev withoutthinking_cpr_cover
+        with charachangeev
+
+        "A wave of nausea washes over me as I hear a soft crunch coming from the place where Father's lying."
+        "It's barely audible yet it chills me to the bone. Is this the sound of someone's ribs being fractured? That sounded really painful."
         li "Hanako, be careful!"
         "I manage to get a hold of myself just in time to refrain from making the terrible mistake of grabbing Hanako and yanking her away from Father. At this point, it seems stupid to worry about broken ribs."
-        "(Huff - huff - huff)"
+        ha "{i}*huff* *huff* *huff*{/i}"
         "Hanako didn't even seem to have heard my scream. She just keeps going as if there's nobody else in existence."
-        "I squeeze my eyes shut in order to hold back the tears and let out a tortured whimper as I hear a second crunch. What if one of those ribs punctures his lung? What if they manage to revive him only for him to drown in his own blood moments later?"
+
+        play sound sfx_brokenbone volume 0.8
+
+        "I squeeze my eyes shut in order to hold back the tears and let out a tortured whimper as I hear a second crunch."
+        "What if one of those ribs punctures his lung? What if they manage to revive him only for him to drown in his own blood moments later?"
         "No, don't think that way. Don't even start thinking that way."
-        "Damnit, where's that ambulance?"
-        "(Huff - huff - huff)"
-        "I wonder if there isn't a defibrillator somewhere in the house. Father's company sells them after all. He might have taken one home at some point. But where would he keep it? And would any of us be in a condition to operate it?"
-        "Before I can ponder my thought further, my attention is drawn by a distinctive sound coming from outside. Is that a siren?"
+        "{i}Damnit, where's that ambulance?{/i}"
+        ha "{i}*huff* *huff* *huff*{/i}"
+        "I wonder if there isn't a defibrillator somewhere in the house. Father's company sells them after all. He might have taken one home at some point."
+        "But where would he keep it? And would any of us be in a condition to operate it?"
+
+        play ambient sfx_ambulance_distant fadein 6.0
+
+        "Before I can ponder my thought further, my attention is drawn by a distinctive sound coming from outside."
+        "Is that a siren?"
+
+        show ev withoutthinking_cpr_nohisao
+        with charachangeev
+
         li "Hanako, I think I hear a siren!"
-        "(Huff - huff - huff)"
+        ha "{i}*huff* *huff* *huff*{/i}"
         "Trying to keep focus through the sound of my own rapidly beating heart, I try to concentrate on what I heard earlier. Somewhere from outside I can clearly hear the distinct wail of a siren."
         li "Hanako, the ambulance is arriving!"
-        "(Huff - huff - huff)"
-        li "Hold on for just a little while longer, Hanako. Please. Hang in there..."
+        ha "{i}*huff* *huff* *huff*{/i}"
+        li "Hold on for just a little while longer, Hanako. Please... Hang in there..."
+
+        stop ambient fadeout 1.0
+        play sound sfx_ambulance_arrive fadein 1.0
+
         "The sound of the siren is now joined by the sound of a car screeching to a halt."
         "Then footsteps. Many footsteps. And voices."
+        "Paramedic" "Lead the way, lad."
+        "Paramedic" "The doctor who called said it was probably a heart attack. Bruce, you do the compressions!"
+        "Paramedic" "Will do!"
+        ha "{i}*huff* *huff* *huff*{/i}"
 
-        vo "Lead the way, lad."
-        vo "The doctor who called said it was probably a heart attack. Bruce, you do the compressions!"
-        vo "Will do!"
-        "(Huff - huff - huff)"
+        stop sound fadeout 0.5
 
         scene bg satou_study_blur
         show crowd
+        with locationchange
 
         "I hear several people bursting into the room. I just sit there in a daze as everything plays out in front of me, unable to figure out how to act or what to say."
-        vo "Alright, lass, you can stop now. We'll take over from here."
-        "(Huff - huff - huff)"
-        vo "Hey, didn't you hear me? You need to give us room to work!"
-        "(Huff - huff - huff)"
-        vo "Damn, we don't have time for this. Ian, get her away from him so I can get started!"
-        vo "Sure.{nw=1.5}"
+        "Paramedic" "Alright, lass, you can stop now. We'll take over from here."
+        ha "{i}*huff* *huff* *huff*{/i}"
+        "Paramedic" "Hey, didn't you hear me? You need to give us room to work!"
+        ha "{i}*huff* *huff* *huff*{/i}"
+        "Paramedic" "Damn, we don't have time for this. Ian, get her away from him so I can get started!"
+        "Paramedic" "Sure."
 
         show hanako defarms_shock at center
+        with Dissolve(0.2)
 
-        ha "Aaaaaaaah!"
-        vo "Whoa! Hey, no need to freak out. We're here to help!!"
+        ha "AAAAAAAAHHH!"
+        "Paramedic" "Whoa! Hey, no need to freak out. We're here to help!!"
 
         show hisao basic_annoy_polo at twoleft
+        with charaenter
 
         hi "Hey! Get your hands off of her!"
-        vo "What's he saying?"
+        "Paramedic" "What's he saying?"
 
         show hisao basic_worry_polo
+        with chchange
+
         hi "Hanako! Come on, Hanako. I'll get you to our room. Just... there... just come along with me, okay?"
 
         hide hisao
         hide hanako
+        with charaexit
 
-        vo "Bruce!{nw=1.5}"
-        vo "I'm on it! Neil, get that adrenaline injection ready."
-        vo "Hey lass, maybe it's better if you go and check up on your... uh... friends."
-        vo "Lass, you with us?"
-        vo "Ah, I apologize. I'd... like to stay here if possible."
-        vo "Just don't get in our way, okay?"
-        vo "Okay, I'm giving him an adrenaline shot."
-        vo "Ian, get that defibrillator ready. Hopefully we get lucky and get a shockable rhythm."
-        vo "Man, what was with that girl? Why did she go nuts like that?"
-        vo "This is probably her dad. Can't blame her. I've seen worse reactions."
-        vo "Whadda you think that guy who let us in was saying?"
-        vo "Dunno, it sounded like Chinese or Japanese. Heck, look at this room. It's completely Asian style."
-        vo "Neil, one more injection."
-        vo "Gotcha.{nw=1.5}"
-        vo "Keep going, people.{nw=2}"
-        vo "Come on, come on!{nw=2}"
-        vo "Did you guys see that girl? That was one nasty burn on her face. Wonder how she got it."
-        vo "Hey, keep it down Neil!"
-        vo "Sorry."
-        vo "I think I'm getting something.{nw=2}"
-        vo "Keep going, Bruce.{nw=2}"
-        vo "Give him another shot?{nw=2}"
-        vo "Might not be necessary. Get those electrodes in place!"
-        vo "Right away!"
-        vo "That's a beat alright. Ian!"
-        vo "Okay, get back Bruce.{nw=2}"
-        vo "He's all yours.{nw=2}"
-        vo "Clear!{nw=2}"
-        vo "And...?"
-        vo "One more time.{nw=2}"
-        vo "Clear!{nw=2}"
-        vo "I think we got a pulse. Get the respiratory device and ready the stretcher."
-        vo "Got it!{nw=2}"
-        vo "Hey lass. We're about to move out."
-        li "W-Will my father make it, sir?"
-        vo "We've done all we can here. It's up to the doctors at Raigmore to make it stick."
-        vo "Keith! Radio the Emergency Department that we'll be there in 8 minutes."
-        vo "Right!"
-
+        "Paramedic" "Bruce!{nw=1.5}"
+        "Paramedic" "I'm on it! Neil, get that adrenaline injection ready."
+        "Paramedic" "Hey lass, maybe it's better if you go and check up on your... uh... friends."
+        "Paramedic" "Lass, you with us?"
+        li "Ah, I apologize. I'd... like to stay here if possible."
+        "Paramedic" "Just don't get in our way, okay?"
+        "Paramedic" "Okay, I'm giving him an adrenaline shot."
+        "Paramedic" "Ian, get that defibrillator ready. Hopefully we get lucky and get a shockable rhythm."
+        "Paramedic" "Man, what was with that girl? Why did she go nuts like that?"
+        "Paramedic" "This is probably her dad. Can't blame her. I've seen worse reactions."
+        "Paramedic" "Whadda you think that guy who let us in was saying?"
+        "Paramedic" "Dunno, it sounded like Chinese or Japanese. Heck, look at this room. It's completely Asian style."
+        "Paramedic" "Neil, one more injection."
+        "Paramedic" "Gotcha.{nw=1.5}"
+        "Paramedic" "Keep going, people.{nw=2}"
+        "Paramedic" "Come on, come on!{nw=2}"
+        "Paramedic" "Did you guys see that girl? That was one nasty burn on her face. Wonder how she got it."
+        "Paramedic" "Hey, keep it down Neil!"
+        "Paramedic" "Sorry."
+        "Paramedic" "I think I'm getting something.{nw=2}"
+        "Paramedic" "Keep going, Bruce.{nw=2}"
+        "Paramedic" "Give him another shot?{nw=2}"
+        "Paramedic" "Might not be necessary. Get those electrodes in place!"
+        "Paramedic" "Right away!"
+        "Paramedic" "That's a beat alright. Ian!"
+        "Paramedic" "Okay, get back Bruce.{nw=2}"
+        "Paramedic" "He's all yours.{nw=2}"
+        "Paramedic" "Clear!{nw=2}"
+        "Paramedic" "And...?"
+        "Paramedic" "One more time.{nw=2}"
+        "Paramedic" "Clear!{nw=2}"
+        "Paramedic" "I think we got a pulse. Get the respiratory device and ready the stretcher."
+        "Paramedic" "Got it!{nw=2}"
+        "Paramedic" "Hey lass. We're about to move out."
+        li "W-will my father make it, sir?"
+        "Paramedic" "We've done all we can here. It's up to the doctors at Raigmore to make it stick."
+        "Paramedic" "Keith! Radio the Emergency Department that we'll be there in 8 minutes."
+        "Paramedic" "Right!"
         li "Sir, would it be okay with you if I... came along?"
-        vo "...only if you come along with us right here and now. We can't wait for you."
+        "Paramedic" "Only if you come along with us right here and now. We can't wait for you."
         li "I understand."
 
-        play music music_sadness
+        play music music_sadness fadein 4.0
 
         scene bg satou_stairs_blur
+        with locationchange
+
         pause 1
+
         scene bg satou_entrance_blur
+        with locationchange
+
         pause 1
-        scene bg raigmore_ambulance_blur
+
+        scene bg raigmore_ambulance
+        with locationchange
 
         "I get up and feel out the shoulder of the ambulance worker who addressed me. We hurry outside and he quickly helps me into a seat."
         "I didn't get the opportunity to explain this to Hanako and Hisao, but I'm sure they'll understand."
+
+        show bg raigmore_ambulance_blur
+        with locationchange
+
+        play ambient sfx_ambulance_close volume 0.3
+
         "I hurriedly fasten my seat belt as both the engine and the siren spring to life, and the driver sends the ambulance down the driveway and onto the road with a speed that would make Akira's driving seem subdued."
 
-        nvl show dissolve
-        n "{vspace=60}During the short ride, I pick up a remark from the amulance driver mentioning we're lucky that our house is so close to the hospital. A little bit later I hear the voice of someone on the radio giving us the number of the operating room Father will be taken to, but I'm barely able to process all of these things as my brain is still trying to digest what's happening."
-        n "{vspace=60}Just a little while ago I was still sitting in the living room, relaxing, talking with my friends and planning our trip to Edinburgh without a care in the world."
-        n "{vspace=60}How could this suddenly turn into such a nightmare?"
         nvl clear
+        nvl show dissolve
 
-        scene bg raigmore_emergency_blur
+        n "During the short ride, I pick up a remark from the amulance driver mentioning we're lucky that our house is so close to the hospital."
+        n "A little bit later I hear the voice of someone on the radio giving us the number of the operating room Father will be taken to, but I'm barely able to process all of these things as my brain is still trying to digest what's happening."
+        n "Just a little while ago I was still sitting in the living room, relaxing, talking with my friends and planning our trip to Edinburgh without a care in the world."
+        n "How could this suddenly turn into such a nightmare?"
+
+        nvl hide dissolve
+
+        scene bg raigmore_ambulance
+        with locationchange
 
         "My thoughts are interrupted by the ambulance making a sharp turn and coming to a standstill. The ambulance workers quickly get out, and I hear the sound of many voices and many footsteps followed by the sound of a stretcher being pushed down a nearby corridor."
-        "The driver then gets out as well, I hear him walk off and then return with someone else in tow. He helps me get out of the car and then gives an awkward cough."
-        vo "I have to get back on the road, but... uh... right in front of you is a nurse who'll be happy to look after you for a bit. Her name's Sally."
-        vo "Hello, Miss. What's your name?"
+        "The driver then gets out as well, I hear him walk off and then return with someone else in tow."
+
+        scene bg raigmore_entrance
+        with locationchange
+
+        "He helps me get out of the car before giving an awkward cough."
+        "Paramedic" "I have to get back on the road, but... uh... right in front of you is a nurse who'll be happy to look after you for a bit. Her name's Sally."
+        "Nurse" "Hello, Miss. What's your name?"
         li "Ah, L-Lilly. About my father..."
-        vo "They're taking him to the operating room as we speak. We're going to do everything we can to help him, so try not to worry, alright?"
+        "Nurse" "They're taking him to the operating room as we speak. We're going to do everything we can to help him, so try not to worry, alright?"
         li "I'll... try."
-        vo "I'm going to take you to the waiting area. We're going to inform you the moment we know more."
+        "Nurse" "I'm going to take you to the waiting area. We're going to inform you the moment we know more."
         li "Yes, t-thank you."
 
-        scene bg raigmore_hallway_blur
-        pause 1
-        scene bg raigmore_waitroom_blur
+        scene bg raigmore_waitroom
         show crowd
+        with locationchange
 
-        "I place my hand on her arm and let her guide me through several hallways. We finally reach an area where I hear several other people around me."
-        vo "You can wait here. There's a seat right in front of you. Is there anything I can do? Perhaps get you something to drink?"
+        "I place my hand on her arm and let her guide me through several hallways."
+        "We finally reach an area where I hear several other people around me."
+        "Nurse" "You can wait here. There's a seat right in front of you."
+        "Nurse" "Is there anything I can do? Perhaps get you something to drink?"
         "They probably don't have a white cane lying around here. There wasn't time to retrieve my own, and I feel really disorientated and vulnerable in the middle of an unknown environment without even my cane to navigate."
         "No, there's probably no point in asking. But maybe..."
         li "Would it be possible... to make a quick phone call? My sister and my mother don't even know what has happened yet, and I left my own cell phone behind when I came here."
-        vo "If it's just a very quick call, you can make one in our office. Let me take you there."
+        "Nurse" "If it's just a very quick call, you can make one in our office. Let me take you there."
         li "Thank you."
 
         scene bg raigmore_hallway_blur
@@ -906,6 +1004,13 @@ label sh_ch30:
         "Akira hangs up, and I hand the phone back to the nurse."
         li "Thank you. Could you... take me back to the waiting area, please?"
         vo "I will."
+    
+        if _in_replay:
+            return
+
+    label .s3:
+
+        $ set_window_tint(TINT_LILLY)
 
         scene bg raigmore_waitroom_blur
         show crowd

@@ -97,8 +97,10 @@ init:
             (_("Journalistic Habits"), "sh_ch28.s1", _("Hanako reads from her diary at the shore of Moray Firth."), "hanako"),
             (_("Soap Opera"), "sh_ch29.s1", _("Hanako and Hisao take a very intimate bath."), "hanako"),
             (_("Shared Soak"), "sh_ch29.s2", _("Hanako and Hisao talk about their trip to Inverness."), "hanako"),
-            (_("Evening Snack"), "sh_ch29.s3", _("Hanako and Hisao round off the night with an evening snack."), "hanako"),
-            (_("Chapter 30.1"), "sh_ch30.s1", _("???"), "lilly")
+            (_("Evening Snack"), "sh_ch29.s3", _("Hanako and Hisao round off the night with an “evening snack”."), "hanako"),
+            (_("Oh, the Days Ahead"), "sh_ch30.s1", _("Lilly, Hanako, and Hisao spend a peaceful evening planning the second half of their trip."), "lilly"),
+            (_("Without Thinking"), "sh_ch30.s2", _("Lilly's worst fears are realized."), "lilly"),
+            (_("Prayer"), "sh_ch30.s3", _("Lilly reconvenes with Akira and Hisao at the hospital."), "lilly")
         ])
     ]
 
