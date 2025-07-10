@@ -12,11 +12,12 @@ label sh_ch30:
 
         show hanako basic_smile at tworight
         show hisao basic_frown_polo at twoleft
+        with chchange
 
         ha "Check!"
         hi "Hrmg..."
         "I smile as I hear these two conflicting reactions from my friends."
-        "I haven't been following the game between them very closely, but Hanako's exclamation, voiced in a slightly sing-song tone, as well as Hisao's frustrated grunt leave little doubt as to who is currently winning."
+        "I haven't been following the game between them very closely, but Hanako's exclamation, voiced in a slightly sing-song tone, as well as Hisao's frustrated grunt, leave little doubt as to who is currently winning."
         li "Is Hanako giving you trouble, Hisao?"
 
         show hisao basic_speak_polo
@@ -25,7 +26,7 @@ label sh_ch30:
         hi "It's okay, Lilly. Nothing I can't handle."
 
         show hisao basic_pout_polo
-        with chchangefast
+        with { "master": chchangefast }
 
         extend " {size=*0.5}Who needs a queen anyway?{/size}"
         "That last part is spoken in a soft mumble, but I can hear it anyway."
@@ -40,21 +41,21 @@ label sh_ch30:
         nvl clear
 
         n "Today has been a rather uneventful day. Hanako and Hisao slept in, or at least didn't come out of their room until it was nearly noon, and since we had some rain early in the afternoon, we decided to spend the day here at my parents' home, reading and talking."
-        n "Right now it's just Hanako, Hisao and me here, hanging out in the living room. The cleaning staff have already left, Mother's currently visiting her older sister and won't be back until tomorrow and Father's still at work."
+        n "Right now it's just Hanako, Hisao, and me here, hanging out in the living room. The cleaning staff have already left, Mother's currently visiting her older sister and won't be back until tomorrow, and Father's still at work."
 
         nvl clear
 
         n "I feel a bit bad for Father. Apparently the final negotiations for the acquisition of another company by Father's company are only a few weeks away, and things are extremely hectic at work. I have a feeling my visit here has been rather ill-timed."
         n "Mother and Father have both promised to spend at least a few days with me while I'm here, and so far Mother has already come through."
-        n "Father is set to spend three days with us the day after tomorrow. Akira mentioned a few days ago that she wouldn't be surprised if he ended up calling our time together off, since he can't really afford to take these days off at this point, but so far I haven't heard him confirm that."
-        n "Apparently he's been trying to finish as much of his work that was originally planned for the upcoming week as possible, but as a result I've barely interacted at all with him. He tends to leave the house early and works until very late."
+        n "{vspace=30}Father is set to spend three days with us the day after tomorrow. Akira mentioned a few days ago that she wouldn't be surprised if he ended up calling our time together off, since he can't really afford to take these days off at this point, but so far I haven't heard him confirm that."
+        n "Apparently he's been trying to finish as much of his work that was originally planned for the upcoming week as possible, but as a result, I've barely interacted at all with him. He tends to leave the house early and works until very late."
         n "Since he's apparently partially doing this for my sake, I don't really feel in a position to complain."
         
         nvl clear
 
-        n "To be honest, Father has always worked very long hours for as long as I can remember. I suppose as the son of the company head he felt he had to set the good example. But Akira said that over the last few weeks he's been looking like a 'burnout sufferer in denial'."
+        n "To be honest, Father has always worked very long hours for as long as I can remember. I suppose as the son of the company head he felt he had to set the good example. But Akira said that over the last few weeks he's been looking like a ‘burnout sufferer in denial’."
         n "I'm not sure what to make of that, but even Hisao and Hanako said that he didn't look like he was sleeping very well. I hope that when he takes a few days off, he'll be able to relax a little bit."
-        n "It's probably too much to hope for, but surely he realizes that having a breakdown at this point in time might sink his whole deal."
+        n "{vspace=60}It's probably too much to hope for, but surely he realizes that having a breakdown at this point in time might sink his whole deal."
         
         nvl hide dissolve
 
@@ -62,16 +63,18 @@ label sh_ch30:
         hide hisao
         with charaexit
 
-        play ambient phonering2
+        play ambient sfx_phonering2
 
         "My thoughts are interrupted by the phone on one of the sidetables suddenly springing to life. After some hesitation, I pick it up."
 
         stop ambient
 
         li "Good evening, Satou residence. Lilly Satou speaking."
-        
+
         show karla basic_smile_cas_phone at phonebox
         with charaenter
+
+        # TODO probably shouldn't keep calling her "Mother". only reason why she was called such in act 1 was because the reader didn't know her name yet.
 
         kam "Hi Lilly."
         li "Oh, hello Mother. Have you already arrived at Aunt Stella's place?"
@@ -82,7 +85,8 @@ label sh_ch30:
         with chchange
 
         kam "Only a little. It's been a long day, but I promised her I'd come see her before your father and I leave for the US, and I think the upcoming weeks are only going to get busier."
-        kam "And I won't have time the upcoming days either when your father takes a few days off and I get back to work. Speaking of which, is he already home?"
+        kam "And I won't have time the upcoming days either when your father takes a few days off and I get back to work."
+        kam "Speaking of which, is he already home?"
         li "No, not yet..."
         "I think those two work way too hard."
         li "Mother..."
@@ -99,21 +103,21 @@ label sh_ch30:
         show karla basic_ponder_cas_phone
         with chchange
 
-        kam "I'm still doing okay. It's been hectic, and will continue to be for a few weeks, but I still feel fine. I'll be glad when it's over, but I still feel able to handle things."
-        li "How about Father? Akira, Hisao and Hanako said he looked... not well."
+        kam "I'm still doing okay. It's been hectic, and will continue to be for a few weeks, but I still feel fine. I'll be glad when it's over, but I still feel like I'm able to handle things."
+        li "How about Father? Akira, Hisao, and Hanako said he looked... not well."
         "Mother lets out a weary sigh."
 
         show karla basic_distant_cas_phone
         with chchange
 
         kam "Well, I won't deny he's been a little under the weather lately."
-        kam "He's been having trouble sleeping, he mentioned having bouts of indigestion, and earlier today he even mentioned repetitive strain injury in his shoulder and arm. It's just one thing after another."
+        kam "He's been having trouble sleeping, he mentioned having bouts of indigestion, and earlier today, he even mentioned repetitive strain injury in his shoulder and arm. It's just one thing after another."
         li "Shouldn't he take it easier then?"
 
         show karla basic_lost_cas_phone
         with chchange
 
-        kam "I suggested that too, but it's not that simple. To me, this whole thing is just crunch time for the company I work for. It'd be great if we could pull it off, and I'll be sure to do my part, but in the end it's still just work."
+        kam "I suggested that too, but it's not that simple. To me, this whole thing is just crunch time for the company I work for. It'd be great if we could pull it off, and I'll be sure to do my part, but in the end, it's still just work."
 
         show karla basic_resigned_cas_phone
         with chchange
@@ -129,7 +133,7 @@ label sh_ch30:
         show karla basic_wistful_cas_phone
         with chchange
 
-        kam "After we travel to the US and finish the deal there, I intend to stay there for a bit and take him on a little trip. See some of the national parks, maybe the Niagara Falls too. Take it easy, see stuff, just relax. That'll fix him right up, you'll see."
+        kam "After we travel to the US and finish the deal there, I intend to stay there for a bit and take him on a little trip. See some of the national parks, maybe the Niagara Falls, too. Take it easy, see stuff, just relax. That'll fix him right up, you'll see."
         li "...I hope so."
         kam "When he's taking time off to spend with you, just try to do whatever you can to take his mind off the business, okay? I'd appreciate that even though it may be a losing battle."
         li "I will try."
@@ -143,13 +147,13 @@ label sh_ch30:
         show karla basic_cheerful_cas_phone
         with chchange
 
-        kam "That's good to hear. Stella was thinking of baking you a dundee cake. That's a traditional Scottish fruitcake covered with almonds. I find it kind of filling, but really tasty too."
+        kam "That's good to hear. Stella was thinking of baking you a dundee cake. That's a traditional Scottish fruitcake covered with almonds. I find it kind of filling, but really tasty, too."
         li "That sounds delicious. I can't wait for us to get there so I can have a taste. How is she doing these days?"
 
         show karla basic_sweet_cas_phone
         with chchange
 
-        kam "She doesn't really get out of the house much yet, and she has the occasional spells of sudden tiredness, which is probably partially due to her medication, but all in all she's doing a lot better than two months ago."
+        kam "She doesn't really get out of the house much yet, and she has the occasional spells of sudden tiredness, which is probably partially due to her medication, but all in all, she's doing a lot better than two months ago."
         li "Please give her my regards."
         kam "Will do. I'm going to hang up now. Be sure to let your father know that I've arrived safely when he gets home, okay?"
         li "I will. Until tomorrow, Mother."
@@ -162,13 +166,16 @@ label sh_ch30:
         nvl show dissolve
 
         n "I put down the phone with some mixed feelings."
-        n "I still feel a little awkward talking to Mother. What's more, what she said about Father didn't exactly reassure me. Even though Father's been a hard worker his entire life and wasn't home very often except on Sundays, this is the first time I've heard of his work taking a physical toll on him."
+        n "{vspace=30}I still feel a little awkward talking to Mother. What's more, what she said about Father didn't exactly reassure me. Even though Father's been a hard worker his entire life and wasn't home very often except on Sundays, this is the first time I've heard of his work taking a physical toll on him."
         n "I don't like the idea of him overworking himself even more merely because I wanted to spend a few days with him. If I had known things were this hectic for him already, I wouldn't have asked to begin with."
         
         nvl hide dissolve
 
-        "I put away the phone and refocus my attention on my friends' game of chess. I can't hear any direct reactions, but I notice from the pauses between the taps that one side is taking a lot less time to plan the next move than the other."
+        "I put away the phone and refocus my attention on my friends' game of chess."
+        "I can't hear any direct reactions, but I notice from the pauses between the taps that one side is taking a lot less time to plan the next move than the other."
         "Eventually, the verdict is called."
+
+        # TODO PICK UP FROM HERE
 
         show hanako basic_smile at tworight
         show hisao basic_sweet_polo at twoleft
@@ -960,6 +967,8 @@ label sh_ch30:
         "Nurse" "I'm going to take you to the waiting area. We're going to inform you the moment we know more."
         li "Yes, t-thank you."
 
+        play ambient sfx_crowd_indoors fadein 1.0
+
         scene bg raigmore_waitroom
         show crowd
         with locationchange
@@ -974,36 +983,52 @@ label sh_ch30:
         "Nurse" "If it's just a very quick call, you can make one in our office. Let me take you there."
         li "Thank you."
 
-        scene bg raigmore_hallway_blur
+        stop ambient fadeout 0.5
 
-        "I'm taken to an office room nearby, and the nurse asks me for the number. I realize that I don't even know Mother's phone number by heart yet, but I fortunately have Akira's cell phone number memorized. The nurse dials the number and then hands me the receiver."
+        scene bg raigmore_office
+        with locationchange
 
-        show akira basic_smile at right
+        "I'm taken to an office room nearby, and the nurse asks me for the number. I realize that I don't even know Mother's phone number by heart yet, but I fortunately have Akira's cell phone number memorized."
+        
+        play sound sfx_phonedial
+
+        "The nurse dials the number and then hands me the receiver."
+
+        play sound sfx_phonepickup
+
+        show akira basic_smile_phone at phonebox
+        with charaenter
 
         aki "Good evening, this is Akira Satou speaking."
         "I'm taken back by Akira's formal tone before realizing that she doesn't recognize the number I'm calling from."
         li "A-Akira, it's me."
 
         show akira basic_cheerful
+        with chchange
 
         aki "Hey Sis, I didn't recognize the number. This isn't the landline at our folks' place, is it?"
-        li "I'm at Raigmore right now. The emergency ward. You... I need you to come over immediately!"
+        li "I'm at Raigmore right now. The emergency ward."
+        li "You... I need you to come over immediately!"
 
         show akira basic_lost
+        with chchange
 
         aki "The hospital? Sheesh, Lils, what's happened? It's not Hisao, is it? Are you...?"
-        li "It's F-Father. I... I don't know what happened. He just... collapsed. The doctor called an ambulance. They're... operating on him right now. Please Akira..."
+        li "It's F-Father. I... I don't know what happened. He just... collapsed. The doctor called an ambulance. They're... operating on him right now."
+        li "Please Akira..."
 
         show akira basic_angry
+        with chchange
 
         aki "I'm on my way. I'll be there in 15 minutes."
         li "Please hurry... and call Mother. Let her know to come back here too."
 
         hide akira
+        with charaexit
 
         "Akira hangs up, and I hand the phone back to the nurse."
         li "Thank you. Could you... take me back to the waiting area, please?"
-        vo "I will."
+        "Nurse" "I will."
     
         if _in_replay:
             return
@@ -1012,52 +1037,62 @@ label sh_ch30:
 
         $ set_window_tint(TINT_LILLY)
 
-        scene bg raigmore_waitroom_blur
+        play ambient sfx_crowd_indoors fadein 1.0
+
+        scene bg raigmore_waitroom
         show crowd
+        with locationchange
 
         "The nurse takes me back to the seating area and then leaves me alone with my thoughts. The voices of other people in the room join the thoughts that whirl around my head."
 
-        show black:
+        show darkness:
             alpha 0.1
+        with Dissolve(1.0)
 
         "How could this have happened?"
-        vo "Daddy, it hurts! When can the doctor see us?"
+        mystery "Daddy, it hurts! When can the doctor see us?"
 
-        show black:
+        show darkness:
             alpha 0.2
+        with Dissolve(1.0)
 
         "And why?"
-        vo "Just a little while longer, Mary. There are other people here who also need help. Let me get you a glass of water."
+        mystery "Just a little while longer, Mary. There are other people here who also need help. Let me get you a glass of water."
 
-        show black:
+        show darkness:
             alpha 0.3
+        with Dissolve(1.0)
 
         "Just when I finally had an opportunity to spend time with him."
-        vo "I don't want a glass of water! Why can't we see the doctor now?!"
+        mystery "I don't want a glass of water! Why can't we see the doctor now?!"
 
-        show black:
+        show darkness:
             alpha 0.4
+        with Dissolve(1.0)
 
         "To get to know him."
-        vo "Hey mommy, that girl sitting over there is staring really strangely."
+        mystery "Hey mommy, that girl sitting over there is staring really strangely."
 
-        show black:
+        show darkness:
             alpha 0.5
+        with Dissolve(1.0)
 
         "There were so many things I still wanted to tell him. And ask him."
-        vo "Shush Kevin, don't be rude!"
+        mystery "Shush Kevin, don't be rude!"
 
-        show black:
+        show darkness:
             alpha 0.6
+        with Dissolve(1.0)
 
         "Will I ever get the opportunity now?"
-        vo "Mister McAdams, the doctor will see you now."
+        mystery "Mister McAdams, the doctor will see you now."
 
-        show black:
+        show darkness:
             alpha 0.7
+        with Dissolve(1.0)
 
         "I've never felt so alone and miserable as I'm feeling right now."
-        vo "Thank God. Come on, dear."
+        mystery "Thank God. Come on, dear."
         "Father..."
         "Please make it through this."
         "Please."
@@ -1065,124 +1100,158 @@ label sh_ch30:
         "..."
         "I lower my voice to a whisper."
 
-        show black:
+        show darkness:
             alpha 0.8
+        with Dissolve(1.0)
 
         li "{size=*0.5}Our Father in heaven,{/size}"
         li "{size=*0.5}hallowed be your name.{/size}"
-        li "{size=*0.5}Your kingdom come,your will be done,on earth, as it is in *sniff* heaven.{/size}"
-        vo "Doctor, is there any news about my wife?{nw=2}"
+        li "{size=*0.5}Your kingdom come,your will be done,on earth, as it is in {i}*sniff*{/i} heaven.{/size}"
+        mystery "Doctor, is there any news about my wife?"
         li "{size=*0.5}Give us this day our daily bread,{/size}"
         li "{size=*0.5}and forgive us our debts,{/size}"
-        vo "Please have a bit more patience, sir. My colleagues are doing the best they can.{nw=2}"
+        mystery "Please have a bit more patience, sir. My colleagues are doing the best they can."
         li "{size=*0.5}as we also have forgiven our debtors.{/size}"
-        li "{size=*0.5}And *sniff* lead us not into temptation,{/size}"
+        li "{size=*0.5}And {i}*sniff*{/i} lead us not into temptation,{/size}"
         li "{size=*0.5}but deliver us from evil.{/size}"
+        mystery "Lilly? Lilly!"
 
-        aki "Lilly? Lilly!"
-
-        hide black
+        hide darkness
         show akira basic_lost
+        with dissolve
 
         "A familiar voice suddenly calls out to me and I quickly rise to my feet."
         li "Akira? Akira! Thank God you're here..."
 
-        show akira basic_wistful
+        show akira basic_wistful_close
+        with characlose
 
-        "My older sister walks up to me and tenderly wraps her arms around me and despite me feeling a bit embarrassed about being hugged in public, I feel a sense of relief."
-        "How long has it been since Akira last comforted me this way? It must have been quite some time ago, but it still feels as soothing as ever. My loving and reliable big sister who always knew what to do. It feels so good to know she's here now."
+        "My older sister walks up to me and tenderly wraps her arms around me and, despite me feeling a bit embarrassed about being hugged in public, I feel a sense of relief."
+        "How long has it been since Akira last comforted me this way? It must have been quite some time ago, but it still feels as soothing as ever."
+        "My loving and reliable big sister who always knew what to do. It feels so good to know she's here now."
+
+        show akira basic_wistful
+        with charadistant
+
         aki "Jeez, you look about ready to faint, Sis."
         "I nod weakly."
         li "I... I'll manage, I hope. I really don't do very well under pressure."
         aki "Let's find ourselves a quiet place to sit down. I noticed a vending machine on my way in here that dispenses drinks. I'll go and get you some."
         li "Yes..."
 
-        scene bg raigmore_entrance
+        stop ambient fadeout 1.0
 
+        scene bg raigmore_entrance
         show akira basic_sweet
+        with locationchange
 
         "Akira takes my arm and guides me down one of the hallways and through a few automatic doors until I feel fresh air on my face. She helps me get to a nearby bench and walks off, only to return later with a paper cup she hands to me."
         aki "I got you some tea. Take care not to burn your tongue."
-
         "I meekly nod and take a careful sip as Akira sits down next to me and puts an arm around me."
 
-        show akira basic_wistful
+        show akira basic_wistful_close
+        with characlose
 
         aki "Now... Just take a bit of time to get your bearings back, and then tell me what happened."
         li "..."
-        "What happened... That's a good question. Things went so quickly all of a sudden. Two hours ago I was still planning our upcoming trip with my friends. And now I'm here, wondering if my life will ever be the same again."
+        "What happened... That's a good question."
+        "Things went so quickly all of a sudden. Two hours ago I was still planning our upcoming trip with my friends. And now I'm here, wondering if my life will ever be the same again."
         li "He left the office earlier than usual today because he wasn't feeling well..."
         li "By the time he made it home he was already feeling better, so he resumed his work in his study."
         li "I spoke to Mother earlier this evening, and she already said he wasn't feeling well, but apparently Father blamed indigestion and repetitive strain injury in his shoulder."
         li "When he came home, both Hisao and Hanako noted he looked pale, and Hanako even suggested calling a doctor."
-        li "Father wouldn't hear of it at first, but then he gave in and allowed me to call his general practitioner. When I told the doctor about Father, he immediately suggested we take him to see a cardiologist at the hospital. But when I returned to the study..."
-
+        li "Father wouldn't hear of it at first, but then he gave in and allowed me to call his general practitioner."
+        li "When I told the doctor about Father, he immediately suggested we take him to see a cardiologist at the hospital. But when I returned to the study..."
         "I sniffle as I recall what happened next."
-        li "I found that Father had collapsed while I was away. Before..."
-        li "Before he hung up, the doctor said he was going to call an ambulance. And eventually, one arrived."
+        li "I found that Father had collapsed while I was away."
+        li "Before... he hung up, the doctor said he was going to call an ambulance. And eventually, one arrived."
 
-        show akira basic_sad
+        show akira basic_sad_close
+        with chchange
 
         aki "Heart attack, huh? You described some of the warning signs just now."
         li "...it seems like it. I suppose the writing has been on the wall all along, and we just didn't pay attention to it until it was too late."
 
-        show akira basic_resigned
+        show akira basic_resigned_close
+        with chchange
 
         aki "It won't be too late if he makes it through, Sis."
         li "I... completely froze up when I found Father lying there. If it hadn't been for Hanako..."
 
-        show akira basic_lost
+        show akira basic_lost_close
+        with chchangefast
 
         aki "Hanako?"
         li "I believe she performed CPR on him until the ambulance arrived."
 
-        show akira basic_wistful
+        show akira basic_wistful_close
+        with chchange
 
         aki "So that first aid training paid off, huh? Bet she didn't expect someone other than her boyfriend to be the beneficiary."
         li "...I wonder how she and Hisao are doing right now. When the ambulance staff took off with Father, I had no choice but to come along immediately."
 
-        show akira basic_sweet
+        show akira basic_sweet_close
+        with chchange
 
         aki "You can use my cell phone to get in touch with them after I've dropped Mom a little call. It might help to take your mind off things."
-        li "Y-You haven't called her yet? W-Why not? I...I asked you..."
+        li "Y-you haven't called her yet? W-why not? I...I asked you..."
 
-        show akira basic_lost
+        show akira basic_lost_close
+        with chchange
 
         aki "Relax, Sis. If you're gonna ask someone to drive all the way back to Inverness from Edinburgh late in the evening, they're gonna demand a reason, and your phone call didn't exactly shed a lot of light on things."
         aki "I figured it was better to come over here first, calm you down a bit and then find out exactly what happened."
         li "You're right. I'm sorry for reacting this way, Akira."
 
-        show akira basic_wistful
+        show akira basic_wistful_close
+        with chchange
 
         "She gives me a pat on the shoulder."
         aki "Don't worry about it, Sis. You've had an extremely frightening experience this evening, so it's understandable that you're still rattled. I don't blame you in the slightest."
         li "Thank you, Akira."
 
         show akira basic_sweet
+        with charadistant
 
         aki "I'll go and call Mom now. I'll be right back."
 
         hide akira
+        with charaexit
 
-        "Akira walks off again, and I'm left to ponder the situation. Akira's explanation made logical sense and yet I still feel I would have acted differently in her place."
-        "I'm really thankful that my older sister's here for me right now, but something has felt a little off."
-        "...that my older sister's here for me..."
-        "Ever since she arrived, Akira's been the kind, strong and reliable big sister that she's always been for me. The strong person who's lending me her shoulder to lean on. But... how does she feel? She's barely mentioned Father at all. It almost seems like..."
-        "...like she's more worried about me than about him..."
-        "No, I don't want to think of Akira that way. She's simply keeping a brave face for my benefit right now."
-        "Still, our parents are a very touchy subject for her. I don't think she's completely adapted to the fact that they're suddenly a big part of her life again yet."
+        "Akira walks off again, and I'm left to ponder the situation."
+
+        nvl clear
+        nvl show dissolve
+
+        n "Akira's explanation made logical sense and yet I still feel I would have acted differently in her place."
+        n "I'm really thankful that my older sister's here for me right now, but something has felt a little off."
+        # TODO Not sure about this line
+        # n "{i}...that my older sister's here for me...{/i}"
+        n "{vspace=30}Ever since she arrived, Akira's been the kind, strong and reliable big sister that she's always been for me. The strong person who's lending me her shoulder to lean on. But... how does she feel? She's barely mentioned Father at all. It almost seems like..."
+        n "...like she's more worried about me than about him..."
+        n "{vspace=30}No, I don't want to think of Akira that way. She's simply keeping a brave face for my benefit right now."
+        n "Still, our parents are a very touchy subject for her. I don't think she's completely adapted to the fact that they're suddenly a big part of her life again yet."
+
+        nvl hide dissolve
 
         show akira basic_distant
+        with charaenter
 
         aki "Well, Mom's on her way. I told her not to drive like crazy and that I'd call her when we know more."
         li "How did she react?"
 
         show akira basic_lost
+        with chchange
 
         aki "It's probably still sinking in."
+
+        show akira basic_lost_close
+        with characlose
+
         "She sits down next to me, and we stay like this for a very long time, neither of us saying a word. Eventually, she pushes her cell phone into my hand."
 
-        show akira basic_smile
+        show akira basic_smile_close
+        with chchange
 
         aki "You know how to operate this thing, don't you?"
         "I think I do. I've used my sister's phone before, and I have Hanako's number memorized."
@@ -1190,24 +1259,36 @@ label sh_ch30:
         aki "Good. I'll go back inside to see if they already know more. I'll be back soon."
 
         hide akira
+        with charaexit
 
-        "I listen to Akira walking off into the building and prepare to dial Hanako's number when I realize she might already be asleep. This must have been very stressful for her too. I don't want to intrude on her."
+        "I listen to Akira walking off into the building and prepare to dial Hanako's number when I realize she might already be asleep."
+        "This must have been very stressful for her too. I don't want to intrude on her."
         "What if I call my own number first? I left my cell phone in the living room, so they certainly won't be resting if they pick that one up."
-        "I quickly dial the number of my cell phone and cross my fingers that someone'll pick up. Eventually, I hear Hisao's voice on the other end of the line."
 
-        show hisao basic_worry_polo at right
+        play sound sfx_phonedial
+
+        "I quickly dial the number of my cell phone and cross my fingers that someone'll pick up."
+
+        play sound sfx_phonepickup
+
+        "Eventually, I hear Hisao's voice on the other end of the line."
+
+        show hisao basic_worry_polo_phone at phonebox
+        with charaenter
 
         hi "Ah... Akira... This is Hisao. Lilly isn't here right now, and she left her phone behind. Umm..."
         "I quickly speak up in order to save Hisao from having to come up with a proper explanation."
         li "Hisao, it's me. I'm using Akira's phone."
 
-        show hisao basic_speak_polo
+        show hisao basic_speak_polo_phone
+        with chchange
 
         hi "Lilly... How... is your father?"
         "I let out a depressed sigh."
         li "They're still operating on him as we speak. I'm praying that he's going to make it through."
 
-        show hisao basic_worry_polo
+        show hisao basic_worry_polo_phone
+        with chchange
 
         hi "So are we, Lilly..."
         "Hisao's voice is barely audible, and he sounds extremely tired. I'm obviously not the only one rattled by what happened."
@@ -1216,73 +1297,88 @@ label sh_ch30:
         hi "It took a long time before she was finally able to relax a little. I don't think any of us will be getting much sleep tonight."
         li "Are you doing okay?"
 
-        show hisao basic_speak_polo
+        show hisao basic_speak_polo_phone
+        with chchange
 
         hi "I've been better. This... hit really close to home."
         hi "I was kinda glad I got the opportunity to help Hanako get to our bedroom, because if I had stuck around and watched that emergency team get to work on your father, my own heart might have started acting up as well. I'm still shaking a little even now."
         li "I can imagine how you must feel. How about Hanako?"
 
-        show hisao basic_worry_polo
+        show hisao basic_worry_polo_phone
+        with chchange
 
         hi "Hanako got hit even harder. I mean... Her own parents died in front of her 10 years ago. Heck, I nearly died in front of her as well."
         hi "Whatever memories she's been forced to relive this evening were probably extremely traumatic ones. I haven't been able to get a single word out of her."
-        li "And yet... Hanako came through. While I was unable to think of what to do, Hanako did what she could to keep my father alive. She acted where I couldn't, and I'm extremely proud of her, Hisao."
+        li "And yet... Hanako came through. While I was unable to think of what to do, Hanako did what she could to keep my father alive."
+        li "She acted where I couldn't, and I'm extremely proud of her, Hisao."
 
-        show hisao basic_neutral_polo
+        show hisao basic_neutral_polo_phone
+        with chchange
 
         hi "Yeah, she acted. But... You didn't see her."
         li "What do you mean?"
 
-        show hisao basic_speak_polo
+        show hisao basic_speak_polo_phone
+        with chchange
 
         hi "On the day that you and Hanako reconciled, I spoke to Hanako's therapist, and she proposed sending Hanako to that training to help her deal with the situation in case my heart gave out again with her nearby."
         hi "I asked her if that was really going to prevent another panic attack, and Miss Takawa said that a panic attack was probably unavoidable."
         li "Then why the training?"
         hi "To delay the anxiety. She believed that as long as Hanako could keep her mind occupied during an emergency and distract herself by performing first aid rather than sitting there and feeling helpless, she'd be able to delay her panic attack."
-        hi "I heard that during that training she repeated the CPR procedure until it was almost a reflex to her. That's... I think that’s what happened. She was holding off her own panic - in the only way she could."
+        hi "I heard that during that training she repeated the CPR procedure until it was almost a reflex to her."
+        hi "That's... I think that’s what happened. She was holding off her own panic—in the only way she could."
         hi "She just kept going, maybe even without being aware of what was happening around her. Even when those ambulance workers arrived and told her to let them take over, she just kept going and going."
         li "What happened then?"
         hi "One of those people grabbed her and tried to drag her away from your dad. She reacted very badly to that."
 
-        show hisao basic_worry_polo
+        show hisao basic_worry_polo_phone
+        with chchange
 
-        hi "I was able to take her to our room... I'm still not sure how. There, I just held her in my arms - probably for nearly an hour - until she finally stopped trembling."
+        hi "I was able to take her to our room... I'm still not sure how. There, I just held her in my arms—probably for nearly an hour—until she finally stopped trembling."
         "Poor Hanako."
         li "Even if it was just a reflex on her part, I'm still really grateful for what she did, Hisao."
 
-        show hisao basic_neutral_polo
+        show hisao basic_neutral_polo_phone
+        with chchange
 
         hi "Yeah."
-
-        "We let out a mutual sigh and remain silent for a long time. I've been so overwhelmed by what happened that I didn't even stop to think how personal this experience must have been for both Hanako and Hisao. My heart goes out to both of them."
+        "We let out a mutual sigh and remain silent for a long time."
+        "I've been so overwhelmed by what happened that I didn't even stop to think how personal this experience must have been for both Hanako and Hisao. My heart goes out to both of them."
         "Suddenly, I hear footsteps approaching, and I feel a hand on my shoulder."
 
-        show akira basic_sweet
+        show akira basic_sweet at twoleft
+        with charaenter
 
         aki "Lilly?"
         li "Akira, do you... have any news?"
         aki "Are you still on the phone?"
 
-        show hisao basic_speak_polo
+        show hisao basic_speak_polo_phone
+        with chchange
 
         hi "Hisao here. I'm still listening, Akira."
 
-        play music music_comfort
+        play music music_comfort fadein 4.0
 
-        show akira basic_wistful
+        show akira basic_wistful_close
+        with chchange
 
-        aki "I just got word from the doctor. They finished the operation. He said it was still too early for a damage report, but they've managed to stabilize him. He'll live, Lilly. And I'm sure he'll be okay eventually."
+        aki "I just got word from the doctor."
+        aki "They finished the operation. He said it was still too early for a damage report, but they've managed to stabilize him."
+        aki "He'll live, Lilly. And I'm sure he'll be okay eventually."
         "My last bit of restraint broken, I return the phone to Akira and hold my face in my hands, sobbing uncontrollably, both in order to get rid of the fear, tension and stress as well as to express my relief."
         "Akira gives me a gentle squeeze in the shoulder, but doesn't respond. Finally, the silence is broken by Hisao's voice over the phone."
 
-        show hisao basic_sweet_polo
+        show hisao basic_sweet_polo_phone
+        with chchange
 
-        hi "Thanks Akira. I'm really relieved to hear that. I'll... be sure to tell Hanako. Maybe... just maybe... we'll be able to get some sleep tonight after all."
+        hi "Thanks Akira. I'm really relieved to hear that."
+        hi "I'll... be sure to tell Hanako. Maybe... just maybe... we'll be able to get some sleep tonight after all."
 
-        stop music
+        stop music fadeout 3.0
 
         scene black
-        with Dissolve(3.0)
+        with endchapter
 
         if _in_replay:
             return

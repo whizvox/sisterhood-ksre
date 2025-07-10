@@ -114,6 +114,7 @@ init 1 python:
     sh_bgs("hosp", ["hallway", "office"])
     sh_bgs("airport", ["coffeeshop", "baggageclaim", "inverness"])
     sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
+    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "entrance", "office"])
 
 init 1:
     # backgrounds
@@ -146,6 +147,13 @@ init 1:
     image hanako_hairclip = f"{sh_path}/vfx/hanako_hairclip.png"
     image niji_plush = f"{sh_path}/vfx/niji_plush.png"
     image hanako_camera = f"{sh_path}/vfx/hanako_camera.png"
+    image darkness:
+        block:
+            f"{sh_path}/vfx/darkness/darkness_1.jpg"
+            dissolve
+            f"{sh_path}/vfx/darkness/darkness_2.jpg"
+            dissolve
+            repeat
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
