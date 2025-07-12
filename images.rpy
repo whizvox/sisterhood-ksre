@@ -100,11 +100,12 @@ init 1 python:
     sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
     sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
+    sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
 
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "grounds", "livingroom", "livingroom_ni", "stairs", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "changingroom", "guestroom_ni"])
+    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_ni"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
@@ -217,6 +218,7 @@ init 1:
     theplax on FreeSound
     tim.kahn on FreeSound
     kwahmah_02 on FreeSound
+    Robinhood76 on FreeSound
     Eryliaa on Pixabay
     whizvox
     \n\n

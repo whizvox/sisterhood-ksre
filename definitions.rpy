@@ -174,7 +174,7 @@ init:
     define nak = Character(_("Nakamura"), who_color="#c6ec87") # alt color: f3ccff
     define jun = Character(_("Jun"), who_color="#b37b7b")
     define hy = Character(_("Hiroyuki"), who_color="#c9b09b")
-
+    define hyf = Character("Father", kind=hy)
     define dc = Character(_("Doctor"), who_color="#FFFFFF")
 
     # unknown characters

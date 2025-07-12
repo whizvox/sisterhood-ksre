@@ -253,6 +253,46 @@ screen say_sh(who, what):
             background tint_image(Frame("gui/bg/saybox.png"))
             text what id "what"
 
+screen sh_doublespeak(c1, t1, c2, t2):
+    style_prefix "doublespeak"
+
+    frame id "namebox1":
+        at colorblind(persistent.colorblind)
+        background tint_image(Frame("gui/bg/namebox.png"))
+        style_suffix "namebox1"
+        text ("{color=" + c1.who_args["color"] + "}" + renpy.translate_string(c1.name) + "{/color}") id "who1":
+            size 40
+            bold True
+
+    frame id "window1":
+        at colorblind(persistent.colorblind)
+        background tint_image(Frame("gui/bg/saybox.png"))
+        style_suffix "window1"
+        text t1 id "what1"
+
+    frame id "namebox2":
+        at colorblind(persistent.colorblind)
+        background tint_image(Frame("gui/bg/namebox.png"))
+        style_suffix "namebox2"
+        text ("{color=" + c2.who_args["color"] + "}" + renpy.translate_string(c2.name) + "{/color}") id "who2":
+            size 40
+            bold True
+
+    frame id "window2":
+        at colorblind(persistent.colorblind)
+        background tint_image(Frame("gui/bg/saybox.png"))
+        style_suffix "window2"
+        text t2 id "what2"
+
+    image "icon_ctc" as ctc1:
+        xpos 0.473
+    image "icon_ctc" as ctc2:
+        xpos 0.974
+
+    key ["dismiss", "skip"] action Return()
+
+    on "show" action If(renpy.is_skipping(), Return())
+
 screen sh_diary(left_dialogue, right_dialogue=None):
     style_prefix "shdiary"
 

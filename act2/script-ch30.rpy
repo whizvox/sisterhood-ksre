@@ -74,8 +74,6 @@ label sh_ch30:
         show karla basic_smile_cas_phone at phonebox
         with charaenter
 
-        # TODO probably shouldn't keep calling her "Mother". only reason why she was called such in act 1 was because the reader didn't know her name yet.
-
         kam "Hi Lilly."
         li "Oh, hello Mother. Have you already arrived at Aunt Stella's place?"
         kam "Yeah, I arrived here half an hour ago."
@@ -178,23 +176,23 @@ label sh_ch30:
         # TODO PICK UP FROM HERE
 
         show hanako basic_smile at tworight
-        show hisao basic_sweet_polo at twoleft
+        show hisao cross_pout_polo at twoleft
         with charaenter
 
         ha "Checkmate!"
         hi "Congratulations."
         li "Congratulations, Hanako."
         ha "Thanks. Ummm, do you want to go again, Hisao?"
+
+        show hisao cross_smile_polo
+        with chchange
+
         hi "Well, okay. This time I might try to stick more to the tried and true stuff."
 
         show hanako basic_bashful
         with chchange
 
         ha "Your opening was a bit unusual this time."
-
-        show hisao basic_smile_polo
-        with chchange
-
         hi "Yeah, I tried to do one of those exotic openings I read about in a chess book before we went on vacation, but either I remembered it wrong or I bungled it up somewhere along the way. I don't usually lose this quickly."
         ha "Unpredictability is usually a good thing in chess."
 
@@ -231,20 +229,19 @@ label sh_ch30:
         with chchange
 
         hi "Did you say that we were going to go there ourselves?"
-        li "Yes. When Father takes a few days off, he'll be taking us to Edinburgh. We'll visit my aunt when we're there, but for the most part we'll be sightseeing - so to speak."
+        li "Yes. When Father takes a few days off, he'll be taking us to Edinburgh. We'll visit my aunt when we're there, but for the most part, we'll be sightseeing—so to speak."
         hi "Were you there last time as well? What's the city like?"
         li "I was there only briefly during my last stay, but the city feels different from Inverness. Bigger and more crowded. Mother said it's literally ten times as populated as Inverness."
         li "Of course, Edinburgh is the capital of Scotland and the most populated city in the country after Glasgow, so it's quite unlike Inverness. I'm rather curious about your impressions of it."
-        hi "You mentioned sightseeing. Any further information on where we'll be going or is it going to be a surprise?"
+        hi "You mentioned sightseeing. Any further information on where we'll be going, or is it going to be a surprise?"
         "I open the drawer of one of the sidetables and pull out what I know is a tiny folder on Edinburgh's main tourist attractions, which I give to Hisao."
         li "You could take a little look in here and see if there's anything you like."
+        hi "Thanks... "
 
-        show hisao basic_smile_polo
-        with chchange
         show hisao basic_frown_polo
-        with charachangealways
+        with { "master": charachangealways }
 
-        hi "Thanks... ugh, it's all in English."
+        extend "ugh, it's all in English."
         "I grin."
         li "Of course. But if you don't understand the meaning of certain words, just read the corresponding sentence to me and I'll tell you what it means."
         hi "If I do that, are you going to correct my mispronunciations again? The last time we did something like this, you turned it into a miniature English lesson."
@@ -252,18 +249,11 @@ label sh_ch30:
         li "But... it's a pretty important skill to have in order to make yourself understood around here and surely an upcoming scientist must have some adequately honed skill in the language, especially since many scientific documents and websites are in English."
         li "Isn't it better for me to give you a few pointers now instead of having you picking up the wrong habits?"
 
-        show hisao cross_speak_polo
-        pause 0.1
-        show hisao cross_neutral_polo
-        pause 0.1
-        show hisao cross_speak_polo
+        show hisao cross_grin_polo
+        with charachangealways
+
         show hanako emb_downsmile
-        pause 0.1
-        show hisao cross_neutral_polo
-        pause 0.1
-        show hisao cross_speak_polo
-        pause 0.1
-        show hisao cross_neutral_polo
+        with charachangealways
 
         "The only immediate response I get is a muffled giggle from Hanako. Hisao must have rolled his eyes or made a face in response to my words. I'm probably fighting a losing battle here, so I decide to drop it."
 
@@ -273,7 +263,7 @@ label sh_ch30:
         li "Anyway, Edinburgh has quite a few museums that make for an interesting experience. There are also other places of note that Father said would be worth our while, such as the Edinburgh Zoo and the National Library of Scotland."
 
         show hanako emb_smile
-        with chchange
+        with chchangefast
 
         ha "Library?"
 
@@ -282,14 +272,14 @@ label sh_ch30:
 
         "Hisao and I both chuckle at Hanako's immediate reaction."
         li "Yes, Edinburgh has quite a few libraries, and the National Library of Scotland is the most prominent among them, because it's this country's legal deposit for books. They have quite a few old documents and maps there as well."
-        li "I think a visit there would be most educational and given the fact that Father has quite a fondness for books himself, I'd be extremely surprised if a visit to the National Library wasn't on the program."
+        li "I think a visit there would be most educational and, given the fact that Father has quite a fondness for books himself, I'd be extremely surprised if a visit to the National Library wasn't on the program."
 
         show hisao basic_smile_polo
         with chchange
 
         hi "It sounds like an interesting place to visit. I've never visited a national library before. Have you, Hanako?"
         ha "No. I'd like to go there, even if it's not the national library of Japan. It sounds interesting."
-        li "Well, then one destination is already set."
+        li "Well then, one destination is already set."
 
         show hanako emb_downsmile
         with chchange
@@ -304,21 +294,18 @@ label sh_ch30:
         hi "But Lilly, aren't these things kind of boring for you? This doesn't look like the petting zoo you and Hanako went to before."
         li "I think I can still enjoy myself there, Hisao. You and Hanako can describe the animals to me and I can still hear and smell them."
 
-        show hisao basic_neutral_polo
-        with chchange
-
-        hi "Smell? I've always felt that all zoos smell alike. Is there a big difference between the smell of elephant droppings and the smell of gorilla turds?"
-
         show hisao basic_grin_polo
         with chchange
 
+        hi "Smell? I've always felt that all zoos smell alike. Is there a big difference between the smell of elephant droppings and the smell of gorilla turds?"
         li "Well, ah..."
 
         show hanako emb_smile
-        with chchange
+        with chchangefast
 
         ha "Pfffff!"
-        "While I'm still wondering whether that question deserved a serious answer, I hear Hanako trying desperately to hold her laughter, and I realize Hisao was having a little fun at my expense. I sigh and give Hisao an admonishing pout before turning to Hanako."
+        "While I'm still wondering whether that question deserved a serious answer, I hear Hanako trying desperately to hold her laughter, and I realize Hisao was having a little fun at my expense."
+        "I sigh and give Hisao an admonishing pout before turning to Hanako."
         li "Hanako, it's probably not necessary to go easy on Hisao this match. I don't think he deserves it."
         "Hanako lets out a conspiring giggle."
 
@@ -355,21 +342,21 @@ label sh_ch30:
         with chchange
 
         hi "Hmm, City Art Center, Museum of Edinburgh... I don't know if visiting art displays is really something you'd enjoy."
-        li "Any musea about specific subjects?"
+        li "Any museums about specific subjects?"
         hi "This one may interest you. The Writers' Museum. It's dedicated to three well-known Scottish writers."
         li "Hmmm, which ones?"
 
         show hisao basic_speak_polo
         with chchange
 
-        hi "Robert Burns, Sir Walter Scott and Robert Louis Stevenson."
-        li "Burns is probably not very familiar to you, seeing as he was a poet, considered by many as the Scottish poet. You may not know about Scott either, unless Ivanhoe sounds familiar to you."
+        hi "Robert Burns, Sir Walter Scott, and Robert Louis Stevenson."
+        li "Burns is probably not very familiar to you, seeing as he was a poet, considered by many as {i}the{/i} Scottish poet. You may not know about Scott either, unless Ivanhoe sounds familiar to you."
 
         show hisao basic_neutral_polo
         with chchange
 
         hi "I'm afraid it doesn't."
-        li "Surely you must know Stevenson though. Have you read 'Treasure Island' or 'The Strange Case of Dr Jekyll and Mr Hyde'?"
+        li "Surely you must know Stevenson though. Have you read ‘Treasure Island’ or ‘The Strange Case of Dr Jekyll and Mr Hyde’?"
 
         show hisao basic_smile_polo
         with chchange
@@ -382,7 +369,9 @@ label sh_ch30:
         with chchange
 
         hi "They might not have much information printed in Braille."
-        li "Then surely I'll be able to rely on the two of you to read it to me and..."
+        li "Then surely I'll be able to rely on the two of you to read it to me, and..."
+
+        play sound sfx_car_driveup
 
         show hisao basic_neutral_polo
         show hanako basic_normal
@@ -396,16 +385,15 @@ label sh_ch30:
         li "That's true, he's unusually early, though I certainly won't complain about that."
         "A few minutes later, I hear footsteps slowly approaching followed by the voice of my father greeting us."
 
-        show hisao basic_speak_polo
-        show hanako basic_distant
-        with chchange
-
-        show hiroyuki basic_neutral_suit
+        show hisao at left
+        show hanako basic_distant:
+            xalign 0.35
+        show hiroyuki basic_neutral_suit at right
         with charaenter
 
-        hy "Lilly, Miss Ikezawa, Mister Nakai... Good evening."
+        hyf "Lilly, Miss Ikezawa, Mister Nakai... Good evening."
         hi "Good evening, sir."
-        ha "G-Good evening."
+        ha "G-good evening."
         li "Welcome back, Father. I'm happy to see you could make it back here sooner than usual."
 
         show hiroyuki basic_strain_suit
@@ -413,7 +401,9 @@ label sh_ch30:
 
         stop music fadeout 4.0
 
-        hy "I... am afraid I still have a few things to do. I will be retiring to my study. Please do not disturb me while I am working..."
+        hyf "I... am afraid I still have a few things to do. I will be retiring to my study. Please do not disturb me while I am working..."
+
+        play ambient sfx_ticktock fadein 4.0
 
         show hisao basic_neutral_polo
         show hanako basic_worry
@@ -422,7 +412,7 @@ label sh_ch30:
         ha "..."
         hi "..."
         li "Ah... Of course, Father."
-        hy "Good evening then."
+        hyf "Good evening, then."
 
         hide hiroyuki
         with charaexit
@@ -443,6 +433,11 @@ label sh_ch30:
         hi "Of course not, Lilly. Heck, this trip could end right here and now, and I'd still call it a grand success."
         ha "I agree."
         li "That is good to hear. I'll go and talk to him about it."
+
+        hide hanako
+        hide hisao
+        with charaexit
+
         "I take my cane and slowly make my way to the study."
 
         if _in_replay:
@@ -452,12 +447,18 @@ label sh_ch30:
 
         $ set_window_tint(TINT_LILLY)
 
-        if _in_replay:
-            scene satou_livingroom
-            with nextchapter
+        scene bg satou_stairs
+        with locationchange
 
         "I open the door just a little bit and hear the sound of someone typing on a keyboard."
+
+        play sound sfx_doorknock2 volume 0.9
+
         "I knock a few times to announce my presence."
+
+        stop ambient fadeout 1.0
+
+        play sound sfx_doorclose
 
         scene bg satou_study
         show hiroyuki basic_strain_suit
@@ -466,50 +467,52 @@ label sh_ch30:
         play music music_happiness fadein 4.0
 
         "I'm greeted by a tired sigh as I enter."
-        hy "Yes?"
+        hyf "Yes?"
         li "Ah...Father?"
 
         show hiroyuki basic_stern_suit
         with chchange
 
-        hy "Lilly, did you not hear what I said earlier?"
+        hyf "Lilly, did you not hear what I said earlier?"
         li "I know, Father. This won't take long."
-        hy "Go ahead."
+        hyf "Go ahead."
         "I walk further into the room until I'm standing near the table where Father is working."
-        "Father, is it... wise to keep working right now despite the fact that you were plagued by RSI earlier?"
+        li "Father, is it... wise to keep working right now despite the fact that you were plagued by RSI earlier?"
 
         show hiroyuki basic_raisesternbrow_suit
         with chchange
 
-        hy "Hmmm? Ah, my shoulder? Did your mother tell you about that?"
+        hyf "Hmmm? Ah, my shoulder? Did your mother tell you about that?"
         li "She did. Are you... feeling alright?"
-        hy "I am fine. Why are you suddenly so concerned about me?"
+        hyf "I am fine. Why are you suddenly so concerned about me?"
         li "Hanako and Hisao said that you looked a little pale when you came in."
 
         show hiroyuki basic_strain_suit
         with chchange
 
         "Another weary sigh. He's obviously not pleased with my insistence."
-        hy "I felt a bit unwell at the office, so I decided to return home earlier than planned. The sensation disappeared when I left the building. It has not returned since. I am fine right now."
+        hyf "I felt a bit unwell at the office, so I decided to return home earlier than planned. The sensation disappeared when I left the building. It has not returned since. I am fine right now."
         li "I've been thinking, Father. Perhaps we should call off our trip to Edinburgh. Or at least postpone it until a more convenient time."
-        hy "A more convenient time?"
+        hyf "A more convenient time?"
         li "When you're... no longer under so much pressure."
 
         show hiroyuki basic_stern_suit
         with chchange
 
-        hy "I have already made you a promise, have I not?"
+        hyf "I have already made you a promise, have I not?"
         li "There will be other times."
-        hy "I do not like to go back on my word. It is a matter of honor."
-        li "B-But..."
-        hy "Lilly, a proper lady... respects the will... of her elders."
+        hyf "I do not like to go back on my word. It is a matter of honor."
+        li "B-but..."
+        hyf "Lilly, a proper lady... respects the will... of her elders."
         li "Father, is anything wrong?"
 
         show hiroyuki basic_strain_suit
         with chchange
 
-        hy "Perhaps... you could get me a glass... of water."
+        hyf "Perhaps... you could get me a glass... of water."
         li "Right away, Father."
+
+        play sound sfx_dooropen
 
         scene bg satou_livingroom
         show hisao basic_neutral_polo at twoleft
@@ -533,19 +536,19 @@ label sh_ch30:
         "I navigate over to the kitchen and probe the shelves of the cupboard with my hand until I feel an empty glass against my fingers."
         "I take it, feel my way over to the tap and fill it with fresh and cool water."
 
-        show hanako emb_downtimid at right
+        show hanako emb_timid at right
         with charaenter
 
         ha "L-Lilly?"
         "Just as I finish filling up the glass, I hear a soft voice coming from the doorway."
         li "Hanako. Are you already finished with your chess match?"
 
-        show hanako emb_sad
-        with chchange
+        show hanako emb_sad at tworight
+        with charachangealways
 
         ha "Ummm... If your father is feeling ill, w-wouldn't it be good to... call a doctor?"
         li "A doctor?"
-        ha "Y-Yes."
+        ha "Y-yes."
         "I'm about to brush aside Hanako's suggestion, seeing that Father would probably not go along with that, but then I realize that Hanako following me here and telling me this are kind of unusual for her."
         "She's not exactly the most proactive person in the world. She probably wouldn't bother approaching me like this without good reason. But what reason is that?"
         li "Do you really think so, Hanako?"
@@ -573,57 +576,66 @@ label sh_ch30:
         with charaenter
 
         li "Father, I brought you your drink."
-        hy "Thank you."
-        "He takes it from my hands and takes a few careful sips. This should be the moment where I take my leave, but I manage to stop myself from walking away."
+        hyf "Thank you."
+        "He takes it from my hands and takes a few careful sips."
+        "This should be the moment where I take my leave, but I manage to stop myself from walking away."
 
         show hiroyuki basic_raisesternbrow_suit
         with chchange
 
-        hy "Lilly, is there something else?"
+        hyf "Lilly, is there something else?"
         "He must have spotted my fidgeting."
         li "Father... are you really feeling fine?"
-        hy "This again?"
+        hyf "This again?"
         li "It's just... m-maybe it would be a good idea to call a doctor if you're feeling unwell."
-        hy "A doctor?"
+        hyf "A doctor?"
         li "You say you're fine, but... I noticed... t-that your breathing is a bit more shallow than usual."
+
+        play sound sfx_impact2
+
+        $ renpy.music.set_volume(0.0, delay=0.2)
+        $ renpy.music.set_pause(True)
 
         show hiroyuki basic_stern_suit
         with chchangefast
 
-        hy "Lillian, that is quite enough!"
+        hyf "Lillian, that is quite enough!"
         "I cringe at his stern tone. I overstepped my boundaries, that's obvious."
         li "I... apologize. I'll be on my way. But..."
+
+        $ renpy.music.set_pause(False)
+        $ renpy.music.set_volume(1.0, delay=4.0)
 
         show hiroyuki basic_neutral_suit
         with chchange
 
-        hy "Yes?"
+        hyf "Yes?"
         li "You told Mother you were fine, and she said she took your word for it. Would you... also give me your word that you'll be fine?"
 
         show hiroyuki basic_raisesternbrow_suit
         with chchange
 
-        hy "My word...?"
+        hyf "My word...?"
         li "Yes, please promise me that you'll be okay. Since keeping your word is a matter of honor, I will trust it."
 
         show hiroyuki basic_thinking_suit
         with chchange
 
-        hy "..."
-        "There's a long silence. I wonder if he's going to scold me, but to my surprise he eventually lets out a resigned sigh."
+        hyf "..."
+        "There's a long silence. I wonder if he's going to scold me, but to my surprise, he eventually lets out a resigned sigh."
 
         show hiroyuki basic_strain_suit
         with chchange
 
-        hy "If I talk to a doctor... on the phone... will that be enough to reassure you?"
+        hyf "If I talk to a doctor... on the phone... will that be enough to reassure you?"
         li "It will."
-        hy "The phone in the living room should contain our general practitioner's phone number. His name is Thompson."
+        hyf "The phone in the living room should contain our general practitioner's phone number. His name is Thompson."
         li "Thank you, Father."
 
         show hiroyuki basic_stern_suit
         with chchange
 
-        hy "Hrmmm..."
+        hyf "Hrmmm..."
 
         scene bg satou_livingroom
         show hisao basic_neutral_polo at twoleft
@@ -679,17 +691,18 @@ label sh_ch30:
 
         stop music fadeout 10.0
 
+        play ambient sfx_ticktock fadein 10.0
+
         "Doctor" "Yes. I'm going to make a quick phone call there and tell them to expect you. Have you been to Raigmore before? Do you know where the cardiology ward is located?"
         "Doctor" "Ah, then again, your father probably knows where it is, given his profession."
-
-        #play music music_tension fadein 4.0
-
         "I feel my blood freeze in my veins and a heavy sensation in the pit of my stomach."
         li "C-cardiology?"
         "Doctor" "Yes. The person on duty there will either be Doctor Morrison or Doctor McElroy."
         li "Doctor... What's going on?"
         "Doctor" "...could I speak briefly with your father, Miss Satou?"
         li "Of course..."
+
+        stop ambient fadeout 1.0
 
         scene bg satou_study
         with locationchange
@@ -702,6 +715,9 @@ label sh_ch30:
         "Not an acknowledgement, nor a typing sound. Not even a breath."
         "Did he leave?"
         li "Father, where are you?"
+
+        play sound sfx_impact
+
         "I walk further into the room and almost immediately my foot hits something."
         "Something on the floor that wasn't here before."
         "I kneel and reach out to examine it."
@@ -709,9 +725,6 @@ label sh_ch30:
         "It's a person, lying on the floor near the door."
         li "Father?"
         "Not an acknowledgement, nor a typing sound. Not even a breath."
-
-        stop ambient
-
         "{i}NOT EVEN A BREATH!{/i}"
 
         scene ev withoutthinking_lilly
@@ -727,25 +740,29 @@ label sh_ch30:
         hi "Lilly? Is something wrong?"
         "I hear Hisao's and Hanako's footsteps hurriedly approaching, probably drawn here by my shout."
 
-        scene ev withoutthinking_crowd
+        show ev withoutthinking_crowd
         with charachangeev
 
         "As they come in, I hear two gasps."
         hi "Mister Satou! Lilly, what's happened here?"
         li "I... I d-don't know. I c-can't hear him breathing."
-        "Somebody do something! Please!"
+        "{i}Somebody do something! Please!{/i}"
         "Hanako's breathing, on the other hand, is becoming more pronounced by the second. I'd probably start worrying about her if I wasn't on the verge of panic myself."
         hi "Damn, should we give him artificial respiration? Does he even have a pulse?"
-        li "I... I don't know. J-Just d-do something, please."
+        li "I... I don't know. J-just d-do something, please."
         "I'm not sure what's more unsettling—Hisao's panicked tone or Hanako's ragged breathing."
         hi "I can't feel any pulse in his wrist. Is there a better way to do this?"
         "She's almost hyperventilating."
         li "I don't know!"
 
-        scene ev withoutthinking_cpr
-        with charachangeev
+        window hide None
 
-        call screen doublespeak(li, _("Aah!"), hi, _("Hey!"))
+        show ev withoutthinking_cpr
+        with { "master": charachangeev }
+
+        call screen sh_doublespeak(li, _("Aah!"), hi, _("Hey!")) with dissolve
+
+        window auto True
 
         "Hisao and I let out a surprised cry as we're suddenly violently being pushed aside, and I nearly hit my head on the table in the process."
         "When I catch my bearings, I become once again aware of Hanako's breathing, but it's different this time. Instead of the hyperventilating gasps she was letting out earlier, she's now letting out a steady stream of short, sharp breaths."
@@ -757,29 +774,30 @@ label sh_ch30:
         ha "{i}*huff* *huff* *huff*{/i}"
         hi "Hanako, can you hear me?"
         ha "{i}*huff* *huff* *huff*{/i}"
-        "No answer. Hanako's breathing is so steady it's almost robotic. I wonder if she knows what she's doing. But what choice do we have?"
+        "No answer. Hanako's breathing is so steady it's almost robotic."
+        "I wonder if she knows what she's doing. But what choice do we have?"
         "{i}What's taking that accursed ambulance so long?!{/i}"
         li "Doctor Thompson said he'd call an ambulance. They... they should be on their way."
         hi "Then I'll go and open the gates and the front door, so they'll be able to get here as quickly as possible when they arrive."
         li "Y-yes, thank you Hisao."
         ha "{i}*huff* *huff* *huff*{/i}"
 
-        scene ev withoutthinking_cpr_nohisao
+        show ev withoutthinking_cpr_nohisao
         with charachangeev
 
         "I hear Hisao running off, leaving me alone in the room with Hanako... and Father."
         "It doesn't happen often, but right now I'm cursing my blindness. My friends are both doing their part, and here I am, unable to do anything."
         li "Please d-do your best, Hanako. Let me know if you need anything..."
-        "Father..."
+        "{i}Father...{/i}"
         "Seeing how close to the door he was, I think he was trying to get out of the room before he collapsed."
         "Did he call out for help, and did I fail to hear it?"
         ha "{i}*huff* *huff* *huff*{/i}"
-        "What's taking that ambulance so long?"
+        "{i}What's taking that ambulance so long?{/i}"
         "Am I going to lose him, just like Hanako lost her parents?"
         "Is that exasperated sigh he let out when I walked out of here going to be the last thing I'll ever hear from him?"
         "That's too cruel."
         ha "{i}*huff* *huff* *huff*{/i}"
-        "Please hang in there, Father."
+        "{i}Please hang in there, Father.{/i}"
         li "Hanako, please hang in there."
         "Is that the best I can come up with?"
         "I used to have no trouble finding the right words to encourage Hanako. And now, now that it matters more than ever, I find myself lost for words."
@@ -792,7 +810,7 @@ label sh_ch30:
 
         play sound sfx_brokenbone
 
-        scene ev withoutthinking_cpr_cover
+        show ev withoutthinking_cpr_cover
         with charachangeev
 
         "A wave of nausea washes over me as I hear a soft crunch coming from the place where Father's lying."
@@ -812,7 +830,7 @@ label sh_ch30:
         "I wonder if there isn't a defibrillator somewhere in the house. Father's company sells them after all. He might have taken one home at some point."
         "But where would he keep it? And would any of us be in a condition to operate it?"
 
-        play ambient sfx_ambulance_distant fadein 6.0
+        play ambient sfx_ambulance_distant fadein 10.0
 
         "Before I can ponder my thought further, my attention is drawn by a distinctive sound coming from outside."
         "Is that a siren?"
@@ -827,7 +845,8 @@ label sh_ch30:
         ha "{i}*huff* *huff* *huff*{/i}"
         li "Hold on for just a little while longer, Hanako. Please... Hang in there..."
 
-        stop ambient fadeout 1.0
+        stop ambient fadeout 4.0
+
         play sound sfx_ambulance_arrive fadein 1.0
 
         "The sound of the siren is now joined by the sound of a car screeching to a halt."
@@ -838,6 +857,8 @@ label sh_ch30:
         ha "{i}*huff* *huff* *huff*{/i}"
 
         stop sound fadeout 0.5
+
+        play ambient sfx_crowdmale fadein 1.0
 
         scene bg satou_study_blur
         show crowd
@@ -851,20 +872,22 @@ label sh_ch30:
         "Paramedic" "Damn, we don't have time for this. Ian, get her away from him so I can get started!"
         "Paramedic" "Sure."
 
-        show hanako defarms_shock at center
+        show hanako defarms_shock at center behind crowd
         with Dissolve(0.2)
 
         ha "AAAAAAAAHHH!"
         "Paramedic" "Whoa! Hey, no need to freak out. We're here to help!!"
 
-        show hisao basic_annoy_polo at twoleft
+        show hisao basic_annoy_polo at left
         with charaenter
 
         hi "Hey! Get your hands off of her!"
         "Paramedic" "What's he saying?"
 
-        show hisao basic_worry_polo
-        with chchange
+        show hisao basic_worry_polo at twoleft
+        show hanako emb_downtimid
+        show crowd behind hanako 
+        with charachangealways
 
         hi "Hanako! Come on, Hanako. I'll get you to our room. Just... there... just come along with me, okay?"
 
@@ -872,7 +895,7 @@ label sh_ch30:
         hide hanako
         with charaexit
 
-        "Paramedic" "Bruce!{nw=1.5}"
+        "Paramedic" "Bruce!"
         "Paramedic" "I'm on it! Neil, get that adrenaline injection ready."
         "Paramedic" "Hey lass, maybe it's better if you go and check up on your... uh... friends."
         "Paramedic" "Lass, you with us?"
@@ -885,26 +908,39 @@ label sh_ch30:
         "Paramedic" "Whadda you think that guy who let us in was saying?"
         "Paramedic" "Dunno, it sounded like Chinese or Japanese. Heck, look at this room. It's completely Asian style."
         "Paramedic" "Neil, one more injection."
-        "Paramedic" "Gotcha.{nw=1.5}"
-        "Paramedic" "Keep going, people.{nw=2}"
-        "Paramedic" "Come on, come on!{nw=2}"
+        "Paramedic" "Gotcha."
+        "Paramedic" "Keep going, people."
+        "Paramedic" "Come on, come on!"
         "Paramedic" "Did you guys see that girl? That was one nasty burn on her face. Wonder how she got it."
         "Paramedic" "Hey, keep it down Neil!"
         "Paramedic" "Sorry."
-        "Paramedic" "I think I'm getting something.{nw=2}"
-        "Paramedic" "Keep going, Bruce.{nw=2}"
-        "Paramedic" "Give him another shot?{nw=2}"
+        "Paramedic" "I think I'm getting something."
+        "Paramedic" "Keep going, Bruce."
+        "Paramedic" "Give him another shot?"
         "Paramedic" "Might not be necessary. Get those electrodes in place!"
         "Paramedic" "Right away!"
         "Paramedic" "That's a beat alright. Ian!"
-        "Paramedic" "Okay, get back Bruce.{nw=2}"
-        "Paramedic" "He's all yours.{nw=2}"
-        "Paramedic" "Clear!{nw=2}"
+
+        play sound sfx_defibrillator_charge
+
+        "Paramedic" "Okay, get back Bruce."
+        "Paramedic" "He's all yours."
+        "Paramedic" "Clear!"
+
+        play sound sfx_defibrillator_discharge
+
+        pause 2.0
+
         "Paramedic" "And...?"
-        "Paramedic" "One more time.{nw=2}"
-        "Paramedic" "Clear!{nw=2}"
+        "Paramedic" "One more time."
+        "Paramedic" "Clear!"
+
+        play sound sfx_defibrillator_discharge
+
+        pause 2.0
+
         "Paramedic" "I think we got a pulse. Get the respiratory device and ready the stretcher."
-        "Paramedic" "Got it!{nw=2}"
+        "Paramedic" "Got it!"
         "Paramedic" "Hey lass. We're about to move out."
         li "W-will my father make it, sir?"
         "Paramedic" "We've done all we can here. It's up to the doctors at Raigmore to make it stick."
@@ -914,7 +950,7 @@ label sh_ch30:
         "Paramedic" "Only if you come along with us right here and now. We can't wait for you."
         li "I understand."
 
-        play music music_sadness fadein 4.0
+        stop music fadeout 2.0
 
         scene bg satou_stairs_blur
         with locationchange
@@ -926,8 +962,12 @@ label sh_ch30:
 
         pause 1
 
+        stop ambient fadeout 1.0
+
         scene bg raigmore_ambulance
         with locationchange
+
+        play music music_sadness fadein 4.0
 
         "I get up and feel out the shoulder of the ambulance worker who addressed me. We hurry outside and he quickly helps me into a seat."
         "I didn't get the opportunity to explain this to Hanako and Hisao, but I'm sure they'll understand."
@@ -935,7 +975,7 @@ label sh_ch30:
         show bg raigmore_ambulance_blur
         with locationchange
 
-        play ambient sfx_ambulance_close volume 0.3
+        play ambient sfx_ambulance_close
 
         "I hurriedly fasten my seat belt as both the engine and the siren spring to life, and the driver sends the ambulance down the driveway and onto the road with a speed that would make Akira's driving seem subdued."
 
@@ -944,7 +984,7 @@ label sh_ch30:
 
         n "During the short ride, I pick up a remark from the amulance driver mentioning we're lucky that our house is so close to the hospital."
         n "A little bit later I hear the voice of someone on the radio giving us the number of the operating room Father will be taken to, but I'm barely able to process all of these things as my brain is still trying to digest what's happening."
-        n "Just a little while ago I was still sitting in the living room, relaxing, talking with my friends and planning our trip to Edinburgh without a care in the world."
+        n "{vspace=90}Just a little while ago I was still sitting in the living room, relaxing, talking with my friends and planning our trip to Edinburgh without a care in the world."
         n "How could this suddenly turn into such a nightmare?"
 
         nvl hide dissolve
@@ -954,6 +994,8 @@ label sh_ch30:
 
         "My thoughts are interrupted by the ambulance making a sharp turn and coming to a standstill. The ambulance workers quickly get out, and I hear the sound of many voices and many footsteps followed by the sound of a stretcher being pushed down a nearby corridor."
         "The driver then gets out as well, I hear him walk off and then return with someone else in tow."
+
+        stop ambient fadeout 1.0
 
         scene bg raigmore_entrance
         with locationchange
