@@ -107,7 +107,7 @@ init:
     # TRANSFORMS
 
     transform phonebox:
-        xanchor 1.0 xpos 0.95 yanchor 1.0 ypos 0.81
+        xanchor 1.0 xpos 0.95 yanchor 1.0 ypos 0.82
     transform sittingpos:
         xpos 0.5 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     transform twoleft_sittingpos:

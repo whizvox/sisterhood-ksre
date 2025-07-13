@@ -86,12 +86,13 @@ init 1 python:
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
 
-    phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo"])
+    phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo", "basic_cheerful", "basic_lost", "basic_angry"])
     phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)
     phonebox_sprites("hanako", ["emb_smile", "emb_timid", "emb_blushing"])
     phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
     phonebox_sprites("karla", ["basic_smile_cas", "basic_sheepish_cas", "basic_ponder_cas", "basic_distant_cas", "basic_lost_cas", "basic_resigned_cas", "basic_wistful_cas", "basic_cheerful_cas", "basic_sweet_cas"], vanilla=False)
+    phonebox_sprites("hisao", ["basic_worry_polo", "basic_speak_polo", "basic_neutral_polo", "basic_sweet_polo"], cropxoff=95, cropyoff=-90)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("funindark", ["hug_rest", "hug_rest_large", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])
@@ -115,7 +116,7 @@ init 1 python:
     sh_bgs("hosp", ["hallway", "office"])
     sh_bgs("airport", ["coffeeshop", "baggageclaim", "inverness"])
     sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
-    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "entrance", "office"])
+    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "entrance", "office", "waitroom"])
 
 init 1:
     # backgrounds
@@ -125,6 +126,8 @@ init 1:
     image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
     image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
     image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
+    image bg satou_entrance_blur_ss = sunset(sh_bg("satou_entrance_blur"))
+    image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
 
     # special events
     image ev rainyroad:
@@ -150,10 +153,10 @@ init 1:
     image hanako_camera = f"{sh_path}/vfx/hanako_camera.png"
     image darkness:
         block:
-            f"{sh_path}/vfx/darkness/darkness_1.jpg"
-            dissolve
-            f"{sh_path}/vfx/darkness/darkness_2.jpg"
-            dissolve
+            f"{sh_path}/vfx/darkness/darkness_1.jpg" with dissolve
+            0.5
+            f"{sh_path}/vfx/darkness/darkness_2.jpg" with dissolve
+            0.5
             repeat
 
     # logos
