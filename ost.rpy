@@ -31,6 +31,8 @@ init 1 python:
         # medical
         "ambulance_arrive", "ambulance_close", "ambulance_distant", "brokenbone", "crowdmale", "defibrillator_charge",
         "defibrillator_discharge", "hospital_ambience",
+        # elevator
+        "elevatorchime", "elevatorclose", "elevatoropen",
         # misc ambience
         "bikeride", "ticktock", "windy",
         # other

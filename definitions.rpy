@@ -100,7 +100,10 @@ init:
             (_("Evening Snack"), "sh_ch29.s3", _("Hanako and Hisao round off the night with an “evening snack”."), "hanako"),
             (_("Oh, the Days Ahead"), "sh_ch30.s1", _("Lilly, Hanako, and Hisao spend a peaceful evening planning the second half of their trip."), "lilly"),
             (_("Without Thinking"), "sh_ch30.s2", _("Lilly's worst fears are realized."), "lilly"),
-            (_("Prayer"), "sh_ch30.s3", _("Lilly reconvenes with Akira and Hisao at the hospital."), "lilly")
+            (_("Prayer"), "sh_ch30.s3", _("Lilly reconvenes with Akira and Hisao at the hospital."), "lilly"),
+            (_("Playing Politics"), "sh_ch31.s1", _("Akira discusses her father at work. (WIP)"), "akira"),
+            (_("Revelation"), "sh_ch31.s2", _("Akira and Lilly learn of their father's current and past health concerns."), "akira"),
+            (_("Chapter 31.3"), "ch_ch31.s3", _("Akira and Lilly meet with their father in the hospital."), "akira")
         ])
     ]
 
@@ -171,11 +174,13 @@ init:
     define nt = Character(_("Natsume"), who_color="#a57d33")
     define ka = Character(_("Karla"), who_color="#dfc46d")
     define kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
+    define kamo = Character(_("Mom"), kind=ka) # Karla ("Mom", from Akira's POV)
     define nak = Character(_("Nakamura"), who_color="#c6ec87") # alt color: f3ccff
     define jun = Character(_("Jun"), who_color="#b37b7b")
     define hy = Character(_("Hiroyuki"), who_color="#c9b09b")
     define hyf = Character("Father", kind=hy)
-    define dc = Character(_("Doctor"), who_color="#FFFFFF")
+    define dc = Character(_("Doctor"), who_color="#ffffff")
+    define fer = Character(_("Ferguson"), who_color="#ffffff")
 
     # unknown characters
     define ta_ = Character(_("Old woman"), kind=ta)

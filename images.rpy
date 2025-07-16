@@ -116,7 +116,8 @@ init 1 python:
     sh_bgs("hosp", ["hallway", "office"])
     sh_bgs("airport", ["coffeeshop", "baggageclaim", "inverness"])
     sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
-    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "entrance", "office", "waitroom"])
+    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "elevator", "entrance", "hallway", "office", "waitroom", "waitcard"])
+    sh_bgs("smt", ["reception", "office"])
 
 init 1:
     # backgrounds
@@ -222,6 +223,7 @@ init 1:
     tim.kahn on FreeSound
     kwahmah_02 on FreeSound
     Robinhood76 on FreeSound
+    magedu on FreeFound
     Eryliaa on Pixabay
     whizvox
     \n\n

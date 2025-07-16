@@ -1391,7 +1391,7 @@ label sh_ch30:
         li "Then why the training?"
         hi "To delay the anxiety. She believed that as long as Hanako could keep her mind occupied during an emergency and distract herself by performing first aid rather than sitting there and feeling helpless, she'd be able to delay her panic attack."
         hi "I heard that during that training she repeated the CPR procedure until it was almost a reflex to her."
-        hi "That's... I think that’s what happened. She was holding off her own panic, in the only way she could."
+        hi "That's... I think that's what happened. She was holding off her own panic in the only way she could."
         hi "She just kept going, maybe even without being aware of what was happening around her. Even when those ambulance workers arrived and told her to let them take over, she just kept going and going."
         li "What happened then?"
         hi "One of those people grabbed her and tried to drag her away from your dad. She reacted very badly to that."
