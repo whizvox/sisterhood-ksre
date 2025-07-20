@@ -566,151 +566,210 @@ label sh_ch31:
         $ set_window_tint(TINT_AKIRA)
 
         scene bg raigmore_room
+        with locationchange
+
+        play sound sfx_doorclose
+
+        play ambient sfx_ekg volume 0.8 fadein 2.0
+
+        if _in_replay:
+            play music music_rain fadein 4.0
 
         "As we enter the room and close the door behind us, the bustling of the hallways fades away and is replaced by an almost oppressive silence that's only disrupted by the steady high-pitched beep of a nearby EKG monitor."
         "I get a strange feeling of déjà vu as we walk further into the room and towards the bed housing the room's only occupant."
-        "I remember visiting Hisao while he was hospitalized together with Lilly, Shizune and Misha and feeling a similar atmosphere when I entered his room. That feels so long ago, despite it only being like a month away."
+        "I remember visiting Hisao while he was hospitalized together with Lilly, Shizune, and Misha and feeling a similar atmosphere when I entered his room. That feels so long ago, despite it only being like a month away."
 
-        scene ev bedridden_akira_hisao_hanako
+        scene ev bedridden_akira_lilly
+        with charachangeev
 
-        nvl show dissolve
-        n "{vspace=60}Hisao did look a lot less sordid than the person lying before us here. Unshaven, an IV needle sticking in his arm and the movement of his chest betraying a strained breathing, Dad looks at least a decade older than he really is."
-        n "{vspace=60}The expression in his eyes is less sharp and probing than it usually is, probably due to the painkillers he's on, but he's definitely conscious as I can see his gaze following us as we make our way over to the bed. He gives a short sigh as an indication that he's aware of our presence."
-        nvl clear
-
-        li "Hello Father."
+        "Hisao did look a lot less sordid than the person lying before us here."
+        "Unshaven, an IV needle sticking in his arm, and the movement of his chest betraying a strained breathing, Dad looks at least a decade older than he really is."
+        "The expression in his eyes is less sharp and probing than it usually is, probably due to the painkillers he's on, but he's definitely conscious as I can see his gaze following us as we make our way over to the bed."
+        "He gives a short sigh as an indication that he's aware of our presence."
+        li "Hello, Father."
         aki "Nice to see you're awake, Dad."
         hyd "..."
         "There's a soft sound, but if it was a mumble, it was too soft for even Lilly to comprehend. That familiar worrying expression appears on my sister's face in response."
         li "Father... Are you in a lot of pain?"
-        hyd "I... fine."
+        hyd "{cps=20}I... fine.{/cps}"
         "Those fractured ribs of his probably make even taking deep breaths painful, and his first reaction is to claim he's fine. I shrug."
-        aki "His definition of 'fine' is still the same as it was just before this whole mess started, Sis. I'll leave it up to you to decide whether you want me to describe what he looks like, but 'fine' is not a word I'd use right now."
+        aki "His definition of ‘fine’ is still the same as it was just before this whole mess started, Sis. I'll leave it up to you to decide whether you want me to describe what he looks like, but ‘fine’ is not a word I'd use right now."
         "Lilly merely smiles sheepishly and then goes back to her worrying tone."
         li "You don't have to talk, Father. If you really need to say something, just whisper. Please don't strain yourself."
-        hyd "Your... mother... not here?"
+        hyd "{cps=20}Your... mother... not here?{/cps}"
         "Lilly smiles and shakes her head."
         li "Mother will be keeping you company this evening."
         "That's leaving out one heck of an important detail."
-
-        aki "Maybe in the meantime you could think about what you're gonna tell her. We just had a talk with your cardiologist who in turn had a talk with your general practitioner."
+        aki "Maybe in the meantime, you could think about what you're gonna tell her. We just had a talk with your cardiologist who in turn had a talk with your general practitioner."
         aki "Turns out he knew you were a risk case, and you knew that too. What on earth were you thinking?"
-        "A long silence. I wonder if he expected us to find out about this. I can see Lilly fidgeting a bit. She obviously doesn't really like where this is going, but at the same time I bet she's curious herself."
-        hyd "I... could not... just stop... just before... the... end. My... honor... was at... st-stake... here."
+        "A long silence follows."
+        "I wonder if he expected us to find out about this. I can see Lilly fidgeting a bit. She obviously doesn't really like where this is going, but at the same time, I bet she's curious herself."
+        hyd "{cps=20}I... could not... just stop... just before... the... end. My... honor... was at... st-stake... here.{/cps}"
+
+        show ev bedridden_akira_shout
+        with charachangeev
 
         aki "Honor? Give me a break! You think you're some sort of samurai who'll be fondly remembered by everyone who knew him if he bravely dies in the line of duty while serving his lord or something?"
         aki "I bet most people at the office here would have thought of you as a fool."
         aki "Heh, maybe those guys on the board of directors would have put a memorial plaque in place in your honor at the Japanese branch, assuming the ambulance crew wouldn't have ended up thwarting things."
-        hyd "What... do... you... mean?"
-
+        hyd "{cps=20}What... do... you... mean?{/cps}"
         aki "You ever thought of what would have happened if Hanako hadn't been there to give you CPR on the spot, but the ambulance team would still have arrived just in time to save some of your basic brain functions?"
         aki "You would have spent the next decade or two mumbling random gibberish at your wife and daughters while they're busy changing your daily diapers. The board members would have denied your very existence out of embarrassment."
         aki "If you think that's an exaggeration, then maybe we can take a look around here at the hospital. They may have heart attack victims here who weren't as lucky as you've been."
         hyd "..."
-        "I can see that his medication hasn't left him fuzzy enough to miss the implication of my comment and he looks uncomfortable upon imagining that scenario. Looks like that wasn't part of his risk calculation after all."
+        "I can see that his medication hasn't left him fuzzy enough to miss the implication of my comment, and he looks uncomfortable upon imagining that scenario. Looks like that wasn't part of his risk calculation after all."
         aki "Besides, this isn't about the last couple of weeks or the last couple of months. You were told you had high blood pressure years ago. Why on earth didn't you take it easier back then?"
-        hyd "Could... not... afford to... yet..."
+        hyd "{cps=20}Could... not... afford to... yet...{/cps}"
         aki "Could not afford to? Even a couple of years ago, you could have retired and lived out the rest of your days in comfort. This was simply about your ego."
-        hyd "...no way... to... speak to... a parent... Akira. You... show... respect... for once... This was... about... your... education... and... financial future... too. And es... especially... Lilly's."
+        hyd "{cps=20}...no way... to... speak to... a parent... Akira.{/cps}"
+        hyd "{cps=20}You... show... respect... for once... This was... about... your... education... and... financial future... too. And es... especially... Lilly's.{/cps}"
         "That excuse again. Lilly looks a bit distressed upon hearing Father's words."
-
         li "My financial future, Father?"
-        hyd "We... have been... setting... trust fund... for your... cial future... during our... time here."
+        hyd "{cps=20}We... have been... setting... trust fund... for your... cial future... during our... time here.{/cps}"
         li "A trust fund?"
-        hyd "Yes... so even... in... the long run... you will... always be... well... provided for. Even... if you... would not... find a... husband... at some point, you... would still... be able... to live... without worry, L-Lilly."
-        "Well-provided for? I wonder if he realizes how extremely patronizing he's sounding. Lilly certainly realizes it, too, and I can see an angry expression on her face."
+        hyd "{cps=20}Yes... so even... in... the long run... you will... always be... well... provided for.{/cps}"
+        hyd "{cps=20}Even... if you... would not... find a... husband... at some point, you... would still... be able... to live... without worry, L-Lilly.{/cps}"
+        "Well-provided for? I wonder if he realizes how extremely patronizing he's sounding."
+        "Lilly certainly realizes it, too, and I can see an angry expression on her face."
         "She's making an active effort to keep her composure. The sight of her hurt expression suddenly pisses me off to no end, and I sling an angry retort back at the old man."
         aki "She doesn't want your damn trust fund."
-        hyd "But... she... will... probably... need... it."
+
+        stop music fadeout 4.0
+
+        hyd "{cps=20}But... she... will... probably... need... it.{/cps}"
 
         scene bg raigmore_room
-        play music music_sadness
+        with locationchange
 
-        show lilly cane_offended_close at twoleft
-        with chchange
+        queue music music_sadness fadein 4.0
+
         show lilly cane_mad_close
-        with chchange
+        with charaenter
+
+        pause 1.0
+
         show lilly cane_offended_close
         with charachangealways
 
         pause 1.0
 
-        show lilly back_listen_close at right
+        show lilly back_listen at left
+        with charachangealways
 
-        pause 1.0
+        pause 0.5
+
+        play sound sfx_dooropen
 
         hide lilly
+        with charaexit
 
         "Lilly doesn't answer, but I can see the corner of her mouth twitching slightly, and just when I start expecting her to either give Dad a piece of her mind or send him a fake smile, she turns around and walks out of the room without saying a single word."
         "I recover from the surprise sooner than Dad and give him a dirty look."
         aki "When Mom comes here this evening, it'd be smart to treat her with more respect, or you'll burn what might be the last bridge you have left."
-        "And with that, I leave the room and go after my sister who's already half-way down the corridor before I catch up with her."
+        "And with that, I leave the room."
+
+        stop ambient fadeout 1.0
 
         scene bg raigmore_hallway
+        with locationchange
 
-        show lilly back_listen_close at twoleft
+        play sound sfx_doorclose
+
+        "I go after my sister, who's already half-way down the corridor before I catch up with her."
+
+        show lilly back_listen_cas_close at twoleft
+        with charaenter
 
         aki "Sis?"
-        "Lilly doesn't immediately respond and merely sighs. For a moment I think she's going to turn around and walk back to Dad to apologize to him, but that doesn't happen."
+        "Lilly doesn't immediately respond and merely sighs."
+
+        show lilly back_sad_cas_close
+        with charachangealways
+
+        "For a moment I think she's going to turn around and walk back to Dad to apologize to him, but that doesn't happen."
         aki "I'll take you to the car, okay?"
         li "Yes..."
 
         scene bg raigmore_entrance
+        with locationchange
 
-        show lilly cane_displeased_close at twoleft
+        show lilly cane_displeased_cas_close at twoleft
+        with charaenter
 
-        "I allow her to take my sleeve, and we walk back to the parking lot. I notice she seems to move with a little bit more hesitation than before, but she doesn't stop walking for a single moment."
+        "I allow her to take my sleeve, and we walk back to the parking lot."
+        "I notice she seems to move with a little bit more hesitation than before, but she doesn't stop walking for a single moment."
 
         scene bg akira_car
+        with locationchange
 
-        "We make our way to the car, but before I start the engine I give an exasperated sigh."
+        "We make our way to the car, but before I start the engine, I give an exasperated sigh."
         aki "Well, this was certainly illuminating. I wonder if what happened just now is courtesy of those painkillers he's on."
-        li "Do you mean to say he may have... not been himself."
+
+        show lilly basic_displeased_cas_close at twoleft
+        with charaenter
+
+        li "Do you mean to say he may have... not been himself?"
         aki "He wasn't completely out of it or anything, but he was probably a little too fuzzy to be able to carefully choose and weigh his words like he usually does."
         li "The mindset behind it is still the same though, isn't it? Whether it's sugarcoated or not doesn't really matter."
         aki "Yeah. Crap with cream on top is still crap."
-        "I start the car, and after a short ride we reach our parents' home. Lilly hasn't said a single word the entire time, which is a bit worrying."
+        "I start the car, and we head to our parents' home."
 
         scene bg satou_entrance
+        with shorttimeskip
 
-        show lilly cane_sad_close at twoleft
-
+        "After a short drive, we arrive. Lilly hasn't said a single word the entire time, which is a bit worrying."
         aki "Okay, we're back. The front door is at twelve o' clock when you get out."
+
+        show lilly cane_sad_cas_close at twoleft
+        with charaenter
+
         li "Thank you."
         aki "Hey Sis, you've been kind of quiet. You... uh... want to talk about this?"
 
-        show lilly cane_concerned_close
+        show lilly cane_concerned_cas_close
+        with chchange
 
         li "...Thank you, Akira. But I'd like to think some more first."
+
+        show lilly cane_displeased_cas_close
+        with charachangealways
 
         "We get out and we say our goodbyes, but as Lilly turns around and heads for the front door, I suddenly think of something and put a hand on her shoulder."
         aki "Hey Sis, I've been thinking... Have you considered the option of accompanying Hanako and Hisao back to Japan? I could drop by the airport and see if I can secure an additional ticket for that particular flight."
         aki "It might be better than having to put up with stuff like what just happened for an extended amount of time. A premature departure might just send a hint with enough impact to last."
         "Curiously enough, Lilly doesn't immediately react."
 
-        show lilly cane_offended_close
+        show lilly cane_offended_cas_close
+        with charachangealways
 
         pause 1.0
 
-        show lilly back_listen_close
+        show lilly back_listen_cas_close
+        with charachangealways
 
-        pause 1.0
-
-        hide lilly
+        pause 0.5
 
         "Just when I'm about to repeat my question, she unexpectedly shrugs off my hand in an almost mechanical way, and her parting words, uttered just before she opens the front door and walks in, sound cold enough to send a tingle down my spine."
         li "...have a nice evening, Akira."
-        "The fact that my younger sister gave me the cold shoulder, probably for the first time in her life, takes a moment to sink in, and when I get back in the car I feel exhausted and just a bit unsettled as well."
+
+        hide lilly
+        with charaexit
+
+        play sound sfx_doorclose
+
+        "The fact that my younger sister gave me the cold shoulder, probably for the first time in her life, takes a moment to sink in."
+        "When I get back in the car I feel exhausted and just a bit unsettled as well."
 
         scene bg akira_car
+        with locationchange
 
         "As I start the engine, I let out a weary sigh."
         aki "This situation is getting messier with every passing moment..."
 
-        stop music
+        stop music fadeout 3.0
 
         scene black
-        with Dissolve(3.0)
+        with endchapter
 
         if _in_replay:
             return

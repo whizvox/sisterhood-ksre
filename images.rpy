@@ -82,7 +82,7 @@ init 1 python:
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
-    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close", "basic_satisfied", "cane_satisfied_cas"])
+    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close", "basic_satisfied", "cane_satisfied_cas", "cane_offended_cas_close", "cane_sad_cas_close"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
 
@@ -116,8 +116,9 @@ init 1 python:
     sh_bgs("hosp", ["hallway", "office"])
     sh_bgs("airport", ["coffeeshop", "baggageclaim", "inverness"])
     sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
-    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "elevator", "entrance", "hallway", "office", "waitroom", "waitcard"])
+    sh_bgs("raigmore", ["ambulance", "ambulance_blur", "elevator", "entrance", "hallway", "office", "room", "waitroom", "waitcard"])
     sh_bgs("smt", ["reception", "office"])
+    sh_bgs("akira", ["car"])
 
 init 1:
     # backgrounds

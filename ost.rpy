@@ -30,7 +30,7 @@ init 1 python:
         "taps1", "taps2", "taps3", "taps4",
         # medical
         "ambulance_arrive", "ambulance_close", "ambulance_distant", "brokenbone", "crowdmale", "defibrillator_charge",
-        "defibrillator_discharge", "hospital_ambience",
+        "defibrillator_discharge", "ekg", "hospital_ambience",
         # elevator
         "elevatorchime", "elevatorclose", "elevatoropen",
         # misc ambience

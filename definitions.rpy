@@ -103,7 +103,7 @@ init:
             (_("Prayer"), "sh_ch30.s3", _("Lilly reconvenes with Akira and Hisao at the hospital."), "lilly"),
             (_("Playing Politics"), "sh_ch31.s1", _("Akira discusses her father at work. (WIP)"), "akira"),
             (_("Revelation"), "sh_ch31.s2", _("Akira and Lilly learn of their father's current and past health concerns."), "akira"),
-            (_("Chapter 31.3"), "ch_ch31.s3", _("Akira and Lilly meet with their father in the hospital."), "akira")
+            (_("Dirty Laundry"), "sh_ch31.s3", _("Akira and Lilly meet with their father in the hospital."), "akira")
         ])
     ]
 
@@ -179,6 +179,7 @@ init:
     define jun = Character(_("Jun"), who_color="#b37b7b")
     define hy = Character(_("Hiroyuki"), who_color="#c9b09b")
     define hyf = Character("Father", kind=hy)
+    define hyd = Character("Dad", kind=hy)
     define dc = Character(_("Doctor"), who_color="#ffffff")
     define fer = Character(_("Ferguson"), who_color="#ffffff")
 
