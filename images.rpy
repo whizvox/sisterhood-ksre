@@ -74,7 +74,7 @@ init 1 python:
     for face in ("smile", "serious"):
         for i in range(1, 3):
             renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
-    sh_sprites("akira", ["angry", "cheerful", "depressed", "peaceful", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
+    sh_sprites("akira", ["angry", "cheerful", "depressed", "peaceful", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful", "distant"], poses=["basic"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanagown", ["worry_blush_close"])
@@ -106,7 +106,7 @@ init 1 python:
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_ni"])
+    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_ni", "guest2"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])

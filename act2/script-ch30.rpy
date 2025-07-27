@@ -173,8 +173,6 @@ label sh_ch30:
         "I can't hear any direct reactions, but I notice from the pauses between the taps that one side is taking a lot less time to plan the next move than the other."
         "Eventually, the verdict is called."
 
-        # TODO PICK UP FROM HERE
-
         show hanako basic_smile at tworight
         show hisao cross_pout_polo at twoleft
         with charaenter
