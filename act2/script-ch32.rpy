@@ -375,328 +375,384 @@ label sh_ch32:
         with chchange
 
         aki "It's called professionalism, kid. You'll find out when you enter the workplace yourself."
+        "We leave it at that and follow Akira down the hallway until she stops in front of the rooms."
 
-        scene bg raigmore_room
-        with locationchange
-
-        show akira basic_distant at right
-        with charaenter
-
-        "We leave it at that and follow Akira down the hallway until she strolls into one of the rooms. As we peer through the doorway, we can see that the curtains around the bed are closed, and we can hear a female voice from behind the curtain."
-
-        stop music fadeout 2.0
-        queue music music_rain fadein 4.0
-
-        "Nurse" "There, I think we're done for today. It might itch a little bit, but please try not to touch it."
-
-        show akira basic_distant at center
+        show akira basic_distant
+        show hisao basic_neutral_polo
         with chchange
 
-        "Akira gestures us to stay put, walks into the room and opens the curtain a bit."
+        "As we peer through the doorway, we can see that the curtains around the bed are closed, and we can hear a female voice from behind the curtain."
+        "Nurse" "There, I think we're done for today. It might itch a little bit, but please try not to touch it."
+
+        hide akira
+        with charaexit
+
+        stop music fadeout 2.0
+
+        "Akira gestures us to stay put, walks into the room, and opens the curtain a bit."
+
+        if _in_replay:
+            return
+
+    label .s2:
+
+        $ set_window_tint(TINT_HANAKO)
+
+        scene bg raigmore_room
+        show akira basic_distant
+        with locationchange
+
+        queue music music_rain fadein 4.0
+
         aki "Yo!"
         "Akira's greeting is met by a tortured cough."
         "Nurse" "Ah, it seems you have a visitor, Mister Satou."
         aki "Is this an inconvenient time to drop by?"
         "Nurse" "I don't think it is. I just finished changing the dressing of his incision and checking the incision for possible infections. Everything seems to be in order, so I'll be on my way."
         aki "Okay."
-        "A middle-aged nurse appears from behind the curtain and leaves the room. I make sure to partially hide behind Hisao as she walks by. Akira now steps behind the curtain so we can't see her anymore, though we can still hear her."
+        "A middle-aged nurse appears from behind the curtain and leaves the room. I make sure to partially hide behind Hisao as she walks by."
+        "Akira now steps behind the curtain so we can't see her anymore, though we can still hear her."
+
+        show ev bedridden_akira_provoke
+        with mediumflash
+
         aki "You look a little sharper than before, but also a bit more uncomfortable. Have you cut back on the painkillers?"
-        hys "I... will... take some... more this... evening."
+        hy "I... will... take some... more this... evening."
         aki "Mom and Kojima were just here, weren't they? Will you even be able to handle more visitors right now?"
-        hys "Never... mind... that... Lilly... not... here?"
-        aki "Nope. Why? Have you already thought up an apology then?"
-        hys "A-Apology?"
-
-        show akira basic_annoyed
-        with chchange
-
-        aki "For insulting her. Lilly came to Inverness to repair the family bond that you two shattered and you reward her by insulting her independence. How do you think she feels about that?"
-        hys "I... did... not... insult her..."
-        aki "If you really believe that then you're even more out of touch with her than I thought. Heck, how many years has it been since you gave some serious thought about how she feels about things?"
-        hys "What... do... you... m-mean?"
-
-        show akira basic_angry
-        with chchange
-
+        hy "Never... mind... that... Lilly... not... here?"
+        aki "Nope. Why? Have you already thought up an apology, then?"
+        hy "A-apology?"
+        aki "For insulting her. Lilly came to Inverness to repair the family bond that you two shattered, and you reward her by insulting her independence. How do you think she feels about that?"
+        hy "I... did... not... insult her..."
+        aki "If you really believe that, then you're even more out of touch with her than I thought. Heck, how many years has it been since you gave some serious thought about how she feels about things?"
+        hy "What... do... you... m-mean?"
         aki "Why on earth did you summon her here, asking her to give up everything important she had in Japan, after keeping her at a comfortable distance for six years? Maybe because you thought you could use her to act as a glue for your fledgling marriage?"
-        hys "Our... marriage... is... fine..."
-
-        show akira basic_annoyed
-
+        hy "Our... marriage... is... fine..."
         aki "Nonsense. You two were hardly part of each other's life outside of working hours. I've learned that much already."
-        hys "And yet... we... were... fine. And what... mean... by... comfortable... d-distance?"
+        hy "And yet... we... were... fine. And what... mean... by... comfortable... d-distance?"
 
-        show akira basic_pissed
+        show ev bedridden_akira_angry
+        with charachangeev
 
         aki "You and Mom were bothered with Lilly's blindness. Her disability was a source of shame for you. When you and Mom came here, you had to keep up appearances and play the perfect high-class couple."
         aki "A blind child would have tarnished that image, so you callously left her behind. Your reputation was more important to you than your own daughter's well-being."
-        "Akira's harsh words have barely left her mouth when the heartbeat monitor in the room suddenly starts beeping faster and louder, and for a moment I consider running off to get a nurse."
+        "Akira's harsh words have barely left her mouth when the heartbeat monitor in the room suddenly starts beeping faster and louder, and for a moment, I consider running off to get a nurse."
 
-        play music music_tension
+        stop music fadeout 1.0
 
-        show akira basic_lost
+        show ev bedridden_akira_shout
+        with { "master": Dissolve(0.2) }
 
-        hys "AKIRA... SATOU! *cough* TAKE BACK... THOSE WORDS *cough* OR LEAVE... MY... SIGHT!"
-        "I cringe as I hear Lilly's father react to Akira's accusation. Lilly told me that he suffered several rib fractures. Breathing must be painful for him, let alone speaking. Raising his voice like that must be excruciating."
+        hy "{cps=20}AKIRA... SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK... THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE... MY... SIGHT!{/cps}"
+        "I cringe as I hear Lilly's father react to Akira's accusation."
+        "Lilly told me that he suffered several rib fractures. Breathing must be painful for him, let alone speaking. Raising his voice like that must be excruciating."
         "And yet, despite the tortured tone, his voice carries an air of authority that manages to even silence Akira for a moment."
+
+        show ev bedridden_akira_provoke
+        with charachangeev
+
         aki "..."
-        hys "Well...?"
-
-        show akira basic_angry
-
+        hy "Well...?"
         aki "So you deny it?"
-        hys "If there... is... a s-source... of shame... for... me... right... now... it is... you for m-making... these a-accusations... against... a parent."
+
+        play music music_rain fadein 4.0
+
+        hy "If there... is... a s-source... of shame... for... me... right... now... it is... you for m-making... these a-accusations... against... a parent."
         aki "Then why did you have Mom join you here while you left Lilly behind, huh?"
-        hys "Your... mother... needed to... be here... and Lilly's... education... was... important... like I... told you... a hundred... times."
-
-        show akira basic_pissed
-
+        hy "Your... mother... needed to... be here... and Lilly's... education... was... important... like I... told you... a hundred... times."
         aki "That's just an excuse."
-        hys "If I... truly... valued my... reputation... over her... well-being... I would have... taken her along."
-
-        show akira basic_angry
-
+        hy "If I... truly... valued my... reputation... over her... well-being... I would have... taken her along."
         aki "What's that supposed to mean?"
-        hys "You will... understand... in time."
-
-        show akira basic_annoyed
-
+        hy "You will... understand... in time."
         aki "I don't believe you."
-        hys "I... stake my... personal honor... on it. Now... t-take back... what you... said."
+        hy "I... stake my... personal honor... on it. Now... t-take back... what you... said."
 
-        show akira basic_distant
+        show ev bedridden_akira_distant
+        with charachangeev
 
         aki "Hmph."
-        hys "Fine. Then... cling to your... conspiracy... theories. No doubt... you have... been poisoning... Lilly's mind... with them... for years... as... well."
-
-        show akira basic_angry
-
+        hy "Fine. Then... cling to your... conspiracy... theories. No doubt... you have... been poisoning... Lilly's mind... with them... for years... as... well."
         aki "Believe it or not, but she's always been unreasonably loyal to you."
-        hys "No doubt... you have... shared... your impressions... with her... many times."
-
-        show akira basic_resigned
-
+        hy "No doubt... you have... shared... your impressions... with her... many times."
         aki "That doesn't mean..."
-        hys "I think... I know... enough."
+        hy "I think... I know... enough."
         "It's kind of striking how quickly Akira's father turned the conversation around and put his daughter on the defensive."
 
-        show akira basic_annoyed
+        show ev bedridden_akira_provoke
+        with charachangeev
 
         aki "You don't know anything about her or me. That's your problem."
-        hys "This is going... in circles."
+        hy "This is going... in circles."
 
-        show akira basic_angry
+        show ev bedridden_akira_distant
+        with charachangeev
 
         aki "Fine, I didn't come here to argue anyway."
-        hys "Then why... did you... come?"
+        hy "Then why... did you... come?"
 
-        show akira basic_lost
+        show ev bedridden_akira_provoke
+        with charachangeev
 
         aki "Huh? You don't know? You asked Mom about Hanako."
-        hys "So I... did."
+        hy "So I... did."
         aki "Mom called me and asked me to take her to you."
 
         scene bg raigmore_hallway
+        show hisao basic_neutral_polo_superclose at twoleft
+        with locationchange
 
         "I'm startled by a sudden spike in the sound of the heart monitor, but before I can determine what to do, a hand suddenly covers my mouth and Hisao quickly pulls me back and around the nearby corner."
         "A few seconds later, I hear the sound of a curtain being forcefully yanked back."
-        "Hisao takes his hand off of me, puts his finger to his lips and lets out a soft 'ssshh' in order to reinforce the point. I quickly nod to indicate I understand that we're supposed to be quiet."
+        "Hisao takes his hand off of me, puts his finger to his lips and lets out a soft “ssshh” in order to reinforce the point. I quickly nod to indicate I understand that we're supposed to be quiet."
         "After a short while, we can hear the beeps of the heart monitor slowing down. We're still close enough to the doorway to pick up Akira's voice."
         aki "Uh, she and Hisao are in the waiting area."
         "I hear a sigh of relief coming from the room."
+        "Hisao nods and we quietly sneak off towards the place Akira mentioned."
 
         scene bg raigmore_waitroom
-        show hisao basic_worry_polo at twoleft
+        show hisao basic_worry_polo at twoleft_sittingpos
+        with locationchange
 
-        "Hisao nods and we quietly sneak off towards the place Akira mentioned. We both sit down and wait for our hearts to stop racing. That was really close."
+        "We both sit down and wait for our hearts to stop racing. That was really close."
 
         show akira basic_lost at tworight
+        with charaenter
 
         "A little while later, Akira comes walking into the area with an uneasy expression on her face."
         aki "Hey! How long have you guys been here?"
 
         show hisao basic_frown_polo
+        with chchange
 
         "Hisao gives her an annoyed look."
         hi "We decided to go and wait here a second or two before your father pulled back that curtain. You're very lucky I realized in time what your father was going to do. I hope you're able to appreciate that."
 
         show akira basic_depressed
+        with charachangealways
 
         "Akira looks a bit ashamed and nods."
         aki "Yeah, thanks a lot. You really saved my ass back there. Anyway, he's ready to see you."
         "I get up to follow Akira back to her father's room, but Hisao remains seated while giving Akira a large frown."
         hi "Uh... Akira. It's probably not my place to lecture you on this, but..."
 
-        show akira basic_lost 
+        show akira basic_lost
+        with chchange
 
         aki "I have a pretty thick skin, Hisao. If you want to speak your mind then go ahead and tell me what you want to say."
-        hi "Well uh... I don't think that discussion between you and your father was really something Hanako and I were supposed to be part of. I don't really understand what you were trying to achieve by starting that argument with him with us nearby."
+        hi "Well uh... I don't think that discussion between you and your father was really something Hanako and I were supposed to be part of."
 
-        show hisao basic_annoy_polo
+        show hisao cross_annoy_polo
+        with chchange
 
+        hi "I don't really understand what you were trying to achieve by starting that argument with him with us nearby."
         hi "I mean... if your father would have found out that we were listening in all the time, he probably would have been extremely upset."
-        hi "Without wanting to take sides or point out who's right or wrong, one thing the doctors probably told your father was that he had to avoid stress for the time being. Ah... Speaking as a heart patient, your actions were probably kind of rash."
+        hi "Without wanting to take sides or point out who's right or wrong, one thing the doctors probably told your father was that he had to avoid stress for the time being."
+        hi "Ah... Speaking as a heart patient, your actions were probably kind of rash."
         aki "Hmmm..."
 
         show hisao basic_speak_polo
+        with chchange
 
         hi "Uh... Please don't take this as me accusing you of trying to kill him or anything."
-        "Akira grins her familiar grin at Hisao's last remark."
 
         show akira basic_sheepish
+        with chchange
 
+        "Akira grins her familiar grin at Hisao's last remark."
         aki "Hehehe, that's probably a little bit dramatic, don't you think?"
         "She runs a hand through her hair and shrugs."
 
         show akira basic_depressed
+        show hisao basic_neutral_polo
+        with chchange
 
-        aki "To be honest, I wasn't trying to achieve anything. I just screwed up. That's the best explanation I can offer. I promise I'll keep my mouth shut while you're talking with the old man. Is that enough of a reassurance?"
+        aki "To be honest, I wasn't trying to achieve anything. I just screwed up. That's the best explanation I can offer."
+        aki "I promise I'll keep my mouth shut while you're talking with the old man. Is that enough of a reassurance?"
         hi "Yeah, it'll do."
         "I nod to indicate my agreement."
 
         show akira basic_sweet
+        with chchange
 
         aki "Then it's a deal. Let's go see him then. He's probably wondering what's keeping me."
 
-        play music music_moonlight
+        stop music fadeout 2.0
+
+        "We head back to Mister Satou's room and follow Akira inside this time."
+
+        if _in_replay:
+            return
+
+    label .s3:
+
+        $ set_window_tint(TINT_HANAKO)
+
         scene bg raigmore_room
-        show hisao basic_neutral_polo at twoleft
-        show akira basic_lost at tworight
+        with locationchange
 
-        "We head back to Mister Satou's room and this time follow Akira inside. With the curtains opened, I get my first look at him since that dreadful evening."
+        "With the curtains opened, I get my first look at him since that dreadful evening."
 
-        scene ev bedridden_akira_hisao_hanako
+        scene ev bedridden_akhiha_look
+        with mediumflash
+
+        play music music_moonlight fadein 4.0
 
         "It's a day and night difference."
-
-        nvl show dissolve
-        n "{vspace=60}I've only ever seen him wearing a neat business suit and glasses, and he carried an air of formality wherever he went."
-        n "{vspace=60}Wearing old-fashioned pajamas, not having his glasses on and with a bandaged chest barely visible underneath his night attire, he looks anything but formal and dignified."
-        n "{vspace=60}Making it even worse are the drops of sweat on his forehead, perhaps the result of his verbal stand-off with Akira. The one thing that remained the same about him is the sharp look in his eyes."
-        nvl clear
-
+        "I've only ever seen him wearing a neat business suit and glasses, and he carried an air of formality wherever he went."
+        "Wearing old-fashioned pajamas, not having his glasses on, and with a bandaged chest barely visible underneath his night attire, he looks anything but formal and dignified."
+        "Making it even worse are the drops of sweat on his forehead, perhaps the result of his verbal stand-off with Akira. The one thing that remained the same about him is the sharp look in his eyes."
         "Is this what Hisao looked like when he was hospitalized? I shudder a bit at the thought."
         "Hisao and I stand in front of the bed and make a polite bow. Lilly's father gives an appreciative nod to acknowledge our presence."
-        hys "Miss... Ikezawa... Mister... Nakai."
-        hi "Hello sir. How are you feeling?"
-        ha "H-Hello."
-        hys "I... apologize... cutting... vacation short. This is... not... my... best... moment... as a... host."
+        hy "Miss... Ikezawa... Mister... Nakai."
+        hi "Hello, sir. How are you feeling?"
+        ha "H-hello."
+        hy "I... apologize... cutting... vacation short. This is... not... my... best... moment... as a... host."
         ha "It's okay. This vacation has b-been very special to me."
         hi "To me as well. We'll both treasure the times we had here, even without Edinburgh."
-        hys "That is... good t-to hear. Before... you... leave... tomor... row, I wanted... to wish you... safe journey... back."
+        hy "That is... good t-to hear. Before... you... leave... tomor... row, I wanted... to wish you... safe journey... back."
         "It's hard to see him make such an obviously painful effort to speak."
         ha "You d-don't have to talk if it hurts to speak."
+        hy "I will... get to... the point then. I... have heard... what... happened... from the... doctors... and from... my wife. The doctors... called me... lucky, but..."
 
-        hys "I will... get to... the point then. I... have heard... what... happened... from the... doctors... and from... my wife. The doctors... called me... lucky, but..."
+        show ev bedridden_akhiha_focus
+        with charachangeev
+
         "This time his eyes look directly at me, causing me to flinch."
-        hys "...It...would be... an insult... to you... to... credit... just... luck, Miss... Ikezawa."
+        hy "...It...would be... an insult... to you... to... credit... just... luck, Miss... Ikezawa."
         ha "I... didn't really do much. The people you should be thanking are the d-doctors and ambulance people."
-        hys "Your... humility... does you... credit... Yet... it was... you who... asked Lilly... to call... a doctor. And... it was... you who... kept my... heart going... until the... ambulance... arrived."
+        hy "Your... humility... does you... credit... Yet... it was... you who... asked Lilly... to call... a doctor. And... it was... you who... kept my... heart going... until the... ambulance... arrived."
         ha "They arrived p-pretty quickly, b-but..."
-        hys "But... probably... not soon... enough to... prevent... b-brain damage. The... idea...o f being... in a... vegetative... state... and a... permanent... b-burden on my... family... is more... terrifying... than death."
-        hys "If you... did not... save my life... you saved... something... more... important. You saved... my... dignity."
-        "I'm not really sure what to say in response to that. I've never handled praise very well, so I merely fidget in place while staring at the floor."
-        hys "It seems... I now... owe you... a great... debt. I believe... repaying you... in some... way... is the... right thing... to do."
+        hy "But... probably... not soon... enough to... prevent... b-brain damage. The... idea...o f being... in a... vegetative... state... and a... permanent... b-burden on my... family... is more... terrifying... than death."
+        hy "If you... did not... save my life... you saved... something... more... important. You saved... my... dignity."
+        "I'm not really sure what to say in response to that."
+        "I've never handled praise very well, so I merely fidget in place while staring at the floor."
+        hy "It seems... I now... owe you... a great... debt. I believe... repaying you... in some... way... is the... right thing... to do."
         ha "Repaying m-me?"
         "Akira sighs."
         aki "How on earth do you repay someone for a life?"
         "Mister Satou gives Akira a short stare."
-        hys "You... should... already... know... after all... these years."
+        hy "You... should... already... know... after all... these years."
         aki "Hmph."
-
         "Then he turns his head back to me."
-        hys "It is... true. Something... like... this is... difficult to pay back. But... certainly... there is... something I... can do... back."
+        hy "It is... true. Something... like... this is... difficult to pay back. But... certainly... there is... something I... can do... back."
         ha "I... c-can't really think of anything."
-        hys "There is... no need... to... answer... here... and now. Take... your time... and do... not... be humble. I am... not lacking... in... means."
-        "I'm not really sure how to answer. I get the impression he's expecting me to ask for something big. Am I really supposed to come up with something? And will I insult him if what I'd ask for isn't expensive enough?"
-        "Like if I asked for a flashy laptop, would he feel like I insinuated that his life's not worth more than a mere laptop? How complicated."
-        "Besides, there are important things that money can't buy. Things like happiness and a family. He of all people should be more than aware of that right now."
-        "If Lilly's upset with him, I doubt any amount of money would cause her to change her mind."
-        "Lilly..."
-        "I wonder if I could simply ask him to apologize to Lilly as a way to thank me. If he insulted Lilly's independence like Akira claimed then she's probably angry with him, but since she came here to bond with her parents, I doubt she'd reject an apology."
-        "I suppose he really is out of touch with his daughters, but perhaps out of touch is all he is, and he still cares about Lilly and Akira in his own way. He did reschedule an already busy week just to take us to Edinburgh."
-        "But then again, wouldn't he be insulted if I told him to apologize for a family matter I'm not even supposed to be involved in? I suppose an apology for a life is a bargain, but then again he did say he valued his dignity more than his life. Ugh."
+        hy "There is... no need... to... answer... here... and now. Take... your time... and do... not... be humble. I am... not lacking... in... means."
 
-        "Maybe I could be more subtle about it. Open the door for him, but leave it up to him to walk through."
-        "Would that even be enough?"
-        "Maybe."
+        nvl clear
+        nvl show dissolve
 
-        play music music_drama
+        n "I'm not really sure how to answer. I get the impression he's expecting me to ask for something big. Am I really supposed to come up with something? And will I insult him if what I'd ask for isn't expensive enough?"
+        n "Like if I asked for a flashy laptop, would he feel like I insinuated that his life's not worth more than a mere laptop? How complicated."
+        n "Besides, there are important things that money can't buy. Things like happiness and a family. He of all people should be more than aware of that right now. If Lilly's upset with him, I doubt any amount of money would cause her to change her mind."
+        
+        nvl clear
+
+        n "Lilly..."
+        n "{vspace=30}I wonder if I could simply ask him to apologize to Lilly as a way to thank me. If he insulted Lilly's independence like Akira claimed, then she's probably angry with him. But since she came here to bond with her parents, I doubt she'd reject an apology."
+        n "I suppose he really is out of touch with his daughters, but perhaps out of touch is all he is, and he still cares about Lilly and Akira in his own way. He did reschedule an already busy week just to take us to Edinburgh."
+        n "But then again, wouldn't he be insulted if I told him to apologize for a family matter I'm not even supposed to be involved in? I suppose an apology for a life is a bargain, but then again he did say he valued his dignity more than his life."
+        n "{vspace=30}Ugh."
+        n "{vspace=30}Maybe I could be more subtle about it. Open the door for him, but leave it up to him to walk through."
+        n "Would that even be enough?"
+        n "Maybe."
+
+        stop music fadeout 2.0
+
+        nvl hide dissolve
+
+        queue music music_drama fadein 4.0
 
         ha "Ummm... Uh..."
-        hys "Yes?"
+        hy "Yes?"
         ha "I... uh... d-don't really n-need anything in r-return. Because... y-you being alive is... already enough of a r-reward."
-        hys "Even... though we... barely know... each other?"
+        hy "Even... though we... barely know... each other?"
         ha "I k-know... ah... I k-know... I... I... k-know..."
-        "Suddenly a big lump in jumps into my throat, and I breathe in and out several times before I can continue. This is something that really hurts to say out loud."
+        "Suddenly a big lump in jumps into my throat, and I breathe in and out several times before I can continue."
+        "This is something that really hurts to say out loud."
+
+        show ev bedridden_akhiha_open
+        with charachangeev
+
         ha "I k-know... what it's l-like t-to... l-lose p-parents..."
+        # TODO Kind of an awkward line
         "He looks at me with an expression that either contains sympathy or pity."
-        hys "My... condo... lences... for... your... loss."
+        hy "My... condo... lences... for... your... loss."
         ha "That's why... T-that's why I'm... really happy that Lilly doesn't h-have to go t-through that herself."
-        hys "You... are... quite close... to my... daughter, are... you... not?"
+        hy "You... are... quite close... to my... daughter, are... you... not?"
         ha "She's a very special person to me. I... l-love her very much."
-        hys "I see."
+        hy "I see."
         ha "Ummm... C-can I p-please ask y-you a f-favor?"
-        hys "Have you... already... though of... something?"
+        hy "Have you... already... thought of... something?"
         "I meekly shake my head."
-        ha "N-No, but… I would... like to t-talk to you about Lilly a bit. Will you... listen t-to me?"
-        hys "I will."
+        ha "N-no, but… I would... like to t-talk to you about Lilly a bit. Will you... listen t-to me?"
+        hy "I will."
         ha "Ummm..."
         "I rack my brain in an attempt to figure out what I should tell him about my best friend."
 
-        scene ev bedridden_akira_hisao_hanako_ponder
+        show ev bedridden_akhiha_talk
+        with charachangeev
 
         ha "Lilly is... the k-kindest person I know. I didn't know her during my f-first year, because I don't interact with m-many people."
         ha "But then she c-came to live in the dorm room next to m-mine, and one evening I heard her comforting a friend who was f-feeling down."
         ha "I was... feeling a little d-down and lonely myself back t-then, so I visited her, hoping to have a bit of c-company who wasn't going to s-stare at me."
-        ha "I was too n-nervous to speak the first few t-times, but even though I c-couldn't answer anything she asked about or react t-to anything she said, she was f-friendly and hospitable to me and made me f-feel welcome."
-        ha "When I went back to my r-room that first evening, she told m-me that she was hoping that I'd visit her again s-soon even though she didn't even k-know my name."
-
+        ha "I was too n-nervous to speak the first few t-times, but even though I c-couldn't answer anything, she asked about or react t-to anything she said, she was f-friendly and hospitable to me and made me f-feel welcome."
+        ha "When I went back to my r-room that first evening, she told m-me that she was hoping that I'd visit her again s-soon, even though she didn't even k-know my name."
         ha "I later l-learned that her c-comforting a friend wasn't unusual for her. She has always b-been a bit of a mother figure for her class who would offer emotional s-support whenever someone n-needed it. Most of her class r-really looks up to her."
         ha "In a m-manner of speaking, as Lilly herself would s-say."
-        ha "That's probably why she's been c-class representative for nearly 3 years. But I think that's also b-because Lilly is very independent even c-compared to her classmates that have p-partial eyesight."
+        ha "That's probably why she's been c-class representative for nearly 3 years. But I think that's also b-because Lilly is very independent, even c-compared to her classmates that have p-partial eyesight."
         "I fidget a bit before continuing."
-        ha "L-Last w-week you t-thanked me for looking after L-Lilly, b-but... that's not how things are at all. I h-hope that I can someday look out f-for her too, but the t-truth is that ever since I've m-met her, it's been Lilly who's b-been looking after me."
+        ha "L-last w-week you t-thanked me for looking after L-Lilly, b-but... that's not how things are at all. I h-hope that I can someday look out f-for her too, but the t-truth is that, ever since I've m-met her, it's been Lilly who's b-been looking after me."
         ha "I can c-cook a bit myself, but ever since w-we met, Lilly often c-cooks for both of us. I hope to b-be as good at it as she is s-some day. She also t-taught me m-many other things, like how to d-dance or f-fold c-cranes out of p-paper."
-
         "Hisao takes this moment to interrupt."
         hi "You shouldn't sell yourself short, Hanako. I don't believe Lilly knew how to play chess before she met you."
         ha "I... s-suppose not. It's fun to p-play against her, so I'm happy she p-picked it up so quickly."
         "She's not an extremely challenging opponent, but I wouldn't even be able to finish a game if I kept my eyes closed, so it's still impressive."
+
+        show ev bedridden_akhiha_phone
+        with charachangeev
+
         "I take out my phone and show it to him."
         ha "This is a g-gift from my best friends. The pretty phone s-strap is a present from Hisao, but the phone itself is f-from Lilly. She wanted it to be a s-surprise, so she went into the city on her own to p-pick it out for me."
-        "I could still bring up Lilly's activities in the student council, but I'd rather avoid the subject of her relationship with Shizune. Not really knowing how to proceed, I fall silent and blush. Hisao, sensing that I've hit a dead end, speaks up again."
+        "I could still bring up Lilly's activities in the student council, but I'd rather avoid the subject of her relationship with Shizune."
+        "Not really knowing how to proceed, I fall silent and blush. Hisao, sensing that I've hit a dead end, speaks up again."
         hi "I can confirm, sir, that everything Hanako just said is true. I think she's trying to ask you to..."
 
-        scene ev bedridden_akira_hisao_hanako
+        show ev bedridden_akhiha_look
+        with charachangeev
 
         "Mister Satou, who until now has been listening with his eyes closed as if trying to concentrate and weigh every word I just stammered, opens his eyes and makes a gesture to indicate there's no need for Hisao to continue."
 
-        play music music_friendship
+        stop music fadeout 2.0
+        queue music music_friendship fadein 4.0
 
-        hys "I think... I... understand... what... she... wishes to... tell me..."
+        hy "I think... I... understand... what... she... wishes to... tell me..."
         "He turns his gaze back to me."
-        hys "Miss... Ikezawa... thank you... for... telling... me... all this..."
+        hy "Miss... Ikezawa... thank you... for... telling... me... all this..."
+
+        show ev bedridden_akhiha_focus
+        with charachangeev
+
         ha "Ummm..."
-        hys "I... presume... you... would... like me... to... think... about... what... you... said?"
+        hy "I... presume... you... would... like me... to... think... about... what... you... said?"
         "I manage a barely visible nod."
-        hys "Then... I will... if you... also... think... about... what I... said."
-        ha "O-Okay."
+        hy "Then... I will... if you... also... think... about... what I... said."
+        ha "O-okay."
         "He nods."
-        hys "Then... I will... not... take more... of your... time and... I... wish you... two a... safe... journey... home."
-        hi "Thank you sir. May you have a swift recovery."
-        ha "Y-Yes... ah... g-get better soon."
-        "We both make a polite bow and prepare to leave the room, but just as we're about to walk through the doorway, I hear Mister Satou's voice one more time."
-
-        hys "Miss... Ikezawa...?"
+        hy "Then... I will... not... take more... of your... time and... I... wish you... two a... safe... journey... home."
+        hi "Thank you, sir. May you have a swift recovery."
+        ha "Y-yes... ah... g-get better soon."
+        "We both make a polite bow and prepare to leave the room."
+        "But just as we're about to walk through the doorway, I hear Mister Satou's voice one more time."
+        hy "Miss... Ikezawa...?"
         ha "Uh... Y-yes?"
-        hys "Did you... not... just say... that you... were... hoping to... one day... look out... for... Lilly?"
-        ha "Y-Yes."
+        hy "Did you... not... just say... that you... were... hoping to... one day... look out... for... Lilly?"
+        ha "Y-yes."
 
-        scene ev bedridden_akira_hisao_hanako_smile
+        show ev bedridden_akhiha_smile
+        with charachangeev
 
         "For a split-second there's an amused smile on his face."
-        hys "I think... you... did... exactly... that... just... now."
+        hy "I think... you... did... exactly... that... just... now."
 
         stop music fadeout 3.0
 

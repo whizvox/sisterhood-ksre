@@ -102,6 +102,7 @@ init 1 python:
     sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
+    sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
 
     sh_fireflies()
 

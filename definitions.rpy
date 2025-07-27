@@ -105,8 +105,10 @@ init:
             (_("Playing Politics"), "sh_ch31.s1", _("Akira discusses her father at work. (WIP)"), "akira"),
             (_("Revelation"), "sh_ch31.s2", _("Akira and Lilly learn of their father's current and past health concerns."), "akira"),
             (_("Dirty Laundry"), "sh_ch31.s3", _("Akira and Lilly visit their father in the hospital."), "akira"),
-            # TODO Chapter name
-            (_("Chapter 32.1"), "sh_ch32.s1", _("Hanako and Hisao join Akira in visiting Mister Satou in the hospital."), "hanako")
+            # TODO Chapter names and descriptions for chapter 32
+            (_("Chapter 32.1"), "sh_ch32.s1", _("Hanako and Hisao join Akira in visiting Mister Satou in the hospital."), "hanako"),
+            (_("Chapter 32.2"), "sh_ch32.s2", _("Akira provokes her father (WIP)."), "hanako"),
+            (_("Looking Out for Each Other"), "sh_ch32.s3", _("Hanako opens up to Mister Satou about her and Lilly's relationship."), "hanako")
         ])
     ]
 
