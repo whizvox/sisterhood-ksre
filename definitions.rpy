@@ -106,7 +106,8 @@ init:
             (_("Dirty Laundry"), "sh_ch31.s3", _("Akira and Lilly visit their father in the hospital."), "akira"),
             (_("Delivery"), "sh_ch32.s1", _("Hanako and Hisao join Akira to visit Mister Satou in the hospital."), "hanako"),
             (_("Poking the Bear"), "sh_ch32.s2", _("Hanako and Hisao listen in on Akira and Mister Satou."), "hanako"),
-            (_("Looking Out for Each Other"), "sh_ch32.s3", _("Hanako opens up to Mister Satou about her and Lilly's relationship."), "hanako")
+            (_("Looking Out for Each Other"), "sh_ch32.s3", _("Hanako opens up to Mister Satou about her and Lilly's relationship."), "hanako"),
+            (_("Rock Skipping Again"), "sh_ch33.s1", _("Hanako and Akira open up to each other."), "hanako")
         ])
     ]
 
