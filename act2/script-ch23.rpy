@@ -686,11 +686,8 @@ label sh_ch23:
         "She chuckles modestly."
         ka "I'll take that as a compliment."
         "My words were more an honest appraisal than an attempt at flattery. I can instantly tell that Lilly gets most of her looks from her mother."
-        # TODO Should definitely reword this now that you can actually see her
-        "Karla Satou is a tall woman, probably as tall or even slightly taller than Lilly with a similar figure."
-        "Although her hair is significantly shorter than Lilly's—about neck-length from what I can see—there's a familiar waveyness to it, and its color is the same vibrant blond as that of her daughters, although it's already slightly grey near the roots."
+        "Karla Satou is a tall woman, probably as tall or even slightly taller than Lilly with a similar figure and similar wavey, blonde hair, although I can spot a slight streak of grey near the roots."
         "Her eyes are deep blue like Lilly's, but unlike Lilly's cloudy and unreadable stare, Karla's eyes have a sharp and curious gaze to them, and I can see a twinkle in there that I've seen in Akira's eyes as well."
-        "Karla's wearing a neat-looking business suit, but the lower part of it consists of a dark skirt that reaches down to her knees instead of pants like Akira's, and around her neck is a cross-shaped necklace similar to the one Lilly often wears."
         "While looking just as formal, Karla's attire looks a lot more feminine than Akira's office clothing. She must be in her fifties already, but she's still quite good-looking."
         "Unlike Lilly, who has a rather pale complexion, Karla has a rather obvious tan, suggesting she's an outdoor person. It would explain her rather fit and healthy appearance."
         hi "Do Lilly and Akira know that you're here already?"

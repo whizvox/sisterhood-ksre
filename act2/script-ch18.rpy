@@ -42,17 +42,15 @@ label sh_ch18:
         "I merely nod as I look her over as we start walking back."
 
         scene bg school_gardens2_ss
-        # show akira basic_resigned
-        show akira basic_smile
+        show akira basic_resigned
         with locationchange
 
-        # TODO Replace this text with something that allows Akira to not require another sprite edit
-        #"Akira looks slightly more informal right now than she usually does. For one, she's not wearing the jacket and tie she usually has on, and her blouse seems slightly wrinkled too."
-        
-        # show akira basic_smile
-        # with chchange
+        "Her jacket does a decent job at hiding it, but I can still tell that her blouse and tie are far more wrinkled than I've ever seen them before. I have my doubts Akira came here straight off of work."
 
-        "Akira seems to catch my gaze and smiles."
+        show akira basic_sheepish
+        with chchange
+
+        "Akira seems to catch my gaze and smiles to confirm my suspicion."
         aki "Haven't been in the office for a week. I spent most of the time relaxing and hanging out with my little cousin. It was a nice change of pace."
         aki "Too bad I'll be expected to make up for it when I start at main office in a few days."
         ha "Ummm… Y-you w-wanted to talk?"

@@ -101,13 +101,11 @@ init:
             (_("Oh, the Days Ahead"), "sh_ch30.s1", _("Lilly, Hanako, and Hisao spend a peaceful evening planning the second half of their trip."), "lilly"),
             (_("Without Thinking"), "sh_ch30.s2", _("Lilly's worst fears are realized."), "lilly"),
             (_("Prayer"), "sh_ch30.s3", _("Lilly reconvenes with Akira and Hisao at the hospital."), "lilly"),
-            # TODO Better scene description
-            (_("Playing Politics"), "sh_ch31.s1", _("Akira discusses her father at work. (WIP)"), "akira"),
+            (_("Playing Politics"), "sh_ch31.s1", _("Akira discusses her parents with the company's vice president."), "akira"),
             (_("Revelation"), "sh_ch31.s2", _("Akira and Lilly learn of their father's current and past health concerns."), "akira"),
             (_("Dirty Laundry"), "sh_ch31.s3", _("Akira and Lilly visit their father in the hospital."), "akira"),
-            # TODO Chapter names and descriptions for chapter 32
-            (_("Chapter 32.1"), "sh_ch32.s1", _("Hanako and Hisao join Akira in visiting Mister Satou in the hospital."), "hanako"),
-            (_("Chapter 32.2"), "sh_ch32.s2", _("Akira provokes her father (WIP)."), "hanako"),
+            (_("Delivery"), "sh_ch32.s1", _("Hanako and Hisao join Akira to visit Mister Satou in the hospital."), "hanako"),
+            (_("Poking the Bear"), "sh_ch32.s2", _("Hanako and Hisao listen in on Akira and Mister Satou."), "hanako"),
             (_("Looking Out for Each Other"), "sh_ch32.s3", _("Hanako opens up to Mister Satou about her and Lilly's relationship."), "hanako")
         ])
     ]

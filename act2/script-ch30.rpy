@@ -1287,10 +1287,9 @@ label sh_ch30:
 
         n "Akira's explanation made logical sense, and yet, I still feel I would have acted differently in her place."
         n "I'm really thankful that my older sister's here for me right now, but something has felt a little off."
-        # TODO Not sure about this line
-        # n "{i}...that my older sister's here for me...{/i}"
+        n "{i}...My older sister's here for me...{/i}"
         n "{vspace=30}Ever since she arrived, Akira's been the kind, strong and reliable big sister that she's always been for me. The strong person who's lending me her shoulder to lean on. But... how does she feel? She's barely mentioned Father at all. It almost seems like..."
-        n "...like she's more worried about me than about him..."
+        n "{i}...like she's more worried about me than about him...{/i}"
         n "{vspace=30}No, I don't want to think of Akira that way. She's simply keeping a brave face for my benefit right now."
         n "Still, our parents are a very touchy subject for her. I don't think she's completely adapted to the fact that they're suddenly a big part of her life again yet."
 

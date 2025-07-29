@@ -25,8 +25,9 @@ label sh_ch22:
         "I look at the chairs in the corner again. My own clothes are folded over one of them. The other holds Hanako's clothes."
         "I softly turn my head to the right, and I can see my girlfriend lying next to me. She's currently lying on her stomach and seems occupied scribbling words onto a small blocknote in front of her."
         "Since she's not wearing her hair clip, and a lock of hair is obscuring the right side of her face, it appears she hasn't noticed me waking up yet."
-        "With the covers on her side of the bed pulled back and with nothing on except her panties and a T-shirt, Hanako is a pleasant sight to wake up to."
-        "Taking care not to alert her, I sneak a hand over to the left side of her lower back and playfully tickle the exposed skin there."
+        # TODO either reword or remove
+        # "With the covers on her side of the bed pulled back and with nothing on except her panties and a T-shirt, Hanako is a pleasant sight to wake up to."
+        "Taking care not to alert her, I sneak a hand over to the left side of her lower back and playfully tickle her there."
 
         show hanagown worry_blush_close
         with Dissolve(0.2)
@@ -135,11 +136,7 @@ label sh_ch22:
         "Getting my point, Hanako smiles excitedly."
         ha "A lot of other t-things too."
         hi "I guess we'd better get out of bed then, huh?"
-        "I reach out and playfully stroke the top of her head."
-
-        # TODO should hanako be still wearing her nightgown here?
-
-        "As I do so, I notice her hair is slightly moist. Come to think of it, I recall she was wearing her nightgown when we went to sleep."
+        "I reach out and playfully stroke the top of her head. As I do so, I notice her hair is slightly moist."
         hi "You already took a shower?"
         ha "You should t-take one too. It's nearly time for dinner already."
         

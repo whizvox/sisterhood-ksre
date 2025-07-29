@@ -174,8 +174,6 @@ label sh_ch32:
         show lilly basic_displeased_cas
         with chchange
 
-        # TODO Keep this line?
-        #"Lilly frowns slightly."
         li "Akira... called Hanako?"
         ha "Akira said... t-that your father wanted to see me."
 
@@ -674,8 +672,7 @@ label sh_ch32:
         with charachangeev
 
         ha "I k-know... what it's l-like t-to... l-lose p-parents..."
-        # TODO Kind of an awkward line
-        "He looks at me with an expression that either contains sympathy or pity."
+        "The look he gives me is either one of sympathy or one of pity."
         hy "My... condo... lences... for... your... loss."
         ha "That's why... T-that's why I'm... really happy that Lilly doesn't h-have to go t-through that herself."
         hy "You... are... quite close... to my... daughter, are... you... not?"
