@@ -406,7 +406,7 @@ label sh_ch34:
         li "Being around her has been a very strange experience. I... have no idea how to act around her. Living abroad can change a person, I suppose, but..."
         "It's still very odd. And something doesn't make sense."
         ha "But Lilly, what about y-your first trip?"
-        li "During our first trip to Scotland, Mother took up her days off from work to spend time with her bedridden sister and us. Back then, she was still acting like her old self whenever she was with us. Well, for the largest part anyway."
+        li "During our first trip to Scotland, Mother took up her days off from work to spend time with her bedridden sister and us. Back then, she was still acting like her old self whenever she was with us. Well, for the largest part, anyway."
         li "She didn't start acting this casual until I returned here."
         "Lilly lets out an unhappy sigh."
         li "I could put up with the more casual way of interacting with me, but what really bothers me is the fact she seems to have been neglecting Father. That's... just so not her."
@@ -419,8 +419,8 @@ label sh_ch34:
         li "It's okay, Hanako. Thank you for listening to me complaining like this."
         ha "Oh, d-don't worry about that."
         li "What would you do in my situation?"
-        "I'm not sure. Knowing myself, I'd probably run away, take the first plane back to Japan and hide away in my dorm room for the rest of the year. But that's not what Lilly needs to hear."
-        "Okay Hanako. Think..."
+        "I'm not sure. Knowing myself, I'd probably run away, take the first plane back to Japan, and hide away in my dorm room for the rest of the year. But that's not what Lilly needs to hear."
+        "Okay, Hanako. Think..."
         ha "I'm... n-not really sure, but..."
         "I try to recall the things Akira told me earlier today."
         "She said something along the lines of not wanting to trouble Lilly with her issues any further."
@@ -514,11 +514,13 @@ label sh_ch34:
         with charachangeev
 
         "Lilly lets out a happy laugh at my remark."
-        li "Hmmm, hmmm... Promising someone such a reward for failing is not a good way to motivate them, Hanako. But nevertheless I really appreciate your kindness."
+        li "Hmmm, hmmm... Promising someone such a reward for failing is not a good way to motivate them, Hanako. But nevertheless, I really appreciate your kindness."
         ha "Also... uh... This is just m-me, but I t-think that...!"
 
+        stop music fadeout 0.2
+
         show black
-        with Dissolve(2.0)
+        with Dissolve(0.2)
 
         "While I'm still in the middle of my sentence, I suddenly become aware that Lilly has softly put her hand on my shoulder."
         "{i}My right shoulder!{/i}"
@@ -534,7 +536,7 @@ label sh_ch34:
             yalign 0.5 zoom 1.02
         with vpunch
 
-        "However, due to the resistence of the water reaching to just above my knees, I promptly fall over, producing a loud splash in the process. In other circumstances it'd probably be comical."
+        "However, due to the resistence of the water reaching to just above my knees, I promptly fall over, producing a loud splash in the process. In other circumstances, it'd probably be comical."
         "The splash gets some water in my nose, and I snort and cough a few times before I can regain my composure."
         "I finally calm down enough to realize that I just made an utter fool of myself in front of Lilly and anxiously look over my shoulder at my friend."
 
@@ -548,37 +550,38 @@ label sh_ch34:
         li "Hanako, did I hurt you just now?"
         ha "D-don't worry. You didn't."
         li "Honestly?"
-        ha "I... I d-didn't even f-feel it at f-first. S-Several of m-my... m-my s-scarred places are n-numb."
+        ha "I... I d-didn't even f-feel it at f-first. S-several of m-my... m-my s-scarred places are n-numb."
         li "..."
         ha "It's o-okay, really. You j-just startled me a little."
         "Lilly seems to consider it and then slowly nods."
         li "I apologize. What was it that you wanted to say before I interrupted you?"
 
+        stop music fadeout 2.0
+
         scene ev sharedsoak_lilly_hanakospeak
         with charachangeev
 
         "Having recollected myself, I return to my spot next to Lilly and swallow a lump in my throat before replying."
-        ha "What I w-wanted to say was... that s-supporting your father is also simply the r-right thing to do. B-Being stuck in the hospital after s-surgery is hard on everyone."
-        ha "Your f-father probably f-feels he can't show it, b-but I think that d-deep down he's feeling a little bit l-like Hisao m-must have felt. Or..."
+        ha "What I w-wanted to say was... that s-supporting your father is also simply the r-right thing to do. B-being stuck in the hospital after s-surgery is hard on everyone."
+        ha "Your f-father probably f-feels he can't show it, b-but I think that d-deep down, he's feeling a little bit l-like Hisao m-must have felt. Or..."
         "An uneasy feeling starts welling up in my stomach before I can finish my sentence, but Lilly seems to have guessed what I was about to say."
         li "Or how you must have felt... Does this situation remind you of your own hospitalization, Hanako?"
 
-        stop music fadeout 2.0
-        queue music music_hanako fadein 4.0
+        play music music_hanako fadein 4.0
 
         show ev sharedsoak_lilly_historyspeak
         with charachangeev
 
         ha "B-being stuck in the hospital after s-something like this is a very miserable experience. In addition to the p-pain, there's the loneliness."
-        ha "And there's all the t-time you have. S-So much time—too much time—and nothing to s-spend it on except w-wondering."
-        ha "W-Wondering why t-this happened to y-you and what you d-did to deserve t-this. Wondering what y-your life will b-be like afterwards and r-realizing it will probably never b-be the same again."
+        ha "And there's all the t-time you have. S-so much time—too much time—and nothing to s-spend it on except w-wondering."
+        ha "W-wondering why t-this happened to y-you and what you d-did to deserve t-this. Wondering what y-your life will b-be like afterwards and r-realizing it will probably never b-be the same again."
         li "Was that what it was like for you, Hanako?"
-        ha "I... d-don't really remember m-my own first week very well. I... w-was on very heavy medication at first. The strongest they had. M-My room was one of those s-sealed pods that w-was completely s-sterile. I b-barely survived the f-fire."
+        ha "I... d-don't really remember m-my own first week very well. I... w-was on very heavy medication at first. The strongest they had. M-my room was one of those s-sealed pods that w-was completely s-sterile. I b-barely survived the f-fire."
         ha "They s-said a s-simple infection could kill me until m-my injuries healed up a bit more. They usually c-couldn't b-bring in toys or b-books because there could be g-germs on them."
         ha "D-doctors or nurses wouldn't c-come in unless really necessary and I w-wasn't allowed out of the r-room. But then again, I c-could barely move b-back then, so I wouldn't h-have been able to leave anyway."
         li "That must have been terribly lonely..."
         ha "I preferred to b-be alone, eventually. Whenever the n-nurses came into my room, it was usually to change the b-bandages or to move and s-stretch my injured arm and b-back."
-        ha "Burned skin becomes really t-tight and it has to be s-stretched several times a day or I wouldn't be able to use those p-parts of my body at all anymore eventually. That's what they s-said. But... I didn't s-see it that way at first."
+        ha "Burned skin becomes really t-tight and it has to be s-stretched several times a day or I wouldn't be able to use those p-parts of my body at all anymore, eventually. That's what they s-said. But... I didn't s-see it that way at first."
         ha "All I knew was that several t-times a day, p-people would come into my room to cause me terrible pain."
         "For a moment my thoughts fly back to my time in the hospital. The constant pain that became unbearable when my limbs were moved or the wound dressing was changed."
         "The fear and panic I felt when I saw the nursing staff enter my room again. Their continuing reassurances how important it was to start these exercises as soon as possible."
@@ -598,14 +601,14 @@ label sh_ch34:
         with charachangeev
 
         "That comment makes me smile despite the mood of the moment. It's just so much like Lilly to say something kind like that."
-        ha "T-they're not. The funeral w-was already very costly, and it w-was decided not to s-spend additional money on a grave with just m-me to maintain it."
+        ha "Th-they're not. The funeral w-was already very costly, and it w-was decided not to s-spend additional money on a grave with just m-me to maintain it."
         ha "After I... recovered enough to be able to walk and d-dress myself again, the m-matron came to visit m-me in the hospital. She told me she worked at an orphanage in t-town and that I'd be living with them from then on."
         ha "They... kept my p-parents' ashes while I w-was recovering in the hospital, and after I was allowed to l-leave, we took a long ride to a place n-near the ocean with a really b-beautiful coastline."
         ha "The matron s-said I could pick the prettiest spot I could f-find and that's where we would... s-s-see them off."
         li "She sounds kind."
         ha "She w-was. All the staff members at the orphanage w-were nice, and it felt a bit like Yamaku does. But the staff was also always b-busy."
         ha "Since they w-were already h-helping me with my... exercises and other m-medical needs, I t-tried not to burden them further. The place had a small library, so I started reading to p-pass the time."
-        ha "S-Sometimes I'd play a game with one of the other c-children if the staff suggested it."
+        ha "S-sometimes I'd play a game with one of the other c-children if the staff suggested it."
         li "Did you ever consider getting in touch again with some of the children you got to know there?"
         ha "I didn't r-really get to know anyone. The other c-children didn't really t-talk much to me, and I didn't r-really talk much to them. I... d-didn't really mind."
         li "But you were all in the same boat, weren't you?"
@@ -638,7 +641,7 @@ label sh_ch34:
         "For a long time, neither of us says a word."
         "When Lilly finally opens her mouth, there's a sad but tender tone in her voice."
 
-        scene ev sharedsoak_lilly_historyspeak
+        show ev sharedsoak_lilly_historyspeak
         with charachangeev
 
         li "Hanako, you said you gave up on friendship, and yet I think that deep down you never stopped desiring other people in your life. The fact that our friendship came to be is proof of that because it was you who approached me."
@@ -653,81 +656,87 @@ label sh_ch34:
         ha "Yes?"
         li "Can you... take my hands? Both of them?"
         ha "Uh...?"
-        "Lilly sits up a little, faces me and holds out both her hands in front of her. A little hesitant, I get a little closer and carefully take her hands in mine, trying to avoid contact with the scar tissue on my wrist. Lilly gives a pleased nod."
+        "Lilly sits up a little, faces me and holds out both her hands in front of her. A little hesitant, I get a little closer and carefully take her hands in mine, trying to avoid contact with the scar tissue on my wrist."
+        "Lilly gives a pleased nod."
         li "Thank you. Don't be afraid."
         ha "Huh?"
-        "Lilly gently pulls her hands away and then puts them on top of my own. She gives me a reassuring smile. Then, without waiting for my reaction, she moves her hands upwards along my arms until they're resting on my shoulders."
+        "Lilly gently pulls her hands away and then puts them on top of my own. She gives me a reassuring smile."
+        "Then, without waiting for my reaction, she moves her hands upwards along my arms until they're resting on my shoulders."
 
-        scene ev sharedsoak_hug_shock
+        stop music fadeout 0.5
+
+        show ev sharedsoak_lilly_hugshock:
+            yalign 0.5 zoom 1.02
+        with vpunch
 
         "A moment later she leans forward, wraps her arms around me, and before I realize what's happening, Lilly has locked me in an embrace."
         ha "Aaah!"
         "I let out a cry of surprise, and my body completely freezes up in panic, and time seems to stop for a long time as I wait for Lilly's horrified gasp."
         "But as more and more seconds pass, a realization starts slowly sinking in."
 
-        play music music_twinkle
+        play music music_twinkle fadein 4.0
 
-        scene ev sharedsoak_hug_timid
+        show ev sharedsoak_lilly_hugtimid
+        with charachangeev
 
         "Lilly hasn't flinched."
         "Not even once."
         "I finally manage to hold back my anxiety long enough to stammer out a reaction."
         ha "L-L-Lilly?"
-        li "Hanako. Try to relax..."
+        li "Hanako... Try to relax..."
         ha "Uh..."
         "She lowers her voice to a whisper."
-        li "Just relax."
+        li "Just relax..."
         ha "I..."
-
-        "As my anxiety slowly - very slowly - starts ebbing away, I become aware of Lilly's hands gently feeling my back and running through my hair."
+        "As my anxiety slowly—very slowly—starts ebbing away, I become aware of Lilly's hands gently feeling my back and running through my hair."
         "As I slowly start to relax, Lilly pulls me even closer, letting her chin rest on my right shoulder and gently pressing the side of her face against my scarred cheek. Her hug is firm yet oddly tender."
         li "A blind girl and a burn victim being best friends... Several of my sighted friends at Yamaku have pointed out to me how strangely fitting it seems."
         li "And yet, it also feels a bit off-putting, to hear our friendship being defined by this single thing. Don't you agree?"
         ha "I... d-don't know..."
-
         li "Would you abandon our friendship if some miracle caused your scars to disappear, Hanako? Would you feel you could do better if that were to happen?"
         ha "No, I... I would never do that."
         li "Likewise, if some miracle gave me eyesight, it still wouldn't change anything between us, Hanako. You are a wonderful person. The scars on your body don't change that. In fact..."
         "She gently runs her fingers across the side of my face."
         li "You will probably disagree with my assessment, but I think you look fine."
         ha "I... I... don't..."
-        "I stammer a half-hearted denial, but leave it at that. There was such sincerity in Lilly's words that it feels disrespectful to loudly decry her words. As a strangely comfortable silence falls, I try to sort out what I'm currently feeling."
-
+        "I stammer a half-hearted denial, but leave it at that. There was such sincerity in Lilly's words that it feels disrespectful to loudly decry her words."
+        "As a strangely comfortable silence falls, I try to sort out what I'm currently feeling."
         "It feels strangely pleasant, but it's not passion or desire, like I felt when Hisao and I were in here and he hugged me."
         "The gentle sensation of the warm water and Lilly's close presence feel vaguely familiar, a little bit like whenever Hisao is holding me after we make love. It's the same comfortable sense of safety and security, yet also different somehow."
 
-        scene ev sharedsoak_hug_reciprocate
+        show ev sharedsoak_lilly_hugback
+        with charachangeev
 
         "I slowly feel the tense feeling leaving me as my past demons who were awakened briefly by my story are lulled back to sleep, and I eventually gain enough courage to wrap my arms around Lilly and return her hug."
         "Again, she doesn't cringe like part of me expected her to."
         "Inexplicably, something Lilly said to her mother on that fateful day she decided to stay in Japan comes back to mind."
-        li "(I have a very good friend here who is like a sister to me in all but blood. If I need help with something, I can always count on her to be there.)"
+        "“I have a very good friend here who is like a sister to me in all but blood. If I need help with something, I can always count on her to be there.”"
         "I wonder if my presence is also soothing Lilly's anxieties right now."
 
-        scene ev sharedsoak_lilly_lean
+        show ev sharedsoak_lilly_leanclosed
+        with charachangeev
 
-        "Eventually, Lilly lets go of me, and we break off our embrace. I sit down next to her, although this time I no longer bother to stay an arm's length away from Lilly."
-        "When she gently leans against me and puts an arm around me, I'm able to return the favor with no hesitation. After another long silence, Lilly finally speaks up."
+        "Eventually, Lilly lets go of me, and we break off our embrace. I sit down next to her, although this time, I no longer bother to stay an arm's length away from Lilly."
+        "When she gently leans against me and puts an arm around me, I'm able to return the favor with no hesitation."
+        "After another long silence, Lilly finally speaks up."
         li "Hanako, how are you feeling right now?"
-        ha "B-Better. How about you?"
+        ha "B-better. How about you?"
         li "Better as well. Thank you for entrusting me with all of this, Hanako."
         ha "It's... okay. I felt it was... only fair... to do so."
         li "Fair?"
-
-        ha "This week I've seen you... during some v-very vulnerable moments. I've also... learned a lot about your f-family. A lot that... you probably didn't want me to learn."
-        ha "It was only fair that... I also allowed you to l-learn a bit more about me even though it isn't pleasant."
+        ha "This week, I've seen you... during some v-very vulnerable moments. I've also... learned a lot about your f-family. A lot that... you probably didn't want me to learn."
+        ha "It was only fair that... I also allowed you to l-learn a bit more about me, even though it isn't pleasant."
         li "To be honest, I feel a little embarrassed. You've been through so much, and yet here I am, feeling sorry for myself and complaining about parents to someone who no longer has her own. I must really look spoiled to you."
         ha "I think you were right to feel upset."
         li "Still, my problems must look so trivial in your eyes."
-        ha "I... don't think they are and even if they were, it's still okay to feel bad about them. I... uh... g-get upset about what are p-probably trivial things to you... all the time."
-
+        ha "I... don't think they are, and even if they were, it's still okay to feel bad about them. I... uh... g-get upset about what are p-probably trivial things to you... all the time."
         "Lilly giggles."
         li "Thank you for cheering me up, Hanako. You're a true friend."
         ha "Lilly... What will you do now?"
-
         "Lilly doesn't immediately answer. She merely closes her eyes and seems deep in thought for what feels like several minutes."
 
-        scene ev sharedsoak_lilly_leansmile
+        show ev sharedsoak_lilly_leansmile
+        with charachangeev
 
         "Eventually a mysterious smile appears on her face for a second as if she's enjoying some private joke. Then she opens her eyes and turns her head in my direction."
         li "The right thing, Hanako. I'll do my best to support my parents to the best of my ability and hopefully get them to see me in a new light as well."
@@ -738,175 +747,248 @@ label sh_ch34:
         li "Shall we go?"
         ha "Okay."
 
+        # TODO play water splash SFX
+
         scene bg satou_bathroom
-        show lilly behind_smile_nak
+        with locationchange
 
-        "We stand up, and Lilly once again holds out her hand. This time I don't feel frightened to let Lilly take hold of my arm as I guide her out of the bath and back to the changing area."
+        "We stand up, and Lilly once again holds out her hand."
+        "This time, I don't feel frightened to let Lilly take hold of my arm as I guide her out of the bath and back to the changing area."
 
-        scene bg satou_changingarea
+        scene bg satou_changingroom
+        with locationchange
 
         "As we dry ourselves off and start putting our clothes back on, Lilly flashes me a playful grin."
+
+        show lilly basic_smileclosed_cas
+        with charaenter
+
         li "Hanako, what happened here will stay between us, won't it? For the sake of Hisao's heart, it might be better if he doesn't know all the details."
-        "We let out a mutual giggle to confirm our mutual oath of confidentiality, and, once dressed, we make our way out of the bathroom and down the stairs."
+        "We let out a mutual giggle to confirm our mutual oath of confidentiality, and once dressed, we make our way out of the bathroom and down the stairs."
 
         scene bg satou_livingroom
-        show hisao basic_neutral_polo at right
-        show karla basic_lost_cas at tworight
-        show lilly cane_smileclosed at twoleft
+        show lilly cane_smileclosed:
+            xanchor 0.5 xpos 0.25
+        show karla basic_lost_cas:
+            xanchor 0.5 xpos 0.6
+        show hisao basic_neutral_polo at right 
+        with locationchange
 
         "As we enter the living room, I see Lilly's mother and Hisao sitting there. Karla gives her daughter an unsure look."
-        ka "Hello Lilly. How are you doing?"
+        ka "Hello, Lilly. How are you doing?"
         "Lilly answers her mother's question with a polite bow."
         li "Much better now, Mother. How about you?"
         ka "Okay... I guess. I hope you're not too hungry yet. I didn't know when you would be finished, and I've yet to tell Allison to start preparing dinner."
         li "Actually, Mother, would it be okay to give Allison the rest of the day off?"
 
         show karla basic_resigned_cas
+        with chchange
 
         ka "Huh?"
         li "This is Hanako's and Hisao's last day here in Scotland. If it's okay with you, I would like to cook for them myself, just this once."
         ka "Uh... Well, I don't mind. But..."
 
         show lilly cane_smile
+        with chchange
 
         li "Perhaps you could help me get the ingredients ready. I'm still not too familiar with the location of everything."
 
         show karla basic_wistful_cas
+        with chchange
 
         ka "Well, alright then."
 
         scene black
+        with locationchange
 
-        "And with that Lilly and her mother disappear into the kitchen. An hour later the four of us share a simple, but delicious meal, and afterwards Lilly accompanies Hisao and me on one last long walk through the neighborhood before the two of us retire for the evening."
+        stop music fadeout 15.0
 
-        play music music_daily
-        scene bg inverness_airport
-        show hisao cross_smile_polo at right
-        show karla basic_sweet_suit at tworight
-        show akira basic_pleased at twoleft
-        show lilly cane_cheerful at left
+        nvl clear
+        nvl show dissolve
+
+        n "And with that, Lilly and her mother disappear into the kitchen."
+        n "{vspace=30}An hour later the four of us share a simple, but delicious meal. Afterwards, Lilly accompanies Hisao and me on one last long walk through the neighborhood before the two of us retire for the evening."
+
+        nvl hide dissolve
+
+        pause 2.0
+
+        if _in_replay:
+            return
+
+    label .s2:
+
+        $ set_window_tint(TINT_HANAKO)
+
+        scene bg airport_inverness
+        show hisao cross_smile_polo:
+            xanchor 0.5 xpos 0.15
+        show lilly cane_cheerful_cas:
+            xanchor 0.5 xpos 0.4
+        show akira basic_pleased:
+            xanchor 0.5 xpos 0.6
+        show karla basic_sweet_suit:
+            xanchor 0.5 xpos 0.85
+        with Dissolve(2.0)
+
+        play music music_daily fadein 4.0
 
         "The next morning, after a filling breakfast, Lilly and her mother take us to Inverness Airport where we're pleasantly surprised by a chipper Akira who's been waiting for us there."
 
-        scene bg inverness_airportterminal
-        show hisao cross_smile_polo at right
-        show karla basic_sweet_suit at tworight
-        show akira basic_pleased at twoleft
-        show lilly cane_cheerful at left
+        scene bg airport_baggageclaim
+        show hisao cross_smile_polo:
+            xanchor 0.5 xpos 0.15
+        show lilly cane_cheerful_cas:
+            xanchor 0.5 xpos 0.4
+        show akira basic_pleased:
+            xanchor 0.5 xpos 0.6
+        show karla basic_sweet_suit:
+            xanchor 0.5 xpos 0.85
+        with locationchange
 
         "After checking in our luggage, the five of us have a cup of tea at one of the coffee shops near the security gate."
-        "The atmosphere is surprisingly relaxed with Lilly interacting in her usual way with Akira and Akira not displaying any outward signs of hostility towards her mother. Eventually Lilly's mother checks her watch and gives us a sad smile."
-
+        "The atmosphere is surprisingly relaxed with Lilly interacting in her usual way with Akira and Akira not displaying any outward signs of hostility towards her mother."
+        "Eventually, Lilly's mother checks her watch and gives us a sad smile."
         ka "Well, I think it's time for you two to head to your gate. You probably want to be among the first to board."
         "Hisao sighs."
 
         show hisao basic_speak_polo
+        with chchange
 
         hi "Well, I guess we'll be off then. Best of luck to all three of you. And maybe until some other time, Akira."
         "Akira grins."
 
         show akira basic_ending
+        with chchange
 
         aki "Hey, I'll still be in Japan from time to time. I'll try to accompany whatever business delegation is heading east. And whenever I'm in the country, I'll be sure to stop by at Yamaku. So we'll definitely meet again. "
 
         show karla basic_cheerful_suit
+        with chchange
+
         "Karla smiles."
         ka "So will we. I'll probably be the one accompanying Lilly to Japan on her way back, so we'll probably meet again soon. Take care of yourself in the meantime, okay? And uh... Since you're in her class, be sure to tell Shizune that I said hello."
 
         show hisao basic_smile_polo
+        with chchange
 
         hi "We will."
         "Hisao gets up from his seat and looks at me."
         hi "Shall we then?"
         "I nod uneasily. Saying goodbye to Lilly and Akira suddenly feels very hard."
-        ha "O-Okay."
+        ha "O-okay."
         "We all get up, and Lilly's mother gives us a respectful bow."
 
         show karla basic_lillyface_suit
+        with chchange
 
         ka "We’ve put you through quite a bit of trouble. Sorry for that. I hope you enjoyed your time here regardless."
 
         show hisao basic_grin_polo
+        with chchange
 
         hi "Oh, we definitely have. Right, Hanako?"
         ha "Yes. It was great fun."
 
         show hisao basic_smile_polo
+        with chchange
 
         "Karla smiles and then reaches into her wallet. She takes some banknotes and puts two of them in each of our hands."
         "I look at them and there's a large 50 on each of them. That's 200 pounds in total. I'm not completely sure how much that is in yen, but I bet it's quite a bit."
 
         show karla basic_smile_suit
+        with chchange
 
         ka "When you get back to Japan, please change this and use it to go on a couple of fun dates together. It's on us."
 
         show hisao basic_speak_polo
+        with chchange
 
         hi "We couldn't..."
 
         show akira basic_laugh
+        with chchange
 
         "Akira cuts off Hisao by giving him a playful shove."
         aki "Just take it, you two."
 
-        show lilly cane_giggle
+        show lilly cane_giggle_cas
+        with chchange
 
         "Lilly smiles."
         li "You can tell me all about it when I get back."
 
         show hisao basic_sweet_polo
+        with chchange
 
         "Hisao and I exchange a resigned look. I don't think there's time for us to argue over this. We both put the banknotes away."
         hi "Thank you."
 
         show akira basic_cheerful
+        with chchange
 
         "Akira steps forward and gives Hisao a friendly pat on the shoulder."
         aki "Have fun, you two. See ya later."
         "Then she walks up to me and gives me a warm hug while giving me a knowing look."
 
-        show akira basic_wistful
+        show akira basic_wistful_close
+        with characlose
+
         aki "See ya, Hanako. Don't be afraid to call sometime."
 
-        show akira basic_peaceful
+        show akira basic_sheepish_close
+        with chchange
 
         "She leans in and whispers."
         aki "And thanks for yesterday."
         ha "Uh... O-okay."
 
-        show lilly cane_satisfied
+        show akira basic_sweet
+        show lilly cane_satisfied_cas
+        with charadistant
 
         "Lilly briefly puts her hand on Hisao's shoulder."
         li "Hisao, please take good care of Hanako today, okay?"
 
         show hisao basic_smile_polo
+        with chchange
 
         hi "Will do, Lilly. Be sure to hang in there yourself."
 
-        show lilly cane_weaksmile
+        show lilly cane_weaksmile_cas
+        with chchange
 
         li "Hanako, will you be alright?"
         ha "D-Don't worry about me, Lilly. I'll... make it."
 
-        show lilly cane_cheerful
+        show lilly cane_cheerful_cas_close
+        with chchange
 
         "Lilly steps forward and gives me a loving hug, followed by a light kiss on the cheek."
         li "Thanks for everything, Hanako. We'll keep in touch, okay?"
-        ha "Y-Yes."
+        ha "Y-yes."
+
+        hide hisao
+        hide lilly
+        hide akira
+        hide karla
+        with charaexit
 
         "We walk out of the coffee shop, and Hisao and I join the queue near the security gate. We turn around and wave goodbye one last time to the Satous."
         "The crowds and security checks will no doubt ruin my day today, but until it's our turn to pass through I want to hold on to that image of Lilly and her family."
 
+        show lilly cane_giggle_cas at twoleft
         show akira basic_ending
-        show karla basic_smileclosed_suit
+        show karla basic_smileclosed_suit at tworight
+        with charaenter
 
-        "The sight of Lilly, Akira and their mother all wearing a smile."
-
+        "The sight of Lilly, Akira, and their mother all wearing a smile."
         "Maybe things will turn out alright after all."
 
-        stop music
+        stop music fadeout 5.0
+
         scene black
-        with endchapter
+        with Dissolve(5.0)
 
         if _in_replay:
             return

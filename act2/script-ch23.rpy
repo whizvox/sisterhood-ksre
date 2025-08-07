@@ -857,6 +857,8 @@ label sh_ch23:
         show karla basic_smile_suit at tworight
         with locationchange
 
+        stop sound fadeout 1.0
+
         "Eventually they get down from the podium and slowly make their way back to where we are."
         aki "Man, those guys were no challenge at all. Imagine how easily we'd kick their asses if we'd take them on on our home turf."
         hi "Well done you two."

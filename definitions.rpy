@@ -108,7 +108,8 @@ init:
             (_("Poking the Bear"), "sh_ch32.s2", _("Hanako and Hisao listen in on Akira and Mister Satou."), "hanako"),
             (_("Looking Out for Each Other"), "sh_ch32.s3", _("Hanako opens up to Mister Satou about her and Lilly's relationship."), "hanako"),
             (_("Rock Skipping Again"), "sh_ch33.s1", _("Hanako and Akira open up to each other."), "hanako"),
-            (_("Present and Past"), "sh_ch34.s1", _("Hanako and Lilly have a heart-to-heart in the bath."), "hanako")
+            (_("Present and Past"), "sh_ch34.s1", _("Hanako and Lilly have a heart-to-heart in the bath."), "hanako"),
+            (_("Sendoff"), "sh_ch34.s2", _("The Yamaku trio head back home."), "hanako")
         ])
     ]
 

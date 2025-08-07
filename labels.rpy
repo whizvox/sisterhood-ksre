@@ -41,6 +41,15 @@ label sisterhood_start:
     call sh_ch23
     call sh_ch24
     call sh_ch25
+    call sh_ch26
+    call sh_ch27
+    call sh_ch28
+    call sh_ch29
+    call sh_ch30
+    call sh_ch31
+    call sh_ch32
+    call sh_ch33
+    call sh_ch34
     call sisterhood_credits
     call sisterhood_postcredits
 

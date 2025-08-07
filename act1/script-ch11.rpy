@@ -344,7 +344,7 @@ label sh_ch11:
         show lilly basic_displeased_cas_close
         with chchange
 
-        li "But when Shizune became student council president and I had to deal with her, things changed very quickly. "
+        li "But when Shizune became student council president and I had to deal with her, things changed very quickly."
         ha "P-power corrupts and absolute power corrupts absolutely?"
 
         show lilly basic_giggle_cas_close

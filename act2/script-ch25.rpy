@@ -996,7 +996,7 @@ label sh_ch25:
                 ease 0.05 xpos 0.49
                 ease 0.1 xpos 0.51
                 ease 0.05 xpos 0.5
-        with charachangefast
+        with persistent.charachangefast
 
         ha "Ah!"
         hi "Whoa!"
