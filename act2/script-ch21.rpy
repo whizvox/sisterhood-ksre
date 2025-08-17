@@ -550,37 +550,59 @@ label sh_ch21:
 
         nvl hide dissolve
 
-        scene ev planeride
+        scene ev planeride_bliss
         with mediumflash
 
         "When I get back to our seats, I see that Lilly made herself a bit more comfortable. She has her right arm wrapped around Hanako and holds Hanako's hand in her left hand. They look very cute together."
-        "I reach for Hanako's handbag near her feet, take out the camera and snap a quick picture."
+        "I reach for Hanako's handbag near her feet, take out the camera, and snap a quick picture."
         
         play sound sfx_camerashutter
 
-        "As Lilly recognizes the click from the camera she pouts with mock indignation."
+        pause 0.5
+
+        show ev planeride_pout
+        with charachangeev
+
+        "As Lilly recognizes the click from the camera, she pouts with mock indignation."
         li "You should ask before taking pictures, Hisao. I probably looked a bit silly in this one."
         hi "Nonsense, some of the best pictures are the ones taken spontanously."
         hi "Ready to switch places again?"
+
+        show ev planeride_bliss
+        with charachangeev
+
         "Lilly considers for a moment."
         li "Actually, would you mind if I stayed like this a little longer?"
         hi "Not at all."
 
         play music music_twinkle fadein 4.0
 
-        "I take a seat and look at the girls again. Lilly has a peaceful smile on her face. I don't think her request was merely about not wanting to risk waking up Hanako."
+        show ev planeride_bliss_large:
+            anchor (0, 0) subpixel True pos (-1815, -120)
+            ease 15.0 pos (-1815, -642)
+        with mediumflash
+
+        "I take a seat and look at the girls again."
+        "Lilly has a peaceful smile on her face. I don't think her request was merely about not wanting to risk waking up Hanako."
         hi "There are blankets in the pockets of the seats in front of us. Would you…?"
-        li "Yes please."
+        li "Yes, please."
 
         play sound sfx_rustling
+
+        show ev planeride_blanket at center
+        with Dissolve(1.5)
 
         "I take the folded blankets and remove the plastic wrapping around them. I softly wrap one of them around Hanako's sleeping form and pass the second one to Lilly, who merely folds it out and covers her lap with it."
         "I sit down in Lilly's original seat and get my own blanket. I doubt I'll get any sleep, but I try to relax nevertheless."
         li "Hisao, how long is it until we reach our destination?"
-        "I take a look at one of the monitors on the headrest in front of me. The screen shows various bits of information, like the temperature outside, the altitude of the plane and the estimated time of arrival."
+        "I take a look at one of the monitors on the headrest in front of me. The screen shows various bits of information, like the temperature outside, the altitude of the plane, and the estimated time of arrival."
         hi "Four and a half more hours. I hope Hanako will have recovered her energy a bit by the time we land."
         li "I'm relieved she was able to relax. She seemed anxious when we were about to take off. I was afraid she'd turn out to have a fear of flying."
         hi "I've been thinking that over and… I don't think it was the flight itself that got her nervous. In fact, she seemed to love the view. It's the first time I've really seen her smile today. It was probably…"
+
+        show ev planeride_listen
+        with charachangeev
+
         li "Hmmm?"
         hi "Ever since my first heart attack, I've hated hospitals. I dislike the sterile appearance and the overly clean smell."
         hi "I've really come to dislike heart monitors as well as anything that sounds like them. It's those beeps that really grate on me. Probably stir up some unpleasant memories."
@@ -596,6 +618,10 @@ label sh_ch21:
         hi "I asked her that myself a few days ago. You probably know the answer already. She hasn't been on vacation since she lost her family."
         hi "The orphanage occasionally organized day trips for the children there, but Hanako skipped most of those. The closest thing she's had to a vacation in a decade was that trip to Hokkaido."
         "Lilly softly squeezes Hanako's hand and strokes her long, dark hair."
+
+        show ev planeride_blanket
+        with charachangeev
+
         li "Hisao… Let's both do our best to make this vacation the most memorable and wonderful experience of her life."
         "I take another look at Lilly and Hanako. Many of the people I know at school hang out in pairs."
         "I know Emi often hangs out with her friend Rin, Naomi from the newspaper club is often seen together with Natsume, her neighbor in class, and I've hardly ever seen Shizune and Misha apart from one another."
@@ -604,6 +630,10 @@ label sh_ch21:
         "She gives a deep nod, smiling warmly."
         li "I feel very fortunate to have her as my best friend."
         hi "I think she's very lucky to have you too. I don't think she could have wished for a better friend."
+
+        show ev planeride_frown
+        with charachangeev
+
         "Lilly gives a self-deprecating sigh."
         li "I think I merely provided her with company and comfort."
         li "It was you who first broke through the barrier she erected around herself and convinced her to start opening up to others, including me."
@@ -611,20 +641,40 @@ label sh_ch21:
         "Something about what Lilly just said has a very familiar ring. I attempt to hold back a chuckle, but it's still loud enough for Lilly to catch it."
         li "Did I say something amusing?"
         hi "You're starting to sound a little bit like Hanako."
+
+        show ev planeride_listen
+        with charachangeev
+
         li "I beg your pardon?"
-        hi "The whole thing of 'How useful am I to my friends?' and 'Do my friends get as much out of me as I get out of them?' is how Hanako used to think all the time. Probably it's how she still thinks now and then."
+        hi "The whole thing of ‘How useful am I to my friends?’ and ‘Do my friends get as much out of me as I get out of them?’ is how Hanako used to think all the time. Probably it's how she still thinks now and then."
         hi "But I don't think it matters. Maybe it's true that I helped Hanako grow more than you did, and maybe it isn't. Maybe it's true that the newspaper club helped Hanako grow more than you did, and maybe it isn't."
         hi "But I think that's completely irrelevant. I'd like to think that Hanako goes to the newspaper club because she enjoys the activities."
         hi "I'd like to think that the reason she hangs out with me is because she cares about me and feels appreciated and validated by me. That's probably also why she spends time with you."
-        hi "Everything else is just a bonus. I don't think it matters to her. It probably shouldn't matter to us either."
+        hi "Everything else is just a bonus. I don't think it matters to her. It probably shouldn't matter to us, either."
+
+        show ev planeride_blanket
+        with charachangeev
+
         "Lilly breaks out into an amused smile."
         li "You sound so wise, Hisao."
         "I get the feeling she's poking fun at me, but she still sounds appreciative of my words."
         hi "What I'm trying to say is that you shouldn't sell yourself short. You're the first real friend Hanako's ever made in her life. That's got to count for something."
+
+        show ev planeride_listen
+        with charachangeev
+
         li "The first real friend…"
         "Lilly seems lost in thought for a moment, then shakes her head as if dismissing some unspoken thought."
+
+        show ev planeride_blanket
+        with charachangeev
+
         li "I suppose I'd better do my best to prove myself worthy of that honor."
         hi "Just being yourself should be more than enough to pull that off."
+
+        show ev planeride_weaksmile
+        with charachangeev
+
         "Lilly smiles, but there's a sad quality to her expression."
         li "I'm not completely sure about that. The dilemma I faced concerning my parents' summoning weighed quite heavily on me, and the fact that Akira was involved in the whole situation as well meant that I couldn't go to her for objective advice."
         li "By facing that decision all on my own and by opting to keep everyone else out of it, I could argue that I was very much being myself. And it didn't bode particularly well for me."
@@ -633,6 +683,10 @@ label sh_ch21:
         li "True, but if it had been Hanako who had been in my predicament, I would have encouraged her to let others share the burden. I suppose... I don't always practice what I preach."
         li "If I had confided in Hanako sooner, I probably could have saved her a breakdown. And you a heart attack."
         hi "You're forgiven. This time."
+
+        show ev planeride_blanket
+        with charachangeev
+
         "Lilly chuckles and then carefully caresses Hanako's hair once more."
         li "I'd like to return the trust that Hanako has placed in me, Hisao. The next time she extends me a helping hand or a shoulder to lean on, I'll make sure not to turn it down."
         "I smile at Lilly and softly take her hand which is still holding Hanako's."
@@ -646,6 +700,8 @@ label sh_ch21:
 
         if _in_replay:
             return
+        else:
+            pause 2.0
     
     label .s4:
 

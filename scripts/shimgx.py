@@ -230,7 +230,15 @@ JPEGS = (
     # chapter 17
     ("~bgs/school_dormhisao.jpg", "vfx/hanako_dormhisao_blur.jpg", [CompositeTransformation([(606, 0, "~sprites/hanako/close/hanako_emb_emb_close.png")]), blur(5)]),
     ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_large.jpg", [crop(0, 0, 8031, 4518)]),
-    ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_normal.jpg", [crop(0, 0, 8031, 4518), RESIZE_1080P])
+    ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_normal.jpg", [crop(0, 0, 8031, 4518), RESIZE_1080P]),
+    # chapter 21
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss_large.jpg"),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_01.png", "event/planeride/planeride_pout.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_02.png", "event/planeride/planeride_blanket.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_03.png", "event/planeride/planeride_listen.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_04.png", "event/planeride/planeride_frown.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_05.png", "event/planeride/planeride_weaksmile.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P])
 )
 
 def main(args):

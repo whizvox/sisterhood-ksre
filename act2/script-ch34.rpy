@@ -882,7 +882,7 @@ label sh_ch34:
         show karla basic_lillyface_suit
         with chchange
 
-        ka "We’ve put you through quite a bit of trouble. Sorry for that. I hope you enjoyed your time here regardless."
+        ka "We've put you through quite a bit of trouble. Sorry for that. I hope you enjoyed your time here, regardless."
 
         show hisao basic_grin_polo
         with chchange
@@ -959,7 +959,7 @@ label sh_ch34:
         with chchange
 
         li "Hanako, will you be alright?"
-        ha "D-Don't worry about me, Lilly. I'll... make it."
+        ha "D-don't worry about me, Lilly. I'll... make it."
 
         show lilly cane_cheerful_cas_close
         with chchange
