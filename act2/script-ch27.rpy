@@ -136,6 +136,7 @@ label sh_ch27:
 
         show hiroyuki basic_smile_suit
         with chchange
+
         show hiroyuki basic_neutral_suit
         with charachangealways
 

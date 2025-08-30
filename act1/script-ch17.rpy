@@ -107,7 +107,7 @@ label sh_ch17:
         with chchange
 
         mi "Looks like you did manage to surprise me today, class rep. I admit defeat this time. But that doesn't mean I will ever agree with your methods."
-        "I let out a tired smile."
+        "I put on a tired smile."
         li "I had hoped that after last week, we'd be able to get along slightly better. But perhaps our differences really are too great."
 
         show shizu adjust_angry

@@ -376,7 +376,7 @@ label sh_ch14:
         with chchange
 
         li "But… she loved you dearly. I can't believe she would just give that up."
-        li "Maybe… Maybe I can get her to talk to you. "
+        li "Maybe… Maybe I can get her to talk to you."
         hi "I doubt it's gonna be that easy."
 
         show lilly basic_reminisce_phone
@@ -397,7 +397,7 @@ label sh_ch14:
         n "Not “I don't want to”, but “I can't”."
         n "It really feels like she feels compelled by the circumstances. It might not be a spur of the moment as Lilly suggested."
         n "This had quite an impact on Lilly as well. She didn't sound as calm and in control as she usually does."
-        n "I can't blame her though. She's scheduled to leave Yamaku this evening. If Akira is unable to cancel the trip, Lily will be leaving Japan in the middle of a big mess. Knowing her motherly nature, that'll seriously burden her."
+        n "I can't blame her though. She's scheduled to leave Yamaku this evening. If Akira is unable to cancel the trip, Lilly will be leaving Japan in the middle of a big mess. Knowing her motherly nature, that'll seriously burden her."
 
         nvl clear
 

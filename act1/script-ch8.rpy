@@ -723,7 +723,7 @@ label sh_ch8:
         with chchange
 
         hi "Great. Good. I'm happy to hear that. I wouldn't mind going back there myself, either."
-        "Is he getting nervous? And what does he mean by ‘so far’? Won't we going back to Yamaku yet?"
+        "Is he getting nervous? And what does he mean by “so far”? Aren't we going back to Yamaku?"
         ha "H-Hisao… Did you have more planned?"
         ha "Does it have to do with that backpack you've been carrying around all the time?"
 

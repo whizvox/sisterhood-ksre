@@ -156,7 +156,7 @@ label sh_ch10:
         with chchange
 
         "His grin returns as he gives me a playful pat on the shoulder."
-        "It's kinda unsettling how quickly this guy can switch back and forth between being immature and authoritive."
+        "It's kinda unsettling how quickly this guy can switch back and forth between being immature and authoritative."
         nk "I promise I won't try to embarrass you."
         "He tries his best to look trustworthy, though I'm not completely sure how well he'd be able to keep that promise."
 

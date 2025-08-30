@@ -367,7 +367,7 @@ label sh_ch12:
         "I'm not sure about Shizune, but I'm feeling rather embarrassed right now."
         "We probably had this coming."
         "I don't think there's much left to discuss anyway. I've already said what needed to be said and the rest was just both of us trying to gain the advantage over the other."
-        "I don't like the idea of simply turning my back on Shizune and walking away, but our communicative means are severally limited right now, so I simply bow in her direction, wait a few seconds to give her an opportunity to return the favor and then turn to leave."
+        "I don't like the idea of simply turning my back on Shizune and walking away, but our communicative means are severely limited right now, so I simply bow in her direction, wait a few seconds to give her an opportunity to return the favor and then turn to leave."
 
         show shizu behind_blank
         with charachangealways

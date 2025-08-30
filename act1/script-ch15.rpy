@@ -158,7 +158,7 @@ label sh_ch15:
         ta "Miss Ikezawa was still in shock when she arrived here, and I decided that a hospital bed was not an ideal place for her to calm down, so I took her to my office and let her rest there."
         ta "When we heard the news that your condition had stabilized, I took her back to her dorm room."
         hi "Have you spoken to her since then?"
-        ta "I'm afraid I haven't. I informed her that I could supply her with a sleeping pill or anti-depressant for the night if she wanted one and that I'd be available if she wanted to talk, but she hasn't made use of those offers so far."
+        ta "I'm afraid I haven't. I informed her that I could supply her with an anti-depressant for the night if she wanted one and that I'd be available if she wanted to talk, but she hasn't made use of those offers so far."
         hi "Didn't you place her… you know… under supervision?"
         "The old lady sighs."
 
@@ -221,7 +221,7 @@ label sh_ch15:
         hi "Ummm… Well…"
         ta "Did you really believe that a few months of dating you was all it would take for Miss Ikezawa's trauma to disappear just like that? Or a few months of dating anybody for that matter?"
         ta "Were you counting on that when you started going out with her? Do you even know why I'm treating her?"
-        "Her voice is barely raised, yet I feel as if the sudden authoritive tone in her voice and her stern gaze are pinning me against a wall."
+        "Her voice is barely raised, yet I feel as if the sudden authoritative tone in her voice and her stern gaze are pinning me against a wall."
 
         show takawa serious
         with charachangealways
@@ -251,7 +251,7 @@ label sh_ch15:
         ta "It takes time, therapy and support. One cannot always judge this recovery process by short-term results as you've been doing. What's important is that progress is made in the long run."
         ta "Many people who are recovering from trauma have relapses every now and again. It's not necessarily a problem as long as they eventually take more steps forward than backwards."
         ta "It's important that you understand that about her, but it's equally important that Miss Ikezawa understands that about herself."
-        ta "I could help her with that, but it might good if you can remind her of that as well."
+        ta "I could help her with that, but it might be good if you can remind her of that as well."
         hi "Long-term thinking, huh?"
 
         show takawa smile
