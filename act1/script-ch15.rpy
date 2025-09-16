@@ -506,10 +506,10 @@ label sh_ch15:
         "As we reach the dorm entrance, we're greeted by an ear-shattering “HICCHAN! WELCOME BACK!” that could only originate from one person in Japan."
 
         show misha hips_grin:
-            xalign 0.5 xpos 0.75
+            xanchor 0.5 xpos 0.75
         show shizu basic_happy at center
         show lilly basic_cheerful:
-            xalign 0.5 xpos 0.25
+            xanchor 0.5 xpos 0.25
         with charaenter
 
         "In front of the dorm are Shizune, Misha and Lilly. Shizune cheerfully makes a small saluting gesture, Misha excitedly jumps up and down and Lilly calmly stands next to them."

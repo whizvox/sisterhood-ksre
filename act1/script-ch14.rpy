@@ -588,7 +588,7 @@ label sh_ch14:
         show lilly at right:
             alpha 1.0
         show shizu:
-            xalign 0.5 xpos 0.4
+            xanchor 0.5 xpos 0.4
         show misha at left
         with charaenter
 

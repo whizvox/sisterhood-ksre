@@ -34,9 +34,9 @@ label sh_ch7:
         nvl hide dissolve
 
         show natsume basic_neutral:
-            xanchor 1.0 yalign 1.0 ypos 1.1 xpos 1.15 alpha 0.0
+            xanchor 1.0 yanchor 1.0 ypos 1.1 xpos 1.15 alpha 0.0
         show naomi basic_neutral:
-            xanchor 1.0 yalign 1.0 ypos 1.1 xpos 1.4 alpha 0.0
+            xanchor 1.0 yanchor 1.0 ypos 1.1 xpos 1.4 alpha 0.0
         with None
 
         show bg at right
