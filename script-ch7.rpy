@@ -34,9 +34,9 @@ n "{vspace=60}Later on, I started wondering whether he was really unable to ditc
 nvl hide dissolve
 
 show natsume basic_neutral:
-    xanchor 1.0 yalign 1.0 ypos 1.1 xpos 1.15 alpha 0.0
+    xanchor 1.0 yanchor 1.0 xpos 1.15 ypos 1.1 alpha 0.0
 show naomi basic_neutral:
-    xanchor 1.0 yalign 1.0 ypos 1.1 xpos 1.4 alpha 0.0
+    xanchor 1.0 yanchor 1.0 xpos 1.4 ypos 1.1 alpha 0.0
 with None
 
 show bg at right

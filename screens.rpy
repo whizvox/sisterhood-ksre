@@ -208,7 +208,7 @@ screen sisterhood_about():
 
             vbox:
                 text _("The first act of a visual novel adaptation of Guest Poster's fan fiction, featuring custom artwork and music.\n")
-                text _("Version: 1.1-dev-20250622\n")
+                text _("Version: 1.0.3\n")
                 text _("To learn about future updates or submit a bug report, check out the website:")
                 textbutton _("https://sisterhood.whizvox.me") action OpenURL("https://sisterhood.whizvox.me"):
                     style "gui_exturl"

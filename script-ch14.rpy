@@ -581,7 +581,7 @@ mi "It was… pretty bad, apparently. That's all the nurse would tell us, and he
 show lilly at right:
     alpha 1.0
 show shizu:
-    xalign 0.5 xpos 0.4
+    xanchor 0.5 xpos 0.4
 show misha at left
 with charaenter
 
