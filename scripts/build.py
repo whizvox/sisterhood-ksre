@@ -5,7 +5,7 @@ from zipfile import ZipFile
 import argparse
 import sys
 
-INCLUDED_DIRS = ("bgm", "bgs", "event", "font", "gui", "logo", "sfx", "sprites", "vfx")
+INCLUDED_DIRS = ("act1", "act2", "bgm", "bgs", "event", "font", "gui", "logo", "sfx", "sprites", "vfx")
 
 def get_project_files() -> list[Path]:
     files = []
