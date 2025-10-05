@@ -462,7 +462,7 @@ label sh_ch19:
         play music music_another fadein 4.0
         
         # TODO Simplify description of Jun
-        "As I slowly open the door to the classroom that's home to our club and peek inside, I can see Naomi and Natsume relaxing and sharing some drinks with a tall, but frail-looking girl with long, brown hair in a simple ponytail and a red-and-white cap on her head."
+        "As I slowly open the door to the classroom that's home to our club and peek inside, I can see Naomi and Natsume relaxing and sharing some drinks with a tall, frail-looking girl with long, brown hair."
         
         nvl clear
         nvl show dissolve
@@ -474,9 +474,9 @@ label sh_ch19:
         show jun cast_happy
         with { "master": charachangealways }
 
-        n "{vspace=60}As I enter, I'm greeted by three friendly waves, Jun's being emphasized by the white orthopedic cast around her hand. Jun, a second year student here, is one of the reasons the computer lab is almost never completely deserted."
-        n "She's a bit of a whiz kid whose knack for computers far exceeds my own, and she joined the newspaper club for the specific purpose of getting to do the editing jobs. Last week, we ended up working together a few times to put the latest issue of the school newspaper together. I'm not completely comfortable around her yet, but due to her skinny build and her usually quiet demeanor, her presence is not exactly threatening either."
-        n "{vspace=30}When I was first invited into the club, I learned that Jun suffers from osteoporosis and is very prone to breaking bones as a result of minor falls that other people would simply shrug off."
+        n "{vspace=60}As I enter, I'm greeted by three friendly waves, Jun's being emphasized by the white orthopedic cast around her hand."
+        n "{vspace=30}Jun, a second year student here, is one of the reasons the computer lab is almost never completely deserted. She's a bit of a whiz kid whose knack for computers far exceeds my own, and she joined the newspaper club for the specific purpose of getting to do the editing jobs. Last week, we ended up working together a few times to put the latest issue of the school newspaper together. I'm not completely comfortable around her yet, but due to her skinny build and her usually quiet demeanor, her presence is not exactly threatening, either."
+        n "When I was first invited into the club, I learned that Jun suffers from osteoporosis and is very prone to breaking bones as a result of minor falls that other people would simply shrug off."
 
         nvl hide dissolve
 
@@ -502,8 +502,8 @@ label sh_ch19:
         na "Soooo… Did you guys have to practice mouth-to-mouth breathing? On each other? Did you see any teachers doing it?"
 
         show naomi bend_laugh
-        show natsume basic_annoyed
-        show jun cast_frown
+        show natsume basic_neutral
+        show jun cast_annoyed
         with chchange
 
         "My eyes grow wide in disturbed shock at the mental image that Naomi's remark conjures up, but it's apparently highly amusing to her, for she bursts into giggles after a short moment of silence."
@@ -513,15 +513,13 @@ label sh_ch19:
         "Natsume's scolding doesn't really seem to impress Naomi as she giggles at her own joke."
         na "Oh, come on. I thought it was funny."
 
-        show jun cast_neutral
-        show natsume basic_neutral
-        show naomi basic_smile
+        show jun cast_smile
         with chchange
 
         "Jun turns to me."
         jun "They have big dolls for that kind of thing, don't they?"
         "I sigh in relief at Jun's attempt to steer the subject in a different direction."
-        ha "Y-yes. Practice dummies. We… used them t-to practice CPR too."
+        ha "Y-yes. Practice dummies. We… used them t-to practice CPR, too."
 
         show naomi basic_neutral
         with chchange
@@ -530,10 +528,15 @@ label sh_ch19:
         na "Sounds like your day was more interesting than ours. We ended up sharing the distribution duties with the student council."
         na "When we finished printing the last issue and dropped everything off at the council room, we caught Hakamichi in the middle of packing for summer break. She insisted we help out in order to guarantee everyone got a copy in time."
         ha "W-wasn't the printing supposed to take place later this week?"
+
+        show jun cast_serious
+        with chchange
+
         na "According to the official schedule, yeah. Practically speaking, waiting that long would have been really stupid."
         ha "How so?"
         "Naomi shrugs casually."
-        na "Well, summer break started this week. Right now, lots of students are still busy tying up loose ends and packing their bags, but I'm betting that within a smatter of days, nearly half of the student body will have gone home for the summer, and this school will be one hell of a lot emptier."
+        na "Well, summer break started this week."
+        na "Right now, lots of students are still busy tying up loose ends and packing their bags, but I'm betting that within a smatter of days, nearly half of the student body will have gone home for the summer, and this school will be one hell of a lot emptier."
         na "Meaning that half our batch would just end up gathering dust. But now, we got people a copy just before they're leaving here…"
         ha "…they're likely to take it along, so they h-have something to read during the trip back home."
 

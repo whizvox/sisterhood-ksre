@@ -272,7 +272,7 @@ label sh_ch20:
 
         scene bg school_newspaper
         show naomi bend_smile at tworight
-        show jun cast_neutral at twoleft
+        show jun cast_smile at twoleft
         with locationskip
 
         queue music music_tranquil fadein 4.0
@@ -288,7 +288,7 @@ label sh_ch20:
 
         na "It means ‘Hi! How are you?’ in Scottish. You were supposed to answer with something like ‘A'm fine, slainte!’"
 
-        show jun cast_frown
+        show jun cast_weaksmile
         with chchange
 
         "Naomi looks very pleased with her performance, but Jun gives me a tired look."
@@ -305,8 +305,7 @@ label sh_ch20:
 
         "Jun just rolls her eyes and Naomi takes the opportunity to continue the conversation."
         na "You haven't been practicing your Scottish?"
-
-        "I haven't. Lilly assured me that our English would suffice, so I can probably communicate with the locals if (and only if) I absolutely have to."
+        "I haven't. Lilly assured me that our English would suffice, so I can probably communicate with the locals if—and only if—I absolutely have to."
         ha "This week was busy for me."
 
         show naomi bend_smile
@@ -327,11 +326,11 @@ label sh_ch20:
         ha "I am. Do you h-have any vacation plans?"
 
         show naomi basic_smile
-        show jun cast_neutral
+        show jun cast_serious
         with chchange
 
         "Jun just shakes her head. Naomi, on the other hand, nods enthusiastically."
-        na "I'm going on a trip across Japan. Natsume's coming too. We'll head north first, stay in Hokkaido for a bit, then head south towards Kyoto."
+        na "I'm going on a trip across Japan. Natsume's coming, too. We'll head north first, stay in Hokkaido for a bit, then head south towards Kyoto."
         ha "That sounds enjoyable, too."
         na "It will be. I'll be sure to take plenty of pictures. We can swap photos afterwards."
         "That might be a problem. My cell phone has a camera function, but it doesn't have enough capacity to store a large amount of photos, and I don't have an actual photo camera myself."
@@ -352,7 +351,7 @@ label sh_ch20:
 
         "Naomi gets off the desk she's sitting on and sprints into the room we use as our archive."
 
-        show jun cast_frown
+        show jun cast_speak
         with chchange
 
         "Jun scratches her arm and turns to me."
@@ -360,7 +359,7 @@ label sh_ch20:
         jun "I hate these heavy things. They really itch."
         ha "I'm s-sorry to hear that."
 
-        show jun cast_smile
+        show jun cast_smug
         with chchange
 
         jun "It's okay. I have plenty of video games I still need to finish."
@@ -369,6 +368,8 @@ label sh_ch20:
         with None
         show naomi at tworight
         with charamovefastest
+        show jun cast_smile
+        with { "master": charachangealways }
 
         na "Tadaah! Check this out!"
         "Naomi comes running back in, carrying a black bag in her hands."
@@ -472,13 +473,13 @@ label sh_ch20:
         ha "Bye."
 
         hide naomi
-        show jun cast_smile at center
+        show jun cast_happy_close at center
         with charachangealways
 
         "As I leave the room, Jun comes after me with a conspiring expression on her face."
         jun "If you {i}do{/i} take a picture of Loch Ness, could you mail it to me?"
 
-        show jun cast_cheeky
+        show jun castraise_laugh_close
         with chchange
 
         jun "I can probably photoshop a monster in there."

@@ -169,6 +169,104 @@ hanako = [
     ("hanako sprites upscaled/mednoise/hanako_emb_smile_cas_nohat_clip", "emb_smile_cas_nohat_clip"),
 ]
 
+jun = [
+    # basic
+    ("act 2 sprites/jun revised/basic/1 JUN'S SMILE", "basic_smile"),
+    ("act 2 sprites/jun revised/basic/2 JUN'S HAPPY", "basic_happy"),
+    ("act 2 sprites/jun revised/basic/3 JUN'S SAD", "basic_sad"),
+    ("act 2 sprites/jun revised/basic/4 JUN'S SERIOUS", "basic_serious"),
+    ("act 2 sprites/jun revised/basic/5 JUN'S EYEROLL", "basic_pout"),
+    ("act 2 sprites/jun revised/basic/6 JUN'S SPEAK", "basic_speak"),
+    ("act 2 sprites/jun revised/basic/7 JUN'S SMUG", "basic_smug"),
+    ("act 2 sprites/jun revised/basic/8 JUN'S LAUGH", "basic_laugh"),
+    ("act 2 sprites/jun revised/basic/9 JUN'S WEAK SMILE", "basic_weaksmile"),
+    ("act 2 sprites/jun revised/basic/10 JUN'S ANNOYED", "basic_angry"),
+    ("act 2 sprites/jun adjust/basic annoyed", "basic_annoyed"),
+    ("act 2 sprites/jun adjust/basic eyeroll", "basic_eyeroll"),
+    # cast
+    ("act 2 sprites/jun revised/cast/1 JUN'S SMILE", "cast_smile"),
+    ("act 2 sprites/jun revised/cast/2 JUN'S HAPPY", "cast_happy"),
+    ("act 2 sprites/jun revised/cast/3 JUN'S SAD", "cast_sad"),
+    ("act 2 sprites/jun revised/cast/4 JUN'S SERIOUS", "cast_serious"),
+    ("act 2 sprites/jun revised/cast/5 JUN'S EYEROLL", "cast_pout"),
+    ("act 2 sprites/jun revised/cast/6 JUN'S SPEAK", "cast_speak"),
+    ("act 2 sprites/jun revised/cast/7 JUN'S SMUG", "cast_smug"),
+    ("act 2 sprites/jun revised/cast/8 JUN'S LAUGH", "cast_laugh"),
+    ("act 2 sprites/jun revised/cast/9 JUN'S WEAK SMILE", "cast_weaksmile"),
+    ("act 2 sprites/jun revised/cast/10 JUN'S ANNOYED", "cast_angry"),
+    ("act 2 sprites/jun adjust/cast annoyed", "cast_annoyed"),
+    ("act 2 sprites/jun adjust/cast eyeroll", "cast_eyeroll"),
+    # raised
+    ("act 2 sprites/jun revised/raised/7 JUN'S SMUG", "raise_smug"),
+    ("act 2 sprites/jun revised/raised/8 JUN'S LAUGH", "raise_laugh"),
+    # cast+raised
+    ("act 2 sprites/jun revised/cast + raised/7 JUN'S SMUG", "castraise_smug"),
+    ("act 2 sprites/jun revised/cast + raised/8 JUN'S LAUGH", "castraise_laugh")
+]
+
+nakamura = [
+    ("act 2 sprites/nakamura adjust/speak", "speak"),
+    ("act 2 sprites/nakamura adjust/instruct", "instruct"),
+    ("act 2 sprites/nakamura adjust/smile", "smile"),
+    ("act 2 sprites/nakamura adjust/awkward", "awkward"),
+    ("act 2 sprites/nakamura adjust/neutral", "neutral"),
+    ("act 2 sprites/NAKAMURA/6 STRAIN", "strain"),
+    ("act 2 sprites/NAKAMURA/7 BOW", "bow")
+]
+
+karla = [
+    # suit
+    ("act 2 sprites/Karla/SUIT/1 KARLA SUIT SMILE", "basic_smile"),
+    ("act 2 sprites/Karla/SUIT/2 KARLA SUIT SMILE CLOSED", "basic_smileclosed"),
+    ("act 2 sprites/Karla/SUIT/3 KARLA SUIT SHEEPISH", "basic_sheepish"),
+    ("act 2 sprites/Karla/SUIT/4 KARLA SUIT SHEEPISH CLOSED", "basic_sheepishclosed"),
+    ("act 2 sprites/Karla/SUIT/5 KARLA SUIT CHEERFUL", "basic_cheerful"),
+    ("act 2 sprites/Karla/SUIT/6 KARLA SUIT SMUG", "basic_smug"),
+    ("act 2 sprites/Karla/SUIT/7 KARLA SUIT TROUBLED", "basic_troubled"),
+    ("act 2 sprites/Karla/SUIT/8 KARLA SUIT DISPLEASED", "basic_displeased"),
+    ("act 2 sprites/Karla/SUIT/9 KARLA SUIT DISPLEASED CROSSED", "cross_displeased"),
+    ("act 2 sprites/Karla/SUIT/10 KARLA SUIT ANGRY", "basic_angry"),
+    ("act 2 sprites/Karla/SUIT/11 KARLA SUIT ANGRY CROSSED", "cross_angry"),
+    ("act 2 sprites/Karla/SUIT/12 KARLA SUIT LAUGH", "basic_laugh"),
+    ("act 2 sprites/Karla/SUIT/13 KARLA SUIT CONFUSED", "basic_confused"),
+    ("act 2 sprites/Karla/SUIT/14 KARLA SUIT SERIOUS", "basic_serious"),
+    ("act 2 sprites/Karla/SUIT/15 KARLA SUIT SPEAK", "basic_speak"),
+    ("act 2 sprites/Karla/SUIT/16 KARLA SUIT DISTANT", "basic_distant"),
+    ("act 2 sprites/Karla/SUIT/17 KARLA SUIT PONDER", "basic_ponder"),
+    ("act 2 sprites/Karla/SUIT/18 KARLA SUIT PONDER CROSSED", "cross_ponder"),
+    ("act 2 sprites/Karla/SUIT/19 KARLA SUIT WORRIED", "basic_worried"),
+    # casual
+    ("act 2 sprites/Karla/CASUAL/1 KARLA CASUAL SMILE", "basic_smile_cas"),
+    ("act 2 sprites/Karla/CASUAL/2 KARLA CASUAL SMILE CLOSED", "basic_smileclosed_cas"),
+    ("act 2 sprites/Karla/CASUAL/3 KARLA CASUAL SHEEPISH", "basic_sheepish_cas"),
+    ("act 2 sprites/Karla/CASUAL/4 KARLA CASUAL SHEEPISH CLOSED", "basic_sheepishclosed_cas"),
+    ("act 2 sprites/Karla/CASUAL/5 KARLA CASUAL CHEERFUL", "basic_cheerful_cas"),
+    ("act 2 sprites/Karla/CASUAL/6 KARLA CASUAL SMUG", "basic_smug_cas"),
+    ("act 2 sprites/Karla/CASUAL/7 KARLA CASUAL TROUBLED", "basic_troubled_cas"),
+    ("act 2 sprites/Karla/CASUAL/8 KARLA CASUAL DISPLEASED", "basic_displeased_cas"),
+    ("act 2 sprites/Karla/CASUAL/9 KARLA CASUAL DISPLEASED CROSSED", "cross_displeased_cas"),
+    ("act 2 sprites/Karla/CASUAL/10 KARLA CASUAL ANGRY", "basic_angry_cas"),
+    ("act 2 sprites/Karla/CASUAL/11 KARLA CASUAL ANGRY CROSSED", "cross_angry_cas"),
+    ("act 2 sprites/Karla/CASUAL/12 KARLA CASUAL LAUGH", "basic_laugh_cas"),
+    ("act 2 sprites/Karla/CASUAL/13 KARLA CASUAL CONFUSED", "basic_confused_cas"),
+    ("act 2 sprites/Karla/CASUAL/14 KARLA CASUAL SERIOUS", "basic_serious_cas"),
+    ("act 2 sprites/Karla/CASUAL/15 KARLA CASUAL SPEAK", "basic_speak_cas"),
+    ("act 2 sprites/Karla/CASUAL/16 KARLA CASUAL DISTANT", "basic_distant_cas"),
+    ("act 2 sprites/Karla/CASUAL/17 KARLA CASUAL PONDER", "basic_ponder_cas"),
+    ("act 2 sprites/Karla/CASUAL/18 KARLA CASUAL PONDER CROSSED", "cross_ponder_cas"),
+    ("act 2 sprites/Karla/CASUAL/19 KARLA CASUAL WORRIED", "basic_worried_cas")
+]
+
+hiroyuki = [
+    ("act 2 sprites/HIROYUKI/BOW", "bow"),
+    ("act 2 sprites/HIROYUKI/RAISED EYEBROW", "eyebrow"),
+    ("act 2 sprites/HIROYUKI/SMILE", "smile"),
+    ("act 2 sprites/HIROYUKI/SPEAK", "speak"),
+    ("act 2 sprites/HIROYUKI/STERN", "stern"),
+    ("act 2 sprites/HIROYUKI/STRAINED", "strained"),
+    ("act 2 sprites/HIROYUKI/THINKING", "thinking")
+]
+
 def main():
     import sys
 
@@ -178,7 +276,7 @@ def main():
         if arg.startswith("--replace="):
             chars = arg[10:].lower()
             if chars == "all":
-                replace.extend(["hisao", "takawa", "naomi", "natsume", "hanako"])
+                replace.extend(["hisao", "takawa", "naomi", "natsume", "hanako", "jun", "nakamura", "karla", "hiroyuki"])
             else:
                 replace.extend(chars.split(","))
     
@@ -187,6 +285,8 @@ def main():
     replace_naomi = "naomi" in replace
     replace_natsume = "natsume" in replace
     replace_hanako = "hanako" in replace
+    replace_jun = "jun" in replace
+    replace_nakamura = "nakamura" in replace
 
     for entry in hisao:
         if "Nak" not in entry[0]:
@@ -208,6 +308,14 @@ def main():
 
     for entry in hanako:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hanako/close/hanako_{entry[1]}_close.png", replace=replace_hanako, crop=(0, 272, 878, 1614), target_height=1080)
+    
+    for entry in jun:
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/jun_{entry[1]}.png", replace=replace_jun, crop=(127, 18, 833, 1807), target_height=1020)
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/close/jun_{entry[1]}_close.png", replace=replace_jun, crop=(127, 18, 833, 1200), target_height=1080)
+    
+    for entry in nakamura:
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/nakamura_{entry[1]}.png", replace=replace_nakamura, crop=(0, 108, 1200, 1690), target_height=1050)
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/close/nakamura_{entry[1]}_close.png", replace=replace_nakamura, crop=(0, 108, 1200, 1188), target_height=1080)
     
 if __name__ == "__main__":
     main()
