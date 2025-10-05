@@ -86,6 +86,7 @@ init 1 python:
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
+    sh_sprites("nakamura", ["awkward", "bow", "instruct", "neutral", "smile", "speak", "strain", "thinking"])
 
     phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo", "basic_cheerful", "basic_lost", "basic_angry"])
     phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)

@@ -211,7 +211,8 @@ nakamura = [
     ("act 2 sprites/nakamura adjust/awkward", "awkward"),
     ("act 2 sprites/nakamura adjust/neutral", "neutral"),
     ("act 2 sprites/NAKAMURA/6 STRAIN", "strain"),
-    ("act 2 sprites/NAKAMURA/7 BOW", "bow")
+    ("act 2 sprites/NAKAMURA/7 BOW", "bow"),
+    ("act 2 sprites/nakamura adjust/thinking", "thinking")
 ]
 
 karla = [

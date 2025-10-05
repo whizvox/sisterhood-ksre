@@ -19,10 +19,10 @@ label sh_ch20:
         nvl clear
         
         n "I'm currently the only person in class right now, except for the trainer. Everyone was present during the first three days, but the day afterwards, only Yuuko, a staff member whose name I forgot, and I were there, the three of us obviously being the only ones completely new at this."
-        n "And today, the last day of the training, it's just me. Mister Nakamura took the opportunity this morning to make good on his promise and give me a private course through the chapter I skipped earlier this week."
-        n "That being the chapter about burns and how to act in situations like someone's clothes catching fire or coming into contact with boiling water. The fact nobody else was in the room was probably the reason I didn't run out, lock myself in my room and hide under my bed."
-        n "{vspace=60}Even so, I felt utterly miserable and ready to start screaming throughout the whole ordeal and was happy Nakamura did his best to go through it as quickly as possible without showing pictures or going into any more detail than absolutely necessary."
-        n "{vspace=60}Now I'm busy taking a few small written tests to see how much of the whole thing stuck in there."
+        n "And today, the last day of the training, it's just me. Mister Nakamura took the opportunity this morning to make good on his promise and give me a private course through the chapter I skipped earlier this week—that being the chapter about burns and how to act in situations like someone's clothes catching fire or coming into contact with boiling water."
+        n "The fact nobody else was in the room was probably the reason I didn't run out, lock myself in my room and hide under my bed."
+        n "{vspace=30}Even so, I felt utterly miserable and ready to start screaming throughout the whole ordeal and was happy Nakamura did his best to go through it as quickly as possible without showing pictures or going into any more detail than absolutely necessary."
+        n "{vspace=30}Now I'm busy taking a few small written tests to see how much of the whole thing stuck in there."
 
         nvl hide dissolve
 
@@ -80,7 +80,7 @@ label sh_ch20:
         ha "M-my best friend's p-parents live there. She's visiting them, and we're a-allowed to come along."
         nak "Well, I hope you'll have fun."
 
-        show nakamura speak
+        show nakamura neutral
         with chchange
 
         nak "By the way, could you check out page 156 of your binder?"
@@ -97,8 +97,8 @@ label sh_ch20:
         "The trainer takes out a handkerchief, wipes his forehead, then smiles at me."
         nak "You're welcome."
 
-        show nakamura strain
-        with charachangealways
+        hide nakamura
+        with charaexit
 
         "I start to casually browse through the binder, not really reading but mostly keeping myself busy."
         "As I look up, I can see Nakamura is again wiping his forehead."
@@ -110,8 +110,16 @@ label sh_ch20:
 
         ha "Ummm… A-are you… o-okay?"
         "He lets out a chuckle in order to dismiss the matter."
+
+        show nakamura awkward
+        with charaenter
+
         nak "I'm fine. I might be coming down with something. My luck, of course. Right around the start of my own summer break."
         "He slowly gets up, an uncomfortable expression still on his face."
+
+        show nakamura strain
+        with charachangealways
+
         nak "I… think I'm going to take a small bathroom break. I'll be right back. Could you open the window in the meantime? Let in some fresh air?"
         ha "S-sure."
 
@@ -150,6 +158,9 @@ label sh_ch20:
         "I guess I can't leave him alone."
         "Doing my best to righten his head, I suddenly remember the first step of the drills I've done."
         "Putting two fingers beneath his jaw, I {i}think{/i} I can feel a pulse."
+
+        play sound sfx_heartslow
+
         "Of course, it's almost impossible to be sure with my own heart pounding like a jackhammer, but it's a small relief."
         "Putting my ear to his mouth, I can't hear any breathing, though. Am I supposed to give him mouth-to-mouth or mouth-to-nose now?"
         "I really hate the idea of anyone's face but Hisao's getting close to mine—close enough to peek past my bangs and see the damage. Still, do I have a choice?"
@@ -158,8 +169,7 @@ label sh_ch20:
 
         hide black
         hide n_vignette
-        show nakamura strain_close
-        with charaenter
+        with dissolve
 
         stop music fadeout 2.0
 
@@ -221,6 +231,10 @@ label sh_ch20:
         nak "If you still have any questions for me, now would probably be a good time to ask. If not, I'm going to start packing up the dummies and get ready to head home."
         "I do have one question."
         ha "Umm…. W-were y-you enacting an actual h-heart a-attack just now?"
+
+        show nakamura neutral
+        with chchange
+
         nak "A little bit. Unlike what movies would like you to believe, heart attacks are rarely instantanous. But warning signs may vary from person to person."
         ha "Warning signs?"
         nak "You can find a list of the more common ones on page 34 of your binder. Though if you're currently thinking of your boyfriend, please be aware that what sent him to the hospital last time wasn't a traditional heart attack."
@@ -249,7 +263,7 @@ label sh_ch20:
         ha "And outside of the s-school?"
         nak "I'd like to suggest him getting an AED of his own at some point, but that's easier said than done. The one you've been practicing with this week costs as much as I pay in rent over the course of two months."
         nak "Still, in the long term, it'd be a good investment."
-        ha "A-Anything else?"
+        ha "A-anything else?"
 
         show nakamura smile
         with chchange
@@ -257,7 +271,7 @@ label sh_ch20:
         nak "Try not to worry too much, and don't forget to enjoy life. Compared to other heart conditions, people with your boyfriend's condition still tend to live fairly long lives. And new scientific discoveries are made every day."
         "That cheers me up a little."
         "I give him a tired smile and pick up my bag from my desk."
-        ha "T-Thank you… f-for everything."
+        ha "T-thank you… f-for everything."
         nak "Glad to be of service. Have fun in Scotland."
         ha "I w-will."
 

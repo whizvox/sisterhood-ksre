@@ -43,20 +43,28 @@ label sh_ch19:
         with charaenter
 
         "Just as I prepare to open my book again and use it to hide behind, a man in his mid thirties comes walking in with what appears to be another bodybag in his arms and a big backpack over his shoulder."
+
+        show nakamura bow
+        with chchange
+
         "He gets to our corner of the classroom, puts the bag and backpack on the floor, checks his watch and then walks up to the door and closes it. He walks over to us again, clears his throat and then makes a polite bow which we return."
 
-        show nakamura smile
+        show nakamura speak
         with chchange
 
         nak_ "Good morning everyone. I see it's nine o' clock right now, so I suggest we simply start now even though we're still one person short."
         nak_ "Allow me to introduce myself: my name is Kensuke Nakamura, and I am a first aid trainer employed at the nearby hospital. This is the fourth year I've been giving these courses here."
 
-        show nakamura speak
+        show nakamura instruct
         with chchange
 
         nak "The course planned for this week has been scheduled to take up five days, mostly because I intend to try and give all of you plenty of opportunity for additional practice, which is what we'll be concentrating on in the last two days."
         nak "Those of you who have participated in my training before and are merely brushing up can get by with only attending here until Wednesday."
         "I wonder how many of this group will remain after the first three days. I suppose private lessons on Thursday and Friday would be too much to hope for."
+
+        show nakamura speak
+        with chchange
+
         nak "Let me start by checking who's in attendance right now. Fujimoto."
         "Fujimoto" "Yes."
         nak "Hamasaki."
@@ -96,6 +104,10 @@ label sh_ch19:
 
         "The trainer gives a wink and then walks over to the large bags he lugged in here not too long ago. He opens them, and I can see I wasn't really far off the mark when I likened the bags to body bags."
         "Inside each bag is a large practice dummy, about the size of a regular person, each of them fully clothed."
+
+        show nakamura speak
+        with chchange
+
         nak "Unfortunately, I don't have enough of them for each of you to have your own dummy, so we're going to be working in pairs. Or rather, one group of three and two pairs."
 
         hide nakamura
@@ -123,10 +135,13 @@ label sh_ch19:
         "Of course, everyone in the room who knows Miss Yumi's occupation probably figured out my relationship with her in an instant, but I'm not particularly proud of the fact that I need therapy sessions, and I don't like it when other people bring them up."
 
         hide nomiya
-        show nakamura speak
-        with chchange
+        with charaexit
 
         "Mister Nakamura scrapes his throat and everyone sits down again."
+
+        show nakamura speak
+        with charaenter
+
         nak "Very well. Now that we've made pairings, I'd like to give a quick summary of what we'll be doing the upcoming days."
 
         show nakamura instruct
@@ -146,14 +161,21 @@ label sh_ch19:
         nak "I hope nobody's prone to fainting spells when they see blood."
         "I think I'll be okay."
 
-        show nakamura neutral
+        show nakamura speak
         with chchange
 
         nak "After that, we'll move on to emergency treatment of… erm…"
+
+        show nakamura thinking
+        with chchange
+
         "Strangely enough, Nakamura doesn't finish his sentence and seems unsure on how to proceed."
         "As I look at the others I can tell that I'm not the only one who's puzzled as to why he's suddenly stumbling at what should be an easy summary for anyone who's ever given a training before."
-        ha "(…the emergency treatment of…?)"
+        "…the emergency treatment of…?"
         "The trainer seems lost in thought for a moment, then gives a short shrug and proceeds."
+
+        show nakamura speak
+        with chchange
 
         stop music fadeout 2.0
 
@@ -171,6 +193,9 @@ label sh_ch19:
         "I feel a sharp shock slam through my body as if someone just walked up to me and pounded me in the chest with a sledgehammer, and I spring to my feet as if someone just hammered a nail through the bottom of my seat, my eyes widening in shock."
         "No wonder he was lost on how to continue. He was trying to figure out how he's going to spend an hour detailing the various degrees of burn wounds all the while a miserable exhibit A is sitting right in front of him."
         "Of course, my reaction draws the attention of the rest, merely contributing to the sense of panic that starts welling up inside me."
+        
+        play sound sfx_heartslow
+
         "As my hands start shaking uncontrollably, I am gripped by one all-consuming thought."
         "{i}I have to get out of here!{/i}"
         "Struggling to stay on my feet, I manage to stammer the only thing that pops into my head as I head for the exit…"
@@ -179,14 +204,16 @@ label sh_ch19:
         play sound sfx_impact
         with vpunch
 
+        hide n_vignette
+        hide black
+        with dissolve
+
         stop music fadeout 2.0
 
         "…only to nearly collide with someone who seems to be in as much of a hurry to get into the room as I am to get out of it."
 
-        hide black
-        hide n_vignette
         show yuuko cry_down
-        with dissolve
+        with charaenter
 
         yu "I'M SORRY!"
 
@@ -293,8 +320,8 @@ label sh_ch19:
         nak "Seeing that all eight of you are currently here, we can split into four pairs and we'll have just enough dummies for each group to use one."
         "I can see one of the people who formed a group of three head towards Yuuko, who turns to Mister Nakamura and raises her hand."
 
-        show yuuko smile_down:
-            xalign 0.9
+        show nakamura neutral at twoleft
+        show yuuko smile_down at tworight
         with charaenter
 
         yu "Teacher, would it be okay with you if I paired up with Ikezawa? We know each other fairly well."
@@ -346,19 +373,21 @@ label sh_ch19:
         nak "So, in short, in case of an accident or if anybody collapses in front of you, there are three simple steps. One, always call an ambulance. Two, check for vital signs, and do a quick checkup to see what can be done to stabilize a person's condition."
         nak "Three, perform the appropriate actions while waiting for the ambulance to arrive, and don't leave an injured person alone."
 
-        show nakamura neutral:
-            ypos 1.1
+        show nakamura neutral at sittingpos
         with charamovechangefaster
 
         "Beckoning us to watch his actions, he kneels down next to the dummy in the center of the room and places his fingers on its left wrist."
+
+        show nakamura speak
+        with chchange
+
         nak "First thing to do in case of an emergency is to see if the person is still responding and check for vital signs if that's not the case. Specifically, the victim's pulse and whether or not he's still breathing."
         nak "We can check a person's pulse by putting two fingers on this spot right here just beneath the victim's wrist joint. Or we can go for the spot here at the throat."
         "Pausing for a bit to make sure we all got the point, he then carefully moves the dummy's arm and leg a bit before rolling it on its side."
         nak "If the person has a pulse and is breathing, you'll want to put them in the recovery position like this. This'll make certain the victim can't suffocate on his own tongue or whatever it is he recently ate that might get vomitted back out."
         nak "Always watch the head. And be sure to remove or loosen any pieces of clothing that might hamper breathing."
 
-        show nakamura smile:
-            ypos 1.0
+        show nakamura smile at center
         with charamovechangefaster
 
         "He gets up and cracks his knuckles."
@@ -397,7 +426,7 @@ label sh_ch19:
         "Yuuko looks up at the trainer while rubbing her arms."
         yu "I-is that good or bad?"
 
-        show nakamura
+        show nakamura smile
         with chchange
 
         nak "It depends on whether the paramedics have already arrived on the scene or not. Movies like to pretend CPR involves pushing a victim's chest a few times and then they cough and get up good as new. But spontanous revivals are rare occurrances."
@@ -409,7 +438,7 @@ label sh_ch19:
         ha "I-I'll try."
 
         hide yuuko
-        show nakamura smile at center
+        show nakamura neutral at center
         with charachangealways
 
         play sound sfx_clap
@@ -426,7 +455,7 @@ label sh_ch19:
         hide nakamura
         with charaexit
 
-        "As I get up, I rub my sore arms. Those CPR practice sessions really made me wish I was more atlethic."
+        "As I get up, I rub my sore arms. Those CPR practice sessions really made me wish I was more athletic."
         "Still, aside from the rough start this morning, I think I learned a lot of valuable things. And Yuuko proved to be a pleasant, although panic-prone, partner."
 
         scene bg school_hallway2
