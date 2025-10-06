@@ -288,6 +288,7 @@ def main():
     replace_hanako = "hanako" in replace
     replace_jun = "jun" in replace
     replace_nakamura = "nakamura" in replace
+    replace_karla = "karla" in replace
 
     for entry in hisao:
         if "Nak" not in entry[0]:
@@ -315,8 +316,12 @@ def main():
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/close/jun_{entry[1]}_close.png", replace=replace_jun, crop=(127, 18, 833, 1200), target_height=1080)
     
     for entry in nakamura:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/nakamura_{entry[1]}.png", replace=replace_nakamura, crop=(0, 108, 1200, 1690), target_height=1050)
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/nakamura_{entry[1]}.png", replace=replace_nakamura, crop=(0, 108, 1200, 1690), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/close/nakamura_{entry[1]}_close.png", replace=replace_nakamura, crop=(0, 108, 1200, 1188), target_height=1080)
+
+    for entry in karla:
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/karla_{entry[1]}.png", replace=replace_karla, crop=(0, 126, 1050, 1846), target_height=1020)
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/close/karla_{entry[1]}_close.png", replace=replace_karla, crop=(0, 126, 1050, 1206), target_height=1080)
     
 if __name__ == "__main__":
     main()

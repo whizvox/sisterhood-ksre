@@ -22,15 +22,22 @@ label sh_ch23:
         "Especially the older buildings we pass feel extremely foreign to us. They serve as an unavoidable reminder, aside from the cab driver's incomprehensible dialect, how far away from Japan we are."
         hi "Shall we?"
 
-        show hanako emb_smile_ss
+        show hanako emb_smile_close_ss
+        show akira behind hanako
         with chchange
 
         "I playfully take Hanako's hand and place it on my arm similar to what Akira just did. Hanako giggles, wraps her arm around mine, and we start following Akira's lead."
+
+        hide hanako
+        hide akira
+        hide lilly
+        with charaexit
+
         "After less than a minute, we reach the entrance of what seems to be a bar."
 
         queue sound [sfx_camerashutter, sfx_camerashutter, sfx_camerashutter]
 
-        "Before we enter, Hanako turns around, pulls her photo camera from her bag and takes several pictures of the picturesque buildings lining the street."
+        "Before we enter, Hanako turns around, pulls her photo camera from her bag, and takes several pictures of the picturesque buildings lining the street."
 
         stop ambient fadeout 1.0
 
@@ -83,7 +90,7 @@ label sh_ch23:
         show akira basic_cheerful
         with chchange
 
-        aki "Heh, would you believe lots of those brands are new to me too? Fortunately I've had a taste of several ones during our last time here. You won't be disappointed."
+        aki "Heh, would you believe lots of those brands are new to me too? Fortunately, I've had a taste of several ones during our last time here. You won't be disappointed."
         "She beckons to the barkeeper and points to one of the bottles on the shelf behind him."
         "After the barkeeper finishes handing us all a glass, Lilly takes hers, sniffs carefully to take in its scent and then raises it with an appreciative smile."
 
@@ -94,15 +101,14 @@ label sh_ch23:
         li "I would like to perform a toast to my hard-working and wonderful sister, who has started working her way up the ranks here at head office. May her new job be met with great success and ample satisfaction. And may it be known that I admire and respect her very much."
 
         show hanako basic_smile
-        with chchange
+        with { "master": chchange }
 
-        hi "Cheers!"
-        ha "C-Cheers."
+        call screen doublespeak(hi, _("Cheers!"), ha, _("C-cheers."))
 
         show lilly basic_cheerful
         with chchange
 
-        "We raise our glasses, perform a toast and each take a sip. The slightly sweet taste of the white wine Akira has gotten us is surprisingly similar to what we had during Hanako's birthday party. Akira seems to have a knack for picking tasty drinks."
+        "We raise our glasses, perform a toast, and each take a sip. The slightly sweet taste of the white wine Akira has gotten us is surprisingly similar to what we had during Hanako's birthday party. Akira seems to have a knack for picking tasty drinks."
 
         show akira basic_sheepish
         with chchange
@@ -134,13 +140,14 @@ label sh_ch23:
         aki "Heh, from his reputation at the office I'd say he's still in the middle of that process. People seem to regard him as some kind of one-man army over there."
         li "You had better not become such a workaholic that our phone calls start getting phased out over it."
 
-        show akira basic_sweet
+        show akira basic_wistful
         with chchange
 
         "While Lilly's tone is playful, both she and Akira fall silent for a moment. Until now, it appears that they met up with one another whenever they could and contact took place on a regular basis."
         "When Lilly returns to Japan however, their contact will be limited to carefully timed international phone calls and there's no doubt in my mind that both of them are painfully aware of this right now."
         aki "Don't worry about that, Sis. I'll be sure to keep my priorities in order. Let's ditch the depressing thoughts tonight and have a good time."
 
+        show akira basic_sweet
         show lilly basic_surprised
         with chchange
 
@@ -161,7 +168,7 @@ label sh_ch23:
         "I don't think I'll be able to pull my weight here. I probably won't even understand the questions, let alone know much about what probably passes for common knowledge around here. Hanako seems a bit hesitant as well."
         hi "I think we'll pass. I noticed a pool table in the corner over there and Hanako still owes me a rematch after our last game in the jazz bar."
 
-        show hanako emb_downsmile
+        show hanako emb_smile
         with chchange
 
         "Hanako nods with a small smile, eager to get farther away from the din in the front area and have a small competition with me."
@@ -217,7 +224,7 @@ label sh_ch23:
         show akira basic_ponder
         with chchange
 
-        aki "After our parents left, we hired a housekeeper who stuck around for some time. "
+        aki "After our parents left, we hired a housekeeper who stuck around for some time."
         hi "And this housekeeper taught Lilly?"
         aki "At my request in exchange for a very generous bonus. I wanted some peace of mind. I wanted to be able to sleep peacefully at night and do my job without worrying all the time. The burden of responsibility was enough as it was."
         aki "I could have hired someone else. Heck, I could have easily hired two... Mom and Dad never really left us strapped us for cash. But..."
@@ -227,7 +234,7 @@ label sh_ch23:
         show akira basic_depressed
         with chchange
 
-        aki "I really hated still depending on our folks' money all the time—as if things were alright as long as they just kept paying."
+        aki "I really hated still depending on our folks' money all the time, as if things were alright as long as they just kept paying."
         aki "If we'd get independent enough for the two of us to get by without additional help, I wanted to shoot for that. And we reached that point eventually. Lilly was a very diligent pupil and a fast learner."
         "Akira seems aware of the fact that her own pride played a role in this whole thing and looks at the floor for a moment."
         "I quickly move in to fill the moment of silence."
@@ -275,7 +282,7 @@ label sh_ch23:
         aki "One player uses the white ball and one player uses the yellow one. You score points by hitting the other balls with your cue ball in various ways."
         aki "You get points for bumping the other balls into a pocket with your cue ball which is called a ‘winning hazard’ or by pocketing your own cue ball after contact with another ball which is called a ‘losing hazard’."
         aki "It's 3 points for moves involving the red ball and 2 points for moves involving the other player's cue ball."
-        aki "You also get points if you hit both other balls with your own cue ball in one shot. I believe they call that a...er..."
+        aki "You also get points if you hit both other balls with your own cue ball in one shot. I believe they call that a... er..."
 
         show lilly basic_cheerful
         with chchange
@@ -327,6 +334,9 @@ label sh_ch23:
         hi "I think it's best if we simply play until our time is up. Okay?"
         ha "Okay."
 
+        show hanako at twoleft
+        with charachangealways
+
         play sound sfx_billiards_break
 
         "Taking a moment to plan her move, Hanako shoots her cue ball forward and hits the red ball with considerable force, but then misses the yellow one by only a few centimeters."
@@ -347,19 +357,29 @@ label sh_ch23:
         show hanako basic_bashful
         with chchange
 
-        ha "Y-Yes."
+        ha "Y-yes."
+
+        show hanako at tworight
+        with charachangealways
+
         "I move the sliders on the scoreboard and watch Hanako lining up her shot. The expression on her face is that same mixture of concentration and relaxation she had during that last game of pool we played."
         "There are quite a few people in the pub at the moment, but now that the quiz has started, almost everyone is gathered in front of the stage on the other side of the room, and nobody seems to be paying us any attention."
         "I try to make out what the quiz host is saying, but can't really catch more than a few words here and there. We probably made the right decision in not going along with Lilly and Akira. The whole situation gives me a slight feeling of déjà vu."
         hi "This sure brings up memories, doesn't it? The four of us going out and Lilly and Akira doing their thing while the two of us spend the evening knocking billiard balls around."
 
+        play sound sfx_billiards
+
+        pause 0.5
+
         show hanako emb_downsmile
         with chchange
 
-        play sound sfx_billiards
-
         "As she hits her cue ball and bounces it off both other balls, I can see Hanako smile at the memory."
         ha "Let's h-hope this evening will b-be just as fun."
+
+        show hanako basic_smile at center
+        with charachangealways
+
         "I had fun at the time as well, though in a moment of naïvete, I also made a mistake that evening that nearly sank my chances with Hanako."
         "When I told her, while she was in the process of opening up to me, that I was happy to protect her, it was a remark said with nothing but the best intentions."
         "It wasn't until our confession in the park that I realized just how denigrating that must have sounded to her."
@@ -368,7 +388,7 @@ label sh_ch23:
         show hanako basic_worry
         with chchange
 
-        ha "W-What?"
+        ha "W-what?"
         "Hanako was preparing an attempt to pocket my cue ball with her own, but upon hearing my words she looks at me and gives me a confused look."
         "She thinks for a moment, then realizes what I was referring to."
 
@@ -398,7 +418,7 @@ label sh_ch23:
         ha "I... I'd like to have it sorted out before c-classes start again."
         hi "Do you have a general idea already?"
         "I've made an effort to come up with suggestions myself before, but it's kinda difficult because Hanako doesn't seem to have any subjects she naturally excels in, unlike Lilly and myself."
-        "However, also unlike Lilly and myself, Hanako doesn't have any subjects she's particularly bad at either. It's almost as if even Hanako's test scores are focussed on the purpose of not standing out. That does make planning a future a tricky activity."
+        "However, also unlike Lilly and myself, Hanako doesn't have any subjects she's particularly bad at either. It's almost as if even Hanako's test scores are focused on the purpose of not standing out. That does make planning the future a tricky activity."
         ha "Maybe."
 
         play sound sfx_billiards
@@ -410,9 +430,6 @@ label sh_ch23:
         with chchange
 
         "Hanako doesn't respond, but merely looks at me. I know that look on her face. It's her ‘quid pro quo’ expression."
-
-        play sound sfx_billiards
-
         hi "I'll tell you about my plans in return, okay?"
 
         show hanako basic_smile
@@ -428,6 +445,10 @@ label sh_ch23:
         ha "You're hoping to... c-come across a subject eventually that you feel a c-click with?"
         hi "That's the idea. Also, there are several universities in my hometown that offer wide selections of scientific studies and whose entrance exams I should be able to handle."
         hi "If I could make it into one of those, I could save on the costs of renting a dorm room on campus by moving back in with my parents. I have to be mindful of my family's financial situation."
+
+        show hanako at twoleft
+        with charachangealways
+
         "Hanako nods understandingly and prepares to finish the shot I failed to get right."
         hi "So how about you?"
 
@@ -436,7 +457,7 @@ label sh_ch23:
 
         ha "Ummm... Did you... like my article? About the science club?"
         hi "I loved it, and it seems like Mutou did too. Why?"
-        ha "Naomi wants m-me to write the next ones too."
+        ha "Naomi wants m-me to write the next ones, too."
         hi "Will you?"
         ha "Yes. The next one is about our own club, so I can use my own experience. There's no need to contact a teacher or club president, which makes it easier."
         "Personally, I'd still be at a loss on what exactly to write and how to word it. Writing essays was never my strong suit, but Hanako doesn't seem worried about that."
@@ -472,7 +493,7 @@ label sh_ch23:
         "Could it be the same with Hanako?"
         hi "To be honest, it comes a bit out of the blue. It's not anywhere near the direction I thought you'd be heading into."
 
-        show hanako basic_bashful
+        show hanako basic_bashful at center
         with chchange
 
         "Putting the balls back on the table, Hanako smiles meekly while preparing to strike her cue ball."
@@ -480,9 +501,14 @@ label sh_ch23:
         show hanako basic_distant
         with chchange
 
-        ha "Ummm... What d-direction did you{w=0.5}—AH!"
+        ha "Ummm... What d-direction did you{w=0.5}{nw}"
 
         play sound sfx_billiards_blunder
+
+        show hanako defarms_shock
+        with { "master": chchangefast }
+
+        extend "—AH!"
 
         "I'm having the impression Hanako's mind wasn't really into that last strike, since it's way too hard and as a result her cue ball flies off the table and rolls towards the bar, coming to a stop underneath one of the occupied barstools."
 
@@ -500,21 +526,21 @@ label sh_ch23:
         scene bg inverness_pubback
         with locationchange
 
-        "I put down my cue and walk over to the people seated at the bar. I can see a businesswoman, a redheaded man dressed like a tourist and an older woman wearing a rather expensive beige jacket."
+        "I put down my cue and walk over to the people seated at the bar. I can see a businesswoman, a redheaded man dressed like a tourist, and an older woman wearing a rather expensive beige jacket."
         "As I approach, the two women turn around and look me over."
         hi "{font=times}Ah... please excuse me.{/font}"
         "I instinctively bow before remembering that's not exactly a common practice in this country. I then bend down and reach out to grab Hanako's cue ball which has rolled under one of the women's barstools."
         "But before I can take the ball, I hear the occupant of the barstool clear her throat. With a puzzled look I get back up."
         "She gets off the barstool, reaches down, takes the ball and drops it into my hand."
 
-        # show karla smile
-        # with charaenter
+        show karla basic_smile
+        with charaenter
 
         ka_ "{font=times}There you are.{/font}"
         hi "{font=times}Thanks, but it really wasn't... necessary to...{/font}"
 
-        # show karla laugh
-        # with chchange
+        show karla basic_laugh
+        with chchange
 
         "The woman stops me with a gesture and gives me a mischievous smile."
         ka_ "{font=times}You were just… retrieving something you dropped, correct?{/font}"
@@ -526,8 +552,8 @@ label sh_ch23:
         hi "{font=times}I wasn't trying to...{/font}"
         "The bartender and the other woman both laugh as they watch me blush."
 
-        # show karla smile
-        # with chchange
+        show karla basic_smile
+        with chchange
 
         ka_ "{font=times}It's a joke, lad. I hope you're not angry.{/font}"
         "Not really knowing how to respond to her, I simply shake my head and walk back to the billiards table."
@@ -537,18 +563,29 @@ label sh_ch23:
         with locationchange
 
         hi "I had to go through a lot to get this back for you."
+
+        show hanako emb_smile_close
+        with characlose
+
         "Hanako smiles and plants a soft kiss on my cheek."
         ha "Thank you."
+
+        show hanako emb_smile
+        with charadistant
+
         "Since Hanako got a foul by striking a ball off the table, it's now my turn again. I retrieve my cue and take careful aim."
+        hi "By the way, what was it you were about to ask before you bounced that ball off the table?"
 
         show hanako basic_normal
         with chchange
 
-        hi "By the way, what was it you were about to ask before you bounced that ball off the table?"
         ha "Hmmm? Oh, I wanted to know... what direction you thought I h-had in mind for myself."
+
+        play sound sfx_billiards
+
         "I strike the cue ball and manage to hit both other balls, but my ball ends up resting against one of the edges of the table, making the next shot a tricky one."
-        hi "Well, my reasoning was that since you seem to handle computers pretty well you could perhaps try for a career in the IT sector. There's a pretty high demand for people with experience in that area."
-        "Not to mention the fact that that area also draws people with slightly less well-developed social skills, meaning Hanako would stand out less. I decide not to mention this though."
+        hi "Well, my reasoning was that since you seem to handle computers pretty well, you could perhaps try for a career in the IT sector. There's a pretty high demand for people with experience in that area."
+        "Not to mention the fact that that area also draws people with slightly less well-developed social skills, meaning Hanako would stand out less. I decide not to mention this, though."
         ha "I did... think about that. There's this girl at the n-newspaper club who does the editing together with me."
         hi "The girl with the large cast on her arm?"
 
@@ -578,9 +615,9 @@ label sh_ch23:
         "I look up and notice the patron who flustered me earlier standing next to the time clock. She must have put some coins of her own into the slot."
         "She gives us a friendly smile."
 
-        # show karla smile at tworight
-        # show hanako at twoleft
-        # with charaenter
+        show karla basic_smile at tworight
+        show hanako at twoleft
+        with charaenter
 
         ka_ "{font=times}To make up for {shader=wave:u__amplitude=2.0:u__frequency=0.5}????????? ?????{/shader}.{/font}"
         hi "{font=times}Ah, excuse me?{/font}"
@@ -593,14 +630,22 @@ label sh_ch23:
         "I briefly tell Hanako what happened when I went to retrieve her cue ball. Hanako looks a bit sheepish. I can tell she finds it somewhat amusing, but doesn't want to laugh since I went to get the ball back that she shot off the table."
         hi "I have no idea if this is the famed British humor or if this person is just plain weird."
 
+        show karla basic_cheerful
         show hanako cover_distant
         with chchange
 
         "The patron watches our conversation with an amused expression, though she obviously can't understand what we're saying."
+
+        show karla basic_speak
+        with chchange
+
         "When we stop talking, she shrugs her shoulders."
         ka_ "{font=times}Well... it... was a rather bold action.{/font}"
         hi "{font=times}Sorry... err... We're on... vacation here. My English... is not very... good.{/font}"
-        "This gets her to smile."
+
+        show karla basic_smile
+        with chchange
+
         ka_ "{font=times}It's not that bad. I can understand you well. Your… pronunciation is good.{/font}"
         hi "{font=times}That's... ah... good.{/font}"
         "I'm finding her rather easy to comprehend compared to most people here, and suddenly I realize why."
@@ -611,36 +656,34 @@ label sh_ch23:
         ka_ "Or maybe I should speak in Japanese instead. It'll probably make it easier for us to understand one another."
 
         show hanako def_shock
-        with chchangefast
+        with chchange
 
         "Both Hanako and I gasp in surprise since that last statement was delivered in accented but otherwise completely fluent Japanese."
-        hi "Y-Y-You speak Japanese?"
+        hi "Y-y-you speak Japanese?"
 
-        # show karla laugh
-        # with chchange
+        show karla basic_laugh
+        with chchange
 
         "The woman allows herself a brief laugh at our astonishment."
-        ka_ "Hmm hmmm. I've lived in Japan for over 20 years. "
+
+        show karla basic_cheerful
+        with chchange
+
+        ka_ "Hmm hmmm. I've lived in Japan for over 20 years."
 
         show hanako def_worry
+        show karla basic_smile
         with chchange
 
         "The woman makes a polite bow."
         ka_ "I'm very honored to meet my daughter's best friends."
         hi "Are you...?"
-
-        show hanako at twoleft
-        with charaenter
-
-        show karla smile at tworight
-        with Dissolve(1.0)
-
         ka_ "...Lilly's and Akira's mother? I am. Here in Scotland we're not as formal as people are in Japan. Would you mind if I address the two of you by your first names while you're here?"
         "I share a quick look with Hanako, who is still trying to digest what just happened and can only manage a flabbergasted nod."
         "When in Rome..."
         hi "Err... That's okay."
 
-        show karla basic_smile_suit
+        show karla basic_cheerful
         with chchange
 
         "The woman smiles broadly and extends her hand."
@@ -653,7 +696,7 @@ label sh_ch23:
         "After a subtle nod in her direction, Hanako remembers to follow my example and hesitantly sticks out her hand for a handshake as well."
         hi "Karla?"
 
-        show karla basic_cheerful_suit
+        show karla basic_smile
         with chchange
 
         ka "Yes. Karla Satou."
@@ -665,14 +708,14 @@ label sh_ch23:
         ka "It seems I caught you two by surprise. Didn't Lilly tell you that I'd be picking you up tonight?"
         hi "She did mention we'd get ‘private transport’, but I didn't expect anyone to turn up this early. I also wasn't quite sure what either of you looked like."
 
-        show karla basic_sheepish_suit
+        show karla basic_sheepish
         with chchange
 
         ka "I suppose I did get here sooner than initially planned. I was getting a bit tired of courting investors, and my husband and the colleague who was with us seemed to be handling things fine without my input."
         ka "I was already slated to leave early in order to pick all of you up, so I figured I could be missed for a little while longer. I don't get many opportunities to see my two daughters together."
 
         show hanako emb_timid
-        show karla basic_smile_suit
+        show karla basic_serious
         with chchange
 
         "She gives the two of us a long analyzing look that makes Hanako fidget nervously."
@@ -680,42 +723,37 @@ label sh_ch23:
         hi "You look quite a bit more like your youngest daughter than I imagined."
 
         show hanako basic_normal
-        show karla basic_smileclosed_suit
+        show karla basic_smileclosed
         with chchange
 
         "She chuckles modestly."
-        ka "I'll take that as a compliment."
-        "My words were more an honest appraisal than an attempt at flattery. I can instantly tell that Lilly gets most of her looks from her mother."
-        "Karla Satou is a tall woman, probably as tall or even slightly taller than Lilly with a similar figure and similar wavey, blonde hair, although I can spot a slight streak of grey near the roots."
-        "Her eyes are deep blue like Lilly's, but unlike Lilly's cloudy and unreadable stare, Karla's eyes have a sharp and curious gaze to them, and I can see a twinkle in there that I've seen in Akira's eyes as well."
-        "While looking just as formal, Karla's attire looks a lot more feminine than Akira's office clothing. She must be in her fifties already, but she's still quite good-looking."
-        "Unlike Lilly, who has a rather pale complexion, Karla has a rather obvious tan, suggesting she's an outdoor person. It would explain her rather fit and healthy appearance."
-        hi "Do Lilly and Akira know that you're here already?"
 
-        show karla basic_smile_suit
+        show karla basic_smile
         with chchange
 
+        ka "I'll take that as a compliment."
+        "My words were more an honest appraisal than an attempt at flattery. I can instantly tell that Lilly gets most of her looks from her mother."
+        "Her eyes are deep blue like Lilly's, but unlike Lilly's cloudy and unreadable stare, Karla's eyes have a sharp and curious gaze to them, and I can see a twinkle in there that I've seen in Akira's eyes as well."
+        "She must be in her fifties already, but she's still quite good-looking. Unlike Lilly, who has a rather pale complexion, Karla has a rather obvious tan, suggesting she's an outdoor person. It would explain her rather fit and healthy appearance."
+        hi "Do Lilly and Akira know that you're here already?"
         ka "They do. I made sure Akira spotted me when I came in here. Unfortunately I can't just walk up to them to say hello while the pub quiz is still going on. People might think I'm feeding answers to my daughters."
         ka "So until that quiz is finished, it'll be just the three of us—if you don't mind some company while playing billiards, that is. I promise not to intrude."
 
-        show karla basic_smug_suit
+        show karla basic_laugh
         with chchange
 
         ka "I can even retrieve stray cue balls for you if you like."
         "{i}Ouch!{/i}"
-
-        show karla basic_smileclosed_suit
-        with chchange
-
         hi "I... don't mind."
 
+        show karla basic_cheerful
         show hanako basic_worry
         with chchange
 
-        ha "M-Me neither."
+        ha "M-me neither."
         ka "Wonderful. I'll go and get my beer from the bar. Can I get you two anything to drink? It's on me."
         hi "Really? Could you please get me an orange juice then?"
-        ha "F-For me too, please."
+        ha "F-for me too, please."
         ka "Coming up."
 
         hide karla
@@ -737,34 +775,41 @@ label sh_ch23:
 
         ha "Let's play again."
 
-        show karla basic_sweet_suit at tworight
+        show karla basic_smile at tworight
         with chchange
 
         "As we put the balls in position, Karla comes back and places two glasses on the edge of the billiards table."
 
         show hanako basic_bashful
+        show karla basic_speak
         with chchange
 
         ka "Lilly told me the flight was kind of a taxing experience. Have you two gotten your bearings back already?"
         hi "I'm still suffering from jetlag, but I'm pretty well-rested right now. The accommodations have been really good."
+
+        show karla basic_smile
+        with chchange
+
         "Karla smiles appreciatingly."
         ka "Don't hesitate to ask if you need anything. If I'm not around, feel free to approach the staff. I take it you've met Allison?"
         hi "We have. She's a very good cook."
 
-        show karla basic_smileclosed_suit
+        show karla basic_smileclosed
         with chchange
 
         ka "She is. If you get homesick, be sure to ask her to cook up some Japanese meals. She may not speak your language, but she knows a truckload of Japanese recipes. She {i}is{/i} employed by my husband after all. And don't be afraid to ask her if you need anything else."
         "It's nice to hear we're essentially having our own private restaurant. This vacation just keeps getting better and better."
 
-        show karla basic_smile_suit
-        with chchange
+        hide hanako
+        hide karla
+        with charaexit
 
         "Hanako and I resume our game, and true to her word, Karla mostly goes back and forth between watching our game and listening to the quiz host's questions without making a lot of conversation aside from occasional small talk."
         "We hear the buzzer again after what turned out to be an intense neck-and-neck race, and I let out a sigh as I realize that I'm a handful of points behind Hanako."
         hi "Well, at least we kept the suspense going until the very end."
 
-        show hanako basic_smile
+        show hanako basic_bashful at twoleft
+        show karla basic_smile at tworight
         with chchange
 
         "Hanako permits herself to show a proud little smile."
@@ -772,32 +817,36 @@ label sh_ch23:
         ka "I guess you two are even now, huh?"
         "Karla picks up the balls and puts them back on top of the time clock device, shutting down the annoying buzz."
         hi "We are. We may need a third game to break the tie."
+
+        show karla basic_serious
+        with chchange
+
         "Hanako's expression tells me she'd be up for that, but Karla motions toward the front area and I notice the quizmaster is no longer on stage."
         ka "You might want to wait with that for a moment. It looks like they're checking everyone's answers right now. We'll probably hear who has won in a few minutes."
         hi "I wonder how they did."
         ka "What team name did they come up with?"
         hi "Team name?"
 
-        show karla basic_sheepish_suit
+        show karla basic_sheepish
         with chchange
 
         ka "Not familiar with pub quizzes, are you? It's sort of a tradition for each participating team to think up a creative name. Like erm... ‘Knuckleheads’ or ‘Intellectually Challenged’ or ‘B for Dyslexic’. That sort of thing."
         hi "They've probably picked one without us. We'll just have to see."
 
-        show karla basic_smile_suit
+        show karla basic_smile
         with chchange
 
         "Knowing Lilly, it might very well be a play on blindness of some kind... That'd be the sort of thing she'd do, though that wouldn't apply to Akira, so maybe they went with something else."
         "Suddenly the quizmaster gets back on stage and gives a few taps on the microphone in order to make clear he has something to say."
         "I try my hardest to make out what he's saying, but his accent and our distance from the stage make that somewhat of a lost cause. Lilly's mom seems to read my mind."
 
-        show karla basic_cheerful_suit
+        show karla basic_cheerful
         with chchange
 
         ka "Right now he's simply thanking everyone for participating. The people who came in third will get a free drink, the ones in second place will get three free drinks, and the winners will get a special prize."
         hi "And what would that be?"
 
-        show karla basic_sweet_suit
+        show karla basic_smile
         with chchange
 
         ka "Usually just drinks. This is a pub after all."
@@ -806,7 +855,7 @@ label sh_ch23:
 
         "The quizmaster makes an enthusiastic gesture, and the people in the room burst into applause at his words."
 
-        show karla basic_smile_suit
+        show karla basic_smileclosed
         with chchange
 
         ka "Third place goes to ‘The Masters of Romance’. I don't think that's them."
@@ -816,13 +865,13 @@ label sh_ch23:
 
         "Another announcement from the quizmaster and another applause follows."
 
-        show karla basic_smug_suit
+        show karla cross_angry
         with chchange
 
         ka "Second place goes to ‘The Master Baiters’. That had {i}better{/i} not be them."
         hi "Naw. Lilly's too classy for that."
 
-        show karla basic_cheerful_suit
+        show karla basic_cheerful
         with chchange
 
         play sound sfx_applause
@@ -833,7 +882,7 @@ label sh_ch23:
         scene bg inverness_pubdoor
         with locationchange
 
-        "Sure enough, I can see Akira and Lilly getting up as a thunderous applause fills the room. Karla, Hanako and I are happy to join in with the applauding crowd."
+        "Sure enough, I can see Akira and Lilly getting up as a thunderous applause fills the room. Karla, Hanako, and I are happy to join in with the applauding crowd."
         "Akira takes Lilly's hand and carefully guides her up the stage."
         hi "That’s pretty amazing. Two people who’ve lived in Japan their entire life beating what’s probably a bunch of locals."
         ka "Heh, the questions they use here are never about local tidbits during the summer break. Gotta give the tourists a fair chance, after all. It’s still impressive though."
@@ -851,10 +900,10 @@ label sh_ch23:
         "Knowing that Akira will eventually go back to where she left us, I decide to stay near the billiards table rather than meeting the sisters in the middle of a noisy crowd."
 
         scene bg inverness_pubbilliards
-        show hanako basic_smile at right
-        show lilly cane_smileclosed at left
-        show akira basic_smug at twoleft
-        show karla basic_smile_suit at tworight
+        show hanako basic_smile at left
+        show karla basic_smile behind hanako at twoleft
+        show lilly cane_smileclosed at tworight
+        show akira basic_smug at right
         with locationchange
 
         stop sound fadeout 1.0
@@ -892,7 +941,7 @@ label sh_ch23:
 
         li "I wonder..."
 
-        show karla basic_angry_suit
+        show karla cross_angry
         with chchange
 
         "I'm sure I know what Lilly's thinking. I'm not sure how serious she is, but I can see her mother's eyes narrowing."
@@ -922,7 +971,7 @@ label sh_ch23:
         "Lilly doesn't answer immediately. I know from experience that she has a habit of carefully choosing her words before speaking, but the slight delay seems to annoy Karla a bit."
         li "I admit it might be a little bit irresponsible."
 
-        show karla basic_annoyed_suit
+        show karla basic_serious
         with chchange
 
         "Karla shrugs her shoulders."
@@ -935,7 +984,7 @@ label sh_ch23:
         "No carefully considered reply this time. Lilly seems to recognize the importance of quickly denying Karla's suggestion. I wouldn't be surprised if Lilly's mother thinks that Lilly never even drank alcohol before."
 
         show akira basic_ending
-        show karla basic_smile_suit
+        show karla basic_smile
         with chchange
 
         "Akira grins an amused grin before coming to her sister's rescue."
@@ -947,7 +996,7 @@ label sh_ch23:
 
         li "Would that be acceptable, Mother? There's still a toast I have to perform when we get back."
 
-        show karla basic_sweet_suit
+        show karla basic_smileclosed
         with chchange
 
         "Karla considers it for a moment and then gives a resigned nod."

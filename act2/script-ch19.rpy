@@ -456,7 +456,7 @@ label sh_ch19:
         with charaexit
 
         "As I get up, I rub my sore arms. Those CPR practice sessions really made me wish I was more athletic."
-        "Still, aside from the rough start this morning, I think I learned a lot of valuable things. And Yuuko proved to be a pleasant, although panic-prone, partner."
+        "Still, aside from the rough start this morning, I think I learned a lot of valuable things. And Yuuko proved to be a pleasant, although panic-prone partner."
 
         scene bg school_hallway2
         show yuuko happy_down
