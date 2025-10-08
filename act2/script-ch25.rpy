@@ -8,7 +8,7 @@ label sh_ch25:
 
         "I wish I was dead."
         "Was it this bad the last time?"
-        "It might have been but there's no way to know for sure. Even digging through my memory feels like smashing my head into a wall."
+        "It might have been, but there's no way to know for sure. Even digging through my memory feels like smashing my head into a wall."
         "Or into a pile of broken glass."
         "Or into a wall with broken glass embedded in it."
 
@@ -21,46 +21,51 @@ label sh_ch25:
         nvl show dissolve
 
         n "I grit my teeth as I try to bear the painful pounding inside my head. It doesn't really help, although I am getting slightly more aware of my surroundings."
-        n "I notice a lot of light around me. A painful lot of light. Too much light. I roll onto my back, use both hands to shield my eyes, and carefully open them."
+        n "I notice a lot of light around me."
+        n "A painful lot of light."
+        n "Too much light."
+        n "{vspace=30}I roll onto my back, use both hands to shield my eyes, and carefully open them."
         n "Even the small rays of light slipping through the cracks between my fingers manage to hurt my eyes, but I nevertheless keep them open. Eventually my vision has adapted enough for me to look around the room through squinted eyes."
-        n "{vspace=60}The torturing light turns out to be sunlight from the nearby window. My eye falls on the nearby curtain. If I could get to that curtain and close it that would make things a lot more bearable."
-
+        
         nvl clear
 
+        n "The torturing light turns out to be sunlight from the nearby window. My eye falls on the nearby curtain. If I could get to that curtain and close it that would make things a lot more bearable."
+        n "..."
         n "Damnit."
         n "Of course, the curtain's too far to close from where I'm lying, so I'll have to get out of the bed and make my way over there, which is easier said than done. My arms and legs feel like someone snuck up to me in my sleep and injected lead into my veins."
         n "I really don't want to get out of bed, but that light isn't going away by itself."
-        n "{vspace=60}I manage to make my way to the edge of the bed, but as I prepare to step out of the bed I notice that something is somehow keeping my legs stuck together."
+        n "{vspace=30}I manage to make my way to the edge of the bed, but as I prepare to step out of the bed, I notice that something is somehow keeping my legs stuck together."
 
         nvl clear
 
         play sound sfx_rustling
 
-        n "I pull away the covers just a little bit so my feet become visible and I notice that I'm still wearing my socks and that my boxers and pants are around my ankles. I groan softly in exasperation."
+        n "I pull away the covers just a little bit so my feet become visible. I notice that I'm still wearing my socks, and my boxers and pants are still around my ankles. I groan softly in exasperation."
         n "The way I'm feeling right now, even the effort of having to pull up my pants and underwear comes across as an excruciating task. Still, I'll have to do it if I want to make it over to the window."
-        n "{vspace=30}Trying my hardest to ignore my body's protests, I manage to sit up, reach out and pull up my pants. The window is only four to five steps away, but it feels more like fifty."
+        n "{vspace=30}Trying my hardest to ignore my body's protests, I manage to sit up, reach out, and pull up my pants. The window is only four to five steps away, but it feels more like fifty."
         n "When I finally reach the window, I give a sharp pull on the curtain and sigh as the lighting in the room dims."
         n "{vspace=60}It does little to diminish the throbbing sensation under my skull, but I do feel a bit of relief now that I can open my eyes without getting the sensation of someone rubbing them in with pepper extract."
 
         nvl clear
 
         n "Now that I can look around the room without squinting, I notice a motionless form on the bed. I faintly recall waking up partially lying on top of something warm and soft before rolling onto my back."
-        n "Hanako's still largely covered by the bedsheets, but I can see her long dark hair stick out on one end and her socks and pants sticking out at the other end."
-        n "I let out another soft groan. It hurts to think too much right now, but I manage to remember just enough of last night's events to blush a bit."
+        n "{vspace=60}Hanako's still largely covered by the bedsheets, but I can see her long dark hair stick out on one end and her socks and pants sticking out at the other end."
+        n "{vspace=60}I let out another soft groan. It hurts to think too much right now, but I manage to remember just enough of last night's events to blush a bit."
 
         nvl clear
 
         n "Despite feeling sick and exhausted, I hesitate to get back between the sweat-soaked sheets and opt to take a quick shower instead."
         n "The warm water running over me feels good, although it does less to ease my hangover than I was hoping for. It does ease my hurting brain a bit, allowing me to think back on last night's events."
-        n "{vspace=60}It's not the first time a few drinks have left Hanako a bit clingy, but it's definitely the first time she's gone this far. It's not like I've been acting like the adult in the room though."
+        n "{vspace=60}It's not the first time a few drinks have left Hanako a bit clingy, but it's definitely the first time she's gone this far. It's not like I've been acting like the adult in the room, though."
         n "After last time, I thought I'd be able to handle Hanako just fine, even if she got like this. But now it turns out that that Hanako is able to handle me just fine as well."
         
         nvl clear
 
         n "I get out of the shower, not really feeling any better but certainly feeling more awake. I still have a headache and feel rather exhausted. While it took me very little time to fall asleep, my sleep was restless for most of the night."
-        n "I wonder if getting back into bed will be a good idea. I take a look at Hanako who's still lying on her stomach in exactly the same position as before and probably hasn't moved a muscle since I went to take my shower."
+        n "I wonder if getting back into bed will be a good idea."
+        n "I take a look at Hanako who's still lying on her stomach in exactly the same position as before and probably hasn't moved a muscle since I went to take my shower."
         n "I faintly remember pretty much collapsing on top of her last night and somehow managing to get my hands on a sheet to pull over us."
-        n "{vspace=30}Under other circumstances, I'd have no seconds thoughts about getting back in bed. Hanako's sleepy smile in the morning is one of the most beautiful things in the world to wake up to."
+        n "{vspace=30}Under other circumstances, I'd have no second thoughts about getting back in bed. Hanako's sleepy smile in the morning is one of the most beautiful things in the world to wake up to."
         n "This morning, however, it's pretty likely she'll feel as queasy as I’m feeling right now, and I'm not so sure how she'll react to the memory of last night's events, but smiling about the whole thing will probably be the least likely reaction."
         
         nvl hide dissolve
@@ -69,7 +74,7 @@ label sh_ch25:
 
         play sound sfx_dooropen
 
-        "With some effort, I put on some clothes, unlock the door and leave our room."
+        "With some effort, I put on some clothes, unlock the door, and leave our room."
 
         scene bg satou_stairs
         with locationchange
@@ -77,13 +82,14 @@ label sh_ch25:
         "As I close our bedroom door behind me, I realize I'm not even sure what to do now. I find that I even lack the energy to think up ways to keep busy."
         "The pounding feeling inside my head has subsided to give way to a still slightly unpleasant throbbing, and my throat is unusually dry. I wonder if I'd be allowed to get something to drink from the fridge."
 
-        stop music fadeout 2.0
+        stop music fadeout 4.0
 
         # TODO play Concord (refined) cello ver.
         queue music music_lilly fadein 6.0
         $ renpy.music.set_volume(0.5)
 
-        "While searching the kitchen for snacks last night, I remember having seen several bottled drinks there. While making my way down the staircase, I slowly become aware of music coming from somewhere in the house."
+        "While searching the kitchen for snacks last night, I remember having seen several bottled drinks there."
+        "Making my way down the staircase, I slowly become aware of music coming from somewhere in the house."
         "As I stop to listen, I realize that I've heard both that song and that instrument before."
 
         scene bg satou_livingroom
@@ -119,7 +125,7 @@ label sh_ch25:
         "Eventually, the song ends, and I think about clapping for a moment, but then decide that the noise would probably hurt my brain and settle for an appreciative bow."
         hi "That sounded good. Is it a Scottish piece?"
 
-        show karla basic_wistful_cas
+        show karla basic_smile_cas
         with chchange
 
         "Karla shakes her head."
@@ -142,8 +148,22 @@ label sh_ch25:
 
         ka "‘Awake’ is probably stretching the definition."
         
-        show lilly basic_sleepy at twoleft
-        with chchange
+        show lilly basic_sleepy:
+            xpos 0.3 xanchor 0.5 yanchor 0.5 ypos 1.0 alpha 0.0
+        with None
+        show lilly:
+            parallel:
+                ease 5.0 yanchor 1.0 ypos 1.1
+            parallel:
+                linear 2.0 alpha 1.0
+        show karla basic_sheepish_cas
+        with charaenter
+
+        pause 4.5
+
+        show lilly at twoleft_sittingpos:
+            alpha 1.0
+        with None
 
         "Lilly groans softly and slowly sits up, gently massaging her forehead. Looks like what's ailing me is also wreaking havoc on Lilly."
         "Wait... Did Karla just say that Lilly spent the night here in this very spot?"
@@ -167,11 +187,11 @@ label sh_ch25:
         "Lilly groans as if even formulating words is already unbearably painful."
         li "{cps=*0.5}Like I... said... before. My bedroom... door was... locked.{/cps}"
 
-        show karla basic_lost_cas
+        show karla basic_confused_cas
         with chchange
 
         "Karla shrugs her shoulders with a puzzled expression."
-        ka "She says her door was locked when she went for her bedroom, but when I checked this morning that didn't turn out to be the case."
+        ka "She says her door was locked when she went for her bedroom, but when I checked this morning, that didn't turn out to be the case."
         "I'm about to dismiss the whole thing when I suddenly remember something that Lilly told me yesterday."
         hi "Lilly didn't sleep in that particular room the last time she stayed here, did she?"
 
@@ -200,6 +220,10 @@ label sh_ch25:
 
         li "..."
         "Karla has watched the one-sided conversation with more than a small hint of amusement and takes this moment to chip in."
+
+        show karla basic_laugh_cas
+        with chchange
+
         ka "Hahaha, you're lucky you locked your door last night, or you'd have had one hell of an awkward awakening."
         "She has no idea just how awkward."
 
@@ -209,10 +233,19 @@ label sh_ch25:
 
         "Lilly seems to have given up trying to figure out how she ended up mistaking our room for hers and lets out another tortured yawn. Karla shrugs."
         ka "Well, at least that little mystery is now solved. That leaves us with the matter of getting you back to the land of the living."
-        li "I'm... okay."
+        li "{cps=20}I'm... okay.{/cps}"
         ka "Not convincingly so. Why don't you go and take a bath? It might make you feel better. Let me take you there."
-        "Lilly slowly gets up from the couch, her movement stiff like an old-fashioned robot. I turn to Karla."
+
+        show lilly:
+            ease 2.0 twoleft
+        with None
+
+        "Lilly slowly gets up from the couch, her movement stiff like an old-fashioned robot."
+        "I turn to Karla."
         hi "So much for the effectiveness of using a cello as an alarm clock."
+
+        show lilly at twoleft
+        with None
 
         show karla basic_smug_cas
         with chchange
@@ -223,7 +256,7 @@ label sh_ch25:
         with chchange
 
         "That may very well be the cruelest thing I've heard in my entire life, and from her visible cringe, it appears that Lilly completely shares that impression."
-        li "Please... don't... ever..."
+        li "{cps=20}Please... don't... ever...{/cps}"
 
         show karla basic_smileclosed_cas
         hide lilly
@@ -240,7 +273,7 @@ label sh_ch25:
         "Looks like Lilly's not in any better shape than I am, though it appears her parents at least remained unaware of last night's events."
         "Lilly's mother didn't seem to mind the fact that we're all feeling rather queasy, although it seems her father didn't take it quite so well."
         "I feel a bit bad about that. It seems unfair that Hanako and I got away with our little act last night, and Lilly might get into trouble for an innocent, if rather dumb, mistake."
-        "That's of later concern though. I should probably focus on how to act around Hanako when she wakes up."
+        "That's of later concern, though. I should probably focus on how to act around Hanako when she wakes up."
 
         show karla basic_smile_cas at center
         with charaenter
@@ -255,7 +288,7 @@ label sh_ch25:
         "The water doesn't do much to dull the throbbing sensation in my head, but it eases my throat a bit and makes speaking a bit less painful."
         "Karla sits down on the love seat across from me and starts putting her cello back into its case."
 
-        show karla basic_sweet_cas at sittingpos
+        show karla basic_cheerful_cas at sittingpos
         with charaenter
 
         ka "Just give it a bit of time. You'll probably feel better in a few hours."
@@ -278,7 +311,7 @@ label sh_ch25:
         "Karla frowns for a moment and gives me a sheepish look."
         ka "He wasn't upset that you guys had a few glasses or even that you got a little drunk. We felt that if Lilly failed to mind her tolerance threshold, the resulting hangover would be enough of a punishment already."
         ka "What rubbed him the wrong way was that it was the housekeeping staff who found Lilly sleeping on the couch this morning, and they seemed to find it extremely funny."
-        ka "My husband felt his daughter embarrassed him and caused him to lose face in the eyes of his personnel. "
+        ka "My husband felt his daughter embarrassed him and caused him to lose face in the eyes of his personnel."
         hi "Is she going to get into trouble?"
         ka "He said she's not going to be allowed to do any more drinking for the remainder of her stay here."
         "Knowing Lilly and how much she enjoys the occasional sip of wine, that seems extremely harsh, especially since getting her hands on wine back in Japan is going to be tough with Akira now having moved away."
@@ -288,26 +321,30 @@ label sh_ch25:
         "I don't think it's my place to tell parents how to deal with their children. Even if those parents haven't had contact with their children for years."
         hi "I'm not sure."
 
-        show karla basic_wistful_cas
+        show karla basic_sheepishclosed_cas
         with chchange
 
         "Lilly's mother gives me a tired smile."
         ka "My husband hails from a rather traditional Japanese family, and he was taught from an early age that causing a family member to look bad or embarrassing them in any way is pretty much the biggest sin you can possibly commit."
         hi "I don't think Lilly would ever embarrass her parents on purpose."
-        ka "I don't think so either. My husband's been rather tired and anxious the last few weeks. Work-related stress, no doubt. He hasn't been sleeping well either. It's making him more irritable than he usually is."
+        ka "I don't think so, either. My husband's been rather tired and anxious the last few weeks. Work-related stress, no doubt. He hasn't been sleeping well, either. It's making him more irritable than he usually is."
         ka "I'll talk to him later. He might change his mind."
 
-        show karla basic_smug_cas
+        show karla basic_laugh_cas
         with chchange
 
         ka "You guys aren't looking like you're going to hit the bottle again anytime soon anyway..."
         "She has a point there. Just the idea of drinking alcohol again is enough to worsen my headache."
 
-        show karla basic_ponder_cas
+        show karla cross_ponder_cas
         with chchange
 
         ka "...but enough about that for now. There's something I wanted to ask you."
         "All of a sudden, her playful look seems to have turned serious."
+
+        show karla basic_serious_cas
+        with chchange
+
         ka "As you know, we have a picnic scheduled this afternoon. I was thinking of combining it with a bit of physical activity. You two know how to ride a bike, don't you?"
         "I've never asked Hanako, but it's fairly safe to assume she knows how to ride one. Lilly on the other hand..."
         hi "I do and Hanako probably does too. But how about Lilly? She won't be sitting on the rear rack of your bike, will she?"
@@ -334,14 +371,18 @@ label sh_ch25:
         show karla basic_cheerful_cas
         with chchange
 
-        ka "I have to stop by the office for a few hours. Today's officially my day off, but I promised I'd drop by to ensure everything's going well. I have to make a little arrangement for our picnic trip too."
+        ka "I have to stop by the office for a few hours. Today's officially my day off, but I promised I'd drop by to ensure everything's going well. I have to make a little arrangement for our picnic trip, too."
         ka "I'll be back shortly after noon. Can I give you guys some advice?"
         hi "Sure."
+
+        show karla basic_smile_cas
+        with chchange
+
         ka "Make sure to get rehydrated and restock on the nutrients. Help yourself to the sandwiches Allison left in the kitchen, drink plenty, get some fresh air, and then get some additional rest. You'll feel a lot better afterwards."
 
         stop music fadeout 2.0
 
-        play music music_serene fadein 4.0
+        queue music music_serene fadein 4.0
 
         hide karla
         with charaexit
@@ -353,14 +394,15 @@ label sh_ch25:
         with locationchange
 
         "Fighting the lethargic sensation that's still weighing me down, I get up and make my way to the kitchen."
+        "Not hearing any sounds coming from there, I assume it to be empty and walk in letting out an unrestrained yawn..."
 
         show hanako defarms_shock at tworight
-        with Dissolve(0.2)
+        with { "master": chchangefast }
 
         stop music fadeout 1.0
 
-        "Not hearing any sounds coming from there, I assume it to be empty and walk in letting out an unrestrained yawn that dies abruptly as the person standing near the kitchen sink unit turns around and gasps."
-        hi "Hanako! Ummm... I mean, good morning Hanako."
+        extend " which dies abruptly as the person standing near the kitchen sink unit turns around and gasps."
+        hi "Hanako! Ummm... I mean, good morning, Hanako."
         "I hadn't expected Hanako to be up already. She probably went straight down to the kitchen to get something to drink. She doesn't look in much better shape than Lilly or myself, but as we spot each other, our hangovers are quickly made irrelevant by a more pressing matter."
         
         play ambient sfx_ticktock
@@ -378,7 +420,7 @@ label sh_ch25:
         "Laugh about it?"
         "Avoid the subject?"
         "I'm probably not going to get a lot of input from Hanako on this one. She seems completely preoccupied with fighting the urge to bolt from the room."
-        "While I'm still deciding on how to act towards Hanako, I notice something moving from the corner of my eye, and when I look through the window I can see a person in her twenties approaching the house. She must be part of the cleaning staff."
+        "While I'm still deciding on how to act towards Hanako, I notice something moving from the corner of my eye, and when I look through the window, I can see a person in her twenties approaching the house. She must be part of the cleaning staff."
 
         show hanako defarms_strain
         with chchange
@@ -435,17 +477,17 @@ label sh_ch25:
         "As we sit there, nibbling our sandwiches and then flushing the bread and meat down with the soft drinks we got, I can tell from her posture that Hanako is slowly relaxing a little bit."
         "I figure now would be a good moment to start a conversation."
         hi "I guess we're both a little under the weather after yesterday. How are you feeling right now?"
-        ha "...M-My h-head hurts."
+        ha "...M-my h-head hurts."
         hi "Same here. You're not nauseous, are you?"
         ha "A b-bit. But I c-can eat without b-being sick, I think."
-        hi "Me too, though the meat's a bit much. Lilly's mom said these sandwiches will ease hangovers though."
+        hi "Me too, though the meat's a bit much. Lilly's mom said these sandwiches will ease hangovers, though."
         ha "I h-hope so."
         hi "If it's a consolation, Lilly isn't any better off from the looks of it. At least we slept in a bed this night."
 
         show hanako emb_timid
         with chchange
 
-        ha "W-What?"
+        ha "W-what?"
         "I briefly tell Hanako about Lilly spending the night on the couch."
         hi "Heh, so it's a good thing I locked our door, or we'd have had a really uncomfortable moment in there."
 
@@ -474,9 +516,9 @@ label sh_ch25:
         with chchange
 
         ha "But I... s-started it."
-        hi "You don't really see Lilly as a rival, do you? Lilly's far too loyal to you to even consider trying to steal me away from you. And I wouldn't trade you in for her either."
+        hi "You don't really see Lilly as a rival, do you? Lilly's far too loyal to you to even consider trying to steal me away from you. And I wouldn't trade you in for her, either."
         hi "She's a good friend. A wonderful friend. Like an older sister. But nothing more than that."
-        ha "I...I know."
+        ha "I... I know."
         "I think Hanako's gotten to the point by now where she can believe my words if she stops to think about them rationally."
         "But on some deeper level, a part of her is probably still convinced that Lilly could easily seduce me away from her if she made even a half-hearted effort—which is probably why she got so territorial when Lilly praised my looks."
         "I'm positive, however, that that fear will eventually disappear as we continue our relationship."
@@ -871,7 +913,7 @@ label sh_ch25:
         play sound sfx_car_driveup
 
         hi "It sounds like we're right on time."
-        "As we exit the house, we hear the noise of a car approaching, and moments later we can see a car with an open trailer behind it coming up the driveway."
+        "As we exit the house, we hear the noise of a car approaching, and moments later, we can see a car with an open trailer behind it coming up the driveway."
 
         show karla basic_cheerful_cas
         with charaenter
@@ -907,7 +949,7 @@ label sh_ch25:
         "Lilly steps forward and takes the bag from her mother."
 
         hide lilly
-        show karla basic_lost_cas
+        show karla basic_confused_cas
         with charaexit
 
         "As Lilly disappears into the house and we get started on putting the saddlebags on the tandems' baggage racks, Karla turns to me with her expression turning serious again."
@@ -975,7 +1017,7 @@ label sh_ch25:
             xalign 0.17
         with charaenter
 
-        "Karla takes the bottles from her daughter, places them in the bottle cages located on the frame and hands her one of the sun hats she took out of the car. She then gestures us to take our bike. I turn to Hanako."
+        "Karla takes the bottles from her daughter, places them in the bottle cages located on the frame, and hands her one of the sun hats she took out of the car. She then gestures us to take our bike. I turn to Hanako."
         hi "So, do you want to go in the front or in the back?"
         ha "What w-would you like?"
         hi "I'll do the steering if you don't mind."

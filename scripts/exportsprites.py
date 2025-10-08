@@ -322,6 +322,6 @@ def main():
     for entry in karla:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/karla_{entry[1]}.png", replace=replace_karla, crop=(0, 126, 1050, 1846), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/close/karla_{entry[1]}_close.png", replace=replace_karla, crop=(0, 126, 1050, 1206), target_height=1080)
-    
+
 if __name__ == "__main__":
     main()

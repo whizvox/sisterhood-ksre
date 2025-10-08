@@ -9,13 +9,13 @@ label sh_ch24:
         play music music_dreamy fadein 4.0
 
         show hanako basic_smile:
-            xalign 0.1
+            xanchor 0.5 xpos 0.18
         show lilly cane_smileclosed:
-            xalign 0.37
+            xanchor 0.5 xpos 0.4
         show akira basic_laugh:
-            xalign 0.63
-        show karla basic_smile_suit:
-            xalign 0.9
+            xanchor 0.5 xpos 0.6
+        show karla basic_smile:
+            yalign 1.0 xanchor 0.5 xpos 0.8
         with charaenter
 
         aki "I think it's only fair for me to take my half of the spoils."
@@ -29,16 +29,16 @@ label sh_ch24:
         "We didn't stay at the pub for much longer afterwards, opting to spend the rest of the evening at the Satou home. When we got there though, Akira expressed the desire to be brought back to her place."
         "Karla seems a bit disappointed."
 
-        show karla basic_cheerful_suit
+        show karla basic_cheerful
         with chchange
 
         ka "I'll be returning to the place where your father is having his meeting. If you'd like, I could take you along to meet the investors we've been dining with this evening."
 
         show akira basic_boo
-        show karla basic_smile_suit
+        show karla basic_smile
         with chchange
 
-        aki "Naw, I'd rather just get some extra rest. Don't want to stop by the appartment and put the suit on either."
+        aki "Naw, I'd rather just get some extra rest. Don't want to stop by the apartment and put the suit on either."
         "Lilly walks over to Akira and places her hand on her sister's shoulder."
 
         show akira basic_smile
@@ -85,17 +85,17 @@ label sh_ch24:
         with chchange
 
         "Hanako and I guide Lilly to the mansion's large kitchen, and the two of us start searching the various cupboards and drawers."
-        "I quickly find a corkscrew in the drawer containing the cutlery, and when I turn around I can see Hanako very carefully taking three glasses out of a cupboard."
+        "I quickly find a corkscrew in the drawer containing the cutlery, and when I turn around, I can see Hanako very carefully taking three glasses out of a cupboard."
         hi "Lilly, I found some crackers and a box of olives. Can we take them?"
         li "Of course, Hisao. Is there any cheese in the refrigerator?"
-        hi "Yeah, a fairly big block. Not sure what kind it is though."
+        hi "Yeah, a fairly big block. Not sure what kind it is, though."
         "Lilly walks over to me and carefully sniffs the cheese."
 
         show lilly cane_smile
         with chchange
 
         li "Have you ever had Cheddar before, Hisao? It's very popular here, but, like most kinds of cheese, considerably less so in Japan. "
-        hi "I don't think so. It can't hurt to give it a try though."
+        hi "I don't think so. It can't hurt to give it a try, though."
         li "Hanako, could you help me cut it into smaller pieces?"
         ha "Sure."
         "As the girls prepare to start cutting the cheese, a thought suddenly springs up in the back of my mind."
@@ -107,7 +107,7 @@ label sh_ch24:
         with chchange
 
         li "Mother's still curious about both of you. I don't think she'll object."
-        hi "Very well then."
+        hi "Very well, then."
         li "There should be a set of notes nearby somewhere. Could you get me one and a pen, please?"
 
         show lilly basic_smileclosed
@@ -129,7 +129,7 @@ label sh_ch24:
         show lilly cane_cheerful
         with chchange
 
-        li "Wonderful. I'm looking forward to it. That's for tomorrow though. Tonight, let's hang back and relax."
+        li "Wonderful. I'm looking forward to it. That's for tomorrow, though. Tonight, let's hang back and relax."
 
         scene bg satou_livingroom_ni
         with locationchange
@@ -138,7 +138,7 @@ label sh_ch24:
         show hanako emb_emb_clip at tworight
         with charaenter
 
-        "Taking the bottles, glasses and snacks with us, we make our way to the mansion's spacious living room."
+        "Taking the bottles, glasses, and snacks with us, we make our way to the mansion's spacious living room."
         li "Is there a remote control lying around here, Hisao?"
         hi "There's one near the fireplace. Want me to give it to you?"
         li "Just press the on-button. It should still be on the right setting."
