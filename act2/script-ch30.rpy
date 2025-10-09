@@ -112,12 +112,12 @@ label sh_ch30:
         kam "He's been having trouble sleeping, he mentioned having bouts of indigestion, and earlier today, he even mentioned repetitive strain injury in his shoulder and arm. It's just one thing after another."
         li "Shouldn't he take it easier then?"
 
-        show karla basic_lost_cas_phone
+        show karla basic_displeased_cas_phone
         with chchange
 
         kam "I suggested that too, but it's not that simple. To me, this whole thing is just crunch time for the company I work for. It'd be great if we could pull it off, and I'll be sure to do my part, but in the end, it's still just work."
 
-        show karla basic_resigned_cas_phone
+        show karla basic_troubled_cas_phone
         with chchange
 
         kam "To him, this is his legacy. His grandfather expanded the company, as did his father. Now it's his turn. It's what he's studied and worked for. Wouldn't you feel enormous pressure? Would you take it slowly just a few inches before the finish line?"
@@ -128,7 +128,7 @@ label sh_ch30:
 
         kam "I know, but it's only a few more weeks, and he said he was still fine, so I'll take his word for that."
 
-        show karla basic_wistful_cas_phone
+        show karla basic_smileclosed_cas_phone
         with chchange
 
         kam "After we travel to the US and finish the deal there, I intend to stay there for a bit and take him on a little trip. See some of the national parks, maybe the Niagara Falls, too. Take it easy, see stuff, just relax. That'll fix him right up, you'll see."
@@ -148,11 +148,15 @@ label sh_ch30:
         kam "That's good to hear. Stella was thinking of baking you a dundee cake. That's a traditional Scottish fruitcake covered with almonds. I find it kind of filling, but really tasty, too."
         li "That sounds delicious. I can't wait for us to get there so I can have a taste. How is she doing these days?"
 
-        show karla basic_sweet_cas_phone
+        show karla basic_smileclosed_cas_phone
         with chchange
 
         kam "She doesn't really get out of the house much yet, and she has the occasional spells of sudden tiredness, which is probably partially due to her medication, but all in all, she's doing a lot better than two months ago."
         li "Please give her my regards."
+
+        show karla basic_smile_cas_phone
+        with chchange
+
         kam "Will do. I'm going to hang up now. Be sure to let your father know that I've arrived safely when he gets home, okay?"
         li "I will. Until tomorrow, Mother."
         kam "Bye."
@@ -234,12 +238,12 @@ label sh_ch30:
         hi "You mentioned sightseeing. Any further information on where we'll be going, or is it going to be a surprise?"
         "I open the drawer of one of the sidetables and pull out what I know is a tiny folder on Edinburgh's main tourist attractions, which I give to Hisao."
         li "You could take a little look in here and see if there's anything you like."
-        hi "Thanks... "
+        hi "Thanks..."
 
         show hisao basic_frown_polo
         with { "master": charachangealways }
 
-        extend "ugh, it's all in English."
+        extend " ugh, it's all in English."
         "I grin."
         li "Of course. But if you don't understand the meaning of certain words, just read the corresponding sentence to me and I'll tell you what it means."
         hi "If I do that, are you going to correct my mispronunciations again? The last time we did something like this, you turned it into a miniature English lesson."
@@ -386,7 +390,7 @@ label sh_ch30:
         show hisao at left
         show hanako basic_distant:
             xalign 0.35
-        show hiroyuki basic_neutral_suit at right
+        show hiroyuki serious at right
         with charaenter
 
         hyf "Lilly, Miss Ikezawa, Mister Nakai... Good evening."
@@ -394,7 +398,7 @@ label sh_ch30:
         ha "G-good evening."
         li "Welcome back, Father. I'm happy to see you could make it back here sooner than usual."
 
-        show hiroyuki basic_strain_suit
+        show hiroyuki strained
         with chchange
 
         stop music fadeout 4.0
@@ -459,16 +463,16 @@ label sh_ch30:
         play sound sfx_doorclose
 
         scene bg satou_study
-        show hiroyuki basic_strain_suit
+        show hiroyuki serious
         with locationchange
 
         play music music_happiness fadein 4.0
 
         "I'm greeted by a tired sigh as I enter."
         hyf "Yes?"
-        li "Ah...Father?"
+        li "Ah... Father?"
 
-        show hiroyuki basic_stern_suit
+        show hiroyuki stern
         with chchange
 
         hyf "Lilly, did you not hear what I said earlier?"
@@ -477,7 +481,7 @@ label sh_ch30:
         "I walk further into the room until I'm standing near the table where Father is working."
         li "Father, is it... wise to keep working right now despite the fact that you were plagued by RSI earlier?"
 
-        show hiroyuki basic_raisesternbrow_suit
+        show hiroyuki eyebrow
         with chchange
 
         hyf "Hmmm? Ah, my shoulder? Did your mother tell you about that?"
@@ -485,7 +489,7 @@ label sh_ch30:
         hyf "I am fine. Why are you suddenly so concerned about me?"
         li "Hanako and Hisao said that you looked a little pale when you came in."
 
-        show hiroyuki basic_strain_suit
+        show hiroyuki strained
         with chchange
 
         "Another weary sigh. He's obviously not pleased with my insistence."
@@ -494,7 +498,7 @@ label sh_ch30:
         hyf "A more convenient time?"
         li "When you're... no longer under so much pressure."
 
-        show hiroyuki basic_stern_suit
+        show hiroyuki stern
         with chchange
 
         hyf "I have already made you a promise, have I not?"
@@ -504,7 +508,7 @@ label sh_ch30:
         hyf "Lilly, a proper lady... respects the will... of her elders."
         li "Father, is anything wrong?"
 
-        show hiroyuki basic_strain_suit
+        show hiroyuki strained
         with chchange
 
         hyf "Perhaps... you could get me a glass... of water."
@@ -532,7 +536,7 @@ label sh_ch30:
         with locationchange
 
         "I navigate over to the kitchen and probe the shelves of the cupboard with my hand until I feel an empty glass against my fingers."
-        "I take it, feel my way over to the tap and fill it with fresh and cool water."
+        "I take it, feel my way over to the tap, and fill it with fresh and cool water."
 
         show hanako emb_timid at right
         with charaenter
@@ -547,7 +551,7 @@ label sh_ch30:
         ha "Ummm... If your father is feeling ill, w-wouldn't it be good to... call a doctor?"
         li "A doctor?"
         ha "Y-yes."
-        "I'm about to brush aside Hanako's suggestion, seeing that Father would probably not go along with that, but then I realize that Hanako following me here and telling me this are kind of unusual for her."
+        "I'm about to brush aside Hanako's suggestion, seeing that Father would probably not go along with that, but then I realize that Hanako following me here and telling me this is kind of unusual for her."
         "She's not exactly the most proactive person in the world. She probably wouldn't bother approaching me like this without good reason. But what reason is that?"
         li "Do you really think so, Hanako?"
 
@@ -570,15 +574,19 @@ label sh_ch30:
         "The hint was clear. He wants me to stop worrying about him."
         "But still..."
 
-        show hiroyuki basic_strain_suit
+        show hiroyuki strained
         with charaenter
 
         li "Father, I brought you your drink."
         hyf "Thank you."
+
+        show hiroyuki thinking
+        with chchange
+
         "He takes it from my hands and takes a few careful sips."
         "This should be the moment where I take my leave, but I manage to stop myself from walking away."
 
-        show hiroyuki basic_raisesternbrow_suit
+        show hiroyuki eyebrow
         with chchange
 
         hyf "Lilly, is there something else?"
@@ -589,13 +597,12 @@ label sh_ch30:
         hyf "A doctor?"
         li "You say you're fine, but... I noticed... t-that your breathing is a bit more shallow than usual."
 
-        play sound sfx_impact2
+        $ renpy.music.set_volume(0.0, delay=0.5)
 
-        $ renpy.music.set_volume(0.0, delay=0.2)
-        $ renpy.music.set_pause(True)
-
-        show hiroyuki basic_stern_suit
+        show hiroyuki scold
         with chchangefast
+
+        $ renpy.music.set_pause(True)
 
         hyf "Lillian, that is quite enough!"
         "I cringe at his stern tone. I overstepped my boundaries, that's obvious."
@@ -604,25 +611,25 @@ label sh_ch30:
         $ renpy.music.set_pause(False)
         $ renpy.music.set_volume(1.0, delay=4.0)
 
-        show hiroyuki basic_neutral_suit
+        show hiroyuki serious
         with chchange
 
         hyf "Yes?"
         li "You told Mother you were fine, and she said she took your word for it. Would you... also give me your word that you'll be fine?"
 
-        show hiroyuki basic_raisesternbrow_suit
+        show hiroyuki eyebrow
         with chchange
 
         hyf "My word...?"
         li "Yes, please promise me that you'll be okay. Since keeping your word is a matter of honor, I will trust it."
 
-        show hiroyuki basic_thinking_suit
+        show hiroyuki thinking
         with chchange
 
         hyf "..."
         "There's a long silence. I wonder if he's going to scold me, but to my surprise, he eventually lets out a resigned sigh."
 
-        show hiroyuki basic_strain_suit
+        show hiroyuki strained
         with chchange
 
         hyf "If I talk to a doctor... on the phone... will that be enough to reassure you?"
@@ -630,7 +637,7 @@ label sh_ch30:
         hyf "The phone in the living room should contain our general practitioner's phone number. His name is Thompson."
         li "Thank you, Father."
 
-        show hiroyuki basic_stern_suit
+        show hiroyuki stern
         with chchange
 
         hyf "Hrmmm..."

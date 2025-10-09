@@ -88,14 +88,14 @@ init 1 python:
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
     sh_sprites("nakamura", ["awkward", "bow", "instruct", "neutral", "smile", "speak", "strain", "thinking"])
     sh_sprites("karla", ["angry", "cheerful", "confused", "displeased", "distant", "laugh", "ponder", "serious", "sheepish", "sheepishclosed", "smile", "smileclosed", "smug", "speak", "troubled", "worried"], poses=["basic", "cross"], outfits=["", "cas"])
-    sh_sprites("hiroyuki", ["bow", "eyebrow", "serious", "smile", "speak", "stern", "strained", "thinking"])
+    sh_sprites("hiroyuki", ["bow", "eyebrow", "scold", "serious", "smile", "speak", "stern", "strained", "thinking"])
 
     phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo", "basic_cheerful", "basic_lost", "basic_angry"])
     phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)
     phonebox_sprites("hanako", ["emb_smile", "emb_timid", "emb_blushing"])
     phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
     phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
-    phonebox_sprites("karla", ["basic_smile_cas", "basic_sheepish_cas", "basic_ponder_cas", "basic_distant_cas", "basic_lost_cas", "basic_resigned_cas", "basic_wistful_cas", "basic_cheerful_cas", "basic_sweet_cas"], vanilla=False)
+    phonebox_sprites("karla", ["basic_smile_cas", "basic_sheepish_cas", "basic_ponder_cas", "basic_distant_cas", "basic_troubled_cas", "basic_displeased_cas", "basic_smileclosed_cas", "basic_cheerful_cas"], vanilla=False, xoff=20, cropxoff=150, cropyoff=-100)
     phonebox_sprites("hisao", ["basic_worry_polo", "basic_speak_polo", "basic_neutral_polo", "basic_sweet_polo"], cropxoff=95, cropyoff=-90)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])

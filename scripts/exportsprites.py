@@ -262,6 +262,7 @@ hiroyuki = [
     ("act 2 sprites/hiroyuki adjust/BOW", "bow"),
     ("act 2 sprites/hiroyuki adjust/NEUTRAL", "serious"),
     ("act 2 sprites/hiroyuki adjust/RAISED EYEBROW", "eyebrow"),
+    ("act 2 sprites/hiroyuki adjust/SCOLD", "scold"),
     ("act 2 sprites/hiroyuki adjust/SMILE", "smile"),
     ("act 2 sprites/hiroyuki adjust/SPEAK", "speak"),
     ("act 2 sprites/hiroyuki adjust/STERN", "stern"),
