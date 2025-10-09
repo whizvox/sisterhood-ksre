@@ -259,13 +259,14 @@ karla = [
 ]
 
 hiroyuki = [
-    ("act 2 sprites/HIROYUKI/BOW", "bow"),
-    ("act 2 sprites/HIROYUKI/RAISED EYEBROW", "eyebrow"),
-    ("act 2 sprites/HIROYUKI/SMILE", "smile"),
-    ("act 2 sprites/HIROYUKI/SPEAK", "speak"),
-    ("act 2 sprites/HIROYUKI/STERN", "stern"),
-    ("act 2 sprites/HIROYUKI/STRAINED", "strained"),
-    ("act 2 sprites/HIROYUKI/THINKING", "thinking")
+    ("act 2 sprites/hiroyuki adjust/BOW", "bow"),
+    ("act 2 sprites/hiroyuki adjust/NEUTRAL", "serious"),
+    ("act 2 sprites/hiroyuki adjust/RAISED EYEBROW", "eyebrow"),
+    ("act 2 sprites/hiroyuki adjust/SMILE", "smile"),
+    ("act 2 sprites/hiroyuki adjust/SPEAK", "speak"),
+    ("act 2 sprites/hiroyuki adjust/STERN", "stern"),
+    ("act 2 sprites/hiroyuki adjust/STRAINED CLOSED", "strained"),
+    ("act 2 sprites/hiroyuki adjust/THINKING", "thinking")
 ]
 
 def main():
@@ -289,6 +290,7 @@ def main():
     replace_jun = "jun" in replace
     replace_nakamura = "nakamura" in replace
     replace_karla = "karla" in replace
+    replace_hiroyuki = "hiroyuki" in replace
 
     for entry in hisao:
         if "Nak" not in entry[0]:
@@ -322,6 +324,10 @@ def main():
     for entry in karla:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/karla_{entry[1]}.png", replace=replace_karla, crop=(0, 126, 1050, 1846), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/close/karla_{entry[1]}_close.png", replace=replace_karla, crop=(0, 126, 1050, 1206), target_height=1080)
+    
+    for entry in hiroyuki:
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hiroyuki/hiroyuki_{entry[1]}.png", replace=replace_hiroyuki, crop=(0, 114, 1050, 1810), target_height=1020)
+        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hiroyuki/close/hiroyuki_{entry[1]}_close.png", replace=replace_hiroyuki, crop=(0, 114, 1050, 1356), target_height=1080)
 
 if __name__ == "__main__":
     main()
