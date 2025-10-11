@@ -293,7 +293,7 @@ screen sh_doublespeak(c1, t1, c2, t2):
 
     on "show" action If(renpy.is_skipping(), Return())
 
-screen sh_diary(left_dialogue, right_dialogue=None):
+screen sh_diary(left_dialogue, right_dialogue=None, images=None):
     style_prefix "shdiary"
 
     window id "window":
@@ -306,6 +306,11 @@ screen sh_diary(left_dialogue, right_dialogue=None):
             frame:
                 xpos 0.57
                 text right_dialogue id "diary_right"
+
+    if images is not None:
+        for entry in images:
+            image entry[0]:
+                xpos entry[1] ypos entry[2]
 
     #use ctc
 
