@@ -293,7 +293,7 @@ screen sh_doublespeak(c1, t1, c2, t2):
 
     on "show" action If(renpy.is_skipping(), Return())
 
-screen sh_diary(left_dialogue, right_dialogue=None, images=None):
+screen sh_journal(left_dialogue, right_dialogue=None, images=None):
     style_prefix "shdiary"
 
     window id "window":
