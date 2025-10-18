@@ -118,7 +118,7 @@ def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
             if line.startswith("!{") and line[-1] == "}":
                 img = parse_image(line[2:-1])
                 if img.is_relative():
-                    img.ypos = 0.03558 * (get_text_lines(page, font) - 1) + 0.075
+                    img.ypos = 0.034116 * (get_text_lines(page, font) - 1) + 0.092058
                     if img.gap > 0:
                         page += "\n" * img.gap
                 images.append(img)
@@ -166,15 +166,15 @@ def export_rpy(pages: list[Page]) -> str:
         lefttext = pages[left].text.replace("\n", "\\n")
         leftimages = pages[left].images.copy()
         for img in leftimages:
-            img.xpos = round(img.xpos / 2, 2)
-            img.ypos = round(img.ypos, 2)
+            img.xpos = round(0.19 + img.xpos * 0.3, 4)
+            img.ypos = round(img.ypos, 4)
         if right < len(pages):
             righttext = pages[right].text.replace("\n", "\\n")
             callstr += f"\"{lefttext}\",\n    \"{righttext}\""
             rightimages = pages[right].images.copy()
             for img in rightimages:
-                img.xpos = round(img.xpos / 2 + 0.5, 2)
-                img.ypos = round(img.ypos, 2)
+                img.xpos = round(img.xpos * 0.3 + 0.57, 4)
+                img.ypos = round(img.ypos, 4)
             imgstr = export_rpy_images(leftimages + rightimages)
         else:
             callstr += f"\"{lefttext}\""
