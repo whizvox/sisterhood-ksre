@@ -269,6 +269,18 @@ def print_header(header: str):
     print("┗" + ("━" * (len(header) + 2)) + "┛")
 
 
+def action_verify(text: str, lang: str, font: FreeTypeFont):
+    print_header(f"VERIFYING {lang} JOURNAL")
+    print()
+    result = verify_pages(parse_journal(text, font), font)
+    if len(result) == 0:
+        print("Nothing to report, all good!")
+    else:
+        print("\n".join(result))
+    print()
+    print_header("FINISH VERIFY")
+
+
 def main(args: dict[str, any]):
     file_path = f"journal/{args['lang']}.txt"
     if not Path(file_path).exists():
@@ -283,11 +295,14 @@ def main(args: dict[str, any]):
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
     if args["action"] == "export":
+        if not args["noverify"]:
+            action_verify(text, args["lang"], font)
         print_header(f"EXPORTING {args['lang']} JOURNAL")
         print()
         script = export_rpy(parse_journal(text, font))
         try:
             write_script(script, args["lang"])
+            print("File successfully written!")
         except Exception as e:
             print("ERROR: Could not write journal")
             print(e)
@@ -300,11 +315,7 @@ def main(args: dict[str, any]):
         print()
         print_header("FINISH PRINT")
     else:
-        print_header(f"VERIFYING {args['lang']} JOURNAL")
-        print()
-        print("\n".join(verify_pages(parse_journal(text, font), font)))
-        print()
-        print_header("FINISH VERIFY")
+        action_verify(text, args["lang"], font)
 
 
 if __name__ == "__main__":
@@ -312,4 +323,5 @@ if __name__ == "__main__":
     parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export")
     parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common")
     parser.add_argument("-l", "--lang", default="en")
+    parser.add_argument("-n", "--noverify", action="store_true")
     main(vars(parser.parse_args(sys.argv[1:])))
