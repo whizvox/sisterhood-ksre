@@ -8,6 +8,12 @@ COMMON_FONT = FreeTypeFont("../../../font/playtime.ttf", 34)
 ZH_FONT = FreeTypeFont("../../../font/XiaolaiSC-Regular.ttf", 34)
 JP_FONT = FreeTypeFont("../../../font/VL-PGothic-Regular.ttf", 34)
 
+LINES = 26
+LINE_GAP = 0.034116
+TOP = 0.075
+LEFT = 0.19
+LEFT_P2 = 0.57
+
 def word_wrap_text(text: str, font: FreeTypeFont) -> int:
     lines = []
     for line in text.split("\n"):
@@ -28,24 +34,31 @@ def get_text_lines(text: str, font: FreeTypeFont) -> int:
 
 
 class Image:
-    def __init__(self, image: str, xpos: float, ypos: float | None, gap: int, rotation: float):
+    def __init__(self, image: str | None, text: str | None, xpos: float, ypos: float | None, yoff: float, xanchor: float, yanchor: float, gap: int, rotation: float):
         self.image = image
+        self.text = text
         self.xpos = xpos
         self.ypos = ypos
+        self.yoff = yoff
+        self.xanchor = xanchor
+        self.yanchor = yanchor
         self.gap = gap
         self.rotation = rotation
 
     def __str__(self):
-        return f"EmbeddedImage(image={self.image}, xpos={self.xpos}, ypos={self.ypos}, gap={self.gap}, rotation={self.rotation})"
+        return f"EmbeddedImage(image={self.image}, text={self.text}, xpos={self.xpos}, ypos={self.ypos}, yoff={self.yoff}, gap={self.gap}, rotation={self.rotation})"
 
     def __repr__(self):
         return self.__str__()
-    
-    def is_picture(self) -> bool:
-        return self.image[0] == 'p'
+
+    def get_type(self) -> str:
+        return 't' if self.image is None else self.image[0]
 
     def is_relative(self) -> bool:
         return self.ypos is None
+
+    def is_default_anchor(self):
+        return self.xanchor == 0.5 and self.yanchor == 0
 
 
 class Page:
@@ -61,11 +74,31 @@ class Page:
 
 
 def parse_image(text: str) -> Image:
-    text = re.sub(r'\s', "", text)
     tokens = text.split(",")
+    # start of string, could contain commas
+    if tokens[0][0].lstrip() == '"' and (tokens[0].rstrip()[-1] != '"' and not tokens[0].rstrip().endswith('\\"')):
+        for i in range(1, len(tokens)):
+            # in case there's a space after the double quote but before the comma
+            temp = tokens[i].rstrip()
+            # if ends with double quote and not escaped
+            if not temp[-1] == '"' or temp.endswith('\\"'):
+                tokens[0] += "," + tokens[i]
+            else:
+                tokens = [tokens[0] + ',' + temp] + tokens[i+1:]
+                break
+    tokens[0] = tokens[0].strip()
+    for i in range(1, len(tokens)):
+        tokens[i] = re.sub(r'\s', "", tokens[i])
     image = tokens[0]
+    text = None
+    if image[0] == '"' and image[-1] == '"':
+        text = image[1:-1]
+        image = None
     xpos = None
     ypos = None
+    yoff = 0
+    xanchor = 0.5
+    yanchor = 0
     gap = None
     rotation = 0
     for token in tokens[1:]:
@@ -73,6 +106,12 @@ def parse_image(text: str) -> Image:
             xpos = float(token[2:])
         elif token.startswith("y="):
             ypos = float(token[2:])
+        elif token.startswith("top="):
+            yoff = float(token[4:]) * LINE_GAP
+        elif token.startswith("px="):
+            xanchor = float(token[3:])
+        elif token.startswith("py="):
+            yanchor = float(token[3:])
         elif token.startswith("gap="):
             gap = int(token[4:])
         elif token.startswith("rot="):
@@ -80,16 +119,13 @@ def parse_image(text: str) -> Image:
         else:
             print(f"[WARN] Invalid property: {token}")
     if xpos is None:
-        if image[0] == "d":
-            xpos = 0.2
-        else:
-            xpos = 0.14
+        xpos = 0.5
     if gap is None:
-        if image[0] == "d":
+        if image is None or image[0] == "d":
             gap = 5
         else:
             gap = 12
-    return Image(image, xpos, ypos, gap, rotation)
+    return Image(image, text, xpos, ypos, yoff, xanchor, yanchor, gap, rotation)
 
 
 def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
@@ -119,8 +155,10 @@ def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
                 img = parse_image(line[2:-1])
                 if img.is_relative():
                     img.ypos = 0.034116 * (get_text_lines(page, font) - 1) + 0.092058
-                    if img.gap > 0:
-                        page += "\n" * img.gap
+                    # newline is added before the next bit of text
+                    if img.gap > 1:
+                        page += "\n" * (img.gap - 1)
+                img.ypos += img.yoff
                 images.append(img)
             else:
                 page += line
@@ -140,8 +178,8 @@ def verify_pages(pages: list[Page], font: FreeTypeFont) -> list[str]:
     warnings = []
     for i, page in enumerate(pages):
         lines = word_wrap_text(page.text, font)
-        if len(lines) > 26:
-            warnings.append(f"[#{i+1}] [+{len(lines)-26}] {lines[26]}")
+        if len(lines) > LINES:
+            warnings.append(f"[#{i+1}] [+{len(lines)-LINES}] {lines[LINES]}")
     return warnings
 
 
@@ -150,10 +188,21 @@ def export_rpy_images(images: list[Image], xoff=0) -> str:
     for img in images:
         if len(imgstr) > 0:
             imgstr += ",\n        "
-        if img.is_picture():
-            imgstr += f"(Composite((610, 410), (0, 0), f\"{{sh_path}}/gui/journal/dropshadow.png\", (5, 5), f\"{{sh_path}}/gui/journal/{img.image}.png\"), {xoff+img.xpos}, {img.ypos})"
+        if img.is_default_anchor() and img.rotation == 0:
+            anchorstr = ""
         else:
-            imgstr += f"(Image(f\"{{sh_path}}/gui/journal/{img.image}.png\"), {xoff+img.xpos}, {img.ypos})"
+            anchorstr = f", {img.xanchor}, {img.yanchor}"
+        if img.rotation == 0:
+            rotatestr = ""
+        else:
+            rotatestr = f", {img.rotation}"
+        imgtype = img.get_type()
+        if imgtype == 'p':
+            imgstr += f"(Composite((610, 410), (0, 0), f\"{{sh_path}}/gui/journal/dropshadow.png\", (5, 5), f\"{{sh_path}}/gui/journal/{img.image}.png\"), {xoff+img.xpos}, {img.ypos}{anchorstr}{rotatestr})"
+        elif imgtype == 'd':
+            imgstr += f"(Image(f\"{{sh_path}}/gui/journal/{img.image}.png\"), {xoff+img.xpos}, {img.ypos}{anchorstr}{rotatestr})"
+        elif imgtype == 't':
+            imgstr += f"(Text(\"{img.text}\", color=\"#000\"), {xoff+img.xpos}, {img.ypos}{anchorstr}{rotatestr})"
     return imgstr
 
 

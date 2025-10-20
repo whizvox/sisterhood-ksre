@@ -309,8 +309,18 @@ screen sh_journal(left_dialogue, right_dialogue=None, images=None):
 
     if images is not None:
         for entry in images:
+            if len(entry) > 3:
+                $ imgxanchor = entry[3]
+                $ imgyanchor = entry[4]
+            else:
+                $ imgxanchor = 0.5
+                $ imgyanchor = 0
+            if len(entry) > 4:
+                $ imgrotation = entry[5]
+            else:
+                $ imgrotation = 0
             image entry[0]:
-                xpos entry[1] ypos entry[2]
+                xpos entry[1] ypos entry[2] xanchor imgxanchor yanchor imgyanchor rotate imgrotation
 
     #use ctc
 
