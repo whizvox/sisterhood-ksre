@@ -237,6 +237,38 @@ def export_rpy(pages: list[Page]) -> str:
     return "\n\n".join(calls)
 
 
+def write_script(script: str, lang: str):
+    path = Path("../act2/script-ch28.rpy")
+    if not path.exists():
+        raise Exception(f"Script file \"{path}\" does not exist")
+    newlines = []
+    with path.open("r", encoding="utf-8") as file:
+        in_label = False
+        for line in file.readlines():
+            line = line.rstrip("\r\n")
+            if in_label:
+                if line.startswith("label sh_ch28_journal_"):
+                    in_label = False
+            elif line.startswith(f"label sh_ch28_journal_{lang}:"):
+                in_label = True
+                newlines.append(line + "\n")
+                for scriptline in script.splitlines():
+                    if scriptline == "":
+                        newlines.append("\n")
+                    else:
+                        newlines.append("    " + scriptline + "\n")
+            if not in_label:
+                newlines.append(line + "\n")
+    with path.open("w", encoding="utf-8") as file:
+        file.writelines(newlines)
+
+
+def print_header(header: str):
+    print("┏" + ("━" * (len(header) + 2)) + "┓")
+    print("┃ " + header + " ┃")
+    print("┗" + ("━" * (len(header) + 2)) + "┛")
+
+
 def main(args: dict[str, any]):
     file_path = f"journal/{args['lang']}.txt"
     if not Path(file_path).exists():
@@ -251,30 +283,33 @@ def main(args: dict[str, any]):
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
     if args["action"] == "export":
-        print("=" * 20)
-        print(f"  EXPORTING {args['lang']} JOURNAL")
-        print("=" * 20)
+        print_header(f"EXPORTING {args['lang']} JOURNAL")
+        print()
+        script = export_rpy(parse_journal(text, font))
+        try:
+            write_script(script, args["lang"])
+        except Exception as e:
+            print("ERROR: Could not write journal")
+            print(e)
+        print()
+        print_header("FINISH EXPORT")
+    elif args["action"] == "print":
+        print_header(f"PRINTING {args['lang']} JOURNAL")
         print()
         print(export_rpy(parse_journal(text, font)))
         print()
-        print("=" * 20)
-        print(f"  FINISH EXPORT")
-        print("=" * 20)
+        print_header("FINISH PRINT")
     else:
-        print("=" * 20)
-        print(f"  VERIFYING {args['lang']} JOURNAL")
-        print("=" * 20)
+        print_header(f"VERIFYING {args['lang']} JOURNAL")
         print()
         print("\n".join(verify_pages(parse_journal(text, font), font)))
         print()
-        print("=" * 20)
-        print(f"  FINISH VERIFY")
-        print("=" * 20)
+        print_header("FINISH VERIFY")
 
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("-a", "--action", choices=["export", "verify"], default="export")
+    parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export")
     parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common")
     parser.add_argument("-l", "--lang", default="en")
     main(vars(parser.parse_args(sys.argv[1:])))
