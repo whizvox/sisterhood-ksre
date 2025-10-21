@@ -125,7 +125,7 @@ def parse_image(text: str) -> Image:
         if image is None or image[0] == "d":
             gap = 5
         else:
-            gap = 12
+            gap = 11
     return Image(image, text, xpos, ypos, yoff, xanchor, yanchor, gap, rotation)
 
 
@@ -196,7 +196,7 @@ def export_rpy_images(images: list[Image], xoff=0) -> str:
             rotatestr = f", {img.rotation}"
         imgtype = img.get_type()
         if imgtype == 'p':
-            imgstr += f"(Composite((610, 410), (0, 0), f\"{{sh_path}}/gui/journal/dropshadow.png\", (5, 5), f\"{{sh_path}}/gui/journal/{img.image}.png\"), {xoff+img.xpos}, {img.ypos}{anchorstr}{rotatestr})"
+            imgstr += f"(Composite((535, 360), (0, 0), f\"{{sh_path}}/gui/journal/dropshadow.png\", (5, 5), f\"{{sh_path}}/gui/journal/{img.image}.jpg\"), {xoff+img.xpos}, {img.ypos}{anchorstr}{rotatestr})"
         elif imgtype == 'd':
             imgstr += f"(Image(f\"{{sh_path}}/gui/journal/{img.image}.png\"), {xoff+img.xpos}, {img.ypos}{anchorstr}{rotatestr})"
         elif imgtype == 't':

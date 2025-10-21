@@ -128,7 +128,7 @@ class CompositeTransformation(ImageTransformation):
             toppath = layer[2]
             with Image.open(resolve_path(toppath)) as topimg:
                 img.paste(topimg, (x, y), topimg.convert("RGBA"))
-                return img
+        return img
 
 def resize(targetwidth: int = -1, targetheight: int = -1):
     return ResizeTransformation(targetwidth, targetheight)
@@ -178,7 +178,7 @@ class ImageProcess:
             print(f"\tSaving image to <{outpath}>")
             img.save(outpath, **self.saveparams)
 
-JPEGS = (
+JPEGS = [
     # chapter 5
     ("reference/wheatfield ev/HanakoxHisao2_2.png", "event/wheatfield/wheatfield_smile.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_awkward.png", "event/wheatfield/wheatfield_awkward.jpg", [RESIZE_1080P]),
@@ -239,7 +239,13 @@ JPEGS = (
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_03.png", "event/planeride/planeride_listen.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_04.png", "event/planeride/planeride_frown.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_05.png", "event/planeride/planeride_weaksmile.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P])
-)
+]
+
+PHOTOGRAPHS = [
+    # chapter 28
+    ("event/planeride/planeride_bliss.jpg", "gui/journal/p01.jpg", [crop(300, 0, 1920, 1080), resize(525, 350)]),
+    ("bgs/inverness_street.jpg", "gui/journal/p02.jpg", [CompositeTransformation([(700, 0, "~sprites/hanako/hanako_emb_smile.png"), (300, 0, "sprites/hisao/hisao_cross_smile_polo.png")]), crop(150, 0, 1770, 1080), resize(525, 350)])
+]
 
 def main(args):
     _update_paths(args)
@@ -247,14 +253,15 @@ def main(args):
     if "force" in args:
         force = args["force"]
     images_to_process: list[ImageProcess] = []
-    for entry in JPEGS:
+    for entry in JPEGS + PHOTOGRAPHS:
         transforms = []
         if len(entry) == 3:
             transforms = entry[2]
         inpath = resolve_path(entry[0])
         outpath = Path(sh_path, entry[1])
-        transforms.append(CHECK_1080P)
-        transforms.append(convert_rgb())
+        if entry in JPEGS:
+            transforms.append(CHECK_1080P)
+            transforms.append(convert_rgb())
         images_to_process.append(ImageProcess(inpath, outpath, transforms, quality=90))
     for process in images_to_process:
         process.transform(force)

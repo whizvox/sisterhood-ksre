@@ -21,7 +21,7 @@ Not so much here. The idea that there are people at every airport who are being 
 
 !{d02}
 
-!{"Body Shame Brigade", x=0.7, top=-4, rot=-15}
+!{"Body Shame Brigade", x=0.71, top=-3, rot=-15}
 
 ===
 
@@ -42,26 +42,51 @@ I learned something new about myself this morning. I'm pretty much immune to jet
 
 The atmosphere there reminded me of that visit to the jazz club before Hisao and I started dating. Lilly and Akira took part in and won a pub quiz, while Hisao and I took part in and both won a billiards game. Also, we met Lilly's mother! We just didn't know it was her at first. Back at the Satou residence we tried out the wine that Lilly won, hung out together and then went to bed.
 
-\nMusings:
-Wow, the Satou residence is really large. I wonder if it doesn't feel extremely empty with just two people living there. Maybe that's secretly part of the reason they have housekeepers. Lilly's been trying to warm us up to the idea of exploring Inverness on our own. I don't think I'm confident enough yet to try a stilted conversation with some locals in order to ask for directions, but Hisao's English isn't going to get us out of a jam either.
+!{d04,gap=4}
+
+Musings:
+Wow, the Satou residence is really large. I wonder if it doesn't feel extremely empty with just two people living there. Maybe that's secretly part of the reason they have housekeepers.
+
+!{d03, gap=4, px=1.0, x=0.9}
+!{"They have maids!", x=0.4, top=-5.5, rot=10}
 
 ===
 
-I think Lilly's enjoying the idea of us having to practice our English skills the hard way far more than she should. The town of Inverness is really impressive. The older buildings look so different from the ones in Japan. It's really starting to feel like we're on vacation.
+Lilly's been trying to warm us up to the idea of exploring Inverness on our own. I don't think I'm confident enough yet to try a stilted conversation with some locals in order to ask for directions, but Hisao's English isn't going to get us out of a jam either. I think Lilly's enjoying the idea of us having to practice our English skills the hard way far more than she should. The town of Inverness is really impressive. The older buildings look so different from the ones in Japan. It's really starting to feel like we're on vacation.
 
-Lilly performed a toast. I really envy her bond with Akira. They seem so close. Also, Akira suggests their parents are both workaholics. It explains why they couldn't pick us up from the airport the other day. Interesting tidbit: Lilly learned most of her homemaking skills from their old housekeeper. I wonder if she'd be comfortable with Akira telling us that. Billiards is great fun, but much more difficult than pool. Fortunately, this was a first time for both of us playing it.
+!{p02}
 
 ===
 
-I told Hisao about what I'd like to do. Hisao has already figured out where he's going to go after graduation. I wonder if there's a university in his hometown of Chiba that I could attend. If we end up studying in different towns, maintaining our relationship is going to be really difficult. Also, meeting Lilly's mother was unexpected. Looks like she was toying with us a bit. I feel a bit embarrassed for not having made the connection myself because the family resemblance is quite striking. I wonder if this is what Lilly will eventually end up looking like when she's older. If so, she's a lucky person. There'll be a picnic tomorrow, and Lilly wants me to help her prepare the food. Hurray!
+Lilly performed a toast. I really envy her bond with Akira. They seem so close. Also, Akira suggests their parents are both workaholics. It explains why they couldn't pick us up from the airport the other day. Interesting tidbit: Lilly learned most of her homemaking skills from their old housekeeper. I wonder if she'd be comfortable with Akira telling us that.
+
+\nBilliards is great fun, but much more difficult than pool. Fortunately, this was a first time for both of us playing it.
+I told Hisao about what I'd like to do. Hisao has already figured out where he's going to go after graduation. I wonder if there's a university in his hometown of Chiba that I could attend. If we end up studying in different towns, maintaining our relationship is going to be really difficult.
+
+===
+
+Also, meeting Lilly's mother was unexpected. Looks like she was toying with us a bit.
+
+!{"I'm on to you!", gap=2, x=0, px=0, top=-2.5, rot=-5}
+!{d05}
+
+I feel a bit embarrassed for not having made the connection myself because the family resemblance is quite striking. I wonder if this is what Lilly will eventually end up looking like when she's older. If so, she's a lucky person.
+
+\nThere'll be a picnic tomorrow, and Lilly wants me to help her prepare the food. Hurray!
+
+!{d06}
 
 ===
 
 # Day 3
 
-I woke up feeling extremely sick this morning. Shower didn't help much. Fresh air didn't help much. Swearing to my ancestors to never ever drink again didn't help much. I guess I really deserved this. At least I'm not the only one. Lilly and Hisao were apparently in bad shape too. Lilly got in trouble for passing out on the couch—AFTER her parents already escorted her upstairs. Hisao and I had sandwiches for breakfast, filled with meat, lettuce and tomato. It was really hard eating them while resisting the urge to throw them back up, but Hisao said they'd make us feel better. In the end we decided to sleep for a few more hours. Fortunately, I felt seriously better around noon. Lilly and I spent nearly an hour preparing picnic food which was fun and a good way to distract myself from the painful sensation in my head. Lilly's mother brought tandem bikes along. Riding them was a bit like playing that motorcycle arcade game with Hisao. It was tricky but fun. At first.
+I woke up feeling extremely sick this morning. Shower didn't help much. Fresh air didn't help much. Swearing to my ancestors to never ever drink again didn't help much. I guess I really deserved this. At least I'm not the only one. Lilly and Hisao were apparently in bad shape too. Lilly got in trouble for passing out on the couch—AFTER her parents already escorted her upstairs. Hisao and I had sandwiches for breakfast, filled with meat, lettuce and tomato. It was really hard eating them while resisting the urge to throw them back up, but Hisao said they'd make us feel better. In the end we decided to sleep for a few more hours.
+
+!{d07}
 
 ===
+
+Fortunately, I felt seriously better around noon. Lilly and I spent nearly an hour preparing picnic food which was fun and a good way to distract myself from the painful sensation in my head. Lilly's mother brought tandem bikes along. Riding them was a bit like playing that motorcycle arcade game with Hisao. It was tricky but fun. At first.
 
 We ended up visiting some old battlefield, but I didn't quite catch most of what Lilly's mother told us about it. I got unwell during our bike ride, but it was kind of my own fault, so thankfully the picnic didn't end up cancelled over me. We learned that the company of Lilly's family makes medical equipment. And that Lilly's mother was told to come to Scotland just like Lilly was, though unlike her daughter she didn't end up staying at the last moment. I wonder how things would have played out if that had been the case. Also, Lilly's mother used to be a journalist. I got some nasty cramps near the end of the picnic, so Lilly's mother ended up calling the housekeeper to pick us up. I was given A LOT to drink during the picnic and over dinner that evening. I ended up going to bed early that night to recover from today.
 
