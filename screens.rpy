@@ -309,13 +309,13 @@ screen sh_journal(left_dialogue, right_dialogue=None, images=None):
 
     if images is not None:
         for entry in images:
-            if len(entry) > 3:
+            if len(entry) > 4:
                 $ imgxanchor = entry[3]
                 $ imgyanchor = entry[4]
             else:
                 $ imgxanchor = 0.5
                 $ imgyanchor = 0.0
-            if len(entry) > 4:
+            if len(entry) > 5:
                 $ imgrotation = entry[5]
             else:
                 $ imgrotation = None

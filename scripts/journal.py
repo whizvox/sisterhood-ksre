@@ -16,6 +16,7 @@ LEFT_P2 = 0.57
 
 def word_wrap_text(text: str, font: FreeTypeFont) -> int:
     lines = []
+    text = text.replace("\\n", "\n")
     for line in text.split("\n"):
         currlines = [""]
         for word in line.split():
@@ -138,7 +139,7 @@ def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
         if line == "":
             continue
         if line == "===":
-            pages.append(Page(page, images))
+            pages.append(Page(page.rstrip(), images))
             page = ""
             images = []
         else:
@@ -149,22 +150,19 @@ def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
                     is_header = True
                 else:
                     page += "\n\n"
-            else:
-                page += "\n"
             if line.startswith("!{") and line[-1] == "}":
                 img = parse_image(line[2:-1])
                 if img.is_relative():
                     img.ypos = 0.034116 * (get_text_lines(page, font) - 1) + 0.092058
-                    # newline is added before the next bit of text
                     if img.gap > 1:
-                        page += "\n" * (img.gap - 1)
+                        page += "\n" * img.gap
                 img.ypos += img.yoff
                 images.append(img)
             else:
-                page += line
+                page += line + "\n"
             if is_header:
                 page += "\n"
-    pages.append(Page(page, images))
+    pages.append(Page(page.rstrip(), images))
     return pages
 
 
