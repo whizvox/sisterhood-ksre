@@ -2,7 +2,7 @@
 
 This day was almost entirely spent getting from Yamaku to the Satou residence in Inverness, Scotland. We assembled in Lilly's room in the morning, took the bus directly to the train station and then the train to the airport. We made sure to plan ahead for unexpected delays, but in the end it all ran smoothly. We made sure to do our baggage checkin as soon as we arrived and wasted no time getting through security. We went for something to eat and then hurried along to the gate. It turned out they let us board the flight before anyone else in economy class.
 
-The flight itself took a long time, nearly 13 hours. London airport was even busier than Narita and it was quite the trip to the gate of our next plane. Fortunately, the second flight only took about an hour and Inverness Airport was really small compared to the other ones. When we left the building, Akira was already waiting for us. She drove us to the Satou residence.
+\nThe flight itself took a long time, nearly 13 hours. London airport was even busier than Narita and it was quite the trip to the gate of our next plane. Fortunately, the second flight only took about an hour and Inverness Airport was really small compared to the other ones. When we left the building, Akira was already waiting for us. She drove us to the Satou residence.
 
 !{d01, x=0.8, y=0.02}
 
@@ -188,32 +188,42 @@ I can't believe I'm thinking about all these things. Not too long ago I had no c
 
 Today is the first day Hisao and I have gone out without being accompanied by Lilly. We spent last evening preparing for today. We packed our lunches, the tourist guide and a map of the city and surrounding Highlands area. Lilly's mother gave each of us a bus card that we can use to take any of the bus lines in the area without having to pay the driver. I was a bit nervous to go out there without Lilly or her mother accompanying us, but the fact that Hisao was also a bit uneasy was a small comfort. Lilly's mom told us we could always call if we weren't sure how to get back. Good thing it didn't come to that. I'm not even sure how much reception we'd have in the middle of nowhere.
 
-Having focussed on the cultural sights over the last two days, Hisao and I decided to get away from the city and take a nature-viewing trip for a change.
+Having focused on the cultural sights over the last two days, Hisao and I decided to get away from the city and take a nature-viewing trip for a change.
 
 ===
 
-We took the bus from the area near the Satou residence to the bus station in the center of Inverness and then took another bus to our destination. That bus ride took quite long - almost an hour. Fortunately, the bus drivers have been really helpful so far. When we show them our bus cards and then point out our destination on the map we brought along, they usually give us a little notice when we reach the bus stop where we need to get off.
+!{d14, y=0.02}
 
-Our destination for today was the hamlet of Tomich far to the south-west of Inverness. The village was built in a very charming style. It's called the Victorian style; named after one of the queens who ruled in that era. It seems most of the village's buildings used to be part of the local nobleman's estate, though the manor itself is now a ruin.
+We took the bus from the area near the Satou residence to the bus station in the center of Inverness and then took another bus to our destination. That bus ride took quite long—almost an hour. Fortunately, the bus drivers have been really helpful so far. When we show them our bus cards and then point out our destination on the map we brought along, they usually give us a little notice when we reach the bus stop where we need to get off.
+
+\nOur destination for today was the hamlet of Tomich far to the south-west of Inverness. The village was built in a very charming style. It's called the Victorian style; named after one of the queens who ruled in that era. It seems most of the village's buildings used to be part of the local nobleman's estate, though the manor itself is now a ruin.
 
 ===
+
+!{p05}
 
 Fun fact: the first golden retriever was bred in this village. The nobleman who lived here needed a dog who could retrieve game from almost anywhere during the hunt, be it the ground or a lake. (of which there are plenty in the area) So he ended up breeding a dog breed that loves both water and playing fetch.
 
-The main attraction around here was the awe-inspiring waterfall slightly south of the village called Plodda Falls. We spent a lot of time just staring at it and taking pictures, and then we had a little picnic (nothing big this time, just the lunch we packed) near the falls. We spent the rest of the afternoon taking strolls through the nearby woods. It was really beautiful around there and so peaceful as well. Eventually we took the bus back to Inverness. We made our way back to the Satou residence without messing up, so kudos to us.
+===
+
+The main attraction around here was the awe-inspiring waterfall slightly south of the village called Plodda Falls. We spent a lot of time just staring at it and taking pictures, and then we had a little picnic (nothing big this time, just the lunch we packed) near the falls. We spent the rest of the afternoon taking strolls through the nearby woods. It was really beautiful around there and so peaceful as well.
+
+!{p06}
 
 ===
 
-Here's hoping we can keep this going. Also, before we went to bed this night, we met Lilly's father.
+Eventually we took the bus back to Inverness. We made our way back to the Satou residence without messing up, so kudos to us. Here's hoping we can keep this going. Also, before we went to bed this night, we met Lilly's father.
 
-Musings:
+\nMusings:
 Lilly's father and mother are really different. I don't think the saying “opposites attract” applies to Hisao and me, but it certainly seems true for them. I’ve always pictured Lilly's father as an intimidating figure who ruled his household with an iron fist, but he's actually not that bad; just a little bit stiff and stern. Okay, maybe more than a little stiff in his manners. He's also extremely polite and formal—much, much more so than Lilly. I don't think we'll be calling him by his first name anytime soon. It just doesn't seem appropriate.
+
+===
 
 He welcomed us to Scotland when we were introduced and told us to consider his home our own for the duration of our stay.
 
-===
+\nThen, he excused himself and retired to his study. From what I've heard, he's going to take a few days off within a week or two to spend some time with Lilly just like his wife has been doing, but in order to be able to afford that time off during this busy period at the office, he's been working massive overtime on an almost daily basis to compensate. He made a rather tired and restless impression on me when we met him. I hope he isn't going to burn himself out for our sake. I don't think Lilly would want that.
 
-Then, he excused himself and retired to his study. From what I've heard, he's going to take a few days off within a week or two to spend some time with Lilly just like his wife has been doing, but in order to be able to afford that time off during this busy period at the office, he's been working massive overtime on an almost daily basis to compensate. He made a rather tired and restless impression on me when we met him. I hope he isn't going to burn himself out for our sake. I don't think Lilly would want that.
+!{d15}
 
 ===
 
@@ -225,16 +235,36 @@ Cawdor Castle is really impressive. It feels like a place right out of a storybo
 
 ===
 
-We spent about an hour touring the castle and spent the rest of our time there walking the nature trail nearby and the castle's various beautiful gardens. I think our little walk through the flower garden was one of the most romantic moments of our vacation so far. Despite having brought our own lunch, we actually ended up buying a meal at the snackbar near the bus stop since I gave most of my sandwiches to the ducklings swimming in the nearby pond. I managed to lure a few of them close enough for a photo. They looked so extremely cute I still smile whenever I picture them in my mind. I can't wait to have that photo printed out.
+We spent about an hour touring the castle and spent the rest of our time there walking the nature trail nearby and the castle's various beautiful gardens. I think our little walk through the flower garden was one of the most romantic moments of our vacation so far.
+
+!{p07}
+
+Despite having brought our own lunch, we actually ended up buying a meal at the snackbar near the bus stop since I gave most of my sandwiches to the ducklings swimming in the nearby pond. I managed to lure a few of them close enough for a
 
 ===
+
+photo. They looked so extremely cute I still smile whenever I picture them in my mind. I can't wait to have that photo printed out.
+
+!{p08}
 
 Musings:
-While browsing through the camera's memory, I found out something embarrassing. Apparently Hisao took a picture of me while I was asleep in our bed. Perhaps he thought I looked cute while sleeping. That wasn't really the issue though. The problem was the fact that I wasn't wearing anything when he took that picture. The bedsheet covered most of me, but I could still see my face, my shoulders and the top of my back. Has he forgotten that this camera belongs to the newspaper club? What if Naomi had found that picture? I don't think she's the type to use this kind of thing as blackmail material against me, but I'd still have to deal with a spell of excruciating embarrassment.
+While browsing through the camera's memory, I found out something embarrassing. Apparently Hisao took a picture of me while I was asleep in our bed. Perhaps he thought I looked cute while sleeping. That wasn't really the issue though. The problem was the fact that I wasn't wearing anything when he took that
 
 ===
 
-On that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at each other's place and worrying about bumping into each other's neighbors the morning after. Best to enjoy the time we have here.
+picture. The bedsheet covered most of me, but I could still see my face, my shoulders and the top of my back.
+
+\nHas he forgotten that this camera belongs to the newspaper club? What if Naomi had found that picture? I don't think she's the type to use this kind of thing as blackmail material against me, but I'd still have to deal with a spell of excruciating embarrassment.
+
+!{d17}
+
+On that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at each other's place and worrying about bumping into each other's neighbors the
+
+===
+
+morning after. Best to enjoy the time we have here.
+
+!{d18}
 
 Note to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.
 
@@ -242,34 +272,49 @@ Note to self: don't leave my birth control pills anywhere near Hisao's collectio
 
 # Day 7
 
-Naomi will be pleased. A true Scotsman has been spotted and photographed. Not just that but we also got to see how these traditional Scottish garments are made. We visited the Scottish Kiltmaker Visitor Center as well as a shop specializing in Highland clothes today. In addition to the the exhibition there was also a viewing area where we could see craftsmen at work creating these pieces of clothing. It turns out there is no such thing as THE Scottish kilt; each clan used to have its own pattern as well as an accompanying belt with the clan sigil on the buckle and a decorated pouch (it has a name but I forgot what it was) to make up for the fact that kilts have no pockets. While we were at the Highland dress shop, Lilly and I also took the opportunity to try on a few Scottish dresses. I don't think anyone would ever mistake me for a local, but I the dresses looked very natural on Lilly. Hisao snapped some nice pictures of this event.
+Naomi will be pleased. A true Scotsman has been spotted and photographed.
+
+!{p09}
+
+Not just that but we also got to see how these traditional Scottish garments are made. We visited the Scottish Kiltmaker Visitor Center as well as a shop specializing in Highland clothes today. In addition to the the exhibition there was also a viewing area where we could see craftsmen at work creating these pieces of clothing. It turns out there is no such thing as THE Scottish kilt; each clan used to have its own pattern as well as an
 
 ===
+
+accompanying belt with the clan sigil on the buckle and a decorated pouch (it has a name but I forgot what it was) to make up for the fact that kilts have no pockets. While we were at the Highland dress shop, Lilly and I also took the opportunity to try on a few Scottish dresses. I don't think anyone would ever mistake me for a local, but I the dresses looked very natural on Lilly. Hisao snapped some nice pictures of this event.
 
 There were a few nice affordable dresses there, but I don't think there'd be a point in me buying one. They stand out so much that I'd never be able to get myself to wear one in public.
 
-Musings:
-I almost filled up my first memory card today and I'm thinking of having a few photos printed out when we visit the shopping center here. Of course, lots of the photos are about the same things shot from a slightly different angle, but I've nevertheless managed to capture most of my vacation on camera so far.
-
-My vacation...
-
-Aside from that long weekend in Hokkaido, I haven't had a real vacation in a decade. There were dates with Hisao or outings with Lilly that I enjoyed, but this feels different somehow.
+\nMusings:
+I almost filled up my first memory card today and I'm thinking of having a few photos printed out when we visit the shopping center here. Of course, lots of the photos are about the same things shot from a slightly different angle, but I've
 
 ===
 
-Or maybe I simply feel different. I'm not sure when it started; perhaps when Lilly's mother started talking about writing and journalism? Or maybe when I started keeping a journal and actively using my camera? It hit me today while I was browsing through the pictures stored on the camera already. I'm in quite a few of the pictures myself. To most people that would be logical, but that's not the case for me. I don't think there are many photos of me in existence at all. Most of the ones that existed before the fire were destroyed when our house burned down. I never liked the idea of people staring at a picture of me any more than people staring at me directly, so I’ve always tried to avoid being caught on camera whenever possible, even if that involved skipping class. I don't appear in the class photo of class 3-3 nor in any of the pictures from earlier years.
+nevertheless managed to capture most of my vacation on camera so far.
+
+\nMy vacation...
+
+\nAside from that long weekend in Hokkaido, I haven't had a real vacation in a decade. There were dates with Hisao or outings with Lilly that I enjoyed, but this feels different somehow.
+
+\nOr maybe I simply feel different. I'm not sure when it started; perhaps when Lilly's mother started talking about writing and journalism? Or maybe when I started keeping a journal and actively using my camera? It hit me today while I was browsing through the pictures stored on the camera already. I'm in quite a few of the pictures myself. To most people that would be logical, but that's not the case for me. I don't think there are many photos of me in existence at all. Most of the ones that existed before the fire were
 
 ===
 
-Yet during this week I've allowed myself to be photographed more often than in the preceding 10 years combined. And I'm writing about everything that's happened too. Photos used to be nothing more to me than a painful reminder of my disfigurement, but the ones recently taken are different. They're reminders of things I enjoyed. I realize now that that's probably also why I'm keeping a diary. I'm busy making memories. That's kind of new to me as well. When I still lived at the orphanage, I survived by focussing completely on the present. I tried to forget the events of yesterday and tried not to think about what would happen tomorrow. (both were often painful) And yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.
+destroyed when our house burned down. I never liked the idea of people staring at a picture of me any more than people staring at me directly, so I’ve always tried to avoid being caught on camera whenever possible, even if that involved skipping class. I don't appear in the class photo of class 3-3 nor in any of the pictures from earlier years.
+
+\nYet during this week I've allowed myself to be photographed more often than in the preceding 10 years combined. And I'm writing about everything that's happened too. Photos used to be nothing more to me than a painful reminder of my disfigurement, but the ones recently taken are different. They're reminders of things I enjoyed. I realize now that that's probably also why I'm keeping a diary. I'm busy making memories. That's kind of new to me as well.
 
 ===
 
-I realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.
+When I still lived at the orphanage, I survived by focusing completely on the present. I tried to forget the events of yesterday and tried not to think about what would happen tomorrow. (both were often painful)
+And yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.
+
+\nI realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.
+
+===
 
 On a final note, when re-reading my recollection of the first day, I realize I maybe wasn't being completely fair. I did like the flight itself and our stay here so far has definitely been worth the stress of the trip so I'm going to try and write something positive about it after I finish this page. Maybe that's the key to sorting out my life. Writing down the precious memories and taking pictures of them in order to to keep them alive that way while letting the bad memories fade with time.
 
-Hmmm...
+\nHmmm...
 
 ===
 
