@@ -320,22 +320,39 @@ On a final note, when re-reading my recollection of the first day, I realize I m
 
 # Day 8
 
-Today was another day off. We decided to go shopping in Inverness. There's an indoor market built in Victorian style located near the Ness. It's a really nice looking place filled with all kinds of small owner-operated shops, and the archways and colorful shop facades give the place an atmospheric old-fashioned charm. It was a little more crowded there than I would have liked, but my sun hat did a good job at obscuring the right side of my face. Among the shops we visited were candy stores, a bagpipe store (those things are really expensive!), several tailor and clothing stores and a few gift shops. (I got Naomi a toy Nessie from one of them as a thanks for letting me borrow her camera. She did want to see the Loch Ness monster after all.) We also bought ingredients for tonight's dinner. Lilly and I will be making fruit cocktail tonight.
+Today was another day off. We decided to go shopping in Inverness. There's an indoor market built in Victorian style located near the Ness. It's a really nice looking place filled with all kinds of small owner-operated shops, and the archways and colorful shop facades give the place an atmospheric old-fashioned charm. It was a little more crowded there than I would have liked, but my sun hat did a good job at obscuring the right side of my face.
+
+!{p10, top=1}
+
+===
+
+Among the shops we visited were candy stores, a bagpipe store (those things are really expensive!), several tailor and clothing stores and a few gift shops. (I got Naomi a toy Nessie from one of them as a thanks for letting me borrow her camera. She did want to see the Loch Ness monster after all.)
+
+!{p11}
+
+We also bought ingredients for tonight's dinner. Lilly and I will be making fruit cocktail tonight.
 
 ===
 
 Finally, we met up with Akira in a cafe located in the marketplace. It was nice catching up with her. Also, we (secretly) had a glass of wine there. Akira treated us to one after she heard that Lilly had been sentenced to a soda diet for the remainder of her stay. We made sure not to have more than one though, lest we'd be found out.
 
+!{d19}
+!{"Remember me?", top=-8.25, gap=0, x=0.65, rot=7}
+
 Musings:
-It sure was nice to meet up with Akira again, although I'm a bit surprised that it's been nearly a week since we last saw her. She and Lilly still have almost daily contact over the phone, but you'd say that this would be an ideal opportunity for them to spend lots of time together while they still can. Who knows how long it'll take before they can meet in person again after we return to Japan.
+It sure was nice to meet up with Akira again, although I'm a bit surprised that it's been nearly a week since we last saw her. She and Lilly still have almost daily contact over the phone, but you'd say that this would be an ideal opportunity for them to spend lots of time together while they still can. Who knows how long it'll take before they can meet in person again after we
 
 ===
 
-Akira says she's busy with work, and I'm sure that's true, but I also have the impression that she'd rather not visit the Satou residence or even be in the presence of her parents. I heard that she's living in a small apartment she's renting on the other side of Inverness. I feel bad that Hisao and I are staying in such luxury right now while Akira is living in such modest conditions, even though I'm pretty sure it's completely by her own choice. From what I've been able to tell, Akira doesn't like her parents and is still upset with them about the way they left her and Lilly in Japan to fend for themselves. She doesn't act openly hostile towards them most of the time, but she's definitely keeping them at arm's length. While she's been willing to let us drink alcohol before, I got the impression the main reason she treated us to a glass of wine was to spite her father.
+return to Japan. Akira says she's busy with work, and I'm sure that's true, but I also have the impression that she'd rather not visit the Satou residence or even be in the presence of her parents. I heard that she's living in a small apartment she's renting on the other side of Inverness. I feel bad that Hisao and I are staying in such luxury right now while Akira is living in such modest conditions, even though I'm pretty sure it's completely by her own choice.
+
+\nFrom what I've been able to tell, Akira doesn't like her parents and is still upset with them about the way they left her and Lilly in Japan to fend for themselves. She doesn't act openly hostile towards them most of the time, but she's definitely keeping them at arm's length. While she's been willing to let us drink alcohol before, I got the impression the main reason she treated us to a glass of wine was to spite her father.
 
 ===
 
 I don't think Lilly's happy with this, but she seems hesitant to try and force things. Well, that's Lilly for you. Still, it's a pity she can't spend time with both her parents and her sister at the same time. They're all really nice people on their own.
+
+!{d20}
 
 ===
 

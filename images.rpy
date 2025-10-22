@@ -197,6 +197,7 @@ init 1:
     Highland News and Media Ltd.
     kanagawa-hotels.com
     TillTheMoneyRunsOut.com
+    Loch Ness Gifts
     legendarysoulII
     Firefall
     whizvox
