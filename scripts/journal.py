@@ -1,12 +1,9 @@
+import json
 from PIL.ImageFont import FreeTypeFont
 from pathlib import Path
 from argparse import ArgumentParser
 import re
 import sys
-
-COMMON_FONT = FreeTypeFont("../../../font/playtime.ttf", 34)
-ZH_FONT = FreeTypeFont("../../../font/XiaolaiSC-Regular.ttf", 34)
-JP_FONT = FreeTypeFont("../../../font/VL-PGothic-Regular.ttf", 34)
 
 LINES = 26
 LINE_GAP = 0.034116
@@ -14,8 +11,8 @@ TOP = 0.075
 LEFT = 0.19
 LEFT_P2 = 0.57
 
-def word_wrap_text(text: str, font: FreeTypeFont) -> int:
-    lines = []
+def word_wrap_text(text: str, font: FreeTypeFont) -> list[str]:
+    lines: list[str] = []
     text = text.replace("\\n", "\n")
     for line in text.split("\n"):
         currlines = [""]
@@ -91,7 +88,6 @@ def parse_image(text: str) -> Image:
     for i in range(1, len(tokens)):
         tokens[i] = re.sub(r'\s', "", tokens[i])
     image = tokens[0]
-    text = None
     if image[0] == '"' and image[-1] == '"':
         text = image[1:-1]
         image = None
@@ -126,7 +122,7 @@ def parse_image(text: str) -> Image:
             gap = 5
         else:
             gap = 11
-    return Image(image, text, xpos, ypos, yoff, xanchor, yanchor, gap, rotation)
+    return Image(image, None if image is not None else text, xpos, ypos, yoff, xanchor, yanchor, gap, rotation)
 
 
 def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
@@ -156,6 +152,8 @@ def parse_journal(text: str, font: FreeTypeFont) -> list[Page]:
                     img.ypos = 0.034116 * (get_text_lines(page, font) - 1) + 0.092058
                     if img.gap > 1:
                         page += "\n" * img.gap
+                if img.ypos is None:
+                    img.ypos = 0
                 img.ypos += img.yoff
                 images.append(img)
             else:
@@ -173,7 +171,7 @@ def read_journal_file(file_path: str, font: FreeTypeFont) -> list[Page]:
 
 
 def verify_pages(pages: list[Page], font: FreeTypeFont) -> list[str]:
-    warnings = []
+    warnings: list[str] = []
     for i, page in enumerate(pages):
         lines = word_wrap_text(page.text, font)
         if len(lines) > LINES:
@@ -181,7 +179,7 @@ def verify_pages(pages: list[Page], font: FreeTypeFont) -> list[str]:
     return warnings
 
 
-def export_rpy_images(images: list[Image], xoff=0) -> str:
+def export_rpy_images(images: list[Image], xoff: float=0) -> str:
     imgstr = ""
     for img in images:
         if len(imgstr) > 0:
@@ -214,14 +212,14 @@ def export_rpy(pages: list[Page]) -> str:
         leftimages = pages[left].images.copy()
         for img in leftimages:
             img.xpos = round(0.19 + img.xpos * 0.3, 4)
-            img.ypos = round(img.ypos, 4)
+            img.ypos = round(img.ypos or 0, 4)
         if right < len(pages):
             righttext = pages[right].text.replace("\n", "\\n")
             callstr += f"\"{lefttext}\",\n    \"{righttext}\""
             rightimages = pages[right].images.copy()
             for img in rightimages:
                 img.xpos = round(img.xpos * 0.3 + 0.57, 4)
-                img.ypos = round(img.ypos, 4)
+                img.ypos = round(img.ypos or 0, 4)
             imgstr = export_rpy_images(leftimages + rightimages)
         else:
             callstr += f"\"{lefttext}\""
@@ -239,7 +237,7 @@ def write_script(script: str, lang: str):
     path = Path("../act2/script-ch28.rpy")
     if not path.exists():
         raise Exception(f"Script file \"{path}\" does not exist")
-    newlines = []
+    newlines: list[str] = []
     with path.open("r", encoding="utf-8") as file:
         in_label = False
         for line in file.readlines():
@@ -267,17 +265,38 @@ def print_header(header: str):
     print("┗" + ("━" * (len(header) + 2)) + "┛")
 
 
-def main(args: dict[str, any]):
+def get_ksre_directory(args: dict[str, any]) -> str | None: # type: ignore
+    projdir: str = ""
+    if args["dir"] is not None:
+        projdir = args["dir"] # type: ignore
+    else:
+        with open(args["cfg"], "r") as file: # type: ignore
+            config = json.load(file)
+        projdir = config["sisterhoodDir"]
+        if projdir == "PUT_KSRE_PROJECT_DIRECTORY_HERE":
+            print("[ERROR] Must specify path to Katawa Shoujo: Re-Engineered project directory in config.json")
+            return None
+    projpath = Path(projdir)
+    if not projpath.exists() or not projpath.is_dir() or not (projpath / "game").exists():
+        print(f"[ERROR] Project directory must be a valid Ren'Py project directory: {projdir}")
+        return None
+    return projdir
+
+
+def main(args: dict[str, any]): # type: ignore
     file_path = f"journal/{args['lang']}.txt"
     if not Path(file_path).exists():
         print(f"[ERROR] Unknown journal entry: {file_path}")
         return
+    projdir = get_ksre_directory(args)
+    if projdir is None:
+        return
     if args["font"] == "zh":
-        font = ZH_FONT
+        font = FreeTypeFont(f"{projdir}/game/font/XiaolaiSC-Regular.ttf", 34)
     elif args["font"] == "jp":
-        font = JP_FONT
+        font = FreeTypeFont(f"{projdir}/game/font/VL-PGothic-Regular.ttf", 34)
     else:
-        font = COMMON_FONT
+        font = FreeTypeFont(f"{projdir}/game/font/playtime.ttf", 34)
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
     if args["action"] == "export":
@@ -285,7 +304,7 @@ def main(args: dict[str, any]):
         print()
         script = export_rpy(parse_journal(text, font))
         try:
-            write_script(script, args["lang"])
+            write_script(script, args["lang"]) # type: ignore
             print("File successfully written!")
         except Exception as e:
             print("ERROR: Could not write journal")
@@ -315,4 +334,6 @@ if __name__ == "__main__":
     parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export")
     parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common")
     parser.add_argument("-l", "--lang", default="en")
+    parser.add_argument("-c", "--cfg", default="config.json")
+    parser.add_argument("-d", "--dir", required=False)
     main(vars(parser.parse_args(sys.argv[1:])))

@@ -1,12 +1,12 @@
 from PIL import Image
 import os
 
-RESAMPLE_METHOD = Image.BICUBIC
+RESAMPLE_METHOD = Image.Resampling.BICUBIC
 
 def crop_and_resize_image(input_path: str,
                   output_path: str,
                   replace: bool = False,
-                  crop: tuple[int, int] | None = None,
+                  crop: tuple[float, float, float, float] | None = None,
                   target_width: int | None = None,
                   target_height: int | None = None):
     if os.path.exists(output_path) and not replace:
@@ -36,7 +36,7 @@ def crop_and_resize_image(input_path: str,
             new_width = im.width
             new_height = im.height
     if im.width != new_width or im.height != new_height:
-        im = im.resize((new_width, new_height), resample=RESAMPLE_METHOD)
+        im = im.resize((new_width, new_height), resample=RESAMPLE_METHOD) # type: ignore
     parent_dir = os.path.dirname(output_path)
     if not os.path.isdir(parent_dir):
         os.mkdir(os.path.dirname(output_path))
@@ -273,7 +273,7 @@ hiroyuki = [
 def main():
     import sys
 
-    replace = []
+    replace: list[str] = []
 
     for arg in sys.argv:
         if arg.startswith("--replace="):

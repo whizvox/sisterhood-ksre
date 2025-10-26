@@ -143,7 +143,7 @@ I also found out today that Lilly's mother has a home trainer that Hisao will be
 
 \nAround four o' clock in the afternoon, we took a trip into the city to walk along the river Ness and visit St. Andrews Cathedral. It was a beautiful church, though we didn't really get a lot of information on its history. I suppose it's still a church first and a tourist attraction second.
 
-!{p04, top=1}
+!{p04}
 
 ===
 

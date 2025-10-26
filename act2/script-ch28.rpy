@@ -182,8 +182,8 @@ label sh_ch28_journal_en:
         "Day 4\n\nBefore heading to bed last night, I was told that we'd be taking it easy for today, and I could sleep in to my heart's delight. I'm not someone who sleeps in a lot, but I did end up staying in bed until nearly noon. Not so much because I had trouble waking up, but because I decided to wake up my sleeping boyfriend in the only way that's appropriate when you're in a large bed, it's a beautiful sunny morning and you have plenty of time to spare: lazy morning cuddling. I didn't mind the fact at all that one thing lead to another. All in all, I had a great morning.",
         [
             (Image(f"{sh_path}/gui/journal/d09.png"), 0.34, 0.5356),
-            (Image(f"{sh_path}/gui/journal/d10.png"), 0.72, 0.6379),
-            (Text("Do not disturb!", color="#000"), 0.765, 0.8085, 0.5, 0, -6.0)
+            (Image(f"{sh_path}/gui/journal/d10.png"), 0.72, 0.6038),
+            (Text("Do not disturb!", color="#000"), 0.765, 0.7744, 0.5, 0, -6.0)
         ]
     )
 
