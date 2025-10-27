@@ -265,44 +265,51 @@ def print_header(header: str):
     print("┗" + ("━" * (len(header) + 2)) + "┛")
 
 
-def main(args: dict[str, any]): # type: ignore
-    file_path = f"journal/{args['lang']}.txt"
+class Arguments:
+    action: str
+    font: str
+    lang: str
+    dir: str
+
+
+def main(args: Arguments):
+    file_path = f"journal/{args.lang}.txt"
     if not Path(file_path).exists():
         print(f"[ERROR] Unknown journal entry: {file_path}")
         return
-    projdir = args["dir"] # type: ignore
+    projdir = args.dir
     path = Path(projdir)
     if not path.exists() or not path.is_dir() or not (path / "game").exists():
         print(f"[ERROR] Project directory must be a valid Ren'Py project directory: {projdir}")
         return
-    if args["font"] == "zh":
+    if args.font == "zh":
         font = FreeTypeFont(f"{projdir}/game/font/XiaolaiSC-Regular.ttf", 34)
-    elif args["font"] == "jp":
+    elif args.font == "jp":
         font = FreeTypeFont(f"{projdir}/game/font/VL-PGothic-Regular.ttf", 34)
     else:
         font = FreeTypeFont(f"{projdir}/game/font/playtime.ttf", 34)
     with open(file_path, encoding="utf-8") as file:
         text = file.read()
-    if args["action"] == "export":
-        print_header(f"EXPORTING {args['lang']} JOURNAL")
+    if args.action == "export":
+        print_header(f"EXPORTING {args.lang} JOURNAL")
         print()
         script = export_rpy(parse_journal(text, font))
         try:
-            write_script(script, args["lang"]) # type: ignore
+            write_script(script, args.lang)
             print("File successfully written!")
         except Exception as e:
             print("ERROR: Could not write journal")
             print(e)
         print()
         print_header("FINISH EXPORT")
-    elif args["action"] == "print":
-        print_header(f"PRINTING {args['lang']} JOURNAL")
+    elif args.action == "print":
+        print_header(f"PRINTING {args.lang} JOURNAL")
         print()
         print(export_rpy(parse_journal(text, font)))
         print()
         print_header("FINISH PRINT")
     else:
-        print_header(f"VERIFYING {args['lang']} JOURNAL")
+        print_header(f"VERIFYING {args.lang} JOURNAL")
         print()
         result = verify_pages(parse_journal(text, font), font)
         if len(result) == 0:
@@ -315,8 +322,8 @@ def main(args: dict[str, any]): # type: ignore
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export")
-    parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common")
-    parser.add_argument("-l", "--lang", default="en")
-    parser.add_argument("-d", "--dir")
-    main(vars(parser.parse_args(sys.argv[1:])))
+    parser.add_argument("-d", "--dir", help="location of the Katawa Shoujo: Re-Engineered project directory", required=True)
+    parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export", help="export: write to the .rpy script, print: print to the console, verify: find any overflowing text")
+    parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common", help="font to use when calculating word wraps")
+    parser.add_argument("-l", "--lang", default="en", help="language of the journal (i.e. en, de, zh_hans, es)")
+    main(parser.parse_args(sys.argv[1:], namespace=Arguments()))
