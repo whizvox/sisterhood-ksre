@@ -321,7 +321,9 @@ def main(args: Arguments):
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser()
+    parser = ArgumentParser(
+        description="Sisterhood chapter 28 journal generation tool"
+    )
     parser.add_argument("-d", "--dir", help="location of the Katawa Shoujo: Re-Engineered project directory", required=True)
     parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export", help="export: write to the .rpy script, print: print to the console, verify: find any overflowing text")
     parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common", help="font to use when calculating word wraps")

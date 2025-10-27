@@ -4,24 +4,16 @@ import math
 import argparse
 import sys
 
-sh_path: Path | None = None
-ks_path: Path | None = None
+sh_path: Path = Path(".")
+ks_path: Path = Path(".")
 
-def _update_paths(args):
-    global sh_path
-    global ks_path
-    sh_path = Path(args["shdir"])
-    ks_path = Path(args["ksdir"])
-    print(f"sh_path: {sh_path}")
-    print(f"ks_path: {ks_path}")
-
-def resolve_path(plainpath) -> Path:
+def resolve_path(plainpath: str) -> Path:
     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
     if len(plainpath) > 0 and plainpath[0] == "~":
-        return Path(ks_path, plainpath[1:]) # type: ignore
+        return Path(ks_path, plainpath[1:])
     # otherwise, by default, paths will be in reference to the sisterhood directory
     else:
-        return Path(sh_path, plainpath) # type: ignore
+        return Path(sh_path, plainpath)
 
 class ImageTransformation:
     def __init__(self, name: str):
@@ -37,8 +29,8 @@ class ResizeTransformation(ImageTransformation):
         self.targetheight = targetheight
 
     def transform(self, img: Image.Image) -> Image.Image:
-        fwidth = img.width
-        fheight = img.height
+        fwidth: int = img.width
+        fheight: int = img.height
         targetwidth = self.targetwidth
         targetheight = self.targetheight
         if targetwidth != -1:
@@ -46,13 +38,15 @@ class ResizeTransformation(ImageTransformation):
                 fwidth, fheight = targetwidth, targetheight
             else:
                 fwidth = targetwidth
-                fheight *= targetwidth / img.width
+                fheight = math.ceil(fheight * (targetwidth / img.width))
         elif targetheight != -1:
             fheight = targetheight
-            fwidth *= targetheight / img.height
+            fwidth = math.ceil(fwidth * (targetheight / img.height))
         if fwidth != img.width or fheight != img.height:
-            return img.resize((math.ceil(fwidth), math.ceil(fheight)))
+            # idk why pylance has a problem with this line
+            return img.resize(size=(fwidth, fheight)) # type: ignore
         return img
+
 
 class BlurTransformation(ImageTransformation):
     def __init__(self, radius: int, algorithm: str = "gaussian"):
@@ -74,6 +68,7 @@ class BlurTransformation(ImageTransformation):
         else:
             raise RuntimeError("Unknown blur algorithm: " + algorithm)
 
+
 class CropTransformation(ImageTransformation):
     def __init__(self, box: tuple[float, float, float, float]):
         super().__init__("crop")
@@ -82,13 +77,15 @@ class CropTransformation(ImageTransformation):
     def transform(self, img: Image.Image) -> Image.Image:
         return img.crop(self.box)
 
+
 class ConvertTransformation(ImageTransformation):
-    def __init__(self, mode="RGB"):
+    def __init__(self, mode: str="RGB"):
         super().__init__("convert")
         self.mode = mode
-    
+
     def transform(self, img: Image.Image):
         return img.convert(mode=self.mode)
+
 
 class CheckSizeTransformation(ImageTransformation):
     def __init__(self, minwidth: int = -1, minheight: int = -1):
@@ -153,16 +150,16 @@ def check_size(minwidth: int = -1, minheight: int = -1):
 CHECK_1080P = CheckSizeTransformation(1920, 1080)
 
 class ImageProcess:
-    def __init__(self, inpath, outpath, transforms: list[ImageTransformation] = [], **saveparams: any): # type: ignore
+    def __init__(self, inpath: str | Path, outpath: str | Path, transforms: list[ImageTransformation] = [], **saveparams: any): # type: ignore
         self.inpath = inpath
         self.outpath = outpath
         self.transforms = transforms
-        self.saveparams = saveparams
+        self.saveparams = saveparams # type: ignore
     
-    def transform(self, force: bool = False):
+    def transform(self, replace: bool = False):
         inpath = Path(self.inpath)
         outpath = Path(self.outpath)
-        if outpath.exists() and not force:
+        if outpath.exists() and not replace:
             print(f"Skipping already existing image at {outpath}")
             return
         outpath.parent.mkdir(exist_ok=True)
@@ -173,16 +170,16 @@ class ImageProcess:
                 print(f"\tApplying {transform.name} transformation")
                 img = transform.transform(img)
             print(f"\tSaving image to <{outpath}>")
-            img.save(outpath, **self.saveparams)
+            img.save(outpath, **self.saveparams) # type: ignore
 
-JPEGS = [
+JPEGS: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 5
     ("reference/wheatfield ev/HanakoxHisao2_2.png", "event/wheatfield/wheatfield_smile.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_awkward.png", "event/wheatfield/wheatfield_awkward.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_dreamy.png", "event/wheatfield/wheatfield_dreamy.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_talk.png", "event/wheatfield/wheatfield_talk.jpg", [RESIZE_1080P]),
     # chapter 6
-    ("reference/funindark cgs/hug1_clip.png", "event/funindark/funindark_hug_rest_large.jpg"),
+    ("reference/funindark cgs/hug1_clip.png", "event/funindark/funindark_hug_rest_large.jpg", []),
     ("reference/funindark cgs/hug1_clip.png", "event/funindark/funindark_hug_rest.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/hug2.png", "event/funindark/funindark_hug_neck.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/hug3.png", "event/funindark/funindark_hug_cheek.jpg", [RESIZE_1080P]),
@@ -193,7 +190,7 @@ JPEGS = [
     ("reference/funindark cgs/fap1.png", "event/funindark/funindark_naked_touch_close.jpg", [crop(0, 0, 1920, 1080)]),
     ("reference/funindark cgs/fap2.png", "event/funindark/funindark_naked_hand.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/fap2.png", "event/funindark/funindark_naked_hand_close.jpg", [crop(0, 0, 1920, 1080)]),
-    ("reference/funindark cgs/fap3.png", "event/funindark/funindark_naked_breast_large.jpg"),
+    ("reference/funindark cgs/fap3.png", "event/funindark/funindark_naked_breast_large.jpg", []),
     ("reference/funindark cgs/fap3.png", "event/funindark/funindark_naked_breast.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/fap4.png", "event/funindark/funindark_naked_grab.jpg", [RESIZE_1080P]),
     ("reference/funindark cgs/fap4.png", "event/funindark/funindark_naked_grab_close.jpg", [crop(0, 0, 1920, 1080)]),
@@ -201,13 +198,13 @@ JPEGS = [
     ("reference/funindark cgs/fap6.png", "event/funindark/funindark_naked_climax_close.jpg", [crop(0, 0, 1920, 1080)]),
     ("reference/funindark cgs/fap6.png", "event/funindark/funindark_naked_climax.jpg", [RESIZE_1080P]),
     # chapter 9
-    ("reference/hotel cgs 2/Hisao_straddles_Hanako_1.png", "event/hotel/hotel_onhanako_large.jpg"),
+    ("reference/hotel cgs 2/Hisao_straddles_Hanako_1.png", "event/hotel/hotel_onhanako_large.jpg", []),
     ("reference/hotel cgs 2/Hisao_straddles_Hanako_1.png", "event/hotel/hotel_onhanako.jpg", [RESIZE_1080P]),
-    ("reference/hotel cgs 2/Hanako_on_top_of_Hisao_1.png", "event/hotel/hotel_onhisao_large.jpg"),
+    ("reference/hotel cgs 2/Hanako_on_top_of_Hisao_1.png", "event/hotel/hotel_onhisao_large.jpg", []),
     ("reference/hotel cgs 2/Hanako_on_top_of_Hisao_1.png", "event/hotel/hotel_onhisao.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/Hanako_mirror_1.png", "event/hotel/hotel_mirror.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/Hanako_on_top_of_Hisao_oiled_1.png", "event/hotel/hotel_layontop.jpg", [RESIZE_1080P]),
-    ("reference/hotel cgs 2/Hanako_on_top_thighjob-1-1.png", "event/hotel/hotel_thigh_large.jpg"),
+    ("reference/hotel cgs 2/Hanako_on_top_thighjob-1-1.png", "event/hotel/hotel_thigh_large.jpg", []),
     ("reference/hotel cgs 2/Hanako_on_top_thighjob-1-1.png", "event/hotel/hotel_thigh.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/Hanako_on_top_thighjob-2-1.png", "event/hotel/hotel_thigh_climax.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/Masturnation_1-1.png", "event/hotel/hotel_masturbate.jpg", [RESIZE_1080P]),
@@ -215,9 +212,9 @@ JPEGS = [
     ("reference/hotel cgs 2/missionary_sex_1-1.png", "event/hotel/hotel_bed.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/missionary_sex_2-1.png", "event/hotel/hotel_bed_climax.jpg", [RESIZE_1080P]),
     # chapter 11
-    ("reference/dance cgs/HanakoLillyDanceFinal2.png", "event/ballroomdance/ballroomdance_emb_large.jpg"),
+    ("reference/dance cgs/HanakoLillyDanceFinal2.png", "event/ballroomdance/ballroomdance_emb_large.jpg", []),
     ("reference/dance cgs/HanakoLillyDanceFinal2.png", "event/ballroomdance/ballroomdance_emb_normal.jpg", [RESIZE_1080P]),
-    ("reference/dance cgs/HanakoLillyDanceFinal1.png", "event/ballroomdance/ballroomdance_smile_large.jpg"),
+    ("reference/dance cgs/HanakoLillyDanceFinal1.png", "event/ballroomdance/ballroomdance_smile_large.jpg", []),
     ("reference/dance cgs/HanakoLillyDanceFinal1.png", "event/ballroomdance/ballroomdance_smile_normal.jpg", [RESIZE_1080P]),
     # chapter 13
     ("reference/road cgs/Whizvox_CG2_HisaoxHanako_F1.jpg", "event/rainyroad/rainyroad_a.jpg", [crop(0, 268, 7880, 4700), RESIZE_1080P]),
@@ -230,7 +227,7 @@ JPEGS = [
     ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_normal.jpg", [crop(0, 0, 8031, 4518), RESIZE_1080P]),
     # chapter 21
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
-    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss_large.jpg"),
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss_large.jpg", []),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_01.png", "event/planeride/planeride_pout.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_02.png", "event/planeride/planeride_blanket.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_03.png", "event/planeride/planeride_listen.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
@@ -238,7 +235,7 @@ JPEGS = [
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_05.png", "event/planeride/planeride_weaksmile.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P])
 ]
 
-PHOTOGRAPHS = [
+PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 28
     ("event/planeride/planeride_bliss.jpg", "gui/journal/p01.jpg", [crop(300, 0, 1920, 1080), resize(525, 350)]),
     ("bgs/inverness_street.jpg", "gui/journal/p02.jpg", [CompositeTransformation([(700, 0, "~sprites/hanako/hanako_emb_smile.png"), (300, 0, "sprites/hisao/hisao_cross_smile_polo.png")]), crop(150, 0, 1770, 1080), resize(525, 350)]),
@@ -250,11 +247,22 @@ PHOTOGRAPHS = [
     ("reference/bgs/dolphin and seal centre.jpg", "gui/journal/p13.jpg", [crop(0, 8, 1024, 691), resize(525, 350)])
 ]
 
-def main(args):
+
+class Arguments:
+    shdir: str
+    ksdir: str
+    replace: bool
+
+
+def _update_paths(args: Arguments):
+    global sh_path
+    global ks_path
+    sh_path = Path(args.shdir)
+    ks_path = Path(args.ksdir)
+
+
+def main(args: Arguments):
     _update_paths(args)
-    force = False
-    if "force" in args:
-        force = args["force"]
     images_to_process: list[ImageProcess] = []
     for entry in JPEGS + PHOTOGRAPHS:
         transforms = []
@@ -267,14 +275,14 @@ def main(args):
             transforms.append(convert_rgb())
         images_to_process.append(ImageProcess(inpath, outpath, transforms, quality=90))
     for process in images_to_process:
-        process.transform(force)
+        process.transform(args.replace)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        prog="shimgx",
         description="Sisterhood image export tool"
     )
-    parser.add_argument("-s", "--shdir")
-    parser.add_argument("-k", "--ksdir")
-    parser.add_argument("-f", "--force", action="store_true", default=False)
-    main(vars(parser.parse_args(sys.argv[1:])))
+    parser.add_argument("-s", "--shdir", required=True, help="location of Sisterhood project directory")
+    parser.add_argument("-k", "--ksdir", required=True, help="location of Katawa Shoujo: Re-Engineered project directory")
+    parser.add_argument("-r", "--replace", action="store_true", default=False, help="whether to replace pre-existing image files")
+    main(parser.parse_args(sys.argv[1:], namespace=Arguments()))
