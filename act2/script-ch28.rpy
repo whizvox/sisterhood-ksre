@@ -43,10 +43,14 @@ label sh_ch28:
         show hisao cross_grin_polo
         with charaenter
 
-        "Standing behind me is Hisao, sporting a broad grin that would make the head nurse jealous. I quickly avert my eyes while trying to keep my rapidly emerging blush in check."
-        "It looks like he decided to look me up, heard me on his way over here, and decided to sneak up on me. Hisao takes a moment to enjoy his own joke and then gives me a quick peck on the cheek to reassure me."
+        "Standing behind me is Hisao, sporting a broad grin that would make the head nurse jealous. I quickly avert my eyes while trying to keep my rapidly emerging blush in check. It looks like he decided to look me up, heard me on his way over here, and decided to sneak up on me."
 
-        show hisao basic_smile_polo
+        show hisao basic_smile_polo_close
+        with chchange
+
+        "Hisao takes a moment to enjoy his own joke and then gives me a quick peck on the cheek to reassure me."
+
+        show hisao cross_grin_polo_close
         with chchange
 
         hi "So, did you spot any more dolphins?"
@@ -60,7 +64,7 @@ label sh_ch28:
         "Lilly was quick to playfully insinuate that Hisao was merely being jealous of the dolphins getting too much of our affection, which he immediately denied. For some time I joined up with Lilly playfully ruffling Hisao's feathers a bit."
         "Hopefully he didn't take that seriously."
 
-        show hisao basic_grin_polo
+        show hisao cross_smile_polo_close
         with chchange
 
         hi "If your dolphin isn't around, then maybe my company will do for the evening?"
@@ -70,20 +74,20 @@ label sh_ch28:
         ha "You d-didn't take a shower yet?"
         "He shakes his head."
 
-        show hisao basic_speak_polo
+        show hisao basic_speak_polo_close
         with chchange
 
         hi "I was going to, but then I realized that since I have no plans for the evening and Lilly and her parents are away, I might as well go with something more extensive than a quick shower."
         "I smile."
         ha "You want to try out the bathroom?"
 
-        show hisao basic_grin_polo
+        show hisao basic_grin_polo_close
         with chchange
 
         hi "Yeah. I mean, it's pretty large, and we have nothing but showers in the dorms at school. I don't think I should pass up an opportunity to have what's pretty much my own private bath house."
         ha "I hope you have fun soaking."
 
-        show hisao basic_smile_polo
+        show hisao basic_blush_polo_close
         with chchange
 
         hi "Well..."
@@ -91,11 +95,15 @@ label sh_ch28:
         "I suddenly I get what he wants to ask."
         "He didn't come here to tell me he was going to use the bath. He came here to invite me along."
         "As I realize this, my fading blush quickly returns with a vengeance."
+
+        show hisao basic_smile_polo_close
+        with chchange
+
         hi "How about it? I don't think you take these kinds of baths very often. Why not take advantage of the opportunity?"
         "Seeing that I wrote down the very same thing less than half an hour ago, it's difficult for me to argue against that."
         ha "I... don't really handle hot b-baths very well."
 
-        show hisao cross_smile_polo
+        show hisao cross_smile_polo_close
         with chchange
 
         hi "I checked out the bath before coming here and there's a control panel for the heater that allows you to set the water temperature to whatever you like."
@@ -302,28 +310,58 @@ label sh_ch28_journal_en:
 
     call screen sh_journal(
         "\n\nI don't think Lilly's happy with this, but she seems hesitant to try and force things. Well, that's Lilly for you. Still, it's a pity she can't spend time with both her parents and her sister at the same time. They're all really nice people on their own.",
-        "Day 9\n\nWe went to visit the famed Loch Ness today. It's not the lake in Scotland that covers the largest area, but it's definitely the lake that contains the largest amount of water (it's much deeper than any other lake around here) so you could still argue that it's the largest lake in the country. The road to our destination ran parallel to the lake for nearly 10 kilometers, so we got plenty of opportunity to take pictures. Now about that destination...\nThe name of our destination is Grmblwarwmx. Actually the village's real name is Drumnadrochit, but as far as pronunciation goes that's the same thing in my mind. Infuriatingly enough, Lilly managed to get it right after a few tries. Karla promised Hisao and me that we'd be flying business class back to Japan if we could learn to say the name out loud three times without mispronouncing it before the end of our stay.",
+        "Day 9\n\nWe went to visit the famed Loch Ness today. It's not the lake in Scotland that covers the largest area, but it's definitely the lake that contains the largest amount of water (it's much deeper than any other lake around here) so you could still argue that it's the largest lake in the country. The road to our destination ran parallel to the lake for nearly 10 kilometers, so we got plenty of opportunity to take pictures. Now about that destination...\n\nThe name of our destination is Grmblwarwmx. Actually the village's real name is Drumnadrochit, but as far as pronunciation goes that's the same thing in my mind. Infuriatingly enough, Lilly managed to get it right after a few tries. Karla promised Hisao and me that we'd be flying business class back to Japan if we could learn to say the name out loud three times without mispronouncing it before the end of our stay.",
         [
             (Image(f"{sh_path}/gui/journal/d20.png"), 0.34, 0.365)
         ]
     )
 
     call screen sh_journal(
-        "\n\nLilly promised to make us lunch for the rest of the school year if we could pull it off. That told us all we needed to know about our chances. We still tried for several kilometers though. Yes, the atmosphere in the car got quite silly.\nWe first made a stop by the Loch Ness Exhibition Center. It was a very impressive display showing some insight into the legend of the dinosaur-like creature that was reputedly living in the lake and also contained an overview of the various scientific expeditions that made attempts to verify Nessie's existence. Ultimately none of them ever found evidence, but like the ghosts that are said to inhabit the various castles in the region, it adds a nice touch of mystery to the place. After the exhibition center we took a nice hour-long boat trip on the lake. Afterwards, we drove to one of the sights we saw during the boat ride: the ruins of Urquhart Castle.",
-        "\n\nIt's a very impressive castle ruin that overlooks the lake. The view from up there was magnificent, especially from the top of its remaining tower. Lilly's mother said this place held some very special memories for her, but wouldn't elaborate further on it.\nMusings:\nToday was another day we spent with Lilly's mother coming along. Watching her is kind of interesting. Physically she resembles Lilly quite a bit, but if I had to pick one daughter to compare her to, I'd still say she's more like Akira. (just a little bit more refined) I had always pictured Lilly's mother as an extremely refined noblewoman of some sort, but Karla is surprisingly down-to-earth and laid-back. She's also rather informal, and her casual attitude makes her pretty easy to talk to. It's actually kind of funny in a way, seeing a person with such a resemblence to Lilly talk like Akira often does."
+        "\n\n\n\n\n\n\nLilly promised to make us lunch for the rest of the school year if we could pull it off. That told us all we needed to know about our chances. We still tried for several kilometers though. Yes, the atmosphere in the car got quite silly.\nWe first made a stop by the Loch Ness Exhibition Center. It was a very impressive display showing some insight into the legend of the dinosaur-like creature that was reputedly living in the lake and also contained an overview of the various scientific expeditions that made attempts to verify Nessie's existence. Ultimately none of them ever found evidence, but like the ghosts that are said to inhabit the various castles in the region, it adds a nice touch of mystery to the place.",
+        "\n\nAfter the exhibition center we took a nice hour-long boat trip on the lake.\n\n\n\n\n\n\n\n\n\n\nAfterwards, we drove to one of the sights we saw during the boat ride: the ruins of Urquhart Castle. It's a very impressive castle ruin that overlooks the lake. The view from up there was magnificent, especially from the top of its remaining tower. Lilly's mother said this place held some very special memories for her, but wouldn't elaborate further on it.",
+        [
+            (Image(f"{sh_path}/gui/journal/d21.png"), 0.34, 0.1603),
+            (Image(f"{sh_path}/gui/journal/d22.png"), 0.72, 0.2285)
+        ]
     )
 
     call screen sh_journal(
-        "\n\nBut when I look at Lilly and her mother together, I still notice a difference. Even though Karla acts a lot like Akira, Lilly and Karla don't act like Lilly and Akira. Whenever she's with her sister, Lilly talks to her as if she's talking to a good friend. The two are spontanous with each other and even like to tease each other whenever the opportunity presents itself, despite Akira being much older. Karla likes to tease Lilly on occasion as well, but Lilly seems unusually reserved when speaking to her mother directly. More reserved than she is around most people. I suppose it's somewhat understandable, seeing that they've been apart for such a long time, but it's still a bit odd.",
-        "Day 10\n\nI got out of bed early this morning in order to take pictures of the Satou residence. It's been on my to-do list for days, and I finally decided to stop putting it off. Lilly, Hisao and I had a trip planned this day, so staying in bed all morning wasn't an option to begin with. While visiting the study I spent some time in the presence of Lilly's father. We've barely seen him at all during our stay here. He leaves early and comes back late most of the time, and when he comes home, he often retreats to his study or goes straight to bed. I hadn't really spent any time in the study before, so I was unaware of this before but... The bookcase covering nearly the entire right wall is nearly completely filled with Japanese fiction!!! I think saying that Lilly's father is an avid reader is a massive understatement. He gave me permission to borrow any book I liked in case I got bored here."
+        "\n\n\n\n\n\n\n\n\n\n\n\n\nMusings:\nToday was another day we spent with Lilly's mother coming along. Watching her is kind of interesting. Physically she resembles Lilly quite a bit, but if I had to pick one daughter to compare her to, I'd still say she's more like Akira. (just a little bit more refined) I had always pictured Lilly's mother as an extremely refined noblewoman of some sort, but Karla is surprisingly down-to-earth and laid-back. She's also rather informal, and her casual attitude makes her pretty easy to talk to.",
+        "\n\nIt's actually kind of funny in a way, seeing a person with such a resemblence to Lilly talk like Akira often does.\n\nBut when I look at Lilly and her mother together, I still notice a difference. Even though Karla acts a lot like Akira, Lilly and Karla don't act like Lilly and Akira. Whenever she's with her sister, Lilly talks to her as if she's talking to a good friend. The two are spontanous with each other and even like to tease each other whenever the opportunity presents itself, despite Akira being much older. Karla likes to tease Lilly on occasion as well, but Lilly seems unusually reserved when speaking to her mother directly. More reserved than she is around most people. I suppose it's somewhat understandable, seeing that they've been apart for such a long time, but it's still a bit odd.",
+        [
+            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p12.jpg"), 0.34, 0.1603),
+            (Image(f"{sh_path}/gui/journal/d23.png"), 0.72, 0.8767)
+        ]
     )
 
     call screen sh_journal(
-        "\n\nI wonder if it'd be selfish of me to secretly wish for a world-wide airline strike, just so I could stay here long enough to take him up on that offer. Before I left, he told me to get some binoculars. I wondered why at the time. It didn't take that long to find out.\nLilly, Hisao and I took a bus to the village of Avoch on the other side of the bay. Just like her father, Lilly wouldn't really go into detail. Avoch turned out to be a rather small harbor village and Lilly had arranged a boat trip from there. I didn't get why we'd be taking another boat trip after having taken one on Loch Ness the day before already, but the reason quickly became clear. Three words: Seals and dolphins! It turns out they live in the very bay on whose edge I've been sitting each evening. The binoculars I borrowed came in handy when the captain of our boat took us close to a seal colony near the peninsula we were heading for.",
-        "\n\nSeeing them lying on the beach and occasionally clumsily flopping around, especially the little ones, just made my heart melt. So adorable! We didn't end up needing binoculars for the dolphins. At some point several of them started swimming around and under the boat, occasionally jumping above the water surface. We made a few marvelous pictures including one with me in it. The trip itself only took an hour, and I would have liked to take another, but unfortunately there was a rather large group waiting on the shore when we came back, and we didn't want to wait another hour for another go-around, so we took the bus to North Kessock, where a dolphin and seal center is located, instead.\nWe spent some more time at the center watching dolphins from both the vantage point and through the underwater cameras the center set up nearby."
+        "Day 10\n\nI got out of bed early this morning in order to take pictures of the Satou residence. It's been on my to-do list for days, and I finally decided to stop putting it off. Lilly, Hisao and I had a trip planned this day, so staying in bed all morning wasn't an option to begin with.\n\nWhile visiting the study I spent some time in the presence of Lilly's father. We've barely seen him at all during our stay here. He leaves early and comes back late most of the time, and when he comes home, he often retreats to his study or goes straight to bed. I hadn't really spent any time in the study before, so I was unaware of this before but... The bookcase covering nearly the entire right wall is nearly completely filled with Japanese fiction!!! I think saying that Lilly's father is an avid reader is a massive understatement. He gave me permission to borrow any book I liked in case I got bored here.",
+        "\n\nI wonder if it'd be selfish of me to secretly wish for a world-wide airline strike, just so I could stay here long enough to take him up on that offer. Before I left, he told me to get some binoculars. I wondered why at the time. It didn't take that long to find out.\n\n\n\n\n\n\n\nLilly, Hisao and I took a bus to the village of Avoch on the other side of the bay. Just like her father, Lilly wouldn't really go into detail. Avoch turned out to be a rather small harbor village and Lilly had arranged a boat trip from there. I didn't get why we'd be taking another boat trip after having taken one on Loch Ness the day before already, but the reason quickly became clear.",
+        [
+            (Image(f"{sh_path}/gui/journal/d24.png"), 0.72, 0.3991)
+        ]
     )
 
     call screen sh_journal(
-        "\n\nThey also had underwater microphones installed so we could listen to the sounds they made while they were swimming nearby. One of the coworkers there seemed really eager to tell us about these animals—as if my interest hadn't been piqued enough as it was. When Lilly pried a bit, we learned he was so focussed on us because he already had us pegged for Japanese, and the center was run by the Whales and Dolphin Conservation charity organisation. He mentioned that Japan is one of the countries still engaged in the practice of whaling and Japanese fishermen kill thousands of dolphins and small whales every year, and he urged us to spread the word once we return home. That was kind of uncomfortable. I got the impression that that person thought we ate nothing but whale meat all day long, but I've never even tasted it and Lilly mentioned that the few times she had a taste, it didn't strike her as that good.",
-        "\n\nAnyway, Lilly and I made the decision then and there to officially adopt one of the dolphins as a gesture of goodwill. (this was something they offered to visitors) Lilly will be paying the monthly fee to the center, and I will be paying back my share by treating Lilly to a free lunch each month. The person at the center was really impressed by our decision. So please welcome the latest member to our little family; Moonlight the bottlenose dolphin. We got a cotton bag, certificate with her name, a sticker, information guide and they gave us a really cute picture of our dolphin as a bonus. Lilly and her mother will be visiting a theater play this evening, so we decided to return to the Satou home without making any more detours."
+        "\n\nThree words: Seals and dolphins! It turns out they live in the very bay on whose edge I've been sitting each evening. The binoculars I borrowed came in handy when the captain of our boat took us close to a seal colony near the peninsula we were heading for.\n\n\n\n\n\nSeeing them lying on the beach and occasionally clumsily flopping around, especially the little ones, just made my heart melt. So adorable! We didn't end up needing binoculars for the dolphins. At some point several of them started swimming around and under the boat, occasionally jumping above the water surface. We made a few marvelous pictures including one with me in it. The trip itself only took an hour, and I would have liked to take another, but",
+        "\n\nunfortunately there was a rather large group waiting on the shore when we came back, and we didn't want to wait another hour for another go-around, so we took the bus to North Kessock, where a dolphin and seal center is located, instead.\n\n\n\n\n\n\n\n\n\n\n\nWe spent some more time at the center watching dolphins from both the vantage point and through the underwater cameras the center set up nearby. They also had underwater microphones installed so we could listen to the sounds they made while they were swimming nearby.",
+        [
+            (Image(f"{sh_path}/gui/journal/d25.png"), 0.34, 0.3991),
+            (Text("(seal)", color="#000"), 0.28, 0.382, 0.5, 0, -9.0),
+            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p13.jpg"), 0.72, 0.365)
+        ]
+    )
+
+    call screen sh_journal(
+        "\n\nOne of the coworkers there seemed really eager to tell us about these animals—as if my interest hadn't been piqued enough as it was.\n\nWhen Lilly pried a bit, we learned he was so focused on us because he already had us pegged for Japanese, and the center was run by the Whales and Dolphin Conservation charity organisation. He mentioned that Japan is one of the countries still engaged in the practice of whaling and Japanese fishermen kill thousands of dolphins and small whales every year, and he urged us to spread the word once we return home. That was kind of uncomfortable.\n\nI got the impression that that person thought we ate nothing but whale meat all day long, but I've never even tasted it and Lilly mentioned that the few times she had a taste, it didn't strike her as that good.",
+        "\n\n\n\n\n\n\nAnyway, Lilly and I made the decision then and there to officially adopt one of the dolphins as a gesture of goodwill. (this was something they offered to visitors) Lilly will be paying the monthly fee to the center, and I will be paying back my share by treating Lilly to a free lunch each month. The person at the center was really impressed by our decision. So please welcome the latest member to our little family: Moonlight the bottlenose dolphin!",
+        [
+            (Image(f"{sh_path}/gui/journal/d26.png"), 0.72, 0.1603),
+            (Image(f"{sh_path}/gui/journal/d27.png"), 0.72, 0.7061)
+        ]
+    )
+
+    call screen sh_journal(
+        "\n\nWe got a cotton bag, certificate with her name, a sticker, information guide and they gave us a really cute picture of our dolphin as a bonus. Lilly and her mother will be visiting a theater play this evening, so we decided to return to the Satou home without making any more detours.\n\nMusings:\nWhen Lilly's father spoke to me this morning, he suggested taking a traditional bath if I had the time. It's natural for a host to go out of his way to accommodate his guest, but I wonder if that was all there was to it. I remember accompanying my mother to a public bath a few times in the past. I enjoyed it back then. I don't think I could stand entering a public bath these days anymore, no matter how much confidence I'd gain. In fact, I'm willing to bet I'd be denied entry because the owners would feel the sight of me would upset the other visitors too much.",
+        "\n\nDid Lilly's father mean to imply that this would be an opportunity? The bathroom's large enough to accommodate six to eight people at once. It's kind of a public bath without the public. Should I give it a try for old times sake?"
     )

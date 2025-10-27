@@ -1,7 +1,7 @@
-import json
 from PIL.ImageFont import FreeTypeFont
 from pathlib import Path
 from argparse import ArgumentParser
+import math
 import re
 import sys
 
@@ -204,7 +204,7 @@ def export_rpy_images(images: list[Image], xoff: float=0) -> str:
 
 def export_rpy(pages: list[Page]) -> str:
     calls: list[str] = []
-    for i in range(len(pages) // 2):
+    for i in range(math.ceil(len(pages) / 2)):
         callstr = "call screen sh_journal(\n    "
         left = i * 2
         right = i * 2 + 1
@@ -222,7 +222,7 @@ def export_rpy(pages: list[Page]) -> str:
                 img.ypos = round(img.ypos or 0, 4)
             imgstr = export_rpy_images(leftimages + rightimages)
         else:
-            callstr += f"\"{lefttext}\""
+            callstr += f"\"{lefttext}\",\n    None"
             imgstr = export_rpy_images(leftimages)
         if len(imgstr) > 0:
             callstr += f",\n    [\n        {imgstr}\n    ]"

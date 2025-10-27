@@ -1,36 +1,33 @@
-from PIL import Image, ImageFilter
+from PIL import ImageFilter, Image
 from pathlib import Path
 import math
 import argparse
 import sys
 
-sh_path = None
-ks_path = None
+sh_path: Path | None = None
+ks_path: Path | None = None
 
 def _update_paths(args):
     global sh_path
     global ks_path
-    if "shdir" in args and args["shdir"] is not None:
-        sh_path = Path(args["shdir"])
-    else:
-        sh_path = Path(__file__).parent.parent
-    ks_path = sh_path.parent.parent
+    sh_path = Path(args["shdir"])
+    ks_path = Path(args["ksdir"])
     print(f"sh_path: {sh_path}")
     print(f"ks_path: {ks_path}")
 
-def resolve_path(plainpath):
+def resolve_path(plainpath) -> Path:
     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
     if len(plainpath) > 0 and plainpath[0] == "~":
-        return Path(ks_path, plainpath[1:])
+        return Path(ks_path, plainpath[1:]) # type: ignore
     # otherwise, by default, paths will be in reference to the sisterhood directory
     else:
-        return Path(sh_path, plainpath)
+        return Path(sh_path, plainpath) # type: ignore
 
 class ImageTransformation:
     def __init__(self, name: str):
         self.name = name
-    
-    def transform(self, img: Image) -> Image:
+
+    def transform(self, img: Image.Image) -> Image.Image:
         raise RuntimeError("Not implemented: " + self.name)
 
 class ResizeTransformation(ImageTransformation):
@@ -39,7 +36,7 @@ class ResizeTransformation(ImageTransformation):
         self.targetwidth = targetwidth
         self.targetheight = targetheight
 
-    def transform(self, img: Image) -> Image:
+    def transform(self, img: Image.Image) -> Image.Image:
         fwidth = img.width
         fheight = img.height
         targetwidth = self.targetwidth
@@ -65,7 +62,7 @@ class BlurTransformation(ImageTransformation):
             raise Exception("Not a valid blur algorithm: " + algorithm)
         self.algorithm = algorithm.lower()
     
-    def transform(self, img: Image) -> Image:
+    def transform(self, img: Image.Image) -> Image.Image:
         radius = self.radius
         algorithm = self.algorithm
         if algorithm == "gaussian":
@@ -82,7 +79,7 @@ class CropTransformation(ImageTransformation):
         super().__init__("crop")
         self.box = box
     
-    def transform(self, img: Image) -> Image:
+    def transform(self, img: Image.Image) -> Image.Image:
         return img.crop(self.box)
 
 class ConvertTransformation(ImageTransformation):
@@ -90,7 +87,7 @@ class ConvertTransformation(ImageTransformation):
         super().__init__("convert")
         self.mode = mode
     
-    def transform(self, img: Image):
+    def transform(self, img: Image.Image):
         return img.convert(mode=self.mode)
 
 class CheckSizeTransformation(ImageTransformation):
@@ -99,7 +96,7 @@ class CheckSizeTransformation(ImageTransformation):
         self.minwidth = minwidth
         self.minheight = minheight
     
-    def transform(self, img: Image):
+    def transform(self, img: Image.Image):
         minwidth = self.minwidth
         minheight = self.minheight
         check = True
@@ -121,7 +118,7 @@ class CompositeTransformation(ImageTransformation):
         super().__init__("composite")
         self.layers = layers
     
-    def transform(self, img: Image):
+    def transform(self, img: Image.Image):
         for layer in self.layers:
             x = layer[0]
             y = layer[1]
@@ -156,7 +153,7 @@ def check_size(minwidth: int = -1, minheight: int = -1):
 CHECK_1080P = CheckSizeTransformation(1920, 1080)
 
 class ImageProcess:
-    def __init__(self, inpath, outpath, transforms: list[ImageTransformation] = [], **saveparams: any):
+    def __init__(self, inpath, outpath, transforms: list[ImageTransformation] = [], **saveparams: any): # type: ignore
         self.inpath = inpath
         self.outpath = outpath
         self.transforms = transforms
@@ -248,7 +245,9 @@ PHOTOGRAPHS = [
     ("bgs/inverness_tree.jpg", "gui/journal/p03.jpg", [CompositeTransformation([(384, 0, "~sprites/lilly/lilly_basic_cheerful_cas.png"), (1074, 30, "~sprites/hanako/hanako_basic_bashful_cas.png"), (692, 30, "sprites/hisao/hisao_basic_smile_polo.png")]), crop(162, 0, 1782, 1080), resize(525, 350)]),
     ("reference/bgs/cawthorn.jpg", "gui/journal/p07.jpg", [CompositeTransformation([(338, 50, "sprites/hisao/hisao_basic_grin_swt.png")]), resize(525, 350)]),
     ("reference/journal/photos/p10.jpg", "gui/journal/p10.jpg", [CompositeTransformation([(793, 200, "~sprites/lilly/lilly_cane_giggle_cas.png"), (1199, 200, "sprites/akira/akira_basic_cheerful.png")]), crop(165, 220, 1756, 1280), resize(525, 350)]),
-    ("reference/journal/photos/p11.jpg", "gui/journal/p11.jpg", [crop(0, 46, 1000, 712), resize(525, 350)])
+    ("reference/journal/photos/p11.jpg", "gui/journal/p11.jpg", [crop(0, 46, 1000, 712), resize(525, 350)]),
+    ("reference/bgs/urquhart castle.jpg", "gui/journal/p12.jpg", [resize(525, 350)]),
+    ("reference/bgs/dolphin and seal centre.jpg", "gui/journal/p13.jpg", [crop(0, 8, 1024, 691), resize(525, 350)])
 ]
 
 def main(args):
@@ -262,7 +261,7 @@ def main(args):
         if len(entry) == 3:
             transforms = entry[2]
         inpath = resolve_path(entry[0])
-        outpath = Path(sh_path, entry[1])
+        outpath = Path(sh_path, entry[1]) # type: ignore
         if entry in JPEGS:
             transforms.append(CHECK_1080P)
             transforms.append(convert_rgb())
@@ -275,6 +274,7 @@ if __name__ == "__main__":
         prog="shimgx",
         description="Sisterhood image export tool"
     )
-    parser.add_argument("-d", "--shdir", required=False)
+    parser.add_argument("-s", "--shdir")
+    parser.add_argument("-k", "--ksdir")
     parser.add_argument("-f", "--force", action="store_true", default=False)
     main(vars(parser.parse_args(sys.argv[1:])))
