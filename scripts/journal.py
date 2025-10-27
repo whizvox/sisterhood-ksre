@@ -265,31 +265,15 @@ def print_header(header: str):
     print("┗" + ("━" * (len(header) + 2)) + "┛")
 
 
-def get_ksre_directory(args: dict[str, any]) -> str | None: # type: ignore
-    projdir: str = ""
-    if args["dir"] is not None:
-        projdir = args["dir"] # type: ignore
-    else:
-        with open(args["cfg"], "r") as file: # type: ignore
-            config = json.load(file)
-        projdir = config["sisterhoodDir"]
-        if projdir == "PUT_KSRE_PROJECT_DIRECTORY_HERE":
-            print("[ERROR] Must specify path to Katawa Shoujo: Re-Engineered project directory in config.json")
-            return None
-    projpath = Path(projdir)
-    if not projpath.exists() or not projpath.is_dir() or not (projpath / "game").exists():
-        print(f"[ERROR] Project directory must be a valid Ren'Py project directory: {projdir}")
-        return None
-    return projdir
-
-
 def main(args: dict[str, any]): # type: ignore
     file_path = f"journal/{args['lang']}.txt"
     if not Path(file_path).exists():
         print(f"[ERROR] Unknown journal entry: {file_path}")
         return
-    projdir = get_ksre_directory(args)
-    if projdir is None:
+    projdir = args["dir"] # type: ignore
+    path = Path(projdir)
+    if not path.exists() or not path.is_dir() or not (path / "game").exists():
+        print(f"[ERROR] Project directory must be a valid Ren'Py project directory: {projdir}")
         return
     if args["font"] == "zh":
         font = FreeTypeFont(f"{projdir}/game/font/XiaolaiSC-Regular.ttf", 34)
@@ -334,6 +318,5 @@ if __name__ == "__main__":
     parser.add_argument("-a", "--action", choices=["export", "print", "verify"], default="export")
     parser.add_argument("-f", "--font", choices=["common", "zh", "jp"], default="common")
     parser.add_argument("-l", "--lang", default="en")
-    parser.add_argument("-c", "--cfg", default="config.json")
-    parser.add_argument("-d", "--dir", required=False)
+    parser.add_argument("-d", "--dir")
     main(vars(parser.parse_args(sys.argv[1:])))
