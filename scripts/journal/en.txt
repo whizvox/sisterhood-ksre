@@ -4,7 +4,7 @@ This day was almost entirely spent getting from Yamaku to the Satou residence in
 
 \nThe flight itself took a long time, nearly 13 hours. London airport was even busier than Narita and it was quite the trip to the gate of our next plane. Fortunately, the second flight only took about an hour and Inverness Airport was really small compared to the other ones. When we left the building, Akira was already waiting for us. She drove us to the Satou residence.
 
-!{d01, x=0.8, y=0.02}
+!{d01, x=0.8, y=0.04}
 
 ===
 
@@ -19,9 +19,8 @@ I wasn't looking forward to this day to begin with, but my first experience with
 
 Not so much here. The idea that there are people at every airport who are being paid to keep a look out for travellers showing ‘unusual’ behavior creeps me out like nothing else. Then there's the security gates. It's a bit depressing to have pretty much the whole world make it clear to you for nearly a decade that the sight of your face is an affront to their sensibilities, and then they still insist on you showing it completely unobscured. All in all, this was not a good day for me. I can't comment on much of the flight as I've been asleep for the biggest part of it.
 
-!{d02}
-
-!{"Body Shame Brigade", x=0.71, top=-3, rot=-15}
+!{d02, top=1}
+!{"Body Shame Brigade", x=0.65, top=-2.2, rot=-15}
 
 ===
 
@@ -42,12 +41,12 @@ I learned something new about myself this morning. I'm pretty much immune to jet
 
 The atmosphere there reminded me of that visit to the jazz club before Hisao and I started dating. Lilly and Akira took part in and won a pub quiz, while Hisao and I took part in and both won a billiards game. Also, we met Lilly's mother! We just didn't know it was her at first. Back at the Satou residence we tried out the wine that Lilly won, hung out together and then went to bed.
 
-!{d04,gap=4}
+!{d04, gap=4, top=-0.5}
 
 Musings:
 Wow, the Satou residence is really large. I wonder if it doesn't feel extremely empty with just two people living there. Maybe that's secretly part of the reason they have housekeepers.
 
-!{d03, gap=4, px=1.0, x=0.9}
+!{d03, gap=4, px=1.0, x=0.85, top=-0.25}
 !{"They have maids!", x=0.4, top=-5.5, rot=10}
 
 ===
@@ -67,14 +66,14 @@ I told Hisao about what I'd like to do. Hisao has already figured out where he's
 
 Also, meeting Lilly's mother was unexpected. Looks like she was toying with us a bit.
 
-!{"I'm on to you!", gap=2, x=0, px=0, top=-2.5, rot=-5}
-!{d05}
+!{"I'm on to you!", gap=0, x=-0.05, px=0, top=-2.2, rot=-5}
+!{d05, gap=6, top=-0.5}
 
 I feel a bit embarrassed for not having made the connection myself because the family resemblance is quite striking. I wonder if this is what Lilly will eventually end up looking like when she's older. If so, she's a lucky person.
 
 \nThere'll be a picnic tomorrow, and Lilly wants me to help her prepare the food. Hurray!
 
-!{d06}
+!{d06, top=-0.5}
 
 ===
 
@@ -82,7 +81,7 @@ I feel a bit embarrassed for not having made the connection myself because the f
 
 I woke up feeling extremely sick this morning. Shower didn't help much. Fresh air didn't help much. Swearing to my ancestors to never ever drink again didn't help much. I guess I really deserved this. At least I'm not the only one. Lilly and Hisao were apparently in bad shape too. Lilly got in trouble for passing out on the couch—AFTER her parents already escorted her upstairs. Hisao and I had sandwiches for breakfast, filled with meat, lettuce and tomato. It was really hard eating them while resisting the urge to throw them back up, but Hisao said they'd make us feel better. In the end we decided to sleep for a few more hours.
 
-!{d07}
+!{d07, top=0.5}
 
 ===
 
@@ -103,7 +102,7 @@ I really should have remembered last night how terrible I felt that morning afte
 
 an impression to prevent me from making the same mistake again. I was worried things'd be awkward between Hisao and myself for the rest of the week, but fortunately we managed to settle things before we went on that picnic today. If I learned any lesson today it's that I should maybe worry less about Hisao and more about myself. Hisao may not take well to hot weather, but I don't either, and I was reminded of that today. Lilly's mother said it was heat exhaustion and she was probably right, but I think my body temperature was also just a little bit too high. It's been years since I've last experienced any real heat-related afflictions, so I guess I was becoming forgetful about the fact that I'm prone to them.
 
-!{d08}
+!{d08, x=1, px=1, top=-1}
 
 ===
 
@@ -125,7 +124,7 @@ And Lilly's mother used to be a journalist. How neat is that? And she likes to t
 
 Before heading to bed last night, I was told that we'd be taking it easy for today, and I could sleep in to my heart's delight. I'm not someone who sleeps in a lot, but I did end up staying in bed until nearly noon. Not so much because I had trouble waking up, but because I decided to wake up my sleeping boyfriend in the only way that's appropriate when you're in a large bed, it's a beautiful sunny morning and you have plenty of time to spare: lazy morning cuddling. I didn't mind the fact at all that one thing lead to another. All in all, I had a great morning.
 
-!{d10}
+!{d10nt, top=1}
 !{"Do not disturb!", rot=-6, x=0.65}
 
 ===
@@ -152,7 +151,7 @@ The warmest part of the day was already over by the time we went into the city, 
 \nMusings:
 First of all, I really love the sun hat. It has a pretty wide brim, so it does an excellent job at hiding my facial scars and during the warm months it's more fitting than my own hat. It's also really elegant, and Hisao says that I look cute while wearing it. What more could I possibly wish for?
 
-!{d11}
+!{d11, top=1}
 
 ===
 
@@ -174,13 +173,15 @@ I wonder what it would be like to be a speech writer. Imagine seeing hundreds of
 
 I can't really shake what Lilly's mother said about working with other people in order to work around your own shortcomings. Would I be able to practice journalism if I had someone like Naomi to do the interviews with me or for me and let her do the talking while I do the writing? That might just work. Lilly uses all sorts of tricks to work around her limits. Maybe I should take a page from her book and do the same. I wonder if Naomi would be up for a duo interview some time. I could always go into editing if things don't work out.
 
-!{d12}
+!{d12, gap=7, top=-0.5}
+
+I can't believe I'm thinking about all these things. Not too long ago I had no clue on what to do with my life after Yamaku, and
 
 ===
 
-I can't believe I'm thinking about all these things. Not too long ago I had no clue on what to do with my life after Yamaku, and now I'm trying to eliminate options that all look attractive. I guess it's about time though. Lilly and Hisao already have their career path largely figured out. I can't lag behind too much. In the end, it probably doesn't matter if I don't have one particular job in mind at this point. If I know what study to go for, I'll probably have plenty of opportunities to see where my interests lie. Like Hisao. Still, I wonder if I should have another talk with Lilly's mother about all of this. Will it look weird if I approach her? Will I even be able to pull that off without turning into a stammering mess? Maybe it's better to ask Lilly to break the ice for me. I don't think she'd mind.
+now I'm trying to eliminate options that all look attractive. I guess it's about time though. Lilly and Hisao already have their career path largely figured out. I can't lag behind too much. In the end, it probably doesn't matter if I don't have one particular job in mind at this point. If I know what study to go for, I'll probably have plenty of opportunities to see where my interests lie. Like Hisao. Still, I wonder if I should have another talk with Lilly's mother about all of this. Will it look weird if I approach her? Will I even be able to pull that off without turning into a stammering mess? Maybe it's better to ask Lilly to break the ice for me. I don't think she'd mind.
 
-!{d13, x=0.7}
+!{d13}
 
 ===
 
@@ -192,13 +193,15 @@ Having focused on the cultural sights over the last two days, Hisao and I decide
 
 ===
 
-!{d14, y=0.02}
-
 We took the bus from the area near the Satou residence to the bus station in the center of Inverness and then took another bus to our destination. That bus ride took quite long—almost an hour. Fortunately, the bus drivers have been really helpful so far. When we show them our bus cards and then point out our destination on the map we brought along, they usually give us a little notice when we reach the bus stop where we need to get off.
 
-\nOur destination for today was the hamlet of Tomich far to the south-west of Inverness. The village was built in a very charming style. It's called the Victorian style; named after one of the queens who ruled in that era. It seems most of the village's buildings used to be part of the local nobleman's estate, though the manor itself is now a ruin.
+!{d14, gap=6, x=1, px=1}
+
+Our destination for today was the hamlet of Tomich far to the south-west of Inverness. The village was built in a very charming style. It's called the Victorian style; named after one of the queens who ruled in that era. It seems most of the village's buildings used to be part of the
 
 ===
+
+local nobleman's estate, though the manor itself is now a ruin.
 
 !{p05}
 
@@ -268,6 +271,8 @@ morning after. Best to enjoy the time we have here.
 
 Note to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.
 
+!{d28, x=0, px=0}
+
 ===
 
 # Day 7
@@ -336,7 +341,7 @@ We also bought ingredients for tonight's dinner. Lilly and I will be making frui
 
 Finally, we met up with Akira in a cafe located in the marketplace. It was nice catching up with her. Also, we (secretly) had a glass of wine there. Akira treated us to one after she heard that Lilly had been sentenced to a soda diet for the remainder of her stay. We made sure not to have more than one though, lest we'd be found out.
 
-!{d19}
+!{d19, x=0.45}
 !{"Remember me?", top=-8.25, gap=0, x=0.65, rot=7}
 
 Musings:

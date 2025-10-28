@@ -244,7 +244,26 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/journal/photos/p10.jpg", "gui/journal/p10.jpg", [CompositeTransformation([(793, 200, "~sprites/lilly/lilly_cane_giggle_cas.png"), (1199, 200, "sprites/akira/akira_basic_cheerful.png")]), crop(165, 220, 1756, 1280), resize(525, 350)]),
     ("reference/journal/photos/p11.jpg", "gui/journal/p11.jpg", [crop(0, 46, 1000, 712), resize(525, 350)]),
     ("reference/bgs/urquhart castle.jpg", "gui/journal/p12.jpg", [resize(525, 350)]),
-    ("reference/bgs/dolphin and seal centre.jpg", "gui/journal/p13.jpg", [crop(0, 8, 1024, 691), resize(525, 350)])
+    ("reference/bgs/dolphin and seal centre.jpg", "gui/journal/p13.jpg", [crop(0, 8, 1024, 691), resize(525, 350)]),
+    ("reference/journal/doodles/IMG_2054.png", "gui/journal/d01.png", [crop(185, 401, 2074, 1214), resize(targetheight=100)]),
+    ("reference/journal/doodles/IMG_2055.png", "gui/journal/d02.png", [crop(885, 45, 1357, 1407), resize(targetheight=200)]),
+    ("reference/journal/doodles/IMG_2056.png", "gui/journal/d03.png", [crop(709, 63, 1358, 1323), resize(targetheight=160)]),
+    ("reference/journal/doodles/IMG_2057.png", "gui/journal/d04.png", [crop(223, 118, 1982, 1325), resize(targetheight=170)]),
+    ("reference/journal/doodles/IMG_2058.png", "gui/journal/d05.png", [crop(339, 112, 1797, 1323), resize(targetheight=200)]),
+    ("reference/journal/doodles/IMG_2059.png", "gui/journal/d06.png", [crop(289, 33, 1917, 1502), resize(targetheight=185)]),
+    ("reference/journal/doodles/IMG_2060.png", "gui/journal/d07.png", [crop(117, 228, 2044, 1400), resize(targetheight=220)]),
+    ("reference/journal/doodles/IMG_2061.png", "gui/journal/d08.png", [crop(324, 0, 2160, 1485), resize(targetheight=210)]),
+    ("reference/journal/doodles/IMG_2062.png", "gui/journal/d09.png", [crop(500, 202, 1697, 1426), resize(targetheight=250)]),
+    ("reference/journal/doodles/IMG_2063.png", "gui/journal/d10.png", [crop(435, 111, 1770, 1620), resize(targetheight=230)]),
+    ("reference/journal/doodles/IMG_2063_nt.png", "gui/journal/d10nt.png", [crop(435, 111, 1770, 1620), resize(targetheight=230)]),
+    ("reference/journal/doodles/IMG_2064.png", "gui/journal/d11.png", [crop(781, 118, 1368, 1438), resize(targetheight=250)]),
+    ("reference/journal/doodles/IMG_2065.png", "gui/journal/d12.png", [crop(265, 99, 1908, 1525), resize(targetheight=240)]),
+    ("reference/journal/doodles/IMG_2066.png", "gui/journal/d13.png", [crop(197, 113, 1986, 1621), resize(targetheight=240)]),
+    ("reference/journal/doodles/IMG_2066_nt.png", "gui/journal/d13nt.png", [crop(617, 317, 1511, 1621), resize(targetheight=220)]),
+    ("reference/journal/doodles/IMG_2067.png", "gui/journal/d14.png", [crop(100, 165, 2160, 1297), resize(targetheight=200)]),
+    ("reference/journal/doodles/IMG_2068.png", "gui/journal/d15.png", [crop(797, 86, 1365, 1510), resize(targetheight=200)]),
+    ("reference/journal/doodles/IMG_2069.png", "gui/journal/d28.png", [crop(0, 103, 2027, 1620), resize(targetheight=250)]),
+    ("reference/journal/doodles/IMG_2070.png", "gui/journal/d19.png", [crop(586, 369, 1458, 1460), resize(targetheight=180)])
 ]
 
 

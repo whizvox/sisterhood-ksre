@@ -126,7 +126,7 @@ label sh_ch28_journal_en:
         "Day 1\n\nThis day was almost entirely spent getting from Yamaku to the Satou residence in Inverness, Scotland. We assembled in Lilly's room in the morning, took the bus directly to the train station and then the train to the airport. We made sure to plan ahead for unexpected delays, but in the end it all ran smoothly. We made sure to do our baggage checkin as soon as we arrived and wasted no time getting through security. We went for something to eat and then hurried along to the gate. It turned out they let us board the flight before anyone else in economy class.\n\nThe flight itself took a long time, nearly 13 hours. London airport was even busier than Narita and it was quite the trip to the gate of our next plane. Fortunately, the second flight only took about an hour and Inverness Airport was really small compared to the other ones. When we left the building, Akira was already waiting for us. She drove us to the Satou residence.",
         "\n\nSince we had already eaten something in London, we didn't waste any time getting to bed. After a trip that took nearly a day, we'd certainly earned it.\n\n\n\n\n\n\n\n\n\n\n\nMusings:\nI wasn't looking forward to this day to begin with, but my first experience with the hassles of air travel was worse than I thought. If we take a walk into the city, I can at least tell myself that those crowds aren't going to bother me if I just keep my head down and stay on the move.",
         [
-            (Image(f"{sh_path}/gui/journal/d01.png"), 0.43, 0.02),
+            (Image(f"{sh_path}/gui/journal/d01.png"), 0.43, 0.04),
             (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p01.jpg"), 0.72, 0.2968)
         ]
     ) with dissolve
@@ -135,8 +135,8 @@ label sh_ch28_journal_en:
         "\n\nNot so much here. The idea that there are people at every airport who are being paid to keep a look out for travellers showing ‘unusual’ behavior creeps me out like nothing else. Then there's the security gates. It's a bit depressing to have pretty much the whole world make it clear to you for nearly a decade that the sight of your face is an affront to their sensibilities, and then they still insist on you showing it completely unobscured. All in all, this was not a good day for me. I can't comment on much of the flight as I've been asleep for the biggest part of it.",
         "\n\nAddendum:\nNow that I've been here a few days longer, I feel that I should mention that although I still dislike airports, I do think this vacation has been worth the stress of navigating them so far. Also, what Lilly said about how special an experience your first takeoff is couldn't be more on the mark. In fact, the second one wasn't any less exciting.\n\nIt's hard to describe the feeling I got when the plane left the ground, and I could see the world slowly shrink beneath us until the only thing visible through the window was that ocean of clouds all around us. It felt... liberating in some way. As if I was leaving an old part of my life behind me and was on the edge of something new and exciting.\n\nI guess I'm doing just that—if only temporary. So I suppose it wasn't all bad, though I still dread going through customs and security again when we return to Japan.",
         [
-            (Image(f"{sh_path}/gui/journal/d02.png"), 0.34, 0.6379),
-            (Text("Body Shame Brigade", color="#000"), 0.403, 0.7061, 0.5, 0, -15.0)
+            (Image(f"{sh_path}/gui/journal/d02.png"), 0.34, 0.672),
+            (Text("Body Shame Brigade", color="#000"), 0.385, 0.7334, 0.5, 0, -15.0)
         ]
     )
 
@@ -144,8 +144,8 @@ label sh_ch28_journal_en:
         "Day 2\n\nI learned something new about myself this morning. I'm pretty much immune to jet lag. I woke up around ten o' clock feeling fit as a fiddle. It seemed I was the only one. I took a long shower, applied my moisturizer, and decided to try and finish “The Temple of the Golden Pavilion” that I started on while on the plane to London. I could have gone exploring the house, but I preferred Lilly to be there when we'd introduce ourselves to her parents. I can't afford to make a poor first impression. I finished almost the entire book AND got several ideas for my article before Hisao finally woke up. It turns out he and Lilly had been awake for most of the night. The dinner we had at the start of the evening was delicious and much, much better than the food on the plane. Akira then came to pick us up to spend the evening inside a real Scottish pub.",
         "\n\nThe atmosphere there reminded me of that visit to the jazz club before Hisao and I started dating. Lilly and Akira took part in and won a pub quiz, while Hisao and I took part in and both won a billiards game. Also, we met Lilly's mother! We just didn't know it was her at first. Back at the Satou residence we tried out the wine that Lilly won, hung out together and then went to bed.\n\n\n\n\nMusings:\nWow, the Satou residence is really large. I wonder if it doesn't feel extremely empty with just two people living there. Maybe that's secretly part of the reason they have housekeepers.",
         [
-            (Image(f"{sh_path}/gui/journal/d04.png"), 0.72, 0.5014),
-            (Image(f"{sh_path}/gui/journal/d03.png"), 0.84, 0.8426, 1.0, 0),
+            (Image(f"{sh_path}/gui/journal/d04.png"), 0.72, 0.4844),
+            (Image(f"{sh_path}/gui/journal/d03.png"), 0.825, 0.8341, 1.0, 0),
             (Text("They have maids!", color="#000"), 0.69, 0.7914, 0.5, 0, 10.0)
         ]
     )
@@ -159,13 +159,13 @@ label sh_ch28_journal_en:
     )
 
     call screen sh_journal(
-        "\n\nAlso, meeting Lilly's mother was unexpected. Looks like she was toying with us a bit.\n\n\n\n\n\n\n\nI feel a bit embarrassed for not having made the connection myself because the family resemblance is quite striking. I wonder if this is what Lilly will eventually end up looking like when she's older. If so, she's a lucky person.\n\nThere'll be a picnic tomorrow, and Lilly wants me to help her prepare the food. Hurray!",
+        "\n\nAlso, meeting Lilly's mother was unexpected. Looks like she was toying with us a bit.\n\n\n\n\n\n\nI feel a bit embarrassed for not having made the connection myself because the family resemblance is quite striking. I wonder if this is what Lilly will eventually end up looking like when she's older. If so, she's a lucky person.\n\nThere'll be a picnic tomorrow, and Lilly wants me to help her prepare the food. Hurray!",
         "Day 3\n\nI woke up feeling extremely sick this morning. Shower didn't help much. Fresh air didn't help much. Swearing to my ancestors to never ever drink again didn't help much. I guess I really deserved this. At least I'm not the only one. Lilly and Hisao were apparently in bad shape too. Lilly got in trouble for passing out on the couch—AFTER her parents already escorted her upstairs. Hisao and I had sandwiches for breakfast, filled with meat, lettuce and tomato. It was really hard eating them while resisting the urge to throw them back up, but Hisao said they'd make us feel better. In the end we decided to sleep for a few more hours.",
         [
-            (Text("I'm on to you!", color="#000"), 0.19, 0.1773, 0.0, 0, -5.0),
-            (Image(f"{sh_path}/gui/journal/d05.png"), 0.34, 0.3309),
-            (Image(f"{sh_path}/gui/journal/d06.png"), 0.34, 0.8426),
-            (Image(f"{sh_path}/gui/journal/d07.png"), 0.72, 0.7061)
+            (Text("I'm on to you!", color="#000"), 0.175, 0.1876, 0.0, 0, -5.0),
+            (Image(f"{sh_path}/gui/journal/d05.png"), 0.34, 0.2456),
+            (Image(f"{sh_path}/gui/journal/d06.png"), 0.34, 0.7914),
+            (Image(f"{sh_path}/gui/journal/d07.png"), 0.72, 0.7232)
         ]
     )
 
@@ -181,7 +181,7 @@ label sh_ch28_journal_en:
         "\n\nan impression to prevent me from making the same mistake again. I was worried things'd be awkward between Hisao and myself for the rest of the week, but fortunately we managed to settle things before we went on that picnic today. If I learned any lesson today it's that I should maybe worry less about Hisao and more about myself. Hisao may not take well to hot weather, but I don't either, and I was reminded of that today. Lilly's mother said it was heat exhaustion and she was probably right, but I think my body temperature was also just a little bit too high. It's been years since I've last experienced any real heat-related afflictions, so I guess I was becoming forgetful about the fact that I'm prone to them.",
         "\n\nI suppose this is what happens when you suddenly start getting out more after years of being a shut-in. I'd better be more careful in the future, lest it's me who ends up in the hospital here.\n\nWe also got to know Lilly's mother a little bit better today. She's apparently head of PR at the family company. She was relaxed enough while talking about the business, but I noticed she got tense when she talked about following her husband to Scotland. That's obviously still a sore point that she seemed eager to skip over.\n\nWhen my activities in the newspaper club came up, Lilly suddenly fished our latest newspaper out of her bag. What on earth? Hisao likes to say Shizune is the scheming type, but I'd say it runs in the family. If Lilly's intentions hadn't been so good, these kinds of stunts would have scared me.",
         [
-            (Image(f"{sh_path}/gui/journal/d08.png"), 0.34, 0.8085)
+            (Image(f"{sh_path}/gui/journal/d08.png"), 0.49, 0.7744, 1.0, 0)
         ]
     )
 
@@ -190,7 +190,7 @@ label sh_ch28_journal_en:
         "Day 4\n\nBefore heading to bed last night, I was told that we'd be taking it easy for today, and I could sleep in to my heart's delight. I'm not someone who sleeps in a lot, but I did end up staying in bed until nearly noon. Not so much because I had trouble waking up, but because I decided to wake up my sleeping boyfriend in the only way that's appropriate when you're in a large bed, it's a beautiful sunny morning and you have plenty of time to spare: lazy morning cuddling. I didn't mind the fact at all that one thing lead to another. All in all, I had a great morning.",
         [
             (Image(f"{sh_path}/gui/journal/d09.png"), 0.34, 0.5356),
-            (Image(f"{sh_path}/gui/journal/d10.png"), 0.72, 0.6038),
+            (Image(f"{sh_path}/gui/journal/d10nt.png"), 0.72, 0.6379),
             (Text("Do not disturb!", color="#000"), 0.765, 0.7744, 0.5, 0, -6.0)
         ]
     )
@@ -209,32 +209,32 @@ label sh_ch28_journal_en:
         "\n\nThe warmest part of the day was already over by the time we went into the city, but Lilly's mother nevertheless gave me her sun hat and said I could keep it for the remainder of my stay.\n\nMusings:\nFirst of all, I really love the sun hat. It has a pretty wide brim, so it does an excellent job at hiding my facial scars and during the warm months it's more fitting than my own hat. It's also really elegant, and Hisao says that I look cute while wearing it. What more could I possibly wish for?",
         "\n\nLilly's mother really got going when the subject of her former job came up yesterday, and I was a little overwhelmed at first, but now that I've had a night to sleep on it, I think there was a lot of useful advice in what she said.\n\nI should ask the teacher in charge of the newspaper club, Mister Hoshino, if there's a study like the one Lilly's mother mentioned yesterday. I just hope I can work up the nerve to approach him about this. Then there's the career paths. My head was spinning when Lilly's mother was rattling off job options.\n\nI think fiction writer would be a dream come true to me. I've taken in so many books—how wonderful would it be to be able to return some of that. But Lilly's mother had a point in that it might not be the most stable career, and I think I really benefit from having some stability in my life. Maybe at some point when/if I share a",
         [
-            (Image(f"{sh_path}/gui/journal/d11.png"), 0.34, 0.6379)
+            (Image(f"{sh_path}/gui/journal/d11.png"), 0.34, 0.672)
         ]
     )
 
     call screen sh_journal(
         "\n\nhome with someone who has a monthly income himself. (is it too early to be hoping for something like that?)\n\nTechnical writer seems like a solid and stable career, but I wonder if that kind of writing isn't too cold and lifeless for me. There's no personality in good technical writing. Biographer or ghost writer would be exciting. Imagine working closely with some celebrity who tells you all kinds of intimate things about his life that the rest of the world doesn't know about yet. But then you'd probably need a network and contacts in order to even get someone to approach you for such a job.\nI wonder what it would be like to be a speech writer. Imagine seeing hundreds of people listening to someone giving a rousing speech and knowing those people are really listening to and applauding your words. In the end though, copywriter or content writer may be the jobs that are easiest to get.",
-        "\n\nI can't really shake what Lilly's mother said about working with other people in order to work around your own shortcomings. Would I be able to practice journalism if I had someone like Naomi to do the interviews with me or for me and let her do the talking while I do the writing? That might just work. Lilly uses all sorts of tricks to work around her limits. Maybe I should take a page from her book and do the same. I wonder if Naomi would be up for a duo interview some time. I could always go into editing if things don't work out.",
+        "\n\nI can't really shake what Lilly's mother said about working with other people in order to work around your own shortcomings. Would I be able to practice journalism if I had someone like Naomi to do the interviews with me or for me and let her do the talking while I do the writing? That might just work. Lilly uses all sorts of tricks to work around her limits. Maybe I should take a page from her book and do the same. I wonder if Naomi would be up for a duo interview some time. I could always go into editing if things don't work out.\n\n\n\n\n\n\n\nI can't believe I'm thinking about all these things. Not too long ago I had no clue on what to do with my life after Yamaku, and",
         [
-            (Image(f"{sh_path}/gui/journal/d12.png"), 0.72, 0.6379)
+            (Image(f"{sh_path}/gui/journal/d12.png"), 0.72, 0.6209)
         ]
     )
 
     call screen sh_journal(
-        "\n\nI can't believe I'm thinking about all these things. Not too long ago I had no clue on what to do with my life after Yamaku, and now I'm trying to eliminate options that all look attractive. I guess it's about time though. Lilly and Hisao already have their career path largely figured out. I can't lag behind too much. In the end, it probably doesn't matter if I don't have one particular job in mind at this point. If I know what study to go for, I'll probably have plenty of opportunities to see where my interests lie. Like Hisao. Still, I wonder if I should have another talk with Lilly's mother about all of this. Will it look weird if I approach her? Will I even be able to pull that off without turning into a stammering mess? Maybe it's better to ask Lilly to break the ice for me. I don't think she'd mind.",
+        "\n\nnow I'm trying to eliminate options that all look attractive. I guess it's about time though. Lilly and Hisao already have their career path largely figured out. I can't lag behind too much. In the end, it probably doesn't matter if I don't have one particular job in mind at this point. If I know what study to go for, I'll probably have plenty of opportunities to see where my interests lie. Like Hisao. Still, I wonder if I should have another talk with Lilly's mother about all of this. Will it look weird if I approach her? Will I even be able to pull that off without turning into a stammering mess? Maybe it's better to ask Lilly to break the ice for me. I don't think she'd mind.",
         "Day 5\n\nToday is the first day Hisao and I have gone out without being accompanied by Lilly. We spent last evening preparing for today. We packed our lunches, the tourist guide and a map of the city and surrounding Highlands area. Lilly's mother gave each of us a bus card that we can use to take any of the bus lines in the area without having to pay the driver. I was a bit nervous to go out there without Lilly or her mother accompanying us, but the fact that Hisao was also a bit uneasy was a small comfort. Lilly's mom told us we could always call if we weren't sure how to get back. Good thing it didn't come to that. I'm not even sure how much reception we'd have in the middle of nowhere.\nHaving focused on the cultural sights over the last two days, Hisao and I decided to get away from the city and take a nature-viewing trip for a change.",
         [
-            (Image(f"{sh_path}/gui/journal/d13.png"), 0.4, 0.8426)
+            (Image(f"{sh_path}/gui/journal/d13.png"), 0.34, 0.7403)
         ]
     )
 
     call screen sh_journal(
-        "\n\nWe took the bus from the area near the Satou residence to the bus station in the center of Inverness and then took another bus to our destination. That bus ride took quite long—almost an hour. Fortunately, the bus drivers have been really helpful so far. When we show them our bus cards and then point out our destination on the map we brought along, they usually give us a little notice when we reach the bus stop where we need to get off.\n\nOur destination for today was the hamlet of Tomich far to the south-west of Inverness. The village was built in a very charming style. It's called the Victorian style; named after one of the queens who ruled in that era. It seems most of the village's buildings used to be part of the local nobleman's estate, though the manor itself is now a ruin.",
-        "\n\n\n\n\n\n\n\n\n\n\n\n\nFun fact: the first golden retriever was bred in this village. The nobleman who lived here needed a dog who could retrieve game from almost anywhere during the hunt, be it the ground or a lake. (of which there are plenty in the area) So he ended up breeding a dog breed that loves both water and playing fetch.",
+        "\n\nWe took the bus from the area near the Satou residence to the bus station in the center of Inverness and then took another bus to our destination. That bus ride took quite long—almost an hour. Fortunately, the bus drivers have been really helpful so far. When we show them our bus cards and then point out our destination on the map we brought along, they usually give us a little notice when we reach the bus stop where we need to get off.\n\n\n\n\n\n\nOur destination for today was the hamlet of Tomich far to the south-west of Inverness. The village was built in a very charming style. It's called the Victorian style; named after one of the queens who ruled in that era. It seems most of the village's buildings used to be part of the",
+        "\n\nlocal nobleman's estate, though the manor itself is now a ruin.\n\n\n\n\n\n\n\n\n\n\n\nFun fact: the first golden retriever was bred in this village. The nobleman who lived here needed a dog who could retrieve game from almost anywhere during the hunt, be it the ground or a lake. (of which there are plenty in the area) So he ended up breeding a dog breed that loves both water and playing fetch.",
         [
-            (Image(f"{sh_path}/gui/journal/d14.png"), 0.34, 0.02),
-            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p05.jpg"), 0.72, 0.1603)
+            (Image(f"{sh_path}/gui/journal/d14.png"), 0.49, 0.5356, 1.0, 0),
+            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p05.jpg"), 0.72, 0.2285)
         ]
     )
 
@@ -268,7 +268,8 @@ label sh_ch28_journal_en:
         "\n\nmorning after. Best to enjoy the time we have here.\n\n\n\n\n\nNote to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.",
         [
             (Image(f"{sh_path}/gui/journal/d17.png"), 0.34, 0.5356),
-            (Image(f"{sh_path}/gui/journal/d18.png"), 0.72, 0.2285)
+            (Image(f"{sh_path}/gui/journal/d18.png"), 0.72, 0.2285),
+            (Image(f"{sh_path}/gui/journal/d28.png"), 0.57, 0.5697, 0.0, 0)
         ]
     )
 
@@ -303,7 +304,7 @@ label sh_ch28_journal_en:
         "\n\nFinally, we met up with Akira in a cafe located in the marketplace. It was nice catching up with her. Also, we (secretly) had a glass of wine there. Akira treated us to one after she heard that Lilly had been sentenced to a soda diet for the remainder of her stay. We made sure not to have more than one though, lest we'd be found out.\n\n\n\n\n\nMusings:\nIt sure was nice to meet up with Akira again, although I'm a bit surprised that it's been nearly a week since we last saw her. She and Lilly still have almost daily contact over the phone, but you'd say that this would be an ideal opportunity for them to spend lots of time together while they still can. Who knows how long it'll take before they can meet in person again after we",
         "\n\nreturn to Japan. Akira says she's busy with work, and I'm sure that's true, but I also have the impression that she'd rather not visit the Satou residence or even be in the presence of her parents. I heard that she's living in a small apartment she's renting on the other side of Inverness. I feel bad that Hisao and I are staying in such luxury right now while Akira is living in such modest conditions, even though I'm pretty sure it's completely by her own choice.\n\nFrom what I've been able to tell, Akira doesn't like her parents and is still upset with them about the way they left her and Lilly in Japan to fend for themselves. She doesn't act openly hostile towards them most of the time, but she's definitely keeping them at arm's length. While she's been willing to let us drink alcohol before, I got the impression the main reason she treated us to a glass of wine was to spite her father.",
         [
-            (Image(f"{sh_path}/gui/journal/d19.png"), 0.34, 0.4673),
+            (Image(f"{sh_path}/gui/journal/d19.png"), 0.325, 0.4673),
             (Text("Remember me?", color="#000"), 0.385, 0.3565, 0.5, 0, 7.0)
         ]
     )
