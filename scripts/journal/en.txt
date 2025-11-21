@@ -248,6 +248,16 @@ Despite having brought our own lunch, we actually ended up buying a meal at the 
 
 photo. They looked so extremely cute I still smile whenever I picture them in my mind. I can't wait to have that photo printed out.
 
+!{d16a, x=0.1, y=0.05}
+
+!{d16b, x=-0.1, y=0.51}
+
+!{d16c, x=0.98, y=0.22}
+
+!{d16d, x=0.95, y=0.67}
+
+!{d16e, x=0.6, y=0.06}
+
 !{p08}
 
 Musings:
@@ -259,13 +269,13 @@ picture. The bedsheet covered most of me, but I could still see my face, my shou
 
 \nHas he forgotten that this camera belongs to the newspaper club? What if Naomi had found that picture? I don't think she's the type to use this kind of thing as blackmail material against me, but I'd still have to deal with a spell of excruciating embarrassment.
 
-!{d17}
+!{d17, gap=7, top=0.5}
 
-On that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at each other's place and worrying about bumping into each other's neighbors the
+On that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at
 
 ===
 
-morning after. Best to enjoy the time we have here.
+each other's place and worrying about bumping into each other's neighbors the morning after. Best to enjoy the time we have here.
 
 !{d18}
 
@@ -311,9 +321,10 @@ destroyed when our house burned down. I never liked the idea of people staring a
 ===
 
 When I still lived at the orphanage, I survived by focusing completely on the present. I tried to forget the events of yesterday and tried not to think about what would happen tomorrow. (both were often painful)
-And yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.
 
-\nI realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.
+\nAnd yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.
+
+\n\nI realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.
 
 ===
 
@@ -357,7 +368,7 @@ return to Japan. Akira says she's busy with work, and I'm sure that's true, but 
 
 I don't think Lilly's happy with this, but she seems hesitant to try and force things. Well, that's Lilly for you. Still, it's a pity she can't spend time with both her parents and her sister at the same time. They're all really nice people on their own.
 
-!{d20}
+!{d20, top=1}
 
 ===
 
@@ -369,7 +380,7 @@ We went to visit the famed Loch Ness today. It's not the lake in Scotland that c
 
 ===
 
-!{d21}
+!{d21, top=-2}
 
 Lilly promised to make us lunch for the rest of the school year if we could pull it off. That told us all we needed to know about our chances. We still tried for several kilometers though. Yes, the atmosphere in the car got quite silly.
 
@@ -379,24 +390,24 @@ We first made a stop by the Loch Ness Exhibition Center. It was a very impressiv
 
 After the exhibition center we took a nice hour-long boat trip on the lake.
 
-!{d22, gap=10}
+!{d22, gap=9, top=1}
 
 Afterwards, we drove to one of the sights we saw during the boat ride: the ruins of Urquhart Castle. It's a very impressive castle ruin that overlooks the lake. The view from up there was magnificent, especially from the top of its remaining tower. Lilly's mother said this place held some very special memories for her, but wouldn't elaborate further on it.
 
 ===
 
-!{p12}
+!{p12, gap=10, top=-1}
 
 Musings:
-Today was another day we spent with Lilly's mother coming along. Watching her is kind of interesting. Physically she resembles Lilly quite a bit, but if I had to pick one daughter to compare her to, I'd still say she's more like Akira. (just a little bit more refined) I had always pictured Lilly's mother as an extremely refined noblewoman of some sort, but Karla is surprisingly down-to-earth and laid-back. She's also rather informal, and her casual attitude makes her pretty easy to talk to.
+Today was another day we spent with Lilly's mother coming along. Watching her is kind of interesting. Physically she resembles Lilly quite a bit, but if I had to pick one daughter to compare her to, I'd still say she's more like Akira. (just a little bit more refined) I had always pictured Lilly's mother as an extremely refined noblewoman of some sort, but Karla is surprisingly down-to-earth and laid-back. She's also rather informal, and her casual attitude makes her pretty easy to talk to. It's actually kind of funny in a way, seeing
 
 ===
 
-It's actually kind of funny in a way, seeing a person with such a resemblence to Lilly talk like Akira often does.
+a person with such a resemblence to Lilly talk like Akira often does.
 
 \nBut when I look at Lilly and her mother together, I still notice a difference. Even though Karla acts a lot like Akira, Lilly and Karla don't act like Lilly and Akira. Whenever she's with her sister, Lilly talks to her as if she's talking to a good friend. The two are spontanous with each other and even like to tease each other whenever the opportunity presents itself, despite Akira being much older. Karla likes to tease Lilly on occasion as well, but Lilly seems unusually reserved when speaking to her mother directly. More reserved than she is around most people. I suppose it's somewhat understandable, seeing that they've been apart for such a long time, but it's still a bit odd.
 
-!{d23}
+!{d23, x=1, px=1}
 
 ===
 
@@ -419,7 +430,7 @@ Lilly, Hisao and I took a bus to the village of Avoch on the other side of the b
 Three words: Seals and dolphins! It turns out they live in the very bay on whose edge I've been sitting each evening. The binoculars I borrowed came in handy when the captain of our boat took us close to a seal colony near the peninsula we were heading for.
 
 !{d25}
-!{"(seal)", x=0.3, gap=0, top=-5.5, rot=-9}
+!{"(seal)", x=0.15, gap=0, top=-5.5, rot=-9}
 
 Seeing them lying on the beach and occasionally clumsily flopping around, especially the little ones, just made my heart melt. So adorable! We didn't end up needing binoculars for the dolphins. At some point several of them started swimming around and under the boat, occasionally jumping above the water surface. We made a few marvelous pictures including one with me in it. The trip itself only took an hour, and I would have liked to take another, but
 
@@ -441,7 +452,7 @@ One of the coworkers there seemed really eager to tell us about these animals—
 
 ===
 
-!{d26}
+!{d26, top=-2}
 
 Anyway, Lilly and I made the decision then and there to officially adopt one of the dolphins as a gesture of goodwill. (this was something they offered to visitors) Lilly will be paying the monthly fee to the center, and I will be paying back my share by treating Lilly to a free lunch each month. The person at the center was really impressed by our decision. So please welcome the latest member to our little family: Moonlight the bottlenose dolphin!
 

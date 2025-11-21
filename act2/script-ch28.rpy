@@ -259,17 +259,22 @@ label sh_ch28_journal_en:
         "\n\nphoto. They looked so extremely cute I still smile whenever I picture them in my mind. I can't wait to have that photo printed out.\n\n\n\n\n\n\n\n\n\n\n\nMusings:\nWhile browsing through the camera's memory, I found out something embarrassing. Apparently Hisao took a picture of me while I was asleep in our bed. Perhaps he thought I looked cute while sleeping. That wasn't really the issue though. The problem was the fact that I wasn't wearing anything when he took that",
         [
             (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p07.jpg"), 0.34, 0.3991),
+            (Image(f"{sh_path}/gui/journal/d16a.png"), 0.6, 0.05),
+            (Image(f"{sh_path}/gui/journal/d16b.png"), 0.54, 0.51),
+            (Image(f"{sh_path}/gui/journal/d16c.png"), 0.864, 0.22),
+            (Image(f"{sh_path}/gui/journal/d16d.png"), 0.855, 0.67),
+            (Image(f"{sh_path}/gui/journal/d16e.png"), 0.75, 0.06),
             (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p08.jpg"), 0.72, 0.2968)
         ]
     )
 
     call screen sh_journal(
-        "\n\npicture. The bedsheet covered most of me, but I could still see my face, my shoulders and the top of my back.\n\nHas he forgotten that this camera belongs to the newspaper club? What if Naomi had found that picture? I don't think she's the type to use this kind of thing as blackmail material against me, but I'd still have to deal with a spell of excruciating embarrassment.\n\n\n\n\n\nOn that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at each other's place and worrying about bumping into each other's neighbors the",
-        "\n\nmorning after. Best to enjoy the time we have here.\n\n\n\n\n\nNote to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.",
+        "\n\npicture. The bedsheet covered most of me, but I could still see my face, my shoulders and the top of my back.\n\nHas he forgotten that this camera belongs to the newspaper club? What if Naomi had found that picture? I don't think she's the type to use this kind of thing as blackmail material against me, but I'd still have to deal with a spell of excruciating embarrassment.\n\n\n\n\n\n\n\nOn that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at",
+        "\n\neach other's place and worrying about bumping into each other's neighbors the morning after. Best to enjoy the time we have here.\n\n\n\n\n\nNote to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.",
         [
-            (Image(f"{sh_path}/gui/journal/d17.png"), 0.34, 0.5356),
-            (Image(f"{sh_path}/gui/journal/d18.png"), 0.72, 0.2285),
-            (Image(f"{sh_path}/gui/journal/d28.png"), 0.57, 0.5697, 0.0, 0)
+            (Image(f"{sh_path}/gui/journal/d17.png"), 0.34, 0.5526),
+            (Image(f"{sh_path}/gui/journal/d18.png"), 0.72, 0.2968),
+            (Image(f"{sh_path}/gui/journal/d28.png"), 0.57, 0.6379, 0.0, 0)
         ]
     )
 
@@ -287,7 +292,7 @@ label sh_ch28_journal_en:
     )
 
     call screen sh_journal(
-        "\n\nWhen I still lived at the orphanage, I survived by focusing completely on the present. I tried to forget the events of yesterday and tried not to think about what would happen tomorrow. (both were often painful)\nAnd yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.\n\nI realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.",
+        "\n\nWhen I still lived at the orphanage, I survived by focusing completely on the present. I tried to forget the events of yesterday and tried not to think about what would happen tomorrow. (both were often painful)\n\nAnd yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.\n\n\nI realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.",
         "\n\nOn a final note, when re-reading my recollection of the first day, I realize I maybe wasn't being completely fair. I did like the flight itself and our stay here so far has definitely been worth the stress of the trip so I'm going to try and write something positive about it after I finish this page. Maybe that's the key to sorting out my life. Writing down the precious memories and taking pictures of them in order to to keep them alive that way while letting the bad memories fade with time.\n\nHmmm..."
     )
 
@@ -313,25 +318,25 @@ label sh_ch28_journal_en:
         "\n\nI don't think Lilly's happy with this, but she seems hesitant to try and force things. Well, that's Lilly for you. Still, it's a pity she can't spend time with both her parents and her sister at the same time. They're all really nice people on their own.",
         "Day 9\n\nWe went to visit the famed Loch Ness today. It's not the lake in Scotland that covers the largest area, but it's definitely the lake that contains the largest amount of water (it's much deeper than any other lake around here) so you could still argue that it's the largest lake in the country. The road to our destination ran parallel to the lake for nearly 10 kilometers, so we got plenty of opportunity to take pictures. Now about that destination...\n\nThe name of our destination is Grmblwarwmx. Actually the village's real name is Drumnadrochit, but as far as pronunciation goes that's the same thing in my mind. Infuriatingly enough, Lilly managed to get it right after a few tries. Karla promised Hisao and me that we'd be flying business class back to Japan if we could learn to say the name out loud three times without mispronouncing it before the end of our stay.",
         [
-            (Image(f"{sh_path}/gui/journal/d20.png"), 0.34, 0.365)
+            (Image(f"{sh_path}/gui/journal/d20.png"), 0.34, 0.3991)
         ]
     )
 
     call screen sh_journal(
         "\n\n\n\n\n\n\nLilly promised to make us lunch for the rest of the school year if we could pull it off. That told us all we needed to know about our chances. We still tried for several kilometers though. Yes, the atmosphere in the car got quite silly.\nWe first made a stop by the Loch Ness Exhibition Center. It was a very impressive display showing some insight into the legend of the dinosaur-like creature that was reputedly living in the lake and also contained an overview of the various scientific expeditions that made attempts to verify Nessie's existence. Ultimately none of them ever found evidence, but like the ghosts that are said to inhabit the various castles in the region, it adds a nice touch of mystery to the place.",
-        "\n\nAfter the exhibition center we took a nice hour-long boat trip on the lake.\n\n\n\n\n\n\n\n\n\n\nAfterwards, we drove to one of the sights we saw during the boat ride: the ruins of Urquhart Castle. It's a very impressive castle ruin that overlooks the lake. The view from up there was magnificent, especially from the top of its remaining tower. Lilly's mother said this place held some very special memories for her, but wouldn't elaborate further on it.",
+        "\n\nAfter the exhibition center we took a nice hour-long boat trip on the lake.\n\n\n\n\n\n\n\n\n\nAfterwards, we drove to one of the sights we saw during the boat ride: the ruins of Urquhart Castle. It's a very impressive castle ruin that overlooks the lake. The view from up there was magnificent, especially from the top of its remaining tower. Lilly's mother said this place held some very special memories for her, but wouldn't elaborate further on it.",
         [
-            (Image(f"{sh_path}/gui/journal/d21.png"), 0.34, 0.1603),
-            (Image(f"{sh_path}/gui/journal/d22.png"), 0.72, 0.2285)
+            (Image(f"{sh_path}/gui/journal/d21.png"), 0.34, 0.0921),
+            (Image(f"{sh_path}/gui/journal/d22.png"), 0.72, 0.2626)
         ]
     )
 
     call screen sh_journal(
-        "\n\n\n\n\n\n\n\n\n\n\n\n\nMusings:\nToday was another day we spent with Lilly's mother coming along. Watching her is kind of interesting. Physically she resembles Lilly quite a bit, but if I had to pick one daughter to compare her to, I'd still say she's more like Akira. (just a little bit more refined) I had always pictured Lilly's mother as an extremely refined noblewoman of some sort, but Karla is surprisingly down-to-earth and laid-back. She's also rather informal, and her casual attitude makes her pretty easy to talk to.",
-        "\n\nIt's actually kind of funny in a way, seeing a person with such a resemblence to Lilly talk like Akira often does.\n\nBut when I look at Lilly and her mother together, I still notice a difference. Even though Karla acts a lot like Akira, Lilly and Karla don't act like Lilly and Akira. Whenever she's with her sister, Lilly talks to her as if she's talking to a good friend. The two are spontanous with each other and even like to tease each other whenever the opportunity presents itself, despite Akira being much older. Karla likes to tease Lilly on occasion as well, but Lilly seems unusually reserved when speaking to her mother directly. More reserved than she is around most people. I suppose it's somewhat understandable, seeing that they've been apart for such a long time, but it's still a bit odd.",
+        "\n\n\n\n\n\n\n\n\n\n\n\nMusings:\nToday was another day we spent with Lilly's mother coming along. Watching her is kind of interesting. Physically she resembles Lilly quite a bit, but if I had to pick one daughter to compare her to, I'd still say she's more like Akira. (just a little bit more refined) I had always pictured Lilly's mother as an extremely refined noblewoman of some sort, but Karla is surprisingly down-to-earth and laid-back. She's also rather informal, and her casual attitude makes her pretty easy to talk to. It's actually kind of funny in a way, seeing",
+        "\n\na person with such a resemblence to Lilly talk like Akira often does.\n\nBut when I look at Lilly and her mother together, I still notice a difference. Even though Karla acts a lot like Akira, Lilly and Karla don't act like Lilly and Akira. Whenever she's with her sister, Lilly talks to her as if she's talking to a good friend. The two are spontanous with each other and even like to tease each other whenever the opportunity presents itself, despite Akira being much older. Karla likes to tease Lilly on occasion as well, but Lilly seems unusually reserved when speaking to her mother directly. More reserved than she is around most people. I suppose it's somewhat understandable, seeing that they've been apart for such a long time, but it's still a bit odd.",
         [
-            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p12.jpg"), 0.34, 0.1603),
-            (Image(f"{sh_path}/gui/journal/d23.png"), 0.72, 0.8767)
+            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p12.jpg"), 0.34, 0.1262),
+            (Image(f"{sh_path}/gui/journal/d23.png"), 0.87, 0.8426, 1.0, 0)
         ]
     )
 
@@ -348,7 +353,7 @@ label sh_ch28_journal_en:
         "\n\nunfortunately there was a rather large group waiting on the shore when we came back, and we didn't want to wait another hour for another go-around, so we took the bus to North Kessock, where a dolphin and seal center is located, instead.\n\n\n\n\n\n\n\n\n\n\n\nWe spent some more time at the center watching dolphins from both the vantage point and through the underwater cameras the center set up nearby. They also had underwater microphones installed so we could listen to the sounds they made while they were swimming nearby.",
         [
             (Image(f"{sh_path}/gui/journal/d25.png"), 0.34, 0.3991),
-            (Text("(seal)", color="#000"), 0.28, 0.382, 0.5, 0, -9.0),
+            (Text("(seal)", color="#000"), 0.235, 0.382, 0.5, 0, -9.0),
             (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p13.jpg"), 0.72, 0.365)
         ]
     )
@@ -357,7 +362,7 @@ label sh_ch28_journal_en:
         "\n\nOne of the coworkers there seemed really eager to tell us about these animals—as if my interest hadn't been piqued enough as it was.\n\nWhen Lilly pried a bit, we learned he was so focused on us because he already had us pegged for Japanese, and the center was run by the Whales and Dolphin Conservation charity organisation. He mentioned that Japan is one of the countries still engaged in the practice of whaling and Japanese fishermen kill thousands of dolphins and small whales every year, and he urged us to spread the word once we return home. That was kind of uncomfortable.\n\nI got the impression that that person thought we ate nothing but whale meat all day long, but I've never even tasted it and Lilly mentioned that the few times she had a taste, it didn't strike her as that good.",
         "\n\n\n\n\n\n\nAnyway, Lilly and I made the decision then and there to officially adopt one of the dolphins as a gesture of goodwill. (this was something they offered to visitors) Lilly will be paying the monthly fee to the center, and I will be paying back my share by treating Lilly to a free lunch each month. The person at the center was really impressed by our decision. So please welcome the latest member to our little family: Moonlight the bottlenose dolphin!",
         [
-            (Image(f"{sh_path}/gui/journal/d26.png"), 0.72, 0.1603),
+            (Image(f"{sh_path}/gui/journal/d26.png"), 0.72, 0.0921),
             (Image(f"{sh_path}/gui/journal/d27.png"), 0.72, 0.7061)
         ]
     )
