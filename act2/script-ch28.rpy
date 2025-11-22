@@ -40,12 +40,12 @@ label sh_ch28:
         ha "EEK!"
         "I let out a high-pitched cry, spring to my feet and turn around."
 
-        show hisao cross_grin_polo
+        show hisao cross_grin_polo at right
         with charaenter
 
         "Standing behind me is Hisao, sporting a broad grin that would make the head nurse jealous. I quickly avert my eyes while trying to keep my rapidly emerging blush in check. It looks like he decided to look me up, heard me on his way over here, and decided to sneak up on me."
 
-        show hisao basic_smile_polo_close
+        show hisao basic_smile_polo_close at center
         with chchange
 
         "Hisao takes a moment to enjoy his own joke and then gives me a quick peck on the cheek to reassure me."
@@ -270,11 +270,11 @@ label sh_ch28_journal_en:
 
     call screen sh_journal(
         "\n\npicture. The bedsheet covered most of me, but I could still see my face, my shoulders and the top of my back.\n\nHas he forgotten that this camera belongs to the newspaper club? What if Naomi had found that picture? I don't think she's the type to use this kind of thing as blackmail material against me, but I'd still have to deal with a spell of excruciating embarrassment.\n\n\n\n\n\n\n\nOn that note, as of this week our “love life” seems to be back on track. I think I'm going to miss our bedroom here when we return to Japan and have to get back to sleeping in a cramped single bed, sneaking around the dorm in order to stay over at",
-        "\n\neach other's place and worrying about bumping into each other's neighbors the morning after. Best to enjoy the time we have here.\n\n\n\n\n\nNote to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.",
+        "\n\neach other's place and worrying about bumping into each other's neighbors the morning after. Best to enjoy the time we have here.\n\n\n\n\n\n\n\nNote to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.",
         [
             (Image(f"{sh_path}/gui/journal/d17.png"), 0.34, 0.5526),
-            (Image(f"{sh_path}/gui/journal/d18.png"), 0.72, 0.2968),
-            (Image(f"{sh_path}/gui/journal/d28.png"), 0.57, 0.6379, 0.0, 0)
+            (Image(f"{sh_path}/gui/journal/d18.png"), 0.72, 0.2797),
+            (Image(f"{sh_path}/gui/journal/d28.png"), 0.57, 0.7061, 0.0, 0)
         ]
     )
 

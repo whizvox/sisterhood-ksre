@@ -277,7 +277,7 @@ On that note, as of this week our “love life” seems to be back on track. I t
 
 each other's place and worrying about bumping into each other's neighbors the morning after. Best to enjoy the time we have here.
 
-!{d18}
+!{d18, gap=7, top=-0.5}
 
 Note to self: don't leave my birth control pills anywhere near Hisao's collection of medication. He nearly took some by mistake. Hahaha, that'd have been awkward.
 

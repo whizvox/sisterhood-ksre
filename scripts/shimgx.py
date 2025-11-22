@@ -162,6 +162,9 @@ class ImageProcess:
         if outpath.exists() and not replace:
             print(f"Skipping already existing image at {outpath}")
             return
+        if not inpath.exists():
+            print(f"[WARNING] Skipping non-existant input image: {inpath}")
+            return
         outpath.parent.mkdir(exist_ok=True)
         transforms = self.transforms
         print(f"Transforming image <{inpath}>")
@@ -240,7 +243,7 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("event/planeride/planeride_bliss.jpg", "gui/journal/p01.jpg", [crop(300, 0, 1920, 1080), resize(525, 350)]),
     ("bgs/inverness_street.jpg", "gui/journal/p02.jpg", [CompositeTransformation([(700, 0, "~sprites/hanako/hanako_emb_smile.png"), (300, 0, "sprites/hisao/hisao_cross_smile_polo.png")]), crop(150, 0, 1770, 1080), resize(525, 350)]),
     ("bgs/inverness_tree.jpg", "gui/journal/p03.jpg", [CompositeTransformation([(384, 0, "~sprites/lilly/lilly_basic_cheerful_cas.png"), (1074, 30, "~sprites/hanako/hanako_basic_bashful_cas.png"), (692, 30, "sprites/hisao/hisao_basic_smile_polo.png")]), crop(162, 0, 1782, 1080), resize(525, 350)]),
-    ("reference/bgs/cawthorn.jpg", "gui/journal/p07.jpg", [CompositeTransformation([(338, 50, "sprites/hisao/hisao_basic_grin_swt.png")]), resize(525, 350)]),
+    ("reference/bgs/cawthorn.jpg", "gui/journal/p07.jpg", [CompositeTransformation([(338, 50, "sprites/hisao/hisao_basic_grin_polo.png")]), resize(525, 350)]),
     ("reference/journal/photos/p10.jpg", "gui/journal/p10.jpg", [CompositeTransformation([(793, 200, "~sprites/lilly/lilly_cane_giggle_cas.png"), (1199, 200, "sprites/akira/akira_basic_cheerful.png")]), crop(165, 220, 1756, 1280), resize(525, 350)]),
     ("reference/journal/photos/p11.jpg", "gui/journal/p11.jpg", [crop(0, 46, 1000, 712), resize(525, 350)]),
     ("reference/bgs/urquhart castle.jpg", "gui/journal/p12.jpg", [resize(525, 350)]),
@@ -269,19 +272,20 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/journal/doodles/IMG_2105.png", "gui/journal/d16e.png", [crop(1442, 1021, 1880, 1525), resize(targetheight=76)]),
     ("reference/journal/doodles/IMG_2106.png", "gui/journal/d17.png", [crop(171, 112, 1806, 1593), resize(targetheight=200)]),
     ("reference/journal/doodles/IMG_2106_nt.png", "gui/journal/d17nt.png", [crop(171, 112, 1806, 1593), resize(targetheight=200)]),
+    ("reference/journal/doodles/IMG_2118.png", "gui/journal/d18.png", [crop(548, 40, 1710, 1508), resize(targetheight=220)]),
+    ("reference/journal/doodles/IMG_2070.png", "gui/journal/d19.png", [crop(586, 369, 1458, 1460), resize(targetheight=180)]),
     ("reference/journal/doodles/IMG_2108_v2.png", "gui/journal/d20.png", [crop(16, 112, 2450, 1468), resize(targetheight=240)]),
     ("reference/journal/doodles/IMG_2109.png", "gui/journal/d21.png", [crop(82, 120, 2060, 1424), resize(targetheight=220)]),
     ("reference/journal/doodles/IMG_2109_nt.png", "gui/journal/d21nt.png", [crop(82, 120, 2060, 1424), resize(targetheight=220)]),
     ("reference/journal/doodles/IMG_2110.png", "gui/journal/d22.png", [crop(142, 222, 2048, 1426), resize(targetheight=230)]),
     ("reference/journal/doodles/IMG_2111.png", "gui/journal/d23.png", [crop(124, 384, 2048, 1214), resize(targetheight=135)]),
-    ("reference/journal/doodles/IMG_2112.png", "gui/journal/d24.png", [crop(44, 44, 2034, 1534), resize(targetheight=200)]),
+    ("reference/journal/doodles/IMG_2116.png", "gui/journal/d24.png", [crop(44, 44, 2034, 1534), resize(targetheight=200)]),
     ("reference/journal/doodles/IMG_2112_nt.png", "gui/journal/d24nt.png", [crop(44, 44, 2034, 1534), resize(targetheight=200)]),
     ("reference/journal/doodles/IMG_2113.png", "gui/journal/d25.png", [crop(260, 468, 1934, 1210), resize(targetheight=150)]),
     ("reference/journal/doodles/IMG_2114.png", "gui/journal/d26.png", [crop(232, 40, 1934, 1620), resize(targetheight=210)]),
     ("reference/journal/doodles/IMG_2115.png", "gui/journal/d27.png", [crop(94, 88, 2070, 1620), resize(targetheight=260)]),
     ("reference/journal/doodles/IMG_2115_nt.png", "gui/journal/d27nt.png", [crop(94, 88, 2070, 1620), resize(targetheight=260)]),
-    ("reference/journal/doodles/IMG_2069.png", "gui/journal/d28.png", [crop(0, 103, 2027, 1620), resize(targetheight=250)]),
-    ("reference/journal/doodles/IMG_2070.png", "gui/journal/d19.png", [crop(586, 369, 1458, 1460), resize(targetheight=180)])
+    ("reference/journal/doodles/IMG_2069.png", "gui/journal/d28.png", [crop(0, 103, 2027, 1620), resize(targetheight=250)])
 ]
 
 
