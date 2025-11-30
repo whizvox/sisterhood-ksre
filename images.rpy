@@ -270,6 +270,7 @@ init 1:
     {b}Additional Art{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
+    ShinyKerushi
     GoodFreePhotos.com
     \n\n
     {b}Sprite Edits{/b}

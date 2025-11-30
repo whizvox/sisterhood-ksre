@@ -748,7 +748,7 @@ label sh_ch33:
         aki "You shouldn't sell yourself short like that. The last time you had a candid talk with Lilly, she reversed a life-changing decision just like that. That's no small feat. And just today, you got some impressive results with the old man, too."
         ha "W-what?"
         aki "You told him how wrong he was about Lilly and also suggested for him to apologize to her, all of that without being so direct as to cause him to get butthurt."
-        # TODO probably should add an internal line of dialogue about hanako being unsure about Akira's words
+        "I thought I was being subtle earlier today, but now I feel caught out and find myself worrying what kind of impression I must have left."
 
         show akira basic_sweet
         with chchange

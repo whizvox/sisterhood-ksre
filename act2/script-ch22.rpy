@@ -25,8 +25,7 @@ label sh_ch22:
         "I look at the chairs in the corner again. My own clothes are folded over one of them. The other holds Hanako's clothes."
         "I softly turn my head to the right, and I can see my girlfriend lying next to me. She's currently lying on her stomach and seems occupied scribbling words onto a small blocknote in front of her."
         "Since she's not wearing her hair clip, and a lock of hair is obscuring the right side of her face, it appears she hasn't noticed me waking up yet."
-        # TODO either reword or remove
-        # "With the covers on her side of the bed pulled back and with nothing on except her panties and a T-shirt, Hanako is a pleasant sight to wake up to."
+        "With the covers on her side of the bed pulled back and with nothing on except her panties and a T-shirt, Hanako is a pleasant sight to wake up to."
         "Taking care not to alert her, I sneak a hand over to the left side of her lower back and playfully tickle her there."
 
         show hanagown worry_blush_close
