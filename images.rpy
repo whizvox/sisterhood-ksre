@@ -108,7 +108,8 @@ init 1 python:
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
-    sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"])
+    sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
+    sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
 
     sh_fireflies()
 

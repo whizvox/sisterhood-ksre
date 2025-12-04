@@ -235,7 +235,21 @@ JPEGS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_02.png", "event/planeride/planeride_blanket.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_03.png", "event/planeride/planeride_listen.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_04.png", "event/planeride/planeride_frown.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
-    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_05.png", "event/planeride/planeride_weaksmile.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P])
+    ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_05.png", "event/planeride/planeride_weaksmile.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    # chapter 34
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_01.png",     "event/hanakohistory/hanakohistory_bed.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_02.png",     "event/hanakohistory/hanakohistory_bed_pain.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_03_A.png",   "event/hanakohistory/hanakohistory_fire.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_03_B.png",   "event/hanakohistory/hanakohistory_fire_alone.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_04.png",     "event/hanakohistory/hanakohistory_urn.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_05.png",     "event/hanakohistory/hanakohistory_read.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_06.png",     "event/hanakohistory/hanakohistory_read_leave.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_06_B.png",   "event/hanakohistory/hanakohistory_read_alone.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_07.png",     "event/hanakohistory/hanakohistory_play.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_08.png",     "event/hanakohistory/hanakohistory_play_tease.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_09.png",     "event/hanakohistory/hanakohistory_bully.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_10.png",     "event/hanakohistory/hanakohistory_bully_cry.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg")
 ]
 
 PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [

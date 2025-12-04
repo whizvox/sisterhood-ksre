@@ -576,11 +576,21 @@ label sh_ch34:
         ha "And there's all the t-time you have. S-so much time—too much time—and nothing to s-spend it on except w-wondering."
         ha "W-wondering why t-this happened to y-you and what you d-did to deserve t-this. Wondering what y-your life will b-be like afterwards and r-realizing it will probably never b-be the same again."
         li "Was that what it was like for you, Hanako?"
+
+        scene ev hanakohistory_bed
+        show darkness:
+          alpha 0.4
+        with Fade(1, 0, 1)
+
         ha "I... d-don't really remember m-my own first week very well. I... w-was on very heavy medication at first. The strongest they had. M-my room was one of those s-sealed pods that w-was completely s-sterile. I b-barely survived the f-fire."
         ha "They s-said a s-simple infection could kill me until m-my injuries healed up a bit more. They usually c-couldn't b-bring in toys or b-books because there could be g-germs on them."
         ha "D-doctors or nurses wouldn't c-come in unless really necessary and I w-wasn't allowed out of the r-room. But then again, I c-could barely move b-back then, so I wouldn't h-have been able to leave anyway."
         li "That must have been terribly lonely..."
         ha "I preferred to b-be alone, eventually. Whenever the n-nurses came into my room, it was usually to change the b-bandages or to move and s-stretch my injured arm and b-back."
+
+        show ev hanakohistory_bed_pain
+        with charachangeev
+
         ha "Burned skin becomes really t-tight and it has to be s-stretched several times a day or I wouldn't be able to use those p-parts of my body at all anymore, eventually. That's what they s-said. But... I didn't s-see it that way at first."
         ha "All I knew was that several t-times a day, p-people would come into my room to cause me terrible pain."
         "For a moment my thoughts fly back to my time in the hospital. The constant pain that became unbearable when my limbs were moved or the wound dressing was changed."
@@ -589,23 +599,43 @@ label sh_ch34:
         li "Hanako..."
         ha "S-sometimes, after the nurses w-were finally done f-for the day, I w-wondered why my m-mother did what she d-did. Why she didn't j-just let me..."
         li "Your mother?"
-        ha "The fire happened when I was eight years old. It was night, and I was s-sleeping when it started. I... curled up into a ball... when the f-fire swept over me."
+
+        show ev hanakohistory_fire
+        with Dissolve(1.0)
+
+        ha "The fire happened when I was eight years old. It was night, and I was s-sleeping when it started."
+        ha "I... curled up into a ball... when the f-fire swept over me."
+        
+        show ev hanakohistory_fire_alone
+        with { "master": Dissolve(5.0, time_warp=_warper.easeout_cubic) }
+
         ha "My mother... tried to shield me. Th-that's the reason... I lived... and she... d-didn't."
         li "..."
         ha "I was... still on intensive care... f-fighting for my own l-life when the... c-c-cremation took place."
         ha "M-maybe it w-was for the best. If... If I h-had been there when they... when they... I d-don't think I w-would have... "
-        "I sniffle and it takes all the willpower I have to swallow the sudden lump in my throat, and when Lilly speaks up, her voice is rather tiny as well."
-        li "H-Hanako... your parents' ashes... are they... kept at a grave somewhere? Because if so... perhaps I could go there with you some time and pay my respects."
 
-        show ev sharedsoak_lilly_historysmile
+        hide ev
+        show black behind darkness
+        with Dissolve(1.0)
+
+        "I sniffle and it takes all the willpower I have to swallow the sudden lump in my throat."
+        "When Lilly speaks up, her voice is rather tiny as well."
+        li "H-Hanako... your parents' ashes... are they... kept at a grave somewhere? Because if so... perhaps I could go there with you some time and pay my respects."
+        "That comment makes me smile despite the mood of the moment."
+        "It's just so much like Lilly to say something kind like that."
+
+        show ev hanakohistory_urn
         with charachangeev
 
-        "That comment makes me smile despite the mood of the moment. It's just so much like Lilly to say something kind like that."
         ha "Th-they're not. The funeral w-was already very costly, and it w-was decided not to s-spend additional money on a grave with just m-me to maintain it."
         ha "After I... recovered enough to be able to walk and d-dress myself again, the m-matron came to visit m-me in the hospital. She told me she worked at an orphanage in t-town and that I'd be living with them from then on."
         ha "They... kept my p-parents' ashes while I w-was recovering in the hospital, and after I was allowed to l-leave, we took a long ride to a place n-near the ocean with a really b-beautiful coastline."
         ha "The matron s-said I could pick the prettiest spot I could f-find and that's where we would... s-s-see them off."
         li "She sounds kind."
+
+        show ev hanakohistory_read
+        with charachangeev
+
         ha "She w-was. All the staff members at the orphanage w-were nice, and it felt a bit like Yamaku does. But the staff was also always b-busy."
         ha "Since they w-were already h-helping me with my... exercises and other m-medical needs, I t-tried not to burden them further. The place had a small library, so I started reading to p-pass the time."
         ha "S-sometimes I'd play a game with one of the other c-children if the staff suggested it."
@@ -613,30 +643,58 @@ label sh_ch34:
         ha "I didn't r-really get to know anyone. The other c-children didn't really t-talk much to me, and I didn't r-really talk much to them. I... d-didn't really mind."
         li "But you were all in the same boat, weren't you?"
 
-        show ev sharedsoak_lilly_historyspeak
-        with charachangeev
+        show ev hanakohistory_read_leave
+        with { "master": Dissolve(2.0) }
 
         ha "I'm n-not sure. As th-the years went on, I realized... I was different. M-most of the children there were up for adoption, just like I was. But unlike me... they gradually left, o-one by one."
         ha "By the time I went to Yamaku, I was... among the oldest ch-children there. For a while, I h-helped with some of the y-younger children, but... I n-never really got to know them either."
         li "That must have been very lonely."
+
+        show ev hanakohistory_read_alone
+        with { "master": Dissolve(2.0) }
+
         ha "I d-don't like interacting w-with p-people very much, so I didn't m-mind."
         li "But everybody needs friends, don't you think so?"
+
+        show ev hanakohistory_play
+        with charachangeev
+
         ha "Friendship... was something I thought I'd g-given up on. I s-stopped believing in others... after what happened after the accident... B-before my accident happened, I got on well with p-people and other children."
         ha "I d-didn't have many friends, but... I didn't m-mind. I t-treasured the ones that I had. Afterwards, though..."
         "I swallow with some difficulty. For some reason just the mere mentioning of this brings back fragments of the desperation I felt back then."
-        ha "...I was c-called names by the others and t-teased a lot. It hurt... really deeply. The teachers t-tried to help s-sometimes, but they c-couldn't do much, and even many of them r-recoiled just at the sight of me."
 
-        show ev sharedsoak_lilly_historycry
+        show ev hanakohistory_play_tease
         with charachangeev
 
+        ha "...I was c-called names by the others and t-teased a lot. It hurt... really deeply. The teachers t-tried to help s-sometimes, but they c-couldn't do much, and even many of them r-recoiled just at the sight of me."
         ha "Among t-those c-calling me names and t-teasing me... were the ones that I t-thought were m-my closest friends."
         ha "{i}*sniff*{/i} Up to that point, I had been hoping I c-could still maintain... just a little bit of m-my former life, but... it was then that I r-realized that my former life was truly gone for good."
         "I feel a few tears flow down my cheek, and I see them create small ripples as they hit the surface of the water."
+        
+        show ev hanakohistory_bully
+        with charachangeev
+
         ha "Middle school... was even worse. I g-got bullied... a lot. I was c-called names and got excluded f-from work groups. There were... worse things, too. Especially when tests came up and p-people started f-feeling pressure."
+        
+        show ev hanakohistory_bully_cry
+        with charachangeev
+
         ha "I s-started skipping class. I knew I wasn't s-supposed to... M-my grades were already r-rather low, but... I became more and more f-frightened to go there each day."
+        
+        show ev hanakohistory_gate
+        with charachangeev
+
         ha "After m-middle school, Yamaku was one of the options the s-staff brought up. It was... isolated and m-most students there were d-disabled. I d-didn't expect to m-make any friends there, but... at least p-people would leave me be."
         ha "That was... g-good enough for me. That was… even m-more than I c-could hope for."
+
+        hide ev
+        with Dissolve(1.0)
+
         "I rub my eyes a few times, trying to wipe away the tears."
+        
+        scene ev sharedsoak_lilly_historycry
+        with Dissolve(1.0)
+
         "When I take a brief look at Lilly, I see that she's softly crying as well."
         "For a long time, neither of us says a word."
         "When Lilly finally opens her mouth, there's a sad but tender tone in her voice."
