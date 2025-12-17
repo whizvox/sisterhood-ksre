@@ -5,7 +5,8 @@ label sh_ch35:
 
         call sisterhood_timeskip
 
-        scene bg hisao_livingroom
+        scene bg hisao_livingroom:
+            zoom 1.03 yalign 0.5
         with openeye
 
         play music music_serene fadein 4.0
@@ -19,7 +20,7 @@ label sh_ch35:
         "The footsteps stop close to me, and I can tell that whoever came into the room is now looking at me for a bit. I don't think it's Hisao who's now standing in front of me, so I pretend to be asleep."
         "It may not be social, but I think the impression I leave here will be more positive if I limit the number of awkward conversations I get involved in."
 
-        scene bg hisao_livingroom
+        hide black
         with openeye
 
         "When I hear the person in front of me move away, I carefully open my eyes again, thankful that I'm lying on my left side so that my hair covers most of my face, and survey the room again."
@@ -28,18 +29,17 @@ label sh_ch35:
         nvl clear
         nvl show dissolve
 
-        n "It's been two days since Hisao and I returned from Scotland. We were pretty exhausted when we finally made it back to Yamaku, especially since there was no Akira to give us a ride this time, and when we reached our dorm rooms we pretty much hit the sack immediately."
-        n "Hisao spent most of yesterday getting his biological clock back on schedule while I spent most of the day behind the computer in the newspaper club's archive room downloading photos off my camera, burning them to CD and getting my favorite ones printed out."
-        n "Late in the afternoon we boarded the train to the Nakai home, and we managed to get there before Hisao's parents. When they came home later that evening they were both happy to see him again, and they were pretty friendly to me as well. Hisao spent the remainder of the evening showing his parents a selection of the pictures we took and telling them about our vacation in Inverness."
+        n "It's been two days since Hisao and I returned from Scotland. We were pretty exhausted when we finally made it back to Yamaku, especially since there was no Akira to give us a ride this time. When we reached our dorm rooms we pretty much hit the sack immediately."
+        n "Hisao spent most of yesterday getting his biological clock back on schedule while I spent most of the day behind the computer in the newspaper club's archive room downloading photos off my camera, burning them to CD, and getting my favorite ones printed out."
+        n "Late in the afternoon we boarded the train to the Nakai home, and we managed to get there before Hisao's parents. When they came home later that evening, they were both happy to see him again, and they were pretty friendly to me as well. Hisao spent the remainder of the evening showing his parents a selection of the pictures we took and telling them about our vacation in Inverness."
 
         nvl clear
 
         n "The last time I met Hisao's parents, shortly after Hisao and I succesfully salvaged our relationship, I only stayed long enough to introduce myself and sit by Hisao's side for a few minutes while his parents were busy digesting the news that their son had been dating."
-        n "I was a bit apprehensive about spending an extended amount of time around his parents, but my curiosity about his life before Yamaku overrode my social anxiety, and if his parents were put off by my shy and awkward behavior last night, they didn't really show it."
+        n "{vspace=30}I was a bit apprehensive about spending an extended amount of time around his parents, but my curiosity about his life before Yamaku overrode my social anxiety, and if his parents were put off by my shy and awkward behavior last night, they didn't really show it."
         n "Of course, neither of us had any interest in telling his parents about the more intimate aspect of our relationship and Hisao made sure not to disclose the fact that he and I shared a bed during our stay in Scotland, so we both kept our mouth shut when Hisao's parents said I could sleep on the couch in the living room when it was time to go to bed."
         n "I guess I shouldn't complain; the couch was a soft and very comfortable sleeping spot, but I still would have preferred to spend the night together with my boyfriend."
 
-        nvl clear
         nvl hide dissolve
 
         hid "Good morning."
@@ -56,7 +56,7 @@ label sh_ch35:
         hid "Well, I can't deny he has been improving lately."
         him "He's been through a lot this year, and I think he simply needed some time to learn that good things still can and do happen to him despite his condition. I think he's starting to realize that."
         him "While he was in the hospital he grew so distant from everyone, but last night while he was talking about their vacation it was almost like his heart attack never took place."
-        him "Maybe that's also because there's a girl in his life now. When he called me yesterday he said that she was curious about his life before transferring to Yamaku. I'm willing to bet that played a big part in his decision to come over."
+        him "Maybe that's also because there's a girl in his life now. When he called me yesterday, he said that she was curious about his life before transferring to Yamaku. I'm willing to bet that played a big part in his decision to come over."
         hid "It's reassuring to know that she has a good influence on him."
         "I silently smile a bit. It sounds like they approve of me dating their son. That makes me very happy and a bit relieved as well."
         "Dating someone is tough when his parents don't like you, and I don't think I'd be able to deal with disapproval of that kind. I still feel a bit ashamed that I wasn't even there for Hisao during his last hospitalisation."
@@ -71,49 +71,51 @@ label sh_ch35:
         hid "Yes, I remember. What was her name again?"
         him "I'm not completely sure anymore, but I believe her name sounded a little bit like Hanako's."
         hid "They weren't that similar, were they? If that other girl had been even only half as shy as Hanako, I'd probably remember that."
-        "My smile immediately drops upon hearing that. I know I'm really shy. I'm trying not to be, but I'm still having a hard time relaxing around Hisao's parents, probably for no other reason than the fact that they're my boyfriend's parents."
+        "My smile immediately drops upon hearing that."
+        "I know I'm really shy. I'm trying not to be, but I'm still having a hard time relaxing around Hisao's parents, probably for no other reason than the fact that they're my boyfriend's parents."
         "I let Hisao do most of the talking last night and had been hoping that they wouldn't have paid attention to the fact that I barely said a word. Looks like they noticed after all."
         "Finding out that Hisao's parents might have been put off by my timidity has left a bad feeling in my stomach. I pray that this conversation isn't going to end with them agreeing that it would have been better if Hisao had picked up Lilly or Shizune as a girlfriend instead of me."
-        him "I'm not saying they were extremely similar, but I do feel they shared a few superficial traits. Dark and fairly long hair, kind of girlish and coming across as just a little bit delicate. I wouldn't be surprised if those traits are what Hisao finds attractive in a girl."
-        hid "You're acting like that girl from the hospital was a girlfriend, but Hisao insisted she was merely a classmate. "
+        him "I'm not saying they were extremely similar, but I do feel they shared a few superficial traits. Dark and fairly long hair, kind of girlish, and coming across as just a little bit delicate. I wouldn't be surprised if those traits are what Hisao finds attractive in a girl."
+        hid "You're acting like that girl from the hospital was a girlfriend, but Hisao insisted she was merely a classmate."
         "Hisao's mother chuckles playfully."
         him "Did you believe him when he said that? The few classmates that visited only did so once or twice the first week. And Hisao never mentioned her before as someone he hung out with."
-        hid "Well, if there was a relationship before his condition was first triggered I don't think it lasted throughout his hospital stay."
-        him "I don't think so either. I doubt it was just us he grew distant from over those months."
+        hid "Well, if there was a relationship before his condition was first triggered, I don't think it lasted throughout his hospital stay."
+        him "I don't think so, either. I doubt it was just us he grew distant from over those months."
         "Although I realize that eavesdropping isn't very lady-like, this conversation is very interesting, and I strain to hear more without alerting them to the fact that I'm already awake."
         "However, my attempt at listening in is suddenly cut short."
 
         stop music
 
-        # TODO Use the same ringtone as Lilly's or a different one?
         play ambient sfx_phonering loop
-        with vpunch
+        with { "master": vpunch }
 
         ha "Eek!"
         "I let out a surprised yelp before I can stop myself when my cell phone, which is lying on a side table next to the couch I'm resting on, suddenly rings."
         "I grab it as quickly as I can, but the knowledge that there are probably two gazes aimed at me right now causes me to fumble a bit, and I nearly end up dropping it out of my shaking hands in my attempts to fold it open as quickly as I can."
 
         stop ambient
+        
+        play sound sfx_phonepickup
 
-        "I manage to fight off my anxiety long enough to press the accept-button, and I try not to look in the direction of Hisao's parents."
+        "I manage to fight off my anxiety long enough to press the accept button, and I try not to look in the direction of Hisao's parents."
 
-        ha "H-Hello?"
+        ha "H-hello?"
 
         # TODO switch out current outfit with Lilly's summer outfit's sprite in this entire chapter
         show lilly basic_smile_phone at phonebox
         with charaenter
 
-        li "Hello Hanako."
+        li "Hello, Hanako."
         ha "Lilly!"
 
         "I'm surprised for a moment that Lilly would call this early before remembering that we're in different time zones. I didn't recognize the number on the display, so Lilly's probably using her parents' phone right now."
 
         li "Is it okay for me to call this early in the morning? I didn't wake you up, did I?"
-        ha "N-No, I was already awa.... eh... ummm."
+        ha "N-no, I was already awa.... eh... ummm."
+        "Damnit! I blush as I realize what I just blurted out. Hisao's parents must think badly of me now for pretending to be asleep in order to eavesdrop on their conversation instead of properly acknowledging their presence."
+        "While I struggle to react, Lilly replies in a worried tone."
 
-        "Damnit! I blush as I realize what I just blurted out. Hisao's parents must think badly of me now for pretending to be asleep in order to eavesdrop on their conversation instead of properly acknowledging their presence. While I struggle to react, Lilly replies in a worried tone."
-
-        show lilly basic_concerned_phone
+        show lilly cane_oops_phone
         with chchange
 
         li "Hanako, is something wrong? Where are you right now?"
@@ -129,25 +131,27 @@ label sh_ch35:
         with chchange
 
         li "Very well. Please give Mister and Mrs. Nakai my regards."
-        ha "Y-Yes."
+        ha "Y-yes."
         li "Thank you. I will talk to you later then."
-        ha "B-Bye."
+        ha "B-bye."
 
         hide lilly
+        with charaexit
 
         "I snap my phone shut and meekly turn to face Hisao's parents who are looking back at me from their seating spots at the table."
 
-        scene bg hisaohome_kitchen
-        show hisaomom normal at twoleft
-        show hisaodad normal at tworight
-        
+        scene bg hisao_kitchen
+        #show hisaomom normal at twoleft
+        #show hisaodad normal at tworight
+        with locationchange
+
         "They give me a friendly nod which I manage to mimic with some effort."
 
         play music music_normal fadein 4.0
 
         him "Good morning."
         hid "Good morning."
-        ha "G-Good m-morning. Ummm... L-Lilly s-said hello."
+        ha "G-good m-morning. Ummm... L-Lilly s-said hello."
 
         "I put my phone away and slowly get off the couch. Hisao's mother looks at my awkward movement with a slightly worried expression."
 
@@ -160,14 +164,14 @@ label sh_ch35:
         ha "I'm o-okay, but Hisao m-might s-sleep in this m-morning."
         "Hisao's mother makes a gesture towards the fridge."
         him "I'm terribly sorry that we lack the time to be good hosts right now, but please feel free to help yourself to whatever is in the cupboard and the fridge. There should be more than enough in there for several meals."
-        ha "T-Thank you."
+        ha "T-thank you."
 
-        show hisaomom normal at left
-        with charaenter
-        show hisaodad normal at right
-        with charaenter
+        #show hisaomom normal at left
+        #with charaenter
+        #show hisaodad normal at right
+        #with charaenter
 
-        "They get up and put their bowls, cups and dishes next to the sink. Hisao's mother gives me a friendly nod."
+        "They get up and put their bowls, cups, and dishes next to the sink. Hisao's mother gives me a friendly nod."
         him "Please make yourself at home here."
         ha "Thank y-you."
         "I take a brief glance at the dishes on the sink unit."
@@ -175,16 +179,18 @@ label sh_ch35:
         him "Don't worry about those. It's Hisao's task to do them."
         ha "Oh."
 
-        scene bg hisaohome_livingroom
-        show hisaodad normal
+        scene bg hisao_livingroom
+        #show hisaodad normal
+        with locationchange
 
         "Hisao's parents make their way to the entryway area in order to put on their shoes. Before leaving the room, Hisao's father turns to me."
         hid "We expect to be back around nine o' clock. Maybe 8:45 if we're lucky and get an earlier train. There's no need to wait for us with dinner."
         ha "I'll t-tell Hisao."
         hid "We'll see you this evening then. Bye."
-        ha "B-Bye."
+        ha "B-bye."
 
-        scene bg hisaohome_kitchen
+        scene bg hisao_kitchen
+        with locationchange
 
         "A few moments later I hear the door close, and I'm on my own again. As I start wondering what to do now, my attention returns to my itching right side."
 
@@ -194,37 +200,38 @@ label sh_ch35:
         nvl show dissolve
 
         n "First things first, I guess. I return to the area where I spent the night and do a few careful stretch exercises to get the stiffness out of my body. I then make my way to the bathroom. Most of my stuff is still in my suitcase, which we stored in Hisao's room, but my lotion is one of the things I had the foresight to take out in advance."
-        n "I lock the door, take off my nightgown and apply some of the moisturizer to the itching areas. I then put my nightgown back on and make my way back to the kitchen, putting my hair clip on in the process."
+        n "I lock the door, take off my nightgown, and apply some of the moisturizer to the itching areas. I then put my nightgown back on and make my way back to the kitchen, putting my hair clip on in the process."
 
-        nvl clear
         nvl hide dissolve
 
-        scene bg hisaohome_kitchen
+        scene bg hisao_kitchen
+        with locationchange
         
         "They said that there was no need to bother, but I don't think it hurts doing something back for the hospitality they've given me."
-
-        "My mind made up, I get some dishwashing liquid, turn on the tap and quickly start scrubbing the first bowl on the counter with the brush lying near the sink. I realize that Lilly might call back at any moment, so I do my best to finish washing and drying everything as quickly as I can."
-        "It turns out that my timing was impeccable, because the moment I finish drying off the last dish I had left, my phone springs to life to alert me of the incoming call."
+        "My mind made up, I get some dish soap, turn on the tap, and quickly start scrubbing the first bowl on the counter with the brush lying near the sink. I realize that Lilly might call back at any moment, so I do my best to finish washing and drying everything as quickly as I can."
+        "It turns out that my timing was impeccable, because the moment I finish drying off the last dish I had left..."
 
         play ambient sfx_phonering loop
 
-        ha "Coming!"
+        "...my phone springs to life to alert me of the incoming call."
+        ha "Coming!" 
+
+        scene bg hisao_livingroom
+        with locationchange
 
         stop ambient
+        play sound sfx_phonepickup
 
-        scene bg hisaohome_livingroom
-
-        "I cheerfully pick up my phone and press the accept-button once more."
-        ha "Hi Lilly."
+        "I cheerfully pick up my phone and press the accept button once more."
+        ha "Hi, Lilly."
 
         show lilly basic_smile_phone at phonebox
         with charaenter
 
-        li "Hello Hanako. You sound a lot more at ease this time."
+        li "Hello, Hanako. You sound a lot more at ease this time."
         ha "I'm on my own right now. Hisao is still asleep and his parents just left for work."
-
         li "How are Hisao's parents doing?"
-        ha "I'm... n-not really sure. I haven't really s-spoken with them since we g-got here.They seem to be doing well. They were happy to see Hisao, that much I could tell."
+        ha "I'm... n-not really sure. I haven't really s-spoken with them since we g-got here. They seem to be doing well. They were happy to see Hisao, that much I could tell."
 
         show lilly basic_displeased_phone
         with chchange
@@ -234,7 +241,7 @@ label sh_ch35:
         show lilly basic_smileclosed_phone
         with chchange
 
-        li "Hanako, I don't think there's any need to be afraid that Hisao's parents will not accept you. When Shizune, Misha and I spent time with them a few weeks ago they came across as fine and kind people."
+        li "Hanako, I don't think there's any need to be afraid that Hisao's parents will not accept you. When Shizune, Misha, and I spent time with them a few weeks ago, they came across as fine and kind people."
         li "That was an impression all three of us shared. I am certain they will give you the time you need to open up to them."
         ha "I... h-hope so."
 
@@ -244,20 +251,22 @@ label sh_ch35:
         li "It sounds exciting, getting to spend some time at the place where Hisao grew up and getting to know what his life before Yamaku was like."
         ha "Yes, that's why I wanted to go here. I was a bit curious about that."
         li "So this was your idea?"
-        ha "Yes. We were having brunch at the Shanghai, and we were talking about how empty the school was because most students returned home for the summer break, and Hisao said that reminded him he needed to let his parents know he and I were back already."
+        ha "Yes. We were having brunch at the Shanghai, and we were talking about how empty the school was because most students returned home for the summer break. Hisao said that reminded him he needed to let his parents know he and I were back already."
         ha "I asked him if he was going to return home to see his parents too. He asked if I wouldn't be lonely here and I... ummm..."
 
         show lilly basic_smile_phone at phonebox
         with chchange
 
         li "You asked if you could come along?"
-        "I started asking, but I ended up tripping over my words before I could get half-way through the question. Fortunately, Hisao quickly got the hint and when he asked if I wanted to come along I only had to nod."
-        ha "S-Something like that. So Hisao called his father, and he said it w-was okay if I came along too. We'll be staying here for a week."
+        "I started asking, but I ended up tripping over my words before I could get halfway through the question. Fortunately, Hisao quickly got the hint and when he asked if I wanted to come along, I only had to nod."
+        ha "S-something like that. So Hisao called his father, and he said it w-was okay if I came along too. We'll be staying here for a week."
+
+        show lilly cane_satisfied_phone
+        with chchange
+
         li "I'm sure you'll have a lot of fun, Hanako. I'm happy for you."
         ha "I'll be s-sure to tell you about it when you return."
-
         "I suddenly remember that there's a large time difference between Scotland and Japan. I believe it's nearly half a day earlier there than here. Given that it's early morning here, it must be pretty late over there."
-
         ha "Lilly... Isn't it late in Inverness right now?"
 
         show lilly basic_weaksmile_phone
@@ -290,10 +299,11 @@ label sh_ch35:
         show lilly basic_reminisce_phone
         with chchange
 
-        li "She offered to take some time off from work to be at his side during his stay in the hospital despite the fact that I think she's still a bit angry at him for not letting her in on the risk he was running, but he refused that."
+        li "She offered to take some time off from work to be at his side during his stay in the hospital. I think she's still a bit angry at him for not letting her in on the risk he was running, but he refused that."
         li "He felt the company needed her more than ever now that he's out of commission. She respects his request, but I can tell she does so with a great deal of reluctance. It's a shame."
-        li "I've spoken to Allison, and she also confirmed that Mother and Father mostly led separate lives here outside the workplace. This incident could give them the opportunity to get closer to each other again if only Father could put the company matters out of his mind."
-        "I can't say I have any business experience, but I can imagine how it must feel to work on something for years and then have someone else take it off your hands a few meters before the finish line. I'd probably feel like a failure. But it still seems disturbing how focussed Lilly's father is on this."
+        li "I've spoken to Allison, and she also confirmed that Mother and Father mostly led separate lives here outside the workplace. This incident could give them the opportunity to get closer to each other again if only Father could put the company's matters out of his mind."
+        "I can't say I have any business experience, but I can imagine how it must feel to work on something for years and then have someone else take it off your hands a few meters before the finish line. I'd probably feel like a failure."
+        "But it still seems disturbing how focused Lilly's father is on this."
         ha "If it's... that important to him, can't they h-hold the meetings over the phone? Do a teleconference?"
 
         show lilly basic_displeased_phone
@@ -306,7 +316,6 @@ label sh_ch35:
         with chchange
 
         li "Don't apologize for doing the right thing, Hanako. I'm glad you were there when we needed you."
-
         "A short pause takes place as neither one of us really knows how to continue. Then Lilly speaks up again, deciding that it's probably for the best to change the subject."
 
         show lilly basic_smileclosed_phone
@@ -340,34 +349,32 @@ label sh_ch35:
         li "Hanako, may I ask you a question?"
         ha "Sure."
         li "Is first aid difficult to learn? You seemed to have picked it up fairly quickly. I was wondering... Maybe I could learn it too. At least the basics."
-        ha "Are you thinking of following a training?"
+        ha "Are you thinking of taking a course?"
 
         show lilly basic_weaksmile_phone
         with chchange
 
-        li "If that's possible for me. I learned yesterday that Mother has had first responder training herself years ago, but she wasn't there when Father collapsed. I... I would rather not ever go through a situation like that again..."
+        li "If that's possible for me. I learned yesterday that Mother has had first responder training herself years ago, but she wasn't there when Father collapsed. I...I would rather not ever go through a situation like that again..."
 
         "I can emphatize completely with that. I know from experience how extremely frightening it is to have someone you care about nearly die in front of you. I wouldn't wish that sort of thing on anyone."
-
         ha "I t-think you could easily learn to check someone's vital signs or do CPR and artificial respiration. You don't really need sight for that. I r-really think you should go for it, Lilly. Maybe someone at your father's company gives training. They d-do make emergency devices there."
 
         show lilly basic_smileclosed_phone
         with chchange
 
-        li "Thank you Hanako. If you think it's a realistic goal for me to pursue then I will ask Mother about it tomorrow. Who knows. Maybe I will return to Japan with a certificate of my own."
+        li "Thank you Hanako. If you think it's a realistic goal for me to pursue, then I will ask Mother about it tomorrow. Who knows? Maybe I will return to Japan with a certificate of my own."
         "I giggle."
-        ha "Then w-we would need to hold a celebration p-party for you too."
+        ha "Then w-we would need to hold a celebration p-party for you, too."
 
         show lilly cane_giggle_phone
         with chchange
 
-        "We both laugh out loud at that. The memory of that wacky night has liften the mood, though I still cringe for a moment when thinking back on my actions that night."
+        "We both laugh out loud at that. The memory of that wacky night has lifted the mood, though I still cringe for a moment when thinking back on my actions that night."
 
         show lilly cane_sleepy_phone
         with chchange
 
         "We spend some time simply making small talk until I pick up on Lilly stifling a yawn."
-
         ha "You must be tired."
         li "A little bit. It has been a rather long day. Perhaps I should try and get some sleep."
         ha "That would probably be a good idea."
@@ -376,10 +383,8 @@ label sh_ch35:
         with chchange
 
         li "Thank you for the company, Hanako. It was good talking to you."
-
         "It dawns on me that for all her efforts in easing her father's loneliness, Lilly's probably feeling a bit lonely herself over there with her being far away from Yamaku in a relatively unfamiliar environment and with her mother and sister both dealing with the fallout from the situation at work."
         "She's doing her best to support her father, but I wonder if anyone is supporting her. Maybe I could be that support? I doubt phone bills will be a problem for her and her family."
-
         ha "L-Lilly... ummm... Why d-don't you call back again tomorrow? If you... want to talk, I mean."
 
         show lilly cane_oops_phone
@@ -392,91 +397,102 @@ label sh_ch35:
         with chchange
 
         "Lilly chuckles at my enthusiasm."
-        li "I might just take you up on that offer then, Hanako. And thank you again. Please give Hisao my regards too. And enjoy your day."
+        li "I might just take you up on that offer then, Hanako. And thank you again. Please give Hisao my regards, too. And enjoy your day."
         ha "Okay. Bye."
         li "Goodbye."
 
         hide lilly
+        with charaexit
 
         nvl clear
         nvl show dissolve
 
-        n "As I close my phone I think back on the conversation I just had. Now that the phone call is over I realize that this talk was slightly different from the conversations we used to have."
-        n "In the past, the focus was almost always on me - how I was doing. Yet today we talked mostly about Lilly's situation, and Lilly seemed fine and comfortable with that, and she didn't make any attempts to sweep her own troubles under the rug. I think back on what Akira said - about how in this situation, where Akira herself can't be an objective listener, I should be the pillar of support for Lilly."
-        n "This is certainly not a role I would have expected myself to fulfill a few months ago, but even I can no longer deny that my friendship with Lilly has changed a lot over the last few weeks. And I think it has changed for the better."
+        n "As I close my phone, I think back on the conversation I just had. Now that the phone call is over, I realize that this talk was slightly different from the conversations we used to have."
+        n "{vspace=30}In the past, the focus was almost always on me—how I was doing. Yet today, we talked mostly about Lilly's situation, and Lilly seemed fine and comfortable with that, and she didn't make any attempts to sweep her own troubles under the rug. I think back on what Akira said, about how in this situation, where Akira herself can't be an objective listener, I should be the pillar of support for Lilly."
+        n "{vspace=60}This is certainly not a role I would have expected myself to fulfill a few months ago, but even I can no longer deny that my friendship with Lilly has changed a lot over the last few weeks. And I think it has changed for the better."
 
-        nvl clear
         nvl hide dissolve
 
-        "I put my phone away, get off the couch and smile a bit to myself as I ponder these thoughts. I really hope she'll call again tomorrow."
+        "I put my phone away, get off the couch, and smile a bit to myself as I ponder these thoughts. I really hope she'll call again tomorrow."
         "In the meantime, I'm left trying to figure out what to do now. My books are still in my suitcase, and I don't want to risk waking up Hisao by walking into his room and retrieving them. I could watch television, but I don't really feel like doing that right now."
         "Suddenly, an idea pops into my head, and I smile."
         "I could surprise Hisao by making breakfast for the two of us. His parents did say we could use whatever ingredients were in the fridge and cupboard."
 
-        scene bg hisaohome_kitchen
+        scene bg hisao_kitchen
+        with locationchange
 
         "I quickly check both and see that there's enough in there for a decent meal."
-        "I put on the apron hanging on a hook near the fridge, open the cupboard and start collecting the ingredients for the meal I have in mind."
+        
+        stop music fadeout 2.0
 
-        scene black
-        with Dissolve(2.0)
-
+        "I put on the apron hanging on a hook near the fridge, open the cupboard, and start collecting the ingredients for the meal I have in mind."
+        
         if _in_replay:
             return
     
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)
+        
+        scene bg hisao_kitchen:
+            zoom 1.03 yalign 0.5
+        with shorttimeskip
 
-        play music music_happiness fadein 4.0
-
-        scene bg hisaohome_kitchen
-        with Dissolve(2.0)
+        queue music music_happiness fadein 4.0
 
         nvl clear
         nvl show dissolve
+
+        play ambient sfx_boilingwater
 
         n "As my breakfast preparation approaches its end, I find myself cheerfully humming a song I've had in my head for the last 15 minutes."
         n "This part is rather hectic. I'm still in the process of grilling the fillets of salmon, but I've also kept my soup on the stove to keep it hot, and I've once read that miso soup shouldn't be allowed to boil once the miso paste has been added."
         n "Still, despite having to carefully watch what I'm doing, my mood couldn't be better."
 
-        nvl clear
-        nvl hide dissolve
+        nvl hide dissolve 
 
-        show hisao basic_grin_bath at right
-        with charaenter
+        "As I turn to put a bottle of soy sauce back in the cupboard, I see someone's reflection in the window from the corner of my eye..."
 
-        "As I turn to put a bottle of soy sauce back in the cupboard, I see someone's reflection in the window from the corner of my eye, and when I turn around, I suddenly become aware of my boyfriend, still in his boxers and shirt, standing near the door."
+        show hisao basic_grin_bath at left:
+            ypos 1.03
+        with { "master": charaenter }
+
+        # TODO need sprite of Hisao in his boxers and shirt
+        extend " and when I turn around, I suddenly become aware of my boyfriend, still in his boxers and shirt, standing near the door." 
 
         play sound sfx_impact2
-        with vpunch
 
-        show hisao basic_embarassed_bath
+        show hisao basic_emb_bath
+        with vpunch 
 
         "The surprise startles me enough to make me drop the bottle I was holding. Fortunately it's a plastic bottle so it doesn't break."
 
         show hisao basic_bashful_bath at center
-        with charamove
+        with charaenter
 
-        "While I'm struggling to think of how to react, Hisao quickly walks up to me, takes the bottle off the floor and puts it in its designated place."
-
+        "While I'm struggling to think of how to react, Hisao quickly walks up to me, takes the bottle off the floor, and puts it in its designated place."
         hi "Sorry, I didn't mean to startle you."
         ha "It's o-okay. Ah... f-for how long have you been standing here already?"
 
-        show hisao basic_embarassed_bath
+        show hisao basic_emb_bath
+        with chchange
 
-        "Instead of answering, Hisao simply looks past me, and when I turn around I notice that steam is already rising from my soup. I hurriedly turn down the heat. I'm annoyed by how easily I can get distracted by things that would be so minor to others."
+        "Instead of answering, Hisao simply looks past me, and when I turn around I notice that steam is already rising from my soup."
 
+        stop ambient fadeout 2.0
 
-        show hisao basic_smile_bath
+        "I hurriedly turn down the heat. I'm annoyed by how easily I can get distracted by things that would be so minor to others."
+
+        show hisao basic_smile_bath_close
+        with chchange
 
         "Hisao appears to read my thoughts and briefly places a hand on my shoulder."
-
-        hi "I could help if you like, but if you want to do this yourself I'll just go back to my room and take my batch of medication."
+        hi "I could help if you like, but if you want to do this yourself, I'll just go back to my room and take my batch of medication."
         ha "I'll... be done in less than ten minutes."
         hi "Okay."
 
-        show hisao at offscreenright
+        show hisao at offscreenleft:
+            ease 1.0 alpha 0.0
         with charamove
 
         hide hisao
@@ -486,29 +502,32 @@ label sh_ch35:
 
         n "I breathe a sigh of relief as he walks out of the room. I'm a bit bummed that the surprise is now gone, but I appreciate the fact that he offered to let me be for a little while."
         n "Him looking over my shoulder would probably make me nervous to the point where I'd start messing things up in my attempts to avoid messing things up. It's really nice that Hisao seems to start intuitively sensing these kinds of things about me."
-        n "With my nerves calmed a bit I manage to focus my attention back on my nearly-finished breakfast. Fortunately there are no further interruptions and five minutes later a full-fledged Japanese breakfast graces the nearby kitchen table."
+        n "{vspace=30}With my nerves calmed a bit, I manage to focus my attention back on my nearly-finished breakfast. Fortunately, there are no further interruptions and five minutes later, a full-fledged Japanese breakfast graces the nearby kitchen table."
 
-        nvl clear
         nvl hide dissolve
 
-        show hisao basic_smile_bath at right
+        show hisao basic_smile_bath at left
         with charaenter
 
         "As I finish shuffling things around a bit in an attempt to make the whole thing look as good as possible, the sound of the door opening alerts me to the fact that my boyfriend has made his extremely well-timed return."
         "I wonder for a second if he hasn't been secretly standing behind the door the entire time."
 
-        show hisao basic_bashful_bath at center
+        show hisao at center
         with charamove
 
         "He briefly looks over the nicely laid table and then looks back at me with a smile."
-        hi "Good morning."
-        "The loving way he says it makes it impossible for me to resist smiling back at him."
-
-        show hisao basic_embarassed_bath
-
-        ha "G-Good morning, d-dear. D-Did you s-sleep well?"
 
         show hisao basic_grin_bath
+        with chchange
+
+        hi "Good morning."
+        "The loving way he says it makes it impossible for me to resist smiling back at him."
+        ha "G-Good morning, d-dear. D-Did you s-sleep well?"
+
+        show hisao basic_emb_bath
+        with charachangealways
+        show hisao basic_grin_bath
+        with charachangealways
 
         "He frowns for a moment at my reply before his smile returns, him probably having decided to play along."
         hi "Quite well. Thank you dear."
