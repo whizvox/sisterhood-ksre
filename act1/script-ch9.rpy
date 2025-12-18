@@ -4,7 +4,7 @@ label sh_ch9:
         $ set_window_tint(TINT_HANAKO)
 
         stop music fadeout 2.0
-        play sound sfx_shower fadein 2.0
+        play sound sfx_showerdrain fadein 2.0
 
         scene bg hotel_bathroom
         show steam2
