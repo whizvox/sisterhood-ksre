@@ -94,7 +94,7 @@ label sh_ch35:
         "I grab it as quickly as I can, but the knowledge that there are probably two gazes aimed at me right now causes me to fumble a bit, and I nearly end up dropping it out of my shaking hands in my attempts to fold it open as quickly as I can."
 
         stop ambient
-        
+
         play sound sfx_phonepickup
 
         "I manage to fight off my anxiety long enough to press the accept button, and I try not to look in the direction of Hisao's parents."
@@ -206,7 +206,7 @@ label sh_ch35:
 
         scene bg hisao_kitchen
         with locationchange
-        
+
         "They said that there was no need to bother, but I don't think it hurts doing something back for the hospitality they've given me."
         "My mind made up, I get some dish soap, turn on the tap, and quickly start scrubbing the first bowl on the counter with the brush lying near the sink. I realize that Lilly might call back at any moment, so I do my best to finish washing and drying everything as quickly as I can."
         "It turns out that my timing was impeccable, because the moment I finish drying off the last dish I had left..."
@@ -214,7 +214,7 @@ label sh_ch35:
         play ambient sfx_phonering loop
 
         "...my phone springs to life to alert me of the incoming call."
-        ha "Coming!" 
+        ha "Coming!"
 
         scene bg hisao_livingroom
         with locationchange
@@ -422,18 +422,18 @@ label sh_ch35:
         with locationchange
 
         "I quickly check both and see that there's enough in there for a decent meal."
-        
+
         stop music fadeout 2.0
 
         "I put on the apron hanging on a hook near the fridge, open the cupboard, and start collecting the ingredients for the meal I have in mind."
-        
+
         if _in_replay:
             return
-    
+
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)
-        
+
         scene bg hisao_kitchen:
             zoom 1.03 yalign 0.5
         with shorttimeskip
@@ -449,7 +449,7 @@ label sh_ch35:
         n "This part is rather hectic. I'm still in the process of grilling the fillets of salmon, but I've also kept my soup on the stove to keep it hot, and I've once read that miso soup shouldn't be allowed to boil once the miso paste has been added."
         n "Still, despite having to carefully watch what I'm doing, my mood couldn't be better."
 
-        nvl hide dissolve 
+        nvl hide dissolve
 
         "As I turn to put a bottle of soy sauce back in the cupboard, I see someone's reflection in the window from the corner of my eye..."
 
@@ -458,12 +458,12 @@ label sh_ch35:
         with { "master": charaenter }
 
         # TODO need sprite of Hisao in his boxers and shirt
-        extend " and when I turn around, I suddenly become aware of my boyfriend, still in his boxers and shirt, standing near the door." 
+        extend " and when I turn around, I suddenly become aware of my boyfriend, still in his boxers and shirt, standing near the door."
 
         play sound sfx_impact2
 
         show hisao basic_emb_bath
-        with vpunch 
+        with vpunch
 
         "The surprise startles me enough to make me drop the bottle I was holding. Fortunately it's a plastic bottle so it doesn't break."
 
@@ -522,10 +522,13 @@ label sh_ch35:
 
         hi "Good morning."
         "The loving way he says it makes it impossible for me to resist smiling back at him."
-        ha "G-Good morning, d-dear. D-Did you s-sleep well?"
+        ha "G-good morning, d-dear. D-did you s-sleep well?"
 
         show hisao basic_emb_bath
         with charachangealways
+
+        pause 0.7
+
         show hisao basic_grin_bath
         with charachangealways
 
@@ -533,22 +536,26 @@ label sh_ch35:
         hi "Quite well. Thank you dear."
 
         show hisao basic_smile_bath
+        with chchange
 
         "He looks over the table a second time."
-        ha "Ummm... I made miso soup with tofu and seaweed, steamed rice, grilled s-salmon and fermented soy beans with soy sauce."
+        ha "Ummm... I made miso soup with tofu and seaweed, steamed rice, grilled s-salmon, and fermented soy beans with soy sauce."
 
         show hisao basic_grin_bath
+        with chchange
 
         hi "It looks delicious. I can't wait to taste it."
         ha "Shall we?"
 
         scene ev footsiefight_breakfast
+        with mediumflash
 
-        "I take off my apron, hang it back in its previous place, share a quick good morning kiss with my boyfriend and then sit at the table across from him. I hold my breath and give him an expectant look as he takes his first sip of my miso soup."
+        "I take off my apron, hang it back in its previous place, share a quick good morning kiss with my boyfriend, and then sit at the table across from him."
+        "I hold my breath and give him an expectant look as he takes his first sip of my miso soup."
         "When he sends an approving nod my way, I let out a relieved sigh and start eating my own portion."
         hi "Tastes good."
         ha "Thanks."
-        "We finish the soup and move on to the fish, rice and beans."
+        "We finish the soup and move on to the fish, rice, and beans."
         ha "Hisao?"
         hi "Yes?"
         ha "So ummm... for how long were you... in here before I n-noticed you?"
@@ -556,14 +563,14 @@ label sh_ch35:
         ha "A few minutes?"
         "Now I wonder what exactly he was staring at. He smiles a bit awkwardly."
         hi "It was quite the pleasant sight, and I was afraid you'd get jumpy if you knew I was there."
-        ha "What w-was a pleasant sight? M-Me in... an apron?"
+        ha "What w-was a pleasant sight? M-me in... an apron?" # yes
         "He chuckles."
         hi "That too."
-
         "He stops to think for a moment, and I wonder if he's thinking something dirty, but before I can come up with a remark, he continues."
         hi "But I was just speaking in general. The sight of you being in a good mood, humming and doing something you obviously seemed to enjoy was... kind of cute."
 
-        scene ev footsiefight_hisaofootsie
+        scene ev footsiefight_hisaoattack
+        with charachangeev
 
         "My heart skips a beat when I feel his foot brush lightly against mine. It takes me a second before I can react."
         ha "Uh... T-thanks."
@@ -573,46 +580,46 @@ label sh_ch35:
         ha "She's... holding up. I think her f-father apologized... in a way. Now she's just keeping him company. But his mind is still occupied with work. I don't think Lilly's days are as carefree as ours."
         hi "It'd be weird if they already were. Still, this is Lilly we're talking about. There are very few situations she can't handle."
         ha "I agree..."
-
         "My voice trails off as I feel his foot brush against mine once more. I'm starting to get the impression that this didn't happen on accident."
         hi "Still, I think her dad's lucky to have her by his side all day long. I would have welcomed something like that."
-        ha "Yes, me t..."
-        "I feel something touch my foot once again. Now I know he's doing this on purpose despite the innocent face he's putting on."
-
+        ha "Yes, me t-..."
+        "I feel something touch my foot once again."
+        "Despite the innocent face he's putting on, I know he's doing this on purpose now."
         "Should I return the favor?"
         hi "Is something wrong?"
         "Yes, I definitely should."
-        ha "N-No."
+        ha "N-no."
         hi "Could I have a little bit more miso soup?"
         ha "Do you like it?"
         hi "Yeah, it tastes very.."
 
-        scene ev footsiefight_hanakofootsie
+        scene ev footsiefight_hanakoattack
+        with charachangeev
 
-        "His words are cut off when I move my foot forward and stroke his ankle with my big toe. It takes a lot of effort to suppress a wide grin, but I manage."
+        "His words are cut off when I move my foot forward and stroke his ankle with my big toe."
+        "It takes a lot of effort to suppress a wide grin, but I manage."
         ha "Is s-something wrong?"
         hi "Uh... No. Sorry, it tastes very good."
         ha "I'm happy to hear that. Go ahead and have some more."
         hi "Thanks."
-
-        "I look on when my boyfriend refills his bowl, and just as he puts the first spoonful into his mouth, I tickle the calf of his right leg with the top of my left foot. I see him react a little, and I squeeze my jaws together in order to avoid laughing."
+        "I look on when my boyfriend refills his bowl, and just as he puts the first spoonful into his mouth, I tickle the calf of his right leg with the top of my left foot."
+        "I see him react a little, and I squeeze my jaws together in order to avoid laughing."
         ha "Is it... too hot?"
         hi "It's... fine. Perfect temperature."
         "This is actually pretty fun. I move in again to caress the top of his foot with my own, but this time he's expecting me and he quickly places his other foot on top of mine, causing me to pull back again."
         ha "I... uh... used most of the ingredients in the cupboard and the fridge. We might need to do some shopping."
         "While I'm still waiting for an opportunity, I feel his foot caress the place just above my ankle. I try to catch his foot with my own, but he pulls back in time."
         hi "Sure. We can do that later today."
-
         "Hisao finishes his second bowl of soup, and we get started on the main course."
         ha "Hisao? Do you have any plans for today?"
 
-        scene ev footsiefight_footsiebattle
+        scene ev footsiefight_bothattack
+        with charachangeev
 
         "I feel his foot stroking mine again. This time I manage to catch it with my other foot, but instead of withdrawing, he just continues stroking the top of my foot."
         hi "Not really. We can take it as easy as we like."
         "And then he starts stroking my other foot with his other foot. I let out a giggle before I can stop myself."
         hi "Did I say something funny?"
-
         "I quickly shake my head, but we both have a pretty large grin on our face."
         hi "The salmon has some great texture to it."
         ha "I'm glad it came out well."
@@ -621,101 +628,108 @@ label sh_ch35:
         "Is he talking about having breakfast together or playing footsies? Or maybe the combination?"
         ha "...this?"
         hi "You know... uh..."
-
         "I manage to distract him momentarily by using two of my toes to grab one of his."
         hi "...just having breakfast with nobody else around. It kind of feels like us having our own little place."
         "He starts wiggling his toe in order to break free from my grasp without having to move his foot. I tighten my grasp a bit in order to prevent him from getting loose."
         ha "It... does feel a little bit like that. I think it's kind of nice too."
         "I giggle as I suddenly feel one of the toes on my other foot being squeezed. Looks like Hisao duplicated my little maneuver, and now we're engaged in this some kind of double tug-of-war."
         hi "I wonder what our lives will be like in a few years."
-
         "It isn't even certain we'll still be together by that time. Though I really hope we will."
         ha "It's... probably a little... early for long-term plans."
         hi "Yeah, there are still lots of things to do in the meantime. We both need to figure out a career path for ourselves. We'll have our grades to keep up."
-        hi "There'll be the National Center Test for University Admissions to worry about in January and probably some additional entrance exams afterwards too. Then we'd have to finish university and apply for a job. We'll still have years ahead of us and lots of tough choices to make."
+        hi "There'll be the National Center Test for University Admissions to worry about in January and probably some additional entrance exams afterwards, too. Then we'd have to finish university and apply for a job. We'll still have years ahead of us and lots of tough choices to make."
         ha "Yes."
 
         scene ev footsiefight_tendertalk
+        with charachangeev
 
-        "In the silence that follows, we both manage to wiggle free from the other's toe grip. I wait for Hisao to resume our little play-fight under the table, but that doesn't happen."
+        "In the silence that follows, we both manage to wiggle free from the other's toe grip."
+        "I wait for Hisao to resume our little play-fight under the table, but that doesn't happen."
         hi "Hey, Hanako?"
         ha "Yes?"
         hi "Can I ask you a question?"
         ha "Sure."
-        hi "Disregarding the specifics, how do you see yourself in a decade or so? Do you see yourself... you know… married and with kids someday?"
-
+        hi "Disregarding the specifics, how do you see yourself in a decade or so?"
+        hi "Do you see yourself... you know... married and with kids someday?"
         "I know it's physically impossible, but I nevertheless feel like every drop of blood in my body is instantly rushing to my head."
-        ha "Y-Yours?"
+        ha "Y-yours?" # bruh
         hi "Heh, that's why I said to disregard the specifics. I was just curious, because... uh..."
         "Because I don't have a family of my own, and the only way to change that would be to start one myself."
         "It hurts a little to hear Hisao bring it up."
         "Still, it's not an unfair question."
-        ha "For a long t-time... I didn't think it was p-possible to begin with. Recently, I've regained a bit of hope. If... If possible, I'd l-like to b-be married someday and... if I c-can take it... b-be a m-mother too."
-        hi "What do you mean with 'can take it'?"
-
+        ha "For a long t-time... I didn't think it was p-possible to begin with."
+        ha "Recently, I've regained a bit of hope. If... If possible, I'd l-like to b-be married someday and... if I c-can take it... b-be a m-mother too."
+        hi "What do you mean with ‘can take it’?"
         "I give Hisao a sad smile and pat my belly."
-        ha "I have scars on part of my belly too. Scar tissue... doesn't stretch well. M-Maybe the doctors would advise against it. Or maybe it's possible, but very, very painful without surgery. I'm... n-not really sure."
-        hi "I suggest not worrying about that too much for now. At least not without consulting an expert first. It might not be a problem, and medical science still advances every year. Personally, I think you'd make a great mommy."
-        ha "W-What?"
+        ha "I have scars on part of my belly too. Scar tissue... doesn't stretch well."
+        ha "M-maybe the doctors would advise against it. Or maybe it's possible, but very, very painful without surgery. I'm... n-not really sure."
+        hi "I suggest not worrying about that too much for now. At least not without consulting an expert first. It might not be a problem, and medical science still advances every year."
+        hi "Personally, I think you'd make a great mommy." # smooth
+        ha "W-what?"
         "He snickers at my baffled expression."
         hi "Hey, no need with the look. I'm totally serious."
         ha "R-Really?"
 
-        scene ev footsiefight_footsiewar
+        scene ev footsiefight_war
+        with charachangeev
 
         "He nods, smiles sweetly, and I feel how his foot reaches out and starts stroking the back of my leg."
         hi "I mean, you did help the orphanage staff out with taking care of the younger children, didn't you? And you're very sweet and loving whenever you're at ease. You'll be a great mother someday."
-        "That's one of the sweetest things he's ever said to me, and I'm completely at a loss on what to say back. So in the end, I don't say anything back at all. Instead, I merely seek out his leg with the sole of my foot and start stroking it."
+        "That's one of the sweetest things he's ever said to me, and I'm completely at a loss on what to say back."
+        "So in the end, I don't say anything back at all. Instead, I merely seek out his leg with the sole of my foot and start stroking it."
         "We stay like this for a long time with both of us content to just continue our little footsie game without the need to say anything, and I'm wearing a pretty large smile throughout the entire thing."
+
+        stop music fadeout 2.0
 
         show black
         with shuteyefast
 
+        "I eventually decide that I want more than just a cuddling session in which only our feet are involved."
+
         play music music_heart fadein 4.0
 
-        "I eventually decide that I want more than just a cuddling session in which only our feet are involved, so I get up just a little, lean forward across the table, close my eyes and pucker my lips. A second later, he's also leaning across the table, and his lips lock with mine."
+        "I get up just a little, lean forward across the table, close my eyes, and pucker my lips."
+        "A second later, he's also leaning across the table, and his lips lock with mine."
         "This is a rather awkward position since we're both trying to maintain our balance, and our lips are either pressing too tightly or too loosely against each other throughout the kiss."
-        "As a lead-in to something more, it's more than enough though, and when we separate and I see the longing in Hisao's eyes, I know that this is just the beginning."
 
         scene ev footsiefight_makeout
+        with openeye
 
-        "We get up completely, and Hisao walks around the table, takes me in his arms and kisses me a second time. I wrap my arms around his neck and playfully tickle the spot near his ankle with my toe while our tongues engage in a passionate embrace."
-
+        "As a lead-in to something more, it's more than enough though, and when we separate, I see the longing in Hisao's eyes and I know that this is just the beginning."
+        "We get up completely, and Hisao walks around the table, takes me in his arms, and kisses me a second time. I wrap my arms around his neck and playfully tickle the spot near his ankle with my toe while our tongues engage in a passionate embrace."
         "When we pause in order to catch our breath, Hisao grins a little awkwardly, looks deep into my eyes and lets his forehead rest against mine."
         hi "Hanako?"
-
-        "I give an affirmative nod and a peck on his lips. The question is obvious. The answer should no different."
+        "I give an affirmative nod and a peck on his lips."
+        "The question is obvious. The answer should no different."
         ha "Okay."
         hi "Here?"
         "I take a quick look around, but I can't see any places where we could comfortably do it, and I don't like the idea of doing it while I'm bending over the kitchen sink unit."
-        ha "Y-Your room..."
+        ha "Y-your room..."
         "We can probably wait a few seconds longer."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
 
         if _in_replay:
             return
-        else:
-            pause 2.0
-    
+
     label .s3:
 
         $ set_window_tint(TINT_HISAO)
 
         play music music_comfort fadein 4.0
+        play ambient sfx_shower fadein 2.0
 
-        scene ev shower_event01
-
-        play ambient sfx_rain fadein 4.0
-        show rain normal
-
+        scene ev cooldownshower_sigh
+        show steam2
+        with locationchange
 
         hi "..."
         ha "..."
         "We share a gentle sigh. It's the only thing, aside from the soothing sound of the running water, that breaks the comfortable silence we're basking in."
         "After we finished our... exchange of affection in Hisao's room, I eagerly accepted his invitation to share a cooldown shower together."
-
         hi "Hanako?"
         ha "Mmm?"
         hi "Are your legs still feeling wobbly?"
@@ -724,182 +738,228 @@ label sh_ch35:
         "I do my best to send the most innocent smile I can muster his way."
         ha "...I... think the feeling's getting a bit worse..."
 
-        scene ev shower_event02
-        show rain normal
+        show ev cooldownshower_hug
+        with charachangeev
 
         "To my amusement, it takes him a moment to process my words before the intention behind them sinks in and the brief look of alarm on his face is replaced by a silly grin."
         hi "Well, we can't have that. I'd better hang on a little tighter if that's the case."
         "I let out an involuntary little squeal of delight when he pulls me a bit closer and tightens his embrace."
         "In terms of sheer bliss, there's nothing in the world that beats post-coital cuddling, particularly when you have no obligations for the rest of the day."
 
-        scene ev shower_event01
-        show rain normal
+        show ev cooldownshower_sigh
+        with charachangeev
 
         "I lift my toes and use them to lazily stroke the side of his foot. I half-expect him to deliver a jokey warning that it was a game of footsies that kicked off this chain of events, followed by a cheeky inquiry if that means I'm applying for a second round."
         "The fact that he remains silent probably means he's as tuckered out as I am right now."
-
         hi "..."
         ha "..."
-        "If we'd been in bed right now, we probably would have dozed off in each other's arms. That obviously won't be happening here. Just as I wonder if I'm supposed to make conversation, he briefly strokes my cheek to get my attention."
-        hi "Hey Hanako?"
+        "If we'd been in bed right now, we probably would have dozed off in each other's arms. That obviously won't be happening here."
+        "Just as I wonder if I'm supposed to make conversation, he briefly strokes my cheek to get my attention."
+        hi "Hey, Hanako?"
         ha "Mmmm?"
         hi "About... earlier?"
 
-        hide rain
-        scene ev deskchairjockey_lovemaking
+        #hide rain
+        #scene ev deskchairjockey_lovemaking
 
         "I imagine that if he would have brought this subject up an hour or so later, my tomato reflexes would have kicked in immediately. But with the effects of the oxycotin high I received earlier still lingering, my only reaction is a slightly awkward giggle."
-        ha "Y-Yes?"
+        ha "Y-yes?"
         hi "Did you... enjoy it?"
         "I avert my eyes to avoid his gaze, but still smile and nod my head."
         hi "Yeah, me too. You know... this was the first time you... uh... took the active role."
         "I did, though not entirely by choice. It was simply the result of a spur-of-the-moment decision to use his desk chair instead of his bed as the backdrop for our intimate bonding session."
-        hi "I....uh... really enjoyed getting to hang back and letting you take the lead. If you had a good time too, then maybe... we can do this more often?"
+        hi "I... uh... really enjoyed getting to hang back and letting you take the lead. If you had a good time too, then maybe... we can do this more often?"
         "I can't deny that I had a good time, but I suspect that I'll be feeling my upper legs for a while."
         ha "It... was pretty tiring in the end."
         hi "Yeah, let's stick with the bed next time."
         ha "Hee hee, l-let's."
 
-        scene ev shower_event03
-        show rain normal
+        show ev cooldownshower_smile
+        with charachangeev
 
         "A cheeky smile spreads across my boyfriend's face."
         hi "You know, this neighborhood isn't very well-suited for jogging and there's no running track nearby, so this might be a good alternative to my morning exercises. For the sake of building up my stamina and all."
         ha "Haha. Your stamina you say?"
         "I consider calling him out on the shamelessness of using building up his stamina as an excuse while also wanting me to take the active role more often, but I decide against it."
         hi "Heh, Emi likes to say that a good workout still beats sex, but those may be the words of a bitter old spinster. That or someone who's had nothing but lousy experiences with the latter."
-
-        scene ev shower_event04
-        show rain normal
-
         "We both snicker at that, but when I give him a quick peck on the lips followed by a knowing frown, his grin turns slightly sheepish."
         hi "Errr... but enough about Emi and morning workouts. There's probably better things to talk or think about."
-
-        scene ev shower_event05
-        show rain normal
-
         ha "Such as... what we can do today? Or what we'll have this evening? I... um... c-could cook dinner if you like."
-        hi "Yeah, I'd love that. I can show you some of the neighborhood before we head to the store. Aside from that... hmmm... can you give me some time to come up with something?"
+        hi "Yeah, I'd love that. I can show you some of the neighborhood before we head to the store."
+        hi "Aside from that... hmmm... can you give me some time to come up with something?"
         ha "Sure."
 
-        scene ev shower_event06
-        show rain normal
+        show ev cooldownshower_hug_close
+        with charachangeev
 
-        "I wrap my arms around my boyfriend, let my head rest against his shoulder and close my eyes."
-        ha "T-Take as much time as you want."
+        "I wrap my arms around my boyfriend, let my head rest against his shoulder, and close my eyes."
+        ha "T-take as much time as you want."
         "I hear an awkward chuckle in response."
         hi "Oh uh... here and now? Uh... sure. Let me think. There's a park five blocks away from here. It's a pretty relaxing place to take a stroll through."
         ha "Alright."
         "I absentmindedly stroke his back with my right hand as I listen to his little brainstorming session."
 
-        scene ev shower_event07
-        show rain normal
+        show ev cooldownshower_draw_talk
+        with charachangeev
 
         hi "There's a library fifteen minutes away from here on foot. Wait no, we just got ourselves a new batch of books at Yamaku."
-        ha "Uhuh..."
+        ha "Uh-huh..."
         hi "I didn't really start reading a lot until I was hospitalized, so it's not like I have a lot of personal attachment to that place."
         ha "..."
         "I gently run my finger up the lower part of his back."
-        hi "If you're up for some window shopping, we can visit the shopping district. There's always something... to..."
+        hi "If you're up for some window shopping, we can visit the shopping district. There's always something..."
 
-        scene ev shower_event08
-        show rain normal
+        show ev cooldownshower_draw_uncertain
+        with { "master": charachangeev }
+
+        extend " to..."
 
         "He trails off and I open my eyes to catch him shooting me an uncertain look."
         hi "Ah, it could have been my imagination, but was that... just now...?"
-        ha "Hee hee."
-
+        ha "Hee hee..."
         "I throw him a playful smile, close my eyes again and repeat the motion I just made, using my finger to gently draw a small heart on his back."
-        "♥"
 
-        scene ev shower_event02
-        show rain normal
+        show shrdraw_heart at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
+        show ev cooldownshower_draw_grin
+        with charachangeev
 
         "He chuckles softly."
         hi "Heh, cute."
         ha "You w-were saying?"
         hi "Ah... right. The shopping district. It's always pretty lively, but not exceededly crowded. There's even this book store where local authors frequently hold book... signing... sessions."
-        "♥ + 1"
+
+        show shrdraw_plus1 at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
         ha "Pffft!"
-        "I barely manage to supress a laugh when his finger sneaks down and draws a little heart with a + 1 behind it on my own back."
+        "I barely manage to supress a laugh when his finger sneaks down and draws a little something of his own on my own back."
         hi "Is something wrong?"
-        ha "N-No. That... uh... s-sounds good if there's a... session... today."
-        "♥ + 2"
+        ha "N-no. That... uh... s-sounds good if there's a... session... today."
+
+        show shrdraw_plus2 at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
         hi "It also has this really good ice cream parlor who has over 20... different... flavors."
-        "♥ x 10"
+
+        show shrdraw_times10 at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
         ha "Hee hee. I'd l-love to try... some of... those."
-        "♥ x 100"
+
+        show shrdraw_times100 at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
         hi "We can probably afford to think a little bigger than book stores and ice cream parlors. Lilly's mother did give us a... generous... dating... budget when we left Scotland."
-        "( pi x pi )! x ♥"
 
-        scene ev shower_event04
-        show rain normal
+        show shrdraw_mathismypassion at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
 
-        ha "W-Wait! H-How much is that?"
+        show ev cooldownshower_draw_laugh
+        with charachangeev
+
+        ha "W-wait! H-how much is that?"
         "Hisao laughs at my dumbfounded expression."
         hi "It's uh... a lot. Take my word for it."
         ha ".............."
         "His grin grows a little forced."
         hi "I uh... guess that kind of thing kills the mood a bit if you're not a... you know..."
         "Nerd? Brainiac? Geek? Dork? Egghead? Mathbrain?"
-        ha "S-Sciencewiz?"
+        ha "S-sciencewiz?"
         hi "Yeah."
-
-        "Still looking a little sheepish, he turns his head, plants a big smooch on my left cheek and lets his finger wander to the left side of my back once more."
+        "Still looking a little sheepish, he turns his head, plants a big smooch on my left cheek, and lets his finger wander to the left side of my back once more."
         hi "Just forget that last one, okay? I'll make it up to you."
         ha "Ummm..."
-        "I once again feel his finger trace a shape on my back, but it's not a heart this time. It takes me a moment to realize he's using his finger to spell out a word. I close my eyes, trying to visualize the sensation."
+        "I once again feel his finger trace a shape on my back, but it's not a heart this time. It takes me a moment to realize he's using his finger to spell out a word."
 
-        scene ev shower_event09
-        show rain normal
+        show ev cooldownshower_draw_close
+        with charachangeev
 
-        "C-u-t-i-e-P-i-e"
+        "I close my eyes, trying to visualize the sensation."
+
+        show shrdraw_cutiepie at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
+        show ev cooldownshower_draw_lovey
+        with charachangeev
+
         ha "Awww."
         "I giggle at the sweetness of his gesture and eagerly return the favor."
-        "H-o-n-e-y-b-u-n"
-        hi "..."
-        "S-u-n-s-h-i-n-e"
-        ha "..."
-        "C-u-p-c-a-k-e"
-        hi "..."
-        "C-u-d-d-l-e-b-u-g"
-        ha "..."
-        "S-w-e-e-t-h-e-a-r-t"
 
-        scene ev shower_event04
-        show rain normal
+        show shrdraw_honeybun at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
+        hi "..."
+
+        show shrdraw_sunshine at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
+        ha "..."
+
+        show shrdraw_cupcake at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
+        hi "..."
+
+        show shrdraw_cuddlebug at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
+        ha "..."
+
+        show shrdraw_sweetheart at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
+        show ev cooldownshower_draw_grin
+        with charachangeev
 
         "An amused snicker is the response."
         hi "Sweatheart? Really?"
         "I let out a semi-indignant snort before repeating myself, this time with emphasis."
-        "S-W-E-E-T-H-E-A-R-T-!-!-!"
+
+        show shrdraw_sweetheart_big at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
         hi "..."
 
-        scene ev shower_event09
-        show rain normal
+        show ev cooldownshower_hug_lovey
+        with charachangeev
 
-        "B-u-t-t-e-r-c-u-p"
+        show shrdraw_buttercup at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
         ha "..."
-        "D-u-m-p-l-i-n-g"
+
+        show shrdraw_dumpling at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
         hi "..."
-        "S-o-n-g-b-i-r-d"
+
+        show shrdraw_songbird at showertext(0.3, 0.7, 30, 10)
+        with Pause(2.0)
+
         ha "Hee hee. What?"
         hi "You know? You? This morning? Singing to yourself while you were preparing breakfast? You have a very nice singing voice."
         ha "Ummm...n-not really."
-        "S-n-u-g-g-l-y-w-u-g-g-l-e"
+
+        show shrdraw_snugglywuggle at showertext(0.7, 0.3, -30, -10)
+        with Pause(2.0)
+
         hi "Hanako?"
         ha "Huh?"
 
-        scene ev shower_event05
-        show rain normal
+        show ev cooldownshower_draw_grin
+        with charachangeev
 
         "I expect him to return the favor, but that doesn't happen. When I open my eyes and look at him, there's a triumphant smile on his face."
-        ha "W-What is it? W-Why are you smiling like that?"
+        ha "W-what is it? W-why are you smiling like that?"
         hi "I think I just thought of a suitable destination for our first date here."
         ha "Really? What did you have in mind?"
         hi "I'll tell you as soon as we get dressed."
 
-        hide rain
+        hide steam2
+        with { "master": Dissolve(10.0) }
+
         stop ambient fadeout 2.0
 
         "He reaches out to the faucet and turns off the shower, but I keep my arms wrapped around him."
@@ -907,23 +967,41 @@ label sh_ch35:
         ha "Ummm... Hisao?"
         hi "What is it, Hanako?"
 
-        scene ev shower_event01
+        show ev cooldownshower_smile
+        with charachangeev
 
         ha "About... just now? I uh... really, really liked it. If you l-liked it too then... maybe we can do this more often?"
         hi "We can make these cooldown sessions part of the routine."
-        ha "Hahaha. A-Agreed."
+        ha "Hahaha. A-agreed."
         "He smiles tenderly at me."
         hi "Since you enjoyed it so much, let me do one more just to close things off."
 
         show black
+        hide steam2
         with shuteyefast
 
-        "He locks his lips with mine and, as promised, draws one more word while exchanging a sweet kiss with me. Then we get out of the shower, dry ourselves off and start putting our clothes back on."
+        "He locks his lips with mine and, as promised, draws one more word while exchanging a sweet kiss with me."
+        "Then we get out of the shower, dry ourselves off, and start putting our clothes back on."
         "But as silly as it is, while I'm in the process of doing so, it's like I can still feel those letters on my skin."
         "Those nine letters that briefly made me feel like a million yen."
-        "B-e-a-u-t-i-f-u-l"
 
-        stop music fadeout 2.0
+        window hide dissolve
+
+        show shrdraw_beautiful:
+            pos (0.5, 0.5) anchor (0.5, 0.5) rotate -10 alpha 0.0
+            parallel:
+                linear 1.5 alpha 1.0
+                3.0
+            parallel:
+                ease 3.0 rotate 0
+        with Pause(5.0)
+
+        stop music fadeout 3.0
+
+        scene black
+        with endchapter
+
+        window auto True
 
         if _in_replay:
             return
