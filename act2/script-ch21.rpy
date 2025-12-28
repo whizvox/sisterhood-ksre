@@ -831,23 +831,24 @@ label sh_ch21:
         show hanako basic_smile_cas
         with chchange
 
-        "Hanako and I immediately start looking around, and, sure enough, less than 50 meters away from where we're standing we can see a person with blond hair holding a cell phone to her ear with one hand and waving enthusiastically in our direction with the other."
+        "Hanako and I immediately start looking around, and sure enough, less than 50 meters away from where we're standing, we can see a person with blond hair holding a cell phone to her ear with one hand and waving enthusiastically in our direction with the other."
         hi "Nevermind, we spotted her. I guess neither of us thought of the possibility she'd be wearing plain clothes today."
+        "Lilly puts away her phone, and we hurry over to our welcoming committee."
 
         show lilly cane_cheerful_cas
-        show akira basic_ending at center
-        with chchange
+        show akira basic_ending_cas:
+            xpos 0.32
+        with charaenter
 
-        "Lilly puts away her phone, and we hurry over to our welcoming committee. Hanako and I politely wait while Lilly steps forward and gives Akira a long and loving hug. Chuckling, Akira breaks off her sister's embrace."
+        "Hanako and I politely wait while Lilly steps forward and gives Akira a long and loving hug. Chuckling, Akira breaks off her sister's embrace."
 
-        # TODO replace Akira sprites with casual outfit
-        show akira basic_smug
-        with chchange
+        show akira basic_smug_cas at center
+        with charamovechangefaster
 
         aki "Damn, you missed me that much? It hasn't even been two weeks."
         "I have the impression Akira's merely playing cool. She looks quite happy to see her sister again as well."
 
-        show akira basic_smile
+        show akira basic_smile_cas
         show lilly cane_smileclosed_cas
         with chchange
 
@@ -862,19 +863,21 @@ label sh_ch21:
         show hanako emb_smile_cas
         with chchange
 
+        # TODO shorten description?
         "We both look Akira over. She does look different from the way she usually does. Instead of her striped black suit, she's wearing jeans and a loose-fitting shirt. She also has a pair of sunglasses on her head."
         ha "You look… c-cool, Akira."
         "I smirk at our welcoming committee."
         hi "No fair coming here in disguise."
 
-        show akira basic_laugh
+        show akira basic_laugh_cas
         with chchange
 
         "Akira laughs heartily at my comment as she opens the trunk of her car and takes Lilly's suitcase from my hands."
 
-        show akira basic_boo
+        show akira basic_boo_cas
         with chchange
 
+        # TODO change background to something less gray
         aki "Unlike some people in this family, I can still occasionally get away from my job. And today's weather was too nice for the suit."
 
         show lilly cane_reminisce_cas
@@ -891,14 +894,14 @@ label sh_ch21:
 
         li "Couldn't he have delegated it to someone else?"
 
-        show akira basic_annoyed
+        show akira basic_annoyed_cas
         with chchange
 
         aki "It's Dad we're talking about, remember? He really, really likes to keep on top of his business."
         aki "Though I wonder if those people would still have been so impressed if they had known he put off an opportunity to greet his daughter who's been living on the other side of the world."
         "I put my own suitcase in the trunk, and Akira slams the lid shut slightly louder than necessary."
 
-        show akira basic_cheerful
+        show akira basic_cheerful_cas
         show lilly cane_weaksmile_cas
         show hanako basic_bashful_cas
         with chchange
@@ -919,7 +922,7 @@ label sh_ch21:
         "Our last ride during that outing to a jazz club in the city near Yamaku showed us Akira's not particularly concerned with the speed limits, so we make sure to strap ourselves in firmly."
         aki "Good. Let's go, guys!"
 
-        stop ambient fadeout 2.0
+        stop ambient fadeout 5.0
 
         "As we leave the airport behind us, I breathe a sigh of relief. Looks like the hard part of our vacation is over. Now the fun part can begin."
 

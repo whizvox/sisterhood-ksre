@@ -54,9 +54,12 @@ init 1 python:
     def sh_bg(base_name):
         return f"{sh_path}/bgs/{base_name}.jpg"
     
-    def sh_bgs(category, locations):
-        for location in locations:
-            renpy.image(f"bg {category}_{location}", sh_bg(category + "_" + location))
+    def sh_bgs(category, locations=None):
+        if locations is None:
+            renpy.image(f"bg {category}", sh_bg(category))
+        else:
+            for location in locations:
+                renpy.image(f"bg {category}_{location}", sh_bg(category + "_" + location))
 
     def sh_event(base_name, variants, mark_adult=False):
         sh_image_variants(sh_path + "/event", base_name, variants, lambda variant, path: renpy.image(f"ev {base_name}_{variant}", adult(path) if mark_adult else path))
@@ -74,7 +77,8 @@ init 1 python:
     for face in ("smile", "serious"):
         for i in range(1, 3):
             renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
-    sh_sprites("akira", ["angry", "cheerful", "depressed", "peaceful", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful", "distant", "pissed"], poses=["basic"])
+    sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
+    sh_sprites("akira", ["annoyed", "boo", "cheerful", "ending", "evil", "kill", "laugh", "lost", "resigned", "smile", "smug"], poses=["basic"], outfits=["cas"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanagown", ["worry_blush_close"])
