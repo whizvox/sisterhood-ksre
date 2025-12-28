@@ -29,12 +29,15 @@ init 30:
     image shrdraw_snugglywuggle = Text(_("{size=133}SNUGGLYWUGGLE"))
     image shrdraw_beautiful = Text(_("{size=133}BEAUTIFUL"))
 
+    define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
+
 init 30 python:
     sisterhood_chapters.append(
         (_("Act 3"), [
             (_("Not-Yet Familiar Ceiling"), "sh_ch35.s1", _("Hanako wakes up in Hisao's living room and catches up with Lilly.")),
             (_("Love is War"), "sh_ch35.s2", _("The lovebirds eat Hanako's home-cooked breakfast.")),
-            (_("Aquatic Art Class"), "sh_ch35.s3", _("Hanako and Hisao have some fun in the shower."))
+            (_("Aquatic Art Class"), "sh_ch35.s3", _("Hanako and Hisao have some fun in the shower.")),
+            (_("Chapter 36"), "sh_ch36.s1", _("???"))
         ])
     )
 
@@ -43,3 +46,4 @@ init 30 python:
     phonebox_sprites("lilly", ["basic_smileclosed", "basic_weaksmile", "cane_satisfied", "cane_giggle", "cane_sleepy"], cropyoff=-40)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
+    sh_bgs("karaoke")
