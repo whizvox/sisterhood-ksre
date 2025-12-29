@@ -14,7 +14,7 @@ label sh_ch23:
 
         show hanako cover_bashful_ss at tworight
         show lilly cane_smileclosed_ss at twoleft
-        show akira basic_smile_ss at center
+        show akira basic_smile_cas_ss at center
         with charaenter
 
         "Akira takes out her wallet, pays the cab driver and motions us to get out. She then takes Lilly's hand, puts it on her arm and carefully starts guiding her down the street."
@@ -52,7 +52,7 @@ label sh_ch23:
 
         show hanako cover_bashful at tworight
         show lilly cane_smile at twoleft
-        show akira basic_smile at center
+        show akira basic_smile_cas at center
         with charaenter
 
         aki "Want me to make some recommendations?"
@@ -87,7 +87,7 @@ label sh_ch23:
         "I throw a look at Hanako, probably the one among us with the lowest alcohol tolerance, to ask her opinion. She gives a brief nod to indicate it's okay, and I turn back to Akira."
         hi "So I guess we'll have four glasses of wine. Would you mind ordering? I bet I'm incapable of even pronouncing half of the names on those bottles."
 
-        show akira basic_cheerful
+        show akira basic_cheerful_cas
         with chchange
 
         aki "Heh, would you believe lots of those brands are new to me too? Fortunately, I've had a taste of several ones during our last time here. You won't be disappointed."
@@ -95,7 +95,7 @@ label sh_ch23:
         "After the barkeeper finishes handing us all a glass, Lilly takes hers, sniffs carefully to take in its scent and then raises it with an appreciative smile."
 
         show lilly basic_satisfied
-        show akira basic_sweet
+        show akira basic_sweet_cas
         with chchange
 
         li "I would like to perform a toast to my hard-working and wonderful sister, who has started working her way up the ranks here at head office. May her new job be met with great success and ample satisfaction. And may it be known that I admire and respect her very much."
@@ -110,7 +110,7 @@ label sh_ch23:
 
         "We raise our glasses, perform a toast, and each take a sip. The slightly sweet taste of the white wine Akira has gotten us is surprisingly similar to what we had during Hanako's birthday party. Akira seems to have a knack for picking tasty drinks."
 
-        show akira basic_sheepish
+        show akira basic_sheepish_cas
         with chchange
 
         "While Hanako, Lilly and I down our drinks in small, measured sips, Akira manages to empty her entire glass in a single gulp. Upon putting her glass back on the bar, she flashes Lilly a sheepish smile."
@@ -123,7 +123,7 @@ label sh_ch23:
         li "I know Father pulled a few strings to get you that recommendation, but I also know that now you're here you will do everything in your power to prove yourself."
         li "You'll push yourself to excel until everyone at the office is convinced that putting you where you are now was not a special favor, but rather an act of foresight."
 
-        show akira basic_wistful
+        show akira basic_wistful_cas
         with chchange
 
         "Akira gives Lilly an amused look, but when she speaks, her tone is somewhat wistful."
@@ -134,28 +134,31 @@ label sh_ch23:
 
         li "I wouldn't be at all surprised if Father felt the same when he first came here."
 
-        show akira basic_boo
+        show akira basic_boo_cas
         with chchange
 
         aki "Heh, from his reputation at the office I'd say he's still in the middle of that process. People seem to regard him as some kind of one-man army over there."
         li "You had better not become such a workaholic that our phone calls start getting phased out over it."
 
-        show akira basic_wistful
+        show akira basic_wistful_cas
         with chchange
 
         "While Lilly's tone is playful, both she and Akira fall silent for a moment. Until now, it appears that they met up with one another whenever they could and contact took place on a regular basis."
         "When Lilly returns to Japan however, their contact will be limited to carefully timed international phone calls and there's no doubt in my mind that both of them are painfully aware of this right now."
         aki "Don't worry about that, Sis. I'll be sure to keep my priorities in order. Let's ditch the depressing thoughts tonight and have a good time."
 
-        show akira basic_sweet
+        show akira basic_sweet_cas:
+            xpos 0.43
+        with charamovechangefaster
+
         show lilly basic_surprised
-        with chchange
+        with charachangealways
 
         "Akira raises her hand and affectionately ruffles Lilly's hair, surprising her for a moment and then gestures to the barkeeper for another drink."
 
         show lilly basic_smileclosed
-        show akira basic_smile
-        with chchange
+        show akira basic_smile_cas at center
+        with charamovechangefaster
 
         "While he's refilling her glass, the barkeeper says something to Akira that I can't quite make out but causes Lilly to ‘hmmm’ quietly. Akira then nods and passes him several bills from her wallet."
         hi "What was he saying?"
@@ -182,7 +185,7 @@ label sh_ch23:
 
         show hanako basic_smile at tworight
         show lilly cane_smile at twoleft
-        show akira basic_smile at center
+        show akira basic_smile_cas at center
         with charaenter
 
         "Lilly folds out her cane and places her hand on Akira's arm. We follow them to a small corridor near the back."
@@ -194,7 +197,7 @@ label sh_ch23:
         "As Lilly nods and navigates down the corridor, we turn to Akira."
         hi "Lilly sure knows how to perform toasts. Sisterhood must be a wonderful thing."
 
-        show akira basic_wistful
+        show akira basic_wistful_cas
         with chchange
 
         "Akira nods and smiles warmly."
@@ -206,14 +209,14 @@ label sh_ch23:
         hi "That couldn't have been easy, a 19-year old and a blind 12-year old living on their own, even with Lilly being as independent as she is."
         aki "Don't mention to her that I told you this, but back when our parents first moved to Scotland, Lilly wasn't independent at all."
 
-        show akira basic_ponder
+        show akira basic_ponder_cas
         with chchange
 
         aki "I mean, whenever one of our parents wanted something done that they couldn't do themselves, they'd ask me to do it. Before our parents left, they liked pampering Lilly."
         hi "So you taught her how to do stuff like laying the table and cooking?"
 
         show hanako emb_smile
-        show akira basic_sheepish
+        show akira basic_sheepish_cas
         with chchange
 
         "Hanako suddenly stifles a soft giggle. Akira grins broadly."
@@ -221,7 +224,7 @@ label sh_ch23:
         hi "If you didn't then who did?"
 
         show hanako basic_smile
-        show akira basic_ponder
+        show akira basic_ponder_cas
         with chchange
 
         aki "After our parents left, we hired a housekeeper who stuck around for some time."
@@ -231,7 +234,7 @@ label sh_ch23:
         hi "Yes?"
 
         show hanako basic_normal
-        show akira basic_depressed
+        show akira basic_depressed_cas
         with chchange
 
         aki "I really hated still depending on our folks' money all the time, as if things were alright as long as they just kept paying."
@@ -240,12 +243,12 @@ label sh_ch23:
         "I quickly move in to fill the moment of silence."
         hi "Lilly's probably more self-sufficient than many of her classmates who have partial eyesight."
 
-        show akira basic_sad
+        show akira basic_sad_cas
         with chchange
 
         aki "That's a good thing. University probably ain't gonna be as accommodating to blind people as Yamaku. If she wasn't as independent as she is, she'd have had no choice but to follow me to Scotland."
 
-        show akira basic_cheerful
+        show akira basic_cheerful_cas
         with chchange
 
         "Noticing the door of the ladies room opening, Akira points at the pool table nearby."
@@ -262,13 +265,13 @@ label sh_ch23:
 
         "I look into the direction Akira's pointing and notice a device on the wall with three balls, a white, a yellow and a red one, resting in three indentations at the top and a coin slot on the front."
 
-        show akira basic_cheerful
+        show akira basic_cheerful_cas
         with charaenter
 
         "Akira walks over to it and takes one of the balls."
         "Immediately, a high-pitched buzzer sounds, causing Lilly to flinch a bit. She quickly puts a coin into the coin slot and the noise stops."
 
-        show akira basic_smile
+        show akira basic_smile_cas
         with chchange
 
         aki "First game's on me. When the buzzer goes off you'll either have to insert another coin or return the balls to the case. You guys know the rules?"
@@ -290,14 +293,14 @@ label sh_ch23:
         li "A cannon."
 
         show hanako basic_smile
-        show akira basic_smug
+        show akira basic_smug_cas
         with chchange
 
         "Akira shoots Lilly a smirk after the latter finishes the explanation for her."
         aki "Heh, showoff. Let's hope your recollection of trivia is also gonna help us win that quiz."
 
         show lilly basic_smileclosed
-        show akira basic_smile
+        show akira basic_smile_cas
         with chchange
 
         "After giving us an explanation about where to put the balls after pocketing them and what constitutes a foul, Akira points at the scoreboard on the wall."
@@ -888,7 +891,7 @@ label sh_ch23:
         ka "Heh, the questions they use here are never about local tidbits during the summer break. Gotta give the tourists a fair chance, after all. It’s still impressive though."
 
         show lilly basic_weaksmile at twoleft
-        show akira basic_laugh at tworight
+        show akira basic_laugh_cas at tworight
         with charaenter
 
         "After the quiz host gives both of them a firm handshake, Akira feistily throws her hand up in the air and gives a ‘V for victory’ sign. Lilly merely gives a few modest waves as she's handed a bag presumably containing their prize."
@@ -903,7 +906,7 @@ label sh_ch23:
         show hanako basic_smile at left
         show karla basic_smile behind hanako at twoleft
         show lilly cane_smileclosed at tworight
-        show akira basic_smug at right
+        show akira basic_smug_cas at right
         with locationchange
 
         stop sound fadeout 1.0
@@ -917,13 +920,13 @@ label sh_ch23:
 
         ha "Congratulations. What d-did you win?"
 
-        show akira basic_cheerful
+        show akira basic_cheerful_cas
         with chchange
 
         aki "Let's have a look, shall we?"
         "Akira takes the bag from Lilly and looks inside, then fishes up a bottle with a honey-colored liquid inside."
 
-        show akira basic_smile
+        show akira basic_smile_cas
         with chchange
 
         aki "Heh, Scotch whisky. Two bottles. I should've guessed."
@@ -931,7 +934,7 @@ label sh_ch23:
         hi "Geez, can people around here actually pronounce that name?"
         aki "Auchentoshan? Can't say I've tasted that one before, but this is not cheap liquor we've got here. Looks like we just won back our entry fee big time."
 
-        show akira basic_smug
+        show akira basic_smug_cas
         with chchange
 
         aki "Although..."
@@ -953,7 +956,7 @@ label sh_ch23:
         li "Mother!"
 
         show hanako emb_downsmile
-        show akira basic_laugh
+        show akira basic_laugh_cas
         with chchange
 
         "Lilly's pout and the slightly whiny tone of her reply, as if she just got caught with her hand in the cookie jar, seem so out of place for her that Hanako can't hold back a giggle."
@@ -983,7 +986,7 @@ label sh_ch23:
         li "I have not."
         "No carefully considered reply this time. Lilly seems to recognize the importance of quickly denying Karla's suggestion. I wouldn't be surprised if Lilly's mother thinks that Lilly never even drank alcohol before."
 
-        show akira basic_ending
+        show akira basic_ending_cas
         show karla basic_smile
         with chchange
 

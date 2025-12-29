@@ -12,7 +12,7 @@ label sh_ch24:
             xanchor 0.5 xpos 0.18
         show lilly cane_smileclosed:
             xanchor 0.5 xpos 0.4
-        show akira basic_laugh:
+        show akira basic_laugh_cas:
             xanchor 0.5 xpos 0.6
         show karla basic_smile:
             yalign 1.0 xanchor 0.5 xpos 0.8
@@ -21,7 +21,7 @@ label sh_ch24:
         aki "I think it's only fair for me to take my half of the spoils."
         "Akira reaches into the bag, takes two bottles of wine out of it and hands them over to Lilly."
 
-        show akira basic_cheerful
+        show akira basic_cheerful_cas
         with chchange
 
         aki "Don't drink it all at once, kids. It's tasty, but not the lightest stuff in the world."
@@ -34,20 +34,20 @@ label sh_ch24:
 
         ka "I'll be returning to the place where your father is having his meeting. If you'd like, I could take you along to meet the investors we've been dining with this evening."
 
-        show akira basic_boo
+        show akira basic_boo_cas
         show karla basic_smile
         with chchange
 
         aki "Naw, I'd rather just get some extra rest. Don't want to stop by the apartment and put the suit on either."
         "Lilly walks over to Akira and places her hand on her sister's shoulder."
 
-        show akira basic_smile
+        show akira basic_smile_cas
         show lilly cane_smile
         with chchange
 
         li "Thanks for the fun evening, Akira. And remember not to drink those bottles of yours alone. You know what they say about those kinds of people."
 
-        show akira basic_smug
+        show akira basic_smug_cas
         with chchange
 
         aki "Maybe I should return to that pub and pick up one of the guys who seemed so extremely interested in us."
@@ -58,7 +58,7 @@ label sh_ch24:
         "Lilly's smile drops."
         li "I hope you're not being serious there."
 
-        show akira basic_ending
+        show akira basic_ending_cas
         with chchange
 
         aki "Tell you what... You can share it with me if you can find it in your schedule to drop by my place after I'm off-duty."

@@ -78,7 +78,7 @@ init 1 python:
         for i in range(1, 3):
             renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
     sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
-    sh_sprites("akira", ["annoyed", "boo", "cheerful", "ending", "evil", "kill", "laugh", "lost", "resigned", "smile", "smug"], poses=["basic"], outfits=["cas"])
+    sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanagown", ["worry_blush_close"])
