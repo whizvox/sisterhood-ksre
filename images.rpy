@@ -144,6 +144,14 @@ init 1:
     image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
 
     # special events
+    image ev pillowtalk dark = f"{sh_path}/event/pillowtalk/pillowtalk_dark.png"
+    image pillowtalkhisao concern dark = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_concern_dark.png"
+    image pillowtalkhisao grin dark = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_grin_dark.png"
+    image pillowtalkhisao talk dark = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_talk_dark.png"
+    image pillowtalkhanako down dark = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_down_dark.png"
+    image pillowtalkhanako grin dark = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_grin_dark.png"
+    image pillowtalkhanako up dark = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up_dark.png"
+
     image ev rainyroad:
         block:
             rain(f"{sh_path}/event/rainyroad/rainyroad_a.jpg") with Dissolve(0.5)

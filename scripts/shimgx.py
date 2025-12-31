@@ -214,6 +214,14 @@ JPEGS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/hotel cgs 2/Masturnation_2-1.png", "event/hotel/hotel_masturbate_climax.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/missionary_sex_1-1.png", "event/hotel/hotel_bed.jpg", [RESIZE_1080P]),
     ("reference/hotel cgs 2/missionary_sex_2-1.png", "event/hotel/hotel_bed_climax.jpg", [RESIZE_1080P]),
+    # chapter 10
+    ("reference/Event Art/Ch10+20 Pillow Talk/CG_SET_A-01_rev.png", "event/pillowtalk/pillowtalk_dark.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hisao concern dark.png", "event/pillowtalk/pillowtalk_hisao_concern_dark.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hisao talk dark.png", "event/pillowtalk/pillowtalk_hisao_talk_dark.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hisao grin dark.png", "event/pillowtalk/pillowtalk_hisao_grin_dark.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako down dark.png", "event/pillowtalk/pillowtalk_hanako_down_dark.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako up dark.png", "event/pillowtalk/pillowtalk_hanako_up_dark.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako grin dark.png", "event/pillowtalk/pillowtalk_hanako_grin_dark.png", [RESIZE_1080P]),
     # chapter 11
     ("reference/dance cgs/HanakoLillyDanceFinal2.png", "event/ballroomdance/ballroomdance_emb_large.jpg", []),
     ("reference/dance cgs/HanakoLillyDanceFinal2.png", "event/ballroomdance/ballroomdance_emb_normal.jpg", [RESIZE_1080P]),
@@ -325,7 +333,7 @@ def main(args: Arguments):
             transforms = entry[2]
         inpath = resolve_path(entry[0])
         outpath = Path(sh_path, entry[1]) # type: ignore
-        if entry in JPEGS:
+        if entry in JPEGS and entry[1].endswith(".jpg"):
             transforms.append(CHECK_1080P)
             transforms.append(convert_rgb())
         images_to_process.append(ImageProcess(inpath, outpath, transforms, quality=90))

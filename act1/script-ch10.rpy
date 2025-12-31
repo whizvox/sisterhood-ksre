@@ -756,7 +756,7 @@ label sh_ch10:
 
         "I get out of bed, turn on the lights, and unlock the door, but before I can prepare a lecture about the importance of someone's daily eight hours of rest…"
 
-        show hanako def_worry at offscreenleft:
+        show hanako def_worry_close at offscreenleft:
             matrixcolor BrightnessMatrix(-1.0)
             xzoom -1.0
         with None
@@ -823,6 +823,12 @@ label sh_ch10:
 
         "After Hanako has finished taking off her blouse and skirt and putting them in a neat pile beside my clothes, I turn off the lights and get back into bed."
         "Moments later, I can feel her lying down next to me and snuggling up to me."
+
+        scene ev pillowtalk dark at truecenter:
+            zoom 1.1
+            ease 5.0 zoom 1.0
+        with Fade(1.0, 0.0, 1.0, color="#04061c")
+
         "For several minutes, we just lie there, holding each other, lazily playing footsie and me softly stroking her hair and scalp; something I've lately learned she really likes."
         "On my first impression I didn't really have Hanako pegged for a very physical person. She already tended to get nervous when people came near her, and I expected being touched would probably cause her to flee the scene in a heartbeat."
         "I started having second thoughts about that impression when she got drunk and really clingy with me during her birthday party. And after I started dating her, I discovered that beneath her skittish nature, Hanako's actually quite the snuggle bunny in private."
@@ -830,153 +836,144 @@ label sh_ch10:
         "I'm not sure if she wants to talk to me about this or simply wants physical comfort. In a way, it's already a good thing she came here instead of pretending nothing's wrong and bottling up things inside."
         hi "Do you want to talk for a bit?"
 
-        show hanagown smile_close_ni
-        with charaenter
+        show ev:
+            zoom 1.0
+        with None
+
+        show pillowtalkhanako down dark
+        with charachangeev
 
         ha "Y-yes."
+
+        show pillowtalkhisao concern dark
+        with charachangeev
+
         hi "How do you feel about Lilly's announcement?"
-
-        show hanagown distant_close_ni
-        with chchange
-
         ha "I f-feel sad. My first thought was ‘why now?’"
         hi "Huh?"
         ha "L-lately I've started to become more motivated to turn my life around. L-like you have. That i-includes my friendship with Lilly."
         ha "B-but now I wonder if I'll even get the chance for that."
         hi "Maybe you should tell her that. Your word might just tip the scales. I wouldn't be surprised if you were one of the main reasons she's still not sure what to do."
 
-        show hanagown worry_close_ni
-        with chchangefast
+        show pillowtalkhanako up dark
+        with charachangeev
 
         ha "{i}M-m-me?{/i} What do you mean?"
         "I take a moment to put my thoughts in order."
         "I don't think I'm wrong about this, but how do I best explain this to Hanako?"
         hi "Akira made her choice with her career in mind, but Lilly doesn't seem to have any ambitions of getting a big-shot corporate job."
         hi "The last time we spoke about figuring out what to do after Yamaku, you mentioned Lilly wanted to study English, didn't you?"
-
-        show hanagown normal_close_ni
-        with chchange
-
         ha "Yes. She wants to be an English teacher."
         hi "She can study English in Scotland as well. It doesn't matter what she does concerning her education."
         hi "Heck, her parents might just hire private tutors, seeing that they seem well-off. And she can find a job as a teacher either here or there. Over there, she could also teach Japanese if she liked."
         ha "Uh huh…"
         hi "So what else could determine her choice? There's relatives, I guess. Lilly said it's been six years since she last met her parents before that last trip."
         hi "I had the impression this evening that Lilly and Akira are estranged from their family. Did Lilly ever mention them to you?"
-
-        show hanagown distant_close_ni
-        with chchange
-
         ha "N-no. She talks about Akira all the time, but never brings up her parents."
         ha "I don't think she talks to them very often. She phones her sister every few days, but I've never seen or heard her talk to her parents either."
         hi "How do you think she feels about them?"
         hi "Akira doesn't like them, that's impossible to miss. But Lilly wasn't that blatant with her opinion."
         ha "I'm really not sure. I think she's neutral about them."
         hi "Neutral? Is that even possible?"
-
-        show hanagown worry_close_ni
-        with chchange
-
         ha "She seemed uncomfortable by Akira's outbursts about their parents, but didn't defend them in any way."
         hi "She's definitely not neutral towards Akira though. And Akira will be migrating. The only other family she has contact with around here seems to be Shizune and that's hardly positive contact."
         hi "So if she doesn't dislike her parents and the sister she loves is leaving for a country where Lilly herself will have no problems finishing her education, why exactly {i}is{/i} she still trying to make up her mind? Shouldn't the decision be easy?"
-        ha "S-she has many friends here too."
+        ha "S-she has many friends here, too."
         hi "True, but the two of us seem to be the only ones she regularly invites to her room, and we're the ones she took along to her family's summerhouse in Hokkaido."
+
+        show pillowtalkhisao talk dark
+        with charachangeev
+
         hi "And while I'm sure Lilly considers me a good friend, I think the title of best friend goes unavoidably to you."
         hi "If there's one person she could be considering staying here for, it has to be you."
 
-        show hanagown distant_close_ni
-        with charachangealways
+        show pillowtalkhanako down dark
+        with charachangeev
 
         "Hanako falls silent for a long while, the gentle rubbing of her feet against mine the only indication she hasn't spontaneously fallen asleep."
         "I don't think she disagrees with the logic behind my argument. It's probably her own unsteady sense of self-worth that's denying the possibility someone else could consider her important enough to decline an emigration opportunity for."
         "Still, after a long deliberation, she silently nods."
         hi "So I think if you don't want her to go, you should consider asking her to stay. Or if that prospect makes you uneasy, perhaps I could…"
 
-        show hanagown worry_close_ni
-        with chchangefast
+        show pillowtalkhanako up dark
+        with Dissolve(0.2)
 
         ha "NO!"
+
+        show pillowtalkhisao concern dark
+        with charachangeev
+
         "Her sudden exclamation startles me a bit which in turn startles her."
-
-        show hanagown normal_close_ni
-        with chchange
-
         ha "Ummm… I mean, p-please don't."
         hi "Why not? I realize it's not a competition and Lilly's not a prize to be won, but her parents don't seem to mind doing their part to help her reach a decision if Akira is to be believed."
         hi "You don't have to nag her about it, but making your position clear can't hurt in my opinion."
 
-        show hanagown distant_close_ni
-        with chchange
+        show pillowtalkhanako down dark
+        with charachangeev
 
         ha "B-because… ummm… Because…"
         "She hesitates for a bit, then mumbles something."
         hi "I can't hear you very well."
-
-        show hanagown worry_close_ni
-        with chchange
-
         ha "B-because that would r-ruin what our f-friendship is about. Or rather… what I'd l-like our friendship to b-be about."
         hi "Could you explain that to me?"
-
-        show hanagown distant_close_ni
-        with chchange
-
         ha "S-sometimes I wonder if Lilly thinks of me as a true f-friend or simply as someone who needs looking after."
         ha "Because despite her always being there for m-me, I haven't been able to do anything for her."
         ha "Even now, while she was struggling with this s-summons, I couldn't help her."
+
+        show pillowtalkhisao talk dark
+        with charachangeev
+
         hi "But you can now."
         hi "She wasn't planning to tell us, but we found out and now we can be there for her, right? You can be there for her just like you're here for me."
-
-        show hanagown worry_close_ni
-        with chchange
-
         ha "M-maybe. But I don't want to ask her to stay for my sake."
         ha "W-what if she would rather live with her f-family and m-me asking her to stay would make her stay here out of a s-sense of duty towards me?"
         ha "W-what kind of friendship would we have then?"
         hi "In the end, the decision remains with her, Hanako."
         hi "If we're not going to ask her to consider staying here, the only other thing we can do is cross our fingers and support her choice, no matter what it is."
 
-        show hanagown smile_close_ni
-        with chchange
+        show pillowtalkhanako up dark
+        with charachangeev
 
         ha "A-and provide some distraction when she needs it."
         hi "According to Akira, the departure will be soon. Maybe we should postpone our dates for the time being and focus on hanging out with Lilly."
-
-        show hanagown worry_close_ni
-        with chchange
-
         ha "H-Hisao…?"
         hi "Yeah?"
-
-        show hanagown distant_close_ni
-        with chchange
-
         ha "If… the two of us… hang out with Lilly all the time… she'll feel like… the third wheel and might b-back away from us."
         hi "Then maybe it should be just you spending some additional time with her for a while."
-
-        show hanagown worry_close_ni
-        with chchange
-
         ha "B-but you're my boyfriend."
         hi "I'm not going anywhere."
         hi "You just hang out with Lilly, and maybe you'll get around to convincing her to stay here, even if you don't end up asking her directly."
-
-        show hanagown smile_close_ni
-        with chchange
-
         ha "Okay."
         hi "Hanako?"
         ha "Yes?"
+
+        show pillowtalkhisao grin dark
+        with charachangeev
+
         hi "If I don't go to sleep soon I'll miss my morning jog tomorrow. And Emi cursing like a sailor is a very ugly sight."
+
+        show pillowtalkhanako grin dark
+        with charachangeev
+
         ha "G-goodnight then, Hisao."
+
+        hide pillowtalkhisao
+        with charachangeev
+
         hi "Goodnight, Hanako."
         ha "And Hisao?"
         hi "Yes?"
+
+        show black
+        hide ev
+        hide pillowtalkhanako
+        with shuteyefast
+
         "She gives me a quick kiss."
         ha "…thank you."
 
         stop music fadeout 3.0
+
         scene black
         with Dissolve(3.0)
 
