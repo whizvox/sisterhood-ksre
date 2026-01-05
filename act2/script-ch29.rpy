@@ -14,7 +14,7 @@ label sh_ch29:
         n "I guess these belong to Lilly's parents."
         n "{vspace=60}After we got back from the beach, Hisao went down to the kitchen to get something to drink while I went to our room to put away my diary and brush my hair to get any tangles out. Now I'm holding two bathrobes that I retrieved from the bathroom's small changing area on my way here."
         n "The changing area contained shelves and baskets for clothing, but I doubt we'll be slipping back into our clothes again after we're done bathing, so I might as well leave my clothing here. I just hope Lilly or her parents aren't going to miss the bathrobes this evening."
-        
+
         play sound sfx_rustling
 
         n "{vspace=30}I walk up to the window, close the curtains, take off my clothes and put one of the bathrobes on. Both are a little bit too large for me, though, since I'm used to wearing a rather oversized nightgown, it doesn't feel too awkward."
@@ -31,7 +31,7 @@ label sh_ch29:
         n "Two of the changing area's walls look suspiciously like reinforced room dividers, suggesting that the bathroom and this tiny changing area used to be part of the same room before the Satous moved in."
         n "I conclude with a sense of relief that the outer door can be locked from the inside, meaning that even if Lilly or her parents were to come home early there'd still be no risk of them accidentally walking in on us."
         n "In addition to a shelf with baskets for clothing and a space for shoes along one wall there are two cabinets near the exit; one containing bottles of liquid soap and several types of shampoo and the other containing washcloths and towels. I take two of each, making sure to get a bottle of shampoo for myself that contains conditioner and suits my hair and then slide away the inner door and enter the main bathroom."
-        
+
         nvl hide dissolve
 
         scene bg satou_bathroom
@@ -44,7 +44,7 @@ label sh_ch29:
         # n "On the far wall is a fairly large window with sun blinds in front of it. The wall near the bath consists of a large tile mural depicting a few large waves in front of a mountain. The bath itself seems large enough to hold about seven or eight people."
         n "On the far wall is a fairly large window with sun blinds in front of it. The bath itself seems large enough to hold about seven or eight people. The opposite corner of the room consists of facilities to clean oneself before bathing. Two pairs of faucets are attached to the wall in that part of the room, and each pair also has a detachable shower head connected to it. There's a small mirror on the wall above each pair of faucets and a pair of wooden buckets and low stools nearby. The floor near the faucets and shower heads seems to be slightly sloped so the water can flow into the drain near the corner."
         n "{vspace=60}After putting the soap and shampoo near the stools and leaving the towels on the edge of the bath, I examine the bath a little closer and notice a few small buttons and a display embedded into part of the edge showing a number."
-        
+
         nvl hide dissolve
 
         "45 degrees. That's much hotter than I can probably handle. I wonder whether this is the default temperature or if Hisao set it to that level."
@@ -91,7 +91,7 @@ label sh_ch29:
         "While the changing area is pitch black, the bathroom itself is only moderately darkened due to it still being light outside and the sun blinds in front of the window letting more than enough light through to make out the room's interior."
         hi "I guess we'll be okay after all, at least until the sun sets completely."
 
-        show hisao cross_grin_bath_close_ni
+        show hisao basic_grin_bath_close_ni
         with charaenter
 
         "He puts a hand on my shoulder."
@@ -113,7 +113,7 @@ label sh_ch29:
         scene bg satou_bathroom
         show hisao basic_smile_nak_close at tworight
         with locationchange
-        
+
         "I appreciate the fact that he's been considerate enough to let me sit on his right so my scarred side is facing away from him."
         hi "Is this close to the right temperature?"
         "Without looking at me, Hisao moves one of the buckets to his right and I dip my finger in to check the temperature."

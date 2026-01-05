@@ -50,10 +50,10 @@ init 1 python:
                 (0, 0), DynamicDisplayable(_sh_get_phonebox_bg),
                 (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
             ))
-    
+
     def sh_bg(base_name):
         return f"{sh_path}/bgs/{base_name}.jpg"
-    
+
     def sh_bgs(category, locations=None):
         if locations is None:
             renpy.image(f"bg {category}", sh_bg(category))
@@ -63,7 +63,7 @@ init 1 python:
 
     def sh_event(base_name, variants, mark_adult=False):
         sh_image_variants(sh_path + "/event", base_name, variants, lambda variant, path: renpy.image(f"ev {base_name}_{variant}", adult(path) if mark_adult else path))
-    
+
     def sh_fireflies():
         for i in range(0, 15):
             imgpath = f"{sh_path}/vfx/fireflies/ff{i:02}.png"
@@ -81,12 +81,12 @@ init 1 python:
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
-    sh_sprites("hanagown", ["worry_blush_close"])
+    sh_sprites("hanagown", ["worry_blush"])
     sh_sprites("hisao", ["annoy", "bashful", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
-    sh_sprites("lilly", ["basic_cheerful_close", "cane_sad_close", "cane_cry", "cane_cry_close", "basic_satisfied", "cane_satisfied_cas", "cane_offended_cas_close", "cane_sad_cas_close"])
+    sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
