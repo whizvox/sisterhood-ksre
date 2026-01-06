@@ -993,7 +993,7 @@ label sh_ch35:
                 linear 1.5 alpha 1.0
                 3.0
             parallel:
-                ease 3.0 rotate 0
+                ease 3.0 rotate 10
         with Pause(5.0)
 
         stop music fadeout 3.0

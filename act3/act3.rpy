@@ -9,6 +9,7 @@ init 30:
 
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
     define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
+    define iwa_ = Character(_("Girl"), who_color="#ffffff")
 
     image shrdraw_heart = Text(_("{size=133}{font=symbols}♡"))
     image shrdraw_plus1 = Text(_("{size=133}{font=symbols}♡{/font} + 1"))
@@ -34,16 +35,16 @@ init 30:
 init 30 python:
     sisterhood_chapters.append(
         (_("Act 3"), [
-            (_("Not-Yet Familiar Ceiling"), "sh_ch35.s1", _("Hanako wakes up in Hisao's living room and catches up with Lilly.")),
+            (_("Week at Hisao's"), "sh_ch35.s1", _("Hanako wakes up in Hisao's home and catches up with Lilly.")),
             (_("Love is War"), "sh_ch35.s2", _("The lovebirds eat Hanako's home-cooked breakfast.")),
-            (_("Aquatic Art Class"), "sh_ch35.s3", _("Hanako and Hisao have some fun in the shower.")),
-            (_("Chapter 36"), "sh_ch36.s1", _("???"))
+            (_("Aquatic Artplay"), "sh_ch35.s3", _("Hanako and Hisao have some fun in the shower.")),
+            (_("A Blast from his Past"), "sh_ch36.s1", _("Hanako has an unexpected encounter during a karaoke date with Hisao."))
         ])
     )
 
-    sh_sprites("hisao", ["bashful", "emb"], poses=["basic"], outfits=["bath"])
+    sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo"])
 
     phonebox_sprites("lilly", ["basic_smileclosed", "basic_weaksmile", "cane_satisfied", "cane_giggle", "cane_sleepy"], cropyoff=-40)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
-    sh_bgs("karaoke")
+    sh_bgs("city", ["karaokebooth"])
