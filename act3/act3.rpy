@@ -45,8 +45,12 @@ init 30 python:
     )
 
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo"])
+    sh_sprites("hiroyuki", ["smileclosed"])
 
     phonebox_sprites("lilly", ["basic_smileclosed", "basic_weaksmile", "cane_satisfied", "cane_giggle", "cane_sleepy"], cropyoff=-40)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
+    sh_bgs("satou", ["masterbed_ni"])
+
+    sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])

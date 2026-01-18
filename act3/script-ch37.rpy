@@ -326,9 +326,6 @@ label sh_ch37:
 
         stop music fadeout 2.0
 
-        scene black
-        with Dissolve(2.0)
-
         if _in_replay:
             return
     
@@ -336,51 +333,48 @@ label sh_ch37:
 
         $ set_window_tint(TINT_LILLY)
 
-        play music music_lilly fadein 4.0
+        queue music music_lilly fadein 4.0
 
-        scene bg satou_masterbedroom_ni
+        scene bg satou_masterbed_ni
+        with shorttimeskip
 
         hyf "I did not even hear the doorbell. Your sharp... sense of hearing never ceases to amaze me."
         "I smile humbly upon re-entering the master bedroom after briefly going downstairs to let the system administrator in and making certain he was provided with a cup of tea."
         "The housekeeping staff all went home two hours ago, but Allison made sure that everything she thought I'd need for tonight would be in a place where I could easily find it."
 
         scene ev bedside_sit
+        show lilly basic_smile at twoleft
+        show hiroyuki basic_thinking at tworight
         with Dissolve(2.0)
-
-        show lilly basic_smileclosed at left
-        show hiroyuki serious at right
 
         li "It wasn't really the doorbell itself. I heard the sound of a car outside."
         hyf "Nevertheless."
-        "As inconvenient as my blindness is at times, I'm thankful for the fact that it has honed my sense of hearing to a greater degree. Speaking at length still tires and discomforts Father, but as long as he keeps his voice down to a whisper, he can communicate without it hurting too much."
-        "That does mean people other than me are forced to ask him to repeat himself every two sentences or so."
-
+        "As inconvenient as my blindness is at times, I'm thankful for the fact that it has honed my sense of hearing to a greater degree."
+        "Speaking at length still tires and discomforts Father, but as long as he keeps his voice down to a whisper, he can communicate without it hurting too much. That does mean people other than me are forced to ask him to repeat himself every two sentences or so."
         hyf "Has Mister McLaughlin gotten settled in there?"
         li "Yes. I've made sure to serve him some tea and left the water boiler and a supply of tea bags in the study so he can make some additional tea for himself if he feels like it."
         li "I also asked him to knock and wait for me to come out rather than walk into this room if he needs to talk to us. He's currently on the phone with his fellow administrator, but he said everything will be ready in half an hour."
         hyf "So we still have about half an hour... of time to kill."
         li "Would you like to rest for a little bit more?"
-
-        show hiroyuki smile
-
         hyf "I do not think I would... be able to sleep in the current situation. But perhaps you could give... me another bowl of your hot soup. It is truly on... par with the rest of your cooking."
         li "I will."
 
-        scene bg satou_masterbedroom_ni
+        scene bg satou_masterbed_ni
+        with changelocation
 
         "I walk over to the corner of the room where a small electric stove is keeping the large pan of miso soup that I made this afternoon to get us through the night warm with its single heated plate."
         "I went through a lot of effort to make the soup myself, but the result is apparently quite pleasing to Father. I fill a bowl with the contents of the pan, slowly walk back to the bed and carefully place it in Father's hands."
 
-        scene ev bedside_bowl
-        with Dissolve(2.0)
-
-        show lilly basic_smileclosed at left
-        show hiroyuki smile at right
+        scene ev bedside_soup
+        show lilly basic_smile at twoleft
+        show hiroyuki basic_thinking at tworight
+        with Dissolve(1.0)
 
         li "Let's hope everything goes well, and we'll have no difficulties."
         hyf "Mister McLaughlin seems capable enough. We... should be fine."
 
         show lilly basic_displeased
+        with chchange
 
         "My thoughts return to the talk we had with him earlier today."
         li "Father, may I ask something?"
@@ -388,6 +382,7 @@ label sh_ch37:
         li "What did you think of his proposal?"
 
         show hiroyuki serious
+        with chchange
 
         hyf "To handle his duties in here instead of from the office? I am not... overly fond of others using my private study... without me being present, but his suggestion was the most practical and riskfree one."
         li "I understand, but there was something that caught my attention."
@@ -395,17 +390,17 @@ label sh_ch37:
         li "If his words offended you, you did a good job of hiding it."
 
         show hiroyuki thinking
+        with chchange
 
         "Father lets out a self-deprecating sigh."
         hyf "Welcome to western civilization, Lilly. It is quite... a different world over here."
         li "I imagine."
-        hyf "A subordinate telling his superior that he 'has a better idea', especially in... the presence of others, would be a massive transgression in our home country."
-        hyf "But westerners... are a lot more tolerant and sometimes even encouraging when it comes to questioning or challenging... people in positions of authority. "
+        hyf "A subordinate telling his superior that he ‘has a better idea’, especially in... the presence of others, would be a massive transgression in our home country."
+        hyf "But westerners... are a lot more tolerant and sometimes even encouraging when it comes to questioning or challenging... people in positions of authority."
         hyf "As long as the challenge has merit... and is voiced in a civil way, it is deemed acceptable and the person being challenged... is expected to acknowledge it without feeling slighted or shamed. I was told in advance to expect this, but... it takes some getting used to."
         hyf "It helps to realize the people here weren't... brought up with our value system. I think... I would probably still expect Japanese employees to stick to our own etiquette."
         "That probably explains why he puts up with an employee making him lose face in front of his family without even a change in heartbeat while I get put on prohibition for falling asleep in the wrong place."
         li "Are there any other Japanese working here besides Akira?"
-
         hyf "None that I know of at the... moment. We have good relations with several universities... in the region, so there has been little need to borrow talent... from the Japanese office."
         hyf "People from here sometimes travel to Japan and we get visitors from their branch, but we are not involved in each... other's day-to-day activities."
         hyf "This branch was... initially only intended as a production plant. Assembling and later also manufacturing the equipment that was sold to our clients in the region here... was cheaper than producing it in Japan and then shipping it to Europe."
@@ -415,20 +410,20 @@ label sh_ch37:
         hyf "One of my tasks was to... test which aspects of Japanese management style could be succesfully implemented here and which ones would merely... cause frustration."
         hyf "You cannot just lead... a western company like... a Japanese one or a Japanese company like a western one... and expect it to work out."
         li "That sounds like a tough job. Japanese management style and company culture are very different from the western one, aren't they?"
-
         hyf "They are. Japanese... management emphasizes loyalty and insight gained through... seniority, long-time goals, risk avoidance, maintaining harmony and decision-making through well-crafted consensus."
         hyf "Western management emphasizes quick... returns on investment, individual decisiveness, efficiency and calculated risks. Many times the... two seem incompatible."
         hyf "I have found that many people... here often do not have the patience for sitting in meetings for hours on end until a consensus is made on how... to deal with a problem."
         hyf "Westerners... also have a very different definition of company loyalty than Japanese, and that is not something you can ignore when leading a company."
 
         show lilly basic_weaksmile
+        with chchange
 
         li "I'm sure both cultures have their merits."
 
         show hiroyuki speak
+        with chchange
 
         hyf "Hmmm... It was not really my intention to complain. There is something interesting about the carefree way... they can go about their lives without the burden of what others... might or might not think of them. They also admittedly handle diversity a lot better than we do."
-
         "I wonder if that's truly a touch of envy I hear for a moment. I feel a bit taken off guard by his words."
         li "That's a rather frank assessment..."
         hyf "On the other hand, many could... be more loyal. You would be surprised how... many western managers seem unwilling to impose a... pay cut on themselves while their company is going through hard... times. Too many people, workers and managers alike, only seem to be in... it for themselves."
@@ -436,7 +431,6 @@ label sh_ch37:
         hyf "It would be very difficult for... me to lead a branch consisting of almost nothing but Scotsmen and... deal with American businessmen on an almost daily basis if I let everything about western culture get to me."
         "I suppose what he says makes sense. When moving to another country, it's logical to try and adapt a little to fit in with the local people better. It just feels a little off to hear my father, who I've always seen as very traditionally-minded, say these things. It clashes with the image I had of him."
         "I initially thought it was just Mother who changed during her time here, but perhaps Father has changed in his own subtle way as well."
-
         "Still, managing a company with a completely different business culture must have been a very harrowing job for Father, and I'm starting to suspect that the stress he's been under may have been caused by more than just social pressure to live up to his own father's accomplishments."
         "His job here has probably been sapping a lot of his energy from the very beginning. That would explain why the doctors said that he's had high blood pressure for years."
         li "It still sounds like it must have been very stressful for you. How do you think Akira will handle the culture shock?"
@@ -444,6 +438,7 @@ label sh_ch37:
         hyf "I suspect she will do a better job at integrating... into western culture than I could ever hope to do. I have... heard that her transferring here required some sacrifice, but I feel... fairly confident that in the long run she will not regret her decision to move here."
 
         show lilly basic_displeased
+        with chchange
 
         li "Ah... Father? About that..."
         hyf "Yes?"
@@ -517,18 +512,19 @@ label sh_ch37:
         "The tone in his voice pretty much confirms what I've been thinking."
         "But he probably feels that over the last few weeks he's already shown enough vulnerability to his children, so I doubt that prying further into his personal feelings will achieve anything other than making him uncomfortable."
         "So I drop the subject, but not before giving his hand a gentle comforting squeeze."
-
         "Not really knowing how to continue the discussion, we simply stay like this for a little while, neither of us bothered by the prolonged silence, until my attention is drawn to a static noise coming from the nearby nightstand."
 
         show lilly basic_smileclosed
  
         li "The headsets. It sounds like it's starting. Would you like one more bowl of miso soup, Father?"
+
+        show hiroyuki basic_thinking
+        with chchange
+
         hyf "That would be appreciated."
 
-        scene ev bedside_headset
-        with Dissolve(2.0)
-        show lilly basic_smileclosed at left
-        show hiroyuki serious at right
+        show ev bedside_headset
+        with Dissolve(1.0)
 
         "I refill Father's bowl and take the two headsets off the nightstand. We both put one on and I carefully speak into the microphone."
         li "Ah... is this thing on already?"
@@ -547,6 +543,7 @@ label sh_ch37:
         aki "Hey Sis! Will you be listening in too?"
 
         show lilly basic_smile
+        with chchange
  
         li "Akira! It's so nice to hear you again. How was the flight?"
 
@@ -589,10 +586,9 @@ label sh_ch37:
 
         aki "You are. You can probably speak a bit softer if that feels more comfortable."
         hyf "That might... cause problems if... someone else is... speaking at the same time."
-
         li "Father? Perhaps you should lower your voice a bit more so that speaking is less painful for you. If at any point Akira didn't hear you clearly, maybe she could softly clear her throat as a cue and I will repeat your words to her."
         aki "That's a pretty good idea, Sis. Something like this?"
-        "We hear her let out a soft 'hrmm' under her breath."
+        "We hear her let out a soft “hrmm” under her breath."
         li "That will probably suffice. Father?"
 
         show hiroyuki thinking
@@ -605,7 +601,7 @@ label sh_ch37:
 
         show akira basic_sweet_phone
 
-        aki "By the way, Kojima will be seated at the head of the table in your place despite you being 'present'. We figured the board wanted a senior in that seat instead of me, despite him only being an observer in a practical sense and me representing you directly."
+        aki "By the way, Kojima will be seated at the head of the table in your place despite you being ‘present’. We figured the board wanted a senior in that seat instead of me, despite him only being an observer in a practical sense and me representing you directly."
         hyf "I agree with... that decision."
         "While Akira's speaking, I become aware of a slight background noise appearing on the line, indicating the vicinity of other people. I faintly hear Mother's voice asking Akira if she's ready."
 
@@ -620,10 +616,10 @@ label sh_ch37:
         "I notice that some voices sound further away than others and certain people are specifically audible through either the left or the right speaker. I suppose the administrators set this up in some way or another and smile in appreciation of their effort to make the experience feel more natural to us."
 
         scene ev bedside_papers
-        with Dissolve(2.0)
         show lilly basic_displeased at left
         show hiroyuki serious at right
         show akira basic_smile_phone at phonebox
+        with Dissolve(2.0)
 
         nvl clear
         nvl show dissolve
@@ -673,22 +669,24 @@ label sh_ch37:
         hyf "That would be appreciated. Since there... are a meeting and a business dinner planned for tomorrow, it... will be okay for him to sleep in tomorrow morning. He... will probably have to be up for most of the night."
         li "I will tell him so."
 
-        play music music_twinkle fadein 4.0
-        scene bg satou_masterbedroom_ni
-        with Dissolve(2.0)
+        stop music fadeout 2.0
+        queue music music_twinkle fadein 4.0
+
+        scene bg satou_masterbed_ni
+        with Dissolve(1.0)
 
         li "He will be back here at eight o' clock tomorrow evening."
-        "After showing the system administrator out, I returned to Father's room. Judging by the sound of his voice, he's either feeling less tired than I am right now or he's simply doing a better job at hiding it."
+        "After showing the system administrator out, I returned to Father's room."
+        "Judging by the sound of his voice, he's either feeling less tired than I am right now or he's simply doing a better job at hiding it."
         hyf "That is good to hear."
 
         scene ev bedside_sit
-        with Dissolve(2.0)
-
-        show lilly basic_smileclosed at left
-        show hiroyuki serious at right
+        show lilly basic_smileclosed at twoleft
+        show hiroyuki serious at tworight
+        with Dissolve(1.0)
 
         li "He was quite relieved when I told him he could sleep in. He said that this had to have been one of the longest working days of his career."
-        hyf "Hmmm. I suppose it would be ungrateful to... point out to him that at our Japanese branch we used... to consider any working day shorter than 11 hours to be an unproductive one on general principle. "
+        hyf "Hmmm. I suppose it would be ungrateful to... point out to him that at our Japanese branch we used... to consider any working day shorter than 11 hours to be an unproductive one on general principle."
 
         show lilly basic_cheerful
 
@@ -697,7 +695,6 @@ label sh_ch37:
         show hiroyuki smileclosed
 
         hyf "Touché."
-
         "He chuckles a bit at my remark, then groans in discomfort. Laughing too much will probably be out of the question for the time being."
 
         show lilly basic_smileclosed
