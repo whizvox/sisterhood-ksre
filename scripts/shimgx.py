@@ -3,9 +3,16 @@ from pathlib import Path
 import math
 import argparse
 import sys
+import random
+import string
+import subprocess
 
 sh_path: Path = Path(".")
 ks_path: Path = Path(".")
+waifu2x_path: Path = Path(".")
+
+def random_string(length: int) -> str:
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
 
 def resolve_path(plainpath: str) -> Path:
     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
@@ -124,6 +131,25 @@ class CompositeTransformation(ImageTransformation):
                 img.paste(topimg, (x, y), topimg.convert("RGBA"))
         return img
 
+class UpscaleTransformation(ImageTransformation):
+    def __init__(self, scale: int = 2, noise: int = 2):
+        super().__init__("upscale")
+        self.scale = scale
+        self.noise = noise
+
+    def transform(self, img: Image.Image):
+        # need to save, upscale, and load the resulting image
+        input = Path("tmp/pre_upscale.png")
+        input.parent.mkdir(exist_ok=True)
+        img.save(input)
+        output = Path("tmp/post_upscale.png")
+        input_str = str(input.resolve())
+        output_str = str(output.resolve())
+        s = subprocess.check_output([str(waifu2x_path), "-i", input_str, "-o", output_str, "-s", str(self.scale), "-n", str(self.noise)])
+        print(s.decode("utf-8"))
+        with Image.open(output) as outimg:
+            return outimg.copy()
+
 def resize(targetwidth: int = -1, targetheight: int = -1):
     return ResizeTransformation(targetwidth, targetheight)
 
@@ -146,6 +172,9 @@ def convert_rgb():
 
 def check_size(minwidth: int = -1, minheight: int = -1):
     return CheckSizeTransformation(minwidth, minheight)
+
+def upscale(scale: int = 2, noise: int = 2):
+    return UpscaleTransformation(scale, noise)
 
 CHECK_1080P = CheckSizeTransformation(1920, 1080)
 
@@ -175,7 +204,7 @@ class ImageProcess:
             print(f"\tSaving image to <{outpath}>")
             img.save(outpath, **self.saveparams) # type: ignore
 
-JPEGS: list[tuple[str, str, list[ImageTransformation]]] = [
+IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 5
     ("reference/wheatfield ev/HanakoxHisao2_2.png", "event/wheatfield/wheatfield_smile.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_awkward.png", "event/wheatfield/wheatfield_awkward.jpg", [RESIZE_1080P]),
@@ -257,7 +286,13 @@ JPEGS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_08.png",     "event/hanakohistory/hanakohistory_play_tease.jpg"),
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_09.png",     "event/hanakohistory/hanakohistory_bully.jpg"),
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_10.png",     "event/hanakohistory/hanakohistory_bully_cry.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg")
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
+    # close sprites
+    ("sprites/hanako/hanako_basic_worry_sum.png", "sprites/hanako/close/hanako_basic_worry_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_cover_bashful_sum.png", "sprites/hanako/close/hanako_cover_bashful_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_cover_distant_sum.png", "sprites/hanako/close/hanako_cover_distant_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_cover_worry_sum.png", "sprites/hanako/close/hanako_cover_worry_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_emb_timid_sum.png", "sprites/hanako/close/hanako_emb_timid_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)])
 ]
 
 PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
@@ -314,26 +349,29 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
 class Arguments:
     shdir: str
     ksdir: str
+    waifu2x: str
     replace: bool
 
 
 def _update_paths(args: Arguments):
     global sh_path
     global ks_path
+    global waifu2x_path
     sh_path = Path(args.shdir)
     ks_path = Path(args.ksdir)
+    waifu2x_path = Path(args.waifu2x)
 
 
 def main(args: Arguments):
     _update_paths(args)
     images_to_process: list[ImageProcess] = []
-    for entry in JPEGS + PHOTOGRAPHS:
+    for entry in IMAGES + PHOTOGRAPHS:
         transforms = []
         if len(entry) == 3:
             transforms = entry[2]
         inpath = resolve_path(entry[0])
         outpath = Path(sh_path, entry[1]) # type: ignore
-        if entry in JPEGS and entry[1].endswith(".jpg"):
+        if entry in IMAGES and entry[1].endswith(".jpg"):
             transforms.append(CHECK_1080P)
             transforms.append(convert_rgb())
         images_to_process.append(ImageProcess(inpath, outpath, transforms, quality=90))
@@ -347,5 +385,6 @@ if __name__ == "__main__":
     )
     parser.add_argument("-s", "--shdir", required=True, help="location of Sisterhood project directory")
     parser.add_argument("-k", "--ksdir", required=True, help="location of Katawa Shoujo: Re-Engineered project directory")
+    parser.add_argument("-w", "--waifu2x", required=True, help="location of waifu2x CLI tool")
     parser.add_argument("-r", "--replace", action="store_true", default=False, help="whether to replace pre-existing image files")
     main(parser.parse_args(sys.argv[1:], namespace=Arguments()))
