@@ -288,11 +288,13 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_10.png",     "event/hanakohistory/hanakohistory_bully_cry.jpg"),
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # close sprites
-    ("sprites/hanako/hanako_basic_worry_sum.png", "sprites/hanako/close/hanako_basic_worry_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
-    ("sprites/hanako/hanako_cover_bashful_sum.png", "sprites/hanako/close/hanako_cover_bashful_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
-    ("sprites/hanako/hanako_cover_distant_sum.png", "sprites/hanako/close/hanako_cover_distant_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
-    ("sprites/hanako/hanako_cover_worry_sum.png", "sprites/hanako/close/hanako_cover_worry_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
-    ("sprites/hanako/hanako_emb_timid_sum.png", "sprites/hanako/close/hanako_emb_timid_sum_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)])
+    ("sprites/hanako/hanako_basic_bashful_sum.png", "sprites/hanako/close/hanako_basic_bashful_sum_close.png",  [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_basic_worry_sum.png",   "sprites/hanako/close/hanako_basic_worry_sum_close.png",    [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_cover_bashful_sum.png", "sprites/hanako/close/hanako_cover_bashful_sum_close.png",  [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_cover_distant_sum.png", "sprites/hanako/close/hanako_cover_distant_sum_close.png",  [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_cover_worry_sum.png",   "sprites/hanako/close/hanako_cover_worry_sum_close.png",    [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_emb_smile_sum.png",     "sprites/hanako/close/hanako_emb_smile_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_emb_timid_sum.png",     "sprites/hanako/close/hanako_emb_timid_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)])
 ]
 
 PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
