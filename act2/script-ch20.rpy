@@ -672,36 +672,45 @@ label sh_ch20:
         "I wouldn't know about that, and I doubt I'll ever find out. My sex life is the one thing I've kept my therapist out of and, if possible, I'd like it to stay that way."
         ha "E-even if she'd… object, I w-wouldn't."
 
-        # TODO Use pillowtalk CGs
+        scene ev pillowtalk_kiss:
+            align (0.5, 0.5) zoom 1.1
+            ease 5.0 zoom 1.0
+        with mediumflash
 
-        scene ev pillowtalk_placeholder_large
-
-        "Hisao laughs softly and then plants his lips on mine. At first, our kisses are gentle, and we're content to just hold on to each other tightly, but soon our kisses become more feverish, and we're rubbing our bodies against each other."
+        "Hisao laughs softly and then plants his lips on mine."
+        "At first, our kisses are gentle, and we're content to just hold on to each other tightly, but soon our kisses become more feverish, and we're rubbing our bodies against each other."
         "Suddenly, Hisao moves his hand down and playfully squeezes my butt which causes me to let out a yelp and reflexively thrust my hips forward, causing my crotch to press against his."
 
+        nvl clear
         nvl show dissolve
 
-        n "{vspace=60}Hisao chuckles at my gasp and stops our makeout session to let his forehead rest against mine and look into my eyes for several seconds before giving me a quick peck on the lips."
-        n "{vspace=60}I know what that gesture means. He's used it several times in the past to get a question across that'd be too embarassing to ask with words. 'Do you want to have sleep together?'"
-        n "{vspace=60}I also know how to give the affirmative response. If I respond with a quick peck back, the way things are now, it'll probably take less than 15 seconds for the last piece of clothing to hit the floor."
-        n "{vspace=60}Yet there's a small sense of anxiety I feel that prevents me from immediately reciprocating his invitation. Maybe it's written on my face or maybe Hisao has noticed the pause."
+        n "Hisao chuckles at my gasp and stops our makeout session to let his forehead rest against mine and look into my eyes for several seconds before giving me a quick peck on the lips."
+        n "{vspace=60}I know what that gesture means. He's used it several times in the past to get a question across that'd be too embarassing to ask with words."
+        n "{vspace=90}{space=30}{i}“Do you want to sleep together?”{/i}"
+        n "{vspace=90}I also know how to give the affirmative response. If I respond with a quick peck back, the way things are now, it'll probably take less than 15 seconds for the last piece of clothing to hit the floor."
+        n "Yet, there's a small sense of anxiety I feel that prevents me from immediately reciprocating his invitation. Maybe it's written on my face or maybe Hisao has noticed the pause."
 
-        nvl clear
+        nvl hide dissolve
+
+        show ev pillowtalk
+        with Dissolve(1.0)
 
         hi "…Hanako. Would you… like to…?"
         "I merely lower my gaze, trying to work out my feelings."
         ha "Ummm…"
         hi "It has been some time."
         "That's certainly true. Between that night in a hotel where we had intercourse for the first time since the start of our relationship and the moment when Lilly announced her departure, Hisao and I did it several times."
-        "While I tried to keep the afternoons and evenings open for Lilly during that time, I made sure to save the nights for Hisao. I learned two things about myself during that period in time."
-
-        nvl show dissolve
-
-        n "{vspace=60}The first was the fact that I actually possess a sex drive. I still prefer the lights to be either dimmed or off altogether and Hisao's always the one taking the initiative, but I've been seeking him out all those times knowing full well that we'd probably end up between the sheets together, and, while we were busy doing the deed, I found myself welcoming the experience."
-        n "{vspace=60}The second thing I learned, however, was that my sex drive is also rather closely tied to my state of mind. So while I was busy taking Lilly on all sorts of outings, Hisao and I were far from hurting on the physical intimacy front. After Lilly announced her departure however, I quickly found I was unable to get into the mood."
-        n "{vspace=60}And during Hisao's time in the hospital, well, I didn't think I'd even get so much as a kiss out of him anymore ever again. Even though we reconciled nearly two weeks ago, Hisao's been forced to take it slowly ever since, and I obviously haven't been eager to push him past his limits."
+        "While I tried to keep the afternoons and evenings open for Lilly during that time, I made sure to save the nights for Hisao."
 
         nvl clear
+        nvl show dissolve
+
+        n "I learned two things about myself during that period in time."
+        n "{vspace=30}The first was the fact that I actually possess a sex drive. I still prefer the lights to be either dimmed or off altogether and Hisao to always be the one taking the initiative. Despite that, I've been seeking him out all those times knowing full well that we'd probably end up between the sheets together, and, while we were busy doing the deed, I would find myself welcoming the experience."
+        n "{vspace=30}The second thing I learned, however, was that my sex drive is also rather closely tied to my state of mind. So while I was busy taking Lilly on all sorts of outings, Hisao and I were far from hurting on the physical intimacy front. After Lilly announced her departure, however, I quickly found I was unable to get into the mood."
+        n "And during Hisao's time in the hospital, well, I didn't think I'd even get so much as a kiss out of him anymore ever again. Even though we reconciled nearly two weeks ago, Hisao's been forced to take it slowly ever since, and I obviously haven't been eager to push him past his limits."
+
+        nvl hide dissolve
 
         ha "I… I know."
         hi "And you seemed to be in the mood just now."
@@ -716,33 +725,76 @@ label sh_ch20:
         hi "Look Hanako, I'm not gonna ask him if he feels I'm physically ready to start sleeping with you again. Because that feels to me like I'm asking him for permission to have sex with my girlfriend. And I bet he'd feel the same way."
         ha "How c-can you b-be sure?"
         hi "Because I know him. I'll have to spend months listening to his immature jokes."
+
+        show pillowtalkhisao grin
+        with charachangeev
+
         "He squeezes his eyes shut and contorts his face into a broad grin like the nurse's."
-        hi "Just let me check your heartbeat, Hisao. If you're good, I'll give you a lollipop. Or a night with your girlfriend. Which one would you like best?"
+        hi "{i}Just let me check your heartbeat, Hisao. If you're good, I'll give you a lollipop. Or a night with your girlfriend. Which one would you like best?{/i}"
+
+        show pillowtalkhanako grin
+        with charachangeev
+
         "I giggle. There's something bizarre about Hisao's impression."
         ha "I d-don't think…"
-        hi "Hisao, guess what? I'm having a sale right now. Get one night between the sheets and you'll get a second one for free. Today only. What do you think?"
-
+        hi "{i}Hisao, guess what? I'm having a sale right now. Get one night between the sheets and you'll get a second one for free. Today only. What do you think?{/i}"
         "I press my hand to my mouth to hold back a laugh."
-        ha "That's…hee hee…"
+        ha "That's… hee hee…"
+
+        hide pillowtalkhisao
+        with charachangeev
+
         hi "Yeah, when you're not the one being made fun of."
+
+        show pillowtalkhanako up
+        with charachangeev
+
         "Realizing we're getting off track, Hisao gives me another peck on the lips and genly presses my chin up so I'm looking right into his eyes again."
-        hi "Look Hanako, the nurse isn't going to stick around for the rest of my life, so in the end my own judgement will eventually be the thing I'll have to rely on."
+
+        show pillowtalkhisao concern
+        with charachangeev
+
+        hi "Look Hanako, the nurse isn't going to stick around for the rest of my life, so in the end, my own judgement will eventually be the thing I'll have to rely on."
         "That sounds a lot like what Nakamura told me earlier today… about not worrying about him too much."
         ha "Hisao… I… I've been s-startled once a-already today, b-but if you really think you'll b-be okay, I'll t-trust your judgement."
-
-        "I can see Hisao think for a moment, weighing the odds of his heart acting up. I'm not really that frightened he'll die on me if we end up doing it, but after today, I don't think I'd take even a flutter very well. Hisao seems to pick up on my thoughts and gives a short nod."
+        "I can see Hisao think for a moment, weighing the odds of his heart acting up."
+        "I'm not really that frightened he'll die on me if we end up doing it. But after today, I don't think I'd take even a flutter very well."
+        "Hisao seems to pick up on my thoughts and gives a short nod."
         hi "Okay then, Hanako. We'll put it off for now."
         "I give him a quick kiss, feeling a bit guilty about getting cold feet, but also a bit relieved."
+
+        hide pillowtalkhisao
+        with charachangeev
+
         hi "Can I stay here tonight?"
+
+        show pillowtalkhanako grin
+        with charachangeev
+
         ha "I'd really like that. We can still c-cuddle, if you like."
         hi "That sounds good."
 
-        scene ev pillowtalk_placeholder_normal
+        play sound sfx_rustling
 
-        "I get off the bed, take off my clothes and then lie down and pull the covers up to my chin. Hisao follows my example, settles down next to me, grabs me in a tight hug and whispers in my ear."
+        scene bg school_dormhanako
+        with locationchange
+
+        "I get off the bed, take off my clothes, and then lie down and pull the covers up to my chin."
+        "Hisao follows my example, settles down next to me, and grabs me in a tight hug."
+
+        scene ev pillowtalk
+        show pillowtalkblanket
+        with locationchange
+
+        "He whispers into my ear."
         hi "I really missed this."
         ha "Me too."
-        "We spend some time snuggling up against each other while exchanging sweet kisses. We keep this up for some time until Hisao takes my face in both his hands and presses a quick peck on the tip of my nose."
+        "We spend some time snuggling up against each other while exchanging sweet kisses."
+
+        show pillowtalkcaress
+        with charachangeev
+
+        "We keep this up for some time until Hisao takes my face in both his hands and presses a quick peck on the tip of my nose."
         hi "You know, I'm the one who has to take it easy, but I can still tend to you, Hanako."
         "He starts fondling my breasts and runs one finger up and down the front of my panties once."
         ha "Ah…"
@@ -750,7 +802,7 @@ label sh_ch20:
         "Ever since the first time we started our physical love life, we've done it on a strict give-and-take basis and even when we started having actual intercourse, we always tried to make certain that neither of us was missing out in any way."
         "Hisao seems to guess what I'm thinking."
         hi "Let's face facts, Hanako. You've had a trying day. Heck, you've had a trying week and tomorrow will be another day that'll probably push you way beyond your comfort zone."
-        hi "Why not let me help you unwind a bit - get everything out of your system? I'd say you've earned it. Forget about the equal exchange thing for once."
+        hi "Why not let me help you unwind a bit—get everything out of your system? I'd say you've earned it. Forget about the equal exchange thing for once."
         ha "Ummm… I-I think I'll b-be fine with c-cuddling."
         hi "You sure?"
         "I take some time to figure out how to reply."
@@ -760,13 +812,23 @@ label sh_ch20:
         hi "Like that night in the hotel?"
         ha "Yes, like that."
         hi "You want it to be a bit romantic?"
-        "Something like that. I like romance. At least, I think I do. But since silences between us are still awkward, our dates have centered around doing things that don't leave many silences such as watching a movie or playing video games."
-        "Fun, but not the most romantic way to spend time together. I'd argue that the most romantic moments we've shared are when we're together like this and we can communicate our affection for the other through cuddling, kisses and other non-verbal means."
+        "Something like that. I like romance. At least, I think I do. But since silences between us are still awkward, our dates have centered around doing things that don't leave many silences—such as watching a movie or playing video games."
+        "Fun, but not the most romantic way to spend time together. I'd argue that the most romantic moments we've shared are when we're together like this and we can communicate our affection for the other through cuddling, kisses, and other non-verbal means."
         ha "Yes."
         hi "Okay then."
+
+        hide pillowtalkcaress
+        with charachangeev
+
         "I snuggle up to him and give him one last kiss."
         ha "Good night, Hisao."
         hi "Good night, Hanako. Sleep well. We have a big day ahead of us tomorrow."
+
+        play sound sfx_lightswitch_off
+
+        show black
+        with None
+
         stop music fadeout 3.0
 
         scene black

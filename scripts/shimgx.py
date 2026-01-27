@@ -265,6 +265,15 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("~bgs/school_dormhisao.jpg", "vfx/hanako_dormhisao_blur.jpg", [CompositeTransformation([(606, 0, "~sprites/hanako/close/hanako_emb_emb_close.png")]), blur(5)]),
     ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_large.jpg", [crop(0, 0, 8031, 4518)]),
     ("reference/Whizvox_KS_CG1_Hanako_Lily_CG_WIP_13.jpg", "event/caress/caress_normal.jpg", [crop(0, 0, 8031, 4518), RESIZE_1080P]),
+    # chapter 20
+    ("reference/Event Art/Ch10+20 Pillow Talk/CG_SET_B1-01.png", "event/pillowtalk/pillowtalk_kiss.jpg", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/CG_SET_B1-02.png", "event/pillowtalk/pillowtalk.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hisao grin.png", "event/pillowtalk/pillowtalk_hisao_grin.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hisao concern.png", "event/pillowtalk/pillowtalk_hisao_concern.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako grin.png", "event/pillowtalk/pillowtalk_hanako_grin.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako up.png", "event/pillowtalk/pillowtalk_hanako_up.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/both blanket.png", "event/pillowtalk/pillowtalk_blanket.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/both caress.png", "event/pillowtalk/pillowtalk_caress.png", [RESIZE_1080P]),
     # chapter 21
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_00.png", "event/planeride/planeride_bliss_large.jpg", []),

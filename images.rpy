@@ -114,6 +114,7 @@ init 1 python:
     sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
+    sh_event("pillowtalk", ["kiss"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
     sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
@@ -155,6 +156,13 @@ init 1:
     image pillowtalkhanako down dark = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_down_dark.png"
     image pillowtalkhanako grin dark = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_grin_dark.png"
     image pillowtalkhanako up dark = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up_dark.png"
+    image ev pillowtalk = f"{sh_path}/event/pillowtalk/pillowtalk.png"
+    image pillowtalkhisao concern = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_concern.png"
+    image pillowtalkhisao grin = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_grin.png"
+    image pillowtalkhanako grin = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_grin.png"
+    image pillowtalkhanako up = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up.png"
+    image pillowtalkblanket = f"{sh_path}/event/pillowtalk/pillowtalk_blanket.png"
+    image pillowtalkcaress = f"{sh_path}/event/pillowtalk/pillowtalk_caress.png"
 
     image ev rainyroad:
         block:
