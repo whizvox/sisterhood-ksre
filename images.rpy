@@ -81,7 +81,7 @@ init 1 python:
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
-    sh_sprites("hanako", ["bashful", "distant", "normal", "smile", "worry"], poses=["basic", "cover"], outfits=["sum"])
+    sh_sprites("hanako", ["bashful", "distant", "normal", "smile", "worry"], poses=["basic", "cover"], outfits=["sum", "sum_clip"])
     sh_sprites("hanako", ["shock", "strain", "worry"], poses=["def", "defarms"], outfits=["sum"])
     sh_sprites("hanako", ["blushtimid", "downsad", "downsmile", "downtimid", "emb", "sad", "smile", "timid"], poses=["emb"], outfits=["sum"])
     sh_sprites("hanagown", ["worry_blush"])
@@ -90,7 +90,7 @@ init 1 python:
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
-    sh_sprites("lilly", ["cheerful", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "satisfied", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
+    sh_sprites("lilly", ["cheerful", "concerned", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "satisfied", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
@@ -192,6 +192,11 @@ init 1:
             f"{sh_path}/vfx/darkness/darkness_2.jpg" with dissolve
             0.5
             repeat
+    image winebottles = Composite(
+        (1920, 1080),
+        (0, 0), "vfx/boxstrip.png",
+        (0, 0), f"{sh_path}/vfx/winebottles.png"    
+    )
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
@@ -274,6 +279,7 @@ init 1:
     {b}Background Music{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     “Waltz in A Minor” by CalvinClavier on Pixabay
+    “Concord (Cello arr.)” by Jiro Yoshioka
     \n\n
     {b}End Credits Song{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}

@@ -8,9 +8,9 @@ label sh_ch24:
 
         play music music_dreamy fadein 4.0
 
-        show hanako basic_smile:
+        show hanako basic_smile_sum:
             xanchor 0.5 xpos 0.18
-        show lilly cane_smileclosed:
+        show lilly cane_smileclosed_sum:
             xanchor 0.5 xpos 0.4
         show akira basic_laugh_cas:
             xanchor 0.5 xpos 0.6
@@ -19,7 +19,21 @@ label sh_ch24:
         with charaenter
 
         aki "I think it's only fair for me to take my half of the spoils."
-        "Akira reaches into the bag, takes two bottles of wine out of it and hands them over to Lilly."
+
+        show winebottles:
+            center
+            ypos 1.3 alpha 0.0
+            ease 1.0 ypos 1.0 alpha 1.0
+        with Pause(1.0)
+
+        "Akira reaches into the bag, takes two bottles of wine out of it, and hands them over to Lilly."
+
+        show winebottles:
+            ease 1.0 ypos 1.3 alpha 0.0
+        with Pause(1.0)
+
+        hide winebottles
+        with None
 
         show akira basic_cheerful_cas
         with chchange
@@ -38,11 +52,16 @@ label sh_ch24:
         show karla basic_smile
         with chchange
 
-        aki "Naw, I'd rather just get some extra rest. Don't want to stop by the apartment and put the suit on either."
+        aki "Naw, I'd rather just get some extra rest. Don't want to stop by the apartment and put the suit on, either."
+
+        show lilly:
+            xpos 0.46
+        with { "master": charamove }
+
         "Lilly walks over to Akira and places her hand on her sister's shoulder."
 
         show akira basic_smile_cas
-        show lilly cane_smile
+        show lilly cane_smile_sum
         with chchange
 
         li "Thanks for the fun evening, Akira. And remember not to drink those bottles of yours alone. You know what they say about those kinds of people."
@@ -52,7 +71,7 @@ label sh_ch24:
 
         aki "Maybe I should return to that pub and pick up one of the guys who seemed so extremely interested in us."
 
-        show lilly cane_concerned
+        show lilly cane_concerned_sum
         with chchange
 
         "Lilly's smile drops."
@@ -63,7 +82,7 @@ label sh_ch24:
 
         aki "Tell you what... You can share it with me if you can find it in your schedule to drop by my place after I'm off-duty."
 
-        show lilly cane_weaksmile
+        show lilly cane_weaksmile_sum
         with chchange
 
         li "I will remember that."
@@ -72,16 +91,17 @@ label sh_ch24:
         hide karla
         with charaexit
 
-        "Akira gives us a small wave and then walks off, followed by her mother. Lilly turns to us, still holding her two bottles of wine."
+        "Akira gives us a small wave and then walks off, followed by her mother."
+        "Lilly turns to us, still holding her two bottles of wine."
 
-        show lilly cane_smile
+        show lilly cane_smile_sum
         with chchange
 
         li "We're going to need a corkscrew and some glasses. The staff have already gone home, so we'll have to search the kitchen ourselves. If you come across any snacks you like, feel free to take them as well."
 
         scene bg satou_kitchen_ni
-        show hanako basic_smile at tworight
-        show lilly cane_smileclosed at twoleft
+        show hanako basic_smile_sum at tworight
+        show lilly cane_smileclosed_sum at twoleft
         with chchange
 
         "Hanako and I guide Lilly to the mansion's large kitchen, and the two of us start searching the various cupboards and drawers."
@@ -89,44 +109,56 @@ label sh_ch24:
         hi "Lilly, I found some crackers and a box of olives. Can we take them?"
         li "Of course, Hisao. Is there any cheese in the refrigerator?"
         hi "Yeah, a fairly big block. Not sure what kind it is, though."
+
+        show lilly cane_listen_sum_close
+        with characlose
+
         "Lilly walks over to me and carefully sniffs the cheese."
 
-        show lilly cane_smile
+        show lilly cane_smile_sum_close
         with chchange
 
         li "Have you ever had Cheddar before, Hisao? It's very popular here, but, like most kinds of cheese, considerably less so in Japan. "
         hi "I don't think so. It can't hurt to give it a try, though."
         li "Hanako, could you help me cut it into smaller pieces?"
-        ha "Sure."
-        "As the girls prepare to start cutting the cheese, a thought suddenly springs up in the back of my mind."
-        hi "Lilly, before we left the pub, your mother spoke of a picnic."
-        li "Yes, are you up for one? Supposedly the area she's picked is quite interesting."
-        hi "Is that okay? You said you'd be spending some time alone with your parents without us around."
 
-        show lilly cane_smileclosed
+        show hanako basic_bashful_sum
         with chchange
 
+        ha "Sure."
+
+        show lilly cane_smileclosed_sum at center
+        with charadistant
+
+        "As the girls prepare to start cutting the cheese, a thought suddenly springs up in the back of my mind."
+        hi "Lilly, before we left the pub, your mother spoke of a picnic."
+
+        show lilly cane_smile_sum
+        with chchange
+
+        li "Yes, are you up for one? Supposedly the area she's picked is quite interesting."
+        hi "Is that okay? You said you'd be spending some time alone with your parents without us around."
         li "Mother's still curious about both of you. I don't think she'll object."
         hi "Very well, then."
         li "There should be a set of notes nearby somewhere. Could you get me one and a pen, please?"
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         "Hanako puts a piece of paper and a pen in Lilly's hand, and I can see her slowly and carefully writing a small note that she then puts on the kitchen sink unit. It says: “Picnic for four. Please change shopping list accordingly.”"
         "She then turns to Hanako."
 
-        show lilly cane_cheerful
+        show lilly cane_cheerful_sum
         with chchange
 
         li "It is usually Allison handling the food for a picnic, but it might be fun for us to prepare it instead tomorrow morning. Will you help me?"
 
-        show hanako basic_bashful
+        show hanako emb_smile_sum
         with chchange
 
         ha "Sure. I'd love to."
 
-        show lilly cane_cheerful
+        show lilly cane_satisfied_sum
         with chchange
 
         li "Wonderful. I'm looking forward to it. That's for tomorrow, though. Tonight, let's hang back and relax."
@@ -134,8 +166,8 @@ label sh_ch24:
         scene bg satou_livingroom_ni
         with locationchange
 
-        show lilly cane_cheerful at twoleft
-        show hanako emb_emb_clip at tworight
+        show lilly cane_cheerful_sum at twoleft
+        show hanako emb_emb_sum_clip at tworight
         with charaenter
 
         "Taking the bottles, glasses, and snacks with us, we make our way to the mansion's spacious living room."
@@ -147,24 +179,24 @@ label sh_ch24:
         li "I think it'd be most appropriate if the two of you take the love seat."
         ha "Okay."
 
-        show lilly basic_smileclosed at twoleft_sittingpos
+        show lilly basic_smileclosed_sum at twoleft_sittingpos
         show hanako at tworight_sittingpos
         with chchange
 
         "I take one of the glasses off the table and sit down on the single cushion couch. Following my example, Hanako sits down next to me. Lilly takes a seat on the larger couch on the other side of the table."
         "Waiting a moment to make certain we've gotten comfortable, she smiles at us and raises her glass."
 
-        show lilly basic_satisfied
+        show lilly basic_satisfied_sum
         with chchange
 
         li "A second toast this evening, this time for my wonderful friend Hanako, who has, last week, succesfully completed her first aid training and is now a qualified first responder."
         li "May she never need the skills she was taught there, and may it be known that I admire and respect her very much."
 
-        show hanako emb_downsmile_clip
+        show hanako emb_downsmile_sum_clip
         with chchange
 
         hi "Cheers!"
-        ha "C-Cheers?"
+        ha "C-cheers?"
         "Hanako blushes lightly, not sure how to deal with Lilly's praise, obviously not finding it completely unpleasant, but not completely comfortable either."
         "As if attempting to look for distraction, she puts her glass to her lips and starts sipping at it."
         "Looking at Lilly, I notice she gives a soft nod."
@@ -174,8 +206,8 @@ label sh_ch24:
         li "Well, bottoms up."
 
         scene bg satou_livingroom_ni
-        show hanako emb_smile at tworight_sittingpos
-        show lilly basic_giggle at twoleft_sittingpos
+        show hanako emb_smile_sum_clip at tworight_sittingpos
+        show lilly basic_giggle_sum at twoleft_sittingpos
         with shorttimeskip
 
         play music music_ease fadein 4.0
@@ -192,7 +224,7 @@ label sh_ch24:
 
         hi "Heh, so even Akira screws up sometimes. She doesn't seem like someone you'd usually have a lot of worry over."
 
-        show lilly basic_smile
+        show lilly basic_smile_sum
         with chchange
 
         li "Those occurences are indeed very rare. She's more responsible than she seems at first."
@@ -200,8 +232,8 @@ label sh_ch24:
 
         stop music fadeout 4.0
 
-        show lilly basic_sad
-        show hanako basic_normal
+        show lilly basic_sad_sum
+        show hanako basic_normal_sum_clip
         with chchange
 
         "Lilly's smile fades just a little. For a moment her thoughts seem elsewhere. Then she takes a sip from her glass and sighs softly."
@@ -210,7 +242,7 @@ label sh_ch24:
 
         play ambient sfx_ticktock volume 0.6
 
-        show lilly basic_reminisce
+        show lilly basic_reminisce_sum
         with chchange
 
         li "You are aware that Akira was in a relationship until recently, are you not?"
@@ -218,7 +250,7 @@ label sh_ch24:
         li "That... trip never took place. We were the last ones to use the summerhouse before it was sold."
         hi "When we first learned about your parents' summoning she mentioned having broken up with him."
 
-        show lilly basic_sad
+        show lilly basic_sad_sum
         with chchange
 
         li "She intended to spend the weekend with him there and tell him about her new job at the end of it. But it turned out he already knew about it."
@@ -227,17 +259,17 @@ label sh_ch24:
         li "He heard the news about Akira's promotion through the grapevine, so to speak, before we even got back. When she invited him to spend the weekend with her, he confronted her with the rumors he heard."
         hi "I suppose he wasn't very happy about it."
 
-        show lilly basic_reminisce
+        show lilly basic_reminisce_sum
         with chchange
 
         li "I don't know the details, but I do know that they got into a fight, and she broke up with him then and there. They've been together for quite some time, and Akira seemed happy with their relationship."
 
-        show lilly basic_sad
+        show lilly basic_sad_sum
         with chchange
 
         li "She doesn't show it, but I'm positive she's still hurting over it. She came back to Japan knowing she was going to break up her relationship, but this was not the way she wanted things to end."
 
-        show lilly basic_displeased
+        show lilly basic_displeased_sum
         with chchange
 
         hi "That kind of explains your reaction to her remark."
@@ -246,14 +278,14 @@ label sh_ch24:
         stop ambient fadeout 4.0
         play music music_ease fadein 4.0
 
-        show lilly basic_planned
-        show hanako basic_bashful_clip
+        show lilly basic_planned_sum
+        show hanako basic_bashful_sum_clip
         with chchange
 
         li "I certainly hope not."
         hi "Why not?"
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "Perhaps I'm jumping to conclusions, but I do not think any person who wolf-whistles a lady would be my type."
@@ -263,7 +295,7 @@ label sh_ch24:
         "Perhaps she has some very particular tastes?"
         hi "If you don't mind me asking a bold question... What kind of person would be your type, Lilly?"
 
-        show lilly basic_planned
+        show lilly basic_planned_sum
         with chchange
 
         "Lilly sends me a very cheeky grin in return."
@@ -275,7 +307,7 @@ label sh_ch24:
         "I can tell that Lilly's merely being a tease, but I nevertheless feel a sharp stare coming from my right. Looks like Lilly's remark is pushing me into very dangerous territory."
         hi "Looks like a guy can't even be curious about his friends anymore without being accused of considering infidelity. Forget what I just asked, okay?"
 
-        show lilly basic_giggle
+        show lilly basic_giggle_sum
         with chchange
 
         li "It's okay, Hisao. It wasn't an unfair question. But not an easy one either."
@@ -285,7 +317,7 @@ label sh_ch24:
 
         "As Lilly takes some time to think up an answer, I give Hanako a quick reassuring kiss on the cheek although it doesn't seem to completely get rid of her suspicious frown."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         li "I think I would be most attracted to the type of person who has a bit of a gentlemanly streak and is kind and honest."
@@ -293,13 +325,13 @@ label sh_ch24:
         "So far no surprises there."
         li "He should not be adverse to me mothering him a bit at times, but he should display initiatives from time to time as well. He should be able to get along well with my sister and my best friends."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "It's fine if he doesn't share my musical tastes, although I'm not sure if I'd be able to be around someone who'd be playing... well... jackhammer music all the time."
         "That's a pretty interesting way to describe music with a loud and heavy bass and percussion. I can get why Lilly, who mostly uses sounds around her as orientation, dislikes overbearing music."
 
-        show lilly basic_smile
+        show lilly basic_smile_sum
         show hanako basic_worry
         with chchange
 
@@ -309,33 +341,33 @@ label sh_ch24:
         "What?"
         hi "I'm sorry, did you just say ‘look’?"
 
-        show lilly basic_pout
+        show lilly basic_pout_sum
         with chchange
 
         "Lilly sniffs curtly as if admonishing me."
         li "Of course. Just because I cannot see doesn't mean I don't have my own preferences."
         hi "And what would those preferences be? I imagine something like hair color is a foreign concept to you."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         li "I think it's very hard to explain to people who do not use their sense of touch to determine appearances. What I ‘see’ may be completely different from the way you see things or people."
         li "I think the term ‘I'll know it when I see it’ applies here. Somewhat. I have a general idea of what most people I regularly interact with look like..."
 
-        show hanako emb_downsmile_clip
+        show hanako emb_downsmile_sum_clip
         with chchange
 
         "Does that include Hanako? I quickly look at her."
         "Hanako seems to understand what I'm thinking for she nods in affirmation."
         ha "A little while back."
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_sum
         with chchange
 
         "Lilly's dazzling smile confirms Hanako's words. I’ve never heard about that before. I'm impressed. That would make Lilly the second person Hanako has allowed to look upon her face voluntarily."
         "No wonder they have been so close lately. This is probably about the biggest gesture of trust Hanako could give someone."
 
-        show lilly basic_smile
+        show lilly basic_smile_sum
         with chchange
 
         li "Hisao..."
@@ -366,14 +398,14 @@ label sh_ch24:
         play ambient sfx_ticktock fadein 2.0
 
         hide hanako
-        show lilly basic_smileclosed_close at center
+        show lilly basic_smileclosed_sum_close at center
         with charaenter
 
         "I walk around the table and take Lilly's right hand which I then guide to my face before letting go."
         "None of us says a word as Lilly's hand moves over and around my features, from my chin, to my cheeks, to everywhere else including my hair."
         "I expected this to feel a lot more disquieting than it does. I suppose that's because the action is entirely a matter of practicality, being functionally no different to simply looking at someone's face."
 
-        show lilly basic_planned_close
+        show lilly basic_planned_sum_close
         with chchange
 
         "However, I notice that as she runs her fingers back and forth, a mischievous smile starts appearing on her face as if she's enjoying some private joke."
@@ -382,18 +414,18 @@ label sh_ch24:
         play music music_ease fadein 4.0
 
         show hanako defarms_worry at tworight
-        show lilly basic_planned at twoleft
+        show lilly basic_planned_sum at twoleft
         with charaenter
 
         "Before I can figure out what it might be, I suddenly feel my arm being grabbed and pulled back just far enough for my face to retreat beyond the reach of Lilly's fingers."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         "As I look at Hanako, I notice that slightly disapproving pout is still on her face. I'm not sure how long this process usually takes, but from Lilly's slightly sheepish look, I'm almost beginning to wonder if she was..."
         "...can you accuse a blind person of staring?"
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_sum
         with chchange
 
         li "Thank you, Hisao."
@@ -401,7 +433,7 @@ label sh_ch24:
         li "I have."
         "I prepare to get back to the couch we were sitting on, but Hanako isn't moving yet. She's still waiting as if expecting Lilly to say more."
 
-        show lilly basic_giggle
+        show lilly basic_giggle_sum
         with chchange
 
         "Eventually, Lilly smiles playfully."
@@ -417,7 +449,7 @@ label sh_ch24:
         "I'm not sure what that's supposed to mean, but Hanako's eyes grow wide in horror, and she lets out a gasp, then immediately wraps both arms around me and pulls me back a little further before giving me a pleading look."
         hi "Hey, don't look at me like that. What did you say about me?"
 
-        show lilly behind_cheerful
+        show lilly behind_cheerful_sum
         with chchange
 
         "Instead of answering, Lilly merely teasingly shakes her head."
@@ -432,7 +464,7 @@ label sh_ch24:
         "Eager to change course and steer out of this minefield, I latch onto the first safe subject that springs to mind."
         hi "You mentioned musical tastes, Lilly. I suppose that excludes anything with a prominent bass. I guess your tastes are more traditional? Like ballroom music?"
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         show hanako basic_normal_close
         with chchange
 
@@ -442,22 +474,22 @@ label sh_ch24:
         li "My mother used to play classical music, and me listening to her practice was one of the highlights of my day."
         hi "What does your mother play? Would it be bagpipes or is that too cliché?"
 
-        show lilly basic_pout
-        show hanako basic_bashful_clip_close
+        show lilly basic_pout_sum
+        show hanako basic_bashful_sum_clip_close
         with chchange
 
         "Lilly makes a face."
         li "Not every Scotsman plays bagpipes, Hisao. And they're not very useful for anything other than Scottish folk music."
         hi "Then what instrument does she play?"
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         li "My mother's rather skilled at playing the cello. Perhaps I can convince her to give us a small performance this week. Assuming that she's kept up with her practice."
         "Cello, huh? I suddenly remember something I noticed when I was first shown this room."
         hi "I think she has. There's a black case standing in this very room. I bet it contains her instrument."
 
-        show lilly basic_satisfied
+        show lilly basic_satisfied_sum
         with chchange
 
         "Lilly's face lights up upon hearing this."
@@ -465,7 +497,7 @@ label sh_ch24:
         hi "Yeah, there's a large case standing in one of the corners. I'm pretty sure there's a cello in there."
         li "Hmmm, would you mind bringing it over here for a moment? Please be very careful with it."
 
-        show lilly basic_cheerful at sittingpos
+        show lilly basic_cheerful_sum at sittingpos
         hide hanako
         with charachangealways
 
@@ -474,13 +506,13 @@ label sh_ch24:
         "The way she's tuning this thing gives me the impression this is far from the first time she's handled an instrument like this."
         hi "From the looks of it this isn't the first time you've handled a cello."
 
-        show lilly basic_satisfied
+        show lilly basic_satisfied_sum
         with chchange
 
         li "It is not. I had music lessons in middle school, and we were allowed to pick an instrument to familiarize ourselves with. I chose the cello, hoping my mother had passed her musical instincts onto me."
         hi "And did she?"
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "I don't think she did. I know how to play, but I'm not especially good at it. I haven't touched a cello after I graduated middle school."
@@ -488,13 +520,13 @@ label sh_ch24:
         li "A few. It takes a bit of time to learn to play a song completely by ear and from one's memory, especially if you weren't familiar with it before."
         hi "Care to give us a demonstration?"
 
-        show lilly basic_surprised
+        show lilly basic_surprised_sum
         with chchange
 
         li "Now?"
         hi "If it's not a problem."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         "Lilly thinks for a moment before taking her glass and taking another sip."
@@ -530,14 +562,14 @@ label sh_ch24:
         "Suddenly, the song stops, and Lilly lets out a soft, but frustrated sigh."
 
         scene bg satou_livingroom_ni
-        show lilly basic_displeased at twoleft_sittingpos
+        show lilly basic_displeased_sum at twoleft_sittingpos
         with openeye
 
         "I curiously open my eyes and see a frown of concentration on Lilly's face."
 
         play music music_lilly
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         "After a few moments however, her face relaxes again and she picks up where she left off."
