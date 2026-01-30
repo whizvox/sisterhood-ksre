@@ -180,8 +180,8 @@ label sh_ch24:
         ha "Okay."
 
         show lilly basic_smileclosed_sum at twoleft_sittingpos
-        show hanako at tworight_sittingpos
-        with chchange
+        show hanako emb_emb_sum_clip_close
+        with charachangealways
 
         "I take one of the glasses off the table and sit down on the single cushion couch. Following my example, Hanako sits down next to me. Lilly takes a seat on the larger couch on the other side of the table."
         "Waiting a moment to make certain we've gotten comfortable, she smiles at us and raises her glass."
@@ -192,11 +192,11 @@ label sh_ch24:
         li "A second toast this evening, this time for my wonderful friend Hanako, who has, last week, succesfully completed her first aid training and is now a qualified first responder."
         li "May she never need the skills she was taught there, and may it be known that I admire and respect her very much."
 
-        show hanako emb_downsmile_sum_clip
-        with chchange
+        show hanako emb_smile_sum_clip_close
+        with { "master": chchange }
 
-        hi "Cheers!"
-        ha "C-cheers?"
+        call screen doublespeak(hi, _("Cheers!"), ha, _("C-cheers?"))
+
         "Hanako blushes lightly, not sure how to deal with Lilly's praise, obviously not finding it completely unpleasant, but not completely comfortable either."
         "As if attempting to look for distraction, she puts her glass to her lips and starts sipping at it."
         "Looking at Lilly, I notice she gives a soft nod."
@@ -206,8 +206,8 @@ label sh_ch24:
         li "Well, bottoms up."
 
         scene bg satou_livingroom_ni
-        show hanako emb_smile_sum_clip at tworight_sittingpos
         show lilly basic_giggle_sum at twoleft_sittingpos
+        show hanako emb_smile_sum_clip_close at tworight
         with shorttimeskip
 
         play music music_ease fadein 4.0
@@ -218,7 +218,7 @@ label sh_ch24:
         n "As Lilly finishes a story about a funny incident involving Akira, I can hear Hanako giggle and suddenly feel her hand ruffling my hair. That's probably the fourth time she's done this over the last fifteen minutes."
         n "{vspace=90}We've been hanging out here in the living room for well over an hour, and we opened up the second bottle of wine a little while ago. To say that the atmosphere is cheerful is quickly becoming an understatement. I don't think anyone's actually completely drunk yet, but I'm sure we've reached the point where each of us is getting rather tipsy."
         n "The fact that the wine Akira obtained for us is really tasty, that the atmosphere between us is completely relaxed, and that we don't have to be secretive about having a few glasses this time around probably all contributed to that."
-        n "I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticibly less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy. I'm starting to notice that aspect of her returning as the evening goes on."
+        n "{vspace=60}I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticibly less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy. I'm starting to notice that aspect of her returning as the evening goes on."
 
         nvl hide dissolve
 
@@ -233,7 +233,7 @@ label sh_ch24:
         stop music fadeout 4.0
 
         show lilly basic_sad_sum
-        show hanako basic_normal_sum_clip
+        show hanako basic_normal_sum_clip_close
         with chchange
 
         "Lilly's smile fades just a little. For a moment her thoughts seem elsewhere. Then she takes a sip from her glass and sighs softly."
@@ -279,7 +279,7 @@ label sh_ch24:
         play music music_ease fadein 4.0
 
         show lilly basic_planned_sum
-        show hanako basic_bashful_sum_clip
+        show hanako basic_bashful_sum_clip_close
         with chchange
 
         li "I certainly hope not."
@@ -300,7 +300,9 @@ label sh_ch24:
 
         "Lilly sends me a very cheeky grin in return."
 
-        show hanako defarms_worry
+        # TODO should most likely use a def pose with a clip
+        #show hanako defarms_worry_sum_clip_close
+        show hanako emb_timid_sum_clip_close
         with chchange
 
         li "That is a bold question, Hisao. May I ask why you are so interested? You already have Hanako, after all."
@@ -310,7 +312,7 @@ label sh_ch24:
         show lilly basic_giggle_sum
         with chchange
 
-        li "It's okay, Hisao. It wasn't an unfair question. But not an easy one either."
+        li "It's okay, Hisao. It wasn't an unfair question. But not an easy one, either."
 
         show hanako emb_timid
         with chchange
@@ -548,8 +550,7 @@ label sh_ch24:
 
         n "I can hear ruffling sounds coming from Lilly's direction, followed by a squeaking sound that's probably her adjusting the screw securing the endpin, followed by some more ruffling and finally silence."
 
-        # TODO replace this with cello (rough) part of Concord
-        play music music_lilly
+        play music music_concord_cello_rough
 
         n "Then I hear a few strings being plucked and the beginning of a soft melody. It sounds slow and uncertain at first, but gradually picks up."
         n "{vspace=60}As I listen to the song, I can tell Lilly's earlier appraisal of her own skills was not inaccurate. She's handling the instrument itself well enough, which is something I'm positive I wouldn't be able to do, and she tuned the instrument correctly, but the pace of the song is a bit unsteady, and I can clearly make out the occasional wrong note in there."
@@ -567,7 +568,7 @@ label sh_ch24:
 
         "I curiously open my eyes and see a frown of concentration on Lilly's face."
 
-        play music music_lilly
+        play music music_concord_cello_good
 
         show lilly basic_smileclosed_sum
         with chchange

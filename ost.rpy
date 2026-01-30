@@ -45,6 +45,9 @@ init:
 
     define music_waltz = f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"
     define music_bloom = f"{sh_path}/bgm/Bloom.ogg"
+    define music_concord_cello_rough = f"{sh_path}/bgm/Concord_Cello_Rough.ogg"
+    define music_concord_cello_good = f"{sh_path}/bgm/Concord_Cello_Good.ogg"
+    define music_concord_cello_pro = f"{sh_path}/bgm/Concord_Cello_Pro.ogg"
 
     # SPECIAL SOUND EFFECTS
 
