@@ -301,15 +301,21 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("sprites/hanako/hanako_basic_bashful_sum_clip.png",    "sprites/hanako/close/hanako_basic_bashful_sum_clip_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_basic_normal_sum_clip.png",     "sprites/hanako/close/hanako_basic_normal_sum_clip_close.png",  [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_basic_worry_sum.png",           "sprites/hanako/close/hanako_basic_worry_sum_close.png",        [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_basic_worry_sum_clip.png",      "sprites/hanako/close/hanako_basic_worry_sum_clip_close.png",   [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_cover_bashful_sum.png",         "sprites/hanako/close/hanako_cover_bashful_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_cover_distant_sum.png",         "sprites/hanako/close/hanako_cover_distant_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_cover_worry_sum.png",           "sprites/hanako/close/hanako_cover_worry_sum_close.png",        [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_emb_downsmile_sum_clip.png",    "sprites/hanako/close/hanako_emb_downsmile_sum_clip_close.png", [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_emb_emb_sum_clip.png",          "sprites/hanako/close/hanako_emb_emb_sum_clip_close.png",       [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
+    ("sprites/hanako/hanako_emb_sad_sum_clip.png",          "sprites/hanako/close/hanako_emb_sad_sum_clip_close.png",       [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_emb_smile_sum.png",             "sprites/hanako/close/hanako_emb_smile_sum_close.png",          [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_emb_smile_sum_clip.png",        "sprites/hanako/close/hanako_emb_smile_sum_clip_close.png",     [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_emb_timid_sum.png",             "sprites/hanako/close/hanako_emb_timid_sum_close.png",          [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_emb_timid_sum_clip.png",        "sprites/hanako/close/hanako_emb_timid_sum_clip_close.png",     [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ## lilly
+    ("sprites/lilly/lilly_basic_listen_sum.png",    "sprites/lilly/close/lilly_basic_listen_sum_close.png",     [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_basic_planned_sum.png",   "sprites/lilly/close/lilly_basic_planned_sum_close.png",    [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_basic_surprised_sum.png", "sprites/lilly/close/lilly_basic_surprised_sum_close.png",  [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
     ("sprites/lilly/lilly_cane_listen_sum.png",     "sprites/lilly/close/lilly_cane_listen_sum_close.png",      [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
     ("sprites/lilly/lilly_cane_smile_sum.png",      "sprites/lilly/close/lilly_cane_smile_sum_close.png",       [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)])
 ]
