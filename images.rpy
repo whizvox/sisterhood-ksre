@@ -83,14 +83,14 @@ init 1 python:
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanako", ["bashful", "distant", "normal", "smile", "worry"], poses=["basic", "cover"], outfits=["sum", "sum_clip"])
     sh_sprites("hanako", ["shock", "strain", "worry"], poses=["def", "defarms"], outfits=["sum"])
-    sh_sprites("hanako", ["blushtimid", "downsad", "downsmile", "downtimid", "emb", "sad", "smile", "timid"], poses=["emb"], outfits=["sum", "sum_clip"])
+    sh_sprites("hanako", ["blushing", "blushtimid", "downsad", "downsmile", "downtimid", "emb", "sad", "smile", "timid"], poses=["emb"], outfits=["sum", "sum_clip"])
     sh_sprites("hanagown", ["worry_blush"])
     sh_sprites("hisao", ["annoy", "bashful", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
     sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
-    sh_sprites("lilly", ["cheerful", "concerned", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "sad", "satisfied", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
+    sh_sprites("lilly", ["cheerful", "concerned", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
@@ -116,6 +116,7 @@ init 1 python:
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
     sh_event("pillowtalk", ["kiss"])
     sh_event("celloandwine", ["peek", "block", "block_smile", "lap_forward", "lap_rest", "lap_pause", "lap_embrace", "lap_applause", "lap_victory", "lap_kiss"])
+    sh_event("tipsyfun", ["collapse_morning"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
     sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
@@ -124,7 +125,7 @@ init 1 python:
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_ni", "guest2"])
+    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
@@ -196,8 +197,16 @@ init 1:
     image winebottles = Composite(
         (1920, 1080),
         (0, 0), "vfx/boxstrip.png",
-        (0, 0), f"{sh_path}/vfx/winebottles.png"    
+        (0, 0), f"{sh_path}/vfx/winebottles.png"
     )
+    image tandembike empty = f"{sh_path}/vfx/tandembike/empty.png"
+    image tandembike hanako shock = f"{sh_path}/vfx/tandembike/hanako.png"
+    image tandembike hanako worry = Composite(
+        (1515, 934),
+        (0, 0), f"{sh_path}/vfx/tandembike/hanako.png",
+        (0, 0), f"{sh_path}/vfx/tandembike/hanako_worry.png"
+    )
+    image tandembike karlalilly = f"{sh_path}/vfx/tandembike/karlalilly.png"
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"

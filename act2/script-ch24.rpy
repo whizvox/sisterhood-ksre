@@ -839,7 +839,6 @@ label sh_ch24:
         "I raise my arms, hoping Hanako gets the message, and sure enough a few seconds later my shirt is pulled over my head and dropped at my feet."
         "We resume our makeout session, and with more luck than skill I manage to get Hanako's bra off in a single try. We edge towards the bed step by step without breaking our embrace or our kisses and somehow manage to kick off our shoes on the way."
         "Keeping one arm around Hanako's waist, I start fondling her left breast with the other hand, drawing a nasal moan out of her in the middle of our kissing."
-
         "When we finally reach the bed, there's only one thought on my mind. I want her. The desire she's awakened in me isn't going to be satisfied with mere kisses anymore."
 
         scene ev tipsyfun_foolingaround_pantsdown
@@ -853,7 +852,6 @@ label sh_ch24:
         "Whenever we satisfied each other in the past, we made certain to build things up slowly and carefully, making sure to keep things tender and gradually explore more intimate areas as we proceeded."
         "This is nothing like those other times. We're feverishly moving our hands across each other's body, almost at random as if we're possessed by an unbearable itch yet we can't find the correct spot to scratch."
         "The wine we've had this evening is probably at least partially responsible, but I don't think that's all there is to it anymore."
-
         "Is it the fact we were stimulating each other earlier while being forced to repress every signal our body was trying to let out? Or is it the fact we haven't done it in weeks and we're both dying to change that?"
         "Taking a moment to finger her, I can instantly tell that she's ready. We were probably both ready the moment we dashed into this bedroom. I lift one of my legs, trying to get my pants off without taking my hands off Hanako's body."
 
@@ -861,12 +859,10 @@ label sh_ch24:
 
         "However the next moment, my leg gets stuck, I lose my balance and I nearly fall backwards. The only reason we remain standing is because Hanako manages to brace herself in time."
         "That was close. I could have hit my head against the nearby dresser and broken my neck. What a pathetic way to go that'd be. We'd better do this another way. I turn to the bed and pull back the sheets."
-
         hi "Hanako...ah... let's get on the bed."
         "A feverish kiss, followed by a gasp."
         ha "Y-Yes."
         "Then one more."
-
         "Hanako gets onto our bed, crawls a little farther onto it and then starts wiggling her legs in an attempt to get rid of her pants. I nearly feel my heart stop at what I see before me."
         "The sight of a thoroughly exposed Hanako, on all fours and completely naked safe for her socks and the pants and panties around her ankles, is a temptation I can't resist. I get on my knees on the bed behind her and carefully, yet firmly take hold of her hips."
         hi "Hanako...c-can I...?"
@@ -876,10 +872,8 @@ label sh_ch24:
 
         ha "Hhhhh!"
         hi "Eaagh!"
-
         "Hanako gasps in surprise as I enter her, and the intense pleasure I feel as her insides envelop me forces a loud moan out of me. It's soft and warm inside of her and from this position I can penetrate her slightly deeper than usual."
         "I remember to check on Hanako, but notice she shows no signs of discomfort. I feel a deep sense of satisfaction as I thrust my hips back and forth, as if I've been staring at a wrapped present for days on end and finally get to open it."
-
         "The pleasure that shoots through my lower body is nearly enough to make my knees give out, and I hold onto Hanako's hips for added support. I notice the sounds that Hanako's making are a bit louder and more unrestrained than usual."
 
         scene ev tipsyfun_doggy_masturbate
@@ -892,26 +886,24 @@ label sh_ch24:
         scene ev tipsyfun_doggy_end
 
         "She doesn't react immediately, and for a second I believe she's not going for it. Then she furiously starts rubbing and I firmly grab hold of her buttocks with both hands and start thrusting again."
-
         "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips..."
         "The sound of our heavy breathing, even the sound of my body slapping against hers (which we usually find embarassing) all combine to push us towards our rapidly approaching climax."
         "Shaking the last few shreds of embarassment from my mind, I give in to lust and give us the final push towards the inevitable."
 
-        scene ev tipsyfun_bellytoback_climax
+        show ev tipsyfun_collapse_climax
+        with charachangeev
 
         "The combination of the wine slightly dulling my sense of balance and the first jolt that surges through my groin makes my knees buckle and I collapse on top of Hanako, pinning her underneath me."
         "I'm already too caught up in the moment to get back into position and simply keep thrusting for as long as the waves of extacy are coursing through my body."
         "I'm only vaguely aware of Hanako underneath me suddenly crying out, tensing up and bucking her hips several times."
-
         "When my body finally relaxes, I make a half-hearted attempt to get up, only to experience a sudden spell of dizziness."
 
-        scene ev tipsyfun_bellytoback_bliss
+        show ev tipsyfun_collapse_bliss
+        with charachangeev
 
         "Being unable to muster the willpower to do anything other than lie back down and cling to the girl sharing the bed with me, my wandering hand manages to find the bedsheet that I quickly pull over us."
         "As our bodies settle down from our act of passion, a mixture of weariness and bliss washes over me."
-
         "Before I give in to the sense of drowsiness, one last thought passes through my mind."
-
         "This is heaven!"
 
         stop music fadeout 2.0
