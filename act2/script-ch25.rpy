@@ -1071,7 +1071,7 @@ label sh_ch25:
                 ease 0.05 xpos 0.5
         with { "master": Dissolvemove(0.2) }
 
-        call screen doublespeak(ha, "Ah!", hi, "Woah!")
+        call screen doublespeak(hi, "Woah!", ha, "Ah!")
 
         window show None
         window auto True
@@ -1089,7 +1089,7 @@ label sh_ch25:
         play ambient sfx_bikeride fadein 1.0
 
         show tandembike at offscreenleft
-        with MoveTransition(3.0, time_warp=_warper.easeout)
+        with easeoutmove
 
         window auto True
 
@@ -1102,7 +1102,7 @@ label sh_ch25:
         with None
 
         show tandembike at center
-        with MoveTransition(1.5, time_warp=_warper.easein)
+        with easeinmove
 
         ka "It looks like you're doing okay. It might take some time to find a cadence that suits both of you, but I'm sure you'll figure out what works best."
         hi "So where are we headed?"
@@ -1110,7 +1110,7 @@ label sh_ch25:
         hi "Lead the way then."
 
         show tandembike at offscreenleft
-        with MoveTransition(1.5, time_warp=_warper.easeout)
+        with easeoutmove
 
         stop music fadeout 2.0
 

@@ -10,22 +10,46 @@ label sh_ch26:
         play ambient sfx_bikeride fadein 2.0
 
         hi "So we're heading for some old battlefield?"
+
+        show tandembike karlalilly at offscreenright
+        show tandembikelilly smileclosed at offscreenright
+        with None
+
+        show tandembike at center
+        show tandembikelilly at center
+        with easeinmove
+
         ka "Well, that place is part of the local history so I was hoping I'd get an opportunity to show it to you. There's a monument in the middle of the moor, but I don't think having a picnic there is a good idea. Not enough shade."
         "After traversing the road through one of the nearby villages, we're now crossing the countryside again with nothing but open fields all around us."
         hi "Whew."
         "I don't think we've gone on for that many kilometers yet, but all of us (with the exception of Lilly's mother) are nevertheless starting to get a little winded."
         "The wind provided some pleasant relief from the heat while we were riding through the streets of the village, but here in the middle of the open field, it's strong enough to start wearing us out."
+
+        show tandembikekarla speak
+        with chchange
+
         ka "Are you okay? We can take a break any time you like."
         "That's the second time Lilly's mother has asked me that in 5 minutes."
         hi "I think I'll manage. I do hope that wind dies down soon though."
         ka "It's a bit stronger than they predicted. It'll get less when we get to the road north of the moor since it's lined by a small forested area on one side."
+
+        show tandembike at offscreenleft
+        show tandembikekarla at offscreenleft
+        show tandembikelilly at offscreenleft
+        with easeoutmove
+
+        hide tandembike
+        hide tandembikekarla
+        hide tandembikelilly
+        with None
+
         "Though the ride is more taxing than I anticipated, I can't deny I'm somewhat enjoying it."
         "It feels good to engage in some physical activity after two days of mostly sitting and sleeping and the route so far has offered plenty of interesting sights."
         "Karla's statement that she likes to take bike rides around the countryside in her free time has been confirmed several times while we were riding through the village, as several people who seemed to recognize her waved at us when we passed by."
         hi "Damn, we might have to stop somewhere soon anyway. I see rationing water isn't really my strong suit."
         "As I notice my water bottle being nearly empty already, I mutter this to myself without intending anyone to hear it, but moments later I nevertheless feel something poke me in the back."
 
-        show hanako defarms_worry at tworight
+        show hanako defarms_worry_sum_close at tworight
         with charaenter
 
         "When I carefully look behind me I can see Hanako offering me hers. I nod in acknowledgement."
@@ -97,14 +121,14 @@ label sh_ch26:
         play music music_rain fadein 4.0
 
         hide karla
-        show hanako emb_downtimid at tworight
+        show hanako emb_downtimid_sum at tworight
         with charaenter
 
         "I look behind me and notice that unlike Lilly and me, Hanako hasn't gotten off the bike during Karla's story and something about her posture seems off."
         "She's a bit hunched over her handlebar and she hangs her head as if she's on the verge of falling asleep."
         hi "Hanako?"
 
-        show hanako emb_sad
+        show hanako emb_sad_sum
         with chchange
 
         ha "{cps=20}I'm... o-okay.{/cps}"
@@ -112,12 +136,11 @@ label sh_ch26:
 
         show bg:
             zoom 1.02
-        show hanako emb_sad_close
+        show hanako emb_downtimid_sum_close
         with characlose
 
         with vpunch
 
-        # kinda clunky, reword
         "She lifts her leg in an attempt to get off the bike, but then wobbles a bit and the only reason she doesn't end up falling on her face is because I manage to make my way over to her and catch her before she loses her balance completely."
 
         hide hanako
@@ -126,26 +149,30 @@ label sh_ch26:
         "Gently lowering her to the ground, I'm startled when I notice her complexion is paler than when we left, her forehead is covered by numerous tiny beads of sweat, and her breathing seems slightly shallower than it should be."
         hi "Hey, what's wrong?"
 
-        show karla basic_troubled_cas at sittingpos
+        show karla basic_troubled_cas_close at tworight
         with charaenter
 
         "Lilly's mother kneels down next to us and gives Hanako an analyzing look that makes her instinctively avert her head."
         "Karla doesn't back off though, and after a few moments, she turns to me."
+
+        show karla basic_worried_cas_close
+        with chchange
+
         ka "I think we just found our picnic spot. Let's head over to that patch of trees on the other side of the road, give her some shade, and start unpacking things."
         ka "Hisao, you get her there. Lilly, can you help me unpack the saddlebags?"
 
-        show lilly basic_oops at left
+        show lilly basic_oops_sum at twoleft
         with charaenter
 
         li "Ah... Yes, of course."
 
         scene bg inverness_tree
-        show hanako emb_downtimid at center
-        show lilly cane_sad at left
+        show hanako emb_downtimid_sum at center
+        show lilly cane_sad_sum at left
         show karla basic_distant_cas at tworight
         with locationchange
 
-        "I take one of Hanako's arms, put it around my neck and lift her up from the ground. Acting as her crutch, I walk her to the trees Lilly's mother pointed out and get her settled with her back leaning against the largest tree of the bunch."
+        "I take one of Hanako's arms, put it around my neck, and lift her up from the ground. Acting as her crutch, I walk her to the trees Lilly's mother pointed out and get her settled with her back leaning against the largest tree of the bunch."
         "Karla moves the tandems over to our side of the road, and Lilly spreads the blanket and starts unpacking the various sandwiches and salads she and Hanako made earlier today."
         "Suddenly, Lilly's mother takes a bottle from the blanket, holds it to her ear and shakes it a few times."
         ka "Hmmm, did you happen to put ice cubes in this thermos bottle?"
@@ -175,19 +202,19 @@ label sh_ch26:
 
         ka "Not being thirsty anymore and being properly rehydrated are two different things. Anyway, there's no point in griping about that now. I suggest we simply go on with the picnic and see how things proceed for now."
 
-        show hanako emb_timid
+        show hanako emb_timid_sum
         with chchange
 
         "I can hear Hanako sighing in relief. I know she'd seriously feel bad if this picnic were to be cancelled over her. Lilly's mother gives her a determined look."
         ka "But you'll be drinking an additional share of the beverages, and if you're not feeling any better within 30 minutes, I'm going to call someone to pick us up. Okay?"
 
-        show lilly cane_displeased
-        show hanako emb_downtimid
+        show lilly cane_displeased_sum
+        show hanako emb_downtimid_sum
         with chchange
 
         "Karla's words are emphasized by a rather strict nod from Lilly. Hanako's face drops a bit again, but she nevertheless nods meekly."
 
-        show hanako emb_sad
+        show hanako emb_sad_sum
         with chchange
 
         ha "O-okay."
@@ -197,14 +224,14 @@ label sh_ch26:
         "Lilly's mother relaxes upon hearing Hanako's reply and fishes the remaining food out of our saddlebags. She then raises a bottle of juice before tossing it to Hanako."
 
         show karla basic_smile_cas
-        show lilly cane_weaksmile
+        show lilly cane_weaksmile_sum
         with chchange
 
         ka "Well, cheers then."
 
         scene bg inverness_tree
-        show lilly basic_smileclosed at left
-        show hanako basic_bashful at twoleft
+        show lilly basic_smileclosed_sum at left
+        show hanako basic_bashful_sum at twoleft
         show karla basic_cheerful_cas at tworight
         with shorttimeskip
 
@@ -216,14 +243,14 @@ label sh_ch26:
         ha "S-sure."
         "Hanako reaches out and hands Lilly's mother the bowl of macaroni salad. She really seems to like the stuff, which hasn't escaped Lilly's attention, either."
 
-        show lilly basic_smile
+        show lilly basic_smile_sum
         with chchange
 
         li "You seem to have a taste for it, Mother."
         ka "It's delicious. What exactly are these little light-green pieces?"
 
-        show lilly basic_listen
-        show hanako basic_distant
+        show lilly basic_listen_sum
+        show hanako basic_distant_sum
         with chchange
 
         li "Hmmm..."
@@ -236,21 +263,18 @@ label sh_ch26:
 
         ka "You're a pretty good cook, dear."
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_sum
+        show hanako def_worry_sum
         with chchange
 
         "Lilly beams upon hearing those words."
         li "Thank you. But Hanako deserves credit as well. She's put in a lot of work, too."
-
-        show hanako def_worry
-        with chchangefast
-
         ha "..."
         "For a moment, Hanako and I share a confused look. I could be mistaken, but I could swear Lilly's mother looked at Hanako while delivering her compliment. But before any of us can say anything, Karla has already filled up the momentary silence."
-        ka "Thumbs up to both of you, then."
+        ka "Thumbs up to both of you then."
 
-        show hanako basic_normal
-        show lilly basic_smileclosed
+        show hanako basic_normal_sum
+        show lilly basic_smileclosed_sum
         with chchange
 
         "Deciding not to dwell on the subject, I ask Lilly's mother the question that's been on my mind since the little history lesson she gave us earlier."
@@ -267,7 +291,7 @@ label sh_ch26:
 
         ka "If this is about those history lectures I've been throwing around, I've had practice in the last few days. I've been playing tour guide all weekend for that business delegation that came to visit."
 
-        show lilly basic_surprised
+        show lilly basic_surprised_sum
         with chchange
 
         "Lilly cocks her head slightly."
@@ -279,14 +303,14 @@ label sh_ch26:
         #"Lilly's mother gives her daughter a slightly guilty smile."
         ka "Your father and I weren't happy about not being able to pick you guys up from the airport, but... Yes, it kind of was. Probably the biggest event that's happened to the company in over a decade."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "Akira mentioned a takeover."
         ka "That's right."
         "Sensing that this subject is going over our heads, Lilly's mother looks at Hanako and me."
 
-        show hanako basic_worry
+        show hanako basic_worry_sum
         show karla basic_smile_cas
         with chchange
 
@@ -300,7 +324,7 @@ label sh_ch26:
         hi "Sure."
         "Karla grabs one of the sandwiches Lilly and Hanako prepared, takes a big bite out of it, and thinks for a moment."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         show karla basic_ponder_cas
         with chchange
 
@@ -308,14 +332,14 @@ label sh_ch26:
         ka "Eventually, his son inherited the business and expanded it using capital provided by his two younger brothers who both married into banking families and went into the business of investment banking."
         ka "The three of them are still the only members of the company's board of directors and officially have the final say on everything."
 
-        show lilly basic_concerned
+        show lilly basic_concerned_sum
         show karla basic_sheepishclosed_cas
         with chchange
 
         ka "In practice however, it's my husband, who was appointed CEO 6 years ago, who makes just about all the daily decisions and not the old men club in Japan."
         ka "From what I've heard, their board meetings are little more than social events these days. None of them are really in a good condition anymore to go from business meeting to business meeting abroad to begin with."
 
-        show hanako basic_distant
+        show hanako basic_distant_sum
         with chchange
 
         "Lilly cringes a bit at her mother's playful, and not overly respectful, choice of words, but doesn't interrupt her explanation."
@@ -325,15 +349,15 @@ label sh_ch26:
 
         ka "The company started out producing medical devices like EKGs and respirators for hospitals, though nowadays we're also involved in the production of heart rate monitors and AEDs, which can be also sold to consumers and businesses."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         show karla basic_sheepish_cas
         with chchange
 
         ka "I guess there's no need for me to explain those abbreviations, is there?"
         hi "No, I guess not."
 
-        show hanako basic_worry
-        show lilly basic_smileclosed
+        show hanako basic_worry_sum
+        show lilly basic_smileclosed_sum
         show karla basic_ponder_cas
         with chchange
 
@@ -350,7 +374,7 @@ label sh_ch26:
         ka "If everything goes well, we'll be able to enter the North American market, and my husband will have honored an important family tradition."
         hi "Family tradition?"
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         show karla basic_troubled_cas
         with chchange
 
@@ -376,7 +400,7 @@ label sh_ch26:
         ka "Heh, samurai spirit and all."
         "She's probably talking about her extended family as I know that neither Lilly nor Akira are happy about their parents having moved here."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         hi "What's your job in the company? Are you your husband's secretary? You seem to be closely involved with his activities."
@@ -410,7 +434,7 @@ label sh_ch26:
         "I recognize this gesture as an indication of unease, since Lilly occasionally shows the same trait when she's about to talk about an uncomfortable subject."
         ka "Before our Inverness branch also became our head office, we used to have a local manager running things here. When head office relocated, the board determined that a Satou had to be in charge of it."
 
-        show lilly basic_sad
+        show lilly basic_sad_sum
         show karla basic_distant_cas
         with chchange
 
@@ -418,7 +442,7 @@ label sh_ch26:
         ka "Someone with personal experience with both the Western and Japanese culture. Someone he felt he could trust and have his best interests at heart."
         ka "He chose me to fill that role, the board eventually complied with his request, and I ended up answering his summons, eventually joining the PR department."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "I'm glad you've been doing so well for yourself, Mother."
@@ -428,7 +452,7 @@ label sh_ch26:
 
         ka "Thanks."
 
-        show hanako basic_distant
+        show hanako basic_distant_sum
         with chchange
 
         "I notice Karla's eyes are not directly looking at Lilly during her daughter's comforting words, and for a moment, her smile seems extremely forced. Their migration is obviously still a sensitive subject to her."
@@ -440,7 +464,7 @@ label sh_ch26:
         "Lilly's mother lets out a playful laugh at her daughter's remark."
         ka "Hehehe, don't go telling that to any of my old colleagues. We used to believe that going into public relations was equal to selling your soul."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         hi "If you don't mind me asking, what exactly was your previous occupation?"
@@ -451,7 +475,7 @@ label sh_ch26:
         "Karla's face brightens as if she had been waiting for me to ask that question."
         ka "Journalism. I used to be a business correspondent writing for the economic and business pages of The Herald, a newspaper located in Glasgow. Later, I moved to Japan and became a foreign correspondent for the BBC."
 
-        show hanako emb_timid
+        show hanako emb_timid_sum
         with chchange
 
         "Journalism huh? That's quite the recurring topic these days. I can see Hanako, who's been quiet for pretty much the entire time we've been here, perking up ever so slightly at Karla's words."
@@ -459,7 +483,7 @@ label sh_ch26:
         ka "Yep."
         "I can tell that the conversation subject has caught Hanako's attention, but it's clear that she's not yet comfortable enough around Lilly's mother to ask her for details about her former job. Fortunately, Lilly takes this moment to come to Hanako's aid."
 
-        show lilly basic_smile
+        show lilly basic_smile_sum
         with chchange
 
         li "Hanako has recently joined the newspaper club at Yamaku and has already been involved in the production of two issues. She seems to enjoy the activities so far and has been playing with the thought of studying journalism or something related to it."
@@ -476,13 +500,13 @@ label sh_ch26:
         "She looks at Hanako with a curious twinkle in her eye."
         ka "I suppose you didn't bring one of those issues along with you, did you? I would have liked to read a copy."
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum
         with chchange
 
         "Hanako meekly shakes her head, but Lilly takes her handbag, zips it open, and casually takes a copy of the lastest school newspaper out of it."
 
-        show hanako def_worry
-        show lilly basic_planned
+        show hanako def_worry_sum
+        show lilly basic_planned_sum
         show karla basic_laugh_cas
         with chchange
 
@@ -495,7 +519,7 @@ label sh_ch26:
         "She takes a pair of reading glasses out of her pocket, puts them on, and starts thumbing through it. While she's doing so, I roll my eyes at Lilly."
         hi "That may very well have been the most inappropriate use of the word ‘coincidentally’ I've ever heard in my life. It isn't even a Braille edition for crying out loud."
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_sum
         with chchange
 
         "Lilly grins mischieviously, but doesn't say anything back."
@@ -506,15 +530,15 @@ label sh_ch26:
 
         ka "You also print your copies in Braille?"
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum
         with chchange
 
         "Hanako nods."
         ha "It's... p-pretty tough at times. W-we... ummm... c-convert the f-files with a computer program. The c-copyshop's Braille p-printer can then w-work with them. We h-have l-large font editions too... ah... f-for s-students with l-limited vision."
         ka "That's pretty neat. Is it a lot of work making all those different editions?"
 
-        show hanako emb_emb
-        show lilly basic_smileclosed
+        show hanako emb_emb_sum
+        show lilly basic_smileclosed_sum
         with chchange
 
         ha "The... ah... Braille e-edition can t-take a few hours. We usually... just p-print the large f-font edition on larger p-paper to s-save time."
@@ -525,7 +549,7 @@ label sh_ch26:
         "Lilly's mother gives Hanako a slightly worried look. She's probably noticing how much Hanako is stumbling over her own words."
         ka "I can get a bit carried away on the subject at times. Is it okay for me to be asking you these questions?"
 
-        show hanako def_worry
+        show hanako def_worry_sum
         with chchange
 
         ha "Of c-course."
@@ -538,7 +562,7 @@ label sh_ch26:
         ka "It reads here that you were involved with both the editing and the writing. What articles did you work on?"
         ha "Ummm... O-only one s-so far. The c-column about the science c-club."
 
-        show hanako emb_timid
+        show hanako emb_timid_sum
         show karla basic_serious_cas
         with chchange
 
@@ -546,18 +570,18 @@ label sh_ch26:
         "Eventually, Lilly's mother closes the newspaper again."
         ka "Would you be open to some constructive criticism, dear?"
 
-        show hanako emb_downsad
+        show hanako emb_downsad_sum
         with chchange
         pause 0.5
-        show hanako emb_timid
+        show hanako emb_timid_sum
         with charachangealways
 
         "Hanako's eyes widen for a moment before her face drops, and her gaze wanders towards her feet. Eventually though, she nods softly."
         ka "First of all, the language use and sentence structure are good. I really can't complain about that."
         ka "But I do have one question: does your boyfriend happen to be a member of the club this article is talking about?"
 
-        show hanako defarms_shock
-        show lilly basic_smile
+        show hanako defarms_shock_sum
+        show lilly basic_smile_sum
         with chchange
 
         ha "Ah... ummm..."
@@ -569,15 +593,15 @@ label sh_ch26:
         ka "Haha, looks like I hit the bullseye."
         ha "H-how...?"
 
-        show hanako emb_timid
-        show lilly basic_smileclosed
+        show hanako emb_timid_sum
+        show lilly basic_smileclosed_sum
         show karla basic_cheerful_cas
         with chchange
 
         ka "To be honest it was a bit of a guess. The impression I got from your article is that you were trying to convince readers to join the science club. You aren't blatant about it, but the message is still there when you read between the lines a bit."
         ka "I figured you were trying to surprise your boyfriend. It's a really sweet gesture, but you need to be careful not to adopt bad habits."
 
-        show hanako cover_worry
+        show hanako cover_worry_sum
         with chchange
 
         ha "B-bad habits?"
@@ -589,7 +613,7 @@ label sh_ch26:
         ka "If you subtly start making a case for something in your article, no matter how noble, people might become wary of reading your work because they don't like the idea of you trying to steer their opinion in a specific direction."
         ka "Now, some news organisations are leaning heavier towards certain political mindsets than others, but as a rule, you want to try and be as objective as possible. Especially as a journalist who is still starting out."
 
-        show hanako basic_normal
+        show hanako basic_normal_sum
         with chchange
 
         "Wow, she's pretty passionate about this subject. Hanako seems taken aback by her response, but also somewhat impressed."
@@ -601,7 +625,7 @@ label sh_ch26:
         ka "Really? Well... In that case, I guess it's alright. I could tell you to forget what I said, but I still think it's sound advice to keep in mind."
         ka "Although... If you actively start promoting something, you're not really practicing journalism anymore, but..."
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum
         with chchange
 
         "Lilly's mother trails off before completely finishing her sentence, but I realize with some amusement what she's trying to say and fail to resist a chuckle."
@@ -615,7 +639,7 @@ label sh_ch26:
         ka "When my husband and I were still dating, I wrote a series of articles about the Satou company, distributed over several magazines and newspapers here. Though I did put more effort than usual into making them as objective as I could."
         "Lilly smiles at her mother's remark."
 
-        show lilly basic_satisfied
+        show lilly basic_satisfied_sum
         with chchange
 
         li "I never knew that. What did Father think of that?"
@@ -632,7 +656,7 @@ label sh_ch26:
         ka "I was also hoping it would give me a positive standing with my future in-laws."
         hi "Ahah."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         show karla basic_smile_cas
         with chchange
 
@@ -652,7 +676,7 @@ label sh_ch26:
         ka "Their physical condition started deteriorating around the time my father-in-law retired. In fact, his retirement was a result of something that took a major hit on his health. My husband decided to better be safe than sorry."
         ka "In the end, they ended up moving to a smaller residence somewhere else shortly after we left. They're both still alive, but I don't think they get out much anymore."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         "Lilly smiles sadly."
@@ -669,8 +693,8 @@ label sh_ch26:
 
         ka "Let's not dwell on depressing subjects for too long."
 
-        show hanako basic_worry
-        show lilly basic_smileclosed
+        show hanako basic_worry_sum
+        show lilly basic_smileclosed_sum
         with chchange
 
         "She gives Hanako a quick nod."
@@ -678,13 +702,13 @@ label sh_ch26:
         ha "Ummm... N-no."
         ka "Not everyone interested in journalism is drawn to it for the same reasons. Some simply want to be able to travel and see the world. Others do it out of idealism. There are probably a ton more reasons. I'm really curious about yours."
 
-        show hanako basic_distant
+        show hanako basic_distant_sum
         with chchange
 
         ha "Ermmm..."
         "It's possible Hanako never really thought about that herself yet as she remains in thought for a long time before replying to Lilly's mom."
 
-        show hanako emb_smile
+        show hanako emb_smile_sum
         with chchange
 
         ha "I... enjoy working on our n-newspapers. Right now it's m-mostly editing and c-correcting, but it made me think... I'd... like to s-start w-writing myself. I usually get... g-good marks f-for essays."
@@ -694,19 +718,19 @@ label sh_ch26:
 
         ka "You like writing, huh? That's a pretty good motivation."
 
-        show hanako emb_downsad
+        show hanako emb_downsad_sum
         with chchange
 
         ha "But I... d-don't think I'd b-be a good journalist. I'm... r-really bad with p-people."
         ka "I did notice you're rather soft-spoken. There are some ways around that though. I've had some colleagues who were rather introverted."
 
-        show hanako emb_sad
+        show hanako emb_sad_sum
         with chchange
 
         ka "They usually teamed up with a more talkative partner and conducted their interviews in pairs with one doing the talking and the other observing and taking notes. Or they let their partner do the interviews while they did the research at the office."
 
-        show hanako basic_normal
-        show lilly basic_smile
+        show hanako basic_normal_sum
+        show lilly basic_smile_sum
         with chchange
 
         "Lilly takes this moment to chip in."
@@ -719,8 +743,8 @@ label sh_ch26:
         ka "Writing non-fiction is more predictable, though. There are many people who want to publish something but lack either the time or the skills to write up something themselves, so they hire a ghost writer or biographer to do the job."
         ka "Then there's copywriters, whose activities are somewhat related to what I do these days, content writers, report writers, technical writers, and speech writers."
 
-        show hanako basic_worry
-        show lilly basic_smileclosed
+        show hanako basic_worry_sum
+        show lilly basic_smileclosed_sum
         with chchange
 
         ha "That's... a l-lot of options."
@@ -732,14 +756,14 @@ label sh_ch26:
 
         play sound sfx_snap
 
-        show lilly basic_surprised
+        show lilly basic_surprised_sum
         with { "master": chchangefast }
 
         "Lilly's mother absentmindedly twirls with one of her hair locks for a moment before suddenly snapping her fingers, causing Lilly to flinch."
         li "Please don't do that anymore, Mother. It's a really grating sound."
 
-        show hanako basic_smile
-        show lilly basic_smileclosed
+        show hanako basic_smile_sum
+        show lilly basic_smileclosed_sum
         show karla basic_smile_cas
         with chchange
 
@@ -753,21 +777,21 @@ label sh_ch26:
 
         ka "Also remember that it always pays off to practice your writing skills. Have you ever engaged in any writing other than that column and essays for Japanese classes?"
 
-        show hanako emb_emb
+        show hanako emb_emb_sum
         with chchange
 
         "Hanako softly shakes her head."
         ha "N-no. I r-read a lot, but..."
         ka "It pays off to be well-read, but it's no substitute for actual practice. Maybe this week would be a good moment to start."
 
-        show hanako emb_sad
+        show hanako emb_sad_sum
         with chchange
 
         ha "S-start? I... ah... am working on a n-new column for the n-next newspaper, but..."
         ka "I'd love to read it when it's done, but that wasn't really what I was talking about."
         ka "This may be an intimate question, but... do you keep a diary or a journal?"
 
-        show hanako emb_timid
+        show hanako emb_timid_sum
         with chchange
 
         ha "N-no."
@@ -782,7 +806,7 @@ label sh_ch26:
         ka "If you take it seriously, processing and sorting information about events as they happen and memorizing the relevant details while dismissing the unimportant clutter will quickly become a second nature to you."
         ka "These are skills that both journalists and writers greatly benefit from. If you're interested, I probably have some unused diaries and notebooks lying somewhere in the study or the attic. Maybe you could take pictures, too."
 
-        show hanako emb_smile
+        show hanako emb_smile_sum
         with chchange
 
         "Hanako seems to have trouble keeping up with Karla's enthusiasm, but eventually she nods with a small smile on her face."
@@ -794,13 +818,13 @@ label sh_ch26:
         "Lilly's mother sends us a triumphant grin and shoots a glance at the place where Hanako's handbag is lying."
         ka "Excellent. Is that camera still in your bag, dear?"
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum
         with chchange
 
         ha "Ummm... Yes."
         ka "Good. Hisao, could you sit down next to her for a moment? Lilly, could you get a little closer?"
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_sum
         with chchange
 
         "Lilly's mother takes Hanako's handbag, fishes the camera out of it, and takes a few steps back to make certain that everything that's on the blanket is in frame."
@@ -824,7 +848,7 @@ label sh_ch26:
         stop music fadeout 2.0
 
         scene bg inverness_tree
-        show lilly basic_smileclosed at center
+        show lilly basic_smileclosed_sum at center
         with shorttimeskip
 
         play music music_pearly fadein 4.0
@@ -837,14 +861,14 @@ label sh_ch26:
         li "Yes, Hisao?"
         hi "That hour-long journalism-based sales pitch... Was that all ‘part of the plan’?"
 
-        show lilly basic_giggle
+        show lilly basic_giggle_sum
         with chchange
 
         "Lilly puts her hand in front of her mouth to suppress a giggle."
         li "Would you believe me if I said it was not?"
         hi "You'll at least have to tell me that with a straight face if you want to convince me."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_sum
         with chchange
 
         "Lilly chuckles briefly."
@@ -852,19 +876,19 @@ label sh_ch26:
         li "That's also why I asked Naomi for an additional copy of the newspaper. But... I hadn't anticipated this."
         hi "Not anticipated what?"
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "You may not believe me, but before she left Japan, Mother hardly ever spoke about her old profession at all. I was just as surprised by her passion as you were."
         hi "That's kind of hard to believe."
 
-        show lilly basic_concerned
+        show lilly basic_concerned_sum
         with chchange
 
         "Lilly pauses for a second, then briefly turns her head in Hanako's direction."
         li "Hanako must have been overwhelmed by Mother's reaction."
 
-        show lilly basic_smile
+        show lilly basic_smile_sum
         with chchange
 
         hi "Yeah she was, but she also seemed interested in what your mother had to say. That's certainly a good thing."

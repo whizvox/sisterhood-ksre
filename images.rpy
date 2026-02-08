@@ -207,6 +207,8 @@ init 1:
         (0, 0), f"{sh_path}/vfx/tandembike/hanako_worry.png"
     )
     image tandembike karlalilly = f"{sh_path}/vfx/tandembike/karlalilly.png"
+    image tandembikekarla speak = f"{sh_path}/vfx/tandembike/karla_speak.png"
+    image tandembikelilly smileclosed = f"{sh_path}/vfx/tandembike/lilly_smileclosed.png"
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
