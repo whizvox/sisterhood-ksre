@@ -329,10 +329,10 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
 PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 28
     ("event/planeride/planeride_bliss.jpg", "gui/journal/p01.jpg", [crop(300, 0, 1920, 1080), resize(525, 350)]),
-    ("bgs/inverness_street.jpg", "gui/journal/p02.jpg", [CompositeTransformation([(700, 0, "~sprites/hanako/hanako_emb_smile.png"), (300, 0, "sprites/hisao/hisao_cross_smile_polo.png")]), crop(150, 0, 1770, 1080), resize(525, 350)]),
-    ("bgs/inverness_tree.jpg", "gui/journal/p03.jpg", [CompositeTransformation([(384, 0, "~sprites/lilly/lilly_basic_cheerful_cas.png"), (1074, 30, "~sprites/hanako/hanako_basic_bashful_cas.png"), (692, 30, "sprites/hisao/hisao_basic_smile_polo.png")]), crop(162, 0, 1782, 1080), resize(525, 350)]),
-    ("reference/bgs/cawthorn.jpg", "gui/journal/p07.jpg", [CompositeTransformation([(338, 50, "sprites/hisao/hisao_basic_grin_polo.png")]), resize(525, 350)]),
-    ("reference/journal/photos/p10.jpg", "gui/journal/p10.jpg", [CompositeTransformation([(793, 200, "~sprites/lilly/lilly_cane_giggle_cas.png"), (1199, 200, "sprites/akira/akira_basic_cheerful.png")]), crop(165, 220, 1756, 1280), resize(525, 350)]),
+    ("bgs/inverness_street.jpg", "gui/journal/p02.jpg", [CompositeTransformation([(700, 0, "sprites/hanako/hanako_emb_smile_sum.png"), (300, 0, "sprites/hisao/hisao_cross_smile_polo.png")]), crop(150, 0, 1770, 1080), resize(525, 350)]),
+    ("bgs/inverness_tree.jpg", "gui/journal/p03.jpg", [CompositeTransformation([(384, 0, "sprites/lilly/lilly_basic_cheerful_sum.png"), (1074, 30, "sprites/hanako/hanako_basic_bashful_sum.png"), (692, 30, "sprites/hisao/hisao_basic_smile_polo.png")]), crop(162, 0, 1782, 1080), resize(525, 350)]),
+    ("reference/Backgrounds/cawthorn.jpg", "gui/journal/p07.jpg", [CompositeTransformation([(338, 50, "sprites/hisao/hisao_basic_grin_polo.png")]), resize(525, 350)]),
+    ("reference/Journal/photos/p10.jpg", "gui/journal/p10.jpg", [CompositeTransformation([(793, 200, "sprites/lilly/lilly_cane_giggle_sum.png"), (1199, 200, "sprites/akira/akira_basic_cheerful_cas.png")]), crop(165, 220, 1756, 1280), resize(525, 350)]),
     ("reference/journal/photos/p11.jpg", "gui/journal/p11.jpg", [crop(0, 46, 1000, 712), resize(525, 350)]),
     ("reference/bgs/urquhart castle.jpg", "gui/journal/p12.jpg", [resize(525, 350)]),
     ("reference/bgs/dolphin and seal centre.jpg", "gui/journal/p13.jpg", [crop(0, 8, 1024, 691), resize(525, 350)]),
