@@ -29,7 +29,7 @@ label sh_ch17alt:
         show kenji tsun
         with chchange
 
-        ke "The whole thing still smells extremely fishy to me. I mean... Getting body checked in the middle of the street and carried off to who-knows-where... Does that sound normal to you?"
+        ke "The whole thing still smells extremely fishy to me. I mean… Getting body checked in the middle of the street and carried off to who-knows-where… Does that sound normal to you?"
         "Hanako at least seems relieved that she and I have managed to reconcile after last week's events. I think she's going to need my support after Lilly leaves tomorrow."
         "Despite having pushed Lilly away last week, I have no doubt that Hanako's going to miss her terribly."
         hi "We were in the middle of a downpour, and neither one of us was paying attention. The rainstorm made it kinda hard to see far ahead. It was just a stupid little accident with big consequences."
@@ -210,7 +210,7 @@ label sh_ch17alt:
         show takawa calculating
         with chchange
 
-        ta "Ahem... whenever a client has a breakdown like Miss Ikezawa had last week, we try to identify the possible causes and do our best to come up with ways to prevent those situations from ever occurring again in the future."
+        ta "Ahem… whenever a client has a breakdown like Miss Ikezawa had last week, we try to identify the possible causes and do our best to come up with ways to prevent those situations from ever occurring again in the future."
 
         show takawa smile
         with chchange

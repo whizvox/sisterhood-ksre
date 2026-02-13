@@ -19,7 +19,7 @@ label sh_ch33:
         show hisao cross_speak_polo at twoleft
         with locationchange
 
-        aki "Yeah..."
+        aki "Yeah…"
         hi "Is everything alright?"
         "Seems like Hisao also noticed Akira's voice trailing off. She's also been awfully quiet since we left the hospital after paying a visit to her father."
 
@@ -67,7 +67,7 @@ label sh_ch33:
         aki "From time to time."
         "I wonder if that's all there is to it. Akira obviously wants to talk about something with me in private. I'm just not sure what it could be."
         "I have to admit, it piques my curiosity a bit."
-        ha "Ummm... Okay, I'll come with you."
+        ha "Ummm… Okay, I'll come with you."
 
         show hisao basic_neutral_polo
         with chchange
@@ -89,27 +89,27 @@ label sh_ch33:
         play ambient sfx_waves volume 0.7 fadein 2.0
 
         "This area has slowly started becoming familiar terrain to me as well. The sound of the shore tends to put my mind at ease. Maybe the same is true for Akira."
-        ha "You... like this place?"
+        ha "You… like this place?"
         aki "When Lilly and I first visited here, I'd often take little walks along the shore whenever I didn't feel like hanging around the house."
 
         show akira basic_sweet
         with chchange
 
-        aki "Most of the time alone, but sometimes Lilly would come with me, and we'd talk about... stuff. This place makes you relax, doesn't it?"
-        ha "It does. I... used to come here daily to write in my journal."
+        aki "Most of the time alone, but sometimes Lilly would come with me, and we'd talk about… stuff. This place makes you relax, doesn't it?"
+        ha "It does. I… used to come here daily to write in my journal."
 
         show akira basic_pleased
         with chchange
 
         aki "Right, Lilly mentioned that. But I'm picking up a past tense here. Did you stop writing?"
-        ha "The last few days have been a bit... uneventful, and the one major thing that has happened is s-something I'd rather forget as soon as possible."
+        ha "The last few days have been a bit… uneventful, and the one major thing that has happened is s-something I'd rather forget as soon as possible."
 
         show akira basic_sheepish
         with chchange
 
         "Akira gives me a playful grin."
         aki "That major thing you're trying to forget about involves you saving an old man from what was probably either death or existence as a vegetable. And from what I learned today, he seems awfully determined to not let ya forget about that, no matter how hard you're gonna try."
-        ha "Do you... think he was serious?"
+        ha "Do you… think he was serious?"
 
         show akira basic_ending
         with chchange
@@ -121,18 +121,18 @@ label sh_ch33:
         with chchange
 
         aki "Hmmm?"
-        ha "I read a book once, about a man who won the lottery. And suddenly... everyone wanted to be his friend. He didn't even know who his real friends were anymore, because everyone just seemed to want to take advantage of his newfound wealth."
-        ha "I... would hate for something like that to happen to me. It w-would... drive me crazy."
+        ha "I read a book once, about a man who won the lottery. And suddenly… everyone wanted to be his friend. He didn't even know who his real friends were anymore, because everyone just seemed to want to take advantage of his newfound wealth."
+        ha "I… would hate for something like that to happen to me. It w-would… drive me crazy."
         aki "Well, it's true that as convenient as it is, money can't buy you happiness. I speak from experience. Still, maybe you can think of something."
 
         show akira basic_smug
         with chchange
 
         aki "Heh, if you don't want the old man to keep stalking you for the rest of your life, that is."
-        ha "Uhhhh..."
+        ha "Uhhhh…"
         aki "Relax, I was only joking. Still, I doubt this is the last you'll hear about this. Dad's got this old-fashioned ‘you saved my life, so now it belongs to you forevermore’-type of samurai mindset going."
         "Akira's exaggerated eyerolling makes me giggle a bit."
-        ha "It's actually a rather... romantic mindset, don't you think?"
+        ha "It's actually a rather… romantic mindset, don't you think?"
 
         show akira basic_resigned
         with chchange
@@ -145,7 +145,7 @@ label sh_ch33:
 
         aki "Since a child owes her life to her parents, she's obliged to show livelong respect and reverence to them no matter how badly they deserve the opposite. No doubt Dad sincerely believes that. Heck, he couldn't resist rubbing it in my face during your visit."
         "I think I remember what she's talking about."
-        ha "So... that's what he meant."
+        ha "So… that's what he meant."
         
         show akira at twoleft
         with { "master": charamovefast }
@@ -167,9 +167,9 @@ label sh_ch33:
         show akira basic_distant
         with chchange
 
-        aki "Ya know... Hisao probably had a point when we were at the hospital. I wouldn't blame you if you agreed with him."
+        aki "Ya know… Hisao probably had a point when we were at the hospital. I wouldn't blame you if you agreed with him."
         "It comes across as weird for the usually up-beat and assertive Akira to suddenly sound this way."
-        ha "I'm not s-sure. M-maybe, but you... probably have your reasons."
+        ha "I'm not s-sure. M-maybe, but you… probably have your reasons."
         "Akira nods absentmindedly and flings another stone along the surface before sitting down on a large rock near the shore."
 
         play sound sfx_rockskip
@@ -196,37 +196,37 @@ label sh_ch33:
         with chchange
 
         aki "What I've learned over the last couple of weeks was that the matter may have been buried, but it was far from dead."
-        aki "After six long years, Mom and Dad were suddenly part of my daily life again and acting like nothing friggin happened. As you can see, I haven't been dealing with that very well... at all."
+        aki "After six long years, Mom and Dad were suddenly part of my daily life again and acting like nothing friggin happened. As you can see, I haven't been dealing with that very well… at all."
         "She gives me a guilty look as I sit down next to her."
-        aki "When I told you guys in the hospital that I simply screwed up, that was the truth. I didn't really mean to start a fight with the old man when he was in such a sorry state, but... well... it simply happened anyway."
+        aki "When I told you guys in the hospital that I simply screwed up, that was the truth. I didn't really mean to start a fight with the old man when he was in such a sorry state, but… well… it simply happened anyway."
 
         show akira basic_lost
         with chchange
 
-        aki "I guess that... there are a lot of buried grievances suddenly clawing their way back to the surface."
-        ha "Like... them l-leaving."
-        aki "Uh-huh..."
+        aki "I guess that… there are a lot of buried grievances suddenly clawing their way back to the surface."
+        ha "Like… them l-leaving."
+        aki "Uh-huh…"
         "She sighs."
 
         show akira basic_ponder
         with chchange
 
         aki "To be completely honest, it's not just bad memories I have of them. There's been a few good ones, too."
-        aki "Like the annual New Year, when our parents, our grandparents, Lilly, and I would visit a shrine to pray for good luck the upcoming year and play games afterwards. Also, our trips to the summer house..."
+        aki "Like the annual New Year, when our parents, our grandparents, Lilly, and I would visit a shrine to pray for good luck the upcoming year and play games afterwards. Also, our trips to the summer house…"
         ha "The one we visited?"
         aki "It was a different one back then, but in the same area. The three—and later the four—of us would go there from time to time, and that was also the place where Lilly and I'd get in touch with the British part of our heritage."
 
         show akira basic_wistful
         with chchange
 
-        aki "Our own home was kind of traditional, but the summer house was more like... Well, the residences here in the UK. We'd speak English all the time, eat with cutlery instead of chopsticks, and Mom would read us Scottish folk tales or parables as bedtime stories."
-        aki "It was also like... that intangible pressure I often felt didn't exist there. The atmosphere was simply different. Dad, and especially Mom, seemed different."
+        aki "Our own home was kind of traditional, but the summer house was more like… Well, the residences here in the UK. We'd speak English all the time, eat with cutlery instead of chopsticks, and Mom would read us Scottish folk tales or parables as bedtime stories."
+        aki "It was also like… that intangible pressure I often felt didn't exist there. The atmosphere was simply different. Dad, and especially Mom, seemed different."
 
         show akira basic_sad
         with chchange
 
         aki "Of course, things'd revert to normal the moment we got in the car, but I still have good memories of those times, even though they became more and more rare as Dad advanced up the corporate ladder."
-        ha "...pressure?"
+        ha "…pressure?"
 
         show akira basic_angry
         with chchange
@@ -238,7 +238,7 @@ label sh_ch33:
         show akira basic_resigned
         with chchange
 
-        aki "It's always been kind of subtle. It's not like they weren't nice to me, but there was often that subtle undertone of sadness like they were expecting me to be more... I dunno... elegant... lady-like... the whole shebang."
+        aki "It's always been kind of subtle. It's not like they weren't nice to me, but there was often that subtle undertone of sadness like they were expecting me to be more… I dunno… elegant… lady-like… the whole shebang."
 
         show akira basic_lost
         with chchange
@@ -247,7 +247,7 @@ label sh_ch33:
         aki "I found out eventually what that was as Lilly grew up. I think in the end, Mom and Dad always rued the fact that I couldn't be more like Lilly."
         "I get an uneasy feeling in my stomach as I attempt to determine if there's any bitterness in Akira's words."
         "If she felt like she lived in Lilly's shadow, how does she feel about her sister?"
-        ha "Uhhh... H-how d-do you feel about Lilly?"
+        ha "Uhhh… H-how d-do you feel about Lilly?"
 
         show akira basic_wistful
         with chchange
@@ -294,7 +294,7 @@ label sh_ch33:
         aki "Heh."
         "Akira's light-hearted remark about toddler-Lilly's cuteness was probably meant to lighten the mood, but it doesn't draw my attention away from the rest of her words, especially since this is a sensitive issue for me, myself."
         "Didn't Akira make school friends or something? She's pretty sociable, if a bit rough. I always imagined her to have lots of friends, like Lilly."
-        ha "Uh... Akira... H-how about y-your school days?"
+        ha "Uh… Akira… H-how about y-your school days?"
 
         play sound sfx_rockskip
 
@@ -303,8 +303,8 @@ label sh_ch33:
         show akira basic_sheepish
         with chchange
 
-        aki "Elementary school was... I think mixed is the right word. Heh, get it?"
-        ha "Uh... N-no."
+        aki "Elementary school was… I think mixed is the right word. Heh, get it?"
+        ha "Uh… N-no."
         aki "Sorry, didn't have time to make up a better punchline. Anyway, in the same way I've always been a bit of an outsider in the family, I've also been a bit of an outsider at school."
         ha "Outsider?"
 
@@ -312,8 +312,8 @@ label sh_ch33:
         with chchange
 
         aki "When I started attending elementary school, I quickly discovered that I was the only kid in the school with a biracial background. I found that there were few convenient things about standing out in a crowd like that, but several downsides."
-        aki "Some of the reactions I'd get were amusing in a stupid way. Like others asking me how on earth I was able to speak Japanese or being amazed that my blood was red like theirs instead of yellow. Other times, less funny things happened..."
-        ha "You were... b-b-bullied?"
+        aki "Some of the reactions I'd get were amusing in a stupid way. Like others asking me how on earth I was able to speak Japanese or being amazed that my blood was red like theirs instead of yellow. Other times, less funny things happened…"
+        ha "You were… b-b-bullied?"
 
         show akira basic_annoyed
         with chchange
@@ -325,7 +325,7 @@ label sh_ch33:
 
         aki "Now, before you start worrying about me, let me say that I've always been pretty strong for my size, and back in elementary school, I could even take on many of the boys."
         aki "Bullies don't like running the risk of a black eye when they pull their crap. So, all in all, things hardly ever truly escalated since I wasn't an easy target."
-        ha "That's... g-good."
+        ha "That's… g-good."
         "I'm happy for Akira she that was able to stand up for herself like that, though it also makes me feel inadequate myself. I was never able to stand up for myself."
 
         show akira basic_sweet
@@ -351,7 +351,7 @@ label sh_ch33:
         show akira basic_sweet_close
         with chchange
 
-        ha "Ya know... uh... Even though Lilly's usually the one to do this kind of thing, I just wanted to tell you that if you ever wanna talk to someone about this sort of thing, I'm there as well. Don't be a stranger."
+        ha "Ya know… uh… Even though Lilly's usually the one to do this kind of thing, I just wanted to tell you that if you ever wanna talk to someone about this sort of thing, I'm there as well. Don't be a stranger."
         "Akira puts on a slightly awkward but sincere smile on, and I can't resist smiling back for a moment."
         "I'm not sure if I'd ever accept Akira's offer, but her gesture of emotional support nevertheless feels extremely good to me."
         ha "T-thank you."
@@ -362,21 +362,21 @@ label sh_ch33:
 
         aki "Anyway, I can't say my elementary school time was smooth surfin', but aside from the occasional incident every now and then, I was okay. I was still able to hang out with other kids from time to time, though I didn't really make any deep friendships."
         aki "Then again, a lot of friendships in that time are kinda shallow, anyway. I mean, kids in that phase of their lives often become friends simply because they sit next to each other in class or wear the same color ribbon in their hair, not because their personalities are extremely compatible."
-        ha "Ummm... Akira?"
+        ha "Ummm… Akira?"
         aki "Yeah?"
-        ha "Uh... D-did Lilly ever... get... picked on?"
+        ha "Uh… D-did Lilly ever… get… picked on?"
 
         show akira basic_smile
         with chchange
 
         aki "I was really worried about that myself when she started attending school, but I don't think that ever happened, and thank heavens for that."
-        aki "Due to her blindness, teachers were always keeping a close eye on her, and two random students from her class were picked every day to help her out with... whatever she couldn't do herself."
+        aki "Due to her blindness, teachers were always keeping a close eye on her, and two random students from her class were picked every day to help her out with… whatever she couldn't do herself."
 
         show akira basic_resigned
         with chchange
 
         aki "Sometimes I felt weird about that arrangement, almost as if Lilly was the class pet instead of a classmate, but in practice, it probably meant she wasn't an easy target for bullies since she was hardly ever unsupervised."
-        aki "I also think... well... most students eventually forgot about it."
+        aki "I also think… well… most students eventually forgot about it."
         ha "Forgot?"
 
         show akira basic_distant
@@ -386,7 +386,7 @@ label sh_ch33:
         aki "In this case, I think people were so focussed on the very obvious fact that Lilly was blind, they quickly forgot that she was half-foreign. It's weird, but I think it played a role."
         "I wonder what label ended up sticking in people's minds for me: the one about my burn scars or my disfunctional behavior?"
         aki "Anyway, by the time I was about to leave elementary school, I wasn't having that many conflicts anymore, and I was keeping my fingers crossed that things wouldn't get difficult once I'd get into middle school. Turns out I was right to worry."
-        ha "You... went to the same school as Lilly, d-didn't you?"
+        ha "You… went to the same school as Lilly, d-didn't you?"
 
         show akira basic_angry
         with chchange
@@ -404,7 +404,7 @@ label sh_ch33:
         aki "Of course I told them that I hated it there, but all they said was to please hang in there and keep going. Dad even had the audacity to suggest that this was in my best interests and that I'd be grateful one day."
         aki "It's been about ten years since I was released from that hellhole, and so far, I haven't had any sudden epiphanies of gratitude."
         "It's a little frightening how bitter Akira sounds, but there's one thing that scares me more than her tone."
-        ha "Ummm... J-Japanese wife factory? D-does that m-mean that Lilly...?"
+        ha "Ummm… J-Japanese wife factory? D-does that m-mean that Lilly…?"
 
         show akira basic_lost
         with chchange
@@ -421,7 +421,7 @@ label sh_ch33:
         with chchange
 
         aki "Well, as you can see things between me and the folks weren't exactly peachy even before they left Japan, but things might have worked out if they hadn't upped and left just like that."
-        ha "You were... 19 when they left, right?"
+        ha "You were… 19 when they left, right?"
         aki "Yeah. It was after I graduated from high school, which was fortunately not the same kind of place middle school was. I didn't really know what I wanted to do afterwards."
         aki "Dad pulled a string or two at the company, and I was allowed to work at the legal department of SMT as a secretary. Back then, there were apparently already office rumors about a big change being in the wings."
         ha "Your parents moving?"
@@ -470,8 +470,8 @@ label sh_ch33:
         "She shrugs and gives me a sad look."
         aki "Ya know, I always thought there was something creepy about Yamaku, or rather the idea behind it. It's like this place in the middle of nowhere so ‘proper society’ doesn't have to see or hear those attending there."
         aki "I still wonder if Mom and Dad didn't rue the fact that Lilly couldn't be shoved there until she finished middle school."
-        ha "I... actually like that about Yamaku. M-middle school was h-hard for me. I'm n-not sure w-what would have happened at an ordinary high school. M-maybe something terrible."
-        ha "I... didn't function all that well at Yamaku, but at least I wasn't b-bullied anymore. I'm... r-really thankful for that."
+        ha "I… actually like that about Yamaku. M-middle school was h-hard for me. I'm n-not sure w-what would have happened at an ordinary high school. M-maybe something terrible."
+        ha "I… didn't function all that well at Yamaku, but at least I wasn't b-bullied anymore. I'm… r-really thankful for that."
 
         show akira basic_sad
         with chchange
@@ -479,7 +479,7 @@ label sh_ch33:
         "Akira thinks for a moment."
         aki "I never really thought much about that. I guess it's a good point, though it didn't apply to Lilly."
         "I don't really have an answer to that, so I decide to shift the conversation to the earlier subject."
-        ha "A-anyway, after your parents left... you... decided to look after her?"
+        ha "A-anyway, after your parents left… you… decided to look after her?"
 
         show akira basic_resigned
         with chchange
@@ -520,8 +520,8 @@ label sh_ch33:
         show akira basic_lost
         with chchange
 
-        aki "Of course, it's not like I was really all that more fit as a caretaker..."
-        ha "I think Lilly would disagree. You did a r-really good job l-looking after her while..."
+        aki "Of course, it's not like I was really all that more fit as a caretaker…"
+        ha "I think Lilly would disagree. You did a r-really good job l-looking after her while…"
         "I pause for a moment."
         "If Akira left for a job right after high school, when did she earn her law degree?"
 
@@ -531,7 +531,7 @@ label sh_ch33:
         "Akira seems to read my mind as I trail off and smirks."
         aki "You're wondering how I became a lawyer without visiting a university, right?"
         "I nod."
-        aki "Before 2004, becoming a lawyer in Japan didn't require a university degree. All you had to do was pass the official bar exam, which... heh... had a 3%% passage rate at the time."
+        aki "Before 2004, becoming a lawyer in Japan didn't require a university degree. All you had to do was pass the official bar exam, which… heh… had a 3%% passage rate at the time."
 
         show akira basic_cheerful
         with chchange
@@ -558,7 +558,7 @@ label sh_ch33:
         with chchange
 
         aki "I ended up passing the bar exam on the first try, apparently being one of the few ones who pulled that off."
-        ha "W-wow..."
+        ha "W-wow…"
 
         show akira basic_sweet
         with chchange
@@ -567,7 +567,7 @@ label sh_ch33:
         aki "Practically speaking, it wasn't a big loss since they focus almost completely on litigation training there anyway, and hardly spend any time on contract drafting and other corporate practices."
         aki "I could do my job as a corporate lawyer even without it. Officially, it did mean I probably wouldn't be able to do my job at any place other than the family company."
         aki "Still, I promised myself to spend all the free time I had with Lilly if I passed the bar exam, and I did my best to keep it. She was the one who was rooting for me and making sacrifices for me that entire time. It was the least I could do for her."
-        ha "I've... always been a b-bit envious of how c-close you and Lilly are."
+        ha "I've… always been a b-bit envious of how c-close you and Lilly are."
 
         show akira basic_wistful
         with chchange
@@ -577,7 +577,7 @@ label sh_ch33:
         show akira basic_lost
         with chchange
 
-        aki "But bonds have to be maintained, too. And right now, I can't shake the feeling that our bond used to be in a better condition than it is now..."
+        aki "But bonds have to be maintained, too. And right now, I can't shake the feeling that our bond used to be in a better condition than it is now…"
 
         play sound sfx_rockskip
 
@@ -632,7 +632,7 @@ label sh_ch33:
         play sound sfx_rockskip
 
         "{i}*splash* *splash*{/i}"
-        ha "Ummm... W-why do you think that your bond with Lilly is... in worse condition?"
+        ha "Ummm… W-why do you think that your bond with Lilly is… in worse condition?"
 
         show akira basic_distant
         with charadistant
@@ -656,7 +656,7 @@ label sh_ch33:
 
         aki "The way we parted after our last visit to the hospital gave me that idea already, and the fact that she's neither answered nor returned any of my phone calls merely reinforces my hunch."
         aki "I probably screwed up one too many times. I've been screwing up ever since Lilly and I first came here."
-        ha "B-but..."
+        ha "B-but…"
         "I start denying Akira's suggestion, but she stops me with a gesture that indicates she has more to say."
 
         show akira basic_resigned
@@ -665,7 +665,7 @@ label sh_ch33:
         aki "Ya know, I've been thinking a little bit. Back when I learned that Lilly didn't want to migrate to Scotland after all and that she came this close to going there against her will, I was upset with her for not letting me in on how she really felt."
         aki "Lilly's rather reserved by nature, but she and I have had very few secrets between us since we started living together without our parents. I was shocked that she kept me out of something this major."
         aki "When I confronted her with this, she merely apologized, so I dropped it without pressing her for the reason."
-        aki "I... think I know the reason now."
+        aki "I… think I know the reason now."
         ha "You do?"
 
         show akira basic_lost
@@ -706,20 +706,20 @@ label sh_ch33:
         with chchange
 
         aki "Who else?"
-        ha "Hisao and I... already visited Lilly in her room a few times, but all s-she does is make small talk."
+        ha "Hisao and I… already visited Lilly in her room a few times, but all s-she does is make small talk."
 
         show akira basic_ponder
         with chchange
 
-        aki "Your boyfriend's a good friend to Lilly, but you're the one she probably trusts most. Maybe if you spend some time with her alone..."
-        ha "Then what...?"
+        aki "Your boyfriend's a good friend to Lilly, but you're the one she probably trusts most. Maybe if you spend some time with her alone…"
+        ha "Then what…?"
 
         show akira basic_sheepish
         with chchange
 
         "Akira smiles awkwardly."
         aki "Dunno."
-        ha "I... don't really understand what you want me to do."
+        ha "I… don't really understand what you want me to do."
 
         show akira basic_ponder
         with chchange
@@ -731,7 +731,7 @@ label sh_ch33:
 
         aki "Maybe you could spend a little bit of time with her before you leave tomorrow. Just you and her. Maybe cheer her up a little. Get her to stop moping in that room of hers."
         aki "Would you be willing to do that for me?"
-        ha "I... uh... Okay. I was... already hoping to t-talk to her a little before we go tomorrow."
+        ha "I… uh… Okay. I was… already hoping to t-talk to her a little before we go tomorrow."
 
         show akira basic_sweet
         with chchange
@@ -739,7 +739,7 @@ label sh_ch33:
         "Akira smiles broadly."
         aki "Thanks. That means a lot."
         "I shyly shake my head."
-        ha "It... might not m-make much of a difference."
+        ha "It… might not m-make much of a difference."
 
         show akira basic_ending
         with chchange
@@ -754,19 +754,19 @@ label sh_ch33:
         with chchange
 
         aki "Hey, don't give me that look. It was pretty easy to pick up if you read between the lines a bit. I don't think Dad missed it either. He said he'd think about it. That's much more of result than anything I've been able to get done."
-        ha "I... just w-wanted to make Lilly happy."
+        ha "I… just w-wanted to make Lilly happy."
 
         show akira basic_lost
         with chchange
 
         aki "And I guess you think that reconnecting with Mom and Dad in some way will make Lilly happy, or you wouldn't have asked our old man to apologize. Do you still feel this way, even knowing everything I just told you?"
-        ha "I'm... n-not sure. I... think... so. When I... met them, they seemed... not so bad. They still seem to care about Lilly. Maybe... it's possible for... someone to be a bad parent... but not a bad person."
+        ha "I'm… n-not sure. I… think… so. When I… met them, they seemed… not so bad. They still seem to care about Lilly. Maybe… it's possible for… someone to be a bad parent… but not a bad person."
 
         show akira basic_resigned
         with chchange
 
         aki "You think so?"
-        ha "Besides... n-not having p-parents at all... is still worse, I think."
+        ha "Besides… n-not having p-parents at all… is still worse, I think."
         "Akira gives me a sympathetic look."
 
         show akira basic_wistful
@@ -798,7 +798,7 @@ label sh_ch33:
         show akira basic_peaceful
         with chchange
 
-        aki "Maybe... well... You should try and convince Lilly to do one more patching up attempt."
+        aki "Maybe… well… You should try and convince Lilly to do one more patching up attempt."
         aki "Who knows? It might just work out."
 
         stop music fadeout 3.0

@@ -115,7 +115,7 @@ label sh_ch21:
 
         stop music fadeout 2.0
 
-        ha "T-Thank you, Lilly."
+        ha "T-thank you, Lilly."
 
         stop ambient fadeout 1.0
 
@@ -366,13 +366,13 @@ label sh_ch21:
         "Captain" "In the meantime, please make certain that your seat is in the upright position, and keep your seat belt fastened for as long as the sign above your seat is lit."
         "Captain" "We're about to show you a short video with safety instructions detailing how to act in an emergency situation."
         "The displays on the back of the seats in front of us suddenly turn on, and a flight attendant is seen going through the safety regulations like the smoking prohibition and the request to turn off cell phones."
-        "Captain" "...please take note of the nearest emergency exit indicated by the signs that are currently lit up. In case of limited visibility, follow the trail of emergency lights on the floor..."
+        "Captain" "…please take note of the nearest emergency exit indicated by the signs that are currently lit up. In case of limited visibility, follow the trail of emergency lights on the floor…"
         "Judging from the seat chart the nearest emergency exit is right behind us although I seriously wonder if I'd be in a condition to even make it there in case of an emergency landing."
 
         show hanako emb_downsad_cas_close
         with chchange
 
-        "Captain" "...in the case of the loss of cabin pressure, compartments above your head will open automatically to reveal oxygen masks. Always make sure to put on your own breathing masks before helping others with theirs..."
+        "Captain" "…in the case of the loss of cabin pressure, compartments above your head will open automatically to reveal oxygen masks. Always make sure to put on your own breathing masks before helping others with theirs…"
         "I wonder if I'm the only one who's a bit put off by how annoyingly cheerful the attendant in the video seems to be while describing a grave emergency situation."
         ha "That d-doesn't h-happen often, d-does it?"
 
@@ -437,8 +437,8 @@ label sh_ch21:
         with locationchange
 
         centered "Just as she finishes, the engines start roaring louder, and we're pressed into our seats as the plane starts accelerating.{fast}{w=12.0}{nw}"
-        centered "Faster and faster we go...{fast}{w=6.0}{nw}"
-        centered "...and then I get a strange feeling in my stomach as our plane leaves the ground.{fast}{w=10.0}{nw}"
+        centered "Faster and faster we go…{fast}{w=6.0}{nw}"
+        centered "…and then I get a strange feeling in my stomach as our plane leaves the ground.{fast}{w=10.0}{nw}"
         centered "I put my hands on Hanako's shoulders and softly move her aside just a little bit so I can look past her out the window as well.{fast}{w=10.0}{nw}"
 
         play music music_romance fadein 4.0
@@ -517,7 +517,7 @@ label sh_ch21:
         li "What do you want me to do?"
         hi "I've moved the armrests up. I'd like you to trade places with me for a little while if you don't mind."
         li "I don't mind. Do you simply want me to move to my right?"
-        hi "Just a second... Now."
+        hi "Just a second… Now."
 
         show lilly at tworight
         with charamove
@@ -680,7 +680,7 @@ label sh_ch21:
         li "By facing that decision all on my own and by opting to keep everyone else out of it, I could argue that I was very much being myself. And it didn't bode particularly well for me."
         hi "I think that trying to address your own problems yourself is only human. We all like to be as independent as possible."
         "There's also the possibility that, given the way she acts, Lilly was probably raised and educated to behave as traditionally as possible and was taught that burdening others with one's problems is one of the biggest sins one can commit."
-        li "True, but if it had been Hanako who had been in my predicament, I would have encouraged her to let others share the burden. I suppose... I don't always practice what I preach."
+        li "True, but if it had been Hanako who had been in my predicament, I would have encouraged her to let others share the burden. I suppose… I don't always practice what I preach."
         li "If I had confided in Hanako sooner, I probably could have saved her a breakdown. And you a heart attack."
         hi "You're forgiven. This time."
 
@@ -718,7 +718,7 @@ label sh_ch21:
         with chchange
 
         hi "Hey Hanako, I think this one is ours. Can you take a look at the other side of the carousel? I'm aching to get out of here."
-        ha "O-Okay."
+        ha "O-okay."
 
         hide hanako
         with charaexit

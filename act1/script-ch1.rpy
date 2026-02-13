@@ -284,7 +284,7 @@ label sh_ch1:
         ha "Lilly!"
         "Hanako sounds delighted to hear from me. That's good. It means she must have bounced back from last week sooner than expected."
         li "It is good to hear from you, Hanako. How are you doing right now? And how is Hisao?"
-        ha "W-we're doing very well. And how are you doing, Lilly? D-Do you have any idea when you'll be heading back?"
+        ha "W-we're doing very well. And how are you doing, Lilly? D-do you have any idea when you'll be heading back?"
         "It takes me a moment to place Hanako's tone."
         "While I've known Hanako for about a year and have been around during her good moods, this is the first time in a long while she's sounding outright cheerful."
         li "We'll be returning to Japan near the end of the week. Akira will be dropping me off, so I'm hoping the two of you will be welcoming us at the gate."

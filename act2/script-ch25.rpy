@@ -172,7 +172,7 @@ label sh_ch25:
         with None
 
         "Lilly groans softly and slowly sits up, gently massaging her forehead. Looks like what's ailing me is also wreaking havoc on Lilly."
-        "Wait... Did Karla just say that Lilly spent the night here in this very spot?"
+        "Wait… Did Karla just say that Lilly spent the night here in this very spot?"
         "I take a look and notice a particularly large drool stain on a part of the couch near Lilly's head that escaped my attention before."
         hi "Did you say she slept on the couch? Why?"
 
@@ -191,7 +191,7 @@ label sh_ch25:
 
         ka "But for some reason she decided to go back downstairs and pass out on the couch instead. The housekeeping staff found her here when they arrived. My husband has been really grumpy about that this morning."
         "Lilly groans as if even formulating words is already unbearably painful."
-        li "{cps=*0.5}Like I... said... before. My bedroom... door was... locked.{/cps}"
+        li "{cps=*0.5}Like I… said… before. My bedroom… door was… locked.{/cps}"
 
         show karla basic_confused_cas
         with chchange
@@ -206,7 +206,7 @@ label sh_ch25:
 
         ka "No, she stayed in the room you and Hanako are currently using. We decided to let you two use that room since it's larger and more suitable to accommodate two people."
         "If I remember correctly that restroom is situated right between our bedroom and Lilly's."
-        hi "I locked our door last night before we went to bed. Perhaps... err..."
+        hi "I locked our door last night before we went to bed. Perhaps… err…"
 
         show lilly basic_displeased_sum
         with chchange
@@ -239,7 +239,7 @@ label sh_ch25:
 
         "Lilly seems to have given up trying to figure out how she ended up mistaking our room for hers and lets out another tortured yawn. Karla shrugs."
         ka "Well, at least that little mystery is now solved. That leaves us with the matter of getting you back to the land of the living."
-        li "{cps=20}I'm... okay.{/cps}"
+        li "{cps=20}I'm… okay.{/cps}"
         ka "Not convincingly so. Why don't you go and take a bath? It might make you feel better. Let me take you there."
 
         show lilly:
@@ -262,7 +262,7 @@ label sh_ch25:
         with chchange
 
         "That may very well be the cruelest thing I've heard in my entire life, and from her visible cringe, it appears that Lilly completely shares that impression."
-        li "{cps=20}Please... don't... ever...{/cps}"
+        li "{cps=20}Please… don't… ever…{/cps}"
 
         show karla basic_smileclosed_cas
         hide lilly
@@ -300,7 +300,7 @@ label sh_ch25:
         ka "Just give it a bit of time. You'll probably feel better in a few hours."
         hi "I suppose there aren't any effective folk cures for this?"
         ka "There's this old Scottish remedy of putting poultices of onions under the armpits to draw toxins out of the body. But I wouldn't recommend that."
-        hi "...good."
+        hi "…good."
 
         show karla basic_smile_cas
         with chchange
@@ -309,7 +309,7 @@ label sh_ch25:
         ka "They'll help getting you back on your feet."
         hi "They actually help?"
         ka "They'll make you feel a little bit better."
-        hi "Ummm... Not to pry into your affairs, but... was your husband very upset about Lilly drinking?"
+        hi "Ummm… Not to pry into your affairs, but… was your husband very upset about Lilly drinking?"
 
         show karla basic_sheepish_cas
         with chchange
@@ -339,20 +339,20 @@ label sh_ch25:
         show karla basic_laugh_cas
         with chchange
 
-        ka "You guys aren't looking like you're going to hit the bottle again anytime soon anyway..."
+        ka "You guys aren't looking like you're going to hit the bottle again anytime soon anyway…"
         "She has a point there. Just the idea of drinking alcohol again is enough to worsen my headache."
 
         show karla cross_ponder_cas
         with chchange
 
-        ka "...but enough about that for now. There's something I wanted to ask you."
+        ka "…but enough about that for now. There's something I wanted to ask you."
         "All of a sudden, her playful look seems to have turned serious."
 
         show karla basic_serious_cas
         with chchange
 
         ka "As you know, we have a picnic scheduled this afternoon. I was thinking of combining it with a bit of physical activity. You two know how to ride a bike, don't you?"
-        "I've never asked Hanako, but it's fairly safe to assume she knows how to ride one. Lilly on the other hand..."
+        "I've never asked Hanako, but it's fairly safe to assume she knows how to ride one. Lilly on the other hand…"
         hi "I do and Hanako probably does too. But how about Lilly? She won't be sitting on the rear rack of your bike, will she?"
         ka "Leave that to me. What I wanted to know is if you're up for it. Lilly didn't give me a lot of details, but I do know you've had an accident recently that resulted in a short hospital stay."
         ka "Something to do with your heart? It was the reason Akira postponed her flight. There's a hospital only a few miles away from here, but I wager it's not among the sights you're planning on seeing during your stay here."
@@ -400,7 +400,7 @@ label sh_ch25:
         with locationchange
 
         "Fighting the lethargic sensation that's still weighing me down, I get up and make my way to the kitchen."
-        "Not hearing any sounds coming from there, I assume it to be empty and walk in letting out an unrestrained yawn..."
+        "Not hearing any sounds coming from there, I assume it to be empty and walk in letting out an unrestrained yawn…"
 
         show hanako defarms_shock_sum at tworight
         with { "master": chchangefast }
@@ -408,7 +408,7 @@ label sh_ch25:
         stop music fadeout 1.0
 
         extend " which dies abruptly as the person standing near the kitchen sink unit turns around and gasps."
-        hi "Hanako! Ummm... I mean, good morning, Hanako."
+        hi "Hanako! Ummm… I mean, good morning, Hanako."
         "I hadn't expected Hanako to be up already. She probably went straight down to the kitchen to get something to drink. She doesn't look in much better shape than Lilly or myself, but as we spot each other, our hangovers are quickly made irrelevant by a more pressing matter."
         
         play ambient sfx_ticktock
@@ -486,7 +486,7 @@ label sh_ch25:
         "As we sit there, nibbling our sandwiches and then flushing the bread and meat down with the soft drinks we got, I can tell from her posture that Hanako is slowly relaxing a little bit."
         "I figure now would be a good moment to start a conversation."
         hi "I guess we're both a little under the weather after yesterday. How are you feeling right now?"
-        ha "...M-my h-head hurts."
+        ha "…M-my h-head hurts."
         hi "Same here. You're not nauseous, are you?"
         ha "A b-bit. But I c-can eat without b-being sick, I think."
         hi "Me too, though the meat's a bit much. Lilly's mom said these sandwiches will ease hangovers, though."
@@ -506,7 +506,7 @@ label sh_ch25:
         ha "Ahahaha."
         "That has to be the most joyless laugh I've ever heard out of Hanako. I'm not sure if this is something Hanako will be able to laugh about later, but she certainly hasn't reached that stage right now yet."
         "Still, now that the subject's come up, it's probably best to press on."
-        hi "So... um... About what happened between us last night..."
+        hi "So… um… About what happened between us last night…"
 
         show hanako emb_blushing_sum
         with chchange
@@ -518,16 +518,16 @@ label sh_ch25:
         with chchange
 
         "That seems to get through to Hanako since she turns to me and gives me a resigned nod."
-        ha "I'm... s-s-sorry."
+        ha "I'm… s-s-sorry."
         hi "It's okay. I giddily went along with it. We're both equally to blame."
 
         show hanako emb_sad_sum
         with chchange
 
-        ha "But I... s-started it."
+        ha "But I… s-started it."
         hi "You don't really see Lilly as a rival, do you? Lilly's far too loyal to you to even consider trying to steal me away from you. And I wouldn't trade you in for her, either."
         hi "She's a good friend. A wonderful friend. Like an older sister. But nothing more than that."
-        ha "I... I know."
+        ha "I… I know."
         "I think Hanako's gotten to the point by now where she can believe my words if she stops to think about them rationally."
         "But on some deeper level, a part of her is probably still convinced that Lilly could easily seduce me away from her if she made even a half-hearted effort—which is probably why she got so territorial when Lilly praised my looks."
         "I'm positive, however, that that fear will eventually disappear as we continue our relationship."
@@ -538,19 +538,19 @@ label sh_ch25:
         with chchange
 
         "Hanako doesn't seem too sure about that last part, but she still looks relieved by my words."
-        ha "I'm... h-happy about that, but... w-we still s-shouldn't have d-done what we d-did."
+        ha "I'm… h-happy about that, but… w-we still s-shouldn't have d-done what we d-did."
         hi "Aside from the place where we started this, do you regret the act itself, Hanako?"
 
         show hanako emb_blushing_sum
         with chchange
 
         "Her face turns as red as the tomatos on the sandwiches, but eventually she manages to softly shake her head."
-        ha "N-no, b-but I... d-don't w-want to do it... l-like that again. Umm... Y-you...?"
+        ha "N-no, b-but I… d-don't w-want to do it… l-like that again. Umm… Y-you…?"
         "Since we're boyfriend and girlfriend now and since we've had sex before, I assumed that what we did was as consentual as we could make it, but maybe I'm wrong about that."
         "She seemed to be enjoying it a lot last night, but now that I think about it, I doubt a sober Hanako would ever let me do it with her in a position that puts just about all her scars on full display like that. She's still really sensitive about them."
         "I hope I didn't overstep my bounds. That would give this whole thing a very bitter aftertaste."
         hi "I can't exactly say I hated it, but I get that we got a little carried away. I enjoyed the act itself though."
-        ha "M-me too, b-but if... If your chest s-started hurting, w-would you have stopped?"
+        ha "M-me too, b-but if… If your chest s-started hurting, w-would you have stopped?"
         "Suddenly I get where she's going with this."
         "I hadn't even thought about that, but it's clear that Hanako did. At least, after the fact."
         hi "I'd like to say I would have stopped in time, but I'm not so sure about it now that I think about it. "
@@ -558,25 +558,25 @@ label sh_ch25:
         show hanako emb_downtimid_sum
         with chchange
 
-        ha "I'm... n-not sure about m-myself either, s-so..."
+        ha "I'm… n-not sure about m-myself either, s-so…"
         "I recall what the nurse told me some time back when he gave me the talk about keeping the big head in charge at all times. That certainly wasn't the case last night."
         "Damnit! Looks like that stunt in the living room wasn't even the most irresponsible thing we did that night. Given the way we went at it last night, I could have ended back in the hospital here. That would have been hard to explain."
         "I really should have known better. Still, even though something could have happened, that wasn't the case."
         "I put a hand on Hanako's shoulder."
         hi "I get what you're saying. We took a risk that we shouldn't have taken. But nothing happened, so it's probably best not to worry about what could have occurred. There's no point in that. At least we now that know my heart can handle it."
         "I suddenly remember something Hanako said a few days earlier."
-        hi "I... guess this wasn't exactly the slow and romantic experience you wanted..."
+        hi "I… guess this wasn't exactly the slow and romantic experience you wanted…"
 
         show hanako emb_downsad_sum
         with chchange
 
         "Seems like Hanako remembers that as well, and she seems genuinely disappointed."
-        hi "...but let's take a rain check on it. We have weeks ahead of us, we have our own private bedroom, and Lilly's not gonna be around all the time. I'm sure we'll get plenty of opportunities."
+        hi "…but let's take a rain check on it. We have weeks ahead of us, we have our own private bedroom, and Lilly's not gonna be around all the time. I'm sure we'll get plenty of opportunities."
 
         show hanako emb_blushing_sum
         with chchange
 
-        ha "O-Okay then."
+        ha "O-okay then."
         hi "Cheer up. Nobody but us knows about this little incident, and we'll just keep it that way. They say that shared secrets strengthen a couple's bond with one another."
 
         show hanako emb_downsmile_sum_close
@@ -650,7 +650,7 @@ label sh_ch25:
         show hanako basic_normal_sum
         with chchange
 
-        ha "Ummm..."
+        ha "Ummm…"
         li "The offer's appreciated, Hisao, but I think it won't be necessary. If I can think of something, I will let you know."
         "I sigh softly and sit back down in the kitchen chair near the fridge."
 
@@ -664,7 +664,7 @@ label sh_ch25:
         show hanako basic_worry_sum
         with chchange
 
-        ha "Ummm, Lilly... What's a f-ficelle?"
+        ha "Ummm, Lilly… What's a f-ficelle?"
         "The kitchen table is filled with enough ingredients to prepare a buffet of, from pieces of bread to bottles filled with stuff like mustard and vinegar, to various pieces of fruit and vegetables."
         "We spent the last 15 minutes unpacking everything in the shopping bags supposedly left here by the housekeeper, and now Hanako is frantically switching back and forth between checking the pieces of paper in her hand containing recipes and putting the various items in order."
 
@@ -700,8 +700,8 @@ label sh_ch25:
         show lilly basic_smile_sum
         with chchange
 
-        li "Hisao, could you please keep an eye on the macaroni? It's supposed to cook for... ah... Hanako?"
-        ha "Mmm... Four more minutes."
+        li "Hisao, could you please keep an eye on the macaroni? It's supposed to cook for… ah… Hanako?"
+        ha "Mmm… Four more minutes."
 
         show lilly basic_smileclosed_sum
         with chchange
@@ -720,13 +720,13 @@ label sh_ch25:
         with chchange
 
         li "What more do we need again for the radish tartines, Hanako?"
-        ha "Ah... Six tablespoons of soft, salted butter, sea salt and freshly ground pepper. Um... I was t-thinking that maybe we could add a bit of black pepper as well. We have plenty for the melon slaw."
+        ha "Ah… Six tablespoons of soft, salted butter, sea salt and freshly ground pepper. Um… I was t-thinking that maybe we could add a bit of black pepper as well. We have plenty for the melon slaw."
 
         show lilly basic_weaksmile_sum
         with chchange
 
         li "I'm sorry, Hanako, but for this occasion I'd like to stick strictly to the recipes we have. This is the first time my mother gets to experience my cooking."
-        ha "Oh... ummm... Okay."
+        ha "Oh… ummm… Okay."
 
         show lilly basic_smileclosed_sum
         with chchange
@@ -770,7 +770,7 @@ label sh_ch25:
 
         li "Hisao?"
         hi "Yes, Lilly?"
-        li "If you're still looking for something to do, would you be so kind as to get some cellophane wrapping from the drawer near the oven and wrap up the snacks as I finish them? Allison said that Mother left some saddlebags in the hallway. Would you...?"
+        li "If you're still looking for something to do, would you be so kind as to get some cellophane wrapping from the drawer near the oven and wrap up the snacks as I finish them? Allison said that Mother left some saddlebags in the hallway. Would you…?"
         hi "Sure, I'll go and get them."
         "I retrieve the saddlebags from the hallway, take a seat near Lilly, and start wrapping up the snacks."
         "With Hanako preparing the ingredients, Lilly putting everything together, and me wrapping up the snacks and putting them in the bags, it's almost as if we're running a miniature assembly line."
@@ -799,7 +799,7 @@ label sh_ch25:
         show hanako basic_worry_sum
         with chchange
 
-        ha "Ah... Everything's done except for the cheese."
+        ha "Ah… Everything's done except for the cheese."
         li "If you could melt the cheese and mix it with the macaroni, that would probably save me a lot of time. I'll finish the rest once I'm done with the melon slaw."
         ha "Okay."
 
@@ -808,7 +808,7 @@ label sh_ch25:
         "With that, Hanako and Lilly get back to work, and since the melon slaw Lilly's working on will be contained in just one large bowl, there's not a lot for me to do until she finishes."
         "As I watch Lilly getting started on the meal in front of her, something suddenly draws my attention. Lilly's hands are sweeping across the surface of the bowls, but she doesn't put her hands inside to feel the contents."
         "Come to think of it, while she was working on the avocado and ham sandwiches, she also seemed to immediately know what bowl contained which ingredients yet I didn't hear Hanako instruct her beforehand."
-        hi "Ah... Lilly?"
+        hi "Ah… Lilly?"
 
         show lilly basic_smileclosed_sum
         with chchange
@@ -820,7 +820,7 @@ label sh_ch25:
         show hanako emb_downsmile_sum
         with chchange
 
-        li "Hmmmm..."
+        li "Hmmmm…"
         "Lilly's only answer is an amused smile. There's a little smile on Hanako's face too as if they're enjoying some private joke at my expense."
         hi "It's not a secret, is it?"
 
@@ -840,7 +840,7 @@ label sh_ch25:
         show hanako basic_smile_sum
         with chchange
 
-        li "...Indeed. I appreciated the offer, but we weren't given a great deal of time to prepare everything, and it was important to work as efficiently as possible."
+        li "…Indeed. I appreciated the offer, but we weren't given a great deal of time to prepare everything, and it was important to work as efficiently as possible."
         hi "I guess there are some things that are better left to the pros, huh?"
 
         show lilly basic_giggle_sum
@@ -861,7 +861,7 @@ label sh_ch25:
         show lilly basic_listen_sum
         with chchange
 
-        li "Please excuse me... Good morning. Lilly Satou speaking."
+        li "Please excuse me… Good morning. Lilly Satou speaking."
 
         # TODO use back_smileclosed_sum
         show lilly basic_smileclosed_sum
@@ -882,13 +882,13 @@ label sh_ch25:
         "She puts down her phone for a moment and briefly turns her head in our direction."
         li "How about you?"
         hi "I'm okay. My head still feels a little heavy, but nothing severe enough to stay in bed for."
-        ha "M-Me too."
+        ha "M-me too."
 
         # TODO use back_smileclosed_sum
         show lilly basic_smileclosed_sum
         with chchange
 
-        li "Mother?... We're all looking forward to this afternoon."
+        li "Mother?… We're all looking forward to this afternoon."
         li "No, we're in the kitchen right now. We've been preparing the food for the picnic."
 
         # TODO use back_listen_sum
@@ -1058,7 +1058,7 @@ label sh_ch25:
         hide hanako
         with charachangealways
 
-        hi "Alright, on the count of three... {w=0.5}One... {w=0.5}two... {w=0.5}three."
+        hi "Alright, on the count of three… {w=0.5}One… {w=0.5}two… {w=0.5}three."
 
         window hide None
 
@@ -1082,7 +1082,7 @@ label sh_ch25:
         show tandembike hanako worry at center
         with Dissolvemove(0.5)
 
-        hi "Okay, let's try that again. Try to stay straight up, Hanako. Let me do the correcting. {w=0.5}One... {w=0.5}Two... {w=0.5}Three."
+        hi "Okay, let's try that again. Try to stay straight up, Hanako. Let me do the correcting. {w=0.5}One… {w=0.5}Two… {w=0.5}Three."
 
         window hide dissolve
 

@@ -13,7 +13,7 @@ label sh_ch31:
         "Receptionist" "Miss Satou!"
         "I turn my head and look at the reception desk where a woman in her early 30s is beckoning me."
         "Receptionist" "Good morning, Miss Satou."
-        aki "Good morning... {w=0.5}erm... Wendy?"
+        aki "Good morning… {w=0.5}erm… Wendy?"
         "Receptionist" "Jenny."
         "Crap."
         aki "Sorry, I'm still in the process of remembering everybody's name. Please humor me for a little while longer."
@@ -76,7 +76,7 @@ label sh_ch31:
         fer "I've always been fascinated by how different your parents are as people."
         aki "Different?"
         fer "Your mother's an extraverted woman, always on the go, involved in a hundred things at once, and with a knack for quickly spotting and immediately pouncing on opportunities that present themselves."
-        fer "Your father's more of an introvert, content to sit in his study and read through his book collection in the little free time he permits himself, and I've never seen him make decisions on a whim..."
+        fer "Your father's more of an introvert, content to sit in his study and read through his book collection in the little free time he permits himself, and I've never seen him make decisions on a whim…"
         fer "He always tries to get to the bottom of whatever issue he faces before deciding on it and he usually pays a large amount of attention to the long-term consequences of whatever action he takes. More than anyone else I've ever met."
         aki "I see."
         "A gloomy expression appears on his face."
@@ -99,7 +99,7 @@ label sh_ch31:
         fer "Of course, it would have been rather inappropriate to ask her about that when she called yesterday, but perhaps you've picked something up."
         aki "I'm afraid I haven't really spoken to her much."
         fer "I just wanted to let you know that nobody here would question your loyalty to the company if you followed your mother's example and decided you need some time off to deal with this. We'd be happy to accommodate you."
-        "I don't think there'd be much of a point in me taking time off. If Mom needs comfort, she still has Lilly around. And Lilly has Hanako and Hisao... for the time being."
+        "I don't think there'd be much of a point in me taking time off. If Mom needs comfort, she still has Lilly around. And Lilly has Hanako and Hisao… for the time being."
         "Mom decided it was probably best for them to return to Japan ahead of schedule, since Dad's incident pretty much put a permanent damper on their vacation. They're set take a flight back in three days."
         "If Lilly wants me to spend more time with her afterwards, I can always take a day off or so, but I think I know her well enough already to know she probably wouldn't want me to take a leave of absence purely for her sake."
         aki "I think I'll be fine, sir. But I appreciate your concern. I'll be sure to let you know if I change my mind."
@@ -233,22 +233,22 @@ label sh_ch31:
         "An inquisitive glint appears in the doctor's eye."
         dc "Satou isn't exactly a common name around here. Are you perhaps related to Satou Medical Technology? I don't deal with them directly, but I've heard that it's a family company."
         kamo "My husband actually runs that company. I'm an employee myself as well. Raigmore is a very valued customer of ours. Particularly this ward."
-        dc "Yes, our ambulance team probably even used one of your AED's to correct your husband's heart rhythm. Hmmm... Perhaps he can appreciate that."
+        dc "Yes, our ambulance team probably even used one of your AED's to correct your husband's heart rhythm. Hmmm… Perhaps he can appreciate that."
 
         show karla basic_wistful_cas
         with chchange
 
         "Mom smiles sadly."
-        kamo "He probably would. Or rather... He'd probably be very troubled if it had been the competition's equipment that saved his life..."
+        kamo "He probably would. Or rather… He'd probably be very troubled if it had been the competition's equipment that saved his life…"
         "She sighs before continuing."
-        kamo "The CEO of a company specializing in heart equipment suffering a heart attack... It sounds unreal, doesn't it?"
+        kamo "The CEO of a company specializing in heart equipment suffering a heart attack… It sounds unreal, doesn't it?"
         "Doctor McElroy chuckles briefly."
         dc "Not to me, to be honest. I've worked in a hospital in the past where I worked alongside another cardiologist who ended up suffering a minor heart attack himself."
         dc "One of my old friends from university is a respiratory physician who's also an avid smoker whenever he's not on duty. And plenty of dentists have cavities from time to time."
         dc "All of us are still only human, Mrs Satou. It's not uncommon to be knowledgable about illnesses or conditions and still fall prey to them, yourself."
-        dc "In fact, sometimes merely being knowledgable about something helps us fool ourselves into believing it won't happen to us..."
+        dc "In fact, sometimes merely being knowledgable about something helps us fool ourselves into believing it won't happen to us…"
         "His expression turns slightly more serious."
-        dc "...even in the face of overwhelming evidence to the contrary. But we can talk about that later. It's probably best if I give you an update on his condition first."
+        dc "…even in the face of overwhelming evidence to the contrary. But we can talk about that later. It's probably best if I give you an update on his condition first."
 
         show karla basic_lillyface_cas
         show lilly basic_listen
@@ -276,7 +276,7 @@ label sh_ch31:
         with chchange
 
         "Mom nods."
-        kamo "A healthy lifestyle... Stress-free, I presume?"
+        kamo "A healthy lifestyle… Stress-free, I presume?"
         dc "Yes. A heart attack caused by stress-related high blood pressure is a worst-case scenario, but as you have learned, even worst-case scenarios take place from time to time."
         dc "I understand that your husband has been under a lot of stress?"
         kamo "I'm afraid so. We're on the verge of taking over a company abroad, and there's been a second interested party who hasn't completely left the picture yet. All in all, it's been a very trying time."
@@ -288,7 +288,7 @@ label sh_ch31:
         with chchange
 
         "Lilly sighs."
-        li "And despite everything he also committed to a trip with my friends and me, despite the fact that it required him to squeeze his workload into an even smaller timespan. If only..."
+        li "And despite everything he also committed to a trip with my friends and me, despite the fact that it required him to squeeze his workload into an even smaller timespan. If only…"
         "The doctor scrapes his throat to cut off Lilly's remark."
 
         show lilly basic_displeased
@@ -314,16 +314,16 @@ label sh_ch31:
 
         "Son of a bitch! Years? I shake my head in disbelief. How stupid can a person get? How important was this company expansion for him to go this far?"
         "Lilly barely manages to conceal a shocked gasp. Mom's face, on the other hand, is completely neutral."
-        "I wonder how much she knows..."
+        "I wonder how much she knows…"
         "It feels inappropriate to ask with the doctor nearby, so I swallow the remark I was about to make. After a moment of silence, Mom speaks up."
         kamo "I suppose your comment about how tempting it is to believe these sorts of things only happen to others is particularly true here."
-        dc "...I suppose so."
+        dc "…I suppose so."
 
         show karla basic_sad_cas
         show lilly basic_sad
         with chchange
 
-        kamo "So... What will happen now? And when do you think he can go home?"
+        kamo "So… What will happen now? And when do you think he can go home?"
         dc "He is going to need a lot of time to recover. If you like, it's okay for you to go and visit him after you leave here if he's awake."
         dc "How long we decide to keep him here will depend on how well his recovery progresses. It's still too early to make an accurate prediction."
         kamo "He'd probably feel more comfortable recuperating at home than in a hospital room. We could hire a private duty nurse to keep an eye on him while he recovers."
@@ -336,13 +336,13 @@ label sh_ch31:
         kamo "Of course."
         dc "We can make an appointment next week to discuss the future. We will probably have a better idea of when he can leave the hospital."
         dc "When you schedule a new appointment with the desk workers down the hall, they will be able to provide you with some pamphlets about how to adjust one's lifestyle in order to prevent further heart attacks."
-        kamo "I'll be sure to read them. But, doctor..."
+        kamo "I'll be sure to read them. But, doctor…"
 
         show karla basic_distant_cas
         with chchange
 
         "She pauses for a moment, almost as if not entirely sure if she's prepared for the answer."
-        kamo "...will he be able to return to work eventually, or is this the definite end of his career?"
+        kamo "…will he be able to return to work eventually, or is this the definite end of his career?"
         dc "Given how far he's gone, I can only imagine that his job is very important to him."
 
         show karla basic_sad_cas
@@ -375,10 +375,10 @@ label sh_ch31:
         show lilly cane_concerned_close
         with chchange
 
-        li "He knew... for years..."
+        li "He knew… for years…"
         aki "He knew he was a risk case for years, but the question remains whether anybody else besides that general practitioner knew about this."
         aki "Well, I'm curious about one person in particular. She put on one hell of a poker face just now."
-        li "I... don't want to believe that she knew... and did nothing. When I spoke with her on the phone that evening, she even said..."
+        li "I… don't want to believe that she knew… and did nothing. When I spoke with her on the phone that evening, she even said…"
         aki "Yeah, if she knew then that's a real problem. But would it really be a relief to you if she didn't know, Lils?"
 
         show lilly cane_reminisce_close
@@ -389,8 +389,8 @@ label sh_ch31:
         li "..."
         aki "How much do we really know about Mom and Dad? It's been six years, and back when we were living with them, we were living in a completely different environment."
         aki "Things have changed. They've changed, too, that much is obvious. Especially Mom."
-        aki "Maybe... that new start they talked about earlier wasn't just about patching things up between us and them. Maybe.."
-        li "Maybe...?"
+        aki "Maybe… that new start they talked about earlier wasn't just about patching things up between us and them. Maybe.."
+        li "Maybe…?"
         aki "She's coming back. We might as well ask her now."
 
         show lilly cane_concerned_close
@@ -413,12 +413,12 @@ label sh_ch31:
         show karla basic_sad_cas
         with chchange
 
-        kamo "What indeed..."
+        kamo "What indeed…"
 
         show lilly cane_reminisce
         with chchange
 
-        li "Mother, do you remember that phone call we had on the evening of...? You said things would probably be fine. That he'd be able to handle a few more weeks."
+        li "Mother, do you remember that phone call we had on the evening of…? You said things would probably be fine. That he'd be able to handle a few more weeks."
         aki "If Lilly had taken your words at face value back then instead of calling a doctor, we'd probably be arranging a funeral right now. How much did you know about Dad's condition?"
 
         show karla basic_lost_cas
@@ -448,14 +448,14 @@ label sh_ch31:
         with chchange
 
         "Lilly's expression becomes pained upon hearing my harsh words."
-        li "Akira... Please, not now."
+        li "Akira… Please, not now."
         "Mom averts her eyes for a second."
 
         show karla basic_distant_cas
         with chchange
 
-        kamo "I'm not gonna try and justify the lack of contact between the three of us, but your father... was actually okay with the way we lived our lives."
-        kamo "He knew that... if he ever needed me to be there for him... I'd drop everything else immediately. I swore a solemn oath to him, and I have reminded him of it... several times."
+        kamo "I'm not gonna try and justify the lack of contact between the three of us, but your father… was actually okay with the way we lived our lives."
+        kamo "He knew that… if he ever needed me to be there for him… I'd drop everything else immediately. I swore a solemn oath to him, and I have reminded him of it… several times."
         "I shake my head in disbelief."
         aki "You'd drop everything else and be a wife to him as long as he asked you? What kind of sorry marriage has agreements like that? Was that part of your wedding vows?"
         aki "Heck, why did you even marry Dad to begin with? Did you even like him, or did you just want to marry into a wealthy and prestigious family?"
@@ -473,7 +473,7 @@ label sh_ch31:
         with chchange
 
         "Even though Mom limited herself to merely hitting back with words, Lilly reels as if someone slapped her in the face."
-        li "M-Mother, Akira... Please... just... stop this."
+        li "M-Mother, Akira… Please… just… stop this."
         "The distressed look on Lilly's face makes my anger fade a bit and replaces it with embarassment. Judging from the expression on Mom's face, she's probably feeling the same."
 
         show lilly cane_concerned
@@ -492,7 +492,7 @@ label sh_ch31:
 
         li "Yes."
         kamo "Akira, you don't mind dropping off Lilly afterwards, do you?"
-        li "Excuse me, but... You're not coming along, Mother?"
+        li "Excuse me, but… You're not coming along, Mother?"
 
         show karla basic_resigned_cas
         with chchange
@@ -503,7 +503,7 @@ label sh_ch31:
         with chchange
 
         li "..."
-        aki "...Fine. I'll give her a ride afterwards."
+        aki "…Fine. I'll give her a ride afterwards."
         kamo "Alright. I'll talk to you later, then."
 
         hide karla
@@ -521,14 +521,14 @@ label sh_ch31:
         show lilly cane_displeased
         with chchange
 
-        li "I... I do. She seemed sincerely offended at your words."
+        li "I… I do. She seemed sincerely offended at your words."
         "I notice a slightly accusing tone in her voice. It's only barely noticable, and I might have missed it if I wasn't so used to the subtleties of my sister's way of speaking."
         aki "You think I went too far?"
 
         show lilly cane_sad
         with chchange
 
-        li "It... wasn't very respectful."
+        li "It… wasn't very respectful."
         aki "Maybe not. But they're probably already used to this kind of thing from me."
         li "I don't think that's true, or Mother wouldn't have sounded so angry."
         aki "Listen, I get that I'm being confrontational, but someone has to call them out on their actions, Sis. And if I'm doing this, that means you don't have to."
@@ -545,7 +545,7 @@ label sh_ch31:
         show lilly cane_concerned
         with chchange
 
-        li "I... I need to let all of this sink in. I need to think... about things."
+        li "I… I need to let all of this sink in. I need to think… about things."
         aki "There'll be time for that later. We're here."
         "Just as we arrive at room 702, I see a nurse walking out of it."
         aki "Excuse me, miss. Is Mister Satou awake right now?"
@@ -590,13 +590,13 @@ label sh_ch31:
         aki "Nice to see you're awake, Dad."
         hyd "..."
         "There's a soft sound, but if it was a mumble, it was too soft for even Lilly to comprehend. That familiar worrying expression appears on my sister's face in response."
-        li "Father... Are you in a lot of pain?"
-        hyd "{cps=20}I... fine.{/cps}"
+        li "Father… Are you in a lot of pain?"
+        hyd "{cps=20}I… fine.{/cps}"
         "Those fractured ribs of his probably make even taking deep breaths painful, and his first reaction is to claim he's fine. I shrug."
         aki "His definition of ‘fine’ is still the same as it was just before this whole mess started, Sis. I'll leave it up to you to decide whether you want me to describe what he looks like, but ‘fine’ is not a word I'd use right now."
         "Lilly merely smiles sheepishly and then goes back to her worrying tone."
         li "You don't have to talk, Father. If you really need to say something, just whisper. Please don't strain yourself."
-        hyd "{cps=20}Your... mother... not here?{/cps}"
+        hyd "{cps=20}Your… mother… not here?{/cps}"
         "Lilly smiles and shakes her head."
         li "Mother will be keeping you company this evening."
         "That's leaving out one heck of an important detail."
@@ -604,7 +604,7 @@ label sh_ch31:
         aki "Turns out he knew you were a risk case, and you knew that too. What on earth were you thinking?"
         "A long silence follows."
         "I wonder if he expected us to find out about this. I can see Lilly fidgeting a bit. She obviously doesn't really like where this is going, but at the same time, I bet she's curious herself."
-        hyd "{cps=20}I... could not... just stop... just before... the... end. My... honor... was at... st-stake... here.{/cps}"
+        hyd "{cps=20}I… could not… just stop… just before… the… end. My… honor… was at… st-stake… here.{/cps}"
 
         show ev bedridden_akira_shout
         with charachangeev
@@ -612,23 +612,23 @@ label sh_ch31:
         aki "Honor? Give me a break! You think you're some sort of samurai who'll be fondly remembered by everyone who knew him if he bravely dies in the line of duty while serving his lord or something?"
         aki "I bet most people at the office here would have thought of you as a fool."
         aki "Heh, maybe those guys on the board of directors would have put a memorial plaque in place in your honor at the Japanese branch, assuming the ambulance crew wouldn't have ended up thwarting things."
-        hyd "{cps=20}What... do... you... mean?{/cps}"
+        hyd "{cps=20}What… do… you… mean?{/cps}"
         aki "You ever thought of what would have happened if Hanako hadn't been there to give you CPR on the spot, but the ambulance team would still have arrived just in time to save some of your basic brain functions?"
         aki "You would have spent the next decade or two mumbling random gibberish at your wife and daughters while they're busy changing your daily diapers. The board members would have denied your very existence out of embarrassment."
         aki "If you think that's an exaggeration, then maybe we can take a look around here at the hospital. They may have heart attack victims here who weren't as lucky as you've been."
         hyd "..."
         "I can see that his medication hasn't left him fuzzy enough to miss the implication of my comment, and he looks uncomfortable upon imagining that scenario. Looks like that wasn't part of his risk calculation after all."
         aki "Besides, this isn't about the last couple of weeks or the last couple of months. You were told you had high blood pressure years ago. Why on earth didn't you take it easier back then?"
-        hyd "{cps=20}Could... not... afford to... yet...{/cps}"
+        hyd "{cps=20}Could… not… afford to… yet…{/cps}"
         aki "Could not afford to? Even a couple of years ago, you could have retired and lived out the rest of your days in comfort. This was simply about your ego."
-        hyd "{cps=20}...no way... to... speak to... a parent... Akira.{/cps}"
-        hyd "{cps=20}You... show... respect... for once... This was... about... your... education... and... financial future... too. And es... especially... Lilly's.{/cps}"
+        hyd "{cps=20}…no way… to… speak to… a parent… Akira.{/cps}"
+        hyd "{cps=20}You… show… respect… for once… This was… about… your… education… and… financial future… too. And es… especially… Lilly's.{/cps}"
         "That excuse again. Lilly looks a bit distressed upon hearing Father's words."
         li "My financial future, Father?"
-        hyd "{cps=20}We... have been... setting... trust fund... for your... cial future... during our... time here.{/cps}"
+        hyd "{cps=20}We… have been… setting… trust fund… for your… cial future… during our… time here.{/cps}"
         li "A trust fund?"
-        hyd "{cps=20}Yes... so even... in... the long run... you will... always be... well... provided for.{/cps}"
-        hyd "{cps=20}Even... if you... would not... find a... husband... at some point, you... would still... be able... to live... without worry, L-Lilly.{/cps}"
+        hyd "{cps=20}Yes… so even… in… the long run… you will… always be… well… provided for.{/cps}"
+        hyd "{cps=20}Even… if you… would not… find a… husband… at some point, you… would still… be able… to live… without worry, L-Lilly.{/cps}"
         "Well-provided for? I wonder if he realizes how extremely patronizing he's sounding."
         "Lilly certainly realizes it, too, and I can see an angry expression on her face."
         "She's making an active effort to keep her composure. The sight of her hurt expression suddenly pisses me off to no end, and I sling an angry retort back at the old man."
@@ -636,7 +636,7 @@ label sh_ch31:
 
         stop music fadeout 4.0
 
-        hyd "{cps=20}But... she... will... probably... need... it.{/cps}"
+        hyd "{cps=20}But… she… will… probably… need… it.{/cps}"
 
         scene bg raigmore_room
         with locationchange
@@ -688,7 +688,7 @@ label sh_ch31:
 
         "For a moment I think she's going to turn around and walk back to Dad to apologize to him, but that doesn't happen."
         aki "I'll take you to the car, okay?"
-        li "Yes..."
+        li "Yes…"
 
         scene bg raigmore_entrance
         with locationchange
@@ -708,7 +708,7 @@ label sh_ch31:
         show lilly basic_displeased_cas_close at twoleft
         with charaenter
 
-        li "Do you mean to say he may have... not been himself?"
+        li "Do you mean to say he may have… not been himself?"
         aki "He wasn't completely out of it or anything, but he was probably a little too fuzzy to be able to carefully choose and weigh his words like he usually does."
         li "The mindset behind it is still the same though, isn't it? Whether it's sugarcoated or not doesn't really matter."
         aki "Yeah. Crap with cream on top is still crap."
@@ -724,18 +724,18 @@ label sh_ch31:
         with charaenter
 
         li "Thank you."
-        aki "Hey Sis, you've been kind of quiet. You... uh... want to talk about this?"
+        aki "Hey Sis, you've been kind of quiet. You… uh… want to talk about this?"
 
         show lilly cane_concerned_cas_close
         with chchange
 
-        li "...Thank you, Akira. But I'd like to think some more first."
+        li "…Thank you, Akira. But I'd like to think some more first."
 
         show lilly cane_displeased_cas_close
         with charachangealways
 
         "We get out and we say our goodbyes, but as Lilly turns around and heads for the front door, I suddenly think of something and put a hand on her shoulder."
-        aki "Hey Sis, I've been thinking... Have you considered the option of accompanying Hanako and Hisao back to Japan? I could drop by the airport and see if I can secure an additional ticket for that particular flight."
+        aki "Hey Sis, I've been thinking… Have you considered the option of accompanying Hanako and Hisao back to Japan? I could drop by the airport and see if I can secure an additional ticket for that particular flight."
         aki "It might be better than having to put up with stuff like what just happened for an extended amount of time. A premature departure might just send a hint with enough impact to last."
         "Curiously enough, Lilly doesn't immediately react."
 
@@ -750,7 +750,7 @@ label sh_ch31:
         pause 0.5
 
         "Just when I'm about to repeat my question, she unexpectedly shrugs off my hand in an almost mechanical way, and her parting words, uttered just before she opens the front door and walks in, sound cold enough to send a tingle down my spine."
-        li "...have a nice evening, Akira."
+        li "…have a nice evening, Akira."
 
         hide lilly
         with charaexit
@@ -764,7 +764,7 @@ label sh_ch31:
         with locationchange
 
         "As I start the engine, I let out a weary sigh."
-        aki "This situation is getting messier with every passing moment..."
+        aki "This situation is getting messier with every passing moment…"
 
         stop music fadeout 3.0
 

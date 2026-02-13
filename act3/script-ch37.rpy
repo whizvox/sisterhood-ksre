@@ -449,7 +449,7 @@ label sh_ch37:
         hyf "Hmmm..."
         "There's a long pause after I pose my question, and for a moment I'm starting to suspect he's not going to answer in order to avoid hurting my feelings. But just before I can apologize for asking him, he answers."
         hyf "When we invited you and Akira to join... us here, I used to believe that if anyone would reject our offer, it... would be Akira rather than you. I was... rather shocked when your mother told me the news. But, on the other hand..."
-        li "Y-Yes?"
+        li "Y-yes?"
 
         hyf "...From what I have heard from... you about your life in Japan over the last two weeks, I know that you had your life set up well there. You had a school... you enjoyed attending, a position of responsibility among... your classmates and friends you enjoyed spending time with."
         hyf "All of those are valuable things. To... give all of that up, just to make a brand new start on the other end of the... world in a country with a culture completely different from your own... is quite a gamble."

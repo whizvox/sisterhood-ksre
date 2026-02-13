@@ -293,7 +293,7 @@ label sh_ch5:
         ha "A-around some areas, I can f-feel it when you press hard enough. B-but nothing s-softer. N-not any pleasant sensations anymore."
         "I wrap my arms around her."
         "I start realizing why Hanako often hugged me so tightly when we exchanged kisses. Since the sensation on her back and shoulders was partially numbed, she had the tendency to press herself against me to maximize the sensations she was feeling from the front."
-        ha "I-It's p-probably for the better though. It c-could have been w-worse. I-It's better to feel n-nothing at all than to be in c-constant pain, i-isn't it?"
+        ha "I-it's p-probably for the better though. It c-could have been w-worse. I-it's better to feel n-nothing at all than to be in c-constant pain, i-isn't it?"
         "That's true, but that can't feel like much of a consolation right now. I don't think it's going to do much good offering her sympathy. What she needs me to do right now is cheer her up."
         "I think for a moment."
         "I have an idea that might work, even if it's a bit of a gamble. It might also end up backfiring on me, but I decide to take the risk."

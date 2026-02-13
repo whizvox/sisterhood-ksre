@@ -566,7 +566,7 @@ label sh_ch7:
         hi "Wow, your shoulders and your neck are really stiff this time."
         ha "I'm… not very good with people, so situations like these will probably always cause me stress."
         hi "Even though people were friendly today?"
-        ha "I-It's not something rational. I really wish it was. It'd be a lot easier to control."
+        ha "I-it's not something rational. I really wish it was. It'd be a lot easier to control."
         "He starts carefully rubbing and kneading my neck and shoulders."
         "We've been giving each other these little massages for a while now, and I've really come to enjoy them."
         "While I can't feel the sensation of his hand touching and rubbing the skin of my right shoulder, I still feel the result in my muscles there afterwards. It almost feels like I'm challenging my condition this way."

@@ -15,7 +15,7 @@ label sh_ch30:
         with chchange
 
         ha "Check!"
-        hi "Hrmg..."
+        hi "Hrmg…"
         "I smile as I hear these two conflicting reactions from my friends."
         "I haven't been following the game between them very closely, but Hanako's exclamation, voiced in a slightly sing-song tone, as well as Hisao's frustrated grunt, leave little doubt as to who is currently winning."
         li "Is Hanako giving you trouble, Hisao?"
@@ -77,7 +77,7 @@ label sh_ch30:
         kam "Hi Lilly."
         li "Oh, hello Mother. Have you already arrived at Aunt Stella's place?"
         kam "Yeah, I arrived here half an hour ago."
-        li "Aren't you tired? Driving all the way over there after work..."
+        li "Aren't you tired? Driving all the way over there after work…"
 
         show karla basic_sheepish_cas_phone
         with chchange
@@ -85,24 +85,24 @@ label sh_ch30:
         kam "Only a little. It's been a long day, but I promised her I'd come see her before your father and I leave for the US, and I think the upcoming weeks are only going to get busier."
         kam "And I won't have time the upcoming days either when your father takes a few days off and I get back to work."
         kam "Speaking of which, is he already home?"
-        li "No, not yet..."
+        li "No, not yet…"
         "I think those two work way too hard."
-        li "Mother..."
+        li "Mother…"
         "I'm a little worried about them, but I don't really think it's a daughter's place to admonish her parents about the way they live their lives."
 
         show karla basic_smile_cas_phone
         with chchange
 
         kam "Yes?"
-        li "Ah... I don't mean to speak out of line, but..."
+        li "Ah… I don't mean to speak out of line, but…"
         kam "Heh, don't worry about that. Just say what's on your mind."
-        li "Are you and Father still... holding up? Things have been stressful for you, haven't they?"
+        li "Are you and Father still… holding up? Things have been stressful for you, haven't they?"
 
         show karla basic_ponder_cas_phone
         with chchange
 
         kam "I'm still doing okay. It's been hectic, and will continue to be for a few weeks, but I still feel fine. I'll be glad when it's over, but I still feel like I'm able to handle things."
-        li "How about Father? Akira, Hisao, and Hanako said he looked... not well."
+        li "How about Father? Akira, Hisao, and Hanako said he looked… not well."
         "Mother lets out a weary sigh."
 
         show karla basic_distant_cas_phone
@@ -132,7 +132,7 @@ label sh_ch30:
         with chchange
 
         kam "After we travel to the US and finish the deal there, I intend to stay there for a bit and take him on a little trip. See some of the national parks, maybe the Niagara Falls, too. Take it easy, see stuff, just relax. That'll fix him right up, you'll see."
-        li "...I hope so."
+        li "…I hope so."
         kam "When he's taking time off to spend with you, just try to do whatever you can to take his mind off the business, okay? I'd appreciate that even though it may be a losing battle."
         li "I will try."
 
@@ -238,7 +238,7 @@ label sh_ch30:
         hi "You mentioned sightseeing. Any further information on where we'll be going, or is it going to be a surprise?"
         "I open the drawer of one of the sidetables and pull out what I know is a tiny folder on Edinburgh's main tourist attractions, which I give to Hisao."
         li "You could take a little look in here and see if there's anything you like."
-        hi "Thanks..."
+        hi "Thanks…"
 
         show hisao basic_frown_polo
         with { "master": charachangealways }
@@ -248,7 +248,7 @@ label sh_ch30:
         li "Of course. But if you don't understand the meaning of certain words, just read the corresponding sentence to me and I'll tell you what it means."
         hi "If I do that, are you going to correct my mispronunciations again? The last time we did something like this, you turned it into a miniature English lesson."
         "I give a disappointed pout. Why is he so resistant towards improving his language skills?"
-        li "But... it's a pretty important skill to have in order to make yourself understood around here and surely an upcoming scientist must have some adequately honed skill in the language, especially since many scientific documents and websites are in English."
+        li "But… it's a pretty important skill to have in order to make yourself understood around here and surely an upcoming scientist must have some adequately honed skill in the language, especially since many scientific documents and websites are in English."
         li "Isn't it better for me to give you a few pointers now instead of having you picking up the wrong habits?"
 
         show hisao cross_grin_polo
@@ -300,7 +300,7 @@ label sh_ch30:
         with chchange
 
         hi "Smell? I've always felt that all zoos smell alike. Is there a big difference between the smell of elephant droppings and the smell of gorilla turds?"
-        li "Well, ah..."
+        li "Well, ah…"
 
         show hanako emb_smile
         with chchangefast
@@ -343,7 +343,7 @@ label sh_ch30:
         show hanako basic_smile
         with chchange
 
-        hi "Hmm, City Art Center, Museum of Edinburgh... I don't know if visiting art displays is really something you'd enjoy."
+        hi "Hmm, City Art Center, Museum of Edinburgh… I don't know if visiting art displays is really something you'd enjoy."
         li "Any museums about specific subjects?"
         hi "This one may interest you. The Writers' Museum. It's dedicated to three well-known Scottish writers."
         li "Hmmm, which ones?"
@@ -371,7 +371,7 @@ label sh_ch30:
         with chchange
 
         hi "They might not have much information printed in Braille."
-        li "Then surely I'll be able to rely on the two of you to read it to me, and..."
+        li "Then surely I'll be able to rely on the two of you to read it to me, and…"
 
         play sound sfx_car_driveup
 
@@ -393,7 +393,7 @@ label sh_ch30:
         show hiroyuki serious at right
         with charaenter
 
-        hyf "Lilly, Miss Ikezawa, Mister Nakai... Good evening."
+        hyf "Lilly, Miss Ikezawa, Mister Nakai… Good evening."
         hi "Good evening, sir."
         ha "G-good evening."
         li "Welcome back, Father. I'm happy to see you could make it back here sooner than usual."
@@ -403,7 +403,7 @@ label sh_ch30:
 
         stop music fadeout 4.0
 
-        hyf "I... am afraid I still have a few things to do. I will be retiring to my study. Please do not disturb me while I am working..."
+        hyf "I… am afraid I still have a few things to do. I will be retiring to my study. Please do not disturb me while I am working…"
 
         play ambient sfx_ticktock fadein 4.0
 
@@ -413,7 +413,7 @@ label sh_ch30:
 
         ha "..."
         hi "..."
-        li "Ah... Of course, Father."
+        li "Ah… Of course, Father."
         hyf "Good evening, then."
 
         hide hiroyuki
@@ -421,7 +421,7 @@ label sh_ch30:
 
         "I'm taken off guard by the abrupt tone of Father's voice. He usually takes the time to properly greet us when he comes home. Is he in that much of a hurry?"
         "As Father's footsteps head into the direction of the study and I hear a door being closed in the distance, I turn to Hanako and Hisao."
-        li "I... apologize. He's usually not that curt with others."
+        li "I… apologize. He's usually not that curt with others."
         hi "It's okay, Lilly. To be honest, he didn't really look like he was up for a chat anyway."
         li "Hmmm?"
         hi "I don't know, he looked a bit pale. Maybe he came home because he was getting sick."
@@ -470,7 +470,7 @@ label sh_ch30:
 
         "I'm greeted by a tired sigh as I enter."
         hyf "Yes?"
-        li "Ah... Father?"
+        li "Ah… Father?"
 
         show hiroyuki stern
         with chchange
@@ -479,13 +479,13 @@ label sh_ch30:
         li "I know, Father. This won't take long."
         hyf "Go ahead."
         "I walk further into the room until I'm standing near the table where Father is working."
-        li "Father, is it... wise to keep working right now despite the fact that you were plagued by RSI earlier?"
+        li "Father, is it… wise to keep working right now despite the fact that you were plagued by RSI earlier?"
 
         show hiroyuki eyebrow
         with chchange
 
         hyf "Hmmm? Ah, my shoulder? Did your mother tell you about that?"
-        li "She did. Are you... feeling alright?"
+        li "She did. Are you… feeling alright?"
         hyf "I am fine. Why are you suddenly so concerned about me?"
         li "Hanako and Hisao said that you looked a little pale when you came in."
 
@@ -496,7 +496,7 @@ label sh_ch30:
         hyf "I felt a bit unwell at the office, so I decided to return home earlier than planned. The sensation disappeared when I left the building. It has not returned since. I am fine right now."
         li "I've been thinking, Father. Perhaps we should call off our trip to Edinburgh. Or at least postpone it until a more convenient time."
         hyf "A more convenient time?"
-        li "When you're... no longer under so much pressure."
+        li "When you're… no longer under so much pressure."
 
         show hiroyuki stern
         with chchange
@@ -504,14 +504,14 @@ label sh_ch30:
         hyf "I have already made you a promise, have I not?"
         li "There will be other times."
         hyf "I do not like to go back on my word. It is a matter of honor."
-        li "B-but..."
-        hyf "Lilly, a proper lady... respects the will... of her elders."
+        li "B-but…"
+        hyf "Lilly, a proper lady… respects the will… of her elders."
         li "Father, is anything wrong?"
 
         show hiroyuki strained
         with chchange
 
-        hyf "Perhaps... you could get me a glass... of water."
+        hyf "Perhaps… you could get me a glass… of water."
         li "Right away, Father."
 
         play sound sfx_dooropen
@@ -523,7 +523,7 @@ label sh_ch30:
 
         "I make my way out of the study and back to the living room and let out a tired sigh."
         li "It seems you were right, Hisao. Father did feel unwell earlier and decided to go home earlier because of that. Whatever he felt disappeared before he could get behind the wheel. Fortunately."
-        li "But I still think he's falling ill. There was just... something off about his breathing."
+        li "But I still think he's falling ill. There was just… something off about his breathing."
         ha "..."
 
         show hisao basic_speak_polo
@@ -548,7 +548,7 @@ label sh_ch30:
         show hanako emb_sad at tworight
         with charachangealways
 
-        ha "Ummm... If your father is feeling ill, w-wouldn't it be good to... call a doctor?"
+        ha "Ummm… If your father is feeling ill, w-wouldn't it be good to… call a doctor?"
         li "A doctor?"
         ha "Y-yes."
         "I'm about to brush aside Hanako's suggestion, seeing that Father would probably not go along with that, but then I realize that Hanako following me here and telling me this is kind of unusual for her."
@@ -558,8 +558,8 @@ label sh_ch30:
         show hanako emb_timid
         with chchange
 
-        ha "It's... p-probably nothing, but... better safe than sorry, right?"
-        "It's probably nothing, but better safe than sorry..."
+        ha "It's… p-probably nothing, but… better safe than sorry, right?"
+        "It's probably nothing, but better safe than sorry…"
         "What's probably nothing?"
         "Does Father really look that bad?"
         "I really wish I'd be able to look at him with my own eyes."
@@ -570,9 +570,9 @@ label sh_ch30:
         with locationchange
 
         "I carefully make my way back to the study, wondering how on earth I'd be able to convince Father to go see a doctor."
-        "A proper lady respects the will of her elders..."
+        "A proper lady respects the will of her elders…"
         "The hint was clear. He wants me to stop worrying about him."
-        "But still..."
+        "But still…"
 
         show hiroyuki strained
         with charaenter
@@ -591,11 +591,11 @@ label sh_ch30:
 
         hyf "Lilly, is there something else?"
         "He must have spotted my fidgeting."
-        li "Father... are you really feeling fine?"
+        li "Father… are you really feeling fine?"
         hyf "This again?"
-        li "It's just... m-maybe it would be a good idea to call a doctor if you're feeling unwell."
+        li "It's just… m-maybe it would be a good idea to call a doctor if you're feeling unwell."
         hyf "A doctor?"
-        li "You say you're fine, but... I noticed... t-that your breathing is a bit more shallow than usual."
+        li "You say you're fine, but… I noticed… t-that your breathing is a bit more shallow than usual."
 
         $ renpy.music.set_volume(0.0, delay=0.5)
 
@@ -606,7 +606,7 @@ label sh_ch30:
 
         hyf "Lillian, that is quite enough!"
         "I cringe at his stern tone. I overstepped my boundaries, that's obvious."
-        li "I... apologize. I'll be on my way. But..."
+        li "I… apologize. I'll be on my way. But…"
 
         $ renpy.music.set_pause(False)
         $ renpy.music.set_volume(1.0, delay=4.0)
@@ -615,12 +615,12 @@ label sh_ch30:
         with chchange
 
         hyf "Yes?"
-        li "You told Mother you were fine, and she said she took your word for it. Would you... also give me your word that you'll be fine?"
+        li "You told Mother you were fine, and she said she took your word for it. Would you… also give me your word that you'll be fine?"
 
         show hiroyuki eyebrow
         with chchange
 
-        hyf "My word...?"
+        hyf "My word…?"
         li "Yes, please promise me that you'll be okay. Since keeping your word is a matter of honor, I will trust it."
 
         show hiroyuki thinking
@@ -632,7 +632,7 @@ label sh_ch30:
         show hiroyuki strained
         with chchange
 
-        hyf "If I talk to a doctor... on the phone... will that be enough to reassure you?"
+        hyf "If I talk to a doctor… on the phone… will that be enough to reassure you?"
         li "It will."
         hyf "The phone in the living room should contain our general practitioner's phone number. His name is Thompson."
         li "Thank you, Father."
@@ -640,7 +640,7 @@ label sh_ch30:
         show hiroyuki stern
         with chchange
 
-        hyf "Hrmmm..."
+        hyf "Hrmmm…"
 
         scene bg satou_livingroom
         show hisao basic_neutral_polo at twoleft
@@ -671,14 +671,14 @@ label sh_ch30:
         "Moments later, I hear someone on the other end of the line picking up."
         "Doctor" "Thompson speaking."
         li "Doctor Thompson, good evening. This is Lilly Satou speaking. I hope I'm not intruding on you. I'm terribly sorry for calling you this late."
-        "Doctor" "Not a problem, Miss... Satou?"
+        "Doctor" "Not a problem, Miss… Satou?"
         li "Yes, you are my father's general practitioner, are you not?"
         "Doctor" "Why yes, I am. Is there something wrong?"
-        li "Father's been extremely busy with work lately. There's a very important event in his business coming up, and he's under a large amount of pressure right now. It seems to be... taking a toll on him."
+        li "Father's been extremely busy with work lately. There's a very important event in his business coming up, and he's under a large amount of pressure right now. It seems to be… taking a toll on him."
         "Doctor" "Are there any specifics you can give me, Miss Satou?"
-        li "Just... several things. He's been having trouble sleeping as of late. My mother said he complained about RSI in his shoulder earlier today. There's been talk of... hmmm... indigestion."
+        li "Just… several things. He's been having trouble sleeping as of late. My mother said he complained about RSI in his shoulder earlier today. There's been talk of… hmmm… indigestion."
         li "He actually came home earlier today because he felt a little unwell and my friends said he looked rather pale. I noticed his breathing was a bit shallower than usual."
-        li "I'm... probably worrying about nothing, but I was wondering if you would..."
+        li "I'm… probably worrying about nothing, but I was wondering if you would…"
         "Doctor" "Just a moment, Miss Satou. Did you say he felt unwell earlier?"
         li "Yes, but the sensation disappeared eventually."
         "Doctor" "What kind of sensation? Localized somewhere?"
@@ -687,12 +687,12 @@ label sh_ch30:
         "A long silence."
         li "Doctor?"
         "Doctor" "Miss Satou, is there someone present with a driver's license aside from your father?"
-        li "Ah... there isn't. Mother is out of town this evening. I could perhaps call the housekeeper. She might be willing to take him to your place."
+        li "Ah… there isn't. Mother is out of town this evening. I could perhaps call the housekeeper. She might be willing to take him to your place."
         li "But is there a reason why it'd be irresponsible for him to drive himself?"
         "Doctor" "There is no need for him to come by my place, Miss Satou. But I think it would not be a bad idea to quickly stop by at Raigmore and have someone there take a look at him. It's not very far from where you live, is it?"
         "I let out a surprised gasp."
         li "The hospital?"
-        "First Hanako and now the doctor..."
+        "First Hanako and now the doctor…"
 
         stop music fadeout 10.0
 
@@ -703,9 +703,9 @@ label sh_ch30:
         "I feel my blood freeze in my veins and a heavy sensation in the pit of my stomach."
         li "C-cardiology?"
         "Doctor" "Yes. The person on duty there will either be Doctor Morrison or Doctor McElroy."
-        li "Doctor... What's going on?"
-        "Doctor" "...could I speak briefly with your father, Miss Satou?"
-        li "Of course..."
+        li "Doctor… What's going on?"
+        "Doctor" "…could I speak briefly with your father, Miss Satou?"
+        li "Of course…"
 
         stop ambient fadeout 1.0
 
@@ -741,7 +741,7 @@ label sh_ch30:
         "Doctor" "Miss Satou!"
         "The sound of the doctor's voice on the phone reminds me that I was on my way to hand over the phone."
         "Doctor" "Miss Satou, I'm going to hang up and call an ambulance to pick up your father this instant. Do not leave his side until they arrive."
-        "What's happening? What's going on? Is he...?"
+        "What's happening? What's going on? Is he…?"
         hi "Lilly? Is something wrong?"
         "I hear Hisao's and Hanako's footsteps hurriedly approaching, probably drawn here by my shout."
 
@@ -750,11 +750,11 @@ label sh_ch30:
 
         "As they come in, I hear two gasps."
         hi "Mister Satou! Lilly, what's happened here?"
-        li "I... I d-don't know. I c-can't hear him breathing."
+        li "I… I d-don't know. I c-can't hear him breathing."
         "{i}Somebody do something! Please!{/i}"
         "Hanako's breathing, on the other hand, is becoming more pronounced by the second. I'd probably start worrying about her if I wasn't on the verge of panic myself."
         hi "Damn, should we give him artificial respiration? Does he even have a pulse?"
-        li "I... I don't know. J-just d-do something, please."
+        li "I… I don't know. J-just d-do something, please."
         "I'm not sure what's more unsettling—Hisao's panicked tone or Hanako's ragged breathing."
         hi "I can't feel any pulse in his wrist. Is there a better way to do this?"
         "She's almost hyperventilating."
@@ -782,7 +782,7 @@ label sh_ch30:
         "No answer. Hanako's breathing is so steady it's almost robotic."
         "I wonder if she knows what she's doing. But what choice do we have?"
         "{i}What's taking that accursed ambulance so long?!{/i}"
-        li "Doctor Thompson said he'd call an ambulance. They... they should be on their way."
+        li "Doctor Thompson said he'd call an ambulance. They… they should be on their way."
         hi "Then I'll go and open the gates and the front door, so they'll be able to get here as quickly as possible when they arrive."
         li "Y-yes, thank you Hisao."
         ha "{i}*huff* *huff* *huff*{/i}"
@@ -790,10 +790,10 @@ label sh_ch30:
         show ev withoutthinking_cpr_nohisao
         with charachangeev
 
-        "I hear Hisao running off, leaving me alone in the room with Hanako... and Father."
+        "I hear Hisao running off, leaving me alone in the room with Hanako… and Father."
         "It doesn't happen often, but right now I'm cursing my blindness. My friends are both doing their part, and here I am, unable to do anything."
-        li "Please d-do your best, Hanako. Let me know if you need anything..."
-        "{i}Father...{/i}"
+        li "Please d-do your best, Hanako. Let me know if you need anything…"
+        "{i}Father…{/i}"
         "Seeing how close to the door he was, I think he was trying to get out of the room before he collapsed."
         "Did he call out for help, and did I fail to hear it?"
         ha "{i}*huff* *huff* *huff*{/i}"
@@ -848,7 +848,7 @@ label sh_ch30:
         "Trying to keep focus through the sound of my own rapidly beating heart, I try to concentrate on what I heard earlier. Somewhere from outside I can clearly hear the distinct wail of a siren."
         li "Hanako, the ambulance is arriving!"
         ha "{i}*huff* *huff* *huff*{/i}"
-        li "Hold on for just a little while longer, Hanako. Please... Hang in there..."
+        li "Hold on for just a little while longer, Hanako. Please… Hang in there…"
 
         stop ambient fadeout 4.0
 
@@ -894,7 +894,7 @@ label sh_ch30:
         show crowd behind hanako 
         with charachangealways
 
-        hi "Hanako! Come on, Hanako. I'll get you to our room. Just... there... just come along with me, okay?"
+        hi "Hanako! Come on, Hanako. I'll get you to our room. Just… there… just come along with me, okay?"
 
         hide hisao
         hide hanako
@@ -902,9 +902,9 @@ label sh_ch30:
 
         "Paramedic" "Bruce!"
         "Paramedic" "I'm on it! Neil, get that adrenaline injection ready."
-        "Paramedic" "Hey lass, maybe it's better if you go and check up on your... uh... friends."
+        "Paramedic" "Hey lass, maybe it's better if you go and check up on your… uh… friends."
         "Paramedic" "Lass, you with us?"
-        li "Ah, I apologize. I'd... like to stay here if possible."
+        li "Ah, I apologize. I'd… like to stay here if possible."
         "Paramedic" "Just don't get in our way, okay?"
         "Paramedic" "Okay, I'm giving him an adrenaline shot."
         "Paramedic" "Ian, get that defibrillator ready. Hopefully we get lucky and get a shockable rhythm."
@@ -936,7 +936,7 @@ label sh_ch30:
 
         pause 2.0
 
-        "Paramedic" "And...?"
+        "Paramedic" "And…?"
         "Paramedic" "One more time."
         "Paramedic" "Clear!"
 
@@ -951,7 +951,7 @@ label sh_ch30:
         "Paramedic" "We've done all we can here. It's up to the doctors at Raigmore to make it stick."
         "Paramedic" "Keith! Radio the Emergency Department that we'll be there in 8 minutes."
         "Paramedic" "Right!"
-        li "Sir, would it be okay with you if I... came along?"
+        li "Sir, would it be okay with you if I… came along?"
         "Paramedic" "Only if you come along with us right here and now. We can't wait for you."
         li "I understand."
 
@@ -1013,11 +1013,11 @@ label sh_ch30:
         with locationchange
 
         "He helps me get out of the car before giving an awkward cough."
-        "Paramedic" "I have to get back on the road, but... uh... right in front of you is a nurse who'll be happy to look after you for a bit. Her name's Sally."
+        "Paramedic" "I have to get back on the road, but… uh… right in front of you is a nurse who'll be happy to look after you for a bit. Her name's Sally."
         "Nurse" "Hello, Miss. What's your name?"
-        li "Ah, L-Lilly. About my father..."
+        li "Ah, L-Lilly. About my father…"
         "Nurse" "They're taking him to the operating room as we speak. We're going to do everything we can to help him, so try not to worry, alright?"
-        li "I'll... try."
+        li "I'll… try."
         "Nurse" "I'm going to take you to the waiting area. We're going to inform you the moment we know more."
         li "Yes, t-thank you."
 
@@ -1032,8 +1032,8 @@ label sh_ch30:
         "Nurse" "You can wait here. There's a seat right in front of you."
         "Nurse" "Is there anything I can do? Perhaps get you something to drink?"
         "They probably don't have a white cane lying around here. There wasn't time to retrieve my own, and I feel really disorientated and vulnerable in the middle of an unknown environment without even my cane to navigate."
-        "No, there's probably no point in asking. But maybe..."
-        li "Would it be possible... to make a quick phone call? My sister and my mother don't even know what has happened yet, and I left my own cell phone behind when I came here."
+        "No, there's probably no point in asking. But maybe…"
+        li "Would it be possible… to make a quick phone call? My sister and my mother don't even know what has happened yet, and I left my own cell phone behind when I came here."
         "Nurse" "If it's just a very quick call, you can make one in our office. Let me take you there."
         li "Thank you."
 
@@ -1062,26 +1062,26 @@ label sh_ch30:
 
         aki "Hey Sis, I didn't recognize the number. This isn't the landline at our folks' place, is it?"
         li "I'm at Raigmore right now. The emergency ward."
-        li "You... I need you to come over immediately!"
+        li "You… I need you to come over immediately!"
 
         show akira basic_lost_phone
         with chchange
 
-        aki "The hospital? Sheesh, Lils, what's happened? It's not Hisao, is it? Are you...?"
-        li "It's F-Father. I... I don't know what happened. He just... collapsed. The doctor called an ambulance. They're... operating on him right now."
-        li "Please Akira..."
+        aki "The hospital? Sheesh, Lils, what's happened? It's not Hisao, is it? Are you…?"
+        li "It's F-Father. I… I don't know what happened. He just… collapsed. The doctor called an ambulance. They're… operating on him right now."
+        li "Please Akira…"
 
         show akira basic_angry_phone
         with chchange
 
         aki "I'm on my way. I'll be there in 15 minutes."
-        li "Please hurry... and call Mother. Let her know to come back here, too."
+        li "Please hurry… and call Mother. Let her know to come back here, too."
 
         hide akira
         with charaexit
 
         "Akira hangs up, and I hand the phone back to the nurse."
-        li "Thank you. Could you... take me back to the waiting area, please?"
+        li "Thank you. Could you… take me back to the waiting area, please?"
         "Nurse" "I will."
     
         if _in_replay:
@@ -1151,10 +1151,10 @@ label sh_ch30:
 
         "I've never felt so alone and miserable as I'm feeling right now."
         mystery "Thank God. Come on, dear."
-        "Father..."
+        "Father…"
         "Please make it through this."
         "Please."
-        "Please..."
+        "Please…"
 
         $ renpy.music.set_volume(0.0, delay=5.0, channel="ambient")
 
@@ -1190,7 +1190,7 @@ label sh_ch30:
         with charaenter
 
         "A familiar voice suddenly calls out to me and I quickly rise to my feet."
-        li "Akira? Akira! Thank God you're here..."
+        li "Akira? Akira! Thank God you're here…"
 
         show akira basic_wistful_close
         with characlose
@@ -1204,9 +1204,9 @@ label sh_ch30:
 
         aki "Jeez, you look about ready to faint, Sis."
         "I nod weakly."
-        li "I... I'll manage, I hope. I really don't do very well under pressure."
+        li "I… I'll manage, I hope. I really don't do very well under pressure."
         aki "Let's find ourselves a quiet place to sit down. I noticed a vending machine on my way in here that dispenses drinks. I'll go and get you some."
-        li "Yes..."
+        li "Yes…"
 
         stop ambient fadeout 1.0
 
@@ -1221,31 +1221,31 @@ label sh_ch30:
         show akira basic_wistful_close_ss
         with characlose
 
-        aki "Now... Just take a bit of time to get your bearings back, and then tell me what happened."
+        aki "Now… Just take a bit of time to get your bearings back, and then tell me what happened."
         li "..."
-        "What happened...? That's a good question."
+        "What happened…? That's a good question."
         "Things went so quickly all of a sudden. Two hours ago, I was still planning our upcoming trip with my friends. And now I'm here, wondering if my life will ever be the same again."
-        li "He left the office earlier than usual today because he wasn't feeling well..."
+        li "He left the office earlier than usual today because he wasn't feeling well…"
         li "By the time he made it home he was already feeling better, so he resumed his work in his study."
         li "I spoke to Mother earlier this evening, and she already said he wasn't feeling well, but apparently Father blamed indigestion and repetitive strain injury in his shoulder."
         li "When he came home, both Hisao and Hanako noted he looked pale, and Hanako even suggested calling a doctor."
         li "Father wouldn't hear of it at first, but then he gave in and allowed me to call his general practitioner."
-        li "When I told the doctor about Father, he immediately suggested we take him to see a cardiologist at the hospital. But when I returned to the study..."
+        li "When I told the doctor about Father, he immediately suggested we take him to see a cardiologist at the hospital. But when I returned to the study…"
         "I sniffle as I recall what happened next."
         li "I found that Father had collapsed while I was away."
-        li "Before... he hung up, the doctor said he was going to call an ambulance. And eventually, one arrived."
+        li "Before… he hung up, the doctor said he was going to call an ambulance. And eventually, one arrived."
 
         show akira basic_sad_close_ss
         with chchange
 
         aki "Heart attack, huh? You described some of the warning signs just now."
-        li "...it seems like it. I suppose the writing has been on the wall all along, and we just didn't pay attention to it until it was too late."
+        li "…it seems like it. I suppose the writing has been on the wall all along, and we just didn't pay attention to it until it was too late."
 
         show akira basic_resigned_close_ss
         with chchange
 
         aki "It won't be too late if he makes it through, Sis."
-        li "I... completely froze up when I found Father lying there. If it hadn't been for Hanako..."
+        li "I… completely froze up when I found Father lying there. If it hadn't been for Hanako…"
 
         show akira basic_lost_close_ss
         with chchangefast
@@ -1257,13 +1257,13 @@ label sh_ch30:
         with chchange
 
         aki "So that first aid training paid off, huh? Bet she didn't expect someone other than her boyfriend to be the beneficiary."
-        li "...I wonder how she and Hisao are doing right now. When the ambulance staff took off with Father, I had no choice but to come along immediately."
+        li "…I wonder how she and Hisao are doing right now. When the ambulance staff took off with Father, I had no choice but to come along immediately."
 
         show akira basic_sweet_close_ss
         with chchange
 
         aki "You can use my cell phone to get in touch with them after I've dropped Mom a little call. It might help to take your mind off things."
-        li "Y-you haven't called her yet? W-why not? I...I asked you..."
+        li "Y-you haven't called her yet? W-why not? I…I asked you…"
 
         show akira basic_lost_close_ss
         with chchange
@@ -1294,9 +1294,9 @@ label sh_ch30:
 
         n "Akira's explanation made logical sense, and yet, I still feel I would have acted differently in her place."
         n "I'm really thankful that my older sister's here for me right now, but something has felt a little off."
-        n "{i}...My older sister's here for me...{/i}"
-        n "{vspace=30}Ever since she arrived, Akira's been the kind, strong and reliable big sister that she's always been for me. The strong person who's lending me her shoulder to lean on. But... how does she feel? She's barely mentioned Father at all. It almost seems like..."
-        n "{i}...like she's more worried about me than about him...{/i}"
+        n "{i}…My older sister's here for me…{/i}"
+        n "{vspace=30}Ever since she arrived, Akira's been the kind, strong and reliable big sister that she's always been for me. The strong person who's lending me her shoulder to lean on. But… how does she feel? She's barely mentioned Father at all. It almost seems like…"
+        n "{i}…like she's more worried about me than about him…{/i}"
         n "{vspace=30}No, I don't want to think of Akira that way. She's simply keeping a brave face for my benefit right now."
         n "Still, our parents are a very touchy subject for her. I don't think she's completely adapted to the fact that they're suddenly a big part of her life again yet."
 
@@ -1345,21 +1345,21 @@ label sh_ch30:
         show hisao basic_worry_polo_phone at phonebox
         with charaenter
 
-        hi "Ah... Akira... This is Hisao. Lilly isn't here right now, and she left her phone behind. Umm..."
+        hi "Ah… Akira… This is Hisao. Lilly isn't here right now, and she left her phone behind. Umm…"
         "I quickly speak up in order to save Hisao from having to come up with a proper explanation."
         li "Hisao, it's me. I'm using Akira's phone."
 
         show hisao basic_speak_polo_phone
         with chchange
 
-        hi "Lilly... How... is your father?"
+        hi "Lilly… How… is your father?"
         "I let out a depressed sigh."
         li "They're still operating on him as we speak. I'm praying that he's going to make it through."
 
         show hisao basic_worry_polo_phone
         with chchange
 
-        hi "So are we, Lilly..."
+        hi "So are we, Lilly…"
         "Hisao's voice is barely audible, and he sounds extremely tired. I'm obviously not the only one rattled by what happened."
         li "Hisao, how are you and Hanako? Is she there as well?"
         hi "No, she's resting right now. I only got downstairs a few minutes ago. I spent the rest of the time keeping her company and trying to comfort her."
@@ -1369,22 +1369,22 @@ label sh_ch30:
         show hisao basic_speak_polo_phone
         with chchange
 
-        hi "I've been better. This... hit really close to home."
+        hi "I've been better. This… hit really close to home."
         hi "I was kinda glad I got the opportunity to help Hanako get to our bedroom, because if I had stuck around and watched that emergency team get to work on your father, my own heart might have started acting up as well. I'm still shaking a little even now."
         li "I can imagine how you must feel. How about Hanako?"
 
         show hisao basic_worry_polo_phone
         with chchange
 
-        hi "Hanako got hit even harder. I mean... Her own parents died in front of her 10 years ago. Heck, I nearly died in front of her as well."
+        hi "Hanako got hit even harder. I mean… Her own parents died in front of her 10 years ago. Heck, I nearly died in front of her as well."
         hi "Whatever memories she's been forced to relive this evening were probably extremely traumatic ones. I haven't been able to get a single word out of her."
-        li "And yet... Hanako came through. While I was unable to think of what to do, Hanako did what she could to keep my father alive."
+        li "And yet… Hanako came through. While I was unable to think of what to do, Hanako did what she could to keep my father alive."
         li "She acted where I couldn't, and I'm extremely proud of her, Hisao."
 
         show hisao basic_neutral_polo_phone
         with chchange
 
-        hi "Yeah, she acted. But... You didn't see her."
+        hi "Yeah, she acted. But… You didn't see her."
         li "What do you mean?"
 
         show hisao basic_speak_polo_phone
@@ -1395,7 +1395,7 @@ label sh_ch30:
         li "Then why the training?"
         hi "To delay the anxiety. She believed that as long as Hanako could keep her mind occupied during an emergency and distract herself by performing first aid rather than sitting there and feeling helpless, she'd be able to delay her panic attack."
         hi "I heard that during that training she repeated the CPR procedure until it was almost a reflex to her."
-        hi "That's... I think that's what happened. She was holding off her own panic in the only way she could."
+        hi "That's… I think that's what happened. She was holding off her own panic in the only way she could."
         hi "She just kept going, maybe even without being aware of what was happening around her. Even when those ambulance workers arrived and told her to let them take over, she just kept going and going."
         li "What happened then?"
         hi "One of those people grabbed her and tried to drag her away from your dad. She reacted very badly to that."
@@ -1403,7 +1403,7 @@ label sh_ch30:
         show hisao basic_worry_polo_phone
         with chchange
 
-        hi "I was able to take her to our room... I'm still not sure how. There, I just held her in my arms—probably for nearly an hour—until she finally stopped trembling."
+        hi "I was able to take her to our room… I'm still not sure how. There, I just held her in my arms—probably for nearly an hour—until she finally stopped trembling."
         "Poor Hanako."
         li "Even if it was just a reflex on her part, I'm still really grateful for what she did, Hisao."
 
@@ -1419,7 +1419,7 @@ label sh_ch30:
         with charaenter
 
         aki "Lilly?"
-        li "Akira, do you... have any news?"
+        li "Akira, do you… have any news?"
         aki "Are you still on the phone?"
 
         show hisao basic_speak_polo_phone
@@ -1446,7 +1446,7 @@ label sh_ch30:
         "Akira gives me a gentle squeeze in the shoulder, but doesn't respond."
         "Finally, the silence is broken by Hisao's voice over the phone."
         hi "Thanks Akira. I'm really relieved to hear that."
-        hi "I'll... be sure to tell Hanako. Maybe... just maybe... we'll be able to get some sleep tonight after all."
+        hi "I'll… be sure to tell Hanako. Maybe… just maybe… we'll be able to get some sleep tonight after all."
 
         stop music fadeout 3.0
 

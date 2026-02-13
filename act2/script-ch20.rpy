@@ -546,7 +546,7 @@ label sh_ch20:
         with chchange
 
         li "We will hold a celebration for you once we're in Scotland, Hanako. That is a promise."
-        ha "T-Thank you, Lilly."
+        ha "T-thank you, Lilly."
 
         show hisao basic_speak_uni
         with chchange

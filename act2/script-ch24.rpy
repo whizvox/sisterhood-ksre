@@ -80,7 +80,7 @@ label sh_ch24:
         show akira basic_ending_cas
         with chchange
 
-        aki "Tell you what... You can share it with me if you can find it in your schedule to drop by my place after I'm off-duty."
+        aki "Tell you what… You can share it with me if you can find it in your schedule to drop by my place after I'm off-duty."
 
         show lilly cane_weaksmile_sum
         with chchange
@@ -244,7 +244,7 @@ label sh_ch24:
         with chchange
 
         "Lilly's smile fades just a little. For a moment her thoughts seem elsewhere. Then she takes a sip from her glass and sighs softly."
-        li "It's not really that... It's just..."
+        li "It's not really that… It's just…"
         "Suddenly the atmosphere is starting to get gloomy. Did I touch some unknown nerve?"
 
         play ambient sfx_ticktock volume 0.6
@@ -254,7 +254,7 @@ label sh_ch24:
 
         li "You are aware that Akira was in a relationship until recently, are you not?"
         hi "Yes, when we decided to spend a long weekend in Hokkaido, you mentioned we'd be cleaning up the place because Akira and her boyfriend would be using it the week after."
-        li "That trip... never took place. We were the last ones to use the summerhouse before it was sold."
+        li "That trip… never took place. We were the last ones to use the summerhouse before it was sold."
         hi "When we first learned about your parents' summoning she mentioned having broken up with him."
 
         show lilly basic_sad_sum
@@ -300,7 +300,7 @@ label sh_ch24:
         "That does make me wonder about something else though."
         "Hanako mentioned once she didn't remember Lilly ever having had a boyfriend while she was attending Yamaku, despite the fact Lilly's a very popular student."
         "Perhaps she has some very particular tastes?"
-        hi "If you don't mind me asking a bold question... What kind of person would be your type, Lilly?"
+        hi "If you don't mind me asking a bold question… What kind of person would be your type, Lilly?"
 
         show lilly basic_planned_sum
         # TODO should most likely use a def pose with a clip
@@ -333,7 +333,7 @@ label sh_ch24:
         show lilly basic_weaksmile_sum
         with chchange
 
-        li "It's fine if he doesn't share my musical tastes, although I'm not sure if I'd be able to be around someone who'd be playing... well... jackhammer music all the time."
+        li "It's fine if he doesn't share my musical tastes, although I'm not sure if I'd be able to be around someone who'd be playing… well… jackhammer music all the time."
         "That's a pretty interesting way to describe music with a loud and heavy bass and percussion. I can get why Lilly, who mostly uses sounds around her as orientation, dislikes overbearing music."
 
         show lilly basic_smile_sum
@@ -357,7 +357,7 @@ label sh_ch24:
         with chchange
 
         li "I think it's very hard to explain to people who do not use their sense of touch to determine appearances. What I ‘see’ may be completely different from the way you see things or people."
-        li "I think the term ‘I'll know it when I see it’ applies here. Somewhat. I have a general idea of what most people I regularly interact with look like..."
+        li "I think the term ‘I'll know it when I see it’ applies here. Somewhat. I have a general idea of what most people I regularly interact with look like…"
 
         show hanako emb_downsmile_sum_clip_close
         with chchange
@@ -375,7 +375,7 @@ label sh_ch24:
         show lilly basic_smile_sum
         with chchange
 
-        li "Hisao..."
+        li "Hisao…"
         
         show lilly at twoleft
         with charamove
@@ -386,7 +386,7 @@ label sh_ch24:
         show hanako def_worry_close
         with { "master": charachangealways }
 
-        li "I was wondering... There's one dear friend whose face I still can't picture in my mind. Would it be okay if I...?"
+        li "I was wondering… There's one dear friend whose face I still can't picture in my mind. Would it be okay if I…?"
         "I immediately look at Hanako."
         hi "Is it okay?"
 
@@ -429,14 +429,14 @@ label sh_ch24:
         show lilly basic_weaksmile_sum
         with chchange
 
-        "As I look at Hanako, I notice that slightly disapproving pout is still on her face. I'm not sure how long this process usually takes, but from Lilly's slightly sheepish look, I'm almost beginning to wonder if she was..."
-        "...can you accuse a blind person of staring?"
+        "As I look at Hanako, I notice that slightly disapproving pout is still on her face. I'm not sure how long this process usually takes, but from Lilly's slightly sheepish look, I'm almost beginning to wonder if she was…"
+        "…can you accuse a blind person of staring?"
 
         show lilly basic_cheerful_sum
         with chchange
 
         li "Thank you, Hisao."
-        hi "Ah... Right. Have you memorized it all?"
+        hi "Ah… Right. Have you memorized it all?"
         li "I have."
         "I prepare to get back to the couch we were sitting on, but Hanako isn't moving yet. She's still waiting as if expecting Lilly to say more."
 
@@ -612,7 +612,7 @@ label sh_ch24:
 
         "I cautiously take a peek and sure enough, Hanako is still in front of me, her arms spread wide as if to try and block as much of my view as possible."
         "I fight to hold back a chuckle. Truth be told, she looks more than a little silly."
-        "There's just something... exaggerated... about her disapproving pout as if she's trying just a little bit too hard to be intimidating, and the result is more cute than threatening."
+        "There's just something… exaggerated… about her disapproving pout as if she's trying just a little bit too hard to be intimidating, and the result is more cute than threatening."
         "I open my mouth to tell her to sit back down and assure her that I have eyes for nobody but her, but I'm pretty sure Lilly would immediately pick up any attempts at conversation and figure out what's going on here."
         "I try to get my answer across to Hanako by using gestures, but she either doesn't understand their meaning or is simply refusing to pay attention to them."
         "Resorting to other means, I reach up, carefully take her face in my hands and bring it down until her eyes are at the same level as mine."
@@ -639,7 +639,7 @@ label sh_ch24:
         "I instinctively try to look past her to see if Lilly has noticed anything, but as I try to do so, Hanako takes my face in her hands and gently but firmly presses it to her chest."
         "Of all the thoughts that suddenly assault my brain at once, the first one is bizarrely the realization that I know a story (was it a book or a movie?) where a woman distracts a guard in exactly the same way. Come to think of it, distraction is probably the underlying thought behind Hanako's action. She's beating Lilly's distraction by offering a more tempting one."
         "How am I supposed to deal with {i}this{/i}?"
-        "I didn't expect Hanako to be this bold, even after emptying a few glasses of wine. Lilly can't see us, but even so..."
+        "I didn't expect Hanako to be this bold, even after emptying a few glasses of wine. Lilly can't see us, but even so…"
         "I can't just tell her out loud to get off my lap and button up her blouse. And Hanako's probably well aware of that. The circumstances effectively have me gagged."
 
         show ev celloandwine_lap_rest
@@ -686,21 +686,21 @@ label sh_ch24:
         "I notice a slight slur in Hanako's voice, though it's not nearly as pronounced as it was during our last encounter with the bottle."
         li "Thank you, you two. I hope the occasional slip-ups weren't too grating."
         "Preparing to get up, Hanako slowly raises her hips. I can tell from the look on her face she wouldn't have minded this taking a little bit longer either."
-        hi "Not at all. In fact..."
-        "I pause for a moment. I'm not sure if it's a wise idea to let the genie out of this particular bottle, but seeing that we got away with our previous moment of shared affection..."
+        hi "Not at all. In fact…"
+        "I pause for a moment. I'm not sure if it's a wise idea to let the genie out of this particular bottle, but seeing that we got away with our previous moment of shared affection…"
         hi "I personally wouldn't mind an encore."
         li "I hope you're not making fun of me."
         "Lilly sounds a bit suspicious as if she's not completely convinced of my sincerity."
         hi "It wasn't perfect, but all things considered, it sounded pretty good. And it's cool getting a private performance from a friend."
-        li "Hmmm..."
-        ha "I'd... like to hear m-more, too."
+        li "Hmmm…"
+        ha "I'd… like to hear m-more, too."
         li "One more time then. Close your eyes again, please."
 
         show ev celloandwine_lap_victory
         with charachangeev
 
         "As I raise my head to give Hanako a knowing look I can't help but notice the glowing smile on her face as if I just proposed to her."
-        "I suddenly realize I've seen that type of triumphant smile before. It's an exaggerated version of the “Hurray, I won!”-smile she shows whenever she wins a game we play together. By her slightly intoxicated logic, this may very well have been a competition..."
+        "I suddenly realize I've seen that type of triumphant smile before. It's an exaggerated version of the “Hurray, I won!”-smile she shows whenever she wins a game we play together. By her slightly intoxicated logic, this may very well have been a competition…"
         "She felt Lilly was encroaching on her territory and me allowing her to remain where she is for a little while longer confirmed to Hanako that she succesfully seduced me away from the “competition”."
         "I can hear some ruffling behind Hanako as Lilly readies her instrument for a second song."
 
@@ -744,7 +744,7 @@ label sh_ch24:
         show lilly basic_surprised_sum
         with chchange
 
-        li "I... I think I hear a car outside. My parents must be home. I'd better put the cello back."
+        li "I… I think I hear a car outside. My parents must be home. I'd better put the cello back."
 
         play music music_tension
 
@@ -793,7 +793,7 @@ label sh_ch24:
             ease 0.5 center alpha 1.0
         with charamovefastest
 
-        li "Ah... Hisao? Wait, what...?"
+        li "Ah… Hisao? Wait, what…?"
         "No time for discussion. We probably only have a few seconds left to spare. I grab Hanako's hand and make a mad dash for the exit."
         hi "Good night, Lilly."
 
@@ -817,8 +817,8 @@ label sh_ch24:
         "When we reach our room I throw open the door, pull Hanako inside, close the door, and frantically lock it as if some demon from the netherworld has been chasing us."
         "As I confirm that the door is really locked, it takes me a few seconds to realize we're safe."
         "Man, what a screwup this could have been. I turn around to face Hanako, the both of us still panting heavily."
-        hi "We're... safe...I think. We... got away... with it."
-        ha "Y-yes..."
+        hi "We're… safe…I think. We… got away… with it."
+        ha "Y-yes…"
 
         play music music_ease fadein 4.0
 
@@ -859,13 +859,13 @@ label sh_ch24:
 
         "However the next moment, my leg gets stuck, I lose my balance and I nearly fall backwards. The only reason we remain standing is because Hanako manages to brace herself in time."
         "That was close. I could have hit my head against the nearby dresser and broken my neck. What a pathetic way to go that'd be. We'd better do this another way. I turn to the bed and pull back the sheets."
-        hi "Hanako...ah... let's get on the bed."
+        hi "Hanako…ah… let's get on the bed."
         "A feverish kiss, followed by a gasp."
-        ha "Y-Yes."
+        ha "Y-yes."
         "Then one more."
         "Hanako gets onto our bed, crawls a little farther onto it and then starts wiggling her legs in an attempt to get rid of her pants. I nearly feel my heart stop at what I see before me."
         "The sight of a thoroughly exposed Hanako, on all fours and completely naked safe for her socks and the pants and panties around her ankles, is a temptation I can't resist. I get on my knees on the bed behind her and carefully, yet firmly take hold of her hips."
-        hi "Hanako...c-can I...?"
+        hi "Hanako… c-can I…?"
         "The brief nod that follows is all I need. I put the tip of my member against her entrance, carefully use my fingers to brush her labia aside and then push myself forward and into her."
 
         scene ev tipsyfun_doggy_start
@@ -886,7 +886,7 @@ label sh_ch24:
         scene ev tipsyfun_doggy_end
 
         "She doesn't react immediately, and for a second I believe she's not going for it. Then she furiously starts rubbing and I firmly grab hold of her buttocks with both hands and start thrusting again."
-        "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips..."
+        "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips…"
         "The sound of our heavy breathing, even the sound of my body slapping against hers (which we usually find embarassing) all combine to push us towards our rapidly approaching climax."
         "Shaking the last few shreds of embarassment from my mind, I give in to lust and give us the final push towards the inevitable."
 

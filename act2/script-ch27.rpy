@@ -90,7 +90,7 @@ label sh_ch27:
         "Before I can aim my camera to take a picture of it, I'm startled by a cheerful voice behind me, and as I jump back and turn around in surprise, I can see a young woman in her twenties standing behind me."
         "I can't recall her name, but I know she's part of the cleaning staff here. The maid gives me a curious glance, probably not having expected my reaction, and then repeats her greeting while probably trying not to stare past my hairlock."
         "Maybe it's because she startled me and I didn't get the chance to carefully listen to her words, or maybe her accent is rather strong, but I can make neither heads nor tails of what she's saying, so I stammer out a reply."
-        ha "{font=times}Ah... erm... E-excuse m-me? C-could y-you repeat y-yours-self?{/font}"
+        ha "{font=times}Ah… erm… E-excuse m-me? C-could y-you repeat y-yours-self?{/font}"
         "The maid seems to have trouble picking up on what I'm saying. Would she consider it rude if I just get out of here?"
         mystery "She is wishing you a good morning and hopes you had a pleasant night's rest."
         "A calm voice interrupts my plans for a hasty escape attempt, and the next moment, a tall figure appears in the doorway behind the maid, who quickly steps aside with a quick bow."
@@ -98,7 +98,7 @@ label sh_ch27:
         show hiroyuki serious
         with charaenter
 
-        ha "Ah... umm... G-good m-morning, M-Mister Satou."
+        ha "Ah… umm… G-good m-morning, M-Mister Satou."
 
         show hiroyuki bow
         with charachangealways
@@ -110,7 +110,7 @@ label sh_ch27:
 
         hy "Good morning, Miss Ikezawa. I hope you do not mind if I repeat Miss Wilson's question."
         "Miss Wilson? Ah, the maid. I shyly nod in response."
-        ha "I... ah... slept w-well. Thank you. H-have you?"
+        ha "I… ah… slept w-well. Thank you. H-have you?"
         hy "Quite well, thank you."
         "He says something in English to the maid that I can't quite make out, but she smiles briefly, nods, and then gets to work dusting the table."
 
@@ -118,7 +118,7 @@ label sh_ch27:
         with chchange
 
         hy "I apologize on behalf of Miss Wilson. She is originally from the countryside nearby, and her accent can be difficult to understand for those who are unaccustomed to the Highlands' dialect."
-        ha "It's... okay."
+        ha "It's… okay."
 
         hide hiroyuki
         with charaexit
@@ -168,7 +168,7 @@ label sh_ch27:
         "Mister Satou watches her leave, a smirk appearing on his face for less than a second, and then his gaze turns stern again before refocusing on his laptop."
         "I'm not quite sure what to think of what just happened. Upon realizing I'm not immediately resuming my previous activities, Mister Satou's gaze briefly shifts to me."
         hy "I told her it may be better if she resumed her chores here at a later time. I will not pretend to know for certain what Miss Wilson found so amusing, but I have a slight suspicion."
-        ha "Ummm... W-was it me?"
+        ha "Ummm… W-was it me?"
 
         show hiroyuki thinking
         with chchange
@@ -180,9 +180,9 @@ label sh_ch27:
         show hiroyuki smile
         with chchange
 
-        hy "Heh, one of these stereotypes happens to involve the... ah... inseparability of Japanese tourists and their photo cameras."
+        hy "Heh, one of these stereotypes happens to involve the… ah… inseparability of Japanese tourists and their photo cameras."
         "I blush a bit. Looks I just came across as a walking stereotype, like an obese American tourist in a cowboy hat and Hawaiian shirt asking for directions in English to the nearest McDonald's."
-        ha "I'm... s-sorry."
+        ha "I'm… s-sorry."
         hy "Think nothing of it."
 
         show hiroyuki thinking
@@ -207,16 +207,16 @@ label sh_ch27:
         "I turn around and get into position to take a shot of the scrolls adorning the wall, trying to fit them all into frame."
         "As I do so, I let out a slight yawn that I quickly stifle with my hand upon remembering I'm not alone in the room."
         hy "Are you usually an early riser, Miss Ikezawa?"
-        ha "Ummm... M-mostly. Earlier t-than Lilly."
+        ha "Ummm… M-mostly. Earlier t-than Lilly."
         hy "Sleeping in has never been a habit in this family. Lilly seems to be the only one who occasionally has trouble getting out of bed in the morning."
-        ha "I think... It m-makes s-some sense."
+        ha "I think… It m-makes s-some sense."
 
         show hiroyuki eyebrow
         with chchange
 
         "Lilly's father gives me a slightly puzzled frown."
         hy "May I ask you to elaborate on that?"
-        ha "Early in t-the morning... It's u-usually the s-sunlight that w-wakes me up. But Lilly..."
+        ha "Early in t-the morning… It's u-usually the s-sunlight that w-wakes me up. But Lilly…"
 
         show hiroyuki thinking
         with chchange
@@ -235,7 +235,7 @@ label sh_ch27:
 
         hy "Do you approve of my collection, Miss Ikezawa?"
         "Mister Satou's voice drags me back to earth, and I realize with some embarassment I must have spent nearly 10 minutes checking the bookcase without saying a single word."
-        ha "Umm... Are y-you a c-collector?"
+        ha "Umm… Are y-you a c-collector?"
 
         show hiroyuki speak
         with chchange
@@ -252,14 +252,14 @@ label sh_ch27:
 
         hy "Think nothing of it. Is there anything in there by an author that you like?"
         "I think for a moment."
-        ha "Ummm... Is t-there anything by Haruki Murakami?"
+        ha "Ummm… Is t-there anything by Haruki Murakami?"
 
         show hiroyuki smile
         with chchange
 
         "Mister Satou replies with a nod that seems part confirmation and part approval."
         hy "Near the lower left corner. I have most of his works with the exception of ‘Dance, Dance, Dance’, ‘Kafka on the Shore’, and ‘Pinball, 1973’. Do you have a favorite title?"
-        ha "I... haven't r-read all his b-books yet, but I r-really liked ‘Dance, Dance, Dance’. It’s… one of m-my favorite titles."
+        ha "I… haven't r-read all his b-books yet, but I r-really liked ‘Dance, Dance, Dance’. It’s… one of m-my favorite titles."
 
         show hiroyuki eyebrow
         with chchange
@@ -277,9 +277,9 @@ label sh_ch27:
         with chchange
 
         hy "Do you mind if I ask what you're reading right now?"
-        ha "The... ummm... ‘The Ark Sakura’."
+        ha "The… ummm… ‘The Ark Sakura’."
         hy "By Kobo Abe? Have you read his work before?"
-        ha "J-just one piece aside from this. I f-found it... interesting."
+        ha "J-just one piece aside from this. I f-found it… interesting."
         "Interesting and thought-provoking, but a bit depressing at times, though that's probably for personal reasons."
         "I wonder where Mister Satou is going with this conversation. I don't think he's trying to boast to me about his collection even though he'd have every right to brag in my eyes."
 
@@ -288,7 +288,7 @@ label sh_ch27:
 
         hy "If you run out of books to read during your stay here, please feel free to borrow whatever you like here. There is no need to ask permission beforehand."
         hy "All I ask is that you return a book to the place where you found it after you are done with it."
-        ha "Wow... R-really? T-thank you."
+        ha "Wow… R-really? T-thank you."
         "Wow! There's enough reading material here to last a year! This vacation just keeps getting better and better!"
 
         show hiroyuki serious
@@ -296,7 +296,7 @@ label sh_ch27:
 
         hy "No need to thank me. It is the least I can do as a host."
         hy "Of course, now that you know this, please make certain not to spend all your time here reading. That would be a waste."
-        ha "We're going to... t-take a small boat trip near some p-peninsula today."
+        ha "We're going to… t-take a small boat trip near some p-peninsula today."
 
         show hiroyuki eyebrow
         with chchange
@@ -311,7 +311,7 @@ label sh_ch27:
         ha "T-thanks."
         "Having finished taking pictures, I press the viewing button in order to see how the photos turned out."
         "Although the camera's tiny screen won't show a great amount of detail, I can see that the angles and lighting turned out alright. Satisfied, I put the camera away."
-        ha "Umm... T-thanks for letting m-me t-take pictures."
+        ha "Umm… T-thanks for letting m-me t-take pictures."
 
         show hiroyuki smile
         with chchange

@@ -611,7 +611,7 @@ label sh_ch9:
 
         "It begins to subside all too quickly, and as much as I'd like to continue, my body is demanding respite."
         # custom end
-        ha "S-s-stop..."
+        ha "S-s-stop…"
         "As the sensations of the last contraction die down and Hisao ceases providing the intense stimulation I just endured, I breathe a long sigh of relief."
         "Hisao moves his legs away, wraps his arms around my waist and lets me catch my bearings while kissing my heavily flushed cheek and softly chuckling a bit to himself."
         ha "P-please d-don't laugh at me…"

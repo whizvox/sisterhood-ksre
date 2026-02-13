@@ -129,7 +129,7 @@ label sh_ch23:
         with chchange
 
         "Akira gives Lilly an amused look, but when she speaks, her tone is somewhat wistful."
-        aki "Probably... I guess... that's part of being a Satou as well, isn't it?"
+        aki "Probably… I guess… that's part of being a Satou as well, isn't it?"
 
         show lilly basic_weaksmile_sum
         with chchange
@@ -232,7 +232,7 @@ label sh_ch23:
         aki "After our parents left, we hired a housekeeper who stuck around for some time."
         hi "And this housekeeper taught Lilly?"
         aki "At my request in exchange for a very generous bonus. I wanted some peace of mind. I wanted to be able to sleep peacefully at night and do my job without worrying all the time. The burden of responsibility was enough as it was."
-        aki "I could have hired someone else. Heck, I could have easily hired two... Mom and Dad never really left us strapped us for cash. But..."
+        aki "I could have hired someone else. Heck, I could have easily hired two… Mom and Dad never really left us strapped us for cash. But…"
         hi "Yes?"
 
         show hanako basic_normal_sum
@@ -287,7 +287,7 @@ label sh_ch23:
         aki "One player uses the white ball and one player uses the yellow one. You score points by hitting the other balls with your cue ball in various ways."
         aki "You get points for bumping the other balls into a pocket with your cue ball which is called a ‘winning hazard’ or by pocketing your own cue ball after contact with another ball which is called a ‘losing hazard’."
         aki "It's 3 points for moves involving the red ball and 2 points for moves involving the other player's cue ball."
-        aki "You also get points if you hit both other balls with your own cue ball in one shot. I believe they call that a... er..."
+        aki "You also get points if you hit both other balls with your own cue ball in one shot. I believe they call that a… er…"
 
         show lilly basic_cheerful_sum
         with chchange
@@ -335,7 +335,7 @@ label sh_ch23:
         show hanako basic_smile_sum
         with chchange
 
-        ha "Hmmm... I'll take white."
+        ha "Hmmm… I'll take white."
         hi "I think it's best if we simply play until our time is up. Okay?"
         ha "Okay."
 
@@ -400,27 +400,27 @@ label sh_ch23:
         show hanako basic_bashful_sum
         with chchange
 
-        ha "Oh... ummm... It's okay. I nearly f-forgot a-about that already."
+        ha "Oh… ummm… It's okay. I nearly f-forgot a-about that already."
         hi "Sorry for bringing it up."
 
         play sound sfx_billiards_break
 
         "Hanako reaims her cue and takes the shot, but misses her intended target, though her ball manages to touch the red ball before coming to a standstill."
-        ha "I'm... trying n-not to ponder the p-past while I'm here."
+        ha "I'm… trying n-not to ponder the p-past while I'm here."
         hi "You're right. Better to focus on the present."
         "As I move in to take my turn, I notice Hanako shaking her head with a shy smile."
 
         show hanako emb_smile_sum
         with chchange
 
-        ha "I... really... like the present as it is r-right now. I think I can... enjoy it more if I don't think too hard about things. But I still n-need to figure out what I want in the f-future."
+        ha "I… really… like the present as it is r-right now. I think I can… enjoy it more if I don't think too hard about things. But I still n-need to figure out what I want in the f-future."
         "That's the first time I’ve heard from her about that. I've asked her about it before, but she always told me she didn't know yet, and I'd drop the subject in order to avoid putting pressure on her."
         hi "Good to hear you're giving it serious thought."
 
         show hanako basic_bashful_sum
         with chchange
 
-        ha "I... I'd like to have it sorted out before c-classes start again."
+        ha "I… I'd like to have it sorted out before c-classes start again."
         hi "Do you have a general idea already?"
         "I've made an effort to come up with suggestions myself before, but it's kinda difficult because Hanako doesn't seem to have any subjects she naturally excels in, unlike Lilly and myself."
         "However, also unlike Lilly and myself, Hanako doesn't have any subjects she's particularly bad at either. It's almost as if even Hanako's test scores are focused on the purpose of not standing out. That does make planning the future a tricky activity."
@@ -447,7 +447,7 @@ label sh_ch23:
         "I make an attempt to pocket the red ball this time, but my shot is too soft, and my target stops mere centimeters away from the pocket in the corner."
         hi "After starting the club with him, I think I'd seriously break Mutou's heart if I didn't pursue science as a career path. That part is pretty much a done deal."
         hi "Unfortunately, I'm not sure yet about the specifics. That's why I asked Mutou to cover a wide range of topics at the club during the upcoming months."
-        ha "You're hoping to... c-come across a subject eventually that you feel a c-click with?"
+        ha "You're hoping to… c-come across a subject eventually that you feel a c-click with?"
         hi "That's the idea. Also, there are several universities in my hometown that offer wide selections of scientific studies and whose entrance exams I should be able to handle."
         hi "If I could make it into one of those, I could save on the costs of renting a dorm room on campus by moving back in with my parents. I have to be mindful of my family's financial situation."
 
@@ -460,7 +460,7 @@ label sh_ch23:
         show hanako emb_emb_sum
         with chchange
 
-        ha "Ummm... Did you... like my article? About the science club?"
+        ha "Ummm… Did you… like my article? About the science club?"
         hi "I loved it, and it seems like Mutou did too. Why?"
         ha "Naomi wants m-me to write the next ones, too."
         hi "Will you?"
@@ -482,8 +482,8 @@ label sh_ch23:
         show hanako emb_downtimid_sum
         with chchange
 
-        ha "Maybe... I could... do something related to that."
-        hi "You mean... study journalism?"
+        ha "Maybe… I could… do something related to that."
+        hi "You mean… study journalism?"
         "Hanako doesn't answer immediately. She merely gives me a long look as if to try to read my thoughts and determining whether I think she's gone crazy."
         "After a few silent seconds, she slowly nods."
 
@@ -506,7 +506,7 @@ label sh_ch23:
         show hanako basic_distant_sum
         with chchange
 
-        ha "Ummm... What d-direction did you{w=0.5}{nw}"
+        ha "Ummm… What d-direction did you{w=0.5}{nw}"
 
         play sound sfx_billiards_blunder
 
@@ -533,7 +533,7 @@ label sh_ch23:
 
         "I put down my cue and walk over to the people seated at the bar. I can see a businesswoman, a redheaded man dressed like a tourist, and an older woman wearing a rather expensive beige jacket."
         "As I approach, the two women turn around and look me over."
-        hi "{font=times}Ah... please excuse me.{/font}"
+        hi "{font=times}Ah… please excuse me.{/font}"
         "I instinctively bow before remembering that's not exactly a common practice in this country. I then bend down and reach out to grab Hanako's cue ball which has rolled under one of the women's barstools."
         "But before I can take the ball, I hear the occupant of the barstool clear her throat. With a puzzled look I get back up."
         "She gets off the barstool, reaches down, takes the ball and drops it into my hand."
@@ -542,7 +542,7 @@ label sh_ch23:
         with charaenter
 
         ka_ "{font=times}There you are.{/font}"
-        hi "{font=times}Thanks, but it really wasn't... necessary to...{/font}"
+        hi "{font=times}Thanks, but it really wasn't… necessary to…{/font}"
 
         show karla basic_laugh
         with chchange
@@ -551,10 +551,10 @@ label sh_ch23:
         ka_ "{font=times}You were just… retrieving something you dropped, correct?{/font}"
         hi "{font=times}Yes?{/font}"
         "I wonder what exactly she's getting at? She chuckles as if I just said something hilarious."
-        ka_ "{font=times}Every Scotsman is... familiar with that old trick, lad.{/font}"
-        "What does she...{w=0.5} {i}wait a second!{/i}"
+        ka_ "{font=times}Every Scotsman is… familiar with that old trick, lad.{/font}"
+        "What does she…{w=0.5} {i}wait a second!{/i}"
         "As I realize what she's insinuating, I visibly reel in shock."
-        hi "{font=times}I wasn't trying to...{/font}"
+        hi "{font=times}I wasn't trying to…{/font}"
         "The bartender and the other woman both laugh as they watch me blush."
 
         show karla basic_smile
@@ -584,20 +584,20 @@ label sh_ch23:
         show hanako basic_normal_sum
         with chchange
 
-        ha "Hmmm? Oh, I wanted to know... what direction you thought I h-had in mind for myself."
+        ha "Hmmm? Oh, I wanted to know… what direction you thought I h-had in mind for myself."
 
         play sound sfx_billiards
 
         "I strike the cue ball and manage to hit both other balls, but my ball ends up resting against one of the edges of the table, making the next shot a tricky one."
         hi "Well, my reasoning was that since you seem to handle computers pretty well, you could perhaps try for a career in the IT sector. There's a pretty high demand for people with experience in that area."
         "Not to mention the fact that that area also draws people with slightly less well-developed social skills, meaning Hanako would stand out less. I decide not to mention this, though."
-        ha "I did... think about that. There's this girl at the n-newspaper club who does the editing together with me."
+        ha "I did… think about that. There's this girl at the n-newspaper club who does the editing together with me."
         hi "The girl with the large cast on her arm?"
 
         show hanako basic_worry_sum
         with chchange
 
-        ha "Yes. Jun. She really likes computers. The few times we speak, she usually speaks about them. About v-video games and computers in general. It made me realize... I l-like working with them, but they d-don't interest me enough to make a career out of it."
+        ha "Yes. Jun. She really likes computers. The few times we speak, she usually speaks about them. About v-video games and computers in general. It made me realize… I l-like working with them, but they d-don't interest me enough to make a career out of it."
         "I am about to reply to her when we're surprised by a sudden buzzing noise."
         hi "Time is up."
 
@@ -649,17 +649,17 @@ label sh_ch23:
         with chchange
 
         "When we stop talking, she shrugs her shoulders."
-        ka_ "{font=times}Well... it... was a rather bold action.{/font}"
-        hi "{font=times}Sorry... err... We're on... vacation here. My English... is not very... good.{/font}"
+        ka_ "{font=times}Well… it… was a rather bold action.{/font}"
+        hi "{font=times}Sorry… err… We're on… vacation here. My English… is not very… good.{/font}"
 
         show karla basic_smile
         with chchange
 
         ka_ "{font=times}It's not that bad. I can understand you well. Your… pronunciation is good.{/font}"
-        hi "{font=times}That's... ah... good.{/font}"
+        hi "{font=times}That's… ah… good.{/font}"
         "I'm finding her rather easy to comprehend compared to most people here, and suddenly I realize why."
         "Instead of a Scottish dialect, she's been speaking to us in common English without a very noticable trace of a local accent and it sounds like she's been doing her best to speak slowly and clearly."
-        hi "{font=times}You're... not from around here?{/font}"
+        hi "{font=times}You're… not from around here?{/font}"
         ka_ "{font=times}I am, but I deal with many people from abroad at my work so I try to speak plain English when talking to people who aren't Scottish themselves. I can speak Scottish if you like.{/font}"
         hi "{font=times}Please don't.{/font}"
         ka_ "Or maybe I should speak in Japanese instead. It'll probably make it easier for us to understand one another."
@@ -686,11 +686,11 @@ label sh_ch23:
 
         "The woman makes a polite bow."
         ka_ "I'm very honored to meet my daughter's best friends."
-        hi "Are you...?"
-        ka_ "...Lilly's and Akira's mother? I am. Here in Scotland we're not as formal as people are in Japan. Would you mind if I address the two of you by your first names while you're here?"
+        hi "Are you…?"
+        ka_ "…Lilly's and Akira's mother? I am. Here in Scotland we're not as formal as people are in Japan. Would you mind if I address the two of you by your first names while you're here?"
         "I share a quick look with Hanako, who is still trying to digest what just happened and can only manage a flabbergasted nod."
-        "When in Rome..."
-        hi "Err... That's okay."
+        "When in Rome…"
+        hi "Err… That's okay."
 
         show karla basic_cheerful_close
         with characlose
@@ -754,7 +754,7 @@ label sh_ch23:
 
         ka "I can even retrieve stray cue balls for you if you like."
         "{i}Ouch!{/i}"
-        hi "I... don't mind."
+        hi "I… don't mind."
 
         show karla basic_cheerful
         show hanako basic_worry_sum
@@ -840,13 +840,13 @@ label sh_ch23:
         show karla basic_sheepish
         with chchange
 
-        ka "Not familiar with pub quizzes, are you? It's sort of a tradition for each participating team to think up a creative name. Like erm... ‘Knuckleheads’ or ‘Intellectually Challenged’ or ‘B for Dyslexic’. That sort of thing."
+        ka "Not familiar with pub quizzes, are you? It's sort of a tradition for each participating team to think up a creative name. Like erm… ‘Knuckleheads’ or ‘Intellectually Challenged’ or ‘B for Dyslexic’. That sort of thing."
         hi "They've probably picked one without us. We'll just have to see."
 
         show karla basic_smile
         with chchange
 
-        "Knowing Lilly, it might very well be a play on blindness of some kind... That'd be the sort of thing she'd do, though that wouldn't apply to Akira, so maybe they went with something else."
+        "Knowing Lilly, it might very well be a play on blindness of some kind… That'd be the sort of thing she'd do, though that wouldn't apply to Akira, so maybe they went with something else."
         "Suddenly the quizmaster gets back on stage and gives a few taps on the microphone in order to make clear he has something to say."
         "I try my hardest to make out what he's saying, but his accent and our distance from the stage make that somewhat of a lost cause. Lilly's mom seems to read my mind."
 
@@ -964,12 +964,12 @@ label sh_ch23:
         show akira basic_smug_cas
         with chchange
 
-        aki "Although..."
+        aki "Although…"
 
         show lilly cane_cheerful_sum
         with chchange
 
-        li "I wonder..."
+        li "I wonder…"
 
         show karla cross_angry
         with chchange

@@ -106,7 +106,7 @@ label sh_ch26:
         ka "He got away to France, though he never attempted to organize another uprising, pretty much guaranteeing the eventual decline of the Stuart dynasty and marking the definite end of an era for Scotland."
         ka "Many of his followers weren't so lucky though. The son of the King, the Duke of Cumberland, was more concerned about squashing the insurrection than about appearing gracious in victory."
         ka "After the battle, he had his soldiers search the battlefield for enemy survivors and execute anyone who was still capable of breathing. Afterwards, his troops were sent out to hunt down the escaped enemy soldiers."
-        ka "They were particularly vicious about it, burning suspect settlements to the ground and killing all soldiers believed to be rebels. All in all, not a day fondly remembered around here..."
+        ka "They were particularly vicious about it, burning suspect settlements to the ground and killing all soldiers believed to be rebels. All in all, not a day fondly remembered around here…"
 
         show karla basic_worried_cas
         with chchange
@@ -131,7 +131,7 @@ label sh_ch26:
         show hanako emb_sad_sum
         with chchange
 
-        ha "{cps=20}I'm... o-okay.{/cps}"
+        ha "{cps=20}I'm… o-okay.{/cps}"
         "She doesn't look or even sound okay."
 
         show bg:
@@ -164,7 +164,7 @@ label sh_ch26:
         show lilly basic_oops_sum at twoleft
         with charaenter
 
-        li "Ah... Yes, of course."
+        li "Ah… Yes, of course."
 
         scene bg inverness_tree
         show hanako emb_downtimid_sum at center
@@ -253,9 +253,9 @@ label sh_ch26:
         show hanako basic_distant_sum
         with chchange
 
-        li "Hmmm..."
+        li "Hmmm…"
         "Both Lilly and Hanako think for a moment."
-        ha "They're... um... c-chopped olives with pimiento."
+        ha "They're… um… c-chopped olives with pimiento."
         ka "They really add to the flavor."
 
         show karla basic_smile_cas
@@ -295,13 +295,13 @@ label sh_ch26:
         with chchange
 
         "Lilly cocks her head slightly."
-        li "Akira has told us about that. It must have been... something major for you and Father to spend the whole weekend like this."
+        li "Akira has told us about that. It must have been… something major for you and Father to spend the whole weekend like this."
 
         show karla basic_sheepish_cas
         with chchange
 
         #"Lilly's mother gives her daughter a slightly guilty smile."
-        ka "Your father and I weren't happy about not being able to pick you guys up from the airport, but... Yes, it kind of was. Probably the biggest event that's happened to the company in over a decade."
+        ka "Your father and I weren't happy about not being able to pick you guys up from the airport, but… Yes, it kind of was. Probably the biggest event that's happened to the company in over a decade."
 
         show lilly basic_weaksmile_sum
         with chchange
@@ -479,7 +479,7 @@ label sh_ch26:
         with chchange
 
         "Journalism huh? That's quite the recurring topic these days. I can see Hanako, who's been quiet for pretty much the entire time we've been here, perking up ever so slightly at Karla's words."
-        ha "J-j-journalism...?"
+        ha "J-j-journalism…?"
         ka "Yep."
         "I can tell that the conversation subject has caught Hanako's attention, but it's clear that she's not yet comfortable enough around Lilly's mother to ask her for details about her former job. Fortunately, Lilly takes this moment to come to Hanako's aid."
 
@@ -492,7 +492,7 @@ label sh_ch26:
         with chchange
 
         "Lilly's mother's smile grows brighter."
-        ka "Ah... Japanese school club life. Shame we didn't have a newspaper club at my old high school. That would have been fun."
+        ka "Ah… Japanese school club life. Shame we didn't have a newspaper club at my old high school. That would have been fun."
 
         show karla basic_smile_cas
         with chchange
@@ -534,14 +534,14 @@ label sh_ch26:
         with chchange
 
         "Hanako nods."
-        ha "It's... p-pretty tough at times. W-we... ummm... c-convert the f-files with a computer program. The c-copyshop's Braille p-printer can then w-work with them. We h-have l-large font editions too... ah... f-for s-students with l-limited vision."
+        ha "It's… p-pretty tough at times. W-we… ummm… c-convert the f-files with a computer program. The c-copyshop's Braille p-printer can then w-work with them. We h-have l-large font editions too… ah… f-for s-students with l-limited vision."
         ka "That's pretty neat. Is it a lot of work making all those different editions?"
 
         show hanako emb_emb_sum
         show lilly basic_smileclosed_sum
         with chchange
 
-        ha "The... ah... Braille e-edition can t-take a few hours. We usually... just p-print the large f-font edition on larger p-paper to s-save time."
+        ha "The… ah… Braille e-edition can t-take a few hours. We usually… just p-print the large f-font edition on larger p-paper to s-save time."
 
         show karla basic_troubled_cas
         with chchange
@@ -560,7 +560,7 @@ label sh_ch26:
         with chchange
 
         ka "It reads here that you were involved with both the editing and the writing. What articles did you work on?"
-        ha "Ummm... O-only one s-so far. The c-column about the science c-club."
+        ha "Ummm… O-only one s-so far. The c-column about the science c-club."
 
         show hanako emb_timid_sum
         show karla basic_serious_cas
@@ -584,14 +584,14 @@ label sh_ch26:
         show lilly basic_smile_sum
         with chchange
 
-        ha "Ah... ummm..."
+        ha "Ah… ummm…"
 
         show karla basic_smug_cas
         with chchange
 
         "Lilly's mother flashes us a cheeky grin as Hanako's mouth falls open for a moment."
         ka "Haha, looks like I hit the bullseye."
-        ha "H-how...?"
+        ha "H-how…?"
 
         show hanako emb_timid_sum
         show lilly basic_smileclosed_sum
@@ -617,13 +617,13 @@ label sh_ch26:
         with chchange
 
         "Wow, she's pretty passionate about this subject. Hanako seems taken aback by her response, but also somewhat impressed."
-        ha "Ummm... N-Naomi... I-I mean the editor-in-c-chief w-wanted to p-promote c-club membership."
+        ha "Ummm… N-Naomi… I-I mean the editor-in-c-chief w-wanted to p-promote c-club membership."
 
         show karla basic_cheerful_cas
         with chchange
 
-        ka "Really? Well... In that case, I guess it's alright. I could tell you to forget what I said, but I still think it's sound advice to keep in mind."
-        ka "Although... If you actively start promoting something, you're not really practicing journalism anymore, but..."
+        ka "Really? Well… In that case, I guess it's alright. I could tell you to forget what I said, but I still think it's sound advice to keep in mind."
+        ka "Although… If you actively start promoting something, you're not really practicing journalism anymore, but…"
 
         show hanako basic_bashful_sum
         with chchange
@@ -699,19 +699,19 @@ label sh_ch26:
 
         "She gives Hanako a quick nod."
         ka "Hanako, do you mind if I ask you another question?"
-        ha "Ummm... N-no."
+        ha "Ummm… N-no."
         ka "Not everyone interested in journalism is drawn to it for the same reasons. Some simply want to be able to travel and see the world. Others do it out of idealism. There are probably a ton more reasons. I'm really curious about yours."
 
         show hanako basic_distant_sum
         with chchange
 
-        ha "Ermmm..."
+        ha "Ermmm…"
         "It's possible Hanako never really thought about that herself yet as she remains in thought for a long time before replying to Lilly's mom."
 
         show hanako emb_smile_sum
         with chchange
 
-        ha "I... enjoy working on our n-newspapers. Right now it's m-mostly editing and c-correcting, but it made me think... I'd... like to s-start w-writing myself. I usually get... g-good marks f-for essays."
+        ha "I… enjoy working on our n-newspapers. Right now it's m-mostly editing and c-correcting, but it made me think… I'd… like to s-start w-writing myself. I usually get… g-good marks f-for essays."
 
         show karla basic_cheerful_cas
         with chchange
@@ -721,7 +721,7 @@ label sh_ch26:
         show hanako emb_downsad_sum
         with chchange
 
-        ha "But I... d-don't think I'd b-be a good journalist. I'm... r-really bad with p-people."
+        ha "But I… d-don't think I'd b-be a good journalist. I'm… r-really bad with p-people."
         ka "I did notice you're rather soft-spoken. There are some ways around that though. I've had some colleagues who were rather introverted."
 
         show hanako emb_sad_sum
@@ -747,12 +747,12 @@ label sh_ch26:
         show lilly basic_smileclosed_sum
         with chchange
 
-        ha "That's... a l-lot of options."
+        ha "That's… a l-lot of options."
 
         show karla basic_ponder_cas
         with chchange
 
-        ka "Indeed. On the journalistic side, there are the options of editing, copy editing, and research or fact checking. Now, there are probably studies that deal with these areas. Let me think..."
+        ka "Indeed. On the journalistic side, there are the options of editing, copy editing, and research or fact checking. Now, there are probably studies that deal with these areas. Let me think…"
 
         play sound sfx_snap
 
@@ -781,15 +781,15 @@ label sh_ch26:
         with chchange
 
         "Hanako softly shakes her head."
-        ha "N-no. I r-read a lot, but..."
+        ha "N-no. I r-read a lot, but…"
         ka "It pays off to be well-read, but it's no substitute for actual practice. Maybe this week would be a good moment to start."
 
         show hanako emb_sad_sum
         with chchange
 
-        ha "S-start? I... ah... am working on a n-new column for the n-next newspaper, but..."
+        ha "S-start? I… ah… am working on a n-new column for the n-next newspaper, but…"
         ka "I'd love to read it when it's done, but that wasn't really what I was talking about."
-        ka "This may be an intimate question, but... do you keep a diary or a journal?"
+        ka "This may be an intimate question, but… do you keep a diary or a journal?"
 
         show hanako emb_timid_sum
         with chchange
@@ -821,7 +821,7 @@ label sh_ch26:
         show hanako basic_bashful_sum
         with chchange
 
-        ha "Ummm... Yes."
+        ha "Ummm… Yes."
         ka "Good. Hisao, could you sit down next to her for a moment? Lilly, could you get a little closer?"
 
         show lilly basic_cheerful_sum
@@ -853,13 +853,13 @@ label sh_ch26:
 
         play music music_pearly fadein 4.0
 
-        hi "So, Lilly..."
+        hi "So, Lilly…"
         "If I readjusted my watch to Greenwich Mean Time correctly, it should be six o' clock right about now. Lilly and I are busy collecting the various bowls and plates that were strewn across the blanket and putting them back in the saddlebags."
         "Hanako is still sitting in the spot she's been occupying all afternoon, gently rubbing her calves with a slightly uncomfortable expression on her face."
         "She appeared alright during most of the picnic, but got slight cramps shortly before we decided to head back home."
         "Lilly's mother is standing some distance away from us, engaged in a phone call on her cell phone."
         li "Yes, Hisao?"
-        hi "That hour-long journalism-based sales pitch... Was that all ‘part of the plan’?"
+        hi "That hour-long journalism-based sales pitch… Was that all ‘part of the plan’?"
 
         show lilly basic_giggle_sum
         with chchange
@@ -873,7 +873,7 @@ label sh_ch26:
 
         "Lilly chuckles briefly."
         li "Hanako told me about her plans for the future during one of our nights on the town a few weeks ago. I knew Mother used to be a journalist, so I hoped she'd have some advice for Hanako."
-        li "That's also why I asked Naomi for an additional copy of the newspaper. But... I hadn't anticipated this."
+        li "That's also why I asked Naomi for an additional copy of the newspaper. But… I hadn't anticipated this."
         hi "Not anticipated what?"
 
         show lilly basic_weaksmile_sum
@@ -920,7 +920,7 @@ label sh_ch26:
         show karla basic_serious_cas
         with chchange
 
-        ka "Hisao, this is probably an intimate question, but... Hanako's scarring... It's not just on one side of her face, is it?"
+        ka "Hisao, this is probably an intimate question, but… Hanako's scarring… It's not just on one side of her face, is it?"
         "I'm taken aback for a second by her sudden mention of a subject this delicate."
         hi "She really doesn't like it when people bring it up."
         ka "I can imagine. It’s not really morbid curiosity or anything. It’s just…"

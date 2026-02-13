@@ -668,7 +668,7 @@ label sh_ch35:
         ha "W-what?"
         "He snickers at my baffled expression."
         hi "Hey, no need with the look. I'm totally serious."
-        ha "R-Really?"
+        ha "R-really?"
 
         scene ev footsiefight_war
         with charachangeev

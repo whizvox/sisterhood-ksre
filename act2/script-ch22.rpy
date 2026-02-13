@@ -70,7 +70,7 @@ label sh_ch22:
         show hanagown smile_close
         with chchange
 
-        ha "I... did... check your vital signs a f-few times... just to be s-sure."
+        ha "I… did… check your vital signs a f-few times… just to be s-sure."
         hi "Gee, thanks for the vote of confidence."
 
         show hanagown normal_close
@@ -108,7 +108,7 @@ label sh_ch22:
         with chchange
 
         "Hanako considers this for a moment, then nods."
-        ha "So ummm... What's the house like? I would have liked a tour myself."
+        ha "So ummm… What's the house like? I would have liked a tour myself."
         hi "It's pretty large. Large enough to cause Lilly to have the occasional bit of trouble navigating it."
         hi "Seems like there are three bedrooms aside from the master bedroom including this one. Lilly slept here during her last trip, but since no other guest room has a king-sized bed, they decided to let us have this one."
         hi "The living room is really nice. Big fireplace, soft couches. The kitchen is pretty large too. Two fridges, a kitchen island with several stoves and according to Lilly, they have a cellar with a wine rack too."
@@ -116,7 +116,7 @@ label sh_ch22:
         show hanagown worry_close
         with chchange
 
-        ha "It seems... very... large for just two people."
+        ha "It seems… very… large for just two people."
         hi "According to Lilly, they employ two servants as well as a housekeeper who does the cooking most of the time."
         ha "Wow."
         hi "Did you know Lilly's family was this wealthy?"
@@ -260,7 +260,7 @@ label sh_ch22:
         "We walk outside and the woman near the table—who upon closer inspection indeed seems to be wearing a servant's uniform—turns around and makes a deep and polite bow before addressing us."
         "Maid" "Welcome."
         hi "Hey, you speak Japanese! That's a relief. I'm not exactly a fluent English speaker."
-        "Maid" "{font=times}I'm {shader=wave:u__amplitude=2.0:u__frequency=0.5}????? ????? ???? ?????{/shader} Japanese {shader=wave:u__amplitude=2.0:u__frequency=0.5}???????{/shader}...{/font}"
+        "Maid" "{font=times}I'm {shader=wave:u__amplitude=2.0:u__frequency=0.5}????? ????? ???? ?????{/shader} Japanese {shader=wave:u__amplitude=2.0:u__frequency=0.5}???????{/shader}…{/font}"
         "My hopes are quickly dashed when she sheepishly shakes her head and starts talking to us in English."
         hi "Whoa there! Hey Hanako, can you tell what she's saying?"
 

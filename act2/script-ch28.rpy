@@ -55,7 +55,7 @@ label sh_ch28:
 
         hi "So, did you spot any more dolphins?"
         "I quietly shake my head, still a bit embarrassed."
-        ha "I... d-don't think they c-come to this part of the b-bay often."
+        ha "I… d-don't think they c-come to this part of the b-bay often."
         "Hisao allows his eyes to skim the water himself and then turns back to me."
         hi "Maybe your dolphin's busy doing typical dolphin-stuff right now. Like… you know… playing volleyball with live sea turtles."
         "I giggle at his words."
@@ -90,7 +90,7 @@ label sh_ch28:
         show hisao basic_blush_polo_close
         with chchange
 
-        hi "Well..."
+        hi "Well…"
         "From the hesitant look on his face, I can tell there's more he wants to say, but he isn't quite sure how to say it."
         "I suddenly I get what he wants to ask."
         "He didn't come here to tell me he was going to use the bath. He came here to invite me along."
@@ -101,14 +101,14 @@ label sh_ch28:
 
         hi "How about it? I don't think you take these kinds of baths very often. Why not take advantage of the opportunity?"
         "Seeing that I wrote down the very same thing less than half an hour ago, it's difficult for me to argue against that."
-        ha "I... don't really handle hot b-baths very well."
+        ha "I… don't really handle hot b-baths very well."
 
         show hisao cross_smile_polo_close
         with chchange
 
         hi "I checked out the bath before coming here and there's a control panel for the heater that allows you to set the water temperature to whatever you like."
         hi "You don't have to if you don't want to, but I'd really like you to join me. Let's make it a very special occasion."
-        ha "...O-okay then."
+        ha "…O-okay then."
 
         stop music fadeout 3.0
         stop ambient fadeout 3.0
@@ -133,7 +133,7 @@ label sh_ch28_journal_en:
 
     call screen sh_journal(
         "\n\nNot so much here. The idea that there are people at every airport who are being paid to keep a look out for travellers showing ‘unusual’ behavior creeps me out like nothing else. Then there's the security gates. It's a bit depressing to have pretty much the whole world make it clear to you for nearly a decade that the sight of your face is an affront to their sensibilities, and then they still insist on you showing it completely unobscured. All in all, this was not a good day for me. I can't comment on much of the flight as I've been asleep for the biggest part of it.",
-        "\n\nAddendum:\nNow that I've been here a few days longer, I feel that I should mention that although I still dislike airports, I do think this vacation has been worth the stress of navigating them so far. Also, what Lilly said about how special an experience your first takeoff is couldn't be more on the mark. In fact, the second one wasn't any less exciting.\n\nIt's hard to describe the feeling I got when the plane left the ground, and I could see the world slowly shrink beneath us until the only thing visible through the window was that ocean of clouds all around us. It felt... liberating in some way. As if I was leaving an old part of my life behind me and was on the edge of something new and exciting.\n\nI guess I'm doing just that—if only temporary. So I suppose it wasn't all bad, though I still dread going through customs and security again when we return to Japan.",
+        "\n\nAddendum:\nNow that I've been here a few days longer, I feel that I should mention that although I still dislike airports, I do think this vacation has been worth the stress of navigating them so far. Also, what Lilly said about how special an experience your first takeoff is couldn't be more on the mark. In fact, the second one wasn't any less exciting.\n\nIt's hard to describe the feeling I got when the plane left the ground, and I could see the world slowly shrink beneath us until the only thing visible through the window was that ocean of clouds all around us. It felt… liberating in some way. As if I was leaving an old part of my life behind me and was on the edge of something new and exciting.\n\nI guess I'm doing just that—if only temporary. So I suppose it wasn't all bad, though I still dread going through customs and security again when we return to Japan.",
         [
             (Image(f"{sh_path}/gui/journal/d02.png"), 0.34, 0.672),
             (Text("Body Shame Brigade", color="#000"), 0.385, 0.7334, 0.5, 0, -15.0)
@@ -287,13 +287,13 @@ label sh_ch28_journal_en:
     )
 
     call screen sh_journal(
-        "\n\nnevertheless managed to capture most of my vacation on camera so far.\n\nMy vacation...\n\nAside from that long weekend in Hokkaido, I haven't had a real vacation in a decade. There were dates with Hisao or outings with Lilly that I enjoyed, but this feels different somehow.\n\nOr maybe I simply feel different. I'm not sure when it started; perhaps when Lilly's mother started talking about writing and journalism? Or maybe when I started keeping a journal and actively using my camera? It hit me today while I was browsing through the pictures stored on the camera already. I'm in quite a few of the pictures myself. To most people that would be logical, but that's not the case for me. I don't think there are many photos of me in existence at all. Most of the ones that existed before the fire were",
+        "\n\nnevertheless managed to capture most of my vacation on camera so far.\n\nMy vacation…\n\nAside from that long weekend in Hokkaido, I haven't had a real vacation in a decade. There were dates with Hisao or outings with Lilly that I enjoyed, but this feels different somehow.\n\nOr maybe I simply feel different. I'm not sure when it started; perhaps when Lilly's mother started talking about writing and journalism? Or maybe when I started keeping a journal and actively using my camera? It hit me today while I was browsing through the pictures stored on the camera already. I'm in quite a few of the pictures myself. To most people that would be logical, but that's not the case for me. I don't think there are many photos of me in existence at all. Most of the ones that existed before the fire were",
         "\n\ndestroyed when our house burned down. I never liked the idea of people staring at a picture of me any more than people staring at me directly, so I've always tried to avoid being caught on camera whenever possible, even if that involved skipping class. I don't appear in the class photo of class 3-3 nor in any of the pictures from earlier years.\n\nYet during this week I've allowed myself to be photographed more often than in the preceding 10 years combined. And I'm writing about everything that's happened too. Photos used to be nothing more to me than a painful reminder of my disfigurement, but the ones recently taken are different. They're reminders of things I enjoyed. I realize now that that's probably also why I'm keeping a diary. I'm busy making memories. That's kind of new to me as well."
     )
 
     call screen sh_journal(
         "\n\nWhen I still lived at the orphanage, I survived by focusing completely on the present. I tried to forget the events of yesterday and tried not to think about what would happen tomorrow. (both were often painful)\n\nAnd yet what I'm doing right now is doing what I can to make sure I won't forget what's happened here in Scotland so far, and I find myself dwelling on what the future will bring even at times when I'm trying to just enjoy the moment.\n\n\nI realize I'm rambling. A lot is going on inside my head right now, and it's overwhelming and confusing me at times, but I don't think I completely hate it. I hope that by writing all of this down I can give it a place and then try to make sense of it later.",
-        "\n\nOn a final note, when re-reading my recollection of the first day, I realize I maybe wasn't being completely fair. I did like the flight itself and our stay here so far has definitely been worth the stress of the trip so I'm going to try and write something positive about it after I finish this page. Maybe that's the key to sorting out my life. Writing down the precious memories and taking pictures of them in order to to keep them alive that way while letting the bad memories fade with time.\n\nHmmm..."
+        "\n\nOn a final note, when re-reading my recollection of the first day, I realize I maybe wasn't being completely fair. I did like the flight itself and our stay here so far has definitely been worth the stress of the trip so I'm going to try and write something positive about it after I finish this page. Maybe that's the key to sorting out my life. Writing down the precious memories and taking pictures of them in order to to keep them alive that way while letting the bad memories fade with time.\n\nHmmm…"
     )
 
     call screen sh_journal(
@@ -316,7 +316,7 @@ label sh_ch28_journal_en:
 
     call screen sh_journal(
         "\n\nI don't think Lilly's happy with this, but she seems hesitant to try and force things. Well, that's Lilly for you. Still, it's a pity she can't spend time with both her parents and her sister at the same time. They're all really nice people on their own.",
-        "Day 9\n\nWe went to visit the famed Loch Ness today. It's not the lake in Scotland that covers the largest area, but it's definitely the lake that contains the largest amount of water (it's much deeper than any other lake around here) so you could still argue that it's the largest lake in the country. The road to our destination ran parallel to the lake for nearly 10 kilometers, so we got plenty of opportunity to take pictures. Now about that destination...\n\nThe name of our destination is Grmblwarwmx. Actually the village's real name is Drumnadrochit, but as far as pronunciation goes that's the same thing in my mind. Infuriatingly enough, Lilly managed to get it right after a few tries. Karla promised Hisao and me that we'd be flying business class back to Japan if we could learn to say the name out loud three times without mispronouncing it before the end of our stay.",
+        "Day 9\n\nWe went to visit the famed Loch Ness today. It's not the lake in Scotland that covers the largest area, but it's definitely the lake that contains the largest amount of water (it's much deeper than any other lake around here) so you could still argue that it's the largest lake in the country. The road to our destination ran parallel to the lake for nearly 10 kilometers, so we got plenty of opportunity to take pictures. Now about that destination…\n\nThe name of our destination is Grmblwarwmx. Actually the village's real name is Drumnadrochit, but as far as pronunciation goes that's the same thing in my mind. Infuriatingly enough, Lilly managed to get it right after a few tries. Karla promised Hisao and me that we'd be flying business class back to Japan if we could learn to say the name out loud three times without mispronouncing it before the end of our stay.",
         [
             (Image(f"{sh_path}/gui/journal/d20.png"), 0.34, 0.3991)
         ]
@@ -341,7 +341,7 @@ label sh_ch28_journal_en:
     )
 
     call screen sh_journal(
-        "Day 10\n\nI got out of bed early this morning in order to take pictures of the Satou residence. It's been on my to-do list for days, and I finally decided to stop putting it off. Lilly, Hisao and I had a trip planned this day, so staying in bed all morning wasn't an option to begin with.\n\nWhile visiting the study I spent some time in the presence of Lilly's father. We've barely seen him at all during our stay here. He leaves early and comes back late most of the time, and when he comes home, he often retreats to his study or goes straight to bed. I hadn't really spent any time in the study before, so I was unaware of this before but... The bookcase covering nearly the entire right wall is nearly completely filled with Japanese fiction!!! I think saying that Lilly's father is an avid reader is a massive understatement. He gave me permission to borrow any book I liked in case I got bored here.",
+        "Day 10\n\nI got out of bed early this morning in order to take pictures of the Satou residence. It's been on my to-do list for days, and I finally decided to stop putting it off. Lilly, Hisao and I had a trip planned this day, so staying in bed all morning wasn't an option to begin with.\n\nWhile visiting the study I spent some time in the presence of Lilly's father. We've barely seen him at all during our stay here. He leaves early and comes back late most of the time, and when he comes home, he often retreats to his study or goes straight to bed. I hadn't really spent any time in the study before, so I was unaware of this before but… The bookcase covering nearly the entire right wall is nearly completely filled with Japanese fiction!!! I think saying that Lilly's father is an avid reader is a massive understatement. He gave me permission to borrow any book I liked in case I got bored here.",
         "\n\nI wonder if it'd be selfish of me to secretly wish for a world-wide airline strike, just so I could stay here long enough to take him up on that offer. Before I left, he told me to get some binoculars. I wondered why at the time. It didn't take that long to find out.\n\n\n\n\n\n\n\nLilly, Hisao and I took a bus to the village of Avoch on the other side of the bay. Just like her father, Lilly wouldn't really go into detail. Avoch turned out to be a rather small harbor village and Lilly had arranged a boat trip from there. I didn't get why we'd be taking another boat trip after having taken one on Loch Ness the day before already, but the reason quickly became clear.",
         [
             (Image(f"{sh_path}/gui/journal/d24.png"), 0.72, 0.3991)
