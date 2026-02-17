@@ -7,9 +7,14 @@ the Discord server, which you can find on [the website](https://sisterhood.whizv
 ## How to Run
 
 1. Clone the source repository for [Katawa Shoujo: Re-Engineered](https://codeberg.org/fhs/katawa-shoujo-re-engineered).
-2. Create the following directory: `/game/mods/sisterhood`.
-3. Clone this repository into that `sisterhood` directory.
-4. Run the [Ren'Py SDK](https://www.renpy.org/latest.html) (8.3.3+) and launch this KS:RE project.
+2. Clone this repository
+  * **Option 1**
+    1. Create the following directory in the cloned KS:RE repository `game/mods/sisterhood`
+    2. Clone this repository into that `sisterhood` directory
+  * **Option 2**
+    1. Clone this repository somewhere
+    2. Create a symlink called `sisterhood` in that mods directory pointing to the cloned Sisterhood repository
+1. Run the [Ren'Py SDK](https://www.renpy.org/release/8.5.2) (8.5.2) and launch the KS:RE project.
 
 ## License
 
