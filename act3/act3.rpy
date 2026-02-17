@@ -40,13 +40,14 @@ init 30 python:
             (_("Aquatic Artplay"), "sh_ch35.s3", _("Hanako and Hisao have some fun in the shower.")),
             (_("A Blast from his Past"), "sh_ch36.s1", _("Hanako has an unexpected encounter during a karaoke date with Hisao.")),
             (_("Lady of the House"), "sh_ch37.s1", _("Lilly looks after her father in her mother's absence."), "lilly"),
-            (_("Through your Eyes"), "sh_ch37.s2", _("Lilly and her father start bonding with one another."), "lilly")
+            (_("Through Your Eyes"), "sh_ch37.s2", _("Lilly and her father start bonding with one another."), "lilly")
         ])
     )
 
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo"])
     sh_sprites("hiroyuki", ["smileclosed"])
 
+    phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
     phonebox_sprites("lilly", ["basic_smileclosed", "basic_weaksmile", "cane_satisfied", "cane_giggle", "cane_sleepy"], cropyoff=-40)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
@@ -54,3 +55,8 @@ init 30 python:
     sh_bgs("satou", ["masterbed_ni"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
+
+    sh_register_sfx([
+        # credit: Universfield of Pixabay
+        "winecork"
+    ])

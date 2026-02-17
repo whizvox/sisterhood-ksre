@@ -343,8 +343,6 @@ label sh_ch37:
         "The housekeeping staff all went home two hours ago, but Allison made sure that everything she thought I'd need for tonight would be in a place where I could easily find it."
 
         scene ev bedside_sit
-        show lilly basic_smile at twoleft
-        show hiroyuki basic_thinking at tworight
         with Dissolve(2.0)
 
         li "It wasn't really the doorbell itself. I heard the sound of a car outside."
@@ -360,38 +358,24 @@ label sh_ch37:
         li "I will."
 
         scene bg satou_masterbed_ni
-        with changelocation
+        with locationchange
 
         "I walk over to the corner of the room where a small electric stove is keeping the large pan of miso soup that I made this afternoon to get us through the night warm with its single heated plate."
-        "I went through a lot of effort to make the soup myself, but the result is apparently quite pleasing to Father. I fill a bowl with the contents of the pan, slowly walk back to the bed and carefully place it in Father's hands."
+        "I went through a lot of effort to make the soup myself, but the result is apparently quite pleasing to Father. I fill a bowl with the contents of the pan, slowly walk back to the bed, and carefully place it in Father's hands."
 
         scene ev bedside_soup
-        show lilly basic_smile at twoleft
-        show hiroyuki basic_thinking at tworight
-        with Dissolve(1.0)
+        with locationchange
 
         li "Let's hope everything goes well, and we'll have no difficulties."
         hyf "Mister McLaughlin seems capable enough. We... should be fine."
-
-        show lilly basic_displeased
-        with chchange
-
         "My thoughts return to the talk we had with him earlier today."
         li "Father, may I ask something?"
         hyf "What is it?"
         li "What did you think of his proposal?"
-
-        show hiroyuki serious
-        with chchange
-
         hyf "To handle his duties in here instead of from the office? I am not... overly fond of others using my private study... without me being present, but his suggestion was the most practical and riskfree one."
         li "I understand, but there was something that caught my attention."
         hyf "You are referring to the way he brought it up, are you... not?"
         li "If his words offended you, you did a good job of hiding it."
-
-        show hiroyuki thinking
-        with chchange
-
         "Father lets out a self-deprecating sigh."
         hyf "Welcome to western civilization, Lilly. It is quite... a different world over here."
         li "I imagine."
@@ -410,63 +394,41 @@ label sh_ch37:
         hyf "One of my tasks was to... test which aspects of Japanese management style could be succesfully implemented here and which ones would merely... cause frustration."
         hyf "You cannot just lead... a western company like... a Japanese one or a Japanese company like a western one... and expect it to work out."
         li "That sounds like a tough job. Japanese management style and company culture are very different from the western one, aren't they?"
-        hyf "They are. Japanese... management emphasizes loyalty and insight gained through... seniority, long-time goals, risk avoidance, maintaining harmony and decision-making through well-crafted consensus."
-        hyf "Western management emphasizes quick... returns on investment, individual decisiveness, efficiency and calculated risks. Many times the... two seem incompatible."
+        hyf "They are. Japanese... management emphasizes loyalty and insight gained through... seniority, long-time goals, risk avoidance, maintaining harmony, and decision-making through well-crafted consensus."
+        hyf "Western management emphasizes quick... returns on investment, individual decisiveness, efficiency, and calculated risks. Many times the... two seem incompatible."
         hyf "I have found that many people... here often do not have the patience for sitting in meetings for hours on end until a consensus is made on how... to deal with a problem."
         hyf "Westerners... also have a very different definition of company loyalty than Japanese, and that is not something you can ignore when leading a company."
-
-        show lilly basic_weaksmile
-        with chchange
-
         li "I'm sure both cultures have their merits."
-
-        show hiroyuki speak
-        with chchange
-
         hyf "Hmmm... It was not really my intention to complain. There is something interesting about the carefree way... they can go about their lives without the burden of what others... might or might not think of them. They also admittedly handle diversity a lot better than we do."
         "I wonder if that's truly a touch of envy I hear for a moment. I feel a bit taken off guard by his words."
         li "That's a rather frank assessment..."
-        hyf "On the other hand, many could... be more loyal. You would be surprised how... many western managers seem unwilling to impose a... pay cut on themselves while their company is going through hard... times. Too many people, workers and managers alike, only seem to be in... it for themselves."
-        hyf "It is hard for me to understand that attitude. I... try not to condemn them though. Nor am I saying that their culture... is better... or worse. I believe it is best to keep an open mind about the differences... between our society and theirs."
+        hyf "On the other hand, many could... be more loyal. You would be surprised how... many western managers seem unwilling to impose a... pay cut on themselves while their company is going through hard... times."
+        hyf "Too many people, workers and managers alike, only seem to be in... it for themselves. It is hard for me to understand that attitude."
+        hyf "I... try not to condemn them though. Nor am I saying that their culture... is better... or worse. I believe it is best to keep an open mind about the differences... between our society and theirs."
         hyf "It would be very difficult for... me to lead a branch consisting of almost nothing but Scotsmen and... deal with American businessmen on an almost daily basis if I let everything about western culture get to me."
         "I suppose what he says makes sense. When moving to another country, it's logical to try and adapt a little to fit in with the local people better. It just feels a little off to hear my father, who I've always seen as very traditionally-minded, say these things. It clashes with the image I had of him."
         "I initially thought it was just Mother who changed during her time here, but perhaps Father has changed in his own subtle way as well."
         "Still, managing a company with a completely different business culture must have been a very harrowing job for Father, and I'm starting to suspect that the stress he's been under may have been caused by more than just social pressure to live up to his own father's accomplishments."
         "His job here has probably been sapping a lot of his energy from the very beginning. That would explain why the doctors said that he's had high blood pressure for years."
         li "It still sounds like it must have been very stressful for you. How do you think Akira will handle the culture shock?"
-        hyf "I think she will... do fine. Your sister can be very straight-forward when... she feels she needs to be and westerners value that trait as long as... it is combined with a modicum of respect. Young people tend to be more adaptable to... begin with."
+        hyf "I think she will... do fine. Your sister can be very straight-forward when... she feels she needs to be, and westerners value that trait as long as... it is combined with a modicum of respect. Young people tend to be more adaptable to... begin with."
         hyf "I suspect she will do a better job at integrating... into western culture than I could ever hope to do. I have... heard that her transferring here required some sacrifice, but I feel... fairly confident that in the long run she will not regret her decision to move here."
-
-        show lilly basic_displeased
-        with chchange
-
         li "Ah... Father? About that..."
         hyf "Yes?"
         li "Were you... very disappointed in me when you learned I decided to stay in Japan?"
-
-        show hiroyuki thinking
-
         hyf "Hmmm..."
         "There's a long pause after I pose my question, and for a moment I'm starting to suspect he's not going to answer in order to avoid hurting my feelings. But just before I can apologize for asking him, he answers."
         hyf "When we invited you and Akira to join... us here, I used to believe that if anyone would reject our offer, it... would be Akira rather than you. I was... rather shocked when your mother told me the news. But, on the other hand..."
         li "Y-yes?"
-
         hyf "...From what I have heard from... you about your life in Japan over the last two weeks, I know that you had your life set up well there. You had a school... you enjoyed attending, a position of responsibility among... your classmates and friends you enjoyed spending time with."
         hyf "All of those are valuable things. To... give all of that up, just to make a brand new start on the other end of the... world in a country with a culture completely different from your own... is quite a gamble."
         li "Father...? Are you saying...?"
- 
-        show hiroyuki smileclosed
- 
         hyf "All I am saying is that while it is most regrettable that you decided to stay there, I do understand why you chose to do so."
         li "I..."
-
-        show hiroyuki thinking
-
         "I don't know what to say for several seconds. What I feel right now is a strange mixture of relief and befuddlement."
-        "I've always assumed that Father would be dismayed by the fact that I turned down the summons. He was always the one who would talk to us about the benefits of respecting and deferring to your elders. Did he start getting second thoughts about having me move here?"
+        "I've always assumed that Father would be dismayed by the fact that I turned down the summons. He was always the one who would talk to us about the benefits of respecting and deferring to your elders."
+        "Did he start getting second thoughts about having me move here?"
         li "Thank you for your understanding, Father."
-
-        show lilly basic_concerned
 
         nvl clear
         nvl show dissolve
@@ -480,51 +442,33 @@ label sh_ch37:
         n "But judging from what Akira has told me, people here often immediately go home at the end of their official work day, and they only do overtime when there's an approaching deadline to meet."
         n "While it's not uncommon for friendships to form on the workfloor here, most people here develop their friendships outside the workplace through social activities like sport clubs, hobbies or pub visits."
         n "Mother quickly developed a big social network here and has been partaking in a large number of activities outside her working hours, but how well did Father adapt here?"
-        n "After over 25 years of having all his social interaction through the workplace, how quickly could someone like him switch gears?"
+        n "{vspace=60}After over 25 years of having all his social interaction through the workplace, how quickly could someone like him switch gears?"
 
         nvl clear
 
-        n "Was him doing all that overwork here on his own purely out of loyalty to the company and to his own father or was it also because any time outside his office was simply spent at home in that study of his, reading one of the countless books he keeps there?"
+        n "Was him doing all that overwork here on his own purely out of loyalty to the company and to his own father, or was it also because any time outside his office was simply spent at home in that study of his, reading one of the countless books he keeps there?"
         n "Is the quantity of books in there an indication of how much of his free time he spent on his own without the company of others? Did he want Akira and me here because he desired more company?"
         n "Was loneliness part of the stress factors that nearly ended up killing him? Did he say what he just said because of the possibility that I might have ended up feeling lonely here as well?"
 
-        nvl clear
         nvl hide dissolve
 
         li "Father?"
         hyf "Yes?"
         "I skim the surface of the bed with my fingers until I locate his hand and gently place my own on top of it."
         li "How about the life you had in Japan? And the friends you had there? Aren't you... lonely here?"
-
-        show hiroyuki stern
-
         "An uncomfortable pause. I can sense his hand stiffening for a moment. Was that question out of line?"
         hyf "Is that... pity I hear in your voice, Lilly?"
-
-        show lilly basic_weaksmile
-
         li "Just a bit of concern for your well-being, Father."
         hyf "I have been fine, Lilly."
-
-        show lilly basic_displeased
-        show hiroyuki serious
-
         "The tone in his voice pretty much confirms what I've been thinking."
         "But he probably feels that over the last few weeks he's already shown enough vulnerability to his children, so I doubt that prying further into his personal feelings will achieve anything other than making him uncomfortable."
         "So I drop the subject, but not before giving his hand a gentle comforting squeeze."
         "Not really knowing how to continue the discussion, we simply stay like this for a little while, neither of us bothered by the prolonged silence, until my attention is drawn to a static noise coming from the nearby nightstand."
-
-        show lilly basic_smileclosed
- 
         li "The headsets. It sounds like it's starting. Would you like one more bowl of miso soup, Father?"
-
-        show hiroyuki basic_thinking
-        with chchange
-
         hyf "That would be appreciated."
 
-        show ev bedside_headset
-        with Dissolve(1.0)
+        show ev bedside_headsets
+        with charachangeev
 
         "I refill Father's bowl and take the two headsets off the nightstand. We both put one on and I carefully speak into the microphone."
         li "Ah... is this thing on already?"
@@ -535,54 +479,50 @@ label sh_ch37:
         "Mr. McLaughlin" "Sure. I'm adding you two to the session right now. Then I'm going to take a short bathroom break. I'll be back in five minutes."
         li "Hello?"
 
-        play music music_pearly fadein 4.0
+        stop music fadeout 3.0
+
+        queue music music_pearly fadein 4.0
 
         show akira basic_smile_phone at phonebox
         with charaenter
 
-        aki "Hey Sis! Will you be listening in too?"
-
-        show lilly basic_smile
-        with chchange
- 
+        aki "Hey Sis! Will you be listening in, too?"
         li "Akira! It's so nice to hear you again. How was the flight?"
 
         show akira basic_cheerful_phone
+        with chchange
 
         aki "Kinda long, but our airline had some very luxury business class seats, so I can't complain. Heh, they have some pretty good liquor too."
         hyf "Akira. Is everything... ready? I do not... hear anyone else... nearby."
 
         show akira basic_smile_phone
+        with chchange
 
         aki "That's because I just retreated to one of the empty meeting rooms here. I figured that in case you wanted to discuss some last minute stuff, it'd look weird if others see me talking to thin air."
         li "Wouldn't they notice the headset? It seems like something that would be hard to miss."
         aki "I'm not wearing a headset. I have the same microphone on my lapel as everyone else and I'm listening to you through one of those earpieces that secret agents often wear in movies."
 
-        show akira basic_laugh_phone at phonebox
+        show akira basic_laugh_phone
+        with chchange
 
         aki "Hehe, I was just thinking... between the earpiece and the business suit, all I'd be needing right now would be a sidearm and maybe some sunglasses, and I'd be ready to join the secret service."
-
-        show lilly basic_cheerful
-        show hiroyuki stern
-
         "I laugh at Akira's wacky remark, but hear a soft groan coming from Father. It seems Akira's playful attitude isn't inspiring confidence in him."
         hyf "Akira... can I... count on you to take... this a hundred... percent seriously?"
 
         show akira basic_smug_phone
+        with chchange
 
         aki "Dad, it's not like I've never been part of business meetings before. Everything will be fine, I promise."
-        hyf "Just act... like the person... standing in... for me is... expected to act.\n{size=*0.7}And I will have your... mother buy you a vodka martini afterwards."
+        hyf "Just act... like the person... standing in... for me is... expected to act.{w}\n\n{size=*0.7}And I will have your... mother buy you a vodka martini afterwards."
 
         show akira basic_lost_phone
+        with chchange
 
         aki "Hmmm? I didn't catch that last part."
-
-        show lilly basic_smileclosed
-        show hiroyuki serious
-
         hyf "Never mind. Am I sufficiently... audible to you?"
 
         show akira basic_smile_phone
+        with chchange
 
         aki "You are. You can probably speak a bit softer if that feels more comfortable."
         hyf "That might... cause problems if... someone else is... speaking at the same time."
@@ -590,90 +530,77 @@ label sh_ch37:
         aki "That's a pretty good idea, Sis. Something like this?"
         "We hear her let out a soft “hrmm” under her breath."
         li "That will probably suffice. Father?"
-
-        show hiroyuki thinking
-
         "Father lets out a resigned sigh."
         hyf "Very well. Let us... give that a try."
-        aki "I'll be heading back to the rest. Mom's finished giving everyone a mic, and she's explained your situation. Without getting too specific, of course."
+        aki "I'll be heading back to the rest. Mom's finished giving everyone a mic, and she's explained your situation—without getting too specific, of course."
         aki "I'll leave it to her to give you the details, but so far everyone's reacted very positively, and Mom got word from just about everyone that they're willing to go out of their way to accommodate you."
         hyf "I really hope... that will not be necessary."
 
         show akira basic_sweet_phone
+        with chchange
 
         aki "By the way, Kojima will be seated at the head of the table in your place despite you being ‘present’. We figured the board wanted a senior in that seat instead of me, despite him only being an observer in a practical sense and me representing you directly."
         hyf "I agree with... that decision."
         "While Akira's speaking, I become aware of a slight background noise appearing on the line, indicating the vicinity of other people. I faintly hear Mother's voice asking Akira if she's ready."
 
         show akira basic_smile_phone
+        with chchange
 
         aki "Yeah, I'm ready and so is Dad. Let's go in."
 
-        show hiroyuki serious
+        hide akira
+        with charaexit
+
+        $ renpy.music.set_audio_filter("ambient", renpy.audio.filter.Highpass(1000))
+        $ renpy.music.set_volume(0.5, channel="ambient")
+        play ambient sfx_crowd_indoors fadein 1.0
 
         "The next moment, we're startled by a wave of voices as the microphones of the meeting room's occupants are turned on. I cringe a bit as the room suddenly appears to be filled with people."
         "Just as I prepare to take off the earphones, the fragments of conversation suddenly fade out and then increase in volume again. I fiddle a bit with the dial on my headset until the sound volume's comfortable."
-        "I notice that some voices sound further away than others and certain people are specifically audible through either the left or the right speaker. I suppose the administrators set this up in some way or another and smile in appreciation of their effort to make the experience feel more natural to us."
+        "I notice that some voices sound further away than others and certain people are specifically audible through either the left or the right speaker."
+        "I suppose the administrators set this up in some way or another and smile in appreciation of their effort to make the experience feel more natural to us."
 
         scene ev bedside_papers
-        show lilly basic_displeased at left
-        show hiroyuki serious at right
-        show akira basic_smile_phone at phonebox
-        with Dissolve(2.0)
+        with charachangeev
 
         nvl clear
         nvl show dissolve
 
-        n "And then finally, the meeting begins. Kojima opens the meeting with a short introduction, followed by a word from Father, consisting mostly of an apology for not being able to be there in person and a statement of appreciation for his business partners."
+        n "And then finally, the meeting begins."
+        n "{vspace=30}Kojima opens the meeting with a short introduction, followed by a word from Father, consisting mostly of an apology for not being able to be there in person and a statement of appreciation for his business partners."
         n "I personally think he might have stressed the apologetic part too much, yet Akira delivers his words without a single trace of insincerity nor do I hear even a hint of the usual defiance in her voice that's almost always there when she's dealing with our parents."
         n "I suppose in her mind right now Akira isn't representing her father, but rather representing her boss. It's impressive how much of a difference that makes with her."
+        n "{vspace=60}What stands out most for me, however, is hearing Mother."
 
         nvl clear
-        nvl hide dissolve
-
-        hide akira
-        show karla basic_speak_phone at phonebox
-        show lilly basic_displeased
-        show hiroyuki thinking
-
-        "What stands out most for me, however, is hearing Mother."
-
-        nvl clear
-        nvl show dissolve
 
         n "Unlike Father, who merely listens most of the time and only rarely takes the opportunity to provide a quick summary or offer his own opinion, Mother turns out to be the member of the delegation who seems to be handling most of the questions and counterproposals."
         n "Her tone right now isn't the energetic and casual one I've been struggling to get used to over the last few weeks. Instead, it's polite and relaxed, yet confident and in charge at the same time. I've never heard Mother speak this way before."
         n "I realize I have to remain focussed in order to assist Father, so I try not to think about it too hard."
 
-        nvl clear
-        nvl hide dissolve
+        stop ambient fadeout 2.0
+        stop music fadeout 2.0
 
-        hide karla
+        $ renpy.music.set_audio_filter("ambient", None)
+        $ renpy.music.set_volume(1.0, delay=2, channel="ambient")
+
+        scene ev bedside_papers
+        with shorttimeskip
+
+        queue music music_night fadein 4.0
 
         "The meeting ends up taking two hours with only a short coffee break near the middle."
         "For the most part, I've simply sat by and listened, repeating Father's words to Akira when necessary, handing Father scanned graphs and proposal summaries as they roll out of the nearby printer and refilling our bowls of soup once or twice."
-
-        show lilly basic_concerned
-
         "Still, after two hours of taking in a continuous stream of information, I feel drained. When the microphones are turned off, I let out an exhausted sigh."
-
-        show hiroyuki smile
-
         hyf "Tired?"
-
-        show lilly basic_weaksmile
-
         li "Only a little bit. This will be good practice for the months prior to the exams though, which will involve cramming as much information as possible into my head."
         hyf "That is one way of looking at it."
         li "I suppose I should show Mister McLaughlin out. It's probably late for him as well."
         hyf "That would be appreciated. Since there... are a meeting and a business dinner planned for tomorrow, it... will be okay for him to sleep in tomorrow morning. He... will probably have to be up for most of the night."
         li "I will tell him so."
 
-        stop music fadeout 2.0
-        queue music music_twinkle fadein 4.0
-
         scene bg satou_masterbed_ni
-        with Dissolve(1.0)
+        with locationchange
 
         li "He will be back here at eight o' clock tomorrow evening."
         "After showing the system administrator out, I returned to Father's room."
@@ -681,84 +608,57 @@ label sh_ch37:
         hyf "That is good to hear."
 
         scene ev bedside_sit
-        show lilly basic_smileclosed at twoleft
-        show hiroyuki serious at tworight
-        with Dissolve(1.0)
+        with locationchange
 
         li "He was quite relieved when I told him he could sleep in. He said that this had to have been one of the longest working days of his career."
-        hyf "Hmmm. I suppose it would be ungrateful to... point out to him that at our Japanese branch we used... to consider any working day shorter than 11 hours to be an unproductive one on general principle."
-
-        show lilly basic_cheerful
-
+        hyf "Hmmm. I suppose it would be ungrateful to... point out to him that at our Japanese branch, we used... to consider any working day shorter than 11 hours to be an unproductive one on general principle."
         li "Looking on the bright side, he at least didn't leave before his boss went home today."
-
-        show hiroyuki smileclosed
-
         hyf "Touché."
         "He chuckles a bit at my remark, then groans in discomfort. Laughing too much will probably be out of the question for the time being."
-
-        show lilly basic_smileclosed
-
         li "Father, can I get you anything before we retire for the night?"
         hyf "Hmmm..."
         "There's a long pause as if he's considering something to himself."
-
-        show lilly basic_smile
-        show hiroyuki smile
-
         hyf "If I still had been at our Japanese... office, my co-workers and I would have headed over to a drinking establishment... to drink and celebrate today's events right about now..."
         li "Do you want me to fetch you some wine, Father?"
         hyf "I suppose a little nightcap cannot hurt. You have been to the cellar before, have you not? Is it not too difficult to navigate?"
         li "Not overly so."
         hyf "One of the bottles of wine on the second shelf from the top will probably do. I am certain you already know where to find some glasses."
-        li "I'm sorry, but...did you say glasses?"
-
-        show hiroyuki smileclosed
-
-        hyf "You know what they say about people who... drink alone. You may not be a co-worker, but you did do your... best to help out this evening. It is okay... with me for you to have a drink or two...as long as it is under the supervision of an adult."
-
-        show lilly basic_cheerful
-
+        li "I'm sorry, but... did you say glasses?"
+        hyf "You know what they say about people who... drink alone. You may not be a co-worker, but you did do your... best to help out this evening. It is okay... with me for you to have a drink or two... as long as it is under the supervision of an adult."
         "My smile widens a bit. This is certainly one pleasant and unexpected surprise."
         li "Thank you, Father."
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
 
-        "With a bit of effort, I manage to get a bottle from the wine rack in the cellar and two glasses and a corkscrew from the kitchen and get them all to the master bedroom in one piece."
+        "With a bit of effort, I manage to get a bottle from the wine rack in the cellar, and two glasses and a corkscrew from the kitchen and get them all to the master bedroom in one piece."
+
+        stop music fadeout 2.0
 
         scene ev bedside_wine
-        with Dissolve(2.0)
+        with locationchange
 
-        show lilly basic_smileclosed at left
-        show hiroyuki serious at right
+        queue music music_twinkle fadein 4.0
 
-        "Father takes the bottle and corkscrew from my hands, and moments later, I hear the distinct sound of a bottle being uncorked, and the smell of white wine teases my nostrills."
-        "I sit on the side of the bed, hold out my glass and hear a sloshing sound as it's being filled."
+        "Father takes the bottle and corkscrew from my hands."
+
+        play sound sfx_winecork
+
+        "Moments later, I hear the distinct sound of a bottle being uncorked, and the smell of white wine teases my nostrills."
+        "I sit on the side of the bed, hold out my glass, and hear a sloshing sound as it's being filled."
         hyf "Just remember... that a proper lady does... not pass out on the couch."
         "I playfully raise my hand."
         li "It will not happen again. The Lord is my witness."
-
-        show lilly basic_smile
-        show hiroyuki smileclosed
-
         hyf "Very well. To the success of your mother and... your sister then."
         li "And to your speedy recovery as well, Father."
         hyf "That too."
-
-        show lilly basic_smileclosed
-        show hiroyuki smileclosed
-
-        "I carefully balance the glass in my hand, bring it up to my face and slowly breathe in in order to sample the wine's aroma. I continue taking in the smell until it leaves a subtly sweet taste in my mouth and then take a few soft sips. The wine's taste turns out to be as pleasing as its fragrance."
+        "I carefully balance the glass in my hand, bring it up to my face and slowly breathe in in order to sample the wine's aroma. I continue taking in the smell until it leaves a subtly sweet taste in my mouth and then take a few soft sips."
+        "The wine's taste turns out to be as pleasing as its fragrance."
         li "Father, I suppose this nightcap indicates that the meeting went well overall?"
         hyf "Things matched my expectations. Aside from Akira, who performed better than I expected."
         li "How about Mother?"
         hyf "She did as expected. She has... been part of everything since this all began, so she... knows how to handle herself."
         li "Really?"
-
-        show lilly basic_displeased
-        show hiroyuki thinking
-
         hyf "Your mother has been an true asset to the company from the... moment we came here. She did an excellent job helping the staff and... me get used to one another's mindset and bridge the cultural... divides."
         hyf "She has also always been ready with advice on how... to best deal with our Scottish staff and how to best interact... with American business contacts."
         hyf "I also quickly discovered that her knack... for networking and connecting with business people has remained as sharp as it... undoubtedly was in her days as a business reporter."
@@ -767,57 +667,42 @@ label sh_ch37:
         nvl show dissolve
 
         n "There's an unmistakable hint of admiration in his voice, and I'd probably feel a sense of pride if all of this wasn't so new to me."
-        n "Shortly after Father was hospitalized, Akira suggested his and Mother's marriage was in ruins, but from the way they speak about one another, I think she was sorely mistaken."
-        n "Still, Father's words once again make me wonder who Mother really is. The quiet and graceful homemaker I remember from my childhood? The energetic woman I've been spending time with here? Or the confident businesswoman I heard through my headset this evening?"
+        n "{vspace=60}Shortly after Father was hospitalized, Akira suggested his and Mother's marriage was in ruins, but from the way they speak about one another, I think she was sorely mistaken."
+        n "{vspace=30}Still, Father's words once again make me wonder who Mother really is. The quiet and graceful homemaker I remember from my childhood? The energetic woman I've been spending time with here? Or the confident businesswoman I heard through my headset this evening?"
         n "Perhaps a combination of all three? Is that even possible?"
 
-        nvl clear
         nvl hide dissolve
 
         li "Father, how... do you see Mother?"
         hyf "Akira was incorrect about us... Lilly. Please just take my word for that."
         "He doesn't really seem to be eager to discuss that particular subject, so I decide to drop it and move to a different topic."
-
-        show lilly basic_smile
-        show hiroyuki serious
-
-        li "Mother certainly handled herself well from what I could tell. I don't think I'd be capable of such a thing. But then again corporate business isn't really where my own interests lie."
-        "I hear Father let out a soft 'hmmm' as he hears this."
+        li "Mother certainly handled herself well from what I could tell. I don't think I'd be capable of such a thing. But then again, corporate business isn't really where my own interests lie."
+        "I hear Father let out a soft “hmmm” as he hears this."
         hyf "You have... plans for the future then?"
         li "I would like to study English after I graduate and become a teacher after finishing my higher education."
-        hyf "I had a very good English teacher back in... university. It is a valuable job. You would... be surprised about how many businessmen in our country, even senior... ones, are insecure about their own English skills. And yet it... is important in staying relevant in this age of globalisation. But... ah..."
+        hyf "I had a very good English teacher back in... university. It is a valuable job. You would... be surprised about how many businessmen in our country, even senior... ones, are insecure about their own English skills. And yet it... is important in staying relevant in this age of globalisation."
+        hyf "But... ah..."
         "I give him a reassuring smile."
         li "You can ask, Father. I won't be offended."
-
         hyf "Is that not hard? How would you prevent... students from cheating on a test for example? Or handle discipline?"
-
-        show lilly basic_smileclosed
-        show hiroyuki thinking
-
         li "I would seek the help of another English teacher. At times when my class has to take a test, I'll ask him to switch classes. He keeps an eye on my class for an hour while I teach his."
         li "As for discipline, I would make a seating chart so that I know where each pupil is sitting and I would walk around the classroom while teaching, so I can keep students in check through force of proximity."
         hyf "How about tests? How would you grade them?"
         li "I would again engage in a deal with a fellow English teacher. I would prepare and write up both my own tests and his, as well as the corresponding answer keys and he would do the grading."
-        li "I'm...ah...still trying to think up how to deal with essays. If I wanted to check a specific pupil's homework, I'd have them read it to me out loud."
+        li "I'm... ah... still trying to think up how to deal with essays. If I wanted to check a specific pupil's homework, I'd have them read it to me out loud."
         "I take another sip of the delicious wine before continuing."
         li "I would also attempt to create a sense of team spirit in each class I'd teach, so pupils could eventually be relied on to grade each other's homework."
         li "I acknowledge that school teachers have duties that require sight, but there are just as many which do not."
         li "By volunteering to take some tasks of the latter category off my colleagues' hands, I can get away with asking them to help me with things I cannot do myself."
-        "My explanation is followed up by a long silence on his end. I can almost hear the gears in his head turning as he weighs and evaluates every word I just said. Then, just before I am about to break the silence..."
+        "My explanation is followed up by a long silence on his end. I can almost hear the gears in his head turning as he weighs and evaluates every word I just said."
+        "Then, just before I am about to break the silence..."
         hyf "You seem to have put... a lot of thought into this."
         "I wonder what he thinks about my plans for the future. I weigh the tone in his voice for traces of skepticism, but the only thing I can pick up is a sense of honest curiosity."
         li "It's been a dream of mine since middle school, so I've had some time to think about it."
         hyf "You learn something new every day."
-
         "As I empty my glass, he takes it from my hand and pours a bit more wine into it. When I take it back, I notice it's lighter than the first time. It's probably only half-full this time around."
         "We gently touch our glasses together and then slowly sip the contents."
-
-        show lilly basic_displeased
-
         "After noticing a failed effort to supress a yawn on my part, Father decides that enough is enough for today and bids me good night."
-
-        show hiroyuki smileclosed
-
         "I prepare to make my way to the door, but before I can get up, I hear a soft chuckle coming from the bed."
         li "Father?"
         hyf "It is nothing. Just an... amusing thought that came to me just now."
@@ -825,12 +710,10 @@ label sh_ch37:
         hyf "I just thought about how... different it felt, holding... a meeting this way."
         hyf "Interacting with people without being... able to see their faces. Having to determine who is... talking purely by the sound of their voice, their accent and... the direction their speech is coming from."
         hyf "I suppose... you can relate... to this?"
-
-        show lilly basic_giggle
-        show hiroyuki smileclosed
-
         "I cover my mouth to mask a cheerful giggle. For some reason it feels really good to hear him say something like this."
         li "Trust me when I say that it's not so bad once you get used to it."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
