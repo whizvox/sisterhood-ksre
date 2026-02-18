@@ -713,14 +713,12 @@ label sh_ch37:
         "I cover my mouth to mask a cheerful giggle. For some reason it feels really good to hear him say something like this."
         li "Trust me when I say that it's not so bad once you get used to it."
 
-        stop music fadeout 2.0
+        stop music fadeout 3.0
 
         scene black
-        with Dissolve(2.0)
+        with endchapter
 
         if _in_replay:
             return
-        else:
-            pause 2.0
     
     return
