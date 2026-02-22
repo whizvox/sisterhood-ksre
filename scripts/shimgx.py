@@ -62,7 +62,7 @@ class BlurTransformation(ImageTransformation):
         if algorithm.lower() not in ("gaussian", "box", "default"):
             raise Exception("Not a valid blur algorithm: " + algorithm)
         self.algorithm = algorithm.lower()
-    
+
     def transform(self, img: Image.Image) -> Image.Image:
         radius = self.radius
         algorithm = self.algorithm
@@ -80,7 +80,7 @@ class CropTransformation(ImageTransformation):
     def __init__(self, box: tuple[float, float, float, float]):
         super().__init__("crop")
         self.box = box
-    
+
     def transform(self, img: Image.Image) -> Image.Image:
         return img.crop(self.box)
 
@@ -99,7 +99,7 @@ class CheckSizeTransformation(ImageTransformation):
         super().__init__("verifysize")
         self.minwidth = minwidth
         self.minheight = minheight
-    
+
     def transform(self, img: Image.Image):
         minwidth = self.minwidth
         minheight = self.minheight
@@ -121,7 +121,7 @@ class CompositeTransformation(ImageTransformation):
     def __init__(self, layers: list[tuple[int, int, str]]):
         super().__init__("composite")
         self.layers = layers
-    
+
     def transform(self, img: Image.Image):
         for layer in self.layers:
             x = layer[0]
@@ -184,7 +184,7 @@ class ImageProcess:
         self.outpath = outpath
         self.transforms = transforms
         self.saveparams = saveparams # type: ignore
-    
+
     def transform(self, replace: bool = False):
         inpath = Path(self.inpath)
         outpath = Path(self.outpath)

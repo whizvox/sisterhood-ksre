@@ -65,7 +65,7 @@ label sh_ch25:
         n "The warm water running over me feels good, although it does less to ease my hangover than I was hoping for. It does ease my hurting brain a bit, allowing me to think back on last night's events."
         n "{vspace=60}It's not the first time a few drinks have left Hanako a bit clingy, but it's definitely the first time she's gone this far. It's not like I've been acting like the adult in the room though."
         n "After last time, I thought I'd be able to handle Hanako just fine, even if she got like this. But now it turns out that that Hanako is able to handle me just fine as well."
-        
+
         nvl clear
 
         n "I get out of the shower, not really feeling any better but certainly feeling more awake. I still have a headache and feel rather exhausted. While it took me very little time to fall asleep, my sleep was restless for most of the night."
@@ -74,7 +74,7 @@ label sh_ch25:
         n "{vspace=30}I faintly remember pretty much collapsing on top of her last night and somehow managing to get my hands on a sheet to pull over us."
         n "{vspace=60}Under other circumstances, I'd have no second thoughts about getting back in bed. Hanako's sleepy smile in the morning is one of the most beautiful things in the world to wake up to."
         n "This morning, however, it's pretty likely she'll feel as queasy as I'm feeling right now, and I'm not so sure how she'll react to the memory of last night's events, but smiling about the whole thing will probably be the least likely reaction."
-        
+
         nvl hide dissolve
 
         "I think the best thing for me to do is give her the opportunity to recall the whole thing herself and let it sink in without my presence adding an extreme amount of awkwardness to the situation."
@@ -153,7 +153,7 @@ label sh_ch25:
         with chchange
 
         ka "‘Awake’ is probably stretching the definition."
-        
+
         show lilly basic_sleepy_sum:
             xpos 0.3 xanchor 0.5 yanchor 0.5 ypos 1.0 alpha 0.0
         with None
@@ -271,7 +271,7 @@ label sh_ch25:
         "Karla playfully chuckles at the comically terrified expression on her daughter's face and then takes her daughter's hand and starts guiding her towards the exit."
         "Before leaving the room she turns around to address me."
         ka "Just make yourself comfortable, Hisao. I'll be right back."
-        
+
         hide karla
         with charaexit
 
@@ -410,7 +410,7 @@ label sh_ch25:
         extend " which dies abruptly as the person standing near the kitchen sink unit turns around and gasps."
         hi "Hanako! Ummm… I mean, good morning, Hanako."
         "I hadn't expected Hanako to be up already. She probably went straight down to the kitchen to get something to drink. She doesn't look in much better shape than Lilly or myself, but as we spot each other, our hangovers are quickly made irrelevant by a more pressing matter."
-        
+
         play ambient sfx_ticktock
 
         show hanako emb_blushtimid_sum
@@ -696,7 +696,7 @@ label sh_ch25:
         ha "For both the radish tartines and the avocado and ham sandwiches?"
         li "Do you think it's possible?"
         ha "If we both work to get the avocado and radishes c-cut up in time. But we must make sure the water with the macaroni d-doesn't boil over."
-        
+
         show lilly basic_smile_sum
         with chchange
 
@@ -733,10 +733,10 @@ label sh_ch25:
 
         "That certainly explains why Lilly is taking this whole thing so seriously and why she insisted on Hanako playing merely a supportive role in the whole thing. This isn't just a picnic to her, but an opportunity to prove herself to her mother."
         "It kind of makes sense that she doesn't want to throw an unnecessary risk into the mix by going along with Hanako's hit-and-miss culinary instincts. Fortunately, Hanako doesn't take Lilly's comment personally, or at least she doesn't show it."
-        
+
         stop ambient fadeout 0.5
         play sound sfx_boilingwater_pour
-        
+
         "I pour off the water and fill the bowl Lilly mentioned with the contents from the pan."
         hi "I'm finished with the macaroni, Lilly. Where do you want me to put it?"
         li "Just leave it with Hanako, Hisao."
@@ -940,7 +940,7 @@ label sh_ch25:
 
         hide karla
         with charaexit
-        
+
         "Lilly's mother walks up to the trailer, climbs inside, and pulls one of the vehicles lying inside upright."
         "I smile as I see what she's holding."
         hi "Tandem bikes. Nice."

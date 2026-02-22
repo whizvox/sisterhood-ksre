@@ -37,7 +37,7 @@ label sh_ch30:
         n "It's been one and a half weeks since we first arrived in Inverness, and so far I can say that the vacation has been very enjoyable. Hanako and Hisao have even taken a few trips together without Mother and me around."
         n "They're still a little bit reluctant to travel around the area together due to their English being less fluent than mine, but this does happen to be the ideal way for them to improve it."
         n "I also think they enjoy spending some time together now and then. It must be wonderfully romantic spending your vacation in a part of the world that's completely new together with someone you love. I think I even envy Hanako a bit."
-        
+
         nvl clear
 
         n "Today has been a rather uneventful day. Hanako and Hisao slept in, or at least didn't come out of their room until it was nearly noon, and since we had some rain early in the afternoon, we decided to spend the day here at my parents' home, reading and talking."
@@ -50,13 +50,13 @@ label sh_ch30:
         n "{vspace=30}Father is set to spend three days with us the day after tomorrow. Akira mentioned a few days ago that she wouldn't be surprised if he ended up calling our time together off, since he can't really afford to take these days off at this point, but so far I haven't heard him confirm that."
         n "Apparently he's been trying to finish as much of his work that was originally planned for the upcoming week as possible, but as a result, I've barely interacted at all with him. He tends to leave the house early and works until very late."
         n "Since he's apparently partially doing this for my sake, I don't really feel in a position to complain."
-        
+
         nvl clear
 
         n "To be honest, Father has always worked very long hours for as long as I can remember. I suppose as the son of the company head he felt he had to set the good example. But Akira said that over the last few weeks he's been looking like a ‘burnout sufferer in denial’."
         n "I'm not sure what to make of that, but even Hisao and Hanako said that he didn't look like he was sleeping very well. I hope that when he takes a few days off, he'll be able to relax a little bit."
         n "{vspace=60}It's probably too much to hope for, but surely he realizes that having a breakdown at this point in time might sink his whole deal."
-        
+
         nvl hide dissolve
 
         hide hanako
@@ -170,7 +170,7 @@ label sh_ch30:
         n "I put down the phone with some mixed feelings."
         n "{vspace=30}I still feel a little awkward talking to Mother. What's more, what she said about Father didn't exactly reassure me. Even though Father's been a hard worker his entire life and wasn't home very often except on Sundays, this is the first time I've heard of his work taking a physical toll on him."
         n "I don't like the idea of him overworking himself even more merely because I wanted to spend a few days with him. If I had known things were this hectic for him already, I wouldn't have asked to begin with."
-        
+
         nvl hide dissolve
 
         "I put away the phone and refocus my attention on my friends' game of chess."
@@ -665,7 +665,7 @@ label sh_ch30:
         with charaexit
 
         "I hear one more beep and then the phone is handed back to me."
-        
+
         play sound sfx_phonepickup
 
         "Moments later, I hear someone on the other end of the line picking up."
@@ -891,7 +891,7 @@ label sh_ch30:
 
         show hisao basic_worry_polo at twoleft
         show hanako emb_downtimid
-        show crowd behind hanako 
+        show crowd behind hanako
         with charachangealways
 
         hi "Hanako! Come on, Hanako. I'll get you to our room. Just… there… just come along with me, okay?"
@@ -1043,7 +1043,7 @@ label sh_ch30:
         with locationchange
 
         "I'm taken to an office room nearby, and the nurse asks me for the number. I realize that I don't even know Mother's phone number by heart yet, but I fortunately have Akira's cell phone number memorized."
-        
+
         play sound sfx_phonedial
 
         "The nurse dials the number and then hands me the receiver."
@@ -1083,7 +1083,7 @@ label sh_ch30:
         "Akira hangs up, and I hand the phone back to the nurse."
         li "Thank you. Could you… take me back to the waiting area, please?"
         "Nurse" "I will."
-    
+
         if _in_replay:
             return
 

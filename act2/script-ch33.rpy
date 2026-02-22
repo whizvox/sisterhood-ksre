@@ -146,7 +146,7 @@ label sh_ch33:
         aki "Since a child owes her life to her parents, she's obliged to show livelong respect and reverence to them no matter how badly they deserve the opposite. No doubt Dad sincerely believes that. Heck, he couldn't resist rubbing it in my face during your visit."
         "I think I remember what she's talking about."
         ha "So… that's what he meant."
-        
+
         show akira at twoleft
         with { "master": charamovefast }
 
@@ -265,7 +265,7 @@ label sh_ch33:
 
         aki "I think the reason we've always been so close is due to the fact I often spent time looking after Lilly, even when our parents still lived in Japan."
         aki "Mom often asked me to keep an eye on my sister. And there was the fact that, while I've often felt a bit like an outsider even in my own family, Lilly was nevertheless always unconditionally accepting of me."
-        
+
         play sound sfx_rockskip
 
         "{i}*splash* *splash* *splash*{/i}"
@@ -412,7 +412,7 @@ label sh_ch33:
         "Akira's expression turns genuinely remorseful."
         aki "Sorry, I kind of went overboard with my venting. I didn't mean to imply anything about Lilly. To reassure you, middle school gave Lilly an additional layer of classy manners, but underneath, she's still the same person she's always been."
         aki "I still wouldn't have sent her there myself, but I'm relieved that she doesn't have the same horrid memories I have of that place."
-        
+
         play sound sfx_rockskip
 
         "{i}*splash* *splash* *splash* *splash*{/i}"
@@ -451,7 +451,7 @@ label sh_ch33:
 
         aki "The board apparently already approved. Hah, ‘for some time’ being a euphemism for forever."
         aki "The true bombshell was when we were told that Lilly had to stay behind. For her education, so to speak. She was gonna lose her parents for a friggin' education. At least, that was the story."
-        
+
         play sound sfx_rocksplash
 
         "{i}*SPLOOSH*{/i}"
@@ -496,7 +496,7 @@ label sh_ch33:
         aki "He was lucky they discovered it before it spread, but they still ended up removing a part of his right lung and with it an equally large part of his stamina."
         aki "Grandpa and Grandma used to live in the same neighborhood as ours in a house on a rather large incline with stone steps leading up to the front door."
         aki "After his surgery, it'd take him half an hour just to reach his own porch. Even Lilly could run circles around him at that point. So he and Grandma moved to another town, and we haven't had much contact with them ever since."
-        
+
         play sound sfx_rockskip
 
         "{i}*splash* *splash* *splash*{/i}"
@@ -590,7 +590,7 @@ label sh_ch33:
 
         "Akira doesn't immediately respond and merely puts a few flat stones in my hand."
         aki "Go ahead and have a try yourself. It's not that difficult when you get a feeling for it."
-        
+
         play sound sfx_rockskip_fail
 
         "{i}*splash*{/i}"

@@ -20,33 +20,33 @@ label sh_ch32:
         n "My gaze wanders back and forth between the book in front of me and my boyfriend sitting next to me on the couch in the Satou family's living room. Every now and then, I also glance at the doorway leading to the stairway, though said doorway is empty every time I look at it."
         n "{vspace=60}Earlier this week, the incident with Mister Satou cast a permanent shadow over our vacation."
         n "Part of that evening is a bit hazy in my mind; I remember exchanging a scared look with Hisao when Lilly spoke to a doctor on the phone and dropped the word ‘cardiologist’. When Lilly went back to the study and we heard a scream, that sensation became ominous, and when Hisao and I followed her and saw her father lying motionless on the floor, somewhere between the table and the doorway, the feeling became something much, much worse."
-        
+
         nvl clear
 
         n "For just a second, it wasn't Lilly's father I saw lying on the ground, but Hisao. And suddenly, my mind was filled with the same intense panic and helplessness I felt when Hisao was lying there on the street after accidentally colliding with someone. The flashback only lasted a second or so, but the sense of maddening fear remained even afterwards."
         n "The sight of a rapidly panicking Lilly kneeling down at his side managed to reach deep into my own mind, grab a firm hold of my own traumatizing memories, and drag them out kicking and screaming. As a result, I became unable to move as my mind started clouding slowly but steadily, even as Hisao rushed to Mister Satou's side."
         n "Things could have taken a turn for the worst there. Lilly's father could have died in front of us with me just standing by, despite my first aid training. If that would have happened, I don't think I'd ever be able to face Lilly again. The fact that that didn't happen was a coincidence I still have trouble wrapping my mind around."
-        
+
         nvl clear
 
         n "As I was trying to fight off a rapidly impending panic attack, I saw Hisao taking Mister Satou's arm and pressing his thumb against the inside, and suddenly, I heard the voice of my first aid teacher again as he lectured me on that first training day."
         n "{vspace=30}{i}“Don't use your thumb to take someone's pulse. Your thumb has its own pulse, so you won't get a clear reading. And be sure to press down harder when you're doing compressions. If you have to focus on doing one thing right, focus on the chest compressions.”{/i}"
         n "{vspace=30}Hisao was doing it wrong."
         n "That little disconnect from the current situation turned out to be just enough to shake me out of my anxiety-induced paralysis for a moment, and I did the only thing my mind was able to come up with. Shove Lilly and Hisao aside (I later realized I easily could have given Hisao an episode of his own this way) and focus on the motions I painstakingly practiced at the training before my anxiety could take over again."
-        
+
         nvl clear
 
         n "Push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once…"
         n "{vspace=30}I was on the edge of a breakdown the entire time, but as long as could keep these motions going, I wouldn't feel that crushing sense of helplessness, and I could keep teetering on that edge instead of going over it entirely. So I tuned out everything around me in a desperate effort to keep myself together. I vaguely remember hearing Lilly yell something at me and someone, not Hisao, forcefully grabbing me and his face suddenly being close to mine and his shocked stare, and… I think I screamed in fright and flailed my arms at the time as I tried to get away from him."
         n "The next thing I remember that wasn't some fevered blur was me sitting on the bed in our room with Hisao holding me in his arms. Despite the fact that his presence helped, it still took me a long time to stop shaking and calm my nerves to the point where my mind was capable of understanding what Hisao was saying and respond to his words with quick nods and shakes of my head."
         n "After convincing himself that another breakdown probably wasn't around the corner, Hisao left the room after telling me to get some sleep. Sleeping was the last thing I felt like doing despite being extremely tired. Nobody has ever gotten nightmares while staring at the ceiling."
-        
+
         nvl clear
 
         n "Eventually, Hisao returned to tell me he had been on the phone with Lilly who had told him that the doctors at the hospital managed to stabilize her father's condition. Of course, we both knew from experience that ‘stabilized’ meant nothing more than the fact he wasn't going to die immediately. Still, it was a relief."
         n "{vspace=60}The following days were completely spent around the house. Neither Hisao nor I felt it was appropriate to go on any more trips, but we also started feeling that our presence was becoming a burden here. So we spent most of our time in our bedroom reading our remaining books unless Lilly and her mother were out, in which case we'd move to the living room."
         n "We've been slowly running out of books over the last two days and neither of us felt really comfortable entering the study again. It turned out that Hisao was almost as rattled by what happened to Lilly's father as I was. Given his own heart condition, I can't blame him."
-        
+
         nvl clear
 
         n "One evening during dinner, Lilly's mother told us that while she wouldn't force us to leave, she saw little point in us sticking around if all we were going to do was sit in our room all day long and read our books. If we had no objections, she'd be able to arrange an earlier flight for Hisao and myself so we'd be able to enjoy what was left of our summer break back in Japan."
@@ -269,7 +269,7 @@ label sh_ch32:
         "As we make our way through the hallways and ride the elevator to the proper floor, I can feel the atmosphere slowly becoming more oppressive."
 
         scene bg raigmore_hallway
-        with locationchange        
+        with locationchange
 
         "When we get out of the elevator, we see several people in pajamas walking down the corridor, two of them dragging IV poles along with them."
 
@@ -642,7 +642,7 @@ label sh_ch32:
         n "I'm not really sure how to answer. I get the impression he's expecting me to ask for something big. Am I really supposed to come up with something? And will I insult him if what I'd ask for isn't expensive enough?"
         n "Like if I asked for a flashy laptop, would he feel like I insinuated that his life's not worth more than a mere laptop? How complicated."
         n "Besides, there are important things that money can't buy. Things like happiness and a family. He of all people should be more than aware of that right now. If Lilly's upset with him, I doubt any amount of money would cause her to change her mind."
-        
+
         nvl clear
 
         n "Lilly…"

@@ -25,7 +25,7 @@ label sh_ch27:
         n "I guess I could stay in bed and wait until Hisao wakes up so we can pamper each other a bit. Then again, there's something I've been planning to do for a while, and I've been putting it off for several mornings."
         n "{vspace=30}I don't think I should keep postponing it, so I slowly get out of bed, get my clothes off the nearby chair, make my way over to our private little bathroom, and take a quick shower."
         n "After drying myself off and finishing my daily ritual of stretching in order to get rid of my scarred areas' morning stiffness and putting moisturizer cream on them, I put on my clothes, take the photo camera out of my handbag, and quietly sneak out of the room."
-        
+
         nvl hide dissolve
 
         scene bg satou_stairs

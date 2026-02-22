@@ -2,7 +2,7 @@ init 1 python:
     def sh_register_sfx(names):
         for name in names:
             store.__setattr__(f"sfx_{name}", f"{sh_path}/sfx/{name}.ogg")
-    
+
     sh_register_sfx([
         # arcade
         "airhockey_rally", "airhockey_score1", "airhockey_score2", "airport_ambience", "arcade_ambience", "gameover",

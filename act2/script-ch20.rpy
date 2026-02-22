@@ -15,9 +15,9 @@ label sh_ch20:
 
         n "My eyes go back and forth between three illustrations of a person lying on the ground, each one in a slightly different position."
         n "The idea is to cross off the picture of the optimal recovery position, but picture B and C look really similar except for a slight difference in the angle of the head. Doing my best to recollect the position of the practice dummy during our excercises last Monday, I pick illustration B and move on to the next question."
-        
+
         nvl clear
-        
+
         n "I'm currently the only person in class right now, except for the trainer. Everyone was present during the first three days, but the day afterwards, only Yuuko, a staff member whose name I forgot, and I were there, the three of us obviously being the only ones completely new at this."
         n "And today, the last day of the training, it's just me. Mister Nakamura took the opportunity this morning to make good on his promise and give me a private course through the chapter I skipped earlier this week—that being the chapter about burns and how to act in situations like someone's clothes catching fire or coming into contact with boiling water."
         n "The fact nobody else was in the room was probably the reason I didn't run out, lock myself in my room and hide under my bed."
@@ -279,7 +279,7 @@ label sh_ch20:
 
         if _in_replay:
             return
-    
+
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)

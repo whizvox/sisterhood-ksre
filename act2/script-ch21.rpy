@@ -121,7 +121,7 @@ label sh_ch21:
 
         if _in_replay:
             return
-    
+
     label .s2:
 
         $ set_window_tint(TINT_HISAO)
@@ -198,7 +198,7 @@ label sh_ch21:
 
         ha "Sure."
         "Hanako picks up her handbag and hands me one of our books."
-        
+
         show hanako_camera at displayitemshow
         with Pause(1.0)
 
@@ -408,7 +408,7 @@ label sh_ch21:
         stop music fadeout 3.0
 
         li "Here we go. You might experience some light ear pain during the takeoff or landing due to the changing pressure in the cabin. What I did last time was try to yawn a few times or chew some chewing gum. I have some in my handbag if you want it."
-        
+
         stop music fadeout 2.0
         stop ambient fadeout 2.0
         queue ambient sfx_plane_takeoff fadein 2.0
@@ -455,7 +455,7 @@ label sh_ch21:
         "I move my right hand up to her face and use my index finger to gently brush her bangs aside so she can absorb the view with both eyes."
         "And an amazing view it is, just like Lilly said."
         "Tall buildings are turning small like playthings. The countryside turns into a big green blanket."
-        
+
         show bg plane_window_clouds:
             zoom 1.02
             ease 1.0 yalign 0.58
@@ -537,7 +537,7 @@ label sh_ch21:
 
         scene bg plane_bathroom
         with locationchange
-        
+
         nvl clear
         nvl show dissolve
 
@@ -555,7 +555,7 @@ label sh_ch21:
 
         "When I get back to our seats, I see that Lilly made herself a bit more comfortable. She has her right arm wrapped around Hanako and holds Hanako's hand in her left hand. They look very cute together."
         "I reach for Hanako's handbag near her feet, take out the camera, and snap a quick picture."
-        
+
         play sound sfx_camerashutter
 
         pause 0.5
@@ -702,7 +702,7 @@ label sh_ch21:
             return
         else:
             pause 2.0
-    
+
     label .s4:
 
         $ set_window_tint(TINT_HISAO)

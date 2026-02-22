@@ -30,7 +30,7 @@ label sh_ch31:
         with locationchange
 
         "I leave the reception area and head over to the office of the person who's in charge of this branch after Dad. I haven't really spoken with him much since I arrived here."
-        
+
         play sound sfx_doorknock2
 
         "As I knock on the door of his office, I hear a soft ‘come in’ and enter. I think I already know what this is going to be about."
@@ -145,7 +145,7 @@ label sh_ch31:
         n "I'm not sure what makes him a more pitiful sight: that IV pole he's dragging around, or his slumped posture in general. I wonder if this is what Dad'll look like in a few weeks, assuming all goes well. Heck, the guy sharing the elevator with me might have been a strict patriarch himself before some illness did a number on him."
 
         play sound sfx_elevatorchime
-        
+
         nvl hide dissolve
 
         scene bg raigmore_waitcard

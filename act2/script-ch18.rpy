@@ -99,10 +99,10 @@ label sh_ch18:
         "I meekly nod and take a deep breath in an attempt to relax."
         "I feel a bit embarrassed by my occasional habit of assuming the worst about people. Seeing how friendly Akira has always been to me, she certainly deserved the benefit of the doubt."
         aki "Seeing that Sis told me that you two reconciled yesterday, I had a hunch that you were involved in her change of heart somehow. And you pretty much confirmed that just now."
-        
+
         show akira basic_resigned_close
         with chchange
-        
+
         aki "So I'm really curious… What exactly happened?"
         ha "Ummm…"
         "That's a pretty tricky question. I'm not really sure whether Akira got the specifics about my outburst last week that nearly drove Lilly away from me. I'm pretty ashamed about it in hindsight. If Akira is in the dark about the details, I'd like to keep it that way."
@@ -256,9 +256,9 @@ label sh_ch18:
 
         aki "Sorry to make you listen to all of this."
         ha "That's okay. That's… w-what f-f-friends… are f-for."
-        
+
         stop music fadeout 2.0
-        
+
         "I can't manage to make myself look Akira in the eyes as I say this, but Akira merely gives me a soft slap on the shoulder as if to accept and acknowledge what I just said."
 
         queue music music_friendship fadein 4.0
@@ -373,7 +373,7 @@ label sh_ch18:
 
         if _in_replay:
             return
-    
+
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)

@@ -147,7 +147,7 @@ label sh_ch22:
         "I reach out and playfully stroke the top of her head. As I do so, I notice her hair is slightly moist."
         hi "You already took a shower?"
         ha "You should t-take one too. It's nearly time for dinner already."
-        
+
         hide hanagown
         with charaexit
 

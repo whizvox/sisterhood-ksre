@@ -605,7 +605,7 @@ label sh_ch34:
 
         ha "The fire happened when I was eight years old. It was night, and I was s-sleeping when it started."
         ha "I… curled up into a ball… when the f-fire swept over me."
-        
+
         show ev hanakohistory_fire_alone
         with { "master": Dissolve(5.0, time_warp=_warper.easeout_cubic) }
 
@@ -670,17 +670,17 @@ label sh_ch34:
         ha "Among t-those c-calling me names and t-teasing me… were the ones that I t-thought were m-my closest friends."
         ha "{i}*sniff*{/i} Up to that point, I had been hoping I c-could still maintain… just a little bit of m-my former life, but… it was then that I r-realized that my former life was truly gone for good."
         "I feel a few tears flow down my cheek, and I see them create small ripples as they hit the surface of the water."
-        
+
         show ev hanakohistory_bully
         with charachangeev
 
         ha "Middle school… was even worse. I g-got bullied… a lot. I was c-called names and got excluded f-from work groups. There were… worse things, too. Especially when tests came up and p-people started f-feeling pressure."
-        
+
         show ev hanakohistory_bully_cry
         with charachangeev
 
         ha "I s-started skipping class. I knew I wasn't s-supposed to… M-my grades were already r-rather low, but… I became more and more f-frightened to go there each day."
-        
+
         show ev hanakohistory_gate
         with charachangeev
 
@@ -691,7 +691,7 @@ label sh_ch34:
         with Dissolve(1.0)
 
         "I rub my eyes a few times, trying to wipe away the tears."
-        
+
         scene ev sharedsoak_lilly_historycry
         with Dissolve(1.0)
 
@@ -829,7 +829,7 @@ label sh_ch34:
             xanchor 0.5 xpos 0.25
         show karla basic_lost_cas:
             xanchor 0.5 xpos 0.6
-        show hisao basic_neutral_polo at right 
+        show hisao basic_neutral_polo at right
         with locationchange
 
         "As we enter the living room, I see Lilly's mother and Hisao sitting there. Karla gives her daughter an unsure look."

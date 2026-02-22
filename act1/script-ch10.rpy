@@ -386,7 +386,7 @@ label sh_ch10:
         ha "Ummm… I-is there s-something o-on m-my…"
 
         show hanako defarms_shock_ss
-        with chchangefast 
+        with chchangefast
 
         "Hanako gasps before she can finish her sentence, and we have a mutual moment of clarity as we both realize what it is Akira is looking at. Or rather, looking for."
         "Hanako's eyes grow wide in an expression that's a mixture of desperation and horror. I myself am mostly just annoyed."

@@ -282,7 +282,7 @@ def main():
                 replace.extend(["hisao", "takawa", "naomi", "natsume", "hanako", "jun", "nakamura", "karla", "hiroyuki"])
             else:
                 replace.extend(chars.split(","))
-    
+
     replace_hisao = "hisao" in replace
     replace_takawa = "takawa" in replace
     replace_naomi = "naomi" in replace
@@ -306,18 +306,18 @@ def main():
     for entry in naomi:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/naomi/naomi_{entry[1]}.png", replace=replace_naomi, target_height=1000)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/naomi/close/naomi_{entry[1]}_close.png", replace=replace_naomi, crop=(0, 0, 1350, 1800), target_height=1080)
-    
+
     for entry in natsume:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/natsume_{entry[1]}.png", replace=replace_natsume, target_height=950)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/close/natsume_{entry[1]}_close.png", replace=replace_natsume, crop=(0, 0, 1350, 1800), target_height=1030)
 
     for entry in hanako:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hanako/close/hanako_{entry[1]}_close.png", replace=replace_hanako, crop=(0, 272, 878, 1614), target_height=1080)
-    
+
     for entry in jun:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/jun_{entry[1]}.png", replace=replace_jun, crop=(127, 18, 833, 1807), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/close/jun_{entry[1]}_close.png", replace=replace_jun, crop=(127, 18, 833, 1200), target_height=1080)
-    
+
     for entry in nakamura:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/nakamura_{entry[1]}.png", replace=replace_nakamura, crop=(0, 108, 1200, 1690), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/close/nakamura_{entry[1]}_close.png", replace=replace_nakamura, crop=(0, 108, 1200, 1188), target_height=1080)
@@ -325,7 +325,7 @@ def main():
     for entry in karla:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/karla_{entry[1]}.png", replace=replace_karla, crop=(0, 126, 1050, 1846), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/close/karla_{entry[1]}_close.png", replace=replace_karla, crop=(0, 126, 1050, 1206), target_height=1080)
-    
+
     for entry in hiroyuki:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hiroyuki/hiroyuki_{entry[1]}.png", replace=replace_hiroyuki, crop=(0, 114, 1050, 1810), target_height=1020)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hiroyuki/close/hiroyuki_{entry[1]}_close.png", replace=replace_hiroyuki, crop=(0, 114, 1050, 1356), target_height=1080)

@@ -9,7 +9,7 @@ label sisterhood_replay_start:
 
 label sisterhood_start:
     stop music fadeout 1.0
-    
+
     scene black
     with config.game_main_transition
     pause 2.0
@@ -101,7 +101,7 @@ label sisterhood_credits:
     show sh_credits behind credits:
         xalign 0.5 yalign 0.0
         acdc20_warp 93.0 yalign 1.0
-    
+
     pause 11.0
 
     show ev wheatfield_dreamy behind sh_credits_overlay:

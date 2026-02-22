@@ -276,7 +276,7 @@ label sh_ch17:
 
         if _in_replay:
             return
-    
+
     label .s2:
 
         $ set_window_tint(TINT_LILLY)
@@ -775,7 +775,7 @@ label sh_ch17:
         "…the grief and guilt around Hisao's and Hanako's relationship crisis…"
         "…the fear of having driven Hanako away from me…"
         "…and finally the stress of having to confront Mother with what I truly wanted for myself in life."
-        "We stay locked in the embrace for a long time, and as the adrenaline in my system dies down, my quiet sobs are replaced by laughs of relief." 
+        "We stay locked in the embrace for a long time, and as the adrenaline in my system dies down, my quiet sobs are replaced by laughs of relief."
         "Relief that all of this is behind me now."
         "And through it all, I become aware of another sound—a sound I've never heard before."
         "It's the sound of my best friend laughing out loud in joy."
@@ -977,7 +977,7 @@ label sh_ch17:
 
         show ev:
             ease 10.0 xalign 0.3
-        with None 
+        with None
 
         "I've wanted to know for so long."
         "She must have noticed the effect this has on me, for the corners of her mouth turn slightly upwards, and what appears on her face is the most beautiful smile I've ever witnessed."

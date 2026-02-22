@@ -66,7 +66,7 @@ label sh_ch26:
         with locationchange
 
         "Finally, as we reach a wide open plain that looks different from the fields we've seen so far, Lilly's mom raises her hand as a sign to stop."
-        
+
         stop ambient fadeout 2.0
         queue ambient sfx_windy fadein 2.0 volume 0.6
 

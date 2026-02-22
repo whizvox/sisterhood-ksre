@@ -193,7 +193,7 @@ label sh_ch19:
         "I feel a sharp shock slam through my body as if someone just walked up to me and pounded me in the chest with a sledgehammer, and I spring to my feet as if someone just hammered a nail through the bottom of my seat, my eyes widening in shock."
         "No wonder he was lost on how to continue. He was trying to figure out how he's going to spend an hour detailing the various degrees of burn wounds all the while a miserable exhibit A is sitting right in front of him."
         "Of course, my reaction draws the attention of the rest, merely contributing to the sense of panic that starts welling up inside me."
-        
+
         play sound sfx_heartslow
 
         "As my hands start shaking uncontrollably, I am gripped by one all-consuming thought."
@@ -361,7 +361,7 @@ label sh_ch19:
         with charaenter
 
         nak "Before we start the first part, I'd like to hold a short introduction."
-        
+
         show nakamura instruct
         with chchange
 
@@ -489,13 +489,13 @@ label sh_ch19:
         with locationskip
 
         play music music_another fadein 4.0
-        
+
         # TODO Simplify description of Jun
         "As I slowly open the door to the classroom that's home to our club and peek inside, I can see Naomi and Natsume relaxing and sharing some drinks with a tall, frail-looking girl with long, brown hair."
-        
+
         nvl clear
         nvl show dissolve
-        
+
         n "The girl, whose name is Jun Yamazaki, is the club member whom I was initially drafted to replace for a little while as assistent editor."
 
         show natsume hands_cheerful
@@ -631,7 +631,7 @@ label sh_ch19:
         with charaenter
 
         mu "Ikezawa approached me a little while back for some information about this club for a small article in the next issue of the school newspaper."
-        
+
         show muto smile
         with chchange
 

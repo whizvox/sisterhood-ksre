@@ -376,7 +376,7 @@ label sh_ch24:
         with chchange
 
         li "Hisao…"
-        
+
         show lilly at twoleft
         with charamove
 
@@ -586,9 +586,9 @@ label sh_ch24:
         n "The right notes must have slipped her mind for a few seconds. Memorizing an entire song seems like a massive task to me. I take advantage of the opportunity to quickly look Lilly over."
         n "She's still sitting in her usual spot on the couch, holding the cello in front of her. The fingers of her left hand are hard at work trying to keep up with the quick movements of the bow in her right hand."
         n "Her handling of the bow is remarkably fluid, considering the fact she's had several glasses of wine already."
-        
+
         nvl clear
-        
+
         n "As my gaze lowers slightly, I manage to suppress a gulp with supreme effort as I suddenly realize why Lilly wanted us to close our eyes."
         n "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them. Nowadays women probably wear long dresses, but the knee-high summer skirt Lilly's been wearing this evening doesn't even remotely qualify as one."
         n "The cello is more than large enough to block the view of her panties, but I can definitely see way more of Lilly's long and shapely legs than anyone would consider appropriate."
@@ -777,7 +777,7 @@ label sh_ch24:
         "When I look back at Hanako, I notice she's frantically trying to button up her blouse, but her nervousness coupled with the effects of the wine she's had make her unable to get even a single button fastened."
         "Somewhere in the house I can hear the sound of a door. We have to get out of here or this vacation will meet a very premature end."
         "As if some divine entity has decided we still have business here, a semi-acceptable excuse suddenly finds its way into my brain."
-        
+
         show hanako def_worry_close
         with characlose
 

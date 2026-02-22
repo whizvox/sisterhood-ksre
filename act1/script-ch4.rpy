@@ -201,7 +201,7 @@ label sh_ch4:
 
         if _in_replay:
             return
-    
+
     label .s2:
 
         $ set_window_tint(TINT_HISAO)

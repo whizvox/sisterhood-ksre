@@ -334,8 +334,8 @@ label sh_ch38:
         "When we get to our hallway, I take Lilly's room key (which I got from Lilly before Hisao and I left Scotland) from my bag and unlock the door."
 
         if _in_replay:
-            return    
-    
+            return
+
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)
@@ -1054,5 +1054,5 @@ label sh_ch38:
 
         if _in_replay:
             return
-    
+
     return

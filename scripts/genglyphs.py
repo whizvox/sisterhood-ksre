@@ -96,7 +96,7 @@ class TtfSvgConverter:
             }
             wsvg(paths=path, colors=['#016FB9'], svg_attributes=attr, stroke_widths=[self.STROKE_WIDTHS], filename=output)
             break # Only handle the first character.
-        
+
 def main():
     if len(sys.argv) <= 3:
         print('Usage: ttf2svg.py [char] [OUTPUT_FILE] [TTF_FONT]')
