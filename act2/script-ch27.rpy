@@ -198,12 +198,19 @@ label sh_ch27:
         hy "If you need anything, please let me know."
         ha "O-okay, thank you."
         "Lilly's father once again starts typing on his computer, and I take a moment to look him over."
-        "Mister Satou is in many ways a sharp contrast with his wife. Appearance-wise, save for his above-average height, he looks just like the hundreds of salarymen you see every day around the city's train station."
-        "Sporting silver-grey hair, bespectacled, and wearing a neat business suit, he is a dignified and extremely formal man in appearance, manners, and speech."
-        "He's about as tall as his wife and, although he's been very friendly in his interactions with us, there's nevertheless something stern about him."
-        "His polite and reserved tone seems almost jarring compared to the up-beat personality possessed by his wife. And unlike Karla's energetic and fit appearance, Mister Satou comes across as though he hasn't slept in weeks."
-        "Unless he always has bags under his eyes, I suspect he was merely being polite when he assured me he had a good night's rest."
-        "From what I've learned this week, he's been under a lot of work-related stress lately. And despite that, he's been rapidly typing on his laptop throughout our entire conversation, his eyes barely ever leaving the screen."
+
+        nvl clear
+        nvl show dissolve
+
+        n "Mister Satou is in many ways a sharp contrast with his wife. Appearance-wise, save for his above-average height, he looks just like the hundreds of salarymen you see every day around the city's train station."
+        n "Sporting silver-grey hair, bespectacled, and wearing a neat business suit, he is a dignified and extremely formal man in appearance, manners, and speech."
+        n "He's about as tall as his wife and, although he's been very friendly in his interactions with us, there's nevertheless something stern about him."
+        n "His polite and reserved tone seems almost jarring compared to the up-beat personality possessed by his wife. And unlike Karla's energetic and fit appearance, Mister Satou comes across as though he hasn't slept in weeks."
+        n "Unless he always has bags under his eyes, I suspect he was merely being polite when he assured me he had a good night's rest."
+        n "{vspace=60}From what I've learned this week, he's been under a lot of work-related stress lately. And despite that, he's been rapidly typing on his laptop throughout our entire conversation, his eyes barely ever leaving the screen."
+
+        nvl hide dissolve
+
         "I turn around and get into position to take a shot of the scrolls adorning the wall, trying to fit them all into frame."
         "As I do so, I let out a slight yawn that I quickly stifle with my hand upon remembering I'm not alone in the room."
         hy "Are you usually an early riser, Miss Ikezawa?"
@@ -343,10 +350,10 @@ label sh_ch27:
         show hiroyuki thinking
         with chchange
 
-        hy "You are free to use the bath while you are here. If you have not already done so, you should consider taking a soak some time. It is a great way to relax if you take the time for it, and have the time to spare."
+        hy "You are free to use the bath while you are here. If you have not already done so, you should consider taking a soak some time. It is a great way to relax if you take the time for it and have the time to spare."
         "The way he says it suggests that last part doesn't apply to him right now, and he's not particularly happy about it."
         ha "M-maybe."
-        "I think it's time for me to leave here and take a few shots of the patio and outside of the house. Maybe the nearby beach too."
+        "I think it's time for me to leave here and take a few shots of the patio and outside of the house. Maybe the nearby beach, too."
         "Before I can think about saying goodbye, Lilly's father closes his laptop, gets up, and curtly bows to me."
 
         show hiroyuki bow

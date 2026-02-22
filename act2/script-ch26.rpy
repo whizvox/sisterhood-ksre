@@ -923,7 +923,7 @@ label sh_ch26:
         ka "Hisao, this is probably an intimate question, but… Hanako's scarring… It's not just on one side of her face, is it?"
         "I'm taken aback for a second by her sudden mention of a subject this delicate."
         hi "She really doesn't like it when people bring it up."
-        ka "I can imagine. It’s not really morbid curiosity or anything. It’s just…"
+        ka "I can imagine. It's not really morbid curiosity or anything. It's just…"
         hi "Yes?"
 
         show karla basic_distant_cas
