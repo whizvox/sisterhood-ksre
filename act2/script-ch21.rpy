@@ -863,7 +863,6 @@ label sh_ch21:
         show hanako emb_smile_cas
         with chchange
 
-        # TODO shorten description?
         "We both look Akira over. She does look different from the way she usually does. Instead of her striped black suit, she's wearing jeans and a loose-fitting shirt. She also has a pair of sunglasses on her head."
         ha "You look… c-cool, Akira."
         "I smirk at our welcoming committee."

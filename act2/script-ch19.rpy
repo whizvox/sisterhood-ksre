@@ -490,7 +490,6 @@ label sh_ch19:
 
         play music music_another fadein 4.0
 
-        # TODO Simplify description of Jun
         "As I slowly open the door to the classroom that's home to our club and peek inside, I can see Naomi and Natsume relaxing and sharing some drinks with a tall, frail-looking girl with long, brown hair."
 
         nvl clear

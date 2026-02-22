@@ -475,7 +475,6 @@ label sh_ch14:
             alpha 0.0
         with charamovechangefaster
 
-        # TODO original dialogue, check
         "As Shizune heads further into the room, Lilly hangs back in the doorframe."
         hi "Misha, did you walk on ahead?"
 
