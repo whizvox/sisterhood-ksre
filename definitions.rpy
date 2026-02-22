@@ -13,11 +13,19 @@ init python:
 
     def set_window_tint(tint_color):
         store.sh_window_tint = tint_color
-    
+
     def tint_image(image):
         if not persistent.sh_windowtint:
             return image
         return Transform(image, matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
+
+    def sh_update_sprite_transitions():
+        if persistent.sh_slowtransitions:
+            store.chchange = store.charachangealways
+            store.chchangefast = Dissolve(0.2)
+        else:
+            store.chchange = persistent.charachange
+            store.chchangefast = persistent.charachangefast
 
     # renpy doesnt like lambas :(
 
@@ -32,6 +40,8 @@ init 1 python:
         for chapter in act[1]:
             scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
     _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
+
+    sh_update_sprite_transitions()
 
 init:
     $ mods["sisterhood"] = "Sisterhood"
@@ -123,7 +133,7 @@ init:
         xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     transform tworight_sittingpos:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    
+
     transform displayitemshow:
         truecenter
         ypos 0.7 alpha 0.0
@@ -134,8 +144,6 @@ init:
     transform displayitemhide:
         ease 1.0 ypos 0.7 alpha 0.0
 
-    define chchange = charachangealways if persistent.sh_slowtransitions else charachange
-    define chchangefast = Dissolve(0.2) if persistent.sh_slowtransitions else charachangefast
     define nextchapter = Dissolve(2.0)
     define endchapter = Dissolve(3.0)
     define mediumflash = Fade(1, 0, 1, color="#FFF")

@@ -2,14 +2,6 @@ init python:
     def sh_should_show_disclaimer():
         return persistent.sh_show_disclaimer and not renpy.seen_label("a4_hanako.adulthood")
 
-    def sh_update_sprite_transitions():
-        if persistent.sh_slowtransitions:
-            store.chchange = store.charachangealways
-            store.chchangefast = Dissolve(0.2)
-        else:
-            store.chchange = store.charachange
-            store.chchangefast = store.charachangefast
-
 screen sisterhood():
     tag menu
     style_prefix "pxt"
@@ -39,10 +31,10 @@ screen sisterhood():
 
             vbox:
                 textbutton _("Chapter Select") action If(main_menu, true=ShowMenu("sisterhood_chapter_select"), false=None)
-            
+
             vbox:
                 textbutton _("Credits") action If(main_menu, true=Start("sisterhood_credits"), false=None)
-        
+
         textbutton _("Return"):
             style "return_button"
             action ShowMenu("mods")
@@ -78,7 +70,7 @@ screen sisterhood_disclaimer():
 screen sisterhood_options():
     tag menu
     style_prefix "prefs"
-    if main_menu:    
+    if main_menu:
         add "main_menu_bg" at colorblind(persistent.colorblind)
     add "blind"
 
@@ -109,12 +101,12 @@ screen sisterhood_options():
                     ToggleVariable("persistent.sh_slowtransitions", True, False),
                     Function(sh_update_sprite_transitions)
                 ]
-            
+
             vbox:
                 style_prefix "check"
 
                 textbutton _("Tinted textboxes") action ToggleVariable("persistent.sh_windowtint", True, False)
-            
+
         textbutton _("Return"):
             style "return_button"
 
@@ -154,7 +146,7 @@ screen sisterhood_chapter_select(page=0):
                         text_insensitive_color "#000"
                     else:
                         action ShowMenu("sisterhood_chapter_select", i)
-        
+
         null height 5
 
         frame:
@@ -217,7 +209,7 @@ screen sisterhood_about():
         text _("Mods > Sisterhood > About"):
             bold True
             size bold_size
-        
+
         frame:
             has vbox
 
