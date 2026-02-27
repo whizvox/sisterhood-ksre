@@ -49,6 +49,7 @@ init 30 python:
         ])
     )
 
+    sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("karla", ["sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["smileclosed"])
@@ -61,6 +62,8 @@ init 30 python:
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni"])
+    # credit: Loyola University Maryland
+    sh_bgs("school", ["dormkitchen"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 

@@ -13,7 +13,7 @@ label sh_ch39:
         play music music_happiness fadein 4.0
 
         ka "A writing club, huh?"
-        "Lilly, her mother and I are currently sitting in Lilly's room and having a cup of tea. We all have plans for this evening that don't involve hanging around here, but it feels nice to take a few minutes to sit back and relax."
+        "Lilly, her mother, and I are currently sitting in Lilly's room and having a cup of tea. We all have plans for this evening that don't involve hanging around here, but it feels nice to take a few minutes to sit back and relax."
         ha "Not really an official c-club. Just a few of us trying s-something new."
 
         show karla basic_smileclosed_cas_close
@@ -22,41 +22,41 @@ label sh_ch39:
         ka "As a result of my advice?"
         ha "Yes."
 
-        scene bg school_newspaper
-        show sepia:
-            alpha 0.5
-        with { "master": Dissolve(1.0) }
+        play sound sfx_whiteout
+
+        scene bg school_newspaper:
+            matrixcolor SepiaMatrix(tint="#ffeee0")
+        with locationchange
 
         "Karla's visit to the newspaper club a few days ago had been an unexpected success. Neither Naomi nor Mister Hoshino had objections to letting a former journalist pay a visit, and so the afternoon at the club turned out to be quite different from the usual fare."
 
-        show karla basic_smile_cas at center
-        show sepia:
-            alpha 0.5
-        with { "master": Dissolve(1.0) }
+        show karla basic_smile_cas at center:
+            matrixcolor SepiaMatrix(tint="#ffeee0")
+        with charaenter
 
         "Lilly's mother was first introduced to everyone and given a little explanation on how we usually go about putting a newspaper issue together. Afterwards, all usual activities for the day were put on hold, and we spent several hours listening to Karla's stories about her own time as a journalist."
 
         show karla basic_cheerful_cas
-        show naomi bend_laugh at right
-        show sepia:
-            alpha 0.5
-        with { "master": Dissolve(1.0) }
+        show naomi bend_laugh at right:
+            matrixcolor SepiaMatrix(tint="#ffeee0")
+        with charaenter
 
         "It turned out that Karla and Naomi took pretty much an instant liking to one another, feeding off each other's enthusiasm rather than being put off by it."
+
+        play sound sfx_whiteout
 
         scene bg school_dormlilly
         show karla basic_smile_cas_close at tworight
         show lilly basic_smile_cas_close at twoleft
-        with chchange
+        with locationchange
 
         nvl clear
         nvl show dissolve
 
         n "At first I was a little worried when Lilly's mother mentioned that she had been out of the profession for quite some time, but that concern was quickly alleviated when it became clear how knowledgable Karla still was about many aspects of the job."
-        n "She started with a recount of how she went to study journalism in order to broaden her horizons and meet new people and how she got to travel around the country as a business reporter."
+        n "{vspace=30}She started with a recount of how she went to study journalism in order to broaden her horizons and meet new people and how she got to travel around the country as a business reporter."
         n "She continued with an account of how she switched jobs and relocated to Japan and concluded with an analysis on how she experienced the news business in Europe, Japan and the United States."
 
-        nvl clear
         nvl hide dissolve
 
         show lilly basic_smileclosed_cas_close
@@ -84,11 +84,10 @@ label sh_ch39:
         nvl show dissolve
 
         n "I remember that. Naomi asked Karla about the possibilities of getting a job in the news business if you couldn't drive and were encouraged by the doctor to keep your day-night rhythm as regular as possible."
-        n "Karla responded that the image of the reporter who's out and about 24/7 in search of the next big scoop hardly covered all journalists and that many articles could take weeks or even months to gather interviews and information for, so planning the project properly could go a long way in avoiding having to pull all-nighters."
+        n "{vspace=30}Karla responded that the image of the reporter who's out and about 24/7 in search of the next big scoop hardly covered all journalists and that many articles could take weeks or even months to gather interviews and information for, so planning the project properly could go a long way in avoiding having to pull all-nighters."
         n "She also mentioned that it wasn't uncommon for reporters to team up to work on articles, and joining up with the right partner was all it would take to work around your individual limits. She then mentioned how Lilly wanted to teach English as a career and listed some of the workarounds her daughter came up with to circumvent the limits of her blindness."
-        n "That was a pretty motivating moment for everyone. Even I found it inspiring, even though Karla didn't really say anything about Lilly that I didn't already know."
+        n "{vspace=60}That was a pretty motivating moment for everyone. Even I found it inspiring, even though Karla didn't really say anything about Lilly that I didn't already know."
 
-        nvl clear
         nvl hide dissolve
 
         li "Speaking of inspiration, what advice did you give that inspired the formation of this club?"
@@ -100,22 +99,22 @@ label sh_ch39:
 
         n "Mister Hoshino promised to drop off a collection of brochures at the club for universities that offered suitable studies, and Naomi came up with a proposal to cover the writing practice a day after Karla's visit. Her proposal was to start checking out online writing competitions and take part in them."
         n "Unfortunately for her, Mister Hoshino immediately shot that idea down, as he argued that the club was centered around the creation of the school newspaper and received a club budget specifically for that purpose."
-        n "He did encourage Naomi to pursue the venture after club hours, though and said he was happy to look up a few contests held by magazines, websites and other third parties that high schoolers would be able to partake in. Encouraged by our teacher's support, Naomi promptly announced the founding of an unofficial writing club and invited everyone in the room to join."
+        n "He did encourage Naomi to pursue the venture after club hours though, and said he was happy to look up a few contests held by magazines, websites, and other third parties that high schoolers would be able to partake in. Encouraged by our teacher's support, Naomi promptly announced the founding of an unofficial writing club and invited everyone in the room to join."
 
         nvl clear
 
         n "I wasn't very sure how serious she was at first. Naomi has the tendency to be a bit impulsive from time to time, but when she approached me the day afterwards and repeated her invitation, I realized she was actually planning to go through with this."
-        n "Long story short, she ended up convincing me to give it a try. I wasn't sure if this was going to go anywhere, but I had been thinking of getting some writing practice myself, and since our teacher said he was willing to provide feedback on everything we submitted, this appeared to be a pretty good opportunity."
+        n "{vspace=60}Long story short, she ended up convincing me to give it a try."
+        n "{vspace=60}I wasn't sure if this was going to go anywhere, but I had been thinking of getting some writing practice myself, and since our teacher said he was willing to provide feedback on everything we submitted, this appeared to be a pretty good opportunity."
 
-        nvl clear
         nvl hide dissolve
 
-        ha "Y-Yes. Mister Hoshino said he'd look into a few competitions for us to submit our w-work in. Even if we d-don't win anything it'll still be good practice."
+        ha "Y-yes. Mister Hoshino said he'd look into a few competitions for us to submit our w-work in. Even if we d-don't win anything, it'll still be good practice."
 
         show lilly basic_cheerful_cas_close
         with chchange
 
-        li "And even if you don't win anything you're still spending your time with friends doing something you enjoy. That's never a waste of time."
+        li "And even if you don't win anything, you're still spending your time with friends doing something you enjoy. That's never a waste of time."
         "Friends? I'm slowly starting to get used to my clubmates' presence, but I'm not sure if we're truly friends. Certainly not in the way I'm friends with Lilly."
         ha "I... suppose."
 
@@ -138,21 +137,17 @@ label sh_ch39:
 
         "Lilly nods understandingly, but her mother looks a bit confused."
         ka "You look a bit apprehensive about it."
-
         ha "Ummm... L-Lilly and Hisao are the only two people I've ever let into my room before."
-        "I'm quite aware of the possibility that they'll find my room empty, dull and devoid of personality , especially Naomi who tends to speak her mind from time to time, and that might be enough to instantly kill my motivation and what little self-esteem I've been trying to gather for this."
+        "I'm quite aware of the possibility that they'll find my room empty, dull and devoid of personality—especially Naomi who tends to speak her mind from time to time—and that might be enough to instantly kill my motivation and what little self-esteem I've been trying to gather for this."
 
         show lilly basic_weaksmile_cas_close
         show karla basic_sheepish_cas_close
         with chchange
 
         li "Would you like to use my room, Hanako? Mother and I will be away for most of the evening, so nobody will bother you here."
-
         "Karla will apparently be travelling the country the upcoming week in order to look for attractive neighborhoods to settle down in if they want to go through with the plan of migrating back to Japan."
         "That means she won't be in the area for several days, so she and Lilly are going out tonight and probably won't be back until rather late."
-
         ha "Ummm..."
-
         "I strongly consider taking Lilly's offer, but there are a few problems with it. First of all, if this meeting turns out well, it won't be the last time we get together, and I might end up playing host at some point in the future again. I can't keep relying on Lilly for that."
         "Also, the others will be able to immediately tell that this isn't my room and might start speculating why I'm so reluctant to invite them over to my place. That speculation, especially with Naomi, might be worse that the real thing."
 
@@ -172,17 +167,24 @@ label sh_ch39:
         ka "Yep. It can help from time to time, you know."
 
         show lilly basic_smile_cas_close
-
-        "Lilly takes the teapot and holds it out for me."
+        with chchange
 
         show teaset:
             truecenter
-            ypos 0.7 alpha 0.0
-            easeout 1.0 truecenter alpha 1.0
+            ypos 0.6 alpha 0.0
+            easein 1.0 truecenter alpha 1.0
         with Pause(1.0)
 
+        "Lilly takes the teapot and holds it out for me."
         li "If you're not going to use my room, please at least use my tea set. Seeing that you were the one who picked it, I feel it is also partially yours anyway."
         "That might not be such a bad idea."
+
+        show teaset:
+            parallel:
+                easeout 1.0 ypos 0.6
+            parallel:
+                ease 1.0 alpha 0.0
+        with Pause(1.0)
 
         hide teaset
 
@@ -199,12 +201,13 @@ label sh_ch39:
         with chchange
 
         li "Hanako, I know that Naomi is part of this little club too, but you said there were three of you right now. Who is the third member?"
-        "???" "I am."
+        mystery "I am."
 
+        # TODO replace Jun sprites with her in a wrist brace
         show jun basic_smile at left
         with charaenter
 
-        "We turn around to find my fellow editor standing in the kitchen doorway wearing her favorite red-and-white cap, carrying a flat, black bag with one hand while wearing an orthopedic brace on the other. Lilly's mother smiles and returns Jun's bow with a polite one of her own."
+        "We turn around to find my fellow editor standing in the kitchen doorway wearing her favorite red-and-white cap, carrying a flat, black bag with one hand while wearing a wrist brace on the other. Lilly's mother smiles and returns Jun's bow with a polite one of her own."
 
         show karla basic_cheerful_cas
         show lilly basic_smileclosed_cas
@@ -216,7 +219,6 @@ label sh_ch39:
         with chchange
 
         jun "Good evening."
-
         "Karla shifts her gaze to the bag Jun is carrying."
 
         show karla basic_smile_cas
@@ -232,8 +234,8 @@ label sh_ch39:
         show karla basic_confused_cas
         with chchange
 
-        ka "Do you have internet here? I didn't notice any network sockets in the wall of Lilly's room."
-        ha "There aren't any. But I've seen people checking their mail on l-laptops in the common room before, so the building probably has Wifi."
+        ka "Do you have Internet here? I didn't notice any network sockets in the wall of Lilly's room."
+        ha "There aren't any. But I've seen people checking their mail on l-laptops in the common room before, so the building probably has Wi-fi."
 
         show karla basic_sheepish_cas
         show lilly basic_displeased_cas
@@ -245,7 +247,7 @@ label sh_ch39:
         with chchange
 
         "Jun nods enthusiastically."
-        jun "There's a Wifi router in the common room's TV cabinet. The network isn't password-protected so anyone with a laptop who wishes to access the internet can log onto it."
+        jun "There's a Wi-fi router in the common room's TV cabinet. The network isn't password-protected, so anyone with a laptop who wishes to access the internet can log onto it."
 
         show karla basic_smile_cas
         show lilly basic_weaksmile_cas
@@ -263,9 +265,12 @@ label sh_ch39:
         ha "Sure."
         ka "Well, have fun you two. Bye."
 
-        show lilly at offscreenright
-        show karla basic_smile_cas at offscreenright
+        show lilly:
+            xpos 1.1
+        show karla:
+            xpos 1.3
         with charamove
+
         hide lilly
         hide karla
 
@@ -277,28 +282,28 @@ label sh_ch39:
         jun "Shall we go, Hanako? This laptop is getting a bit heavy, so..."
         ha "Oh... ah... Sure."
 
-        scene black
-        with Dissolve(2.0)
-
         if _in_replay:
             return
-
+        else:
+            stop music fadeout 2.0
 
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)
 
         scene bg school_girlsdormhall
-        play music music_happiness fadein 4.0
-
         show jun basic_serious_close at twoleft
-        with charaenter
+        with locationchange
 
-        "We leave the kitchen and make our way to the door of my room. Once again my anxiety flares up a bit. Jun isn't someone whom I expect will immediately criticize me for the way my room looks, but she'll definitely think something when I let her in."
+        "We leave the kitchen and make our way to the door of my room."
+        "Once again my anxiety flares up a bit. Jun isn't someone whom I expect will immediately criticize me for the way my room looks, but she'll definitely think something when I let her in."
         jun "Hanako?"
-        ha "J-Just a moment."
+        ha "J-just a moment."
+
+        play sound sfx_dooropen
 
         scene bg school_dormhanako
+        with locationchange
 
         "I unlock the door to my room, and we go in. I walk right up to my desk and put the tea set down so I don't have to see the look on Jun's face. There's no immediate reaction either."
         "When she finally says something, it isn't even a reaction to her surroundings. I'm not sure whether to feel relieved or worried."
@@ -309,13 +314,15 @@ label sh_ch39:
         jun "...can I put my laptop on your desk? It'll be easier that way."
         ha "Ah, sure."
 
-        show jun basic_smile_close at center
-        with charamove
+        play music music_normal fadein 4.0
+
+        hide jun
+        with charaexit
 
         "She walks up to my desk, plugs her laptop into the nearby power socket and starts it up. The room is quiet except for the subdued humming of the computer. The silence starts feeling really heavy to me, but it doesn't seem to bother Jun."
 
         show jun basic_serious_close
-        with chchange
+        with charaenter
 
         "I haven't really known her for very long, but one thing I've learned about her is that she isn't very talkative most of the time unless a subject she's specifically interested in pops up, at which point she can get quite verbose."
 
@@ -333,7 +340,7 @@ label sh_ch39:
         "While I'm still struggling to think of a way to make conversation, Jun has finished booting up her system and is now running her internet browser to test the network connection. That suddenly makes me wonder about something."
         ha "Ah... Jun?"
 
-        show jun basic_eyeroll_close
+        show jun basic_smile_close
         with chchange
 
         jun "Hmmm?"
@@ -374,14 +381,14 @@ label sh_ch39:
         show jun basic_smug_close
         with chchange
 
-        jun "Some people online. I don't think much of it. I usually make an attempt to type correctly, on message boards even if one of my arms is in a cast or brace, so it's not too much to ask others to do the same, is it?"
+        jun "Some people online. I don't think much of it. I usually make an attempt to type correctly on message boards even if one of my arms is in a cast or brace, so it's not too much to ask others to do the same, is it?"
         "For some reason she rolls her eyes while she says that. I wonder why."
         ha "No. But... if you prefer editing then why did you join a writing club?"
 
         show jun basic_smileclosed_close
         with chchange
 
-        jun "Editors and researchers are useful for writing clubs too. When Naomi invited me, I told her I wasn't really up to writing stuff myself, but I'd be happy to assist you with yours."
+        jun "Editors and researchers are useful for writing clubs, too. When Naomi invited me, I told her I wasn't really up to writing stuff myself, but I'd be happy to assist you with yours."
 
         show jun raise_smug_close
         with chchange

@@ -183,6 +183,9 @@ jun = [
     ("act 2 sprites/jun revised/basic/10 JUN'S ANNOYED", "basic_angry"),
     ("act 2 sprites/jun adjust/basic annoyed", "basic_annoyed"),
     ("act 2 sprites/jun adjust/basic eyeroll", "basic_eyeroll"),
+    ## edits
+    ("Sprites/Jun/revised/basic/EDIT JUN'S SHEEPISH", "basic_sheepish"),
+    ("Sprites/Jun/revised/basic/EDIT JUN'S SMILECLOSED", "basic_smileclosed"),
     # cast
     ("act 2 sprites/jun revised/cast/1 JUN'S SMILE", "cast_smile"),
     ("act 2 sprites/jun revised/cast/2 JUN'S HAPPY", "cast_happy"),
