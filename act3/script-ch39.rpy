@@ -399,41 +399,43 @@ label sh_ch39:
         with chchange
 
         show jun basic_confused_close
-        with chchange
+        with charachangealways
 
         "The conversation falls silent again until I'm startled by a sudden movement from the door handle. Someone just tried opening the door. Jun throws me a puzzled look."
-
         jun "Did you lock the door after we got in here?"
-        ha "F-Force of habit."
+        ha "F-force of habit."
+
+        play sound sfx_dooropen
 
         scene bg school_girlsdormhall
-        show naomi basic_focus at twoleft
+        show naomi basic_neutral:
+            twoleft
+            ease 1.0 offscreenleft
+        with locationchange
 
         pause 0.5
-
-        show naomi basic_neutral at left
-        with charamove
 
         "I quickly unlock the door and notice someone with bleached hair and a file folder under her arm walking down the hall and away from the door."
         ha "N-Naomi."
 
-        show naomi basic_laugh
-        with chchange
+        show naomi basic_laugh at twoleft
+        with charamovefastest
 
         "She turns around and waves."
         na "Hey! I was already heading for the kitchen to check for you there. Is Jun already inside?"
-        ha "Y-Yes. C-come in."
+        ha "Y-yes. C-come in."
 
         scene bg school_dormhanako
-
         show jun basic_smile_close at twoleft
         show naomi basic_smile_close at left
-        with charaenter
+        with locationchange
+
+        play sound sfx_doorclose
 
         show naomi basic_smile_close at tworight
         with charamove
 
-        "I let Naomi into my room and my heart skips a beat when I see her take a long, long look around the room. Surprisingly, the expected 'What the hell?' doesn't come."
+        "I let Naomi into my room and my heart skips a beat when I see her take a long, long look around the room. Surprisingly, the expected “What the hell?” doesn't come."
 
         show naomi basic_focus_close
         with chchange
@@ -441,16 +443,18 @@ label sh_ch39:
         "Instead, she merely keeps sweeping my room with an analyzing gaze that feels strange coming from her. Eventually, her eyes fall on my cabinet containing my two dolls. A smile suddenly appears on her face."
 
         scene ev hanako_dolls
+        with locationchange
 
         na "Hey! This one looks a lot like Satou. That's probably not a coincidence, is it?"
         "I'm taken a bit off guard by her sudden switch from analytical observer to her usual self, but manage to stammer out a response."
         ha "It... was a g-gift from Lilly. Hisao p-picked it out for her."
         na "It looks really cute."
 
-        scene bg school_dormhanako
-
-        show jun basic_happy_close at left
+        scene bg school_dormhanako:
+            zoom 1.1 yalign 1.0
+        show jun basic_happy_close at twoleft
         show naomi basic_smile_close at tworight
+        with locationchange
 
         "Jun taps her fingers on the teapot next to her laptop to get Naomi's attention."
         jun "Do you want to have some tea? It's still warm and pretty good."
@@ -465,11 +469,18 @@ label sh_ch39:
         with chchange
 
         "A bit relieved by Jun's attempt to divert Naomi's attention away from my room's interior, I pour some tea for her and myself, and we take a seat on my bed while Jun remains seated on my chair."
-        "The atmosphere is fairly relaxed as we drink our tea and just sit there, but I still feel a bit on edge. I wonder if that's because there are two people whom I haven't known for that long sitting in my room right now."
-        "Ever since I came to Yamaku, this room has been the only place where I could always go to feel safe and secure. The knowledge that I'll have nowhere to run off to if something happens that sets my anxieties off makes me feel uneasy and a little bit cornered."
+
+        nvl clear
+        nvl show dissolve
+
+        n "The atmosphere is fairly relaxed as we drink our tea and just sit there, but I still feel a bit on edge. I wonder if that's because there are two people whom I haven't known for that long sitting in my room right now."
+        n "{vspace=60}Ever since I came to Yamaku, this room has been the only place where I could always go to feel safe and secure."
+        n "The knowledge that I'll have nowhere to run off to if something happens that sets my anxieties off makes me feel uneasy and a little bit cornered."
+
+        nvl hide dissolve
 
         show jun basic_eyeroll_close
-        show naomi basic_confused_close
+        show naomi basic_neutral_close
         with chchange
 
         na "...Hanako?"
@@ -480,15 +491,23 @@ label sh_ch39:
 
         na "I was asking whether it's okay to get started."
         "I really need to stop spacing out over this. I'm not going to be able to pull my weight here if I can't put my mind at ease."
-        ha "S-Sure."
+        ha "S-sure."
+
+        show bg:
+            yalign 0.0
+        show jun:
+            ypos 1.25
+        with charamove
+
+        stop music fadeout 2.0
 
         show jun basic_smile_close
-        show naomi basic_laugh at right
-        with charamove
+        show naomi basic_laugh_close
+        with chchange
 
         "Naomi gets up, scrapes her throat, pauses for a bit of effect and then throws her fist up in the air."
 
-        play music music_comedy fadein 4.0
+        queue music music_comedy fadein 4.0
 
         na "Welcome to the first meeting of our new club, people. It would be grand if we could start cranking up pieces tonight already, but let's start with the most important thing first."
 
@@ -499,12 +518,12 @@ label sh_ch39:
         jun "You spoke to Mister Hoshino about recommendations, didn't you?"
 
         show jun basic_serious_close
-        show naomi basic_smile
+        show naomi basic_smile_close
         with chchange
 
         na "We'll get to that later. The most important thing for now is deciding on a name for ourselves."
         ha "Ummm... D-do we really need a name? This isn't an... official club, is it?"
-        na "Of course we need a name. I already felt cheesy saying 'our new club' the first time and having an official name makes things easier. We need to know what to say when referring to the club. It's also a matter of principle."
+        na "Of course we need a name. I already felt cheesy saying ‘our new club’ the first time and having an official name makes things easier. We need to know what to say when referring to the club. It's also a matter of principle."
 
         show jun basic_confused_close
         with chchange
@@ -512,7 +531,7 @@ label sh_ch39:
         "Jun looks puzzled at that."
         jun "Why is it a matter of principle?"
 
-        show naomi bend_grin
+        show naomi bend_grin_close
         with chchange
 
         na "If we don't even have the creativity to think up a name for ourselves, what does that say about our ability to come up with stuff to write about?"
@@ -522,14 +541,20 @@ label sh_ch39:
 
         jun "I can't really argue that point."
 
-        show jun basic_smile_close
-        show naomi basic_grinclosed_close at tworight
+        show bg:
+            yalign 1.0
+        show jun:
+            ypos 1.0
         with charamove
+
+        show jun basic_smile_close
+        show naomi basic_grinclosed_close
+        with chchange
 
         na "Okay! Brainstorm time, girls! How are team names made up?"
 
         show jun basic_smileclosed_close at left
-        with charamove
+        with Dissolvemove(1.0)
 
         pause 0.3
 
@@ -549,18 +574,18 @@ label sh_ch39:
         na "Okay, so those teams often use animal names or some other impressive-sounding noun and combine it with the area they're from or the company that owns them. That's not a bad way to come up with a name."
 
         show jun basic_smile_close at twoleft
-        with charamove
+        with Dissolvemove(1.0)
 
         show naomi basic_smile_close
         with chchange
 
-        na "For us that would probably be Yamaku then. We just need a noun to go with it. Maybe animals. How does 'The Yamaku Kittens' sound?"
+        na "For us that would probably be Yamaku then. We just need a noun to go with it. Maybe animals. How does ‘The Yamaku Kittens’ sound?"
 
         pause 0.6
 
         show naomi bend_laugh_close
         show jun raise_laugh_close
-        with chchange
+        with charachangealways
 
         "There's a short silence followed by a giggle from all three of us. I think that name sounds way too cute for a writing club. Jun smilingly shakes her head."
 
@@ -568,7 +593,7 @@ label sh_ch39:
         show naomi basic_grinclosed_close
         with chchange
 
-        jun "That may be a better name for a cheerleaders' squad. Maybe we need to go with something that refers to writing or writing implements. 'The Yamaku Pens' or 'The Yamaku Pencils' perhaps?"
+        jun "That may be a better name for a cheerleaders' squad. Maybe we need to go with something that refers to writing or writing implements. ‘The Yamaku Pens’ or ‘The Yamaku Pencils’ perhaps?"
 
         show jun basic_smile_close
         show naomi basic_focus_close
@@ -590,8 +615,8 @@ label sh_ch39:
         na "What's the last team name you've heard lately? Baseball teams don't count."
         ha "Ummm... Oriental Express?"
 
-        show jun basic_serious_close
-        show naomi basic_confused_close
+        show jun basic_confused_close
+        show naomi basic_neutral_close
         with chchange
 
         na "Huh?"
@@ -603,8 +628,7 @@ label sh_ch39:
 
         na "Heh, that sounds kinda cool. Do you remember any more names?"
         "Akira listed a whole bunch of them when we left the pub, but I don't remember them all."
-
-        ha "Ummm... A lot of them w-were related to beer or drinking like ummm...'Beer today, Gone tomorrow'. And some were some self-mocking names like... 'Beauty School Dropouts'."
+        ha "Ummm... A lot of them w-were related to beer or drinking like ummm...‘Beer today, Gone tomorrow’. And some were some self-mocking names like... ‘Beauty School Dropouts’."
 
         show naomi basic_focus_close
         with chchange
@@ -612,28 +636,36 @@ label sh_ch39:
         na "Hmmm, a slightly playful name may be cool too."
 
         show jun basic_speak_close at left
-        with charamove
+        with Dissolvemove(1.0)
 
         "Jun turns back to her laptop and types a few more words."
 
         show jun raise_laugh_close
-        with chchange
+        with charachangealways
 
-        show naomi bend_grin_close at center
+        show naomi at center
         with charamove
+
+        show naomi bend_grin_close
+        with charachangealways
 
         show jun basic_eyeroll_close
         show naomi bend_smile_close
+        with charachangealways
 
         "The page she's looking at must be pretty funny, because she lets out a soft giggle but when Naomi comes over she quickly clicks the page away."
 
         show jun basic_sheepish_close
         with chchange
 
-        jun "Hmmm... Well, some of those pub quiz team names are pretty creative, but I don't know how I'd feel about referring to us as 'Oh no, my pen's running ou...' or 'One wheel short of a unicycle'. It'd probably get old after the second time."
+        jun "Hmmm... Well, some of those pub quiz team names are pretty creative, but I don't know how I'd feel about referring to us as ‘Oh no, my pen's running ou...’ or ‘One wheel short of a unicycle’. It'd probably get old after the second time."
 
-        show naomi basic_smile_close at tworight
+        show jun at twoleft
+        show naomi at tworight
         with charamove
+
+        show naomi basic_smile_close
+        with chchange
 
         na "Yeah, so playful is okay, but over-the-top is bad..."
 
@@ -642,8 +674,10 @@ label sh_ch39:
 
         jun "Maybe we should go with the pen or pencil angle after all."
 
+        play sound sfx_snap
+
         show naomi basic_grin_close
-        with chchange
+        with chchangefast
 
         "Suddenly Naomi snaps her fingers."
         na "How about... The Broken Quills?"
@@ -669,10 +703,6 @@ label sh_ch39:
         with chchange
 
         na "It's not meant to be insulting, but simply a little playful. I mean, if you use Yamaku in the name and people wonder what the heck the word means and look it up, they'll know what kind of school this is anyway."
-
-        show jun basic_angry_close
-        with chchange
-
         jun "Just because we attend this school doesn't mean we're... like... damaged beyond all use, right?"
 
         show naomi basic_grinclosed_close
@@ -699,11 +729,15 @@ label sh_ch39:
         show jun basic_serious_close
         with chchange
 
-        na "Consider it, okay? And take some time to think up some alternatives. We'll get back to this the next time. Let's get to the other topic of tonight."
+        na "Consider it, okay? And take some time to think up some alternatives. We'll get back to this next time. Let's get to the other topic of tonight."
 
-        show naomi basic_smile_close at right
-        show jun basic_smile_close at left
+        show jun at left
+        show naomi at right
         with charamove
+
+        show naomi basic_smile_close
+        show jun basic_smile_close
+        with chchange
 
         "Naomi takes the file folder she brought along and fishes several sheets of paper out of it."
         na "Aaaaand... here are our challenges. Look them over and let me know what you think."
@@ -712,10 +746,9 @@ label sh_ch39:
         show jun basic_serious_close
         with chchange
 
-        "She passes a few pages to each of us, and I start look through mine. I'm impressed by how many our Japanese teacher managed to find in only a few days."
+        "She passes a few pages to each of us, and I start looking through mine. I'm impressed by how many our Japanese teacher managed to find in only a few days."
         "There are a few contests organized by online writing communities, but most of them are hosted by various literary clubs associated with high schools and universities in the region."
         ha "Wow... A p-poetry contest."
-
         na "I have one about essays here."
         "Jun scratches her cheek."
 
@@ -727,7 +760,7 @@ label sh_ch39:
         show naomi basic_smile_close
         with chchange
 
-        na "I think Hoshino picked those out on purpose. He probably wants us to start small and not spend months writing a single piece. Hanako and I have exams in Januari after all."
+        na "I think Hoshino picked those out on purpose. He probably wants us to start small and not spend months writing a single piece. Hanako and I have exams in January after all."
 
         show jun basic_serious_close
         show naomi basic_grin_close

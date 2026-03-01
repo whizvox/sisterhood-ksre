@@ -54,6 +54,7 @@ init 30 python:
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["smileclosed"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo"])
+    sh_sprites("naomi", ["grinclosed"], poses=["basic"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
