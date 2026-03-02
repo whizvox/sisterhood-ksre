@@ -480,7 +480,7 @@ label sh_ch39:
         nvl hide dissolve
 
         show jun basic_eyeroll_close
-        show naomi basic_neutral_close
+        show naomi basic_confused_close
         with chchange
 
         na "...Hanako?"
@@ -784,14 +784,14 @@ label sh_ch39:
         show naomi basic_neutral_close
         with chchange
 
-        na "I dunno. Instead of stuffing the whole national exam into one weekend maybe spread it out throughout the year so you only have to memorize a little bit at a time and get a chance to make up on the next run if you miss one or do badly? Or maybe hold the exams four times a year."
+        na "I dunno. Instead of stuffing the whole national exam into one weekend, maybe spread it out throughout the year so you only have to memorize a little bit at a time and get a chance to make up on the next run if you miss one or do badly? Or maybe hold the exams four times a year."
         na "Now you lose a whole year of your life if Murphy screws you over on the wrong day. It's complete bullshit."
         "Wow, she's really passionate about this. Jun looks at Naomi, then at me, then back at Naomi again."
 
         show jun basic_smileclosed_close
         with chchange
 
-        jun "I don't think an essay needs to be completely objective, but I doubt the word 'bullshit' will look good in there."
+        jun "I don't think an essay needs to be completely objective, but I doubt the word ‘bullshit’ will look good in there."
 
         show naomi basic_grin_close
         with chchange
@@ -843,10 +843,9 @@ label sh_ch39:
         na "That's probably the best place to start. So what options do we have in terms of subjects? Jun?"
         jun "I have science fiction and slice-of-life here. The rest allows the participants to pick their own genre."
         na "Hanako?"
-        ha "Hmmm... Slice-of-life, fantasy and drama. The rest leaves it up to us."
+        ha "Hmmm... Slice-of-life, fantasy, and drama. The rest leaves it up to us."
         na "Mine are fantasy and romance. Looks like we have plenty of options. What do you say we write down our two favorite options and compare them all?"
         "Jun and I both nod in agreement. As I take a piece of paper to jot down my preferences, I notice that Jun has finished her cup of tea. I take the teapot to refill her cup only to find out that it's nearly empty."
-
         ha "I'll... ummm... go and make some more tea."
 
         show jun basic_smileclosed_close
@@ -855,24 +854,36 @@ label sh_ch39:
 
         jun "Great. Thanks."
 
+        stop music fadeout 4.0
+
         scene bg school_dormkitchen
+        with locationchange
 
         nvl clear
         nvl show dissolve
 
-        n "I leave my room, teapot in hand, and make my way to the kitchen. So far everything's been going rather well. I'd still like to get back though. What would happen if Naomi started snooping around and found my birth control pills or the diary I kept until Lilly's father got hospitalized?"
+        n "I leave my room, teapot in hand, and make my way to the kitchen."
+        n "{vspace=60}So far everything's been going rather well. I'd still like to get back though. What would happen if Naomi started snooping around and found my birth control pills or the diary I kept until Lilly's father got hospitalized?"
         n "I don't think there'd be a second meeting if that were to happen. At least not with me present."
 
-        nvl clear
         nvl hide dissolve
 
+        "After boiling some more water and refilling my teapot, I start walking back to my room."
+
         scene bg school_girlsdormhall
+        with locationchange
 
-        "After boiling some more water and refilling my teapot, I start walking back to my room. As I do so, my thoughts return to Naomi's rant about the exams. It came as a surprise to hear her get so worked up over something like that. I guess there's still plenty about her that I don't know."
+        "As I do so, my thoughts return to Naomi's rant about the exams. It came as a surprise to hear her get so worked up over something like that. I guess there's still plenty about her that I don't know."
 
-        stop music fadeout 4.0
+        $ renpy.music.set_audio_filter(channel="sound", audio_filter=renpy.audio.filter.Lowpass())
 
-        "I make it to the door of my room and reach out to push it open when I'm suddenly startled by a loud crashing noise followed by a shriek. I freeze. That sound came from behind my own door. What's happening? I uneasily open the door and look inside."
+        play sound sfx_impact2 volume 0.8
+
+        "I make it to the door of my room and reach out to push it open when I'm suddenly startled by a loud crashing noise followed by a shriek."
+        "I freeze. That sound came from behind my own door. What's happening?"
+        "I uneasily open the door and look inside."
+
+        $ renpy.music.set_audio_filter(channel="sound", audio_filter=None)
 
         scene bg school_dormhanako
         show jun basic_disturbed_close at left
@@ -884,17 +895,28 @@ label sh_ch39:
 
         play music music_rain fadein 4.0
 
-        show naomi basic_seizure_close at right
+        show naomi basic_seizure_close at center:
+            anchor (1.0, 1.0) pos (1.15, 1.2) rotate 10
+        with charaenter
 
-        "My gaze shifts to Naomi who hasn't moved since I opened the door. She's still sitting on my bed, but there's something strange about her posture. It looks like she's leaning - no, slumping - against the now empty shelf."
+        "My gaze shifts to Naomi who hasn't moved since I opened the door. She's still sitting on my bed, but there's something strange about her posture. It looks like she's leaning, no, slumping against the now empty shelf."
 
-        show naomi basic_seizure_close at tworight
-        with charamovefastest
-
-        show naomi basic_seizure_close at right
-        with charamovefastest
+        show naomi:
+            linear 0.1 rotate -20
+            linear 0.1 rotate 10
+        
+        pause 0.2
 
         "Just when I'm about to walk up to the bed and ask if she's alright, her head snaps back as if an invisible person just walked up to her and punched her in the face."
+
+        show naomi:
+            linear 0.1 xpos 1.25 rotate -10
+            linear 0.1 xpos 1.15 rotate 10
+
+        play sound sfx_impact2
+
+        pause 0.2
+
         "At the same time, she violently swings her left arm as if trying to slap someone. I cringe as I hear her hand crash into the shelf. That sounded like it hurt, though Naomi doesn't even acknowledge it. That certainly explains how all my items suddenly ended up on the floor."
         "I look at Jun again. Judging by the freaked-out look on her face, this is probably the first time she's seeing Naomi having an epileptic seizure."
         "And truth be told, the sight of Naomi, eyes rolled back, lips slightly blue and movements spastic and unnatural is an extremely disturbing sight even though I've witnessed this spectacle plenty of times myself over the years."
@@ -905,19 +927,27 @@ label sh_ch39:
         jun "What should we do?"
         "I really don't know. If we were in class, Natsume or the teacher would jump in and take care of this. But right now it's just Jun and me, and neither of us really seems sure what to do."
 
-        show naomi basic_seizure_close at tworight
-        with charamovefastest
+        show naomi:
+            linear 0.1 xpos 1.25 rotate -10
+            linear 0.1 xpos 1.15 rotate 10
 
-        show naomi basic_seizure_close at right
-        with charamovefastest
+        play sound sfx_impact2
+
+        pause 0.2
 
         "Again, Naomi's hand violently hits the shelf. I know enough about epilepsy to remember that epileptics sometimes suffer concussions from banging their head against a wall or floor during a seizure. The least thing I can probably do is making certain that won't happen this time."
 
-        show naomi basic_seizure_close at tworight
-        with charamovefastest
+        show naomi:
+            xanchor 0.5 xpos 0.6
+        with charachangealways
 
-        show naomi basic_seizure_close at right
-        with charamovefastest
+        show naomi:
+            linear 0.1 rotate -20
+            linear 0.1 rotate 10
+
+        play sound sfx_impact
+
+        pause 0.2
 
         "I walk over to the bed, grab hold of Naomi and try to get her to lie down to the best of my ability. I'm promptly rewarded for my efforts as one of Naomi's flailing arms hits me hard in the side."
         ha "Ow!"
@@ -925,14 +955,14 @@ label sh_ch39:
         show jun basic_sad_close at twoleft
         with charamove
 
-        show naomi basic_seizure_close at tworight
-        with charamovefastest
-
-        show naomi basic_seizure_close at right
-        with charamovefastest
+        show naomi:
+            linear 0.1 rotate -20
+            linear 0.1 rotate 10
+        
+        pause 0.2
 
         show jun basic_disturbed_close at left
-        with charamovefast
+        with charamovefastest
 
         "I quickly back off, grimacing and rubbing my side. That was unexpected. Jun worriedly gets a little closer, but quickly steps back when one of Naomi's legs kicks the air."
         "I don't think it's a good idea for someone as physically fragile as Jun to try and get anywhere near Naomi. Some time ago she accidentally tripped and broke her hand while trying to catch herself."
@@ -944,14 +974,13 @@ label sh_ch39:
         with chchange
 
         jun "Is... is it always like this?"
-
         "I nod again. Well, it's like this most of the time. There are times when she simply appears to black out, but my mind isn't really clear enough to give Jun a detailed account on Naomi's condition as far as I've experienced it."
         jun "Hanako, we should... probably get help. Don't you think?"
         "My first thought is ironically that I don't want some random nurse barging into my room. Then I realize how selfish and unfeeling that is, and I feel guilty for even thinking it."
-        ha "Y-Yes, we probably should. But w-we can't leave her alone like this."
+        ha "Y-yes, we probably should. But w-we can't leave her alone like this."
         "Jun is obviously looking to me for advice on how to deal with this, but unlike someone like Natsume, I really don't have any experience handling this sort of thing."
         jun "Hanako?"
-        ha "...Natsume. You s-should go and fetch Natsume. I'll stay with Naomi."
+        ha "...N-Natsume. You s-should go and fetch Natsume. I'll stay with Naomi."
 
         show jun basic_annoyed_close
         with chchange
@@ -959,20 +988,22 @@ label sh_ch39:
         jun "Right."
 
         show jun basic_annoyed_close at offscreenleft
-        with charamovefast
+        with charamovefaster
+
         hide jun
 
-        scene ev seizure_bedroomfit
+        scene ev seizure_bedroom_fit
+        with locationchange
 
-        "As Jun walks out of the room I focus my attention back on Naomi. She's still flopping around like a fish out of the water, and she's threatening to fall off my bed because of it, so I take a deep breath and push her as far back onto the bed as possible, making sure she keeps lying on her side."
+        "As Jun walks out of the room I focus my attention back on Naomi. She's still flopping around like a fish out of the water, and she's threatening to fall off my bed because of it."
+        "I take a deep breath and push her as far back onto the bed as possible, making sure she keeps lying on her side."
         "I'm currently racking my brain to remember what my first aid training said about seizures again, but one thing I remember is that it's best to lay victims on their side so they don't risk choking on their own saliva."
         "Judging by the large dark stains that have already formed on my pillow, that's certainly something to keep in mind with Naomi."
-
         jun "Hanako?"
 
         scene bg school_dormhanako
         show jun basic_annoyed_close at left
-        with charaenter
+        with locationchange
 
         "The door opens and I see Jun in the doorway. Did she find Natsume already? It's probably been less than a minute."
         ha "Did you already find...?"
@@ -982,11 +1013,15 @@ label sh_ch39:
 
         "Jun points at something near my feet."
         jun "I just thought of a better way to get a hold of her. Could you toss me Naomi's handbag?"
+        "I take the handbag Naomi left near the nightstand and give it to Jun."
 
-        "I take the handbag Naomi left near the nightstand and give it to Jun. She opens it, takes a cell phone out of it, quickly presses a few buttons and then puts it to her ear."
+        play sound sfx_phonedial
+
+        "She opens it, takes a cell phone out of it, quickly presses a few buttons and then puts it to her ear."
         "That's a pretty smart move. I don't have Natsume's number saved on my phone and apparently Jun doesn't either, but Naomi unsurprisingly does."
 
-        scene ev seizure_bedroomfit
+        scene ev seizure_bedroom_fit
+        with locationchange
 
         jun "Natsume? This... ah... is Jun speaking. Something's happened to Naomi."
         jun "It's... ah... actually still happening as we speak."
@@ -994,47 +1029,48 @@ label sh_ch39:
         jun "I'll tell her. Thank you."
         "Jun puts down the phone and turns back to me."
         jun "Natsume's on her way. She says that the best thing to do is to let the seizure run its course and not to put anything in her mouth or restrain her in any way."
-
         ha "Ummm... O-okay."
         jun "She also said that if the fit lasts longer than five minutes, you'll have to use this and then warn a nurse."
-
         "She reaches into Naomi's handbag and takes something out of it that looks a bit like a marker."
         jun "It's an injection pen that's applied to the thigh. It contains a rather strong anticonvulsant for emergencies."
         "I instinctively look at my alarm clock on the ground only to notice it's not displaying anything right now."
         ha "Ummm... W-when did this start?"
-
         jun "I'm... not really sure. I think 3 minutes ago."
 
-        scene ev seizure_bedroomfit_injector
+        show ev seizure_bedroomfit_injector
+        with charachangeev
 
         nvl clear
         nvl show dissolve
 
         n "I really hope Natsume gets here before it comes to that."
-        n "Naomi isn't thrashing around as badly anymore, but she's definitely not lying nice and still either, and I wonder if, nervous as I'm feeling right now, I'd be able to keep my hand steady enough to jab that thing in just the right place without messing up, especially with 'the right place' twitching every second or so."
+        n "Naomi isn't thrashing around as badly anymore, but she's definitely not lying nice and still, either."
+        n "{vspace=60}I wonder if, nervous as I'm feeling right now, I'd be able to keep my hand steady enough to jab that thing in just the right place without messing up, especially with “the right place” twitching every second or so."
 
         nvl clear
 
         n "Without really thinking about it I put one hand on Naomi's thigh and make a few stabbing gestures with the other hand in an attempt to practice the motion. It is then that I suddenly notice something."
-        n "Naomi's inner thigh feels a bit moist and when I look down, my eyes fall on a dark stain on the blanket. My eyes widen in shock as I realize what happened and I can only barely suppress a gasp."
+        n "{vspace=30}Naomi's inner thigh feels a bit moist and when I look down, my eyes fall on a dark stain on the blanket. My eyes widen in shock as I realize what happened and I can only barely suppress a gasp."
 
-        nvl clear
         nvl hide dissolve
 
         "Jun looks at me with a worried expression."
         jun "Is something the matter?"
-        ha "N-No."
+        ha "N-no."
         "This is getting worse and worse. First my clubmate has an epileptic fit right in front of us. Then it turns out I might have to apply an injection in order to stop the seizure, and now I find out that Naomi has voided her bladder in the process. What's taking Natsume so long?"
-
         jun "Just one more minute. Is it... just my imagination or is she quieting down a bit?"
-
         "The twitches seem to start getting more infrequent. But there's still a trinkle of drool coming down her lips, and a small puddle has already formed on the pillow her head is resting on. I take a tissue from the box on the floor and start wiping Naomi's cheek."
 
-        scene bg school_dormhanako
-        show jun basic_disturbed_close at twoleft
-        show natsume basic_neutral_close at left
+        play sound sfx_doorknock
 
-        "Just when I get started on the pillow, a knock on my door draws our attention. A moment later, Natsume enters the room."
+        "Just when I get started on the pillow, a knock on my door draws our attention."
+
+        scene bg school_dormhanako
+        show natsume basic_neutral_close at left
+        show jun basic_disturbed_close at center
+        with locationchange
+        
+        "A moment later, Natsume enters the room."
         nt "How is she?"
         "Jun makes a helpless gesture."
         jun "It might be better for you to have a look yourself. I'm afraid I'm not very familiar with this."
@@ -1046,47 +1082,54 @@ label sh_ch39:
         "Natsume approaches the bed, and I consider moving over, but then I remember the stain on my blanket, and I decide that I can at least try to make sure Jun doesn't notice, so I remain in place trying to block the spot."
         nt "Was it like this the whole time?"
         "I shake my head."
-        ha "N-No, it was... like it usually is in c-class."
-        "We remain silent for some time and watch as Naomi's convulsions become more and more infrequent until eventually they stop entirely. Just when I'm about to ask what to do now, we can see Naomi's eyes open just a little bit, and she lets out a soft moan."
+        ha "N-no, it was... like it usually is in c-class."
 
-        scene ev seizure_bedroomgroggy
+        stop music fadeout 2.0
+
+        "We remain silent for some time and watch as Naomi's convulsions become more and more infrequent until eventually they stop entirely."        
+        "Just when I'm about to ask what to do now, we can see Naomi's eyes open just a little bit, and she lets out a soft moan."
+
+        scene ev seizure_bedroom_groggy
+        with locationchange
+
         play music music_moonlight fadein 4.0
 
-        na "Ooh...."
+        na "{cps=15}Ooh...."
         ha "Are y-you alright?"
         "Natsume positions herself close to Naomi's face and speaks to her in a soft voice."
         nt "It's okay. I'm here. So are the others."
-        na "What...is...g-going...on..?"
+        na "{cps=15}What... is... g-going... on..?"
         "There's more than a hint of fear in her voice and it pains me to hear the usually confident and up-beat Naomi talk like this."
-
         nt "You had a seizure. But it's over now. It was just a seizure."
-        na "W-What...who...?"
+        na "{cps=15}W-what... who...?"
         nt "It's over now. Do you remember where you are?"
 
-        scene ev seizure_bedroomscared
+        show ev seizure_bedroom_scared
+        with charachangeev
 
-        na "...n-no..."
+        na "{cps=15}...n-no..."
         nt "Do you know who I am? Or who these girls are?"
         "She tries to open her eyes a little bit more and look in our direction, but when she does so there's no immediate sign of recognition."
-
-        na "...no..."
+        na "{cps=15}...no..."
         nt "Do you remember your name?"
-        na "...n-no..."
+        na "{cps=15}...n-no..."
         "The fear in her voice starts becoming more pronounced, and I can even sense a hint of panic. She sniffles before the next words leave her mouth."
-        na "W-what...is going...on...?"
+        na "{cps=15}W-what... is going... on...?"
         nt "Just close your eyes and relax. Let it come back to you. It will. It always does."
-        na "...but..."
+        na "{cps=15}...but..."
         "I softly place a hand on her shoulder."
         ha "Just r-relax, Naomi. It'll be okay."
 
-        scene ev seizure_bedroomsleep
+        show ev seizure_bedroom_sleep
+        with charachangeev
 
-        "As Naomi closes her eyes again while letting out a pathetic whimper, I whisper Natsume's name to try and get her attention, and when she looks at me I make a little gesture with my head towards Naomi's groin."
+        "As Naomi closes her eyes again while letting out a pathetic whimper, I whisper Natsume's name to try and get her attention. When she looks at me, I make a little gesture with my head towards Naomi's groin."
         "The fact that she closes her eyes and groans softly suggests that Natsume has gotten my meaning."
 
         scene bg school_dormhanako
         show jun basic_sad_close at left
-        show natsume basic_serious_close at center
+        # TODO replace with serious expression
+        show natsume hands_neutral_close at center
         with chchange
 
         "After some deliberation, she gets up and looks at Jun."
@@ -1100,21 +1143,24 @@ label sh_ch39:
         nt "No, but if we report this right now, Mutou won't be expecting Naomi to show up in class tomorrow morning, and it'll save me an explanation later. Just stress that the seizure is over and that the situation is under control."
         jun "Well... okay."
 
-        show jun basic_serious_close at offscreenleft
-        with charamovefast
         hide jun
+        with charaexit
 
-        "Jun shrugs her shoulders and leaves the room. As the door closes, Natsume silently sighs."
+        "Jun shrugs her shoulders and leaves the room."
+        
+        play sound sfx_doorclose
 
-        show natsume basic_sad_close
-        with chchange
+        "As the door closes, Natsume silently sighs."
+
+        # show natsume hands_sad_close
+        # with chchange
 
         nt "What a mess."
         "It is, in every sense of the word."
-        ha "N-Now what?"
+        ha "N-now what?"
 
-        show natsume basic_neutral_close
-        with chchange
+        # show natsume hands_neutral_close
+        # with chchange
 
         "Natsume thinks for a moment."
         nt "Do you happen to have a spare blanket?"
@@ -1135,19 +1181,24 @@ label sh_ch39:
         ha "Ummm... O-okay."
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
 
         "Trying not to think too hard about this, I leave my room and hurry over to where I believe Naomi's room is. Good thing we swapped room locations before drawing straws to determine where to hold our meeting."
-        "A few minutes later, I return to my room with the items Natsume requested. Natsume's still at Naomi's side, and Naomi's still lying completely still. She's obviously still very much out of it."
+        "A few minutes later, I return to my room with the items Natsume requested."
 
         scene bg school_dormhanako
         show natsume basic_neutral_close at center
         with charaenter
 
+        "Natsume's still at Naomi's side, and Naomi's still lying completely still. She's obviously still very much out of it."
+        "As I put the items I retrieved on my desk, Natsume gives an appreciative nod."
+
+        play sound sfx_dooropen
+
         show jun basic_sad_close at left
         with charaenter
 
-        "As I put the items I retrieved on my desk, Natsume gives an appreciative nod. Before she can say anything though, the door opens and Jun comes back in. I instinctively move in front of the bed in order to prevent Jun from spotting the stain on my blanket."
+        "Before she can say anything though, the door opens and Jun comes back in. I instinctively move in front of the bed in order to prevent Jun from spotting the stain on my blanket."
         "Natsume coughes softly in order to get our attention."
 
         show natsume basic_serious_close
@@ -1156,17 +1207,20 @@ label sh_ch39:
         nt "It'd be rude of me to ask you to leave your own room, but would it be a problem if you gave Naomi a bit of privacy? You can wait in her room if you like."
         "Jun and I both nod our heads in unison. I personally don't think this is something I'd even want to see anyway."
 
-        show jun basic_eyeroll_close
+        show jun basic_serious_close
         with chchange
 
-        "Before we leave, Jun asks if I'd mind carrying her laptop. When I walk out of my room with her laptop, I notice she's carrying my lamp and alarm clock along with her."
+        # TODO add original dialogue here
+        jun "Hey, would you mind carrying my laptop?"
+        "When I walk out of my room with her laptop, I notice she's carrying my lamp and alarm clock along with her."
 
         scene black
-        with Dissolve(2.0)
+        with Dissolve(1.0)
 
         if _in_replay:
             return
-
+        else:
+            stop music fadeout 2.0
 
 
     label .s3:
@@ -1180,7 +1234,6 @@ label sh_ch39:
         with charaenter
 
         ha "Wow."
-
         "After we got to Naomi's room, Jun plugged in the lamp only to conclude it didn't work anymore, even after swapping its bulb with the one from Naomi's desk lamp."
 
         show jun basic_pout_close

@@ -139,7 +139,10 @@ naomi = [
     ("sprites2/Naomi Inoue/Naomi neutral", "basic_neutral"),
     ("sprites2/Naomi Inoue/Naomi shocked", "basic_shock"),
     ("sprites2/Naomi Inoue/Naomi smile", "basic_smile"),
-    ("Sprites/Naomi/Naomi grin closed", "basic_grinclosed")
+    ("Sprites/Naomi/Naomi annoyed", "basic_annoyed"),
+    ("Sprites/Naomi/Naomi confused", "basic_confused"),
+    ("Sprites/Naomi/Naomi grin closed", "basic_grinclosed"),
+    ("Sprites/Naomi/Naomi seizure", "basic_seizure")
 ]
 
 natsume = [
@@ -186,6 +189,7 @@ jun = [
     ("act 2 sprites/jun adjust/basic eyeroll", "basic_eyeroll"),
     ## edits
     ("Sprites/Jun/revised/basic/EDIT JUN'S CONFUSED", "basic_confused"),
+    ("Sprites/Jun/revised/basic/EDIT JUN'S DISTURBED", "basic_disturbed"),
     ("Sprites/Jun/revised/basic/EDIT JUN'S SHEEPISH", "basic_sheepish"),
     ("Sprites/Jun/revised/basic/EDIT JUN'S SMILECLOSED", "basic_smileclosed"),
     # cast
