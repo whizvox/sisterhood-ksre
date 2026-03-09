@@ -30,6 +30,10 @@ init 30:
     image shrdraw_snugglywuggle = Text(_("{size=133}SNUGGLYWUGGLE"))
     image shrdraw_beautiful = Text(_("{size=133}BEAUTIFUL"))
 
+    image ev pillowtalk dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_dark2.png"
+    image pillowtalkhanako up dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up_dark2.png"
+    image pillowtalkhanako down dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_down_dark2.png"
+
     define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
 
 init 30 python:
@@ -64,7 +68,7 @@ init 30 python:
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni"])
     # credit: Loyola University Maryland
-    sh_bgs("school", ["dormkitchen"])
+    sh_bgs("school", ["dormkitchen", "dormnaomi"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 

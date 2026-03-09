@@ -190,6 +190,7 @@ jun = [
     ## edits
     ("Sprites/Jun/revised/basic/EDIT JUN'S CONFUSED", "basic_confused"),
     ("Sprites/Jun/revised/basic/EDIT JUN'S DISTURBED", "basic_disturbed"),
+    ("Sprites/Jun/revised/basic/EDIT JUN'S SADCLOSED", "basic_sadclosed"),
     ("Sprites/Jun/revised/basic/EDIT JUN'S SHEEPISH", "basic_sheepish"),
     ("Sprites/Jun/revised/basic/EDIT JUN'S SMILECLOSED", "basic_smileclosed"),
     # cast

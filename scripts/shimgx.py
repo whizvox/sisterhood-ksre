@@ -297,6 +297,10 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
+    # chapter 39
+    ("reference/Event Art/Ch10+20 Pillow Talk/pillowtalk dark2.png", "event/pillowtalk/pillowtalk_dark2.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako down dark2.png", "event/pillowtalk/pillowtalk_hanako_down_dark2.png", [RESIZE_1080P]),
+    ("reference/Event Art/Ch10+20 Pillow Talk/hanako up dark2.png", "event/pillowtalk/pillowtalk_hanako_up_dark2.png", [RESIZE_1080P]),
     # close sprites
     ## hanako
     ("sprites/hanako/hanako_basic_bashful_sum.png",         "sprites/hanako/close/hanako_basic_bashful_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),

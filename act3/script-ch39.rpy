@@ -1210,18 +1210,17 @@ label sh_ch39:
         show jun basic_serious_close
         with chchange
 
-        # TODO add original dialogue here
-        jun "Hey, would you mind carrying my laptop?"
+        jun "Hey, ah... Hanako. Would you mind carrying my laptop for me?"
+        ha "Huh, Uh... okay."
         "When I walk out of my room with her laptop, I notice she's carrying my lamp and alarm clock along with her."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(1.0)
 
         if _in_replay:
             return
-        else:
-            stop music fadeout 2.0
-
 
     label .s3:
 
@@ -1246,11 +1245,8 @@ label sh_ch39:
 
         jun "Your lamp is rather sturdy. The impact merely caused one of the wires to get loose."
 
-        show jun basic_eyeroll_close at center
-        with charamove
-
-        show jun basic_eyeroll_close at twoleft
-        with charamove
+        show jun basic_eyeroll_close
+        with chchange
 
         "She takes my alarm clock and starts using a screwdriver from her laptop bag to get it open. I look at her in awe."
         ha "I... never realized you knew how to fix things like that."
@@ -1266,7 +1262,7 @@ label sh_ch39:
         with chchange
 
         jun "My father runs a small store that sells consumer electronics, and he tended to take damaged devices with him to tinker with them before disposing of them."
-        jun "I couldn't have any physically intensive hobbies, so he gave me my own devices to experiment with to pass the time. Flashlights, digital clocks, portable CD players, hairdryers...even an old Gameboy with a cracked screen."
+        jun "I couldn't have any physically intensive hobbies, so he gave me my own devices to experiment with to pass the time: flashlights, digital clocks, portable CD players, hairdryers... even an old GameBoy with a cracked screen."
 
         show jun basic_eyeroll_close
         with chchange
@@ -1274,7 +1270,7 @@ label sh_ch39:
         "She points at her laptop bag."
         jun "I asked a laptop for my birthday a few years ago, but instead of buying one for me, Father started bringing discarded laptop systems home with him that I ended up salvaging for parts that still worked."
         jun "The system in the bag is a bit like Frankenstein's monster. There's stuff from at least four different systems in there."
-        "Something tells me that Jun would have been a great fit for the science club, and if it had existed at the start of her first school year she may very well have ended up joining it instead of the newspaper club."
+        "Something tells me that Jun would have been a great fit for the science club. If it had existed at the start of her first school year, she may very well have ended up joining it instead of the newspaper club."
         ha "I'm impressed. Did you f-fix many of the things you were given?"
 
         show jun basic_smileclosed_close
@@ -1291,20 +1287,18 @@ label sh_ch39:
         nvl clear
         nvl show dissolve
 
-        n "I smile awkwardly. Hearing Jun poking fun at her own condition sounds a bit off-putting to me, but she's hardly the only person around here with that habit. Naomi occasionally jokes about her epilepsy, and Lilly makes light of her own blindness all the time. Even Hisao has occasionally started making little jokes about his condition."
+        n "I smile awkwardly."
+        n "{vspace=30}Hearing Jun poking fun at her own condition sounds a bit off-putting to me, but she's hardly the only person around here with that habit. Naomi occasionally jokes about her epilepsy, and Lilly makes light of her own blindness all the time. Even Hisao has occasionally started making little jokes about his condition."
         n "I've never been able to poke fun at my own scarring. Do I simply lack a sense of humor, or is it the fact that others have made fun of my appearance so often that makes it seem inappropriate to joke about it? Lilly said that a little self-mockery can help you put things into perspective."
 
-        nvl clear
         nvl hide dissolve
 
         show jun basic_weaksmile_close
         with chchange
 
         "While I'm pondering all of this and more, Jun has been examining the insides of my alarm clock, and she softly shakes her head."
-
         jun "I don't think there's much hope left for this alarm clock. The impact from Naomi's haymaker damaged several capacitors, so even if I got it running again, it would remain unreliable and lose power ever so often."
         jun "There's not much use for an unreliable alarm clock that resets itself every few days. You're better off setting your phone's volume to maximum and using its alarm function. At least until you can get another alarm clock."
-
         ha "Thanks f-for having a look. At least you got my lamp working again."
 
         show jun basic_confused_close
@@ -1312,20 +1306,19 @@ label sh_ch39:
 
         jun "It's okay. I needed to do something to get my mind off what just happened anyway. That was really disturbing."
         jun "I wonder if we set it off in some way. Like... Maybe my computer screen triggered it?"
-
         ha "I... don't really think so. I think they just h-happen from time to time without needing to be triggered. Look at her room."
 
         show jun basic_serious_close
         with chchange
 
         "Naomi's room is pretty distinct. Unlike mine, it's very colorful with posters on several walls and tons of little touches to make it feel more personal. What's immediately noticable is the extremely thick carpet that covers pretty much the entire room."
-        "Also, instead of a bed there's merely a futon on the floor and nearly half of that futon is covered with all sorts of plush toys including the toy Nessie I brought from Scotland for her."
+        "Also, instead of a bed, there's merely a futon on the floor and nearly half of that futon is covered with all sorts of plush toys including the toy Nessie I brought from Scotland for her."
 
         show jun basic_speak_close
         with chchange
 
         jun "I noticed. Maybe those plush toys aren't merely there to cushion her in case of a seizure, and she simply likes them, but this room seems geared at preventing injury in case she has an episode here. With a carpet this thick, she might not even need a futon."
-        ha "It has to be difficult to keep it clean though."
+        ha "It has to be difficult to keep it clean, though."
 
         show jun basic_weaksmile_close
         with chchange
@@ -1362,9 +1355,11 @@ label sh_ch39:
         "Those were my thoughts as well, though Natsume probably has her reasons. Jun grins awkwardly."
         jun "I heard a rumor about Natsume and Naomi once. That they're... together? This thing kind of plays into that, don't you think? Do you suppose it's true?"
 
-        show natsume hands_annoy_close at center
-        show jun basic_serious_close at left
-        with charamove
+        play sound sfx_doorslam
+
+        show natsume hands_annoy_close at tworight
+        show jun basic_serious_close
+        with { "master": Dissolve(0.2) }
 
         nt "Of course it's true!"
         ha "Ah!"
@@ -1376,7 +1371,7 @@ label sh_ch39:
 
         "Jun blushes a bit, but also giggles at Natsume's obvious sarcasm."
         jun "It does sound rather silly when you put it that way. I hope I didn't offend you."
-        nt "You didn't. I know the rumor. I just thought that only a certain part of the male student body attending here actually took it seriously. You know - the innocent manga-educated kind? "
+        nt "You didn't. I know the rumor. I just thought that only a certain part of the male student body attending here actually took it seriously. You know, the innocent manga-educated kind? "
 
         show jun raise_laugh_close
         with chchange
@@ -1397,9 +1392,11 @@ label sh_ch39:
 
         nt "Heh... and maybe viewed in the very same light by the male student body until recently."
 
-        "My heart promptly skips a few beats when I hear Natsume make that comparison. How have other students been looking at Lilly and me anyway?"
-        ha "Ah... ummm... There w-weren't r-rumors about me, were there?"
+        play sound sfx_heartfast volume 0.4
 
+        "My heart promptly skips a few beats when I hear Natsume make that comparison."
+        "{i}How have other students been looking at Lilly and me, anyway?"
+        ha "Ah... ummm... There w-weren't r-rumors about me, were there?"
         nt "A few, after you and Satou started hanging out together. I mean, you never really interacted with other people before around here, and then suddenly you started having lunch with Satou nearly every day in addition to visiting her room in the evening."
 
         show natsume basic_cheerful_close
@@ -1407,7 +1404,7 @@ label sh_ch39:
         with chchange
 
         nt "Since neither of you had a boyfriend, how could you have been anything but lesbians? You had to have been, seeing that girls having tea and cookies together is not exactly tantalizing."
-        ha "B-B-B-B-But...!"
+        ha "B-b-b-b-but...!"
         "THAT MAKES NO SENSE AT ALL!"
 
         show jun basic_smileclosed_close
@@ -1415,9 +1412,8 @@ label sh_ch39:
 
         "Jun gives me an overly cheerful smile, obviously finding this conversation extremely funny."
         jun "At least you hooking up with Nakai must have quelled those rumors just a little bit, though I bet people are now wondering whether Satou is secretly part of the relationship or not."
-        "Please be joking. Please be joking. Please be joking."
+        "{i}Please be joking. Please be joking. Please be joking."
         ha "We're... j-just f-friends."
-
 
         show natsume basic_annoy_close
         show jun basic_sheepish_close
@@ -1425,7 +1421,6 @@ label sh_ch39:
 
         "Natsume scrapes her throat."
         nt "Point is: if I were a lesbian, I probably wouldn't have done what I just did. I would have felt like a creep. This was simply a little nursing chore..."
-
         "I have to admit that in contrast to the way she was speaking to Naomi while calming her down, what I saw of Natsume's actual handling of things looked rather clinical and detached."
         "The few times I allowed Hisao to apply my moisturizer lotion for me, there was no way I would have mistaken his touch for that of a hospital nurse."
 
@@ -1435,8 +1430,7 @@ label sh_ch39:
 
         nt "And can we maybe lay off that subject now and switch back to the reason we're here right now?"
         "That's more than acceptable to me. I quickly nod."
-
-        ha "H-How is she right now?"
+        ha "H-how is she right now?"
         nt "Sleeping like a baby. I managed to get her her jammies on, changed the blanket, and then I stuck around until her mind was clear enough to recognize me and comprehend the fact that she just had a seizure."
 
         show natsume basic_neutral_close
@@ -1445,10 +1439,10 @@ label sh_ch39:
         "She looks at me."
         nt "I'm sorry to ask this of you, but would it be okay if Naomi spends the night in your room? It usually takes her brain some time to recover from a seizure, and she could use the rest right now."
         nt "You can spend the night here if you like. I retrieved your nightgown for you. You don't have to worry about Naomi going through your stuff."
-        nt "She'd never betray your hospitality like that, and besides, she'll probably be too sore to even make it out of bed tomorrow morning though I'll try to help her make it to her own room after she's had a night's sleep."
-
-        "I reluctantly nod. I guess I can stay here. Or I could simply ask Hisao if I can stay over."
-        ha "O-Okay then."
+        nt "She'd never betray your hospitality like that, and besides, she'll probably be too sore to even make it out of bed tomorrow morning, though I'll try to help her make it to her own room after she's had a night's sleep."
+        "I reluctantly nod."
+        "I guess I can stay here. Or I could simply ask Hisao if I can stay over."
+        ha "O-okay then."
 
         show jun basic_sad_close
         with chchange
@@ -1460,24 +1454,24 @@ label sh_ch39:
         nvl show dissolve
 
         n "I'm a bit curious about that as well. I learned at the first aid training that people who just had a seizure are often in a disorientated and confused state for some time afterwards, but since Naomi's usually carried to the nurse's office on a stretcher after a seizure in class has died down, I've never really seen the aftermath until today."
-        n "It was kind of disturbing to see Naomi act like a lost and frightened little child rather than the bundle of energy she usually is."
+        n "{vspace=30}It was kind of disturbing to see Naomi act like a lost and frightened little child rather than the bundle of energy she usually is."
 
-        nvl clear
+        stop music fadeout 2.0
+
         nvl hide dissolve
 
-        play music music_moonlight fadein 4.0
+        queue music music_moonlight fadein 4.0
 
         show natsume basic_annoy_close
         with chchange
 
-        nt "Most of the time. She usually suffers from brief memory loss after the seizure ends and waking up not knowing what happened, where you are or even who you are can be really terrifying to a person."
+        nt "Most of the time. She usually suffers from brief memory loss after the seizure ends. You wake up not knowing what happened, where you are, or even who you are. It can be really terrifying to a person."
         nt "That's why I asked you not to get a nurse. I figured leaving her in an unfamiliar room with a person she doesn't know would discomfort her even more."
 
         show jun basic_confused_close
         with chchange
 
         jun "Speaking of discomfort, has that... ah... thing with the bedsheets happened before?"
-
         "Natsume stares at the floor for several seconds before replying."
         nt "Never in class, and I thank my lucky stars for that. It's happened twice or thrice in my presence over the years, and if there have been other occasions, I doubt that Naomi would have told me about them."
 
@@ -1532,20 +1526,22 @@ label sh_ch39:
         "Natsume nods."
         nt "Naomi's worst fear is probably that people end up remembering her merely as that one girl who has fits in class."
 
-        show natsume basic_neutral_close
         show jun basic_serious_close
         with chchange
 
         jun "I see."
 
+        show natsume basic_neutral_close
+        with chchange
+
         nvl clear
         nvl show dissolve
 
-        n "There's a momentary silence as Natsume's words sink in. I don't know about Jun, but what Natsume said about Naomi resonated deeply with me. I wonder for a moment how the people from my former schools remember me."
+        n "There's a momentary silence as Natsume's words sink in. I don't know about Jun, but what Natsume said about Naomi resonated deeply with me."
+        n "{vspace=30}I wonder for a moment how the people from my former schools remember me."
         n "There's no doubt in my mind that I'll live on in their memories as just that one panicky recluse with the hidious scars on her face. They might remember the nicknames they made up for me, but I don't think anyone remembers my actual name anymore by now."
-        n "For a long time, I was probably headed for a similar fate here. With luck, I'll be able to avoid that this time."
+        n "{vspace=30}For a long time, I was probably headed for a similar fate here. With luck, I'll be able to avoid that this time."
 
-        nvl clear
         nvl hide dissolve
 
         "Jun absentmindedly fiddles with her screwdriver a bit before turning to Natsume."
@@ -1563,7 +1559,6 @@ label sh_ch39:
         nt "She's tried a lot of different meds over time, but most either didn't work or forced her to deal with very unpleasant side effects. One of the few treatment drugs that seemed to work for a while nearly ruined her social life in the past."
         ha "Her social life?"
         "Natsume nods."
-
         nt "One of the drugs she tried seemed to work at first, without immediately noticable side effects like skin rash or drowsiness, but it later turned out that the dose she needed to keep her episodes at bay had an effect on her mood."
         ha "You mean it made her depressed?"
 
@@ -1577,11 +1572,13 @@ label sh_ch39:
         "Before this meeting I remember being very anxious about making a bad impression and straining my relationship with Naomi and Jun. Now I start wondering whether Naomi was perhaps just as worried as I was and just didn't show it."
         "We sit there in silence for a few minutes, and then Natsume slowly gets up."
 
+        stop music fadeout 2.0
+
         show natsume hands_neutral_close
         show jun basic_sheepish_close
         with chchange
 
-        play music music_twinkle fadein 4.0
+        queue music music_twinkle fadein 4.0
 
         nt "Perhaps it would be a good idea to call it a night. Thank you again for letting Naomi use your room, Hanako. I'll wash your blanket for you together with Naomi's clothes, so don't worry about that."
         nt "I'll also go over there tomorrow morning and make sure she gets back to her own room. I might be a little bit late in class, but when Mutou reads the nurses' night report I don't think he'll make a big deal out of it."
@@ -1590,7 +1587,7 @@ label sh_ch39:
         show jun basic_smile_close
         with chchange
 
-        ha "T-Thanks. What about Naomi?"
+        ha "T-thanks. What about Naomi?"
         nt "Well, it's Saturday tomorrow, and we'll only have classes until noon. Naomi often says that after a hefty seizure, her muscles feel like she jogged up Mount Fuji in one go."
         nt "I suspect the trip from your bedroom to hers will be all the physical effort we can expect out of her tomorrow."
 
@@ -1605,13 +1602,18 @@ label sh_ch39:
         with chchange
 
         nt "You should. I think she'd really like that. Just be prepared to hear her complain every ten seconds or so about how sore her muscles are."
-        ha "O-Okay."
+        ha "O-okay."
 
-        show natsume basic_smile_close at offscreenleft
+        show natsume basic_smile_close
+        with chchange
+
+        show natsume at offscreenright
         with charamove
+
         hide natsume
 
-        "Natsume says her goodbye, promising me I'll be able to get back into my own room before classes start tomorrow. After she leaves, Jun also starts getting up."
+        "Natsume says her goodbye and promises I'll be able to get back into my own room before classes start tomorrow."
+        "After she leaves, Jun also starts getting up."
 
         show jun basic_sheepish_close
         with chchange
@@ -1639,6 +1641,9 @@ label sh_ch39:
         jun "I wouldn't want to trade places with her. My condition isn't exactly a blessing, but I'd still take mine over hers, thank you very much."
         ha "..."
 
+        show jun at tworight
+        with charamove
+
         show jun basic_sheepish_close
         with chchange
 
@@ -1656,62 +1661,79 @@ label sh_ch39:
         show jun basic_smileclosed_close
         with chchange
 
-        jun "Maybe 'The Broken Quills' isn't such an inappropriate name for us after all."
+        jun "Maybe ‘The Broken Quills’ isn't such an inappropriate name for us after all."
 
         show jun basic_laugh_close
         with chchange
 
         "We both let out a laugh, mostly as a relief from the insanity of this evening."
-        ha "M-Maybe not... Shall we tell Naomi tomorrow that we accepted her suggestion?"
+        ha "M-maybe not... Shall we tell Naomi tomorrow that we accepted her suggestion?"
 
         show jun basic_smileclosed_close
         with chchange
 
         jun "Let's do that."
 
-        scene black
-        with Dissolve(2.0)
-
-        pause 1.0
-
-        scene ev pillowtalk_39_1
+        scene ev pillowtalk dark2
+        show pillowtalkhanako up dark2
+        with shorttimeskip
 
         ha "Hisao?"
         "I softly whisper the name of my boyfriend, but receive no reply. He's probably asleep already."
         "After Jun left, I realized I didn't really feel completely comfortable spending the night in an unfamiliar room, so I snuck into the boys' dorm and asked Hisao if I could stay over, which he had no problems with."
-        "Now that we're lying in bed, I'm absentmindedly fiddling with my hair as I'm thinking about the events that took place this evening. Especially Jun's words after Natsume left have been nagging me almost non-stop."
-        "(My condition isn't exactly a blessing, but I'd still take mine over hers, thank you very much.)"
-        "I didn't tell her that, but my first reaction to her statement was to agree with it. It took me a while to let that sink in and realize how shocking that was."
 
-        "I'm not particularly happy with the way my life has turned out. There's nearly a decade of my life that I'd like to erase from my memories if such a thing was possible, and I'm not even 20 yet."
-        "Unlike Lilly, Hisao, Jun and Naomi, people only need a single glance at me to be able to tell that something's seriously wrong with me. I'll have these scars for the rest of my life."
-        "Even though it's no longer as bad as it used to be, I'm also still a nervous wreck at times who gets panicky about stuff that other people wouldn't even think twice about."
-        "I have very few people in my life, and I tend to anxiously avoid those I'm not familiar with. My scars come with their own set of physical limitations. All in all, my life's hardly enviable."
-        "And yet..."
+        show pillowtalkhanako down dark2
+        with { "master": charachangeev }
 
-        scene ev pillowtalk_39_2
+        nvl clear
+        nvl show dissolve
 
-        "Would I want to trade my life with any of them? Would I want to walk on eggshells all the time like Jun, knowing a casual misstep could severely injure me and spend a large part of my life dealing with one bone fracture after another?"
-        "Or Natsume, who has to deal with chronic pain and stiffness of her joints on a regular basis even though she's in the prime of her life?"
-        "How about Naomi, who has to deal with the combination of sudden dramatic seizures that make her the center of unwanted attention whenever they happen and medication that she doesn't always react well to?"
-        "Would I want to trade places with Lilly, who can only navigate places unsupervised if she's memorized the layout? Who is dependant on others for several basic things and who can never read normal books or watch movies?"
-        "Do I envy Hisao his life, who is regularly confronted with his own mortality, has to take a truckload of medication every day and who knows that a sharp shock, excertion or simple scare could kill him?"
+        n "Now that we're lying in bed, I'm absentmindedly fiddling with my hair as I'm thinking about the events that took place this evening. Especially Jun's words after Natsume left have been nagging me almost non-stop."
+        n "{vspace=30}{i}“My condition isn't exactly a blessing, but I'd still take mine over hers, thank you very much.”"
+        n "{vspace=30}I didn't tell her that, but my first reaction to her statement was to agree with it. It took me a while to let that sink in and realize how shocking that was."
 
-        scene ev pillowtalk_39_3
+        nvl clear
 
-        "I'm not really sure anymore. I probably have more trouble functioning in everyday life than any of my friends, and yet my life may very well be a lot more normal than theirs in a decade or so."
-        "That notion keeps whirling around in my head for quite some time. Before sleepiness finally gets the better of me, one thought sticks in my mind, and to my surprise it is accompanied by a sense of curiosity rather than anxiety."
+        n "I'm not particularly happy with the way my life has turned out. There's nearly a decade of my life that I'd like to erase from my memories if such a thing was possible, and I'm not even 20 yet."
+        n "Unlike Lilly, Hisao, Jun, and Naomi, people only need a single glance at me to be able to tell that something's seriously wrong with me. I'll have these scars for the rest of my life. Even though it's no longer as bad as it used to be, I'm also still a nervous wreck at times who gets panicky about stuff that other people wouldn't even think twice about."
+        n "I have very few people in my life, and I tend to anxiously avoid those I'm not familiar with. My scars come with their own set of physical limitations. All in all, my life's hardly enviable."
+        n "{vspace=60}...And yet..."
 
-        scene ev pillowtalk_39_4
+        nvl clear
 
-        "I wonder what my life will be like a few years from now on."
+        hide pillowtalkhanako
+        with { "master": charachangeev }
+
+        n "Would I want to trade my life with any of them?"
+        n "{vspace=30}Would I want to walk on eggshells all the time like Jun, knowing a casual misstep could severely injure me and spend a large part of my life dealing with one bone fracture after another?"
+        n "Or Natsume, who has to deal with chronic pain and stiffness of her joints on a regular basis even though she's in the prime of her life?"
+        n "How about Naomi, who has to deal with the combination of sudden dramatic seizures that make her the center of unwanted attention whenever they happen and medication that she doesn't always react well to?"
+        n "Would I want to trade places with Lilly, who can only navigate places unsupervised if she's memorized the layout? Who is dependant on others for several basic things and who can never read normal books or watch movies?"
+        n "Do I envy Hisao's life, who is regularly confronted with his own mortality, has to take a truckload of medication every day and who knows that a sharp shock, excertion or simple scare could kill him?"
+        
+        nvl clear
+        
+        n "I'm not really sure anymore. I probably have more trouble functioning in everyday life than any of my friends, and yet my life may very well be a lot more normal than theirs in a decade or so."
+        n "{vspace=30}That notion keeps whirling around in my head for quite some time."
+
+        hide ev
+        show black
+        with { "master": Dissolve(4.0) }
+
+        n "{vspace=60}Before sleepiness finally gets the better of me, one thought sticks in my mind, and to my surprise it is accompanied by a sense of curiosity rather than anxiety."
+
+        nvl clear
+
+        n "{vspace=120}I wonder what my life will be like a few years from now on."
+
+        nvl hide dissolve
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
 
         if _in_replay:
             return
-        else:
-            pause 2.0
 
     return
