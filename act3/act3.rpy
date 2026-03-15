@@ -9,6 +9,7 @@ init 30:
 
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
     define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
+    define yui = Character(_("Yuichi"), who_color="#b37b7b")
     define iwa_ = Character(_("Girl"), who_color="#ffffff")
 
     image shrdraw_heart = Text(_("{size=133}{font=symbols}♡"))
@@ -30,6 +31,9 @@ init 30:
     image shrdraw_snugglywuggle = Text(_("{size=133}SNUGGLYWUGGLE"))
     image shrdraw_beautiful = Text(_("{size=133}BEAUTIFUL"))
 
+    image shlogotext = f"{sh_path}/logo/logo_text.png"
+    image shlogo brokenquill = f"{sh_path}/logo/logo_brokenquill.png"
+
     image ev pillowtalk dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_dark2.png"
     image pillowtalkhanako up dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up_dark2.png"
     image pillowtalkhanako down dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_down_dark2.png"
@@ -49,14 +53,16 @@ init 30 python:
             (_("Life Choices"), "sh_ch38.s2", _("Hanako has tea with Lilly and Karla and is let in on some surprising news."), "hanako"),
             (_("Answering the Muse's Call"), "sh_ch39.s1", _("Hanako lets Lilly and Karla in on the establishment of a new writing club"), "hanako"),
             (_("The Quill is Mightier than the Sword"), "sh_ch39.s2", _("Hanako attends the first meeting of the club."), "hanako"),
-            (_("Perspective Shift"), "sh_ch39.s3", _("Hanako and Jun reflect on the evening's events."), "hanako")
+            (_("Perspective Shift"), "sh_ch39.s3", _("Hanako and Jun reflect on the evening's events."), "hanako"),
+            (_("Just Friends"), "sh_ch40.s1", _("While visiting Japan, Akira has dinner with her former boyfriend."), "akira"),
+            (_("Just Friends?"), "sh_ch40.s2", _("Akira and her ex discuss office politics and inheritance."), "akira")
         ])
     )
 
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("karla", ["sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
-    sh_sprites("hiroyuki", ["smileclosed"])
+    sh_sprites("hiroyuki", ["awkward", "smileclosed"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo"])
     sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure"], poses=["basic"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
@@ -69,6 +75,8 @@ init 30 python:
     sh_bgs("satou", ["masterbed_ni"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
+    # credit: japan-property.jp and Tokyo Furnished LLC
+    sh_bgs("yuichi", ["intercom", "genkan", "dining"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 
@@ -76,3 +84,28 @@ init 30 python:
         # credit: Universfield of Pixabay
         "winecork"
     ])
+
+label sisterhood_timeskip_broken:
+    stop sound fadeout 2.0
+    stop music fadeout 2.0
+    stop ambient fadeout 2.0
+    pause 2.0
+
+    play music music_timeskip
+
+    show shlogo brokenquill at Transform(xalign=0.5, yalign=0.5)
+    with CropMove(2.0, "wipedown")
+
+    show shlogotext at Transform(xalign=0.5, yalign=0.5)
+    with CropMove(2.0, "wiperight")
+
+    pause 2.0
+
+    stop music fadeout 2.0
+
+    scene black
+    with erase
+
+    pause 2.0
+
+    return

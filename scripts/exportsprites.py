@@ -277,7 +277,8 @@ hiroyuki = [
     ("act 2 sprites/hiroyuki adjust/SPEAK", "speak"),
     ("act 2 sprites/hiroyuki adjust/STERN", "stern"),
     ("act 2 sprites/hiroyuki adjust/STRAINED CLOSED", "strained"),
-    ("act 2 sprites/hiroyuki adjust/THINKING", "thinking")
+    ("act 2 sprites/hiroyuki adjust/THINKING", "thinking"),
+    ("Sprites/Hiroyuki/AWKWARD", "awkward")
 ]
 
 def main():
