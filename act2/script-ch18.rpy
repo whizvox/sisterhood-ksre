@@ -530,6 +530,10 @@ label sh_ch18:
         with chchange
 
         li "What I mean is that my family is willing to cover the costs of the flight for the two of you."
+
+        show hisao basic_emb_uni
+        with chchange
+
         "WHAT?"
         "I take a look at Hisao to see if his reaction is anything like mine, and his shocked expression tells me Lilly's announcement took him completely off guard as well."
         ha "B-but… H-how did you… W-why w-would they…?"

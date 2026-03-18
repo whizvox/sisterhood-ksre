@@ -55,6 +55,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Uniform/Uni Worry", "basic_worry_uni"),
     ("sprite edits/hisao/Uni Neutral-Blush", "basic_neutralblush_uni"),
     ("sprite edits/hisao/Uni Sweet", "basic_sweet_uni"),
+    ("Sprites/Hisao/Uniform/Uni Embarassed", "basic_emb_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Annoy", "cross_annoy_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Blush", "cross_blush_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Frown", "cross_frown_uni"),
