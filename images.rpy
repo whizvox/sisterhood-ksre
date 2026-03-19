@@ -73,10 +73,6 @@ init 1 python:
                 renpy.log(f"[SISTERHOOD] Could not load firefly image: {imgpath}")
 
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
-    # takawa blurred sprites
-    for face in ("smile", "serious"):
-        for i in range(1, 3):
-            renpy.image(f"takawa {face}_close_blur{i}", im.Blur(f"{sh_path}/sprites/takawa/close/takawa_{face}_close.png", i))
     sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
@@ -126,13 +122,13 @@ init 1 python:
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
     sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
-    sh_bgs("school", ["staircase3", "hallway4", "therapist", "newspaper", "firstaidclass"])
+    sh_bgs("school", ["staircase3", "hallway4", "therapist", "therapist_blur1", "therapist_blur2", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
     sh_bgs("city", ["coffeeshop"])
     sh_bgs("hotel", ["bathroom", "room"])
     sh_bgs("fanres", ["entrance", "table"])
-    sh_bgs("hosp", ["hallway", "office"])
+    sh_bgs("hosp", ["ceiling_blur", "hallway", "office", "room2_blur"])
     sh_bgs("airport", ["coffeeshop", "baggageclaim", "inverness"])
     sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
     sh_bgs("raigmore", ["ambulance", "ambulance_blur", "elevator", "entrance", "hallway", "office", "room", "waitroom", "waitcard"])
@@ -140,13 +136,15 @@ init 1 python:
     sh_bgs("akira", ["car"])
 
 init 1:
+    # special sprites
+    image takawa serious_close_blur1 = f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur1.png"
+    image takawa serious_close_blur2 = f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur2.png"
+    image takawa smile_close_blur1 = f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur1.png"
+    image takawa smile_close_blur2 = f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur2.png"
+
     # backgrounds
-    image bg school_therapist_blur1 = im.Blur(sh_bg("school_therapist"), 1)
-    image bg school_therapist_blur2 = im.Blur(sh_bg("school_therapist"), 2)
     image bg school_road_run_rn = rain(sh_bg("school_road_run"))
     image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
-    image bg hosp_room2_blur = im.Blur("bgs/hosp_room2.jpg", 2)
-    image bg hosp_ceiling_blur = im.Blur("bgs/hosp_ceiling.jpg", 2)
     image bg satou_entrance_blur_ss = sunset(sh_bg("satou_entrance_blur"))
     image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
 

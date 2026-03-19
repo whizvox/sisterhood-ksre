@@ -3,7 +3,6 @@ label sh_ch0:
 
         $ set_window_tint(TINT_HANAKO)
 
-        stop music fadeout 2.0
         scene bg school_hallway4
         with flashback
 
@@ -65,9 +64,6 @@ label sh_ch0:
             easeout 1.0 truecenter alpha 1.0
         with Pause(1.0)
 
-        # show bg school_therapist_blur2
-        # with Dissolve(1.0)
-
         play sound sfx_gostone_soft
 
         "Miss Yumi gives a small nod, and I place the first black stone onto the game board."
@@ -79,9 +75,6 @@ label sh_ch0:
         show go_board:
             easeout 1.0 ypos 0.7 alpha 0.0
         with Pause(1.0)
-
-        # show bg school_therapist
-        # with Dissolve(0.5)
 
         hide go_board
         with None
@@ -358,6 +351,7 @@ label sh_ch0:
 
         with Pause(1.0)
 
+        show bg school_therapist_blur1
         show takawa smile_close
         with charachangealways
 
@@ -408,6 +402,7 @@ label sh_ch0:
 
         ha "Of… of course not."
 
+        show bg school_therapist_blur2
         show takawa serious_close_blur2
         with charachangealways
 

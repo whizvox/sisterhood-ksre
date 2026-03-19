@@ -17,7 +17,7 @@ def random_string(length: int) -> str:
 def resolve_path(plainpath: str) -> Path:
     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
     if len(plainpath) > 0 and plainpath[0] == "~":
-        return Path(ks_path, plainpath[1:])
+        return Path(ks_path, "game", plainpath[1:])
     # otherwise, by default, paths will be in reference to the sisterhood directory
     else:
         return Path(sh_path, plainpath)
@@ -209,6 +209,9 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/wheatfield ev/wheatfield_awkward.png", "event/wheatfield/wheatfield_awkward.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_dreamy.png", "event/wheatfield/wheatfield_dreamy.jpg", [RESIZE_1080P]),
     ("reference/wheatfield ev/wheatfield_talk.png", "event/wheatfield/wheatfield_talk.jpg", [RESIZE_1080P]),
+    # chapter 0
+    ("bgs/school_therapist.jpg", "bgs/school_therapist_blur1.jpg", [blur(5)]),
+    ("bgs/school_therapist.jpg", "bgs/school_therapist_blur2.jpg", [blur(10)]),
     # chapter 6
     ("reference/funindark cgs/hug1_clip.png", "event/funindark/funindark_hug_rest_large.jpg", []),
     ("reference/funindark cgs/hug1_clip.png", "event/funindark/funindark_hug_rest.jpg", [RESIZE_1080P]),
@@ -258,6 +261,9 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 13
     ("reference/road cgs/Whizvox_CG2_HisaoxHanako_F1.jpg", "event/rainyroad/rainyroad_a.jpg", [crop(0, 268, 7880, 4700), RESIZE_1080P]),
     ("reference/road cgs/Whizvox_CG2_HisaoxHanako_F2.jpg", "event/rainyroad/rainyroad_b.jpg", [crop(0, 268, 7880, 4700), RESIZE_1080P]),
+    # chapter 14
+    ("~bgs/hosp_ceiling.jpg", "bgs/hosp_ceiling_blur.jpg", [blur(10)]),
+    ("~bgs/hosp_room2.jpg", "bgs/hosp_room2_blur.jpg", [blur(10)]),
     # chapter 16
     ("reference/rooftop ev/RooftopKissCGFinal.png", "event/rooftopkiss/rooftopkiss_normal.jpg", [RESIZE_1080P]),
     # chapter 17
@@ -301,6 +307,11 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch10+20 Pillow Talk/pillowtalk dark2.png", "event/pillowtalk/pillowtalk_dark2.png", [RESIZE_1080P]),
     ("reference/Event Art/Ch10+20 Pillow Talk/hanako down dark2.png", "event/pillowtalk/pillowtalk_hanako_down_dark2.png", [RESIZE_1080P]),
     ("reference/Event Art/Ch10+20 Pillow Talk/hanako up dark2.png", "event/pillowtalk/pillowtalk_hanako_up_dark2.png", [RESIZE_1080P]),
+    # blurred sprites
+    ("sprites/takawa/close/takawa_serious_close.png", "sprites/takawa/close/takawa_serious_close_blur1.png", [blur(3)]),
+    ("sprites/takawa/close/takawa_serious_close.png", "sprites/takawa/close/takawa_serious_close_blur2.png", [blur(6)]),
+    ("sprites/takawa/close/takawa_smile_close.png", "sprites/takawa/close/takawa_smile_close_blur1.png", [blur(3)]),
+    ("sprites/takawa/close/takawa_smile_close.png", "sprites/takawa/close/takawa_smile_close_blur2.png", [blur(6)]),
     # close sprites
     ## hanako
     ("sprites/hanako/hanako_basic_bashful_sum.png",         "sprites/hanako/close/hanako_basic_bashful_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),

@@ -143,8 +143,8 @@ init:
         alpha 1.0
     transform displayitemhide:
         ease 1.0 ypos 0.7 alpha 0.0
-    transform flashback:
-        matrixcolor SepiaMatrix(tint="#ffeee0")
+    transform sepia:
+        matrixcolor SepiaMatrix(tint="#ffefd7")
 
     define nextchapter = Dissolve(2.0)
     define endchapter = Dissolve(3.0)
