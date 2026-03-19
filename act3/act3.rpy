@@ -68,7 +68,7 @@ init 30 python:
     sh_sprites("shizu", ["evil"], poses=["adjust"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
-    phonebox_sprites("lilly", ["basic_smileclosed", "basic_weaksmile", "cane_satisfied", "cane_giggle", "cane_sleepy"], cropyoff=-40)
+    phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
@@ -77,6 +77,8 @@ init 30 python:
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
+    # credit: OMOSHIRO RENT-A-CAR
+    sh_bgs("misc", ["car_ss"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 

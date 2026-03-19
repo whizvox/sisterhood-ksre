@@ -180,9 +180,6 @@ label sh_ch40:
 
         queue music music_night fadein 4.0
 
-        # show yuichi neutral at right
-        # show akira basic_wistful at left
-
         "After finishing the food, we head over to the couch. I make sure to sit some distance away from him in order to accentuate the point I made earlier."
         "He rolls his eyes for a moment but then shrugs his shoulders."
         yui "I guess a lot has happened at head office since you moved, huh?"
@@ -326,9 +323,10 @@ label sh_ch40:
 
         play sound sfx_whiteout
 
-        scene bg satou_entrance at flashback
-        show lilly basic_smile_cas at twoleft, flashback
-        show hiroyuki serious at tworight, flashback
+        scene bg satou_entrance at sepia
+        show lilly basic_smile_cas at twoleft, sepia
+        show hiroyuki serious at tworight, sepia
+        show noiseoverlay
         with Fade(0.5, 0, 0.5, color="#fff")
 
         "When Mom and I returned to the mansion, Lilly and Dad were waiting for us. Dad was still in a pretty sorry state, but he nevertheless went outside together with Lilly to greet us."
@@ -341,7 +339,7 @@ label sh_ch40:
 
         show lilly back_listen_cas_close:
             xpos 0.35
-        show karla basic_laugh_close at center, flashback behind lilly
+        show karla basic_laugh_close at center, sepia behind lilly
         show hiroyuki scold_close behind lilly:
             xpos 0.6
         with { "master": Dissolve(0.5) }
@@ -356,8 +354,8 @@ label sh_ch40:
         "He seemed surprised and awkward about it, but didn't resist or protest. Lilly, on the other hand, looked happier than I've seen her in a very long time."
 
         show karla basic_smileclosed
-        show hiroyuki awkward at tworight, flashback
-        show lilly back_smileclosed_cas at twoleft, flashback
+        show hiroyuki awkward at tworight, sepia
+        show lilly back_smileclosed_cas at twoleft, sepia
         with { "master": Dissolve(0.5) }
 
         "I didn't really feel like being part of the whole thing, so I took that moment to say goodbye and return to my apartment. They didn't try to stop me, and I'm happy they didn't let me ruin their little moment."
@@ -369,7 +367,7 @@ label sh_ch40:
         show akira basic_wistful at left
         with Fade(0.5, 0, 0.5, color="#fff")
 
-        yui "So I guess your dad's honor was saved. Though from what I heard it didn't exactly last."
+        yui "So I guess your dad's honor was saved. Though from what I heard, it didn't exactly last."
 
         show akira basic_ponder
         with chchange
@@ -382,7 +380,7 @@ label sh_ch40:
         with chchange
 
         yui "So you now have a new uncle?"
-        "I do. The head of the Japanese branch more or less got the ultimate promotion when Granddad adopted him as a son, heir and new head of the family - and adopted his wife along with him."
+        "I do. The head of the Japanese branch more or less got the ultimate promotion when Granddad adopted him as a son, heir and new head of the family—and adopted his wife along with him."
         aki "Yeah... Still feels weird to call him that though. I usually settle for his name with a honorific attached to it when we're alone."
 
         show yuichi think
@@ -421,16 +419,15 @@ label sh_ch40:
         with chchange
 
         "He snickers."
-
         yui "You're the lawyer. I'll take your word for it. It would have been weird having an adopted brother old enough to be your father."
 
         show yuichi neutral
         show akira basic_distant
         with chchange
 
-        aki "Besides maybe they figured this was already enough of a blow to him as it was. No need to rub even more salt in his wounds."
+        aki "Besides, maybe they figured this was already enough of a blow to him as it was. No need to rub even more salt in his wounds."
         yui "He wanted to keep going after his recovery?"
-        aki "I think so. His job and what he called his 'responsibilities' have always been everything to him. I think he thought he'd be able to pull it off as long as he kept himself under close medical surveillance."
+        aki "I think so. His job and what he called his ‘responsibilities’ have always been everything to him. I think he thought he'd be able to pull it off as long as he kept himself under close medical surveillance."
 
         show yuichi think
         with chchange
@@ -454,14 +451,15 @@ label sh_ch40:
         with chchange
 
         aki "They didn't fire him directly. Granddad simply adopted Koji and Dad was told his new brother would be assisting him with his duties from now on, and he was asked to teach his new second-in-command the ropes."
-        aki "They probably expected Dad to take the hint and resign of his own - which he did. I'm not sure how he reacted to the news when he got it since I wasn't there when it was broken to him."
+        aki "They probably expected Dad to take the hint and resign of his own—which he did. I'm not sure how he reacted to the news when he got it since I wasn't there when it was broken to him."
 
         show akira basic_wistful
         with chchange
 
         aki "When I spoke to him he seemed resigned to it, and he said they told him that at least he'd be well provided for."
-        "I can't help but crack a sad smile at that. Of course Dad received a significant percentage of the company shares in compensation and a position on the board, although since he's so much younger than the rest, he'll have very little say in practice."
-        "Still, the hidden meaning behind that way he worded his answer to me was quite clear. Yuichi doesn't need to know that story though."
+        "I can't help but crack a sad smile at that."
+        "Of course Dad received a significant percentage of the company shares in compensation and a position on the board. Although, since he's so much younger than the rest, he'll have very little say in practice."
+        "Still, the hidden meaning behind the way he worded his answer to me was quite clear. Yuichi doesn't need to know that story though."
 
         show akira basic_ponder
         with chchange
@@ -501,14 +499,14 @@ label sh_ch40:
         show yuichi think
         with chchange
 
-        yui "...but losing your status as patriarch at this point is way more than that. In addition to your inheritance suddenly dropping down from 'everything' to 'nothing' it also comes with a sense of shame and failure. And a loss of purpose."
+        yui "...but losing your status as patriarch at this point is way more than that. In addition to your inheritance suddenly dropping down from ‘everything’ to ‘nothing’, it also comes with a sense of shame and failure. And a loss of purpose."
 
         show yuichi neutral
         with chchange
 
         yui "He probably feels like part of his identity has been stripped away and given to someone else."
-
-        "I don't have much experience with adoptions, so I'll take Yuichi's word for it. If what he says is remotely accurate, it's kind of hard not to feel pity for the old man at this point, despite the fact that I'm still not overly fond of him."
+        "I don't have much experience with adoptions, so I'll take Yuichi's word for it."
+        "If what he says is remotely accurate, it's kind of hard not to feel pity for the old man at this point, despite the fact that I'm still not overly fond of him."
 
         show akira basic_ponder
         with chchange
@@ -546,11 +544,9 @@ label sh_ch40:
 
         aki "I didn't move to Scotland for my parents. I moved there for my job. And my job wasn't shipped back to Japan."
         yui "But both your parents and your sister are now living here."
-
         aki "And I'm happy for her. Lilly still needs her parents despite the grownup appearance she puts on, and now that she's given them another chance I sincerely hope they don't blow it. If she spends enough time with them, they might actually become a family again."
         yui "She's decided to give them another chance, but you obviously haven't."
         aki "They never even apologized for just walking out on us. A heart attack sucks a lot, but it's not an apology. A thank you to me would be appreciated too."
-
         yui "A thank you?"
 
         show akira basic_pissed
@@ -591,13 +587,16 @@ label sh_ch40:
         nvl clear
         nvl show dissolve
 
-        n "I sigh. Last time we were together was when I came by his place to invite him to a weekend trip to our family's summer home in Hokkaido."
+        n "I sigh."
+        n "{vspace=60}Last time we were together was when I came by his place to invite him to a weekend trip to our family's summer home in Hokkaido."
         n "I planned to tell him about the job offer I took while we were there, but the damn office rumor mill had already caught up with me by that time, and Yuichi was quick to confront me with what he learned about my upcoming departure."
-        n "I wasn't proud of my decision to move, and when we got into an argument I was prepared to take his reproaches in stride. I managed that just fine at first until the moment he argued that I was a lot more like my parents than I cared to admit."
-        n "That was the one thing he shouldn't have said. I lost my temper, gave him a hard slap across the cheek and stormed out of his apartment with the intention of never speaking with him again."
-        n "I felt crappy about it afterwards but still didn't speak to him until we ran into each other this week while 'uncle' Koji and I were at the Japanese office for a few days."
-
+        
         nvl clear
+        
+        n "I wasn't proud of my decision to move, and when we got into an argument I was prepared to take his reproaches in stride. I managed that just fine at first until the moment he argued that I was a lot more like my parents than I cared to admit."
+        n "That was the one thing he shouldn't have said. I lost my temper, gave him a hard slap across the cheek, and stormed out of his apartment with the intention of never speaking with him again."
+        n "{vspace=30}I felt crappy about it afterwards but still didn't speak to him until we ran into each other this week while “uncle” Koji and I were at the Japanese office for a few days."
+
         nvl hide dissolve
 
         aki "Who exactly used to like leaving hickeys on my neck?"
@@ -621,7 +620,7 @@ label sh_ch40:
         show yuichi annoy
         with chchange
 
-        yui "What exactly was it you said back then? It was something like: 'Life isn't a fairy tale. You can't set it up and expect it to stay that way forever; sometimes stuff happens that you have to roll with, even if it means hurting yourself or others.', wasn't it?"
+        yui "What exactly was it you said back then? It was something like: ‘Life isn't a fairy tale. You can't set it up and expect it to stay that way forever. Sometimes stuff happens that you have to roll with, even if it means hurting yourself or others.’, wasn't it?"
 
         show akira basic_annoyed
         with chchange
@@ -637,17 +636,16 @@ label sh_ch40:
         show yuichi think
         with chchange
 
-        yui "Is it that hard to believe, given what's happened recently? As head of the company he could at least guarantee you a job long enough for you to learn the ropes and pass the exams required to get your law degree, but only for as long as he maintained that position."
+        yui "Is it that hard to believe, given what's happened recently? As head of the company, he could at least guarantee you a job long enough for you to learn the ropes and pass the exams required to get your law degree, but only for as long as he maintained that position."
         yui "Maybe that's part of what he meant when he said he'd be guaranteeing your financial future by accepting his promotion and moving to Inverness. Who knows what his replacement would have done."
         yui "People usually aren't given a job in a legal department without a solid university degree, so maybe your dad figured that giving up his influence in the company would have made things complicated for you too."
-
         "I never really thought of it that way. I always assumed that they had no choice but to stick with Dad and that he could do whatever he pleased, but maybe that wasn't the case after all."
         aki "You think that the threat of replacement was an issue even then?"
 
         show yuichi neutral
         with chchange
 
-        yui "In most other countries family businesses underperform compared to their competitors. Over here it's the exact opposite. There are two reasons for that."
+        yui "In most other countries family businesses underperform compared to their competitors. Over here, it's the exact opposite. There are two reasons for that."
         yui "The first one is the fact you can pick an heir from the academic cream of the crop if none of your own sons is up to the challenge."
         yui "The second one is that the biological heirs who do take over their father's business are extremely motivated to perform well because they know that their job and family position can be given to someone else if they mess up."
 
@@ -678,7 +676,7 @@ label sh_ch40:
         show akira basic_annoyed
         with chchange
 
-        aki "Why did he have to request Mom to accompany him and not us? I get that Mom's been a great help in getting him settled there but she could have advised him over the phone or simply spent some weeks there."
+        aki "Why did he have to request Mom to accompany him and not us? I get that Mom's been a great help in getting him settled there, but she could have advised him over the phone or simply spent some weeks there."
         aki "I get that he was probably lonely there, but they've been slowly growing apart ever since they moved, so in the end it might have done more harm than good to his marriage."
 
         show akira basic_pissed
@@ -714,7 +712,7 @@ label sh_ch40:
         with chchange
 
         aki "There's a lot of competent people there, but the place has to be managed like a western company because that's what the employees are used to."
-        aki "Even for Dad it was a massive culture shock and he had Mom to advise him on how to deal with things. I think that's part of the reason the job was so stressful for him."
+        aki "Even for Dad it was a massive culture shock, and he had Mom to advise him on how to deal with things. I think that's part of the reason the job was so stressful for him."
         aki "Mom has a deal with Koji that she'll give him all the advice he wants when he needs it and will frequently drop by in Scotland to help keep an eye on things and to help smooth over any conflicts or misunderstandings."
         aki "In return, Koji's wife will be taking care of Dad's parents instead of Mom."
         yui "She didn't come along?"
@@ -728,13 +726,12 @@ label sh_ch40:
         with chchange
 
         yui "That can't be bad for your career prospects."
-
         aki "I want to go and get a good deal of experience here, but I'm not sure if I wanna work there forever. I've spoken with some of my colleagues, and I've learned that it's pretty socially acceptable in the UK to leave your job if you get a better offer somewhere else."
 
         show yuichi annoy
         with chchange
 
-        yui "No company loyalty huh?"
+        yui "No company loyalty, huh?"
 
         show akira basic_ponder
         with chchange
@@ -751,7 +748,7 @@ label sh_ch40:
         show yuichi think
         with chchange
 
-        yui "So all in all you've settled yourself pretty nicely over there."
+        yui "So all in all, you've settled yourself pretty nicely over there."
         "From the tone of his voice that's not merely a neutral conclusion."
 
         show akira basic_distant
@@ -775,10 +772,8 @@ label sh_ch40:
         with chchange
 
         aki "That's not true."
-        yui "Last time you came here you didn't visit me to tell me about your decision to migrate. You visited me to break up with me. You already decided for the both of us by that point."
-
+        yui "Last time you came here, you didn't visit me to tell me about your decision to migrate. You visited me to break up with me. You already decided for the both of us by that point."
         "I sigh wearily."
-
         aki "Don't tell me you were going to suggest a long distance relationship, Yuichi. Like I said I have no idea when and even if I'm going to return to Japan."
         aki "And we barely had enough free time to maintain a normal relationship when I was still living here. Why set ourselves up for disappointment?"
 
@@ -809,7 +804,8 @@ label sh_ch40:
         show yuichi think
         with chchange
 
-        yui "You could have. You just didn't. Or wouldn't. Look, I'm a pretty worldly person, I'm a good English speaker, my parents aren't expecting me to take care of them anymore after they retire so it could have worked."
+        yui "You could have. You just didn't. Or wouldn't."
+        yui "Look, I'm a pretty worldly person, I'm a good English speaker, and my parents aren't expecting me to take care of them anymore after they retire so it could have worked."
         yui "Heck, a temporary working visa just to test the waters for a while could have worked as well."
 
         show akira basic_resigned
@@ -831,10 +827,9 @@ label sh_ch40:
         with chchange
 
         "Maybe he's right. Instead of wondering if there was a chance to save our relationship after accepting Dad's offer, I immediately started thinking of ways to break up my relationship with Yuichi without hurting him too badly."
-        "I kinda wonder if he doesn't deserve someone better than me. Still, the way he worded it suggests he's still open to giving it a try. Practically speaking it shouldn't be too hard. It would just take a little time to arrange a working visa."
-        "Koji will almost certainly greenlight the transfer if I ask him. He knows what it's like to live far away from one's partner."
-
-        "I can't believe I'm actually seriously considering this. At the start of the evening I was loudly insisting I wasn't here to revive our relationship. So much for my determination."
+        "I kinda wonder if he doesn't deserve someone better than me. Still, the way he worded it suggests he's still open to giving it a try."
+        "Practically speaking, it shouldn't be too hard. It would just take a little time to arrange a working visa. Koji will almost certainly greenlight the transfer if I ask him. He knows what it's like to live far away from one's partner."
+        "I can't believe I'm actually seriously considering this. At the start of the evening, I was loudly insisting I wasn't here to revive our relationship. So much for my determination."
 
         show akira basic_lost
         with chchange
@@ -858,67 +853,70 @@ label sh_ch40:
 
         aki "Maybe. But not here."
         yui "Fair enough."
-
         "I don't think we'll be able to have any more small talk after this. Yuichi must have read my expression as he gets up and tosses me another beer can."
         yui "One for the road."
         aki "...Yeah."
 
-        scene black
-        with Dissolve(2.0)
+        scene bg yuichi_genkan
+        with locationchange
 
-        "As I put my shoes back on and walk out the door there's a painful silence between us. I give him an awkward wave and then walk down the hall to the elevator with a very confused feeling in my gut. Before entering my car I take out my cell phone and dial the top-most number on my contact list."
+        "As I put my shoes back on and walk out the door, there's a painful silence between us. I give him an awkward wave and then walk down the hall to the elevator with a very confused feeling in my gut."
 
-        scene bg akira_car
+        scene bg yuichi_intercom
+        with locationchange
+        
+        "As I'm walking to my car, I take out my cell phone and dial the top-most number on my contact list."
+
+        scene bg misc_car_ss
+        with locationchange
 
         aki "..."
 
-        show lilly basic_smile_phone at phonebox
+        show lilly basic_smileclosed_sum_phone at phonebox
         with charaenter
 
         li "Good evening. Lilly Satou speaking."
-
         aki "Yo..."
 
-        show lilly cane_satisfied_phone
+        show lilly cane_satisfied_sum_phone
         with chchange
 
-        li "Akira. So good to hear from you. "
+        li "Akira. So good to hear from you."
         aki "Had fun with the folks today?"
 
-        show lilly basic_smileclosed_phone
+        show lilly basic_smileclosed_sum_phone
         with chchange
 
         li "Your presence was missed here. The three of us went on a rather long walk today. Long for Father at least. He needs to rebuild his stamina, and Mother and I also felt that he needed to get out of the house more."
 
-        show lilly basic_reminisce_phone
+        show lilly basic_reminisce_sum_phone
         with chchange
 
         li "It just doesn't seem right that he spends most of his days doing little more than sleeping in and reading on occasion."
-
-        "Sounds like the old man is still struggling. My thoughts return briefly to Yuichi's words earlier about losing one's position as heir at this point in life. I make a mental note to tell Lilly about what my boyfriend said this evening since I think she'll find it interesting."
-
+        "Sounds like the old man is still struggling."
+        "My thoughts return briefly to Yuichi's words earlier about losing one's position as heir at this point in life. I make a mental note to tell Lilly about what my boyfriend said this evening since I think she'll find it interesting."
         aki "It's only natural he'll need some time to sort things out and fill that sudden void in his life."
 
-        show lilly basic_weaksmile_phone
+        show lilly basic_weaksmile_sum_phone
         with chchange
 
         li "How was your dinner with Yuichi?"
         aki "...are you busy right now?"
 
-        show lilly basic_smileclosed_phone
+        show lilly basic_smileclosed_sum_phone
         with chchange
 
         li "Just drinking tea with Hanako."
         aki "I know it's already late, but err..."
 
-        show lilly basic_smile_phone
+        show lilly basic_smile_sum_phone
         with chchange
 
         li "...when do you think you can be here?"
         "Wow, she caught on pretty quickly."
         aki "In 35 minutes. No, make that half an hour."
 
-        show lilly basic_cheerful_phone
+        show lilly basic_cheerful_sum_phone
         with chchange
 
         li "We'll be waiting."
