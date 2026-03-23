@@ -86,7 +86,7 @@ label sh_ch33:
         show akira basic_smile
         with locationchange
 
-        play ambient sfx_waves volume 0.7 fadein 2.0
+        play ambient sfx_waves volume 0.2 fadein 2.0
 
         "This area has slowly started becoming familiar terrain to me as well. The sound of the shore tends to put my mind at ease. Maybe the same is true for Akira."
         ha "You… like this place?"
@@ -147,8 +147,8 @@ label sh_ch33:
         "I think I remember what she's talking about."
         ha "So… that's what he meant."
 
-        show akira at twoleft
-        with { "master": charamovefast }
+        show akira:
+            ease 2.0 twoleft
 
         "Akira bends down and picks up a few smooth stones."
         "She flicks one away, and I see it bounce along the water surface several times before it sinks."
@@ -157,7 +157,10 @@ label sh_ch33:
 
         "{i}*splash* *splash* *splash*{/i}"
 
-        show akira basic_sad at twoleft
+        show akira at twoleft
+        with None
+    
+        show akira basic_sad
         with chchange
 
         aki "I must be coming across as very petty, complaining so much about my parents to a person who no longer has her own."
@@ -212,18 +215,24 @@ label sh_ch33:
         with chchange
 
         aki "To be completely honest, it's not just bad memories I have of them. There's been a few good ones, too."
+
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_vacation at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
+
         aki "Like the annual New Year, when our parents, our grandparents, Lilly, and I would visit a shrine to pray for good luck the upcoming year and play games afterwards. Also, our trips to the summer house…"
         ha "The one we visited?"
         aki "It was a different one back then, but in the same area. The three—and later the four—of us would go there from time to time, and that was also the place where Lilly and I'd get in touch with the British part of our heritage."
-
-        show akira basic_wistful
-        with chchange
-
         aki "Our own home was kind of traditional, but the summer house was more like… Well, the residences here in the UK. We'd speak English all the time, eat with cutlery instead of chopsticks, and Mom would read us Scottish folk tales or parables as bedtime stories."
         aki "It was also like… that intangible pressure I often felt didn't exist there. The atmosphere was simply different. Dad, and especially Mom, seemed different."
 
-        show akira basic_sad
-        with chchange
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_sad at twoleft
+        with locationchange
 
         aki "Of course, things'd revert to normal the moment we got in the car, but I still have good memories of those times, even though they became more and more rare as Dad advanced up the corporate ladder."
         ha "…pressure?"
@@ -235,22 +244,24 @@ label sh_ch33:
         aki "In other words, a long shot away from the kind of person the daughter of an upstanding family is supposed to be."
         ha "Your p-parents d-disapproved of who y-you were?"
 
-        show akira basic_resigned
-        with chchange
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_unfavorite at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
 
         aki "It's always been kind of subtle. It's not like they weren't nice to me, but there was often that subtle undertone of sadness like they were expecting me to be more… I dunno… elegant… lady-like… the whole shebang."
-
-        show akira basic_lost
-        with chchange
-
         aki "For a long time I felt like they expected something of me, but I didn't know exactly what that something was."
         aki "I found out eventually what that was as Lilly grew up. I think in the end, Mom and Dad always rued the fact that I couldn't be more like Lilly."
         "I get an uneasy feeling in my stomach as I attempt to determine if there's any bitterness in Akira's words."
         "If she felt like she lived in Lilly's shadow, how does she feel about her sister?"
         ha "Uhhh… H-how d-do you feel about Lilly?"
 
-        show akira basic_wistful
-        with chchange
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_wistful at twoleft
+        with locationchange
 
         "Akira sees the distressed look on my face and lets out a reassuring chuckle."
         aki "I guess lots of people would grow to secretly resent their sibling in that case, wouldn't they? Interestingly enough, that never happened with me."
@@ -292,7 +303,7 @@ label sh_ch33:
         with chchange
 
         aki "Heh."
-        "Akira's light-hearted remark about toddler-Lilly's cuteness was probably meant to lighten the mood, but it doesn't draw my attention away from the rest of her words, especially since this is a sensitive issue for me, myself."
+        "Akira's light-hearted remark about toddler-Lilly's cuteness was probably meant to lighten the mood, but it doesn't draw my attention away from the rest of her words, especially since this is a sensitive issue for me myself."
         "Didn't Akira make school friends or something? She's pretty sociable, if a bit rough. I always imagined her to have lots of friends, like Lilly."
         ha "Uh… Akira… H-how about y-your school days?"
 
@@ -305,23 +316,26 @@ label sh_ch33:
 
         aki "Elementary school was… I think mixed is the right word. Heh, get it?"
         ha "Uh… N-no."
-        aki "Sorry, didn't have time to make up a better punchline. Anyway, in the same way I've always been a bit of an outsider in the family, I've also been a bit of an outsider at school."
+        aki "Sorry, didn't have time to make up a better punchline."
+
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_elemschool at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
+
+        aki "Anyway, in the same way I've always been a bit of an outsider in the family, I've also been a bit of an outsider at school."
         ha "Outsider?"
-
-        show akira basic_distant
-        with chchange
-
         aki "When I started attending elementary school, I quickly discovered that I was the only kid in the school with a biracial background. I found that there were few convenient things about standing out in a crowd like that, but several downsides."
         aki "Some of the reactions I'd get were amusing in a stupid way. Like others asking me how on earth I was able to speak Japanese or being amazed that my blood was red like theirs instead of yellow. Other times, less funny things happened…"
         ha "You were… b-b-bullied?"
-
-        show akira basic_annoyed
-        with chchange
-
         aki "Picked on, from time to time. I mean, I looked pretty different from the rest, so I naturally attracted attention from all sorts of kids."
 
-        show akira basic_angry
-        with chchange
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_angry at twoleft
+        with locationchange
 
         aki "Now, before you start worrying about me, let me say that I've always been pretty strong for my size, and back in elementary school, I could even take on many of the boys."
         aki "Bullies don't like running the risk of a black eye when they pull their crap. So, all in all, things hardly ever truly escalated since I wasn't an easy target."
@@ -383,13 +397,16 @@ label sh_ch33:
         with chchange
 
         aki "You know what the funny thing is about the labels we human beings tend to stick on others? We usually pick one label and run with it, ignoring everything else about a person."
-        aki "In this case, I think people were so focussed on the very obvious fact that Lilly was blind, they quickly forgot that she was half-foreign. It's weird, but I think it played a role."
+        aki "In this case, I think people were so focused on the very obvious fact that Lilly was blind, they quickly forgot that she was half-foreign. It's weird, but I think it played a role."
         "I wonder what label ended up sticking in people's minds for me: the one about my burn scars or my disfunctional behavior?"
         aki "Anyway, by the time I was about to leave elementary school, I wasn't having that many conflicts anymore, and I was keeping my fingers crossed that things wouldn't get difficult once I'd get into middle school. Turns out I was right to worry."
         ha "You… went to the same school as Lilly, d-didn't you?"
 
-        show akira basic_angry
-        with chchange
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_midschool at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
 
         aki "Yeah. It was expensive, prestigious, all-girls, and hella strict. The worst place to be for someone like me in other words."
         aki "I spent a large part of elementary school playing mostly with boys. Lots of stuff people thought of as typical girl-stuff didn't really interest me. When I was suddenly thrown into Princess U, it wasn't just my mixed blood that made me stand out, but everything else about me, as well."
@@ -397,8 +414,8 @@ label sh_ch33:
         "Looks like I wasn't the only one whose middle school time was hard."
         ha "Didn't you t-tell your parents how you f-felt?"
 
-        show akira basic_pissed
-        with chchange
+        show ev akirapast_argument
+        with { "master": Dissolve(1.0) }
 
         aki "Surely you don't think they tossed me into a friggin' Japanese wife factory by accident? They were probably simply tired of relying on subtle correction attempts all the time, so they tried a more drastic method of molding me into a better daughter."
         aki "Of course I told them that I hated it there, but all they said was to please hang in there and keep going. Dad even had the audacity to suggest that this was in my best interests and that I'd be grateful one day."
@@ -406,8 +423,11 @@ label sh_ch33:
         "It's a little frightening how bitter Akira sounds, but there's one thing that scares me more than her tone."
         ha "Ummm… J-Japanese wife factory? D-does that m-mean that Lilly…?"
 
-        show akira basic_lost
-        with chchange
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_lost at twoleft
+        with locationchange
 
         "Akira's expression turns genuinely remorseful."
         aki "Sorry, I kind of went overboard with my venting. I didn't mean to imply anything about Lilly. To reassure you, middle school gave Lilly an additional layer of classy manners, but underneath, she's still the same person she's always been."
@@ -426,20 +446,25 @@ label sh_ch33:
         aki "Dad pulled a string or two at the company, and I was allowed to work at the legal department of SMT as a secretary. Back then, there were apparently already office rumors about a big change being in the wings."
         ha "Your parents moving?"
 
-        show akira basic_distant
-        with chchange
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_promotion at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
 
         aki "It was a little more complicated than that. Back then, Granddad was still in charge of the company, though he was ill during the last months before the big change. Eventually, Granddad revealed his plans for the company's future at the dinner table."
         aki "He and his brothers on the board of directors wanted to expand our clientele, but we weren't having a lot of success getting a foot in the door in China."
         aki "Business was booming in Inverness though, and the people there were doing a good job getting the European mainland to warm up to our brand."
         aki "So the board made the decision to make Inverness the new headquarters and have the Japanese branch concentrate completely on the domestic market from that point on."
         aki "Of course, a Satou had to be in charge of headquarters, and that's how Dad finally got his promotion to number one executive of the company."
-
-        show akira basic_angry
-        with chchange
-
         aki "A promotion and a plane ticket. He immediately accepted the offer, too. He said he was honored by the responsibility placed on him."
         aki "I wonder if he even considered how Lilly must have felt. I remember everybody applauding. I wondered even back then how many of those ovations were actually real."
+
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_angry at twoleft
+        with locationchange
 
         play sound sfx_rockskip
 
@@ -484,35 +509,37 @@ label sh_ch33:
         show akira basic_resigned
         with chchange
 
-        aki "Either I stayed with her or she'd be left with an ailing grandmother and grandfather. Shizune's family wasn't an option. Dad and Shizune's Dad hate each other. He wouldn't have permitted it."
+        aki "Either I stayed with her or she'd be left with an ailing grandmother and grandfather. Shizune's family wasn't an option. Dad and Shizune's dad hate each other. He wouldn't have permitted it."
         ha "W-what are y-your grandparents like?"
 
-        show akira basic_distant
-        with chchange
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_grandparents1 at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
 
         aki "To be honest, I never really knew Granddad. He was at work even more often than Dad was. Of course, he ranked higher than Dad. On Sundays he'd be out golfing with business pals or reading in his study."
         aki "The rest of the days he was at work or hanging out with co-workers. The company was his life as well since he stayed at its helm for a very long time, even though he could have retired years earlier."
-        aki "He even considered it a few years earlier, before ultimately reconsidering. He was a pretty heavy smoker, and it came back to bite him six years ago when he developed lung cancer."
+        aki "He even considered it a few years earlier before ultimately reconsidering. He was a pretty heavy smoker, and it came back to bite him six years ago when he developed lung cancer."
         aki "He was lucky they discovered it before it spread, but they still ended up removing a part of his right lung and with it an equally large part of his stamina."
         aki "Grandpa and Grandma used to live in the same neighborhood as ours in a house on a rather large incline with stone steps leading up to the front door."
         aki "After his surgery, it'd take him half an hour just to reach his own porch. Even Lilly could run circles around him at that point. So he and Grandma moved to another town, and we haven't had much contact with them ever since."
 
-        play sound sfx_rockskip
-
-        "{i}*splash* *splash* *splash*{/i}"
-
-        show akira basic_resigned
-        with chchange
+        show ev akirapast_grandparents2
+        with { "master": Dissolve(1.0) }
 
         aki "As for Grandma, when I was a child she'd drop by our home on a daily basis. She was nice enough. She was formal, polite, proper, and friendly, but also a bit distant and stoic."
         aki "She was more responsible than Mom, though. She'd always be the one to take me to the park to play when I was a kid. She was also the one who went to PTA meetings during Lilly's elementary school years instead of Mom."
         aki "Heh, somehow Mom always managed to come up with a reason to be busy with something else."
-
-        show akira basic_sad
-        with chchange
-
         aki "Thinking back on it, it's possible she was already going her own way even then, just on a smaller scale. Although, ironically, she didn't really get out of the house much back then. I remember Grandma scolding her about it a few times."
         aki "Heh, of course when I asked Grandma about that, I got a major scolding myself about how impolite it is to listen in. She was pretty strict, all in all."
+
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_sad at twoleft
+        with locationchange
+
         "Akira toys with one of her locks of hair for a moment."
         aki "Save for a few bad periods once in a while, Grandma's always been in pretty good health, but after Granddad's surgery, her physical condition took a nosedive as well. High blood pressure, ulcers, shortness of breath."
         aki "I guess his condition hit her harder than any of us expected. Between her declining health and the fallout of grandpa's surgery, I didn't feel it was responsible to leave Lilly in their care."
@@ -546,36 +573,34 @@ label sh_ch33:
         with chchange
 
         "A sad and slightly guilty look appears on Akira's face."
+
+        $ renpy.music.set_volume(0.1, 1.0, channel="ambient")
+
+        show ev akirapast_study1 at sepiamuted
+        show noiseoverlay
+        with { "master": Dissolve(1.0) }
+
         aki "I didn't think Dad was going to sponsor an attempt like that, so Lilly suggested letting go of our housekeeping staff and using the money Mom and Dad wired us every month to employ them to get me into one of those cram schools."
         aki "She was already a lot more independent at the time, but I still had a bad feeling about it."
-
-        show akira basic_angry
-        with chchange
-
         aki "Eventually, she managed to convince me to give it a try, and I gave in after swearing a solemn oath to her that if things became too much for her, I'd drop everything immediately and we'd go right back to the way things were."
-
-        show akira basic_smug
-        with chchange
-
         aki "I ended up passing the bar exam on the first try, apparently being one of the few ones who pulled that off."
         ha "W-wow…"
-
-        show akira basic_sweet
-        with chchange
-
         aki "In order to officially practice as a lawyer, I would have had to spent over a year training at the Supreme Court's training center in Tokyo, but since that involved leaving Lilly behind, I passed on that."
         aki "Practically speaking, it wasn't a big loss since they focus almost completely on litigation training there anyway, and hardly spend any time on contract drafting and other corporate practices."
         aki "I could do my job as a corporate lawyer even without it. Officially, it did mean I probably wouldn't be able to do my job at any place other than the family company."
+
+        show ev akirapast_study2
+        with { "master": Dissolve(1.0) }
+
         aki "Still, I promised myself to spend all the free time I had with Lilly if I passed the bar exam, and I did my best to keep it. She was the one who was rooting for me and making sacrifices for me that entire time. It was the least I could do for her."
         ha "I've… always been a b-bit envious of how c-close you and Lilly are."
-
-        show akira basic_wistful
-        with chchange
-
         aki "I suppose that with our parents out of the picture, we were the only true constants in each other's lives for a long time. That creates a bond."
 
-        show akira basic_lost
-        with chchange
+        $ renpy.music.set_volume(0.2, 1.0, channel="ambient")
+
+        scene bg inverness_shore
+        show akira basic_lost at twoleft
+        with locationchange
 
         aki "But bonds have to be maintained, too. And right now, I can't shake the feeling that our bond used to be in a better condition than it is now…"
 

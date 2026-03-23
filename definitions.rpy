@@ -145,6 +145,8 @@ init:
         ease 1.0 ypos 0.7 alpha 0.0
     transform sepia:
         matrixcolor SepiaMatrix(tint="#ffefd7")
+    transform sepiamuted:
+        matrixcolor TintMatrix("#ffefd7") * SaturationMatrix(0.5)
 
     define nextchapter = Dissolve(2.0)
     define endchapter = Dissolve(3.0)

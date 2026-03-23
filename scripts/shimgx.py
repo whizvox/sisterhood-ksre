@@ -303,6 +303,17 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
+    # chapter 33
+    ("reference/Event Art/Akira Past/akirapast_dinnerargument.jpg", "event/akirapast/akirapast_argument.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_elementary.jpg", "event/akirapast/akirapast_elemschool.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_grandparents1.jpg", "event/akirapast/akirapast_grandparents1.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_grandparents2.jpg", "event/akirapast/akirapast_grandparents2.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_middleschool.jpg", "event/akirapast/akirapast_midschool.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_promotion.jpg", "event/akirapast/akirapast_promotion.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_studying1.jpg", "event/akirapast/akirapast_study1.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_studying2.jpg", "event/akirapast/akirapast_study2.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_unfavorite.jpg", "event/akirapast/akirapast_unfavorite.jpg"),
+    ("reference/Event Art/Akira Past/akirapast_vacation.jpg", "event/akirapast/akirapast_vacation.jpg"),
     # chapter 39
     ("reference/Event Art/Ch10+20 Pillow Talk/pillowtalk dark2.png", "event/pillowtalk/pillowtalk_dark2.png", [RESIZE_1080P]),
     ("reference/Event Art/Ch10+20 Pillow Talk/hanako down dark2.png", "event/pillowtalk/pillowtalk_hanako_down_dark2.png", [RESIZE_1080P]),
