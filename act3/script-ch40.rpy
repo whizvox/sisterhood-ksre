@@ -872,24 +872,24 @@ label sh_ch40:
 
         aki "..."
 
-        show lilly basic_smileclosed_sum_phone at phonebox
+        show lilly basic_smileclosed_cas_phone at phonebox
         with charaenter
 
         li "Good evening. Lilly Satou speaking."
         aki "Yo..."
 
-        show lilly cane_satisfied_sum_phone
+        show lilly cane_satisfied_cas_phone
         with chchange
 
         li "Akira. So good to hear from you."
         aki "Had fun with the folks today?"
 
-        show lilly basic_smileclosed_sum_phone
+        show lilly basic_smileclosed_cas_phone
         with chchange
 
         li "Your presence was missed here. The three of us went on a rather long walk today. Long for Father at least. He needs to rebuild his stamina, and Mother and I also felt that he needed to get out of the house more."
 
-        show lilly basic_reminisce_sum_phone
+        show lilly basic_reminisce_cas_phone
         with chchange
 
         li "It just doesn't seem right that he spends most of his days doing little more than sleeping in and reading on occasion."
@@ -897,26 +897,26 @@ label sh_ch40:
         "My thoughts return briefly to Yuichi's words earlier about losing one's position as heir at this point in life. I make a mental note to tell Lilly about what my boyfriend said this evening since I think she'll find it interesting."
         aki "It's only natural he'll need some time to sort things out and fill that sudden void in his life."
 
-        show lilly basic_weaksmile_sum_phone
+        show lilly basic_weaksmile_cas_phone
         with chchange
 
         li "How was your dinner with Yuichi?"
         aki "...are you busy right now?"
 
-        show lilly basic_smileclosed_sum_phone
+        show lilly basic_smileclosed_cas_phone
         with chchange
 
         li "Just drinking tea with Hanako."
         aki "I know it's already late, but err..."
 
-        show lilly basic_smile_sum_phone
+        show lilly basic_smile_cas_phone
         with chchange
 
         li "...when do you think you can be here?"
         "Wow, she caught on pretty quickly."
         aki "In 35 minutes. No, make that half an hour."
 
-        show lilly basic_cheerful_sum_phone
+        show lilly basic_cheerful_cas_phone
         with chchange
 
         li "We'll be waiting."
