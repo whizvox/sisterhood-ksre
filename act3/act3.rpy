@@ -7,6 +7,31 @@ init 30:
         parallel:
             linear 2.0 rotate rotation_end
 
+    transform sh_drizzle_tf(my_offset, my_xzoom, my_yzoom):
+        xalign 0.5 yalign 0.5 xzoom my_xzoom yzoom my_yzoom
+        my_offset
+        block:
+            choice:
+                f"{sh_path}/vfx/drizzle/drizzle1.png" with Dissolve(0.1)
+                0.2
+            choice:
+                f"{sh_path}/vfx/drizzle/drizzle2.png" with Dissolve(0.1)
+                0.2
+            choice:
+                f"{sh_path}/vfx/drizzle/drizzle3.png" with Dissolve(0.1)
+                0.2
+            choice:
+                f"{sh_path}/vfx/drizzle/drizzle4.png" with Dissolve(0.1)
+                0.2
+            choice:
+                f"{sh_path}/vfx/drizzle/drizzle5.png" with Dissolve(0.1)
+                0.2
+            choice:
+                f"{sh_path}/vfx/drizzle/drizzle6.png" with Dissolve(0.1)
+                0.2
+            repeat
+
+
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
     define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
     define yui = Character(_("Yuichi"), who_color="#b37b7b")
@@ -40,7 +65,18 @@ init 30:
 
     define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
 
+init 31:
+    # credit: Marius Oberholster of Pixabay
+    image drizzle = Composite(
+        (1920, 1080),
+        (0, 0), sh_drizzle(),
+        (0, 0), sh_drizzle(0.1, -1.2, 1.2)
+    )
+
 init 30 python:
+    def sh_drizzle(my_offset = 0.0, my_xzoom = 1.0, my_yzoom = 1.0):
+        return sh_drizzle_tf(my_offset, my_xzoom, my_yzoom)
+
     sisterhood_chapters.append(
         (_("Act 3"), [
             (_("Week at Hisao's"), "sh_ch35.s1", _("Hanako wakes up in Hisao's home and catches up with Lilly.")),
@@ -55,7 +91,11 @@ init 30 python:
             (_("The Quill is Mightier than the Sword"), "sh_ch39.s2", _("Hanako attends the first meeting of the club."), "hanako"),
             (_("Perspective Shift"), "sh_ch39.s3", _("Hanako and Jun reflect on the evening's events."), "hanako"),
             (_("Just Friends"), "sh_ch40.s1", _("While visiting Japan, Akira has dinner with her former boyfriend."), "akira"),
-            (_("Just Friends?"), "sh_ch40.s2", _("Akira and her ex discuss office politics and inheritance."), "akira")
+            (_("Just Friends?"), "sh_ch40.s2", _("Akira and her ex discuss office politics and inheritance."), "akira"),
+            (_("Morning Practice"), "sh_ch41.s1", _("Hanako convinces Hisao to practice indoors for a change."), "hanako"),
+            (_("Missing Star"), "sh_ch41.s2", _("Hanako learns that she and her club won a prize."), "hanako"),
+            (_("Orientation"), "sh_ch41.s3", _("Hanako has a talk about her university applications with Mutou."), "hanako"),
+            (_("The Promising Future"), "sh_ch41.s4", _("Hanako studies for the mock exams with Hisao and Lilly."), "hanako")
         ])
     )
 
