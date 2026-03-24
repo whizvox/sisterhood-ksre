@@ -585,7 +585,7 @@ label sh_ch33:
         aki "Eventually, she managed to convince me to give it a try, and I gave in after swearing a solemn oath to her that if things became too much for her, I'd drop everything immediately and we'd go right back to the way things were."
         aki "I ended up passing the bar exam on the first try, apparently being one of the few ones who pulled that off."
         ha "W-wow…"
-        aki "In order to officially practice as a lawyer, I would have had to spent over a year training at the Supreme Court's training center in Tokyo, but since that involved leaving Lilly behind, I passed on that."
+        aki "In order to officially practice as a lawyer, I would have had to spend over a year training at the Supreme Court's training center in Tokyo, but since that involved leaving Lilly behind, I passed on that."
         aki "Practically speaking, it wasn't a big loss since they focus almost completely on litigation training there anyway, and hardly spend any time on contract drafting and other corporate practices."
         aki "I could do my job as a corporate lawyer even without it. Officially, it did mean I probably wouldn't be able to do my job at any place other than the family company."
 
