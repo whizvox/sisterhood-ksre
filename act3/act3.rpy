@@ -37,6 +37,8 @@ init 30:
     define yui = Character(_("Yuichi"), who_color="#b37b7b")
     define iwa_ = Character(_("Girl"), who_color="#ffffff")
 
+    image naomi bend_laugh_superclose = f"{sh_path}/sprites/naomi/superclose/naomi_bend_laugh_superclose.png"
+
     image shrdraw_heart = Text(_("{size=133}{font=symbols}♡"))
     image shrdraw_plus1 = Text(_("{size=133}{font=symbols}♡{/font} + 1"))
     image shrdraw_plus2 = Text(_("{size=133}{font=symbols}♡{/font} + 2"))

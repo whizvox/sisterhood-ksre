@@ -55,6 +55,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Uniform/Uni Worry", "basic_worry_uni"),
     ("sprite edits/hisao/Uni Neutral-Blush", "basic_neutralblush_uni"),
     ("sprite edits/hisao/Uni Sweet", "basic_sweet_uni"),
+    ("Sprites/Hisao/Uniform/Uni Bashful", "basic_bashful_uni"),
     ("Sprites/Hisao/Uniform/Uni Embarassed", "basic_emb_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Annoy", "cross_annoy_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Blush", "cross_blush_uni"),
@@ -318,6 +319,8 @@ def main():
     for entry in naomi:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/naomi/naomi_{entry[1]}.png", replace=replace_naomi, target_height=1000)
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/naomi/close/naomi_{entry[1]}_close.png", replace=replace_naomi, crop=(0, 0, 1350, 1800), target_height=1080)
+    # only supercloseup of naomi
+    crop_and_resize_image(f"../reference/Sprites/Naomi/Naomi bend laugh.png", f"../sprites/naomi/superclose/naomi_bend_laugh_superclose.png", replace=replace_naomi, crop=(0, 233, 1350, 1313))
 
     for entry in natsume:
         crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/natsume_{entry[1]}.png", replace=replace_natsume, target_height=950)

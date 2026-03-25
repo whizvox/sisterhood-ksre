@@ -316,7 +316,7 @@ label sh_ch41:
         "Natsume looks past me at the rainy weather outside."
         nt "I don't think it's going to stop raining before classes start. I take it that you're not planning to sprint through it?"
         "I pulled a sprint through the rain from the boys' dorm to the girls' dorm this morning, but I'd rather not arrive in class completely winded and out of breath, so I shake my head."
-        ha "I have an umbrella in my room. M-Maybe it's a good idea to go and get it."
+        ha "I have an umbrella in my room. M-maybe it's a good idea to go and get it."
         nt "If you're heading out now, you can share mine."
         "She opens her backpack and takes a rather small folding umbrella out of it."
         ha "Oh... ah... Thanks."
@@ -326,49 +326,61 @@ label sh_ch41:
         ha "You've... already been out this morning?"
         nt "Yes, for a little walk. It's difficult, but the nurse said that it's especially important to remain physically active even during the bad times."
 
-        scene bg school_gardens
-        show natsume basic_neutral_close at left
-        show rain normal
+        play ambient sfx_rain volume 0.2 fadein 1.0
+
+        scene bg school_dormext_full_rn
+        show natsume basic_neutral_close_rn at right
+        show drizzle
         with charaenter
 
-        show natsume basic_neutral_close at twoleft
+        show natsume basic_neutral_close_rn at center
         with charamove
+
+        "We start walking, and I do my best to match Natsume's slow pace while holding the umbrella above our heads."
+
+        scene bg school_gardens_rn
+        show natsume basic_neutral_close_rn
+        show drizzle
+        with locationchange
 
         nvl clear
         nvl show dissolve
 
-        n "We start walking, and I do my best to match Natsume's slow pace while holding the umbrella above our heads. Natsume's reason for attending Yamaku is because she has rheumatoid arthritis, and if Naomi is to be believed, she's had a particularly bad spell last week."
-        n "I don't really have as much interaction with Natsume as I do with Naomi, but she, Naomi and I usually join up these days whenever we're required to work in groups of three, and we also have to work on stuff together during our activities at the newspaper club from time to time."
+        n "Natsume's reason for attending Yamaku is because she has rheumatoid arthritis, and if Naomi is to be believed, she's had a particularly bad spell last week."
+        n "I don't really have as much interaction with Natsume as I do with Naomi, but she, Naomi, and I usually join up these days whenever we're required to work in groups of three, and we also have to work on stuff together during our activities at the newspaper club from time to time."
         n "All in all, even though we're not extremely close we still get along pretty well."
 
         nvl hide dissolve
 
         ha "How... ah... is your arthritis today?"
 
-        show natsume basic_serious_close
+        show natsume basic_serious_close_rn
         with chchange
 
         nt "A little better than last week, though maybe that's just because I've had a higher dose of medication over the last few days. I think I'll manage as long as it doesn't get any worse. If it does, however, I'll be in big trouble."
         ha "Because of the upcoming National Center Test for University Admissions?"
 
-        show natsume basic_sad_close
+        show natsume basic_sad_close_rn
         with chchange
 
-        nt "Yes. I can't cram if I'm in constant pain, but I won't be able to study if I'm completely drugged up on painkillers either."
+        nt "Yes. I can't cram if I'm in constant pain, but I won't be able to study if I'm completely drugged up on painkillers, either."
         ha "I'm... sure you'll do fine. You've always had very good grades in class."
 
-        show natsume hands_neutral_close
-        pause 0.5
-        show natsume hands_smile_close
-        with chchange
+        show natsume hands_neutral_close_rn
+        with charachangealways
 
-        "Natsume gives me a surprised look for a second or two but then catches herself and smiles."
+        pause 0.5
+
+        show natsume hands_smile_close_rn
+        with charachangealways
+
+        "Natsume gives me a surprised look for a second or two, but then catches herself and smiles."
         nt "Thanks."
-        ha "I-Is something wrong?"
+        ha "I-is something wrong?"
 
         "She shakes her head and smiles again."
 
-        show natsume basic_cheerful_close
+        show natsume basic_cheerful_close_rn
         with chchange
 
         nt "It's nothing. I never realized you paid attention to my grades. I sometimes just forget that we've spent nearly three years in the same class already. Sorry."
@@ -376,28 +388,30 @@ label sh_ch41:
         "Looking back, I feel a sense of regret that it's taken me this long to start opening up to my neighbors in class."
         ha "It's okay."
 
-        scene bg school_courtyard
-        show rain normal
-        show natsume basic_neutral_close at center
+        scene bg school_courtyard_rn
+        show natsume basic_neutral_close_rn
+        show drizzle
+        with locationchange
 
         "Natsume nods, and her smile slowly disappears again."
-        nt "Good grades aren't really enough though. More important is the upcoming National Center Test. From what I've seen of it, they call the preceeding period 'examination hell' for a reason."
+        nt "Good grades aren't really enough though. More important is the upcoming National Center Test. From what I've seen of it, they call the preceeding period ‘examination hell’ for a reason."
         ha "From what you've seen?"
 
-        show natsume basic_serious_close
+        show natsume basic_serious_close_rn
         with chchange
 
         nt "I have an older cousin who went through this thing four years ago. He eventually made it into the university he wanted to attend, but near the end he was really hanging on for dear life."
-        nt "He was like sleeping only a few hours a day, and he lost several kilos in weight in the process. He was afraid that if he slept more than four hours, he was guaranteed to fail the tests. My aunt said he looked like a zombie by the time the exams started."
+        nt "He was, like, sleeping only a few hours a day, and he lost several kilos of weight in the process. He was afraid that if he slept more than four hours, he was guaranteed to fail the tests. My aunt said he looked like a zombie by the time the exams started."
         ha "That sounds... really excessive."
         nt "Well, we are competing on a national scale, you know?"
         ha "I guess... all we can do is our best."
-
         "It probably helps that while I'm aiming for a good university, I'm not trying to get into the really famous ones like Tokyo University or Kyoto University, which are usually restricted to the cream of the national crop."
         nt "I guess you're right."
 
+        stop ambient fadeout 1.0
+
         scene bg school_lobby
-        show natsume hands_neutral_close at center
+        show natsume hands_neutral_close
         with charaenter
 
         "We reach the school building, and I shake the raindrops off Natsume's umbrella before folding it up again and giving it back to her."
@@ -425,6 +439,7 @@ label sh_ch41:
         nt "It's probably something good. We spent most of yesterday studying together, and there were several moments where she'd start grinning like a loon completely out of the blue. Still wouldn't tell me what was going through her mind."
 
         scene bg school_scienceroom
+        with locationchange
 
         "We make it to the classroom, and I take a quick peek inside before entering."
 
@@ -436,42 +451,67 @@ label sh_ch41:
         show hisao basic_bashful_uni_close at twoleft
         with chchange
 
-        "I quietly walk up to him, whisper a quick 'hey' and then quickly move to my own seat while hoping that nobody caught the knowing look we shared."
+        "I quietly walk up to him, whisper a quick “hey”, and then quickly move to my own seat while hoping that nobody caught the knowing look we shared."
 
         hide hisao
+        with charaexit
 
-        "I take out my books, but before I start studying, my thoughts return to this morning's earlier events. Before today, my way of taking the initiative was simply dropping a hint or two and then leaving things up to him, only taking the active role if he asked me to."
-        "Today has been the first time that I've actively seduced him. I wonder what he thinks of me now that the adrenaline rush has settled down. Did I act inappropriately? As fun as it was, I do feel a little embarrassed about it in hindsight."
+        "I take out my books, but before I start studying, my thoughts return to this morning's earlier events."
+        "Before today, my way of taking the initiative was simply dropping a hint or two and then leaving things up to him, only taking the active role if he asked me to."
+        "Today has been the first time that I've actively seduced him. I wonder what he thinks of me now that the adrenaline rush has settled down."
+        "Did I act inappropriately? As fun as it was, I do feel a little embarrassed about it in hindsight."
 
-        play music music_comedy fadein 4.0
+        stop music
+
+        play sound sfx_impact2
+
+        show naomi basic_grin at offscreenright
+        with None
+
         show naomi basic_grin at right
+        with MoveTransition(0.2, time_warp=_warper.easein)
 
         na "There you are!"
-        "My gaze jumps from my study books to the doorway, and I see my friend with the bleached blonde hair standing there sporting the biggest grin I've ever seen in my life. Natsume wasn't kidding when she said Naomi was in high spirits."
-        "I'd probably be happy for her if her attention wasn't focussed directly on me right now. As it is, I'm feeling very uncomfortable."
 
-        show naomi bend_grin at center
+        play music music_comedy fadein 4.0
+
+        "My gaze jumps from my study books to the doorway, and I see my friend with the bleached blonde hair standing there sporting the biggest grin I've ever seen in my life. Natsume wasn't kidding when she said Naomi was in high spirits."
+        "I'd probably be happy for her if her attention wasn't focused directly on me right now. As it is, I'm feeling very uncomfortable."
+
+        show naomi bend_grin
+        with Dissolve(0.2)
+
+        show naomi at center
         with charamovefastest
-        show naomi bend_grin_close at center
-        with chchange
+
+        show naomi bend_grin_close
+        with characlose
 
         na "Guess what? Guess what?"
 
-        show crowd behind naomi
+        play ambient sfx_crowd_indoors
 
-        "Naomi, without breaking stride, walks right up to me, and I'm completely aware of the fact that all the students who already made it to class are looking at us right now. I instinctively get up and back away. Naomi, however, seems too excited to notice."
-        ha "W-What?"
+        show crowd behind naomi
+        with charaenter
+
+        "Naomi, without breaking stride, walks right up to me, and I'm completely aware of the fact that all the students who already made it to class are looking at us right now."
+        "I instinctively get up and back away. Naomi, however, seems too excited to notice."
+        ha "W-what?"
 
         show naomi bend_laugh_close
         with chchange
 
-        na "We totally rock! Mwah!"
+        na "We totally rock!"
+
+        show naomi bend_laugh_superclose
+        with characlose
+
+        na "Mwah!"
 
         show naomi basic_smile_close
-        with chchange
+        with charadistant
 
         ha "Eek!"
-
         "I yelp in surprise as my upbeat neighbor steps forward and lands a big wet smacker on my left cheek. My face instantly turns bright red, and my classmates' gazes, which were aimed at the two of us until just now, are now all directed squarely at me."
         "Feeling like a deer in the headlights, I back away until I'm pressed against the wall."
         ha "Ah... I... ummm..."
@@ -481,7 +521,6 @@ label sh_ch41:
         with charaenter
 
         hi "Hey Inoue!"
-
         "Just when I'm about to consider making a break for it, the annoyed voice of my boyfriend cuts through the murmur."
         hi "Why don't you go and get yourself a girlfriend of your own instead of hitting on somebody else's?"
 
