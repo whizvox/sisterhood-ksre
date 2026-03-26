@@ -105,8 +105,9 @@ init 30 python:
     sh_sprites("karla", ["sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["awkward", "smileclosed"])
-    sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo"])
-    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure"], poses=["basic"])
+    sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
+    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure", "smileclosed"], poses=["basic"])
+    sh_sprites("naomi", ["grinclosed"], poses=["bend"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])

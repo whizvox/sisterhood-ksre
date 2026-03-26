@@ -514,123 +514,145 @@ label sh_ch41:
         ha "Eek!"
         "I yelp in surprise as my upbeat neighbor steps forward and lands a big wet smacker on my left cheek. My face instantly turns bright red, and my classmates' gazes, which were aimed at the two of us until just now, are now all directed squarely at me."
         "Feeling like a deer in the headlights, I back away until I'm pressed against the wall."
+
+        show naomi basic_smile
+        with charadistant
+
         ha "Ah... I... ummm..."
 
-        show naomi basic_confused_close
         show hisao basic_frown_uni at left
+        show naomi basic_confused
         with charaenter
 
         hi "Hey Inoue!"
         "Just when I'm about to consider making a break for it, the annoyed voice of my boyfriend cuts through the murmur."
         hi "Why don't you go and get yourself a girlfriend of your own instead of hitting on somebody else's?"
 
-        show naomi basic_tongue_close
+        show naomi basic_tongue
         with chchange
 
         "I'm not sure if this remark was intended to divert attention away from me or if he's simply voicing his annoyance with Naomi's behavior, but regardless of the intention, the class bursts into laughter and people focus back on Naomi, who grins sheepishly and sticks her tongue out at Hisao."
         na "Is that jealousy I smell, Nakai?"
 
-        show natsume basic_annoy at tworight behind naomi
+        show natsume basic_annoy at tworight_sittingpos behind naomi
         with charaenter
 
         "Natsume groans and gives Naomi a hard poke in the ribs with the handhold of her crutch."
         nt "Stop being such a bonehead. What's this all about, and why is it necessary to make such a spectacle out of it?"
 
-        show naomi basic_grinclosed_close
+        show naomi basic_grinclosed
         with chchange
 
         "Naomi excitedly smiles at her best friend and produces a piece of paper from her handbag."
 
-        show natsume basic_neutral at tworight
-        show naomi bend_wink at right
+        show naomi bend_wink
+        with Dissolve(0.2)
+
+        show naomi at right
         with charamovefastest
+
+        show natsume basic_neutral
+        with chchange
 
         na "Tadaah! Check this out!"
 
-        show natsume hands_neutral
-        show naomi bend_laugh at center
+        show natsume:
+            "natsume hands_neutral" with charachangealways
+        with None
+
+        show naomi bend_laugh
+        with Dissolve(0.2)
+
+        show naomi at center
         with charamovefastest
+        
         show naomi bend_laugh_close
+        with Dissolve(0.2)
 
         "Natsume leans forward to read the paper Naomi's holding, but before her eyesight can focus, Naomi turns and presses it into my hands."
         na "Oh, right! You read it first, Hanako!"
 
         show natsume basic_neutral
+        with chchange
 
         "Still feeling a little nervous, I take the piece of paper from Naomi and attempt to read it without letting my classmates' stares get to me."
-        "Despite my frantically beating heart and nervousness, I manage to keep myself together long enough to read the piece of paper which turns out to be a certificate and I let out a surprised cry as I realize what it means."
+        "Despite my frantically beating heart and nervousness, I manage to keep myself together long enough to read the piece of paper."
+        "It turns out to be a certificate. I let out a surprised cry as I realize what it means."
         ha "Oh!"
 
-        show hisao basic_speak_uni at left
+        show hisao basic_speak_uni
         with chchange
 
         "A proud smile appears on my face for a moment, and Hisao's previously annoyed frown gives way to a curious expression as he notices this."
         hi "What is it, Hanako?"
         ha "Umm... W-we won something in one of the writing contests we signed up for."
 
-        show hisao basic_smile_uni at left
+        show hisao basic_smile_uni
         with chchange
 
         hi "Really?"
 
         show hisao basic_smile_uni_close
-        with chchange
+        show naomi bend_smile
+        with charadistant
 
         "He walks up to me, and I hand him the certificate."
         hi "It says here that your contribution made third place in the writing competition for high school students organized by a section of the Letters Faculty at Osaka University. The prize money is a sum of 20,000 yen."
 
-        show naomi basic_laugh_close
+        show naomi basic_laugh
         with chchange
 
         "Naomi once again gives an excited thumbs-up."
         na "Isn't it awesome?"
         "Takashi Maeda, who sits in front of me in class, gives Naomi a grumpy glare."
-        "Takashi" "You raised all this ruckus for a third place?"
+        "Takashi" "You raised all this ruckus for third place?"
 
-        show naomi basic_annoy_close
+        show naomi basic_annoy
         with chchange
 
         "Naomi narrows her eyes and shoots a withering look of her own right back at her classmate."
-
         na "Tell me Maeda, how many contests have you participated in? Ever won anything? Have your artistic talents already been recognized by people in the field? Holding expositions already?"
 
-        show natsume hands_cheerful_close at tworight
-        show naomi basic_neutral_close
-        with chchange
+        show natsume hands_cheerful at tworight:
+            xpos 0.65
+        show naomi basic_neutral
+        with charachangealways
 
-        "Natsume rolls her eyes, gets up and puts a hand on her best friend's shoulder."
-        nt "Alright, relax already. You could have been more subtle about this whole thing, but I think it's a great achievement for both of you. I mean, it's not like you girls have had years of experience, right? I really am impressed."
+        "Natsume rolls her eyes, gets up, and puts a hand on her best friend's shoulder."
+        nt "Alright, relax already. You could have been more subtle about this whole thing, but I think it's a great achievement for both of you."
+        nt "I mean, it's not like you girls have had years of experience, right? I really am impressed."
 
-        show naomi basic_smileclosed_close
+        show naomi basic_smileclosed
         with chchange
 
         "Naomi beams at her friend's words."
         na "That's kind of what Hoshino said. He reminded me that there were close to 200 participants, so in the end we still did well."
 
-        show natsume hands_smile_close
+        show natsume hands_smile
         show hisao basic_smileclosed_uni_close
         with chchange
 
         "Hisao gives me a proud look."
         hi "I'd love to hear more about that, but..."
 
-        show hisao basic_smile_uni_close
-        show naomi basic_smile_close
-        with chchange
+        stop ambient fadeout 3.0
 
         show muto normal at right behind natsume
-        with charaenter
+        show hisao basic_smile_uni_close
+        show naomi basic_smile
         hide crowd
+        with charaenter
 
         "He looks at the doorway, and we notice that Mutou has just arrived in class."
         hi "...it looks like it'll have to wait."
 
-        scene black
-        with Dissolve(2.0)
-        pause 1.0
+        stop music fadeout 2.0
+
         scene bg school_scienceroom
         show muto normal at tworight
-        play music music_daily fadein 4.0
+        with shorttimeskip
+
+        queue music music_daily fadein 4.0
 
         mu "...and I don't think I need to stress the importance of being well-prepared for the next week. You are all free to spend this hour and the afternoon studying for whatever subject you believe will need the most attention. Be sure to make the most of the time you still have."
         "I can hear a few soft sighs. Mutou isn't really telling anyone anything new, but I suppose it's part of his job to keep harping on this."
@@ -639,32 +661,30 @@ label sh_ch41:
         nvl show dissolve
 
         n "Somewhere around the middle of next week, we'll have mock exams. They're the closest thing to a dress rehearsal for the National Center Test we'll be taking in January that we're going to get."
-        n "Like the real ones, they'll be held over the course of two days and even though the results officially don't matter, students who underperform will be expected to take part in a heavy dose of supplementary lessons until mid-January to catch up in the subjects they did badly in."
+        n "Like the real ones, they'll be held over the course of two days. Even though the results officially don't matter, students who underperform will be expected to take part in a heavy dose of supplementary lessons until mid-January to catch up in the subjects they did badly in."
         n "That alone seems to be a good motivator for everyone to study as hard as they can in order to get a good grade next week."
 
-        nvl clear
         nvl hide dissolve
 
         mu "If you want to study in small groups, that's fine as well."
-
         "I can distantly hear Misha asking Hisao to explain a math problem to her, so I open my own study book without waiting for my boyfriend to join me."
 
         hide muto
+        with charaexit
+
         show natsume basic_smile at tworight
         show naomi basic_smile at right
         with charaenter
 
         "As I resume reading through the chapter I started on earlier this morning, I hear Natsume whisper to her best friend."
-
         nt "So, what was your winning story about?"
 
         show naomi bend_grin
-        show natsume hands_neutral
         with chchange
 
         na "Hehehe, no more rolling your eyes this time? I see you're finally starting to take The Broken Quills seriously. Better late than never."
 
-        show natsume basic_serious
+        show natsume hands_neutral
         with chchange
 
         "Natsume sighs impatiently."
@@ -679,10 +699,14 @@ label sh_ch41:
         nt "Can you help me with this chapter here?"
         ha "Uh? Ummm... Sure."
 
-        show natsume hands_smile at center
-        with charamove
-        show natsume hands_smile_close
+        show natsume hands_smile
         with chchange
+
+        show natsume at twoleft
+        with charamove
+
+        show natsume hands_smile_close
+        with charaenter
 
         "Natsume moves her chair next to mine and sits down at my desk."
 
@@ -697,13 +721,18 @@ label sh_ch41:
         "Naomi gives her friend a mock-offended look."
         na "Hey, don't ignore me like that. I was going to tell you already."
 
-        show natsume basic_smile_close
-        show naomi basic_smile_close
+        show naomi basic_smile
         with chchange
 
-        "She takes her own chair and joins us at my desk before nodding at me to indicate it's okay for me to tell Natsume what she wants to know."
+        show naomi at tworight
+        with charamove
 
-        ha "Ummm... The name of the story is 'The Missing Star'. It's about a blind student who joins his school's astronomy club. It's... a short story we submitted for that particular contest."
+        show natsume basic_smile_close
+        show naomi basic_smile_close
+        with charaenter
+
+        "She takes her own chair and joins us at my desk before nodding at me to indicate it's okay for me to tell Natsume what she wants to know."
+        ha "Ummm... The name of the story is ‘The Missing Star’. It's about a blind student who joins his school's astronomy club. It's... a short story we submitted for that particular contest."
 
         show natsume hands_smile_close
         with chchange
@@ -718,10 +747,6 @@ label sh_ch41:
         ha "They're all... team efforts."
 
         show natsume basic_smile_close
-        with chchange
-
-        "Naomi takes this moment to jump into the conversation."
-
         show naomi bend_smile_close
         with chchange
 
@@ -730,14 +755,14 @@ label sh_ch41:
         show naomi bend_wink_close
         with chchange
 
-        na "We have a couple of rules in place. No scrapping the other person's ideas, merely refining them or asking them to be reconsidered. No new ideas after the story's been switched back and forth once. And no mechas, zombies, ninja's, pirates or characters belonging to existing works."
+        na "We have a couple of rules in place. No scrapping the other person's ideas, merely refining them, or asking them to be reconsidered. No new ideas after the story's been switched back and forth once. And no mechas, zombies, ninjas, pirates, or characters belonging to existing works."
         "Natsume grins."
         nt "You've really been restraining yourself."
 
         show naomi basic_smile_close
         with chchange
 
-        "I was pleasantly surprised about that as well. Jun insisted on the zombie/ninja/pirate/mecha rule because she was worried that Naomi would spend all our meetings coming up with inane and clichéd ideas, but it turned out that a lot of her proposals were remarkably sensible."
+        "I was pleasantly surprised about that as well. Jun insisted on the zombie-ninja-pirate-mecha rule because she was worried that Naomi would spend all our meetings coming up with inane and clichéd ideas, but it turned out that a lot of her proposals were remarkably sensible."
         ha "Naomi's really put forth a lot of good ideas. Most of the ideas we ended up using were hers."
 
         show naomi bend_laugh_close
@@ -792,7 +817,7 @@ label sh_ch41:
         show naomi basic_shock_close
         with chchange
 
-        na "B-B-B-B-But....!"
+        na "B-b-b-b-but....!"
 
         "I just barely manage to hold back a giggle myself at Naomi's mortified expression. I don't think that Karla's even a tiny bit interested in our prize money. Our winnings are probably little more than pocket change to her."
 
@@ -832,12 +857,12 @@ label sh_ch41:
 
         "Her face suddenly lights up, and a smile appears on her face as she holds out the certificate to me."
         na "...we could simply let Hanako have it."
-        ha "M-Me? But why me?"
+        ha "M-me? But why me?"
 
         show naomi bend_wink_close
         with chchange
 
-        na "Jun and I have plenty of posters hanging on the walls of our room and lots of other decorations as well. It'll stand out more in your room, and while you're studying, you can look at it as a reminder that we can do anything if we put our mind to it!"
+        na "Jun and I have plenty of posters hanging on the walls of our rooms and lots of other decorations as well. It'll stand out more in your room, and while you're studying, you can look at it as a reminder that we can do anything if we put our mind to it!"
         "I think she's trying to say that my room's the one most in need of additional decorations, and I might be the one most in need of motivational means to stay positive. I could be wrong though. It's not really like Naomi to be this diplomatic."
         "Still, the hint about my room's atmosphere aside, it's a pretty sweet gesture."
         ha "Ah..."
@@ -866,7 +891,7 @@ label sh_ch41:
         with chchange
 
         na "It's the last outing we'll have. That makes it kind of special. Also..."
-        "That's a good point. After this week's release, Naomi, Natsume, Hideki and I will be officially putting our club membership on hold in order to focus completely on our exams."
+        "That's a good point. After this week's release, Naomi, Natsume, Hideki, and I will be officially putting our club membership on hold in order to focus completely on our exams."
 
         show natsume basic_smile_close
         show naomi basic_smile_close
@@ -882,40 +907,45 @@ label sh_ch41:
 
         na "Awesomesauce!!! It's a date! Friday afternoon after we finish printing! Don't forget! And afterwards..."
 
-        "We suddenly hear a stern cough from the front of the class."
+        $ sh_mus_file = renpy.music.get_playing()
+        $ sh_mus_pos = renpy.music.get_pos()
+
+        stop music fadeout 0.5
 
         show natsume basic_neutral_close
         show naomi basic_confused_close
-        with chchange
+        with { "master": chchangefast }
 
         mu "Inoue!"
 
-        show crowd behind naomi
         hide natsume
         hide naomi
-        show muto irritated at tworight
+        show muto irritated at right
         show shizu cross_angry at center
         show misha cross_frown at twoleft
-        show hisao cross_frown_uni at left
+        show hisao cross_grin_uni at left:
+            xpos -0.06
+        with charachangealways
 
-        "We look up from our books and notice that Mutou is staring at Naomi, along with half of the class. Seems like Naomi delivered her last statements a little bit too loudly. Natsume exasperatedly shakes her head, and Mutou gives Naomi an admonishing glare."
+        "We look up from our books and notice that Mutou is staring at Naomi, along with half of the class."
+        "Seems like Naomi delivered her last statements a little bit too loudly. Natsume exasperatedly shakes her head, and Mutou gives Naomi an admonishing glare."
 
         hide shizu
         hide misha
         hide hisao
-        show muto irritated at center
-        with charamove
-        show naomi bend_grinclosed at right
+        show muto at center
+        show naomi bend_grinclosed_close at right
+        with charaexit
 
         mu "It didn't sound like you were discussing any subject matter just now."
 
-        show naomi basic_laugh
+        show naomi basic_laugh_close
         with chchange
 
         na "Sorry teacher. We just had to make an arrangement for our club's group photo, and I suddenly wondered..."
         mu "Is this relevant to this class's homeroom session?"
 
-        show naomi basic_smile
+        show naomi basic_smile_close
         with chchange
 
         na "...since homeroom classes will be replaced with cramming sessions after next week, would this week be a good opportunity to have a class photo taken?"
@@ -923,21 +953,19 @@ label sh_ch41:
         show muto normal
         with chchange
 
+        play music f"<from {sh_mus_pos}>{sh_mus_file}" fadein 4.0
+
         "Mutou looks puzzled."
         mu "Is something wrong with the class photo that was taken at the start of the school year?"
 
-        show naomi bend_grin
+        show naomi bend_grin_close
         with chchange
 
         na "Well, not every student in this class is in that one. Maybe it's worth taking another one."
         mu "Hmmm..."
-
-        show hisao basic_neutral_uni at left
-
         "I can see Mutou's eyes shift briefly to my boyfriend. I can tell that he's not fond of the idea of having his star pupil missing from the class photo that'll probably appear in the yearbook."
 
-        hide hisao
-        show naomi basic_smile
+        show naomi basic_smile_close
         with chchange
 
         mu "...seeing that every pupil of this class is currently present, are there any objections to having a photo taken this afternoon?"
@@ -946,10 +974,9 @@ label sh_ch41:
         show muto smile
         with chchange
 
-        mu "We'll reserve some time in the afternoon for it then."
+        mu "We'll reserve some time in the afternoon for it, then."
 
-        scene black
-        with Dissolve(2.0)
+        stop music fadeout 2.0
 
         if _in_replay:
             return
@@ -958,10 +985,11 @@ label sh_ch41:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_dreamy fadein 4.0
         scene bg school_scienceroom
-
         show muto smile at right
+        with shorttimeskip
+
+        queue music music_dreamy fadein 4.0
 
         mu "Thank you, Kawana. You can tell your friend that he took a good picture."
         "Mutou nods at Misaki who came to show him a copy of the class photo she printed out. About 20 minutes ago, we took the class photo Naomi proposed this morning."

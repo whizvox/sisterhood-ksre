@@ -57,6 +57,7 @@ hisao = [
     ("sprite edits/hisao/Uni Sweet", "basic_sweet_uni"),
     ("Sprites/Hisao/Uniform/Uni Bashful", "basic_bashful_uni"),
     ("Sprites/Hisao/Uniform/Uni Embarassed", "basic_emb_uni"),
+    ("Sprites/Hisao/Uniform/Uni Smileclosed", "basic_smileclosed_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Annoy", "cross_annoy_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Blush", "cross_blush_uni"),
     ("sprites2/Re Hisao Nakai/Uniform/Uniform Crossed/UCrossed-Frown", "cross_frown_uni"),
@@ -144,7 +145,9 @@ naomi = [
     ("Sprites/Naomi/Naomi annoyed", "basic_annoyed"),
     ("Sprites/Naomi/Naomi confused", "basic_confused"),
     ("Sprites/Naomi/Naomi grin closed", "basic_grinclosed"),
-    ("Sprites/Naomi/Naomi seizure", "basic_seizure")
+    ("Sprites/Naomi/Naomi seizure", "basic_seizure"),
+    ("Sprites/Naomi/Naomi smileclosed", "basic_smileclosed"),
+    ("Sprites/Naomi/Naomi bend grinclosed", "bend_grinclosed"),
 ]
 
 natsume = [
