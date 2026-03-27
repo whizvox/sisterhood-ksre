@@ -534,7 +534,7 @@ label sh_ch41:
         "I'm not sure if this remark was intended to divert attention away from me or if he's simply voicing his annoyance with Naomi's behavior, but regardless of the intention, the class bursts into laughter and people focus back on Naomi, who grins sheepishly and sticks her tongue out at Hisao."
         na "Is that jealousy I smell, Nakai?"
 
-        show natsume basic_annoy at tworight_sittingpos behind naomi
+        show natsume basic_annoy at tworightsit behind naomi
         with charaenter
 
         "Natsume groans and gives Naomi a hard poke in the ribs with the handhold of her crutch."

@@ -11,7 +11,7 @@ label sh_ch36:
         ha "{cps=10}{font=symbols}♫{/font} {i}In other words, please be true{/i} {font=symbols}♪{/font}{w}\n\n{font=symbols}♪{/font} {i}In other words, I love you{/i} {font=symbols}♫{/font}"
         ha "{cps=10}{font=symbols}♫{/font} {i}In other words, I love you{/i} {font=symbols}♪{/font}"
 
-        show hisao cross_grin_polo at twoleft_sittingpos
+        show hisao cross_grin_polo at twoleftsit
         with charaenter
 
         "As I finish singing the latest song we picked for our karaoke session and make a humble bow, my one-man audience breaks into spontanous applause."

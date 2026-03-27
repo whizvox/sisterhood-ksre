@@ -127,11 +127,11 @@ init:
 
     transform phonebox:
         xanchor 1.0 xpos 0.95 yanchor 1.0 ypos 0.82
-    transform sittingpos:
+    transform centersit:
         xpos 0.5 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    transform twoleft_sittingpos:
+    transform twoleftsit:
         xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    transform tworight_sittingpos:
+    transform tworightsit:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
 
     transform displayitemshow:

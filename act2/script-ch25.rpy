@@ -99,7 +99,7 @@ label sh_ch25:
         "As I stop to listen, I realize that I've heard both that song and that instrument before."
 
         scene bg satou_livingroom
-        show karla basic_cheerful_cas at tworight_sittingpos
+        show karla basic_cheerful_cas at tworightsit
         with locationchange
 
         $ renpy.music.set_volume(1.0, delay=1.0)
@@ -167,7 +167,7 @@ label sh_ch25:
 
         pause 4.5
 
-        show lilly at twoleft_sittingpos:
+        show lilly at twoleftsit:
             alpha 1.0
         with None
 
@@ -294,7 +294,7 @@ label sh_ch25:
         "The water doesn't do much to dull the throbbing sensation in my head, but it eases my throat a bit and makes speaking a bit less painful."
         "Karla sits down on the love seat across from me and starts putting her cello back into its case."
 
-        show karla basic_cheerful_cas at sittingpos
+        show karla basic_cheerful_cas at centersit
         with charaenter
 
         ka "Just give it a bit of time. You'll probably feel better in a few hours."

@@ -312,7 +312,7 @@ label sh_ch22:
         li "Her name can be tricky for Japanese to pronounce correctly, but you still did rather well."
         "With the formalities out of the way, the housekeeper motions us to sit at the table which has already been laid and, as Lilly prepares to take a seat, draws up a chair to assist her."
 
-        show lilly basic_smileclosed_sum at twoleft_sittingpos
+        show lilly basic_smileclosed_sum at twoleftsit
         with charamovechange
 
         "Before walking back into the house, Allison turns to us and gives us a short explanation which makes little sense to me but results in an approving nod from Lilly."
@@ -320,7 +320,7 @@ label sh_ch22:
         li "We'll be having chicken soup to start with, followed by freshly made pork pie as the main course and pumpkin crumble for dessert. She hopes we'll enjoy it."
         hi "It sounds good."
 
-        show hanako basic_bashful_sum at tworight_sittingpos
+        show hanako basic_bashful_sum at tworightsit
         with charadistant
 
         # TODO Add patio BG which includes outdoor dining table

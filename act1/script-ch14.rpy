@@ -634,7 +634,7 @@ label sh_ch14:
 
         show lilly at center
         with charamovefast
-        show lilly at sittingpos
+        show lilly at centersit
         with charamove
 
         "Lilly takes out her cane and carefully approaches while waving it in front of her until she finds the chair I mentioned."
@@ -740,7 +740,7 @@ label sh_ch14:
         li "I-I feel I failed both of you."
         hi "You've always been there to support us, Lilly. And you've been doing a great job. But you're only human."
 
-        show lilly cane_sad at sittingpos
+        show lilly cane_sad at centersit
         with charadistant
 
         "Her flood of tears slowly subsiding, Lilly lets go of me and sits down again next to my bed, taking out a fancy embroidered handkerchief to dry her tears."
@@ -790,7 +790,7 @@ label sh_ch14:
         stop music fadeout 2.0
 
         scene bg hosp_room2
-        show lilly cane_listen at sittingpos
+        show lilly cane_listen at centersit
         with shorttimeskipsilent
 
         play music music_comfort fadein 4.0

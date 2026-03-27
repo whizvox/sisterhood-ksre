@@ -532,7 +532,7 @@ label sh_ch7:
 
         "We go in, and he sits next to me on the bed."
 
-        show hisao basic_speak_uni_close at sittingpos
+        show hisao basic_speak_uni_close at centersit
         with charaenter
 
         hi "You're going back to the newspaper club tomorrow, aren't you? Even though you said you didn't know yet."
@@ -605,7 +605,7 @@ label sh_ch7:
         hi "Loosened up a bit?"
         ha "Yes, it really helped."
 
-        show hisao basic_grin_uni_close at sittingpos
+        show hisao basic_grin_uni_close at centersit
         with charaenter
 
         "As I turn around to face him, Hisao gives me a playful wink."

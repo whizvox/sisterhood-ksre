@@ -636,7 +636,7 @@ label sh_ch8:
 
         show hisao basic_frown_polo_close at center
         with charamovechangefaster
-        show hisao at sittingpos
+        show hisao at centersit
         with charamove
 
         "He sits down next to me, puts the soda in front of himself and shows me a frustrated frown for a moment before giving me the cocoa."
@@ -677,7 +677,7 @@ label sh_ch8:
         hide niji_plush
         with None
 
-        show hisao basic_smile_polo_close at sittingpos
+        show hisao basic_smile_polo_close at centersit
         with charaenter
 
         hi "A new member of our little, disabled family, huh?"

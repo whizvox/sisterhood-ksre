@@ -154,7 +154,7 @@ label sh_ch3:
         "She makes an inviting gesture over to the table in the middle of the room."
 
         hide takawa
-        show takawa smile_close at sittingpos
+        show takawa smile_close at centersit
         with charaenter
 
         queue music music_another fadein 4.0

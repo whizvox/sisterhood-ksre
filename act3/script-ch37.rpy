@@ -191,7 +191,7 @@ label sh_ch37:
 
         show hiroyuki serious_close
         with chchange
-        show hiroyuki at tworight_sittingpos
+        show hiroyuki at tworightsit
         with charamove
 
         "I wait until he's seated, pour him a glass of fruit juice, and hand it to him."

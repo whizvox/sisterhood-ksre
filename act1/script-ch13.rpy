@@ -100,7 +100,7 @@ label sh_ch13:
         na "Not overly enthusiastic, I see."
         ha "…It's not that…"
 
-        show naomi at sittingpos
+        show naomi at centersit
         with charamove
 
         "Naomi gets off the desk, pulls a chair over, turns it around and sits down on it, her elbows resting on the back rest."

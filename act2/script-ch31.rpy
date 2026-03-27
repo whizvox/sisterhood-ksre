@@ -223,8 +223,8 @@ label sh_ch31:
 
         "We follow the nurse and Mom into the doctor's office, and I quickly guide Lilly to one of the chairs."
 
-        show lilly at twoleft_sittingpos
-        show karla at tworight_sittingpos
+        show lilly at twoleftsit
+        show karla at tworightsit
         with charamove
 
         "As the nurse leaves the room and Mom and I sit down, the doctor gives us a quick look-over and then addresses Mom."

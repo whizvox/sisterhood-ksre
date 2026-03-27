@@ -508,7 +508,7 @@ label sh_ch32:
         "Hisao nods and we quietly sneak off towards the place Akira mentioned."
 
         scene bg raigmore_waitroom
-        show hisao basic_worry_polo at twoleft_sittingpos
+        show hisao basic_worry_polo at twoleftsit
         with locationchange
 
         "We both sit down and wait for our hearts to stop racing. That was really close."

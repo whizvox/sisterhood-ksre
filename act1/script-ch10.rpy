@@ -430,7 +430,7 @@ label sh_ch10:
         scene bg school_dormlilly
         show akira basic_laugh:
             xpos 0.1 xanchor 0.0 yanchor 1.0 ypos 1.1
-        show lilly basic_ara at sittingpos
+        show lilly basic_ara at centersit
         show hanako emb_emb:
             xpos 0.9 xanchor 1.0 yanchor 1.0 ypos 1.1
         with locationskip

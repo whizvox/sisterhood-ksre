@@ -373,7 +373,7 @@ label sh_ch19:
         nak "So, in short, in case of an accident or if anybody collapses in front of you, there are three simple steps. One, always call an ambulance. Two, check for vital signs, and do a quick checkup to see what can be done to stabilize a person's condition."
         nak "Three, perform the appropriate actions while waiting for the ambulance to arrive, and don't leave an injured person alone."
 
-        show nakamura neutral at sittingpos
+        show nakamura neutral at centersit
         with charamovechangefaster
 
         "Beckoning us to watch his actions, he kneels down next to the dummy in the center of the room and places his fingers on its left wrist."

@@ -179,7 +179,7 @@ label sh_ch24:
         li "I think it'd be most appropriate if the two of you take the love seat."
         ha "Okay."
 
-        show lilly basic_smileclosed_sum at twoleft_sittingpos
+        show lilly basic_smileclosed_sum at twoleftsit
         show hanako emb_emb_sum_clip_close
         with charachangealways
 
@@ -213,7 +213,7 @@ label sh_ch24:
         li "Well, bottoms up."
 
         scene bg satou_livingroom_ni
-        show lilly basic_giggle_sum at twoleft_sittingpos
+        show lilly basic_giggle_sum at twoleftsit
         show hanako emb_smile_sum_clip_close at tworight
         with shorttimeskip
 
@@ -462,8 +462,8 @@ label sh_ch24:
         "Instead of answering, Lilly merely teasingly shakes her head."
         li "Sorry Hisao. That's girls' talk."
 
-        show lilly at twoleft_sittingpos
-        show hanako at tworight_sittingpos
+        show lilly at twoleftsit
+        show hanako at tworightsit
         with charamove
 
         "I get back on the couch, and Hanako sits down next to me, but still holds onto me."
@@ -504,7 +504,7 @@ label sh_ch24:
         hi "Yeah, there's a large case standing in one of the corners. I'm pretty sure there's a cello in there."
         li "Hmmm, would you mind bringing it over here for a moment? Please be very careful with it."
 
-        show lilly basic_cheerful_sum at sittingpos
+        show lilly basic_cheerful_sum at centersit
         hide hanako
         with charachangealways
 
@@ -568,7 +568,7 @@ label sh_ch24:
         "Suddenly, the song stops, and Lilly lets out a soft, but frustrated sigh."
 
         scene bg satou_livingroom_ni
-        show lilly basic_displeased_sum at sittingpos
+        show lilly basic_displeased_sum at centersit
         with openeye
 
         "I curiously open my eyes and see a frown of concentration on Lilly's face."

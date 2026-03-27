@@ -370,7 +370,7 @@ label sh_ch4:
 
         show lilly basic_weaksmile_cas at center
         with charamove
-        show lilly at sittingpos
+        show lilly at centersit
         with charamove
 
         "As I start messing with the lock of the suitcase, Lilly sits down on her bed with a tired but cheerful expression on her face."

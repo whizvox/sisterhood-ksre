@@ -53,7 +53,7 @@ label sh_ch15:
 
         li "No, not this time."
 
-        show lilly at sittingpos
+        show lilly at centersit
         with charamove
         show lilly basic_weaksmile
         with chchange
@@ -105,7 +105,7 @@ label sh_ch15:
 
         show takawa:
             ease 1.0 tworight
-            ease 1.0 tworight_sittingpos
+            ease 1.0 tworightsit
         with None
         show lilly basic_smileclosed
         with chchange
@@ -134,7 +134,7 @@ label sh_ch15:
 
         show lilly:
             linear 0.1 yanchor 1.0 ypos 1.07
-            linear 0.1 sittingpos
+            linear 0.1 centersit
 
         "That news certainly surprises Lilly, for her hands shake for a moment, and she nearly drops her cup."
         "Looks like Miss Takawa doesn't have the habit of mentioning her patients in her introductions to others."
@@ -148,7 +148,7 @@ label sh_ch15:
         hi "I take it that you are aware of what has happened to Hanako and me this Monday?"
 
         hide lilly
-        show takawa calculating at sittingpos:
+        show takawa calculating at centersit:
             xanchor 0.5 xpos 0.5
         with charaenter
 
@@ -279,8 +279,8 @@ label sh_ch15:
         hi "It comes down to the same thing, doesn't it?"
         ta "I don't believe it does, but that's up to you to find out for sure."
 
-        show lilly basic_oops at twoleft_sittingpos
-        show takawa calculating at tworight_sittingpos
+        show lilly basic_oops at twoleftsit
+        show takawa calculating at tworightsit
         with charaenter
 
         "My gaze wanders between Lilly and Miss Takawa who both have an expectant expression on their face."
@@ -295,7 +295,7 @@ label sh_ch15:
         hi "I don't suppose you have any helpful tips? You're the expert here."
 
         hide lilly
-        show takawa at sittingpos
+        show takawa at centersit
         with charaenter
 
         ta "I'm afraid I have to disappoint you there. Relationship therapy isn't my field. The real expert in the room would be you, Mister Nakai."
@@ -343,8 +343,8 @@ label sh_ch15:
         "I hang up, still feeling apprehensive."
         "No turning back now. The rest is up to Hanako. I can only hope she'll bother to listen to her voicemail."
 
-        show takawa happy at tworight_sittingpos
-        show lilly basic_smileclosed at twoleft_sittingpos
+        show takawa happy at tworightsit
+        show lilly basic_smileclosed at twoleftsit
         with charaenter
 
         stop music fadeout 2.0
