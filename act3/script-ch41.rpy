@@ -1001,15 +1001,18 @@ label sh_ch41:
 
         mu "Yes, they're the ones who'll be in charge of the tasking people to put the yearbooks together."
         "Misaki" "We'll do that then. Have a nice day, sir."
+        "Misaki makes a stiff bow and leaves the room. Now it's just Mutou and me."
+        "After the photo shoot, Mutou approached me and asked if he could speak to me after class. I wonder what it's about. I really hope it's nothing bad."
 
-        "Misaki makes a stiff bow and leaves the room. Now it's just Mutou and me. After the photo shoot, Mutou approached me and asked if he could speak to me after class. I wonder what it's about. I really hope it's nothing bad."
-
-        show muto smile at center
-        with charamove
-        show muto smile_close
+        show muto smile_close at center
+        with characlose
 
         mu "Go ahead and take a look."
-        "He hands me the printout, and I look it over. A smile appears on my face. I think it looks pretty good. I'm standing next to Hisao of course, and I'm turned slightly towards him so my right side is less visible."
+        "He hands me the printout, and I look it over."
+
+        # TODO show photograph VFX
+
+        "A smile appears on my face. I think it looks pretty good. I'm standing next to Hisao of course, and I'm turned slightly towards him so my right side is less visible."
         "We're standing fairly close to each other, so I'd like to think that people who pay close attention to the photo can deduce that we're a couple. Then again, this might just be wishful thinking on my part."
         mu "It appears you approve of it."
         "My gaze shifts back to Mutou, who appears to have been observing me while I was looking at the picture."
@@ -1027,24 +1030,16 @@ label sh_ch41:
         with chchange
 
         mu "I think that would be more than fine and not just with me. I suspect that you were the reason for Inoue to make that suggestion about having another photo taken and not Nakai."
-        ha "P-Probably."
+        ha "P-probably."
 
-        show muto irritated
+        show muto eyebrow
         with chchange
 
         "He smirks."
         mu "I must admit that I find you and Inoue an odd pairing."
-
-        nvl clear
-        nvl show dissolve
-
-        n "I've heard that before. And in truth, I do still have difficulty dealing with Naomi's occasional antics from time to time, like that smacking kiss earlier this morning."
-        n "And yet for each impulsive thing she does, there's usually another sweet and kind action to make up for it, like lending me that camera for my vacation or suggesting that class photo to Mutou."
-        n "I also learned from Natsume that part of Naomi's restlessness is a mild side effect of the medication she's taking, so I do my best to take Naomi's personality quirks in stride and focus on the good parts."
-
-        nvl clear
-        nvl hide dissolve
-
+        "I've heard that before. And in truth, I do still have difficulty dealing with Naomi's occasional antics from time to time, like that smacking kiss earlier this morning."
+        "And yet for each impulsive thing she does, there's usually another sweet and kind action to make up for it, like lending me that camera for my vacation or suggesting that class photo to Mutou."
+        "I also learned from Natsume that part of Naomi's restlessness is a mild side effect of the medication she's taking, so I do my best to take Naomi's personality quirks in stride and focus on the good parts."
         ha "She can be... quirky, but she means really well."
 
         show muto normal
@@ -1057,20 +1052,21 @@ label sh_ch41:
         nvl show dissolve
 
         n "The last few months have been very good to me. Not only am I still in a relationship with Hisao and greatly enjoying the time we spend together, I've also managed to strengthen my friendship with Lilly."
-        n "I was initially worried that Lilly and I would start drifting apart now that her parents are living in Japan again and we do see each other slightly less now that Lilly spends each Sunday at her parents' home, and I attend meetings of the writing club several evenings per week."
-        n "But while Lilly keeps the Sundays open for her parents, she keeps the Saturdays open for me, and over the last few months we've gone on several 'girl dates' together, just like the ones I took her on when she was still in the process of deciding whether to move to Scotland or not."
+        n "{vspace=30}I was initially worried that Lilly and I would start drifting apart now that her parents are living in Japan again. We do see each other slightly less often now that Lilly spends each Sunday at her parents' home and I attend meetings of the writing club several evenings per week."
+        n "But while Lilly keeps the Sundays open for her parents, she keeps the Saturdays open for me, and over the last few months we've gone on several “girl dates” together, just like the ones I took her on when she was still in the process of deciding whether to move to Scotland or not."
 
         nvl clear
 
         n "In addition, I've started to enjoy the little meetings of our writing club, and even when we don't end up writing a lot, I still feel it was at least good hanging out. I never really talk a lot during those sessions, but they're still rather fun to attend."
         n "I'm slowly warming up to my fellow newspaper club members, too, and we recently started exchanging greetings whenever we run into one another in the hallways."
-        n "After nearly three years, I'm slowly starting to become part of this school and its student body, and I've found myself feeling sincerely sorry that it'll all end at the start of next spring. I never expected to ever feel this way again after my accident, but surprisingly enough I'm feeling rather happy with my life right now."
+        n "{vspace=90}After nearly three years, I'm slowly starting to become part of this school and its student body, and I've found myself feeling sincerely sorry that it'll all end at the start of next spring."
+        # foreshadowing is a literary device...
+        n "I never expected to ever feel this way again after my accident, but surprisingly enough, I'm feeling rather happy with my life right now."
 
-        nvl clear
         nvl hide dissolve
 
         ha "I'm doing... fairly well... at the moment."
-        "Mutou waits for a moment to give me the chance to say more, but when I remain silent he continues."
+        "Mutou waits for a moment to give me the chance to say more, but when I remain silent, he continues."
 
         show muto smile
         with chchange
@@ -1084,23 +1080,22 @@ label sh_ch41:
         mu "Of course, potential in itself is hardly enough to land a good job. A good education will be vital in order to build on and refine that potential. I heard that you've been considering your options and that you've picked two universities to potentially attend."
         "I meekly nod. Naomi and I both plan to study Journalism and Media after graduation. Mister Hoshino said that he was certain that we'd get plenty of opportunities there to take creative writing courses if we were interested."
 
-        show muto irritated
+        show muto eyebrow
         with chchange
 
-        mu "He looked through your application forms and was puzzled by what he saw. Your first choice of university is Kasshoku University, a large and well-regarded university, but your second choice is a school that most students of your capabilities wouldn't consider unless they had no other options."
-        mu "He wanted me to present you a list of alternatives he deemed more fitting to your level."
+        mu "He looked through your application forms and was puzzled by what he saw. Your first choice of university is Kasshoku University, a large and well-regarded university."
+        mu "But your second choice is a school that most students of your capabilities wouldn't consider unless they had no other options. He wanted me to present you a list of alternatives he deemed more fitting to your level."
         ha "Ummm...."
-
         mu "I looked at your picks myself, and I picked something up that I believe Hoshino overlooked. Both schools of your choice are located in Chiba. And that happens to be the very city Nakai's school of choice is located in."
         mu "In fact, you two are aiming to attend the same university after graduation, although you're shooting for different faculties."
 
         nvl clear
         nvl show dissolve
 
-        n "Looks like he found me out. I embarrassedly nod my head. Hisao was the first person to take interest in Kasshoku, and while its science program is supposedly well-regarded, this choice was also one of practicality as the university is located in the same city his parental home is located in, meaning he can move back in with his parents to cut down on living costs."
-        n "Lilly and I looked up the university as well and found that it'd also be able to suit our educational needs, so we both decided to try and get in there as well. Neither Hisao nor Lilly has put forth a second option, but since both are really good at the subject they'll be studying I don't think they'll have that much trouble making it in as long as they can pass the national test."
+        n "Looks like he found me out. I embarrassedly nod my head."
+        n "{vspace=60}Hisao was the first person to take interest in Kasshoku, and while its science program is supposedly well-regarded, this choice was also one of practicality as the university is located in the same city his parental home is located in, meaning he can move back in with his parents to cut down on living costs."
+        n "Lilly and I looked up the university as well and found that it'd also be able to suit our educational needs, so we both decided to try and get in there as well. Neither Hisao nor Lilly has put forth a second option, but since both are really good at the subject they'll be studying, I don't think they'll have that much trouble making it in as long as they can pass the national test."
 
-        nvl clear
         nvl hide dissolve
 
         mu "If you make it into the same university as he does, there won't be a problem, but if you end up going to that second school you're planning to apply for, I believe you'll be doing yourself a serious disservice."
@@ -1115,21 +1110,20 @@ label sh_ch41:
         nvl clear
         nvl show dissolve
 
-        n "I'm getting a vague feeling of what he's trying to say without actually saying it. I'm in a relationship right now, but not every high school relationship lasts all the way until marriage."
-        n "I don't want to think about it too deeply, but what if I picked a university of lower calibre so I could stay around Hisao and he ends up breaking up with me at some point?"
+        n "I'm getting a vague feeling of what he's trying to say without actually saying it."
+        n "{vspace=60}{i}I'm in a relationship right now, but not every high school relationship lasts all the way until marriage.{/i}"
+        n "{vspace=60}I don't want to think about it too deeply, but what if I picked a university of lower calibre so I could stay around Hisao and he ends up breaking up with me at some point?"
         n "But if I went off to study in another city, would our relationship even last? I'm not so sure how well either of us would do in a long distance relationship."
 
-        nvl clear
         nvl hide dissolve
 
-        show muto irritated
+        show muto eyebrow
         with chchange
 
         mu "Think of it this way, Ikezawa. The decision of many companies to hire you will depend for a large part on whether you've attended a reputable university. The other factor involves interviewing skills."
-        mu "As it is, someone else may be better at sweet-talking his way through a job interview, but if you have better credentials than the competition you'll still have a good chance of being hired. You should see this as an opportunity to even the odds in your favor."
+        mu "As it is, someone else may be better at sweet-talking his way through a job interview, but if you have better credentials than the competition, you'll still have a good chance of being hired. You should see this as an opportunity to even the odds in your favor."
         mu "Here at this school we make it a point to push all our students to try for the very best universities they can possibly get into in order to compensate for possible disadvantages they might have on the job market later."
         mu "It is always better to attend a reputable university and appear slightly overqualified for the job of your choice later than to be passed up again and again."
-
         "That's not a bad point. One of the selling points of attending a prestigious university used to be that it came with an almost guaranteed job offer afterwards. That's not really the case any longer, but the name of one's university still carries an extreme amount of weight."
         "And if there's one thing I don’t have faith in, it's my ability to not bungle up a job interview, so I guess I really don't have much choice except to try and compensate in the credentials department as much as I can."
         ha "So... Another alternative option then?"
@@ -1137,18 +1131,17 @@ label sh_ch41:
         show muto normal
         with chchange
 
-        mu "If you're going to pick alternatives then they should at least be serious considerations. They'll have additional entrance exams, but you'll be studying the same material for all the ones you partake in, so it shouldn't cost you extra time to prepare."
+        mu "If you're going to pick alternatives, then they should at least be serious considerations. They'll have additional entrance exams, but you'll be studying the same material for all the ones you partake in, so it shouldn't cost you extra time to prepare."
         mu "I have a few pamphlets in my desk, so if you have time, we can go over them and get this out of the way before the afternoon is over. I know of a few universities that hold entrance exams on a day you won't already be taking one."
-        ha "O-Okay then."
+        ha "O-okay then."
 
         show muto smile
         with chchange
 
         "He gives me an awkward smile that is meant to be reassuring, but I think his smile is a bit weird. If anything, it makes me slightly nervous."
-        mu "It's good to keep in mind that if everything goes well, your second choice won't matter much in practice. Hoshino believes you have what it takes to make it in as long as you study hard enough and I have no reason to doubt his assessment."
-        mu "Your grades have really picked up over the last few months. Particularly your Japanese. I wonder if that's because of your social life is improving or if it's simply because you seem to have a clear idea of what you want after you graduate here."
-
-        ha "M-Maybe both. But... it also helped that I have one tutor who wants to b-become an English teacher and another who is planning to teach science."
+        mu "It's good to keep in mind that if everything goes well, your second choice won't matter much in practice. Hoshino believes you have what it takes to make it in as long as you study hard enough, and I have no reason to doubt his assessment."
+        mu "Your grades have really picked up over the last few months—particularly your Japanese. I wonder if that's because of your social life is improving or if it's simply because you seem to have a clear idea of what you want after you graduate here."
+        ha "M-maybe both. But... it also helped that I have one tutor who wants to b-become an English teacher and another who is planning to teach science."
         "A proud expression appears on my homeroom teacher's face."
         mu "So... Nakai has made a definite decision?"
         ha "For now..."
@@ -1157,7 +1150,7 @@ label sh_ch41:
         nvl show dissolve
 
         n "Lilly's opinions about teaching may have influenced him to some degree, but the deciding factor has undoubtedly been the fact that he's already been acting as a science teacher to some degree over the last several months. Not just to Lilly and me, but also to his fellow clubmates."
-        n "The science club currently counts eight members, which is quite impressive considering the fact that it was just Hisao, Mutou and Kenji before the summer break. The majority of the new members are junior students since most third years at this school have either already joined a club or have no intention of becoming part of one regardless of what it is about."
+        n "The science club currently counts eight members, which is quite impressive considering the fact that it was just Hisao, Mutou, and Kenji before the summer break. The majority of the new members are junior students since most third years at this school have either already joined a club or have no intention of becoming part of one regardless of what it is about."
         n "As club president and Mutou's star pupil, Hisao's dutifully taken it upon himself to help his fellow club members out whenever a subject gave them trouble. He usually did these tutoring sessions during club hours, but there were also times when he'd drop by a member's room to help them get a better grasp on the material."
 
         nvl clear
@@ -1165,11 +1158,10 @@ label sh_ch41:
         n "Lilly and I were very impressed when we learned how serious Hisao was taking this task, sometimes even dropping by the computer lab or library to read up on a subject some more in order to better help his fellow club members. That was also the time when Lilly first started putting the idea of teaching science as a career into Hisao's head."
         n "And despite the fact that Hisao first took to his new activities in an attempt to compensate for his mentor's confusing lectures, Mutou seems to have taken Hisao's career aspirations as a personal compliment and has been all too happy to encourage his protegee's plans for the future."
 
-        nvl clear
         nvl hide dissolve
 
         mu "Too many students simply go to university because they feel that it's expected of them, not because they want to develop themselves and hone their specific interests into talent."
-        mu "But the best students know that passion, ambition and a clear goal give all their efforts meaning and are a better source of motivation than a mere desire to go with the flow of society."
+        mu "But the best students know that passion, ambition, and a clear goal give all their efforts meaning and are a better source of motivation than a mere desire to go with the flow of society."
         "I really managed to get him going. I don't think this is really meant to be a discussion, so I obediently nod my head."
 
         show muto normal
@@ -1178,10 +1170,11 @@ label sh_ch41:
         mu "Speaking of motivation, have the two of you considered visiting the open house day this weekend?"
         ha "Open house day...?"
 
-        show muto irritated
+        show muto eyebrow
         with chchange
 
-        "He probably said something about it, but I'm not exactly sure when. Was it this morning while Natsume was interrogating Naomi and me? Mutou sees the blank expression on my face and shakes his head."
+        "He probably said something about it, but I'm not exactly sure when. Was it this morning while Natsume was interrogating Naomi and me?"
+        "Mutou sees the blank expression on my face and shakes his head."
         mu "I brought it up during homeroom classes two weeks ago. Kasshoku University is organizing an open house day for high school students who are thinking about enrolling there."
         mu "They're probably hoping to get a few more last-minute applications before the Center Test starts in January. The event takes place this upcoming Sunday."
         "Now I remember. Hisao and I did take note of that, but never made an actual decision on whether to go or not."
@@ -1198,21 +1191,21 @@ label sh_ch41:
 
         mu "Very well. Let's look at some of your alternative options then and hope it will turn out to be nothing but a formality."
 
-        scene black
-        with Dissolve(2.0)
-
         if _in_replay:
             return
+        else:
+            stop music fadeout 2.0
 
     label .s4:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_lilly fadein 4.0
         scene bg school_dormlilly
-
         show lilly basic_surprised_paj_close at tworight
         show hisao basic_neutral_uni at left
+        with shorttimeskip
+
+        queue music music_lilly fadein 4.0
 
         li "You're considering attending a university in another town if you don't get into Kasshoku?"
         "Lilly and Hisao seem surprised as I tell them about the talk I had with Mutou."
@@ -1221,11 +1214,11 @@ label sh_ch41:
         nvl clear
         nvl show dissolve
 
-        n "I'm not exactly standing 100\% behind my decision, but when Mutou made his point I didn't really have a solid argument against it. Besides, with some luck I'll do well on my exams, and I won't have to worry about alternatives."
-        n "Unlike Hisao and Lilly however, I do feel that I need alternatives. After all, if I don't get into some university or another, I'll be homeless after graduation. I'm trying not to worry too hard about that for the time being, knowing I could probably stay with my friends for a while, but it's not a matter I can easily ignore."
-        n "I looked up what renting a place would require, and it seems most estate agencies demand a tenant to have both a steady job and a family member willing to act as a guarantor in case of a layoff. I don't qualify for either criterium. And then there's the high costs."
+        n "I'm not exactly standing 100\% behind my decision, but when Mutou made his point, I didn't really have a solid argument against it. Besides, with some luck, I'll do well on my exams and I won't have to worry about alternatives."
+        n "{vspace=60}Unlike Hisao and Lilly, however, I do feel that I need alternatives. After all, if I don't get into some university or another, I'll be homeless after graduation. I'm trying not to worry too hard about that for the time being, knowing I could probably stay with my friends for a while, but it's not a matter I can easily ignore."
+        n "I looked up what renting a place would require, and it seems most estate agencies demand a tenant to have both a steady job and a family member willing to act as a guarantor in case of a layoff."
+        n "I don't qualify for either criterium. And then there's the high costs..."
 
-        nvl clear
         nvl hide dissolve
 
         show lilly basic_smileclosed_paj_close
@@ -1241,10 +1234,10 @@ label sh_ch41:
         nvl clear
         nvl show dissolve
 
-        n "With the conversation dried up, we get back to studying. The last months, Lilly, Hisao and I have made it a habit to study together so we can compare notes, help each other on difficult subjects and keep each other motivated."
+        n "With the conversation dried up, we get back to studying."
+        n "{vspace=60}The last months, Lilly, Hisao, and I have made it a habit to study together so we can compare notes, help each other on difficult subjects, and keep each other motivated."
         n "I was worried at first that we'd just end up chattering all night long, but it turned out that we've been able to exercise enough self-restraint to make these cramming sessions productive. Lilly and I are sitting on Lilly's bed, our backs against the wall, while Hisao's sitting at Lilly's desk."
 
-        nvl clear
         nvl hide dissolve
 
         show lilly basic_sleepy_paj_close
@@ -1289,7 +1282,8 @@ label sh_ch41:
 
         ha "We're not splitting the money. Naomi said that since we've earned the money as a team, we should also spend the money as a team."
         li "So what will you be spending it on?"
-        ha "A... 'girls night out'... as Naomi called it. The next issue of our newspaper comes out the upcoming Friday, so our club members go to a coffee shop in town to celebrate the release as usual. Naomi, Jun and I will go there too, but leave early and take a bus to the city."
+        ha "A... ‘girls night out’... as Naomi called it."
+        ha "The next issue of our newspaper comes out the upcoming Friday, so our club members go to a coffee shop in town to celebrate the release as usual. Naomi, Jun and I will go there too, but leave early and take a bus to the city."
         ha "We're going to look for a nice p-place to have dinner and then do k-karaoke afterwards. Whether we do anything else depends on how much of the prize money we'll have left."
 
         show lilly basic_satisfied_paj_close
@@ -1297,7 +1291,8 @@ label sh_ch41:
         with chchange
 
         hi "Wow Hanako, that sounds like a lot of fun."
-        "I think it does. I still prefer the quietness of the nearby town over the bustling of the city, but things will probably be okay as long as I stick close to my friends. Natsume pointed out that Naomi tends to sing off-key, but said she thought we'd nevertheless have a good time."
+        "I think it does. I still prefer the quietness of the nearby town over the bustling of the city, but things will probably be okay as long as I stick close to my friends."
+        "Natsume pointed out that Naomi tends to sing off-key, but said she thought we'd nevertheless have a good time."
         "I am kind of looking forward to it. Since we won't be submitting anything else for the time being due to the exams, this will be a good way to bring closure to the activities of our little writing group."
         ha "I... hope so."
 
@@ -1361,24 +1356,30 @@ label sh_ch41:
         with chchange
 
         "Lilly's smile returns, and she makes a quick hand gesture in order to dismiss the matter."
-
         li "It's fine. I'm sure it'll be a great experience for all of us."
+
+        show hisao basic_speak_uni
+        with chchange
+
         hi "Hanako? Shall we go there the upcoming Sunday then?"
 
-        "I'm not really sure about the great experience part, but I don't think Hisao and Lilly will go there if I don't come along. I was pretty nervous before the trip to Scotland, and that turned out really well, Mister Satou's incident notwithstanding."
+        show hisao basic_neutral_uni
+        with chchange
+
+        "I'm not really sure about the great experience part, but I don't think Hisao and Lilly will go there if I don't come along."
+        "I was pretty nervous before the trip to Scotland, and that turned out really well, Mister Satou's incident notwithstanding."
+        ha "O-okay then."
 
         show lilly basic_smile_paj_close
         show hisao cross_smile_uni
         with chchange
 
-        ha "O-Okay then."
         hi "Maybe this would be a good opportunity for you to check out the dorms there as well, Lilly. You can determine how easy they are to navigate."
 
         show lilly basic_weaksmile_paj_close
         with chchange
 
         li "Hmmm..."
-
         "Lilly doesn't immediately respond to Hisao's remark, and I happen to know why. She told me recently during one of our outings, but I suppose she hasn't told Hisao yet."
         li "I'm not certain about that yet. I've been trying to convince my parents to let me live on my own after graduation. I'm used to handling life in a dorm by now. I'd like to take another step towards independence."
 
@@ -1444,18 +1445,17 @@ label sh_ch41:
         with chchange
 
         "I reel in shock. Is Lilly really asking me to share an apartment with her? I didn't see this coming at all."
-        ha "B-But... M-me?"
+        ha "B-but... M-me?"
         li "I think you would certainly be the most suitable person. I've been meaning to ask you this at some point anyway. I wouldn't mind a bit of company, and we could split household chores between us."
         li "That way, I can still get in whatever practice I need. And it will be good to have someone around that I trust in case there are things that need to be done that require eyesight."
-        ha "B-But..."
+        ha "B-but..."
 
         nvl clear
         nvl show dissolve
 
         n "I stop myself before I can comment that I wouldn't be able to afford my half of the rent for something as expensive as an apartment. I doubt Lilly and her family would even accept my money to begin with."
-        n "Maybe I should give this some consideration. It would certainly be the best solution to my approaching housing problem, and it would probably help with my studies if I have a nice, quiet place to return to after school hours, rather than a dorm filled with people I don't know."
+        n "{vspace=30}Maybe I should give this some consideration. It would certainly be the best solution to my approaching housing problem, and it would probably help with my studies if I have a nice, quiet place to return to after school hours, rather than a dorm filled with people I don't know."
 
-        nvl clear
         nvl hide dissolve
 
         ha "...roommates..."
@@ -1465,10 +1465,12 @@ label sh_ch41:
         with chchange
 
         li "I cannot give you a guarantee that you moving in with me would be enough to sway Father's mind, but it's worth a try. And it would be the ideal way for the three of us to stay in contact with one another without having to neglect the new people we'll be meeting."
-        ha "I...ah..."
-        "I cannot argue with any of Lilly's points. I'd like to stay in contact with Lilly no matter what, and if we become roommates that means Lilly can spend time with me at home, and I won't have to worry about me preventing her from hanging out with the new friends she'll make on campus."
+        ha "I... ah..."
+        "I cannot argue with any of Lilly's points. I'd like to stay in contact with Lilly no matter what, and if we become roommates, that means Lilly can spend time with me at home and I won't have to worry about me preventing her from hanging out with the new friends she'll make on campus."
 
-        play music music_friendship fadein 4.0
+        stop music fadeout 2.0
+
+        queue music music_friendship fadein 4.0
 
         ha "I... ah... would like that."
 
@@ -1479,9 +1481,9 @@ label sh_ch41:
         "Lilly beams at those words."
         li "Really?"
         "I recall what Miss Yumi once said about taking advantage of opportunities as they present themselves. This is probably one of those opportunities, and if Lilly can pull this off, I don't think I'll feel sorry about it afterwards."
-        ha "R-Really."
+        ha "R-really."
 
-        show lilly basic_cheerfulblush_paj_close at right
+        show lilly basic_cheerfulblush_paj_close at center
         with charamovefastest
 
         li "I am truly happy to hear that Hanako."
@@ -1489,7 +1491,8 @@ label sh_ch41:
         show hisao cross_pout_uni
         with chchange
 
-        "Lilly smiles happily and pulls me into a loving hug. I giggle as I return the embrace, and we cuddle for a little while. Lilly and I are close enough now for me to not feel uncomfortable about displays of affection of this kind. Hisao, on the other hand, rolls his eyes."
+        "Lilly smiles happily and pulls me into a loving hug. I giggle as I return the embrace, and we cuddle for a little while."
+        "Lilly and I are close enough now for me to not feel uncomfortable about displays of affection of this kind. Hisao, on the other hand, rolls his eyes."
 
         show lilly basic_cheerful_paj_close
         with chchange
@@ -1503,7 +1506,7 @@ label sh_ch41:
         li "Jealous?"
         hi "The answer's still no."
 
-        play ambient sfx_phonering loop
+        play ambient sfx_phonering
 
         show lilly basic_surprised_paj_close
         show hisao basic_neutral_uni
@@ -1517,63 +1520,66 @@ label sh_ch41:
         li "Would you mind if I take this?"
         ha "Go ahead."
 
-        show lilly basic_smileclosed_paj_close at center
-        with charamove
+        show lilly basic_smileclosed_paj
+        with charadistant
 
         "Lilly breaks off our hug and makes her way to the phone which is lying on top of her dresser."
 
         stop ambient
-        show lilly basic_smile_paj_close
+
+        show lilly basic_smile_paj
         with chchange
 
         li "Good evening, Lilly Satou speaking."
 
-        show lilly basic_smileclosed_paj_close
+        show lilly basic_smileclosed_paj
         show hisao cross_smile_uni
         with chchange
 
-        li "Hello Mother."
+        li "Hello, Mother."
         li "I'm doing well. We're currently studying for next week's mock exams."
         li "Yes, like a dress rehearsal for the real ones."
         li "Yes, all three of us."
 
-        show lilly basic_giggle_paj_close
+        show lilly basic_giggle_paj
         with chchange
 
         li "She told me that you replied already. It's great, isn't it?"
 
-        show lilly basic_planned_paj_close
+        show lilly basic_planned_paj
         show hisao cross_grin_uni
         with chchange
 
         li "I have been told that the money will be put to very good use."
 
-        show lilly basic_displeased_paj_close
+        show lilly basic_displeased_paj
         show hisao basic_neutral_uni
         with chchange
 
         li "Yes, I've been with Father all day yesterday. We actually went to visit Grandmother and Grandfather together. It's a shame you couldn't be there. I asked Father to postpone the visit until you were back in the country, but he said rescheduling might be inconvenient."
         li "Hmmm... Perhaps it would be best to talk about that later."
 
-        show lilly basic_satisfied_paj_close
+        show lilly basic_satisfied_paj
         show hisao basic_smile_uni
         with chchange
 
         li "You're coming back on Sunday already? That's good to hear."
 
-        show lilly basic_weaksmile_paj_close
+        show lilly basic_weaksmile_paj
         with chchange
 
         li "Ah... Making it to the airport to welcome you back may be a problem. We just made plans for the upcoming Sunday."
 
-        show lilly basic_cheerful_paj_close
+        show lilly basic_cheerful_paj
         show hisao basic_smileclosed_uni
         with chchange
 
         li "We're going to see what our future looks like."
 
+        stop music fadeout 3.0
+
         scene black
-        with Dissolve(2.0)
+        with endchapter
 
         if _in_replay:
             return

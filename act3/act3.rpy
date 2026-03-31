@@ -109,6 +109,7 @@ init 30 python:
     sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure", "smileclosed"], poses=["basic"])
     sh_sprites("naomi", ["grinclosed"], poses=["bend"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
+    sh_sprites("muto", ["eyebrow"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
     phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
