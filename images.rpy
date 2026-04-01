@@ -71,6 +71,13 @@ init 1 python:
                 renpy.image(f"firefly b{i}", imgpath)
             else:
                 renpy.log(f"[SISTERHOOD] Could not load firefly image: {imgpath}")
+    
+    def sh_vfx(vfximg, position=(0, 0)):
+        return Composite(
+            (1920, 1080),
+            (0, 0), "vfx/boxstrip.png",
+            position, f"{sh_path}/vfx/{vfximg}.png"
+        )
 
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
     sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])

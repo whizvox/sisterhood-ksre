@@ -1010,12 +1010,21 @@ label sh_ch41:
         mu "Go ahead and take a look."
         "He hands me the printout, and I look it over."
 
-        # TODO show photograph VFX
+        show newclassphoto at displayitemshow
 
         "A smile appears on my face. I think it looks pretty good. I'm standing next to Hisao of course, and I'm turned slightly towards him so my right side is less visible."
+
+        show newclassphoto at displayitem
+
         "We're standing fairly close to each other, so I'd like to think that people who pay close attention to the photo can deduce that we're a couple. Then again, this might just be wishful thinking on my part."
         mu "It appears you approve of it."
+
+        show newclassphoto at displayitemhide
+
         "My gaze shifts back to Mutou, who appears to have been observing me while I was looking at the picture."
+
+        hide newclassphoto
+
         ha "It's a... nice photo, I think."
 
         show muto normal

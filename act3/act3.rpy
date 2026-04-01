@@ -65,6 +65,9 @@ init 30:
     image pillowtalkhanako up dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up_dark2.png"
     image pillowtalkhanako down dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_down_dark2.png"
 
+    image newclassphoto = sh_vfx("newclassphoto")
+    image teddybear = sh_vfx("teddybear")
+
     define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
 
 init 31:
@@ -97,7 +100,12 @@ init 30 python:
             (_("Morning Practice"), "sh_ch41.s1", _("Hanako convinces Hisao to practice indoors for a change."), "hanako"),
             (_("Missing Star"), "sh_ch41.s2", _("Hanako learns that she and her club won a prize."), "hanako"),
             (_("Orientation"), "sh_ch41.s3", _("Hanako has a talk about her university applications with Mutou."), "hanako"),
-            (_("The Promising Future"), "sh_ch41.s4", _("Hanako studies for the mock exams with Hisao and Lilly."), "hanako")
+            (_("The Promising Future"), "sh_ch41.s4", _("Hanako studies for the mock exams with Hisao and Lilly."), "hanako"),
+            (_("Morning Prep"), "sh_ch42.s1", _("Hanako prepares to attend an open house day."), "hanako"),
+            (_("Road Trip"), "sh_ch42.s2", _("Hanako and the others hit the road to Kasshoku."), "hanako"),
+            (_("Kasshoku"), "sh_ch42.s3", _("Hanako checks out the journalism facility with Naomi."), "hanako"),
+            (_("Time Out"), "sh_ch42.s4", _("Hanako has a quiet lunch with Naomi near the track field."), "hanako"),
+            (_("Fate's Call"), "sh_ch42.s5", _("The open house day comes to a dramatic conclusion."), "hanako")
         ])
     )
 
@@ -116,7 +124,7 @@ init 30 python:
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
-    sh_bgs("satou", ["masterbed_ni"])
+    sh_bgs("satou", ["masterbed_ni", "hiroyukicar"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC

@@ -96,6 +96,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Sweater/Sweater-Pout", "basic_pout_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/Sweater-Speak", "basic_speak_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/Sweater-Worry", "basic_worry_swt"),
+    ("Sprites/Hisao/Sweater/Sweater-Sweet", "basic_sweet_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/S Crossed/SCrossed-Annoy", "cross_annoy_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/S Crossed/SCrossed-Blush", "cross_blush_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/S Crossed/SCrossed-Frown", "cross_frown_swt"),
@@ -105,6 +106,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Sweater/S Crossed/SCrossed-Pout", "cross_pout_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/S Crossed/SCrossed-Speak", "cross_speak_swt"),
     ("sprites2/Re Hisao Nakai/Sweater/S Crossed/SCrossed-Worry", "cross_worry_swt"),
+    ("Sprites/Hisao/Sweater/S Crossed/SCrossed-Sweet", "cross_sweet_swt"),
     # Bathrobe
     ("sprites/Hisao Nakai/Bathrobe/Bathrb-Blush", "basic_blush_bath"),
     ("sprites/Hisao Nakai/Bathrobe/Bathrb-Grin", "basic_grin_bath"),
