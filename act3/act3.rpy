@@ -31,6 +31,12 @@ init 30:
                 0.2
             repeat
 
+    transform sh_fadebottomenter:
+        ypos 1.2 alpha 0.0
+        ease 1.0 ypos 1.0 alpha 1.0
+
+    transform sh_fadebottomexit:
+        ease 1.0 ypos 1.2 alpha 0.0
 
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
     define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
@@ -67,6 +73,7 @@ init 30:
 
     image newclassphoto = sh_vfx("newclassphoto")
     image teddybear = sh_vfx("teddybear")
+    image carseats = sh_vfx("carseats", boxstrip=False)
 
     define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
 
@@ -81,6 +88,7 @@ init 31:
 init 30 python:
     def sh_drizzle(my_offset = 0.0, my_xzoom = 1.0, my_yzoom = 1.0):
         return sh_drizzle_tf(my_offset, my_xzoom, my_yzoom)
+
 
     sisterhood_chapters.append(
         (_("Act 3"), [

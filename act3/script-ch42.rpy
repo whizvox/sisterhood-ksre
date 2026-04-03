@@ -253,8 +253,8 @@ label sh_ch42:
 
         ha "Ummm... Anybody want another piece of chocolate?"
 
-        show lilly basic_smile_cas at twoleft
-        show hiroyuki neutral at tworight
+        show lilly basic_smile_cas_close at left
+        show hiroyuki serious_close at right
         with charaenter
 
         li "That sounds good. Thank you Hanako."
@@ -266,75 +266,165 @@ label sh_ch42:
         hide hiroyuki
         with charaexit
 
-        show carseats at center:
-            ypos 1.2 alpha 0.0
+        show bg:
+            ease 1.0 center
+        show carseats at center, sh_fadebottomenter
+        show hisao basic_speak_swt_close at left, sh_fadebottomenter
+        show naomi basic_smile_close at right, sh_fadebottomenter
         with None
-
-        show bg at bottom
-
 
         hi "Sometimes I do, sometimes I don't. I remember when my father drove me to Yamaku, I was reading pretty much the entire way there, and that was the same route as we're driving right now."
         "Lilly's father raises an eyebrow and looks at Hisao through his rearview mirror."
         hy "I take it then that you are originally from Chiba? Are you planning to move back into your parental home?"
         hi "That's the idea. Living five minutes away from school is a luxury I'm going to miss, but I have my own room at home, and my parents work long hours, so I'd at least have some extra privacy."
+
+        show naomi bend_grin_close
+        with chchange
+
         "Naomi grins."
         na "Eh, you shouldn't see it as a lack of privacy. You ought to see life at the dorms as a good way to meet lots of interesting new people with whom you might not interact as much if you weren't living on campus."
         na "Heck, they say that university years are the party years of your life. Not that I can go overboard with parties myself of course, but I bet it'll still be awesome."
         "Sounds like somebody is looking forward to her time as a university student. I am not so eager to move accommodations myself."
         ha "I'm... not really a party p-person myself, but..."
         "There was Lilly's proposal, but I wonder just how much chance she has of changing her father's mind."
+
+        show bg:
+            ease 1.0 top
+        show carseats at sh_fadebottomexit
+        show hisao at sh_fadebottomexit
+        show naomi at sh_fadebottomexit
+        with Pause(1.0)
+
+        hide carseats
+        hide hisao
+        hide naomi
+        with None
+
+        show lilly basic_weaksmile_cas_close at left
+        show hiroyuki serious_close at right
+        with { "master": charaenter }
+
         li "Father, do you remember that conversation we had previously about... accommodations?"
         hy "I do. But is now really the proper time to bring that up again?"
         li "Would you be willing to reconsider if a person like Hanako moved in as a roommate to keep an eye out?"
+
+        show hiroyuki eyebrow_close
+        with chchange
+
         hy "A person like Miss Ikezawa or Miss Ikezawa herself?"
+
+        show lilly basic_oops_cas_close
+        with chchange
+
         li "Hanako herself. I... ah... have reason to believe she'd be interested in the opportunity if it was presented to her."
         "I can see his eyes giving me a long analyzing look that sincerely unnerves me."
         hy "Miss Ikezawa, is that so?"
-        ha "Y-Yes... ummm... sir."
+        ha "Y-yes... ummm... sir."
         hy "You are not merely saying that because it would convenience my daughter, are you?"
-        ha "N-No. I'm... not very good with people, so... having a bit m-more space and only having to s-share the facilities with my best friend would be very convenient for me too."
+        ha "N-no. I'm... not very good with people, so... having a bit m-more space and only having to s-share the facilities with my best friend would be very convenient for me too."
         "Lilly's father furrows his brow as if weighing every word I just said."
+
+        show hiroyuki serious_close
+        with chchange
+
         hy "Hmmm..."
         hi "Sir?"
         "I look at my boyfriend who's remained quiet during this discussion and now suddenly speaks up."
         hy "Yes, Mister Nakai?"
+
+        hide lilly
+        hide hiroyuki
+        with charaexit
+
+        show bg:
+            ease 1.0 center
+        show carseats at center, sh_fadebottomenter
+        show hisao basic_speak_swt_close at left, sh_fadebottomenter
+        show naomi basic_neutral_close at right, sh_fadebottomenter
+        with None
+
         hi "Would you mind if I shared something with you that caught my attention about this?"
         hy "By all means."
         hi "I don't think sharing a place with a blind person is something that works out well for everyone. If you're sloppy by nature and leave stuff lying about or don't put things back in exactly the place where you found them, you'll usually make things harder rather than easier for your roommate."
         hy "That makes sense."
         hi "But I've seen Lilly and Hanako prepare a meal together a few times in the past and they seem to have a system in place between the two of them that allows them to work almost in perfect unison."
         hi "Hanako seems to know exactly how to arrange things so that Lilly can easily find them, and she's always very meticulous about putting things back in exactly the right place when she borrows stuff from Lilly's cupboard."
+
+        show hisao basic_smile_swt_close
+        with chchange
+
         hi "I don't think it's an exaggeration when I say that Hanako is easily the best roommate Lilly could ever wish for."
+
+        show naomi bend_wink_close
+        with chchange
+
         "I blush from this unexpected avalanche of praise. It's true that I'm somewhat used to Lilly's preferences related to chores and cooking, but I don't consider that trait to be nearly as impressive as Hisao is making it out to be."
+
+        show bg:
+            ease 1.0 top
+        show carseats at sh_fadebottomexit
+        show hisao at sh_fadebottomexit
+        show naomi at sh_fadebottomexit
+        with Pause(1.0)
+
+        hide carseats
+        hide hisao
+        hide naomi
+        with None
+
+        show lilly basic_cheerful_cas_close at left
+        show hiroyuki eyebrow_close at right
+        with { "master": charaenter }
+
         "Lilly, on the other hand, smiles and gives an appreciative nod."
         li "I could not agree more with that assessment, Hisao."
-        "I kind of wonder if this is going to make any difference whatsoever. I'm not really sure how useful I would be to Lilly in everyday life once she's memorized the layout of the apartment and the neighborhood."
-        "I don't think of myself as an extremely reliable safety net, and if Mister Satou's not willing to rent an apartment for his daughter, what are the odds of him wanting to do the same for a relative stranger. Unless..."
-        "A realization suddenly dawns on me."
-        "Unless he felt he owed that person something. Didn't he say before that if I ever needed anything, I only needed to ask? If he's serious about that and he knows that I'd like having a small place of my own together with Lilly, would he refuse? Could he?"
-        "Wait a second... Is Lilly counting on that? Is that why...?"
-        "No, Lilly seemed genuinely happy when I said I'd like to be her roommate. I believe she sincerely desires my company. I also don't think she'd like it if an obligation to me was the only reason her father would allow her to live on her own."
-        "But even so, Lilly's employing a pretty devious strategy, and when I look at Mister Satou, I notice that he opens his mouth to say something, but then merely sighs, shakes his head and gives his daughter a long, hard look."
-        hy "It appears that you inherited your negotiation tactics from your mother. Well, if you want me to take all of this into account and reevaluate my opinion, I am willing to do so, but I cannot make any promises."
-        li "Thank you Father. I greatly appreciate it."
 
-        scene black
-        with Dissolve(2.0)
+        nvl clear
+        nvl show dissolve
+
+        n "I kind of wonder if this is going to make any difference whatsoever. I'm not really sure how useful I would be to Lilly in everyday life once she's memorized the layout of the apartment and the neighborhood."
+        n "I don't think of myself as an extremely reliable safety net, and if Mister Satou's not willing to rent an apartment for his daughter, what are the odds of him wanting to do the same for a relative stranger. Unless..."
+        n "{vspace=90}...A realization suddenly dawns on me."
+        
+        nvl clear
+        
+        n "Unless he felt he owed that person something. Didn't he say before that if I ever needed anything, I only needed to ask? If he's serious about that and he knows that I'd like having a small place of my own together with Lilly, would he refuse? Could he?"
+        n "Wait a second... Is Lilly counting on that? Is that why...?"
+        n "No, Lilly seemed genuinely happy when I said I'd like to be her roommate. I believe she sincerely desires my company. I also don't think she'd like it if an obligation to me was the only reason her father would allow her to live on her own."
+        n "But even so, Lilly's employing a pretty devious strategy."
+
+        nvl hide dissolve
+
+        show hiroyuki serious_close
+        with chchange
+
+        "When I look at Mister Satou, I notice that he opens his mouth to say something, but then merely sighs, shakes his head, and gives his daughter a long, hard look."
+        hy "It appears that you inherited your negotiation tactics from your mother."
+        hy "Well, if you want me to take all of this into account and reevaluate my opinion, I am willing to do so, but I cannot make any promises."
+
+        show lilly basic_satisfied_cas_close
+        with chchange
+
+        li "Thank you Father. I greatly appreciate it."
 
         if _in_replay:
             return
+        else:
+            stop music fadeout 2.0
 
     label .s3:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_pearly fadein 4.0
         scene bg kasshoku_campusentrance
         show crowd
         show lilly cane_smileclosed_cas at left
         show hiroyuki serious at twoleft
         show naomi basic_smile at tworight
         show hisao basic_speak_swt at right
+        with shorttimeskip
+
+        queue music music_pearly fadein 4.0
 
         hi "Wow, it's really big. I hope I won't get lost here."
 
