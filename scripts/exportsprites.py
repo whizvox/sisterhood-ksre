@@ -148,6 +148,7 @@ naomi = [
     ("Sprites/Naomi/Naomi confused", "basic_confused"),
     ("Sprites/Naomi/Naomi grin closed", "basic_grinclosed"),
     ("Sprites/Naomi/Naomi seizure", "basic_seizure"),
+    ("Sprites/Naomi/Naomi sheepish", "basic_sheepish"),
     ("Sprites/Naomi/Naomi smileclosed", "basic_smileclosed"),
     ("Sprites/Naomi/Naomi bend grinclosed", "bend_grinclosed"),
 ]

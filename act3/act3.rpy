@@ -122,7 +122,7 @@ init 30 python:
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["awkward", "smileclosed"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
-    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure", "smileclosed"], poses=["basic"])
+    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("naomi", ["grinclosed"], poses=["bend"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
     sh_sprites("muto", ["eyebrow"])
@@ -139,6 +139,7 @@ init 30 python:
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
     # credit: OMOSHIRO RENT-A-CAR
     sh_bgs("misc", ["car_ss"])
+    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 

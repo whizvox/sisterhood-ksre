@@ -416,15 +416,18 @@ label sh_ch42:
 
         $ set_window_tint(TINT_HANAKO)
 
-        scene bg kasshoku_campusentrance
+        scene bg kasshoku_entrance
         show crowd
         show lilly cane_smileclosed_cas at left
-        show hiroyuki serious at twoleft
-        show naomi basic_smile at tworight
-        show hisao basic_speak_swt at right
+        show hiroyuki serious at center:
+            xanchor 0.5 xpos 0.3
+        show hisao basic_speak_swt at tworight:
+            xanchor 0.5 xpos 0.62
+        show naomi basic_smile at right
         with shorttimeskip
 
         queue music music_pearly fadein 4.0
+        play ambient sfx_crowd_outdoors fadein 2.0
 
         hi "Wow, it's really big. I hope I won't get lost here."
 
@@ -449,7 +452,7 @@ label sh_ch42:
         show hisao cross_speak_swt
         with chchange
 
-        hi "Let's see. You and your father have to be in the building on the northwest side of the campus. The faculty building I'm heading for is located on the east side and Hanako and Naomi are set for the building just to the north of here. Geez, we're spread all over the place."
+        hi "Let's see... You and your father have to be in the building on the northwest side of the campus. The faculty building I'm heading for is located on the east side and Hanako and Naomi are set for the building just to the north of here. Geez, we're spread all over the place."
 
         show lilly cane_weaksmile_cas
         show hisao cross_neutral_swt
@@ -480,7 +483,7 @@ label sh_ch42:
         "At least somebody came prepared. Since I spent most of yesterday cramming for the upcoming mock exams, I didn't even think of looking up today's schedule. And it seems like the same is true for the rest of us."
         hi "Fine by me."
         na "Sure."
-        ha "O-Okay."
+        ha "O-okay."
 
         show hiroyuki serious
         show lilly back_smile_cas
@@ -490,24 +493,28 @@ label sh_ch42:
         li "We'll return here at four o' clock then. Shall we be off then? Have fun everyone."
 
         show hiroyuki bow
-        pause 0.7
+        with charachangealways
+
+        pause 0.4
+
         show hiroyuki thinking
-        with chchange
+        with charachangealways
+
         hide lilly
         hide hiroyuki
+        with charaexit
 
         "Lilly's father bows to us and then walks off into the crowd together with his daughter. Hisao looks me over before picking up his backpack."
 
         show hisao basic_worry_swt
-        show naomi basic_neutral at center
-        with charamove
+        show naomi basic_neutral
+        with chchange
 
         hi "Are you going to be okay?"
-
-        "Looks like he picked up on my nervous mood. Over the course of last week, I've kept telling myself that I'd be okay today, since I've lately been able to walk Yamaku's hallways with only some mild discomfort every now and then."
+        "Looks like he picked up on my nervous mood."
+        "Over the course of last week, I've kept telling myself that I'd be okay today, since I've lately been able to walk Yamaku's hallways with only some mild discomfort every now and then."
         "Looks like I've been fooling myself into thinking it'd be that easy. Ever since we've passed the gate, I've been feeling an unusually oppressive atmosphere."
-
-        ha "Y-Yes, I'm okay."
+        ha "Y-yes, I'm okay."
 
         show hisao cross_speak_swt
         show naomi basic_smile
@@ -527,53 +534,50 @@ label sh_ch42:
         with chchange
 
         hi "Well, good luck today."
-        ha "Y-You too."
+        ha "Y-you too."
 
         hide hisao
+        with charaexit
 
-        "I sigh softly as I watch my boyfriend disappear into the mass of people. Naomi picks up her backpack from the floor and gestures towards the buildings ahead of us."
+        "I sigh softly as I watch my boyfriend disappear into the mass of people."
+
+        show naomi basic_smile_close at center
+        with characlose
+
+        "Naomi picks up her backpack from the floor and gestures towards the buildings ahead of us."
 
         show naomi bend_wink_close
         with chchange
 
         na "Shall we go too?"
-        ha "N-Not too fast, please."
+        ha "N-not too fast, please."
 
-        scene bg kasshoku_campusgrounds
+        scene bg kasshoku_grounds
         show crowd
-        show naomi basic_smile_close at center
+        show naomi basic_smile_close
+        with locationchange
 
         "I take a deep breath and then we start making our way through the crowd. I make sure to keep to Naomi's left side and stick as close to her as possible while keeping my head down."
 
-        scene bg kasshoku_journalismentryhall
+        scene bg kasshoku_journalentry
         show crowd
-        show naomi basic_smile_close at center
+        show naomi basic_smile_close
+        with locationchange
 
         "When we finally reach the entrance to our building, Naomi grabs two pamphlets from a desk near the door and hands one of them to me. I fold it open and look at its contents."
 
         nvl clear
         nvl show dissolve
 
-        n "Information sessions and presentations: (start every 45 minutes. 9:15 - 15:15)"
-        n "{vspace=30}- History of journalism (classroom 1-1)"
-        n "- Journalistic writing (classroom 1-2)"
-        n "- Research and analysis (classroom 1-3)"
-        n "- Researching media and culture (classroom 2-1)"
-        n "- Advanced reporting (classroom 2-2)"
-        n "- Political reporting (classroom 2-3)"
-        n "- The media and popular culture (classroom 2-5)"
-
-        n "{vspace=30}Closing session: (15:30 - 16:00)"
-        n "- The internet, social media and the future of journalism (lecture hall 1)"
+        n "Information sessions and presentations: (start every 45 minutes. 9:15 - 15:15)\n- History of journalism (classroom 1-1)\n- Journalistic writing (classroom 1-2)\n- Research and analysis (classroom 1-3)\n- Researching media and culture (classroom 2-1)\n- Advanced reporting (classroom 2-2)\n- Political reporting (classroom 2-3)\n- The media and popular culture (classroom 2-5)\n\nClosing session: (15:30 - 16:00)\n- The internet, social media, and the future of journalism (lecture hall 1){fast}"
 
         nvl clear
-        nvl hide dissolve
 
         show naomi basic_focus_close
         with chchange
 
         na "Information sessions, huh? They're probably kinda like ordinary class sessions we can attend if there's still room."
-        ha "P-Probably."
+        ha "P-probably."
 
         show naomi bend_wink_close
         with chchange
@@ -581,22 +585,30 @@ label sh_ch42:
         na "So, any special requests?"
         ha "No. You?"
 
-        show naomi bend_laugh
+        show naomi bend_laugh_close
         with chchange
 
-        na "Let's check out 'Research and analysis' first."
-
+        na "Let's check out ‘Research and analysis’ first."
         "I nod and we go off to find classroom 1-3 where the lecture about that particular subject is being given using the map on the back of the pamphlet as a guide."
 
-        scene bg kasshoku_journalismhallway
+        stop ambient fadeout 1.0
+
+        scene bg kasshoku_hallway
         show crowd
         show naomi basic_smile at left
+        with locationchange
+
+        queue ambient sfx_crowd_indoors fadein 1.0
+
         pause 1.0
+
+        show naomi at center
+        with charamove
+
         show naomi bend_smile
-        with chchange
+        with charachangealways
 
         "As we reach the classroom, Naomi looks inside."
-
         na "Swell, there's like 4 seats left. Shall we?"
 
         show naomi bend_smile_close
@@ -611,7 +623,7 @@ label sh_ch42:
         na "Huh?"
         ha "We c-could do this one later."
 
-        show naomi basic_confused_close
+        show naomi basic_annoyed_close
         with chchange
 
         "Naomi looks puzzled for a second and then shrugs her shoulders."
@@ -621,31 +633,36 @@ label sh_ch42:
 
         na "Well, okay."
 
-        scene bg kasshoku_journalismclassroom1
+        scene bg kasshoku_classroom
         show crowd
-        show naomi basic_smile_close at right
-        with charaenter
+        with locationchange
 
         "Classroom 1-2 fortunately has several more vacant seats, and I make my way to the back of the classroom as quickly as I can. Naomi hurriedly moves to the seat next to mine."
         "I feel guilty about forcing Naomi to put up with this. The last thing I wanted was to throw her into the babysitter's role."
-        "The next 45 minutes are mostly spent listening to a long story about what makes a well-written article, but I'm having trouble taking notes due to the thoughts whirling around in my head."
+
+        $ renpy.music.set_volume(0.1, delay=1.0, channel="ambient")
+        $ renpy.music.set_audio_filter("ambient", renpy.audio.filter.Lowpass(), replace=True)
 
         nvl clear
         nvl show dissolve
 
-        n "I've been a bit antsy over the course of the week, but for the most part I've been able to keep myself from getting too worked up about it. I actually felt fine this morning, but the moment we reached the campus entrance my agoraphobia almost immediately kicked in."
-        n "{vspace=30}Despite Yamaku's campus being far from small, the school itself is definitely not very large and houses only around 250 students or so, so things are usually rather peaceful aside from the hallways and cafeteria during lunch break."
-        n "{vspace=30}It's such a contrast to this place which is both massive and crowded. Especially the classrooms are a lot larger and more crowded here. It reminds me a bit of my middle school, and I'm not so sure whether that's a good thing."
+        n "The next 45 minutes are mostly spent listening to a long story about what makes a well-written article, but I'm having trouble taking notes due to the thoughts whirling around in my head."
+        n "{vspace=60}I've been a bit antsy over the course of the week, but for the most part I've been able to keep myself from getting too worked up about it."
+        n "I actually felt fine this morning, but the moment we reached the campus entrance, my agoraphobia almost immediately kicked in."
+        n "{vspace=30}Despite Yamaku's campus being far from small, the school itself is definitely not very large and houses only around 250 students, so things are usually rather peaceful aside from the hallways and cafeteria during lunch break."
+        n "It's such a contrast to this place which is both massive and crowded. Especially the classrooms are a lot larger and more crowded here. It reminds me a bit of my middle school, and I'm not so sure whether that's a good thing."
 
-        nvl clear
         nvl hide dissolve
 
+        $ renpy.music.set_audio_filter("ambient", None, replace=True)
+
         "Finally, the teacher in front of the class looks like he's finishing up his story."
+        "I instinctively start gathering my stuff and prepare to quickly slip out of the room..."
 
         show naomi basic_neutral_close at tworight
-        with charamove
+        with charaenter
 
-        "I instinctively start gathering my stuff and prepare to quickly slip out of the room, but before I can get up I see Naomi subtly shaking her head at me, and I realize that I just stopped short of making a huge mistake."
+        "...but before I can get up, I see Naomi subtly shaking her head at me, and I realize that I just stopped short of making a huge mistake."
         "While the teachers at Yamaku were informed of some of my circumstances and tolerated my tendency to leave class early in order to avoid the crowds, I don't think there'll be such leniency here."
 
         show naomi basic_sheepish_close
@@ -653,41 +670,53 @@ label sh_ch42:
 
         "I merely would have made a spectacle out of myself. That would have been disasterous. I quickly give a nod of understanding and put my backpack back down before I attract anyone's attention."
 
-        scene bg kasshoku_journalismhallway
-        show crowd
-        show naomi basic_smile_close at twoleft
-        with charaenter
+        $ renpy.music.set_volume(1.0, delay=1.0, channel="ambient")
 
-        "We wait until other people rise from their seats, and then I quickly get out of the classroom with Naomi in tow. After we get a safe distance away from the classroom entrance, Naomi turns to me and points down the hallway."
+        "We wait until other people rise from their seats, and then I quickly get out of the classroom with Naomi in tow."
+
+        scene bg kasshoku_hallway
+        show crowd
+        show naomi basic_smile_close
+        with locationchange
+
+        "After we get a safe distance away from the classroom entrance, Naomi turns to me and points down the hallway."
 
         show naomi basic_smileclosed_close
         with chchange
 
-        na "Want to try 'Research and analysis' again? We might have more seats to choose from this time."
-        ha "O-Okay."
-
-        show naomi bend_smile_close at center
-        with charamove
-
+        na "Want to try ‘Research and analysis’ again? We might have more seats to choose from this time."
+        ha "O-okay."
         "We quickly head over to classroom 1-3, which is still in the process of emptying. As the stream of people moves past us, I hurriedly hide behind Naomi, which is only partially effective since I'm a bit taller than her."
 
-        scene black
-        with Dissolve(2.0)
+        scene bg kasshoku_classroom
+        show crowd
+        with locationchange
 
-        "Eventually people stop coming out of the classroom, and Naomi and I both carefully walk inside. Naomi gives a little nod with her head."
+        "Eventually people stop coming out of the classroom, and Naomi and I both carefully walk inside."
+
+        show naomi bend_smile_close
+        with charaenter
+
+        "Naomi gives a little nod with her head."
         na "Are we going for a spot on the right in the back again?"
-        ha "Y-Yes please."
+        ha "Y-yes please."
 
         if _in_replay:
             return
+        else:
+            stop ambient fadeout 2.0
+            stop music fadeout 2.0
 
     label .s4:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_soothing fadein 4.0
-        scene bg kasshoku_trackbleachers
+        scene bg kasshoku_bleachers
         show naomi basic_neutral_close at tworight
+        with shorttimeskip
+
+        queue ambient sfx_rooftop volume 0.1
+        queue music music_soothing fadein 4.0
 
         na "Are you sure that this is okay?"
         "Naomi looks a bit uncertain upon taking her half of my lunch from my hands."
@@ -697,7 +726,7 @@ label sh_ch42:
         with chchange
 
         na "Well, okay then. Thanks a lot."
-        ha "N-Not a problem."
+        ha "N-not a problem."
 
         show naomi basic_smile_close
         with chchange
@@ -707,9 +736,8 @@ label sh_ch42:
 
         n "So far we've been to three of the presentations that were offered, and the faculty's program for the day has a window of 45 minutes reserved for lunch break, meaning we still have about half an hour before we have to return to the faculty building."
         n "{vspace=30}I, for one, really welcome this opportunity to get a little break. Naomi wanted to drop by the cafeteria at first, but I managed to convince her to go and find a quiet and secluded spot for us to eat our lunch."
-        n "{vspace=30}Naomi didn't bring any lunch herself, probably counting on getting to buy her lunch around here, but I got her to abandon that idea by promising her half of my lunch. Fortunately I already anticipated the possibility of Naomi not bringing a lunch of her own, and I prepared a particularly large lunch myself this morning, so neither of us is in danger of going hungry."
+        n "{vspace=30}Naomi didn't bring any lunch herself, probably counting on getting to buy her lunch around here, but I got her to abandon that idea by promising her half of my lunch. Fortunately, I already anticipated the possibility of Naomi not bringing a lunch of her own, and I prepared a particularly large lunch myself this morning, so neither of us is in danger of going hungry."
 
-        nvl clear
         nvl hide dissolve
 
         show naomi basic_neutral_close
@@ -723,8 +751,8 @@ label sh_ch42:
 
         "Naomi shakes her head."
         na "I take it that you had a reason for coming here, and I don't mind either way, so we're better off staying here for a while longer."
-        "'Here' being the spot I picked after we left the faculty. It's a bench near the sports field a few minutes walk away from the journalism faculty. Since there are barely any other people around here, this spot feels nice and safe."
-        ha "T-Thanks."
+        "“Here” being the spot I picked after we left the faculty. It's a bench near the sports field a few minutes walk away from the journalism faculty. Since there are barely any other people around here, this spot feels nice and safe."
+        ha "T-thanks."
 
         show naomi basic_sad_close
         with chchange
@@ -881,7 +909,7 @@ label sh_ch42:
         $ set_window_tint(TINT_HANAKO)
 
         play music music_dreamy fadein 4.0
-        scene bg kasshoku_journalismclassroom2
+        scene bg kasshoku_classroom
         show crowd
         show naomi basic_neutral_close at right
 
