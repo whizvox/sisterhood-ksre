@@ -38,6 +38,8 @@ init 30:
     transform sh_fadebottomexit:
         ease 1.0 ypos 1.2 alpha 0.0
 
+    define clockwipefast = ImageDissolve(Tile("gui/trans/clockwipe.png"), 1.0, 8)
+
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
     define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
     define yui = Character(_("Yuichi"), who_color="#b37b7b")
@@ -122,7 +124,7 @@ init 30 python:
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["awkward", "smileclosed"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
-    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "seizure", "sheepish", "smileclosed"], poses=["basic"])
+    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "concern", "seizure", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("naomi", ["grinclosed"], poses=["bend"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
     sh_sprites("muto", ["eyebrow"])
@@ -139,13 +141,14 @@ init 30 python:
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
     # credit: OMOSHIRO RENT-A-CAR
     sh_bgs("misc", ["car_ss"])
-    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers"])
+    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers", "lecturehall"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 
     sh_register_sfx([
         # credit: Universfield of Pixabay
-        "winecork"
+        "winecork",
+        "phonering3"
     ])
 
 label sisterhood_timeskip_broken:

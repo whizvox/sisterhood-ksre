@@ -715,7 +715,7 @@ label sh_ch42:
         show naomi basic_neutral_close at tworight
         with shorttimeskip
 
-        queue ambient sfx_rooftop volume 0.1
+        queue ambient sfx_rooftop volume 0.3 fadein 4.0
         queue music music_soothing fadein 4.0
 
         na "Are you sure that this is okay?"
@@ -743,7 +743,7 @@ label sh_ch42:
         show naomi basic_neutral_close
         with chchange
 
-        na "The sky's kinda cloudy though. If it starts raining, we'll have to run back or we'll get soaked."
+        na "The sky's kinda cloudy, though. If it starts raining, we'll have to run back or we'll get soaked."
         ha "Do you... want to go b-back already?"
 
         show naomi basic_smileclosed_close
@@ -754,7 +754,7 @@ label sh_ch42:
         "“Here” being the spot I picked after we left the faculty. It's a bench near the sports field a few minutes walk away from the journalism faculty. Since there are barely any other people around here, this spot feels nice and safe."
         ha "T-thanks."
 
-        show naomi basic_sad_close
+        show naomi basic_concern_close
         with chchange
 
         "Naomi gives me a worried glance."
@@ -763,13 +763,12 @@ label sh_ch42:
         nvl clear
         nvl show dissolve
 
-        n "I answer Naomi's words with a sad nod. Looks like even she picked up on it. I'm so disappointed in myself right now. I should be motivated and inspired."
-        n "{vspace=30}This is the school I've applied for. The school that Hisao, Lilly and probably even Naomi will be attending. The first choice I've put on my application form at Yamaku. The one chance I have to easily stay in contact with my best friends and keep my relationship with Hisao going."
-        n "{vspace=30}Despite the fact that I can't afford to let my anxieties take control of me, the massiveness, crowdedness and unfamiliarity of this place started getting to me the moment I set foot in here. Naomi gives me a sheepish look."
+        n "I answer Naomi's words with a sad nod."
+        n "{vspace=90}Looks like even she picked up on it. I'm so disappointed in myself right now. I should be motivated and inspired."
+        n "This is the school I've applied for. The school that Hisao, Lilly, and probably even Naomi will be attending. The first choice I've put on my application form at Yamaku. The one chance I have to easily stay in contact with my best friends and keep my relationship with Hisao going."
+        n "{vspace=30}Despite the fact that I can't afford to let my anxieties take control of me, the massiveness, crowdedness, and unfamiliarity of this place started getting to me the moment I set foot in here."
 
-        nvl clear
         nvl hide dissolve
-
 
         show naomi basic_sheepish_close
         with chchange
@@ -795,21 +794,20 @@ label sh_ch42:
         with chchange
 
         na "...fits."
-
         "I awkwardly nod as Naomi bluntly finishes my sentence. Naomi acts about as easygoing about her epilepsy as Lilly does about her blindness, at least most of the time, but I'm not completely comfortable discussing the subject with her yet."
 
-        show naomi basic_serious_close
+        show naomi basic_concern_close
         with chchange
 
-        na "Hmmm. Have you ever heard of the 'bystander effect'?"
+        na "Hmmm. Have you ever heard of the ‘bystander effect’?"
         "I shake my head."
-        na "Put simply it means that the more people are nearby when something bad happens to you, the less likely they are to do something."
+        na "Put simply, it means that the more people are nearby when something bad happens to you, the less likely they are to do something."
         na "If you have a seizure while there are like one or two people nearby, they're very likely to do whatever they can to help. If the same thing happens, and there are 40 people nearby, all they usually do is stand there and stare."
-        na "Nobody likes to risk screwing up in front of others, so nobody lifts a finger even while you're banging your head against the pavement and suffer a concussion as a result."
 
         show naomi basic_annoy_close
         with chchange
 
+        na "Nobody likes to risk screwing up in front of others, so nobody lifts a finger even while you're banging your head against the pavement and suffer a concussion as a result."
         "The brief bitter glint in Naomi's eyes suggests that she might not have made that example up just now."
 
         show naomi basic_neutral_close
@@ -817,7 +815,6 @@ label sh_ch42:
 
         na "Anyway, I mostly go into town with others for that reason. This isn't a problem when I'm with Natsume or you and Jun since you know how to act when I short out, which is a real load off my mind."
         ha "Uhhh... You... really feel better while we're around?"
-
         "It seems Naomi has more faith in me than I have. If she has a seizure in a public spot, and there are 40 people looking at her, that would also mean there'd be 40 people looking at me."
         "And 40 people looking in my direction may just be enough to shut me down too. That'd leave Jun, and I'd rather not let her near Naomi while the latter is thrashing around on the floor."
 
@@ -830,14 +827,14 @@ label sh_ch42:
         "This place, however, will be where I will be spending the next years of my life from morning until afternoon. If I'm going to feel on edge all day long, how will I even function?"
         ha "It... probably helped that it was rather d-dark while we were there, and I... know my way around that part of the c-city a bit."
 
-        show naomi basic_sad_close
+        show naomi basic_concern_close
         with chchange
 
         "Naomi looks at me with a worried frown as she reads my expression."
         na "Were you hiding your anxiety and merely pretending to have fun? You weren't, were you?"
-        ha "N-No, not at all. I... really liked the day before yesterday."
-        "That's not a white lie. After our get-together in town, Naomi, Jun and I took the bus to the city where we first had a great meal in a quiet little sushi restaurant."
-        "Then we went for a 2-hour long karaoke session until all three of us became a bit hoarse. And finally, after hearing that the arcade was a favored spot for Hisao and me to spend our dates, Jun dragged me there to engage in some competitive gaming sessions."
+        ha "N-no, not at all. I... really liked the day before yesterday."
+        "That's not a white lie. After our get-together in town, Naomi, Jun, and I took the bus to the city where we first had a great meal in a quiet little sushi restaurant."
+        "Then we went for a 2-hour long karaoke session until all three of us became hoarse. And finally, after hearing that the arcade was a favored spot for Hisao and me to spend our dates, Jun dragged me there to engage in some competitive gaming sessions."
         "Our little outing felt different from the dates I went on with Hisao or the girl-dates I undertook with Lilly. But despite the different group dynamic, I can honestly say I had a lot of fun that evening and went to bed with a smile that night."
 
         show naomi bend_smile_close
@@ -856,7 +853,7 @@ label sh_ch42:
         show naomi basic_grin_close
         with chchange
 
-        na "Heh, yeah, but I don't think every girl who merely 'likes computers' acts like a kid in a candystore when you take her to the arcade."
+        na "Heh, yeah, but I don't think every girl who merely ‘likes computers’ acts like a kid in a candystore when you take her to the arcade."
         "I giggle. I don't think I could have described Jun's disposition more perfectly than Naomi just did."
         na "I think... she simply doesn't have many other f-friends who like to play games... particularly video games."
 
@@ -873,81 +870,120 @@ label sh_ch42:
 
         "Naomi grins proudly."
         na "And don't you forget it."
-
-        nvl clear
-        nvl show dissolve
-
-        n "On the way back I asked Naomi if she was interested in coming along today."
-        n "{vspace=30}I felt a bit bad that a not unimportant reason for bringing her along was the fact that I expected my anxieties to get the better of me if I had to attend this event completely on my own, and there's no way I could have asked Lilly or Hisao to skip their events and come along with me just so I could hide behind them."
-
-        nvl clear
-        nvl hide dissolve
-
+        "On the way back, I asked Naomi if she was interested in coming along today."
+        "I felt a bit bad that a not unimportant reason for bringing her along was the fact that I expected my anxieties to get the better of me if I had to attend this event completely on my own."
+        "And there's no way I could have asked Lilly or Hisao to skip their events and come along with me just so I could hide behind them."
         ha "I won't. And ah... Thanks again for c-coming along today."
 
         show naomi bend_wink_close
         with chchange
 
         na "I'm enjoying myself here, so don't sweat it. Besides, it's the least I can do back for someone who lets me stay over every once in a while."
-
-        "Two weeks ago, Naomi had another seizure during a session of our writing club although she thankfully didn't mess up my blanket this time, and we let her spend the night in my bed again. Natsume joked the day after that maybe Naomi ought to start paying me rent."
+        "Two weeks ago, Naomi had another seizure during a session of our writing club—although she thankfully didn't mess up my blanket this time and we let her spend the night in my bed again."
+        "Natsume joked the day after that maybe Naomi ought to start paying me rent."
         ha "That's... okay."
 
         show naomi basic_sheepish_close
         with chchange
 
-        "Conversation dries up, and we finish our lunch without making further small talk. I feel my nerves slowly easing although I'm not sure how long that is going to last. As Naomi suggests going back, I quickly check my watch. It's nearly one o' clock. Only three more hours to go. I can do this."
-
-        scene black
-        with Dissolve(2.0)
+        "Conversation dries up, and we finish our lunch without making further small talk. I feel my nerves slowly easing, although I'm not sure how long that is going to last."
+        "As Naomi suggests going back, I quickly check my watch."
+        "It's nearly one o' clock. Only three more hours to go. I can do this."
 
         if _in_replay:
             return
+        else:
+            stop ambient fadeout 2.0
+            stop music fadeout 2.0
 
     label .s5:
 
         $ set_window_tint(TINT_HANAKO)
 
-        play music music_dreamy fadein 4.0
         scene bg kasshoku_classroom
         show crowd
         show naomi basic_neutral_close at right
+        with shorttimeskip
+
+        queue music music_dreamy fadein 4.0
 
         "Teacher" "...and many of the people now covering our politicians are alumni from this school."
         "I try to take a casual glance at my watch without making it too obvious that I'm checking the time. It's 15:10 right now. Only five more minutes."
-        "We arrived fairly late, and most seats were already taken, but since this was the only presentation we hadn't attended yet we couldn't just skip it and visit another one."
+        "We arrived fairly late, and most seats were already taken, but since this was the only presentation we hadn't attended yet, we couldn't just skip it and visit another one."
 
-        show black:
+        $ _sh_music_pos = renpy.music.get_pos()
+
+        play sound f"<from {_sh_music_pos}>{music_dreamy}" fadein 2.0 volume 0.5
+        play ambient sfx_crowd_indoors fadein 2.0 volume 0.3
+        stop music fadeout 2.0
+
+        $ renpy.music.set_audio_filter("sound", renpy.audio.filter.Lowpass(), True)
+
+        show darkness:
+            alpha 0.2
+        show n_vignette:
             alpha 0.2
         with Dissolve(1.0)
 
         "We're sitting right in the middle of class right now, and I'm having the impression that the person on my right, a slightly thin-looking girl with a silver-colored hairpin is staring past my bangs."
 
-        show black:
-            alpha 0.3
+        show darkness:
+            alpha 0.4
+        show n_vignette:
+            alpha 0.4
         with Dissolve(1.0)
 
         "In fact, I can almost swear half the class is watching me, but I'm afraid to turn my head. I consider covering the right side of my face with my hand, but that will only make the scarring on the back of my hand more noticable."
-        "Teacher" "There's also the matter of several political leaders in the Liberal Democratic Party as well as some in the Democratic Party of Japan and the Japan Restoration Party being graduates of this university."
-        "Teacher" "This creates a bond that can be used to your advantage to improve your working relationship with the politician you're assigned to cover..."
+        "Teacher" "{shader=jitter:u__jitter=(1.0,1.0)}There's also the matter of several political leaders in the Liberal Democratic Party as well as some in the Democratic Party of Japan and the Japan Restoration Party being graduates of this university."
+        "Teacher" "{shader=jitter:u__jitter=(1.0,1.0)}This creates a bond that can be used to your advantage to improve your working relationship with the politician you're assigned to cover..."
         "I've been on my guard ever since we returned here from our lunch break, and I'm feeling drained right now."
-        "Teacher" "Since Kasshoku has good ties with the five largest newspapers in the country, graduates of this school will have a good chance to get into the various kisha clubs you need to be part of in order to have direct access to the members of our legislature."
+        "Teacher" "{shader=jitter:u__jitter=(1.0,1.0)}Since Kasshoku has good ties with the five largest newspapers in the country, graduates of this school will have a good chance to get into the various kisha clubs you need to be part of in order to have direct access to the members of our legislature."
         "I've only been able to pick up fragments of this last presentation, so I really hope Naomi's been taking notes."
-        "Teacher" "...and there's information about Japanese kisha clubs obtainable online for those of you who wish to learn more. That is all for today. In 15 minutes, the faculty head will close off today's events with one last presentation in the hall one floor down. We are hoping to see all of you there."
+        "Teacher" "{shader=jitter:u__jitter=(1.0,1.0)}...and there's information about Japanese kisha clubs obtainable online for those of you who wish to learn more."
+
+        show darkness:
+            alpha 0.2
+        show n_vignette:
+            alpha 0.2
+        with Dissolve(1.0)
+
+        "Teacher" "That is all for today. In 15 minutes, the faculty head will close off today's events with one last presentation in the hall one floor down. We are hoping to see all of you there."
+
+        $ _sh_music_pos = renpy.music.get_pos("sound")
+
+        stop sound fadeout 2.0
+        play music f"<from {_sh_music_pos}>{music_dreamy}" fadein 2.0
+
+        $ renpy.music.set_volume(1.0, delay=1.0, channel="ambient")
+
+        hide darkness
+        hide n_vignette
+        with Dissolve(1.0)
+
+        "As the teacher finishes and people start getting up, I breathe a sigh of relief."
+
+        $ renpy.music.set_audio_filter("sound", None)
+
+        stop ambient fadeout 1.0
 
         hide crowd
-        hide black
-        show naomi basic_annoy_close at center
+        with charaexit
+
+        "Eventually the teacher follows his audience out the door, leaving just Naomi and me in the classroom."
+
+        show naomi basic_annoyed_close
+        with chchange
+
+        show naomi at center
         with charamove
 
-        "As the teacher finishes and people start getting up, I breathe a sigh of relief. Eventually the teacher follows his audience out the door, leaving just Naomi and me in the classroom. Naomi walks up to me with an annoyed expression on her face."
-        na "Man, I thought political reporting was gonna be awesome, but from what that guy just said, I get the impression that it pretty much involves working your butt off to get put in a club, get assigned to one politician and then repeating the exact same press releases that everyone else in your group is getting."
+        na "Man, I thought political reporting was gonna be awesome, but from what that guy just said, it pretty much involves working your butt off to get put in a club, get assigned to one politician, and then repeating the exact same press releases that everyone else in your group is getting."
         na "That's kind of boring, not to mention a pain."
 
         show naomi basic_grin_close
         with chchange
 
-        na "Heh, what if I actually made it into the exclusive group of journalists assigned to covering one of the bigwigs and then shorted out? Can you see the headlines? 'Female reporter chews up prime minister's sofa during epileptic fit?' That'd be kind of awesome."
+        na "Heh, what if I actually made it into the exclusive group of journalists assigned to covering one of the bigwigs and then shorted out? Can you see the headlines? ‘Female reporter chews up prime minister's sofa during epileptic fit?’ That'd be kind of awesome."
 
         show naomi basic_grinclosed_close
         with chchange
@@ -973,7 +1009,7 @@ label sh_ch42:
         show naomi basic_neutral_close
         with chchange
 
-        ha "B-But... We were g-going to meet at the entrance at four o' clock. If we attend that last p-presentation, won't we be late?"
+        ha "B-but... We were g-going to meet at the entrance at four o' clock. If we attend that last p-presentation, won't we be late?"
         "I didn't think about it before, but it seems our program finishes later than Lilly's. Looks like every faculty here has made its own schedule for today without worrying about the others."
         na "Only a bit. The campus entrance isn't that far from here. If we return there now, we'll be sitting there twirling our thumbs for like 40 minutes."
         "I personally wouldn't mind that much. We have our study books with us, and there are some benches there."
@@ -984,45 +1020,44 @@ label sh_ch42:
 
         na "Only if they make it there before we do. The other faculty buildings are farther away from the entrance than ours is, and from what I saw earlier today, Lilly and her dad have a very slow walking pace."
         na "If we set a brisk pace for ourselves after we finish the program here, I bet we could still get to the meeting point before they do."
-
-        nvl clear
-        nvl show dissolve
-
-        n "Naomi does have a point. While Lilly and her father are the punctual type, they do have a rather slow pace, and knowing them, both will probably try to take it easy for the sake of the other."
-        n "{vspace=30}While I'm not fond of the idea of attending yet another presentation in a probably crowded room, Naomi seems eager to attend it, so the best I can do is probably to go along with her suggestion as a way to thank her for coming along with me today and putting up with my nervousness without complaining even once."
-
-        nvl clear
-        nvl hide dissolve
-
+        "Naomi does have a point. While Lilly and her father are the punctual type, they do have a rather slow pace, and knowing them, both will probably try to take it easy for the sake of the other."
+        "While I'm not fond of the idea of attending yet another presentation in a probably crowded room, Naomi seems eager to attend it."
+        "The best I can do is probably to go along with her suggestion as a way to thank her for coming along with me today and putting up with my nervousness without complaining even once."
         ha "Well... O-okay then."
 
         show naomi basic_smileclosed_close
         with chchange
 
         na "Great. We'd better get a move on before they run out of seats."
-        scene bg kasshoku_journalismentryhall
-        show naomi basic_smile at center
-        with charaenter
 
-        "We quickly leave the empty classroom, and I'm relieved to find out that the hallways are a lot emptier right now than they've been the whole day. As we reach the bottom of the stairway, Naomi points to a stream of people trinkling into a room through a set of double doors."
+        scene bg kasshoku_hallway
+        show naomi basic_smile at tworight
+        with locationchange
 
-        show naomi bend_smile_close
-        with chchange
+        "We quickly leave the empty classroom, and I'm relieved to find out that the hallways are a lot emptier right now than they've been the whole day."
 
+        scene black
+        with locationchange
+
+        "As we reach the bottom of the stairway, Naomi points to a stream of people trinkling into a room through a set of double doors."
         na "That's where we need to be."
         "We hurriedly join the small crowd and make our way into the hall beyond the doorway."
 
-        scene bg kasshoku_journalismlecturehall
+        stop music fadeout 2.0
+
+        scene bg kasshoku_lecturehall
         show crowd
-        show naomi basic_neutral_close at center
-        with charaenter
+        show naomi basic_neutral_close
+        with locationchange
+
+        play ambient sfx_crowd_indoors fadein 1.0
 
         "Upon passing through the doors though, I let out a horrified gasp and instinctively move behind Naomi as I find out why the hallways were so empty just now."
         "The hall we've just entered is huge and filled almost completely with people already, leaving only the occasional empty seat here and there."
         "The first thought that enters my mind is how much of a mistake it was to come here. No matter how interesting this lecture is going to be, I don't think any of it will end up sticking in my mind."
         ha "Uhh..."
 
-        show naomi basic_sad_close
+        show naomi basic_concern_close
         with chchange
 
         "Naomi turns around and looks at me with an uncertain expression."
@@ -1038,14 +1073,18 @@ label sh_ch42:
         with chchange
 
         na "I think this is a good spot for you."
-        "It's a seat at the very end of one of the rows. Merely being surrounded by people on three rather than four sides might make the experience just a little less harrowing for me, but since it's only a single seat that means Naomi will be sitting somewhere else."
+        "It's a seat at the very end of one of the rows. Merely being surrounded by people on three rather than four sides might make the experience just a little less harrowing for me."
+        "But since it's only a single seat, that means Naomi will be sitting somewhere else."
+
+        show crowd at centersit
+        with charamove
 
         show naomi basic_sheepish
         with chchange
 
         "I give Naomi an uncertain glance, but then nod and sit down after shoving my backpack under my seat."
 
-        show naomi basic_sheepish at offscreenright
+        show naomi basic_sheepish at offscreenleft
         with charamove
         hide naomi
 
@@ -1058,342 +1097,341 @@ label sh_ch42:
         n "{vspace=30}I take a careful look over my shoulder to see where Naomi is sitting. It takes a bit of effort, but I eventually manage to spot her thanks to her bleached hairdo standing out among the mostly dark-haired crowd."
         n "{vspace=30}She's sitting in the middle of one of the rows near the back of the hall, quite a distance away from me. It makes me feel even more isolated here."
 
-        nvl clear
         nvl hide dissolve
 
         "I notice that the stream of people flowing into the hall has dried up, and one of the people standing near the doorway, a slightly older gentleman, closes the doors and activates the large screen on the back wall before walking up to the microphone."
 
+        $ renpy.music.set_volume(0.1, delay=2.0, channel="ambient")
+
         play music music_night fadein 4.0
 
         "Lecturer" "I would like to welcome you all for taking time out of your busy schedule to visit us today. We hope you have been finding your visit educational and enjoyable so far..."
-        "I check my watch again. 25 more minutes to go. Just 25 more minutes. I catch the person sitting next to me taking a peek at my right hand and quickly cover it with my left."
+        "I check my watch again."
+        "{i}25 more minutes to go. Just 25 more minutes.{/i}"
+        "I catch the person sitting next to me taking a peek at my right hand and quickly cover it with my left."
+
+        $ _sh_music_pos = renpy.music.get_pos()
+        $ renpy.music.set_audio_filter("sound", renpy.audio.filter.Lowpass(1200))
+
+        stop music fadeout 2.0
+        play sound f"<from {_sh_music_pos}>{music_night}" fadein 2.0 loop
 
         scene black
-        with Dissolve(2.0)
-        scene bg kasshoku_journalismlecturehall
-        show crowd
+        with clockwipefast
+
+        scene bg kasshoku_lecturehall
+        show crowd at centersit
+        show darkness:
+            alpha 0.2
+        show n_vignette:
+            alpha 0.2
+        with clockwipefast
 
         "Lecturer" "...and there are some who say that the rise of the internet will spell an end to newspapers and possibly even journalism."
         "Lecturer" "Let me say that one of these claims is an exaggeration and the other one is untrue. Newspaper readership is still extremely high in our country, newspapers will always continue to exist in some form or another and journalism maintains its role in society as it always has..."
-
-        "20 more minutes to go. I notice that the person next to me is whispering to his neighbor. I wonder if they're talking about me."
+        "{i}20 more minutes to go.{/i}"
+        "I notice that the person next to me is whispering to his neighbor. I wonder if they're talking about me."
 
         scene black
-        with Dissolve(2.0)
-        scene bg kasshoku_journalismlecturehall
-        show crowd
-        show black:
-            alpha 0.2
-        with Dissolve(1.0)
+        with clockwipefast
+
+        scene bg kasshoku_lecturehall
+        show crowd at centersit
+        show darkness:
+            alpha 0.4
+        show n_vignette:
+            alpha 0.4
+        with clockwipefast
 
         "Lecturer" "...news organisations will have to get used to no longer being the ones to have the scoop on images of unexpected events as random passersby will often use their cell phone to take a picture of these events as they witness them and upload it to their weblog."
         "Lecturer" "But there is more to news than a picture of an event as it takes place..."
-
-        show black:
-            alpha 0.3
-        with Dissolve(1.0)
-
-        "15 more minutes. I wonder what Lilly and Hisao are doing right now. Are they already waiting for us? No, it's still too soon. I hope we can quickly get out of here when this lecture is over. Being in the room with so many other people is slowly getting to me."
+        "{i}15 more minutes.{/i}"
+        "I wonder what Lilly and Hisao are doing right now."
+        "Are they already waiting for us?"
+        "No, it's still too soon."
+        "I hope we can quickly get out of here when this lecture is over."
+        "Being in the room with so many other people is slowly getting to me."
         "I don't recall feeling this way when Hisao and I went to see movies, but then again we'd usually try for the smaller theaters, and we'd always go and see movies that had been out for some time so we'd know in advance the theater wouldn't be filled to the brim."
         "It helped that it was usually dark too. And that Hisao was nearby. I wish Naomi was sitting closer."
 
         scene black
-        with Dissolve(2.0)
-        scene bg kasshoku_journalismlecturehall
-        show crowd
-        show black:
-            alpha 0.3
-        with Dissolve(1.0)
+        with clockwipefast
+
+        scene bg kasshoku_lecturehall
+        show crowd at centersit
+        show darkness:
+            alpha 0.4
+        show n_vignette:
+            alpha 0.4
+        with clockwipefast
 
         "Lecturer" "...it is up to the reporter to provide the big picture of events through investigative journalism."
         "Lecturer" "A random witness may help the world see the where and when of an event, but the public will always turn to the true journalist for answers on questions that eyewitnesses cannot answer such as why and how..."
-
-        show black:
-            alpha 0.4
-        with Dissolve(1.0)
-
-        "10 more minutes. I wonder if closing my eyes will make a difference. If I can't see the crowd all around me... No, the idea that someone could be staring at me without me being aware of it is even more maddening."
+        "{i}10 more minutes.{/i}"
+        "I wonder if closing my eyes will make a difference."
+        "If I can't see the crowd all around me...{w} No, the idea that someone could be staring at me without me being aware of it is even more maddening."
 
         scene black
-        with Dissolve(2.0)
-        scene bg kasshoku_journalismlecturehall
-        show crowd
-        show black:
+        with clockwipefast
+
+        scene bg kasshoku_lecturehall
+        show crowd at centersit
+        show darkness:
             alpha 0.4
-        with Dissolve(1.0)
+        show n_vignette:
+            alpha 0.4
+        with clockwipefast
 
         "Lecturer" "...of course, there is no need to take my word for it. If you take a look at the statistics of the last decade, you can see that they follow the trend that was just discussed."
         "The man in front of the microphone stops speaking and uses his remote control to show a series of slides containing graphs and numbers. He slowly and quietly runs through the slides, pausing after each one to give the information time to sink in."
-
-        "7 more minutes. I hope Hisao and Lilly had a good time. Maybe they have been inspired by today and their enthusiasm will find its way back to me."
-        "I think when we get back I'll just let Naomi recount today's events for us. She's been having a good time today, aside from having to put up with my nervousness."
+        "{i}7 more minutes.{/i}"
+        "I hope Hisao and Lilly had a good time. Maybe they have been inspired by today and their enthusiasm will find its way back to me."
+        "I think when we get back, I'll just let Naomi recount today's events for us. She's been having a good time today, aside from having to put up with my nervousness."
         "Yes, that's a good idea. I smile a bit to myself. If Naomi, Lilly and Hisao all had a good time and are enthusiastic about today, I'll surely feel a lot better as well by the time we're back at Yamaku."
-        stop music
-
-        play sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
         "I could even..."
+
+        hide darkness
+        hide n_vignette
+        with None
+
+        $ renpy.music.set_audio_filter("sound", None)
+        stop music
+        stop sound
+        stop ambient
+        play ambient sfx_phonering3
 
         "My thoughts are suddenly interrupted by the loud noise of a cell phone piercing the silence in the hall, and I can see the speaker turning his head towards his audience."
         "A sense of foreboding sneaks into the pit of my stomach as I realize that that sound came from somewhere awfully close and that sensation is replaced by a feeling of pure dread when it dawns on me why."
 
-        play music music_tension
-
         scene ev fatefulcall_realisationzoomedinmax
+        with mediumflash
 
         "THAT'S MY CELL PHONE THAT'S RINGING!"
 
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
+        play music music_tragic
 
-        "My phone! I've been so focussed on keeping my anxiety under control today that I completely forgot to turn it off. I can see the speaker sweeping the rows of seats with his gaze, annoyed that someone interrupted his lecture."
+        "My phone! I've been so focused on keeping my anxiety under control today that I completely forgot to turn it off. I can see the speaker sweeping the rows of seats with his gaze, annoyed that someone interrupted his lecture."
 
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
+        show ev fatefulcall_coverfacerightzoomedinmax
+        with charachangeev
 
-        scene ev fatefulcall_coverfacerightzoomedinmax
-
-        "I hastily reach down to open my backpack, but as I do so I suddenly become aware that my neighbor is looking at me. Not merely a quick glance, but he's LOOKING STRAIGHT AT ME. My hand instinctively flies up again to cover the scarring on my face."
-
-        play ambient sfx_heartslow loop
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-
+        "I hastily reach down to open my backpack, but as I do so I suddenly become aware that my neighbor is looking at me. Not merely a quick glance, but he's LOOKING STRAIGHT AT ME."
+        "My hand instinctively flies up again to cover the scarring on my face."
         "I can see one of the people sitting in front of me slowly turning around, and when the full realisation of what's happening right now hits me, I feel a sudden and painfully tight sensation in my chest as if my rib cage is rapidly shrinking and squeezing my heart and lungs until they're ready to pop."
 
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
+        play sound sfx_heartslow loop
 
-        "I need to turn it off. I need to turn it off right now!"
-
-        scene ev fatefulcall_openbackpackleftzoomedinmax
-        show black:
+        show darkness:
             alpha 0.3
+        show n_vignette:
+            alpha 0.3
+        with charachangeev
+
+        "I need to turn it off. {i}I need to turn it off right now!{/i}"
+
+        show ev fatefulcall_openbackpackleftzoomedinmax
+        with charachangeev
 
         "I frantically reach down with my free hand to open the backpack under my seat and get my phone out, but my hand movements have suddenly become jerky and shaky from the stress and I'm struggling to even get hold of the zipper."
 
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-
-        scene ev fatefulcall_openbackpackleftzoomedoutfar
+        show ev fatefulcall_openbackpackleftzoomedoutfar
+        with charachangeev
 
         "One by one, more heads are starting to turn in my general direction as the ringing sound mercilessly continues."
-
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-
-        "Whoever you are, stop it! Stop it already! What did I do to you? Stop it, stop it, PLEASE!"
+        "Whoever you are, stop it! {i}Stop it already!{/i}"
+        "What did I do to you? Stop it, {i}stop it, {b}PLEASE!{/b}{/i}"
         "The pain in my chest is becoming nearly unbearable, and despite my frantic breathing, it's like the oxygen in the room is slowly disappearing."
 
-        scene ev fatefulcall_coverfaceleft
-        show black:
+        show ev fatefulcall_coverfaceleft
+        show darkness:
             alpha 0.5
+        show n_vignette:
+            alpha 0.5
+        with charachangeev
 
         "I realize that people may be noticing the scar tissue on my hand and I quickly switch hands, using my left hand to hide as much of my face as I can while desperately trying to open my backpack with my right hand."
-
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-
         "More and more people are starting to turn around, and I feel as if their gazes are piercing right through my hand, mercilessly taking in and appraising my damaged features."
 
-        scene ev fatefulcall_paniczoomedinmax
-        show black:
-            alpha 0.1
+        show ev fatefulcall_paniczoomedinmax
+        with charachangeev
 
-        "Don't look at me please don't look at me quit looking at me STOP LOOKING AT ME!"
-
+        "{i}Don't look at me{w}{space=90}please don't look at me{w}\n{space=120}quit looking at me{w}\n{space=500}{b}STOP LOOKING AT ME!{/b}{/i}"
         "I'm feverishly tugging at the zipper of my backpack in an attempt to get it open, but my shaking hands and the sudden stiffness in my fingers make that almost impossible. I might be able to open it if I use two hands, but I'm too frightened to move my other hand away from my scarred face."
 
         play sound sfx_impact
         with vpunch
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
+        play sound sfx_heartslow loop
 
         "In a sudden act of despair I suddenly kick my backpack with the heel of my foot, aiming for where I believe my cell phone is located."
         "A little voice in the back of my head, presumably the voice of my quickly dwindling rationality, asks me what the hell I'm doing to something that I usually consider valuable."
-        "It's true that I normally consider my phone, itself a present from Lilly and the attached phone strap a gift from Hisao, a valuable possession. But in the current situation that dreadful object is my worst enemy in the world. Just when I prepare for another frantic kick..."
+        "It's true that I normally consider my phone, itself a present from Lilly and the attached phone strap a gift from Hisao, a valuable possession."
+        "But in the current situation, that dreadful object is my worst enemy in the world."
+        "Just when I prepare for another frantic kick..."
 
-        scene ev fatefulcall_coverfaceleft
         stop ambient
-        stop music
-        stop sound
-        show black:
-            alpha 0.2
+        stop music fadeout 2.0
+        stop sound fadeout 2.0
 
-        "...the ringing suddenly stops. An almost unnatural silence follows as I realize that despite the fact that that cursed contraption is no longer ringing, I'm still at the center of attention right now."
+        show ev fatefulcall_coverfaceleft
+        hide darkness
+        hide n_vignette
+        with charachangeev
+
+        "...the ringing suddenly stops."
+        "An almost unnatural silence follows as I realize that despite the fact that that cursed contraption is no longer ringing, I'm still at the center of attention right now."
 
         play ambient sfx_heartslow loop
-        show black:
+
+        show darkness:
             alpha 0.4
+        show n_vignette:
+            alpha 0.4
+        with charachangeev
 
         "Despite the pain in my chest and my head, despite the feeling of terror that's nearly overwhelming me and despite the fact that I'm having real difficulty breathing, I sit completely still without moving a muscle, without blinking, without breathing, my hand still covering the right side of my face."
         "I feel like a cornered rabbit being eyed by a predator who's been pursuing me and who is now considering whether I'm tasty enough to be ripped to pieces."
-        "Continue the lecture continue the lecture please I'll never ask for anything else in my life just don't put me through this again."
-        "I see the man holding the presentation looking down at his notes and extending his hand to the microphone and I prepare to say a silent prayer of relief, but before he can resume his lecture..."
+        "{i}Continue the lecture continue the lecture please I'll never ask for anything else in my life just don't put me through this again.{/i}"
+
+        stop ambient fadeout 1.0
+
+        hide darkness
+        hide n_vignette
+        with charachangeev
+
+        "I see the man holding the presentation looking down at his notes and extending his hand to the microphone."
+        "I prepare to say a silent prayer of relief."
 
         stop ambient
-        play ambient sfx_heartfast loop
+        play ambient sfx_phonering3
+
+        pause 1.0
+
+        play sound sfx_heartfast loop
         play music music_tragic
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        queue sound sfx_phonering
-        show black:
+
+        show darkness:
             alpha 0.6
+        show n_vignette:
+            alpha 0.6
+        with charachangeev
 
-        "...the infernal sound resumes, destroying what little hope I had left to get out of this in one piece. The tight, squeezing sensation in my chest immediately returns, worse than before."
+        "The infernal sound of my ringing phone resumes, destroying what little hope I had left to get out of this in one piece."
+        "The tight, squeezing sensation in my chest immediately returns, worse than before."
 
-        scene ev fatefulcall_cryzoomedoutfar
+        show ev fatefulcall_cryzoomedoutfar
+        with charachangeev
 
-        "More and more gazes are trained upon me and hear a few soft chuckles in the distance that set the hair of my neck on end. I squeeze my eyes shut, but can't prevent tears of fear from flowing down my cheeks."
+        "More and more gazes are trained upon me and hear a few soft chuckles in the distance that set the hair of my neck on end."
+        "I squeeze my eyes shut, but can't prevent tears of fear from flowing down my cheeks."
+        "Ever since that house fire permanently disfigured me, I've been uncomfortable around crowds of people. Every time I had to get near one, I expected someone to call out “Look at her face!” and then everyone would turn towards me and gasp in horror."
+        "Hisao, Lilly, and Miss Yumi always said that that was never going to happen, yet it's exactly what's happening right now and it's a million times worse than it ever was in my imagination."
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-
-        "Ever since that house fire permanently disfigured me, I've been uncomfortable around crowds of people. Every time I had to get near one, I expected someone to call out 'Look at her face!' and then everyone would turn towards me and gasp in horror."
-        "Hisao, Lilly and Miss Yumi always said that that was never going to happen, yet it's exactly what's happening right now and it's a million times worse than it ever was in my imagination."
-
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-
-        scene ev fatefulcall_coverbothhandszoomedoutfar
-        show black:
+        show ev fatefulcall_coverbothhandszoomedoutfar
+        show darkness:
             alpha 0.4
+        show n_vignette:
+            alpha 0.4
+        with charachangeev
 
         "And the most frightening part of all is that I can feel that this is going to get even worse. I can barely breathe, my heartbeat is both frantic and unsteady, and it's getting harder to think straight with every passing second."
-        "First fear about dying or passing out, followed by fear about not dying or passing out. I can feel a pressure building up from within, and the prospect of that pressure eventually getting released in one way or another in front of everyone here terrifies me more than anything else."
+        "First fear about dying or passing out, followed by fear about not dying or passing out."
+        "I can feel a pressure building up from within, and the prospect of that pressure eventually getting released in one way or another in front of everyone here terrifies me more than anything else."
         "And I know I won't be able to stop it when I reach that point."
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-
-        show black:
+        show darkness:
             alpha 0.1
+        show n_vignette:
+            alpha 0.1
+        with charachangeev
 
         "I manage to suppress a crazed giggle with supreme effort. My mind is growing increasingly irrational and the sense of panic has driven it to a point where I feel that it's about ready to snap."
+        "I don't know what's going to happen, but something will happen if this keeps up. Maybe I'll faint and everyone here will gather around me to take a close look at me."
+        "Or maybe I'll go crazy and start screaming or laughing like a lunatic."
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-
-        "I don't know what's going to happen, but something will happen if this keeps up. Maybe I'll faint and everyone here will gather around me to take a close look at me. Or maybe I'll go crazy and start screaming or laughing like a lunatic."
-
-        show black:
+        show darkness:
             alpha 0.2
+        show n_vignette:
+            alpha 0.2
+        with charachangeev
 
         "Or maybe it'll be something even worse. That thought makes me even more frightened than I already am."
 
-        scene ev fatefulcall_approachingzoomedinmax
-        show black:
+        show ev fatefulcall_approachingzoomedinmax
+        show darkness:
             alpha 0.7
+        show n_vignette:
+            alpha 0.7
+        with charachangeev
+        with charachangeev
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
+        "{i}I have to get out of here I have to get out of here now.{/i}"
 
-        "I have to get out of here I have to get out of here now."
-
-        show black:
+        show darkness:
             alpha 0.2
+        show n_vignette:
+            alpha 0.2
+        with charachangeev
 
-        "I can faintly sense someone walking down the aisle and approaching me from behind. They've spotted me. Someone's getting closer, and he'll point me out to the rest and it'll all be over for me."
+        "I can faintly sense someone walking down the aisle and approaching me from behind."
+        "{i}They've spotted me.{/i}"
+        "Someone's getting closer, and he'll point me out to the rest and it'll all be over for me."
 
-        show black:
+        show darkness:
             alpha 0.6
+        show n_vignette:
+            alpha 0.6
+        with charachangeev
 
-        "Stay away from me don't look at me get away from me!"
+        "{i}Stay away from me don't look at me get away from me!{/i}"
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        show black:
+        show darkness:
             alpha 0.1
+        show n_vignette:
+            alpha 0.1
+        with charachangeev
 
         "The footsteps are getting even closer."
 
-        show black:
+        show darkness:
             alpha 0.8
+        show n_vignette:
+            alpha 0.8
+        with charachangeev
 
-        "I have to get out of here I have to get out of here!"
+        "{i}I have to get out of here I have to get out of here!{/i}"
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        show black:
+        show darkness:
             alpha 0.2
+        show n_vignette:
+            alpha 0.2
+        with charachangeev
 
         "I struggle to regain control of my body and maintain what little grip on my sanity I still have."
 
-        show black:
+        show darkness:
             alpha 0.5
+        show n_vignette:
+            alpha 0.5
+        with charachangeev
 
-        "I have to get out of here I have to get out of here!"
+        "{i}I have to get out of here I have to get out of here!{/i}"
 
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_heartslow
-        queue sound sfx_phonering
-        queue sound sfx_heartslow
+        show darkness:
+            alpha 0.1
+        show n_vignette:
+            alpha 0.1
+        with charachangeev
 
         show black:
-            alpha 0.1
+            alpha 0.0
+            linear 4.0 alpha 1.0
+        with None
 
-        "LET ME OUT OF HERE!"
+        stop music fadeout 4.0
+        stop ambient fadeout 4.0
+        stop sound fadeout 4.0
+
+        centered "{cps=5}{b}LET ME OUT OF HERE!!!{/b}{/cps}"
 
         scene black
         with Dissolve(2.0)

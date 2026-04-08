@@ -151,6 +151,7 @@ naomi = [
     ("Sprites/Naomi/Naomi sheepish", "basic_sheepish"),
     ("Sprites/Naomi/Naomi smileclosed", "basic_smileclosed"),
     ("Sprites/Naomi/Naomi bend grinclosed", "bend_grinclosed"),
+    ("Sprites/Naomi/Naomi concern temp", "basic_concern"),
 ]
 
 natsume = [
