@@ -77,6 +77,9 @@ init 30:
     image teddybear = sh_vfx("teddybear")
     image carseats = sh_vfx("carseats", boxstrip=False)
 
+    image bg kasshoku_grounds_ss = sunset(sh_bg("kasshoku_grounds"))
+    image bg kasshoku_entrance_ss = sunset(sh_bg("kasshoku_entrance"))
+
     define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
 
 init 31:
@@ -115,22 +118,28 @@ init 30 python:
             (_("Road Trip"), "sh_ch42.s2", _("Hanako and the others hit the road to Kasshoku."), "hanako"),
             (_("Kasshoku"), "sh_ch42.s3", _("Hanako checks out the journalism facility with Naomi."), "hanako"),
             (_("Time Out"), "sh_ch42.s4", _("Hanako has a quiet lunch with Naomi near the track field."), "hanako"),
-            (_("Fate's Call"), "sh_ch42.s5", _("The open house day comes to a dramatic conclusion."), "hanako")
+            (_("Fate's Call"), "sh_ch42.s5", _("The open house day comes to a dramatic conclusion."), "hanako"),
+            (_("Recriminations"), "sh_ch43.s1", _("Lilly, her father and Hisao discover what happened in the lecture hall."), "lilly"),
+            (_("Hide and Seek"), "sh_ch43.s2", _("Lilly and the others set out to search for Hanako."), "lilly"),
+            (_("Friend of a Friend"), "sh_ch43.s3", _("Lilly and Naomi talk about Hanako."), "lilly"),
+            (_("Deliberation"), "sh_ch43.s4", _("Lilly and her father ponder on the day's events."), "lilly"),
         ])
     )
 
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("karla", ["sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
-    sh_sprites("hiroyuki", ["awkward", "smileclosed"])
+    sh_sprites("hiroyuki", ["awkward", "smileclosed", "thinkraised"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
-    sh_sprites("naomi", ["annoyed", "confused", "grinclosed", "concern", "seizure", "sheepish", "smileclosed"], poses=["basic"])
+    sh_sprites("naomi", ["angry", "annoyed", "confused", "grinclosed", "concern", "seizure", "serious", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("naomi", ["grinclosed"], poses=["bend"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
     sh_sprites("muto", ["eyebrow"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
     phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
+    phonebox_sprites("hisao", ["basic_grin_swt", "basic_neutral_swt", "basic_smile_swt", "basic_sweet_swt"], cropxoff=95, cropyoff=-90)
+    phonebox_sprites("naomi", ["basic_angry", "basic_annoyed", "basic_concern", "basic_serious"], xoff=-20, cropyoff=-45)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
@@ -141,7 +150,7 @@ init 30 python:
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
     # credit: OMOSHIRO RENT-A-CAR
     sh_bgs("misc", ["car_ss"])
-    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers", "lecturehall"])
+    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers", "lecturehall", "englishcafe"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 

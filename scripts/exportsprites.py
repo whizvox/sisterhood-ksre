@@ -152,6 +152,8 @@ naomi = [
     ("Sprites/Naomi/Naomi smileclosed", "basic_smileclosed"),
     ("Sprites/Naomi/Naomi bend grinclosed", "bend_grinclosed"),
     ("Sprites/Naomi/Naomi concern temp", "basic_concern"),
+    ("Sprites/Naomi/Naomi angry temp", "basic_angry"),
+    ("Sprites/Naomi/Naomi serious temp", "basic_serious"),
 ]
 
 natsume = [
@@ -287,7 +289,8 @@ hiroyuki = [
     ("act 2 sprites/hiroyuki adjust/STERN", "stern"),
     ("act 2 sprites/hiroyuki adjust/STRAINED CLOSED", "strained"),
     ("act 2 sprites/hiroyuki adjust/THINKING", "thinking"),
-    ("Sprites/Hiroyuki/AWKWARD", "awkward")
+    ("Sprites/Hiroyuki/AWKWARD", "awkward"),
+    ("Sprites/Hiroyuki/THINKRAISED", "thinkraised"),
 ]
 
 def main():
