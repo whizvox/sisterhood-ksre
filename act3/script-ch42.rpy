@@ -593,7 +593,7 @@ label sh_ch42:
 
         stop ambient fadeout 1.0
 
-        scene bg kasshoku_hallway
+        scene bg kasshoku_journalhall
         show crowd
         show naomi basic_smile at left
         with locationchange
@@ -674,7 +674,7 @@ label sh_ch42:
 
         "We wait until other people rise from their seats, and then I quickly get out of the classroom with Naomi in tow."
 
-        scene bg kasshoku_hallway
+        scene bg kasshoku_journalhall
         show crowd
         show naomi basic_smile_close
         with locationchange
@@ -1030,7 +1030,7 @@ label sh_ch42:
 
         na "Great. We'd better get a move on before they run out of seats."
 
-        scene bg kasshoku_hallway
+        scene bg kasshoku_journalhall
         show naomi basic_smile at tworight
         with locationchange
 

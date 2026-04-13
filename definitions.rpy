@@ -133,6 +133,10 @@ init:
         xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     transform tworightsit:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
+    transform leftsit:
+        xpos 0.0 xanchor 0.0 ypos 1.1 yanchor 1.0 alpha 1.0
+    transform rightsit:
+        xpos 1.0 xanchor 1.0 ypos 1.1 yanchor 1.0 alpha 1.0
 
     transform displayitemshow:
         truecenter

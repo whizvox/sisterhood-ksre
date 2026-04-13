@@ -76,6 +76,7 @@ init 30:
     image newclassphoto = sh_vfx("newclassphoto")
     image teddybear = sh_vfx("teddybear")
     image carseats = sh_vfx("carseats", boxstrip=False)
+    image hankerchief = sh_vfx("hankerchief")
 
     image bg kasshoku_grounds_ss = sunset(sh_bg("kasshoku_grounds"))
     image bg kasshoku_entrance_ss = sunset(sh_bg("kasshoku_entrance"))
@@ -150,7 +151,7 @@ init 30 python:
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
     # credit: OMOSHIRO RENT-A-CAR
     sh_bgs("misc", ["car_ss"])
-    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers", "lecturehall", "englishcafe"])
+    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 

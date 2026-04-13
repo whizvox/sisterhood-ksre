@@ -683,8 +683,9 @@ label sh_ch43:
 
         $ set_window_tint(TINT_LILLY)
 
-        scene bg kasshoku_journalismhallway
-        show naomi basic_neutral at left
+        scene bg kasshoku_journalhall
+        show naomi basic_neutral at left:
+            ypos 1.03
         with shorttimeskipsilent
 
         play music music_rain fadein 4.0
@@ -711,7 +712,7 @@ label sh_ch43:
 
         "Sensing that Naomi's eyeing me, I shake my head and extend my hand. I feel how she puts my hand on her arm, and we slowly walk back out."
 
-        scene bg kasshoku_journalismhallway
+        scene bg kasshoku_journalhall
         show naomi basic_concern at left
         with charaenter
 
@@ -817,7 +818,7 @@ label sh_ch43:
         show naomi basic_neutral_close
         with chchange
 
-        na "...okay then."
+        na "...Okay then."
 
         show hiroyuki smileclosed_phone
         with chchange
@@ -841,14 +842,16 @@ label sh_ch43:
         li "Let's stop by the remaining restroom and then go back."
         na "Right."
 
-        scene black
-        with Dissolve(2.0)
-        play music music_night fadein 4.0
+        stop music fadeout 2.0
+
         scene bg kasshoku_campusentrance_ss
         show naomi basic_neutral_close at center
+        with shorttimeskipsilent
 
-        "Our search of the journalism faculty having returned no results, Naomi and I return to the gate and sit down on one of the benches. The walking across the campus has left me tired, but my mind feels even more exausted than my body."
-        "The temperature today wasn't that bad for a day in November, but now that the afternoon is coming to an end it's rapidly getting colder, and I shiver despite my fairly thick coat."
+        play music music_night fadein 4.0
+
+        "Our search of the journalism faculty having returned no results, Naomi and I return to the gate and sit down on one of the benches."
+        "The walking across the campus has left me tired, but my mind feels even more exausted than my body. The temperature today wasn't that bad for a day in November, but now that the afternoon is coming to an end, it's rapidly getting colder, and I shiver despite my fairly thick coat."
         na "It's getting kinda chilly, isn't it?"
         "I nod at Naomi but don't reply."
 
@@ -856,7 +859,8 @@ label sh_ch43:
         with chchange
 
         na "I really hope she's at the sports field. The sun is already starting to set..."
-        "What if she isn't there? What if we can't find her, and it gets dark? Is she going to seek shelter eventually? What if she stays out here all night and gets hypothermia? What if... No, don't think like this. Don't even start thinking like this. She'll be fine. Please let her be fine."
+        "What if she isn't there? What if we can't find her, and it gets dark? Is she going to seek shelter eventually? What if she stays out here all night and gets hypothermia?"
+        "What if... No, don't think like this. Don't even start thinking like this. She'll be fine. Please let her be fine."
 
         show naomi basic_concern_close
         with chchange
@@ -886,7 +890,6 @@ label sh_ch43:
         with chchange
 
         na "Urg... And I could hear some assholes softly laughing at the whole thing. If I had known running after Hanako was useless, I would have stayed and given them a few pokes with my injection pen. I have a really funny anticonvulsant in there. Give 'em something to laugh about."
-
         li "I occasionally laugh when I'm nervous or uncomfortable. Perhaps the same was true for them."
 
         show naomi basic_concern_close
@@ -914,7 +917,8 @@ label sh_ch43:
 
         na "Yeah... So erm... No hard feelings?"
         li "No hard feelings."
-        "At least on my part. I'm not sure how Hanako will look back on this. Will she resent us for the part we played in this? No, that's very unlikely. But..."
+        "At least on my part. I'm not sure how Hanako will look back on this."
+        "Will she resent us for the part we played in this? No, that's very unlikely. But..."
 
         show naomi bend_wink_close
         with chchange
@@ -931,10 +935,9 @@ label sh_ch43:
 
         n "Despite the current situation, I manage to let out a proud little smile. I too have been relieved and pleasantly surprised by Father helping us out like this."
         n "{vspace=30}He's been struggling, emotionally more than physically, ever since he lost his status as CEO and position as head of the Satou clan. Even though he's still officially a board member, Akira mentioned to me that in practice that didn't really mean much since the other three members were many years his senior, and because of that, each of them had much more clout than he did."
-        n "{vspace=30}He is happy to be back in his homeland, but at the same time Mother says that he feels being watched whenever he goes outside for a walk during the weekdays, and as a result he spends most of his time indoors, sleeping in bed or reading in his study. Whenever he goes outside, he drives his car to a part of town where people don't know him and takes a walk there or visits a library."
-        n "{vspace=30}Mother assured him that she didn't think less of him now, and neither did she care what others might think of him. But I'm not sure if her reassurance has made a large difference. Ironically enough, today was supposed to be an inspirational event for him as well. This day may actually have been a success for him from that point of view."
+        n "He is happy to be back in his homeland, but at the same time, Mother says that he feels being watched whenever he goes outside for a walk during the weekdays, and as a result, he spends most of his time indoors, sleeping in bed or reading in his study. Whenever he goes outside, he drives his car to a part of town where people don't know him and takes a walk there or visits a library."
+        n "Mother assured him that she didn't think less of him now, and neither did she care what others might think of him. But I'm not sure if her reassurance has made a large difference. Ironically enough, today was supposed to be an inspirational event for him as well. This day may actually have been a success for him from that point of view."
 
-        nvl clear
         nvl hide dissolve
 
         li "I'm certainly glad that he's here right now and that it's not just the three of us."
@@ -964,7 +967,6 @@ label sh_ch43:
         with charaenter
 
         "We both move to the outside of the bench a bit so Father will have room to sit down in between us."
-
         hyf "Lilly... Miss Inoue."
         li "Father, are you alright?"
 
@@ -1058,17 +1060,16 @@ label sh_ch43:
         if _in_replay:
             return
 
-
     label .s3:
 
         $ set_window_tint(TINT_LILLY)
 
-        scene bg kasshoku_campusgrounds2_ni
+        scene bg kasshoku_grounds2_ni
         play music music_night fadein 4.0
         show naomi basic_sheepish_close at tworight
 
         na "You think we have enough riceballs?"
-        li "Yes. Between them and the sandwiches we should be well stocked for the trip back to Yamaku."
+        li "Yes. Between them and the sandwiches, we should be well stocked for the trip back to Yamaku."
 
         nvl clear
         nvl show dissolve
@@ -1101,7 +1102,7 @@ label sh_ch43:
         with chchange
 
         na "You don't think I necessarily did anything wrong?"
-        li "Hanako may have been reluctant to follow you into that hall, but she still did so of her own free will. Maybe you overestimated her this time. But it's probably still better than if you had done the opposite."
+        li "Hanako may have been reluctant to follow you into that hall, but she still did so of her own free will. Maybe you overestimated her this time, but it's probably still better than if you had done the opposite."
         li "Hanako often worries that others look down on her, and being overprotective of her merely confirms her anxieties about that."
         "I found that out the hard way myself. From the way Naomi seems to interact with Hanako, she doesn't run much risk of Hanako jumping to those particular conclusions about her."
 
@@ -1109,19 +1110,19 @@ label sh_ch43:
         with chchange
 
         na "I never really thought about that much..."
-        li "I think your friendship has helped Hanako grow a lot over the last four months. I never imagined she'd do things like join a club, hold writing sessions in her room with others, interview teachers or go out with clubmates. You're probably the first friend she's had who challenges her like that."
+        li "I think your friendship has helped Hanako grow a lot over the last four months. I never imagined she'd do things like join a club, hold writing sessions in her room with others, interview teachers, or go out with clubmates. You're probably the first friend she's had who challenges her like that."
 
         show naomi bend_grinclosed_close
         with chchange
 
         na "Heh, says the person who convinced Hanako to accompany her to the other side of the world?"
-        li "Aside from that I think my friendship mostly consisted of offering her comfort and company."
+        li "Aside from that, I think my friendship mostly consisted of offering her comfort and company."
 
         show naomi bend_smile_close
         with chchange
 
         na "She didn't really have any of that at the time you two met, so I think those are still really important to her. I think she was more willing to move beyond her comfort zone later on exactly because she knew she'd always have you to fall back on."
-        li "...maybe."
+        li "...Maybe."
 
         show naomi basic_ponder_close
         with chchange
@@ -1131,14 +1132,13 @@ label sh_ch43:
         show naomi basic_neutral_close
         with chchange
 
-        li "If the school had done that it might have backfired. Hanako might have interpreted it as a sign that they wanted to spare the rest of the student body the sight of her scars."
+        li "If the school had done that, it might have backfired. Hanako might have interpreted it as a sign that they wanted to spare the rest of the student body the sight of her scars."
         li "Besides, not all of the students in my class are completely blind and even those who completely lack eyesight know what most of their classmates look like. Hanako's scars wouldn't have remained hidden for very long."
 
         show naomi basic_serious_close
         with chchange
 
-        na "Oh... Okay."
-
+        na "Oh... okay."
         li "I also think that the school believed it to be best for her self esteem if she made some friends in class who could see her scars and still wanted to spend time with her. People who were willing to give her a chance to make a new start."
 
         show naomi basic_annoy_close
@@ -1147,8 +1147,7 @@ label sh_ch43:
         "I hear Naomi snorting softly."
         na "You sure make it sound easy. Do you really think people didn't try?"
         li "I didn't mean to imply that."
-        na "Because people tried. A lot of people tried. I tried. Natsume tried. Hakamichi and Mikado tried. Even Kawana, Suzuki and Kapur tried. It just didn't work."
-
+        na "Because people tried. A lot of people tried. I tried. Natsume tried. Hakamichi and Mikado tried. Even Kawana, Suzuki, and Kapur tried. It just didn't work."
         "I've never had that much contact with the students of Shizune's class, so some of the names Naomi brings up barely ring a bell. I don't really know much about Hanako's time in class before the two of us met."
         "By the time I befriended Hanako, my relationship with Shizune was already turning sour so I couldn't ask her. I wonder about Naomi's perspective on all of this."
         li "How did the class see Hanako?"
@@ -1157,14 +1156,14 @@ label sh_ch43:
         with chchange
 
         na "Most of us got to know the rest through the introduction activities the first week, but Hanako skipped all of those. When she first appeared in class, people were curious about her."
-        na "But when we approached her, she just panicked, ran off and didn't return for the rest of the day. We never really learned much about her, but some things started falling into place eventually."
+        na "But when we approached her, she just panicked, ran off, and didn't return for the rest of the day. We never really learned much about her, but some things started falling into place eventually."
         li "Falling into place?"
 
         show naomi basic_concern_close
         with chchange
 
         na "She had this habit of arriving late or leaving early. Sometimes even skipping class altogether or randomly walking out. The teachers ignored it every single time. Hakamichi asked about it once and was told that every student has special needs."
-        na "So we figured that there was some kind of arrangement with the school in place, meaning that the real reason she was attending here probably had more to do with her behavior than with her scars needing constant medical attention. Eventually words like 'trauma case' started being dropped."
+        na "So we figured that there was some kind of arrangement with the school in place, meaning that the real reason she was attending here probably had more to do with her behavior than with her scars needing constant medical attention. Eventually words like ‘trauma case’ started being dropped."
         "Trauma case. I cringe visibly at the harsh ring of that description of Hanako."
         li "Hanako's had a very difficult life prior to her arrival at Yamaku."
 
@@ -1173,14 +1172,14 @@ label sh_ch43:
 
         na "Yeah, that was kind of obvious from the start. There are many people in school who can attest that being maimed in an accident can really do a number on you."
         na "And I know all too well that others aren't always accommodating or even understanding of your circumstances. Heck, there were several people at my middle school who thought I was a freak. So most people in class tried not to hold her behavior against her."
-        na "But... other than not rocking the boat there wasn't really much else we could do."
+        na "But... other than not rocking the boat, there wasn't really much else we could do."
         li "Not rocking the boat?"
 
         show naomi basic_concern_close
         with chchange
 
         na "If you tried holding an actual conversation with her, she'd often clam up or sometimes even run off. So best thing to do was only have some limited interaction with her if absolutely necessary and otherwise pretend she wasn't there."
-        na "I really didn't like it either, but as long as people didn't interact with her she at least came to class on a regular basis. Nobody wanted to be responsible for her getting low grades. I mean, you could tell she had enough problems as things were."
+        na "I really didn't like it either, but as long as people didn't interact with her, she at least came to class on a regular basis. Nobody wanted to be responsible for her getting low grades. I mean, you could tell she had enough problems as things were."
         li "How depressing..."
 
         show naomi basic_sheepish_close
@@ -1195,14 +1194,15 @@ label sh_ch43:
         with chchange
 
         "This causes Naomi to chuckle briefly."
-        na "It sure is an uneven pace though. For over two years she's like a ghost who's present but doesn't interact with the rest in any way. Then some random new guy transfers in and BOOM... Everything changes. Heh, not that I'm complaining. I got a new friend out of it after all."
+        na "It sure is an uneven pace though. For over two years she's like a ghost who's present but doesn't interact with the rest in any way."
+        na "Then some random new guy transfers in and BOOM... Everything changes. Heh, not that I'm complaining. I got a new friend out of it after all."
         li "You two are certainly an interesting combination."
 
         show naomi basic_grin_close
         with chchange
 
         na "I hear that all the time, but we actually work together very well. I'm good at talking, and she's good at listening. That's actually often a pretty good combination."
-        na "At the writing club I'm usually the one to throw the ideas around, and she usually writes them down, develops them and fills in the blanks."
+        na "At the writing club, I'm usually the one to throw the ideas around, and she usually writes them down, develops them, and fills in the blanks."
 
         show naomi basic_laugh_close
         with chchange
@@ -1225,15 +1225,17 @@ label sh_ch43:
         show naomi bend_smile_close
         with chchange
 
-        na "I've been noticing things about her since she joined our club. Like her approaching Mutou and doing an interview so her boyfriend's club can get some new members. Or taking your mom to our club to give a motivational speech. Or letting me sleep in her room whenever I have an episode."
-        na "Or her and Jun keeping me company the day after while I'm bedridden. The girl obviously has a big heart underneath that shy exterior of hers, and it's only fair I make an effort to be a friend to her because I honestly believe she deserves more of them."
+        na "I've been noticing things about her since she joined our club. Like her approaching Mutou and doing an interview so her boyfriend's club can get some new members."
+        na "Or taking your mom to our club to give a motivational speech. Or letting me sleep in her room whenever I have an episode. Or her and Jun keeping me company the day after while I'm bedridden."
+        na "The girl obviously has a big heart underneath that shy exterior of hers, and it's only fair I make an effort to be a friend to her because I honestly believe she deserves more of them."
         "Despite the gravity of the current situation, Naomi's words make me smile."
         li "I couldn't agree more on that."
 
         show naomi basic_smile_close
         with chchange
 
-        "A silence. Seems like we're running out of things to say. Maybe we should return to the campus entrance. Father must be wondering what's taking us so long."
+        "A silence..."
+        "Seems like we're running out of things to say. Maybe we should return to the campus entrance. Father must be wondering what's taking us so long."
         li "Shall we go back to the gate? I don't want Father to get worried."
 
         show naomi basic_neutral_close
@@ -1242,11 +1244,12 @@ label sh_ch43:
         na "Fine with me. It's already getting pretty dark, so hopefully we won't have to wait too long for Hanako to make her way back to us."
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
 
-        "We get up and walk back to where we left Father with me once again holding onto Naomi's sleeve for navigation. Just when we get close to where I think the bench where we were sitting before is located, Naomi suddenly stops."
+        "We get up and walk back to where we left Father with me once again holding onto Naomi's sleeve for navigation."
+        "Just when we get close to where I think the bench where we were sitting before is located, Naomi suddenly stops."
 
-        scene bg kasshoku_campusentrance_ni
+        scene bg kasshoku_entrance_ni
         show hiroyuki speak at twoleft
 
         li "Is something wrong? Is Father still sitting there?"
@@ -1256,7 +1259,6 @@ label sh_ch43:
         with charaenter
 
         "We quickly make our way over to where Father is waiting for us."
-
         hyf "Lilly. Miss Inoue. Well timed. I was about to drop the two of you a call."
         li "Father. Have you heard from Hisao already?"
 
@@ -1268,13 +1270,15 @@ label sh_ch43:
         li "We will."
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
 
-        "I feel a sense of relief as we follow Father to the car. With luck, Hanako and Hisao will soon be with us. I'm not sure what I could possibly say to Hanako to properly apologize to her. It's probably best to first find out how she feels before I start trying to make this up to her."
+        "I feel a sense of relief as we follow Father to the car. With luck, Hanako and Hisao will soon be with us."
+        "I'm not sure what I could possibly say to Hanako to properly apologize to her. It's probably best to first find out how she feels before I start trying to make this up to her."
         li "Father... Did Hisao say how Hanako is doing?"
         hyf "I am afraid he did not. Let us worry about that later."
 
         scene bg hiroyuki_car_ni
+        with locationchange
 
         "We get into the car, and Father drives it up to the entrance gate. I get the impression that the parking lot is almost completely empty already, for Father is able to return us to the school gate while barely having to make any turns."
         "A few minutes of silence later, I hear Naomi let out a soft cry."
@@ -1284,26 +1288,30 @@ label sh_ch43:
 
         play music music_moonlight fadein 4.0
 
-        "No immediate reply. But then I hear a barely audible 'geez...' from Naomi that makes my heart immediately skip a beat."
+        "No immediate reply. But then I hear a barely audible “geez...” from Naomi that makes my heart immediately skip a beat."
         li "Naomi? What's wrong? What do you see?"
         na "Erm..."
         "Naomi starts mumbling something but is then interrupted by a short cough coming from my right."
         hyf "Inoue, could you please assist Mister Nakai?"
         na "Uh... Sure."
-        "I hear the car door opening, and I'm gripped by a sudden sense of frustration as I realize I'm being left out. What was it that Naomi was about to say? Does Father really think he's doing me a favor this way?"
+        "I hear the car door opening, and I'm gripped by a sudden sense of frustration as I realize I'm being left out."
+        "What was it that Naomi was about to say? Does Father really think he's doing me a favor this way?"
         na "Hey... Are you okay, Hanako? You're not... hurting, are you? That looks..."
         ha "..."
         "But my irritation quickly vanishes as I hear the worried tone in Naomi's voice."
         hi "Naomi, could you take my backpack from me?"
-        na "Y-Yeah sure."
+        na "Y-yeah sure."
         "I hear shuffling on the rear seats and eventually I hear the car door slam shut. As it does, seat belts start clicking shut and Father starts the engine."
         hyf "Now that we are all here, it is time to return to Yamaku."
         na "Hey, the two of us just did a little shopping, and we got stuff to eat on our way back. Hope you guys don't mind sandwiches and riceballs."
         hi "That sounds good. I'm kinda hungry. Wanna have one as well, Hanako?"
         ha "..."
-        "When Naomi first spotted Hanako and Hisao, I was relieved. But that relief is quickly starting to turn into concern as Hanako barely seems to be responding to us. As Father steers the car off the parking lot, I gather all my courage, turn around and whisper to my best friend."
+        "When Naomi first spotted Hanako and Hisao, I was relieved. But that relief is quickly starting to turn into concern as Hanako barely seems to be responding to us."
+        "As Father steers the car off the parking lot, I gather all my courage, turn around and whisper to my best friend."
         li "Hanako?"
         "There is no response."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
@@ -1311,18 +1319,21 @@ label sh_ch43:
         if _in_replay:
             return
 
-
     label .s4:
 
         $ set_window_tint(TINT_LILLY)
 
-        play music music_moonlight fadein 4.0
         scene bg suburb_shanghaiint
-        show hiroyuki thinking_close at center
-        show hisao basic_worry_swt_close at left
-        show naomi basic_concern_close at right
+        show hiroyuki thinking_close at centersit
+        show hisao basic_worry_swt_close at leftsit
+        show naomi basic_concern_close at rightsit
+        with Dissolve(2.0)
 
-        "The food at the Shanghai was good as usual, but the atmosphere has been gloomy. We went here to get a quick meal after dropping Hanako off at the dorm, and now I can hear Hisao and Naomi getting up."
+        play music music_moonlight fadein 4.0
+
+        "The food at the Shanghai was good as usual, but the atmosphere has been gloomy."
+        "We went here to get a quick meal after dropping Hanako off at the dorm, and now I can hear Hisao and Naomi getting up."
+
         show naomi basic_concern
         show hisao basic_sweet_swt
         with chchange
@@ -1338,14 +1349,14 @@ label sh_ch43:
         with chchange
 
         hyf "Are you sure you do not want me to drive you back to school? It is still quite the walk uphill from here."
-        hi "That's okay. We walk that road all the time during the week and usually with shopping bags to boot. Besides, some fresh night air will probably feel good right now. You and Lilly surely like to have a little bit of time for yourself too."
+        hi "That's okay. We walk that road all the time during the week and usually with shopping bags to boot. Besides, some fresh night air will probably feel good right now."
+        hi "You and Lilly surely like to have a little bit of time for yourself, too."
 
         show hiroyuki smileclosed_close
         with chchange
 
-        hyf "In that case I wish the two of you a safe return and a good night."
+        hyf "In that case, I wish the two of you a safe return and a good night."
         "I turn my head towards Hisao and do my best to give him my most reassuring smile."
-
         li "Try not to worry too much about Hanako, okay? I'm sure she'll be fine once she has recovered a bit."
         "A short pause."
         hi "...The same goes for you Lilly."
@@ -1353,80 +1364,100 @@ label sh_ch43:
 
         hide hisao
         hide naomi
+        with charaexit
 
-        "Hisao and Naomi say their goodbyes, and I hear them leave the room. After the sound of their footsteps has faded away, Father softly clears his throat."
+        "Hisao and Naomi say their goodbyes, and I hear them leave the room."
+        "After the sound of their footsteps has faded away, Father softly clears his throat."
+
         show hiroyuki awkward
         with chchange
 
         hyf "Perhaps some fresh air will do us good as well. Unless you are still hungry."
-        "I softly nod my head. Father walks up to the counter, pays our bill and we walk out."
+        "I softly nod my head."
+
+        show hiroyuki at center
+        with { "master": charamove }
+
+        "Father walks up to the counter, pays our bill and we walk out."
 
         scene bg suburb_shanghaiext_ni
-        show hiroyuki awkward at center
+        show hiroyuki awkward
+        with locationchange
 
         hyf "I am afraid that I am not very familiar with this town."
         li "I know of a place that's probably nice and quiet right now. It's not very far from here."
 
-        show hiroyuki smileclosed at center
+        show hiroyuki smileclosed
         with chchange
 
         hyf "Lead the way then."
 
         scene bg suburb_park_ni
         show hiroyuki thinking at right
-        with charaenter
+        with locationchange
 
         li "Here it is. It sounds quiet enough right now, and I think this area of the park smells nice."
 
-        show hiroyuki thinking_close at right
+        show hiroyuki thinking_close
         with chchange
 
         "I sit down on the nearby park bench and hear Father taking a seat next to me."
-        hyf "The odor is a bit hard for me to judge, but I can attest that it is quiet around here. There is not another person in sight. It is a nice place, although I would probably be able to appreciate the area more during the daytime."
+        hyf "The odor is a bit hard for me to judge, but I can attest that it is quiet around here. There is not another person in sight."
+        hyf "It is a nice place, although I would probably be able to appreciate the area more during the daytime."
+
+        stop music fadeout 2.0
+
         li "This is a bit of a special place. This is the place where... H-Hanako and Hisao... c-confessed to one another."
 
         play music music_sadness fadein 4.0
 
-        "My voice starts breaking as Hanako's name leaves my lips. I thought I'd be relieved when Hisao and Hanako made it back to us. I was hoping Hanako'd be okay after Hisao calmed her down. But when Hanako finally returned, it became obvious almost immediately that she was far from okay."
+        "My voice starts breaking as Hanako's name leaves my lips."
+        "I thought I'd be relieved when Hisao and Hanako made it back to us. I was hoping Hanako'd be okay after Hisao calmed her down."
+        "But when Hanako finally returned, it became obvious almost immediately that she was far from okay."
 
-        scene bg hiroyuki_car_ni
-        show sepia:
-            alpha 0.5
+        scene bg hiroyuki_car_ni at sepia
+        with { "master": locationchange }
 
         "She must have been hungry as well, but despite several offers she hasn't taken a single bite. Nor has she spoken a single word during the whole journey back."
 
-        scene bg school_girlsdormhall
-        show sepia:
-            alpha 0.5
+        scene bg school_girlsdormhall at sepia
+        with { "master": locationchange }
 
         "Only when we arrived back at Yamaku and she was about to enter her room, she turned to us and said four barely audible words."
 
-        show hanako dulleyed at center behind sepia
+        show hanako dulleyed at center, sepia
         with charaenter
 
-        show hanako dulleyed at tworight
+        show hanako at tworight
         with charamove
+
         pause 0.5
-        show hanako dulleyed at right
+
+        show hanako at right
         with charamove
 
         ha "{size=*0.7}I will be fine.{/size}"
 
         pause 0.5
-        show hanako dulleyed at offscreenright
+
+        show hanako at offscreenright
         with charamove
+
         hide hanako
+        with charaexit
 
         "Nobody believed it."
 
-        scene black
-        with Dissolve(2.0)
+        scene suburb_shanghaiint at sepia
+        with { "master": locationchange }
 
-        "The atmosphere at the Shanghai was quite heavy because of it with even Naomi barely saying anything. And throughout it all, I've been struggling to maintain a reassuring and composed smile in front of the others."
-        "Eventually, my jaw started hurting, and my head started pounding, so I was relieved to finally get out of there."
+        "The atmosphere at the Shanghai was quite heavy because of it with even Naomi barely saying anything."
+        "And throughout it all, I've been struggling to maintain a reassuring and composed smile in front of the others."
+        "Eventually, my jaw started hurting and my head started pounding, so I was relieved to finally get out of there."
 
         scene bg suburb_park_ni
         show hiroyuki awkward_close at right
+        with locationchange
 
         "And now, with nobody but Father nearby, I hold my head in my hands and let my shoulders slump, trying to keep my tears in check."
         li "What have I done?"
@@ -1465,9 +1496,9 @@ label sh_ch43:
 
         hyf "There is nothing wrong with being protective of others, Lilly. But it is not always a positive trait."
         li "Father..."
-
         "I suppose he's right. I know that my tendency of being overprotective isn't exactly a virtue. But he hardly set the good example today. I wonder if I should bring it up."
-        "I don't feel like it's my place to scold or lecture him. He is my father after all. On the other hand, he probably didn't realize how much he offended me. Maybe I should speak up."
+        "I don't feel like it's my place to scold or lecture him. He is my father after all."
+        "On the other hand, he probably didn't realize how much he offended me. Maybe I should speak up."
 
         show hiroyuki serious_close
         with chchange
@@ -1502,11 +1533,12 @@ label sh_ch43:
         show hiroyuki thinking_close
         with chchange
 
-        "That's probably as polite as I can phrase it. For nearly a minute, Father doesn't respond. Then he lets out a soft sigh."
+        "That's probably as polite as I can phrase it. For nearly a minute, Father doesn't respond."
 
         show hiroyuki awkwardspeak_close
         with chchange
 
+        "Then he lets out a soft sigh."
         hyf "When Miss Ikezawa was found, she was sitting against the side of the building in what seemed to be a fetal position. We immediately noticed a small hole in her pants near one of the knees and a wound underneath as well as some grazes on her hands."
         hyf "I think it is safe to assume that she tripped during her flight from the building and took a rather nasty fall."
         li "Oh no..."
@@ -1516,12 +1548,14 @@ label sh_ch43:
         show hiroyuki awkward_close
         with chchange
 
-        hyf "When we reached the spot where she was hiding, Mister Nakai approached her, sat down next to her and embraced her. But she just kept staring straight ahead as if he was not even there."
-        hyf "I remained with Mister Nakai until the guard came back with the medical supplies and during that whole time I do not recall her moving even once. It was a very... unsettling sight."
-        "I notice that for just a moment his voice trembles slightly. How bad could it have been if even Father was rattled by it? How did this day, that was supposed to be so inspirational, become such a nightmare?"
+        hyf "When we reached the spot where she was hiding, Mister Nakai approached her, sat down next to her, and embraced her. But she just kept staring straight ahead as if he was not even there."
+        hyf "I remained with Mister Nakai until the guard came back with the medical supplies. During that whole time, I do not recall her moving even once."
+        hyf "It was a very... unsettling sight."
+        "I notice that for just a moment his voice trembles slightly."
+        "How bad could it have been if even Father was rattled by it? How did this day, that was supposed to be so inspirational, become such a nightmare?"
         "The idea of Hanako sitting there, nearly catatonic and covered in grazes, breaks the last bit of restraint I have left, and tears of grief and guilt start flowing down my cheeks."
         li "Oh, H-Hanako. I'm s-so s-sorry..."
-        "I can't recall the last time I've felt this miserable. My mind is swirling with all kinds of emotions - all of them bad."
+        "I can't recall the last time I've felt this miserable. My mind is swirling with all kinds of emotions—all of them bad."
 
         show hiroyuki thinking_close
         with chchange
@@ -1531,37 +1565,49 @@ label sh_ch43:
 
         n "I feel anger at myself and at the situation. Hanako's already been through so much. She's already endured enough misery for a lifetime and didn't deserve being put through this."
         n "{vspace=30}I also feel a maddening sense of helplessness and desperation. I'll apologize to her tomorrow, but I know in advance that that's not going to change much. I want to do more, but I can't think of anything."
-        n "{vspace=30}And more than anything else, I'm really worried. Hanako was doing so well lately. She still wasn't extremely outgoing, but she was slowly but steadily rediscovering how to enjoy life again after nearly a decade of focussing completely on survival."
+        n "{vspace=30}And more than anything else, I'm really worried. Hanako was doing so well lately. She still wasn't extremely outgoing, but she was slowly but steadily rediscovering how to enjoy life again after nearly a decade of focusing completely on survival."
         n "{vspace=30}Her grades were steadily climbing, too, and my impression was that she'd easily be able to handle her entrance exams as long as she kept studying hard for it."
 
         nvl clear
 
-        n "But how much motivation will she have left now? Will she have recovered from today's events in time for the mock exams later this week? What if she fails them and is forced to take all those extra classes - because of me? What would that do to her? What if this has an impact on her performance in the actual exams? The national tests are less than two months away. What if she fails her exams? What will she do then? Where will she go? No... Don't think like that. Don't even start thinking like that. Just... keep it together. Stop... worrying... already."
+        n "But how much motivation will she have left now?"
+        n "Will she have recovered from today's events in time for the mock exams later this week?"
+        n "What if she fails them and is forced to take all those extra classes—because of me? What would that do to her?"
+        n "What if this has an impact on her performance in the actual exams?"
+        n "The national tests are less than two months away. What if she fails her exams?"
+        n "What will she do then? Where will she go?"
+        n "{vspace=60}No... Don't think like that. Don't even start thinking like that."
+        n "Just... keep it together. Stop... worrying... already."
 
-        nvl clear
         nvl hide dissolve
 
         show hiroyuki awkwardspeak_close
         with chchange
 
         hyf "Lilly?"
-
         li "I've f-failed her so b-badly. How will I even f-face her after t-today?"
-
         "I feel embarrassed about Father having to see me like this, but it took all my strength to stay composed in front of Hisao and Naomi, and if I keep this bottled up inside for any longer, I'll probably end up breaking down in the dorms."
         "At least right now there's nobody around but him and me... I think. The only sounds I hear right now are the whistling of the wind through the nearby trees and the sound of my own crying."
 
-        play music music_comfort fadein 4.0
+        stop music fadeout 2.0
 
-        show handkerchief:
-            truecenter
-            ypos 0.7 alpha 0.0
-            easeout 1.0 truecenter alpha 1.0
-        with Pause(1.0)
+        queue music music_comfort fadein 4.0
 
-        "Just when I start worrying about how extremely uncomfortable this is probably making Father, I feel him take my hand and push something against my palm. As I take it from him, I can feel that it's something light and soft."
+        show handkerchief at displayitemshow
 
-        hide handkerchief
+        pause 1.0
+
+        show hankerchief at displayitem
+
+        "Just when I start worrying about how extremely uncomfortable this is probably making Father, I feel him take my hand and push something against my palm."
+        "As I take it from him, I can feel that it's something light and soft."
+
+        show handkerchief at displayitemhide
+
+        pause 1.0
+
+        hide hankerchief
+
         show hiroyuki awkward_close
         with chchange
 
@@ -1572,9 +1618,9 @@ label sh_ch43:
         show hiroyuki serious_close
         with chchange
 
-        "Even my gloomy mood cannot prevent a smile from crossing my face for a moment, both at the unexpected sweetness and the endearing awkwardness of his gesture. I use his handkerchief to dry my tears, keeping it with me afterwards in case I tear up again later."
+        "Even my gloomy mood cannot prevent a smile from crossing my face for a moment, both at the unexpected sweetness and the endearing awkwardness of his gesture."
+        "I use his handkerchief to dry my tears, keeping it with me afterwards in case I tear up again later."
         "As the stream of tears dries up, I let out a loud and tired sigh."
-
         li "Thank you."
 
         show hiroyuki thinking_close
@@ -1582,7 +1628,6 @@ label sh_ch43:
 
         hyf "Think nothing of it."
         li "I'm sorry for you having to see me like this."
-
         hyf "Not at all. Best to let it out now, so you can be strong and supportive in front of Miss Ikezawa later."
         li "I... would like to do whatever I can to help Hanako, but I'm not really sure what I can do."
 
@@ -1609,7 +1654,7 @@ label sh_ch43:
         with chchange
 
         li "But... I fear that it will take more than a new pair of pants to resolve this."
-        hyf "Perhaps it would be best not to expect a magic fix to exist and to simply do whatever little things you can for her - as you did for me a few months earlier."
+        hyf "Perhaps it would be best not to expect a magic fix to exist and to simply do whatever little things you can for her—as you did for me a few months earlier."
         li "...Yes."
         "Having calmed down a bit, I neatly fold Father's handkerchief and put it away."
         li "Father... Thank you so much. I'd like you to know that I really appreciate this."
@@ -1631,10 +1676,9 @@ label sh_ch43:
         nvl show dissolve
 
         n "He dismisses my compliment as usual, but my gratitude is completely sincere. I'm not even sure if we would have found Hanako in time if it hadn't been for Father keeping a level head, and now he's here keeping me company too."
-        n "{vspace=30}He's been in a somber and apathic mood since Grandfather adopted Mister Kojima as his heir, and me asking him to come along today was mostly an effort on my part to get him out of the house."
-        n "{vspace=30}Yet when Hisao, Naomi and I were at a loss on what to do, he took charge and quickly put forth a plan of action. His voice even sounded more alive than before too. Perhaps an event like this was necessary to shake him out of the rut he was in. If that is so, then at least something positive happened today."
+        n "{vspace=60}He's been in a somber and apathic mood since Grandfather adopted Mister Kojima as his heir, and me asking him to come along today was mostly an effort on my part to get him out of the house."
+        n "Yet when Hisao, Naomi, and I were at a loss on what to do, he took charge and quickly put forth a plan of action. His voice even sounded more alive than before too. Perhaps an event like this was necessary to shake him out of the rut he was in. If that is so, then at least something positive happened today."
 
-        nvl clear
         nvl hide dissolve
 
         li "I meant what I just said. I am very proud of you. I was surprised how well you handled the effort to find Hanako."
@@ -1649,8 +1693,7 @@ label sh_ch43:
         with chchange
 
         hyf "Never mind."
-
-        li "I don't remember getting lost myself very often. Mother, Grandmother or Akira would usually keep an eye on me at all times."
+        li "I don't remember getting lost myself very often. Mother, Grandmother, or Akira would usually keep an eye on me at all times."
 
         show hiroyuki thinking_close
         with chchange
@@ -1663,7 +1706,7 @@ label sh_ch43:
         with chchange
 
         hyf "This was mostly before you were born, but your sister had the unfortunate tendency to run off on her own whenever we went into town or on a trip, and it was often up to me to track her down."
-        hyf "Before long, we would start making mental notes of toy stores, pet stores and video game stores we came across because those were often the places we suspected she would walk off to if we put ourselves in her shoes."
+        hyf "Before long, we would start making mental notes of toy stores, pet stores, and video game stores we came across because those were often the places we suspected she would walk off to if we put ourselves in her shoes."
         "So Father applied the same mindset today while we were trying to track down Hanako. I grin at the thought of Akira sneaking off while our parents weren't looking, but Father didn't sound particularly amused just now."
         li "That must have been troublesome at times."
 
@@ -1681,7 +1724,6 @@ label sh_ch43:
         hyf "She would insist things merely got out of hand a bit, but we as parents would be the ones who would get the blame, particularly your mother."
         hyf "We would spend a week or so apologizing to that boy's parents, and things would quiet down, only for something similar to happen again a month or two later."
         "I personally wonder if those occurrances were really just children playing and accidentally going a bit too far or if Akira was perhaps being picked on and stood up for herself."
-
         li "Akira can be a handful, but she has a softer side as well, Father. Even though there was a rather large age gap between us, she has always been very kind and attentive towards me, and she'd always play with me if I was bored or lonely, even if she had homework to finish."
         li "I don't think I could have wished for a more loving sister at the time, and I believe she will be a wonderful mother herself someday. She may not be the most refined person in the world, but she's responsible when it counts."
 
@@ -1729,27 +1771,18 @@ label sh_ch43:
         with chchange
 
         "He softly scrapes his throat as an indication that there's more he'd like to say."
-
         hyf "Your mother once told me that she believed that Akira was really a Scot at heart."
-        hyf "Despite our efforts to give her a traditional upbringing and education, there were some traits of hers - traits like a strong sense of individualism, a strong yearning for independence and a sense of straightforwardness - that are not good or bad qualities in and of themselves, but become good or bad depending on one's surroundings."
-        hyf "I think that in her current environment, those traits probably serve her well, while they used to be a cause of severe worry for us when she was still living here. Perhaps - this was how things were meant to play out all along."
+        hyf "Despite our efforts to give her a traditional upbringing and education, there were some traits of hers—traits like a strong sense of individualism, a strong yearning for independence, and a sense of straightforwardness—that are not good or bad qualities in and of themselves, but become good or bad depending on one's surroundings."
+        hyf "I think that in her current environment, those traits probably serve her well, while they used to be a cause of severe worry for us when she was still living here. Perhaps... this was how things were meant to play out all along."
         li "Is this how you and Mother feel about it?"
 
         show hiroyuki thinking_close
         with chchange
 
         hyf "Yes. We have felt this way even before it became clear that your attempts at convincing her to also return to Japan were not going to be succesful. Perhaps she will be happier there than she would be here. It would make sense to give her the opportunity to find out for herself."
-
-        nvl clear
-        nvl show dissolve
-
-        n "I remember having spent a lot of effort trying to talk Akira into moving back to Japan as well after it became clear that our parents would be moving. Maybe more effort than I should have made. I remember being frustrated when Mother and Father failed to support my efforts."
-        n "{vspace=30}It appears that I might have been so fixated on reuniting our family again once and for all that I completely lost sight of how Akira must have felt, essentially causing me to follow in our parents' footsteps."
-        n "{vspace=30}I make a mental note to apologize to my sister the next time I speak to her even though I doubt she was ever upset with me about this."
-
-        nvl clear
-        nvl hide dissolve
-
+        "I remember having spent a lot of effort trying to talk Akira into moving back to Japan as well after it became clear that our parents would be moving. Maybe more effort than I should have made. I remember being frustrated when Mother and Father failed to support my efforts."
+        "It appears that I might have been so fixated on reuniting our family again once and for all that I completely lost sight of how Akira must have felt, essentially causing me to follow in our parents' footsteps."
+        "I make a mental note to apologize to my sister the next time I speak to her even though I doubt she was ever upset with me about this."
         li "I think... you're right. To be honest, when you said it was good that Akira stayed behind, I was worried for a moment that you admitted to hating her."
 
         show hiroyuki scold_close
@@ -1768,24 +1801,15 @@ label sh_ch43:
         with chchange
 
         hyf "Akira is probably more like your mother than any other person I know. Could you truly hate someone who is similar in so many ways to the person you ended up marrying?"
-
-        nvl clear
-        nvl show dissolve
-
-        n "It takes me a second to grasp the significance of Father's words. Over the last several months, I've slowly grown accustomed to Mother's energetic and up-beat behavior."
-        n "{vspace=30}Even though she's living in Japan again now, her way of acting hasn't changed although she usually adopts a much more reserved and formal posture when we go for a walk around the neighborhood."
-        n "{vspace=30}There have been several times when I considered the possibility that the mother I remembered from my childhood never really existed to begin with, but this is the first time one of my parents actually comes out and confirms it."
-
-        nvl clear
-        nvl hide dissolve
-
+        "It takes me a second to grasp the significance of Father's words. Over the last several months, I've slowly grown accustomed to Mother's energetic and up-beat behavior."
+        "Even though she's living in Japan again now, her way of acting hasn't changed—although she usually adopts a much more reserved and formal posture when we go for a walk around the neighborhood."
+        "There have been several times when I considered the possibility that the mother I remembered from my childhood never really existed to begin with, but this is the first time one of my parents actually comes out and confirms it."
         li "Father... Was Mother ever... ashamed of who she was?"
 
         show hiroyuki smileclosed_close
         with chchange
 
         "Father lets out a soft chuckle at that. I guess we can rule out that possibility."
-
         hyf "Your mother realized it was important to set the good example, Lilly."
         li "The good example?"
         "Is it right to put up such a radical facade just to set the good example?"
@@ -1799,16 +1823,9 @@ label sh_ch43:
         show hiroyuki serious_close
         with chchange
 
-        nvl clear
-        nvl show dissolve
-
         "It took me some time to completely get used to Mother's casual attitude, but thinking back on it, I think she grew on me faster than I expected. And after hearing what Father just said, I also realize why."
-        n "{vspace=30}Mother and Akira really do act similar in many ways, and since Akira has been somewhat like a mother figure to me for several years, hearing my actual mother act this informal towards me doesn't feel quite as jarring as I would have thought at first. In fact, there's something strangely familiar and comfortable about it."
-        n "{vspace=30}Mother may not be acting as proper and refined now as I remember her, but she's still kind and loving in her own way. That aspect of her hasn't changed."
-
-        nvl clear
-        nvl hide dissolve
-
+        "Mother and Akira really do act similar in many ways, and since Akira has been somewhat like a mother figure to me for several years, hearing my actual mother act this informal towards me doesn't feel quite as jarring as I would have thought at first. In fact, there's something strangely familiar and comfortable about it."
+        "Mother may not be acting as proper and refined now as I remember her, but she's still kind and loving in her own way. That aspect of her hasn't changed."
         li "I do, Father."
 
         show hiroyuki thinkraised_close
@@ -1831,13 +1848,14 @@ label sh_ch43:
         li "That late already?"
         hyf "Yes, today has been a long day. And your mother will probably not let me sleep until I have told her all that has happened."
 
-        scene black
-        with Dissolve(2.0)
+        scene misc_hiroyukicar_ni
+        with locationchange
 
         "We walk back to the car, and Father drives us back to school. He's probably eager to get home himself, so I say my farewells at the school gate."
 
         scene bg school_gate_ni
-        show hiroyuki serious at center
+        show hiroyuki serious
+        with locationchange
 
         hyf "Very well then. Try your best, and study as hard as you can these last few days. Your mother and I will probably call you before the mock exams start."
         li "Yes. I'm eager to hear how Mother's last few days in Scotland have been."
@@ -1885,23 +1903,31 @@ label sh_ch43:
         li "I will."
 
         hide hiroyuki
+        with charaexit
 
-        "And with that, we part ways. It's probably best if I try and get some sleep as soon as I can, so I can get up early tomorrow."
+        "And with that, we part ways."
+        "It's probably best if I try and get some sleep as soon as I can, so I can get up early tomorrow."
 
-        scene black
-        with Dissolve(2.0)
         scene bg school_dormext_full_ni
+        with locationchange
 
-        show billorigami_hand:
-            truecenter
-            ypos 0.7 alpha 0.0
-            easeout 1.0 truecenter alpha 1.0
-        with Pause(1.0)
+        show billorigami_hand at displayitemshow
 
-        "Promising myself to check on Hanako first thing in the morning, I drop Father's little paper crane into my bag, take out my cane and walk back to the dorms."
+        pause 1.0
+
+        show billorigami_hand at displayitem
+
+        "Promising myself to check on Hanako first thing in the morning, I drop Father's little paper crane into my bag, take out my cane, and walk back to the dorms."
+
+        show billorigami_hand at displayitemhide
+
+        pause 1.0
+
         hide billorigami_hand
 
         li "Please be okay, Hanako."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
