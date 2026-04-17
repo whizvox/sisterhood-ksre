@@ -40,7 +40,7 @@ init 1 python:
                         renpy.image(f"{char} {variant}_superclose_ni", sp_night(supercloseimgpath))
                         renpy.image(f"{char} {variant}_superclose_rn", sp_rain(supercloseimgpath))
 
-    def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0):
+    def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0, addwidth=0, addheight=0):
         for variant in variants:
             imgpath = f"sprites/{char}/{char}_{variant.replace(' ', '_')}.png"
             if not vanilla:
@@ -48,7 +48,7 @@ init 1 python:
             renpy.image(char + " " + variant + "_phone", Composite(
                 (436, 436),
                 (0, 0), DynamicDisplayable(_sh_get_phonebox_bg),
-                (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405, 402), char + " " + variant)
+                (30 + xoff, 30 + yoff), Crop((20 + cropxoff, 107 + cropyoff, 405 + addwidth, 402 + addheight), char + " " + variant)
             ))
 
     def sh_bg(base_name):

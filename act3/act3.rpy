@@ -141,6 +141,7 @@ init 30 python:
     phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
     phonebox_sprites("hisao", ["basic_grin_swt", "basic_neutral_swt", "basic_smile_swt", "basic_sweet_swt"], cropxoff=95, cropyoff=-90)
     phonebox_sprites("naomi", ["basic_angry", "basic_annoyed", "basic_concern", "basic_serious"], xoff=-20, cropyoff=-45)
+    phonebox_sprites("hiroyuki", ["speak", "serious", "thinking", "awkward", "scold", "smileclosed", "smile"], xoff=-22, cropxoff=130, cropyoff=-110, addwidth=14)
 
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
@@ -150,8 +151,9 @@ init 30 python:
     # credit: japan-property.jp and Tokyo Furnished LLC
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
     # credit: OMOSHIRO RENT-A-CAR
-    sh_bgs("misc", ["car_ss"])
-    sh_bgs("kasshoku", ["entrance", "grounds", "journalentry", "hallway", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni"])
+    sh_bgs("misc", ["car_ss", "hiroyukicar_ni"])
+    sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
+    sh_bgs("suburb", ["park_ni"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
 
