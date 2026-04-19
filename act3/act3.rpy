@@ -124,6 +124,9 @@ init 30 python:
             (_("Hide and Seek"), "sh_ch43.s2", _("Lilly and the others set out to search for Hanako."), "lilly"),
             (_("Friend of a Friend"), "sh_ch43.s3", _("Lilly and Naomi talk about Hanako."), "lilly"),
             (_("Deliberation"), "sh_ch43.s4", _("Lilly and her father ponder on the day's events."), "lilly"),
+            (_("Beyond Repair"), "sh_ch44.s1", _("An intimate moment between Hisao and Hanako ends on a sad note."), "hisao"),
+            (_("Academic Anxiety"), "sh_ch44.s2", _("Hisao gets his results of the mock exams."), "hisao"),
+            (_("Falling Behind"), "sh_ch44.s3", _("Hisao and Lilly visit Hanako in her room."), "hisao"),
         ])
     )
 
@@ -136,6 +139,8 @@ init 30 python:
     sh_sprites("naomi", ["grinclosed"], poses=["bend"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
     sh_sprites("muto", ["eyebrow"])
+    sh_sprites("hanako", ["downmeek", "downsleep", "meek"], poses=["emb"])
+    sh_sprites("misha", ["weaksmile"], poses=["perky"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
     phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
@@ -156,6 +161,7 @@ init 30 python:
     sh_bgs("suburb", ["park_ni"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
+    sh_event("sadspooning", ["tearoom"])
 
     sh_register_sfx([
         # credit: Universfield of Pixabay
@@ -163,13 +169,14 @@ init 30 python:
         "phonering3"
     ])
 
-label sisterhood_timeskip_broken:
+label sisterhood_timeskip_broken(silent=False):
     stop sound fadeout 2.0
     stop music fadeout 2.0
     stop ambient fadeout 2.0
     pause 2.0
 
-    play music music_timeskip
+    if not silent:
+        play music music_timeskip
 
     show shlogo brokenquill at Transform(xalign=0.5, yalign=0.5)
     with CropMove(2.0, "wipedown")
@@ -179,7 +186,8 @@ label sisterhood_timeskip_broken:
 
     pause 2.0
 
-    stop music fadeout 2.0
+    if not silent:
+        stop music fadeout 2.0
 
     scene black
     with erase
