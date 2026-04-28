@@ -250,7 +250,7 @@ label sh_ch44:
 
         $ set_window_tint(TINT_HISAO)
 
-        scene bg school_scienceroom
+        scene bg school_scienceroom at right
         with Fade(1.0, 1.0, 1.0)
 
         play music music_dreamy fadein 4.0
@@ -394,12 +394,18 @@ label sh_ch44:
         "Teacher" "Mutou's here alright, but it looks like he's still busy."
         "The teacher moves aside, and as I peer into the staff room, I spot my homeroom teacher talking to one of his colleagues; a short old lady wearing a black skirt and a violet shawl. Hanako's therapist."
 
-        show takawa serious at twoleft
-        show muto normal at tworight
+        show takawa serious at center:
+            xpos 0.65
+        show muto normal at right
         with charaenter
 
         "I'm betting my life that I know what, or who, their discussion is currently about."
         "Just when I'm about to leave and come back later, Mutou spots me from the corner of his eye and, after a brief nod from his discussion partner, walks up to the doorway with Miss Takawa in tow."
+
+        show takawa serious at twoleft
+        show muto normal at tworight
+        with characlose
+
         mu "Good afternoon, Nakai. Is there anything I can do for you?"
         hi "Good afternoon, sir. Seeing that Hanako wasn't in class today, would it be a problem if I took along her answer sheets? I plan to check up on her later today, and I'll be sure to give them to her."
 
@@ -421,11 +427,12 @@ label sh_ch44:
         with chchange
 
         "The old lady frowns for a moment, probably realizing I'm fishing for more details, but then shrugs her shoulders to dismiss the matter and gives me an inquisitive smile."
+        ta "Let's not dwell on that."
 
         show takawa devious
         with chchange
 
-        ta "Let's not dwell on that. By the way, Mister Nakai, how did you fare in your tests last week?"
+        ta "By the way, Mister Nakai, how did you fare in your tests last week?"
 
         show muto irritated
         with chchange
@@ -477,7 +484,8 @@ label sh_ch44:
         show takawa calculating
         with chchange
 
-        "Mutou doesn't immediately answer and looks at Miss Takawa instead. The old therapist looks deep in thought for a moment and then slowly shakes her head."
+        "Mutou doesn't immediately answer and looks at Miss Takawa instead."
+        "The old therapist looks deep in thought for a moment and then slowly shakes her head."
         ta "I think it would be best for Miss Ikezawa to attend the supplementary lessons that are on offer in the upcoming weeks."
         "What the heck? Why arrange an exemption for just one of us?"
         hi "Are you really going to punish her for something that's not her fault?"
@@ -500,7 +508,7 @@ label sh_ch44:
         $ set_window_tint(TINT_HISAO)
 
         scene bg school_girlsdormhall
-        with Fade(1.0, 0.0, 1.0)
+        with shorttimeskip
 
         play music music_dreamy fadein 4.0
 
@@ -512,8 +520,19 @@ label sh_ch44:
         "Lilly's voice greets me from the other side as I knock on her bedroom door."
         hi "Lilly, it's me."
 
-        show lilly basic_weaksmile_paj at twoleft
-        with charaenter
+        play sound sfx_dooropen
+
+        show lilly basic_weaksmile_paj at left:
+            alpha 0.0
+        with None
+
+        show lilly at twoleft:
+            ease 1.0 alpha 1.0
+        with charamove
+
+        show lilly:
+            alpha 1.0
+        with None
 
         "The door opens and Lilly, already in her pajamas, carefully walks out."
         li "Hisao. Nice of you to stop by."
@@ -546,13 +565,15 @@ label sh_ch44:
 
         "We walk up to the door to Hanako's dorm room and I give a few sharp knocks on the door while softly calling out Hanako's name."
 
+        stop music fadeout 2.0
+
         pause 0.5
 
         show hanako_door_door:
             xpos -0.05
         with charamove
 
-        "For a little while there seems to be no response, but then I suddenly see Lilly tilt her head, and moments later the door opens just enough for Hanako to peek through the gap and for me to look back at her."
+        "For a little while, there seems to be no response, but then I suddenly see Lilly tilt her head, and moments later, the door opens just enough for Hanako to peek through the gap and for me to look back at her."
 
         show hanako_door_door:
             xpos -0.15
@@ -568,21 +589,22 @@ label sh_ch44:
 
         "I'm not really sure what Hanako has been doing before we knocked on her door. There's no book on her nightstand nor are there any notes or study books on her desk."
 
-        show hanagown distantmessy at right
+        show hanagown distantmessy at tworight
         with charaenter
 
         "She's already wearing her nightgown, and she looks smaller than ever in it. It must be her slumped shoulders. She looks tired, even though it's not very late yet."
 
-        show lilly basic_concerned_paj_close at left
+        show lilly basic_concerned_paj_close at twoleft
         with charaenter
 
-        "I take a seat on her desk chair and Lilly sits down next to her on the bed. Hanako's currently staring at me as if she's asking why we're here. It's probably best to go ahead and not allow the heavy atmosphere to get even worse."
+        "I take a seat on her desk chair and Lilly sits down next to her on the bed."
+        "Hanako's currently staring at me as if she's asking why we're here. It's probably best to go ahead and not allow the heavy atmosphere to get even worse."
         hi "Um... We wanted to check on you because you weren't in class today. Just to see if you're not ill or anything."
 
         show hanagown worrymessy
         with chchange
 
-        ha "T-Thanks, but... I'm o-okay."
+        ha "Th-thanks, but... I'm o-okay."
         hi "I asked Mutou if I could pass your answer sheets onto you, but he wouldn't allow that. I was told they wanted you to approach him or Miss Takawa yourself for the results of the mock exams."
 
         show lilly basic_surprised_paj_close
@@ -596,7 +618,7 @@ label sh_ch44:
         show lilly basic_concerned_paj_close
         with chchange
 
-        "Lilly looks a bit troubled at my words. She's probably thinking the same thing I was. If Hanako obtained good grades, I probably would have gotten that answer sheet, and there wouldn't be any need for her to 'discuss the results' with a staff member."
+        "Lilly looks a bit troubled at my words. She's probably thinking the same thing I was. If Hanako obtained good grades, I probably would have gotten that answer sheet, and there wouldn't be any need for her to “discuss the results” with a staff member."
         "Hanako, on the other hand, merely nods blankly."
         ha "I'll... g-go and talk to one of them."
         hi "Okay."
@@ -606,14 +628,15 @@ label sh_ch44:
         with chchange
 
         "Hanako fidgets with the sleeves of her nightgown a bit and then looks up at me."
-        ha "H-How did you do?"
-        "I was hoping she wasn't going to ask that question, but in hindsight that was an unrealistic expectation to begin with. I suppose there's really no way around it. I take a deep breath and try to keep my tone as neutral as possible."
+        ha "H-how did you do?"
+        "I was hoping she wasn't going to ask that question, but in hindsight that was an unrealistic expectation to begin with."
+        "I suppose there's really no way around it. I take a deep breath and try to keep my tone as neutral as possible."
         hi "I probably could have done better. I ended up scoring a sixty five."
 
         show hanagown shockmessy
         with chchange
 
-        ha "S-S-Sixty five?"
+        ha "S-s-sixty five?"
         "Hanako's eyes grow the size of small saucers as she hears my grade. Then she shoots an unsure look at Lilly."
 
         show hanagown pleadmessy
@@ -684,7 +707,10 @@ label sh_ch44:
         with chchange
 
         ha "I w-won't."
-        "We make a bit of small-talk, but it seems more for show than anything else. Eventually, a yawn from Hanako informs us that it's time to leave, and after a quick 'keep your chin up', we return to the hallway outside."
+        "We make a bit of small-talk, but it seems more for show than anything else."
+        "Eventually, a yawn from Hanako informs us that it's time to leave. After a quick “keep your chin up”, we return to the hallway outside."
+
+        play sound sfx_dooropen
 
         hide lilly
         show hanagown remorsefulmessy_close:
@@ -701,25 +727,27 @@ label sh_ch44:
         li "Yes, Hanako?"
         ha "I'm... s-so... extremely... s-sorry..."
 
+        play sound [ "<silence 0.4>", sfx_doorclose ]
+
         show hanako_door_door:
-            xpos 0.00
+            xpos 0.0
         with charamove
 
         "Then the door closes. I turn to Lilly, who has an agonized expression on her face."
 
         scene bg school_girlsdormhall
         show lilly basic_reminisce_paj_close at tworight
+        with locationchange
 
         hi "I guess that confirms that she spotted the elephant in the room all along, despite our efforts to sweep the issue under the rug."
 
         nvl clear
         nvl show dissolve
 
-        n "In retrospect we really did go out of our way to avoid mentioning the obvious. Maybe a little bit too much. Of course Hanako was skipping class today to avoid the mock exams' results, whatever they are for her."
+        n "In retrospect, we really did go out of our way to avoid mentioning the obvious. Maybe a little bit too much. Of course Hanako was skipping class today to avoid the mock exams' results, whatever they are for her."
         n "{vspace=30}She didn't even seem shocked by the suggestion that she might have done badly. She probably knew all along. And of course all three of us did worse than expected on the tests last week due to how rattled we still were by the lecture hall incident."
         n "{vspace=30}We know it, Lilly's parents know it, and even the school acknowledged it today. Why else would Lilly and I have been let off the hook like this?"
 
-        nvl clear
         nvl hide dissolve
 
         "Lilly sadly nods at my words."
@@ -732,12 +760,17 @@ label sh_ch44:
 
         "Lilly lets out a depressed sigh."
         li "She seems to believe that all of this is her fault. But... It's not, Hisao."
+        "She seems almost desperate to convince me. It's really painful to see Hanako and Lilly both agonizing over this."
 
-        show lilly basic_concerned_paj at center
+        play sound sfx_dooropen
+
+        show lilly basic_displeased_paj_close at twoleft
         with chchange
 
-        "She seems almost desperate to convince me. It's really painful to see Hanako and Lilly both agonizing over this. As Lilly opens the door of her own room and prepares to go inside, I briefly put a hand on her shoulder."
+        "As Lilly opens the door of her own room and prepares to go inside, I briefly put a hand on her shoulder."
         hi "Lilly... Just remember: it's not really your fault either..."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)

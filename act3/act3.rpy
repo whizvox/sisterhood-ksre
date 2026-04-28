@@ -140,7 +140,9 @@ init 30 python:
     sh_sprites("shizu", ["evil"], poses=["adjust"])
     sh_sprites("muto", ["eyebrow"])
     sh_sprites("hanako", ["downmeek", "downsleep", "meek"], poses=["emb"])
+    sh_sprites("hanagown", ["distantmessy", "pleadmessy", "shockmessy", "worrymessy", "remorsefulmessy"])
     sh_sprites("misha", ["weaksmile"], poses=["perky"])
+    sh_sprites("takawa", ["devious", "sweet"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
     phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
@@ -159,6 +161,7 @@ init 30 python:
     sh_bgs("misc", ["car_ss", "hiroyukicar_ni"])
     sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
     sh_bgs("suburb", ["park_ni"])
+    sh_bgs("school", ["teacherlounge"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
     sh_event("sadspooning", ["tearoom"])
