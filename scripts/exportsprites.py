@@ -133,6 +133,7 @@ takawa = [
     ("sprites/Yumi Takawa fixed/takawa_worried", "worried"),
     ("Sprites/Takawa/edits/takawa_sweet", "sweet"),
     ("Sprites/Takawa/edits/takawa_devious", "devious"),
+    ("Sprites/Takawa/edits/takawa_weaksmile", "weaksmile"),
 ]
 
 naomi = [

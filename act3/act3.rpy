@@ -127,6 +127,8 @@ init 30 python:
             (_("Beyond Repair"), "sh_ch44.s1", _("An intimate moment between Hisao and Hanako ends on a sad note."), "hisao"),
             (_("Academic Anxiety"), "sh_ch44.s2", _("Hisao gets his results of the mock exams."), "hisao"),
             (_("Falling Behind"), "sh_ch44.s3", _("Hisao and Lilly visit Hanako in her room."), "hisao"),
+            (_("Not Guilty!"), "sh_ch45.s1", _("Lilly has a brief talk about exam prep with Misha."), "lilly"),
+            (_("The Stakes of the Game"), "sh_ch45.s2", _("Lilly and Hisao talk to Miss Takawa about Hanako."), "lilly"),
         ])
     )
 
@@ -141,12 +143,12 @@ init 30 python:
     sh_sprites("muto", ["eyebrow"])
     sh_sprites("hanako", ["downmeek", "downsleep", "meek"], poses=["emb"])
     sh_sprites("hanagown", ["distantmessy", "pleadmessy", "shockmessy", "worrymessy", "remorsefulmessy"])
-    sh_sprites("misha", ["weaksmile"], poses=["perky"])
-    sh_sprites("takawa", ["devious", "sweet"])
+    sh_sprites("misha", ["suspicious", "weaksmile"], poses=["perky"])
+    sh_sprites("takawa", ["devious", "sweet", "weaksmile"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
     phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
-    phonebox_sprites("hisao", ["basic_grin_swt", "basic_neutral_swt", "basic_smile_swt", "basic_sweet_swt"], cropxoff=95, cropyoff=-90)
+    phonebox_sprites("hisao", ["basic_neutral_uni", "basic_smile_uni", "basic_speak_uni", "basic_grin_swt", "basic_neutral_swt", "basic_smile_swt", "basic_sweet_swt"], cropxoff=95, cropyoff=-90)
     phonebox_sprites("naomi", ["basic_angry", "basic_annoyed", "basic_concern", "basic_serious"], xoff=-20, cropyoff=-45)
     phonebox_sprites("hiroyuki", ["speak", "serious", "thinking", "awkward", "scold", "smileclosed", "smile"], xoff=-22, cropxoff=130, cropyoff=-110, addwidth=14)
 

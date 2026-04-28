@@ -4,6 +4,7 @@ label sh_ch44:
         $ set_window_tint(TINT_HISAO)
 
         call sisterhood_timeskip_broken(silent=True)
+
         scene black
 
         "It's been a week since we went to that open house day, and a lot has happened since then."
