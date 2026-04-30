@@ -77,6 +77,7 @@ init 30:
     image teddybear = sh_vfx("teddybear")
     image carseats = sh_vfx("carseats", boxstrip=False)
     image hankerchief = sh_vfx("hankerchief")
+    image aedunit = sh_vfx("aed")
 
     image bg kasshoku_grounds_ss = sunset(sh_bg("kasshoku_grounds"))
     image bg kasshoku_entrance_ss = sunset(sh_bg("kasshoku_entrance"))
@@ -129,6 +130,8 @@ init 30 python:
             (_("Falling Behind"), "sh_ch44.s3", _("Hisao and Lilly visit Hanako in her room."), "hisao"),
             (_("Not Guilty!"), "sh_ch45.s1", _("Lilly has a brief talk about exam prep with Misha."), "lilly"),
             (_("The Stakes of the Game"), "sh_ch45.s2", _("Lilly and Hisao talk to Miss Takawa about Hanako."), "lilly"),
+            (_("Christmas Cramming"), "sh_ch46.s1", _("Hisao and Hanako visit the Satous for Christmas... and more studying."), "hisao"),
+            (_("Unwrapping the Present"), "sh_ch46.s2", _("Hisao's and Hanako's visit to the Satou residence ends with some unexpected gifts."), "hisao"),
         ])
     )
 
@@ -155,6 +158,7 @@ init 30 python:
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni", "hiroyukicar"])
+    sh_bgs("satoujp", ["station"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC
