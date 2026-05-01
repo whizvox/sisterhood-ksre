@@ -97,7 +97,7 @@ init 1 python:
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
-    sh_sprites("lilly", ["cheerful", "concerned", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
+    sh_sprites("lilly", ["cheerful", "concerned", "cry", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
@@ -125,7 +125,8 @@ init 1 python:
     sh_event("celloandwine", ["peek", "block", "block_smile", "lap_forward", "lap_rest", "lap_pause", "lap_embrace", "lap_applause", "lap_victory", "lap_kiss"])
     sh_event("tipsyfun", ["collapse_morning"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
-    sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
+    #sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
+    sh_event("bedridden", ["lillyakira", "akira"])
     sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
     sh_event("akirapast", ["argument", "elemschool", "grandparents1", "grandparents2", "midschool", "promotion", "study1", "study2", "unfavorite", "vacation"])
@@ -188,6 +189,14 @@ init 1:
         (0, 0), "bg suburb_roadcenter_rn",
         (0, 0), "rain normal"
     )
+
+    image bedridden_lilly smile = f"{sh_path}/event/bedridden/bedridden_lilly_smile_overlay.png"
+    image bedridden_lilly listen = f"{sh_path}/event/bedridden/bedridden_lilly_listen_overlay.png"
+    image bedridden_lilly angry = f"{sh_path}/event/bedridden/bedridden_lilly_angry_overlay.png"
+    image bedridden_akira glare = f"{sh_path}/event/bedridden/bedridden_akira_glare_overlay.png"
+    image bedridden_akira shout = f"{sh_path}/event/bedridden/bedridden_akira_shout_overlay.png"
+    image bedridden_hiroyuki discomfort = f"{sh_path}/event/bedridden/bedridden_hiroyuki_discomfort_overlay.png"
+    image bedridden_hiroyuki angry = f"{sh_path}/event/bedridden/bedridden_hiroyuki_angry_overlay.png"
 
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"

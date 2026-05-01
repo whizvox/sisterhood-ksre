@@ -303,6 +303,35 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
+    # chapter 29
+    ("reference/Event Art/Soap Opera/1.1-1-1.png",          "event/soapopera/soapopera_hisao1_back.jpg",        [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/1.2-1.png",            "event/soapopera/soapopera_hisao1_lay.jpg",         [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/2.1-1.png",            "event/soapopera/soapopera_hanako1_back.jpg",       [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/2.2-1.png",            "event/soapopera/soapopera_hanako1_hair.jpg",       [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/2.3_2.png",            "event/soapopera/soapopera_hanako1_hairtalk.jpg",   [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/edit/hisao2_hug.png",  "event/soapopera/soapopera_hisao2_hug.jpg",         [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/3.2_2.png",            "event/soapopera/soapopera_hisao2_erection.jpg",    [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/3.3_2.png",            "event/soapopera/soapopera_hisao2_masturbate.jpg",  [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/3.4_2.png",            "event/soapopera/soapopera_hisao2_climax.jpg",      [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/4.1_2.png",            "event/soapopera/soapopera_hanako2_caress.jpg",     [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/4.3 2.png",            "event/soapopera/soapopera_hanako2_spray.jpg",      [RESIZE_1080P]),
+    ("reference/Event Art/Soap Opera/4.2.png",              "event/soapopera/soapopera_hanako2_climax.jpg",     [RESIZE_1080P]),
+    # chapter 30+31
+    ("reference/Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_B_FINAL_1.1.jpg", "event/bedridden/bedridden_akira.jpg", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/lilly_smile.png", "event/bedridden/bedridden_lilly_smile_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/lilly_listen.png", "event/bedridden/bedridden_lilly_listen_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/lilly_angry.png", "event/bedridden/bedridden_lilly_angry_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/akira_distant.png", "event/bedridden/bedridden_akira_distant_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/akira_glare.png", "event/bedridden/bedridden_akira_glare_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/akira_shout.png", "event/bedridden/bedridden_akira_shout_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/akira_stun.png", "event/bedridden/bedridden_akira_stun_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/hanako_concern.png", "event/bedridden/bedridden_hanako_concern_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/hanako_sad.png", "event/bedridden/bedridden_hanako_sad_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/hanako_unsure.png", "event/bedridden/bedridden_hanako_concern_unsure.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/hiroyuki_angry.png", "event/bedridden/bedridden_hiroyuki_angry_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/hiroyuki_concern.png", "event/bedridden/bedridden_hiroyuki_concern_overlay.png", [RESIZE_1080P]),
+    ("reference/Event Art/Bedridden/overlay/hiroyuki_discomfort.png", "event/bedridden/bedridden_hiroyuki_discomfort_overlay.png", [RESIZE_1080P]),
     # chapter 33
     ("reference/Event Art/Akira Past/akirapast_dinnerargument.jpg", "event/akirapast/akirapast_argument.jpg"),
     ("reference/Event Art/Akira Past/akirapast_elementary.jpg", "event/akirapast/akirapast_elemschool.jpg"),
@@ -345,11 +374,17 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("sprites/hanako/hanako_emb_timid_sum.png",             "sprites/hanako/close/hanako_emb_timid_sum_close.png",          [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ("sprites/hanako/hanako_emb_timid_sum_clip.png",        "sprites/hanako/close/hanako_emb_timid_sum_clip_close.png",     [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
     ## lilly
-    ("sprites/lilly/lilly_basic_listen_sum.png",    "sprites/lilly/close/lilly_basic_listen_sum_close.png",     [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
-    ("sprites/lilly/lilly_basic_planned_sum.png",   "sprites/lilly/close/lilly_basic_planned_sum_close.png",    [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
-    ("sprites/lilly/lilly_basic_surprised_sum.png", "sprites/lilly/close/lilly_basic_surprised_sum_close.png",  [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
-    ("sprites/lilly/lilly_cane_listen_sum.png",     "sprites/lilly/close/lilly_cane_listen_sum_close.png",      [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
-    ("sprites/lilly/lilly_cane_smile_sum.png",      "sprites/lilly/close/lilly_cane_smile_sum_close.png",       [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)])
+    ("sprites/lilly/lilly_basic_listen_sum.png",        "sprites/lilly/close/lilly_basic_listen_sum_close.png",     [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_basic_planned_sum.png",       "sprites/lilly/close/lilly_basic_planned_sum_close.png",    [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_basic_surprised_sum.png",     "sprites/lilly/close/lilly_basic_surprised_sum_close.png",  [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_listen_sum.png",         "sprites/lilly/close/lilly_cane_listen_sum_close.png",      [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_smile_sum.png",          "sprites/lilly/close/lilly_cane_smile_sum_close.png",       [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_smileclosed_sum.png",    "sprites/lilly/close/lilly_cane_smileclosed_sum_close.png", [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_reminisce_sum.png",      "sprites/lilly/close/lilly_cane_reminisce_sum_close.png",   [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_weaksmile_sum.png",      "sprites/lilly/close/lilly_cane_weaksmile_sum_close.png",   [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_concerned_sum.png",      "sprites/lilly/close/lilly_cane_concerned_sum_close.png",   [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_displeased_sum.png",     "sprites/lilly/close/lilly_cane_displeased_sum_close.png",  [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
+    ("sprites/lilly/lilly_cane_sad_sum.png",            "sprites/lilly/close/lilly_cane_sad_sum_close.png",         [upscale(), resize(targetwidth=797), crop(0, 124, 797, 1204)]),
 ]
 
 PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [

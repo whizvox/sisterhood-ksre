@@ -271,7 +271,7 @@ karla = [
     ("act 2 sprites/Karla/CASUAL/8 KARLA CASUAL DISPLEASED", "basic_displeased_cas"),
     ("act 2 sprites/Karla/CASUAL/9 KARLA CASUAL DISPLEASED CROSSED", "cross_displeased_cas"),
     ("act 2 sprites/Karla/CASUAL/10 KARLA CASUAL ANGRY", "basic_angry_cas"),
-    ("act 2 sprites/Karla/CASUAL/11 KARLA CASUAL ANGRY CROSSED", "cross_angry_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL ANGRY CROSSED", "cross_angry_cas"),
     ("act 2 sprites/Karla/CASUAL/12 KARLA CASUAL LAUGH", "basic_laugh_cas"),
     ("act 2 sprites/Karla/CASUAL/13 KARLA CASUAL CONFUSED", "basic_confused_cas"),
     ("act 2 sprites/Karla/CASUAL/14 KARLA CASUAL SERIOUS", "basic_serious_cas"),
@@ -279,7 +279,9 @@ karla = [
     ("act 2 sprites/Karla/CASUAL/16 KARLA CASUAL DISTANT", "basic_distant_cas"),
     ("act 2 sprites/Karla/CASUAL/17 KARLA CASUAL PONDER", "basic_ponder_cas"),
     ("act 2 sprites/Karla/CASUAL/18 KARLA CASUAL PONDER CROSSED", "cross_ponder_cas"),
-    ("act 2 sprites/Karla/CASUAL/19 KARLA CASUAL WORRIED", "basic_worried_cas")
+    ("act 2 sprites/Karla/CASUAL/19 KARLA CASUAL WORRIED", "basic_worried_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL DISTANT CROSSED", "cross_distant_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL WORRIED CROSSED", "cross_worried_cas"),
 ]
 
 hiroyuki = [
