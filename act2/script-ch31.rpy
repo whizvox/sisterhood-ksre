@@ -535,7 +535,6 @@ label sh_ch31:
 
         kamo "Oh, shut up Akira!"
         "I might have gotten carried away a bit. Mom's eyes narrow, and she clenches her right hand into a fist."
-
         "From the shaking of her hand, I get the impression she's at least playing with the idea of punching me."
         "She holds back, but she shoots me a death glare that is intense enough to send a shiver up my spine before spitting out a vicious retort."
         kamo "Stop ignorantly lecturing me on things you know nothing about!"
@@ -549,6 +548,8 @@ label sh_ch31:
         show karla basic_sad_cas
         with chchange
 
+        stop music fadeout 2.0
+
         "The distressed look on Lilly's face makes my anger fade a bit and replaces it with embarassment. Judging from the expression on Mom's face, she's probably feeling the same."
 
         show lilly cane_sad_sum
@@ -561,6 +562,8 @@ label sh_ch31:
 
         show karla basic_serious_cas
         with chchange
+
+        queue music music_night fadein 4.0
 
         "She hesitates for a bit."
         kamo "If the two of you want to pay him a visit, now's probably a good time."
@@ -621,6 +624,9 @@ label sh_ch31:
         with chchange
 
         li "I… I need to let all of this sink in. I need to think… about things."
+
+        stop music fadeout 4.0
+
         aki "There'll be time for that later. We're here."
         "Just as we arrive at room 702, I see a nurse walking out of it."
         aki "Excuse me, miss. Is Mister Satou awake right now?"
@@ -742,7 +748,8 @@ label sh_ch31:
         with charachangeev
 
         hyd "{cps=20}…no way… to… speak to… a parent… Akira.{/cps}"
-        hyd "{cps=20}You… show… respect… for once… This was… about… your… education… and… financial future… too. And es… especially… Lilly's.{/cps}"
+        hyd "{cps=20}You… show… respect… for once… This was… about… your… education… and… financial future… too.{/cps}"
+        hyd "{cps=20}And es… especially… Lilly's."
 
         hide bedridden_akira
         hide bedridden_lilly
@@ -795,10 +802,12 @@ label sh_ch31:
 
         pause 1.0
 
-        show lilly back_listen at left
-        with charamovechange
+        show lilly at left:
+            ease 1.0 alpha 0.0
+        with charamove
 
-        pause 0.5
+        hide lilly
+        with None
 
         play sound sfx_dooropen
 
@@ -824,13 +833,13 @@ label sh_ch31:
 
         "I go after my sister, who's already half-way down the corridor before I catch up with her."
 
-        show lilly back_listen_sum_close at twoleft
+        show lilly cane_listen_sum_close at twoleft
         with charaenter
 
         aki "Sis?"
         "Lilly doesn't immediately respond and merely sighs."
 
-        show lilly back_sad_sum_close
+        show lilly cane_sad_sum_close
         with charachangealways
 
         "For a moment I think she's going to turn around and walk back to Dad to apologize to him, but that doesn't happen."
@@ -862,7 +871,7 @@ label sh_ch31:
         "I start the car, and we head to our parents' home."
 
         scene bg satou_entrance
-        with shorttimeskip
+        with locationskip
 
         "After a short drive, we arrive. Lilly hasn't said a single word the entire time, which is a bit worrying."
         aki "Okay, we're back. The front door is at twelve o' clock when you get out."
@@ -891,13 +900,16 @@ label sh_ch31:
 
         pause 1.0
 
-        show lilly back_listen_sum_close
+        show lilly cane_listen_sum
         with charachangealways
 
-        pause 0.5
+        "Just when I'm about to repeat my question, she unexpectedly shrugs off my hand in an almost mechanical way."
+        "Her parting words, uttered just before she opens the front door and walks in, sound cold enough to send a tingle down my spine."
 
-        "Just when I'm about to repeat my question, she unexpectedly shrugs off my hand in an almost mechanical way, and her parting words, uttered just before she opens the front door and walks in, sound cold enough to send a tingle down my spine."
-        li "…have a nice evening, Akira."
+        show lilly cane_displeased_sum
+        with chchange
+
+        li "…Have a nice evening, Akira."
 
         hide lilly
         with charaexit

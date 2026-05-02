@@ -97,7 +97,7 @@ init 1 python:
     sh_sprites("natsume", ["cheerful", "neutral", "smile"], poses=["basic", "hands"])
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
-    sh_sprites("lilly", ["cheerful", "concerned", "cry", "displeased", "giggle", "listen", "oops", "planned", "pout", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
+    sh_sprites("lilly", ["cheerful", "concerned", "cry", "displeased", "giggle", "listen", "mad", "oops", "planned", "pout", "offended", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
