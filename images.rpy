@@ -193,10 +193,14 @@ init 1:
     image bedridden_lilly smile = f"{sh_path}/event/bedridden/bedridden_lilly_smile_overlay.png"
     image bedridden_lilly listen = f"{sh_path}/event/bedridden/bedridden_lilly_listen_overlay.png"
     image bedridden_lilly angry = f"{sh_path}/event/bedridden/bedridden_lilly_angry_overlay.png"
+    image bedridden_akira frown = f"{sh_path}/event/bedridden/bedridden_akira_frown_overlay.png"
     image bedridden_akira glare = f"{sh_path}/event/bedridden/bedridden_akira_glare_overlay.png"
     image bedridden_akira shout = f"{sh_path}/event/bedridden/bedridden_akira_shout_overlay.png"
+    image bedridden_akira stun = f"{sh_path}/event/bedridden/bedridden_akira_stun_overlay.png"
+    image bedridden_akira distant = f"{sh_path}/event/bedridden/bedridden_akira_distant_overlay.png"
     image bedridden_hiroyuki discomfort = f"{sh_path}/event/bedridden/bedridden_hiroyuki_discomfort_overlay.png"
     image bedridden_hiroyuki angry = f"{sh_path}/event/bedridden/bedridden_hiroyuki_angry_overlay.png"
+    image bedridden_hiroyuki shout = f"{sh_path}/event/bedridden/bedridden_hiroyuki_shout_overlay.png"
 
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"

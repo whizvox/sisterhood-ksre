@@ -11,7 +11,8 @@ label sh_ch32:
             yalign 0.5 zoom 1.02
         with nextchapter
 
-        show hisao basic_neutral_polo_close at twoleft
+        show hisao basic_neutral_polo_close at twoleft:
+            ypos 1.02
         with charaenter
 
         nvl clear
@@ -19,7 +20,7 @@ label sh_ch32:
 
         n "My gaze wanders back and forth between the book in front of me and my boyfriend sitting next to me on the couch in the Satou family's living room. Every now and then, I also glance at the doorway leading to the stairway, though said doorway is empty every time I look at it."
         n "{vspace=60}Earlier this week, the incident with Mister Satou cast a permanent shadow over our vacation."
-        n "Part of that evening is a bit hazy in my mind; I remember exchanging a scared look with Hisao when Lilly spoke to a doctor on the phone and dropped the word ‘cardiologist’. When Lilly went back to the study and we heard a scream, that sensation became ominous, and when Hisao and I followed her and saw her father lying motionless on the floor, somewhere between the table and the doorway, the feeling became something much, much worse."
+        n "Part of that evening is a bit hazy in my mind; I remember exchanging a scared look with Hisao when Lilly spoke to a doctor on the phone and dropped the word “cardiologist”. When Lilly went back to the study and we heard a scream, that sensation became ominous, and when Hisao and I followed her and saw her father lying motionless on the floor, somewhere between the table and the doorway, the feeling became something much, much worse."
 
         nvl clear
 
@@ -32,18 +33,18 @@ label sh_ch32:
         n "As I was trying to fight off a rapidly impending panic attack, I saw Hisao taking Mister Satou's arm and pressing his thumb against the inside, and suddenly, I heard the voice of my first aid teacher again as he lectured me on that first training day."
         n "{vspace=30}{i}“Don't use your thumb to take someone's pulse. Your thumb has its own pulse, so you won't get a clear reading. And be sure to press down harder when you're doing compressions. If you have to focus on doing one thing right, focus on the chest compressions.”{/i}"
         n "{vspace=30}Hisao was doing it wrong."
-        n "That little disconnect from the current situation turned out to be just enough to shake me out of my anxiety-induced paralysis for a moment, and I did the only thing my mind was able to come up with. Shove Lilly and Hisao aside (I later realized I easily could have given Hisao an episode of his own this way) and focus on the motions I painstakingly practiced at the training before my anxiety could take over again."
+        n "That little disconnect from the current situation turned out to be just enough to shake me out of my anxiety-induced paralysis for a moment, and I did the only thing my mind was able to come up with. Shove Lilly and Hisao aside—although I later realized I easily could have given Hisao an episode of his own this way—and focus on the motions I painstakingly practiced at the training before my anxiety could take over again."
 
         nvl clear
 
         n "Push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once…"
-        n "{vspace=30}I was on the edge of a breakdown the entire time, but as long as could keep these motions going, I wouldn't feel that crushing sense of helplessness, and I could keep teetering on that edge instead of going over it entirely. So I tuned out everything around me in a desperate effort to keep myself together. I vaguely remember hearing Lilly yell something at me and someone, not Hisao, forcefully grabbing me and his face suddenly being close to mine and his shocked stare, and… I think I screamed in fright and flailed my arms at the time as I tried to get away from him."
+        n "{vspace=30}I was on the edge of a breakdown the entire time, but as long as could keep these motions going, I wouldn't feel that crushing sense of helplessness, and I could keep teetering on that edge instead of going over it entirely. So I tuned out everything around me in a desperate effort to keep myself together. I vaguely remember hearing Lilly yell something at me, someone—not Hisao—forcefully grabbing me, and his face suddenly being close to mine and his shocked stare. And… I think I screamed in fright and flailed my arms at the time as I tried to get away from him."
         n "The next thing I remember that wasn't some fevered blur was me sitting on the bed in our room with Hisao holding me in his arms. Despite the fact that his presence helped, it still took me a long time to stop shaking and calm my nerves to the point where my mind was capable of understanding what Hisao was saying and respond to his words with quick nods and shakes of my head."
         n "After convincing himself that another breakdown probably wasn't around the corner, Hisao left the room after telling me to get some sleep. Sleeping was the last thing I felt like doing despite being extremely tired. Nobody has ever gotten nightmares while staring at the ceiling."
 
         nvl clear
 
-        n "Eventually, Hisao returned to tell me he had been on the phone with Lilly who had told him that the doctors at the hospital managed to stabilize her father's condition. Of course, we both knew from experience that ‘stabilized’ meant nothing more than the fact he wasn't going to die immediately. Still, it was a relief."
+        n "Eventually, Hisao returned to tell me he had been on the phone with Lilly who had told him that the doctors at the hospital managed to stabilize her father's condition. Of course, we both knew from experience that “stabilized” meant nothing more than the fact he wasn't going to die immediately. Still, it was a relief."
         n "{vspace=60}The following days were completely spent around the house. Neither Hisao nor I felt it was appropriate to go on any more trips, but we also started feeling that our presence was becoming a burden here. So we spent most of our time in our bedroom reading our remaining books unless Lilly and her mother were out, in which case we'd move to the living room."
         n "We've been slowly running out of books over the last two days and neither of us felt really comfortable entering the study again. It turned out that Hisao was almost as rattled by what happened to Lilly's father as I was. Given his own heart condition, I can't blame him."
 
@@ -57,7 +58,7 @@ label sh_ch32:
         nvl clear
 
         n "Lilly's mother went back to work yesterday. She's spent most of yesterday at the office or at the hospital, and today will probably be similar. Akira told us Karla hadn't known about her husband having high blood pressure either, and she seems very upset with him. I can't say I blame her."
-        n "{vspace=30}When Lilly went to the hospital together with her mother and Akira to speak to the doctor there and visit her father, something happened that severely upset Lilly. She didn't give us the details, though Akira later summarized it as ‘Dad acting stupid’."
+        n "{vspace=30}When Lilly went to the hospital together with her mother and Akira to speak to the doctor there and visit her father, something happened that severely upset Lilly. She didn't give us the details, though Akira later summarized it as “Dad acting stupid”."
         n "Ever since, Lilly's been very withdrawn, spending most of the day in her room and only coming out to eat dinner with us. I can tell that she's troubled, but whenever Hisao and I went to see her, she'd wave off our concerns and tell us that all she needed was a bit more time to think about things."
 
         nvl hide dissolve
@@ -88,7 +89,7 @@ label sh_ch32:
 
         play sound sfx_phonepickup
 
-        ha "H-Hello? Akira?"
+        ha "H-hello? Akira?"
 
         show akira basic_smile_phone at phonebox
         with charaenter
@@ -116,36 +117,40 @@ label sh_ch32:
         hi "Well, since we're heading home tomorrow, that's not too surprising. Let's go tell Lilly, okay?"
         ha "Yes."
 
-        scene bg satou_guest2
+        scene bg satou_stairs
         with locationchange
 
         "We put away our books and up the stairs to Lilly's room."
 
         play sound sfx_doorknock2
 
-        "Hisao knocks three times and, upon getting no immediate response, gently opens the door to reveal Lilly sitting on her bed, her head slowly turning in our direction as we peek in."
+        "Hisao knocks three times. Upon getting no immediate response, he gently opens the door."
 
-        show lilly basic_sad_cas at tworight
-        show hisao basic_neutral_polo at twoleft
-        with charaenter
+        play sound sfx_dooropen
 
+        scene bg satou_guest2
+        show lilly basic_sad_sum at tworightsit
+        show hisao basic_neutral_polo_close at left
+        with locationchange
+
+        "The opening door reveals Lilly sitting on her bed, her head slowly turning in our direction as we peek in."
         hi "Lilly?"
         ha "Umm… Lilly?"
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_sum
         with chchange
 
         "Upon hearing our voices, Lilly offers us a gentle smile."
         li "Hello Hanako, Hisao. I already thought it was you from the way you knocked."
         hi "Hey, Lilly. Aren't you… uh… getting bored from sitting here all day long?"
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_sum
         with chchange
 
         "Lilly gives us a slightly playful smile."
         li "I could ask you two the same. If things had turned out differently, we'd probably be in Edinburgh right now. I feel really bad about this vacation having taken a turn like this."
 
-        show hisao cross_smile_polo
+        show hisao cross_smile_polo_close
         with chchange
 
         hi "It's okay. We had a lot of fun regardless."
@@ -153,40 +158,40 @@ label sh_ch32:
         li "I'm happy to hear that. I hope the return trip will not be too troublesome for you, Hanako."
         ha "I'm… t-trying not to think about it too much."
 
-        show lilly basic_reminisce_cas
+        show lilly basic_reminisce_sum
         with chchange
 
         li "Has any of you been… homesick while you were here?"
         hi "Not me. We haven't had a great deal of opportunity for that."
         ha "I… surprised myself a bit, but I haven't really felt homesick either."
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "That's good to hear."
         "Hisao, realizing the conversation really has gotten derailed, softly scrapes his throat."
 
-        show hisao cross_speak_polo
+        show hisao cross_speak_polo_close
         with chchange
 
         hi "Ahem, the reason we came here was to tell you that we'll be heading for the hospital as soon as Akira gets here. She just called Hanako."
 
-        show lilly basic_displeased_cas
+        show lilly basic_displeased_sum
         with chchange
 
         li "Akira… called Hanako?"
         ha "Akira said… t-that your father wanted to see me."
 
-        pause 1.0
+        pause 0.5
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_sum
         with chchange
 
         "Lilly is silent for a moment, but then smiles and nods her head."
         li "I see. It makes sense that he wants to express his gratitude to you before you leave tomorrow."
         hi "Yeah. Akira said she'd be here in ten minutes, so we'd better hurry up and get ready."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_sum
         with chchange
 
         "Lilly nods."
@@ -196,25 +201,26 @@ label sh_ch32:
         stop music fadeout 2.0
         queue music music_moonlight fadein 4.0
 
-        show lilly basic_sad_cas
+        show hisao basic_neutral_polo_close
+        show lilly basic_sad_sum
         with chchange
 
         li "Could you… tell me how he's doing when you get back?"
         "I exchange a flabbergasted look with Hisao. Neither of us expected this."
 
-        show hisao basic_worry_polo
+        show hisao basic_worry_polo_close
         with chchange
 
         ha "Y-you're not coming with us?"
 
-        show lilly basic_reminisce_cas
+        show lilly basic_reminisce_sum
         with chchange
 
         li "He asked for you specifically, didn't he?"
         ha "Akira s-said she'd be here soon if it wasn't too inconvenient for us, so she probably wasn't just talking about m-me."
         "It's possible she meant Hisao and me, rather than the three of us, but I find that hard to believe."
 
-        show lilly basic_sad_cas
+        show lilly basic_sad_sum
         with chchange
 
         li "I believe that Mother has also visited him today. Having too many people there at the same time would probably be tiring for him."
@@ -222,12 +228,12 @@ label sh_ch32:
         "We remain silent for a while, but since Lilly doesn't say anything else, there's probably no point in pressing her."
         "Eventually, Hisao sighs softly."
 
-        show hisao basic_neutral_polo
+        show hisao basic_neutral_polo_close
         with chchange
 
         hi "I guess that's a good point. We'll be going then. We probably won't be gone for very long. We'll be sure to tell you afterwards how he's holding up."
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_sum
         with chchange
 
         li "Thank you, Hisao."
@@ -249,24 +255,40 @@ label sh_ch32:
         "Akira gives us a friendly nod as we get in and then turns the car around before driving back onto the road."
         "After a moment of silence, Hisao speaks up."
         hi "Hey, Akira, was the idea for Lilly to come along, or was it really supposed to be just Hanako and me?"
+
+        show akira basic_distant_close at tworight
+        with charaenter
+
         aki "I wouldn't have left her standing on the driveway if she had been waiting there along with you guys, but I'm not going to push her into coming along either."
         "I notice a sad look in Akira's eyes for a moment."
         hi "So, Akira… Where is this headed?"
+
+        show akira basic_wistful_close
+        with chchange
+
         aki "I could be a smart-ass and say Raigmore Hospital, but… I really don't know either how this is gonna play out."
         hi "By the way, why did your mother ask you to pick us up?"
         aki "Apparently, there's someone with her, and she has to accompany him to the office immediately afterwards."
+
+        show akira basic_ponder_close
+        with chchange
+
         "She shrugs."
         aki "Probably from the Japanese branch. That upcoming deal in the States is getting lots of people really nervous around here, especially with Dad completely out of the running and Mom barely showing up at the office."
 
         scene bg raigmore_entrance
         with locationchange
 
-        "After a short while we arrive at the hospital's parking lot, and we get out of the car and follow Akira inside."
+        "After a short while, we arrive at the hospital's parking lot, and we get out of the car and follow Akira inside."
 
         scene bg raigmore_elevator
         with locationchange
 
+        play sound sfx_elevatoropen
+
         "As we make our way through the hallways and ride the elevator to the proper floor, I can feel the atmosphere slowly becoming more oppressive."
+
+        play sound sfx_elevatorchime
 
         scene bg raigmore_hallway
         with locationchange
@@ -283,7 +305,7 @@ label sh_ch32:
         with chchange
 
         "He gives my hand a little squeeze in return, and we share a brief look of mutual understanding."
-        "I think it's a good thing Hisao is here. As long as we don't get anywhere near the burn ward (assuming this hospital has one), I'll probably be okay as long as Hisao stays close by."
+        "I think it's a good thing Hisao is here. As long as we don't get anywhere near the burn ward—assuming this hospital has one—I'll probably be okay as long as Hisao stays close by."
 
         hide hisao
         with charaexit
@@ -302,7 +324,7 @@ label sh_ch32:
         "Kojima" "That is indeed the task that has been entrusted to me by your grandfather and the rest of the board. I could never hope to match up to your father's capabilities, but things are the way they are. It cannot be helped."
         aki "You will do fine."
 
-        show karla basic_lillyface_suit at left
+        show karla basic_smileclosed at left
         with charaenter
 
         ka "Ah… Akira. Ikezawa and Nakai, too. Good afternoon."
@@ -314,11 +336,19 @@ label sh_ch32:
 
         "Hisao and I look at each other and then bow as well. We're both taken off guard a bit by the sudden formality of the Lilly's mother."
         aki "Good afternoon, Mother. I picked up Ikezawa and Nakai as you asked."
+
+        show karla basic_smile
+        with chchange
+
         ka "I appreciate it, Akira. Mister Kojima, these are Ikezawa and Nakai: two friends of my youngest daughter. They've been staying with us for a few weeks along with Lilly."
         ka "They were with my husband when… it happened. Miss Ikezawa was the person who performed CPR on my husband until the ambulance arrived."
         "Upon hearing that the man bows again—this time, a lot deeper."
         "Kojima" "Then you have our everlasting gratitude."
         "Lilly's mother picks up my nervous fidgeting and steps forward."
+
+        show karla basic_sheepish
+        with chchange
+
         ka "Mister Kojima, I'm terribly sorry, but we should probably go. Mister Ferguson is waiting for us."
         "Kojima" "Yes, let us be on our way."
 
@@ -333,7 +363,7 @@ label sh_ch32:
 
         aki "I wouldn't wanna trade places with that guy right now."
 
-        show hisao cross_speak_polo at twoleft
+        show hisao cross_speak_polo_close at twoleft
         with charaenter
 
         "Hisao scratches his head."
@@ -376,7 +406,7 @@ label sh_ch32:
         "We leave it at that and follow Akira down the hallway until she stops in front of the rooms."
 
         show akira basic_distant
-        show hisao basic_neutral_polo
+        show hisao basic_neutral_polo_close
         with chchange
 
         "As we peer through the doorway, we can see that the curtains around the bed are closed, and we can hear a female voice from behind the curtain."
@@ -400,6 +430,8 @@ label sh_ch32:
         show akira basic_distant
         with locationchange
 
+        play ambient sfx_ekg volume 0.8 fadein 1.0
+
         queue music music_rain fadein 4.0
 
         aki "Yo!"
@@ -411,101 +443,148 @@ label sh_ch32:
         "A middle-aged nurse appears from behind the curtain and leaves the room. I make sure to partially hide behind Hisao as she walks by."
         "Akira now steps behind the curtain so we can't see her anymore, though we can still hear her."
 
-        show ev bedridden_akira_provoke
+        show ev bedridden_akira
+        show bedridden_akira frown
         with mediumflash
 
         aki "You look a little sharper than before, but also a bit more uncomfortable. Have you cut back on the painkillers?"
-        hy "I… will… take some… more this… evening."
+        hy "{cps=20}I… will… take some… more this… evening.{/cps}"
         aki "Mom and Kojima were just here, weren't they? Will you even be able to handle more visitors right now?"
-        hy "Never… mind… that… Lilly… not… here?"
-        aki "Nope. Why? Have you already thought up an apology, then?"
-        hy "A-apology?"
-        aki "For insulting her. Lilly came to Inverness to repair the family bond that you two shattered, and you reward her by insulting her independence. How do you think she feels about that?"
-        hy "I… did… not… insult her…"
-        aki "If you really believe that, then you're even more out of touch with her than I thought. Heck, how many years has it been since you gave some serious thought about how she feels about things?"
-        hy "What… do… you… m-mean?"
-        aki "Why on earth did you summon her here, asking her to give up everything important she had in Japan, after keeping her at a comfortable distance for six years? Maybe because you thought you could use her to act as a glue for your fledgling marriage?"
-        hy "Our… marriage… is… fine…"
-        aki "Nonsense. You two were hardly part of each other's life outside of working hours. I've learned that much already."
-        hy "And yet… we… were… fine. And what… mean… by… comfortable… d-distance?"
+        hy "{cps=20}Never… mind… that… Lilly… not… here?{/cps}"
 
-        show ev bedridden_akira_angry
+        hide bedridden_akira
+        with charachangeev
+
+        aki "Nope. Why? Have you already thought up an apology, then?"
+        hy "{cps=20}A-apology?{/cps}"
+        aki "For insulting her. Lilly came to Inverness to repair the family bond that you two shattered, and you reward her by insulting her independence. How do you think she feels about that?"
+
+        show bedridden_hiroyuki angry
+        with charachangeev
+
+        hy "{cps=20}I… did… not… insult her…{/cps}"
+        aki "If you really believe that, then you're even more out of touch with her than I thought. Heck, how many years has it been since you gave some serious thought about how she feels about things?"
+
+        hide bedridden_hiroyuki 
+        with charachangeev
+
+        hy "{cps=20}What… do… you… m-mean?{/cps}"
+        aki "Why on earth did you summon her here, asking her to give up everything important she had in Japan, after keeping her at a comfortable distance for six years? Maybe because you thought you could use her to act as a glue for your fledgling marriage?"
+        hy "{cps=20}Our… marriage… is… fine…{/cps}"
+        aki "Nonsense. You two were hardly part of each other's life outside of working hours. I've learned that much already."
+        hy "{cps=20}And yet… we… were… fine. And what… mean… by… comfortable… d-distance?{/cps}"
+
+        show bedridden_akira shout
         with charachangeev
 
         aki "You and Mom were bothered with Lilly's blindness. Her disability was a source of shame for you. When you and Mom came here, you had to keep up appearances and play the perfect high-class couple."
+
+        show bedridden_hiroyuki angry
+        with charachangeev
+
         aki "A blind child would have tarnished that image, so you callously left her behind. Your reputation was more important to you than your own daughter's well-being."
+
+        play ambient sfx_ekgfast volume 1.0
+
         "Akira's harsh words have barely left her mouth when the heartbeat monitor in the room suddenly starts beeping faster and louder, and for a moment, I consider running off to get a nurse."
 
-        stop music fadeout 1.0
+        stop music fadeout 0.5
 
-        show ev bedridden_akira_shout
+        show bedridden_hiroyuki shout
         with { "master": Dissolve(0.2) }
 
-        hy "{cps=20}AKIRA… SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK… THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE… MY… SIGHT!{/cps}"
+        show bedridden_akira stun
+        with { "master": charachangealways }
+
+        hy "{cps=20}AKIRA…{w=0.5} SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK… THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE… MY… SIGHT!{/cps}"
+
+        show bedridden_hiroyuki angry
+        with charachangeev
+
         "I cringe as I hear Lilly's father react to Akira's accusation."
         "Lilly told me that he suffered several rib fractures. Breathing must be painful for him, let alone speaking. Raising his voice like that must be excruciating."
         "And yet, despite the tortured tone, his voice carries an air of authority that manages to even silence Akira for a moment."
 
-        show ev bedridden_akira_provoke
+        play ambient sfx_ekg volume 0.8
+
+        show bedridden_akira glare
         with charachangeev
 
         aki "..."
-        hy "Well…?"
+        hy "{cps=20}Well…?{/cps}"
         aki "So you deny it?"
 
         play music music_rain fadein 4.0
 
-        hy "If there… is… a s-source… of shame… for… me… right… now… it is… you for m-making… these a-accusations… against… a parent."
+        hy "{cps=20}If there… is… a s-source… of shame… for… me… right… now… it is… you for m-making… these a-accusations… against… a parent.{/cps}"
         aki "Then why did you have Mom join you here while you left Lilly behind, huh?"
-        hy "Your… mother… needed to… be here… and Lilly's… education… was… important… like I… told you… a hundred… times."
+        hy "{cps=20}Your… mother… needed to… be here… and Lilly's… education… was… important… like I… told you… a hundred… times.{/cps}"
         aki "That's just an excuse."
-        hy "If I… truly… valued my… reputation… over her… well-being… I would have… taken her along."
+        hy "{cps=20}If I… truly… valued my… reputation… over her… well-being… I would have… taken her along.{/cps}"
         aki "What's that supposed to mean?"
-        hy "You will… understand… in time."
+        hy "{cps=20}You will… understand… in time.{/cps}"
         aki "I don't believe you."
-        hy "I… stake my… personal honor… on it. Now… t-take back… what you… said."
+        hy "{cps=20}I… stake my… personal honor… on it. Now… t-take back… what you… said.{/cps}"
 
-        show ev bedridden_akira_distant
+        show bedridden_akira distant
         with charachangeev
 
         aki "Hmph."
-        hy "Fine. Then… cling to your… conspiracy… theories. No doubt… you have… been poisoning… Lilly's mind… with them… for years… as… well."
+        hy "{cps=20}Fine. Then… cling to your… conspiracy… theories. No doubt… you have… been poisoning… Lilly's mind… with them… for years… as… well.{/cps}"
         aki "Believe it or not, but she's always been unreasonably loyal to you."
-        hy "No doubt… you have… shared… your impressions… with her… many times."
+        hy "{cps=20}No doubt… you have… shared… your impressions… with her… many times.{/cps}"
+
+        show bedridden_akira stun
+        with charachangeev
+
         aki "That doesn't mean…"
-        hy "I think… I know… enough."
+        hy "{cps=20}I think… I know… enough.{/cps}"
         "It's kind of striking how quickly Akira's father turned the conversation around and put his daughter on the defensive."
 
-        show ev bedridden_akira_provoke
+        show bedridden_akira glare
         with charachangeev
 
         aki "You don't know anything about her or me. That's your problem."
-        hy "This is going… in circles."
+        hy "{cps=20}This is going… in circles.{/cps}"
 
-        show ev bedridden_akira_distant
+        show bedridden_akira distant
         with charachangeev
 
         aki "Fine, I didn't come here to argue anyway."
-        hy "Then why… did you… come?"
+        hy "{cps=20}Then why… did you… come?{/cps}"
 
-        show ev bedridden_akira_provoke
+        show bedridden_akira glare
         with charachangeev
 
         aki "Huh? You don't know? You asked Mom about Hanako."
-        hy "So I… did."
+        hy "{cps=20}So I… did.{/cps}"
         aki "Mom called me and asked me to take her to you."
+
+        play ambient sfx_ekgfast volume 1.0
+
+        "I'm startled by a sudden spike in the sound of the heart monitor, but before I can determine what to do, a hand suddenly covers my mouth and Hisao quickly pulls me back and around the nearby corner."
+
+        $ renpy.music.set_audio_filter("ambient", renpy.audio.filter.Lowpass(660), replace=True, duration=0.5)
+
+        # TODO play sfx of curtain being yanked back
 
         scene bg raigmore_hallway
         show hisao basic_neutral_polo_superclose at twoleft
         with locationchange
 
-        "I'm startled by a sudden spike in the sound of the heart monitor, but before I can determine what to do, a hand suddenly covers my mouth and Hisao quickly pulls me back and around the nearby corner."
         "A few seconds later, I hear the sound of a curtain being forcefully yanked back."
         "Hisao takes his hand off of me, puts his finger to his lips and lets out a soft “ssshh” in order to reinforce the point. I quickly nod to indicate I understand that we're supposed to be quiet."
+
+        play ambient sfx_ekg volume 0.8
+        
         "After a short while, we can hear the beeps of the heart monitor slowing down. We're still close enough to the doorway to pick up Akira's voice."
         aki "Uh, she and Hisao are in the waiting area."
         "I hear a sigh of relief coming from the room."
         "Hisao nods and we quietly sneak off towards the place Akira mentioned."
+
+        stop ambient fadeout 1.0
+
+        $ renpy.music.set_audio_filter("ambient", None)
 
         scene bg raigmore_waitroom
         show hisao basic_worry_polo at twoleftsit
