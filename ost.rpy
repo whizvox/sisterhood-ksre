@@ -37,7 +37,7 @@ init 1 python:
         "bikeride", "ticktock", "windy",
         # other
         "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap",
-        "collapse", "metalclink", "showerdrain", "teacup_loudclink", "waterpour"
+        "collapse", "metalclink", "shojidoor", "showerdrain", "shower2", "teacup_loudclink", "waterpour"
     ])
 
 init:

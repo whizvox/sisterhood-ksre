@@ -151,6 +151,10 @@ init:
         matrixcolor SepiaMatrix(tint="#ffefd7")
     transform sepiamuted:
         matrixcolor TintMatrix("#ffefd7") * SaturationMatrix(0.5)
+    transform nightfilter:
+        matrixcolor TintMatrix(Color(rgb=(0.9, 0.92, 1.0))) * BrightnessMatrix(-0.05)
+    transform soapopera_talk:
+        anchor (0.5, 0.5) pos (0.5, 0.85)
 
     define nextchapter = Dissolve(2.0)
     define endchapter = Dissolve(3.0)

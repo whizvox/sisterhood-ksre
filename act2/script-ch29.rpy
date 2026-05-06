@@ -17,8 +17,8 @@ label sh_ch29:
 
         play sound sfx_rustling
 
-        n "{vspace=30}I walk up to the window, close the curtains, take off my clothes and put one of the bathrobes on. Both are a little bit too large for me, though, since I'm used to wearing a rather oversized nightgown, it doesn't feel too awkward."
-        n "I fold my clothes over one of the chairs, leave the bedroom and make my way over to the bathroom."
+        n "{vspace=30}I walk up to the window, close the curtains, take off my clothes and put one of the bathrobes on. Both are a little bit too large for me, though since I'm used to wearing a rather oversized nightgown, it doesn't feel too awkward."
+        n "I fold my clothes over one of the chairs, leave the bedroom, and make my way over to the bathroom."
 
         nvl hide dissolve
 
@@ -29,8 +29,8 @@ label sh_ch29:
         nvl show dissolve
 
         n "Two of the changing area's walls look suspiciously like reinforced room dividers, suggesting that the bathroom and this tiny changing area used to be part of the same room before the Satous moved in."
-        n "I conclude with a sense of relief that the outer door can be locked from the inside, meaning that even if Lilly or her parents were to come home early there'd still be no risk of them accidentally walking in on us."
-        n "In addition to a shelf with baskets for clothing and a space for shoes along one wall there are two cabinets near the exit; one containing bottles of liquid soap and several types of shampoo and the other containing washcloths and towels. I take two of each, making sure to get a bottle of shampoo for myself that contains conditioner and suits my hair and then slide away the inner door and enter the main bathroom."
+        n "I conclude with a sense of relief that the outer door can be locked from the inside, meaning that even if Lilly or her parents were to come home early, there'd still be no risk of them accidentally walking in on us."
+        n "In addition to a shelf with baskets for clothing and a space for shoes along one wall, there are two cabinets near the exit: one containing bottles of liquid soap and several types of shampoo, and the other containing washcloths and towels. I take two of each, making sure to get a bottle of shampoo for myself that contains conditioner and suits my hair, and then slide away the inner door and enter the main bathroom."
 
         nvl hide dissolve
 
@@ -40,9 +40,8 @@ label sh_ch29:
         nvl clear
         nvl show dissolve
 
-        n "While it's certainly not as large as the public baths I've visited in my childhood, it's definitely larger than any bathroom I've ever been to before. The floor is covered with slightly rough tiles to avoid slipping."
-        # n "On the far wall is a fairly large window with sun blinds in front of it. The wall near the bath consists of a large tile mural depicting a few large waves in front of a mountain. The bath itself seems large enough to hold about seven or eight people."
-        n "On the far wall is a fairly large window with sun blinds in front of it. The bath itself seems large enough to hold about seven or eight people. The opposite corner of the room consists of facilities to clean oneself before bathing. Two pairs of faucets are attached to the wall in that part of the room, and each pair also has a detachable shower head connected to it. There's a small mirror on the wall above each pair of faucets and a pair of wooden buckets and low stools nearby. The floor near the faucets and shower heads seems to be slightly sloped so the water can flow into the drain near the corner."
+        n "While it's certainly not as large as the public baths I've visited in my childhood, it's definitely larger than any bathroom I've ever been to before."
+        n "The floor is covered with slightly rough tiles to avoid slipping, on the far wall is a fairly large window, and the bath itself seems large enough to hold about seven or eight people. The floor near the faucets and shower heads seems to be slightly sloped so the water can flow into the drain near the corner."
         n "{vspace=60}After putting the soap and shampoo near the stools and leaving the towels on the edge of the bath, I examine the bath a little closer and notice a few small buttons and a display embedded into part of the edge showing a number."
 
         nvl hide dissolve
@@ -66,6 +65,7 @@ label sh_ch29:
         "He gives me an expectant smile and walks back into the changing area. I meekly follow him."
 
         scene bg satou_changingroom
+        show hisao basic_smile_bath_close at twoleft
         with locationchange
 
         ha "Ummm… D-did you lock the door?"
@@ -78,46 +78,68 @@ label sh_ch29:
 
         show black:
             alpha 0.0
-            linear 1.0 alpha 0.8
-        with Pause(1.0)
-
-        show black:
-            alpha 0.8
         with None
+        
+        show black:
+            alpha 0.9
+        show bg at nightfilter
+        show hisao basic_smile_bath_close_ni
+        with Dissolve(1.0)
 
         "I play around with the slider a bit until ultimately simply turning off the lights, leaving the changing area in near pitch blackness."
+
+        show hisao basic_grin_bath_close_ni
+        with chchange
+
         hi "Err… Hanako… I think we're going to need some light, or we'll be setting ourselves up for some very painful pratfalls."
         "I feel my way over to the inner door and slide it open."
+
+        play sound sfx_shojidoor
+
+        show black:
+            alpha 0.7
+        with Dissolve(1.0)
+
         "While the changing area is pitch black, the bathroom itself is only moderately darkened due to it still being light outside and the sun blinds in front of the window letting more than enough light through to make out the room's interior."
         hi "I guess we'll be okay after all, at least until the sun sets completely."
 
-        show hisao basic_grin_bath_close_ni
+        stop music fadeout 2.0
+
+        show hisao basic_smile_bath_close_ni
         with charaenter
 
         "He puts a hand on my shoulder."
 
-        play music music_dreamy fadein 4.0
+        queue music music_dreamy fadein 4.0
 
         hi "So… Shall we?"
         ha "G-go ahead."
 
-        hide hisao
-        with charaexit
-
         play sound sfx_rustling
 
-        "I hear some rustling next to me, and a few seconds later Hisao, now completely naked, strolls past me, heads over to the washing area, sits down on one of the stools next to the faucets, reaches forward, and starts filling up the wooden buckets, occasionally testing the temperature of the water inside them with his finger."
-        "I find myself staring at him for a moment, then let out a soft sigh. I guess it's too late to start having second thoughts."
-        "I remove my bathrobe, slowly approach Hisao and sit down on the stool next to him."
+        show hisao basic_smile_nak_close_ni
+        with charachangealways
 
-        scene bg satou_bathroom
-        show hisao basic_smile_nak_close at tworight
+        show hisao at right:
+            ease 1.0 alpha 0.0
+        with charamove
+
+        hide hisao
+        with None
+
+        "I hear some rustling next to me, and a few seconds later Hisao, now completely naked, strolls past me."
+        "He heads over to the washing area, sits down on one of the stools next to the faucets, reaches forward, and starts filling up the wooden buckets, occasionally testing the temperature of the water inside them with his finger."
+        "I find myself staring at him for a moment, then let out a soft sigh. I guess it's too late to start having second thoughts."
+        "I remove my bathrobe, slowly approach Hisao, and sit down on the stool next to him."
+
+        scene bg satou_bathroom_ni
+        show hisao basic_smile_nak_close_ni at centersit
         with locationchange
 
         "I appreciate the fact that he's been considerate enough to let me sit on his right so my scarred side is facing away from him."
         hi "Is this close to the right temperature?"
         "Without looking at me, Hisao moves one of the buckets to his right and I dip my finger in to check the temperature."
-        "It could be a little hotter; I don't want to start feeling chilly when we're in here for a little while."
+        "It could be a little hotter, I don't want to start feeling chilly when we're in here for a little while."
 
         hide hisao
         with charaexit
@@ -127,24 +149,28 @@ label sh_ch29:
         "I add hot water until the temperature is acceptable, pour the contents of the bucket all over myself and then start refilling it while quietly watching Hisao do the same."
         "We repeat this process a few more times, and when we're both completely drenched, Hisao turns in my direction."
 
-        show hisao basic_speak_nak_close at tworight
+        show hisao basic_speak_nak_close_ni at centersit
         with charaenter
 
         hi "Can you hand me a bottle of soap and shampoo?"
         ha "O-okay."
 
-        show hisao basic_neutral_nak_close
+        show hisao basic_neutral_nak_close_ni
         with chchange
 
-        "I take a bottle of each from the small shelf nearby where I put them earlier, pass them to Hisao and then take of bottle of both myself."
+        "I take a bottle of each from the small shelf nearby where I put them earlier, pass them to Hisao, and then take of bottle of both myself."
         "I guess I'd better get started quickly, because something like this usually takes a long time."
         ha "Hisao?"
         hi "Yes?"
         ha "When you're f-finished, you can go ahead and enter the bath."
+
+        show hisao basic_speak_nak_close_ni
+        with chchange
+
         hi "Even when you're not finished yet?"
         ha "Washing my hair usually takes a long time."
 
-        show hisao basic_smile_nak_close
+        show hisao basic_smile_nak_close_ni
         with chchange
 
         hi "Yeah, I bet it does."
@@ -152,7 +178,7 @@ label sh_ch29:
         hi "Hey, Hanako?"
         ha "Yes?"
 
-        show hisao basic_grin_nak_close
+        show hisao basic_grin_nak_close_ni
         with chchange
 
         hi "Can I help you… you know… wash your hair? I can wash your back too if you don't mind. I'll let you wash mine in return."
@@ -161,11 +187,27 @@ label sh_ch29:
         ha "Ah… O-okay then. But c-can I… w-wash you first?"
         hi "Be my guest."
 
-        scene ev soapopera_hisao_back
+        scene ev soapopera_hisao1_back
         with mediumflash
 
         "I put down my stool behind Hisao, sit down and ready my washcloth before deciding it might be more fun to proceed without it."
+
+        play ambient sfx_shower2 fadein 1.0
+
+        show steam at truecenter, nightfilter:
+            alpha 0.0
+            easein 10.0 alpha 0.6
+        with None
+
         "I unhook the shower head from the nearby wall, turn it on and briefly spray his back and his hair. I then put some liquid soap into my hands, rub them together for a moment and start soaping his back."
+
+        stop ambient fadeout 1.0
+
+        show ev soapopera_hisao1_back_large:
+            anchor (0.5, 0.5) pos (0.55, 0.4)
+            ease 7.0 ypos 0.9
+        with { "master": charachangeev }
+
         "I tenderly stroke his shoulders and upper back, occasionally pausing for a second to apply some more soap to my hands."
         "He exhales sharply as I move my hands down and playfully stroke his sides and armpits with my fingers."
         hi "H-hey! No tickling."
@@ -176,40 +218,83 @@ label sh_ch29:
         hi "Huh?"
         "He seems puzzled for a moment, but then complies and carefully starts leaning backwards."
 
-        show ev soapopera_hisao_hair
+        show ev soapopera_hisao1_lay at center
         with charachangeev
 
         "I use my hands to guide him until he's leaning against me with the back of his head resting against my chest. We both let out a slightly nervous laugh."
         hi "Is this really okay?"
         ha "J-just relax."
         "It's a bit of an odd feeling to be in this position, but it's also rather intimate."
-        "I carefully get some shampoo from the bottle nearby, apply it to my hands and then start running my hands through his hair, gently massaging his scalp in the process."
-        "We stay like this for several minutes, neither of us saying a word the whole time, but the silence doesn't feel uncomfortable. I'm just happy carressing him like this, and he seems content to let me."
-        "Eventually, after deciding I'm done, I get a shower head and wash the shampoo out of his hair. Afterwards he sits up and looks at me from over his shoulder to indicate it's my turn."
+
+        show ev soapopera_hisao1_lay_large:
+            anchor (0.5, 0.5) pos (0.3, 0.4)
+            ease 8.0 ypos 0.9
+        with { "master": charachangeev }
+
+        "I carefully get some shampoo from the bottle nearby, apply it to my hands, and then start running my hands through his hair, gently massaging his scalp in the process."
+        "We stay like this for several minutes, neither of us saying a word the whole time, but the silence doesn't feel uncomfortable. I'm just happy caressing him like this, and he seems content to let me."
+
+        play ambient sfx_shower2 fadein 1.0
+
+        "Eventually, after deciding I'm done, I get a shower head and wash the shampoo out of his hair."
+
+        stop ambient fadeout 1.0
+
+        scene bg satou_bathroom_ni
+        show hisao basic_smile_nak_close_ni
+        show steam at truecenter, nightfilter:
+            alpha 0.6
+        with locationchange
+
+        "Afterwards, he sits up and looks at me from over his shoulder to indicate it's my turn."
         "Suddenly feeling a little self-concious, I cover my genitals with one hand and use my other arm to cover my breasts as much as I can, drawing a small amused smile from him."
+
+        show hisao basic_grin_nak_close_ni
+        with chchange
+
         hi "Hanako, could you turn around and face the other way?"
 
-        show ev soapopera_hanako_back
+        scene ev soapopera_hanako1_back
+        show steam at truecenter, nightfilter:
+            alpha 0.6
         with charachangeev
 
         "I do as he asks, separate my long hair into two halves and drape it over both shoulders, exposing my back."
         "With my hair no longer partially covering the scars on my back I feel even more exposed than before, but my anxiety slowly starts ebbing away when Hisao sits down behind me and starts rubbing soap on my back and shoulders."
         "My upper back hasn't been very sensitive since my accident, but his touch nevertheless feels good in the places where I can feel the sensation."
 
-        show ev soapopera_hanako_hair
-        with charachangeev
+        show black
+        with shuteye
 
-        "After finishing my back and shoulders he gently pulls me backwards until I'm leaning against his chest."
-        "I turn my head a bit so I can listen to his heartbeat - something that always manages to put me at ease."
-        "I close my eyes and try to relax as his hands start rubbing and stroking the top of my head."
+        "I close my eyes when, after finishing my back and shoulders, he gently pulls me backwards until I'm leaning against his chest."
+
+        $ renpy.music.set_audio_filter("sound", renpy.audio.filter.Lowpass(200))
+
+        play sound [ sfx_heartslow, sfx_heartslow ] volume 0.25
+
+        $ renpy.music.set_audio_filter("sound", None)
+
+        "I turn my head a bit so I can listen to his heartbeat—something that always manages to put me at ease."
+        "I try to relax as his hands start rubbing and stroking the top of my head."
         hi "Uh… Hanako?"
         ha "Yes?"
         hi "I… uh… don't really have much experience washing hair as long as yours."
         "I giggle at his uneasiness."
         ha "Shall we… s-split the workload?"
         hi "Split?"
-        "I take the half of my hair that's draped over my left shoulder and swing it back. He carefully takes the ends of it in his hand."
-        hi "I guess I'll do this part then. Wow, it's kind of heavy when it's wet. Doesn't that strain your neck?"
+
+        hide black
+        show ev soapopera_hanako1_back_large:
+            anchor (0.5, 0.5) pos (0.5, 0.6)
+            ease 2.0 ypos 0.85
+        with openeye
+
+        show ev soapopera_hanako1_hair_large
+        with charachangeev
+
+        "I take the half of my hair that's draped over my right shoulder and swing it back. He carefully takes the ends of it in his hand."
+        hi "I guess I'll do this part then."
+        hi "Wow, it's kind of heavy when it's wet. Doesn't that strain your neck?"
         ha "I'm used to it."
         "I can't help but smile. I have to admit that his sudden curiosity about my hair is more than a little endearing."
         hi "I'll just watch and do what you do then."
@@ -220,33 +305,69 @@ label sh_ch29:
         ha "You get b-better at it after a while."
         hi "..."
         ha "..."
+
+        show soapopera_hisao talk behind steam at soapopera_talk
+        with charachangeev
+
         hi "Hanako?"
         ha "Yes?"
         hi "I was wondering… Have you always had your hair this long even before your… accident?"
 
-        show ev soapopera_hanako_talk
+        show soapopera_hanako talk behind steam at soapopera_talk
+        hide soapopera_hisao
         with charachangeev
 
         ha "It… used to be just a little bit shorter when I was little, but I had my hair longer than shoulder-length even as a child. My…"
         "I hesitate for a moment, not sure whether to smile or feel sad at the resurfacing memory."
         ha "My m-mother r-really liked my hair. She h-had hair j-just like mine. We'd always bathe together and she'd take her time washing it and telling me how b-beautiful she t-thought it w-was."
+
+        show soapopera_hisao talk behind steam at soapopera_talk
+        with charachangeev
+
         hi "I think it's very beautiful as well. It's pretty eye-catching too."
         ha "R-really?"
         hi "Yeah. That day when Mutou introduced me to the class, you were the first student in class I took notice of. Your hair was probably the reason why."
+
+        hide soapopera_hisao
+        hide soapopera_hanako
+        with charachangeev
+
         "I'm not sure how to feel about that. I don't really like any part of me to be considered eye-catching, because trying to avoid standing out has always been part of my survival strategy."
         "But to hear Hisao say that I was the first person he took notice of in class and to hear him say that he considers my hair beautiful nevertheless makes me very happy."
         ha "Umm… T-thanks."
-        "Truth be told, I really like my hair as well. Covering myself up with it makes me feel safe, as if I have my own personal protective cloak. Well… hardly completely safe but just a little bit safer."
+        "Truth be told, I really like my hair as well. Covering myself up with it makes me feel safe, as if I have my own personal protective cloak. Well… hardly completely safe, but just a little bit safer."
+
+        show soapopera_hisao talk behind steam at soapopera_talk
+        with charachangeev
+
         hi "Hanako?"
         ha "Yes?"
         hi "This may be a weird question, but… About your hair, do you… err…?"
         "I suppress an amused giggle at his awkwardness. I think I have a pretty clear idea of what he wants to ask."
+
+        show soapopera_hanako talk behind steam at soapopera_talk
+        hide soapopera_hisao
+        with charachangeev
+
         ha "In the o-orphanage, one of the staff would cut my hair, so I w-wouldn't need to go to a barber. Eventually, I l-learned how to cut it myself."
         hi "Wow, really?"
         ha "Yes."
+
+        hide soapopera_hanako
+        with charachangeev
+
         "What I don't say is that it was out of necessity. Going to the barber and exposing my facial scarring would be one of those things I could lose sleep over for days in advance."
+
+        show soapopera_hisao talk behind steam at soapopera_talk
+        with charachangeev
+
         hi "You're a girl of many talents, Hanako."
-        "He drapes the hair he was tending to back over my left shoulder, embraces me from behind and kisses me on the cheek. Then he just holds me for a little while."
+
+        show ev soapopera_hanako1_back_large
+        hide soapopera_hisao
+        with charachangeev
+
+        "He drapes the hair he was tending to back over my right shoulder, embraces me from behind, and kisses me on the cheek. Then he just holds me for a little while."
         "Eventually, after determining that the conditioner must have had enough time to do its thing, I take the shower head and use it to rinse the shampoo away."
         "I guess this is the point where we'll soap up the rest of our bodies. Or maybe…"
         hi "…Hanako?"
@@ -254,37 +375,59 @@ label sh_ch29:
         stop music fadeout 2.0
 
         "Just when I'm about to dismiss the thought I just had, Hisao puts his hand on my shoulder."
-        "I'm willing to bet he had the exact same thought I just had and unlike me he didn't think it was too inappropriate to suggest."
+        "I'm willing to bet he had the exact same thought I just had, and unlike me, he didn't think it was too inappropriate to suggest."
         ha "Y-yes?"
 
         play music music_heart fadein 4.0
 
         hi "Can I… soap your front as well?"
+
+        show soapopera_hanako talk at soapopera_talk behind steam
+        with charachangeev
+
         ha "M-my f-front?"
         hi "I… liked washing your back."
         ha "…If… If I can w-wash y-your f-front as well."
         hi "Sure."
 
-        scene ev soapopera_hisao_front
-        with charachangeev
+        show ev soapopera_hisao2_hug at center
+        hide soapopera_hanako
+        with Dissolve(1.0)
 
         "I think I can see the traces of an awkward smile on his face as sits in front of me, using his hands to cover himself in order to prevent things from being too awkward."
         "I retrieve the soap, put some of it in my hands, and start running my hands up and down his legs and feet, then move behind him and continue on his arms."
         "While I'm busy soaping his shoulders, I suddenly become aware of his gaze towards the nearby wall-mounted mirror, making me a little uncomfortable."
         "Despite the room being dimly lit, our reflections are still clearly visible and I can tell he's watching me."
         "Since I can't cover myself up and wash him at the same time, I gently nudge his chin away with my finger and kiss him from behind."
-        "Keeping him occupied this way, I reach down, pour some more liquid soap into my cupped hand and then start on his chest, paying special attention to the scar in the middle."
+        "Keeping him occupied this way, I reach down, pour some more liquid soap into my cupped hand, and then start on his chest, paying special attention to the scar in the middle."
         "I feel his breathing speed up as my hands go lower and lower, rubbing his thighs and abdomen before stopping at the place his own hands are covering."
+
+        show ev soapopera_hisao2_hug_large:
+            crop (931, 96, 1920, 1080)
+        with charachangeev
+
         "I break off our kiss and exchange an awkward look with him. I wonder if this is one spot he wants to do himself."
         ha "Uh, Hisao… D-do you… uh…?"
-        "My boyfriend lets out a nervous laugh and then moves his hands away. My eyes grow large, and I barely manage to suppress an uncomfortable giggle."
+        "My boyfriend lets out a nervous laugh and then moves his hands away."
+
+        show ev soapopera_hisao2_erection_large
+        with charachangeev
+
+        "My eyes grow large, and I barely manage to suppress an uncomfortable giggle."
+
+        show ev:
+            ease 5.0 crop (361, 96, 3060, 1721)
+        with None
+
         "The sights and sensations of our act have left his manhood completely erect and my mere glance is enough to make it quiver a bit."
         hi "I guess this was kind of inevitable…"
         ha "Uh…"
         hi "Hanako, could you… uh… help me with this before we get into the bath?"
         "I blush heavily, but nevertheless find myself nodding."
 
-        scene ev soapopera_hisao_handy
+        scene ev soapopera_hisao2_handy
+        show steam at truecenter, nightfilter:
+            alpha 0.6
         with charachangeev
 
         "I apply some extra liquid soap to my hands and then I take hold of him, wrapping my other arm around him from behind."

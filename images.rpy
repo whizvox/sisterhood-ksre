@@ -122,10 +122,10 @@ init 1 python:
     sh_event("caress", ["normal", "large"])
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
     sh_event("pillowtalk", ["kiss"])
+    sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hanako1_hairtalk_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy", "hisao2_climax", "hanako2_caress", "hanako2_spray", "hanako2_climax"])
     sh_event("celloandwine", ["peek", "block", "block_smile", "lap_forward", "lap_rest", "lap_pause", "lap_embrace", "lap_applause", "lap_victory", "lap_kiss"])
     sh_event("tipsyfun", ["collapse_morning"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
-    #sh_event("bedridden", ["akira_provoke", "akira_angry", "akira_shout", "akira_distant", "akhiha_look", "akhiha_focus", "akhiha_open", "akhiha_talk", "akhiha_phone", "akhiha_smile"])
     sh_event("bedridden", ["lillyakira", "akira"])
     sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
@@ -160,6 +160,7 @@ init 1:
     image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
     image bg satou_entrance_blur_ss = sunset(sh_bg("satou_entrance_blur"))
     image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
+    image bg satou_bathroom_ni = night(sh_bg("satou_bathroom"))
 
     # special events
     image ev pillowtalk dark = f"{sh_path}/event/pillowtalk/pillowtalk_dark.png"
@@ -189,6 +190,9 @@ init 1:
         (0, 0), "bg suburb_roadcenter_rn",
         (0, 0), "rain normal"
     )
+
+    image soapopera_hanako talk = f"{sh_path}/event/soapopera/soapopera_hanako_talk_overlay.png"
+    image soapopera_hisao talk = f"{sh_path}/event/soapopera/soapopera_hisao_talk_overlay.png"
 
     image bedridden_lilly smile = f"{sh_path}/event/bedridden/bedridden_lilly_smile_overlay.png"
     image bedridden_lilly listen = f"{sh_path}/event/bedridden/bedridden_lilly_listen_overlay.png"
