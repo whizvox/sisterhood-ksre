@@ -7,9 +7,12 @@ label sh_ch46:
 
         scene bg satoujp_station
         show crowd
+        # TODO add Hanako and Lilly winter outfits
         show hanako emb_downtimid_cas_close at right
+        with Dissolve(2.0)
 
         play music music_dreamy fadein 4.0
+        play ambient sfx_crowd_outdoors fadein 2.0
 
         hi "I think that's Lilly and her father over there."
         "Hanako doesn't respond. It's really crowded at the train station right now, and she's trying to block out the rest of the world by hiding behind her long scarf and the collar of her thick coat."
@@ -19,14 +22,14 @@ label sh_ch46:
 
         show hiroyuki bow at twoleft
         show lilly cane_cheerful_cas at left
+        show hanako emb_timid_cas_close
         with charaenter
 
         "Moments later, I see someone wave at us. With Hanako clinging to my arm, I slowly make my way towards our friend."
         "As we reach Lilly and her father, they both greet us with a polite bow."
 
-        show hanako emb_timid_cas_close
         show lilly cane_satisfied_cas
-        show hiroyuki thinkinggesture
+        show hiroyuki thinkraised
         with chchange
 
         hy "Miss Ikezawa. Mister Nakai. It is good to see you two again."
@@ -48,7 +51,16 @@ label sh_ch46:
 
         "We follow Lilly and her father to the car, and a minute later, we're leaving the train station behind us."
 
-        scene bg hiroyuki_car
+        stop ambient fadeout 1.0
+
+        # TODO add car driving SFX 
+
+        scene bg misc_hiroyukicar at truecenter:
+            ypos 0.52
+            block:
+                ease 2.0 ypos 0.48
+                ease 2.0 ypos 0.52
+                repeat
         with locationskip
 
         hy "If the two of you desire to do some studying right now, I will not distract you with idle conversation."
@@ -77,12 +89,17 @@ label sh_ch46:
         hi "That's a good point."
         hy "Also..."
 
-        scene bg satoujp_guest
-        with locationskip
+        play sound sfx_time
+
+        scene black
+        with clockwipefast
+        scene bg satoujp_guest at truecenter
+        with clockwipefast
 
         ka "Mister Nakai? I apologize for intruding, but I have brought you some herbal tea. Please enjoy."
 
-        show karla basic_smileclosed_cas at center
+        show karla basic_smileclosed_cas at center:
+            ypos 1.02
         with charaenter
 
         "I turn around to look at the entrance of the guest room where I've been studying for the last two hours and look at the kimono-clad figure who just walked in carrying a tray."
@@ -130,17 +147,21 @@ label sh_ch46:
 
         ka "Well, if you don't mind a little company..."
 
-        show karla basic_smile_cas at tworight
+        show karla basic_smile_cas
+        with chchange
+
+        show karla at tworight:
+            ypos 1.02
         with charamove
 
         play sound sfx_rustling
         with vpunch
 
-        show karla basic_displeased_cas at right
-        with charamove
+        show karla basic_displeased_cas
+        with Dissolve(0.2)
 
-        show karla basic_displeased_cas_close at right
-        with chchange
+        show karla basic_displeased_cas_close
+        with characlose
 
         "She walks over to the bed, and I can't hold back a grin when I see her fumble with her kimono a bit before sitting down. She looks a bit annoyed at being caught out."
 
@@ -164,7 +185,8 @@ label sh_ch46:
         show karla basic_confident_cas_close
         with chchange
 
-        ka "My husband may have married a woman from Scotland, may have led a foreign branch of the company for years and may have even picked up a few western trains of thought here and there through his exposure to foreign cultures, but there's a part of him that will always remain traditionally Japanese, and he's always been very proud of his country and his culture."
+        ka "My husband may have married a woman from Scotland, may have led a foreign branch of the company for years, and may have even picked up a few western trains of thought here and there through his exposure to foreign cultures..."
+        ka "...but there's a part of him that will always remain traditionally Japanese, and he's always been very proud of his country and his culture."
         hi "That probably explained the speech we got on our way here about it being pretty much our civic duty to push ourselves as much as possible during these remaining four weeks in order to set the good example to the students and generations that come after us."
 
         show karla basic_laugh_cas_close
@@ -266,6 +288,10 @@ label sh_ch46:
 
         "She brightens up a little bit."
         ka "He's doing much better right now, though I'm sure he'll be happy to tell you the details himself."
+
+        show karla basic_sheepish_cas_close
+        with chchange
+    
         ka "At the beginning, it was really tough for him though. At first, every single tingle in his stomach or chest made him wonder if another attack was coming up. Makes you really paranoid."
         ka "Lilly said that it was not uncommon for people recovering from a heart attack to feel that way."
         "I smirk a bit at that. Karla notices my expression and chuckles."
@@ -295,7 +321,7 @@ label sh_ch46:
         nvl clear
         nvl show dissolve
 
-        n "It probably helped me too. I've always been very reluctant to talk about my condition. And more than a little uncomfortable too."
+        n "It probably helped me too. I've always been very reluctant to talk about my condition. And more than a little uncomfortable, too."
         n "{vspace=30}But the knowledge that there was someone out there, someone related to one of my best friends no less, who might be drawing strength from my thoughts and impressions was a very effective push."
         n "And it also helped that Hanako never tried to force things. Whenever I started feeling uncomfortable, she'd never fail to soothe my nerves. She'd take my hand in hers, or snuggle up to me, or give me a soft kiss accompanied by that warm smile of hers, or let me rest my head in her lap while she ran her fingers through my hair."
         n "{vspace=30}True to her usual ways, she'd hardly ever speak while doing all of that, but I always felt stronger and more at ease afterwards. She was such a sweetheart during those moments. The two of us probably got a lot closer during that time."
@@ -313,14 +339,17 @@ label sh_ch46:
         hi "If only it was that easy to help Hanako get back on her feet."
 
         show karla basic_speak_cas_close
-        with chchange
+        with charachangealways
 
         show karla basic_distant_cas_close
         with charachangealways
 
         "Karla opens her mouth to say something, but then seems to think the better of it."
 
-        show karla basic_distant_cas
+        show karla basic_distant_cas at tworightsit
+        with charadistant
+
+        show karla at tworight
         with charamove
 
         "After a few quiet seconds, she gets up."
@@ -342,12 +371,16 @@ label sh_ch46:
 
         $ set_window_tint(TINT_HISAO)
 
-        scene bg satoujp_guest_ni
-        with locationskip
+        scene bg satoujp_guest at truecenter
+        with shorttimeskip
+
+        play sound sfx_doorknock2
 
         play music music_happiness fadein 4.0
 
         hi "Come in."
+
+        play sound sfx_dooropen
 
         show lilly cane_smileclosed_cas
         with charaenter
@@ -362,15 +395,15 @@ label sh_ch46:
         li "Mother has just informed us that dinner is ready. We were hoping you could join us downstairs."
         hi "I'd love to. I think I've managed to work up quite the appetite over the last few hours."
 
-        show lilly cane_smileclosed_cas at offscreenright
-        with charamove
+        show lilly cane_smileclosed_cas
+        with charachangealways
 
         hide lilly
-        with None
+        with charaexit
 
         "I put a bookmark in my science book to mark the spot where I'll be picking things up after dinner and leave the guest room."
 
-        scene bg satoujp_stairs
+        scene bg satoujp_hall
         show lilly cane_smileclosed_cas_close at left
         show hanako emb_downtimid_cas_nohat_close at right
         with charaenter

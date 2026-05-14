@@ -158,13 +158,14 @@ init 30 python:
     sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni", "hiroyukicar"])
-    sh_bgs("satoujp", ["station"])
+    # credit: japan-property.jp and SAKURA HOUSE CO., LTD.
+    sh_bgs("satoujp", ["guest", "hall", "station"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC
     sh_bgs("yuichi", ["intercom", "genkan", "dining"])
     # credit: OMOSHIRO RENT-A-CAR
-    sh_bgs("misc", ["car_ss", "hiroyukicar_ni"])
+    sh_bgs("misc", ["car_ss", "hiroyukicar", "hiroyukicar_ni"])
     sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
     sh_bgs("suburb", ["park_ni"])
     sh_bgs("school", ["teacherlounge"])
