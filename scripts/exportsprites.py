@@ -261,6 +261,7 @@ karla = [
     ("act 2 sprites/Karla/SUIT/18 KARLA SUIT PONDER CROSSED", "cross_ponder"),
     ("act 2 sprites/Karla/SUIT/19 KARLA SUIT WORRIED", "basic_worried"),
     # casual
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL CONFIDENT", "basic_confident_cas"),
     ("act 2 sprites/Karla/CASUAL/1 KARLA CASUAL SMILE", "basic_smile_cas"),
     ("act 2 sprites/Karla/CASUAL/2 KARLA CASUAL SMILE CLOSED", "basic_smileclosed_cas"),
     ("act 2 sprites/Karla/CASUAL/3 KARLA CASUAL SHEEPISH", "basic_sheepish_cas"),

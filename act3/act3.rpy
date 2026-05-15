@@ -135,8 +135,11 @@ init 30 python:
         ])
     )
 
+    sh_sprites("hanako", ["distant"], poses=["basic"], outfits=["cas_nohat"])
+    sh_sprites("hanako", ["speechless"], poses=["def", "defarms"], outfits=["cas_nohat"])
+    sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
-    sh_sprites("karla", ["sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
+    sh_sprites("karla", ["confident", "sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["awkward", "smileclosed", "thinkraised"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
@@ -159,7 +162,7 @@ init 30 python:
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni", "hiroyukicar"])
     # credit: japan-property.jp and SAKURA HOUSE CO., LTD.
-    sh_bgs("satoujp", ["guest", "hall", "station"])
+    sh_bgs("satoujp", ["dining", "guest", "livingroom", "stairs", "station"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC

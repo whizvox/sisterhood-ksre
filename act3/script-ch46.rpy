@@ -403,12 +403,12 @@ label sh_ch46:
 
         "I put a bookmark in my science book to mark the spot where I'll be picking things up after dinner and leave the guest room."
 
-        scene bg satoujp_hall
+        scene bg satoujp_stairs
         show lilly cane_smileclosed_cas_close at left
         show hanako emb_downtimid_cas_nohat_close at right
         with charaenter
 
-        "Beyond the doorway, Lilly and Hanako are waiting for me. I look at Hanako, who's fidgeting with one of the sleeves of the thick (and slightly too large) sweater she's wearing."
+        "Beyond the doorway, Lilly and Hanako are waiting for me. I look at Hanako, who's fidgeting with one of the sleeves of the blouse she's wearing."
         hi "Hey, Hanako. How's your studying coming along?"
 
         show hanako emb_timid_cas_nohat_close
@@ -426,24 +426,27 @@ label sh_ch46:
 
         li "Come, let's not keep Father and Mother waiting for too long."
 
-        scene bg satoujp_diningroom_ni
-        show hiroyuki smileclosed at center
-        show karla basic_sheepish_cas at tworight
+        scene bg satoujp_dining
+        show hiroyuki smileclosed at centersit:
+            xpos 0.35
+        show karla basic_sheepish_cas at tworight:
+            xpos 0.6 zoom 1.2 ypos 1.2
         with locationchange
 
         "We follow Lilly down the stairs and into the dining area where her parents are waiting for us at a carefully laid table."
 
-        show hiroyuki thinkinggesture
-        with chchange
+        show hiroyuki thinkraised
+        with charachangealways
 
         show hiroyuki thinking
         with charachangealways
 
-        show hanako emb_timid_cas_nohat_close at left
+        show hanako emb_timid_cas_nohat_close at left:
+            xpos -0.02
         with charaenter
 
-        show lilly basic_smile_cas at right:
-            xzoom -1.0
+        show lilly basic_smile_cas_close at right:
+            xzoom -1.0 xpos 1.02
         with charaenter
 
         "Mister Satou, who's sitting at the head of the table, gives us a friendly nod and motions Hanako and me to sit down on his left. Lilly is delegated to the seat next to her mother on his right."
@@ -459,18 +462,18 @@ label sh_ch46:
 
         show hiroyuki smileclosed
         show karla basic_smileclosed_cas
-        show lilly basic_cheerful_cas
+        show lilly basic_cheerful_cas_close
         show hanako emb_downmeek_cas_nohat_close
         with chchange
 
         hi "The soup smells delicious, Mrs. Satou."
 
         show hiroyuki thinking
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
         show karla basic_confident_cas
         with chchange
 
-        ka "Thanks Hisao. This meal is probably one of the more unorthodox ones I've made in recent memory, so I'm keeping my fingers crossed that you'll find it tasty."
+        ka "Thanks, Hisao. This meal is probably one of the more unorthodox ones I've made in recent memory, so I'm keeping my fingers crossed that you'll find it tasty."
         hi "Unorthodox? The soup smells good, but I don't smell anything unorthodox about it."
 
         show karla basic_cheerful_cas
@@ -486,7 +489,7 @@ label sh_ch46:
         ka "Think of it as a multi-cultural meal. I came up with the idea while I was visiting a few of my friends in Inverness, and we talked about what each of us was planning for Christmas."
         hi "Do you often visit your country of birth these days?"
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_cas_close
         show karla basic_confident_cas
         with chchange
 
@@ -501,7 +504,8 @@ label sh_ch46:
         show karla cross_ponder_cas
         with chchange
 
-        ka "Not officially. But I drop by there whenever I'm in the area so I can keep an eye on how things are going, remain informed about the going-ons there, keep my ear close to the grapevine, and see if there are any conflicts or misunderstandings between the staff and the new management that I can help smooth over."
+        ka "Not officially. But I drop by there whenever I'm in the area so I can keep an eye on how things are going."
+        ka "I can remain informed about the going-ons there, keep my ear close to the grapevine, and see if there are any conflicts or misunderstandings between the staff and the new management that I can help smooth over."
 
         show hiroyuki speak
         with chchange
@@ -511,7 +515,7 @@ label sh_ch46:
 
         show hiroyuki smileclosed
         show karla basic_sheepish_cas
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
         with chchange
 
         "Lilly's father lets out a soft “hmmm”."
@@ -530,7 +534,7 @@ label sh_ch46:
         "A subtle smile appears on Mister Satou's face for a moment."
 
         show karla basic_cheerful_cas
-        show lilly basic_cheerful_cas
+        show lilly basic_cheerful_cas_close
         with chchange
 
         hy "I will remain a member of the Satou board of directors, but early next year, I will also join the ranks of another company."
@@ -538,20 +542,20 @@ label sh_ch46:
 
         show hiroyuki awkward
         show karla basic_smug_cas
-        show lilly basic_surprised_cas
+        show lilly basic_surprised_cas_close
         with chchange
 
         ka "The old boy network came to the rescue."
 
         show hiroyuki stern
         show karla basic_sheepishclosed_cas
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_cas_close
         with chchange
 
         "Lilly's father gives his wife a short admonishing stare, but then continues."
 
         show hiroyuki thinking
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
         with chchange
 
         hy "My successor at head office knew someone from his university days who works at the upper management of another company and he was willing to put in a good word for me."
@@ -559,7 +563,7 @@ label sh_ch46:
 
         show hiroyuki speak
         show karla basic_smile_cas
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
         show hanako emb_downmeek_cas_nohat_close
         with chchange
 
@@ -567,7 +571,7 @@ label sh_ch46:
         hy "The department I will be given a managing role in is responsible for analyzing the foreign market, determining which books would be viable to localize in other languages, coordinating the translators doing the localizations, and then helping out with the marketing abroad."
 
         show karla basic_wink_cas
-        show lilly basic_cheerful_cas
+        show lilly basic_cheerful_cas_close
         with chchange
 
         ka "In other words: the ideal place for an avid reader who is well-traveled. I'm sure he'll do very well."
@@ -579,9 +583,9 @@ label sh_ch46:
         hi "That sounds like a very enjoyable job."
         ha "Yes. C-congratulations."
 
-        show hiroyuki thinkinggesture
+        show hiroyuki thinkraised
         show hanako emb_downmeek_cas_nohat_close
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
         with chchange
 
         hy "Thank you. I have always been more interested in books than in medical equipment, so it sounds like an enjoyable occupation although it is, of course, a bit of a demotion when you consider my previous position."
@@ -596,7 +600,7 @@ label sh_ch46:
         show hiroyuki speak
         with chchange
 
-        hy "Ahem...junior member..."
+        hy "Ahem... junior member..."
 
         show hiroyuki serious
         show karla basic_speak_cas
@@ -610,13 +614,13 @@ label sh_ch46:
         hy "That is not a bad way of looking at it, although I will not be able to afford allowing my future colleagues to see me like that."
         hy "If they feel I am merely doing my job ‘on the side’, as you phrased it, they will not respect my input. I will have to pull my weight."
 
-        show lilly basic_oops_cas
+        show lilly basic_oops_cas_close
         show karla cross_ponder_cas
         with chchange
 
         "Lilly looks a little uneasy at her father's words."
 
-        show lilly basic_listen_cas
+        show lilly basic_listen_cas_close
         show hanako emb_downtimid_cas_nohat_close
         show karla basic_distant_cas
         with chchange
@@ -629,7 +633,7 @@ label sh_ch46:
         hy "I have no intention of getting hospitalized again, Lilly. I will make certain to remain under the watch of a physician who will be given permission to share his findings with your mother if he feels it necessary."
         hy "I will also not be working full-time—yet—though the fact that I still have to be available for meetings of our company's board of directors every now and then is the officially stated reason for that."
 
-        show lilly basic_weaksmile_cas
+        show lilly basic_weaksmile_cas_close
         show hanako emb_downmeek_cas_nohat_close
         show karla basic_sheepish_cas
         with chchange
@@ -638,18 +642,21 @@ label sh_ch46:
         ka "That does put my mind at ease."
 
         show hiroyuki smile
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
         show karla basic_smile_cas
         with chchange
 
         hy "Good. Then let us continue with this exquisite meal."
 
-        scene bg satoujp_diningroom_ni
-        show hiroyuki thinking at center
-        show karla basic_cheerful_cas at tworight
-        show lilly basic_smile_cas at right:
-            xzoom -1.0
-        show hanako emb_downmeek_cas_nohat_close at left
+        scene bg satoujp_dining
+        show hanako emb_downmeek_cas_nohat_close at left:
+            xpos -0.02
+        show hiroyuki thinking at centersit behind hanako:
+            xpos 0.35
+        show karla basic_cheerful_cas at tworightsit:
+            xpos 0.6 zoom 1.2 ypos 1.2
+        show lilly basic_smile_cas_close at right:
+            xzoom -1.0 xpos 1.02
         with shorttimeskip
 
         ka "Anybody up for another slice of dundee cake?"
@@ -662,7 +669,7 @@ label sh_ch46:
         hy "I have the impression that our upcoming graduates are about ready to get back to their books."
         "I suppose that's our cue."
 
-        show lilly basic_smileclosed_cas
+        show lilly basic_smileclosed_cas_close
         show hanako emb_meek_cas_nohat_close
         with chchange
 
@@ -676,7 +683,7 @@ label sh_ch46:
 
         hy "That is good to hear. Perhaps, Lilly, I can supply you with some additional motivation."
 
-        show lilly basic_surprised_cas
+        show lilly basic_surprised_cas_close
         show hanako emb_timid_cas_nohat_close
         with chchange
 
@@ -688,7 +695,7 @@ label sh_ch46:
         "Mister Satou straightens himself out and pauses for a moment for dramatic effect."
         hy "I have been thinking about the request you made some time ago. About... living accommodations."
 
-        show lilly basic_emb_cas
+        show lilly basic_emb_cas_close
         with chchange
 
         li "Oh..."
@@ -701,13 +708,13 @@ label sh_ch46:
         hy "While a part of me is still skeptical, I have to decided to procur an apartment for you to use and give you the opportunity to live on your own, provided that you pass your exams."
         li "Father..."
 
-        show lilly basic_cheerful_cas
+        show lilly basic_cheerful_cas_close
         show hanako emb_meek_cas_nohat_close
         with chchange
 
         "Lilly looks flabbergasted for several seconds before recovering and flashing her father a smile bright enough to light up the room."
 
-        show lilly basic_satisfied_cas
+        show lilly basic_satisfied_cas_close
         show karla basic_cheerful_cas
         show hanako emb_downmeek_cas_nohat_close
         with chchange
@@ -715,7 +722,7 @@ label sh_ch46:
         li "I... I promise that I will not disappoint you."
 
         show hiroyuki speak
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
         show hanako basic_distant_cas_nohat_close
         show karla basic_confused_cas
         with chchange
@@ -736,7 +743,7 @@ label sh_ch46:
 
         hy "...I would like you to make good on the compromise you offered."
 
-        show lilly basic_listen_cas
+        show lilly basic_listen_cas_close
         with chchange
 
         li "Compromise?"
@@ -748,7 +755,7 @@ label sh_ch46:
 
         hy "Of taking a roommate. An extra pair of eyes. I insist on that."
 
-        show lilly basic_smile_cas
+        show lilly basic_smile_cas_close
         with chchange
 
         pause 0.3
@@ -766,7 +773,7 @@ label sh_ch46:
         show hanako emb_downsad_cas_nohat_close
         with chchange
 
-        "As more and more gazes center on her, Hanako's expression goes from surprised to uncomfortable, and she pulls up the collar of her sweater a bit as if to hide from the staring eyes."
+        "As more and more gazes center on her, Hanako's expression goes from surprised to uncomfortable, and she pulls up her collar a bit as if to hide from the staring eyes."
         "After several awkward seconds, she finally manages to whisper a reply."
 
         show hanako emb_timid_cas_nohat_close
@@ -775,7 +782,7 @@ label sh_ch46:
         ha "M-me?"
         "Lilly nods decisively."
 
-        show lilly basic_satisfied_cas
+        show lilly basic_satisfied_cas_close
         show karla basic_smile_cas
         show hiroyuki thinking
         with chchange
@@ -788,8 +795,8 @@ label sh_ch46:
 
         ha "Y-yes, b-but..."
 
-        show lilly basic_smile_cas
-        show hiroyuki thinkinggesture
+        show lilly basic_smile_cas_close
+        show hiroyuki thinkraised
         show karla basic_smileclosed_cas
         with chchange
 
@@ -805,7 +812,7 @@ label sh_ch46:
 
         show hiroyuki bow
         show karla basic_cheerful_cas
-        show lilly basic_satisfied_cas
+        show lilly basic_satisfied_cas_close
         with chchange
 
         pause 0.3
@@ -823,9 +830,6 @@ label sh_ch46:
         ha "L-Lilly..."
         "Hanako still looks a little lost, but still manages a smile in response to Lilly's."
 
-        scene black
-        with Dissolve(2.0)
-
         scene bg satoujp_stairs
         show lilly cane_giggle_cas_close at left
         show hanako emb_downmeek_cas_nohat_close at right
@@ -841,7 +845,7 @@ label sh_ch46:
 
         "As the three of us make our way back to the guest rooms, I put my hand on Hanako's shoulder and give it a reassuring little squeeze."
 
-        scene bg satoujp_guest_ni
+        scene bg satoujp_guest
         with locationskip
 
         nvl clear
@@ -891,7 +895,7 @@ label sh_ch46:
 
         stop music fadeout 2.0
 
-        scene bg satoujp_livingroom_ni
+        scene bg satoujp_livingroom
         with locationchange
 
         queue music music_twinkle fadein 4.0
@@ -920,7 +924,7 @@ label sh_ch46:
         "She gives me a meek nod and follows me to the couch facing the one Lilly and her family are sitting on."
 
         show hanako basic_distant_cas_nohat_close
-        show hiroyuki thinkinggesture
+        show hiroyuki thinkraised
         with chchange
 
         "After Karla hands each of us a bowl of tea, Lilly's father raises his bowl slightly and clears his throat."
@@ -1115,7 +1119,7 @@ label sh_ch46:
 
         ha "Y-yes?"
 
-        show hiroyuki thinkinggesture
+        show hiroyuki thinkraised
         with chchange
 
         hy "Yesterday, my wife and I celebrated Christmas together with Lilly for the first time in six years. In a few days, we will celebrate New Year together, and Akira has promised to join us for that occasion as well. It feels like the rifts in this family are slowly healing."
@@ -1168,7 +1172,7 @@ label sh_ch46:
         ha "If m-my f-friends are happy, I'm h-happy too."
 
         show hanako emb_timid_cas_nohat_close
-        show hiroyuki thinkinggesture
+        show hiroyuki thinkraised
         with chchange
 
         "Lilly's father nods his head."
