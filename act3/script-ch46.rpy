@@ -854,17 +854,17 @@ label sh_ch46:
         n "When I sit down behind my books and turn to the page where I left off, I feel a sudden sense of relief."
         n "{vspace=60}Hanako's been very worried that after her graduation, she'll be thrust into a world where she wouldn't be able to function."
         n "After we started dating, however, she didn't seem to have a problem anymore visiting town or even the city. She'd be uncomfortable and on her guard sometimes, but not to the point where it paralyzed her. But maybe that was because if things went wrong, she knew she'd have a safe place to return to."
-        n "Maybe this opportunity to move in with Lilly and have her own little place of safety is just what she needs. A little island of stability in a sea of uncertainry."
+        n "Maybe this opportunity to move in with Lilly and have her own little place of safety is just what she needs. A little island of stability in a sea of uncertainty."
         n "{vspace=30}Maybe things will be alright after all."
 
         nvl hide dissolve
 
-        scene bg satoujp_guest_ni
+        scene bg satoujp_guest
         with shorttimeskip
 
         ka "I hope I'm not interrupting."
 
-        show karla cross_smileclosed_cas at right
+        show karla cross_smileclosed_cas
         with charaenter
 
         "I turn around to see Lilly's mother standing in the doorway again, but unlike last time, she doesn't have a tray with drinks on it."
@@ -884,10 +884,7 @@ label sh_ch46:
         ka "Great. We'll be in the living room."
 
         show karla basic_smileclosed_cas at offscreenright
-        with charamove
-
-        hide karla
-        with None
+        with charaexit
 
         "I watch Lilly's mother walk out and then start stuffing my books into my backpack."
         "One hour of additional studying in this room might actually be more productive for me than two hours of studying on the train, but I've made enough progress today to be able to afford taking it easy during our journey back to school."
@@ -967,7 +964,7 @@ label sh_ch46:
         show karla basic_smile_cas
         with charachangealways
 
-        show karla basic_smile_cas at offscreenleft behind hanako
+        show karla basic_smile_cas at offscreenright
         with charamove
 
         show hiroyuki thinking
@@ -1036,7 +1033,7 @@ label sh_ch46:
         show karla basic_smile_cas
         with chchange
 
-        "Voice" "Please apply the electrode pads to the body of the patient."
+        "Voice" "{i}Please apply the electrode pads to the body of the patient.{/i}"
         "A pre-recorded voice suddenly sounds from somewhere behind me, and when I turn around I see that Hanako has turned the device on while examining it."
         hi "Hey, that thing has voiced instructions."
 
@@ -1198,9 +1195,6 @@ label sh_ch46:
         "He holds the envelope in both hands and extends it towards Hanako, as if he's offering some VIP his business card."
 
         show hiroyuki bow
-        with chchange
-
-        show hiroyuki thinking
         with charachangealways
 
         hy "...Thank you."
@@ -1215,6 +1209,7 @@ label sh_ch46:
         show hanako defarms_worry_cas_nohat_close
         show lilly basic_displeased_cas
         show karla basic_distant_cas
+        show hiroyuki thinking
         with chchange
 
         "As she nervously gets up from the couch and takes the envelope from Lilly's father, I notice Lilly and her mother are looking a bit tense. I wonder what's inside."
@@ -1227,8 +1222,12 @@ label sh_ch46:
 
         "Then, as she's about half-way through, her mouth suddenly falls open, and I can hear her gasping for breath. Her eyes grow to the size of saucers."
         "I remember when we weren't dating yet and I decided to show her the scar on my chest. I told her I was going to take my shirt off, and she had an expression just like she has now. Well, almost like she has now. This time her eyes seem even bigger."
-        ha "Ah..."
+        ha "{cps=20}Ah......{/cps}"
         "My curiosity getting the better of me, I get a little closer to Hanako, and peek over her shoulder."
+
+        # TODO maybe blur the background here?
+
+        play sound sfx_paper
 
         show adoptionpapers1 at displayitemshow
 
@@ -1252,6 +1251,8 @@ label sh_ch46:
         "I first look at Mister Satou who looks back at me with a sincere expression on his face. Then I look at Hanako who is still in exactly the same position as she was when I took a peek, as if time froze around her."
         "Finally, I manage to collect my thoughts long enough to break the pressing silence in the room."
         hi "Hanako, these are adoption papers..."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)

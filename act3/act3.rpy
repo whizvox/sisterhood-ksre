@@ -78,6 +78,7 @@ init 30:
     image carseats = sh_vfx("carseats", boxstrip=False)
     image hankerchief = sh_vfx("hankerchief")
     image aedunit = sh_vfx("aed")
+    image adoptionpapers1 = sh_vfx("adoptionpapers1", boxstrip=False)
 
     image bg kasshoku_grounds_ss = sunset(sh_bg("kasshoku_grounds"))
     image bg kasshoku_entrance_ss = sunset(sh_bg("kasshoku_entrance"))
@@ -136,7 +137,7 @@ init 30 python:
     )
 
     sh_sprites("hanako", ["distant"], poses=["basic"], outfits=["cas_nohat"])
-    sh_sprites("hanako", ["speechless"], poses=["def", "defarms"], outfits=["cas_nohat"])
+    sh_sprites("hanako", ["speechless", "shock", "worry"], poses=["def", "defarms"], outfits=["cas_nohat"])
     sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("karla", ["confident", "sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
