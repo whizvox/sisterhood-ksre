@@ -38,6 +38,13 @@ init 30:
     transform sh_fadebottomexit:
         ease 1.0 ypos 1.2 alpha 0.0
 
+    transform sh_carbob:
+        truecenter ypos 0.52
+        block:
+            ease 2.0 ypos 0.48
+            ease 2.0 ypos 0.52
+            repeat
+
     define clockwipefast = ImageDissolve(Tile("gui/trans/clockwipe.png"), 1.0, 8)
 
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
@@ -133,6 +140,10 @@ init 30 python:
             (_("The Stakes of the Game"), "sh_ch45.s2", _("Lilly and Hisao talk to Miss Takawa about Hanako."), "lilly"),
             (_("Christmas Cramming"), "sh_ch46.s1", _("Hisao and Hanako visit the Satous for Christmas... and more studying."), "hisao"),
             (_("Unwrapping the Present"), "sh_ch46.s2", _("Hisao's and Hanako's visit to the Satou residence ends with some unexpected gifts."), "hisao"),
+            (_("Family Reunion"), "sh_ch47.s1", _("Akira answers her family's call for the New Year's celebrations."), "akira"),
+            (_("The Fifth Wheel"), "sh_ch47.s2", _("The Satou family and Hanako visit a shrine for the New Year's celebration."), "akira"),
+            (_("Grievances"), "sh_ch47.s3", _("Akira and her mother get into a harsh argument."), "akira"),
+            (_("Black Sheep"), "sh_ch47.s4", _("Visiting the shrine again with Lilly and Hanako, Akira reflects on her relationship with her family."), "akira"),
         ])
     )
 
@@ -163,7 +174,7 @@ init 30 python:
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni", "hiroyukicar"])
     # credit: japan-property.jp and SAKURA HOUSE CO., LTD.
-    sh_bgs("satoujp", ["dining", "guest", "livingroom", "stairs", "station"])
+    sh_bgs("satoujp", ["dining", "entryway", "ext", "guest", "livingroom", "stairs", "station"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC
@@ -173,6 +184,7 @@ init 30 python:
     sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
     sh_bgs("suburb", ["park_ni"])
     sh_bgs("school", ["teacherlounge"])
+    sh_bgs("shrine", ["ema_ni", "entrance", "ext", "ext_ni", "int"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
     sh_event("sadspooning", ["tearoom"])
