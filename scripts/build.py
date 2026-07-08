@@ -29,6 +29,17 @@ INCLUDED_DIRS = (
 SCRIPT_DIRS = ("act1", "act2")
 
 
+def format_bytes(n: int) -> str:
+    if n < 1000:
+        return f"{n} B"
+    elif n < 1_000_000:
+        return "{:.1f}".format(n / 1000) + " KB"
+    elif n < 1_000_000_000:
+        return "{:.1f}".format(n / 1_000_000) + " MB"
+    else:
+        return "{:.1f}".format(n / 1_000_000_000) + " GB"
+
+
 # attempt to be smart and only include sprites that are actually used in the game in the distributable
 def find_used_sprites(script_path: Path, valid_chars: list[str]) -> set[Path]:
     global ks_path
@@ -123,7 +134,7 @@ def get_project_files(include_all_sprites: bool = False) -> list[Path]:
             if path not in sprite_files:
                 saved_files += 1
                 saved_space += path.stat().st_size
-        print(f"Skipped {saved_files} sprites and saved {saved_space} bytes")
+        print(f"Skipped {saved_files} sprites and saved {format_bytes(saved_space)}")
         files.extend(sprite_files)
     return files
 
