@@ -1,3 +1,5 @@
+init offset = 1
+
 init:
     # BGM
 

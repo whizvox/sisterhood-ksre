@@ -3,10 +3,6 @@ default persistent.sh_windowtint = True
 default persistent.sh_show_disclaimer = True
 
 init python:
-    sh_path = "mods/sisterhood"
-    sh_bgs = sh_path + "/bgs"
-    sh_window_tint = "#FFFFFF"
-
     def sh_sfx(name):
         return f"{sh_path}/sfx/{name}.ogg"
 
@@ -34,19 +30,16 @@ init python:
     def _sh_get_phonebox_bg(st, at):
         return (tint_image(f"{sh_path}/gui/phonebox.png"), 1.0)
 
-init 1 python:
-    for chapter in sisterhood_chapters:
-        scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
-    _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
-
-    sh_update_sprite_transitions()
-
 init:
     $ mods["sisterhood"] = "Sisterhood"
     $ mods_with_menus["sisterhood"] = True
 
     # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
     define sh_debug = False
+
+    define sh_path = "mods/sisterhood"
+    define sh_bgs = sh_path + "/bgs"
+    define sh_window_tint = "#FFFFFF"
 
     define sisterhood_chapters = [
         (_("Chapter 1"), "sisterhood_ch1.sh_ch1", _("Still in Scotland, Lilly and Akira discuss the future."), "lilly"),
@@ -96,38 +89,42 @@ init:
 
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
 
-init:
-    init offset = 1
+init 1 python:
+    for chapter in sisterhood_chapters:
+        scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
+    _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
 
-    define adv = ADVCharacter(kind=adv, screen="say_sh")
-    define name_only = Character(kind=name_only, screen="say_sh")
-    define narrator = Character(kind=narrator, screen="say_sh")
-    define hi = Character(kind=hi, screen="say_sh")
-    define ha = Character(kind=ha, screen="say_sh")
-    define emi = Character(kind=emi, screen="say_sh")
-    define li = Character(kind=li, screen="say_sh")
-    define shi = Character(kind=shi, screen="say_sh")
-    define mi = Character(kind=mi, screen="say_sh")
-    define aki = Character(kind=aki, screen="say_sh")
-    define mystery = Character(kind=mystery, screen="say_sh")
-    define n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
+    sh_update_sprite_transitions()
 
-    define ta = Character(_("Takawa"), who_color="#f3ccff")
-    define na = Character(_("Naomi"), who_color="#ad4545")
-    define nt = Character(_("Natsume"), who_color="#a57d33")
-    define ka = Character(_("Karla"), who_color="#dfc46d")
+    store.adv = ADVCharacter(kind=adv, screen="say_sh")
+    store.name_only = Character(kind=name_only, screen="say_sh")
+    store.narrator = Character(kind=narrator, screen="say_sh")
+    store.hi = Character(kind=hi, screen="say_sh")
+    store.ha = Character(kind=ha, screen="say_sh")
+    store.emi = Character(kind=emi, screen="say_sh")
+    store.li = Character(kind=li, screen="say_sh")
+    store.shi = Character(kind=shi, screen="say_sh")
+    store.mi = Character(kind=mi, screen="say_sh")
+    store.aki = Character(kind=aki, screen="say_sh")
+    store.mystery = Character(kind=mystery, screen="say_sh")
+    store.n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
 
-    define schar = Character(who_color="#FFFFFF") # small-role character, given white character name
-    define re = Character(_("Receptionist"), kind=schar)
-    define om = Character(_("Old Man"), kind=schar)
-    define dc = Character(_("Doctor"), kind=schar)
-    define mom = Character(_("Mom"), kind=schar)
-    define dad = Character(_("Dad"), kind=schar)
-    define kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
+    store.ta = Character(_("Takawa"), who_color="#f3ccff")
+    store.na = Character(_("Naomi"), who_color="#ad4545")
+    store.nt = Character(_("Natsume"), who_color="#a57d33")
+    store.ka = Character(_("Karla"), who_color="#dfc46d")
 
-    define nchar = Character(kind=n, who_suffix=" ", what_prefix=_("“"), what_suffix=_("”"), screen="nvl_sh") # NVL character
-    define nhi = Character(_("Hisao"), kind=nchar, who_color="#629276")
-    define nha = Character(_("Hanako"), kind=nchar, who_color="#897CBF")
+    store.schar = Character(who_color="#FFFFFF") # small-role character, given white character name
+    store.re = Character(_("Receptionist"), kind=schar)
+    store.om = Character(_("Old Man"), kind=schar)
+    store.dc = Character(_("Doctor"), kind=schar)
+    store.mom = Character(_("Mom"), kind=schar)
+    store.dad = Character(_("Dad"), kind=schar)
+    store.kam = Character(_("Mother"), kind=ka) # Karla ("Mother", from Lilly's POV)
+
+    store.nchar = Character(kind=n, who_suffix=" ", what_prefix=_("“"), what_suffix=_("”"), screen="nvl_sh") # NVL character
+    store.nhi = Character(_("Hisao"), kind=nchar, who_color="#629276")
+    store.nha = Character(_("Hanako"), kind=nchar, who_color="#897CBF")
 
     # unknown characters
-    define ta_ = Character(_("Old woman"), who_color="#f3ccff")
+    store.ta_ = Character(_("Old woman"), who_color="#f3ccff")
