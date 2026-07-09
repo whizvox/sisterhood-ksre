@@ -10,7 +10,10 @@ def update_paths(args: dict[str, any] = dict()) -> None:
         sh_path = Path(args["shdir"])
     else:
         sh_path = Path(__file__).parent.parent
-    ks_path = sh_path.parent.parent
+    if "ksdir" in args and args["ksdir"] is not None:
+        ks_path = Path(args["ksdir"])
+    else:
+        ks_path = sh_path.parent.parent
     print(f"Sisterhood-related paths updated: sh_path=\"{sh_path}\", ks_path=\"{ks_path}\"")
 
 def resolve_path(plainpath: str) -> Path:
