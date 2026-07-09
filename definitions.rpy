@@ -18,6 +18,14 @@ init python:
             return image
         return Transform(image, matrixcolor=TintMatrix(TINT_HISAO if sh_window_tint is None else sh_window_tint))
 
+    def sh_update_sprite_transitions():
+        if persistent.sh_slowtransitions:
+            store.chchange = store.charachangealways
+            store.chchangefast = Dissolve(0.2)
+        else:
+            store.chchange = persistent.charachange
+            store.chchangefast = persistent.charachangefast
+
     # renpy doesnt like lambas :(
 
     def _sh_get_nvl_bg(st, at):
@@ -30,6 +38,8 @@ init 1 python:
     for chapter in sisterhood_chapters:
         scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
     _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
+
+    sh_update_sprite_transitions()
 
 init:
     $ mods["sisterhood"] = "Sisterhood"
@@ -57,7 +67,6 @@ init:
         (_("Chapter 15"), "sisterhood_ch15.sh_ch15", _("Hisao makes an effort to reconcile with Hanako."), "hisao"),
         (_("Chapter 16"), "sisterhood_ch16.sh_ch16", _("Hanako meets Hisao on the rooftop of Yamaku."), "hanako"),
         (_("Chapter 17"), "sisterhood_ch17.sh_ch17", _("Lilly and Hanako reach out to each other."), "lilly"),
-        #(_("Chapter 17 Alt"), "sisterhood_ch17alt.sh_ch17alt", _("Hisao keeps Kenji busy before talking to Miss Takawa."), "hisao")
     ]
 
     # TRANSFORMS
@@ -70,8 +79,7 @@ init:
         xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
     transform tworight_sittingpos:
         xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    define chchange = charachangealways if persistent.sh_slowtransitions else charachange
-    define chchangefast = Dissolve(0.2) if persistent.sh_slowtransitions else charachangefast
+
     define mediumflash = Fade(1, 0, 1, color="#FFF")
 
     define erase = ImageDissolve(f"{sh_path}/gui/trans/erase.png", 2.0)
