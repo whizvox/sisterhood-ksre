@@ -5,13 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Current File with Arguments",
+            "name": "Export Sprites",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/scripts/exportsprites.py",
             "console": "integratedTerminal",
             "args": "${command:pickArgs}",
-            "cwd": "${fileDirname}"
+            "cwd": "${workspaceFolder}/scripts"
+        },
+        {
+            "name": "Export Images",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/shimgx.py",
+            "console": "integratedTerminal",
+            "args": "-s ${workspaceFolder} -k ${config:sisterhood.ksreProjectDir} -w ${config:sisterhood.waifu2xDir} ${command:pickArgs}",
+        },
+        {
+            "name": "Build .rpa File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/build.py",
+            "console": "integratedTerminal",
+            "args": "-s ${workspaceFolder} -k ${config:sisterhood.ksreProjectDir} -b ${config:sisterhood.buildDir} ${command:pickArgs}",
         }
     ]
 }

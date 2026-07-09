@@ -4,5 +4,9 @@
         "**/*.rpa": true,
         "**/*.rpymc": true,
         "**/cache/": true
-    }
+    },
+    "sisterhood.ksreProjectDir": "KSRE_PROJECT_DIR",
+    "sisterhood.referenceDir": "REFERENCE_DIR",
+    "sisterhood.buildDir": "BUILD_DIR",
+    "sisterhood.waifu2xDir": "WAIFU2X_DIR",
 }

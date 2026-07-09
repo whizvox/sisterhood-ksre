@@ -1,14 +1,47 @@
 import os
+from argparse import ArgumentParser
 from pathlib import Path
 
 sh_path: Path = Path(".")
 ks_path: Path = Path(".")
+ref_path: Path = Path(".")
 _last_printr_msg_len = 0
+
+
+def add_arguments(
+    parser: ArgumentParser,
+    shdir=True,
+    ksdir=True,
+    refdir=False,
+):
+    if shdir:
+        parser.add_argument(
+            "-s",
+            "--shdir",
+            required=True,
+            help="location of Sisterhood project directory",
+        )
+    if ksdir:
+        parser.add_argument(
+            "-k",
+            "--ksdir",
+            required=True,
+            help="location of Katawa Shoujo: Re-Engineered project directory",
+        )
+    if refdir:
+        parser.add_argument(
+            "-r",
+            "--refdir",
+            required=True,
+            help="location of the Sisterhood reference directory",
+        )
 
 
 def update_paths(args: dict = dict()) -> None:
     global sh_path
     global ks_path
+    global ref_path
+
     if "shdir" in args and args["shdir"] is not None:
         sh_path = Path(args["shdir"])
     else:
@@ -17,11 +50,20 @@ def update_paths(args: dict = dict()) -> None:
         ks_path = Path(args["ksdir"])
     else:
         ks_path = sh_path.parent.parent
+    if "refdir" in args and args["refdir"] is not None:
+        ref_path = Path(args["refdir"])
+
     if not (sh_path / "fireflies.rpy").exists():
-        raise Exception(f'sh_path "{sh_path}" is not a valid Sisterhood directory')
+        raise Exception(
+            f'sh_path "{sh_path}" is not a valid Sisterhood directory'
+        )
     if not (ks_path / "game").exists():
         raise Exception(f'ks_path "{ks_path}" is not a valid KS:RE directory')
-    print(f'Sisterhood-related paths updated: sh_path="{sh_path}", ks_path="{ks_path}"')
+
+    print(f"""Sisterhood-related paths updated:
+    \tsh_path={sh_path}
+    \tks_path={ks_path}
+    \tref_path={ref_path}""")
 
 
 def resolve_path(plainpath: str) -> Path:

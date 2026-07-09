@@ -1,20 +1,29 @@
-from PIL import Image
 import os
+import sys
+from argparse import ArgumentParser
+
+from PIL import Image
+from sishoodutil import add_arguments, ref_path, sh_path, update_paths
 
 RESAMPLE_METHOD = Image.Resampling.BICUBIC
 
-def crop_and_resize_image(input_path: str,
-                  output_path: str,
-                  replace: bool = False,
-                  crop: tuple[float, float, float, float] | None = None,
-                  target_width: int | None = None,
-                  target_height: int | None = None):
-    if os.path.exists(output_path) and not replace:
+
+def crop_and_resize_image(
+    base_input_path: str,
+    base_output_path: str,
+    replace: bool = False,
+    crop: tuple[float, float, float, float] | None = None,
+    target_width: int | None = None,
+    target_height: int | None = None,
+):
+    input_path = (ref_path / (base_input_path + ".png")).resolve()
+    output_path = (sh_path / "sprites" / (base_output_path + ".png")).resolve()
+    if output_path.exists() and not replace:
         return
     try:
         im = Image.open(input_path)
-    except:
-        print(f"(ERROR) Could not process image: {input_path}")
+    except Exception as e:
+        print(f"(ERROR) Could not process image: {input_path}\n{e}")
         return
     print(f"Processing <{input_path}>, exporting to <{output_path}>")
     if crop is not None:
@@ -36,11 +45,12 @@ def crop_and_resize_image(input_path: str,
             new_width = im.width
             new_height = im.height
     if im.width != new_width or im.height != new_height:
-        im = im.resize((new_width, new_height), resample=RESAMPLE_METHOD) # type: ignore
-    parent_dir = os.path.dirname(output_path)
-    if not os.path.isdir(parent_dir):
-        os.mkdir(os.path.dirname(output_path))
+        im = im.resize((new_width, new_height), resample=RESAMPLE_METHOD)
+    parent_dir = output_path.parent
+    if not parent_dir.exists():
+        os.mkdir(parent_dir)
     im.save(output_path)
+
 
 hisao = [
     # Uniform
@@ -121,7 +131,7 @@ hisao = [
     ("sprites2/Re Hisao Nakai/Nak Revised/REV6-Smile-Happy", "basic_smile_nak"),
     ("sprites2/Re Hisao Nakai/Nak Revised/REV2-Speak", "basic_speak_nak"),
     ("sprites2/Re Hisao Nakai/Nak Revised/REV7-Worry", "basic_worry_nak"),
-    ("sprite edits/hisao/Nak Sweet", "basic_sweet_nak")
+    ("sprite edits/hisao/Nak Sweet", "basic_sweet_nak"),
 ]
 
 takawa = [
@@ -236,7 +246,7 @@ nakamura = [
     ("act 2 sprites/nakamura adjust/neutral", "neutral"),
     ("act 2 sprites/NAKAMURA/6 STRAIN", "strain"),
     ("act 2 sprites/NAKAMURA/7 BOW", "bow"),
-    ("act 2 sprites/nakamura adjust/thinking", "thinking")
+    ("act 2 sprites/nakamura adjust/thinking", "thinking"),
 ]
 
 karla = [
@@ -299,16 +309,28 @@ hiroyuki = [
     ("Sprites/Hiroyuki/THINKRAISED", "thinkraised"),
 ]
 
-def main():
-    import sys
 
+def main(args: dict):
+    update_paths(args)
     replace: list[str] = []
 
     for arg in sys.argv:
         if arg.startswith("--replace="):
             chars = arg[10:].lower()
             if chars == "all":
-                replace.extend(["hisao", "takawa", "naomi", "natsume", "hanako", "jun", "nakamura", "karla", "hiroyuki"])
+                replace.extend(
+                    [
+                        "hisao",
+                        "takawa",
+                        "naomi",
+                        "natsume",
+                        "hanako",
+                        "jun",
+                        "nakamura",
+                        "karla",
+                        "hiroyuki",
+                    ]
+                )
             else:
                 replace.extend(chars.split(","))
 
@@ -324,42 +346,156 @@ def main():
 
     for entry in hisao:
         if "Nak" not in entry[0]:
-            crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/hisao_{entry[1]}.png", replace=replace_hisao, crop=(0, 0, 1350, 2325), target_height=1080)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/close/hisao_{entry[1]}_close.png", replace=replace_hisao, crop=(0, 0, 1350, 1650), target_height=1080)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hisao/superclose/hisao_{entry[1]}_superclose.png", replace=replace_hisao, crop=(0, 0, 1350, 1312), target_height=1080)
+            crop_and_resize_image(
+                f"{entry[0]}",
+                f"hisao/hisao_{entry[1]}",
+                replace=replace_hisao,
+                crop=(0, 0, 1350, 2325),
+                target_height=1080,
+            )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"hisao/close/hisao_{entry[1]}_close",
+            replace=replace_hisao,
+            crop=(0, 0, 1350, 1650),
+            target_height=1080,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"hisao/superclose/hisao_{entry[1]}_superclose",
+            replace=replace_hisao,
+            crop=(0, 0, 1350, 1312),
+            target_height=1080,
+        )
 
     for entry in takawa:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/takawa/takawa_{entry[1]}.png", replace=replace_takawa, crop=(0, 0, 1350, 2295), target_height=935)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/takawa/close/takawa_{entry[1]}_close.png", replace=replace_takawa, crop=(0, 0, 1350, 2062), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"takawa/takawa_{entry[1]}",
+            replace=replace_takawa,
+            crop=(0, 0, 1350, 2295),
+            target_height=935,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"takawa/close/takawa_{entry[1]}_close",
+            replace=replace_takawa,
+            crop=(0, 0, 1350, 2062),
+            target_height=1080,
+        )
 
     for entry in naomi:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/naomi/naomi_{entry[1]}.png", replace=replace_naomi, target_height=1000)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/naomi/close/naomi_{entry[1]}_close.png", replace=replace_naomi, crop=(0, 0, 1350, 1800), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"naomi/naomi_{entry[1]}",
+            replace=replace_naomi,
+            target_height=1000,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"naomi/close/naomi_{entry[1]}_close",
+            replace=replace_naomi,
+            crop=(0, 0, 1350, 1800),
+            target_height=1080,
+        )
     # only supercloseup of naomi
-    crop_and_resize_image(f"../reference/Sprites/Naomi/Naomi bend laugh.png", f"../sprites/naomi/superclose/naomi_bend_laugh_superclose.png", replace=replace_naomi, crop=(0, 233, 1350, 1313))
+    crop_and_resize_image(
+        "Sprites/Naomi/Naomi bend laugh",
+        "naomi/superclose/naomi_bend_laugh_superclose",
+        replace=replace_naomi,
+        crop=(0, 233, 1350, 1313),
+    )
 
     for entry in natsume:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/natsume_{entry[1]}.png", replace=replace_natsume, target_height=950)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/natsume/close/natsume_{entry[1]}_close.png", replace=replace_natsume, crop=(0, 0, 1350, 1800), target_height=1030)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"natsume/natsume_{entry[1]}",
+            replace=replace_natsume,
+            target_height=950,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"natsume/close/natsume_{entry[1]}_close",
+            replace=replace_natsume,
+            crop=(0, 0, 1350, 1800),
+            target_height=1030,
+        )
 
     for entry in hanako:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hanako/close/hanako_{entry[1]}_close.png", replace=replace_hanako, crop=(0, 272, 878, 1614), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"hanako/close/hanako_{entry[1]}_close",
+            replace=replace_hanako,
+            crop=(0, 272, 878, 1614),
+            target_height=1080,
+        )
 
     for entry in jun:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/jun_{entry[1]}.png", replace=replace_jun, crop=(127, 18, 833, 1807), target_height=1020)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/jun/close/jun_{entry[1]}_close.png", replace=replace_jun, crop=(127, 18, 833, 1200), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"jun/jun_{entry[1]}",
+            replace=replace_jun,
+            crop=(127, 18, 833, 1807),
+            target_height=1020,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"jun/close/jun_{entry[1]}_close",
+            replace=replace_jun,
+            crop=(127, 18, 833, 1200),
+            target_height=1080,
+        )
 
     for entry in nakamura:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/nakamura_{entry[1]}.png", replace=replace_nakamura, crop=(0, 108, 1200, 1690), target_height=1020)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/nakamura/close/nakamura_{entry[1]}_close.png", replace=replace_nakamura, crop=(0, 108, 1200, 1188), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"nakamura/nakamura_{entry[1]}",
+            replace=replace_nakamura,
+            crop=(0, 108, 1200, 1690),
+            target_height=1020,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"nakamura/close/nakamura_{entry[1]}_close",
+            replace=replace_nakamura,
+            crop=(0, 108, 1200, 1188),
+            target_height=1080,
+        )
 
     for entry in karla:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/karla_{entry[1]}.png", replace=replace_karla, crop=(0, 126, 1050, 1846), target_height=1020)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/karla/close/karla_{entry[1]}_close.png", replace=replace_karla, crop=(0, 126, 1050, 1206), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"karla/karla_{entry[1]}",
+            replace=replace_karla,
+            crop=(0, 126, 1050, 1846),
+            target_height=1020,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"karla/close/karla_{entry[1]}_close",
+            replace=replace_karla,
+            crop=(0, 126, 1050, 1206),
+            target_height=1080,
+        )
 
     for entry in hiroyuki:
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hiroyuki/hiroyuki_{entry[1]}.png", replace=replace_hiroyuki, crop=(0, 114, 1050, 1810), target_height=1020)
-        crop_and_resize_image(f"../reference/{entry[0]}.png", f"../sprites/hiroyuki/close/hiroyuki_{entry[1]}_close.png", replace=replace_hiroyuki, crop=(0, 114, 1050, 1356), target_height=1080)
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"hiroyuki/hiroyuki_{entry[1]}",
+            replace=replace_hiroyuki,
+            crop=(0, 114, 1050, 1810),
+            target_height=1020,
+        )
+        crop_and_resize_image(
+            f"{entry[0]}",
+            f"hiroyuki/close/hiroyuki_{entry[1]}_close",
+            replace=replace_hiroyuki,
+            crop=(0, 114, 1050, 1356),
+            target_height=1080,
+        )
+
 
 if __name__ == "__main__":
-    main()
+    parser = ArgumentParser(description="Sisterhood sprite generation tool")
+    add_arguments(parser, refdir=True)
+    main(vars(parser.parse_args(sys.argv[1:])))

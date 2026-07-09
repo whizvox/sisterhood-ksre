@@ -12,6 +12,3 @@
 /scripts/build
 /scripts/usage.json
 /scripts/tmp
-
-# VSCode stuff
-/.vscode
