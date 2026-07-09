@@ -1,12 +1,6 @@
 # Compiled Ren'Py scripts
 *.rpyc
 
-# Reference folder for original assets
-/reference
-
-# Zipped reference file
-/reference.zip
-
 # Stuff used by scripts
 /scripts/__pycache__
 /scripts/usage.json

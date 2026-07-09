@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.rpyc": true,
+        "**/*.rpym": true,
+        "**/*.rpa": true,
+        "**/*.rpymc": true,
+        "**/cache/": true
+    },
+    "sisterhood.ksreProjectDir": "KSRE_PROJECT_DIR",
+    "sisterhood.buildDir": "BUILD_DIR",
+}
