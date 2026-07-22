@@ -23,6 +23,7 @@ label sh_ch2:
             matrixcolor SaturationMatrix(0)
         with dissolve
 
+        nvl clear
         nvl show dissolve
 
         n "Two days ago, Hanako and I met in the park in an attempt to salvage our friendship, which had taken a turn for the extremely awkward after we spent the night with each other the evening before."

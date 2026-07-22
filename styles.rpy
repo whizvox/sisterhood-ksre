@@ -22,3 +22,6 @@ style shdiary_text:
     color "#000"
     size 34
     line_spacing -2
+
+style nvl_window:
+    background DynamicDisplayable(_sh_get_nvl_bg)

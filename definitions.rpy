@@ -195,7 +195,6 @@ init:
     define mu = Character(kind=mu, screen="say_sh")
     define ke = Character(kind=ke, screen="say_sh")
     define mystery = Character(kind=mystery, screen="say_sh")
-    define n = Character(kind=n, window_background=DynamicDisplayable(_sh_get_nvl_bg))
 
     define ta = Character(_("Takawa"), who_color="#f3ccff")
     define na = Character(_("Naomi"), who_color="#ad4545")
