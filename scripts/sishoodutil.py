@@ -70,6 +70,9 @@ def resolve_path(plainpath: str) -> Path:
     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
     if len(plainpath) > 0 and plainpath[0] == "~":
         return Path(ks_path, plainpath[1:])
+    # paths starting with @ should be in reference to the reference directory
+    if len(plainpath) > 0 and plainpath[0] == "@":
+        return Path(ref_path, plainpath[1:])
     # otherwise, by default, paths will be in reference to the sisterhood directory
     else:
         return Path(sh_path, plainpath)

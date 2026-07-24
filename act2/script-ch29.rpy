@@ -52,12 +52,12 @@ label sh_ch29:
         hi "Pretty impressive, isn't it?"
 
         show hisao basic_smile_bath:
-            center
-            xanchor 0.5 xpos 0.7 alpha 0.0
-            ease 0.5 center alpha 1.0
+            offscreenleft
+            alpha 0.0
+            ease 0.5 left alpha 1.0
         with Pause(0.5)
 
-        show hisao at center:
+        show hisao at left:
             alpha 1.0
         with None
 
@@ -130,6 +130,9 @@ label sh_ch29:
         "I hear some rustling next to me, and a few seconds later Hisao, now completely naked, strolls past me."
         "He heads over to the washing area, sits down on one of the stools next to the faucets, reaches forward, and starts filling up the wooden buckets, occasionally testing the temperature of the water inside them with his finger."
         "I find myself staring at him for a moment, then let out a soft sigh. I guess it's too late to start having second thoughts."
+
+        play sound sfx_rustling
+
         "I remove my bathrobe, slowly approach Hisao, and sit down on the stool next to him."
 
         scene bg satou_bathroom_ni
@@ -199,7 +202,7 @@ label sh_ch29:
             easein 10.0 alpha 0.6
         with None
 
-        "I unhook the shower head from the nearby wall, turn it on and briefly spray his back and his hair. I then put some liquid soap into my hands, rub them together for a moment and start soaping his back."
+        "I unhook the shower head from the nearby wall, turn it on and briefly spray his back and his hair. I then put some liquid soap into my hands, rub them together for a moment, and start soaping his back."
 
         stop ambient fadeout 1.0
 
@@ -368,8 +371,16 @@ label sh_ch29:
         with charachangeev
 
         "He drapes the hair he was tending to back over my right shoulder, embraces me from behind, and kisses me on the cheek. Then he just holds me for a little while."
+
+        # TODO no transitional CG for this part. maybe a fade to black would be best?
+
+        play ambient sfx_shower2 fadein 2.0
+
         "Eventually, after determining that the conditioner must have had enough time to do its thing, I take the shower head and use it to rinse the shampoo away."
         "I guess this is the point where we'll soap up the rest of our bodies. Or maybe…"
+
+        stop ambient fadeout 2.0
+
         hi "…Hanako?"
 
         stop music fadeout 2.0
@@ -425,7 +436,8 @@ label sh_ch29:
         hi "Hanako, could you… uh… help me with this before we get into the bath?"
         "I blush heavily, but nevertheless find myself nodding."
 
-        scene ev soapopera_hisao2_handy
+        scene ev soapopera_hisao2_handy_large:
+            zoom 0.5
         show steam at truecenter, nightfilter:
             alpha 0.6
         with charachangeev
@@ -433,26 +445,56 @@ label sh_ch29:
         "I apply some extra liquid soap to my hands and then I take hold of him, wrapping my other arm around him from behind."
         "I start kissing him once more, moving my hand as I do so. I consider slowly building things up, but by the way he's thrusting his hips I don't think he's in need of a warm-up at this point."
         "I tighten my grip a bit and move my hand up and down his length in tandem with his thrusts. I think I'm getting pretty excited myself from the reactions my caresses are drawing out of him."
+
+        show ev:
+            zoom 1.0 crop (1033, 88, 1920, 1080)
+        with { "master": charachangeev }
+
         "Hisao probably had a point just now. When a girl and a boy who haven't been together for all that long get together in a bathroom, stuff like this is probably bound to happen."
         "I'm actually a little bit surprised that he didn't suggest doing it with me right here and now."
         "Maybe he was thinking the same thing I was: the only options we'd have here would be doing it on the bathroom floor or in the bath itself."
         "The first option probably would have been rather uncomfortable and the second option would have been a really bad idea."
 
-        scene ev soapopera_hisao_climax
-        with charachangeev
+        show soapopera_hisao climax behind steam:
+            crop (1033, 88, 1920, 1080)
+        with { "master": charachangeev }
 
         "I keep going, kissing his neck and cheek, using one hand to pleasure him and letting the other one roam across his chest and tummy until I can tell that he's nearing his limit."
+
+        hide soapopera_hisao
+        show ev soapopera_hisao2_climax_large at truecenter:
+            crop None anchor (1993, 628) transform_anchor True
+            ease 10.0 zoom 0.9
+        with { "master": charachangeev }
+
         "Deciding to end things with a bang, I press myself against him even more tightly and start using both hands while rubbing myself against his back."
         "Since he's still covered with soap, it goes really smoothly, and I have to admit it feels pretty good to me too."
         "Both his breath and his movements grow faster and faster, and I enthusiastically adjust the speed of my own movement, pushing my hips forward in order to add a little bit more force to his own thrusts."
         "Suddenly, he exhales sharply and makes several jerking motions with his hips."
 
-        scene ev soapopera_hisao_after
+        window auto hide dissolve
+
+        show ev:
+            anchor (0.5, 0.45) zoom 0.65
+            ease 0.5 zoom 0.6
+            2.0
+            ease 5.0 blur 40
         with charachangeev
 
+        pause 2.0
+
+        scene black
+        with Fade(2.0, 1.0, 1.5, color="#FFF")
+
         "I wait until his climax has subsided and then hold him in a tender embrace until I can feel him relax."
+
+        play ambient sfx_shower2 fadein 1.0
+
         "After letting go of him, I take one of the nearby showerheads and use it to wash my hands."
-        "Then I place my hand on his chest until his nod tells me that he's alright and use the showerhead to get the soap off, wash the evidence of our activity down the nearby floor drain and clean him from head to toe."
+        "Then I place my hand on his chest until his nod tells me that he's alright and use the showerhead to get the soap off, wash the evidence of our activity down the nearby floor drain, and clean him from head to toe."
+
+        stop ambient fadeout 2.0
+
         "As I turn off the water, my boyfriend smiles at me."
         hi "Thanks, Hanako. That was really good."
         "I fidget a bit upon hearing his praise and then simply nod my head. This is not a subject I want to get into a back-and-forth with him over."

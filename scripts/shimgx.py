@@ -6,21 +6,21 @@ import sys
 import random
 import string
 import subprocess
+from sishoodutil import add_arguments, update_paths, relative_to_sh_path, resolve_path
 
-sh_path: Path = Path(".")
-ks_path: Path = Path(".")
 waifu2x_path: Path = Path(".")
 
 def random_string(length: int) -> str:
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
 
-def resolve_path(plainpath: str) -> Path:
-    # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
-    if len(plainpath) > 0 and plainpath[0] == "~":
-        return Path(ks_path, "game", plainpath[1:])
-    # otherwise, by default, paths will be in reference to the sisterhood directory
-    else:
-        return Path(sh_path, plainpath)
+# def resolve_path(plainpath: str) -> Path:
+#     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
+#     if len(plainpath) > 0 and plainpath[0] == "~":
+#         return Path(ks_path, "game", plainpath[1:])
+#     # otherwise, by default, paths will be in reference to the sisterhood directory
+#     else:
+#         #return Path(sh_path, plainpath)
+#         return resolve_path(plainpath)
 
 class ImageTransformation:
     def __init__(self, name: str):
@@ -304,25 +304,25 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
     # chapter 29
-    ("reference/Event Art/Soap Opera/edit/hisao1_back_dark.png",        "event/soapopera/soapopera_hisao1_back.jpg",        [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hisao1_back_dark.png",        "event/soapopera/soapopera_hisao1_back_large.jpg"),
-    ("reference/Event Art/Soap Opera/edit/hisao1_lay_dark.png",         "event/soapopera/soapopera_hisao1_lay.jpg",         [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hisao1_lay_dark.png",         "event/soapopera/soapopera_hisao1_lay_large.jpg"),
-    ("reference/Event Art/Soap Opera/edit/hanako1_back_dark.png",       "event/soapopera/soapopera_hanako1_back.jpg",       [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hanako1_back_dark.png",       "event/soapopera/soapopera_hanako1_back_large.jpg"),
-    ("reference/Event Art/Soap Opera/edit/hanako1_hair_dark.png",       "event/soapopera/soapopera_hanako1_hair_large.jpg"),
-    ("reference/Event Art/Soap Opera/edit/hanako1_hairtalk_dark.png",   "event/soapopera/soapopera_hanako1_hairtalk_large.jpg"),
-    ("reference/Event Art/Soap Opera/overlay/ha_hanako1_talk.png",      "event/soapopera/soapopera_hanako_talk_overlay.png"),
-    ("reference/Event Art/Soap Opera/overlay/hi_hanako1_talk.png",      "event/soapopera/soapopera_hisao_talk_overlay.png"),
-    ("reference/Event Art/Soap Opera/edit/hisao2_hug_dark.png",         "event/soapopera/soapopera_hisao2_hug.jpg",         [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hisao2_hug_dark.png",         "event/soapopera/soapopera_hisao2_hug_large.jpg"),
-    ("reference/Event Art/Soap Opera/edit/hisao2_erection_dark.png",    "event/soapopera/soapopera_hisao2_erection.jpg",    [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hisao2_erection_dark.png",    "event/soapopera/soapopera_hisao2_erection_large.jpg"),
-    ("reference/Event Art/Soap Opera/edit/hisao2_handy_dark.png",       "event/soapopera/soapopera_hisao2_handy.jpg",       [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hisao2_climax_dark.png",      "event/soapopera/soapopera_hisao2_climax.jpg",      [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hanako2_caress_dark.png",     "event/soapopera/soapopera_hanako2_caress.jpg",     [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hanako2_spray_dark.png",      "event/soapopera/soapopera_hanako2_spray.jpg",      [RESIZE_1080P]),
-    ("reference/Event Art/Soap Opera/edit/hanako2_climax_dark.png",     "event/soapopera/soapopera_hanako2_climax.jpg",     [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hisao1_back.png",                  "event/soapopera/soapopera_hisao1_back.jpg",        [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hisao1_back.png",                  "event/soapopera/soapopera_hisao1_back_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hisao1_lay.png",                   "event/soapopera/soapopera_hisao1_lay.jpg",         [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hisao1_lay.png",                   "event/soapopera/soapopera_hisao1_lay_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hanako1_back.png",                 "event/soapopera/soapopera_hanako1_back.jpg",       [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hanako1_back.png",                 "event/soapopera/soapopera_hanako1_back_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hanako1_hair.png",                 "event/soapopera/soapopera_hanako1_hair_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hanako1_talk_hanako_overlay.png",  "event/soapopera/soapopera_hanako1_hairtalk_hanako.png"),
+    ("@Event Art/Soap Opera Corrections/edit/hanako1_talk_hisao_overlay.png",  "event/soapopera/soapopera_hanako1_hairtalk_hisao.png"),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_hug.png",                   "event/soapopera/soapopera_hisao2_hug.jpg",         [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_hug.png",                   "event/soapopera/soapopera_hisao2_hug_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_erection.png",              "event/soapopera/soapopera_hisao2_erection.jpg",    [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_erection.png",              "event/soapopera/soapopera_hisao2_erection_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_handy.png",                 "event/soapopera/soapopera_hisao2_handy_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_climax_hisao_overlay.png",  "event/soapopera/soapopera_hisao2_climax_hisao.png"),
+    ("@Event Art/Soap Opera Corrections/edit/hisao2_climax.png",                "event/soapopera/soapopera_hisao2_climax_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hanako2_caress.png",               "event/soapopera/soapopera_hanako2_caress.jpg",     [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hanako2_spray.png",                "event/soapopera/soapopera_hanako2_spray.jpg",      [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hanako2_climax.png",               "event/soapopera/soapopera_hanako2_climax.jpg",     [RESIZE_1080P]),
     # chapter 30+31
     ("reference/Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),
     ("reference/Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_B_FINAL_1.1.jpg", "event/bedridden/bedridden_akira.jpg", [RESIZE_1080P]),
@@ -448,45 +448,33 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
 ]
 
 
-class Arguments:
-    shdir: str
-    ksdir: str
-    waifu2x: str
-    replace: bool
-
-
-def _update_paths(args: Arguments):
-    global sh_path
-    global ks_path
+def main(args: dict):
     global waifu2x_path
-    sh_path = Path(args.shdir)
-    ks_path = Path(args.ksdir)
-    waifu2x_path = Path(args.waifu2x)
+    if "waifu2x" in args and args["waifu2x"] is not None:
+        waifu2x_path = Path(args["waifu2x"])
+    update_paths(args)
 
-
-def main(args: Arguments):
-    _update_paths(args)
     images_to_process: list[ImageProcess] = []
     for entry in IMAGES + PHOTOGRAPHS:
         transforms = []
         if len(entry) == 3:
             transforms = entry[2]
         inpath = resolve_path(entry[0])
-        outpath = Path(sh_path, entry[1]) # type: ignore
+        outpath = resolve_path(entry[1])
         if entry in IMAGES and entry[1].endswith(".jpg"):
             transforms.append(CHECK_1080P)
             transforms.append(convert_rgb())
         images_to_process.append(ImageProcess(inpath, outpath, transforms, quality=90))
+
     for process in images_to_process:
-        process.transform(args.replace)
+        process.transform(args["replace"])
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Sisterhood image export tool"
     )
-    parser.add_argument("-s", "--shdir", required=True, help="location of Sisterhood project directory")
-    parser.add_argument("-k", "--ksdir", required=True, help="location of Katawa Shoujo: Re-Engineered project directory")
-    parser.add_argument("-w", "--waifu2x", required=True, help="location of waifu2x CLI tool")
-    parser.add_argument("-r", "--replace", action="store_true", default=False, help="whether to replace pre-existing image files")
-    main(parser.parse_args(sys.argv[1:], namespace=Arguments()))
+    add_arguments(parser, refdir=True)
+    parser.add_argument("-w", "--waifu2x", required=False, help="location of waifu2x CLI tool")
+    parser.add_argument("-e", "--replace", action="store_true", default=False, help="whether to replace pre-existing image files")
+    main(vars(parser.parse_args(sys.argv[1:])))
