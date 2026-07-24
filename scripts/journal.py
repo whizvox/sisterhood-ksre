@@ -204,7 +204,8 @@ def export_rpy_images(images: list[Image], xoff: float=0) -> str:
 
 def export_rpy(pages: list[Page]) -> str:
     calls: list[str] = []
-    for i in range(math.ceil(len(pages) / 2)):
+    pagecount = math.ceil(len(pages) / 2)
+    for i in range(pagecount):
         callstr = "call screen sh_journal(\n    "
         left = i * 2
         right = i * 2 + 1
@@ -226,9 +227,13 @@ def export_rpy(pages: list[Page]) -> str:
             imgstr = export_rpy_images(leftimages)
         if len(imgstr) > 0:
             callstr += f",\n    [\n        {imgstr}\n    ]"
+        if i == pagecount - 1:
+            callstr += ",\n    _with_none=False"
         callstr += "\n)"
         if len(calls) == 0:
             callstr += " with dissolve"
+        if i == pagecount - 1:
+            callstr += "\nwith dissolve"
         calls.append(callstr)
     return "\n\n".join(calls)
 

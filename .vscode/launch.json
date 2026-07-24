@@ -19,7 +19,16 @@
             "request": "launch",
             "program": "${workspaceFolder}/scripts/shimgx.py",
             "console": "integratedTerminal",
-            "args": "-s ${workspaceFolder} -k ${config:sisterhood.ksreProjectDir} -w ${config:sisterhood.waifu2xDir} ${command:pickArgs}",
+            "args": "-s ${workspaceFolder} -k ${config:sisterhood.ksreProjectDir} -r ${config:sisterhood.referenceDir} -w ${config:sisterhood.waifu2xDir} ${command:pickArgs}",
+        },
+        {
+            "name": "Export Journal",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/journal.py",
+            "console": "integratedTerminal",
+            "args": "-d ${config:sisterhood.ksreProjectDir} ${command:pickArgs}",
+            "cwd": "${workspaceFolder}/scripts"
         },
         {
             "name": "Build .rpa File",

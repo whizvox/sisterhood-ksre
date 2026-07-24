@@ -40,12 +40,24 @@ label sh_ch28:
         ha "EEK!"
         "I let out a high-pitched cry, spring to my feet and turn around."
 
-        show hisao cross_grin_polo at right
-        with charaenter
+        show hisao cross_grin_polo_close at offscreenright:
+            alpha 0.0
+        with None
+
+        show hisao at right:
+            linear 0.5 alpha 1.0
+        with charamovefastest
+
+        show hisao:
+            alpha 1.0
+        with None
 
         "Standing behind me is Hisao, sporting a broad grin that would make the head nurse jealous. I quickly avert my eyes while trying to keep my rapidly emerging blush in check. It looks like he decided to look me up, heard me on his way over here, and decided to sneak up on me."
 
-        show hisao basic_smile_polo_close at center
+        show hisao at center
+        with charamovefaster
+
+        show hisao basic_smile_polo_close
         with chchange
 
         "Hisao takes a moment to enjoy his own joke and then gives me a quick peck on the cheek to reassure me."
@@ -264,7 +276,7 @@ label sh_ch28_journal_en:
             (Image(f"{sh_path}/gui/journal/d16c.png"), 0.864, 0.22),
             (Image(f"{sh_path}/gui/journal/d16d.png"), 0.855, 0.67),
             (Image(f"{sh_path}/gui/journal/d16e.png"), 0.75, 0.06),
-            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p08.jpg"), 0.72, 0.2968)
+            (Composite((535, 360), (0, 0), f"{sh_path}/gui/journal/dropshadow.png", (5, 5), f"{sh_path}/gui/journal/p08.jpg"), 0.72, 0.2626)
         ]
     )
 
@@ -369,5 +381,7 @@ label sh_ch28_journal_en:
 
     call screen sh_journal(
         "\n\nWe got a cotton bag, certificate with her name, a sticker, information guide and they gave us a really cute picture of our dolphin as a bonus. Lilly and her mother will be visiting a theater play this evening, so we decided to return to the Satou home without making any more detours.\n\nMusings:\nWhen Lilly's father spoke to me this morning, he suggested taking a traditional bath if I had the time. It's natural for a host to go out of his way to accommodate his guest, but I wonder if that was all there was to it. I remember accompanying my mother to a public bath a few times in the past. I enjoyed it back then. I don't think I could stand entering a public bath these days anymore, no matter how much confidence I'd gain. In fact, I'm willing to bet I'd be denied entry because the owners would feel the sight of me would upset the other visitors too much.",
-        "\n\nDid Lilly's father mean to imply that this would be an opportunity? The bathroom's large enough to accommodate six to eight people at once. It's kind of a public bath without the public. Should I give it a try for old times sake?"
+        "\n\nDid Lilly's father mean to imply that this would be an opportunity? The bathroom's large enough to accommodate six to eight people at once. It's kind of a public bath without the public. Should I give it a try for old times sake?",
+        _with_none=False
     )
+    with dissolve

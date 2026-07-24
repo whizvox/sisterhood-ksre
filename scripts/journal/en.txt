@@ -258,7 +258,7 @@ photo. They looked so extremely cute I still smile whenever I picture them in my
 
 !{d16e, x=0.6, y=0.06}
 
-!{p08}
+!{p08, top=-1}
 
 Musings:
 While browsing through the camera's memory, I found out something embarrassing. Apparently Hisao took a picture of me while I was asleep in our bed. Perhaps he thought I looked cute while sleeping. That wasn't really the issue though. The problem was the fact that I wasn't wearing anything when he took that
