@@ -122,7 +122,7 @@ init 1 python:
     sh_event("caress", ["normal", "large"])
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
     sh_event("pillowtalk", ["kiss"])
-    sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hanako1_hairtalk_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress", "hanako2_spray", "hanako2_climax"])
+    sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hanako1_hairtalk_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress_large", "hanako2_spray_large", "hanako2_climax"])
     sh_event("celloandwine", ["peek", "block", "block_smile", "lap_forward", "lap_rest", "lap_pause", "lap_embrace", "lap_applause", "lap_victory", "lap_kiss"])
     sh_event("tipsyfun", ["collapse_morning"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])

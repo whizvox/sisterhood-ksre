@@ -320,8 +320,8 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Soap Opera Corrections/edit/hisao2_handy.png",                 "event/soapopera/soapopera_hisao2_handy_large.jpg"),
     ("@Event Art/Soap Opera Corrections/edit/hisao2_climax_hisao_overlay.png",  "event/soapopera/soapopera_hisao2_climax_hisao.png"),
     ("@Event Art/Soap Opera Corrections/edit/hisao2_climax.png",                "event/soapopera/soapopera_hisao2_climax_large.jpg"),
-    ("@Event Art/Soap Opera Corrections/edit/hanako2_caress.png",               "event/soapopera/soapopera_hanako2_caress.jpg",     [RESIZE_1080P]),
-    ("@Event Art/Soap Opera Corrections/edit/hanako2_spray.png",                "event/soapopera/soapopera_hanako2_spray.jpg",      [RESIZE_1080P]),
+    ("@Event Art/Soap Opera Corrections/edit/hanako2_caress.png",               "event/soapopera/soapopera_hanako2_caress_large.jpg"),
+    ("@Event Art/Soap Opera Corrections/edit/hanako2_spray.png",                "event/soapopera/soapopera_hanako2_spray_large.jpg"),
     ("@Event Art/Soap Opera Corrections/edit/hanako2_climax.png",               "event/soapopera/soapopera_hanako2_climax.jpg",     [RESIZE_1080P]),
     # chapter 30+31
     ("reference/Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),

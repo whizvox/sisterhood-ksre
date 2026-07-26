@@ -499,17 +499,25 @@ label sh_ch29:
         hi "Thanks, Hanako. That was really good."
         "I fidget a bit upon hearing his praise and then simply nod my head. This is not a subject I want to get into a back-and-forth with him over."
         "I guess it's my turn next."
+        "I'm not really sure what to do now, so I simply remain seated and wait until Hisao comes over to me, sits down behind me, and wraps his arms around me."
 
-        scene ev soapopera_hanako_bodywash
-        with mediumflash
+        scene ev soapopera_hanako2_caress_large:
+            zoom 0.5
+        show steam at truecenter, nightfilter:
+            alpha 0.6
+        with Fade(1.0, 0.0, 1.0, color="#27265a")
 
-        "I'm not really sure what to do now, so I simply remain seated and wait until Hisao comes over to me, sits down behind me and wraps his arms around me."
         hi "You can lean into me a bit, Hanako."
-        "I do so and try to relax as much as possible as he takes the bottle of soap, pours some into his hands and starts rubbing it onto my arms and shoulders."
+        "I do so and try to relax as much as possible as he takes the bottle of soap, pours some into his hands, and starts rubbing it onto my arms and shoulders."
         "I barely manage to hold back a giggle when he playfully tickles my left armpit. I don't think a simple washing is all Hisao wants to give me."
         hi "Can you move your right leg just a little bit, Hanako?"
         "Feeling a little bit flustered, I open my legs a bit and let him wash them though I quickly cover up my intimate area with one of my hands when he approaches my inner thighs."
         "He moves on to my tummy and sides without breaking stride, but pauses for a moment when he gets near my chest. Then he gently tucks my chin up with his finger."
+
+        show ev:
+            align (0.5, 0.21) zoom 1.0
+        with charachangeev
+
         ha "Hisao…"
         "My voice is cut off when a shower of kisses descends on my left cheek and neckline. I'm so distracted by this that I barely notice how his hands are massaging my breasts, covering them with soap."
         "Not content with just that, his hands proceed to carress my chest."
@@ -521,14 +529,30 @@ label sh_ch29:
         ha "There's… uh… s-soap on your hands…"
         "Soap I'd rather not accidentally have forced inside me."
         hi "Oh… right."
-        "He moves away, takes the showerhead that I used to clean him, turns on the faucet and washes the soap off his hands. Then he kneels behind me again and hugs me once more, softly kneading my breasts for a second time."
+
+        show black
+        with charachangeev
+
+        play ambient sfx_shower2 fadein 1.0
+
+        "He moves away, takes the showerhead that I used to clean him, turns on the faucet, and washes the soap off his hands."
+
+        stop ambient fadeout 2.0
+
+        "Then he kneels behind me again and hugs me once more, softly kneading my breasts for a second time."
+
+        hide black
+        with charachangeev
+
         "Now his hands are covered in soap again."
         ha "Uh… Hisao?"
         "I hear him chuckle."
         hi "Yeah, I know. Maybe I should simply do it without using my hands."
         "Huh?"
 
-        scene ev soapopera_hanako_showerhead
+        play ambient sfx_shower2 fadein 1.0
+
+        show ev soapopera_hanako2_spray_large
         with charachangeev
 
         "Still fondling one of my breasts with one hand, he picks up the showerhead and aims the water spray at my chest."
@@ -536,12 +560,29 @@ label sh_ch29:
         "His hand slides downward and gently spreads my legs."
         ha "H-Hisao?"
         "His only response is another quick peck on my cheek."
-        "Just when I'm about to ask him what he meant with that earlier comment, his other hand moves downward as well and the warm sensation that was focussed on my chest earlier is now emanating from between my legs."
+        "Just when I'm about to ask him what he meant with that earlier comment, his other hand moves downward as well and the warm sensation that was focused on my chest earlier is now emanating from between my legs."
+
+        show ev at truecenter:
+            align (0.5, 0.45) zoom 0.7
+            ease 0.3 zoom 0.72
+            ease 0.2 zoom 0.7
+        with charachangeev
+
         "My body jumps a bit as my most intimate place is suddenly stimulated by several narrow streams of water at the same time."
         ha "H-hey!"
         "This is… a pretty new sensation. It's different from when he uses his fingers. The fact that the stimulation is continuous is… not bad at all."
+
+        show ev:
+            align (0.5, 0.21) zoom 1.0
+        with { "master": charachangeev }
+
         "Hisao's other hand moves up again and goes back to fondling my stomach, chest and collarbone. As I endure this strange new experience, I try to focus on the feeling in my chest since it's the more familiar one…"
         ha "Mmmm…"
+
+        show ev:
+            align (0.5, 0.45) zoom 0.7
+        with { "master": charachangeev }
+
         "…which becomes harder and harder as the sensation from the water continues and starts feeling better and better, and I start getting more and more aroused because of it."
         "And then he turns the switch on the side, disabling the smaller jets and turning on the stronger stream from the holes in the center, which intensifies the sensation even more."
         "I start panting, my body reacting strongly to the stimulation."
@@ -549,37 +590,59 @@ label sh_ch29:
         "I can't believe this is happening."
         "He moves the showerhead even closer to my sensitive spot, making the sensation even more overwhelming than it already was. A moan of pleasure escapes from my lips."
         "I don't think I'll ever be able to look at a showerhead again without blushing."
-
         "My legs and thighs have now started trembling from the pleasure."
         "My breathing comes out in sharp gasps as the non-stop sensation rapidly drags me towards my limit. My moaning is starting to get audible above the sound of running water."
         ha "Mmmmmmm!"
+        "I squeeze my eyes shut and grit my teeth in an attempt to brace myself."
 
-        scene ev soapopera_hanako_climax
+        show ev soapopera_hanako2_climax at truecenter:
+            zoom 1.05
+            ease 0.5 zoom 1.0
         with charachangeev
 
-        "I squeeze my eyes shut and grit my teeth in an attempt to brace myself."
         "And then the climax hits me; several jolts of intense pleasure that cause my body to shudder uncontrollably. It's like a white light flashes brightly in the back of my head."
         "I let out a whimper of ecstasy before I can control myself."
 
-        scene bg satou_bathroom
-        with locationchange
+        stop music fadeout 5.0
+
+        scene black
+        with Fade(2.0, 1.0, 1.5, color="#FFF")
 
         "After the last shock has passed through me, I instinctively push the showerhead away and let out a long, deep sigh."
+
+        stop ambient fadeout 2.0
+
         "Hisao turns off the faucet and just sits there holding me for several minutes until my heartbeat and breathing have returned to normal."
-        "Then he turns the showerhead back on and washes me all over. When the last traces of soap have been rinsed off, he turns off the water, gets up and looks at me."
+
+        play ambient sfx_shower2 fadein 1.0
+
+        "Then he turns the showerhead back on and washes me all over."
+
+        stop ambient fadeout 2.0
+
+        "When the last traces of soap have been rinsed off, he turns off the water, gets up, and looks at me."
         hi "Hanako, can you stand?"
         ha "Y-yes."
 
+        scene bg satou_bathroom_ni
+        show hisao basic_smile_nak_close_ni
+        with locationchange
+
         play music music_serene fadein 4.0
 
-        show hisao basic_smile_nak_close
-        with charaenter
-
         "He extends his hand towards me, I take it, and he pulls me up. My legs are still a bit shaky, but the small distance to the bath shouldn't be a problem."
+
+        show hisao:
+            ease 0.5 right alpha 0.0
+        with Pause(0.5)
+
+        hide hisao
+        with None
+
         "Hisao gets in the bath ahead of me and takes my hand. He helps me in, and then we sit down and huddle together in one of the bath's corners."
 
         scene ev sharedsoak_hisao_lean
-        with mediumflash
+        with Fade(1.0, 0.0, 1.0, color="#27265a")
 
         "We let out a long mutual sigh as the warm water envelops us."
         "This feels so good."
