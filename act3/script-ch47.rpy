@@ -95,13 +95,13 @@ label sh_ch47:
         "Mom walks out of the room, and I'm about to sit down when I hear a shuffling sound behind me, followed by a familiar voice."
         li "Father, I just heard the doorbell. Was that...?"
 
-        show lilly basic_listen_yuk at twoleft
+        show lilly basic_listen at twoleft
         with charaenter
 
         "I instantly break out into a smile which grows even bigger when I see my sister carefully navigating into the room."
         aki "Hey there, Lils!"
 
-        show lilly basic_concerned_yuk_close at center
+        show lilly basic_concerned_close at center
         with chchangefast
 
         play sound sfx_impact
@@ -114,26 +114,26 @@ label sh_ch47:
         "I walk up to Lilly and grab her in a not-so-gentle bear hug, chuckling to myself when she lets out an involuntary whimper."
         "Yup, still a wimp."
 
-        show lilly basic_overjoyed_yuk_close at center
+        show lilly basic_overjoyed_close at center
         with chchange
 
         "After recovering from the surprise, Lilly happily hugs me back."
         "We stay like that for a second, and then I break off the embrace and give my sister a long look-over."
 
-        show lilly basic_smileclosed_yuk at twoleft
+        show lilly basic_smileclosed at twoleft
         show hiroyuki thinking
         with chchange
 
         aki "Well, don't you look gorgeous?"
         "My words aren't empty flattery. Lilly truly looks beautiful in her dazzling white kimono. Mom must have bought it for her after they moved back here."
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         with chchange
 
         li "Hello Akira. I'm so glad you could make it here. Happy New Year."
         aki "Happy New Year to you as well. It's really good to see you again too. How's the studying coming along?"
 
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         show hiroyuki smile
         with chchange
 
@@ -157,7 +157,7 @@ label sh_ch47:
         ha "H-Happy N-New Year, Akira."
         "I give Hanako a look-over that's quick enough to avoid making her uncomfortable."
 
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         with chchange
 
         aki "I'll be damned if you aren't the cutest sight I've seen in months."
@@ -180,7 +180,7 @@ label sh_ch47:
         "All in all she still did a good job, aside from one spot near the back where it seems just a little bit uneven."
         aki "Color me impressed."
 
-        show lilly basic_displeased_yuk
+        show lilly basic_displeased
         show hanako emb_downtimid
         with chchange
 
@@ -223,7 +223,7 @@ label sh_ch47:
         "Dad readjusts the pair of glasses resting on the tip of his nose."
 
         show karla basic_sheepish_cas
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         show hanako emb_timid
         with chchange
 
@@ -243,7 +243,7 @@ label sh_ch47:
         show hiroyuki serious
         with chchange
 
-        show lilly basic_smileclosed_yuk at offscreenleft
+        show lilly basic_smileclosed at offscreenleft
         show hanako basic_normal at offscreenleft
         with charamove
 
@@ -472,18 +472,22 @@ label sh_ch47:
         kamo "The two of you will have to save the rest of the memories for tonight's dinner, girls. The parking lot belonging to the shrine is just down the road."
 
         scene bg shrine_entrance
-        show hiroyuki thinking at tworight
-        show karla basic_smileclosed_cas at right
-        show lilly basic_smileclosed_yuk at twoleft
-        show hanako basic_distant at left
-        with charaenter
+        with locationchange
 
         $ renpy.music.set_audio_filter("sound", renpy.audio.filter.Lowpass(1200))
 
         play sound sfx_crowd_outdoors volume 0.2 fadein 2.0
 
         "As Dad parks the car near the stairs beyond the shrine gate, I let my eyes sweep across the parking lot. I see quite a few cars here, and there's a bus nearby whose passengers have just disembarked and are now making their way up the stairs."
-        "We might end up having to wait in line for quite some time. Thank goodness it's not too cold right now. We get out, and I turn to Hanako, who's been silent for pretty much the entire trip."
+        "We might end up having to wait in line for quite some time. Thank goodness it's not too cold right now."
+
+        show hiroyuki thinking at tworight
+        show karla basic_smileclosed_cas at right
+        show lilly basic_smileclosed at twoleft
+        show hanako basic_distant at left
+        with charaenter
+
+        "We get out, and I turn to Hanako, who's been silent for pretty much the entire trip."
         aki "Hey Hanako, would you mind helping Lilly up the stairs? Tripping up and tumbling down would be a really rotten way to start the new year."
 
         scene black
@@ -518,7 +522,7 @@ label sh_ch47:
 
         hide hiroyuki
         hide karla
-        show lilly basic_smile_yuk at twoleft
+        show lilly basic_smile at twoleft
         show hanako emb_downtimid at left
         with charaenter
 
@@ -527,7 +531,7 @@ label sh_ch47:
 
         stop music fadeout 4.0
 
-        show lilly basic_cheerful_yuk
+        show lilly basic_cheerful
         show hanako emb_downsad
         with chchange
 
@@ -547,7 +551,7 @@ label sh_ch47:
 
         nvl hide dissolve
 
-        show lilly basic_reminisce_yuk
+        show lilly basic_reminisce
         with chchange
 
         li "Hanako, are you alright?"
@@ -556,13 +560,13 @@ label sh_ch47:
         ha "I'm... okay."
 
         show hanako emb_downsad_close at twoleft
-        show lilly basic_reminisce_yuk_close at tworight
+        show lilly basic_reminisce_close at tworight
         with characlose
 
         "I walk up to the two of them, eager to clarify the situation."
         aki "It's pretty crowded here, Lils. Somewhere between 150 and 250 people who get to go before it's our turn. We'll probably be here for a little while."
 
-        show lilly basic_concerned_yuk_close
+        show lilly basic_concerned_close
         with chchange
 
         li "...Oh."
@@ -572,7 +576,7 @@ label sh_ch47:
         aki "You say you're okay, but the look on your face says something else entirely, Hanako."
         ha "Please d-don't w-worry about me."
 
-        show lilly basic_sad_yuk_close
+        show lilly basic_sad_close
         with chchange
 
         aki "I'm not worried. I just wonder if spending an hour with hundreds of people all around you is really your idea of a good time. Because from what I can see, to most people here it is."
@@ -592,7 +596,7 @@ label sh_ch47:
 
         "Hanako sighs loudly. She's obviously not convinced she can pull off what I just asked her to do."
 
-        show lilly basic_reminisce_yuk_close
+        show lilly basic_reminisce_close
         with chchange
 
         ha "I could... m-maybe w-wait in the car?"
@@ -604,7 +608,7 @@ label sh_ch47:
         "Hanako's widen in panic."
         ha "B-But, it's a f-family t-tradition, isn't it? You and L-Lilly s-should..."
 
-        show lilly basic_concerned_yuk_close
+        show lilly basic_concerned_close
         with chchange
 
         "I don't think it was Hanako's intention, but she effectively shut the argument down. I'm not going to navigate this particular minefield until I know exactly how she feels about this matter and this isn't the right opportunity to pry."
@@ -689,7 +693,7 @@ label sh_ch47:
         show karla basic_troubled_cas at right
         with charadistant
 
-        show lilly basic_sad_yuk at twoleft
+        show lilly basic_sad at twoleft
         show hanako emb_downtimid at left
         with charaenter
 
@@ -702,7 +706,7 @@ label sh_ch47:
         "She doesn't immediately respond and merely shuffles her feet for a moment while doing her best to avoid our gaze. There's a very guilty look in her eyes."
         "Suddenly, Lilly speaks up."
 
-        show lilly basic_reminisce_yuk
+        show lilly basic_reminisce
         with chchange
 
         li "Father... would it be okay with you if I... went along as well?"
@@ -713,7 +717,7 @@ label sh_ch47:
 
         hyd "...go ahead then. Your mother and I will offer a few additional prayers for your good fortune in your place."
 
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         with chchange
 
         li "Thank you, Father."
@@ -727,7 +731,7 @@ label sh_ch47:
         "Without much ado, we pass back down the stairs, through the gates and to the parking lot. This time, though, it almost feels like Lilly is helping Hanako navigate. We get in the car, and I drive back to our parents' home without anyone really saying anything."
 
         scene bg satoujp_livingroom
-        show lilly basic_sad_yuk at twoleft
+        show lilly basic_sad at twoleft
         show hanako emb_downsad at center
         with charaenter
 
@@ -739,22 +743,22 @@ label sh_ch47:
 
         play music music_comfort fadein 4.0
 
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         with chchange
 
-        aki "Don't apologize, Hanako. It's really not that much of a big deal. Let's just relax a little bit, before you two get back to your books. I can afford to hang out here a little bit before I have to pick up the folks."
+        aki "Don't apologize, Hanako. It's really not that much of a big deal. Let's just relax a little bit before you two get back to your books. I can afford to hang out here a little bit before I have to pick up the folks."
         ha "B-but..."
         aki "You know... back in the day, we used to play games on New Year's Day after a shrine visit. Card games, backgammon, Lucky Laugh. Of course, Lilly would always win the latter."
         aki "It's as much of a family tradition as the shrine visit was, and this one actually makes sense in my opinion. I don't see any reason for us not to honor this tradition right now."
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         with chchange
 
         "Lilly smiles."
         li "Hanako, don't you have a deck of playing cards in your backpack? Why don't you go and get it? The two of us against Akira."
         "I grin."
 
-        show lilly basic_cheerful_yuk
+        show lilly basic_cheerful
         with chchange
 
         aki "Bring it on."
@@ -770,21 +774,21 @@ label sh_ch47:
         "Hanako looks a little doubtful, but then nods and walks out of the room."
         "I wait until I think she's out of earshot and then turn to Lilly."
 
-        show lilly basic_reminisce_yuk
+        show lilly basic_reminisce
         with chchange
 
         aki "I hope I wasn't being too overbearing with her back there. I kinda went with my gut instinct here."
         aki "Given the number of people there, we would have been in the middle of that crowd for a long time and... If she had a panic attack ten or twenty minutes in, it would have been very difficult to quickly get her out of there, and we might have had a public spectacle right there with us at the center."
         aki "Who knows how Dad would have reacted to that. Ever since that screw-up at Kasshoku University, Hanako's probably more paranoid around crowds than ever before. Maybe we should be too."
 
-        show lilly basic_sad_yuk
+        show lilly basic_sad
         with chchange
 
         "Lilly nods her head."
         li "I... think you did the right thing. I just feel bad about disappointing Father."
         aki "Don't be too hard on yourself, Lils. Set the good example for Hanako."
 
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         with chchange
 
         li "I'll try."
@@ -796,7 +800,7 @@ label sh_ch47:
         "As the game goes on, I can see Hanako slowly starting to relax."
 
         scene bg satoujp_livingroom
-        show lilly basic_smileclosed_yuk_close at twoleft
+        show lilly basic_smileclosed_close at twoleft
         show hanako basic_bashful_clip_close at tworight
         with locationchange
 
@@ -805,65 +809,65 @@ label sh_ch47:
         li "Why do you feel a family visit to the nearby shrine doesn't make sense? I'm not sure why you feel that way."
         aki "I didn't say it doesn't make any sense at all, Lils. It makes some sense, just not that much."
 
-        show lilly basic_weaksmile_yuk_close
+        show lilly basic_weaksmile_close
         with chchange
 
         li "I still don't really understand why you would say that."
-        aki "Those shrine visits were a family tradition because the three people in charge of the family, that being Dad, Granddad and Grandma, are shintoists. With Granddad and Grandma not being here right now, we might very well have more catholics than shintoists in the home right now."
+        aki "Those shrine visits were a family tradition because the three people in charge of the family, that being Dad, Granddad and Grandma, are Shintoists. With Granddad and Grandma not being here right now, we might very well have more Catholics than Shintoists in the home right now."
 
-        show lilly basic_surprised_yuk_close
+        show lilly basic_surprised_close
         with chchange
 
         "Lilly raises an eyebrow."
-        li "Do you still count yourself among those catholics, Akira?"
+        li "Do you still count yourself among those Catholics, Akira?"
         aki "Naw, I haven't been much of anything for years."
 
         show hanako basic_worry_clip_close
         with chchange
 
         "Hanako gives me a midly curious look."
-        ha "You were... um... catholic, Akira?"
-        aki "Used to be. Mom's a catholic, though it mostly translated into her giving us a pretty cross-shaped necklace to wear and sometimes telling us bedtime stories with a moral."
+        ha "You were... um... Catholic, Akira?"
+        aki "Used to be. Mom's a Catholic, though it mostly translated into her giving us a pretty cross-shaped necklace to wear and sometimes telling us bedtime stories with a moral."
         aki "Like a shepherd who left his herd in order to look for one lost sheep or a traveller who was severely injured by bandits and saved by a member of an enemy tribe who had him nursed back to health out of compassion."
 
-        show lilly basic_cheerful_yuk_close
+        show lilly basic_cheerful_close
         show hanako basic_bashful_clip_close
         with chchange
 
         li "That last one was always one of my favorites."
         aki "Mom's religion was always pretty low-key, but then I was thrown into middle school and some of those teachers started throwing the S-word around."
 
-        show lilly basic_displeased_yuk_close
+        show lilly basic_displeased_close
         show hanako basic_distant_clip_close
         with chchange
 
         ha "Uh... S-word?"
-        aki "Sinful. Nothing's more off-putting than people telling others they're lower human beings for the slightest infraction."
+        aki "{i}Sinful{/i}. Nothing's more off-putting than people telling others they're lower human beings for the slightest infraction."
         li "Some of them were a bit heavy-handed, I'll admit."
 
-        show lilly basic_weaksmile_yuk_close
+        show lilly basic_weaksmile_close
         show hanako basic_bashful_clip_close
         with chchange
 
-        aki "Anyway, I often wondered if a catholic saying a prayer at a shinto shrine isn't a sacrilege of some sort."
+        aki "Anyway, I often wondered if a Catholic saying a prayer at a Shinto shrine isn't a sacrilege of some sort."
 
-        show lilly basic_giggle_yuk_close
+        show lilly basic_giggle_close
         with chchange
 
         "Lilly chuckles softly."
         li "I've always told myself that praying for the happiness and good fortune of one's loved ones is never sacrilegious, no matter the circumstances or the location. I'm pretty sure that Mother feels the same."
         "This discussion has made me curious about something. Having just finished a game, I wait until Hanako's finished shuffling and dealing the cards and then give her an inquisitive look."
-        aki "How about you, Hanako? Are you a shintoist yourself?"
+        aki "How about you, Hanako? Are you a Shintoist yourself?"
 
-        show lilly basic_smile_yuk_close
+        show lilly basic_smile_close
         show hanako basic_distant_clip_close
         with chchange
 
         "Hanako looks a little awkward, but nevertheless gives it some thought."
-        ha "M-my parents were. We always went t-to our local shrine on N-New Year's D-Day too. B-But ever s-since... the accident, I haven't b-been to one."
+        ha "M-my parents were. We always went t-to our local shrine on N-New Year's D-Day too. B-but ever s-since... the accident, I haven't b-been to one."
 
         show hanako emb_sad_cas_nohat_clip_close
-        show lilly basic_reminisce_yuk_close
+        show lilly basic_reminisce_close
         with chchange
 
         ha "I d-didn't want to anymore, even though t-the orphanage staff usually visited the n-nearby shrine with t-the other children that day. I'm n-not really sure whether I'd even b-be welcome there anymore."
@@ -871,18 +875,20 @@ label sh_ch47:
         aki "Oh..."
 
         show hanako emb_emb_clip_close
-        show lilly basic_displeased_yuk_close
+        show lilly basic_displeased_close
         with chchange
 
         ha "It w-wasn't all bad though. We would usually eat some delicious rice cakes when the other c-children came back, and the staff would play games with us. That was... fun."
         aki "You really like games, huh?"
 
         show hanako emb_downsmile_clip_close
-        show lilly basic_smileclosed_yuk_close
+        show lilly basic_smileclosed_close
         with chchange
 
         "She smiles gently and nods her head. I give her an encouraging smile back."
         aki "Well, then let's play for two more rounds, and then I'll go back to the shrine, and you two can go back to your books."
+
+        stop music fadeout 2.0
 
         scene black
         with Dissolve(2.0)
@@ -896,147 +902,155 @@ label sh_ch47:
         $ set_window_tint(TINT_AKIRA)
 
         scene bg satoujp_stairs
+        show lilly basic_weaksmile_close at left
+        with Dissolve(2.0)
+
         play music music_lilly fadein 4.0
-        show lilly basic_weaksmile_yuk_close at left
-        with charaenter
 
         aki "Aaaah..."
         "I stretch my arms as Lilly and I walk out of the bathroom after having taken a nice long soak. Lilly chuckles."
 
-        show lilly basic_smileclosed_yuk_close
+        show lilly basic_smileclosed_close
         with chchange
 
         li "That felt refreshing, didn't it?"
         aki "Yeah, definitely a change from that cramped tub at my place. Though cramped has its benefits in certain situations too."
 
-        show lilly basic_pout_yuk_close
+        show lilly basic_pout_close
         with chchange
 
         "Lilly blushes a bit."
         li "Akira. That's kind of..."
-
         "Before we can continue on the subject, one of the guest room doors opens, and Hanako comes out and walks up to us."
 
         show hanako basic_bashful_close at right
         with charaenter
 
-        show lilly basic_smile_yuk_close
+        show lilly basic_smile_close
         with chchange
 
-        ha "H-Hey. Was it... relaxing?"
-
+        ha "H-hey. Was it... relaxing?"
         aki "Yeah, it was pretty good. You can go ahead and get in yourself now. The water should be the right temperature for you."
 
         show hanako basic_smile_close
         with chchange
 
-        ha "T-Thanks."
+        ha "T-thanks."
         "I give Hanako a friendly smile."
-
         aki "You know, you could have taken one together with us, and I would have been more than willing to keep my eyes closed all the time. Soaking on your own is kind of lonely in such a large bath. Or Lilly could have accompanied you instead of me."
 
-        show lilly basic_smileclosed_yuk_close
+        show lilly basic_smileclosed_close
         show hanako emb_smile_close
         with chchange
 
         "Hanako smiles uneasily and then shakes her head."
         ha "It's... okay. I... already t-took a bath with L-Lilly yesterday. It... m-must have been some time ago when y-you and Lilly last bathed."
-
         aki "Well, that is kind of true. The home we used to live in had a large bath too, so she and I used to take soaks together all the time. That kind of changed when I started working though. The last time we bathed together must have been..."
         "I rack my brain a bit, but can't come up with an exact answer. I give Hanako a goofy grin."
+        aki "...about the time Lilly's chest started getting larger than mine."
 
-        show lilly basic_pout_yuk_close
+        show lilly basic_pout_close
         show hanako emb_blushtimid_close
         with chchange
 
-        aki "...about the time Lilly's chest started getting larger than mine."
         li "Oh my..."
         "Lilly is visibly flustered by my joke, but then a playful smile appears on her face."
 
-        show lilly basic_giggle_yuk_close
-        show hanako emb_downsmile_close
+        show lilly basic_giggle_close
         with chchange
 
         li "...has it really been that long?"
+
+        show hanako emb_downsmile_close
+        with chchange
+
         "Son of a- OUCH!"
         "Hanako immediately turns her head away, obviously trying to hide her grin. I snicker a bit at Lilly's comeback, but am still determined not to let that little jab go unpunished. I give Lilly a playful poke in the side while at the same time winking at Hanako."
-
         aki "You know, you'd better not diss my chest. After all, at least I have someone to admire mine. As does Hanako. As does Mom. You're currently the only person in this house who's headed for spinsterhood unless you learn how to accept date requests from people who aren't Hanako."
 
-        show lilly basic_concerned_yuk_close
+        show lilly basic_concerned_close
         show hanako emb_smile_close
         with chchange
 
         li "I b-beg you pardon?"
         "The expression on Lilly's face is so comical that Hanako lets out an amused giggle before she can stop herself. Upon hearing this, Lilly smiles awkwardly."
 
-        show lilly basic_weaksmile_yuk_close
+        show lilly basic_weaksmile_close
         with chchange
 
         li "I have the impression I'm being made fun of."
         aki "It's a joke, Lils. I hope you're not angry."
 
-        show lilly basic_smile_yuk_close
+        show lilly basic_smile_close
         show hanako basic_smile_close
         with chchange
 
         li "Don't worry about it."
 
-        show hanako emb_downsmile_close at offscreenleft
+        show hanako emb_downsmile_close
+        with charachangealways
+        
+        show hanako at offscreenleft
         with charamove
+
         hide hanako
 
-        "Hanako, probably having determined that the little spectacle before her has come to a conclusion, gently pushes her way past us and gives me a little nod before closing the bathroom door behind us. After hearing the door's lock snap into place, I turn to Lilly."
+        "Hanako, probably having determined that the little spectacle before her has come to a conclusion, gently pushes her way past us and gives me a little nod before closing the bathroom door behind us."
+
+        play sound sfx_doorclose
+
+        "After hearing the door's lock snap into place, I turn to Lilly."
         aki "Hope I wasn't out of line just now."
 
-        show lilly basic_cheerful_yuk_close
+        show lilly basic_cheerful_close
         with chchange
 
         li "I could very well ask you the same."
         aki "Naw, you can make fun of me as much as you like. Especially if..."
 
-        show lilly basic_smileclosed_yuk_close
+        show lilly basic_smileclosed_close
         with chchange
 
         li "Especially if?"
 
-        show lilly basic_displeased_yuk_close
+        show lilly basic_displeased_close
         with chchange
 
         aki "Especially if it cheers up Hanako. She looked a little down during our ride to the shrine and during dinner..."
         "Not just down, but also a little lonely if I remember correctly."
         aki "...and she seemed downright depressed while we were driving back, but she was smiling again just now when she entered the bathroom."
 
-        show lilly basic_weaksmile_yuk_close
+        show lilly basic_weaksmile_close
         with chchange
 
         li "That's a relief to hear."
         aki "You'd better get back to your books for a little while. If you feel up to it, that is."
 
-        show lilly basic_cheerful_yuk_close
+        show lilly basic_cheerful_close
         with chchange
 
         li "Hmmm... Have you finally joined the choir, Akira?"
-        aki "Heh, you're probably getting tired of all the prodding, but if you want to pursue your dream you'll have no choice but to do well on the National Center Test the upcoming month. They don't employ English teachers at Satou Medical Technology, so you can't take shortcuts like I did."
+        aki "Heh, you're probably getting tired of all the prodding, but if you want to pursue your dream, you'll have no choice but to do well on the National Center Test the upcoming month. They don't employ English teachers at Satou Medical Technology, so you can't take shortcuts like I did."
 
-        show lilly basic_smileclosed_yuk_close
+        show lilly basic_smileclosed_close
         with chchange
 
         li "I'll do my best. And Akira?"
         aki "Yeah?"
 
-        show lilly basic_giggle_yuk_close
+        show lilly basic_giggle_close
         with chchange
 
         "A teasing smile appears on her face once more."
         li "For many people being single is only a temporary problem, you know?"
 
-        show lilly basic_cheerful_yuk_close
+        show lilly basic_cheerful_close
         with chchange
 
         aki "Meow, Lils."
 
-        scene bg satoujp_guest_ni
+        scene bg satoujp_guest
+        with locationchange
 
         "Still chuckling, we each go back to our respective rooms. I lie down on the bed, take a manga issue out of my bag and start reading."
 
@@ -1045,18 +1059,18 @@ label sh_ch47:
         "I make it to page 20 before I hear knocking on the door. Too irregular to be Lilly's and too loud to be Hanako's. Not pronounced enough to be Dad's."
         aki "Yes?"
 
-        show karla basic_troubled_cas at tworight
+        play sound sfx_dooropen
+
+        show karla basic_troubled_cas
         with charaenter
 
         "The door opens and, as expected, Mom walks into the room. I give her a look as if to ask what she wants, but she merely stares at me for a moment."
-
         aki "Uh... Is anything wrong?"
 
         show karla basic_confused_cas
         with chchange
 
         kamo "Hey. Did you and Lilly have a pleasant soak?"
-
         aki "It was alright."
         kamo "No longer feeling tired?"
         aki "Not really, it was pretty refreshing."
@@ -1064,9 +1078,8 @@ label sh_ch47:
         show karla basic_sheepish_cas
         with chchange
 
-        kamo "If that's the case then would you like to join your father and me downstairs?"
+        kamo "If that's the case then, would you like to join your father and me downstairs?"
         "Ugh. I was already wondering where this conversation was headed. Now I kind of feel like she set me up."
-
         aki "I'd... uh... rather stay here if that's okay."
 
         show karla basic_speak_cas
@@ -1079,13 +1092,16 @@ label sh_ch47:
         with chchange
 
         kamo "That's gotta be one hell of a manga."
+        "I manage to resist the temptation to ask her what on earth she meant by that and simply get back to reading."
+
+        stop music fadeout 5.0
 
         show karla cross_displeased_cas_close
         with chchange
 
-        "I manage to resist the temptation to ask her what on earth she meant by that and simply get back to reading. But contrary to my expectation, Mom doesn't walk out of the room. Instead, she sits down on the chair near the desk and just keeps looking at me without saying anything."
-        "I raise the manga closer to my face in an attempt to block her out, but somehow her gaze manages to unnerve me enough to make further reading impossible. I sigh loudly and put my manga back in my bag before returning the stare that's aimed at me."
-
+        "But contrary to my expectation, Mom doesn't walk out of the room. Instead, she sits down on the chair near the desk and just keeps looking at me without saying anything."
+        "I raise the manga closer to my face in an attempt to block her out, but somehow her gaze manages to unnerve me enough to make further reading impossible."
+        "I sigh loudly and put my manga back in my bag before returning the stare that's aimed at me."
         aki "Okay, what's the problem?"
 
         play music music_moonlight fadein 4.0
@@ -1163,7 +1179,7 @@ label sh_ch47:
         kamo "They just might have. There's one heck of a lot of adoptions taking place each year in this country, but only a miniscule part of those adoptions actually involve children who are in need of a home. Adoptive parents aren't all that common. Nearly all adoptees are succesful adult men."
         aki "So you'd be counting on their desperation? That sure is a big reassurance."
 
-        show karla basic_pissed_cas_close
+        show karla cross_pissed_cas_close
         with chchange
 
         kamo "Your cynicism is noted."
@@ -1173,12 +1189,12 @@ label sh_ch47:
         with chchange
 
         kamo "Yes?"
-        aki "She hasn't given you an answer yet, has she? Not when you first asked her, not during the week that came after and not today, even though New Year's Day would have been a perfect occasion to make a 'new start' as you put it."
+        aki "She hasn't given you an answer yet, has she? Not when you first asked her, not during the week that came after and not today, even though New Year's Day would have been a perfect occasion to make a ‘new start’ as you put it."
 
         show karla basic_sad_cas_close
         with chchange
 
-        kamo "No. Not yet. But we told her she could take her time. And she really should be focussing on the National Center Test and her entrance exams. Get those out of the way first."
+        kamo "No. Not yet. But we told her she could take her time. And she really should be focusing on the National Center Test and her entrance exams. Get those out of the way first."
         "I study the expression on Mom's face carefully, and I detect the same slight sense of anxiety that I noticed on Lilly's face when I briefly asked her about this subject during our shared soaking session."
         "It's pretty obvious that both had been expecting Hanako to have jumped at the offer when it was made to her."
         aki "I wonder if you guys also thought of an exit strategy in case Hanako isn't interested."
@@ -1193,14 +1209,16 @@ label sh_ch47:
         show karla cross_displeased_cas_close
         with chchange
 
+        stop music fadeout 2.0
+
         kamo "You almost make it sound like you're secretly hoping for this whole thing to fall apart."
 
-        play music music_sadness fadein 4.0
+        queue music music_sadness fadein 4.0
 
         aki "That's not it. I'm simply hoping for whatever outcome is best for Hanako. That girl's been hurt a lot in the past and is still lugging around one hell of a lot of baggage. The last thing she deserves is to be let down again."
         aki "You couldn't be bothered to take responsibility for your own child six years ago and now you think you have what it takes to take responsibility for someone else's."
-        aki "Can you even imagine what that's like? Don't answer that! I know you can't! But I can, thanks to you!"
-
+        aki "Can you even imagine what that's like?"
+        aki "Don't answer that! I know you can't! But I can, thanks to you!"
         "I promised myself not to make a fuss today. I'd just go here, hang out with Lilly and Hanako and bottle up whatever anger I feel towards Mom and Dad. As long as I made sure not to interact with them too much, things'd be fine."
         "But now it looks like I'm about to break my promise. Something about Mom managed to touch a nerve, and now I feel my old wounds are bursting open."
 
@@ -1210,7 +1228,7 @@ label sh_ch47:
         kamo "Akira, calm down. I'm not justifying what has happened in the past."
         aki "No, now you're downplaying it instead!"
         kamo "I wasn't downplaying anything."
-        aki "You come in here and act offended, because I haven't forgotten about you having abandoned Lilly. You're like: 'What's the problem, we're here now, aren't we? Just shut up and forgive us already.' Like it was never a big deal!"
+        aki "You come in here and act offended, because I haven't forgotten about you having abandoned Lilly. You're like: ‘What's the problem, we're here now, aren't we? Just shut up and forgive us already.’ Like it was never a big deal!"
         kamo "I'm not..."
         aki "Yes, you are! You're lecturing me about how New Year's Day is such a perfect date for a new start."
         aki "Do you know what would have been an even better date for a new start? Well? The previous six friggin' New Year's Days! That's all Lilly wanted for New Year, you know. For you to come back to her!"
@@ -1219,91 +1237,97 @@ label sh_ch47:
         with chchange
 
         kamo "I..."
-
         aki "Just because Lilly isn't going to call you out, doesn't give you the right to scold me for rightfully holding you responsible. Even though you don't want to be reminded that you left your youngest daughter in the care of a girl barely out of high school, that's still exactly what happened."
-        aki "Either that or you were planning to rely on a mother-in-law suffering from ulcers, shortness of breath and high blood pressure to clean up after you... like you've been doing for years anyway."
+        aki "Either that or you were planning to rely on a mother-in-law suffering from ulcers, shortness of breath, and high blood pressure to clean up after you... like you've been doing for years anyway."
 
         show karla basic_displeased_cas_close
         with chchange
 
         kamo "Akira..."
 
-        show karla basic_pissed_cas_close
-        with chchange
+        show karla basic_pissed_cas
+        with charadistant
 
-        "Mom gets up from the chair and takes a few steps towards the door, but before I can reach into my bag to retrieve my manga, she stops, turns towards me and shoots me a vicious glare."
+        "Mom gets up from the chair and takes a few steps towards the door, but before I can reach into my bag to retrieve my manga, she stops, turns towards me, and shoots me a vicious glare."
         kamo "It's nice to see that you're so committed to Lilly's well-being that you're attacking us on her behalf. You've probably convinced yourself that she's secretly thankful for it, too."
 
-        show karla basic_sad_cas_close
+        show karla basic_sad_cas
         with chchange
 
         kamo "What I remember Lilly telling me is that it's her dream to get our family back together again. And she's been trying really hard."
 
-        show karla basic_confused_cas_close
+        show karla basic_confused_cas
         with chchange
 
         kamo "I don't think it'll be easy to move past the last few years, but I still believe it's possible and that we can come out of this closer than we were before, if we give it an honest try."
 
-        show karla basic_speak_cas_close
+        show karla basic_speak_cas
         with chchange
 
         kamo "But you don't really believe that, do you? Neither do you want it. You've already given up on our family, and you're more comfortable with the way things are now!"
 
-        show karla basic_pissed_cas_close
+        show karla basic_pissed_cas
         with chchange
 
         kamo "You wouldn't mind if things remain this way forever, but you're afraid of admitting this to Lilly, so you're playing along on days like this while blaming any lack of progress on us."
 
-        show karla cross_angry_cas_close
+        show karla cross_angry_cas
         with chchange
 
         kamo "Shout at us as much as you like if that makes you feel better, but at least stop pretending to have her best interests at heart! Because you don't!"
-
         aki "Oh, shut up Mom!"
         "I'm shaking with anger at her words, and it takes all my strength to fight off the urge to punch her. I probably would have thrown my book at her if it had been in my hand right now."
         li "Mother... Akira..."
 
-        show lilly basic_tearedup_yuk at left
+        show lilly cane_cry at twoleft
+        show karla basic_sad_cas at tworight
         with charaenter
 
         "We've both been so occupied with our hostile stand-off that neither of us noticed that the bedroom door softly opened, revealing a very upset-looking Lilly standing in the doorway."
-
-        show karla basic_sad_cas_close
-        with chchange
-
         li "Please... Stop fighting..."
-
         "The hurt expression on Lilly's face is enough to make me forget about the anger I just felt and replace it with a weary resignation."
-        "When I look at Mom, I notice the combatitive look in her eyes has vanished as suddenly as it appeared and has given way to a tired expression. She sighs as she briefly puts her hand on Lilly's shoulder."
+        "When I look at Mom, I notice the combatitive look in her eyes has vanished as suddenly as it appeared and has given way to a tired expression."
+
+        show karla at center
+        with charachangealways
+
+        "She sighs as she briefly puts her hand on Lilly's shoulder."
         kamo "I'm sorry, dear."
         aki "Sorry, Lils. I'll keep my mouth shut from now on."
 
-        show lilly basic_tearedup_yuk at offscreenleft
-        with charamove
+        hide lilly
+        with charaexit
 
-        "Without responding any further, Lilly turns around and walks out of the room. Crap. I really messed up this time. I wonder how much of that argument she overheard. Probably all of it."
+        "Without responding any further, Lilly turns around and walks out of the room."
+        "Crap. I really messed up this time. I wonder how much of that argument she overheard. Probably all of it."
 
-        show karla basic_troubled_cas_close
+        stop music fadeout 5.0
+
+        show karla basic_troubled_cas
         with chchange
 
         "Mom turns to me and lets out another weary sigh."
         kamo "I... may have been out of line just now."
         aki "I could really use a beer right about now."
 
-        show karla basic_plead_cas_close
+        show karla basic_plead_cas
         with chchange
 
         kamo "Yeah, me too. Want to go and grab one?"
         aki "...why not?"
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
 
         "I follow Mom to the kitchen where she opens the fridge and takes two cans of beer out of it."
 
-        play music music_night fadein 4.0
         scene bg satoujp_kitchen_ni
         show karla basic_distant_cas_close
+        with locationchange
+
+        play music music_night fadein 4.0
+
+        play sound sfx_can
 
         "I take one of them from Mom, and we open our cans with a loud snap. Neither of us looks at the other or says a word as we drink. I doubt there's much to say to begin with."
         "When I finish my beer and prepare to throw the can away, I suddenly notice a small box on a sidetable that wasn't there when I got a tour of the kitchen."
@@ -1325,7 +1349,7 @@ label sh_ch47:
         show hiroyuki thinking at tworight
         show karla basic_sheepish_cas at right
 
-        show lilly basic_displeased_yuk at twoleft
+        show lilly basic_displeased at twoleft
         show hanako basic_normal at left
         with charaenter
 
@@ -1342,7 +1366,7 @@ label sh_ch47:
         li "I have, Father."
         ha "I... umm... t-think so."
 
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         show hanako basic_normal
         show hiroyuki speak
         with chchange
@@ -1355,7 +1379,7 @@ label sh_ch47:
 
         "He takes the box off the table and opens it. It's filled to the brim with o-mikuji. Mom smiles."
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         with chchange
 
         kamo "Hopefully a little good fortune for the exams you're facing this month."
@@ -1374,7 +1398,7 @@ label sh_ch47:
         "Dad makes an inviting gesture towards the box."
         hyd "Go ahead and take one."
 
-        show lilly basic_satisfied_yuk
+        show lilly basic_satisfied
         show hanako basic_distant
         show hiroyuki smile
         show karla basic_smile_cas
@@ -1385,7 +1409,7 @@ label sh_ch47:
         aki "You got 'Good Luck', Lils. I hope that translates into good results later this month."
 
         show karla basic_sheepish_cas
-        show lilly basic_giggle_yuk
+        show lilly basic_giggle
         with chchange
 
         li "I really hope so too. What did you get, Akira?"
@@ -1394,7 +1418,7 @@ label sh_ch47:
         aki "I got a 'Bad Luck' one. No biggie."
 
         show karla basic_sheepishclosed_cas
-        show lilly basic_concerned_yuk
+        show lilly basic_concerned
         with chchange
 
         li "Oh..."
@@ -1402,7 +1426,7 @@ label sh_ch47:
         aki "You know, I don't really believe in this stuff, so it doesn't faze me."
 
         show karla basic_smile_cas
-        show lilly basic_reminisce_yuk
+        show lilly basic_reminisce
         with chchange
 
         li "Even so..."
@@ -1415,14 +1439,14 @@ label sh_ch47:
 
         "Without saying anything, she gives me her piece of paper."
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         with chchange
 
         aki "It says 'Great Luck'. Looks like we have a winner here."
 
         show hiroyuki thinking
         show karla basic_confident_cas
-        show lilly basic_cheerful_yuk
+        show lilly basic_cheerful
         with chchange
 
         "Mom makes a quick 'not so fast'-gesture with her finger."
@@ -1440,7 +1464,7 @@ label sh_ch47:
 
         scene bg shrine_ext_ni
         play music music_dreamy fadein 4.0
-        show lilly basic_weaksmile_yuk at twoleft
+        show lilly basic_weaksmile at twoleft
         show hanako basic_normal at tworight
         with charaenter
 
@@ -1458,7 +1482,7 @@ label sh_ch47:
         nvl clear
         nvl hide dissolve
 
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         show hanako basic_bashful
         with chchange
 
@@ -1466,21 +1490,21 @@ label sh_ch47:
         li "Hmmm... I think you're right. Are we near the right building already?"
         aki "We're pretty close. Do you hear anything?"
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         show hanako basic_smile
         with chchange
 
         li "Somewhere... to our left."
 
         scene bg shrine_ema_ni
-        show lilly basic_smile_yuk_close at twoleft
+        show lilly basic_smile_close at twoleft
         show hanako basic_distant_close at tworight
         with charaenter
 
         "I peer through the darkness in the direction Lilly pointed out and vaguely see some light shapes moving in the wind."
         aki "Yup, we've found the spot. I'll hold out a branch and you can do the tying, okay?"
 
-        show lilly basic_satisfied_yuk_close
+        show lilly basic_satisfied_close
         with chchange
 
         li "Alright."
@@ -1488,12 +1512,12 @@ label sh_ch47:
         aki "I'm almost done. Can I have your piece as well, Hanako?"
         "No immediate response. Hanako's merely standing there looking at her o-mikuji as if the thing's calling her names."
 
-        show lilly basic_surprised_yuk_close
+        show lilly basic_surprised_close
         with chchange
 
         aki "Hanako?"
 
-        show lilly basic_listen_yuk_close
+        show lilly basic_listen_close
         show hanako basic_worry_close
         with chchange
 
@@ -1502,7 +1526,7 @@ label sh_ch47:
         ha "Y-Yes. It's just..."
         aki "Hmmm?"
 
-        show lilly basic_displeased_yuk_close
+        show lilly basic_displeased_close
         show hanako emb_sad_close
         with chchange
 
@@ -1513,7 +1537,7 @@ label sh_ch47:
 
         "Voice" "Good evening. Are you here to... sight-see? I'm afraid we're... only open between 9 and 4."
 
-        show lilly basic_surprised_yuk
+        show lilly basic_surprised
         show hanako defarms_shock
         with chchange
 
@@ -1522,7 +1546,7 @@ label sh_ch47:
         aki "Uh, hey. Good evening. Sorry for intruding."
         "Shrine maiden" "Oh... ah... excuse me."
 
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         show hanako cover_worry
         with chchange
 
@@ -1530,7 +1554,7 @@ label sh_ch47:
         aki "We weren't really here to see the sights. We just finished hanging up our o-mikuji."
         "Shrine maiden" "Ah... Okay."
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         with chchange
 
         "Lilly, sensing the awkwardness in the girl's voice, steps forward and smiles in her general direction."
@@ -1538,7 +1562,7 @@ label sh_ch47:
         "A look of realization appears on the girl's face almost immediately."
         "Shrine maiden" "The Center Test?"
 
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         show hanako cover_bashful
         with chchange
 
@@ -1547,7 +1571,7 @@ label sh_ch47:
         "Shrine maiden" "Good luck. I hope you'll do well."
         "We exchange bows and prepare to leave the premise when the girl suddenly calls out to us."
 
-        show lilly basic_surprised_yuk
+        show lilly basic_surprised
         show hanako cover_worry
         with chchange
 
@@ -1557,7 +1581,7 @@ label sh_ch47:
         aki "The hall of worship? But the shrine is closed, isn't it?"
         "Shrine maiden" "The doors aren't locked right now because I just finished cleaning it. If you like, you can make a wish there while I finish my remaining chores at the administrative building."
 
-        show lilly basic_smile_yuk
+        show lilly basic_smile
         show hanako cover_smile
         with chchange
 
@@ -1566,7 +1590,7 @@ label sh_ch47:
         "Shrine Maiden" "You're welcome. I have an older sister who worked here as a shrine maiden during the last few New Year's Days, but now she's busy studying as well, which is why I've taken her place this year."
 
         scene bg shrine_int_ni
-        show lilly basic_smileclosed_yuk_close at twoleft
+        show lilly basic_smileclosed_close at twoleft
         show hanako basic_smile_close at tworight
         with charaenter
 
@@ -1575,7 +1599,7 @@ label sh_ch47:
         aki "It's kind of cozy in here. Seeing that that shrine maiden sounded like she might still be busy in the other building for a little while, we might be able to take it easy for a few moments without running the risk of wearing out our welcome."
 
         scene ev shrinesisters_sit
-        show lilly basic_smile_yuk at left
+        show lilly basic_smile at left
         show hanako basic_bashful at center
         show akira basic_sweet at right
 
@@ -1587,14 +1611,14 @@ label sh_ch47:
 
         aki "So... umm... Lils, what did you think of today?"
 
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         show akira basic_resigned
         with chchange
 
         li "It was good to celebrate New Year's Day together again after being separated for such a long time."
         aki "So you enjoyed it despite me... well... causing trouble?"
 
-        show lilly basic_sad_yuk
+        show lilly basic_sad
         show hanako basic_worry
         with chchange
 
@@ -1611,7 +1635,7 @@ label sh_ch47:
         "A pained expression appears on Lilly's face. This isn't a comfortable subject for either of us, and the silence that follows merely reinforces that."
         aki "You can tell me what you think, Lils. I won't be upset if you take Mom's side in this case."
 
-        show lilly basic_concerned_yuk
+        show lilly basic_concerned
         with chchange
 
         "Lilly's shoulders droop upon hearing my words. I can't help but feel that what was meant to be a reassurance had exactly the opposite effect."
@@ -1631,7 +1655,7 @@ label sh_ch47:
         "Deep down, I felt the schism in our family was permanent. Even if they'd return one day, things wouldn't be the same. It would still be us and them. It would always be us and them. Even though I felt angry, even bitter, about it, I accepted this to be reality from then on."
         "Looking back on things, I think I did more than merely accept this new reality. I think I also grew comfortable with it. Like we were better off without them anyway. Maybe I grew too comfortable with the situation."
 
-        show lilly basic_sad_yuk
+        show lilly basic_sad
         with chchange
 
         li "Maybe. But I don't think that's the way things should be."
@@ -1657,7 +1681,7 @@ label sh_ch47:
         "Lilly, on the other hand, really managed to make an impression on our old man while we were gone, and after we got back I couldn't help but feel that he developed a genuine soft spot for his youngest daughter."
         "When we learned that Dad was going to be replaced as CEO of the company and Lilly made the proposal for them to come and live in Japan again and Dad seemed to be willing to give it some thought, I did what I felt I had to do - throw my support behind my sister."
 
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         show akira basic_resigned
         show hanako basic_bashful
         with chchange
@@ -1665,7 +1689,7 @@ label sh_ch47:
         li "Even if you have given up on us, we haven't given up on you, Akira. Nor will we ever."
         aki "Heh, 'we' meaning 'you', Lils? Are Mom and Dad really this eager to have their black sheep back?"
 
-        show lilly basic_sad_yuk
+        show lilly basic_sad
         show hanako emb_sad
         with chchange
 
@@ -1680,7 +1704,7 @@ label sh_ch47:
 
         aki "It's not myself I'm being hard on. I'm fairly comfortable with who I am even if most others aren't."
 
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         show akira basic_resigned
         show hanako basic_normal
         with chchange
@@ -1697,7 +1721,7 @@ label sh_ch47:
 
         aki "A couple of months ago, I would have insisted he'd take a drug test for saying that kind of thing."
 
-        show lilly basic_cheerful_yuk
+        show lilly basic_cheerful
         show hanako emb_downsmile
         with chchange
 
@@ -1728,7 +1752,7 @@ label sh_ch47:
         li "I think they're complimenting you. Mother was greatly respected at work, wasn't she?"
 
         show akira basic_sweet
-        show lilly basic_smileclosed_yuk
+        show lilly basic_smileclosed
         with chchange
 
         aki "Mom and Dad both - from what I've been able to tell so far. Dad was considered the brains of the operation. Very sharp business instincts and a knack for playing the long game, but also a bit distant and... heh... a bit repressed."
@@ -1738,7 +1762,7 @@ label sh_ch47:
         li "This is merely conjecture on my part, but I believe you and Mother will probably get along very well with one another once you manage to work out your... differences."
 
         show akira basic_annoyed
-        show lilly basic_sad_yuk
+        show lilly basic_sad
         show hanako emb_sad
         with chchange
 
@@ -1746,7 +1770,7 @@ label sh_ch47:
         li "That's... pretty harsh..."
 
         show akira basic_resigned
-        show lilly basic_sad_yuk
+        show lilly basic_sad
         show hanako basic_normal
         with chchange
 
@@ -1759,7 +1783,7 @@ label sh_ch47:
         li "I don't really have an answer to that. We don't really know what went on between them. Maybe there was a confrontation, and we simply don't know about it. Maybe we'll find out some day. "
         aki "I don't really get it, Lils. Is it really that easy for you to forgive them like that? Are you a saint, or am I simply dead inside?"
 
-        show lilly basic_cheerful_yuk
+        show lilly basic_cheerful
         with chchange
 
         "Lilly giggles at that."
@@ -1772,7 +1796,7 @@ label sh_ch47:
         ha "M-Mine too."
 
         show akira basic_distant
-        show lilly basic_weaksmile_yuk
+        show lilly basic_weaksmile
         show hanako basic_normal
         with chchange
 
@@ -1790,7 +1814,7 @@ label sh_ch47:
 
         play music music_twinkle fadein 4.0
 
-        show lilly basic_cheerful_yuk
+        show lilly basic_cheerful
         show hanako emb_downsmile
         with chchange
 
@@ -1803,13 +1827,13 @@ label sh_ch47:
         aki "If any of you dare suggest that it's because I'm not feminine enough, you'll either be walking back to our parents' place or sleeping at the shrine. Just sayin..."
 
         show akira basic_laugh
-        show lilly basic_giggle_yuk
+        show lilly basic_giggle
         with chchange
 
         "Lilly and I share a hearthy laugh with even Hanako joining in eventually. After this little moment of silliness, Lilly slowly gets up from her seat."
 
         scene bg shrine_int_ni
-        show lilly basic_cheerful_yuk_close at twoleft
+        show lilly basic_cheerful_close at twoleft
         show hanako basic_smile_close at tworight
 
         li "Seeing that we're indeed still at a shrine, perhaps it would be a good idea to do what we came to do here. Our host is probably finishing up as we speak."

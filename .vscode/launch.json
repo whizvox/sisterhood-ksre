@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/scripts/exportsprites.py",
             "console": "integratedTerminal",
-            "args": "${command:pickArgs}",
+            "args": "-s ${workspaceFolder} -k ${config:sisterhood.ksreProjectDir} -r ${config:sisterhood.referenceDir} ${command:pickArgs}",
             "cwd": "${workspaceFolder}/scripts"
         },
         {

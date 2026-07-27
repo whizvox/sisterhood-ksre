@@ -3,7 +3,7 @@ import sys
 from argparse import ArgumentParser
 
 from PIL import Image
-from sishoodutil import add_arguments, ref_path, sh_path, update_paths
+import sishoodutil
 
 RESAMPLE_METHOD = Image.Resampling.BICUBIC
 
@@ -16,8 +16,8 @@ def crop_and_resize_image(
     target_width: int | None = None,
     target_height: int | None = None,
 ):
-    input_path = (ref_path / (base_input_path + ".png")).resolve()
-    output_path = (sh_path / "sprites" / (base_output_path + ".png")).resolve()
+    input_path = (sishoodutil.ref_path / (base_input_path + ".png")).resolve()
+    output_path = (sishoodutil.sh_path / "sprites" / (base_output_path + ".png")).resolve()
     if output_path.exists() and not replace:
         return
     try:
@@ -282,6 +282,9 @@ karla = [
     ("act 2 sprites/Karla/CASUAL/8 KARLA CASUAL DISPLEASED", "basic_displeased_cas"),
     ("act 2 sprites/Karla/CASUAL/9 KARLA CASUAL DISPLEASED CROSSED", "cross_displeased_cas"),
     ("act 2 sprites/Karla/CASUAL/10 KARLA CASUAL ANGRY", "basic_angry_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL SAD", "basic_sad_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL PLEAD", "basic_plead_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL PISSED", "basic_pissed_cas"),
     ("Sprites/Karla/CASUAL/edit/KARLA CASUAL ANGRY CROSSED", "cross_angry_cas"),
     ("act 2 sprites/Karla/CASUAL/12 KARLA CASUAL LAUGH", "basic_laugh_cas"),
     ("act 2 sprites/Karla/CASUAL/13 KARLA CASUAL CONFUSED", "basic_confused_cas"),
@@ -293,6 +296,7 @@ karla = [
     ("act 2 sprites/Karla/CASUAL/19 KARLA CASUAL WORRIED", "basic_worried_cas"),
     ("Sprites/Karla/CASUAL/edit/KARLA CASUAL DISTANT CROSSED", "cross_distant_cas"),
     ("Sprites/Karla/CASUAL/edit/KARLA CASUAL WORRIED CROSSED", "cross_worried_cas"),
+    ("Sprites/Karla/CASUAL/edit/KARLA CASUAL PISSED CROSSED", "cross_pissed_cas"),
 ]
 
 hiroyuki = [
@@ -311,7 +315,7 @@ hiroyuki = [
 
 
 def main(args: dict):
-    update_paths(args)
+    sishoodutil.update_paths(args)
     replace: list[str] = []
 
     for arg in sys.argv:
@@ -497,5 +501,5 @@ def main(args: dict):
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="Sisterhood sprite generation tool")
-    add_arguments(parser, refdir=True)
+    sishoodutil.add_arguments(parser, refdir=True)
     main(vars(parser.parse_args(sys.argv[1:])))
