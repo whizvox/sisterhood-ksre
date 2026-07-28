@@ -144,6 +144,8 @@ init 30 python:
             (_("The Fifth Wheel"), "sh_ch47.s2", _("The Satou family and Hanako visit a shrine for the New Year's celebration."), "akira"),
             (_("Grievances"), "sh_ch47.s3", _("Akira and her mother get into a harsh argument."), "akira"),
             (_("Black Sheep"), "sh_ch47.s4", _("Visiting the shrine again with Lilly and Hanako, Akira reflects on her relationship with her family."), "akira"),
+            (_("Close Call"), "sh_ch48.s1", _("Hisao has a frightening experience during the night before the Center Test."), "hisao"),
+            (_("Short Circuit"), "sh_ch48.s2", _("Tragedy strikes just before Hisao takes part in the Center Test."), "hisao"),
         ])
     )
 
@@ -152,6 +154,7 @@ init 30 python:
     sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("karla", ["confident", "pissed", "plead", "sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
+    sh_sprites("kenji", ["worried"], outfits=["gym"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["awkward", "smileclosed", "thinkraised"])
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
@@ -174,7 +177,7 @@ init 30 python:
     sh_bgs("city", ["karaokebooth"])
     sh_bgs("satou", ["masterbed_ni", "hiroyukicar"])
     # credit: japan-property.jp and SAKURA HOUSE CO., LTD.
-    sh_bgs("satoujp", ["dining", "entryway", "ext", "guest", "livingroom", "stairs", "station"])
+    sh_bgs("satoujp", ["dining", "entryway", "ext", "guest", "kitchen_ni", "livingroom", "stairs", "station"])
     # credit: Loyola University Maryland
     sh_bgs("school", ["dormkitchen", "dormnaomi"])
     # credit: japan-property.jp and Tokyo Furnished LLC
@@ -184,7 +187,7 @@ init 30 python:
     sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
     sh_bgs("suburb", ["park_ni"])
     sh_bgs("school", ["teacherlounge"])
-    sh_bgs("shrine", ["ema_ni", "entrance", "ext", "ext_ni", "int"])
+    sh_bgs("shrine", ["ema_ni", "entrance", "ext", "ext_ni", "int", "tree_ni"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
     sh_event("sadspooning", ["tearoom"])
