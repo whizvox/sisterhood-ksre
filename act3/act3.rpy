@@ -49,8 +49,9 @@ init 30:
 
     define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
     define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
-    define yui = Character(_("Yuichi"), who_color="#b37b7b")
-    define iwa_ = Character(_("Girl"), who_color="#ffffff")
+    define yui = Character(_("Yuichi"), who_color="#b37b7b", screen="say_sh")
+    define my = Character(_("Miyagi"), who_color="#ffffff", screen="say_sh")
+    define iwa_ = Character(_("Girl"), who_color="#ffffff", screen="say_sh")
 
     image naomi bend_laugh_superclose = f"{sh_path}/sprites/naomi/superclose/naomi_bend_laugh_superclose.png"
 
@@ -152,6 +153,7 @@ init 30 python:
     sh_sprites("hanako", ["distant"], poses=["basic"], outfits=["cas_nohat"])
     sh_sprites("hanako", ["speechless", "shock", "worry"], poses=["def", "defarms"], outfits=["cas_nohat"])
     sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
+    sh_sprites("hanako", ["strainmessy", "worrymessy", "determinedmessy", "downdeterminedmessy", "downsadcrymessy", "downsadmessy", "downtimidmessy", "sadmessy", "timidmessy"], poses=["defarms", "emb"])
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("karla", ["confident", "pissed", "plead", "sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("kenji", ["worried"], outfits=["gym"])
@@ -186,8 +188,9 @@ init 30 python:
     sh_bgs("misc", ["car_ss", "hiroyukicar", "hiroyukicar_ni"])
     sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
     sh_bgs("suburb", ["park_ni"])
-    sh_bgs("school", ["teacherlounge"])
-    sh_bgs("shrine", ["ema_ni", "entrance", "ext", "ext_ni", "int", "tree_ni"])
+    # credit: Baldwin Wallace University
+    sh_bgs("school", ["dormcommon", "teacherlounge", "gymext", "gymint_exam"])
+    sh_bgs("shrine", ["entrance", "ext", "ext_ni", "int", "tree_ni"])
 
     sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
     sh_event("sadspooning", ["tearoom"])

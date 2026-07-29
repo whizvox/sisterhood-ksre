@@ -376,9 +376,9 @@ label sh_ch48:
         "I'm now awake enough to remember that Misha and Shizune weren't even the first people to use that nickname on a regular basis. I guess I shouldn't be surprised that Mom's calling me today."
         "I was just taken off guard by how early she called. She probably wanted to make certain I wouldn't oversleep."
         "Mom" "I hope you weren't too nervous to sleep."
-        "To be honest, that little episode last night did manage to rattle me, and I started wondering whether it was even a smart idea to set my alarm clock before ultimately deciding that without it I was almost guaranteed to oversleep. Now it turns out that I was never in danger of that to begin with."
+        "To be honest, that little episode last night did manage to rattle me, and I started wondering whether it was even a smart idea to set my alarm clock before ultimately deciding that without it I was almost guaranteed to oversleep."
+        "Now it turns out that I was never in danger of that to begin with."
         hi "No, not really."
-
         "I turn off my alarm clock and start opening my pill bottles with my free hand. I might as well get that out of the way not that I'm awake."
         "Mom" "This is the day you're most nervous about, isn't it?"
         hi "Yeah. History and languages are on the menu today. The most important subjects for me aren't up until tomorrow, but I'll still need to do fairly well on today's exams in order to keep my average up."
@@ -388,7 +388,6 @@ label sh_ch48:
         "Mom" "When do you expect to know the results?"
         hi "We're not going to get any official results, but the school's making copies of our answer sheets for us and the National Center for University Entrance Examinations is publishing the answers this evening, so that's when I'll know how I did. Same thing tomorrow."
         hi "Tomorrow evening I'll be able to tell whether I have a chance to take the entrance exams for university or whether... I'll have to look for other options."
-
         "I'm really hoping it won't come to that. There are smaller universities in the area that don't look at the results of the Center Test for student admittance, but after Mutou's countless lectures about aiming high, I would be very reluctant to to apply there."
         "Assuming I won't feel too guilty to approach him, Mutou would be a good person to discuss alternative options with in case I flunk the tests this weekend."
         "Mom" "Let's not think about that yet. You'll let us know once the results are in, won't you?"
@@ -405,37 +404,50 @@ label sh_ch48:
         hi "Thanks, Mom."
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
 
         "Having finished my morning diet of medication, I take a quick shower and go down to the kitchen to have breakfast, taking one of my study books with me to do some last-minute cramming while I'm eating."
         "There's been an initiative from the junior students over the last few weeks to prepare meals for the seniors so that we had more time to study. It's one more example of the close community that this school is, and I for one am really thankful for it."
 
         scene bg school_dormext_full
+        with locationchange
 
         "After finishing breakfast, I pack up my things and head for the girls' dorm."
 
-        scene bg school_dormcommonroom
+        play ambient sfx_crowd_indoors fadein 2.0
+
+        scene bg school_dormcommon
         show crowd
+        with locationchange
 
         "The girls' dorm's common room is really crowded right now. I see several 3rd years sitting at the tables, eating breakfast with one hand while leafing through a book with the other."
+
         show naomi basic_neutral at right
         show natsume basic_neutral at tworight
+        with charaenter
 
         "I recognize Natsume and Naomi at one table, both studying intensely and catch Naomi letting out a pronounced yawn. She sure looks like she's seen better days, though she'd probably say the same about me if she heard me say this."
+
         hide naomi
         hide natsume
         show shizu basic_normal2 at left:
             xzoom -1.0
+        with charaenter
 
         "I also see Misaki from my class swapping notes with another girl whose name I can't remember. In one of the corners of the room sits Shizune, her back partially turned to the rest, calmly flipping through the pages of one of her books."
-        hide shizu
 
-        "Two girls whom I remember being in Lilly's class head towards the exit, and I quickly step aside to let them pass. The common room's probably way too crowded for Hanako to be here, so I head for her room, hoping she hasn't already left."
+        hide shizu
+        with charaexit
+
+        "Two girls whom I remember being in Lilly's class head towards the exit, and I quickly step aside to let them pass."
+        "The common room's probably way too crowded for Hanako to be here, so I head for her room, hoping she hasn't already left."
+
+        stop ambient fadeout 1.0
 
         scene bg school_girlsdormhall
         show lilly cane_listen at twoleft
         show miyagi neutral at tworight
-        with charaenter
+        with locationchange
 
         "As I enter the hallway leading to Hanako's and Lilly's room, I notice Lilly standing there talking to one of the teachers. I approach them and give the teacher a polite bow."
         hi "Good morning, Lilly. Good morning, Miss Miyagi."
@@ -445,9 +457,9 @@ label sh_ch48:
 
         li "Oh, hello Hisao. How are you? Are you feeling up for today?"
         hi "Yeah, I'm fine, Lilly. I'll be happy when this day is over, but I haven't counted myself out yet."
-        "Our English teacher raises an eyebrow at my description of my own condition, but thankfully doesn't say anything. I've already decided that I'm not going to let Lilly (or Hanako) in on what happened in my room last night."
-        "The last thing I want is for one of them to have a flashback to what happened with Mister Satou. It's funny, but I think I'm starting to understand how he must have felt; slowly feeling your limits approaching, but also realizing that the stakes are currently too high to quit or slow down."
-        "You don't hold back and save your strength in sight of the finish line. You go all out."
+        "Our English teacher raises an eyebrow at my description of my own condition, but thankfully doesn't say anything."
+        "I've already decided that I'm not going to let Lilly (or Hanako) in on what happened in my room last night. The last thing I want is for one of them to have a flashback to what happened with Mister Satou."
+        "It's funny, but I think I'm starting to understand how he must have felt: slowly feeling your limits approaching, but also realizing that the stakes are currently too high to quit or slow down. You don't hold back and save your strength in sight of the finish line. You go all out."
 
         show lilly cane_smileclosed
         with chchange
@@ -459,7 +471,7 @@ label sh_ch48:
         with chchange
 
         "Lilly's homeroom teacher gives me a look-over."
-        "Miyagi" "You're Mutou's star pupil. You'd better make it through this weekend, or you're going to break his heart."
+        my "You're Mutou's star pupil. You'd better make it through this weekend, or you're going to break his heart."
 
         show lilly cane_planned
         with chchange
@@ -470,28 +482,26 @@ label sh_ch48:
         show lilly cane_smileclosed
         with chchange
 
-        "Miyagi" "What tests are you taking today?"
-        hi "Ethics, Japanese History, Japanese Literature and English. History's going to be a bit rough, but it's the last one I'm most worried about."
-
-        "Miyagi" "Just focus on one subject at a time without worrying about the rest and try not to spend too much time on one question."
-        "Miyagi" "Since all your most important subjects won't be tested until tomorrow, just try to do the best you can and save your strength for the subjects that give you the most points, namely literature and English."
-        "Miyagi" "There'll be an English listening test at the very end, but the written test is the one you should try to do as best as you can in since it carries a lot more weight."
+        my "What tests are you taking today?"
+        hi "Ethics, Japanese History, Japanese Literature, and English. History's going to be a bit rough, but it's the last one I'm most worried about."
+        my "Just focus on one subject at a time without worrying about the rest and try not to spend too much time on one question."
+        my "Since all your most important subjects won't be tested until tomorrow, just try to do the best you can and save your strength for the subjects that give you the most points—namely literature and English."
+        my "There'll be an English listening test at the very end, but the written test is the one you should try to do as best as you can in since it carries a lot more weight."
         hi "I'll do my best. How about your star pupil?"
 
         show miyagi smile
         with chchange
 
         "Miss Miyagi gives Lilly a confident nod."
-        "Miyagi" "I think I can safely stake my job on her acing the English test today."
-        "Miyagi" "Many students have been dreading the listening part of the test ever since it was introduced two years ago, but someone who was both raised bilingually and is used to paying close attention to audio cues should have no problem achieving a perfect or near-perfect score there."
+        my "I think I can safely stake my job on her acing the English test today."
+        my "Many students have been dreading the listening part of the test ever since it was introduced two years ago, but someone who was both raised bilingually and is used to paying close attention to audio cues should have no problem achieving a perfect or near-perfect score there."
 
         show lilly cane_weaksmile
         with chchange
 
         "Lilly smiles humbly."
-
-        li "I'll do my best to live up to your expectations. English will be the easy part today. I'll still have Contempory Social Studies, World History and Japanese Literature to deal with first. And there's... tomorrow."
-        "Miyagi" "You've been studying pretty hard over the course of the last two months. It should be sufficient. Just concentrate on doing well on the subjects that carry the largest amount of weight for your university application."
+        li "I'll do my best to live up to your expectations. English will be the easy part today. I'll still have Contempory Social Studies, World History, and Japanese Literature to deal with first. And there's... tomorrow."
+        my "You've been studying pretty hard over the course of the last two months. It should be sufficient. Just concentrate on doing well on the subjects that carry the largest amount of weight for your university application."
 
         show lilly cane_smileclosed
         with chchange
@@ -502,24 +512,23 @@ label sh_ch48:
         with chchange
 
         hi "Why are there teachers in the dorms, by the way? I noticed Mister Hoshino walking around the guys' dorm this morning as well."
-        "Miyagi" "We're essentially doing a head count. Making sure there are no students who are set to take the tests today who accidentally oversleep."
+        my "We're essentially doing a head count. Making sure there are no students who are set to take the tests today who accidentally oversleep."
 
         show lilly cane_smile
         with chchange
 
         hi "The school really seems to be going out of its way to help its students make it through examination hell."
-        "Miyagi" "In the end the actual studying is still in your hands, but yes, we do try to accommodate you as much as we can. That's also why you're allowed to take the tests here on the school grounds instead of having to travel to the nearest university to take part in the examinations."
-        "Miyagi" "Normally, only the larger high schools would be granted this privilege. You can thank us for our efforts on your behalf by doing well on your test this weekend."
-
+        my "In the end the actual studying is still in your hands, but yes, we do try to accommodate you as much as we can. That's also why you're allowed to take the tests here on the school grounds instead of having to travel to the nearest university to take part in the examinations."
+        my "Normally, only the larger high schools would be granted this privilege. You can thank us for our efforts on your behalf by doing well on your test this weekend."
         hi "Have you already seen Hanako this morning? I came here looking for her."
-        "Miyagi" "Not yet. I was about to go and check on her."
+        my "Not yet. I was about to go and check on her."
 
         show lilly cane_displeased
         with chchange
 
         "Lilly takes this moment to speak up."
-        li "I believe I have heard her early this morning. She probably went to get some breakfast, though she's been eating in her room - as usual lately."
-        "I must admit I'm still a bit worried about her. From what Lilly has told me Hanako only leaves her room these days to attend the supplementary lessons the school made her take. She eats and studies in her room with the door locked. At least, I hope she's been able to study."
+        li "I believe I have heard her early this morning. She probably went to get some breakfast, though she's been eating in her room—as usual lately."
+        "I must admit I'm still a bit worried about her. From what Lilly has told me, Hanako only leaves her room these days to attend the supplementary lessons the school made her take. She eats and studies in her room with the door locked. At least I hope she's been able to study."
 
         scene bg school_dormhanako
         show hanako emb_timidmessy_close:
@@ -533,7 +542,7 @@ label sh_ch48:
         play sound sfx_doorknock2
 
         "Lilly's homeroom teacher walks up to the door leading to Hanako's room and gives a few gentle raps on it."
-        "Miyagi" "Ikezawa? This is Miyagi."
+        my "Ikezawa? This is Miyagi."
 
         pause 0.5
 
@@ -542,16 +551,18 @@ label sh_ch48:
         with charamove
 
         "There's no immediate response, but just as the teacher raises her hand to knock again, the door opens just a bit, and I can see Hanako peering at us from inside the room."
-        "Miyagi" "Ikezawa, it's about time for everyone to head for the gymnasium. Are you ready to go?"
+        my "Ikezawa, it's about time for everyone to head for the gymnasium. Are you ready to go?"
 
         show hanako_door_door:
             xpos -0.19
         with charamove
-        pause 1.5
+
+        pause 0.5
 
         scene bg school_girlsdormhall
         show lilly cane_listen at left
         show miyagi neutral at twoleft
+        with locationchange
 
         show hanako emb_downtimidmessy at right
         with charaenter
@@ -560,56 +571,56 @@ label sh_ch48:
         with charamove
 
         "Hanako opens the door further and gives a nervous nod. She takes her bag and then walks out, closing the door behind her."
-        hi "Hey Hanako."
+        hi "Hey, Hanako."
 
         show lilly cane_weaksmile
         with chchange
 
         li "Good morning, Hanako. Let's both do our best today."
-        ha "H-Hey."
-        "Miyagi" "Good morning, Ikezawa. What subjects will you be taking today?"
+        ha "H-hey."
+        my "Good morning, Ikezawa. What subjects will you be taking today?"
 
         show hanako emb_timidmessy
         with chchange
 
-        ha "Umm...P-Politics and Economy, J-Japanese History, Japanese Literature and ah... English."
-        "Miyagi" "And you have studied hard for them, haven't you?"
+        ha "Umm...P-Politics and Economy, J-Japanese History, Japanese Literature, and ah... English."
+        my "And you have studied hard for them, haven't you?"
         "A silent nod."
-        "Miyagi" "All the teachers here know that your mock exam results weren't an accurate representation of what you're really capable of, so please do your best to prove us right today."
+        my "All the teachers here know that your mock exam results weren't an accurate representation of what you're really capable of, so please do your best to prove us right today."
         ha "I'll t-try."
-        "Miyagi" "What study are you aiming for?"
+        my "What study are you aiming for?"
 
         show hanako emb_downtimidmessy
         with chchange
 
         ha "J-Journalism and Media."
-        "Miyagi" "Then those first two tests will probably be critical. Do your best."
+        my "Then those first two tests will probably be critical. Do your best."
 
         show hanako emb_timidmessy
         with chchange
 
-        ha "Y-Yes."
-        "Miyagi" "The three of you should go now. My colleagues have probably unlocked the gym already. Also..."
+        ha "Y-yes."
+        my "The three of you should go now. My colleagues have probably unlocked the gym already. Also..."
 
-        stop music
+        stop music fadeout 1.0
 
         show hanako defarms_worrymessy
         show lilly cane_surprised
-        with chchange
+        with { "master": Dissolve(0.2) }
 
         "Voice" "TEACHER!"
         "We turn around, and I notice one of the girls from our class running up to us."
-        "Miyagi" "We're not supposed to be running in the hallways, Komaki."
+        my "We're not supposed to be running in the hallways, Komaki."
         "Ikuno" "Sorry, but... in the common room... Inoue."
 
         play music music_sadness fadein 4.0
 
         show hanako defarms_strainmessy
         show lilly cane_reminisce
-        show miyagi angry
+        show miyagi stern
         with chchange
 
-        show miyagi angry at offscreenright
+        show miyagi stern at offscreenright
         with charamovefastest
 
         show hanako defarms_strainmessy at offscreenright
@@ -618,48 +629,54 @@ label sh_ch48:
         "We hear our teacher softly curse under her breath, causing Lilly to cringe, before she takes off and runs down the hallway with Hanako following close behind her."
         hi "This doesn't sound good."
 
-        scene black
-        with Dissolve(2.0)
+        play ambient sfx_crowd_indoors fadein 1.0
 
-        scene bg school_dormcommonroom
+        scene bg school_dormcommon
         show crowd
+        with locationchange
 
-        "We make our way down the stairs to the common room as fast as Lilly's navigation skill allows us, but by the time we arrive it's already so crowded in there that I can see neither Hanako nor the teacher. Even though I can't see Miss Miyagi in the crowd, I can certain hear her."
-        "Miyagi" "Damnit, can you give us some room already?"
-        "Miyagi" "Suzuki, hand me that pillow over there please!"
-        "Miyagi" "Miura, go and get a nurse to help out. Wait, get two of them! Tell them to bring a stretcher too!"
-        "Miyagi" "Get the chairs away from here. Put them in the hallway!"
-        "Miyagi" "Look, this isn't working. No more spectators! Everyone who's taking the test, go to the gymnasium at once. Everybody else, go to your room! Come on! Today, please!"
+        "We make our way down the stairs to the common room as fast as Lilly's navigation skill allows us, but by the time we arrive, it's already so crowded in there that I can see neither Hanako nor the teacher. Even though I can't see Miss Miyagi in the crowd, I can certain hear her."
+        my "Damnit, can you give us some room already?"
+        my "Suzuki, hand me that pillow over there please!"
+        my "Miura, go and get a nurse to help out. Wait, get two of them! Tell them to bring a stretcher too!"
+        my "Get the chairs away from here. Put them in the hallway!"
+        my "Look, this isn't working. No more spectators! Everyone who's taking the test, go to the gymnasium at once. Everybody else, go to your room! Come on! Today, please!"
+
+        stop ambient fadeout 3.0
 
         hide crowd
+        with charaexit
 
         "At this point, the crowd starts to disperse, and as the common room starts emptying I finally start taking in the scene before me."
 
         scene ev seizure_commonroomfit
+        with locationchange
 
         "Naomi's lying on the floor of the common room, her limbs thrashing about as if she's being electrocuted. One of the tables and several chairs are scattered about."
         "Miss Miyagi is kneeling by Naomi's side, holding a pillow under her head and trying to prevent her from hurting herself."
         "I've seen Naomi have fits before, but the sight of them still never fails to make me feel freaked out."
 
-        scene bg school_dormcommonroom
+        scene bg school_dormcommon
         show natsume basic_sad at tworight
         show hanako emb_downsadcrymessy at right
         show lilly cane_concerned at left
+        with locationchange
 
-        "Now that the bystanders are all gone, the only people in the room besides Naomi and Miyagi are Lilly, Hanako, Natsume and myself. Neither Hanako nor Natsume are saying anything, but the look in their eyes is all too telling."
+        "Now that the bystanders are all gone, the only people in the room besides Naomi and Miyagi are Lilly, Hanako, Natsume, and myself. Neither Hanako nor Natsume are saying anything, but the look in their eyes is all too telling."
         "They both look crushed. I think they both realize the implication of this event. We all do."
 
         hide lilly
         show miyagi resigned at twoleft
         with charaenter
 
-        "Miyagi" "I really don't think the four of you should still be hanging around here. The nursing staff will probably be here any second now, and they'll take over from me. There's nothing you can do for Inoue right now."
+        my "I really don't think the four of you should still be hanging around here. The nursing staff will probably be here any second now, and they'll take over from me. There's nothing you can do for Inoue right now."
         "Natsume nods sullenly, and when she speaks up her voice sounds like it's about to break."
-        nt "M-Maybe not right now, but... I think that... someone should stay by her side. When she wakes up and she... she realizes what happened..."
+        nt "M-maybe not right now, but... I think that... someone should stay by her side. When she wakes up and she... she realizes what happened..."
 
         show miyagi neutral
+        with chchange
 
-        "Miyagi" "I hope you're not talking about yourself. I could give Takawa a call. She can probably handle it."
+        my "I hope you're not talking about yourself. I could give Takawa a call. She can probably handle it."
         "Voice" "Natsume?"
 
         hide miyagi
@@ -667,7 +684,6 @@ label sh_ch48:
         with charaenter
 
         "We turn around and see a frail-looking girl standing in the doorway whom I recognize as Hanako's and Naomi's friend from the writing club."
-
         nt "Jun!"
 
         show jun basic_sadclosed
@@ -677,6 +693,7 @@ label sh_ch48:
 
         show natsume basic_neutral
         show hanako defarms_worrymessy
+        with chchange
 
         "Natsume and Hanako exchange a short glance and then simultanously nod their head."
 
@@ -686,25 +703,28 @@ label sh_ch48:
         nt "Thank you Jun. That's really kind of you. We'll leave Naomi in your care then."
 
         scene black
-        with Dissolve(2.0)
+        with locationchange
+
+        "With that issue taken care of, we quickly leave the dorm building and head towards the gymnasium."
 
         scene bg school_courtyard
-        show natsume basic_sad at right
-        show hanako emb_downsadmessy at twoleft
-        show lilly cane_sad at left
-        with charaenter
+        show lilly cane_sad:
+            xalign 0.15
+        show hanako emb_downsadmessy:
+            xalign 0.4
+        show natsume basic_sad at tworight
+        with locationchange
 
-        "With that issue taken care of we quickly leave the dorm building and head towards the gymnasium. As we pass the main school building, Natsume lets out a depressed sigh."
-        nt "She was so looking forward to graduation too. I really wonder how she's going to take this. Even though she's been a little careless lately, she didn't deserve having the rug pulled out from under her in a way like this."
+        "As we pass the main school building, Natsume lets out a depressed sigh."
+        nt "She was so looking forward to graduation, too. I really wonder how she's going to take this. Even though she's been a little careless lately, she didn't deserve having the rug pulled out from under her in a way like this."
 
         show lilly cane_reminisce
         show hanako emb_timidmessy
         with chchange
 
         "Lilly's ears perk up."
-
         li "I'm sorry, but... did you say she was careless? This didn't come completely by surprise?"
-        "Natsume thinks for a moment and then shrugs as if to say 'why not?'"
+        "Natsume thinks for a moment and then shrugs as if to say ‘why not?’"
 
         show lilly cane_displeased
         show natsume basic_neutral
@@ -733,7 +753,6 @@ label sh_ch48:
         with chchange
 
         li "What a horrible situation to be in."
-
         nt "I was really hoping she'd be able to hold out until the end of the weekend. She kept telling me that she'd take it easier for a bit after tomorrow."
         "Ugh."
 
@@ -754,20 +773,21 @@ label sh_ch48:
         ha "H-Hisao, are you... alright? You look a bit pale."
         hi "I'm okay, Hanako. Just a little upset about what just happened and more than a little nervous about the tests today. I'll be fine. As long as I can struggle my way through history and English, that is."
 
-        scene black
-        with Dissolve(2.0)
-
-        scene bg school_gymnasiumexterior
+        scene bg school_gymext
         show crowd
         show shizu behind_blank at right
         show misha perky_sad at tworight
         show yuuko worried_up at left
+        with Fade(1.0, 0.0, 1.0)
+
+        play ambient sfx_crowd_outdoors fadein 1.0 volume 0.5
 
         "When we reach the entrance to the gym, we can see that a lot of people have already gathered there. I even see Yuuko hanging around near the entrance. Is she taking the Center Test too?"
 
         hide shizu
         hide misha
         hide yuuko
+        with charaexit
 
         "Several groups of students, especially the girls, are speaking to each other in hushed tones. It's not difficult to guess the subject of their current conversation."
 
@@ -777,15 +797,24 @@ label sh_ch48:
         "Rather than join one of the groups, Natsume secludes herself some distance away from the rest. She's probably not fond of the idea of people approaching her about Naomi right now."
         "Before we can decide on whether to join her or not, I see Hanako pointing something out, and a moment later I see Lilly's homeroom teacher approaching."
 
+        hide natsume
         show miyagi neutral
-        play sound sfx_clap
-        pause 0.15
+        with charaenter
+
         play sound sfx_clap
 
+        pause 0.2
+
+        play sound sfx_clap
+
+        pause 0.2
+
+        $ renpy.music.set_volume(0.5, delay=1.0, channel="ambient")
+
         "As she reaches the place where we're gathered and several female students walk up to her, Miss Miyagi loudly claps her hands a few times in order to get everyone's attention."
-        "Miyagi" "Alright, listen up everyone! We're all a little shaken by what happened to Inoue this morning, but the situation is under control, the nurses are looking after her, and we'll be talking to the National Center of University Entrance Examinations to work out a solution to this later today!"
-        "Miyagi" "So put this issue to rest and focus on your exams! I'll be acting as one of the proctors throughout the day, and if you're in my class and need my assistence with anything sight-related, but not question related, just silently raise your hand and I'll be right with you."
-        "Miyagi" "There's a representative of the National Center keeping an eye on things as well today, so there's not a lot of room for leniency. Good luck everyone and go and give this your all!"
+        my "Alright, listen up everyone! We're all a little shaken by what happened to Inoue this morning, but the situation is under control, the nurses are looking after her, and we'll be talking to the National Center of University Entrance Examinations to work out a solution to this later today!"
+        my "So put this issue to rest and focus on your exams! I'll be acting as one of the proctors throughout the day, and if you're in my class and need my assistance with anything sight-related, but not question related, just silently raise your hand and I'll be right with you."
+        my "There's a representative of the National Center keeping an eye on things as well today, so there's not a lot of room for leniency. Good luck everyone and go and give this your all!"
 
         show miyagi neutralsmoke
         with chchange
@@ -799,16 +828,22 @@ label sh_ch48:
         with chchange
 
         "The first students start pouring into the gym and Lilly, having smelt the smoke, approaches her mentor with a slightly uncomfortable expression and gets a sigh and semi-guilty look in return."
-        "Miyagi" "Borrowed these from the dormkeeper's office just before I left. I really felt I needed one. And to think I was going to give up smoking for real this year."
+        my "Borrowed these from the dormkeeper's office just before I left. I really felt I needed one. And to think I was going to give up smoking for real this year."
 
-        show lilly cane_displeased at left
-        show natsume basic_neutral at tworight
+        show lilly cane_displeased
+        with chchange
+
+        show lilly at left
         with charamove
 
+        show natsume basic_neutral at tworight
         show hanako emb_sadmessy at right
         with charaenter
 
+        stop ambient fadeout 2.0
+
         hide crowd
+        with charaexit
 
         "Natsume approaches Miyagi with a wary expression."
 
@@ -821,15 +856,16 @@ label sh_ch48:
         with chchange
 
         "Miyagi gives a tired sigh while dropping her cigarette on the floor and putting it out with her heel."
-        "Miyagi" "What else was I supposed to say? I don't want this lingering in the back of everybody's head all day long."
+        my "What else was I supposed to say? I don't want this lingering in the back of everybody's head all day long."
 
         show lilly cane_reminisce
         show natsume basic_sad
         show hanako emb_downsadcrymessy at right
         with chchange
 
-        "Both Natsume's and Hanako's face drops upon hearing this news. Miyagi looks a little bit uncertain, but then puts one hand on each of the girls shoulders and gives them both a tiny squeeze."
+        stop music fadeout 5.0
 
+        "Both Natsume's and Hanako's face drops upon hearing this news. Miyagi looks a little bit uncertain, but then puts one hand on each of the girls shoulders and gives them both a tiny squeeze."
 
         play music music_drama fadein 4.0
 
@@ -837,24 +873,27 @@ label sh_ch48:
         show miyagi angry
         with chchange
 
-        "Miyagi" "You two need to shape up! It's more important than ever that the two of you do well today. Seeing that you are both good friends of hers, how do you think Inoue will feel if this little incident ends up costing both of you your chance to make it into your university of choice?"
+        my "You two need to shape up! It's more important than ever that the two of you do well today. Seeing that you are both good friends of hers, how do you think Inoue will feel if this little incident ends up costing both of you your chance to make it into your university of choice?"
 
         show lilly cane_displeased
         show natsume basic_neutral
         show hanako emb_sadmessy
         with chchange
 
-        "That strategy has an extremely familiar ring to it. It's the same approach Miss Takawa used on Lilly and me. I wonder if this kind of guilt-tripping is the standard approach among school staff. Nevertheless, I can tell that Miyagi's words get through to Natsume and Hanako."
-        "Miyagi" "Inoue is going to feel really bad about this, but if I know her a little bit I don't think it's going to keep her down for long. She'll be set on throwing you two a celebration party in the upcoming spring, so make sure not to deny her that opportunity."
+        "That strategy has an extremely familiar ring to it. It's the same approach Miss Takawa used on Lilly and me. I wonder if this kind of guilt-tripping is the standard approach among school staff."
+        "Nevertheless, I can tell that Miyagi's words get through to Natsume and Hanako."
+        my "Inoue is going to feel really bad about this, but if I know her a little bit, I don't think it's going to keep her down for long. She'll be set on throwing you two a celebration party in the upcoming spring, so make sure not to deny her that opportunity."
 
         hide miyagi
+        with charaexit
 
         show lilly cane_listen
         show natsume basic_serious
         show hanako emb_downdeterminedmessy
         with chchange
 
-        "With that, Miss Miyagi enters the gym. Natsume and Hanako exchange a confused look, but then I see something dawn on their faces. Suddenly, Natsume sticks out her hand at Hanako."
+        "With that, Miss Miyagi enters the gym. Natsume and Hanako exchange a confused look, but then I see something dawn on their faces."
+        "Suddenly, Natsume sticks out her hand at Hanako."
         nt "I think Miss Miyagi's right. Naomi will probably be cheering on us, so let's not let her down. Let's do this, Hanako!"
         "Hanako gives the most determined nod I've seen for months and puts her right hand on top of Natsume's as if to reinforce this pact."
         ha "Let's k-keep this burden off Naomi's shoulders, Natsume. Let's make her p-proud of us."
@@ -863,16 +902,17 @@ label sh_ch48:
         show hanako emb_determinedmessy
         with chchange
 
-        nt "Right!"
-        ha "Right."
+        $ show_doublespeak(nt, _("Right!"), ha, _("Right."))
 
         hide natsume
         hide hanako
+        with charaexit
 
         show lilly cane_smileclosed
         with chchange
 
-        "The two give a defiant nod and then follow the rest of the students into the gymnasium. I turn to Lilly who now has an admiring smile on her face."
+        "The two give a defiant nod and then follow the rest of the students into the gymnasium."
+        "I turn to Lilly who now has an admiring smile on her face."
         hi "When I first saw her this morning, Hanako looked a little worse for wear, but she was looking really determined just now. It pains me to say this, but maybe this was just what she needed."
         "I've seen this kind of look on Hanako's face before. It's that look of intense concentration she sometimes puts on during a game she's determined to win. And she often wins when that happens. I really believe she's going to give it everything she has today."
 
@@ -881,31 +921,33 @@ label sh_ch48:
 
         li "We can't do any less, Hisao. Let's do our best today as well."
 
-        scene black
-        with Dissolve(2.0)
-
-        scene bg school_gymnasiuminterior
+        scene bg school_gymint_exam
         show crowd
+        with locationchange
 
         "And with that, we walk into the gym ourselves and take our place in our designated spots. When the proctor gives the signal to begin, the only thing on my mind is getting a good score today."
         "But nevertheless, during the break between the Japanese History exam and Japanese Literature test, my thoughts briefly return to the sight of Naomi convulsing on the floor of the common room."
 
-        scene ev seizure_commonroomfit
-        show sepia:
-            alpha 0.5
+        show ev seizure_commonroomfit at sepia
         with { "master": Dissolve(1.0) }
 
         "I didn't tell Hanako and Lilly, but what happened to Naomi hit really close to home for me this morning."
         "It could have been me."
         "Naomi's situation sounded eerily similar to my own. It probably was."
         "It could have been me."
-        "I could have had an episode less than 12 hours later, and I would have lost an entire year. In just a single moment, all the studying I've done over the last few months would have been rendered meaningless. I make a sincere vow not to let this happen to me."
+        "I could have had an episode less than 12 hours later, and I would have lost an entire year. In just a single moment, all the studying I've done over the last few months would have been rendered meaningless."
+        "I make a sincere vow not to let this happen to me."
 
-        scene black
-        with Dissolve(2.0)
+        show black
+        with { "master": Dissolve(1.0) }
 
         "Tomorrow is primarily science and math. I'm pretty good at both of them. I've been studying on them for weeks."
         "Maybe I really should be going to bed early tonight."
+
+        stop music fadeout 3.0
+
+        scene black
+        with endchapter
 
         if _in_replay:
             return

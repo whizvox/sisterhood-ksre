@@ -732,7 +732,7 @@ label sh_ch41:
         with charaenter
 
         "She takes her own chair and joins us at my desk before nodding at me to indicate it's okay for me to tell Natsume what she wants to know."
-        ha "Ummm... The name of the story is ‘The Missing Star’. It's about a blind student who joins his school's astronomy club. It's... a short story we submitted for that particular contest."
+        ha "Ummm... The name of the story is ‘The Missing Star’. It's about a blind student who joins her school's astronomy club. It's... a short story we submitted for that particular contest."
 
         show natsume hands_smile_close
         with chchange
