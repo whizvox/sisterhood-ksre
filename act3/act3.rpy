@@ -147,11 +147,13 @@ init 30 python:
             (_("Black Sheep"), "sh_ch47.s4", _("Visiting the shrine again with Lilly and Hanako, Akira reflects on her relationship with her family."), "akira"),
             (_("Close Call"), "sh_ch48.s1", _("Hisao has a frightening experience during the night before the Center Test."), "hisao"),
             (_("Short Circuit"), "sh_ch48.s2", _("Tragedy strikes just before Hisao takes part in the Center Test."), "hisao"),
+            (_("Consultation"), "sh_ch49.s1", _("Hisao has a long overdue talk with the Nurse."), "hisao"),
         ])
     )
 
     sh_sprites("hanako", ["distant"], poses=["basic"], outfits=["cas_nohat"])
     sh_sprites("hanako", ["speechless", "shock", "worry"], poses=["def", "defarms"], outfits=["cas_nohat"])
+    #sh_sprites("hanako", ["downmeek", "downsleep", "meek"], poses=["emb"]) # is this necessary?
     sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
     sh_sprites("hanako", ["strainmessy", "worrymessy", "determinedmessy", "downdeterminedmessy", "downsadcrymessy", "downsadmessy", "downtimidmessy", "sadmessy", "timidmessy"], poses=["defarms", "emb"])
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
@@ -162,9 +164,9 @@ init 30 python:
     sh_sprites("hisao", ["bashful", "emb", "smileclosed"], poses=["basic"], outfits=["bath", "polo", "uni"])
     sh_sprites("naomi", ["angry", "annoyed", "confused", "grinclosed", "concern", "seizure", "serious", "sheepish", "smileclosed"], poses=["basic"])
     sh_sprites("naomi", ["grinclosed"], poses=["bend"])
+    sh_sprites("nurse", ["serious"])
     sh_sprites("shizu", ["evil"], poses=["adjust"])
     sh_sprites("muto", ["eyebrow"])
-    sh_sprites("hanako", ["downmeek", "downsleep", "meek"], poses=["emb"])
     sh_sprites("hanagown", ["distantmessy", "pleadmessy", "shockmessy", "worrymessy", "remorsefulmessy"])
     sh_sprites("misha", ["suspicious", "weaksmile"], poses=["perky"])
     sh_sprites("takawa", ["devious", "sweet", "weaksmile"])
