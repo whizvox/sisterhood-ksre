@@ -126,7 +126,7 @@ init 1 python:
     sh_event("celloandwine", ["peek", "block", "block_smile", "lap_forward", "lap_rest", "lap_pause", "lap_embrace", "lap_applause", "lap_victory", "lap_kiss"])
     sh_event("tipsyfun", ["collapse_morning"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
-    sh_event("bedridden", ["lillyakira", "akira"])
+    sh_event("bedridden", ["lillyakira", "akira", "akhiha"])
     sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
     sh_event("akirapast", ["argument", "elemschool", "grandparents1", "grandparents2", "midschool", "promotion", "study1", "study2", "unfavorite", "vacation"])
@@ -203,9 +203,22 @@ init 1:
     image bedridden_akira shout = f"{sh_path}/event/bedridden/bedridden_akira_shout_overlay.png"
     image bedridden_akira stun = f"{sh_path}/event/bedridden/bedridden_akira_stun_overlay.png"
     image bedridden_akira distant = f"{sh_path}/event/bedridden/bedridden_akira_distant_overlay.png"
-    image bedridden_hiroyuki discomfort = f"{sh_path}/event/bedridden/bedridden_hiroyuki_discomfort_overlay.png"
     image bedridden_hiroyuki angry = f"{sh_path}/event/bedridden/bedridden_hiroyuki_angry_overlay.png"
+    image bedridden_hiroyuki angry_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_angry_overlay_large.png"
+    image bedridden_hiroyuki concern_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_concern_overlay_large.png"
+    image bedridden_hiroyuki content_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_content_overlay_large.png"
+    image bedridden_hiroyuki discomfort = f"{sh_path}/event/bedridden/bedridden_hiroyuki_discomfort_overlay.png"
+    image bedridden_hiroyuki discomfort_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_discomfort_overlay_large.png"
+    image bedridden_hiroyuki relieved_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_relieved_overlay_large.png"
     image bedridden_hiroyuki shout = f"{sh_path}/event/bedridden/bedridden_hiroyuki_shout_overlay.png"
+    image bedridden_hiroyuki smile_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_smile_overlay_large.png"
+    image bedridden_hiroyuki listen_large = f"{sh_path}/event/bedridden/bedridden_hiroyuki_listen_overlay_large.png"
+    image bedridden_hanako downsmile = f"{sh_path}/event/bedridden/bedridden_hanako_downsmile_overlay_large.png"
+    image bedridden_hanako concern = f"{sh_path}/event/bedridden/bedridden_hanako_concern_overlay_large.png"
+    image bedridden_hanako downconcern = f"{sh_path}/event/bedridden/bedridden_hanako_downconcern_overlay_large.png"
+    image bedridden_hanako unsure = f"{sh_path}/event/bedridden/bedridden_hanako_unsure_overlay_large.png"
+    image bedridden_hanako sad = f"{sh_path}/event/bedridden/bedridden_hanako_sad_overlay_large.png"
+    image bedridden_hanako downsad = f"{sh_path}/event/bedridden/bedridden_hanako_downsad_overlay_large.png"
 
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"

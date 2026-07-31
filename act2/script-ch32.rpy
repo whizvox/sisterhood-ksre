@@ -68,7 +68,7 @@ label sh_ch32:
         "I'm starting to get second thoughts about the idea of flying back to Japan tomorrow."
         "I wish she'd tell us what exactly it is that's troubling her so much."
 
-        play sound sfx_phonering loop
+        play ambient sfx_phonering
 
         ha "Ah!" with vpunch
         "My thoughts are interrupted by the sudden ringing of my cell phone."
@@ -80,7 +80,7 @@ label sh_ch32:
 
         hi "I wonder why she's calling."
 
-        stop sound
+        stop ambient
 
         "Somewhat curious, I pick up the phone and put it to my ear."
 
@@ -199,6 +199,7 @@ label sh_ch32:
         hi "Of course."
 
         stop music fadeout 2.0
+
         queue music music_moonlight fadein 4.0
 
         show hisao basic_neutral_polo_close
@@ -239,6 +240,7 @@ label sh_ch32:
         li "Thank you, Hisao."
 
         stop music fadeout 2.0
+
         queue music music_dreamy fadein 4.0
 
         scene bg satou_entrance
@@ -448,31 +450,31 @@ label sh_ch32:
         with mediumflash
 
         aki "You look a little sharper than before, but also a bit more uncomfortable. Have you cut back on the painkillers?"
-        hy "{cps=20}I… will… take some… more this… evening.{/cps}"
+        hy "{slowtype}I… will… take some… more this… evening."
         aki "Mom and Kojima were just here, weren't they? Will you even be able to handle more visitors right now?"
-        hy "{cps=20}Never… mind… that… Lilly… not… here?{/cps}"
+        hy "{slowtype}Never… mind… that… Lilly… not… here?"
 
         hide bedridden_akira
         with charachangeev
 
         aki "Nope. Why? Have you already thought up an apology, then?"
-        hy "{cps=20}A-apology?{/cps}"
+        hy "{slowtype}A-apology?"
         aki "For insulting her. Lilly came to Inverness to repair the family bond that you two shattered, and you reward her by insulting her independence. How do you think she feels about that?"
 
         show bedridden_hiroyuki angry
         with charachangeev
 
-        hy "{cps=20}I… did… not… insult her…{/cps}"
+        hy "{slowtype}I… did… not… insult her…"
         aki "If you really believe that, then you're even more out of touch with her than I thought. Heck, how many years has it been since you gave some serious thought about how she feels about things?"
 
         hide bedridden_hiroyuki 
         with charachangeev
 
-        hy "{cps=20}What… do… you… m-mean?{/cps}"
+        hy "{slowtype}What… do… you… m-mean?"
         aki "Why on earth did you summon her here, asking her to give up everything important she had in Japan, after keeping her at a comfortable distance for six years? Maybe because you thought you could use her to act as a glue for your fledgling marriage?"
-        hy "{cps=20}Our… marriage… is… fine…{/cps}"
+        hy "{slowtype}Our… marriage… is… fine…"
         aki "Nonsense. You two were hardly part of each other's life outside of working hours. I've learned that much already."
-        hy "{cps=20}And yet… we… were… fine. And what… mean… by… comfortable… d-distance?{/cps}"
+        hy "{slowtype}And yet… we… were… fine. And what… mean… by… comfortable… d-distance?"
 
         show bedridden_akira shout
         with charachangeev
@@ -496,7 +498,7 @@ label sh_ch32:
         show bedridden_akira stun
         with { "master": charachangealways }
 
-        hy "{cps=20}AKIRA…{w=0.5} SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK… THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE… MY… SIGHT!{/cps}"
+        hy "{slowtype}AKIRA…{w=0.5} SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK… THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE… MY… SIGHT!"
 
         show bedridden_hiroyuki angry
         with charachangeev
@@ -511,53 +513,53 @@ label sh_ch32:
         with charachangeev
 
         aki "..."
-        hy "{cps=20}Well…?{/cps}"
+        hy "{slowtype}Well…?"
         aki "So you deny it?"
 
         play music music_rain fadein 4.0
 
-        hy "{cps=20}If there… is… a s-source… of shame… for… me… right… now… it is… you for m-making… these a-accusations… against… a parent.{/cps}"
+        hy "{slowtype}If there… is… a s-source… of shame… for… me… right… now… it is… you for m-making… these a-accusations… against… a parent."
         aki "Then why did you have Mom join you here while you left Lilly behind, huh?"
-        hy "{cps=20}Your… mother… needed to… be here… and Lilly's… education… was… important… like I… told you… a hundred… times.{/cps}"
+        hy "{slowtype}Your… mother… needed to… be here… and Lilly's… education… was… important… like I… told you… a hundred… times."
         aki "That's just an excuse."
-        hy "{cps=20}If I… truly… valued my… reputation… over her… well-being… I would have… taken her along.{/cps}"
+        hy "{slowtype}If I… truly… valued my… reputation… over her… well-being… I would have… taken her along."
         aki "What's that supposed to mean?"
-        hy "{cps=20}You will… understand… in time.{/cps}"
+        hy "{slowtype}You will… understand… in time."
         aki "I don't believe you."
-        hy "{cps=20}I… stake my… personal honor… on it. Now… t-take back… what you… said.{/cps}"
+        hy "{slowtype}I… stake my… personal honor… on it. Now… t-take back… what you… said."
 
         show bedridden_akira distant
         with charachangeev
 
         aki "Hmph."
-        hy "{cps=20}Fine. Then… cling to your… conspiracy… theories. No doubt… you have… been poisoning… Lilly's mind… with them… for years… as… well.{/cps}"
+        hy "{slowtype}Fine. Then… cling to your… conspiracy… theories. No doubt… you have… been poisoning… Lilly's mind… with them… for years… as… well."
         aki "Believe it or not, but she's always been unreasonably loyal to you."
-        hy "{cps=20}No doubt… you have… shared… your impressions… with her… many times.{/cps}"
+        hy "{slowtype}No doubt… you have… shared… your impressions… with her… many times."
 
         show bedridden_akira stun
         with charachangeev
 
         aki "That doesn't mean…"
-        hy "{cps=20}I think… I know… enough.{/cps}"
+        hy "{slowtype}I think… I know… enough."
         "It's kind of striking how quickly Akira's father turned the conversation around and put his daughter on the defensive."
 
         show bedridden_akira glare
         with charachangeev
 
         aki "You don't know anything about her or me. That's your problem."
-        hy "{cps=20}This is going… in circles.{/cps}"
+        hy "{slowtype}This is going… in circles."
 
         show bedridden_akira distant
         with charachangeev
 
         aki "Fine, I didn't come here to argue anyway."
-        hy "{cps=20}Then why… did you… come?{/cps}"
+        hy "{slowtype}Then why… did you… come?"
 
         show bedridden_akira glare
         with charachangeev
 
         aki "Huh? You don't know? You asked Mom about Hanako."
-        hy "{cps=20}So I… did.{/cps}"
+        hy "{slowtype}So I… did."
         aki "Mom called me and asked me to take her to you."
 
         play ambient sfx_ekgfast volume 1.0
@@ -667,53 +669,105 @@ label sh_ch32:
         scene bg raigmore_room
         with locationchange
 
+        # TODO play curtain open SFX
+
         "With the curtains opened, I get my first look at him since that dreadful evening."
 
-        scene ev bedridden_akhiha_look
+        scene ev bedridden_akhiha at truecenter:
+            zoom 0.5
+        show bedridden_hanako downsad at truecenter:
+            zoom 0.5
+        show bedridden_hiroyuki discomfort
         with mediumflash
+
+        $ renpy.music.set_audio_filter("ambient", renpy.audio.filter.Reverb(0.5))
+
+        play ambient sfx_ekg volume 0.5
 
         play music music_moonlight fadein 4.0
 
         "It's a day and night difference."
         "I've only ever seen him wearing a neat business suit and glasses, and he carried an air of formality wherever he went."
-        "Wearing old-fashioned pajamas, not having his glasses on, and with a bandaged chest barely visible underneath his night attire, he looks anything but formal and dignified."
+        "Wearing old-fashioned pajamas and with a bandaged chest barely visible underneath his night attire, he looks anything but formal and dignified."
         "Making it even worse are the drops of sweat on his forehead, perhaps the result of his verbal stand-off with Akira. The one thing that remained the same about him is the sharp look in his eyes."
         "Is this what Hisao looked like when he was hospitalized? I shudder a bit at the thought."
+
+        # kinda annoying to hide and reapply the truecenter and zoom properties every time this is hidden, so just set
+        # its alpha to 0 when i want to hide it
+        show bedridden_hiroyuki:
+            alpha 0.0
+        with charachangeev
+
         "Hisao and I stand in front of the bed and make a polite bow. Lilly's father gives an appreciative nod to acknowledge our presence."
-        hy "Miss… Ikezawa… Mister… Nakai."
+        hy "{slowtype}Miss… Ikezawa… Mister… Nakai."
         hi "Hello, sir. How are you feeling?"
         ha "H-hello."
-        hy "I… apologize… cutting… vacation short. This is… not… my… best… moment… as a… host."
+
+        show bedridden_hiroyuki discomfort:
+            alpha 1.0
+        with charachangeev
+
+        hy "{slowtype}I… apologize… cutting… vacation short. This is… not… my… best… moment… as a… host."
         ha "It's okay. This vacation has b-been very special to me."
         hi "To me as well. We'll both treasure the times we had here, even without Edinburgh."
-        hy "That is… good t-to hear. Before… you… leave… tomor… row, I wanted… to wish you… safe journey… back."
+        hy "{slowtype}That is… good t-to hear. Before… you… leave… tomor… row, I wanted… to wish you… safe journey… back."
         "It's hard to see him make such an obviously painful effort to speak."
-        ha "You d-don't have to talk if it hurts to speak."
-        hy "I will… get to… the point then. I… have heard… what… happened… from the… doctors… and from… my wife. The doctors… called me… lucky, but…"
 
-        show ev bedridden_akhiha_focus
+        show bedridden_hanako concern:
+            zoom 0.5
+        with charachangeev
+
+        ha "You d-don't have to talk if it hurts to speak."
+        hy "{slowtype}I will… get to… the point then. I… have heard… what… happened… from the… doctors… and from… my wife. The doctors… called me… lucky, but…"
+
+        show ev:
+            zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
+        show bedridden_hanako:
+            zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
+        show bedridden_hiroyuki discomfort_large:
+            crop (1448, 158, 2083, 1171) xysize (1920, 1080)
         with charachangeev
 
         "This time his eyes look directly at me, causing me to flinch."
-        hy "…It…would be… an insult… to you… to… credit… just… luck, Miss… Ikezawa."
+        hy "{slowtype}…It…would be… an insult… to you… to… credit… just… luck, Miss… Ikezawa."
         ha "I… didn't really do much. The people you should be thanking are the d-doctors and ambulance people."
-        hy "Your… humility… does you… credit… Yet… it was… you who… asked Lilly… to call… a doctor. And… it was… you who… kept my… heart going… until the… ambulance… arrived."
+        hy "{slowtype}Your… humility… does you… credit… Yet… it was… you who… asked Lilly… to call… a doctor. And… it was… you who… kept my… heart going… until the… ambulance… arrived."
         ha "They arrived p-pretty quickly, b-but…"
-        hy "But… probably… not soon… enough to… prevent… b-brain damage. The… idea…o f being… in a… vegetative… state… and a… permanent… b-burden on my… family… is more… terrifying… than death."
-        hy "If you… did not… save my life… you saved… something… more… important. You saved… my… dignity."
+
+        show bedridden_hiroyuki concern_large
+        with charachangeev
+
+        hy "{slowtype}But… probably… not soon… enough to… prevent… b-brain damage. The… idea… of being… in a… vegetative… state… and a… permanent… b-burden on my… family… is more… terrifying… than death."
+        hy "{slowtype}If you… did not… save my life… you saved… something… more… important. You saved… my… dignity."
         "I'm not really sure what to say in response to that."
         "I've never handled praise very well, so I merely fidget in place while staring at the floor."
-        hy "It seems… I now… owe you… a great… debt. I believe… repaying you… in some… way… is the… right thing… to do."
+
+        show bedridden_hiroyuki discomfort_large
+        with charachangeev
+
+        hy "{slowtype}It seems… I now… owe you… a great… debt. I believe… repaying you… in some… way… is the… right thing… to do."
         ha "Repaying m-me?"
         "Akira sighs."
         aki "How on earth do you repay someone for a life?"
+
+        show bedridden_hiroyuki angry_large
+        with charachangeev
+
         "Mister Satou gives Akira a short stare."
-        hy "You… should… already… know… after all… these years."
+        hy "{slowtype}You… should… already… know… after all… these years."
         aki "Hmph."
+
+        show bedridden_hiroyuki:
+            alpha 0.0
+        with charachangeev
+
         "Then he turns his head back to me."
-        hy "It is… true. Something… like… this is… difficult to pay back. But… certainly… there is… something I… can do… back."
+        hy "{slowtype}It is… true. Something… like… this is… difficult to pay back. But… certainly… there is… something I… can do… back."
         ha "I… c-can't really think of anything."
-        hy "There is… no need… to… answer… here… and now. Take… your time… and do… not… be humble. I am… not lacking… in… means."
+        hy "{slowtype}There is… no need… to… answer… here… and now. Take… your time… and do… not… be humble. I am… not lacking… in… means."
+
+        show bedridden_hanako unsure
+        with charachangeev
 
         nvl clear
         nvl show dissolve
@@ -739,34 +793,65 @@ label sh_ch32:
 
         queue music music_drama fadein 4.0
 
+        show bedridden_hanako downconcern
+        with charachangeev
+
         ha "Ummm… Uh…"
-        hy "Yes?"
+        hy "{slowtype}Yes?"
         ha "I… uh… d-don't really n-need anything in r-return. Because… y-you being alive is… already enough of a r-reward."
-        hy "Even… though we… barely know… each other?"
+
+        show bedridden_hiroyuki discomfort_large:
+            alpha 1.0
+        with charachangeev
+
+        hy "{slowtype}Even… though we… barely know… each other?"
         ha "I k-know… ah… I k-know… I… I… k-know…"
+
+        show bedridden_hanako concern
+        with charachangeev
+
         "Suddenly a big lump in jumps into my throat, and I breathe in and out several times before I can continue."
         "This is something that really hurts to say out loud."
 
-        show ev bedridden_akhiha_open
+        show bedridden_hanako downsad
         with charachangeev
 
         ha "I k-know… what it's l-like t-to… l-lose p-parents…"
+
+        show bedridden_hiroyuki concern_large
+        with charachangeev
+
         "The look he gives me is either one of sympathy or one of pity."
-        hy "My… condo… lences… for… your… loss."
+        hy "{slowtype}My… condo… lences… for… your… loss."
         ha "That's why… T-that's why I'm… really happy that Lilly doesn't h-have to go t-through that herself."
-        hy "You… are… quite close… to my… daughter, are… you… not?"
+        hy "{slowtype}You… are… quite close… to my… daughter, are… you… not?"
         ha "She's a very special person to me. I… l-love her very much."
-        hy "I see."
+        hy "{slowtype}I see."
+
+        show bedridden_hanako downconcern
+        with charachangeev
+
         ha "Ummm… C-can I p-please ask y-you a f-favor?"
-        hy "Have you… already… thought of… something?"
+
+        show bedridden_hiroyuki discomfort_large
+        with charachangeev
+
+        hy "{slowtype}Have you… already… thought of… something?"
         "I meekly shake my head."
         ha "N-no, but… I would… like to t-talk to you about Lilly a bit. Will you… listen t-to me?"
-        hy "I will."
+        hy "{slowtype}I will."
+
+        show bedridden_hanako sad
+        show bedridden_hiroyuki listen_large
+        with charachangeev
+
         ha "Ummm…"
         "I rack my brain in an attempt to figure out what I should tell him about my best friend."
 
-        show ev bedridden_akhiha_talk
+        show bedridden_hanako downconcern
         with charachangeev
+
+        # TODO maybe a flashback here?
 
         ha "Lilly is… the k-kindest person I know. I didn't know her during my f-first year, because I don't interact with m-many people."
         ha "But then she c-came to live in the dorm room next to m-mine, and one evening I heard her comforting a friend who was f-feeling down."
@@ -776,64 +861,123 @@ label sh_ch32:
         ha "I later l-learned that her c-comforting a friend wasn't unusual for her. She has always b-been a bit of a mother figure for her class who would offer emotional s-support whenever someone n-needed it. Most of her class r-really looks up to her."
         ha "In a m-manner of speaking, as Lilly herself would s-say."
         ha "That's probably why she's been c-class representative for nearly 3 years. But I think that's also b-because Lilly is very independent, even c-compared to her classmates that have p-partial eyesight."
+
+        show bedridden_hanako concern
+        with charachangeev
+
         "I fidget a bit before continuing."
+
+        show bedridden_hanako downconcern
+        with charachangeev
+
         ha "L-last w-week you t-thanked me for looking after L-Lilly, b-but… that's not how things are at all. I h-hope that I can someday look out f-for her too, but the t-truth is that, ever since I've m-met her, it's been Lilly who's b-been looking after me."
         ha "I can c-cook a bit myself, but ever since w-we met, Lilly often c-cooks for both of us. I hope to b-be as good at it as she is s-some day. She also t-taught me m-many other things, like how to d-dance or f-fold c-cranes out of p-paper."
         "Hisao takes this moment to interrupt."
         hi "You shouldn't sell yourself short, Hanako. I don't believe Lilly knew how to play chess before she met you."
+
+        show bedridden_hanako:
+            alpha 0.0
+        with charachangeev
+
         ha "I… s-suppose not. It's fun to p-play against her, so I'm happy she p-picked it up so quickly."
         "She's not an extremely challenging opponent, but I wouldn't even be able to finish a game if I kept my eyes closed, so it's still impressive."
 
-        show ev bedridden_akhiha_phone
+        show bedridden_hanako downsmile:
+            alpha 1.0
+        show bedridden_hiroyuki discomfort_large
         with charachangeev
+
+        # TODO maybe show phone VFX here
 
         "I take out my phone and show it to him."
         ha "This is a g-gift from my best friends. The pretty phone s-strap is a present from Hisao, but the phone itself is f-from Lilly. She wanted it to be a s-surprise, so she went into the city on her own to p-pick it out for me."
+
+        show bedridden_hiroyuki listen_large
+        with charachangeev
+
         "I could still bring up Lilly's activities in the student council, but I'd rather avoid the subject of her relationship with Shizune."
+
+        show bedridden_hanako downsad
+        with charachangeev
+
         "Not really knowing how to proceed, I fall silent and blush. Hisao, sensing that I've hit a dead end, speaks up again."
         hi "I can confirm, sir, that everything Hanako just said is true. I think she's trying to ask you to…"
 
-        show ev bedridden_akhiha_look
+        show bedridden_hiroyuki discomfort_large
         with charachangeev
+
+        stop music fadeout 2.0
 
         "Mister Satou, who until now has been listening with his eyes closed as if trying to concentrate and weigh every word I just stammered, opens his eyes and makes a gesture to indicate there's no need for Hisao to continue."
 
-        stop music fadeout 2.0
         queue music music_friendship fadein 4.0
 
-        hy "I think… I… understand… what… she… wishes to… tell me…"
+        hy "{slowtype}I think… I… understand… what… she… wishes to… tell me…"
         "He turns his gaze back to me."
-        hy "Miss… Ikezawa… thank you… for… telling… me… all this…"
+        hy "{slowtype}Miss… Ikezawa… thank you… for… telling… me… all this…"
 
-        show ev bedridden_akhiha_focus
+        show bedridden_hanako downconcern
         with charachangeev
 
         ha "Ummm…"
-        hy "I… presume… you… would… like me… to… think… about… what… you… said?"
+
+        show bedridden_hiroyuki smile_large
+        with charachangeev
+
+        hy "{slowtype}I… presume… you… would… like me… to… think… about… what… you… said?"
+
+        show bedridden_hanako sad
+        with charachangeev
+
         "I manage a barely visible nod."
-        hy "Then… I will… if you… also… think… about… what I… said."
+        hy "{slowtype}Then… I will… if you… also… think… about… what I… said."
         ha "O-okay."
         "He nods."
-        hy "Then… I will… not… take more… of your… time and… I… wish you… two a… safe… journey… home."
+
+        show ev:
+            zoom 1.0 crop None
+        show bedridden_hanako:
+            zoom 1.0 crop None
+        show bedridden_hiroyuki relieved_large:
+            zoom 1.0 crop None
+        with charachangeev
+
+        hy "{slowtype}Then… I will… not… take more… of your… time and… I… wish you… two a… safe… journey… home."
+
+        show bedridden_hanako downsmile
+        with charachangeev
+
         hi "Thank you, sir. May you have a swift recovery."
         ha "Y-yes… ah… g-get better soon."
         "We both make a polite bow and prepare to leave the room."
         "But just as we're about to walk through the doorway, I hear Mister Satou's voice one more time."
-        hy "Miss… Ikezawa…?"
+
+        show ev:
+            zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
+        show bedridden_hanako downconcern:
+            zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
+        show bedridden_hiroyuki:
+            zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
+        with charachangeev
+
+        hy "{slowtype}Miss… Ikezawa…?"
         ha "Uh… Y-yes?"
-        hy "Did you… not… just say… that you… were… hoping to… one day… look out… for… Lilly?"
+        hy "{slowtype}Did you… not… just say… that you… were… hoping to… one day… look out… for… Lilly?"
         ha "Y-yes."
 
-        show ev bedridden_akhiha_smile
+        show bedridden_hiroyuki content_large
         with charachangeev
 
         "For a split-second there's an amused smile on his face."
-        hy "I think… you… did… exactly… that… just… now."
+        hy "{slowtype}I think… you… did… exactly… that… just… now."
 
+        stop ambient fadeout 3.0
         stop music fadeout 3.0
 
         scene black
         with endchapter
+
+        $ renpy.music.set_audio_filter("ambient", None)
 
         if _in_replay:
             return

@@ -26,6 +26,16 @@ init python:
         else:
             store.chchange = persistent.charachange
             store.chchangefast = persistent.charachangefast
+    
+    def sh_slowtype_tag(tag, argument, contents):
+        if argument is None or argument == "":
+            min_speed = 20
+        else:
+            min_speed = int(argument)
+        speed = min(preferences.text_cps, min_speed)
+        return [(renpy.TEXT_TAG, u"cps={}".format(speed))] + contents + [(renpy.TEXT_TAG, u"/cps")]
+
+    config.custom_text_tags["slowtype"] = sh_slowtype_tag
 
     # renpy doesnt like lambas :(
 
