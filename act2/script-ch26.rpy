@@ -131,7 +131,7 @@ label sh_ch26:
         show hanako emb_sad_sum
         with chchange
 
-        ha "{cps=20}I'm… o-okay.{/cps}"
+        ha "{slowtype}I'm… o-okay."
         "She doesn't look or even sound okay."
 
         show bg:

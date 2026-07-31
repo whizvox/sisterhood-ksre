@@ -467,7 +467,7 @@ label sh_ch9:
         "Good thing my inner thighs are still slippery or he'd be groaning in pain right now."
         hi "Ahh… Hanako…"
         ha "Nnnng… Hisao…?"
-        hi "{cps=20}S-slow down… hah… slow down a bit…{/cps}"
+        hi "{slowtype}S-slow down… hah… slow down a bit…"
         "I can tell his heart's doing fine right now. From the look of ecstasy on his face, I can tell he's feeling really good and trying his hardest to hold back."
         "I consider slowing down, but then speed up the movement of my hips and try to get as much stimulation for myself out of it as I can."
         hi "Ugh… H-H-Hanako… W-what…"

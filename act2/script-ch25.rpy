@@ -239,7 +239,7 @@ label sh_ch25:
 
         "Lilly seems to have given up trying to figure out how she ended up mistaking our room for hers and lets out another tortured yawn. Karla shrugs."
         ka "Well, at least that little mystery is now solved. That leaves us with the matter of getting you back to the land of the living."
-        li "{cps=20}I'm… okay.{/cps}"
+        li "{slowtype}I'm… okay."
         ka "Not convincingly so. Why don't you go and take a bath? It might make you feel better. Let me take you there."
 
         show lilly:
@@ -262,7 +262,7 @@ label sh_ch25:
         with chchange
 
         "That may very well be the cruelest thing I've heard in my entire life, and from her visible cringe, it appears that Lilly completely shares that impression."
-        li "{cps=20}Please… don't… ever…{/cps}"
+        li "{slowtype}Please… don't… ever…"
 
         show karla basic_smileclosed_cas
         hide lilly

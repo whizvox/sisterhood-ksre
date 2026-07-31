@@ -265,7 +265,7 @@ label sh_ch14:
 
         "I hear a gasp on the other end of the line."
         "Hanako?"
-        ha "{cps=20}…I…can't…{/cps}"
+        ha "{slowtype}…I…can't…"
         hi "You can't do what?"
 
         show hanagown distant_phone
@@ -274,7 +274,7 @@ label sh_ch14:
         stop music fadeout 0.5
         with Pause(0.5)
 
-        ha "{cps=20}…I… can't… be… your… girlfriend… anymore…{/cps}"
+        ha "{slowtype}…I… can't… be… your… girlfriend… anymore…"
 
         play music music_rain
 

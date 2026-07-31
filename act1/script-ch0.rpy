@@ -355,7 +355,7 @@ label sh_ch0:
         show takawa smile_close
         with charachangealways
 
-        ha "{cps=20}M-Miss Yumi…c-c-can I…c-c-come o-over n-next…w-week and p-p-play a…a g-game w-with y-y-you?{/cps}"
+        ha "{slowtype}M-Miss Yumi…c-c-can I…c-c-come o-over n-next…w-week and p-p-play a…a g-game w-with y-y-you?"
 
         with Pause(1.0)
 
@@ -377,7 +377,7 @@ label sh_ch0:
         queue sound sfx_heartfast
 
         "I gather all of what's left of my rapidly vaporizing determination and force myself to smile at her."
-        ha "{cps=20}M-m-Miss Yumi…c-c-can I b-be…b-b-be f-f-friends w-with you?{/cps}"
+        ha "{slowtype}M-m-Miss Yumi…c-c-can I b-be…b-b-be f-f-friends w-with you?"
         "I exhale deeply."
         "I said it."
         "I didn't think I could do it, but I said it."
@@ -493,7 +493,7 @@ label sh_ch0:
         "It's just a facade. Another tool to pry me open so you can take a look inside and determine just how broken things are!"
         "I'm trying to restrain myself, but suddenly I feel furious."
         "Before I can stop myself, I hiss a reply to her."
-        ha "{cps=20}I-I'm j-just another br-broken human being f-for you to f-fix.{/cps}"
+        ha "{slowtype}I-I'm j-just another br-broken human being f-for you to f-fix."
         "I regret those vitriolic words the instant they leave my mouth."
 
         show takawa serious_close_blur1

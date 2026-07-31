@@ -761,8 +761,8 @@ label sh_ch17:
         li "I'm… staying… here."
         ha "Yes, y-you're really… staying."
         "Finally letting go of Hanako's hand, I slowly turn in her direction."
-        li "{cps=20}Let's… graduate together, Hanako.{/cps}"
-        li "{cps=20}And let's make… lots of wonderful *sniff* memories in the meantime.{/cps}"
+        li "{slowtype}Let's… graduate together, Hanako."
+        li "{slowtype}And let's make… lots of wonderful *sniff* memories in the meantime."
         "As I finish these words, all the pent-up stress assaults me at once."
 
         show hanako basic_bashful_close
@@ -994,8 +994,8 @@ label sh_ch17:
         li "So… Hanako…"
         li "…this… this is you…"
         "She gives a gentle nod, and she replies with a voice that's tranquil and peaceful, her smile never leaving her face."
-        ha "{cps=20}This… is me.{/cps}"
-        ha "{cps=20}All… of me.{/cps}"
+        ha "{slowtype}This… is me."
+        ha "{slowtype}All… of me."
 
         stop music fadeout 5.0
         scene white

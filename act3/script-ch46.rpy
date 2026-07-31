@@ -1222,7 +1222,7 @@ label sh_ch46:
 
         "Then, as she's about half-way through, her mouth suddenly falls open, and I can hear her gasping for breath. Her eyes grow to the size of saucers."
         "I remember when we weren't dating yet and I decided to show her the scar on my chest. I told her I was going to take my shirt off, and she had an expression just like she has now. Well, almost like she has now. This time her eyes seem even bigger."
-        ha "{cps=20}Ah......{/cps}"
+        ha "{slowtype}Ah......"
         "My curiosity getting the better of me, I get a little closer to Hanako, and peek over her shoulder."
 
         # TODO maybe blur the background here?

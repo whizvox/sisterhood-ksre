@@ -725,8 +725,8 @@ translate es sisterhood_ch0_sh_ch0_2cc655b2:
 # game/mods/sisterhood/script-ch0.rpy:364
 translate es sisterhood_ch0_sh_ch0_660fcea1:
 
-    # ha "{cps=20}M-Miss Yumi…c-c-can I…c-c-come o-over n-next…w-week and p-p-play a…a g-game w-with y-y-you?{/cps}"
-    ha "{cps=20}S-Señorita Yumi… ¿p-p-puedo… i-ir la p-próxima… s-semana y j-j-jugar un… un j-juego con u-u-usted?{/cps}"
+    # ha "{slowtype}M-Miss Yumi…c-c-can I…c-c-come o-over n-next…w-week and p-p-play a…a g-game w-with y-y-you?"
+    ha "{slowtype}S-Señorita Yumi… ¿p-p-puedo… i-ir la p-próxima… s-semana y j-j-jugar un… un j-juego con u-u-usted?"
 
 # game/mods/sisterhood/script-ch0.rpy:373
 translate es sisterhood_ch0_sh_ch0_42a03341:
@@ -761,8 +761,8 @@ translate es sisterhood_ch0_sh_ch0_a4c1e685:
 # game/mods/sisterhood/script-ch0.rpy:386
 translate es sisterhood_ch0_sh_ch0_723f2324:
 
-    # ha "{cps=20}M-m-Miss Yumi…c-c-can I b-be…b-b-be f-f-friends w-with you?{/cps}"
-    ha "{cps=20}S-s-señorita Yumi… ¿p-p-puedo s-ser… s-s-ser su a-a-amiga?{/cps}"
+    # ha "{slowtype}M-m-Miss Yumi…c-c-can I b-be…b-b-be f-f-friends w-with you?"
+    ha "{slowtype}S-s-señorita Yumi… ¿p-p-puedo s-ser… s-s-ser su a-a-amiga?"
 
 # game/mods/sisterhood/script-ch0.rpy:387
 translate es sisterhood_ch0_sh_ch0_6c6ea9c9:
@@ -1001,8 +1001,8 @@ translate es sisterhood_ch0_sh_ch0_03e02fa3:
 # game/mods/sisterhood/script-ch0.rpy:501
 translate es sisterhood_ch0_sh_ch0_b11cfe78:
 
-    # ha "{cps=20}I-I'm j-just another br-broken human being f-for you to f-fix.{/cps}"
-    ha "{cps=20}Y-yo s-sólo soy otro ser humano r-roto que d-debes a-arreglar.{/cps}"
+    # ha "{slowtype}I-I'm j-just another br-broken human being f-for you to f-fix."
+    ha "{slowtype}Y-yo s-sólo soy otro ser humano r-roto que d-debes a-arreglar."
 
 # game/mods/sisterhood/script-ch0.rpy:502
 translate es sisterhood_ch0_sh_ch0_b2a8fe00:

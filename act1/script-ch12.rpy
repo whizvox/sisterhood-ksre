@@ -236,7 +236,7 @@ label sh_ch12:
         show hanako emb_sad
         with chchange
 
-        ha "{cps=20}I'll… miss you, Lilly.{/cps}"
+        ha "{slowtype}I'll… miss you, Lilly."
         "It hurts me to hear the tone in Hanako's voice."
         "The budding confidence that was still very evident in her voice last night seems to have vanished and is once more replaced with the scared, insecure tone that was there when she started speaking to me for the first time."
         "I feel I owe it to Hanako to help her get her confidence back and remind her of how far she's already come."
@@ -265,7 +265,7 @@ label sh_ch12:
         show hanako emb_timid
         with charachangealways
 
-        ha "{cps=20}I… I… understand.{/cps}"
+        ha "{slowtype}I… I… understand."
         li "Will you be okay?"
         ha "I will."
         "I truly believe she will."

@@ -675,7 +675,7 @@ label sh_ch31:
         show bedridden_hiroyuki discomfort
         with charachangeev
 
-        hyd "{cps=20}I… fine.{/cps}"
+        hyd "{slowtype}I… fine."
         "Those fractured ribs of his probably make even taking deep breaths painful, and his first reaction is to claim he's fine. I shrug."
         aki "His definition of ‘fine’ is still the same as it was just before this whole mess started, Sis. I'll leave it up to you to decide whether you want me to describe what he looks like, but ‘fine’ is not a word I'd use right now."
 
@@ -684,7 +684,7 @@ label sh_ch31:
 
         "Lilly merely smiles sheepishly and then goes back to her worrying tone."
         li "You don't have to talk, Father. If you really need to say something, just whisper. Please don't strain yourself."
-        hyd "{cps=20}Your… mother… not here?{/cps}"
+        hyd "{slowtype}Your… mother… not here?"
         "Lilly smiles and shakes her head."
         li "Mother will be keeping you company this evening."
         "That's leaving out one heck of an important detail."
@@ -705,7 +705,7 @@ label sh_ch31:
         show bedridden_hiroyuki discomfort
         with charachangeev
 
-        hyd "{cps=20}I… could not… just stop… just before… the… end. My… honor… was at… st-stake… here.{/cps}"
+        hyd "{slowtype}I… could not… just stop… just before… the… end. My… honor… was at… st-stake… here."
 
         show bedridden_akira shout
         hide bedridden_hiroyuki
@@ -722,7 +722,7 @@ label sh_ch31:
         show bedridden_hiroyuki discomfort
         with charachangeev
 
-        hyd "{cps=20}What… do… you… mean?{/cps}"
+        hyd "{slowtype}What… do… you… mean?"
 
         hide bedridden_hiroyuki
         with charachangeev
@@ -741,14 +741,14 @@ label sh_ch31:
         hide bedridden_hiroyuki
         with charachangeev
 
-        hyd "{cps=20}Could… not… afford to… yet…{/cps}"
+        hyd "{slowtype}Could… not… afford to… yet…"
         aki "Could not afford to? Even a couple of years ago, you could have retired and lived out the rest of your days in comfort. This was simply about your ego."
 
         show bedridden_hiroyuki angry
         with charachangeev
 
-        hyd "{cps=20}…no way… to… speak to… a parent… Akira.{/cps}"
-        hyd "{cps=20}You… show… respect… for once… This was… about… your… education… and… financial future… too.{/cps}"
+        hyd "{slowtype}…no way… to… speak to… a parent… Akira."
+        hyd "{slowtype}You… show… respect… for once… This was… about… your… education… and… financial future… too."
         hyd "{cps=20}And es… especially… Lilly's."
 
         hide bedridden_akira
@@ -761,10 +761,10 @@ label sh_ch31:
         show bedridden_hiroyuki discomfort
         with charachangeev
 
-        hyd "{cps=20}We… have been… setting… trust fund… for your… cial future… during our… time here.{/cps}"
+        hyd "{slowtype}We… have been… setting… trust fund… for your… cial future… during our… time here."
         li "A trust fund?"
-        hyd "{cps=20}Yes… so even… in… the long run… you will… always be… well… provided for.{/cps}"
-        hyd "{cps=20}Even… if you… would not… find a… husband… at some point, you… would still… be able… to live… without worry, L-Lilly.{/cps}"
+        hyd "{slowtype}Yes… so even… in… the long run… you will… always be… well… provided for."
+        hyd "{slowtype}Even… if you… would not… find a… husband… at some point, you… would still… be able… to live… without worry, L-Lilly."
 
         show bedridden_lilly angry
         show bedridden_akira glare
@@ -785,7 +785,7 @@ label sh_ch31:
 
         stop music fadeout 4.0
 
-        hyd "{cps=20}But… she… will… probably… need… it.{/cps}"
+        hyd "{slowtype}But… she… will… probably… need… it."
 
         scene bg raigmore_room
         with locationchange
