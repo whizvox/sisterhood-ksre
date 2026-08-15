@@ -303,7 +303,7 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
-    # chapter 29
+    # chapter 29 - Soap Opera
     ("@Event Art/Soap Opera Corrections/edit/hisao1_back.png",                  "event/soapopera/soapopera_hisao1_back.jpg",        [RESIZE_1080P]),
     ("@Event Art/Soap Opera Corrections/edit/hisao1_back.png",                  "event/soapopera/soapopera_hisao1_back_large.jpg"),
     ("@Event Art/Soap Opera Corrections/edit/hisao1_lay.png",                   "event/soapopera/soapopera_hisao1_lay.jpg",         [RESIZE_1080P]),
@@ -323,6 +323,24 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Soap Opera Corrections/edit/hanako2_caress.png",               "event/soapopera/soapopera_hanako2_caress_large.jpg"),
     ("@Event Art/Soap Opera Corrections/edit/hanako2_spray.png",                "event/soapopera/soapopera_hanako2_spray_large.jpg"),
     ("@Event Art/Soap Opera Corrections/edit/hanako2_climax.png",               "event/soapopera/soapopera_hanako2_climax.jpg",     [RESIZE_1080P]),
+    # chapter 29 - Evening Snack
+    ("@Event Art/Ch29 Evening Snack/1-0_FINAL_art.png", "event/eveningsnack/eveningsnack_cuddle.jpg"),
+    ("@Event Art/Ch29 Evening Snack/1_FINAL_art.png",   "event/eveningsnack/eveningsnack_cuddle_naked.jpg"),
+    ("@Event Art/Ch29 Evening Snack/2_FINAL.png",       "event/eveningsnack/eveningsnack_hipamper.jpg"),
+    ("@Event Art/Ch29 Evening Snack/3_FINAL.png",       "event/eveningsnack/eveningsnack_hiplay.jpg"),
+    ("@Event Art/Ch29 Evening Snack/4_FINAL.png",       "event/eveningsnack/eveningsnack_bj1_look.jpg"),
+    ("@Event Art/Ch29 Evening Snack/5_FINAL.png",       "event/eveningsnack/eveningsnack_bj1_lick.jpg"),
+    ("@Event Art/Ch29 Evening Snack/6_FINAL.png",       "event/eveningsnack/eveningsnack_bj1_pleasure.jpg"),
+    ("@Event Art/Ch29 Evening Snack/7_FINAL.png",       "event/eveningsnack/eveningsnack_bj1_awkward.jpg"),
+    ("@Event Art/Ch29 Evening Snack/8_FINAL.png",       "event/eveningsnack/eveningsnack_bj2_pleasure.jpg"),
+    ("@Event Art/Ch29 Evening Snack/9_FINAL.png",       "event/eveningsnack/eveningsnack_bj2_climax.jpg"),
+    ("@Event Art/Ch29 Evening Snack/10_FINAL.png",      "event/eveningsnack/eveningsnack_hapamper.jpg"),
+    ("@Event Art/Ch29 Evening Snack/11_FINAL.png",      "event/eveningsnack/eveningsnack_haplay.jpg"),
+    ("@Event Art/Ch29 Evening Snack/12-2_FINAL.png",    "event/eveningsnack/eveningsnack_cun1_look.jpg"),
+    ("@Event Art/Ch29 Evening Snack/13-3_FINAL.png",    "event/eveningsnack/eveningsnack_cun1_tounge.jpg"),
+    ("@Event Art/Ch29 Evening Snack/14-2_FINAL.png",    "event/eveningsnack/eveningsnack_cun1_push.jpg"),
+    ("@Event Art/Ch29 Evening Snack/15-2.png",          "event/eveningsnack/eveningsnack_cun2_pleasure.jpg"),
+    ("@Event Art/Ch29 Evening Snack/16-3.png",          "event/eveningsnack/eveningsnack_cun2_climax.jpg"),
     # chapter 30+31
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_B_FINAL_1.1.jpg", "event/bedridden/bedridden_akira.jpg", [RESIZE_1080P]),

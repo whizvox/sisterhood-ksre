@@ -844,6 +844,10 @@ label sh_ch29:
 
     label .s3:
 
+        # TODO maybe change the music from serene at some point? it lasts like half the chapter at this point
+        if _in_replay:
+            play music music_serene fadein 4.0
+
         $ set_window_tint(TINT_HANAKO)
 
         scene bg satou_guestroom_ni:
@@ -856,6 +860,8 @@ label sh_ch29:
         show hisao basic_smile_bath_close
         with charaenter
 
+        # TODO create Hisao nervous sprite
+
         "I notice there's a bit of a nervous expression on his face as he sits down on the edge of the bed. Feeling a little awkward myself, I sit down next to him on his right side and wait for him to initiate the next step."
         ha "..."
         hi "..."
@@ -865,39 +871,49 @@ label sh_ch29:
         "Nevertheless, I've never said no to a cuddling session before, and I have no intention of breaking that habit. I get a little farther onto the bed and wait for him to make the next move."
         ha "Okay."
 
+        show hisao:
+            yanchor 0.0
+            ease 0.5 alpha 0.0
+        with charamovefastest
+
         hide hisao
-        with charaexit
+        with None
 
         play sound sfx_impact
 
         with vpunch
 
-        "He gets closer to me, pulls me into a hug and then lets himself fall backwards, causing me to end up on top of him. The feeling of his hands stroking my scalp and shoulders and the sensation of his ankles rubbing against mine are very pleasant indeed, but every time we make eye contact and I give him an expectant look, he merely gives me a sheepish look back. He's definitely stalling for some reason."
+        "He gets closer to me, pulls me into a hug, and then lets himself fall backwards, causing me to end up on top of him."
+
+        scene ev eveningsnack_cuddle:
+            zoom 0.5
+        with mediumflash
+
+        "The feeling of his hands stroking my scalp and shoulders and the sensation of his ankles rubbing against mine are very pleasant indeed, but every time we make eye contact and I give him an expectant look, he merely gives me a sheepish look back. He's definitely stalling for some reason."
         "Come to think of it, this situation actually feels familiar."
         ha "Hisao?"
         hi "Yes?"
         ha "Ummm… it's not like this doesn't feel good, but… this… feels a little like last week, d-doesn't it?"
         "‘Last week’ in this case referring to the evening he convinced me not to go with the usual way of him lying on top of me and give spooning a try, which I actually ended up enjoying quite a lot."
 
-        show hisao basic_smile_bath_close
-        with charaenter
+        show ev:
+            zoom 1.0 crop (567, 529, 1920, 1080)
+        with { "master": charachangeev }
 
         "The half-guilty look on his face all but tells me I was right on the mark."
         hi "Heh, perceptive as ever, I see."
         ha "What… were you thinking about?"
-
-        show hisao basic_speak_bath_close
-        with chchange
-
         hi "Just a passing thought."
         ha "..."
         hi "Promise me you won't laugh."
         ha "Okay."
         "He leans in, kisses my ear and then whispers something to me."
-        "I don't laugh, just like I promised. That was hardly going to be my first reaction anyway. I merely fall prey to one of the most luminescent blushes I've ever experienced. He wants to do… that?"
+        "I don't laugh, just like I promised. That was hardly going to be my first reaction anyway. I merely fall prey to one of the most luminescent blushes I've ever experienced."
+        "He wants to do… {w=0.5}{i}that{/i}?"
 
-        show hisao basic_bashful_bath_close
-        with chchange
+        show ev:
+            zoom 0.5 crop None
+        with { "master": charachangeev }
 
         "Hisao's awkward look shows that he's already sorry he said anything."
         hi "Eh… On the other hand, never mind."
@@ -915,29 +931,46 @@ label sh_ch29:
         "It might be worth it."
         "If it feels really good…"
         "As long as I don't mess up, of course."
+
+        show ev:
+            zoom 1.0 crop (567, 529, 1920, 1080)
+        with { "master": charachangeev }
+
         ha "Uh… W-what if… What if I m-mess up?"
         "There's a surprised silence on his end. He probably didn't expect me to even consider it."
         "But if it feels good to him…"
         hi "If you mess up, we'll just go back to sticking to what works, and I'll do my best to make it feel extra good to you. And we'll just deny that it ever happened."
         "Denial? Yeah, I guess denial works for me."
 
-        play music music_one fadein 4.0
+        stop music fadeout 3.0
+
+        queue music music_one fadein 4.0
 
         ha "O-okay…"
+
+        show ev:
+            zoom 0.5 crop None
+        with { "master": charachangeev }
+
         "Another awkward smile. Let's hope this isn't going to result in mutual regret."
         hi "So… uh… it's probably going to be easiest to take turns, right?"
         ha "Y-yes. Uh…w-would you l-like to g-go first?"
         hi "…okay."
 
-        show hisao basic_bashful_nak_close
-        with chchange
+        scene black
+        with charachangeev
 
-        "I get off him, and we both sit up. I start fumbling with the belt of his bathrobe, taking several seconds to get it loose. He allows the bathrobe to slide off his shoulders and then starts loosening mine as well."
+        "I get off him, and we both sit up."
+
+        play sound sfx_rustling
+
+        "I start fumbling with the belt of his bathrobe, taking several seconds to get it loose. He allows the bathrobe to slide off his shoulders and then starts loosening mine as well."
         ha "M-me too?"
         hi "If it's okay with you."
         "I'm not completely comfortable, but I nod nevertheless."
         "As I let my bathrobe slide down as well and then drop both robes over the edge of the bed, I only hope that the atmosphere isn't going to remain this awkward the whole time."
-        "When I turn back towards Hisao, I see an expectant expression on his face. I'm not really that confident myself."
+        "When I turn back towards Hisao, I see an expectant expression on his face."
+        "I'm not really that confident myself."
         ha "Ummm…"
         hi "Yes?"
         ha "I… d-don't really know h-how to do this."
@@ -946,41 +979,75 @@ label sh_ch29:
         ha "I… I think it does."
         hi "That's probably a good way to go about it."
         ha "Okay."
-
-        scene ev eveningsnack_hisao_look
-
         "At least I have a general idea now. I give a hesitant nod to Hisao who lies down on his back and then beckons me to lie on top of him."
+
+        scene ev eveningsnack_cuddle_naked:
+            zoom 0.5
+        with charachangeev
+
         "I do so and we share a few kisses and cuddles until my nervousness starts to die down a bit."
         "I suppose it's up to me now."
-        "Use my hands without using my hands."
+        "{i}Use my hands without using my hands...{/i}"
         "Okay then."
 
-        scene ev eveningsnack_hisao_neck
+        show ev eveningsnack_hipamper
+        with { "master": Dissolve(1.5) }
 
         "I give him one more peck on the lips and then move sideways until I reach his ear. He shudders lightly as I take his earlobe between my lips and start kissing it."
         "His hands wrap around me and stroke my back as I move from his earlobe to his neck and let my tongue do what my fingertips have done several times before."
         "Before moving further down, I suckle gently on the most sensitive part of his neck, making sure not to leave a suction mark. I quietly smile to myself when I think of what comes next."
 
-        scene ev eveningsnack_hisao_chest
+        show ev:
+            zoom 1.0 crop (377, 0, 1920, 1080)
+        with { "master": Dissolve(1.0) }
 
-        "His chest has been a source of fascination for me ever since he revealed his chest scar."
-        "There might be other heart patients at Yamaku, I neither know nor care about that. But as far as I'm concerned, that light horizontal line there is a sight that is truly unique to him."
-        "His chest may easily be my favorite part of his body. I love stroking it with my hand or laying my head on it and listening to his heartbeat. Perhaps these acts are my way of reminding him of my acceptance."
-        "And now my head is hovering a few centimeters above his chest, the scar in the middle nearly touching the tip of my nose."
-        "I give his chest a loving stare and then start planting kisses on it, first slowly, but then faster and faster. Every so often, I briefly pause to listen to his heartbeat before resuming my pampering."
-        "Eventually, I look up and see an encouraging smile on his face. He seems to like it so far."
+        nvl clear
+        nvl show dissolve
+
+        n "His chest has been a source of fascination for me ever since he revealed his chest scar."
+        n "There might be other heart patients at Yamaku; I neither know nor care about that. But as far as I'm concerned, that light horizontal line there is a sight that is truly unique to him."
+        n "His chest may easily be my favorite part of his body. I love stroking it with my hand or laying my head on it and listening to his heartbeat. Perhaps these acts are my way of reminding him of my acceptance."
+        n "And now my head is hovering a few centimeters above his chest, the scar in the middle nearly touching the tip of my nose."
+        n "{vspace=60}I give his chest a loving stare and then start planting kisses on it, first slowly, but then faster and faster. Every so often, I briefly pause to listen to his heartbeat before resuming my pampering."
+        n "{vspace=30}Eventually, I look up and see an encouraging smile on his face. He seems to like it so far."
+
+        nvl hide dissolve
+
+        show ev eveningsnack_hiplay:
+            zoom 0.5 crop None
+        with { "master": Dissolve(1.0) }
+
         "Emboldened a bit by this, I move my attention back to his chest and stick out my tongue, letting it travel from his chest scar to his right nipple."
         "I teasingly circle it a few times before flicking it with the tip of my tongue and am pleased by the gasp that follows. I let my tongue wander from his right nipple to his left and start caressing it in the same way."
+
+        show ev:
+            zoom 0.9 anchor (676, 507) transform_anchor True
+        with { "master": Dissolve(1.0) }
+
         "Rewarded with another sharp breath, I decide to step up the pace a bit, I lick one nipple, then move to the other, then back again, sneaking in little kisses near his armpit, side and collarbone on the side."
         "By this time his entire body has started moving underneath me, shuddering at each contact with my tongue and his breathing has grown quick and shallow."
         "I don't think I'd mind going on like this for a long time, but when he gently puts his hands on my shoulders and gives them a few short taps with his fingers, I realize that he's ready for the main event."
         "I giggle a bit as I playfully rub his erect nipples with the tip of my nose and give him one last kiss on the scar located in between them."
-        "Then I move downward a bit and kiss him again, lower myself even more and kiss him once more. Laying a trail of kisses in the process, I work my way from his chest, past his tummy and finally down to his abdomen."
 
-        scene ev eveningsnack_hisao_stare
+        show ev:
+            ease 1.0 xanchor 942
+        with None
+
+        "Then I move downward a bit and kiss him again..."
+
+        show ev:
+            ease 1.0 xanchor 1248
+        with None
+
+        "...lower myself even more and kiss him once more."
+        "Laying a trail of kisses in the process, I work my way from his chest, past his tummy and finally down to his abdomen."
+
+        show ev eveningsnack_bj1_look:
+            zoom 0.5 anchor (0, 0)
+        with { "master": charachangeev }
 
         "When I finally come face to face with his member, I can't help but swallow a little lump in my throat. I've seen it plenty of times before, but never from up close like this."
-        "I'm not supposed to… put that in all the way, am I? I'll choke for sure."
+        "{i}I'm not supposed to… put that in all the way, am I? I'll choke for sure.{/i}"
         "It's also supposed to feel really good."
         "I shoot an uncertain glance at Hisao's, who's watching me with a mixture of embarrassment and anticipation on his face."
         hi "Just… take it slowly, Hanako. And just stop if you don't like it."
