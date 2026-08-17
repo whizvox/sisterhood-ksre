@@ -121,6 +121,7 @@ init 1 python:
     sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
+    sh_event("celloandwine", ["cello_play", "cello_lookup", "block_pout", "block_grin", "sit_tease", "sit_rest", "sit_cover", "sit_feel", "sit_clap", "sit_kiss"])
     sh_event("pillowtalk", ["kiss"])
     sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hanako1_hairtalk_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress_large", "hanako2_spray_large", "hanako2_climax"])
     sh_event("eveningsnack", ["cuddle", "cuddle_naked", "hipamper", "hiplay", "bj1_look", "bj1_lick", "bj1_pleasure", "bj1_awkward", "bj2_pleasure", "bj2_climax", "hapamper", "haplay", "cun1_look", "cun1_tounge", "cun1_grimace", "cun2_pleasure", "cun2_climax"])

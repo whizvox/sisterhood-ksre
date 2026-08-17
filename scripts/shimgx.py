@@ -287,6 +287,17 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_03.png", "event/planeride/planeride_listen.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_04.png", "event/planeride/planeride_frown.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
     ("reference/plane ride cgs/Sisterhood_Hanako_x_Lilly_plane_05.png", "event/planeride/planeride_weaksmile.jpg", [crop(0, 400, 3840, 2560), RESIZE_1080P]),
+    # chapter 24 - Cello and Wine
+    ("@Event Art/Ch 24 Cello and Wine/1.1.png", "event/celloandwine/celloandwine_cello_play.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/1.2.png", "event/celloandwine/celloandwine_cello_lookup.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/2.1.png", "event/celloandwine/celloandwine_block_pout.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/2.2.png", "event/celloandwine/celloandwine_block_grin.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/3.1.png", "event/celloandwine/celloandwine_sit_tease.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/3.2.png", "event/celloandwine/celloandwine_sit_rest.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/3.3.png", "event/celloandwine/celloandwine_sit_cover.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/3.4.png", "event/celloandwine/celloandwine_sit_feel.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/3.5.png", "event/celloandwine/celloandwine_sit_clap.jpg"),
+    ("@Event Art/Ch 24 Cello and Wine/3.6.png", "event/celloandwine/celloandwine_sit_kiss.jpg"),
     # chapter 34
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_01.png",     "event/hanakohistory/hanakohistory_bed.jpg"),
     ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_02.png",     "event/hanakohistory/hanakohistory_bed_pain.jpg"),
@@ -340,7 +351,8 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Ch29 Evening Snack/13-3_FINAL.png",    "event/eveningsnack/eveningsnack_cun1_tounge.jpg"),
     ("@Event Art/Ch29 Evening Snack/14-2_FINAL.png",    "event/eveningsnack/eveningsnack_cun1_push.jpg"),
     ("@Event Art/Ch29 Evening Snack/15-2.png",          "event/eveningsnack/eveningsnack_cun2_pleasure.jpg"),
-    ("@Event Art/Ch29 Evening Snack/16-3.png",          "event/eveningsnack/eveningsnack_cun2_climax.jpg"),
+    ("@Event Art/Ch29 Evening Snack/16-3.png",          "event/eveningsnack/eveningsnack_cun2_eatout.jpg"),
+    ("@Event Art/Ch29 Evening Snack/17.png",            "event/eveningsnack/eveningsnack_cun2_climax.jpg"),
     # chapter 30+31
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_B_FINAL_1.1.jpg", "event/bedridden/bedridden_akira.jpg", [RESIZE_1080P]),
