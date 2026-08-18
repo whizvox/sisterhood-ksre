@@ -353,6 +353,10 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Ch29 Evening Snack/15-2.png",          "event/eveningsnack/eveningsnack_cun2_pleasure.jpg"),
     ("@Event Art/Ch29 Evening Snack/16-3.png",          "event/eveningsnack/eveningsnack_cun2_eatout.jpg"),
     ("@Event Art/Ch29 Evening Snack/17.png",            "event/eveningsnack/eveningsnack_cun2_climax.jpg"),
+    # last-minute pillowtalk CGs
+    ("@Event Art/Ch10+20 Pillow Talk/CG_SET_B2-01_dark.png",    "event/pillowtalk/pillowtalk_blanket_dark.jpg", [RESIZE_1080P]),
+    ("@Event Art/Ch10+20 Pillow Talk/hanako upblush dark.png",  "event/pillowtalk/pillowtalk_hanako_upblush_dark.png", [RESIZE_1080P]),
+    ("@Event Art/Ch10+20 Pillow Talk/hanako grinblush dark.png",  "event/pillowtalk/pillowtalk_hanako_grinblush_dark.png", [RESIZE_1080P]),
     # chapter 30+31
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_B_FINAL_1.1.jpg", "event/bedridden/bedridden_akira.jpg", [RESIZE_1080P]),

@@ -169,6 +169,7 @@ init:
     define nextchapter = Dissolve(2.0)
     define endchapter = Dissolve(3.0)
     define mediumflash = Fade(1, 0, 1, color="#FFF")
+    define longflash = Fade(1.5, 0, 1.5, color="#FFF")
     define easeinmove = MoveTransition(1.5, time_warp=_warper.easein)
     define easeoutmove = MoveTransition(1.5, time_warp=_warper.easeout)
 

@@ -1051,13 +1051,15 @@ label sh_ch29:
         "It's also supposed to feel really good."
         "I shoot an uncertain glance at Hisao's, who's watching me with a mixture of embarrassment and anticipation on his face."
         hi "Just… take it slowly, Hanako. And just stop if you don't like it."
-        "I think back on what he said earlier. Use my hands without using my hands. Most of the time, I'd start by simply running a finger or two along. I could do something like that now as well."
+        "I think back on what he said earlier.{w} {i}Use my hands without using my hands.{/i}{w} Most of the time, I'd start by simply running a finger or two along. I could do something like that now as well."
         "Leaning on my elbows, I lower myself to his base, my face hovering mere centimeters over his length."
         "I giggle briefly when I see his length twitching ever so slightly whenever I breathe on it. That actually looks kind of cute."
 
-        scene ev eveningsnack_hisao_blowjob
+        show ev eveningsnack_bj1_lick:
+            transform_anchor False zoom 1.0 crop (1590, 199, 1920, 1080)
+        with charachangeev
 
-        "I finally take a deep breath, take his member between my fingers, stick out my tongue and touch it against his base. Then I run it along its length, stopping just as I reach the head."
+        "I finally take a deep breath, take his member between my fingers, stick out my tongue, and touch it against his base. Then I run it along its length, stopping just as I reach the head."
         "I hear a pleased sigh coming from Hisao. It sounds like he likes this and doing this isn't so bad, so I run my tongue along the length of his member again."
         "And again."
         "And again."
@@ -1065,19 +1067,43 @@ label sh_ch29:
         "I notice that the tip is glistening ever so slightly. Forcing my hesitation aside, I lower my head, place a gentle kiss on it and then give it a quick flick with my tongue."
         "As I do so, a faint, foreign smell enters my nostrils. Trying to avoid thinking too hard on this, I start licking the tip some more, each flick of my tongue slightly more forceful than the previous one."
         "While I'm busy tending to him, I suddenly feel a strange sensation in the back of my head, and when my gaze shifts up for a moment, I realize why."
-        "Hisao is looking straight at me. He's looking at what I'm doing and how I'm doing it. My head instantly goes into tomato-mode, and my gaze starts jumping between random points in the room in an attempt to evade his."
+
+        show ev:
+            crop (0, 56, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
+        "Hisao is looking straight at me."
+        "He's looking at what I'm doing and how I'm doing it."
+        "My head instantly goes into tomato-mode, and my gaze starts jumping between random points in the room in an attempt to evade his."
+
+        show ev eveningsnack_bj1_awkward:
+            zoom 0.5 crop None
+        with charachangeev
+
         hi "Uh… You were doing really well just now, Hanako. It's been great so far."
         ha "H-Hisao… P-please don't look at me."
         hi "Huh?"
         ha "It's… r-really embarrassing."
         "He briefly opens his mouth to say something, but then seems to reconsider and merely nods his head."
         hi "Okay, Hanako. I'll keep my eyes closed."
+
+        show ev eveningsnack_bj1_pleasure:
+            zoom 1.0 crop (0, 56, 1920, 1080)
+        with charachangeev
+
         "As he says this, he indeed lies back and closes his eyes, leaving me to pick things up again."
+
+        show ev:
+            crop (1590, 199, 1920, 1080)
+        with { "master": charachangeev }
+
         "Feeling a little more at ease now that he's no longer watching me, I lower my head again, part my lips and carefully wrap them around his tip."
         "Not sure how to proceed, I tilt my head a bit and let it rub against the inside of my cheek. I carefully start moving my head a little and get a soft sigh in response."
         "I move my head a little faster in response until I suddenly hear a loud yelp which causes me to quickly pull back."
 
-        scene ev eveningsnack_hisao_grimace
+        show ev eveningsnack_bj1_lick:
+            zoom 1.0 crop (0, 56, 1920, 1080)
+        with charachangeev
 
         hi "Ah… B-be careful with the teeth!"
         ha "S-sorry!"
@@ -1085,15 +1111,25 @@ label sh_ch29:
         ha "S-should I…?"
         hi "If you like…"
 
-        scene ev eveningsnack_hisao_blowjob
+        show ev eveningsnack_bj1_pleasure:
+            zoom 0.5 crop None
+        with charachangeev
 
         "I lower my head again and take him in my mouth once more. This time I try to keep it in the middle of my mouth and away from my teeth."
         "I attempt to keep my jaw as relaxed as possible as I slowly slide up and down."
-        "This is hardly the most comfortable act in the world as I have to brace myself at the end of every downward motion in order to prevent myself from letting it slide in too far. I wonder if I'm even doing this right."
+
+        show ev:
+            zoom 1.0 crop (1590, 199, 1920, 1080)
+        with { "master": charachangeev }
+
+        "This is hardly the most comfortable act in the world as I have to brace myself at the end of every downward motion in order to prevent myself from letting it slide in too far."
+        "I wonder if I'm even doing this right."
         "Hesitantly, I start moving my tongue around a bit."
         "It seems to get him even more aroused than he already was, but my initiative quickly comes to bite me when he suddenly bucks his hips ever so slightly and his member goes in just a little bit past my comfort zone."
 
-        scene ev eveningsnack_hisao_grimace
+        show ev eveningsnack_bj1_lick:
+            crop (0, 56, 1920, 1080)
+        with { "master": charachangeev }
 
         "The sensation causes me to immediately pull back again just before I have a sharp coughing fit. He immediately sits up and opens his eyes, a worried expression visible in them."
         hi "Hanako! Are you alright? I'm really sorry."
@@ -1105,18 +1141,37 @@ label sh_ch29:
         hi "Maybe you could lie down on your side?"
         "I was about ready to throw in the towel, but the look in his eyes convinces me to give it one last shot. It's not like actual intercourse was something I immediately got right."
 
-        scene ev eveningsnack_hisao_tummypillow
+        show ev eveningsnack_bj2_pleasure:
+            zoom 0.5 crop None
+        with charachangeev
 
         "I nod, and he lies down again. I lie down on my right side and lay my head on his belly as if it's a pillow. I gently take hold of him again with my left hand and wrap my lips around the head once more."
-        "This position is a lot more pleasant than the previous one and I soon become comfortable enough to make little nodding motions with my head while suckling on his tip as if it's an ice cream cone. He lets out a pleased sigh."
+        "This position is a lot more pleasant than the previous one and I soon become comfortable enough to make little nodding motions with my head while suckling on his tip as if it's an ice cream cone."
+        "He lets out a pleased sigh."
         hi "That's… really… good, Hanako."
+
+        show ev:
+            zoom 1.0 crop (488, 418, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+ 
         "Suddenly, I feel his hands on me, and for a moment I'm afraid he's going to grab hold of my head, but then a warm sensation spreads across the left side of my face."
         "I realize he's stroking my cheek with his fingers while his other hand is gently running through my hair. I'm amazed at how tender and loving his caresses are and how good they make me feel."
         "If we can keep doing things this way, I can probably keep this up until the end."
         "With newfound enthusiasm, I start nodding my head a little faster, using my left hand to rub and stroke his base and my tongue to dance and slide around him."
+
+        show ev:
+            crop (814, 556, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
         "Ever since I first started using my tongue on his tip, a slightly odd taste has been spreading through my mouth, but to my surprise it hasn't even been unpleasant."
         "His taste is slightly salty with just a little hint of sweetness, and while I'm not really sure whether it's pleasant or unpleasant, it's much too mild to really bother me."
-        "He keeps caressing my cheek, and it makes me feel so content that I snuggle up against him. I notice that his breathing has become labored, with more and more gasps and sighs in between breaths."
+        "He keeps caressing my cheek, and it makes me feel so content that I snuggle up against him."
+
+        show ev:
+            crop (391, 162, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
+        "I notice that his breathing has become labored, with more and more gasps and sighs in between breaths."
         "I eagerly keep going, the tenderness of his touch and the arousal in his voice filling me with happiness and lust at the same time."
         "I close my eyes to better concentrate on both and for a little while time seems to stop as the motions of my lips and tongue match up with the rhythm of his breathing."
         hi "H-Hanako…"
@@ -1124,18 +1179,29 @@ label sh_ch29:
         hi "H-Hanako… aah… I…"
         "He's nearing his limit. The way he breathes, the way he moves, the strain in his voice. He's almost there."
         hi "…almost…"
+
+        show ev:
+            crop (814, 556, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
         "But what am I supposed to do now? Should I keep going? Should I stop? Should I pull away at the last moment? Is he telling me to pull away or to brace myself?"
         "If I pull away at the last moment, that stuff will inevitably be in my hair for the rest of the night. It'll be a nightmare to get it out tomorrow, and I don't want to shower again this evening."
         "If I stop to ask him with him being this close, I'll kill the moment and might ruin his finish. I'm not even sure if I'd be able to get the question out of my mouth."
         "If I keep going until the end and he doesn't want me to, I might gross him out."
         "But if I stop prematurely, I'll have disappointed him, and that's much, much worse than grossing him out."
         "Boys like it when a girl keeps going, don't they?"
-        hi "Hanako… I…"
 
+        show ev:
+            crop (391, 162, 1920, 1080)
+        with { "master": charachangeev }
+
+        hi "Hanako… I…"
         "Anything but disappointment. I already have his taste in my mouth anyway. Judging from his voice, he's extremely close to the edge."
         "My mind made up, I speed up the pace and go all out on him. My lips and tongue dart across his tip again and again, my left hand moves furiously up and down, and I stretch out my pinky finger for the finishing touch."
 
-        scene ev eveningsnack_hisao_climax
+        show ev eveningsnack_bj2_climax:
+            zoom 0.5 crop None
+        with mediumflash
 
         "Just when my pinky lightly tickles the area underneath his base, several things happen at once."
         "Hisao lets out a loud and prolonged groan, his member starts throbbing violently, his entire lower body starts jerking uncontrollably and his upper body rises slightly despite my head still resting on his belly."
@@ -1144,9 +1210,18 @@ label sh_ch29:
         "It's a lot saltier than what I tasted earlier with just a touch of bitterness, but it's nothing I can't handle. What makes me a little queasy is the texture."
         "It's surprisingly thick and a bit slimy, and I can't shake the feeling that if I swallow it, it'd either get stuck in my throat or crawl its way back up."
 
-        scene bg satou_guestroom
+        stop music fadeout 4.0
+
+        scene bg satou_guestroom_ni
+        with longflash
 
         "As soon as the spasms in Hisao's lower region have died down, I get up and quickly spit the contents of my mouth onto his stomach. Hisao's still too engaged in his subsiding climax to even notice."
+
+        $ renpy.music.set_volume(0.5, channel="sound")
+        $ renpy.music.set_audio_filter("sound", renpy.audio.filter.Lowpass())
+        play sound [ sfx_heartfast, sfx_heartfast, sfx_heartfast, sfx_heartfast, sfx_heartfast, sfx_heartslow, sfx_heartslow, sfx_heartslow ]
+        $ renpy.music.set_volume(0.0, delay=10.0, channel="sound")
+
         "Staying true to tradition, I lie next to him and place my hand on his chest, feeling his frantic heartbeat slowly return to normal and keeping an eye out for palpitations."
         "Eventually, Hisao's dazed eyes start regaining some focus, and after recognizing the look on my face he gives a careful deliberate nod. I give a reassured smile and a quick peck on the cheek back."
         ha "I'll… go and get something to clean you, Hisao."
@@ -1155,7 +1230,10 @@ label sh_ch29:
         "I get myself a glass of water and drink it, slowly weakening the odd taste in my mouth until it's gone altogether. I return to the bed and kneel at Hisao's side, using the tissue to wipe his stomach clean."
         "After having cleaned up the little puddle, which was barely large enough to fill a teaspoon, I turn to him and notice he's gotten his bearings back and is now looking at me."
 
+        play music music_serene fadein 6.0        
+
         show hisao basic_neutral_nak_close
+        with charaenter
 
         hi "Hanako?"
         ha "Hisao… Did you… like it?"
@@ -1163,6 +1241,7 @@ label sh_ch29:
         "He looks lost for words for a few seconds."
 
         show hisao basic_speak_nak_close
+        with chchange
 
         hi "Why did you keep going?"
         ha "Huh?"
@@ -1170,63 +1249,99 @@ label sh_ch29:
         ha "I… t-thought that's what you w-wanted. D-don't b-boys… like it that way?"
 
         show hisao basic_grin_nak_close
+        with chchange
 
         hi "Did you read that somewhere?"
-        "My shoulders droop, and my smile instantly drops. So it turns out that I guessed wrong after all, and now he's weirded out or even grossed out by me."
+        "My shoulders droop, and my smile instantly drops."
+        "So it turns out that I guessed wrong after all, and now he's weirded out or even grossed out by me."
         ha "S-sorry. I thought… I'm r-really sorry."
 
         show hisao basic_smile_nak_close
+        with chchange
 
         hi "Hey, don't get all apologetic on me. If anything, I should probably apologize to you for not having been clearer. I… uh… don't know if this is a consolation to you, but…"
         "He takes my hand and holds it tenderly."
 
         show hisao basic_bashful_nak_close
+        with chchange
 
         hi "…as embarrassing as it is to say this, what you just did probably felt better than anything I've ever felt before. It was really, really good."
         "He does look a little awkward upon saying this, but my mood instantly jumps from gloomy to elated and, wearing a huge smile on my face, I lean forward and grab him into a tight, almost savage, hug."
+
+        show hisao basic_smile_nak_superclose
+        with characlose
+
         "He merely chuckles a little at my reaction and then looks into my eyes."
         hi "The least thing I can do is return the favor. If you're up for it."
+
+        stop music fadeout 4.0
         "I'm not completed sure if I'm ready to be on the receiving end or not, but I don't want to keep Hisao waiting any longer."
         "I'm also admittedly a little curious after having witnessed how much he got into it, so I ignore the feeling of my heart beating in my throat and lie down in the place where Hisao was lying earlier."
 
-        scene ev eveningsnack_hanako_look
+        queue music music_one fadein 4.0
 
-        "I feel a warm sensation all over when Hisao lies down on top of me and mouth a silent 'okay' in response to the expectant look in his eyes."
-        hi "Don't be afraid, Hanako. Just… lie back, relax and let it happen."
+        scene ev eveningsnack_hapamper:
+            zoom 0.5
+        with mediumflash
+
+        "I feel a warm sensation all over when Hisao lies down on top of me and mouth a silent ‘okay’ in response to the expectant look in his eyes."
+        hi "Don't be afraid, Hanako. Just… lie back, relax, and let it happen."
         "He kisses me and lets his forehead rest against mine for a moment."
-
-        scene ev eveningsnack_hanako_neck
-
-        "I giggle as he playfully rubs his nose against mine before letting his lips wander towards the right side of my face. I can't feel him kissing my cheek, my neck and my shoulder, but I can hear it."
-        "Even though my body no longer picks up those kinds of sensations there, him kissing or touching me there still makes me feel warm inside. It's the gesture that matters. The gesture that he's not repelled by my scarred skin."
+        "I giggle as he playfully rubs his nose against mine before letting his lips wander towards the right side of my face."
+        "I can't feel him kissing my cheek, my neck and my shoulder, but I can hear it."
+        "Even though my body no longer picks up those kinds of sensations there, him kissing or touching me there still makes me feel warm inside."
+        "It's the gesture that matters—the gesture that he's not repelled by my scarred skin."
         "I reflexively close my eyes when he brings up his hands, strokes the side of my face and kisses the spots above my eyebrows. It tickles a bit, and I squeeze my mouth shut in order to suppress a laugh."
+
+        show ev:
+            zoom 1.0 crop (470, 254, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
         "Then he moves to the left side of my face, and I gasp as I feel his lips and tongue proceed to caress my earlobe."
         "What starts out as a few cautious pecks soon becomes a barrage of kisses with a few playful nibbles thrown in."
         "When he moves his head slightly down and starts relentlessly kissing and licking my favorite spots on my neck, I let out an excited cry and wrap both my arms and my legs around him."
         "My body has started moving on its own, driven into a higher state of arousal with each flick of his tongue."
         "This is so good."
-
-        scene ev eveningsnack_hanako_chest
-
         "He whispers in my ear to let go of him for a moment, and as I do so, his tongue starts working its way down again, creating a wet trail from the back of my ear across my neck all the way to my chest."
         "He places a wet smooch on my collarbone and then pulls his head back. His gaze wanders from my eyes to my bared breasts, and the look in his eyes is a mixture of excitement and something that almost resembles hunger."
+
+        show ev eveningsnack_haplay:
+            crop (960, 264, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
         "He lowers his head again, and I shiver as I feel his breath tickling my nipple. Unable to resist the anticipation any longer, I gently hold his head to my chest."
         "I let out a sigh as his tongue comes into contact with my right breast and starts drawing ever-shrinking circles around its center."
         "He licks my rapidly hardening nipple for a moment and then repeats the process with my other breast. Then he starts using his hand, kneading and groping one breast while licking and suckling the other with his mouth."
+
+        show ev:
+            zoom 0.5 crop None
+        with { "master": Dissolve(1.0) }
+
         "The sensation feels so good that I arch my back and sway my upper body in ecstasy."
         ha "Ah… Hmmm…"
         "The experience is such a turn-on that I actually feel a pang of disappointment when he pulls away. I feel his tongue on my collarbone again before he draws a thin trail of saliva between that point and my tummy."
         "He places several playful kisses on my belly button and then lowers himself more."
 
-        scene ev eveningsnack_hanako_stare
+        show ev eveningsnack_cun1_look
+        with charachangeev
 
-        "He puts his hands on my upper legs and gives me a look as if asking for permission. I feel the sudden sting of self-consciousness, but manage to keep it at bay for long enough to stiffly nod my head."
+        "He puts his hands on my upper legs and gives me a look as if asking for permission."
+        "I feel the sudden sting of self-consciousness, but manage to keep it at bay for long enough to stiffly nod my head."
+
+        show ev eveningsnack_cun1_tounge:
+            zoom 1.0 crop (358, 54, 1920, 1080)
+        with { "master": charachangeev }
+
         "I cringe visibly as he takes hold of my legs, lifts them slightly and spreads them wide before lying down on his stomach with his face merely centimeters away from my entrance."
         "I squeeze my eyes shut in sheer embarrassment, but I can nevertheless feel his gaze sweeping across my secret place, getting a closer look at it than he's ever gotten before."
         "I've never felt so extremely vulnerable in my entire life, and I struggle against the temptation to close my legs or cover that place up with my hands."
-        "I wonder how I smell or taste to him. Will he find it unpleasant? The moment seems to take forever with no sound except for our shallow breathing and no sensation except the maddening feel of his breath against that place."
+        "I wonder how I smell or taste to him. Will he find it unpleasant?"
+        "The moment seems to take forever with no sound except for our shallow breathing and no sensation except the maddening feel of his breath against that place."
 
-        scene ev eveningsnack_hanako_forceful
+        show ev at truecenter:
+            zoom 0.55 crop None
+            ease 0.5 zoom 0.5
+        with { "master": charachangeev }
 
         "Then, finally, his arms wrap around my upper legs, and I feel something warm and wet press hard against my most sensitive spot."
         ha "Hhhhggg…"
@@ -1234,12 +1349,14 @@ label sh_ch29:
         "I thought this was going to feel like the attention he gave my chest earlier, but it's much, much stronger than that. Even to the point of being overpowering."
         hi "Just relax, Hanako."
         "A reassuring whisper from Hisao and then his tongue proceeds to jab against the tiny button above my entrance. I try to relax my muscles, but the sensation is much too strong for that."
-        "Is this how it's supposed to feel?"
+        "{i}Is this how it's supposed to feel?{/i}"
         "I hold still, doing my best to get used to it, but the sensation is so strong it's bordering on pain."
 
-        scene ev eveningsnack_hanako_grimace
+        show ev eveningsnack_cun1_push
+        with charachangeev
 
-        "My hands edge downward until they reach his head, and I let out a sigh of relief when I softly, but firmly push his head away. Hisao looks at me with a worried expression."
+        "My hands edge downward until they reach his head, and I let out a sigh of relief when I softly, but firmly push his head away."
+        "Hisao looks at me with a worried expression."
         hi "It didn't feel good?"
         ha "I'm… n-not sure… It… s-started getting unpleasant."
         hi "Maybe I was too forceful?"
@@ -1250,67 +1367,132 @@ label sh_ch29:
         hi "Can I try something else?"
         "I give a silent nod. I didn't get it right from the start either, so it's fair that I give him a second chance too."
 
-        scene ev eveningsnack_hanako_gentleunsure
+        show ev eveningsnack_cun2_pleasure:
+            zoom 0.55
+            ease 0.5 zoom 0.5
+        with charachangeev
 
         "My body jumps a little when I feel the wetness of his mouth again, but this time it's merely a kiss on the inside of my right thigh, followed by one on my left."
         "He gently works his way to the center again, and I hold my breath when he reaches my lady parts once more, but this time, the intense pressure stays away and what comes in its place is a gentle lapping."
-        "As his tongue gently keeps caressing the area around my entrance, my tension slowly starts ebbing away. The sensation feels a little like his hand, except softer, more fluid and… slightly better too."
+
+        show ev:
+            zoom 1.0 crop (1812, 526, 1920, 1080)
+        with { "master": Dissolve(1.5) }
+
+        "As his tongue gently keeps caressing the area around my entrance, my tension slowly starts ebbing away."
+        "The sensation feels a little like his hand, except softer, more fluid and… slightly better too."
         "I close my eyes again and try to focus on the sensation once more. This act is still extremely embarrassing, but the feeling is really nice."
+
+        show ev:
+            crop (0, 334, 1920, 1080)
+        with { "master": Dissolve(1.5) }
+
         "I feel my pelvic muscles tense up and relax every time his tongue runs up the length of my entrance and a wonderful shudder each time it gently flicks the little place at the top."
         ha "Mgh…"
         "Just lie back…"
-
-        scene ev eveningsnack_hanako_gentle
-
         "I shift a bit to get more comfortable and try to relax my body as much as possible."
         ha "Mmmm…"
         "…relax…"
         "I block the rest of the world from my mind. All that exists right now are me, him and that sensation."
+
+        show ev eveningsnack_cun2_eatout:
+            crop (0, 626, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
         ha "Mmmm… hee hee… Mmmmm…"
         "…and let it happen."
         "A blissful smile has appeared on my face as I surrender myself to that feeling, allowing myself to drift along on it."
         ha "Mmmmmm…"
+
+        show ev:
+            crop (1784, 184, 1920, 1080)
+        with { "master": Dissolve(1.0) }
+
         "My hands take hold of his head once again but without the intent of pushing him away this time."
         "Instead, I start running my fingers through his hair, tenderly caressing his scalp and gently pulling him close now and again in order to make it feel better. My breaths get heavier and heavier."
-        ha "Mmg…mmmg…"
+        ha "Mmg… mmmg…"
         "A moan escapes my lips as one of his hands wanders up my body and playfully strokes one of my breasts. My arousal is rising by the second and my breathing can barely keep up with the tempo of his lapping."
         "An intense heat has started building up between my legs and is now spreading through my entire body. My thought process is getting fuzzier and fuzzier. The embarrassment of our act barely seems relevant anymore."
+
+        show ev:
+            zoom 0.5 crop None
+        with charachangeev
+
         ha "H-Hisao…"
         "Encouraged by the way my body is reacting to the stimulation, he moves in closer and wraps his mouth around the upper part of my entrance, massaging it with his lips while his tongue is dancing around my pleasure center."
         "The sensation alone nearly drives me crazy. Almost my entire body is flushed red at this point."
         ha "Ah…."
-        "I can feel my limit approaching as his tongue takes me past the point of no return. I grab the bed sheets tightly and arch my back in pleasure as I lose control."
-        ha "Ah…ah…"
 
-        scene ev eveningsnack_hanako_climax
+        show white_vignette:
+            alpha 0.4
+        with { "master": charachangeev }
+
+        "I can feel my limit approaching as his tongue takes me past the point of no return. I grab the bed sheets tightly and arch my back in pleasure as I lose control."
+        ha "Ah… ah…"
+
+        show white_vignette:
+            alpha 0.8
+        with { "master": charachangeev }
 
         "I reach the edge, but instead of going over it immediately, I keep dangling for several seconds."
         "His arms grab hold of my hips tighter and continue holding me in place as I start squirming uncontrollably and start letting out squeals of delight."
-        ha "Ah…ah…ah…"
+        ha "Ah… ah… ah…"
+
+        show ev eveningsnack_cun2_climax:
+            zoom 0.55
+            ease 0.5 zoom 0.5
+        with { "master": charachangeev }
+
         "I instinctively grab his head and press it against me. Then all muscles in my lower body forcefully tense up at once, my legs involuntary squeeze themselves together and my upper body lunges forward."
         "The intense pleasure causes me to squeeze my eyes shut and open my mouth to scream, but a quiet, prolonged whimper is all that leaves my throat."
+
         "And still he keeps going."
+
+        show white_vignette:
+            ease 0.5 alpha 0.4
+            ease 0.5 alpha 0.8
+        with None
+
         "My body relaxes for a moment and then immediately tenses up again."
+
+        show white_vignette:
+            ease 0.5 alpha 0.4
+            ease 0.5 alpha 0.8
+        with None
+
         "And again."
+
+        show white_vignette:
+            ease 0.5 alpha 0.4
+            ease 0.5 alpha 0.8
+        with None
+
         "And once more."
         "Finally, the spasms are replaced by small aftershocks of ever diminishing intensity, and then my body relaxes completely."
 
+        stop music fadeout 4.0
+
         scene black
+        with longflash
 
         ha "Ow! Ow!"
         "Without warning, the sensation of his licking, which he kept up while I was experiencing my climax, becomes painful again and I reflexively push his head away."
-        "I faintly hear him apologize, but I'm beyond the capacity to reply. I close my legs completely, roll on my right side, draw my knees up to my chest and let out a long sigh as a profound feeling of bliss descends upon me."
+        "I faintly hear him apologize, but I'm beyond the capacity to reply."
+        "I close my legs completely, roll on my right side, draw my knees up to my chest, and let out a long sigh as a profound feeling of bliss descends upon me."
         "My mind wanders in random directions as I recover from the experience I just had."
         "I hear him getting off the bed and heading somewhere. I briefly hear the sound of running water, but it seems to come from very far away."
 
-        scene ev pillowtalk dark
+        scene ev pillowtalkblanket dark
         with Fade(1, 0, 1, color="#141152")
 
-        "I become vaguely aware of the lights being turned off and then I feel him get back in bed, cover me with the bed sheet, and hug me. I slowly start becoming more aware again as I feel his breath against my neck."
+        play music music_serene fadein 4.0
+
+        "I become vaguely aware of the lights being turned off and then I feel him get back in bed, cover me with the bed sheet, and hug me."
+        "I slowly start becoming more aware again as I feel his breath against my neck."
         "Eventually, I manage to recollect myself enough to open my eyes and turn my head towards him."
 
         show pillowtalkhisao concern dark
-        show pillowtalkhanako up dark
+        show pillowtalkhanako upblush dark
         with charachangeev
 
         hi "Hanako?"
@@ -1325,6 +1507,10 @@ label sh_ch29:
         hi "No bad taste in your mouth anymore?"
         ha "N-no. You?"
         hi "Naw. It didn't taste bad to begin with. My tongue's kind of tired now, though. Kind of like that time last week when we were trying to find out how long we could keep a kiss going."
+
+        show pillowtalkhanako grinblush dark
+        with charachangeev
+
         "I giggle at the memory of that little game we played back then. The comparison is surprisingly accurate."
         ha "M-mine too."
         "My jaw's a little tired as well. Still, for a first time, I don't think we did that badly. We're lacking experience right now, but I wouldn't mind doing this again in the future."
@@ -1334,6 +1520,10 @@ label sh_ch29:
         "Even though my experience left me tired, I still love cuddling like this. I'm feeling content, satisfied and very happy right now."
         "As our caresses slow down and we start drifting into a peaceful slumber together, my thoughts return on the events of the day and the days that came before it."
         "I'm having a great time right now, and we still have nearly two weeks to go before we have to go back. I don't think this vacation can get any better, but I'm nevertheless hoping that it will."
+
+        show black
+        with { "master": Dissolve(4.0) }
+
         "As I drift off to sleep in Hisao's arms, one last thought remains in my mind."
         "I'm really looking forward to tomorrow."
 
