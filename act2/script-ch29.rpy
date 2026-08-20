@@ -477,11 +477,17 @@ label sh_ch29:
         show ev:
             anchor (0.5, 0.45) zoom 0.65
             ease 0.5 zoom 0.6
-            2.0
+            2.5
             ease 5.0 blur 40
         with charachangeev
 
-        pause 2.0
+        pause 0.5
+        with vpunch
+        pause 0.5
+        with vpunch
+        pause 0.5
+        with vpunch
+        pause 0.5
 
         scene black
         with Fade(2.0, 1.0, 1.5, color="#FFF")
@@ -539,7 +545,7 @@ label sh_ch29:
 
         stop ambient fadeout 2.0
 
-        "Then he kneels behind me again and hugs me once more, softly kneading my breasts for a second time."
+        "Then he sits down behind me again and hugs me once more, softly kneading my breasts for a second time."
 
         hide black
         with charachangeev
@@ -596,14 +602,26 @@ label sh_ch29:
         "I squeeze my eyes shut and grit my teeth in an attempt to brace myself."
 
         show ev soapopera_hanako2_climax at truecenter:
-            zoom 1.05
-            ease 0.5 zoom 1.0
+            zoom 1.07
+            ease 0.5 zoom 1.02
         with charachangeev
 
+        with vpunch
+        pause 0.5
+        with vpunch
+
         "And then the climax hits me; several jolts of intense pleasure that cause my body to shudder uncontrollably. It's like a white light flashes brightly in the back of my head."
+
+        with vpunch
+
         "I let out a whimper of ecstasy before I can control myself."
 
         stop music fadeout 5.0
+
+        show ev:
+            0.5
+            linear 2.0 blur 25
+        with None
 
         scene black
         with Fade(2.0, 1.0, 1.5, color="#FFF")
@@ -1118,8 +1136,8 @@ label sh_ch29:
         "I lower my head again and take him in my mouth once more. This time I try to keep it in the middle of my mouth and away from my teeth."
         "I attempt to keep my jaw as relaxed as possible as I slowly slide up and down."
 
-        show ev:
-            zoom 1.0 crop (1590, 199, 1920, 1080)
+        show ev at truecenter:
+            zoom 1.02 crop (1566, 172, 1968, 1107)
         with { "master": charachangeev }
 
         "This is hardly the most comfortable act in the world as I have to brace myself at the end of every downward motion in order to prevent myself from letting it slide in too far."
@@ -1127,8 +1145,10 @@ label sh_ch29:
         "Hesitantly, I start moving my tongue around a bit."
         "It seems to get him even more aroused than he already was, but my initiative quickly comes to bite me when he suddenly bucks his hips ever so slightly and his member goes in just a little bit past my comfort zone."
 
+        with vpunch
+
         show ev eveningsnack_bj1_lick:
-            crop (0, 56, 1920, 1080)
+            zoom 1.0 crop (0, 56, 1920, 1080)
         with { "master": charachangeev }
 
         "The sensation causes me to immediately pull back again just before I have a sharp coughing fit. He immediately sits up and opens his eyes, a worried expression visible in them."
@@ -1200,11 +1220,29 @@ label sh_ch29:
         "My mind made up, I speed up the pace and go all out on him. My lips and tongue dart across his tip again and again, my left hand moves furiously up and down, and I stretch out my pinky finger for the finishing touch."
 
         show ev eveningsnack_bj2_climax:
-            zoom 0.5 crop None
-        with mediumflash
+            zoom 0.52 crop None
+        with { "master": Dissolve(1.0) }
 
         "Just when my pinky lightly tickles the area underneath his base, several things happen at once."
+
+        show white_vignette at truecenter:
+            zoom 1.02 alpha 0.0
+            ease 0.25 alpha 0.3
+            ease 0.25 alpha 0.0
+        with None
+
+        with vpunch
+
         "Hisao lets out a loud and prolonged groan, his member starts throbbing violently, his entire lower body starts jerking uncontrollably and his upper body rises slightly despite my head still resting on his belly."
+
+        show white_vignette at truecenter:
+            zoom 1.02 alpha 0.0
+            ease 0.25 alpha 0.3
+            ease 0.25 alpha 0.0
+        with None
+
+        with vpunch
+
         "My eyes fly open in surprise when the mild taste that was in my mouth before is suddenly replaced by a much different, much stronger taste."
         "My initial plan had been to just swallow it, but I quickly decide against that now. What's overpowering is not so much the taste."
         "It's a lot saltier than what I tasted earlier with just a touch of bitterness, but it's nothing I can't handle. What makes me a little queasy is the texture."
@@ -1403,14 +1441,14 @@ label sh_ch29:
         "…and let it happen."
         "A blissful smile has appeared on my face as I surrender myself to that feeling, allowing myself to drift along on it."
         ha "Mmmmmm…"
+        "My hands take hold of his head once again but without the intent of pushing him away this time."
+        "Instead, I start running my fingers through his hair, tenderly caressing his scalp and gently pulling him close now and again in order to make it feel better. My breaths get heavier and heavier."
+        ha "Mmg… mmmg…"
 
         show ev:
             crop (1784, 184, 1920, 1080)
         with { "master": Dissolve(1.0) }
 
-        "My hands take hold of his head once again but without the intent of pushing him away this time."
-        "Instead, I start running my fingers through his hair, tenderly caressing his scalp and gently pulling him close now and again in order to make it feel better. My breaths get heavier and heavier."
-        ha "Mmg… mmmg…"
         "A moan escapes my lips as one of his hands wanders up my body and playfully strokes one of my breasts. My arousal is rising by the second and my breathing can barely keep up with the tempo of his lapping."
         "An intense heat has started building up between my legs and is now spreading through my entire body. My thought process is getting fuzzier and fuzzier. The embarrassment of our act barely seems relevant anymore."
 
@@ -1423,8 +1461,8 @@ label sh_ch29:
         "The sensation alone nearly drives me crazy. Almost my entire body is flushed red at this point."
         ha "Ah…."
 
-        show white_vignette:
-            alpha 0.4
+        show white_vignette at truecenter:
+            zoom 1.02 alpha 0.4
         with { "master": charachangeev }
 
         "I can feel my limit approaching as his tongue takes me past the point of no return. I grab the bed sheets tightly and arch my back in pleasure as I lose control."
@@ -1438,34 +1476,44 @@ label sh_ch29:
         "His arms grab hold of my hips tighter and continue holding me in place as I start squirming uncontrollably and start letting out squeals of delight."
         ha "Ah… ah… ah…"
 
-        show ev eveningsnack_cun2_climax:
-            zoom 0.55
-            ease 0.5 zoom 0.5
-        with { "master": charachangeev }
+        show ev eveningsnack_cun2_climax at truecenter:
+            zoom 0.57
+            ease 0.5 zoom 0.52
+        with charachangeev
+
+        with vpunch
+
+        pause 0.5
 
         "I instinctively grab his head and press it against me. Then all muscles in my lower body forcefully tense up at once, my legs involuntary squeeze themselves together and my upper body lunges forward."
         "The intense pleasure causes me to squeeze my eyes shut and open my mouth to scream, but a quiet, prolonged whimper is all that leaves my throat."
 
         "And still he keeps going."
 
-        show white_vignette:
-            ease 0.5 alpha 0.4
-            ease 0.5 alpha 0.8
+        show white_vignette at truecenter:
+            ease 0.25 alpha 0.4
+            ease 0.25 alpha 0.8
         with None
+
+        with vpunch
 
         "My body relaxes for a moment and then immediately tenses up again."
 
         show white_vignette:
-            ease 0.5 alpha 0.4
-            ease 0.5 alpha 0.8
+            ease 0.25 alpha 0.4
+            ease 0.25 alpha 0.8
         with None
+
+        with vpunch
 
         "And again."
 
         show white_vignette:
-            ease 0.5 alpha 0.4
-            ease 0.5 alpha 0.8
+            ease 0.25 alpha 0.4
+            ease 0.25 alpha 0.8
         with None
+
+        with vpunch
 
         "And once more."
         "Finally, the spasms are replaced by small aftershocks of ever diminishing intensity, and then my body relaxes completely."
@@ -1482,10 +1530,10 @@ label sh_ch29:
         "My mind wanders in random directions as I recover from the experience I just had."
         "I hear him getting off the bed and heading somewhere. I briefly hear the sound of running water, but it seems to come from very far away."
 
-        scene ev pillowtalkblanket dark
-        with Fade(1, 0, 1, color="#141152")
+        scene ev pillowtalk_blanket dark
+        with Fade(1.0, 0.0, 1.0, color="#04061c")
 
-        play music music_serene fadein 4.0
+        play music music_twinkle fadein 4.0
 
         "I become vaguely aware of the lights being turned off and then I feel him get back in bed, cover me with the bed sheet, and hug me."
         "I slowly start becoming more aware again as I feel his breath against my neck."
@@ -1498,14 +1546,26 @@ label sh_ch29:
         hi "Hanako?"
         ha "Hmmmm?"
         hi "…how was it?"
+
+        show pillowtalkhanako smileblush dark
+        with charachangeev
+
         ha "…very good."
 
-        show pillowtalkhisao grin dark
+        show pillowtalkhisao upsmile dark
         with charachangeev
 
         "It's pretty dark in the room now, but I think I can see him smile. He tenderly starts running his fingers through my hair."
         hi "No bad taste in your mouth anymore?"
+
+        show pillowtalkhanako smileupblush dark
+        with charachangeev
+
         ha "N-no. You?"
+
+        show pillowtalkhisao grin dark
+        with charachangeev
+
         hi "Naw. It didn't taste bad to begin with. My tongue's kind of tired now, though. Kind of like that time last week when we were trying to find out how long we could keep a kiss going."
 
         show pillowtalkhanako grinblush dark
@@ -1516,6 +1576,11 @@ label sh_ch29:
         "My jaw's a little tired as well. Still, for a first time, I don't think we did that badly. We're lacking experience right now, but I wouldn't mind doing this again in the future."
         hi "So we should probably take it easy with the kisses?"
         "I don't say anything back. Instead, I slowly rub myself against him, use my feet to play footsie with his and reach back to lovingly stroke his hair."
+
+        show pillowtalkhanako smileblush dark
+        hide pillowtalkhisao
+        with charachangeev
+
         "Hisao's all too eager to respond in kind, letting his hands run across my cheek and tummy."
         "Even though my experience left me tired, I still love cuddling like this. I'm feeling content, satisfied and very happy right now."
         "As our caresses slow down and we start drifting into a peaceful slumber together, my thoughts return on the events of the day and the days that came before it."

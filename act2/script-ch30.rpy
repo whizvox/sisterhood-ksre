@@ -10,7 +10,7 @@ label sh_ch30:
 
         play music music_tranquil fadein 4.0
 
-        show hanako basic_smile at tworight
+        show hanako basic_smile_sum_clip at tworight
         show hisao basic_frown_polo at twoleft
         with chchange
 
@@ -177,7 +177,7 @@ label sh_ch30:
         "I can't hear any direct reactions, but I notice from the pauses between the taps that one side is taking a lot less time to plan the next move than the other."
         "Eventually, the verdict is called."
 
-        show hanako basic_smile at tworight
+        show hanako basic_smile_sum_clip at tworight
         show hisao cross_pout_polo at twoleft
         with charaenter
 
@@ -191,7 +191,7 @@ label sh_ch30:
 
         hi "Well, okay. This time I might try to stick more to the tried and true stuff."
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum_clip
         with chchange
 
         ha "Your opening was a bit unusual this time."
@@ -204,7 +204,7 @@ label sh_ch30:
         hi "Yeah, but only if you know what you're doing."
         "I hear the sound of chess pieces being placed in their starting position, and moments later, the first piece is moved."
 
-        show hanako basic_smile
+        show hanako basic_smile_sum_clip
         show hisao basic_speak_polo
         with chchange
 
@@ -216,7 +216,7 @@ label sh_ch30:
         li "It is. Mother promised her that she'd stop by before she and Father left on their business trip to the US."
         li "Since it's about a 3 hour drive from Inverness to Edinburgh, she decided to spend the night at her sister's place and drive back very early tomorrow morning."
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum_clip
         show hisao basic_neutral_polo
         with chchange
 
@@ -226,7 +226,7 @@ label sh_ch30:
         ha "There are also 7 years between you and Akira."
         li "That's true. I suppose it's different for everyone. I was lucky my sister paid so much attention to me when we were younger."
 
-        show hanako basic_smile
+        show hanako basic_smile_sum_clip
         show hisao basic_smile_polo
         with chchange
 
@@ -254,7 +254,7 @@ label sh_ch30:
         show hisao cross_grin_polo
         with charachangealways
 
-        show hanako emb_downsmile
+        show hanako emb_downsmile_sum_clip
         with charachangealways
 
         "The only immediate response I get is a muffled giggle from Hanako. Hisao must have rolled his eyes or made a face in response to my words. I'm probably fighting a losing battle here, so I decide to drop it."
@@ -264,7 +264,7 @@ label sh_ch30:
 
         li "Anyway, Edinburgh has quite a few museums that make for an interesting experience. There are also other places of note that Father said would be worth our while, such as the Edinburgh Zoo and the National Library of Scotland."
 
-        show hanako emb_smile
+        show hanako emb_smile_sum_clip
         with chchangefast
 
         ha "Library?"
@@ -283,7 +283,7 @@ label sh_ch30:
         ha "No. I'd like to go there, even if it's not the national library of Japan. It sounds interesting."
         li "Well then, one destination is already set."
 
-        show hanako emb_downsmile
+        show hanako emb_downsmile_sum_clip
         with chchange
 
         ha "Hmmm, those koalas in that picture look really cute."
@@ -296,13 +296,15 @@ label sh_ch30:
         hi "But Lilly, aren't these things kind of boring for you? This doesn't look like the petting zoo you and Hanako went to before."
         li "I think I can still enjoy myself there, Hisao. You and Hanako can describe the animals to me and I can still hear and smell them."
 
-        show hisao basic_grin_polo
+        show hisao basic_neutral_polo
         with chchange
 
         hi "Smell? I've always felt that all zoos smell alike. Is there a big difference between the smell of elephant droppings and the smell of gorilla turds?"
         li "Well, ah…"
 
-        show hanako emb_smile
+        show hisao basic_grin_polo
+        with chchange
+        show hanako emb_smile_sum_clip
         with chchangefast
 
         ha "Pfffff!"
@@ -312,7 +314,7 @@ label sh_ch30:
         "Hanako lets out a conspiring giggle."
 
         show hisao basic_neutral_polo
-        show hanako emb_downsmile
+        show hanako emb_downsmile_sum_clip
         with chchange
 
         ha "Okay."
@@ -321,7 +323,7 @@ label sh_ch30:
         li "Any more suggestions, Hisao?"
 
         show hisao basic_smile_polo
-        show hanako basic_smile
+        show hanako basic_smile_sum_clip
         with chchange
 
         hi "I don't know. There seem to be a lot of museums in Edinburgh, but I'm not sure which ones would be most interesting to visit. I'd rather not go to ones that require a lot of knowledge about the local history."
@@ -329,7 +331,7 @@ label sh_ch30:
         hi "The Museum of Childhood?"
         li "I've heard there's a museum in Edinburgh that's dedicated to children's toys throughout the last two centuries. Apparently it has an exhibition containing many dolls from several generations."
 
-        show hanako basic_bashful
+        show hanako basic_bashful_sum_clip
         show hisao cross_grin_polo
         with chchange
 
@@ -340,7 +342,7 @@ label sh_ch30:
         li "I'll bring it up with Father. Are there any other museums worth visiting in the folder, Hisao?"
 
         show hisao basic_smile_polo
-        show hanako basic_smile
+        show hanako basic_smile_sum_clip
         with chchange
 
         hi "Hmm, City Art Center, Museum of Edinburgh… I don't know if visiting art displays is really something you'd enjoy."
@@ -376,19 +378,27 @@ label sh_ch30:
         play sound sfx_car_driveup
 
         show hisao basic_neutral_polo
-        show hanako basic_normal
+        show hanako basic_normal_sum_clip
         with chchange
 
         "As I reply to Hisao, I suddenly pick up a sound coming from outside the house."
         ha "Lilly, did you hear something?"
         "I think I hear a car outside. Is that Father coming home already? Seems that way."
         li "I think Father's home. What time is it right now?"
+
+        show hanako cover_worry_sum_clip
+        with chchange
+        show hanako cover_distant_sum
+        with chchange
+        show hanako basic_normal_sum
+        with chchange
+
         hi "Half past 8. I don't recall him coming back this early since we arrived here."
         li "That's true, he's unusually early, though I certainly won't complain about that."
         "A few minutes later, I hear footsteps slowly approaching followed by the voice of my father greeting us."
 
         show hisao at left
-        show hanako basic_distant:
+        show hanako basic_distant_sum:
             xalign 0.35
         show hiroyuki serious at right
         with charaenter
@@ -408,7 +418,7 @@ label sh_ch30:
         play ambient sfx_ticktock fadein 4.0
 
         show hisao basic_neutral_polo
-        show hanako basic_worry
+        show hanako basic_worry_sum
         with chchange
 
         ha "..."
@@ -429,7 +439,7 @@ label sh_ch30:
         li "I wonder if it's a good idea to force him to take a few days off while he obviously can't afford it. Would you be very disappointed if I suggested canceling the trip to Edinburgh, so Father would have a bit more breathing room?"
 
         show hisao basic_smile_polo
-        show hanako basic_bashful
+        show hanako basic_bashful_sum
         with chchange
 
         hi "Of course not, Lilly. Heck, this trip could end right here and now, and I'd still call it a grand success."
@@ -518,7 +528,7 @@ label sh_ch30:
 
         scene bg satou_livingroom
         show hisao basic_neutral_polo at twoleft
-        show hanako basic_worry at tworight
+        show hanako basic_worry_sum at tworight
         with locationchange
 
         "I make my way out of the study and back to the living room and let out a tired sigh."
@@ -538,14 +548,14 @@ label sh_ch30:
         "I navigate over to the kitchen and probe the shelves of the cupboard with my hand until I feel an empty glass against my fingers."
         "I take it, feel my way over to the tap, and fill it with fresh and cool water."
 
-        show hanako emb_timid at right
+        show hanako emb_timid_sum at right
         with charaenter
 
         ha "L-Lilly?"
         "Just as I finish filling up the glass, I hear a soft voice coming from the doorway."
         li "Hanako. Are you already finished with your chess match?"
 
-        show hanako emb_sad at tworight
+        show hanako emb_sad_sum at tworight
         with charachangealways
 
         ha "Ummm… If your father is feeling ill, w-wouldn't it be good to… call a doctor?"
@@ -555,7 +565,7 @@ label sh_ch30:
         "She's not exactly the most proactive person in the world. She probably wouldn't bother approaching me like this without good reason. But what reason is that?"
         li "Do you really think so, Hanako?"
 
-        show hanako emb_timid
+        show hanako emb_timid_sum
         with chchange
 
         ha "It's… p-probably nothing, but… better safe than sorry, right?"
@@ -644,14 +654,14 @@ label sh_ch30:
 
         scene bg satou_livingroom
         show hisao basic_neutral_polo at twoleft
-        show hanako basic_worry at tworight
+        show hanako basic_worry_sum at tworight
         with locationchange
 
         "I walk back to the living room as quickly as I can and hand Hanako the phone."
         ha "Thompson?"
         li "Yes, Father said the number should be in the phone's memory. I suppose it's listed as either doctor or Thompson."
 
-        show hanako basic_distant
+        show hanako basic_distant_sum
         with chchange
 
         play sound sfx_phonedial
@@ -806,7 +816,7 @@ label sh_ch30:
         li "Hanako, please hang in there."
         "Is that the best I can come up with?"
         "I used to have no trouble finding the right words to encourage Hanako. And now, now that it matters more than ever, I find myself lost for words."
-        ha "{i}*huff* *huff* *huff*{/i}"
+        ha "{i}*huff* *huff*{/i}"
         "Hanako's breathing is getting less steady. Is she getting worn out? What she's doing must be pretty tiring."
         "What if she gets too tired to continue and the ambulance hasn't arrived yet?"
         "How will she feel?"
@@ -877,7 +887,7 @@ label sh_ch30:
         "Paramedic" "Damn, we don't have time for this. Ian, get her away from him so I can get started!"
         "Paramedic" "Sure."
 
-        show hanako defarms_shock at center behind crowd
+        show hanako defarms_shock_sum at center behind crowd
         with Dissolve(0.2)
 
         ha "AAAAAAAAHHH!"
@@ -890,7 +900,7 @@ label sh_ch30:
         "Paramedic" "What's he saying?"
 
         show hisao basic_worry_polo at twoleft
-        show hanako emb_downtimid
+        show hanako emb_downtimid_sum
         show crowd behind hanako
         with charachangealways
 

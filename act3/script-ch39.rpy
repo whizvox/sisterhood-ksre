@@ -1674,15 +1674,15 @@ label sh_ch39:
 
         jun "Let's do that."
 
-        scene ev pillowtalk dark2
-        show pillowtalkhanako up dark2
+        scene ev pillowtalk_comfort dark
+        show pillowtalkhanako up dark
         with shorttimeskip
 
         ha "Hisao?"
         "I softly whisper the name of my boyfriend, but receive no reply. He's probably asleep already."
         "After Jun left, I realized I didn't really feel completely comfortable spending the night in an unfamiliar room, so I snuck into the boys' dorm and asked Hisao if I could stay over, which he had no problems with."
 
-        show pillowtalkhanako down dark2
+        show pillowtalkhanako down dark
         with { "master": charachangeev }
 
         nvl clear

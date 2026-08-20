@@ -692,7 +692,8 @@ label sh_ch20:
 
         nvl hide dissolve
 
-        show ev pillowtalk
+        show ev pillowtalk_comfort
+        show pillowtalkhisao upsmile
         with Dissolve(1.0)
 
         hi "…Hanako. Would you… like to…?"
@@ -718,12 +719,20 @@ label sh_ch20:
         "What weighs upon my heart is his current condition."
         ha "It's n-not that. It's j-just…"
         "He seems to guess where this is going. Which is not surprising since we've had this kind of discussion before."
+
+        show pillowtalkhisao concern
+        with charachangeev
+
         hi "I've worked hard the last one and a half week to get back into shape. I did a light jog this morning without any troubles. My stamina's not at the point where it was prior to my accident just yet, but it's getting there. I'll probably be fine."
         ha "Did you… t-talk to the nurse?"
         hi "Not about this."
         "I let out a soft but still audible sigh. I can't say I blame him very much. I certainly wouldn't be able to do it. But Hisao's a lot more confident than I am, and he sees the nurse on an almost daily basis. But still…"
         hi "Look Hanako, I'm not gonna ask him if he feels I'm physically ready to start sleeping with you again. Because that feels to me like I'm asking him for permission to have sex with my girlfriend. And I bet he'd feel the same way."
         ha "How c-can you b-be sure?"
+
+        show pillowtalkhisao upsmile
+        with charachangeev
+
         hi "Because I know him. I'll have to spend months listening to his immature jokes."
 
         show pillowtalkhisao grin
@@ -782,8 +791,7 @@ label sh_ch20:
         "I get off the bed, take off my clothes, and then lie down and pull the covers up to my chin."
         "Hisao follows my example, settles down next to me, and grabs me in a tight hug."
 
-        scene ev pillowtalk
-        show pillowtalkblanket
+        scene ev pillowtalk_blanket
         with locationchange
 
         "He whispers into my ear."
@@ -791,7 +799,7 @@ label sh_ch20:
         ha "Me too."
         "We spend some time snuggling up against each other while exchanging sweet kisses."
 
-        show pillowtalkcaress
+        show ev pillowtalk_caress
         with charachangeev
 
         "We keep this up for some time until Hisao takes my face in both his hands and presses a quick peck on the tip of my nose."
@@ -817,7 +825,8 @@ label sh_ch20:
         ha "Yes."
         hi "Okay then."
 
-        hide pillowtalkcaress
+        show ev pillowtalk_blanket
+        show pillowtalkhanako smileblush
         with charachangeev
 
         "I snuggle up to him and give him one last kiss."
@@ -828,6 +837,8 @@ label sh_ch20:
 
         show black
         with None
+
+        pause 1.0
 
         stop music fadeout 3.0
 

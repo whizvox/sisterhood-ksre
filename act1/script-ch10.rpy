@@ -824,15 +824,15 @@ label sh_ch10:
         "After Hanako has finished taking off her blouse and skirt and putting them in a neat pile beside my clothes, I turn off the lights and get back into bed."
         "Moments later, I can feel her lying down next to me and snuggling up to me."
 
-        scene ev pillowtalk dark at truecenter:
+        scene ev pillowtalk_comfort dark at truecenter:
             zoom 1.1
             ease 5.0 zoom 1.0
         with Fade(1.0, 0.0, 1.0, color="#04061c")
 
-        "For several minutes, we just lie there, holding each other, lazily playing footsie and me softly stroking her hair and scalp; something I've lately learned she really likes."
-        "On my first impression I didn't really have Hanako pegged for a very physical person. She already tended to get nervous when people came near her, and I expected being touched would probably cause her to flee the scene in a heartbeat."
+        "For several minutes, we just lie there, holding each other, lazily playing footsie and me softly stroking her hair and scalp—something I've lately learned she really likes."
+        "On my first impression, I didn't really have Hanako pegged for a very physical person. She already tended to get nervous when people came near her, and I expected being touched would probably cause her to flee the scene in a heartbeat."
         "I started having second thoughts about that impression when she got drunk and really clingy with me during her birthday party. And after I started dating her, I discovered that beneath her skittish nature, Hanako's actually quite the snuggle bunny in private."
-        "I continue running my hand through her hair until I can feel her relax and lay her head on my chest so she can listen to my heartbeat; another thing she likes to do."
+        "I continue running my hand through her hair until I can feel her relax and lay her head on my chest so she can listen to my heartbeat—another thing she likes to do."
         "I'm not sure if she wants to talk to me about this or simply wants physical comfort. In a way, it's already a good thing she came here instead of pretending nothing's wrong and bottling up things inside."
         hi "Do you want to talk for a bit?"
 

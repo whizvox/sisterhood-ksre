@@ -179,7 +179,7 @@ label sh_ch23:
         "Hanako nods with a small smile, eager to get farther away from the din in the front area and have a small competition with me."
         ha "I accept t-the challenge."
         aki "Have fun you two. We'll be at the table near the podium if you need us."
-        li "Would it be okay if I paid a visit to the restroom first? I doubt we'll be allowed to leave our table during the quiz itself."
+        li "Would it be okay if I paid a visit to the restroom first? It would be inconvenient to leave our table during the quiz itself."
         aki "Sure Sis. Let me show you the way."
 
         scene bg inverness_pubback
@@ -537,16 +537,8 @@ label sh_ch23:
         "I instinctively bow before remembering that's not exactly a common practice in this country. I then bend down and reach out to grab Hanako's cue ball which has rolled under one of the women's barstools."
         "But before I can take the ball, I hear the occupant of the barstool clear her throat. With a puzzled look I get back up."
         "She gets off the barstool, reaches down, takes the ball and drops it into my hand."
-
-        show karla basic_smile
-        with charaenter
-
         ka_ "{font=times}There you are.{/font}"
         hi "{font=times}Thanks, but it really wasn't… necessary to…{/font}"
-
-        show karla basic_laugh
-        with chchange
-
         "The woman stops me with a gesture and gives me a mischievous smile."
         ka_ "{font=times}You were just… retrieving something you dropped, correct?{/font}"
         hi "{font=times}Yes?{/font}"
@@ -556,10 +548,6 @@ label sh_ch23:
         "As I realize what she's insinuating, I visibly reel in shock."
         hi "{font=times}I wasn't trying to…{/font}"
         "The bartender and the other woman both laugh as they watch me blush."
-
-        show karla basic_smile
-        with chchange
-
         ka_ "{font=times}It's a joke, lad. I hope you're not angry.{/font}"
         "Not really knowing how to respond to her, I simply shake my head and walk back to the billiards table."
 
@@ -619,11 +607,6 @@ label sh_ch23:
 
         "I look up and notice the patron who flustered me earlier standing next to the time clock. She must have put some coins of her own into the slot."
         "She gives us a friendly smile."
-
-        show karla basic_smile at tworight
-        show hanako at twoleft
-        with charaenter
-
         ka_ "{font=times}To make up for {shader=wave:u__amplitude=2.0:u__frequency=0.5}????????? ?????{/shader}.{/font}"
         hi "{font=times}Ah, excuse me?{/font}"
 
@@ -639,22 +622,13 @@ label sh_ch23:
         "I briefly tell Hanako what happened when I went to retrieve her cue ball. Hanako looks a bit sheepish. I can tell she finds it somewhat amusing, but doesn't want to laugh since I went to get the ball back that she shot off the table."
         hi "I have no idea if this is the famed British humor or if this person is just plain weird."
 
-        show karla basic_cheerful
         show hanako cover_distant_sum
         with chchange
 
         "The patron watches our conversation with an amused expression, though she obviously can't understand what we're saying."
-
-        show karla basic_speak
-        with chchange
-
         "When we stop talking, she shrugs her shoulders."
         ka_ "{font=times}Well… it… was a rather bold action.{/font}"
         hi "{font=times}Sorry… err… We're on… vacation here. My English… is not very… good.{/font}"
-
-        show karla basic_smile
-        with chchange
-
         ka_ "{font=times}It's not that bad. I can understand you well. Your… pronunciation is good.{/font}"
         hi "{font=times}That's… ah… good.{/font}"
         "I'm finding her rather easy to comprehend compared to most people here, and suddenly I realize why."
@@ -670,19 +644,21 @@ label sh_ch23:
         "Both Hanako and I gasp in surprise since that last statement was delivered in accented but otherwise completely fluent Japanese."
         hi "Y-y-you speak Japanese?"
 
-        show karla basic_laugh
-        with chchange
+        show hanako def_worry_sum at twoleft
+        with charamove
 
-        "The woman allows herself a brief laugh at our astonishment."
+        show karla basic_laugh
+        with charaenter
+
+        "The woman allows herself a brief laugh at our astonishment as she walks up to us."
 
         show karla basic_cheerful
         with chchange
 
         ka_ "Hmm hmmm. I've lived in Japan for over 20 years."
 
-        show hanako def_worry_sum
         show karla basic_smile
-        with chchange
+        with charaenter
 
         "The woman makes a polite bow."
         ka_ "I'm very honored to meet my daughter's best friends."
@@ -896,7 +872,7 @@ label sh_ch23:
 
         "Sure enough, I can see Akira and Lilly getting up as a thunderous applause fills the room. Karla, Hanako, and I are happy to join in with the applauding crowd."
 
-        show lilly basic_cheerful_cas at twoleft behind crowd
+        show lilly basic_cheerful_sum at twoleft behind crowd
         show akira basic_ending_cas at tworight behind crowd
         with charaenter
 
@@ -1034,6 +1010,7 @@ label sh_ch23:
 
         stop music fadeout 2.0
         stop ambient fadeout 2.0
+
         scene black
         with Dissolve(2.0)
 

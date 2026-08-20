@@ -349,7 +349,7 @@ label sh_ch22:
         show lilly basic_displeased_sum
         with chchange
 
-        li "I don't mind playing interpretor every now and then, but I won't be around you 24/7."
+        li "I don't mind playing interpretor every now and then, but I won't be around every moment of the day."
         li "Unless you intend to stay in your bedroom all the time while I'm away, which would be a terrible waste of opportunity, you'll have to interact with others without any help on my part at some point or another."
 
         show hanako basic_normal_sum
