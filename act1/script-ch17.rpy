@@ -453,28 +453,25 @@ label sh_ch17:
         ha "Did you… make the d-decision to go when you felt I was no longer r-reliant on you?"
         "How did she…?"
 
-        show hanako def_worry
+        show hanako emb_downangry
         with Dissolve(0.2)
 
         "It appears Hanako has been watching my face closely, because my reaction to her question causes her to gasp and her tone becomes strained with a very subtle hint of anger."
 
-        show hanako def_strain
-        with chchange
-
         ha "I… I k-knew it. My efforts only served to make you more d-determined to go."
         li "Hanako…"
-        ha "If I had remained as f-fragile as I w-was, you w-would have decided to s-stay in a heartbeat. But now…"
+        ha "If I had remained as f-fragile as I w-was, you w-would have had n-no reservations about s-staying. But now…"
         "So that's how she sees things. And my pep-talk about her independence and my decision to stay for a little while after her breakdown only reinforced her views."
         li "Hanako, please listen…"
 
-        show hanako defarms_strain
+        show hanako emb_determined
         with chchange
 
         ha "All I w-wanted was your f-friendship!"
         li "But you are…"
         ha "Is t-taking c-care of me r-really that much more f-fun than going out as f-friends?!"
 
-        show hanako def_worry:
+        show hanako emb_sad:
             ease 0.2 xalign 0.55
         with None
         stop music
@@ -482,6 +479,10 @@ label sh_ch17:
 
         li "NO, IT'S NOT!"
         "I get up forcefully as I say these words, and I hear the chair Hanako's sitting on scrape across the floor as if my sudden reaction made her flinch."
+
+        show hanako emb_downsad
+        with chchange
+
         "It's not my habit to raise my voice. I was always taught that it's not something a proper lady is ever supposed to do, and I hate the idea of intimidating my meek friend."
         "But I know that if Hanako is given the chance to get up and run out of the room now, I'll never be able to catch her, and she'll spend the rest of the next two days avoiding me."
         "I have to keep control of the conversation if I don't want this to end badly."
@@ -584,7 +585,7 @@ label sh_ch17:
         li "I told them… I told them that I was hesitating because there were people at Yamaku who were relying on me to be there for them and that I wanted to keep supporting them."
         li "I… used you and Hisao as an excuse because I was afraid to confront my parents on a sensitive issue."
         ha "But Hisao and I started getting our lives in order, so eventually that justification wasn't true anymore."
-        li "But I still couldn't face up to my family, so I eventually just gave in."
+        li "But I still couldn't face up to my family, so with no more excuse to hold onto, I eventually just gave in."
         li "I would never wish you to give up your true self for any reason, Hanako. Especially not to cater to my own flaws."
         li "That time we've spent doing all sorts of fun things together was the highlight of our friendship to me. I will never forget them or you for as long as I live."
         li "So please don't think I think of you as…"
@@ -607,7 +608,7 @@ label sh_ch17:
 
         ha "Lilly, I… have a lot of p-problems doing things for myself and s-speaking up. I have trouble being ‘selfish’, just l-like you."
         ha "So I understand this is hard, but… I think you're making a very b-big mistake."
-        "It appears that within a matter of seconds Hanako has completely dismissed the original topic of our conversation and is now getting ready to dismantle my decision to migrate."
+        "It appears that within a matter of seconds, Hanako has completely dismissed the original topic of our conversation and has shifted it to my apprehensions about migrating."
         li "Why do you think that, Hanako?"
         ha "Because it s-sounds like you won't be happy there. Your p-parents want to grow closer to you, but if you're not h-happy there, it'll all be an act. You'll eventually start to resent them."
         "That's the reason Akira said she couldn't give up her career to stay with her boyfriend."
@@ -638,7 +639,7 @@ label sh_ch17:
         "“I wanted to become real friends with you.”"
         "I've always thought of our relationship as give-and-take myself."
         "But the things Hanako did for me were small things. Picking articles while shopping. Navigation in an unknown area."
-        "Things that only required eyesight, not devoted friendship. Not the kind of friendship she wanted to give me so desperately."
+        "Things that only required eyesight, not devoted friendship. Not the kind of friendship she so desperately wanted to give me."
         "I don't like letting other people share my burdens, but I've always encouraged Hanako to share hers with me."
         "If I had been more willing to rely on Hanako for emotional support, like I'm doing now, she probably would have trusted me more."
         li "Hanako… What's the time right now?"
@@ -682,7 +683,7 @@ label sh_ch17:
         kam "Lilly, why? Are there still people relying on you like you told us earlier?"
         li "Well… yes, but the truth is… I've also come to rely on them. More than I ever thought I'd be doing."
         kam "I don't understand."
-        li "I've been happy so far, living in Japan. I have a school I feel at home at, plans for the future and many friends whose company I greatly enjoy."
+        li "I've been happy so far, living in Japan. I have a school I feel at home at, plans for the future, and friends whose company I greatly enjoy."
         li "I'm… not really ready to give all of that up."
         kam "Not even for the sake of our family?"
         "There it is. The same question that broke through my defense last time. I was really hoping she wouldn't ask me that."
@@ -706,7 +707,7 @@ label sh_ch17:
 
         "Don't blurt things out. Think first."
         "There was something Hanako said earlier. What was it?"
-        "I take a few seconds to gather my thoughts, give Hanako's hand a quick squeeze in response and then take a deep breath."
+        "I take a few seconds to gather my thoughts, give Hanako's hand a quick squeeze in response, and then take a deep breath."
         li "Mother, it's true that we have become estranged from each other. But I'm not sure if me giving up my life here to live with you and Father will fix the problem."
         kam "What do you mean?"
         li "While I was making preparations for our trip at the start of July, I realized I wasn't even sure how to act around my family anymore."
@@ -740,7 +741,7 @@ label sh_ch17:
         "Mother remains quiet for a moment."
         kam "Lilly, will you be okay without your sister around?"
         li "I will be fine, Mother. I have a very good friend here who is like a sister to me in all but blood."
-        li "If I need help with something, I can always count on her to be there."
+        li "If I need help with anything, I can always count on her to be there."
         kam "Very well. Then… please take care of yourself, dear."
         li "Thank you Mother. You too."
 
@@ -762,10 +763,10 @@ label sh_ch17:
         ha "Yes, y-you're really… staying."
         "Finally letting go of Hanako's hand, I slowly turn in her direction."
         li "{slowtype}Let's… graduate together, Hanako."
-        li "{slowtype}And let's make… lots of wonderful *sniff* memories in the meantime."
+        li "{slowtype}And let's make… lots of wonderful {i}*sniff*{/i} memories in the meantime."
         "As I finish these words, all the pent-up stress assaults me at once."
 
-        show hanako basic_bashful_close
+        show hanako emb_shutsmile_close
         with chchange
 
         "I embrace Hanako and break down in tears as everything comes flooding out of me."

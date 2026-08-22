@@ -7,7 +7,7 @@ label sh_ch17alt:
             pause 3.0
 
         scene bg school_track_on
-        with Dissolve(2.0)
+        with flashback
 
         "I wonder how Hanako is doing right now."
         "That thought keeps returning to me as I casually stroll along the running track with my hallmate Kenji in tow."

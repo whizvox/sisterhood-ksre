@@ -172,7 +172,7 @@ init 30 python:
     sh_sprites("takawa", ["devious", "sweet", "weaksmile"])
 
     phonebox_sprites("akira", ["basic_smug", "basic_sweet"])
-    phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
+    phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_smileclosed", "cane_giggle_sum", "basic_sleepy_sum", "basic_concerned_sum", "basic_displeased_sum", "basic_sad_sum", "basic_smileclosed_sum", "basic_smile_sum", "basic_reminisce_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_oops_sum", "cane_satisfied", "cane_satisfied_sum", "cane_giggle", "cane_sleepy"], cropyoff=-40)
     phonebox_sprites("hisao", ["basic_neutral_uni", "basic_smile_uni", "basic_speak_uni", "basic_grin_swt", "basic_neutral_swt", "basic_smile_swt", "basic_sweet_swt"], cropxoff=95, cropyoff=-90)
     phonebox_sprites("naomi", ["basic_angry", "basic_annoyed", "basic_concern", "basic_serious"], xoff=-20, cropyoff=-45)
     phonebox_sprites("hiroyuki", ["speak", "serious", "thinking", "awkward", "scold", "smileclosed", "smile"], xoff=-22, cropxoff=130, cropyoff=-110, addwidth=14)

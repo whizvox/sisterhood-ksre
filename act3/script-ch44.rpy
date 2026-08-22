@@ -35,7 +35,7 @@ label sh_ch44:
 
         "If the words to convince her that the incident at Kasshoku was just an unfortunate accident and nothing more even existed, I didn't know them. So I just took her in my arms and held her close."
 
-        show hanako emb_downsleep_close
+        show hanako emb_shutsmile_close
         with chchange
 
         "Even if I couldn't make her forget what happened, I at least wanted her to know I was here for her."

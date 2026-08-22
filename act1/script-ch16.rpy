@@ -10,6 +10,7 @@ label sh_ch16:
         with Dissolve(2.0)
 
         play music music_hanako fadein 4.0
+        play ambient sfx_rooftop volume 0.6 fadein 4.0
 
         nvl clear
         nvl show dissolve
@@ -22,9 +23,9 @@ label sh_ch16:
         nvl clear
 
         n "{i}I'm worthless.{/i}"
-        n "{vspace=30}Due to my success in winning Hisao's heart, I started reconsidering my previously held belief that I was a useless person to others. I started believing I was only as useless to people as I allowed myself to be. I started making active efforts to become a better girlfriend to Hisao, a better best friend to Lilly and a better club member to Naomi and the others."
+        n "{vspace=30}Due to my success in winning Hisao's heart, I started reconsidering my previously held belief that I was a useless person to others. I started believing I was only as useless to people as I allowed myself to be. I started making active efforts to become a better girlfriend to Hisao, a better best friend to Lilly, and a better club member to Naomi and the others."
         n "{vspace=30}{i}I'm worthless.{/i}"
-        n "{vspace=30}I started enjoying the small things in life. The girl-talk with Lilly, the brainstorming sessions over headlines and captions at the club, the tranquil days in Hokkaido and the occasional lovey-dovey exchanges with Hisao. Each of them brought a smile to my face when I recalled them before falling asleep in the evening."
+        n "{vspace=30}I started enjoying the small things in life. The girl-talk with Lilly, the brainstorming sessions over headlines and captions at the club, the tranquil days in Hokkaido, and the occasional lovey-dovey exchanges with Hisao. Each of them brought a smile to my face when I recalled them before falling asleep in the evening."
         n "{vspace=30}{i}I'm worthless.{/i}"
         n "{vspace=30}My body, despite being scarred and disfigured, was still capable of making Hisao feel good. And despite part of my body being numb, he was able to return the favor as well."
 
@@ -94,7 +95,7 @@ label sh_ch16:
             ease 1.0 ypos 1.0 alpha 1.0
         with None
 
-        show hisao_roof_blur behind bouquet
+        show hisao_roof_blur1 behind bouquet
         with Dissolve(1.0)
 
         play music music_innocence fadein 4.0
@@ -108,7 +109,7 @@ label sh_ch16:
             ease 1.0 ypos 1.3 alpha 0.0
         with None
 
-        hide hisao_roof_blur
+        hide hisao_roof_blur1
         show hisao basic_neutral_swt_rn
         with Dissolve(1.0)
 
@@ -139,9 +140,30 @@ label sh_ch16:
         "And another one."
         "An expectant smile appears on his face."
         "I slowly stretch out my hand, grab the bouquet and gently take it from him when he loosens his own grip on it."
+
+        show bouquet at displayitemshow(0.7):
+            zoom 1.3
+        with None
+
+        show hisao_roof_blur2 behind bouquet
+        with Dissolve(1.0)
+
+        show bouquet at displayitem(0.7)
+        with None
+
         "I hold the flowers to my chest, smelling the really nice odor coming from them."
         "I'm not really sure how to proceed. I'd really like to thank him, but I think I'm too uneasy right now to speak."
         "Part of me is happy for such a sweet gesture, but another part of me reminds me how much this emphasizes my own inadequacy and makes me feel even worse."
+
+        show bouquet at displayitemhide(0.7)
+        with None
+
+        hide hisao_roof_blur2
+        with Dissolve(1.0)
+
+        hide bouquet
+        with None
+
         "Again, we're just standing there, looking at each other. After another minute, Hisao slowly starts to speak."
 
         show hisao basic_speak_swt_close_rn
@@ -236,7 +258,7 @@ label sh_ch16:
         "I feel my legs getting weak. I cover my face with my hand and drop to my knees, unable to keep my emotions in check any longer."
         ha "When we started dating, we promised to support each other in times of need."
         ha "But while you were l-lying there on the street, I couldn't do a thing for you. I saw you looking at m-me… but I couldn't m-move. I couldn't p-phone for an ambulance, I couldn't call for h-help… I couldn't even hold your h-hand to reassure you."
-        ha "I'm… worthless."
+        ha "I'm… {w=0.5}worthless."
         "Despite my best efforts to contain them, tears are flowing down my cheeks, and my shoulders shake as all the guilt and shame that have been eating me up all week long come flowing out of me."
         ha "I t-thought, maybe it was better if I broke up with you, so you could be with someone who could make you happy, and also wouldn't f-fail you like I did."
         ha "What g-good are all the small things like homemade m-meals and games and caresses when I can't even be there for you… the very moment you need me most?"
@@ -354,15 +376,16 @@ label sh_ch16:
         scene ev rooftopkiss_normal:
             truecenter
             yalign 0.0 zoom 1.1
-            easein 10.0 zoom 1.0
+            easein 20.0 zoom 1.0
         with mediumflash
 
-        "Again, he doesn't respond, but I see a small tear from one of his eyes. He then brings one hand up to my face, softly brushes my hair lock aside and then presses his other hand to the side of my head until I hear a familiar click."
+        "Again, he doesn't respond, but I see a small tear from one of his eyes. He then brings one hand up to my face, softly brushes my hair lock aside, and then presses his other hand to the side of my head until I hear a familiar click."
         "My hairclip. He's kept it with him."
         "He doesn't ask me to be his girlfriend again. I don't bring it up either. We don't need words for this moment."
         "Instead, he simply presses his lips on mine, and we kiss again, longingly, passionately this time, throwing off the weights that have been on our shoulders the whole week."
 
         stop music fadeout 2.0
+        stop ambient fadeout 2.0
 
         scene black
         with Fade(2.0, 0.0, 1.0, color="#FFF")

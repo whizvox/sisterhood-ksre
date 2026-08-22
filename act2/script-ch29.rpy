@@ -86,7 +86,7 @@ label sh_ch29:
         show hisao basic_smile_bath_close_ni
         with Dissolve(1.0)
 
-        "I play around with the slider a bit until ultimately simply turning off the lights, leaving the changing area in near pitch blackness."
+        "I play around with the slider a bit before ultimately simply turning off the lights, leaving the changing area in near pitch blackness."
 
         show hisao basic_grin_bath_close_ni
         with chchange
@@ -366,17 +366,20 @@ label sh_ch29:
 
         hi "You're a girl of many talents, Hanako."
 
-        show ev soapopera_hanako1_back_large
-        hide soapopera_hisao
-        with charachangeev
+        show black
+        with dissolve
 
         "He drapes the hair he was tending to back over my right shoulder, embraces me from behind, and kisses me on the cheek. Then he just holds me for a little while."
-
-        # TODO no transitional CG for this part. maybe a fade to black would be best?
 
         play ambient sfx_shower2 fadein 2.0
 
         "Eventually, after determining that the conditioner must have had enough time to do its thing, I take the shower head and use it to rinse the shampoo away."
+
+        hide black
+        show ev soapopera_hanako1_back_large
+        hide soapopera_hisao
+        with charachangeev
+
         "I guess this is the point where we'll soap up the rest of our bodies. Or maybe…"
 
         stop ambient fadeout 2.0
@@ -477,7 +480,7 @@ label sh_ch29:
         show ev:
             anchor (0.5, 0.45) zoom 0.65
             ease 0.5 zoom 0.6
-            2.5
+            2.0
             ease 5.0 blur 40
         with charachangeev
 
@@ -602,10 +605,9 @@ label sh_ch29:
         "I squeeze my eyes shut and grit my teeth in an attempt to brace myself."
 
         show ev soapopera_hanako2_climax at truecenter:
-            zoom 1.07
-            ease 0.5 zoom 1.02
+            zoom 1.05
+            ease 0.5 zoom 1.0
         with charachangeev
-
         with vpunch
         pause 0.5
         with vpunch
@@ -617,11 +619,6 @@ label sh_ch29:
         "I let out a whimper of ecstasy before I can control myself."
 
         stop music fadeout 5.0
-
-        show ev:
-            0.5
-            linear 2.0 blur 25
-        with None
 
         scene black
         with Fade(2.0, 1.0, 1.5, color="#FFF")
@@ -762,7 +759,8 @@ label sh_ch29:
         ha "Besides… c-cooling down just takes me a little longer. It's n-not like I can't s-sweat at all anymore…"
         hi "Yeah, good point."
         "There's a brief silence that's slightly uncomfortable. At least Hisao was diplomatic enough to stick with a generic answer."
-        "I suppose I should be grateful that I still have enough functioning sweat glands to engage in modest physical activity without fainting or killing myself, but the annoying thing about having less sweat glands than usual is that the ones I do have have to work overtime in order to compensate, which can lead to some extremely unladylike results."
+        "I suppose I should be grateful that I still have enough functioning sweat glands to engage in modest physical activity without fainting or killing myself."
+        "Still, the annoying thing about having fewer sweat glands than usual is that the ones I do have need to work overtime in order to compensate, which can lead to some extremely unladylike results."
         "Hisao surely must have noticed already that during our activities in bed, part of me always remains almost completely dry while the other part is sweating like a pig. Thank goodness we always do it without any clothes on."
         ha "Umm… you know… I used to like my baths a little hotter than this too, but ever since… my accident… I've been a room-temperature person."
         ha "Hot and cold temperatures just quickly feel… uncomfortable to me now. Umm… S-scar tissue doesn't isolate as well as normal skin."
@@ -831,6 +829,8 @@ label sh_ch29:
         ha "Yes! We will."
         hi "In the meantime, seeing that Lilly's not here right now, there's no point in worrying about her. Let's focus our attention on something else, shall we?"
 
+        play music music_friendship fadein 4.0
+
         scene ev sharedsoak_hisao_cuddle
         with charachangeev
 
@@ -838,11 +838,11 @@ label sh_ch29:
         ha "Umm… l-like what?"
         "He snickers and gives me a kiss on the cheek."
         hi "We could… I don't know… go out onto the beach and count how many pebbles there are…"
-        "I turn around and smilingly shake my head."
+        "I smilingly shake my head."
         hi "…or we could… like… go to the yard, draw some squares on the ground and play a game of hopscotch…"
         "I giggle, shake my head again, and we share a kiss. Ever since he embraced me, my desire's been steadily rising."
         hi "…or we could simply return to our room and… well… you know…"
-        "I smile, eagerly nod my head, and we share another kiss. Then I let my forehead rest briefly against his. A quick peck on my lips seals the deal and I get off his lap."
+        "I smile, eagerly nod my head, and we share another kiss. Then I let my head rest briefly against his. A quick peck on my lips seals the deal and I get off his lap."
 
         scene bg satou_bathroom
         with locationchange
@@ -862,9 +862,8 @@ label sh_ch29:
 
     label .s3:
 
-        # TODO maybe change the music from serene at some point? it lasts like half the chapter at this point
         if _in_replay:
-            play music music_serene fadein 4.0
+            play music music_friendship fadein 4.0
 
         $ set_window_tint(TINT_HANAKO)
 
@@ -875,10 +874,8 @@ label sh_ch29:
         "We enter, and I waste no time in locking our bedroom door. Not that I expect anyone to come in here unannounced, but better to be safe than sorry."
         "When I turn around, I notice Hisao has already turned on a small lamp on one of the nightstands, bathing the area in a light that's just bright enough to see clearly, but still dim enough not to make me feel too uncomfortable."
 
-        show hisao basic_smile_bath_close
+        show hisao basic_emb_bath_close
         with charaenter
-
-        # TODO create Hisao nervous sprite
 
         "I notice there's a bit of a nervous expression on his face as he sits down on the edge of the bed. Feeling a little awkward myself, I sit down next to him on his right side and wait for him to initiate the next step."
         ha "..."
@@ -912,7 +909,7 @@ label sh_ch29:
         ha "Hisao?"
         hi "Yes?"
         ha "Ummm… it's not like this doesn't feel good, but… this… feels a little like last week, d-doesn't it?"
-        "‘Last week’ in this case referring to the evening he convinced me not to go with the usual way of him lying on top of me and give spooning a try, which I actually ended up enjoying quite a lot."
+        "‘Last week’ in this case referring to the evening he convinced me not to go with the usual way of him lying on top of me and give spooning a try. That same 'I want to try something new, but I'm not sure how to bring it up' expression was on his face back then as well."
 
         show ev:
             zoom 1.0 crop (567, 529, 1920, 1080)
@@ -1136,8 +1133,8 @@ label sh_ch29:
         "I lower my head again and take him in my mouth once more. This time I try to keep it in the middle of my mouth and away from my teeth."
         "I attempt to keep my jaw as relaxed as possible as I slowly slide up and down."
 
-        show ev at truecenter:
-            zoom 1.02 crop (1566, 172, 1968, 1107)
+        show ev:
+            zoom 1.0 crop (1590, 199, 1920, 1080)
         with { "master": charachangeev }
 
         "This is hardly the most comfortable act in the world as I have to brace myself at the end of every downward motion in order to prevent myself from letting it slide in too far."
@@ -1145,11 +1142,10 @@ label sh_ch29:
         "Hesitantly, I start moving my tongue around a bit."
         "It seems to get him even more aroused than he already was, but my initiative quickly comes to bite me when he suddenly bucks his hips ever so slightly and his member goes in just a little bit past my comfort zone."
 
-        with vpunch
-
         show ev eveningsnack_bj1_lick:
-            zoom 1.0 crop (0, 56, 1920, 1080)
+            crop (0, 56, 1920, 1080)
         with { "master": charachangeev }
+        with vpunch
 
         "The sensation causes me to immediately pull back again just before I have a sharp coughing fit. He immediately sits up and opens his eyes, a worried expression visible in them."
         hi "Hanako! Are you alright? I'm really sorry."
@@ -1220,26 +1216,14 @@ label sh_ch29:
         "My mind made up, I speed up the pace and go all out on him. My lips and tongue dart across his tip again and again, my left hand moves furiously up and down, and I stretch out my pinky finger for the finishing touch."
 
         show ev eveningsnack_bj2_climax:
-            zoom 0.52 crop None
-        with { "master": Dissolve(1.0) }
+            zoom 0.5 crop None
+        with mediumflash
 
         "Just when my pinky lightly tickles the area underneath his base, several things happen at once."
-
-        show white_vignette at truecenter:
-            zoom 1.02 alpha 0.0
-            ease 0.25 alpha 0.3
-            ease 0.25 alpha 0.0
-        with None
 
         with vpunch
 
         "Hisao lets out a loud and prolonged groan, his member starts throbbing violently, his entire lower body starts jerking uncontrollably and his upper body rises slightly despite my head still resting on his belly."
-
-        show white_vignette at truecenter:
-            zoom 1.02 alpha 0.0
-            ease 0.25 alpha 0.3
-            ease 0.25 alpha 0.0
-        with None
 
         with vpunch
 
@@ -1461,8 +1445,8 @@ label sh_ch29:
         "The sensation alone nearly drives me crazy. Almost my entire body is flushed red at this point."
         ha "Ah…."
 
-        show white_vignette at truecenter:
-            zoom 1.02 alpha 0.4
+        show white_vignette:
+            alpha 0.4
         with { "master": charachangeev }
 
         "I can feel my limit approaching as his tongue takes me past the point of no return. I grab the bed sheets tightly and arch my back in pleasure as I lose control."
@@ -1476,43 +1460,39 @@ label sh_ch29:
         "His arms grab hold of my hips tighter and continue holding me in place as I start squirming uncontrollably and start letting out squeals of delight."
         ha "Ah… ah… ah…"
 
-        show ev eveningsnack_cun2_climax at truecenter:
-            zoom 0.57
-            ease 0.5 zoom 0.52
-        with charachangeev
-
-        with vpunch
+        show ev eveningsnack_cun2_climax:
+            zoom 0.55
+            ease 0.5 zoom 0.5
+        with { "master": charachangeev }
 
         pause 0.5
+        with vpunch
 
         "I instinctively grab his head and press it against me. Then all muscles in my lower body forcefully tense up at once, my legs involuntary squeeze themselves together and my upper body lunges forward."
         "The intense pleasure causes me to squeeze my eyes shut and open my mouth to scream, but a quiet, prolonged whimper is all that leaves my throat."
 
         "And still he keeps going."
 
-        show white_vignette at truecenter:
-            ease 0.25 alpha 0.4
-            ease 0.25 alpha 0.8
+        show white_vignette:
+            ease 0.5 alpha 0.4
+            ease 0.5 alpha 0.8
         with None
-
         with vpunch
 
         "My body relaxes for a moment and then immediately tenses up again."
 
         show white_vignette:
-            ease 0.25 alpha 0.4
-            ease 0.25 alpha 0.8
+            ease 0.5 alpha 0.4
+            ease 0.5 alpha 0.8
         with None
-
         with vpunch
 
         "And again."
 
         show white_vignette:
-            ease 0.25 alpha 0.4
-            ease 0.25 alpha 0.8
+            ease 0.5 alpha 0.4
+            ease 0.5 alpha 0.8
         with None
-
         with vpunch
 
         "And once more."
@@ -1530,8 +1510,8 @@ label sh_ch29:
         "My mind wanders in random directions as I recover from the experience I just had."
         "I hear him getting off the bed and heading somewhere. I briefly hear the sound of running water, but it seems to come from very far away."
 
-        scene ev pillowtalk_blanket dark
-        with Fade(1.0, 0.0, 1.0, color="#04061c")
+        scene ev pillowtalkblanket dark
+        with Fade(1, 0, 1, color="#141152")
 
         play music music_twinkle fadein 4.0
 
@@ -1552,20 +1532,16 @@ label sh_ch29:
 
         ha "…very good."
 
-        show pillowtalkhisao upsmile dark
+        show pillowtalkhisao grin dark
         with charachangeev
 
         "It's pretty dark in the room now, but I think I can see him smile. He tenderly starts running his fingers through my hair."
         hi "No bad taste in your mouth anymore?"
 
-        show pillowtalkhanako smileupblush dark
+        show pillowtalkhanako grinupblush dark
         with charachangeev
 
         ha "N-no. You?"
-
-        show pillowtalkhisao grin dark
-        with charachangeev
-
         hi "Naw. It didn't taste bad to begin with. My tongue's kind of tired now, though. Kind of like that time last week when we were trying to find out how long we could keep a kiss going."
 
         show pillowtalkhanako grinblush dark
@@ -1576,11 +1552,6 @@ label sh_ch29:
         "My jaw's a little tired as well. Still, for a first time, I don't think we did that badly. We're lacking experience right now, but I wouldn't mind doing this again in the future."
         hi "So we should probably take it easy with the kisses?"
         "I don't say anything back. Instead, I slowly rub myself against him, use my feet to play footsie with his and reach back to lovingly stroke his hair."
-
-        show pillowtalkhanako smileblush dark
-        hide pillowtalkhisao
-        with charachangeev
-
         "Hisao's all too eager to respond in kind, letting his hands run across my cheek and tummy."
         "Even though my experience left me tired, I still love cuddling like this. I'm feeling content, satisfied and very happy right now."
         "As our caresses slow down and we start drifting into a peaceful slumber together, my thoughts return on the events of the day and the days that came before it."

@@ -148,15 +148,15 @@ init:
     transform rightsit:
         xpos 1.0 xanchor 1.0 ypos 1.1 yanchor 1.0 alpha 1.0
 
-    transform displayitemshow:
+    transform displayitemshow(ya=0.5):
         truecenter
-        ypos 0.7 alpha 0.0
-        easein 1.0 truecenter alpha 1.0
-    transform displayitem:
+        ypos ya+0.2 alpha 0.0
+        easein 1.0 alpha 1.0 ypos ya
+    transform displayitem(ya=0.5):
         truecenter
-        alpha 1.0
-    transform displayitemhide:
-        ease 1.0 ypos 0.7 alpha 0.0
+        alpha 1.0 ypos ya
+    transform displayitemhide(ya=0.5):
+        ease 1.0 ypos ya+0.2 alpha 0.0
     transform sepia:
         matrixcolor SepiaMatrix(tint="#ffefd7")
     transform sepiamuted:

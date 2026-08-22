@@ -86,6 +86,7 @@ init 1 python:
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
     sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
+    sh_sprites("hanako", ["determined", "downangry", "shutsmile"], poses=["emb"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanako", ["bashful", "distant", "normal", "smile", "worry"], poses=["basic", "cover"], outfits=["sum", "sum_clip"])
@@ -230,7 +231,8 @@ init 1:
 
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"
-    image hisao_roof_blur = f"{sh_path}/vfx/hisao_roof_blur.png"
+    image hisao_roof_blur1 = f"{sh_path}/vfx/hisao_roof_blur1.jpg"
+    image hisao_roof_blur2 = f"{sh_path}/vfx/hisao_roof_blur2.jpg"
     image bouquet = f"{sh_path}/vfx/bouquet.png"
     image hanako_dormhisao_blur = f"{sh_path}/vfx/hanako_dormhisao_blur.jpg"
     image hanako_hairclip = f"{sh_path}/vfx/hanako_hairclip.png"

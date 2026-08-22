@@ -733,6 +733,8 @@ label sh_ch10:
 
         centered "*tap* *tap* *tap* *tap* *tap*"
 
+        pause 1.0
+
         show bg school_dormhisao_ni:
             right
             zoom 1.2
@@ -760,6 +762,7 @@ label sh_ch10:
             matrixcolor BrightnessMatrix(-1.0)
             xzoom -1.0
         with None
+
         show hanako at offscreenright
         with charamovefastest
 
@@ -798,7 +801,8 @@ label sh_ch10:
         play sound sfx_rustling
 
         "She sits on my bed and starts removing her shoes and stockings."
-        "I swallow a lump in my throat. Does she mean {i}that{/i} kind of comfort? She's not even asking me to turn around."
+        "I swallow a lump in my throat."
+        "Does she mean {i}that{/i} kind of comfort? She's not even asking me to turn around."
         hi "H-Hanako, by ‘comfort’, do you mean {w=0.5}{i}comfort{/i}?"
         "She unbuttons her blouse and pulls it off in a single move, revealing her…{w=0.5} nightgown?"
 
@@ -831,7 +835,7 @@ label sh_ch10:
 
         "For several minutes, we just lie there, holding each other, lazily playing footsie and me softly stroking her hair and scalp—something I've lately learned she really likes."
         "On my first impression, I didn't really have Hanako pegged for a very physical person. She already tended to get nervous when people came near her, and I expected being touched would probably cause her to flee the scene in a heartbeat."
-        "I started having second thoughts about that impression when she got drunk and really clingy with me during her birthday party. And after I started dating her, I discovered that beneath her skittish nature, Hanako's actually quite the snuggle bunny in private."
+        "I started having second thoughts about that impression when she got drunk and really clingy with me during her birthday party. After I started dating her, I discovered that beneath her skittish nature, Hanako's actually quite the snuggle bunny in private."
         "I continue running my hand through her hair until I can feel her relax and lay her head on my chest so she can listen to my heartbeat—another thing she likes to do."
         "I'm not sure if she wants to talk to me about this or simply wants physical comfort. In a way, it's already a good thing she came here instead of pretending nothing's wrong and bottling up things inside."
         hi "Do you want to talk for a bit?"
@@ -950,7 +954,7 @@ label sh_ch10:
         show pillowtalkhisao grin dark
         with charachangeev
 
-        hi "If I don't go to sleep soon I'll miss my morning jog tomorrow. And Emi cursing like a sailor is a very ugly sight."
+        hi "If I don't go to sleep soon, I'll miss my morning jog tomorrow. And Emi cursing like a sailor is a very ugly sight."
 
         show pillowtalkhanako grin dark
         with charachangeev
