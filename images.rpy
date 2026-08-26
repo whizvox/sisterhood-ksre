@@ -91,6 +91,7 @@ init 1 python:
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanako", ["bashful", "distant", "normal", "smile", "worry"], poses=["basic", "cover"], outfits=["sum", "sum_clip"])
     sh_sprites("hanako", ["shock", "strain", "worry"], poses=["def", "defarms"], outfits=["sum"])
+    sh_sprites("hanako", ["worry"], poses=["def", "defarms"], outfits=["sum_clip"])
     sh_sprites("hanako", ["blushing", "blushtimid", "downsad", "downsmile", "downtimid", "emb", "sad", "smile", "timid"], poses=["emb"], outfits=["sum", "sum_clip"])
     sh_sprites("hanagown", ["worry_blush"])
     sh_sprites("hisao", ["annoy", "emb", "bashful", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])

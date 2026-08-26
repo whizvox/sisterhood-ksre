@@ -20,16 +20,15 @@ label sh_ch24:
 
         aki "I think it's only fair for me to take my half of the spoils."
 
-        show winebottles:
-            center
-            ypos 1.3 alpha 0.0
-            ease 1.0 ypos 1.0 alpha 1.0
+        show winebottles at displayitemshow
         with Pause(1.0)
+
+        show winebottles at displayitem
+        with None
 
         "Akira reaches into the bag, takes two bottles of wine out of it, and hands them over to Lilly."
 
-        show winebottles:
-            ease 1.0 ypos 1.3 alpha 0.0
+        show winebottles at displayitemhide
         with Pause(1.0)
 
         hide winebottles
@@ -118,7 +117,7 @@ label sh_ch24:
         show lilly cane_smile_sum_close
         with chchange
 
-        li "Have you ever had Cheddar before, Hisao? It's very popular here, but, like most kinds of cheese, considerably less so in Japan. "
+        li "Have you ever had cheddar before, Hisao? It's very popular here, but like most kinds of cheese, considerably less so in Japan. "
         hi "I don't think so. It can't hurt to give it a try, though."
         li "Hanako, could you help me cut it into smaller pieces?"
 
@@ -174,7 +173,7 @@ label sh_ch24:
         li "Is there a remote control lying around here, Hisao?"
         hi "There's one near the fireplace. Want me to give it to you?"
         li "Just press the on-button. It should still be on the right setting."
-        "I do as instructed and I hear a beep coming from the fireplace. A moment later, flames appear behind the glass window covering the fireplace. The light and heat coming from the gas fireplace give the room a cozy atmosphere."
+        "I do as instructed and I hear a beep coming from the fireplace. A moment later, flames appear beneath the logs in the fireplace. The light and heat coming from the gas fireplace give the room a cozy atmosphere."
         "Lilly starts filling our glasses and gestures towards a smaller couch near the low table in the middle of the room."
         li "I think it'd be most appropriate if the two of you take the love seat."
         ha "Okay."
@@ -189,20 +188,13 @@ label sh_ch24:
         show lilly basic_satisfied_sum
         with chchange
 
-        li "A second toast this evening, this time for my wonderful friend Hanako, who has, last week, succesfully completed her first aid training and is now a qualified first responder."
+        li "A second toast this evening, this time for my wonderful friend Hanako, who has succesfully completed her first aid training and is now a qualified first responder."
         li "May she never need the skills she was taught there, and may it be known that I admire and respect her very much."
-
-        window auto False
 
         show hanako emb_smile_sum_clip_close
         with { "master": chchange }
 
-        window hide None
-
-        call screen doublespeak(hi, _("Cheers!"), ha, _("C-cheers?")) with None
-
-        window show None
-        window auto True
+        $ show_doublespeak(hi, _("Cheers!"), ha, _("C-cheers?"))
 
         "Hanako blushes lightly, not sure how to deal with Lilly's praise, obviously not finding it completely unpleasant, but not completely comfortable either."
         "As if attempting to look for distraction, she puts her glass to her lips and starts sipping at it."
@@ -217,7 +209,7 @@ label sh_ch24:
         show hanako emb_smile_sum_clip_close at tworight
         with shorttimeskip
 
-        play music music_ease fadein 4.0
+        queue music music_ease fadein 4.0
 
         nvl clear
         nvl show dissolve
@@ -225,7 +217,8 @@ label sh_ch24:
         n "As Lilly finishes a story about a funny incident involving Akira, I can hear Hanako giggle and suddenly feel her hand ruffling my hair. That's probably the fourth time she's done this over the last fifteen minutes."
         n "{vspace=90}We've been hanging out here in the living room for well over an hour, and we opened up the second bottle of wine a little while ago. To say that the atmosphere is cheerful is quickly becoming an understatement. I don't think anyone's actually completely drunk yet, but I'm sure we've reached the point where each of us is getting rather tipsy."
         n "The fact that the wine Akira obtained for us is really tasty, that the atmosphere between us is completely relaxed, and that we don't have to be secretive about having a few glasses this time around probably all contributed to that."
-        n "{vspace=60}I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticibly less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy. I'm starting to notice that aspect of her returning as the evening goes on."
+        n "{vspace=60}I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticibly less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy."
+        n "I'm starting to notice that aspect of her returning as the evening goes on."
 
         nvl hide dissolve
 
@@ -297,14 +290,13 @@ label sh_ch24:
 
         li "Perhaps I'm jumping to conclusions, but I do not think any person who wolf-whistles a lady would be my type."
         "Somehow that answer doesn't surprise me at all. Lilly is still a lady through and through."
-        "That does make me wonder about something else though."
+        "That does make me wonder about something else, though."
         "Hanako mentioned once she didn't remember Lilly ever having had a boyfriend while she was attending Yamaku, despite the fact Lilly's a very popular student."
         "Perhaps she has some very particular tastes?"
         hi "If you don't mind me asking a bold question… What kind of person would be your type, Lilly?"
 
         show lilly basic_planned_sum
-        # TODO should most likely use a def pose with a clip
-        show hanako def_worry_close
+        show hanako defarms_worry_sum_clip_close
         with chchange
 
         "Lilly sends me a very cheeky grin in return."
@@ -350,7 +342,7 @@ label sh_ch24:
         with chchange
 
         "Lilly sniffs curtly as if admonishing me."
-        li "Of course. Just because I cannot see doesn't mean I don't have my own preferences."
+        li "Of course. Just because I cannot see, doesn't mean I don't have my own preferences."
         hi "And what would those preferences be? I imagine something like hair color is a foreign concept to you."
 
         show lilly basic_smileclosed_sum
@@ -363,7 +355,7 @@ label sh_ch24:
         with chchange
 
         "Does that include Hanako? I quickly look at her."
-        "Hanako seems to understand what I'm thinking for she nods in affirmation."
+        "Hanako seems to understand what I'm thinking, as she nods in affirmation."
         ha "A little while back."
 
         show lilly basic_cheerful_sum
@@ -382,8 +374,7 @@ label sh_ch24:
 
         hi "Yeah?"
 
-        # TODO replace with sum_clip variant
-        show hanako def_worry_close
+        show hanako def_worry_sum_clip_close
         with { "master": charachangealways }
 
         li "I was wondering… There's one dear friend whose face I still can't picture in my mind. Would it be okay if I…?"
@@ -400,8 +391,8 @@ label sh_ch24:
         "Still, I don't think this is something I can reasonably refuse."
         hi "Alright then."
 
-        stop music fadeout 2.0
-        play ambient sfx_ticktock fadein 2.0
+        stop music fadeout 4.0
+        play ambient sfx_ticktock fadein 10.0
 
         hide hanako
         show lilly basic_listen_sum_close at center
@@ -419,8 +410,7 @@ label sh_ch24:
         stop ambient fadeout 2.0
         play music music_ease fadein 4.0
 
-        # TODO replace with defarms_worry_sum_clip
-        show hanako defarms_worry_sum at tworight
+        show hanako defarms_worry_sum_clip at tworight
         show lilly basic_planned_sum at twoleft
         with charaenter
 
@@ -446,6 +436,7 @@ label sh_ch24:
         "Eventually, Lilly smiles playfully."
         li "It seems you were spot-on about him, Hanako."
 
+        # TODO replace with clip variant
         show hanako defarms_shock_sum
         with charachangealways
         show hanako defarms_shock_close
@@ -467,7 +458,7 @@ label sh_ch24:
         with charamove
 
         "I get back on the couch, and Hanako sits down next to me, but still holds onto me."
-        "I can only assume that Hanako confided in Lilly once that she thought I looked handsome or something and Lilly's statement of agreement, very likely combined with the wine that was consumed, has now triggered some sort of rival reflex in Hanako."
+        "I can only assume that Hanako confided in Lilly once that she thought I looked handsome or something, and Lilly's statement of agreement—very likely combined with the wine that was consumed—has now triggered some sort of rival reflex in Hanako."
         "Eager to change course and steer out of this minefield, I latch onto the first safe subject that springs to mind."
         hi "You mentioned musical tastes, Lilly. I suppose that excludes anything with a prominent bass. I guess your tastes are more traditional? Like ballroom music?"
 
@@ -817,7 +808,7 @@ label sh_ch24:
         "When we reach our room I throw open the door, pull Hanako inside, close the door, and frantically lock it as if some demon from the netherworld has been chasing us."
         "As I confirm that the door is really locked, it takes me a few seconds to realize we're safe."
         "Man, what a screwup this could have been. I turn around to face Hanako, the both of us still panting heavily."
-        hi "We're… safe…I think. We… got away… with it."
+        hi "We're… safe… I think. We… got away… with it."
         ha "Y-yes…"
 
         play music music_ease fadein 4.0
