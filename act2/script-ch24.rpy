@@ -499,10 +499,14 @@ label sh_ch24:
         hide hanako
         with charachangealways
 
-        "I walk over to the corner and carefully carry the cello case to the couch Lilly's sitting on. She kneels down next to it and slowly feels her way over to the small latches on the side."
+        "I walk over to the corner and carefully carry the cello case to the couch Lilly's sitting on."
+
+        play sound sfx_unlatch volume 0.6
+
+        "She kneels down next to it and slowly feels her way over to the small latches on the side."
         "Opening the case, she takes the instrument out of it and gently, almost tenderly, feels its neck, fingerbox and strings. As she starts toying with the tuning pegs and occasionally plucking a string before carefully adjusting the corresponding peg, a nostalgic look appears on her face."
         "The way she's tuning this thing gives me the impression this is far from the first time she's handled an instrument like this."
-        hi "From the looks of it this isn't the first time you've handled a cello."
+        hi "From the looks of it, this isn't the first time you've handled a cello."
 
         show lilly basic_satisfied_sum
         with chchange
@@ -527,11 +531,11 @@ label sh_ch24:
         show lilly basic_smileclosed_sum
         with chchange
 
-        "Lilly thinks for a moment before taking her glass and taking another sip."
+        "Lilly thinks for a moment before taking another sip from her glass."
         li "Very well then. On one condition."
         hi "What condition?"
         li "Please close your eyes, and keep them closed until I stop playing."
-        "Huh? What an odd request. I'm a bit puzzled but decide not to think too hard on it."
+        "Huh? What an odd request. I'm a bit puzzled, but decide not to think too hard on it."
 
         stop music fadeout 2.0
 
@@ -564,7 +568,9 @@ label sh_ch24:
 
         "I curiously open my eyes and see a frown of concentration on Lilly's face."
 
-        scene ev celloandwine_peek
+        scene ev celloandwine_cello_play:
+            xalign 0.5 yalign 0.0 zoom 0.6
+            ease 20.0 zoom 0.5
         with mediumflash
 
         play music music_concord_cello_good
@@ -581,13 +587,20 @@ label sh_ch24:
         nvl clear
 
         n "As my gaze lowers slightly, I manage to suppress a gulp with supreme effort as I suddenly realize why Lilly wanted us to close our eyes."
+
+        show ev:
+            yalign 1.0
+            ease 20.0 zoom 0.8
+        with None
+
         n "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them. Nowadays women probably wear long dresses, but the knee-high summer skirt Lilly's been wearing this evening doesn't even remotely qualify as one."
         n "The cello is more than large enough to block the view of her panties, but I can definitely see way more of Lilly's long and shapely legs than anyone would consider appropriate."
 
-        nvl hide dissolve
+        nvl hide None
 
-        show ev celloandwine_block
-        with charachangeev
+        show ev celloandwine_block_pout at truecenter:
+            zoom 0.52
+        with vpunch
 
         "Before this latest image can sink into my mind, I feel movement on the couch next to me. In the next moment, I can see Hanako getting up and positioning herself in front of me."
 
@@ -596,7 +609,7 @@ label sh_ch24:
 
         "Getting the hint, I quickly close my eyes again."
         "..."
-        "I don't feel her getting back on the couch though. Is she just going to stay in this position until Lilly stops playing?"
+        "I don't feel her getting back on the couch, though. Is she just going to stay in this position until Lilly stops playing?"
 
         hide black
         with openeye
@@ -610,25 +623,27 @@ label sh_ch24:
         "I give her a soft kiss on the lips, making sure to keep it as quiet as I can."
         "That makes her relax a bit, though she still shows no signs of sitting back on the couch next to me. My eyes wander along her body, and I quickly avert my eyes as she catches me staring down the neckline of her blouse for a moment."
 
-        show ev celloandwine_block_smile
+        show ev celloandwine_block_grin
         with charachangeev
 
         "When I look back at her face, I'm taken aback by the change that has come over her expression. Her disapproving pout has made way for a broad and childish smile that makes me a bit wary."
 
-        scene black
+        show black
         with shuteye
 
         "She moves a hand over my face as a gesture for me to close my eyes, which I reluctantly do. I concentrate, trying to pick up any sounds from her, but it's impossible to hear anything over Lilly's music."
         "Just when I consider taking another peek to see what she's up to, I feel a weight dropping down on my lap."
 
         hide black
-        show ev celloandwine_lap_forward
+        show ev celloandwine_lap_tease:
+            anchor (0.0, 0.0) zoom 0.92 pos (-1036, -142)
         with openeye
 
         "When I open my eyes, I can barely hold back a shocked gasp."
-        "What caught me off guard wasn't the fact that Hanako has straddled my lap—that much I felt the moment she lowered her hips—but what shocks me is the fact that she has unbuttoned several buttons of her blouse, giving me an ample view of her chest and even part of her belly while still hiding most of the scarring on her right side."
+        "What caught me off guard wasn't the fact that Hanako has straddled my lap, but the fact that she has unbuttoned several buttons of her blouse, giving me an ample view of her chest and even part of her belly while still hiding most of the scarring on her right side."
         "I instinctively try to look past her to see if Lilly has noticed anything, but as I try to do so, Hanako takes my face in her hands and gently but firmly presses it to her chest."
-        "Of all the thoughts that suddenly assault my brain at once, the first one is bizarrely the realization that I know a story (was it a book or a movie?) where a woman distracts a guard in exactly the same way. Come to think of it, distraction is probably the underlying thought behind Hanako's action. She's beating Lilly's distraction by offering a more tempting one."
+        "Of all the thoughts that suddenly assault my brain at once, the first one is bizarrely the realization that I know a story (was it a book or a movie?) where a woman distracts a guard in exactly the same way."
+        "Come to think of it, distraction is probably the underlying thought behind Hanako's action. She's beating Lilly's distraction by offering a more tempting one."
         "How am I supposed to deal with {i}this{/i}?"
         "I didn't expect Hanako to be this bold, even after emptying a few glasses of wine. Lilly can't see us, but even so…"
         "I can't just tell her out loud to get off my lap and button up her blouse. And Hanako's probably well aware of that. The circumstances effectively have me gagged."
@@ -641,7 +656,7 @@ label sh_ch24:
         "When I went to put her to bed that night, she latched onto me in a similar manner and wouldn't let go. I never asked her how much she remembered from that night and how much in control she was of her actions."
         "Making one last attempt to get Hanako off my lap, I brace myself and raise my hips, preparing to grab hold of Hanako in case she loses her balance."
 
-        show ev celloandwine_lap_pause
+        show ev celloandwine_lap_cover
         with charachangeev
 
         "It doesn't have the intended effect though. My movement merely causes our crotches to firmly rub against each other and the sensation causes both of us to simultaneously let out a sharp breath."
@@ -656,8 +671,12 @@ label sh_ch24:
         "This is a bit of a weird predicament, but there's probably no need to panic. As long as neither of us makes any sudden movements or sounds, Lilly's probably not going to notice what's happening in front of her."
         "She'll soon finish her song and Hanako will get off my lap on her own since we'll have to put the cello back where we found it. I might as well enjoy the experience in the meantime."
 
-        show ev celloandwine_lap_embrace
+        show ev celloandwine_lap_feel
         with charachangeev
+
+        show ev:
+            ease 10.0 ypos -307
+        with None
 
         "Deciding to reciprocate Hanako's oddly expressed affection, I move my hands underneath her blouse, wrap my arms around her lower back and pull her closer. Hanako's body feels wonderfully warm."
         "I can't exactly hear her heartbeat, even with my ear pressed against her chest, but I can faintly feel it. I'd be lying if I said I hated this."
@@ -667,7 +686,8 @@ label sh_ch24:
 
         "I'm not sure how much time passed between the moment I decided to get a little bit more comfortable and the moment Lilly finishes the last notes of her song, but I have to admit I wouldn't have minded if it had lasted a bit longer."
 
-        show ev celloandwine_lap_applause
+        show ev celloandwine_lap_clap at truecenter:
+            crop None zoom 0.5
         with charachangeev
 
         "As it becomes clear that the song's really over, Hanako lets go of me and leans back a bit so we can both give Lilly a round of applause."
@@ -675,6 +695,11 @@ label sh_ch24:
         hi "Great performance, Lilly."
         ha "Well done, Lillly."
         "I notice a slight slur in Hanako's voice, though it's not nearly as pronounced as it was during our last encounter with the bottle."
+
+        show ev celloandwine_cello_lookup:
+            crop (837, 0, 2164, 1218) zoom 0.89
+        with charachangeev
+
         li "Thank you, you two. I hope the occasional slip-ups weren't too grating."
         "Preparing to get up, Hanako slowly raises her hips. I can tell from the look on her face she wouldn't have minded this taking a little bit longer either."
         hi "Not at all. In fact…"
@@ -687,7 +712,8 @@ label sh_ch24:
         ha "I'd… like to hear m-more, too."
         li "One more time then. Close your eyes again, please."
 
-        show ev celloandwine_lap_victory
+        show ev celloandwine_lap_victory:
+            zoom 1.0 crop (813, 16, 1920, 1080)
         with charachangeev
 
         "As I raise my head to give Hanako a knowing look I can't help but notice the glowing smile on her face as if I just proposed to her."
@@ -697,7 +723,8 @@ label sh_ch24:
 
         play music music_concord_cello_good
 
-        show ev celloandwine_lap_kiss
+        show ev celloandwine_lap_kiss:
+            crop (1297, 321, 1920, 1080)
         with charachangeev
 
         "Hanako softly takes my face in her hands, brings her face close to mine and when the first musical notes start vibrating in the air, I find myself locked in a quiet kiss with her."
@@ -707,8 +734,8 @@ label sh_ch24:
 
         n "We stay like this for several seconds until, during a particularly loud note, Hanako breaks it off and we let out a gasp that's hopefully drowned out by the music."
         n "I once again wrap my arms around her, and when we share another kiss, I notice that Hanako has started moving her hips a little."
-        n "{vspace=30}I give her a surprised look. She's taking it slightly farther than I anticipated. There's a playful smile on her face—broader than usual with just a tiny tinge of embarassment. Her face and upper chest look flushed, either from embarassment, intoxication or arousal. Probably a combination of all three."
-        n "I'm not sure whether to feel nervous from or excited by Hanako's bold approach. Her motion, a slow but steady grind, has caused a pleasant feeling to start spreading from my groin to the rest of my body and as a sense of arousal starts building up inside me, I find that, without having noticed it, I've started making small grinding movements with my own hips to match hers."
+        n "{vspace=30}I give her a surprised look. She's taking it slightly farther than I anticipated. There's a playful smile on her face—broader than usual with just a tiny tinge of embarassment. Her face and upper chest look flushed, either from embarassment, intoxication, or arousal. Probably a combination of all three."
+        n "I'm not sure whether to feel nervous from or excited by Hanako's bold approach. Her motion, a slow but steady grind, has caused a pleasant feeling to start spreading from my groin to the rest of my body. As a sense of arousal starts building up inside me, I find that, without having noticed it, I've started making small grinding movements with my own hips to match hers."
 
         nvl clear
 
@@ -724,8 +751,8 @@ label sh_ch24:
 
         scene bg satou_livingroom_ni
         show lilly basic_listen_sum at twoleft
-        # TODO replace Hanako's sprites in this section with the sumunb_clip versions
-        show hanako def_worry_close at tworight
+        # TODO bra color is wrong, change it to black, same as the CGs
+        show hanako def_worry_sum_clipunb_close at tworight
         with locationchange
 
         "Suddenly, I can hear something behind Hanako and when I look in Lilly's direction, I notice she has abruptly stopped playing and has gotten up from the couch."
@@ -739,6 +766,7 @@ label sh_ch24:
 
         play music music_tension
 
+        # TODO use sum_clipunb variant sprite
         show hanako defarms_shock_close
         with chchangefast
 
@@ -814,31 +842,51 @@ label sh_ch24:
         play music music_ease fadein 4.0
 
         "We take a moment to catch our breath, look at each other as if to say “Now what?” and then burst into an uncontrollable laughing fit. The situation is simply too ridiculous to grasp."
-        "When we have finally gotten the tension and adrenaline out of our system, I get close to Hanako and hug her gently. Should we go to bed now? If last time was anything to go by, we'll probably feel like crap in the morning."
+        "When we have finally gotten the tension and adrenaline out of our system, I get close to Hanako and hug her gently."
+        "Should we go to bed now? If last time was anything to go by, we'll probably feel like crap in the morning."
         "But I can't say I'm tired yet. And as I hold the still softly giggling Hanako, the warmth of her body brings back the feelings we shared in the living room earlier."
 
-        scene ev tipsyfun_foolingaround_clothes
+        scene ev tipsyfun_stand_close:
+            zoom 0.5
+        with mediumflash
 
         "I'm probably not the only one feeling that way as Hanako hugs me back less than gently and presses herself against me like she did after her birthday party. This time, however, she raises her head and starts kissing me."
         "In contrast to the few careful and quiet kisses we shared downstairs earlier, the ones we're exchanging now are passionate and filled with longing."
+
+        show ev:
+            zoom 1.0 pos (-784, -170)
+        with { "master": Dissolve(1.0) }
+
         "A slight aftertaste of the wine we've had earlier fills my mouth as our tongues dance around in a fevered embrace, and I feel my head getting a little fuzzy again. I can feel her hands move underneath my shirt and stroking my back."
+
+        show ev:
+            ease 10.0 ypos -1010
+        with None
+
         "Eager to return the favor, I move my hands underneath her blouse. As soon as I do so, she lets go of me and starts shaking her shoulders, trying to shake off her blouse without breaking our kiss."
-
-        scene ev tipsyfun_foolingaround_undressing
-
         "Since she's gotten slightly sweaty already, causing the blouse to stick to her body a bit, I decide to speed things up by taking it off myself."
+
+        show ev:
+            ypos -170
+        with { "master": Dissolve(1.0) }
+
         "I raise my arms, hoping Hanako gets the message, and sure enough a few seconds later my shirt is pulled over my head and dropped at my feet."
-        "We resume our makeout session, and with more luck than skill I manage to get Hanako's bra off in a single try. We edge towards the bed step by step without breaking our embrace or our kisses and somehow manage to kick off our shoes on the way."
+        "We resume our makeout session, and with more luck than skill, I manage to get Hanako's bra off in a single try."
+
+        show ev tipsyfun_stand_naked:
+            pos (-612, -117)
+        with { "master": Dissolve(1.0) }
+
+        "We edge towards the bed step by step without breaking our embrace or our kisses and somehow manage to kick off our shoes on the way."
         "Keeping one arm around Hanako's waist, I start fondling her left breast with the other hand, drawing a nasal moan out of her in the middle of our kissing."
-        "When we finally reach the bed, there's only one thought on my mind. I want her. The desire she's awakened in me isn't going to be satisfied with mere kisses anymore."
-
-        scene ev tipsyfun_foolingaround_pantsdown
-
+        "When we finally reach the bed, there's only one thought on my mind: I want her. The desire she's awakened in me isn't going to be satisfied with mere kisses anymore."
         "I feverishly try to undo the button of my pants. It seems to take an eternity. The moment I get it loose and unfasten my zipper, I feel two hands grab hold of my pants and pull them down in one go, taking my boxers along with them."
 
-        scene ev tipsyfun_foolingaround_naked
+        show ev tipsyfun_stand_naked:
+            pos (-65, -61) zoom 0.55
+        with { "master": Dissolve(1.0) }
 
-        "Emboldened by Hanako's act, I reach out, unbutton her pants, and a moment later her pants and panties are around her ankles as well."
+        "Emboldened by Hanako's act, I reach out, unbutton her pants, and a moment later, her pants and panties are around her ankles as well."
         "With the last pieces of clothing (somewhat) out of the way, we indulge in the mutual hunger we feel. As we act out our desire, it strikes me how different this is from how we usually do this."
         "Whenever we satisfied each other in the past, we made certain to build things up slowly and carefully, making sure to keep things tender and gradually explore more intimate areas as we proceeded."
         "This is nothing like those other times. We're feverishly moving our hands across each other's body, almost at random as if we're possessed by an unbearable itch yet we can't find the correct spot to scratch."
@@ -846,58 +894,70 @@ label sh_ch24:
         "Is it the fact we were stimulating each other earlier while being forced to repress every signal our body was trying to let out? Or is it the fact we haven't done it in weeks and we're both dying to change that?"
         "Taking a moment to finger her, I can instantly tell that she's ready. We were probably both ready the moment we dashed into this bedroom. I lift one of my legs, trying to get my pants off without taking my hands off Hanako's body."
 
-        scene black
+        show black:
+            truecenter zoom 1.02
+        with shuteyefast
 
-        "However the next moment, my leg gets stuck, I lose my balance and I nearly fall backwards. The only reason we remain standing is because Hanako manages to brace herself in time."
-        "That was close. I could have hit my head against the nearby dresser and broken my neck. What a pathetic way to go that'd be. We'd better do this another way. I turn to the bed and pull back the sheets."
-        hi "Hanako…ah… let's get on the bed."
+        with vpunch
+
+        "However, in the next moment, my leg gets stuck, I lose my balance, and I nearly fall backwards. The only reason we remain standing is because Hanako manages to brace herself in time."
+        "That was close. I could have hit my head against the nearby dresser and broken my neck. What a pathetic way to go that'd be."
+
+        scene bg satou_guestroom_ni
+        with openeyefast
+
+        "We'd better do this another way. I turn to the bed and pull back the sheets."
+        hi "Hanako… ah… let's get on the bed."
         "A feverish kiss, followed by a gasp."
         ha "Y-yes."
         "Then one more."
         "Hanako gets onto our bed, crawls a little farther onto it and then starts wiggling her legs in an attempt to get rid of her pants. I nearly feel my heart stop at what I see before me."
-        "The sight of a thoroughly exposed Hanako, on all fours and completely naked safe for her socks and the pants and panties around her ankles, is a temptation I can't resist. I get on my knees on the bed behind her and carefully, yet firmly take hold of her hips."
+        "The sight of a thoroughly exposed Hanako, on all fours and completely naked—save for her socks and the pants and panties around her ankles—is a temptation I can't resist. I get on my knees on the bed behind her and carefully, yet firmly take hold of her hips."
         hi "Hanako… c-can I…?"
         "The brief nod that follows is all I need. I put the tip of my member against her entrance, carefully use my fingers to brush her labia aside and then push myself forward and into her."
 
-        scene ev tipsyfun_doggy_start
+        scene ev tipsyfun_doggystyle at truecenter:
+            zoom 0.52
+        with mediumflash
 
-        ha "Hhhhh!"
-        hi "Eaagh!"
+        call screen doublespeak(ha, "Hhhhh!", hi, "Eaagh!") with vpunch
+    
         "Hanako gasps in surprise as I enter her, and the intense pleasure I feel as her insides envelop me forces a loud moan out of me. It's soft and warm inside of her and from this position I can penetrate her slightly deeper than usual."
         "I remember to check on Hanako, but notice she shows no signs of discomfort. I feel a deep sense of satisfaction as I thrust my hips back and forth, as if I've been staring at a wrapped present for days on end and finally get to open it."
         "The pleasure that shoots through my lower body is nearly enough to make my knees give out, and I hold onto Hanako's hips for added support. I notice the sounds that Hanako's making are a bit louder and more unrestrained than usual."
-
-        scene ev tipsyfun_doggy_masturbate
-
         "Wanting to pleasure her more, I bend over a bit and fondle her breast, then try to position my hand near the spot where we're joined, so I can finger her some more."
         "As I feel my way around, I suddenly feel Hanako's hand over my own as she guides me to the right spot. It's a bit awkward since I can't move as easily while bending over her like I am."
         "Still, Hanako's cute moans in response to the stimulation more than make up for that."
-        "As I feel my limit approaching, I take hold of Hanako's hand, which is still resting on top of my own and press it against the spot I was focussing on until now."
-
-        scene ev tipsyfun_doggy_end
-
+        "As I feel my limit approaching, I take hold of Hanako's hand, which is still resting on top of my own and press it against the spot I was focusing on until now."
         "She doesn't react immediately, and for a second I believe she's not going for it. Then she furiously starts rubbing and I firmly grab hold of her buttocks with both hands and start thrusting again."
         "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips…"
         "The sound of our heavy breathing, even the sound of my body slapping against hers (which we usually find embarassing) all combine to push us towards our rapidly approaching climax."
         "Shaking the last few shreds of embarassment from my mind, I give in to lust and give us the final push towards the inevitable."
 
-        show ev tipsyfun_collapse_climax
-        with charachangeev
+        show ev tipsyfun_collapse_climax:
+            zoom 0.52
+        with vpunch
 
         "The combination of the wine slightly dulling my sense of balance and the first jolt that surges through my groin makes my knees buckle and I collapse on top of Hanako, pinning her underneath me."
         "I'm already too caught up in the moment to get back into position and simply keep thrusting for as long as the waves of extacy are coursing through my body."
+
+        show ev:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with { "master": Dissolve(1.0) }
+
         "I'm only vaguely aware of Hanako underneath me suddenly crying out, tensing up and bucking her hips several times."
         "When my body finally relaxes, I make a half-hearted attempt to get up, only to experience a sudden spell of dizziness."
-
-        show ev tipsyfun_collapse_bliss
-        with charachangeev
-
         "Being unable to muster the willpower to do anything other than lie back down and cling to the girl sharing the bed with me, my wandering hand manages to find the bedsheet that I quickly pull over us."
+
+        show black
+        with { "master": Dissolve(5.0) }
+
+        stop music fadeout 5.0
+
         "As our bodies settle down from our act of passion, a mixture of weariness and bliss washes over me."
         "Before I give in to the sense of drowsiness, one last thought passes through my mind."
         "This is heaven!"
 
-        stop music fadeout 2.0
         scene black
         with Dissolve(2.0)
 

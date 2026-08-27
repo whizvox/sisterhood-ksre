@@ -3,35 +3,61 @@ label sh_ch25:
 
         $ set_window_tint(TINT_HISAO)
 
-        scene ev tipsyfun_collapse_morning
-        with Pause(3.0)
+        scene black
+        with None
 
         "I wish I was dead."
-        "Was it this bad the last time?"
+        "Was it this bad last time?"
         "It might have been, but there's no way to know for sure. Even digging through my memory feels like smashing my head into a wall."
         "Or into a pile of broken glass."
-        "Or into a wall with broken glass embedded in it."
+        "Or into a wall with broken glass in it."
 
         play music music_serene fadein 6.0
 
-        scene bg satou_guestroom
-        show bg satou_guestroom_blur as blurredbg
-        with locationchange
+        scene white
+        with openeye
+
+        scene ev tipsyfun_collapse_morning:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        show ev tipsyfun_collapse_morning_blur as evblur:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461) matrixcolor BrightnessMatrix(1.0)
+            ease 3.0 alpha 0.7 matrixcolor BrightnessMatrix(0.7)
+            # ease 1.0 alpha 0.7 matrixcolor BrightnessMatrix(0.7)
+            # ease 5.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        with None
+
+        pause 3.0
 
         nvl clear
         nvl show dissolve
 
         n "I grit my teeth as I try to bear the painful pounding inside my head. It doesn't really help, although I am getting slightly more aware of my surroundings."
-        n "I notice a lot of light around me."
+        n "{vspace=90}…I notice a lot of light around me."
         n "A painful lot of light."
         n "Too much light."
+        # TODO change this line to better match the CG
         n "{vspace=60}I roll onto my back, use both hands to shield my eyes, and carefully open them."
-        n "Even the small rays of light slipping through the cracks between my fingers manage to hurt my eyes, but I nevertheless keep them open. Eventually my vision has adapted enough for me to look around the room through squinted eyes."
 
         nvl hide dissolve
 
-        hide blurredbg
-        with Dissolve(3.0)
+        show ev tipsyfun_collapse_morning_blur as evblur:
+            alpha 0.7 matrixcolor BrightnessMatrix(0.7)
+            ease 2.0 alpha 0.4 matrixcolor BrightnessMatrix(0.4)
+            ease 1.0 alpha 0.5 matrixcolor BrightnessMatrix(0.5)
+            ease 4.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
+        with None
+
+        pause 7.0
+
+        hide evblur
+        with None
+
+        "Even the small rays of light slipping through the cracks between my fingers manage to hurt my eyes, but I nevertheless keep them open."
+        "Eventually, my vision has adapted enough for me to look around the room through squinted eyes."
+
+        show ev at truecenter:
+            zoom 0.5
+        with charachangeev
 
         nvl clear
         nvl show dissolve
@@ -43,7 +69,13 @@ label sh_ch25:
         n "I really don't want to get out of bed, but that light isn't going away by itself."
         n "{vspace=30}I manage to make my way to the edge of the bed, but as I prepare to step out, I notice that something is somehow keeping my legs stuck together."
 
+        nvl hide dissolve
+
+        scene bg satou_guestroom
+        with locationchange
+
         nvl clear
+        nvl show dissolve
 
         play sound sfx_rustling
 

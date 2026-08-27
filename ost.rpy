@@ -36,8 +36,8 @@ init 1 python:
         # misc ambience
         "bikeride", "ticktock", "windy",
         # other
-        "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap",
-        "collapse", "metalclink", "shojidoor", "showerdrain", "shower2", "teacup_loudclink", "waterpour"
+        "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap", "collapse", "metalclink",
+        "shojidoor", "showerdrain", "shower2", "teacup_loudclink", "unlatch", "waterpour"
     ])
 
 init:
