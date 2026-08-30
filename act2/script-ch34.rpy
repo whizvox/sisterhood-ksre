@@ -144,7 +144,7 @@ label sh_ch34:
         ha "If it's… not a big p-problem with you then… I'll stay here."
         li "I appreciate that, Hanako."
 
-        # TODO Play lock door SFX
+        play sound sfx_lock
 
         "I quickly walk to the door and lock it."
         "When I turn around, Lilly has already taken off the last of her clothes and is brushing the shelf with her hand in search of a towel."

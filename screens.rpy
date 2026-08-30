@@ -33,6 +33,9 @@ screen sisterhood():
                 textbutton _("Chapter Select") action If(main_menu, true=ShowMenu("sisterhood_chapter_select"), false=None)
 
             vbox:
+                textbutton _("Memories") action If(main_menu, true=ShowMenu("sisterhood_memories"), false=None)
+
+            vbox:
                 textbutton _("Credits") action If(main_menu, true=Start("sisterhood_credits"), false=None)
 
         textbutton _("Return"):
@@ -168,7 +171,7 @@ screen sisterhood_chapter_select(page=0):
                                     SetVariable("current_scene", chapter[1]),
                                     Start("sisterhood_replay_start")
                                 ]
-                                hovered SetScreenVariable("current_desc", chapter[2])
+                                hovered SetScreenVariable("current_desc", f"{(chapter[1] + ' : ' if sh_debug else '')}{chapter[2]}")
                                 unhovered SetScreenVariable("current_desc", None)
                         else:
                             textbutton _("???") action None:
@@ -219,6 +222,90 @@ screen sisterhood_about():
                 text _("To learn about future updates or submit a bug report, check out the website:")
                 textbutton _("https://sisterhood.whizvox.me") action OpenURL("https://sisterhood.whizvox.me"):
                     style "gui_exturl"
+
+        textbutton _("Return"):
+            style "return_button"
+            action ShowMenu("sisterhood")
+
+    key "game_menu" action ShowMenu("sisterhood")
+
+screen sisterhood_memories(page=0):
+    tag menu
+    style_prefix "memories"
+
+    default return_hovered = False
+    default local_items = set()
+
+    on "show" action SetVariable("sh_memory_page", page)
+
+    add "main_menu_bg" at colorblind(persistent.colorblind)
+    add "blind"
+
+    frame:
+        style_suffix "interface"
+        at colorblind(persistent.colorblind)
+
+        has vbox
+
+        spacing 12
+
+        text _("Mods > Sisterhood > Memories"):
+            bold True
+            size bold_size
+
+        frame:
+            size_group "memories"
+
+            has grid 4 3
+
+            for i in range(page * 12, (page + 1) * 12):
+                if i > len(sisterhood_gallery_images) - 1:
+                    add Null(220, 170)
+                elif is_seen(sisterhood_gallery_images[i][1]) or config.developer:
+                    python:
+                        img = sisterhood_gallery_images[i]
+                        thumb = im.Scale(img[0], 200, 150)
+
+                    button:
+                        xysize 220, 170
+                        hovered Function(local_items.add, i)
+                        unhovered Function(local_items.remove, i)
+                        action [SetVariable("sh_memory_page", i), Call("sisterhood_watch_memories", img[1:])]
+
+                        if i in local_items:
+                            image Composite((220, 170),
+                                                (0, 0), "button_cg_locked",
+                                                (10, 10), thumb)
+                        else:
+                            image Composite((220, 170),
+                                                (0, 0), "button_cg_locked_op",
+                                                (10, 10), Transform(thumb, matrixcolor=SaturationMatrix(0)))
+                else:
+                    button:
+                        xysize 220, 170
+
+                        image "button_cg_locked_op"
+
+        frame:
+            size_group "memories"
+
+            has hbox
+
+            spacing 10
+
+            text _("Page:")
+
+            for i in range((len(sisterhood_gallery_images) - 1) // 12 + 1):
+                textbutton str(i + 1):
+                    xpadding 4
+                    xmargin 2
+                    text_size 42
+                    text_color "#00000066"
+                    text_hover_color "#000"
+                    text_insensitive_color "#000"
+
+                    if i != page:
+                        action ShowMenu("sisterhood_memories", i)
 
         textbutton _("Return"):
             style "return_button"

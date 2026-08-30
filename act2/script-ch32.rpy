@@ -568,11 +568,11 @@ label sh_ch32:
 
         $ renpy.music.set_audio_filter("ambient", renpy.audio.filter.Lowpass(660), replace=True, duration=0.5)
 
-        # TODO play sfx of curtain being yanked back
-
         scene bg raigmore_hallway
         show hisao basic_neutral_polo_superclose at twoleft
-        with locationchange
+        with Dissolve(0.2)
+
+        play sound sfx_curtainopen
 
         "A few seconds later, I hear the sound of a curtain being forcefully yanked back."
         "Hisao takes his hand off of me, puts his finger to his lips and lets out a soft “ssshh” in order to reinforce the point. I quickly nod to indicate I understand that we're supposed to be quiet."
@@ -669,7 +669,7 @@ label sh_ch32:
         scene bg raigmore_room
         with locationchange
 
-        # TODO play curtain open SFX
+        play sound sfx_curtainopen
 
         "With the curtains opened, I get my first look at him since that dreadful evening."
 

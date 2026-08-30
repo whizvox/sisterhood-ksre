@@ -29,8 +29,8 @@ init 1 python:
         # tapping on door
         "taps1", "taps2", "taps3", "taps4",
         # medical
-        "ambulance_arrive", "ambulance_close", "ambulance_distant", "brokenbone", "crowdmale", "defibrillator_charge",
-        "defibrillator_discharge", "ekg", "ekgfast", "hospital_ambience",
+        "ambulance_arrive", "ambulance_close", "ambulance_distant", "brokenbone", "crowdmale", "curtainopen",
+        "defibrillator_charge", "defibrillator_discharge", "ekg", "ekgfast", "hospital_ambience",
         # elevator
         "elevatorchime", "elevatorclose", "elevatoropen",
         # misc ambience

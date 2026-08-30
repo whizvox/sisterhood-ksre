@@ -525,12 +525,7 @@ label sh_ch31:
         play sound sfx_impact2
 
         show karla cross_angry_cas
-        with { "master": chchangefast }
-
         show lilly cane_surprised_sum
-        with { "master": chchange }
-
-        # TODO Ren'Py is cutting off top and bottom of image???
         with vpunch
 
         kamo "Oh, shut up Akira!"

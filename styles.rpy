@@ -25,3 +25,11 @@ style shdiary_text:
 
 style nvl_window:
     background DynamicDisplayable(_sh_get_nvl_bg)
+
+style memories_interface is interface_frame
+
+style memories_text is gui_text
+
+style memories_button is gui_button
+
+style memories_button_text is gui_button_text

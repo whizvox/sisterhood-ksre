@@ -153,6 +153,58 @@ init 1 python:
     sh_bgs("akira", ["car"])
 
 init 1:
+    # gallery images
+    define sh_gallery_images = (
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+    )
+
     # special sprites
     image takawa serious_close_blur1 = f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur1.png"
     image takawa serious_close_blur2 = f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur2.png"

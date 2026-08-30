@@ -188,6 +188,9 @@ init:
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
     define config.font_name_map["times"] = f"{sh_path}/font/Newsreader-VariableFont_opsz,wght.ttf"
 
+    if sh_debug:
+        $ config.log = "sisterhood.log"
+
 init:
     init offset = 1
 

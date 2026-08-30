@@ -1,3 +1,39 @@
+default sh_memory_page = 0
+
+label sisterhood_memories:
+    show screen sisterhood_memories(sh_memory_page)
+    call screen sisterhood_memories(sh_memory_page)
+    
+    return
+
+label sisterhood_watch_memories(images):
+    $ i = 0
+    $ locked_count = 0
+
+    while i < len(images):
+        scene black
+        if is_seen(images[i]) or config.developer:
+            show expression (images[i].image if isinstance(images[i], Trigger) else images[i]):
+                fit "contain"
+            with dissolve
+            pause
+        else:
+            $ locked_count += 1
+
+        $ i += 1
+
+    if locked_count > 0:
+        show gallery_locked
+        show expression Text("{} further images locked!".format(locked_count), color="#000") at truecenter
+        with dissolve
+        pause
+
+    scene black
+    show screen sisterhood_memories
+    with dotwipe_up
+
+    jump sisterhood_memories
+
 label sisterhood_replay_start:
     if not sh_debug:
         $ _in_replay = True
@@ -6,6 +42,8 @@ label sisterhood_replay_start:
 
     $ renpy.transition(dissolve)
     call expression _current_replay
+
+    return
 
 label sisterhood_start:
     stop music fadeout 1.0

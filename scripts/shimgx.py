@@ -500,6 +500,10 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/journal/doodles/IMG_2069.png", "gui/journal/d28.png", [crop(0, 103, 2027, 1620), resize(targetheight=250)])
 ]
 
+GALLERY_THUMBNAILS = [
+    ("event/wheatfield/wheatfield_smile.jpg", "event/thumb/wheatfield.jpg", [resize(targetheight=150), crop(30, 0, 230, 150)])
+]
+
 
 def main(args: dict):
     global waifu2x_path
@@ -508,7 +512,7 @@ def main(args: dict):
     update_paths(args)
 
     images_to_process: list[ImageProcess] = []
-    for entry in IMAGES + PHOTOGRAPHS:
+    for entry in IMAGES + PHOTOGRAPHS + GALLERY_THUMBNAILS:
         transforms = []
         if len(entry) == 3:
             transforms = entry[2]
