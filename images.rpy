@@ -123,11 +123,10 @@ init 1 python:
     sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
-    sh_event("celloandwine", ["cello_play", "cello_lookup", "block_pout", "block_grin", "sit_tease", "sit_rest", "sit_cover", "sit_feel", "sit_clap", "sit_kiss"])
+    sh_event("celloandwine", ["cello_play", "cello_lookup", "block_pout", "block_grin", "lap_tease", "lap_rest", "lap_cover", "lap_feel", "lap_clap", "lap_victory", "lap_kiss"])
     sh_event("pillowtalk", ["blanket", "caress", "comfort", "kiss"])
     sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hanako1_hairtalk_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress_large", "hanako2_spray_large", "hanako2_climax"])
     sh_event("eveningsnack", ["cuddle", "cuddle_naked", "hipamper", "hiplay", "bj1_look", "bj1_lick", "bj1_pleasure", "bj1_awkward", "bj2_pleasure", "bj2_climax", "hapamper", "haplay", "cun1_look", "cun1_tounge", "cun1_push", "cun2_pleasure", "cun2_eatout", "cun2_climax"])
-    sh_event("celloandwine", ["block_smile", "lap_tease", "lap_rest", "lap_cover", "lap_feel", "lap_clap", "lap_victory", "lap_kiss"])
     sh_event("tipsyfun", ["stand_close", "stand_naked", "doggystyle", "collapse_climax", "collapse_morning", "collapse_morning_blur"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["lillyakira", "akira", "akhiha"])
@@ -159,8 +158,21 @@ init 1:
         ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
         ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
         ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("pillowtalk", "ev pillowtalk_comfort dark", "evg pillowtalk dark g2","evg pillowtalk dark g3", "evg pillowtalk dark g4"),
         ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("rainyroad", "ev rainyroad"),
+        ("rooftopkiss", "ev rooftopkiss_normal"),
+        ("caress", "ev caress_normal"),
+        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("celloandwine_1", "ev celloandwine_cello_play", "ev celloandwine_cello_lookup"),
+        ("celloandwine_2", "ev celloandwine_block_pout", "ev celloandwine_block_grin", "ev celloandwine_lap_tease", "ev celloandwine_lap_rest", "ev celloandwine_lap_cover", "ev celloandwine_lap_feel", "ev celloandwine_lap_clap", "ev celloandwine_lap_victory", "ev celloandwine_lap_kiss"),
+        ("tipsyfun", "ev tipsyfun_stand_close", "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_morning"),
+        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
+        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
+        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        ("rooftopkiss", "ev rooftopkiss_normal"),
         ("caress", "ev caress_normal"),
         ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
         ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
@@ -168,7 +180,7 @@ init 1:
         ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
         ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
         ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("rooftopkiss", "ev rooftopkiss_normal"),
         ("caress", "ev caress_normal"),
         ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
         ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
@@ -176,7 +188,7 @@ init 1:
         ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
         ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
         ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("rooftopkiss", "ev rooftopkiss_normal"),
         ("caress", "ev caress_normal"),
         ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
         ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
@@ -184,7 +196,7 @@ init 1:
         ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
         ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
         ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal")
+        ("rooftopkiss", "ev rooftopkiss_normal"),
         ("caress", "ev caress_normal"),
         ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
         ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
@@ -192,17 +204,7 @@ init 1:
         ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
         ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
         ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal")
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal")
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        ("rooftopkiss", "ev rooftopkiss_normal"),
     )
 
     # special sprites
@@ -282,6 +284,29 @@ init 1:
     image bedridden_hanako sad = f"{sh_path}/event/bedridden/bedridden_hanako_sad_overlay_large.png"
     image bedridden_hanako downsad = f"{sh_path}/event/bedridden/bedridden_hanako_downsad_overlay_large.png"
 
+    # gallery-specific event CGs
+    image evg pillowtalk dark g2 = Composite(
+        (1920, 1080),
+        (0, 0), "ev pillowtalk_comfort dark",
+        (0, 0), "pillowtalkhanako down dark",
+        (0, 0), "pillowtalkhisao concern dark"
+    )
+    image evg pillowtalk dark g3 = Composite(
+        (1920, 1080),
+        (0, 0), "ev pillowtalk_comfort dark",
+        (0, 0), "pillowtalkhanako up dark",
+        (0, 0), "pillowtalkhisao talk dark"
+    )
+    image evg pillowtalk dark g4 = Composite(
+        (1920, 1080),
+        (0, 0), "ev pillowtalk_comfort dark",
+        (0, 0), "pillowtalkhanako grin dark",
+        (0, 0), "pillowtalkhisao grin dark"
+    )
+    image evg celloandwine_cello_play:
+        "ev celloandwine_cello_play"
+        zoom 0.5
+
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"
     image hisao_roof_blur1 = f"{sh_path}/vfx/hisao_roof_blur1.jpg"
@@ -322,6 +347,8 @@ init 1:
 
     # extra gui
     image white_vignette = f"{sh_path}/gui/white_vignette.png"
+    image cg_frame = f"{sh_path}/gui/cg_frame.png"
+    image cg_frame_locked = f"{sh_path}/gui/cg_frame_locked.png"
 
     # credits
     image sh_credits_overlay = f"{sh_path}/gui/credits/vignette_overlay.png"

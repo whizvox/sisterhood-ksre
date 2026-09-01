@@ -29,7 +29,7 @@ label sisterhood_watch_memories(images):
         pause
 
     scene black
-    show screen sisterhood_memories
+    show screen sisterhood_memories(sh_memory_page)
     with dotwipe_up
 
     jump sisterhood_memories

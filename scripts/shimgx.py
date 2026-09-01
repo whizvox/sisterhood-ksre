@@ -501,7 +501,19 @@ PHOTOGRAPHS: list[tuple[str, str, list[ImageTransformation]]] = [
 ]
 
 GALLERY_THUMBNAILS = [
-    ("event/wheatfield/wheatfield_smile.jpg", "event/thumb/wheatfield.jpg", [resize(targetheight=150), crop(30, 0, 230, 150)])
+    ("event/wheatfield/wheatfield_smile.jpg", "event/_thumb/wheatfield.jpg", [resize(targetheight=150), crop(30, 0, 230, 150)]),
+    ("event/funindark/funindark_hug_rest.jpg", "event/_thumb/funindark.jpg", [resize(targetheight=150), crop(0, 0, 200, 150)]),
+    ("event/funindark/funindark_naked_touch.jpg", "event/_thumb/funindark_h.jpg", [resize(targetheight=150), crop(0, 0, 200, 150)]),
+    ("event/hotel/hotel_onhanako.jpg", "event/_thumb/hotel.jpg", [resize(targetheight=150), crop(43, 0, 243, 150)]),
+    ("event/pillowtalk/pillowtalk_comfort_dark.jpg", "event/_thumb/pillowtalk.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
+    ("event/ballroomdance/ballroomdance_emb_normal.jpg", "event/_thumb/ballroomdance.jpg", [resize(targetheight=150), crop(47, 0, 247, 150)]),
+    ("@Event Art/Rainy Road/rainyroad_a_filter.png", "event/_thumb/rainyroad.jpg", [resize(targetheight=150), crop(47, 0, 247, 150)]),
+    ("event/rooftopkiss/rooftopkiss_normal.jpg", "event/_thumb/rooftopkiss.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
+    ("event/caress/caress_normal.jpg", "event/_thumb/caress.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
+    ("event/planeride/planeride_bliss.jpg", "event/_thumb/planeride.jpg", [resize(targetheight=150), crop(66, 0, 266, 150)]),
+    ("event/celloandwine/celloandwine_cello_play.jpg", "event/_thumb/celloandwine_1.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
+    ("event/celloandwine/celloandwine_block_pout.jpg", "event/_thumb/celloandwine_2.jpg", [resize(targetheight=150), crop(42, 0, 242, 150)]),
+    ("event/tipsyfun/tipsyfun_stand_close.jpg", "event/_thumb/tipsyfun.jpg", [resize(targetheight=150), crop(19, 0, 219, 150)]),
 ]
 
 
