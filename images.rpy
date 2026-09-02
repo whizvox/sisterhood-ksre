@@ -125,7 +125,7 @@ init 1 python:
     sh_event("planeride", ["bliss", "bliss_large", "pout", "blanket", "listen", "frown", "weaksmile"])
     sh_event("celloandwine", ["cello_play", "cello_lookup", "block_pout", "block_grin", "lap_tease", "lap_rest", "lap_cover", "lap_feel", "lap_clap", "lap_victory", "lap_kiss"])
     sh_event("pillowtalk", ["blanket", "caress", "comfort", "kiss"])
-    sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hanako1_hairtalk_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress_large", "hanako2_spray_large", "hanako2_climax"])
+    sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress_large", "hanako2_spray_large", "hanako2_climax"])
     sh_event("eveningsnack", ["cuddle", "cuddle_naked", "hipamper", "hiplay", "bj1_look", "bj1_lick", "bj1_pleasure", "bj1_awkward", "bj2_pleasure", "bj2_climax", "hapamper", "haplay", "cun1_look", "cun1_tounge", "cun1_push", "cun2_pleasure", "cun2_eatout", "cun2_climax"])
     sh_event("tipsyfun", ["stand_close", "stand_naked", "doggystyle", "collapse_climax", "collapse_morning", "collapse_morning_blur"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
@@ -167,44 +167,14 @@ init 1:
         ("celloandwine_1", "ev celloandwine_cello_play", "ev celloandwine_cello_lookup"),
         ("celloandwine_2", "ev celloandwine_block_pout", "ev celloandwine_block_grin", "ev celloandwine_lap_tease", "ev celloandwine_lap_rest", "ev celloandwine_lap_cover", "ev celloandwine_lap_feel", "ev celloandwine_lap_clap", "ev celloandwine_lap_victory", "ev celloandwine_lap_kiss"),
         ("tipsyfun", "ev tipsyfun_stand_close", "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_morning"),
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal"),
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal"),
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal"),
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal"),
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rooftopkiss", "ev rooftopkiss_normal"),
+        ("soapopera", "ev soapopera_hisao1_back", "ev soapopera_hisao1_lay", "ev soapopera_hanako1_back", "ev soapopera_hanako1_hair_large", "evg soapopera_hanako1_hairtalk", "ev soapopera_hisao2_hug", "ev soapopera_hisao2_erection", "ev soapopera_hisao2_handy_large", "ev soapopera_hisao2_climax_large", "ev soapopera_hanako2_caress_large", "ev soapopera_hanako2_spray_large", "ev soapopera_hanako2_climax"),
+        # TODO add shared soak (Hisao) CGs
+        ("eveningsnack", "ev eveningsnack_cuddle", "ev eveningsnack_cuddle_naked", "ev eveningsnack_hipamper", "ev eveningsnack_hiplay", "ev eveningsnack_bj1_look", "ev eveningsnack_bj1_lick", "ev eveningsnack_bj1_pleasure", "ev eveningsnack_bj1_awkward", "ev eveningsnack_bj2_pleasure", "ev eveningsnack_bj2_climax", "ev eveningsnack_hapamper", "ev eveningsnack_haplay", "ev eveningsnack_cun1_look", "ev eveningsnack_cun1_tounge", "ev eveningsnack_cun1_push", "ev eveningsnack_cun2_pleasure", "ev eveningsnack_cun2_eatout", "ev eveningsnack_cun2_climax"),
+        # TODO add without thinking CGs
+        ("bedridden", "ev bedridden_lillyakira", "evg bedridden_lillyakira_2", "evg bedridden_lillyakira_3", "evg bedridden_lillyakira_4", "ev bedridden_akira", "evg bedridden_akira_2", "evg bedridden_akira_3", "evg bedridden_akira_4", "ev bedridden_akhiha", "evg bedridden_akhiha_2", "evg bedridden_akhiha_3", "evg bedridden_akhiha_4", "evg bedridden_akhiha_5", "evg bedridden_akhiha_6", "evg bedridden_akhiha_7", "evg bedridden_akhiha_8", "evg bedridden_akhiha_9"),
+        ("akirapast", "ev akirapast_vacation", "ev akirapast_unfavorite", "ev akirapast_elemschool", "ev akirapast_midschool", "ev akirapast_argument", "ev akirapast_promotion", "ev akirapast_grandparents1", "ev akirapast_grandparents2", "ev akirapast_study1", "ev akirapast_study2"),
+        # TODO add shared soak (Lilly) CGs
+        ("hanakohistory", "ev hanakohistory_bed", "ev hanakohistory_bed_pain", "ev hanakohistory_fire", "ev hanakohistory_fire_alone", "ev hanakohistory_urn", "ev hanakohistory_read", "ev hanakohistory_read_leave", "ev hanakohistory_read_alone", "ev hanakohistory_play", "ev hanakohistory_play_tease", "ev hanakohistory_bully", "ev hanakohistory_bully_cry", "ev hanakohistory_gate"),
     )
 
     # special sprites
@@ -303,9 +273,98 @@ init 1:
         (0, 0), "pillowtalkhanako grin dark",
         (0, 0), "pillowtalkhisao grin dark"
     )
-    image evg celloandwine_cello_play:
-        "ev celloandwine_cello_play"
-        zoom 0.5
+    image evg soapopera_hanako1_hairtalk = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev soapopera_hanako1_hair_large", zoom=0.5),
+        (0, 0), Transform("soapopera_hanako talk", zoom=0.5),
+        (0, 0), Transform("soapopera_hisao talk", zoom=0.5)
+    )
+    image evg bedridden_lillyakira_2 = Composite(
+        (1920, 1080),
+        (0, 0), "ev bedridden_lillyakira",
+        (0, 0), "bedridden_akira glare",
+        (0, 0), "bedridden_lilly smile",
+        (0, 0), "bedridden_hiroyuki discomfort"
+    )
+    image evg bedridden_lillyakira_3 = Composite(
+        (1920, 1080),
+        (0, 0), "ev bedridden_lillyakira",
+        (0, 0), "bedridden_akira shout",
+        (0, 0), "bedridden_lilly listen",
+        (0, 0), "bedridden_hiroyuki angry"
+    )
+    image evg bedridden_lillyakira_4 = Composite(
+        (1920, 1080),
+        (0, 0), "ev bedridden_lillyakira",
+        (0, 0), "bedridden_akira glare",
+        (0, 0), "bedridden_lilly angry",
+        (0, 0), "bedridden_hiroyuki discomfort"
+    )
+    image evg bedridden_akira_2 = Composite(
+        (1920, 1080),
+        (0, 0), "ev bedridden_akira",
+        (0, 0), "bedridden_akira frown",
+        (0, 0), "bedridden_hiroyuki angry"
+    )
+    image evg bedridden_akira_3 = Composite(
+        (1920, 1080),
+        (0, 0), "ev bedridden_akira",
+        (0, 0), "bedridden_akira stun",
+        (0, 0), "bedridden_hiroyuki shout"
+    )
+    image evg bedridden_akira_4 = Composite(
+        (1920, 1080),
+        (0, 0), "ev bedridden_akira",
+        (0, 0), "bedridden_akira distant",
+        (0, 0), "bedridden_hiroyuki angry"
+    )
+    image evg bedridden_akhiha_2 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako downsad", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki discomfort_large", crop=(1448, 158, 2083, 1171))
+    )
+    image evg bedridden_akhiha_3 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako concern", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki concern_large", crop=(1448, 158, 2083, 1171))
+    )
+    image evg bedridden_akhiha_4 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako unsure", crop=(1448, 158, 2083, 1171)),
+    )
+    image evg bedridden_akhiha_5 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako downconcern", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki discomfort_large", crop=(1448, 158, 2083, 1171))
+    )
+    image evg bedridden_akhiha_6 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako sad", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki listen_large", crop=(1448, 158, 2083, 1171))
+    )
+    image evg bedridden_akhiha_7 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako sad", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki smile_large", crop=(1448, 158, 2083, 1171))
+    )
+    image evg bedridden_akhiha_8 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako downsmile", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki relieved_large", crop=(1448, 158, 2083, 1171))
+    )
+    image evg bedridden_akhiha_9 = Composite(
+        (1920, 1080),
+        (0, 0), Transform("ev bedridden_akhiha", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hanako downconcern", crop=(1448, 158, 2083, 1171)),
+        (0, 0), Transform("bedridden_hiroyuki content_large", crop=(1448, 158, 2083, 1171))
+    )
 
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"
@@ -436,6 +495,8 @@ init 1:
     Salad1V
     Likhos
     legendarysoulII
+    Paharaptor
+    shiori887
     \n\n
     {b}Sprite Art{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
@@ -479,11 +540,16 @@ init 1:
     {b}Original Work{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     “Sisterhood” by Guest Poster
-    \n\n\n\n
-    {b}Directing, Engineering, Administration{/b}
+    \n\n
+    {b}Directing, Administration{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     whizvox
-    \n\n\n\n
+    Guest Poster
+    \n\n
+    {b}Engineering, Project Lead{/b}
+    {image=mods/sisterhood/gui/credits/section_underline.png}
+    whizvox
+    \n
     """), color="#FFF", text_align=0.5, xalign=0.5, size=42)
 
     image sh_credits = VBox(f"{sh_path}/logo/logo_title_credits.png", "sh_credits_text", "sh_credits_end")

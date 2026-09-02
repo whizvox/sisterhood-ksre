@@ -315,20 +315,6 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Tipsy Fun/3.1_scene.png", "event/tipsyfun/tipsyfun_collapse_climax.jpg"),
     ("@Event Art/Tipsy Fun/3.2_scene.png", "event/tipsyfun/tipsyfun_collapse_morning.jpg"),
     ("@Event Art/Tipsy Fun/3.2_scene.png", "event/tipsyfun/tipsyfun_collapse_morning_blur.jpg", [blur(40)]),
-    # chapter 34
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_01.png",     "event/hanakohistory/hanakohistory_bed.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_02.png",     "event/hanakohistory/hanakohistory_bed_pain.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_03_A.png",   "event/hanakohistory/hanakohistory_fire.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_03_B.png",   "event/hanakohistory/hanakohistory_fire_alone.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_04.png",     "event/hanakohistory/hanakohistory_urn.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_05.png",     "event/hanakohistory/hanakohistory_read.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_06.png",     "event/hanakohistory/hanakohistory_read_leave.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_06_B.png",   "event/hanakohistory/hanakohistory_read_alone.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_07.png",     "event/hanakohistory/hanakohistory_play.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_08.png",     "event/hanakohistory/hanakohistory_play_tease.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_09.png",     "event/hanakohistory/hanakohistory_bully.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_10.png",     "event/hanakohistory/hanakohistory_bully_cry.jpg"),
-    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
     # chapter 29 - Soap Opera
@@ -410,6 +396,20 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("reference/Event Art/Akira Past/akirapast_studying2.jpg", "event/akirapast/akirapast_study2.jpg"),
     ("reference/Event Art/Akira Past/akirapast_unfavorite.jpg", "event/akirapast/akirapast_unfavorite.jpg"),
     ("reference/Event Art/Akira Past/akirapast_vacation.jpg", "event/akirapast/akirapast_vacation.jpg"),
+    # chapter 34
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_01.png",     "event/hanakohistory/hanakohistory_bed.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_02.png",     "event/hanakohistory/hanakohistory_bed_pain.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_03_A.png",   "event/hanakohistory/hanakohistory_fire.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_03_B.png",   "event/hanakohistory/hanakohistory_fire_alone.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_04.png",     "event/hanakohistory/hanakohistory_urn.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_05.png",     "event/hanakohistory/hanakohistory_read.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_06.png",     "event/hanakohistory/hanakohistory_read_leave.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_06_B.png",   "event/hanakohistory/hanakohistory_read_alone.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_07.png",     "event/hanakohistory/hanakohistory_play.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_08.png",     "event/hanakohistory/hanakohistory_play_tease.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_09.png",     "event/hanakohistory/hanakohistory_bully.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_10.png",     "event/hanakohistory/hanakohistory_bully_cry.jpg"),
+    ("reference/Event Art/Ch34 Hanako History/Hanako_backstory_11.png",     "event/hanakohistory/hanakohistory_gate.jpg"),
     # blurred sprites
     ("sprites/takawa/close/takawa_serious_close.png", "sprites/takawa/close/takawa_serious_close_blur1.png", [blur(3)]),
     ("sprites/takawa/close/takawa_serious_close.png", "sprites/takawa/close/takawa_serious_close_blur2.png", [blur(6)]),
@@ -514,6 +514,11 @@ GALLERY_THUMBNAILS = [
     ("event/celloandwine/celloandwine_cello_play.jpg", "event/_thumb/celloandwine_1.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
     ("event/celloandwine/celloandwine_block_pout.jpg", "event/_thumb/celloandwine_2.jpg", [resize(targetheight=150), crop(42, 0, 242, 150)]),
     ("event/tipsyfun/tipsyfun_stand_close.jpg", "event/_thumb/tipsyfun.jpg", [resize(targetheight=150), crop(19, 0, 219, 150)]),
+    ("event/soapopera/soapopera_hisao1_back.jpg", "event/_thumb/soapopera.jpg", [resize(targetheight=150), crop(16, 0, 216, 150)]),
+    ("event/eveningsnack/eveningsnack_cuddle.jpg", "event/_thumb/eveningsnack.jpg", [resize(targetheight=150), crop(35, 0, 235, 150)]),
+    ("event/bedridden/bedridden_lillyakira.jpg", "event/_thumb/bedridden.jpg", [resize(targetheight=150), crop(53, 0, 253, 150)]),
+    ("event/akirapast/akirapast_unfavorite.jpg", "event/_thumb/akirapast.jpg", [resize(targetheight=150), crop(9, 0, 209, 150)]),
+    ("event/hanakohistory/hanakohistory_bed.jpg", "event/_thumb/hanakohistory.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
 ]
 
 

@@ -269,7 +269,7 @@ screen sisterhood_memories(page=0):
                     button:
                         xysize 220, 170
                         hovered Function(local_items.add, i)
-                        unhovered Function(local_items.remove, i)
+                        unhovered Function(local_items.discard, i)
                         action [SetVariable("sh_memory_page", page), Call("sisterhood_watch_memories", img[1:])]
 
                         if i in local_items:
@@ -282,7 +282,7 @@ screen sisterhood_memories(page=0):
                             image Composite(
                                 (220, 170),
                                 (10, 10), Transform(thumb, matrixcolor=SaturationMatrix(0)),
-                                (0, 0), Transform("cg_frame", matrixcolor=BrightnessMatrix(-0.2) * SaturationMatrix(0))
+                                (0, 0), Transform("cg_frame", matrixcolor=BrightnessMatrix(-0.1) * SaturationMatrix(0))
                             )
                 else:
                     button:
