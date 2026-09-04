@@ -127,7 +127,7 @@ init 1 python:
     sh_event("pillowtalk", ["blanket", "caress", "comfort", "kiss"])
     sh_event("soapopera", ["hisao1_back", "hisao1_back_large", "hisao1_lay", "hisao1_lay_large", "hanako1_back", "hanako1_back_large", "hanako1_hair_large", "hisao2_hug", "hisao2_hug_large", "hisao2_erection", "hisao2_erection_large", "hisao2_handy_large", "hisao2_climax_large", "hanako2_caress_large", "hanako2_spray_large", "hanako2_climax"])
     sh_event("eveningsnack", ["cuddle", "cuddle_naked", "hipamper", "hiplay", "bj1_look", "bj1_lick", "bj1_pleasure", "bj1_awkward", "bj2_pleasure", "bj2_climax", "hapamper", "haplay", "cun1_look", "cun1_tounge", "cun1_push", "cun2_pleasure", "cun2_eatout", "cun2_climax"])
-    sh_event("tipsyfun", ["stand_close", "stand_naked", "doggystyle", "collapse_climax", "collapse_morning", "collapse_morning_blur"])
+    sh_event("tipsyfun", ["stand_close", "stand_naked", "doggystyle", "doggystyle_closed", "collapse_climax", "collapse_climaxclosed", "collapse_morning", "collapse_morningclosed", "collapse_morningclosed_blur"])
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["lillyakira", "akira", "akhiha"])
     sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
@@ -166,7 +166,7 @@ init 1:
         ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
         ("celloandwine_1", "ev celloandwine_cello_play", "ev celloandwine_cello_lookup"),
         ("celloandwine_2", "ev celloandwine_block_pout", "ev celloandwine_block_grin", "ev celloandwine_lap_tease", "ev celloandwine_lap_rest", "ev celloandwine_lap_cover", "ev celloandwine_lap_feel", "ev celloandwine_lap_clap", "ev celloandwine_lap_victory", "ev celloandwine_lap_kiss"),
-        ("tipsyfun", "ev tipsyfun_stand_close", "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_morning"),
+        ("tipsyfun", "ev tipsyfun_stand_close", "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_doggystyle_closed", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_climaxclosed", "ev tipsyfun_collapse_morningclosed", "ev tipsyfun_collapse_morning"),
         ("soapopera", "ev soapopera_hisao1_back", "ev soapopera_hisao1_lay", "ev soapopera_hanako1_back", "ev soapopera_hanako1_hair_large", "evg soapopera_hanako1_hairtalk", "ev soapopera_hisao2_hug", "ev soapopera_hisao2_erection", "ev soapopera_hisao2_handy_large", "ev soapopera_hisao2_climax_large", "ev soapopera_hanako2_caress_large", "ev soapopera_hanako2_spray_large", "ev soapopera_hanako2_climax"),
         # TODO add shared soak (Hisao) CGs
         ("eveningsnack", "ev eveningsnack_cuddle", "ev eveningsnack_cuddle_naked", "ev eveningsnack_hipamper", "ev eveningsnack_hiplay", "ev eveningsnack_bj1_look", "ev eveningsnack_bj1_lick", "ev eveningsnack_bj1_pleasure", "ev eveningsnack_bj1_awkward", "ev eveningsnack_bj2_pleasure", "ev eveningsnack_bj2_climax", "ev eveningsnack_hapamper", "ev eveningsnack_haplay", "ev eveningsnack_cun1_look", "ev eveningsnack_cun1_tounge", "ev eveningsnack_cun1_push", "ev eveningsnack_cun2_pleasure", "ev eveningsnack_cun2_eatout", "ev eveningsnack_cun2_climax"),
