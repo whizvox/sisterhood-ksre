@@ -414,10 +414,10 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Hanako History/Hanako_backstory_10.png",       "event/hanakohistory/hanakohistory_bully_cry.jpg"),
     ("@Event Art/Hanako History/Hanako_backstory_11_fix.png",   "event/hanakohistory/hanakohistory_gate.jpg"),
     # blurred sprites
-    ("sprites/takawa/close/takawa_serious_close.png", "sprites/takawa/close/takawa_serious_close_blur1.png", [blur(3)]),
-    ("sprites/takawa/close/takawa_serious_close.png", "sprites/takawa/close/takawa_serious_close_blur2.png", [blur(6)]),
-    ("sprites/takawa/close/takawa_smile_close.png", "sprites/takawa/close/takawa_smile_close_blur1.png", [blur(3)]),
-    ("sprites/takawa/close/takawa_smile_close.png", "sprites/takawa/close/takawa_smile_close_blur2.png", [blur(6)]),
+    ("sprites/takawa/close/takawa_serious_close.png",   "sprites/takawa/close/takawa_serious_close_blur1.png",  [blur(3)]),
+    ("sprites/takawa/close/takawa_serious_close.png",   "sprites/takawa/close/takawa_serious_close_blur2.png",  [blur(6)]),
+    ("sprites/takawa/close/takawa_smile_close.png",     "sprites/takawa/close/takawa_smile_close_blur1.png",    [blur(3)]),
+    ("sprites/takawa/close/takawa_smile_close.png",     "sprites/takawa/close/takawa_smile_close_blur2.png",    [blur(6)]),
     # close sprites
     ## hanako
     ("sprites/hanako/hanako_basic_bashful_sum.png",         "sprites/hanako/close/hanako_basic_bashful_sum_close.png",      [upscale(), resize(targetwidth=707), crop(0, 215, 707, 1296)]),
