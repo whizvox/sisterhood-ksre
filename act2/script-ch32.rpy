@@ -450,31 +450,31 @@ label sh_ch32:
         with mediumflash
 
         aki "You look a little sharper than before, but also a bit more uncomfortable. Have you cut back on the painkillers?"
-        hy "{slowtype}I… will… take some… more this… evening."
+        hys "{slowtype}I… will… take some… more this… evening."
         aki "Mom and Kojima were just here, weren't they? Will you even be able to handle more visitors right now?"
-        hy "{slowtype}Never… mind… that… Lilly… not… here?"
+        hys "{slowtype}Never… mind… that… Lilly… not… here?"
 
         hide bedridden_akira
         with charachangeev
 
         aki "Nope. Why? Have you already thought up an apology, then?"
-        hy "{slowtype}A-apology?"
+        hys "{slowtype}A-apology?"
         aki "For insulting her. Lilly came to Inverness to repair the family bond that you two shattered, and you reward her by insulting her independence. How do you think she feels about that?"
 
         show bedridden_hiroyuki angry
         with charachangeev
 
-        hy "{slowtype}I… did… not… insult her…"
+        hys "{slowtype}I… did… not… insult her…"
         aki "If you really believe that, then you're even more out of touch with her than I thought. Heck, how many years has it been since you gave some serious thought about how she feels about things?"
 
         hide bedridden_hiroyuki 
         with charachangeev
 
-        hy "{slowtype}What… do… you… m-mean?"
+        hys "{slowtype}What… do… you… m-mean?"
         aki "Why on earth did you summon her here, asking her to give up everything important she had in Japan, after keeping her at a comfortable distance for six years? Maybe because you thought you could use her to act as a glue for your fledgling marriage?"
-        hy "{slowtype}Our… marriage… is… fine…"
+        hys "{slowtype}Our… marriage… is… fine…"
         aki "Nonsense. You two were hardly part of each other's life outside of working hours. I've learned that much already."
-        hy "{slowtype}And yet… we… were… fine. And what… mean… by… comfortable… d-distance?"
+        hys "{slowtype}And yet… we… were… fine. And what… mean… by… comfortable… d-distance?"
 
         show bedridden_akira shout
         with charachangeev
@@ -498,7 +498,7 @@ label sh_ch32:
         show bedridden_akira stun
         with { "master": charachangealways }
 
-        hy "{slowtype}AKIRA…{w=0.5} SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK… THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE… MY… SIGHT!"
+        hys "{slowtype}AKIRA…{w=0.5} SATOU! {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} TAKE BACK… THOSE WORDS {w=0.5}{cps=100}{i}*cough*{/i}{/cps}{w=0.5} OR LEAVE… MY… SIGHT!"
 
         show bedridden_hiroyuki angry
         with charachangeev
@@ -513,53 +513,53 @@ label sh_ch32:
         with charachangeev
 
         aki "..."
-        hy "{slowtype}Well…?"
+        hys "{slowtype}Well…?"
         aki "So you deny it?"
 
         play music music_rain fadein 4.0
 
-        hy "{slowtype}If there… is… a s-source… of shame… for… me… right… now… it is… you for m-making… these a-accusations… against… a parent."
+        hys "{slowtype}If there… is… a s-source… of shame… for… me… right… now… it is… you for m-making… these a-accusations… against… a parent."
         aki "Then why did you have Mom join you here while you left Lilly behind, huh?"
-        hy "{slowtype}Your… mother… needed to… be here… and Lilly's… education… was… important… like I… told you… a hundred… times."
+        hys "{slowtype}Your… mother… needed to… be here… and Lilly's… education… was… important… like I… told you… a hundred… times."
         aki "That's just an excuse."
-        hy "{slowtype}If I… truly… valued my… reputation… over her… well-being… I would have… taken her along."
+        hys "{slowtype}If I… truly… valued my… reputation… over her… well-being… I would have… taken her along."
         aki "What's that supposed to mean?"
-        hy "{slowtype}You will… understand… in time."
+        hys "{slowtype}You will… understand… in time."
         aki "I don't believe you."
-        hy "{slowtype}I… stake my… personal honor… on it. Now… t-take back… what you… said."
+        hys "{slowtype}I… stake my… personal honor… on it. Now… t-take back… what you… said."
 
         show bedridden_akira distant
         with charachangeev
 
         aki "Hmph."
-        hy "{slowtype}Fine. Then… cling to your… conspiracy… theories. No doubt… you have… been poisoning… Lilly's mind… with them… for years… as… well."
+        hys "{slowtype}Fine. Then… cling to your… conspiracy… theories. No doubt… you have… been poisoning… Lilly's mind… with them… for years… as… well."
         aki "Believe it or not, but she's always been unreasonably loyal to you."
-        hy "{slowtype}No doubt… you have… shared… your impressions… with her… many times."
+        hys "{slowtype}No doubt… you have… shared… your impressions… with her… many times."
 
         show bedridden_akira stun
         with charachangeev
 
         aki "That doesn't mean…"
-        hy "{slowtype}I think… I know… enough."
+        hys "{slowtype}I think… I know… enough."
         "It's kind of striking how quickly Akira's father turned the conversation around and put his daughter on the defensive."
 
         show bedridden_akira glare
         with charachangeev
 
         aki "You don't know anything about her or me. That's your problem."
-        hy "{slowtype}This is going… in circles."
+        hys "{slowtype}This is going… in circles."
 
         show bedridden_akira distant
         with charachangeev
 
         aki "Fine, I didn't come here to argue anyway."
-        hy "{slowtype}Then why… did you… come?"
+        hys "{slowtype}Then why… did you… come?"
 
         show bedridden_akira glare
         with charachangeev
 
         aki "Huh? You don't know? You asked Mom about Hanako."
-        hy "{slowtype}So I… did."
+        hys "{slowtype}So I… did."
         aki "Mom called me and asked me to take her to you."
 
         play ambient sfx_ekgfast volume 1.0
@@ -699,7 +699,7 @@ label sh_ch32:
         with charachangeev
 
         "Hisao and I stand in front of the bed and make a polite bow. Lilly's father gives an appreciative nod to acknowledge our presence."
-        hy "{slowtype}Miss… Ikezawa… Mister… Nakai."
+        hys "{slowtype}Miss… Ikezawa… Mister… Nakai."
         hi "Hello, sir. How are you feeling?"
         ha "H-hello."
 
@@ -707,10 +707,10 @@ label sh_ch32:
             alpha 1.0
         with charachangeev
 
-        hy "{slowtype}I… apologize… cutting… vacation short. This is… not… my… best… moment… as a… host."
+        hys "{slowtype}I… apologize… cutting… vacation short. This is… not… my… best… moment… as a… host."
         ha "It's okay. This vacation has b-been very special to me."
         hi "To me as well. We'll both treasure the times we had here, even without Edinburgh."
-        hy "{slowtype}That is… good t-to hear. Before… you… leave… tomor… row, I wanted… to wish you… safe journey… back."
+        hys "{slowtype}That is… good t-to hear. Before… you… leave… tomor… row, I wanted… to wish you… safe journey… back."
         "It's hard to see him make such an obviously painful effort to speak."
 
         show bedridden_hanako concern:
@@ -718,7 +718,7 @@ label sh_ch32:
         with charachangeev
 
         ha "You d-don't have to talk if it hurts to speak."
-        hy "{slowtype}I will… get to… the point then. I… have heard… what… happened… from the… doctors… and from… my wife. The doctors… called me… lucky, but…"
+        hys "{slowtype}I will… get to… the point then. I… have heard… what… happened… from the… doctors… and from… my wife. The doctors… called me… lucky, but…"
 
         show ev:
             zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
@@ -729,23 +729,23 @@ label sh_ch32:
         with charachangeev
 
         "This time his eyes look directly at me, causing me to flinch."
-        hy "{slowtype}…It…would be… an insult… to you… to… credit… just… luck, Miss… Ikezawa."
+        hys "{slowtype}…It…would be… an insult… to you… to… credit… just… luck, Miss… Ikezawa."
         ha "I… didn't really do much. The people you should be thanking are the d-doctors and ambulance people."
-        hy "{slowtype}Your… humility… does you… credit… Yet… it was… you who… asked Lilly… to call… a doctor. And… it was… you who… kept my… heart going… until the… ambulance… arrived."
+        hys "{slowtype}Your… humility… does you… credit… Yet… it was… you who… asked Lilly… to call… a doctor. And… it was… you who… kept my… heart going… until the… ambulance… arrived."
         ha "They arrived p-pretty quickly, b-but…"
 
         show bedridden_hiroyuki concern_large
         with charachangeev
 
-        hy "{slowtype}But… probably… not soon… enough to… prevent… b-brain damage. The… idea… of being… in a… vegetative… state… and a… permanent… b-burden on my… family… is more… terrifying… than death."
-        hy "{slowtype}If you… did not… save my life… you saved… something… more… important. You saved… my… dignity."
+        hys "{slowtype}But… probably… not soon… enough to… prevent… b-brain damage. The… idea… of being… in a… vegetative… state… and a… permanent… b-burden on my… family… is more… terrifying… than death."
+        hys "{slowtype}If you… did not… save my life… you saved… something… more… important. You saved… my… dignity."
         "I'm not really sure what to say in response to that."
         "I've never handled praise very well, so I merely fidget in place while staring at the floor."
 
         show bedridden_hiroyuki discomfort_large
         with charachangeev
 
-        hy "{slowtype}It seems… I now… owe you… a great… debt. I believe… repaying you… in some… way… is the… right thing… to do."
+        hys "{slowtype}It seems… I now… owe you… a great… debt. I believe… repaying you… in some… way… is the… right thing… to do."
         ha "Repaying m-me?"
         "Akira sighs."
         aki "How on earth do you repay someone for a life?"
@@ -754,7 +754,7 @@ label sh_ch32:
         with charachangeev
 
         "Mister Satou gives Akira a short stare."
-        hy "{slowtype}You… should… already… know… after all… these years."
+        hys "{slowtype}You… should… already… know… after all… these years."
         aki "Hmph."
 
         show bedridden_hiroyuki:
@@ -762,9 +762,9 @@ label sh_ch32:
         with charachangeev
 
         "Then he turns his head back to me."
-        hy "{slowtype}It is… true. Something… like… this is… difficult to pay back. But… certainly… there is… something I… can do… back."
+        hys "{slowtype}It is… true. Something… like… this is… difficult to pay back. But… certainly… there is… something I… can do… back."
         ha "I… c-can't really think of anything."
-        hy "{slowtype}There is… no need… to… answer… here… and now. Take… your time… and do… not… be humble. I am… not lacking… in… means."
+        hys "{slowtype}There is… no need… to… answer… here… and now. Take… your time… and do… not… be humble. I am… not lacking… in… means."
 
         show bedridden_hanako unsure
         with charachangeev
@@ -797,14 +797,14 @@ label sh_ch32:
         with charachangeev
 
         ha "Ummm… Uh…"
-        hy "{slowtype}Yes?"
+        hys "{slowtype}Yes?"
         ha "I… uh… d-don't really n-need anything in r-return. Because… y-you being alive is… already enough of a r-reward."
 
         show bedridden_hiroyuki discomfort_large:
             alpha 1.0
         with charachangeev
 
-        hy "{slowtype}Even… though we… barely know… each other?"
+        hys "{slowtype}Even… though we… barely know… each other?"
         ha "I k-know… ah… I k-know… I… I… k-know…"
 
         show bedridden_hanako concern
@@ -822,11 +822,11 @@ label sh_ch32:
         with charachangeev
 
         "The look he gives me is either one of sympathy or one of pity."
-        hy "{slowtype}My… condo… lences… for… your… loss."
+        hys "{slowtype}My… condo… lences… for… your… loss."
         ha "That's why… T-that's why I'm… really happy that Lilly doesn't h-have to go t-through that herself."
-        hy "{slowtype}You… are… quite close… to my… daughter, are… you… not?"
+        hys "{slowtype}You… are… quite close… to my… daughter, are… you… not?"
         ha "She's a very special person to me. I… l-love her very much."
-        hy "{slowtype}I see."
+        hys "{slowtype}I see."
 
         show bedridden_hanako downconcern
         with charachangeev
@@ -836,10 +836,10 @@ label sh_ch32:
         show bedridden_hiroyuki discomfort_large
         with charachangeev
 
-        hy "{slowtype}Have you… already… thought of… something?"
+        hys "{slowtype}Have you… already… thought of… something?"
         "I meekly shake my head."
         ha "N-no, but… I would… like to t-talk to you about Lilly a bit. Will you… listen t-to me?"
-        hy "{slowtype}I will."
+        hys "{slowtype}I will."
 
         show bedridden_hanako sad
         show bedridden_hiroyuki listen_large
@@ -912,9 +912,9 @@ label sh_ch32:
 
         queue music music_friendship fadein 4.0
 
-        hy "{slowtype}I think… I… understand… what… she… wishes to… tell me…"
+        hys "{slowtype}I think… I… understand… what… she… wishes to… tell me…"
         "He turns his gaze back to me."
-        hy "{slowtype}Miss… Ikezawa… thank you… for… telling… me… all this…"
+        hys "{slowtype}Miss… Ikezawa… thank you… for… telling… me… all this…"
 
         show bedridden_hanako downconcern
         with charachangeev
@@ -924,13 +924,13 @@ label sh_ch32:
         show bedridden_hiroyuki smile_large
         with charachangeev
 
-        hy "{slowtype}I… presume… you… would… like me… to… think… about… what… you… said?"
+        hys "{slowtype}I… presume… you… would… like me… to… think… about… what… you… said?"
 
         show bedridden_hanako sad
         with charachangeev
 
         "I manage a barely visible nod."
-        hy "{slowtype}Then… I will… if you… also… think… about… what I… said."
+        hys "{slowtype}Then… I will… if you… also… think… about… what I… said."
         ha "O-okay."
         "He nods."
 
@@ -942,7 +942,7 @@ label sh_ch32:
             zoom 1.0 crop None
         with charachangeev
 
-        hy "{slowtype}Then… I will… not… take more… of your… time and… I… wish you… two a… safe… journey… home."
+        hys "{slowtype}Then… I will… not… take more… of your… time and… I… wish you… two a… safe… journey… home."
 
         show bedridden_hanako downsmile
         with charachangeev
@@ -960,16 +960,16 @@ label sh_ch32:
             zoom 1.0 crop (1448, 158, 2083, 1171) xysize (1920, 1080)
         with charachangeev
 
-        hy "{slowtype}Miss… Ikezawa…?"
+        hys "{slowtype}Miss… Ikezawa…?"
         ha "Uh… Y-yes?"
-        hy "{slowtype}Did you… not… just say… that you… were… hoping to… one day… look out… for… Lilly?"
+        hys "{slowtype}Did you… not… just say… that you… were… hoping to… one day… look out… for… Lilly?"
         ha "Y-yes."
 
         show bedridden_hiroyuki content_large
         with charachangeev
 
         "For a split-second there's an amused smile on his face."
-        hy "{slowtype}I think… you… did… exactly… that… just… now."
+        hys "{slowtype}I think… you… did… exactly… that… just… now."
 
         stop ambient fadeout 3.0
         stop music fadeout 3.0

@@ -17,9 +17,9 @@ label sh_ch25:
         scene white
         with openeye
 
-        scene ev tipsyfun_collapse_morning:
+        scene ev tipsyfun_collapse_morningclosed:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
-        show ev tipsyfun_collapse_morning_blur as evblur:
+        show ev tipsyfun_collapse_morningclosed_blur as evblur:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461) matrixcolor BrightnessMatrix(1.0)
             ease 3.0 alpha 0.7 matrixcolor BrightnessMatrix(0.7)
             # ease 1.0 alpha 0.7 matrixcolor BrightnessMatrix(0.7)
@@ -35,12 +35,11 @@ label sh_ch25:
         n "{vspace=90}…I notice a lot of light around me."
         n "A painful lot of light."
         n "Too much light."
-        # TODO change this line to better match the CG
-        n "{vspace=60}I roll onto my back, use both hands to shield my eyes, and carefully open them."
+        n "{vspace=60}I let out a tortured groan and gather just enough willpower to blink a few times."
 
         nvl hide dissolve
 
-        show ev tipsyfun_collapse_morning_blur as evblur:
+        show ev tipsyfun_collapse_morningclosed_blur as evblur:
             alpha 0.7 matrixcolor BrightnessMatrix(0.7)
             ease 2.0 alpha 0.4 matrixcolor BrightnessMatrix(0.4)
             ease 1.0 alpha 0.5 matrixcolor BrightnessMatrix(0.5)
@@ -52,8 +51,32 @@ label sh_ch25:
         hide evblur
         with None
 
-        "Even the small rays of light slipping through the cracks between my fingers manage to hurt my eyes, but I nevertheless keep them open."
-        "Eventually, my vision has adapted enough for me to look around the room through squinted eyes."
+
+        scene ev tipsyfun_collapse_morning:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with dissolve
+
+        scene ev tipsyfun_collapse_morningclosed:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with dissolve
+
+        pause 0.2
+
+        scene ev tipsyfun_collapse_morning:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with dissolve
+        scene ev tipsyfun_collapse_morningclosed:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with dissolve
+
+        pause 0.2
+
+        scene ev tipsyfun_collapse_morning:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with dissolve
+
+        "Even the small rays of light slipping past my eyelids hurt, but I resist the temptation to close my eyes again."
+        "Eventually, my vision has adapted enough for me to look around the room through bleary eyes."
 
         show ev at truecenter:
             zoom 0.5
@@ -82,28 +105,40 @@ label sh_ch25:
         n "I pull away the covers just a little bit so my feet become visible. I notice that I'm still wearing my socks and boxers, and my pants are still around my ankles. I groan softly in exasperation."
         n "The way I'm feeling right now, even the effort of having to pull up my pants and underwear comes across as an excruciating task. Still, I'll have to do it if I want to make it over to the window."
         n "{vspace=30}Trying my hardest to ignore my body's protests, I manage to sit up, reach out, and pull up my pants. The window is only four to five steps away, but it feels more like fifty."
+
+        show black:
+            alpha 0.3
+        with Dissolve(1.0)
+
         n "When I finally reach the window, I give a sharp pull on the curtain and sigh as the lighting in the room dims."
+
+        play sound [ sfx_heartslow, sfx_heartslow, sfx_heartslow ]
+
         n "{vspace=60}It does little to diminish the throbbing sensation under my skull, but I do feel a bit of relief now that I can open my eyes without getting the sensation of someone rubbing them in with pepper extract."
 
         nvl clear
 
-        n "Now that I can look around the room without squinting, I notice a motionless form on the bed. I faintly recall waking up partially lying on top of something warm and soft before rolling onto my back."
+        n "Now that I can look around the room without squinting, I notice a motionless form halfway underneath the blanket. I faintly recall waking up partially lying on top of something warm and soft before I crawled out of bed."
         n "{vspace=60}Hanako's still largely covered by the bedsheets, but I can see her long dark hair stick out on one end and her socks and pants sticking out at the other end."
         n "{vspace=60}I let out another soft groan. It hurts to think too much right now, but I manage to remember just enough of last night's events to blush a bit."
 
         nvl clear
 
+        play ambient sfx_shower fadein 1.0
+
         n "Despite feeling sick and exhausted, I hesitate to get back between the sweat-soaked sheets and opt to take a quick shower instead."
         n "The warm water running over me feels good, although it does less to ease my hangover than I was hoping for. It does ease my hurting brain a bit, allowing me to think back on last night's events."
         n "{vspace=60}It's not the first time a few drinks have left Hanako a bit clingy, but it's definitely the first time she's gone this far. It's not like I've been acting like the adult in the room though."
-        n "After last time, I thought I'd be able to handle Hanako just fine, even if she got like this. But now it turns out that that Hanako is able to handle me just fine as well."
+        n "After last time, I thought I'd be able to handle Hanako just fine, even if she got like this. But now it turns out that Hanako is able to handle me just fine as well."
 
         nvl clear
+
+        stop ambient fadeout 1.0
 
         n "I get out of the shower, not really feeling any better but certainly feeling more awake. I still have a headache and feel rather exhausted. While it took me very little time to fall asleep, my sleep was restless for most of the night."
         n "I wonder if getting back into bed will be a good idea."
         n "I take a look at Hanako who's still lying on her stomach in exactly the same position as before and probably hasn't moved a muscle since I went to take my shower."
-        n "{vspace=30}I faintly remember pretty much collapsing on top of her last night and somehow managing to get my hands on a sheet to pull over us."
+        n "{vspace=30}I faintly remember collapsing on top of her last night when our lovemaking session reached its peak and somehow managing to get my hands on a sheet to pull over us afterwards."
         n "{vspace=60}Under other circumstances, I'd have no second thoughts about getting back in bed. Hanako's sleepy smile in the morning is one of the most beautiful things in the world to wake up to."
         n "This morning, however, it's pretty likely she'll feel as queasy as I'm feeling right now, and I'm not so sure how she'll react to the memory of last night's events, but smiling about the whole thing will probably be the least likely reaction."
 
@@ -221,9 +256,9 @@ label sh_ch25:
         show karla basic_sheepish_cas
         with chchange
 
-        ka "But for some reason she decided to go back downstairs and pass out on the couch instead. The housekeeping staff found her here when they arrived. My husband has been really grumpy about that this morning."
+        ka "But for some reason, she decided to go back downstairs and pass out on the couch instead. The housekeeping staff found her here when they arrived. My husband has been really grumpy about that this morning."
         "Lilly groans as if even formulating words is already unbearably painful."
-        li "{cps=*0.5}Like I… said… before. My bedroom… door was… locked.{/cps}"
+        li "{slowtype}Like I… said… before.{w=0.5} My bedroom… door was… locked."
 
         show karla basic_confused_cas
         with chchange
@@ -237,7 +272,7 @@ label sh_ch25:
         with chchange
 
         ka "No, she stayed in the room you and Hanako are currently using. We decided to let you two use that room since it's larger and more suitable to accommodate two people."
-        "If I remember correctly that restroom is situated right between our bedroom and Lilly's."
+        "If I remember correctly, that restroom is situated right between our bedroom and Lilly's."
         hi "I locked our door last night before we went to bed. Perhaps… err…"
 
         show lilly basic_displeased_sum
@@ -263,7 +298,7 @@ label sh_ch25:
         with chchange
 
         ka "Hahaha, you're lucky you locked your door last night, or you'd have had one hell of an awkward awakening."
-        "She has no idea just how awkward."
+        "She has {i}no idea{/i} just how awkward."
 
         show lilly basic_sleepy_sum
         show karla basic_cheerful_cas
@@ -278,7 +313,7 @@ label sh_ch25:
             ease 2.0 twoleft
         with None
 
-        "Lilly slowly gets up from the couch, her movement stiff like an old-fashioned robot."
+        "Lilly slowly gets up from the couch—her movement stiff like an old-fashioned robot."
         "I turn to Karla."
         hi "So much for the effectiveness of using a cello as an alarm clock."
 

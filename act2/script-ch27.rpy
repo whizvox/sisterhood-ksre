@@ -108,16 +108,16 @@ label sh_ch27:
         show hiroyuki serious
         with charachangealways
 
-        hy "Good morning, Miss Ikezawa. I hope you do not mind if I repeat Miss Wilson's question."
+        hys "Good morning, Miss Ikezawa. I hope you do not mind if I repeat Miss Wilson's question."
         "Miss Wilson? Ah, the maid. I shyly nod in response."
         ha "I… ah… slept w-well. Thank you. H-have you?"
-        hy "Quite well, thank you."
+        hys "Quite well, thank you."
         "He says something in English to the maid that I can't quite make out, but she smiles briefly, nods, and then gets to work dusting the table."
 
         show hiroyuki speak
         with chchange
 
-        hy "I apologize on behalf of Miss Wilson. She is originally from the countryside nearby, and her accent can be difficult to understand for those who are unaccustomed to the Highlands' dialect."
+        hys "I apologize on behalf of Miss Wilson. She is originally from the countryside nearby, and her accent can be difficult to understand for those who are unaccustomed to the Highlands' dialect."
         ha "It's… okay."
 
         hide hiroyuki
@@ -128,9 +128,9 @@ label sh_ch27:
         show hiroyuki serious
         with charaenter
 
-        hy "Miss Ikezawa, I came here for the purpose of answering a few mails and verifying my schedule for today. Would it be a problem if I started addressing these matters? I am afraid I have a lot of work on my plate for today."
+        hys "Miss Ikezawa, I came here for the purpose of answering a few mails and verifying my schedule for today. Would it be a problem if I started addressing these matters? I am afraid I have a lot of work on my plate for today."
         ha "S-should I leave?"
-        hy "There is no need for you to."
+        hys "There is no need for you to."
         ha "T-thanks."
 
         hide hiroyuki
@@ -167,35 +167,35 @@ label sh_ch27:
 
         "Mister Satou watches her leave, a smirk appearing on his face for less than a second, and then his gaze turns stern again before refocusing on his laptop."
         "I'm not quite sure what to think of what just happened. Upon realizing I'm not immediately resuming my previous activities, Mister Satou's gaze briefly shifts to me."
-        hy "I told her it may be better if she resumed her chores here at a later time. I will not pretend to know for certain what Miss Wilson found so amusing, but I have a slight suspicion."
+        hys "I told her it may be better if she resumed her chores here at a later time. I will not pretend to know for certain what Miss Wilson found so amusing, but I have a slight suspicion."
         ha "Ummm… W-was it me?"
 
         show hiroyuki thinking
         with chchange
 
         "He thinks for a moment as if needing some time to rehearse his answer and then replies."
-        hy "When I moved to Europe, I quickly learned that there are quite a few stereotypes about the Japanese circulating here."
-        hy "I have been able at times to point out that many of those stereotypes are either exaggerations or blatant falsehoods."
+        hys "When I moved to Europe, I quickly learned that there are quite a few stereotypes about the Japanese circulating here."
+        hys "I have been able at times to point out that many of those stereotypes are either exaggerations or blatant falsehoods."
 
         show hiroyuki smile
         with chchange
 
-        hy "Heh, one of these stereotypes happens to involve the… ah… inseparability of Japanese tourists and their photo cameras."
+        hys "Heh, one of these stereotypes happens to involve the… ah… inseparability of Japanese tourists and their photo cameras."
         "I blush a bit. Looks I just came across as a walking stereotype, like an obese American tourist in a cowboy hat and Hawaiian shirt asking for directions in English to the nearest McDonald's."
         ha "I'm… s-sorry."
-        hy "Think nothing of it."
+        hys "Think nothing of it."
 
         show hiroyuki thinking
         with chchange
 
-        hy "{size=*0.7}Although I do hope she will at least still take my word for it that not all Japanese are covertly trained in ninjutsu during childhood.{/size}"
+        hys "{size=*0.7}Although I do hope she will at least still take my word for it that not all Japanese are covertly trained in ninjutsu during childhood.{/size}"
         "I didn't quite pick up what he just mumbled to himself. His voice was too low to hear it clearly."
         ha "E-excuse me?"
 
         show hiroyuki serious
         with chchange
 
-        hy "If you need anything, please let me know."
+        hys "If you need anything, please let me know."
         ha "O-okay, thank you."
         "Lilly's father once again starts typing on his computer, and I take a moment to look him over."
 
@@ -213,22 +213,22 @@ label sh_ch27:
 
         "I turn around and get into position to take a shot of the scrolls adorning the wall, trying to fit them all into frame."
         "As I do so, I let out a slight yawn that I quickly stifle with my hand upon remembering I'm not alone in the room."
-        hy "Are you usually an early riser, Miss Ikezawa?"
+        hys "Are you usually an early riser, Miss Ikezawa?"
         ha "Ummm… M-mostly. Earlier t-than Lilly."
-        hy "Sleeping in has never been a habit in this family. Lilly seems to be the only one who occasionally has trouble getting out of bed in the morning."
+        hys "Sleeping in has never been a habit in this family. Lilly seems to be the only one who occasionally has trouble getting out of bed in the morning."
         ha "I think… It m-makes s-some sense."
 
         show hiroyuki eyebrow
         with chchange
 
         "Lilly's father gives me a slightly puzzled frown."
-        hy "May I ask you to elaborate on that?"
+        hys "May I ask you to elaborate on that?"
         ha "Early in t-the morning… It's u-usually the s-sunlight that w-wakes me up. But Lilly…"
 
         show hiroyuki thinking
         with chchange
 
-        hy "My daughter cannot see the sunlight and thus has only her biological clock to rely on. That certainly does make some sense."
+        hys "My daughter cannot see the sunlight and thus has only her biological clock to rely on. That certainly does make some sense."
 
         hide hiroyuki
         with charaexit
@@ -240,16 +240,16 @@ label sh_ch27:
         show hiroyuki serious
         with chchange
 
-        hy "Do you approve of my collection, Miss Ikezawa?"
+        hys "Do you approve of my collection, Miss Ikezawa?"
         "Mister Satou's voice drags me back to earth, and I realize with some embarassment I must have spent nearly 10 minutes checking the bookcase without saying a single word."
         ha "Umm… Are y-you a c-collector?"
 
         show hiroyuki speak
         with chchange
 
-        hy "What you see here is mostly a side effect of Inverness Library not really possessing any fiction in Japanese."
-        hy "I do borrow novels written by English or American authors there, but whenever I wish to read something written by a Japanese author, I have a copy imported from Japan."
-        hy "I prefer reading the original material over a translated copy."
+        hys "What you see here is mostly a side effect of Inverness Library not really possessing any fiction in Japanese."
+        hys "I do borrow novels written by English or American authors there, but whenever I wish to read something written by a Japanese author, I have a copy imported from Japan."
+        hys "I prefer reading the original material over a translated copy."
         "I agree completely with that sentiment. It's nearly impossible to translate something and keep all the details and subtleties intact."
         "Unfortunately, my English isn't good enough yet to comfortably read complete novels in English as a relaxation and grasp all the details. Hopefully it will be one day. What a world that would open up to me."
         ha "It's very impressive."
@@ -257,7 +257,7 @@ label sh_ch27:
         show hiroyuki serious
         with chchange
 
-        hy "Think nothing of it. Is there anything in there by an author that you like?"
+        hys "Think nothing of it. Is there anything in there by an author that you like?"
         "I think for a moment."
         ha "Ummm… Is t-there anything by Haruki Murakami?"
 
@@ -265,27 +265,27 @@ label sh_ch27:
         with chchange
 
         "Mister Satou replies with a nod that seems part confirmation and part approval."
-        hy "Near the lower left corner. I have most of his works with the exception of ‘Dance, Dance, Dance’, ‘Kafka on the Shore’, and ‘Pinball, 1973’. Do you have a favorite title?"
+        hys "Near the lower left corner. I have most of his works with the exception of ‘Dance, Dance, Dance’, ‘Kafka on the Shore’, and ‘Pinball, 1973’. Do you have a favorite title?"
         ha "I… haven't r-read all his b-books yet, but I r-really liked ‘Dance, Dance, Dance’. It’s… one of m-my favorite titles."
 
         show hiroyuki eyebrow
         with chchange
 
-        hy "Would you recommend it?"
+        hys "Would you recommend it?"
         ha "Ummm… Y-yes."
 
         show hiroyuki thinking
         with chchange
 
-        hy "If you have not read it yet, and your tastes are anything like mine, you will probably like ‘Sputnik Sweetheart’ a lot. It happens to be one of my favorite titles."
+        hys "If you have not read it yet, and your tastes are anything like mine, you will probably like ‘Sputnik Sweetheart’ a lot. It happens to be one of my favorite titles."
         ha "I haven't read it yet. I will k-keep it in mind. I'm s-still in the middle of another book."
 
         show hiroyuki serious
         with chchange
 
-        hy "Do you mind if I ask what you're reading right now?"
+        hys "Do you mind if I ask what you're reading right now?"
         ha "The… ummm… ‘The Ark Sakura’."
-        hy "By Kobo Abe? Have you read his work before?"
+        hys "By Kobo Abe? Have you read his work before?"
         ha "J-just one piece aside from this. I f-found it… interesting."
         "Interesting and thought-provoking, but a bit depressing at times, though that's probably for personal reasons."
         "I wonder where Mister Satou is going with this conversation. I don't think he's trying to boast to me about his collection even though he'd have every right to brag in my eyes."
@@ -293,28 +293,28 @@ label sh_ch27:
         show hiroyuki thinking
         with chchange
 
-        hy "If you run out of books to read during your stay here, please feel free to borrow whatever you like here. There is no need to ask permission beforehand."
-        hy "All I ask is that you return a book to the place where you found it after you are done with it."
+        hys "If you run out of books to read during your stay here, please feel free to borrow whatever you like here. There is no need to ask permission beforehand."
+        hys "All I ask is that you return a book to the place where you found it after you are done with it."
         ha "Wow… R-really? T-thank you."
         "Wow! There's enough reading material here to last a year! This vacation just keeps getting better and better!"
 
         show hiroyuki serious
         with chchange
 
-        hy "No need to thank me. It is the least I can do as a host."
-        hy "Of course, now that you know this, please make certain not to spend all your time here reading. That would be a waste."
+        hys "No need to thank me. It is the least I can do as a host."
+        hys "Of course, now that you know this, please make certain not to spend all your time here reading. That would be a waste."
         ha "We're going to… t-take a small boat trip near some p-peninsula today."
 
         show hiroyuki eyebrow
         with chchange
 
-        hy "Chanonry Point, I assume. A very nice area to visit if you enjoy watching wildlife."
+        hys "Chanonry Point, I assume. A very nice area to visit if you enjoy watching wildlife."
         ha "Wildlife?"
 
         show hiroyuki serious
         with chchange
 
-        hy "I will not ruin the surprise, but you should take along a pair of binoculars before you leave. My wife owns a pair of them. Allison probably knows where they are. You should ask her."
+        hys "I will not ruin the surprise, but you should take along a pair of binoculars before you leave. My wife owns a pair of them. Allison probably knows where they are. You should ask her."
         ha "T-thanks."
         "Having finished taking pictures, I press the viewing button in order to see how the photos turned out."
         "Although the camera's tiny screen won't show a great amount of detail, I can see that the angles and lighting turned out alright. Satisfied, I put the camera away."
@@ -328,21 +328,21 @@ label sh_ch27:
         show hiroyuki eyebrow
         with chchange
 
-        hy "If you do not mind me asking, are you interested in all the rooms in the house or merely those that stand out like a sore thumb?"
+        hys "If you do not mind me asking, are you interested in all the rooms in the house or merely those that stand out like a sore thumb?"
         "I blush a bit. I did pay the most attention to the bathroom and the study because of their sheer contrast to the rest of the house and now I feel found out."
 
         show hiroyuki thinking
         with chchange
 
-        hy "You would not be the first visitor to take note of the considerable difference in style between the oriental rooms and the rest of the house. We get strange looks from any visitor who is given a tour here."
-        hy "What can I say? I may have left Japan, but Japan has never truly left me."
-        hy "I find that these little touches go a long way in easing the occasional pangs of homesickness. I try to spend my time here whenever I have reading or work to do."
+        hys "You would not be the first visitor to take note of the considerable difference in style between the oriental rooms and the rest of the house. We get strange looks from any visitor who is given a tour here."
+        hys "What can I say? I may have left Japan, but Japan has never truly left me."
+        hys "I find that these little touches go a long way in easing the occasional pangs of homesickness. I try to spend my time here whenever I have reading or work to do."
 
         show hiroyuki serious
         with chchange
 
         "He turns to me for a moment as if suddenly remembering something."
-        hy "They do not have Japanese baths at Yamaku, do they?"
+        hys "They do not have Japanese baths at Yamaku, do they?"
         "They don't. At least, not in the dorms. We just have showers, though most of the showers have shower seats attached to the wall in order to accommodate students with mobility issues."
         "They do have a few baths in the nursing staff building that are used for therapy, but I've never used them."
         ha "N-no."
@@ -350,7 +350,7 @@ label sh_ch27:
         show hiroyuki thinking
         with chchange
 
-        hy "You are free to use the bath while you are here. If you have not already done so, you should consider taking a soak some time. It is a great way to relax if you take the time for it and have the time to spare."
+        hys "You are free to use the bath while you are here. If you have not already done so, you should consider taking a soak some time. It is a great way to relax if you take the time for it and have the time to spare."
         "The way he says it suggests that last part doesn't apply to him right now, and he's not particularly happy about it."
         ha "M-maybe."
         "I think it's time for me to leave here and take a few shots of the patio and outside of the house. Maybe the nearby beach, too."
@@ -359,19 +359,19 @@ label sh_ch27:
         show hiroyuki bow
         with charachangealways
 
-        hy "I am afraid I will have to take my leave, Miss Ikezawa."
+        hys "I am afraid I will have to take my leave, Miss Ikezawa."
 
         show hiroyuki serious at tworight
         with charachangealways
 
         "Taking his laptop under his arm, he heads towards the door and turns around to address me one last time."
-        hy "It was good being able to speak Japanese for a little bit outside the business environment. My wife and I usually speak English here out of respect for the staff."
+        hys "It was good being able to speak Japanese for a little bit outside the business environment. My wife and I usually speak English here out of respect for the staff."
 
         show hiroyuki smile
         with chchange
 
-        hy "I am also pleased to have had the opportunity to speak with the person who has been looking after my daughter. No doubt we will get the opportunity to speak some more when I am able to take some time off."
-        hy "Please enjoy the rest of your day and goodbye for now."
+        hys "I am also pleased to have had the opportunity to speak with the person who has been looking after my daughter. No doubt we will get the opportunity to speak some more when I am able to take some time off."
+        hys "Please enjoy the rest of your day and goodbye for now."
 
         hide hiroyuki
         with charaexit

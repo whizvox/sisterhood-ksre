@@ -984,8 +984,12 @@ label sh_ch29:
         hi "If it's okay with you."
         "I'm not completely comfortable, but I nod nevertheless."
         "As I let my bathrobe slide down as well and then drop both robes over the edge of the bed, I only hope that the atmosphere isn't going to remain this awkward the whole time."
-        "When I turn back towards Hisao, I see an expectant expression on his face."
-        "I'm not really that confident myself."
+        "When I turn back towards Hisao, I see an expectant expression on his face. I give a hesitant nod to Hisao who lies down on his back and then beckons me to lie on top of him."
+
+        scene ev eveningsnack_cuddle_naked:
+            zoom 0.5
+        with charachangeev
+
         ha "Ummm…"
         hi "Yes?"
         ha "I… d-don't really know h-how to do this."
@@ -994,13 +998,7 @@ label sh_ch29:
         ha "I… I think it does."
         hi "That's probably a good way to go about it."
         ha "Okay."
-        "At least I have a general idea now. I give a hesitant nod to Hisao who lies down on his back and then beckons me to lie on top of him."
-
-        scene ev eveningsnack_cuddle_naked:
-            zoom 0.5
-        with charachangeev
-
-        "I do so and we share a few kisses and cuddles until my nervousness starts to die down a bit."
+        "At least I have a general idea now. We share a few kisses and cuddles until my nervousness starts to die down a bit."
         "I suppose it's up to me now."
         "{i}Use my hands without using my hands...{/i}"
         "Okay then."

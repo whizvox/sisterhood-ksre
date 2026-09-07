@@ -113,7 +113,7 @@ init:
             (_("Wicked Awakening"), "sh_ch25.s1", _("Hisao, Hanako, and Lilly have a less-than-pleasant waking up."), "hisao"),
             (_("No Rest for the Weary"), "sh_ch25.s2", _("Hanako and Lilly prepare for the upcoming picnic."), "hisao"),
             (_("In Tandem"), "sh_ch26.s1", _("The awkward lovebirds and Satous ride through the Scottish countryside.")),
-            (_("Model Maid"), "sh_ch27.s1", _("Hanako meets Mr. Satou."), "hanako"),
+            (_("Model Maid"), "sh_ch27.s1", _("Hanako has a brief encounter with Mr. Satou."), "hanako"),
             (_("Journalistic Habits"), "sh_ch28.s1", _("Hanako reads from her diary at the shore of Moray Firth."), "hanako"),
             (_("Soap Opera"), "sh_ch29.s1", _("Hanako and Hisao take a very intimate bath."), "hanako"),
             (_("Shared Soak"), "sh_ch29.s2", _("Hanako and Hisao talk about their trip to Inverness."), "hanako"),
@@ -129,7 +129,7 @@ init:
             (_("Looking Out for Each Other"), "sh_ch32.s3", _("Hanako opens up to Mister Satou about her and Lilly's relationship."), "hanako"),
             (_("Rock Skipping Again"), "sh_ch33.s1", _("Hanako and Akira open up to each other."), "hanako"),
             (_("Present and Past"), "sh_ch34.s1", _("Hanako and Lilly have a heart-to-heart in the bath."), "hanako"),
-            (_("Sendoff"), "sh_ch34.s2", _("The Yamaku trio head back home."), "hanako")
+            (_("Sendoff"), "sh_ch34.s2", _("Hanako and Hisao head back home."), "hanako")
         ])
     ]
 
@@ -219,6 +219,7 @@ init:
     define nak = Character(_("Nakamura"), who_color="#c6ec87") # alt color: f3ccff
     define jun = Character(_("Jun"), who_color="#b37b7b")
     define hy = Character(_("Hiroyuki"), who_color="#c9b09b")
+    define hys = Character(_("Mr Satou"), kind=hy)
     define hyf = Character("Father", kind=hy)
     define hyd = Character("Dad", kind=hy)
     define dc = Character(_("Doctor"), who_color="#ffffff")
