@@ -21,7 +21,7 @@ screen sisterhood():
             has vbox
 
             vbox:
-                textbutton _("Start") action If(main_menu, true=If(sh_should_show_disclaimer(), true=ShowMenu("sisterhood_disclaimer"), false=Start("sisterhood_start")), false=None)
+                textbutton _("Start") action If(main_menu, true=ShowMenu("sisterhood_select_act"), false=None)
 
             vbox:
                 textbutton _("Options") action ShowMenu("sisterhood_options")
@@ -43,6 +43,112 @@ screen sisterhood():
             action ShowMenu("mods")
 
     key "game_menu" action ShowMenu("mods")
+
+screen sisterhood_select_act():
+    tag menu
+    style_prefix "pxt"
+    if main_menu:
+        add "main_menu_bg"
+    add "blind"
+
+    default selected_objects = set()
+
+    frame:
+        style_suffix "interface"
+        has vbox
+
+        text _("Mods > Sisterhood > Select Act"):
+            bold True
+            size bold_size
+        
+        spacing 20
+
+        frame:
+            xalign 0.5
+
+            has vbox
+            spacing 15
+
+            vbox:
+                button:
+                    xysize 350, 50
+                    hovered Function(selected_objects.add, 1)
+                    unhovered Function(selected_objects.discard, 1)
+                    action If(sh_should_show_disclaimer(), true=ShowMenu("sisterhood_disclaimer"), false=[ SetVariable("sh_skip_act", 1), Start("sisterhood_start") ])
+
+                    image f"{sh_path}/gui/act_frame.png":
+                        if 1 not in selected_objects:
+                            matrixcolor OpacityMatrix(0.4)
+
+                    text _("Act 1"):
+                        xalign 0.5
+
+                        if 1 in selected_objects:
+                            color "#000"
+
+            vbox:
+                python:
+                    is_unlocked = 2 in persistent.sh_unlocked_acts
+                    if is_unlocked:
+                        img = f"{sh_path}/gui/act_frame.png"
+                    else:
+                        img = Composite(
+                            (385, 50),
+                            (0, 0), f"{sh_path}/gui/act_frame.png",
+                            (353, 4), f"{sh_path}/gui/act_frame_lock.png"
+                        )
+
+                button:
+                    xysize 350, 50
+                    hovered Function(selected_objects.add, 2)
+                    unhovered Function(selected_objects.discard, 2)
+
+                    action If(is_unlocked, true=[ SetVariable("sh_skip_act", 2), Start("sisterhood_start") ], false=ShowMenu("sisterhood_confirm_unlock", 2))
+
+                    image img:
+                        if 2 not in selected_objects:
+                            matrixcolor OpacityMatrix(0.4)
+
+                    text _("Act 2"):
+                        xalign 0.5
+
+                        if 2 in selected_objects:
+                            color "#000"
+
+            vbox:
+                button:
+                    xysize 350, 50
+                    image Composite(
+                        (385, 50),
+                        (0, 0), f"{sh_path}/gui/act_frame.png",
+                        (353, 4), f"{sh_path}/gui/act_frame_lock.png"
+                    ):
+                        matrixcolor OpacityMatrix(0.2)
+
+                    text _("Act 3"):
+                        xalign 0.5
+                        color "#00000033"
+
+            vbox:
+                button:
+                    xysize 350, 50
+                    image Composite(
+                        (385, 50),
+                        (0, 0), f"{sh_path}/gui/act_frame.png",
+                        (353, 4), f"{sh_path}/gui/act_frame_lock.png"
+                    ):
+                        matrixcolor OpacityMatrix(0.2)
+
+                    text _("Act 4"):
+                        xalign 0.5
+                        color "#00000033"
+
+        textbutton _("Return"):
+            style "return_button"
+            action ShowMenu("sisterhood")
+
+    key "game_menu" action ShowMenu("sisterhood")
+
 
 screen sisterhood_disclaimer():
     tag menu
@@ -69,6 +175,36 @@ screen sisterhood_disclaimer():
                 SetVariable("persistent.sh_show_disclaimer", False),
                 Start("sisterhood_start")
             ]
+
+    key "game_menu" action ShowMenu("sisterhood")
+
+screen sisterhood_confirm_unlock(act):
+    tag menu
+    style_prefix "pxt"
+    if main_menu:
+        add "main_menu_bg"
+    add "blind"
+
+    frame:
+        style_suffix "interface"
+        xsize 1200
+        has vbox
+
+        text _("{b}Attention!{/b}\n\nIt looks like you have not read the preceding act. Are you sure you want to unlock this?\n")
+
+        frame:
+            xalign 0.5
+            has hbox
+
+            textbutton _("No") action ShowMenu("sisterhood_select_act"):
+                right_padding 36
+
+            textbutton _("Yes") action [
+                Function(persistent.sh_unlocked_acts.append, act),
+                ShowMenu("sisterhood_select_act")
+            ]
+
+    key "game_menu" action ShowMenu("sisterhood_select_act")
 
 screen sisterhood_options():
     tag menu

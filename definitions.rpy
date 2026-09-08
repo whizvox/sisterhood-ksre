@@ -1,6 +1,7 @@
 default persistent.sh_slowtransitions = True
 default persistent.sh_windowtint = True
 default persistent.sh_show_disclaimer = True
+default persistent.sh_unlocked_acts = []
 
 define config.default_textshader = "typewriter"
 
@@ -219,7 +220,7 @@ init:
     define nak = Character(_("Nakamura"), who_color="#c6ec87") # alt color: f3ccff
     define jun = Character(_("Jun"), who_color="#b37b7b")
     define hy = Character(_("Hiroyuki"), who_color="#c9b09b")
-    define hys = Character(_("Mr Satou"), kind=hy)
+    define hys = Character(_("Mr. Satou"), kind=hy)
     define hyf = Character("Father", kind=hy)
     define hyd = Character("Dad", kind=hy)
     define dc = Character(_("Doctor"), who_color="#ffffff")

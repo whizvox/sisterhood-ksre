@@ -1,4 +1,5 @@
 default sh_memory_page = 0
+default sh_skip_act = 0
 
 label sisterhood_memories:
     show screen sisterhood_memories(sh_memory_page)
@@ -52,42 +53,44 @@ label sisterhood_start:
     with config.game_main_transition
     pause 2.0
 
-    call sh_ch1
-    call sh_ch2
-    call sh_ch3
-    call sh_ch4
-    call sh_ch5
-    call sh_ch0
-    call sh_ch6
-    call sh_ch7
-    call sh_ch8
-    call sh_ch9
-    call sh_ch10
-    call sh_ch11
-    call sh_ch12
-    call sh_ch13
-    call sh_ch14
-    call sh_ch15
-    call sh_ch16
-    call sh_ch17
-    call sh_ch17alt
-    call sh_ch18
-    call sh_ch19
-    call sh_ch20
-    call sh_ch21
-    call sh_ch22
-    call sh_ch23
-    call sh_ch24
-    call sh_ch25
-    call sh_ch26
-    call sh_ch27
-    call sh_ch28
-    call sh_ch29
-    call sh_ch30
-    call sh_ch31
-    call sh_ch32
-    call sh_ch33
-    call sh_ch34
+    if sh_skip_act <= 1:
+        call sh_ch1
+        call sh_ch2
+        call sh_ch3
+        call sh_ch4
+        call sh_ch5
+        call sh_ch0
+        call sh_ch6
+        call sh_ch7
+        call sh_ch8
+        call sh_ch9
+        call sh_ch10
+        call sh_ch11
+        call sh_ch12
+        call sh_ch13
+        call sh_ch14
+        call sh_ch15
+        call sh_ch16
+        call sh_ch17
+    if sh_skip_act <= 2:
+        call sh_ch17alt
+        call sh_ch18
+        call sh_ch19
+        call sh_ch20
+        call sh_ch21
+        call sh_ch22
+        call sh_ch23
+        call sh_ch24
+        call sh_ch25
+        call sh_ch26
+        call sh_ch27
+        call sh_ch28
+        call sh_ch29
+        call sh_ch30
+        call sh_ch31
+        call sh_ch32
+        call sh_ch33
+        call sh_ch34
     call sisterhood_credits
     call sisterhood_postcredits
 
