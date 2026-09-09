@@ -132,14 +132,14 @@ init 1 python:
     sh_event("tipsyfun", ["stand_naked", "doggystyle", "doggystyle_closed", "collapse_climax", "collapse_climaxclosed"], mark_adult=True)
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["lillyakira", "akira", "akhiha"])
-    sh_event("sharedsoak", ["lilly_hanakospeak", "lilly_historycry", "lilly_historysmile", "lilly_historyspeak", "lilly_hugback", "lilly_hugshock", "lilly_hugtimid", "lilly_leanclosed", "lilly_leansmile", "lilly_lillygrimace", "lilly_lillysmile", "lilly_lillyspeak", "lilly_lunge", "lilly_recover", "lilly_relax", "lilly_shoulder"]),
+    sh_event("sharedsoak", ["hisao_relax", "hisao_talk"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
     sh_event("akirapast", ["argument", "elemschool", "grandparents1", "grandparents2", "midschool", "promotion", "study1", "study2", "unfavorite", "vacation"])
 
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
+    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "bathroom_ni", "bathroom_blur_ni", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
     sh_bgs("school", ["staircase3", "hallway4", "therapist", "therapist_blur1", "therapist_blur2", "newspaper", "firstaidclass"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
@@ -170,7 +170,7 @@ init 1:
         ("celloandwine_2", "ev celloandwine_block_pout", "ev celloandwine_block_grin", "ev celloandwine_lap_tease", "ev celloandwine_lap_rest", "ev celloandwine_lap_cover", "ev celloandwine_lap_feel", "ev celloandwine_lap_clap", "ev celloandwine_lap_victory", "ev celloandwine_lap_kiss"),
         ("tipsyfun", "ev tipsyfun_stand_close", "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_doggystyle_closed", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_climaxclosed", "ev tipsyfun_collapse_morningclosed", "ev tipsyfun_collapse_morning"),
         ("soapopera", "ev soapopera_hisao1_back", "ev soapopera_hisao1_lay", "ev soapopera_hanako1_back", "ev soapopera_hanako1_hair_large", "evg soapopera_hanako1_hairtalk", "ev soapopera_hisao2_hug", "ev soapopera_hisao2_erection", "ev soapopera_hisao2_handy_large", "ev soapopera_hisao2_climax_large", "ev soapopera_hanako2_caress_large", "ev soapopera_hanako2_spray_large", "ev soapopera_hanako2_climax"),
-        # TODO add shared soak (Hisao) CGs
+        ("sharedsoak_hisao", Trigger("ev sharedsoak_hisao_talk", "evg sharedsoak_hisao_talk1"), "ev sharedsoak_hisao_talk", "evg sharedsoak_hisao_talk3", "ev sharedsoak_hisao_relax"),
         ("eveningsnack", "ev eveningsnack_cuddle", "ev eveningsnack_cuddle_naked", "ev eveningsnack_hipamper", "ev eveningsnack_hiplay", "ev eveningsnack_bj1_look", "ev eveningsnack_bj1_lick", "ev eveningsnack_bj1_pleasure", "ev eveningsnack_bj1_awkward", "ev eveningsnack_bj2_pleasure", "ev eveningsnack_bj2_climax", "ev eveningsnack_hapamper", "ev eveningsnack_haplay", "ev eveningsnack_cun1_look", "ev eveningsnack_cun1_tounge", "ev eveningsnack_cun1_push", "ev eveningsnack_cun2_pleasure", "ev eveningsnack_cun2_eatout", "ev eveningsnack_cun2_climax"),
         # TODO add without thinking CGs
         ("bedridden", "ev bedridden_lillyakira", "evg bedridden_lillyakira_2", "evg bedridden_lillyakira_3", "evg bedridden_lillyakira_4", "ev bedridden_akira", "evg bedridden_akira_2", "evg bedridden_akira_3", "evg bedridden_akira_4", "ev bedridden_akhiha", "evg bedridden_akhiha_2", "evg bedridden_akhiha_3", "evg bedridden_akhiha_4", "evg bedridden_akhiha_5", "evg bedridden_akhiha_6", "evg bedridden_akhiha_7", "evg bedridden_akhiha_8", "evg bedridden_akhiha_9"),
@@ -190,7 +190,6 @@ init 1:
     image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
     image bg satou_entrance_blur_ss = sunset(sh_bg("satou_entrance_blur"))
     image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
-    image bg satou_bathroom_ni = night(sh_bg("satou_bathroom"))
 
     # special events
     image ev pillowtalk_blanket dark = f"{sh_path}/event/pillowtalk/pillowtalk_blanket_dark.jpg"
@@ -230,6 +229,11 @@ init 1:
     image soapopera_hanako talk = f"{sh_path}/event/soapopera/soapopera_hanako1_hairtalk_hanako.png"
     image soapopera_hisao talk = f"{sh_path}/event/soapopera/soapopera_hanako1_hairtalk_hisao.png"
     image soapopera_hisao climax = f"{sh_path}/event/soapopera/soapopera_hisao2_climax_hisao.png"
+
+    image sharedsoakhisao talk = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hisaotalk.png"
+    image sharedsoakhisao smile = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hisaosmile.png"
+    image sharedsoakhanako smile = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hanakosmile.png"
+    image sharedsoakhanako frown = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hanakofrown.png"
 
     image bedridden_lilly smile = f"{sh_path}/event/bedridden/bedridden_lilly_smile_overlay.png"
     image bedridden_lilly listen = f"{sh_path}/event/bedridden/bedridden_lilly_listen_overlay.png"
@@ -280,6 +284,18 @@ init 1:
         (0, 0), Transform("ev soapopera_hanako1_hair_large", zoom=0.5),
         (0, 0), Transform("soapopera_hanako talk", zoom=0.5),
         (0, 0), Transform("soapopera_hisao talk", zoom=0.5)
+    )
+    image evg sharedsoak_hisao_talk1 = Composite(
+        (1920, 1080),
+        (0, 0), "ev sharedsoak_hisao_talk",
+        (0, 0), "sharedsoakhisao smile",
+        (0, 0), "sharedsoakhanako smile"
+    )
+    image evg sharedsoak_hisao_talk3 = Composite(
+        (1920, 1080),
+        (0, 0), "ev sharedsoak_hisao_talk",
+        (0, 0), "sharedsoakhisao talk",
+        (0, 0), "sharedsoakhanako frown"
     )
     image evg bedridden_lillyakira_2 = Composite(
         (1920, 1080),

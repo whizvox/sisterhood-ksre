@@ -656,7 +656,9 @@ label sh_ch29:
 
         "Hisao gets in the bath ahead of me and takes my hand. He helps me in, and then we sit down and huddle together in one of the bath's corners."
 
-        scene ev sharedsoak_hisao_lean
+        scene ev sharedsoak_hisao_talk
+        show sharedsoakhanako smile
+        show sharedsoakhisao smile
         with Fade(1.0, 0.0, 1.0, color="#27265a")
 
         "We let out a long mutual sigh as the warm water envelops us."
@@ -669,17 +671,23 @@ label sh_ch29:
         with shuteye
 
         "I close my eyes and try to empty my mind, focusing only on the comfort of every single muscle in my body relaxing in the warm water. I feel Hisao's head tilting and leaning against mine."
-        "I guess he's pretty worn out as well. That's fine though. We can stay in here as long as we like. There's nobody else around, and we have all the time in the world right now. What more could I possibly want?"
+        "I guess he's pretty worn out as well. That's fine, though. We can stay in here as long as we like. There's nobody else around, and we have all the time in the world right now. What more could I possibly want?"
         "For a long time, my mind keeps floating in the place between slumber and awareness, content to just relax and enjoy the warmth all around me and I find myself losing track of time."
 
         if _in_replay:
             return
+        else:
+            scene black
+
+            pause 2.0
 
     label .s2:
 
         $ set_window_tint(TINT_HANAKO)
 
-        scene bg satou_bathroom
+        scene bg satou_bathroom_ni
+        show bg satou_bathroom_blur_ni as bg2:
+            ease 5.0 alpha 0.0
         with openeye
 
         if _in_replay:
@@ -687,22 +695,33 @@ label sh_ch29:
 
         "When I feel Hisao shifting a bit, I open my eyes and the first thing I notice is that it's slightly darker than before. I wonder how long we've been in here already."
 
-        show hisao basic_grin_nak_close
+        hide bg2
+        with None
+
+        show hisao basic_grin_nak_close_ni
         with charaenter
 
         "When I take my head off Hisao's shoulder, I feel him turning towards me."
         hi "Good morning, sleepyhead."
         ha "I… wasn't asleep. Just… relaxing a bit."
 
-        show hisao basic_smile_nak_close
+        show hisao basic_smile_nak_close_ni
         with chchange
 
         hi "I might have dozed off myself a little as well."
         ha "I think it's a little darker outside than it was before. Do you know what time it is?"
         hi "I don't know… or care. I don't have any further plans for the evening, so we can stay in here as long as we like."
         ha "I'd like to stay here for a bit longer. The water's really comfortable."
+
+        show hisao basic_grin_nak_close_ni
+        with chchange
+
         hi "Glad to hear that."
         ha "Ummm… Hisao?"
+
+        show hisao basic_smile_nak_close_ni
+        with chchange
+
         hi "Yes?"
         ha "Is it… comfortable for you too?"
         hi "Sure."
@@ -710,7 +729,7 @@ label sh_ch29:
         hi "Only a little. That doesn't mean the current water temperature is uncomfortable. Far from it."
         ha "S-sorry."
 
-        show hisao basic_speak_nak_close
+        show hisao basic_speak_nak_close_ni
         with chchange
 
         hi "Hey, don't be like that. Like I said, it's still a very nice temperature. And the last thing I want is for you to get unwell again."
@@ -720,6 +739,10 @@ label sh_ch29:
         hi "When we came back from that picnic last week and you went to get some rest after dinner, Lilly's mom approached me and asked me if you were prone to heat illnesses."
         hi "She said… uh… burn victims are sometimes more vulnerable to them than most people. I… ah… didn't really know how to answer that."
         hi "She then told me that I should keep an eye on you during warm days so you wouldn't get unwell again."
+
+        show hisao basic_neutral_nak_close_ni
+        with chchange
+
         "I already thought it suspicious that nobody ever brought the subject up again after that day. I shouldn't have been surprised that it was discussed without me present."
         ha "I'm sorry. I d-didn't mean to cause trouble."
         hi "It's fine. I felt a bit stupid though. I always overlooked the fact that maybe your… injuries came with some catches of their own."
@@ -746,32 +769,63 @@ label sh_ch29:
         hi "Yeah, I noticed the bottle in our room. But you usually don't put it on until you're ready to get dressed, do you? I mean, we've slept in several times this week…"
         ha "S-sometimes it's more noticable than other times. I only put it on immediately if it itches too m-much when I wake up."
         hi "Speaking of your scars being dry… That's kind of what that incident last week was about, wasn't it?"
+
+        show sharedsoakhanako frown
+        with charachangeev
+
         "I nod."
         ha "Scars… c-can't sweat either, so when the weather's warm or I… exhaust myself, it takes me longer to cool down again."
-        "Though my physical condition really could have been better that day as well. Lilly's mother was probably right and part of the problem was the fact I wasn't even properly rehydrated to begin with."
+        "Though my physical condition really could have been better that day as well. Lilly's mother was probably right, and part of the problem was the fact I wasn't even properly rehydrated to begin with."
         hi "What happened that afternoon, has that happened to you before?"
         ha "A… few times… in the past. But it hasn't happened in a long time, not counting last week."
         hi "Hmmm…"
         ha "Y-yes?"
-        hi "Hanako… maybe this is a silly question, but is there any risk of you… uh… 'getting overheated' when we sleep together?"
-        "I giggle. Is this how it's going to be from now on? Two people exchanging an 'are you alright' after each time they sleep together?"
+
+        show sharedsoakhisao talk
+        with charachangeev
+
+        hi "Hanako… maybe this is a silly question, but is there any risk of you… uh… ‘getting overheated’ when we sleep together?"
+
+        show sharedsoakhanako smile
+        with charachangeev
+
+        "I giggle. Is this how it's going to be from now on? Two people exchanging an “are you alright” after each time they sleep together?"
         ha "I've b-been fine so far. I think… if you can handle what we do, I can handle it as well. So please don't worry about me."
         ha "Besides… c-cooling down just takes me a little longer. It's n-not like I can't s-sweat at all anymore…"
         hi "Yeah, good point."
+
+        hide sharedsoakhisao
+        show sharedsoakhanako frown
+        with charachangeev
+
         "There's a brief silence that's slightly uncomfortable. At least Hisao was diplomatic enough to stick with a generic answer."
         "I suppose I should be grateful that I still have enough functioning sweat glands to engage in modest physical activity without fainting or killing myself."
         "Still, the annoying thing about having fewer sweat glands than usual is that the ones I do have need to work overtime in order to compensate, which can lead to some extremely unladylike results."
         "Hisao surely must have noticed already that during our activities in bed, part of me always remains almost completely dry while the other part is sweating like a pig. Thank goodness we always do it without any clothes on."
+
+        hide sharedsoakhanako
+        with charachangeev
+
         ha "Umm… you know… I used to like my baths a little hotter than this too, but ever since… my accident… I've been a room-temperature person."
         ha "Hot and cold temperatures just quickly feel… uncomfortable to me now. Umm… S-scar tissue doesn't isolate as well as normal skin."
         hi "Yeah, I thought so."
         ha "That's m-most of it. If… it wasn't for my appearance, the s-scars would probably only be a minor inconvenience in everday life."
+
+        show sharedsoakhisao smile
+        with charachangeev
+
         hi "Okay. Thanks for telling me."
         ha "P-please don't go worrying about me."
         hi "I won't if you promise not to worry about me too much."
+
+        show sharedsoakhanako smile
+        with charachangeev
+
         ha "O-okay."
 
-        scene ev sharedsoak_hisao_lean
+        show ev sharedsoak_hisao_relax
+        hide sharedsoakhisao
+        hide sharedsoakhanako
         with charachangeev
 
         "The conversation having reached its end, we fall silent again, though the silence is comfortable this time. I feel Hisao's hand sneaking up my arm and shoulder, and he starts running his fingers through my hair."
@@ -783,23 +837,49 @@ label sh_ch29:
         "I giggle."
         ha "W-we shouldn't. Lilly and her parents would think we're strange."
 
-        scene ev sharedsoak_hisao_talk
+        show ev sharedsoak_hisao_talk
+        show sharedsoakhanako frown
+        show sharedsoakhisao talk
         with charachangeev
 
         hi "If they'd even notice. Lilly's mom's usually away from the home the whole day unless she's taken a day off, and I've barely seen Lilly's dad at all."
+
+        hide sharedsoakhanako
+        with charachangeev
+
         ha "I… spoke with him this morning. In his study."
         hi "You had a conversation with him?"
         ha "Not for very long. But… he did tell me that if we wanted to read any of his books, we could borrow them."
         hi "You mean the contents of that bookcase in the study? I figured they were books on business or heart equipment and stuff."
-        ha "No, almost all of it is fiction. And it's all in Japanese too. He has a very impressive collection. You should have a look at it tomorrow."
+
+        show sharedsoakhanako smile
+        with charachangeev
+
+        ha "No, almost all of it is fiction. And it's all in Japanese, too. He has a very impressive collection. You should have a look at it tomorrow."
+
+        show sharedsoakhisao smile
+        with charachangeev
+
         "Hisao grins at my failure at hiding the excited tone in my voice."
         hi "So he's your hero now?"
         ha "N-no, but it's a very generous offer."
         hi "Yeah, it is. I might check it out when I have the opportunity. Did he say anything else?"
         ha "He told me I should make use of the bathroom if I liked an opportunity for a traditional soak. I was actually already c-considering giving it a try before you came and invited me to have one together."
         hi "Well, that was some good advice then."
+
+        show sharedsoakhanako frown
+        with charachangeev
+
         "My thoughts return to the last words he said."
+
+        hide sharedsoakhanako
+        with charachangeev
+
         ha "H-Hisao…?"
+
+        show sharedsoakhisao talk
+        with charachangeev
+
         hi "Yes?"
         ha "He also… t-thanked me… f-for looking after Lilly."
         hi "Huh?"
@@ -812,11 +892,19 @@ label sh_ch29:
         hi "You didn't tell Lilly about what he said, did you?"
         ha "No. I think she'd be upset, and I d-don't want to complicate things between them."
         hi "There was a similar thing during that picnic last week, wasn't there?"
-        ha "You noticed that too?"
+        ha "You noticed that, too?"
         hi "Uhuh. Well, Akira did say that Lilly wasn't very independent when their parents left Japan. Still, seeing them be this out of touch with Lilly kinda suggests some estrangement with a capital E, don't you think?"
+
+        show sharedsoakhanako frown
+        with charachangeev
+
         ha "I… d-don't know. I think the situation is… just r-really complicated."
         ha "Lilly's parents seem… v-very busy all the time, Akira is… rather hostile towards them and is k-keeping them away and Lilly's… floating somewhere in between them."
         hi "Sounds like she has her work cut out for her, huh?"
+
+        hide sharedsoakhanako
+        with charachangeev
+
         ha "Yes. I wonder if there's anything we can do to help."
         hi "I don't think we should meddle in this. Obviously a lot of stuff happened in the past, and we don't know anything about that, so getting involved would just mean getting in over our heads."
         ha "I know…"
@@ -826,12 +914,24 @@ label sh_ch29:
         ha "Yes, you're probably right."
         hi "Her mom's already taken quite a bit of time off to spend with her, and her dad said he'd try to get some time off at the end of the week. It's a modest start, but it's still a start."
         hi "I don't think we need to do anything. Well, except maybe hang out and have fun with Lilly whenever she feels like it. But we're already doing that. And we'll just keep doing that, right?"
+
+        show sharedsoakhanako smile
+        with charachangeev
+
         ha "Yes! We will."
+
+        show sharedsoakhisao smile
+        with charachangeev
+
+        stop music fadeout 3.0
+
         hi "In the meantime, seeing that Lilly's not here right now, there's no point in worrying about her. Let's focus our attention on something else, shall we?"
 
-        play music music_friendship fadein 4.0
+        queue music music_friendship fadein 4.0
 
-        scene ev sharedsoak_hisao_cuddle
+        show ev sharedsoak_hisao_relax
+        hide sharedsoakhisao
+        hide sharedsoakhanako
         with charachangeev
 
         "I smile as he wraps his arms around my waist and pulls me onto his lap."
@@ -844,7 +944,7 @@ label sh_ch29:
         hi "…or we could simply return to our room and… well… you know…"
         "I smile, eagerly nod my head, and we share another kiss. Then I let my head rest briefly against his. A quick peck on my lips seals the deal and I get off his lap."
 
-        scene bg satou_bathroom
+        scene bg satou_bathroom_ni
         with locationchange
 
         "I feel a bit dizzy upon getting up, so I quickly sit down on the edge of the bath until the feeling passes."
@@ -871,10 +971,12 @@ label sh_ch29:
             yalign 0.5 zoom 1.02
         with locationchange
 
+        play sound sfx_lock
+
         "We enter, and I waste no time in locking our bedroom door. Not that I expect anyone to come in here unannounced, but better to be safe than sorry."
         "When I turn around, I notice Hisao has already turned on a small lamp on one of the nightstands, bathing the area in a light that's just bright enough to see clearly, but still dim enough not to make me feel too uncomfortable."
 
-        show hisao basic_emb_bath_close
+        show hisao basic_emb_bath_close_ss
         with charaenter
 
         "I notice there's a bit of a nervous expression on his face as he sits down on the edge of the bed. Feeling a little awkward myself, I sit down next to him on his right side and wait for him to initiate the next step."
@@ -885,6 +987,9 @@ label sh_ch29:
         "That's a bit odd. When we were getting ready to get out of the bath, the atmosphere was such that I expected him to jump on top of me the moment we set foot in this room, and yet he seems hesitant right now."
         "Nevertheless, I've never said no to a cuddling session before, and I have no intention of breaking that habit. I get a little farther onto the bed and wait for him to make the next move."
         ha "Okay."
+
+        show hisao basic_smile_bath_superclose_ss
+        with characlose
 
         show hisao:
             yanchor 0.0
