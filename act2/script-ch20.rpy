@@ -211,7 +211,7 @@ label sh_ch20:
         with chchange
 
         nak "I guess what I did was a bit thoughtless, but I thought it was important to get an idea on how you'd react in a real emergency situation… or at least as real as possible."
-        nak "The truth is that Mrs. Takawa asked me to give her my opinion on whether this training would be any use to you in such circumstances, and I thought this would be a good way to see for myself."
+        nak "The truth is that Miss Takawa asked me to give her my opinion on whether this training would be any use to you in such circumstances, and I thought this would be a good way to see for myself."
         nak "If you'd have broken down just now, that would have given this week a real downer ending, but at least I could have reported to your therapist that this training wasn't sufficient on its own and that she'd best go and try something else."
         nak "I figured the last thing you needed was a sense of security that'd prove to be false at the worst possible moment. I hope you can understand and that it helps to make you a little bit more confident about what you've learned here this week."
         "I can't say I don't understand his motivation, but I'm nevertheless unsettled at how panic-prone I just proved to still be, even though it didn't paralyze me this time."
@@ -508,7 +508,7 @@ label sh_ch20:
         $ set_window_tint(TINT_HANAKO)
 
         scene bg school_dormlilly
-        show lilly basic_smile at twoleft
+        show lilly basic_smile_paj at twoleft
         show hisao basic_smile_uni at tworight
         with locationskip
 
@@ -522,27 +522,27 @@ label sh_ch20:
         "Fortunately, I have too. Knowing this'd be a busy week, I've already tried to pack whatever I could last weekend."
         ha "Me too."
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_paj
         with chchange
 
         "Lilly gives a satisfied nod."
         "As I look around her room where we've spent the last half hour drinking tea and discussing the final preparations, I notice that Lilly's own suitcase is still only half-full, though I doubt I'd be able to even pack a single thing without being able to see."
         ha "Do you need some help with packing, Lilly?"
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_paj
         with chchange
 
         li "No, thank you, Hanako. I know exactly what items I still have left to pack, and I'll be sure to finish things up soon."
         ha "Okay then."
 
-        show lilly basic_weaksmile
+        show lilly basic_weaksmile_paj
         with chchange
 
         "Lilly lets out a short sigh."
         li "In other circumstances, we would be celebrating you getting your first aid certificate right now. I feel bad we lack the time for that at the moment."
         ha "It's okay. It's for a good reason after all."
 
-        show lilly basic_smile
+        show lilly basic_smile_paj
         with chchange
 
         li "We will hold a celebration for you once we're in Scotland, Hanako. That is a promise."
@@ -553,7 +553,7 @@ label sh_ch20:
 
         hi "I think it's probably best if Hanako and I take our leave now, Lilly. That'll give you time to wrap things up and get some rest."
 
-        show lilly basic_smileclosed
+        show lilly basic_smileclosed_paj
         with chchange
 
         li "That might not be a bad idea, Hisao. Let us assemble in my room tomorrow morning at ten o' clock. That'll leave us enough time to get to the station and take the train to the airport."
@@ -564,13 +564,13 @@ label sh_ch20:
         hi "Sounds like a plan. Good night, Lilly."
         ha "Good night, Lilly."
 
-        show lilly basic_cheerful
+        show lilly basic_cheerful_paj
         with chchange
 
         li "Good night, Hanako, Hisao. Rest well. Tomorrow will be a very exhausting day for sure."
 
         scene bg school_girlsdormhall
-        show hisao basic_smile_uni
+        show hisao basic_smile_uni_close
         with locationchange
 
         play sound sfx_lock
@@ -588,14 +588,14 @@ label sh_ch20:
         "We enter the room, and I take a seat on my bed. I feel tired and tense at the same time."
         "Today was stressful and exhausting. First the lesson on burns that hit several sensitive nerves, and then the trainer's faked heart attack right in front of me. And tomorrow might even be more nervewracking."
 
-        show hisao basic_worry_uni
-        with charaenter
+        show hisao basic_worry_uni_close
+        with characlose
 
         hi "Wow, your shoulders are still really stiff. I guess that little get-together with Lilly didn't really help?"
         "Hisao has placed a hand on my shoulder and gives me a worried frown."
         ha "It helped… a little bit."
 
-        show hisao basic_smile_uni
+        show hisao basic_smile_uni_close
         with chchange
 
         hi "Maybe this will help a little bit more."
@@ -609,13 +609,14 @@ label sh_ch20:
         "This is something he's been doing for me since we started dating—a way to take away whatever stress I built up over the day."
         ha "You can… d-do it a little more forcefully."
         hi "This might make a difference too."
-        "Hisao reaches around and unbuttons my blouse. I let it slide off my shoulders while he rubs his hands together to warm them. Moments later, I feel a warm hand on my bare left shoulder stroking it and then kneading it firmly."
+        "Hisao reaches up and pulls the shoulders of my nightgown away, letting it slide down enough to expose my shoulders, before rubbing his hands together to warm them. Moments later, I feel a warm hand on my bare left shoulder stroking it and then kneading it firmly."
         "Minutes pass without either of us saying anything, but the silence fortunately isn't too uncomfortable."
         "I've told Hisao all I cared to share about today earlier when I visited his room while he was in the process of packing his suitcase."
         "Right now, there simply isn't much to say."
         "After a while, Hisao gets off the bed."
         hi "Hanako, can you lie on your stomach now?"
-        "I comply with his request and feel my hips being pressed down as Hisao straddles me. Then I feel his hands press down on my upper back and make long, firm strokes."
+        "Readjusting my nightgown, I comply with his request and feel my hips being pressed down as Hisao straddles me. Then I feel my nightgown pulled up to my shoulder blades before his hands press down on my upper back and start making long, firm strokes."
+        "I let out a content sigh as the tension in my muscles slowly eases and is replaced by a sense of weary relaxation."
 
         show hisao basic_sweet_uni_close
         with charaenter
@@ -679,7 +680,7 @@ label sh_ch20:
 
         "Hisao laughs softly and then plants his lips on mine."
         "At first, our kisses are gentle, and we're content to just hold on to each other tightly, but soon our kisses become more feverish, and we're rubbing our bodies against each other."
-        "Suddenly, Hisao moves his hand down and playfully squeezes my butt which causes me to let out a yelp and reflexively thrust my hips forward, causing my crotch to press against his."
+        "Suddenly, Hisao moves his hand down and playfully squeezes my butt which causes me to let out a yelp and reflexively thrust my hips forward, causing my lower body to press against his."
 
         nvl clear
         nvl show dissolve
@@ -687,7 +688,7 @@ label sh_ch20:
         n "Hisao chuckles at my gasp and stops our makeout session to let his forehead rest against mine and look into my eyes for several seconds before giving me a quick peck on the lips."
         n "{vspace=60}I know what that gesture means. He's used it several times in the past to get a question across that'd be too embarassing to ask with words."
         n "{vspace=90}{space=30}{i}“Do you want to sleep together?”{/i}"
-        n "{vspace=90}I also know how to give the affirmative response. If I respond with a quick peck back, the way things are now, it'll probably take less than 15 seconds for the last piece of clothing to hit the floor."
+        n "{vspace=90}I also know how to give the affirmative response. If I respond with a quick peck back, the way things are now, it'll probably take less than 10 seconds for the last piece of clothing to hit the floor."
         n "Yet, there's a small sense of anxiety I feel that prevents me from immediately reciprocating his invitation. Maybe it's written on my face or maybe Hisao has noticed the pause."
 
         nvl hide dissolve
@@ -700,14 +701,14 @@ label sh_ch20:
         "I merely lower my gaze, trying to work out my feelings."
         ha "Ummm…"
         hi "It has been some time."
-        "That's certainly true. Between that night in a hotel where we had intercourse for the first time since the start of our relationship and the moment when Lilly announced her departure, Hisao and I did it several times."
+        "That's certainly true. Between that night in a hotel where we had intercourse for the first time since the start of our relationship and the moment when Lilly announced her departure, Hisao and I have done it several times."
         "While I tried to keep the afternoons and evenings open for Lilly during that time, I made sure to save the nights for Hisao."
 
         nvl clear
         nvl show dissolve
 
         n "I learned two things about myself during that period in time."
-        n "{vspace=30}The first was the fact that I actually possess a sex drive. I still prefer the lights to be either dimmed or off altogether and Hisao to always be the one taking the initiative. Despite that, I've been seeking him out all those times knowing full well that we'd probably end up between the sheets together, and, while we were busy doing the deed, I would find myself welcoming the experience."
+        n "{vspace=30}The first was the fact that I actually possess a sex drive. I still prefer the lights to be either dimmed or off altogether and Hisao tends to be the one to take the initiative. Despite that, I've been seeking him out all those times knowing full well that we'd probably end up between the sheets together, and, while we were busy doing the deed, I would find myself welcoming the experience."
         n "{vspace=30}The second thing I learned, however, was that my sex drive is also rather closely tied to my state of mind. So while I was busy taking Lilly on all sorts of outings, Hisao and I were far from hurting on the physical intimacy front. After Lilly announced her departure, however, I quickly found I was unable to get into the mood."
         n "And during Hisao's time in the hospital, well, I didn't think I'd even get so much as a kiss out of him anymore ever again. Even though we reconciled nearly two weeks ago, Hisao's been forced to take it slowly ever since, and I obviously haven't been eager to push him past his limits."
 
@@ -804,8 +805,13 @@ label sh_ch20:
 
         "We keep this up for some time until Hisao takes my face in both his hands and presses a quick peck on the tip of my nose."
         hi "You know, I'm the one who has to take it easy, but I can still tend to you, Hanako."
-        "He starts fondling my breasts and runs one finger up and down the front of my panties once."
-        ha "Ah…"
+        "He starts fondling my chest and runs one finger up and down the front of my panties once."
+
+        show ev pillowtalk_blanket
+        show pillowtalkhanako smileblush
+        with charachangeev
+
+        ha "Mmmm…"
         "Part of me would probably like that, but another part feels guilty about the idea of me having a good time without Hisao."
         "Ever since the first time we started our physical love life, we've done it on a strict give-and-take basis and even when we started having actual intercourse, we always tried to make certain that neither of us was missing out in any way."
         "Hisao seems to guess what I'm thinking."
@@ -814,6 +820,11 @@ label sh_ch20:
         ha "Ummm… I-I think I'll b-be fine with c-cuddling."
         hi "You sure?"
         "I take some time to figure out how to reply."
+
+        hide pillowtalkhanako smileblush
+        show ev pillowtalk_caress
+        with charachangeev
+
         ha "I… want m-my first experience s-since we got back together to be a little bit special."
         hi "Special?"
         ha "Taking our t-time, s-sharing the experience, building things up gently and slowly…"
