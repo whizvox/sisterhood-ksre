@@ -487,7 +487,7 @@ label sh_ch21:
         play music music_lilly fadein 4.0
 
         scene bg plane_seat
-        with Dissolve(2.0)
+        with shorttimeskip
 
         hi "Lilly?"
 
@@ -712,7 +712,7 @@ label sh_ch21:
         play ambient sfx_airport_ambience fadein 2.0
 
         scene bg airport_baggageclaim
-        with Dissolve(2.0)
+        with shorttimeskip
 
         show hanako def_worry_cas at tworight
         with chchange
@@ -753,7 +753,7 @@ label sh_ch21:
         hi "I'll be fine. You just guide Lilly for me."
         ha "Okay."
 
-        show lilly basic_sleepy_cas at twoleft
+        show lilly basic_sleepy_cas at twoleftsit
         show hanako cover_worry_cas at tworight
         with charaenter
 
@@ -763,6 +763,8 @@ label sh_ch21:
 
         show lilly cane_weaksmile_cas
         with chchange
+        show lilly cane_weaksmile_cas at twoleft
+        with charamove
 
         "Sporting a weary smile, Lilly closes her cell phone and gets up."
         li "Very good, Hisao. Akira says she's almost at the airport. I asked her to wait for us at the parking space in front of the terminal."
@@ -871,7 +873,7 @@ label sh_ch21:
         show akira basic_laugh_cas
         with chchange
 
-        "Akira laughs heartily at my comment as she opens the trunk of her car and takes Lilly's suitcase from my hands."
+        "Akira laughs heartily at my comment as we head over to her car and she opens the trunk and takes Lilly's suitcase from my hands."
 
         show akira basic_boo_cas
         with chchange
@@ -921,14 +923,19 @@ label sh_ch21:
         "Our last ride during that outing to a jazz club in the city near Yamaku showed us Akira's not particularly concerned with the speed limits, so we make sure to strap ourselves in firmly."
         aki "Good. Let's go, guys!"
 
-        stop ambient fadeout 5.0
+        stop ambient fadeout 2.0
+
+        scene black
+        with Dissolve(2.0)
+
+        queue ambient sfx_cars_ambience fadein 2.0
 
         "As we leave the airport behind us, I breathe a sigh of relief. Looks like the hard part of our vacation is over. Now the fun part can begin."
 
         stop music fadeout 2.0
+        stop ambient fadeout 2.0
 
         scene black
-        with Dissolve(2.0)
 
         if _in_replay:
             return

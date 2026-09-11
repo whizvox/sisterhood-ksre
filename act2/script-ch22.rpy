@@ -31,6 +31,8 @@ label sh_ch22:
         "With the covers on her side of the bed pulled back and her nightgown pulled up slightly to reveal her lower back, Hanako is a pleasant sight to wake up to."
         "Taking care not to alert her, I sneak a hand over to the left side of her lower back and playfully tickle her there."
 
+        with vpunch
+
         show hanagown worry_blush_close at center:
             ypos 1.2 alpha 0.0
             ease 0.2 ypos 1.0 alpha 1.0
@@ -170,22 +172,26 @@ label sh_ch22:
         hide hanagown
         with charaexit
 
-        "I take a quick shower, dry myself off, put my underwear back on, and am about to put on the rest of my clothes when a thought suddenly hits me."
-        "Most of my medication is still in my suitcase. If it stays in there, I might end up forgetting about it again just like what was nearly the case when we went to Hokkaido. It'd be really inconvenient if I ended up in the hospital here."
-        "I quickly head towards my suitcase in search of my pill collection."
+        "I take a quick shower, dry myself off and am about to put my clothes on when a thought suddenly hits me."
+        "Most of my medication is still in my suitcase. If it stays in there, I might end up forgetting about it again just like what was nearly the case when we went to Hokkaido. Best to take care of that now. It'd be really inconvenient if I ended up in the hospital here."
+        "I wrap a towel around my waist and quickly leave the shower area..."
         hi "Hey Hanako, do you mind if I put my medication on the little shelf above the sink so I won't…"
 
         stop music fadeout 1.0
 
-        show hanako defarms_shock_sum at tworight
-        show lilly cane_smile_sum:
+        show hanako def_worry_sum at tworight
+        show lilly cane_smile_sum_close:
             xalign 0.1
         with charaenter
+        with vpunch
 
+        show hanako defarms_shock_sum
+        with chchange
+
+        "Only to nearly bump into Lilly whom I didn't even hear come in."
         li "Ah. Good afternoon, Hisao."
-        "My sentence is cut short when I emerge from the doorway, and I find not just Hanako but also Lilly standing there."
-        "Well, Lilly's actually still standing in the doorway. How the heck did I miss the sound of her knocking?"
-        "As she observes me standing there in nothing but my boxers, Hanako's eyes grow wide and she puts her hand in front of her mouth in order to suppress a gasp."
+        "When did she get here?"
+        "As she observes me standing there in nothing but a towel, Hanako's eyes grow wide and she puts her hand in front of her mouth in order to suppress a gasp."
         hi "Lilly!"
         "Hanako's eyes dart back and forth between Lilly and me. I can tell she's trying to figure out what to say or do, but she doesn't seem quite able to think of anything."
         "Obviously, Lilly can't see me, though I bet she'll deduce that something's off if both of us just keep standing there without saying a word."
@@ -198,10 +204,10 @@ label sh_ch22:
 
         hi "Sorry, I didn't hear you knock. Did I interrupt you two?"
 
-        show lilly cane_smileclosed_sum
+        show lilly cane_smileclosed_sum_close
         with chchange
 
-        li "Not at all. I merely came to tell you and Hanako that dinner will be served in half an hour. It's been a rather warm day today, and it will apparently remain pleasant for most of the evening, so you can probably afford to change into some light clothing if you haven't done so already."
+        li "Not at all. I merely stopped by to tell you and Hanako that dinner will be served in half an hour. It's been a rather warm day today, and it will apparently remain pleasant for most of the evening, so you can probably afford to change into some light clothing if you haven't done so already."
         hi "Thanks. I'll keep that in mind. Will we be eating in the dining room?"
         li "I've asked if we can have our meal on the patio behind the house. Apparently the view is quite lovely, and some fresh air will do us good after spending an entire day indoors."
         hi "Works for me. Hanako?"
@@ -224,8 +230,8 @@ label sh_ch22:
         show hanako emb_blushtimid_sum
         with chchange
 
-        ha "That w-was… awkward."
-        hi "It kinda was. We got away with it though."
+        ha "That f-felt… awkward."
+        hi "It kinda did. I got away with it though."
         ha "Thank goodness."
 
         if _in_replay:
@@ -398,8 +404,8 @@ label sh_ch22:
 
         "At this moment, Allison returns with the first course of our meal. The soup tastes differently from the soup I usually buy from the cafeteria, but it's quite good nevertheless, and I think I can learn to really like this."
         "As we eat, I take some time to look the girls over."
-        "Lilly's wearing a blouse with fairly short sleeves, sandals, and a skirt that reaches down to her knees—a lot less conservative than her usual skirts which reach all the way to her ankles."
-        "Hanako's pants aren't unlike the ones she usually wears, but her blouse is slightly lighter. It still has long sleeves to cover the burns on her right arm, but the area around her neckline shows slightly more skin than her usual outfit does."
+        "Lilly's wearing a sleeveless blouse, sandals, and a skirt that reaches down to her knees—a lot less conservative than her usual skirts which reach all the way to her ankles."
+        "Hanako's pants aren't unlike the ones she usually wears, but her blouse is slightly lighter and breezier. It still has long sleeves to cover the burns on her right arm, but the area around her neckline shows slightly more skin than her usual outfit does."
 
         show lilly basic_smile_sum
         with chchange
