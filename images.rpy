@@ -132,7 +132,7 @@ init 1 python:
     sh_event("tipsyfun", ["stand_naked", "doggystyle", "doggystyle_closed", "collapse_climax", "collapse_climaxclosed"], mark_adult=True)
     sh_event("withoutthinking", ["lilly", "crowd", "cpr", "nohisao"])
     sh_event("bedridden", ["lillyakira", "akira", "akhiha"])
-    sh_event("sharedsoak", ["hisao_relax", "hisao_talk"]),
+    sh_event("sharedsoak", ["hisao_relax", "hisao_talk", "lilly_relax", "lilly_smile", "lilly_listen", "lilly_grimace", "lilly_speak", "lilly_shoulder", "lilly_shoulder2", "lilly_recoil", "lilly_history", "lilly_sniffle", "lilly_comfort", "lilly_cry", "lilly_hug", "lilly_reciprocate", "lilly_lean", "lilly_support"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
     sh_event("akirapast", ["argument", "elemschool", "grandparents1", "grandparents2", "midschool", "promotion", "study1", "study2", "unfavorite", "vacation"])
 
@@ -175,7 +175,7 @@ init 1:
         # TODO add without thinking CGs
         ("bedridden", "ev bedridden_lillyakira", "evg bedridden_lillyakira_2", "evg bedridden_lillyakira_3", "evg bedridden_lillyakira_4", "ev bedridden_akira", "evg bedridden_akira_2", "evg bedridden_akira_3", "evg bedridden_akira_4", "ev bedridden_akhiha", "evg bedridden_akhiha_2", "evg bedridden_akhiha_3", "evg bedridden_akhiha_4", "evg bedridden_akhiha_5", "evg bedridden_akhiha_6", "evg bedridden_akhiha_7", "evg bedridden_akhiha_8", "evg bedridden_akhiha_9"),
         ("akirapast", "ev akirapast_vacation", "ev akirapast_unfavorite", "ev akirapast_elemschool", "ev akirapast_midschool", "ev akirapast_argument", "ev akirapast_promotion", "ev akirapast_grandparents1", "ev akirapast_grandparents2", "ev akirapast_study1", "ev akirapast_study2"),
-        # TODO add shared soak (Lilly) CGs
+        ("sharedsoak_lilly", "ev sharedsoak_lilly_relax", "ev sharedsoak_lilly_smile", "ev sharedsoak_lilly_listen", "ev sharedsoak_lilly_grimace", "ev sharedsoak_lilly_speak", "ev sharedsoak_lilly_shoulder", "ev sharedsoak_lilly_shoulder2", "ev sharedsoak_lilly_recoil", "ev sharedsoak_lilly_history", "ev sharedsoak_lilly_sniffle", "ev sharedsoak_lilly_comfort", "ev sharedsoak_lilly_cry", "ev sharedsoak_lilly_hug", "ev sharedsoak_lilly_reciprocate", "ev sharedsoak_lilly_lean", "ev sharedsoak_lilly_support"),
         ("hanakohistory", "ev hanakohistory_bed", "ev hanakohistory_bed_pain", "ev hanakohistory_fire", "ev hanakohistory_fire_alone", "ev hanakohistory_urn", "ev hanakohistory_read", "ev hanakohistory_read_leave", "ev hanakohistory_read_alone", "ev hanakohistory_play", "ev hanakohistory_play_tease", "ev hanakohistory_bully", "ev hanakohistory_bully_cry", "ev hanakohistory_gate"),
     )
 

@@ -347,12 +347,22 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Shared Soak/cutouts/hisao_hisao_smile.png", "event/sharedsoak/sharedsoak_hisao_hisaosmile.png", [RESIZE_1080P]),
     ("@Event Art/Shared Soak/cutouts/hisao_hanako_smile.png", "event/sharedsoak/sharedsoak_hisao_hanakosmile.png", [RESIZE_1080P]),
     ("@Event Art/Shared Soak/cutouts/hisao_hanako_frown.png", "event/sharedsoak/sharedsoak_hisao_hanakofrown.png", [RESIZE_1080P]),
-    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal.png", "event/sharedsoak/sharedsoak_lilly_relax.jpg", [RESIZE_1080P]),
-    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal2.png", "event/sharedsoak/sharedsoak_lilly_shoulder.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalRelax2.png", "event/sharedsoak/sharedsoak_lilly_relax.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalRelax1.png", "event/sharedsoak/sharedsoak_lilly_listen.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/edits/lilly_smile.png", "event/sharedsoak/sharedsoak_lilly_smile.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalTalk3.png", "event/sharedsoak/sharedsoak_lilly_grimace.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalTalk4.png", "event/sharedsoak/sharedsoak_lilly_speak.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/edits/lilly_shoulder_normal.png", "event/sharedsoak/sharedsoak_lilly_shoulder.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal2fix.png", "event/sharedsoak/sharedsoak_lilly_shoulder2.jpg", [RESIZE_1080P]),
     ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal3.png", "event/sharedsoak/sharedsoak_lilly_recoil.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalTalk5.png", "event/sharedsoak/sharedsoak_lilly_history.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalTalk5.5.png", "event/sharedsoak/sharedsoak_lilly_sniffle.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalTalk5.6.png", "event/sharedsoak/sharedsoak_lilly_comfort.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinalTalk5.7.png", "event/sharedsoak/sharedsoak_lilly_cry.jpg", [RESIZE_1080P]),
     ("@Event Art/Shared Soak/edits/SharedSoakHanakoLillyFinal4.png", "event/sharedsoak/sharedsoak_lilly_hug.jpg", [RESIZE_1080P]),
     ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal5.png", "event/sharedsoak/sharedsoak_lilly_reciprocate.jpg", [RESIZE_1080P]),
     ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal6.png", "event/sharedsoak/sharedsoak_lilly_lean.jpg", [RESIZE_1080P]),
+    ("@Event Art/Shared Soak/SharedSoakHanakoLillyFinal6alt.png", "event/sharedsoak/sharedsoak_lilly_support.jpg", [RESIZE_1080P]),
     # chapter 29
     ("bgs/satou_bathroom_ni.jpg", "bgs/satou_bathroom_blur_ni.jpg", [blur(20)]),
     # chapter 29 - Evening Snack
@@ -537,6 +547,7 @@ GALLERY_THUMBNAILS = [
     ("event/eveningsnack/eveningsnack_cuddle.jpg", "event/_thumb/eveningsnack.jpg", [resize(targetheight=150), crop(35, 0, 235, 150)]),
     ("event/bedridden/bedridden_lillyakira.jpg", "event/_thumb/bedridden.jpg", [resize(targetheight=150), crop(53, 0, 253, 150)]),
     ("event/akirapast/akirapast_unfavorite.jpg", "event/_thumb/akirapast.jpg", [resize(targetheight=150), crop(9, 0, 209, 150)]),
+    ("event/sharedsoak/sharedsoak_lilly_relax.jpg", "event/_thumb/sharedsoak_lilly.jpg", [resize(targetheight=150), crop(45, 0, 245, 150)]),
     ("event/hanakohistory/hanakohistory_bed.jpg", "event/_thumb/hanakohistory.jpg", [resize(targetheight=150), crop(33, 0, 233, 150)]),
 ]
 
