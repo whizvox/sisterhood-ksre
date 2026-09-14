@@ -90,7 +90,7 @@ init 1 python:
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
     sh_sprites("hanako", ["bashful", "distant", "normal", "smile", "worry"], poses=["basic", "cover"], outfits=["sum", "sum_clip"])
-    sh_sprites("hanako", ["shock", "strain", "worry"], poses=["def", "defarms"], outfits=["sum"])
+    sh_sprites("hanako", ["shock", "speechless", "strain", "worry"], poses=["def", "defarms"], outfits=["sum"])
     sh_sprites("hanako", ["worry"], poses=["def", "defarms"], outfits=["sum_clip", "sum_clipunb"])
     sh_sprites("hanako", ["blushing", "blushtimid", "downsad", "downsmile", "downtimid", "emb", "sad", "smile", "timid"], poses=["emb"], outfits=["sum", "sum_clip"])
     sh_sprites("hanagown", ["worry_blush"])
@@ -140,7 +140,7 @@ init 1 python:
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
     sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "bathroom_ni", "bathroom_blur_ni", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
-    sh_bgs("school", ["staircase3", "hallway4", "therapist", "therapist_blur1", "therapist_blur2", "newspaper", "firstaidclass"])
+    sh_bgs("school", ["firstaidclass", "hallway4", "newspaper", "office", "staircase3", "therapist", "therapist_blur1", "therapist_blur2"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
     sh_bgs("city", ["coffeeshop"])

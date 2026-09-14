@@ -34,7 +34,7 @@ label sh_ch29:
 
         nvl hide dissolve
 
-        scene bg satou_bathroom
+        scene bg satou_bathroom_ni
         with locationchange
 
         nvl clear
@@ -408,11 +408,11 @@ label sh_ch29:
         hide soapopera_hanako
         with Dissolve(1.0)
 
-        "I think I can see the traces of an awkward smile on his face as sits in front of me, using his hands to cover himself in order to prevent things from being too awkward."
+        "I think I can see the traces of an awkward smile on his face as he sits in front of me, using his hands to cover himself in order to prevent things from being too awkward."
         "I retrieve the soap, put some of it in my hands, and start running my hands up and down his legs and feet, then move behind him and continue on his arms."
         "While I'm busy soaping his shoulders, I suddenly become aware of his gaze towards the nearby wall-mounted mirror, making me a little uncomfortable."
         "Despite the room being dimly lit, our reflections are still clearly visible and I can tell he's watching me."
-        "Since I can't cover myself up and wash him at the same time, I gently nudge his chin away with my finger and kiss him from behind."
+        "Not wanting to feel too awkward, I gently nudge his chin away with my finger and kiss him from behind."
         "Keeping him occupied this way, I reach down, pour some more liquid soap into my cupped hand, and then start on his chest, paying special attention to the scar in the middle."
         "I feel his breathing speed up as my hands go lower and lower, rubbing his thighs and abdomen before stopping at the place his own hands are covering."
 
@@ -605,11 +605,14 @@ label sh_ch29:
         "I squeeze my eyes shut and grit my teeth in an attempt to brace myself."
 
         show ev soapopera_hanako2_climax at truecenter:
-            zoom 1.05
-            ease 0.5 zoom 1.0
+            zoom 1.07
+            ease 0.5 zoom 1.02
         with charachangeev
+
         with vpunch
+
         pause 0.5
+
         with vpunch
 
         "And then the climax hits me; several jolts of intense pleasure that cause my body to shudder uncontrollably. It's like a white light flashes brightly in the back of my head."
@@ -698,65 +701,104 @@ label sh_ch29:
         hide bg2
         with None
 
-        show hisao basic_grin_nak_close_ni
-        with charaenter
+        scene ev sharedsoak_hisao_talk
+        show sharedsoakhanako frown
+        show sharedsoakhisao smile
+        with charachangeev
 
         "When I take my head off Hisao's shoulder, I feel him turning towards me."
         hi "Good morning, sleepyhead."
+
+        hide sharedsoakhanako
+        with charachangeev
+
         ha "I… wasn't asleep. Just… relaxing a bit."
 
-        show hisao basic_smile_nak_close_ni
-        with chchange
+        show sharedsoakhanako frown
+        show sharedsoakhisao talk
+        with charachangeev
 
         hi "I might have dozed off myself a little as well."
+
+        hide sharedsoakhanako
+        hide sharedsoakhisao
+        with charachangeev
+
         ha "I think it's a little darker outside than it was before. Do you know what time it is?"
+
+        show sharedsoakhanako frown
+        show sharedsoakhisao smile
+        with charachangeev
+
         hi "I don't know… or care. I don't have any further plans for the evening, so we can stay in here as long as we like."
+
+        show sharedsoakhanako smile
+        with charachangeev
+
         ha "I'd like to stay here for a bit longer. The water's really comfortable."
-
-        show hisao basic_grin_nak_close_ni
-        with chchange
-
         hi "Glad to hear that."
+
+        show sharedsoakhanako frown
+        hide sharedsoakhisao
+        with charachangeev
+
         ha "Ummm… Hisao?"
-
-        show hisao basic_smile_nak_close_ni
-        with chchange
-
         hi "Yes?"
         ha "Is it… comfortable for you too?"
+
+        show sharedsoakhisao smile
+        with charachangeev
+
         hi "Sure."
+
+        hide sharedsoakhisao
+        with charachangeev
+
         ha "But… y-you like your baths hotter, don't you?"
         hi "Only a little. That doesn't mean the current water temperature is uncomfortable. Far from it."
         ha "S-sorry."
-
-        show hisao basic_speak_nak_close_ni
-        with chchange
-
         hi "Hey, don't be like that. Like I said, it's still a very nice temperature. And the last thing I want is for you to get unwell again."
         ha "I'm… s-sorry about last week."
         hi "I'm sorry too."
         ha "Huh? W-why?"
+
+        show sharedsoakhisao talk
+        with charachangeev
+
         hi "When we came back from that picnic last week and you went to get some rest after dinner, Lilly's mom approached me and asked me if you were prone to heat illnesses."
         hi "She said… uh… burn victims are sometimes more vulnerable to them than most people. I… ah… didn't really know how to answer that."
         hi "She then told me that I should keep an eye on you during warm days so you wouldn't get unwell again."
 
-        show hisao basic_neutral_nak_close_ni
-        with chchange
+        hide sharedsoakhisao
+        with charachangeev
 
         "I already thought it suspicious that nobody ever brought the subject up again after that day. I shouldn't have been surprised that it was discussed without me present."
+
+        hide sharedsoakhanako
+        with charachangeev
+
         ha "I'm sorry. I d-didn't mean to cause trouble."
+
+        show sharedsoakhanako frown
+        show sharedsoakhisao talk
+        with charachangeev
+
         hi "It's fine. I felt a bit stupid though. I always overlooked the fact that maybe your… injuries came with some catches of their own."
         hi "I kind of feel I should have made an effort to learn about them. Either by reading up on the subject or by simply asking you."
         ha "W-why?"
         hi "Well, you're keeping an eye on me too. You even followed a first aid course to be better suited to watch over me. I feel I can't do anything less."
+
+        hide sharedsoakhisao
+        with charachangeev
+
         "That's not a bad point. We're supposed to look out for each other. I never really talked to him about my burn injuries because I don't like talking about them in general. But after hearing what he said just now, I feel that it's not him who ought to apologize for dropping the ball, but me."
         ha "You d-don't need to apologize. I… probably should have told you."
         hi "I'm willing to listen at anytime you're willing to talk."
         ha "N-now?"
         hi "Only if you're comfortable with it."
-        "I don't think I'm very comfortable with it, but I would like to get it out of the way, and I'm feeling fairly comfortable right now."
+        "I don't think this is a subject I'll ever be completely comfortable talking about, but I would like to get it out of the way, and I'm feeling fairly at ease right now."
 
-        scene ev sharedsoak_hisao_talk
+        hide sharedsoakhanako
         with charachangeev
 
         ha "There's… n-not really that much to tell. There are a few minor things like… ummm…"
@@ -934,13 +976,13 @@ label sh_ch29:
         hide sharedsoakhanako
         with charachangeev
 
-        "I smile as he wraps his arms around my waist and pulls me onto his lap."
+        "I smile as he wraps his arm around my waist and pulls me closer."
         ha "Umm… l-like what?"
         "He snickers and gives me a kiss on the cheek."
         hi "We could… I don't know… go out onto the beach and count how many pebbles there are…"
         "I smilingly shake my head."
         hi "…or we could… like… go to the yard, draw some squares on the ground and play a game of hopscotch…"
-        "I giggle, shake my head again, and we share a kiss. Ever since he embraced me, my desire's been steadily rising."
+        "I giggle, shake my head again, and we share a kiss. Ever since he embraced me, a swarm of butterflies has been fluttering around in my stomach and it's been getting more frantic with every passing moment."
         hi "…or we could simply return to our room and… well… you know…"
         "I smile, eagerly nod my head, and we share another kiss. Then I let my head rest briefly against his. A quick peck on my lips seals the deal and I get off his lap."
 
@@ -1180,7 +1222,7 @@ label sh_ch29:
         "I finally take a deep breath, take his member between my fingers, stick out my tongue, and touch it against his base. Then I run it along its length, stopping just as I reach the head."
         "I hear a pleased sigh coming from Hisao. It sounds like he likes this and doing this isn't so bad, so I run my tongue along the length of his member again."
         "And again."
-        "And again."
+        "And once more."
         "His breathing has started running in tandem with the caressing of my tongue. Having gained some courage from his reactions so far, I take his member in my hand and gently pull it upright."
         "I notice that the tip is glistening ever so slightly. Forcing my hesitation aside, I lower my head, place a gentle kiss on it and then give it a quick flick with my tongue."
         "As I do so, a faint, foreign smell enters my nostrils. Trying to avoid thinking too hard on this, I start licking the tip some more, each flick of my tongue slightly more forceful than the previous one."
@@ -1613,7 +1655,7 @@ label sh_ch29:
         "My mind wanders in random directions as I recover from the experience I just had."
         "I hear him getting off the bed and heading somewhere. I briefly hear the sound of running water, but it seems to come from very far away."
 
-        scene ev pillowtalkblanket dark
+        scene ev pillowtalk_blanket dark
         with Fade(1, 0, 1, color="#141152")
 
         play music music_twinkle fadein 4.0
@@ -1641,15 +1683,11 @@ label sh_ch29:
         "It's pretty dark in the room now, but I think I can see him smile. He tenderly starts running his fingers through my hair."
         hi "No bad taste in your mouth anymore?"
 
-        show pillowtalkhanako grinupblush dark
+        show pillowtalkhanako grinblush dark
         with charachangeev
 
         ha "N-no. You?"
         hi "Naw. It didn't taste bad to begin with. My tongue's kind of tired now, though. Kind of like that time last week when we were trying to find out how long we could keep a kiss going."
-
-        show pillowtalkhanako grinblush dark
-        with charachangeev
-
         "I giggle at the memory of that little game we played back then. The comparison is surprisingly accurate."
         ha "M-mine too."
         "My jaw's a little tired as well. Still, for a first time, I don't think we did that badly. We're lacking experience right now, but I wouldn't mind doing this again in the future."

@@ -42,7 +42,7 @@ label sh_ch24:
         "We didn't stay at the pub for much longer afterwards, opting to spend the rest of the evening at the Satou home. When we got there though, Akira expressed the desire to be brought back to her place."
         "Karla seems a bit disappointed."
 
-        show karla basic_cheerful
+        show karla basic_sheepish
         with chchange
 
         ka "I'll be returning to the place where your father is having his meeting. If you'd like, I could take you along to meet the investors we've been dining with this evening."
@@ -99,8 +99,8 @@ label sh_ch24:
         li "We're going to need a corkscrew and some glasses. The staff have already gone home, so we'll have to search the kitchen ourselves. If you come across any snacks you like, feel free to take them as well."
 
         scene bg satou_kitchen_ni
-        show hanako basic_smile_sum at tworight
-        show lilly cane_smileclosed_sum at twoleft
+        show hanako basic_smile_sum at tworightsit
+        show lilly cane_smileclosed_sum at twoleftsit
         with chchange
 
         "Hanako and I guide Lilly to the mansion's large kitchen, and the two of us start searching the various cupboards and drawers."
@@ -126,7 +126,7 @@ label sh_ch24:
 
         ha "Sure."
 
-        show lilly cane_smileclosed_sum at center
+        show lilly cane_smileclosed_sum at centersit
         with charadistant
 
         "As the girls prepare to start cutting the cheese, a thought suddenly springs up in the back of my mind."
@@ -637,15 +637,16 @@ label sh_ch24:
 
         "When I open my eyes, I can barely hold back a shocked gasp."
         "What caught me off guard wasn't the fact that Hanako has straddled my lap, but the fact that she has unbuttoned several buttons of her blouse, giving me an ample view of her chest while still hiding most of the scarring on her right side."
+
+        show ev celloandwine_lap_rest
+        with charachangeev
+
         "I instinctively try to look past her to see if Lilly has noticed anything, but as I try to do so, Hanako takes my face in her hands and gently but firmly presses it to her chest."
         "Of all the thoughts that suddenly assault my brain at once, the first one is bizarrely the realization that I know a story (was it a book or a movie?) where a woman distracts a guard in exactly the same way."
         "Come to think of it, distraction is probably the underlying thought behind Hanako's action. She's beating Lilly's distraction by offering a more tempting one."
         "How am I supposed to deal with {i}this{/i}?"
         "I didn't expect Hanako to be this bold, even after emptying a few glasses of wine. Lilly can't see us, but even so…"
         "I can't just tell her out loud to get off my lap and button up her blouse. And Hanako's probably well aware of that. The circumstances effectively have me gagged."
-
-        show ev celloandwine_lap_rest
-        with charachangeev
 
         "I slowly turn my head to the side. Hanako's breasts aren't large enough to smother someone, but it's slightly less uncomfortable with my nose no longer pressing against her breastbone."
         "I wonder if this is what she gets like every time she's had too much to drink. She also got pretty clingy the last time."
@@ -734,136 +735,20 @@ label sh_ch24:
 
         show ev:
             ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
             ease 0.5 ypos 540
+            repeat
         with None
-        pause 0.4
 
         n "I once again wrap my arms around her, and when we share another kiss, I notice that Hanako has started moving her hips a little."
         n "{vspace=30}I give her a surprised look. She's taking it slightly farther than I anticipated. There's a playful smile on her face—broader than usual with just a tiny tinge of embarassment. Her face and upper chest look flushed, either from embarassment, intoxication, or arousal. Probably a combination of all three."
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
         n "I'm not sure whether to feel nervous from or excited by Hanako's bold approach. Her motion, a slow but steady grind, has caused a pleasant feeling to start spreading from my groin to the rest of my body. As a sense of arousal starts building up inside me, I find that, without having noticed it, I've started making movements with my own hips to match hers."
 
         nvl clear
 
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
         n "I lean back to look at her face and I can see she's trying her utmost to avoid making any sounds. In fact, we're both going back and forth between holding our breath and exhaling sharply whenever Lilly's song picks up slightly in volume. It's somewhat of a reassurance that Hanako's still going out of her way to make sure Lilly can't hear us, even with her usual inhibitions lowered."
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
         n "{vspace=30}The question is how long we can keep this up. The experience is both pleasant and extremely frustrating at the same time. The friction caused by our lower bodies rubbing against each other is starting to feel better with each passing moment and when I look at the way Hanako squeezes her jaw shut and closes her eyes every few seconds I can she very much feels the same thing."
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
         n "But neither of us dares to make even the slightest sound or move a single muscle except for those required to continue our rocking motion."
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        n "At the same time, despite the fact we're in somebody else's living room, despite the fact our best friend is only a little more than two meters away from us, despite the fact a single loud gasp or moan could betray us, I can barely resist the temptation to kiss her passionately, to fondle her chest, to touch her everywhere."
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
-        show ev:
-            ease 0.5 ypos 550
-        with None
-        pause 0.4
-        show ev:
-            ease 0.5 ypos 540
-        with None
-        pause 0.4
-
+        n "At the same time, despite the fact we're in somebody else's living room, despite the fact our best friend is only a little more than two meters away from us, despite the fact a single loud gasp or moan could betray us, I can barely resist the temptation to take things even further."
         n "I put my hands on her hips and press her down a little harder. As a result, we both let out an involuntary sigh."
 
         nvl hide dissolve
@@ -1340,11 +1225,10 @@ label sh_ch24:
         with charachangeev
 
         show ev:
-            ease 0.1 xpos -415
-            ease 0.3 xpos -375
-            ease 0.1 xpos -415
-            ease 0.3 xpos -375
-        with Pause(0.8)
+            ease 0.2 xpos -415
+            ease 0.4 xpos -375
+            repeat
+        with None
 
         "I feel a deep sense of satisfaction as I thrust my hips back and forth, as if I've been staring at a wrapped present for days on end and finally get to open it."
 
@@ -1355,13 +1239,10 @@ label sh_ch24:
         pause 0.1
 
         show ev:
-            ease 0.3 xpos 360
+            ease 0.2 xpos 360
+            ease 0.4 xpos 400
+            repeat
         with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 400
-        with None
-        pause 0.3
 
         "The pleasure that shoots through my lower body is nearly enough to make my knees give out, and I hold onto Hanako's hips for added support. I notice the sounds that Hanako's making are a bit louder and more unrestrained than usual."
 
@@ -1370,49 +1251,29 @@ label sh_ch24:
         with None
         pause 0.3
 
+        show ev:
+            ease 0.4 xpos 2240
+            ease 0.2 xpos 2200
+            repeat
+        with None
+
         "Wanting to pleasure her more, I bend over a bit and fondle her breast, then try to position my hand near the spot where we're joined, so I can finger her some more."
-
-        show ev:
-            ease 0.3 xpos 2240
-        with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 2200
-        with None
-        pause 0.3
-
         "As I feel my way around, I suddenly feel Hanako's hand over my own as she guides me to the right spot. It's a bit awkward since I can't move as easily while bending over her like I am."
-
-        show ev:
-            ease 0.3 xpos 2240
-        with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 2200
-        with None
-        pause 0.3
-
-        show ev:
-            ease 0.3 xpos 2240
-        with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 2200
-        with None
-        pause 0.3
-
         "Still, Hanako's cute moans in response to the stimulation more than make up for that."
 
         show ev:
-            ease 0.3 xpos 2240
-        with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 2200
+            ease 0.3 xpos 2200 ypos 220
         with None
         pause 0.3
 
         "As I feel my limit approaching, I take hold of Hanako's hand, which is still resting on top of my own and press it against the spot I was focusing on until now."
+
+        show ev:
+            ease 0.4 xpos 2240
+            ease 0.2 xpos 2200
+            repeat
+        with None
+
         "She doesn't react immediately, and for a second I believe she's not going for it. Then she furiously starts rubbing and I firmly grab hold of her buttocks with both hands and start thrusting again."
 
         show ev tipsyfun_doggystyle at truecenter:
@@ -1423,25 +1284,11 @@ label sh_ch24:
 
         show ev:
             ease 0.3 xpos 1000
+            ease 0.2 xpos 960
+            repeat
         with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 960
-        with None
-
-        pause 0.3
 
         "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips…"
-
-        show ev:
-            ease 0.3 xpos 1000
-        with None
-        pause 0.3
-        show ev:
-            ease 0.3 xpos 960
-        with None
-        pause 0.3
-
         "The sound of our heavy breathing, even the sound of my body slapping against hers (which we usually find embarassing) all combine to push us towards our rapidly approaching climax."
 
         show ev tipsyfun_doggystyle_closed:
@@ -1451,7 +1298,9 @@ label sh_ch24:
         pause 0.3
 
         show ev:
-            ease 0.3 xpos 960
+            ease 0.2 xpos 960
+            ease 0.3 xpos 1000
+            repeat
         with None
 
         pause 0.3
@@ -1460,29 +1309,26 @@ label sh_ch24:
 
         play sound sfx_impact
 
-        show ev tipsyfun_collapse_climax:
+        show ev tipsyfun_collapse_climaxclosed:
             pos (960, 540) zoom 0.52
         with vpunch
 
+        pause 0.1
+
+        show ev:
+            ease 0.2 xpos 1000 ypos 520
+            ease 0.1 xpos 960 ypos 540
+            repeat
+        with None
+
+        pause 0.1
+
         "The combination of the wine slightly dulling my sense of balance and the first jolt that surges through my groin makes my knees buckle and I collapse on top of Hanako, pinning her underneath me."
 
-        show ev:
-            ease 0.1 xpos 1000 ypos 520
-        with None
-        pause 0.1
-        show ev:
-            ease 0.1 xpos 960 ypos 540
-        with None
-        pause 0.1
-
-        show ev:
-            ease 0.1 xpos 1000 ypos 520
-        with None
-        pause 0.1
-        show ev:
-            ease 0.1 xpos 960 ypos 540
-        with None
-        pause 0.1
+        pause 0.5
+        with vpunch
+        pause 0.5
+        with vpunch
 
         "I'm already too caught up in the moment to get back into position and simply keep thrusting for as long as the waves of extacy are coursing through my body."
 
@@ -1496,11 +1342,17 @@ label sh_ch24:
         pause 0.5
         with vpunch
 
+        show ev tipsyfun_collapse_climax:
+            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+        with Dissolve(1.0)
+
         "I'm only vaguely aware of Hanako underneath me suddenly crying out, tensing up and bucking her hips several times."
 
         show ev tipsyfun_collapse_climaxclosed:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
         with Dissolve(1.0)
+
+        pause 0.1
 
         show black
         with { "master": Dissolve(5.0) }
@@ -1508,13 +1360,18 @@ label sh_ch24:
         stop music fadeout 10.0
 
         "When my body finally relaxes, I make a half-hearted attempt to get up, only to experience a sudden spell of dizziness."
+
+        play sound sfx_rustling
+
         "Being unable to muster the willpower to do anything other than lie back down and cling to the girl sharing the bed with me, my wandering hand manages to find the bedsheet that I quickly pull over us."
         "As our bodies settle down from our act of passion, a mixture of weariness and utter bliss washes over me."
         "Before I give in to the sense of drowsiness, one last thought passes through my mind."
         "This is heaven!"
 
         scene black
-        with Dissolve(2.0)
+        with shorttimeskip
+
+        pause 2.0
 
         if _in_replay:
             return

@@ -3,8 +3,8 @@ label sh_ch25:
 
         $ set_window_tint(TINT_HISAO)
 
-        scene black
-        with None
+        play sound sfx_impact
+        scene white
 
         "I wish I was dead."
         "Was it this bad last time?"
@@ -75,7 +75,7 @@ label sh_ch25:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
         with dissolve
 
-        "Even the small rays of light slipping past my eyelids hurt, but I resist the temptation to close my eyes again."
+        "Even the small rays of light slipping past my squinted eyelids hurt, but I resist the temptation to close my eyes again."
         "Eventually, my vision has adapted enough for me to look around the room through bleary eyes."
 
         show ev at truecenter:
@@ -102,7 +102,7 @@ label sh_ch25:
 
         play sound sfx_rustling
 
-        n "I pull away the covers just a little bit so my feet become visible. I notice that I'm still wearing my socks and boxers, and my pants are still around my ankles. I groan softly in exasperation."
+        n "I pull away the covers just a little bit so my feet become visible. I notice that I'm still wearing my socks, and my boxers and pants are still around my ankles. I groan softly in exasperation."
         n "The way I'm feeling right now, even the effort of having to pull up my pants and underwear comes across as an excruciating task. Still, I'll have to do it if I want to make it over to the window."
         n "{vspace=30}Trying my hardest to ignore my body's protests, I manage to sit up, reach out, and pull up my pants. The window is only four to five steps away, but it feels more like fifty."
 
@@ -469,7 +469,7 @@ label sh_ch25:
         "Fighting the lethargic sensation that's still weighing me down, I get up and make my way to the kitchen."
         "Not hearing any sounds coming from there, I assume it to be empty and walk in letting out an unrestrained yawn…"
 
-        show hanako defarms_shock_sum at tworight
+        show hanako defarms_shock_sum at tworightsit
         with { "master": chchangefast }
 
         stop music fadeout 1.0
@@ -478,7 +478,7 @@ label sh_ch25:
         hi "Hanako! Ummm… I mean, good morning, Hanako."
         "I hadn't expected Hanako to be up already. She probably went straight down to the kitchen to get something to drink. She doesn't look in much better shape than Lilly or myself, but as we spot each other, our hangovers are quickly made irrelevant by a more pressing matter."
 
-        play ambient sfx_ticktock
+        play ambient sfx_ticktock fadein 5.0
 
         show hanako emb_blushtimid_sum
         with chchange
@@ -693,9 +693,6 @@ label sh_ch25:
 
         stop music fadeout 2.0
 
-        scene black
-        with Dissolve(2.0)
-
         if _in_replay:
             return
 
@@ -704,11 +701,11 @@ label sh_ch25:
         $ set_window_tint(TINT_HISAO)
 
         scene bg satou_kitchen
-        show hanako basic_bashful_sum at tworight
-        show lilly basic_weaksmile_sum at twoleft
-        with Dissolve(1.0)
+        show hanako basic_bashful_sum at tworightsit
+        show lilly basic_weaksmile_sum at twoleftsit
+        with shorttimeskip
 
-        play music music_daily fadein 4.0
+        queue music music_daily fadein 4.0
 
         hi "Are you certain you don't need my help preparing all of this? There's a truckload of food on this table."
         li "Very certain, Hisao. You know what they say. Too many cooks in the kitchen spoil the broth. We might end up getting in each other's way."
@@ -718,10 +715,10 @@ label sh_ch25:
         with chchange
 
         ha "Ummm…"
-        li "The offer's appreciated, Hisao, but I think it won't be necessary. If I can think of something, I will let you know."
+        li "The offer's appreciated, Hisao, but I think it won't be necessary. If I can think of anything, I will let you know."
         "I sigh softly and sit back down in the kitchen chair near the fridge."
 
-        show lilly at center
+        show lilly at centersit
         with charachangealways
 
         "Lilly and Hanako do look like they can handle themselves with the picnic food, but I don't really like feeling like dead weight."
@@ -780,7 +777,7 @@ label sh_ch25:
 
         play ambient sfx_boilingwater
 
-        "I get up from my chair and get over to the kitchen island where a pan filled with water and macaroni is boiling on the fire."
+        "I get up from my chair and get over to the stove where a pan filled with water and macaroni is boiling on the fire."
 
         show lilly basic_smile_sum
         show hanako basic_bashful_sum
@@ -813,7 +810,22 @@ label sh_ch25:
 
         play sound sfx_ovenbeep
 
+        show hanako defarms_worry_sum at rightsit
+        with charamove
+
+        pause 1.5
+
+        show hanako def_worry_sum
+        with chchange
+
+        show hanako def_worry_sum at tworightsit
+        with charamove
+
         "Before I can approach the kitchen table, a high-pitched whine from the oven draws our attention. Hanako gets up from her chair, places the bread she and Lilly prepared into the oven, and then takes the bowl of macaroni from my hands."
+
+        show hanako defarms_worry_sum
+        with chchange
+
         "She places it on the table some distance away from Lilly and herself."
 
         show lilly basic_cheerful_sum
@@ -828,7 +840,24 @@ label sh_ch25:
 
         "Having nothing more to do, I get back to watching Lilly and Hanako work. They do seem to work well together, and someone looking at Lilly without paying attention to her eyes probably wouldn't be able to tell that she's blind."
 
-        play sound sfx_cuttingboard
+        play sound sfx_ovenbeep
+        queue sound sfx_cuttingboard
+
+        show hanako def_worry_sum
+        with chchange
+        show hanako def_worry_sum at rightsit
+        with charamove
+
+        pause 1.5
+
+        show hanako defarms_worry_sum
+        with chchange
+
+        show hanako defarms_worry_sum at tworightsit
+        with charamove
+
+        show hanako basic_worry_sum
+        with chchange
 
         "Eventually, another sound from the oven alerts us to the fact the bread is ready, and after Hanako—armed with two oversized oven mitts—retrieves it, she gets back to cutting up the vegetables and fruit while Lilly starts working on putting the sandwiches together."
 
@@ -898,9 +927,9 @@ label sh_ch25:
         "Lilly lets out an amused giggle."
         li "Don't worry, Hisao. It's not. Hanako made sure to order the ingredients by type of container first and then alphabetically."
         li "The ingredients required for the first step were placed at ten o' clock from my point of view and those required for the second step were placed at two o' clock."
-        hi "You mean to say you two have got a system in place for ordering this kind of stuff?"
+        hi "You mean to say you two have got a system in place for putting this kind of stuff in order?"
         li "We do. It's not the first time we've cooked together. Having a fixed location for everything isn't just important when cooking without sight."
-        li "It's also essential in keeping your life in general in order when you're unable to see. Hanako knows almost exactly how I like things ordered, both in the kitchen and in my dorm room. She's one of the very few who do."
+        li "It's also essential in keeping your life in general in order when you're unable to see. Hanako knows almost exactly how I like things arranged, both in the kitchen and in my dorm room. She's one of the very few who do."
         hi "So that's why you didn't want me helping her with this?"
 
         show lilly basic_weaksmile_sum
@@ -1080,7 +1109,7 @@ label sh_ch25:
         with chchange
 
         "However, when I take off the cap to take a closer look at it, I can see it's a rather cheap piece of headwear that's probably part of a promotional campaign or something. I read the letters on the front and give Karla an unsure look."
-        hi "‘Boyd's bike rental’?"
+        hi "‘Boyd's Bike Rental’?"
 
         show karla basic_sheepish_cas
         with chchange
@@ -1127,8 +1156,6 @@ label sh_ch25:
 
         hi "Alright, on the count of three… {w=0.5}One… {w=0.5}two… {w=0.5}three."
 
-        window hide None
-
         show tandembike hanako shock:
             parallel:
                 ease 0.2 ypos 1.1
@@ -1138,10 +1165,7 @@ label sh_ch25:
                 ease 0.05 xpos 0.5
         with { "master": Dissolvemove(0.2) }
 
-        call screen doublespeak(hi, "Woah!", ha, "Ah!")
-
-        window show None
-        window auto True
+        $ show_doublespeak(hi, "Woah!", ha, "Ah!")
 
         "That proved trickier than I thought. Keeping your balance is quite difficult when someone on the same bike is trying to do the same at the exact same moment."
         "Lilly and her mother seem to be doing slightly better mostly due to Karla seeming better at anticipating her daughter's movements."
@@ -1182,7 +1206,7 @@ label sh_ch25:
         stop music fadeout 2.0
 
         scene black
-        with Dissolve(2.0)
+        with shorttimeskip
 
         if _in_replay:
             return

@@ -347,7 +347,7 @@ label sh_ch26:
         show karla basic_smile_cas
         with chchange
 
-        ka "The company started out producing medical devices like EKGs and respirators for hospitals, though nowadays we're also involved in the production of heart rate monitors and AEDs, which can be also sold to consumers and businesses."
+        ka "The company started out producing medical devices like EKGs and respirators for hospitals, though nowadays we're also involved in the production of heart rate monitors and AEDs, which can also be sold to consumers and businesses."
 
         show lilly basic_weaksmile_sum
         show karla basic_sheepish_cas
@@ -417,7 +417,7 @@ label sh_ch26:
         ka "It's actually not that far from the truth. Especially when we first moved here, I often acted like his secretary while he was still getting the hang of western business culture."
         ka "But my official position is being in charge of public relations. I have accumulated a fair bit of unofficial clout on the workfloor, though."
         ka "I've been extremely involved in this whole deal as well, which is why I'll be accompanying my husband in a few weeks to see this thing through."
-        "I'm a bit surprised to hear that Lilly's mother's working alongside her husband—almost like an equal business parter from the sound of it."
+        "I'm a bit surprised to hear that Lilly's mother's working alongside her husband—almost like an equal business partner from the sound of it."
         "If the Satous are really this traditional, wouldn't they consider a married woman working to be inappropriate? Especially at such an influental position."
         hi "Did you already work for the company before you moved here?"
 
@@ -440,7 +440,7 @@ label sh_ch26:
 
         ka "Shortly after moving here, my husband indicated that he needed someone to help him bridge the culture gap between himself and his employees, so he that could become a better manager for his personnel."
         ka "Someone with personal experience with both the Western and Japanese culture. Someone he felt he could trust and have his best interests at heart."
-        ka "He chose me to fill that role, the board eventually complied with his request, and I ended up answering his summons, eventually joining the PR department."
+        ka "He chose me to fill that role, the board complied with his request, and I ended up answering his summons, eventually joining the PR department."
 
         show lilly basic_weaksmile_sum
         with chchange
@@ -505,18 +505,22 @@ label sh_ch26:
 
         "Hanako meekly shakes her head, but Lilly takes her handbag, zips it open, and casually takes a copy of the lastest school newspaper out of it."
 
-        show hanako def_worry_sum
+        show hanako def_speechless_sum
         show lilly basic_planned_sum
-        show karla basic_laugh_cas
         with chchange
 
         li "Coincidentally, I happen to have one on me."
+
+        show karla basic_laugh_cas
+        with chchange
+
         "Lilly's mother chuckles briefly at the dumbfounded look on my and Hanako's faces and then takes the newspaper from her daughter."
 
         show karla basic_serious_cas
+        show hanako def_worry_sum
         with chchange
 
-        "She takes a pair of reading glasses out of her pocket, puts them on, and starts thumbing through it. While she's doing so, I roll my eyes at Lilly."
+        "While she's thumbing through the paper, I roll my eyes at Lilly."
         hi "That may very well have been the most inappropriate use of the word ‘coincidentally’ I've ever heard in my life. It isn't even a Braille edition for crying out loud."
 
         show lilly basic_cheerful_sum
@@ -580,7 +584,7 @@ label sh_ch26:
         ka "First of all, the language use and sentence structure are good. I really can't complain about that."
         ka "But I do have one question: does your boyfriend happen to be a member of the club this article is talking about?"
 
-        show hanako defarms_shock_sum
+        show hanako def_speechless_sum
         show lilly basic_smile_sum
         with chchange
 
@@ -795,7 +799,7 @@ label sh_ch26:
         with chchange
 
         ha "N-no."
-        ka "Maybe you shoulder consider keeping one. At least for the time you're here. Not for peer-review of course, but simply to start some good habits."
+        ka "Maybe you should consider keeping one. At least for the time you're here. Not for peer-review of course, but simply to start some good habits."
         ha "Good h-habits?"
 
         show karla basic_smile_cas

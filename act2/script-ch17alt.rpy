@@ -358,11 +358,11 @@ label sh_ch17alt:
         ta "It's something we encourage as a society, even in situations where it makes matters more difficult."
         ta "In addition, Miss Satou has a strong sense of pride. You can tell by the way she behaves and carries herself. And I'm sure it serves her well most of the time. Just… not always."
 
-        scene bg school_nursehall:
+        scene bg school_office:
             yalign 0.5 zoom 1.02
         with locationchange
 
-        "As we reach the administration area near the building's entrance, the old lady heads up to the desk, exchanges a few words with the girl behind it and is given a form that she signs and then hands over to me before taking a small note for herself."
+        "As we reach the administration area near the building's entrance, the old lady heads up to the desk, exchanges a few words with the girl behind it, and is given a form that she signs and then hands over to me before taking a small note for herself."
 
         show takawa calculating
         with charaenter
@@ -373,7 +373,7 @@ label sh_ch17alt:
         with chchange
 
         ta "That's the short version. You can look it over yourself before putting a signature down there."
-        "I do so, but as expected a lot of the wording on there seems mumbo jumbo to me."
+        "I do so, but as expected, a lot of the wording on there seems mumbo jumbo to me."
         "I quickly give up on trying to make sense of the whole thing and put my signature on the dotted line near the bottom."
         "I give the form back to Miss Takawa who's still in the process of writing a note to go with the form."
 
@@ -384,7 +384,7 @@ label sh_ch17alt:
 
         "As she takes the form from my hands, her gaze suddenly shifts from me to something behind me."
 
-        show hanako emb_downtimid
+        show hanako emb_downtimid at right
         with charaenter
 
         "I look and see Hanako entering the room, looking somewhat winded."
@@ -392,6 +392,12 @@ label sh_ch17alt:
         hi "Hanako?"
 
         play music music_romance fadein 4.0
+
+        show hanako emb_smile
+        with charachangealways
+
+        show hanako at center
+        with charamovefaster
 
         show hanako basic_bashful_close:
             center
