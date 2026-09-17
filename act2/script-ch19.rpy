@@ -21,7 +21,7 @@ label sh_ch19:
             yalign 0.5 zoom 1.02
         with locationchange
 
-        "The first thing that draws my attention is the fact most of the desks and chairs have been moved to one corner of the room except for a handful of chairs that are positioned in a row near a flip chart, a beamer and several large bags that look remarkably like body bags."
+        "The first thing that draws my attention is the fact that a handful of chairs are positioned in a row near a flip chart, a beamer and several large bags that look remarkably like body bags."
         "The second thing is that there are four people here already. I can see two men I don't recognize talking to each other near the window and two teachers, a fit-looking man whom I recall being a PE teacher and a woman with short hair, sitting on the chairs near the beamer."
         "I tiptoe into the room, trying hard not to attract attention, and approach the chair at the far right end of the row."
         "Before I can sit down, the short-haired woman—whom I recognize as Lilly's homeroom teacher and our English teacher—notices me, frowns, and walks up to me."
@@ -184,11 +184,15 @@ label sh_ch19:
         play music music_tension fadein 2.0
 
         hide nakamura
+        with vpunch
+
         show black:
             yalign 0.5 zoom 1.02 alpha 0.5
         show n_vignette:
             yalign 0.5 zoom 1.02 alpha 0.8
         with dissolve
+
+        with vpunch
 
         "I feel a sharp shock slam through my body as if someone just walked up to me and pounded me in the chest with a sledgehammer, and I spring to my feet as if someone just hammered a nail through the bottom of my seat, my eyes widening in shock."
         "No wonder he was lost on how to continue. He was trying to figure out how he's going to spend an hour detailing the various degrees of burn wounds all the while a miserable exhibit A is sitting right in front of him."
@@ -201,30 +205,60 @@ label sh_ch19:
         "Struggling to stay on my feet, I manage to stammer the only thing that pops into my head as I head for the exit…"
         ha "I… I… have… to go do something!"
 
-        play sound sfx_impact
-        with vpunch
-
         hide n_vignette
         hide black
         with dissolve
 
+        play sound sfx_impact
+        with vpunch
+
         stop music fadeout 2.0
 
         "…only to nearly collide with someone who seems to be in as much of a hurry to get into the room as I am to get out of it."
+
+        play music music_running
 
         show yuuko cry_down
         with charaenter
 
         yu "I'M SORRY!"
 
-        play music music_running fadein 2.0
-
         "Taken aback by this person's sudden entrance, I stare in bewilderment as she makes an apologetic bow that's almost deep enough for her nose to touch her toes."
-        yu "I found out this morning that I put the keys to the library in the wrong person's pigeon hole,{w=0.5}{nw}"
-        yu "so my replacement for this week couldn't get the library doors open until we tracked down the person who had my keys,{w=0.5}{nw}"
-        yu "and when we found him he told us he just dropped the keys back in my own pigeon hole, and…{w=0.5}{nw}"
+
+        show yuuko panic_up
+        with chchange
+
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... {w=0.7}{nw}"
+
+        show yuuko neurotic_down
+
+        extend "so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {w=0.7}{nw}"
+
+        show yuuko panic_up
+
+        extend "but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {w=0.7}{nw}"
+
+        show yuuko neurotic_down
+
+        extend "but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {w=0.7}{nw}"
+
+        show yuuko cry_up
+
+        extend "and when we finally found him he told us he just put the keys back in my own pigeon hole, {w=0.7}{nw}"
+
+        show yuuko panic_down
+
+        extend "so we had to return to the teacher's lounge to retrieve them {w=0.7}{nw}"
+
+        show yuuko cry_up
+
+        extend "and all the while I could tell my colleague was getting annoyed with me so I kept apologizing which somehow made her get more annoyed, and... uh..."
+
+        stop music fadeout 2.0
+
+        ha "Uh... umm..."
         "For a few seconds the entire room is silent as everyone is trying to digest what just happened, and for a moment, I'm too confused to remember I was in the middle of an attempt to flee the room in terror."
-        "As the woman in front of me lifts her head, I'm surprised to see a familiar face."
+        "As my brain recovers from the sudden information overload it tried to process, I'm surprised to see a familiar face in front of me."
         ha "Y-Yuuko?"
 
         show yuuko panic_up
@@ -238,6 +272,9 @@ label sh_ch19:
 
         yu "I didn't just barge into the wrong room again, did I? It's happened to me before."
         ha "Ummm… N-no."
+
+        play music music_running fadein 2.0
+
         "A soft chuckle from one of the others breaks the awkward silence in the room and a moment later, I can hear our trainer walk up behind me."
 
         show nakamura smile at tworight
@@ -267,7 +304,7 @@ label sh_ch19:
         "Without waiting for an answer, he walks out the door and beckons me to follow him."
 
         scene bg school_hallway2
-        show nakamura bow
+        show nakamura bow at centersit
         with locationchange
 
         play music music_nurse fadein 4.0
@@ -276,7 +313,7 @@ label sh_ch19:
         nak "I'm sorry for what just happened before Miss Shirakawa showed up. I suppose this is what people would call an oversight. I wasn't quite sure how to handle it. Miss Takawa explained your situation to me, but didn't share a lot of information about you."
         "I merely nod my head, not sure how to react to his statement. Apparently, Miss Yumi didn't mention to him that I'm a burn victim."
 
-        show nakamura neutral
+        show nakamura neutral at center
         with chchange
 
         nak "I can understand why an information session about the subject I just spoke of would be extremely awkward for you to attend."
@@ -503,7 +540,8 @@ label sh_ch19:
         with { "master": charachangealways }
 
         n "{vspace=60}As I enter, I'm greeted by three friendly waves, Jun's being emphasized by the white orthopedic cast around her hand."
-        n "{vspace=30}Jun, a second year student here, is one of the reasons the computer lab is almost never completely deserted. She's a bit of a whiz kid whose knack for computers far exceeds my own, and she joined the newspaper club for the specific purpose of getting to do the editing jobs. Last week, we ended up working together a few times to put the latest issue of the school newspaper together. I'm not completely comfortable around her yet, but due to her skinny build and her usually quiet demeanor, her presence is not exactly threatening, either."
+        n "{vspace=30}Jun, a second year student here, is one of the reasons the computer lab is almost never completely deserted. She's a bit of a whiz kid whose knack for computers far exceeds my own, and she joined the newspaper club for the specific purpose of getting to do the editing jobs."
+        n "{vspace=30}Last week, we ended up working together a few times to put the latest issue of the school newspaper together. I'm not completely comfortable around her yet, but due to her skinny build and her usually quiet demeanor, her presence is not exactly threatening, either."
         n "When I was first invited into the club, I learned that Jun suffers from osteoporosis and is very prone to breaking bones as a result of minor falls that other people would simply shrug off."
 
         nvl hide dissolve
@@ -564,7 +602,7 @@ label sh_ch19:
         ha "How so?"
         "Naomi shrugs casually."
         na "Well, summer break started this week."
-        na "Right now, lots of students are still busy tying up loose ends and packing their bags, but I'm betting that within a smatter of days, nearly half of the student body will have gone home for the summer, and this school will be one hell of a lot emptier."
+        na "Right now, lots of students are still busy tying up loose ends and packing their bags, but I'm betting that within a matter of days, nearly half of the student body will have gone home for the summer, and this school will be one hell of a lot emptier."
         na "Meaning that half our batch would just end up gathering dust. But now, we got people a copy just before they're leaving here…"
         ha "…they're likely to take it along, so they h-have something to read during the trip back home."
 

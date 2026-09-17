@@ -105,7 +105,7 @@ label sh_ch23:
         show hanako basic_smile_sum
         with { "master": chchange }
 
-        call screen doublespeak(hi, _("Cheers!"), ha, _("C-cheers."))
+        $ show_doublespeak(hi, _("Cheers!"), ha, _("C-cheers."))
 
         show lilly basic_cheerful_sum
         with chchange

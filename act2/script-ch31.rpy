@@ -10,21 +10,21 @@ label sh_ch31:
 
         play music music_normal fadein 4.0
 
-        "Receptionist" "Miss Satou!"
+        "Receptionist" "{font=times}Miss Satou!"
         "I turn my head and look at the reception desk where a woman in her early 30s is beckoning me."
-        "Receptionist" "Good morning, Miss Satou."
-        aki "Good morning… {w=0.5}erm… Wendy?"
-        "Receptionist" "Jenny."
+        "Receptionist" "{font=times}Good morning, Miss Satou."
+        aki "{font=times}Good morning… {w=0.5}erm… Wendy?"
+        "Receptionist" "{font=times}Jenny."
         "Crap."
-        aki "Sorry, I'm still in the process of remembering everybody's name. Please humor me for a little while longer."
-        "Receptionist" "Not a problem. How is your father doing? Is he still sick?"
+        aki "{font=times}Sorry, I'm still in the process of remembering everybody's name. Please humor me for a little while longer."
+        "Receptionist" "{font=times}Not a problem. How is your father doing? Is he still sick?"
         "Most of the employees still don't know why Dad hasn't shown up at the office in two days straight and assume that it's a common illness, but it's probably not my place to spill the beans."
         "I can see how the truth could create a fair share of commotion around here."
-        aki "Yes, I'm afraid he's still a bit under the weather."
-        "Receptionist" "Hopefully he'll be better soon. It feels rather odd not to see him come in here each morning."
-        aki "Here's hoping."
-        "Receptionist" "Anyway, Mister Ferguson wanted to see you before you start this morning."
-        aki "Thank you for telling me. I'll go and pay him a visit, then."
+        aki "{font=times}Yes, I'm afraid he's still a bit under the weather."
+        "Receptionist" "{font=times}Hopefully he'll be better soon. It feels rather odd not to see him come in here each morning."
+        aki "{font=times}Here's hoping."
+        "Receptionist" "{font=times}Anyway, Mister Ferguson wanted to see you before you start this morning."
+        aki "{font=times}Thank you for telling me. I'll go and pay him a visit, then."
 
         scene black
         with locationchange
@@ -40,9 +40,9 @@ label sh_ch31:
         scene bg smt_office
         with locationchange
 
-        fer "Ah, good morning, Miss Satou."
-        aki "Good morning, Mister Ferguson. How are you doing?"
-        fer "As well as I can, given the circumstances. Have you been managing to get settled in a bit already?"
+        fer "{font=times}Ah, good morning, Miss Satou."
+        aki "{font=times}Good morning, Mister Ferguson. How are you doing?"
+        fer "{font=times}As well as I can, given the circumstances. Have you been managing to get settled in a bit already?"
 
         nvl clear
         nvl show dissolve
@@ -53,59 +53,59 @@ label sh_ch31:
 
         nvl hide dissolve
 
-        aki "I think I'm doing fairly well with that. My direct colleagues have been very helpful. I'm still trying to convince people to address me by my first name, though."
-        fer "Are you comfortable with that?"
-        aki "I think I could easily get used to it. Everyone around me uses first names to address the others. I can't fall behind."
+        aki "{font=times}I think I'm doing fairly well with that. My direct colleagues have been very helpful. I'm still trying to convince people to address me by my first name, though."
+        fer "{font=times}Are you comfortable with that?"
+        aki "{font=times}I think I could easily get used to it. Everyone around me uses first names to address the others. I can't fall behind."
         "Mister Ferguson gives me a sheepish smile."
-        fer "One of the first things we teach employees here who get to deal with people from your former branch on a regular basis is to always address Japanese co-workers by their family name even after having built a working relationship with them."
-        aki "Hmmm, does that also apply to Japanese who gain Scottish citizenship?"
-        fer "That is up to you to decide. People will learn as long as you're not afraid to keep correcting them."
-        aki "If I may ask, how do you address my parents?"
-        fer "I always address your mother by her first name. She'd probably think something was wrong if I called her by her last name, especially since she also plays bridge with my wife and two others every two weeks, so I also know her socially a bit."
-        aki "Mother really seems to be living an extremely busy life. Not only has she been working a full-time job, but she's also on the neighborhood committee and goes on bike rides with friends."
-        aki "I sometimes wonder if she's ever at home at all."
+        fer "{font=times}One of the first things we teach employees here who get to deal with people from your former branch on a regular basis is to always address Japanese co-workers by their family name even after having built a working relationship with them."
+        aki "{font=times}Hmmm, does that also apply to Japanese who gain Scottish citizenship?"
+        fer "{font=times}That is up to you to decide. People will learn as long as you're not afraid to keep correcting them."
+        aki "{font=times}If I may ask, how do you address my parents?"
+        fer "{font=times}I always address your mother by her first name. She'd probably think something was wrong if I called her by her last name, especially since she also plays bridge with my wife and two others every two weeks, so I also know her socially a bit."
+        aki "{font=times}Mother really seems to be living an extremely busy life. Not only has she been working a full-time job, but she's also on the neighborhood committee and goes on bike rides with friends."
+        aki "{font=times}I sometimes wonder if she's ever at home at all."
         "Mister Ferguson chuckles."
-        fer "I sometimes wonder about that too."
-        fer "She once told me that she occasionally gets involved in various charity events and that she's also been working on rebuilding and expanding the old network of contacts she had when she was still a business reporter."
-        fer "I believe she regularly submits columns to various local magazines and newspapers. Personally, if I had that kind of life, I'd burn myself out in weeks, but she seems to handle it just fine."
+        fer "{font=times}I sometimes wonder about that too."
+        fer "{font=times}She once told me that she occasionally gets involved in various charity events and that she's also been working on rebuilding and expanding the old network of contacts she had when she was still a business reporter."
+        fer "{font=times}I believe she regularly submits columns to various local magazines and newspapers. Personally, if I had that kind of life, I'd burn myself out in weeks, but she seems to handle it just fine."
         "Seems like it. And the only thing that had to go was her interaction with her children. Small sacrifice, really." #damn, akira
-        aki "How about my father?"
-        fer "To be honest, we tried first names for some time, but I could tell he wasn't very comfortable with it, so eventually, we switched back."
-        fer "I have to admit, interaction became stilted from time to time whenever he called me Norris and then gave me a look as if apologizing for insulting me."
+        aki "{font=times}How about my father?"
+        fer "{font=times}To be honest, we tried first names for some time, but I could tell he wasn't very comfortable with it, so eventually, we switched back."
+        fer "{font=times}I have to admit, interaction became stilted from time to time whenever he called me Norris and then gave me a look as if apologizing for insulting me."
         "He smirks."
-        fer "I've always been fascinated by how different your parents are as people."
-        aki "Different?"
-        fer "Your mother's an extraverted woman, always on the go, involved in a hundred things at once, and with a knack for quickly spotting and immediately pouncing on opportunities that present themselves."
-        fer "Your father's more of an introvert, content to sit in his study and read through his book collection in the little free time he permits himself, and I've never seen him make decisions on a whim…"
-        fer "He always tries to get to the bottom of whatever issue he faces before deciding on it and he usually pays a large amount of attention to the long-term consequences of whatever action he takes. More than anyone else I've ever met."
-        aki "I see."
+        fer "{font=times}I've always been fascinated by how different your parents are as people."
+        aki "{font=times}Different?"
+        fer "{font=times}Your mother's an extraverted woman, always on the go, involved in a hundred things at once, and with a knack for quickly spotting and immediately pouncing on opportunities that present themselves."
+        fer "{font=times}Your father's more of an introvert, content to sit in his study and read through his book collection in the little free time he permits himself, and I've never seen him make decisions on a whim…"
+        fer "{font=times}He always tries to get to the bottom of whatever issue he faces before deciding on it and he usually pays a large amount of attention to the long-term consequences of whatever action he takes. More than anyone else I've ever met."
+        aki "{font=times}I see."
         "A gloomy expression appears on his face."
-        fer "Which is why this came as such a shock."
-        fer "I could see your father brushing off warning signs with explanations like ‘rsi’ or ‘indigestion’ in order to avoid worrying others, but I find it impossible to believe he failed to consider the possibility of a heart affliction, himself."
-        fer "Especially since he, like many of us at the office, has taken the same first aid training we also offer our larger customers as part of our service. He must have known. And yet, he kept going."
-        aki "He probably thought he would be able to hold on for a few more weeks. Mother had a vacation planned afterwards that he could use to get his bearings back."
-        aki "I don't think she'll have much opportunity to take it easy any time soon. We don't even know when he's going to be released from the hospital yet."
-        fer "How is he? Have you spoken to him already?"
-        aki "My mother, my sister, and I dropped by the hospital yesterday, but he was asleep while we were there, and they wouldn't let us see him."
-        aki "We have an appointment with his cardiologist later today. Perhaps we'll get lucky afterwards."
-        fer "Give him my regards, and tell him not to worry too much about the company. We're going to do our best to succeed in the next few weeks, even if he's not there to participate."
-        aki "If I may ask, has there already been word from the board of directors in Japan on what they want to do with the delegation that is heading for the US in a few weeks?"
-        fer "Not yet. I think they will send a few people from the Japanese branch along."
-        fer "Just between you and me, I just hope those people aren't going to end up getting in the way. The Japanese branch has focused completely on the local market during the last 6 years and has barely been involved in the expansion process at all. That's been head office's task."
-        fer "Part of me is hoping your mother will still come along. She's just as familiar with the involved parties as your father is and could partially compensate for his absence, but the board is not going to put a PR manager in charge of an operation this major."
-        fer "They'll want someone higher up the chain of command to act as the leader."
-        aki "Kojima?"
-        fer "Probably. Has your mother said anything about what she intends to do? I wouldn't blame her if she decided to stay by her husband's side."
-        fer "Of course, it would have been rather inappropriate to ask her about that when she called yesterday, but perhaps you've picked something up."
-        aki "I'm afraid I haven't really spoken to her much."
-        fer "I just wanted to let you know that nobody here would question your loyalty to the company if you followed your mother's example and decided you need some time off to deal with this. We'd be happy to accommodate you."
+        fer "{font=times}Which is why this came as such a shock."
+        fer "{font=times}I could see your father brushing off warning signs with explanations like ‘rsi’ or ‘indigestion’ in order to avoid worrying others, but I find it impossible to believe he failed to consider the possibility of a heart affliction, himself."
+        fer "{font=times}Especially since he, like many of us at the office, has taken the same first aid training we also offer our larger customers as part of our service. He must have known. And yet, he kept going."
+        aki "{font=times}He probably thought he would be able to hold on for a few more weeks. Mother had a vacation planned afterwards that he could use to get his bearings back."
+        aki "{font=times}I don't think she'll have much opportunity to take it easy any time soon. We don't even know when he's going to be released from the hospital yet."
+        fer "{font=times}How is he? Have you spoken to him already?"
+        aki "{font=times}My mother, my sister, and I dropped by the hospital yesterday, but he was asleep while we were there, and they wouldn't let us see him."
+        aki "{font=times}We have an appointment with his cardiologist later today. Perhaps we'll get lucky afterwards."
+        fer "{font=times}Give him my regards, and tell him not to worry too much about the company. We're going to do our best to succeed in the next few weeks, even if he's not there to participate."
+        aki "{font=times}If I may ask, has there already been word from the board of directors in Japan on what they want to do with the delegation that is heading for the US in a few weeks?"
+        fer "{font=times}Not yet. I think they will send a few people from the Japanese branch along."
+        fer "{font=times}Just between you and me, I just hope those people aren't going to end up getting in the way. The Japanese branch has focused completely on the local market during the last 6 years and has barely been involved in the expansion process at all. That's been head office's task."
+        fer "{font=times}Part of me is hoping your mother will still come along. She's just as familiar with the involved parties as your father is and could partially compensate for his absence, but the board is not going to put a PR manager in charge of an operation this major."
+        fer "{font=times}They'll want someone higher up the chain of command to act as the leader."
+        aki "{font=times}Kojima?"
+        fer "{font=times}Probably. Has your mother said anything about what she intends to do? I wouldn't blame her if she decided to stay by her husband's side."
+        fer "{font=times}Of course, it would have been rather inappropriate to ask her about that when she called yesterday, but perhaps you've picked something up."
+        aki "{font=times}I'm afraid I haven't really spoken to her much."
+        fer "{font=times}I just wanted to let you know that nobody here would question your loyalty to the company if you followed your mother's example and decided you need some time off to deal with this. We'd be happy to accommodate you."
         "I don't think there'd be much of a point in me taking time off. If Mom needs comfort, she still has Lilly around. And Lilly has Hanako and Hisao… for the time being."
-        "Mom decided it was probably best for them to return to Japan ahead of schedule, since Dad's incident pretty much put a permanent damper on their vacation. They're set take a flight back in three days."
+        "Mom decided it was probably best for them to return to Japan ahead of schedule, since Dad's incident pretty much put a permanent damper on their vacation. They're set to take a flight back in three days."
         "If Lilly wants me to spend more time with her afterwards, I can always take a day off or so, but I think I know her well enough already to know she probably wouldn't want me to take a leave of absence purely for her sake."
-        aki "I think I'll be fine, sir. But I appreciate your concern. I'll be sure to let you know if I change my mind."
+        aki "{font=times}I think I'll be fine, sir. But I appreciate your concern. I'll be sure to let you know if I change my mind."
         "He nods."
-        fer "Good. I won't claim any more of your time. I hope the cardiologist brings good news this afternoon. You and your family have my well-wishes."
-        aki "Thank you, sir. Good day."
+        fer "{font=times}Good. I won't claim any more of your time. I hope the cardiologist brings good news this afternoon. You and your family have my well-wishes."
+        aki "{font=times}Thank you, sir. Good day."
 
         scene black
         with locationchange
@@ -185,7 +185,7 @@ label sh_ch31:
         with chchange
 
         "I'm not sure what irks me more: Mom's hypocritical statement or Lilly's understanding nod that follows it, but before I can determine whether or not to react to it, a young nurse comes walking in and takes a look around the room."
-        "Nurse" "Satou?"
+        "Nurse" "{font=times}Satou?"
 
         show karla basic_smile_cas
         show lilly basic_smile_sum
@@ -195,8 +195,8 @@ label sh_ch31:
         with charamove
 
         "Mom gets up and nods."
-        kamo "That's us."
-        "Nurse" "Doctor McElroy is ready to see you. This way, please."
+        kamo "{font=times}That's us."
+        "Nurse" "{font=times}Doctor McElroy is ready to see you. This way, please."
 
         show lilly at twoleft
         with charamove
@@ -245,102 +245,102 @@ label sh_ch31:
         with charamove
 
         "As the nurse leaves the room and Mom and I sit down, the doctor gives us a quick look-over and then addresses Mom."
-        dc "Good afternoon. I am doctor McElroy."
+        dc "{font=times}Good afternoon. I am doctor McElroy."
 
         show karla basic_smile_cas
         with chchange
 
-        kamo "Good afternoon. I am Karla Satou. These are my daughters Akira and Lilly."
+        kamo "{font=times}Good afternoon. I am Karla Satou. These are my daughters Akira and Lilly."
         "An inquisitive glint appears in the doctor's eye."
-        dc "Satou isn't exactly a common name around here. Are you perhaps related to Satou Medical Technology? I don't deal with them directly, but I've heard that it's a family company."
-        kamo "My husband actually runs that company. I'm an employee myself as well. Raigmore is a very valued customer of ours. Particularly this ward."
-        dc "Yes, our ambulance team probably even used one of your AEDs to correct your husband's heart rhythm. Hmmm… Perhaps he can appreciate that."
+        dc "{font=times}Satou isn't exactly a common name around here. Are you perhaps related to Satou Medical Technology? I don't deal with them directly, but I've heard that it's a family company."
+        kamo "{font=times}My husband actually runs that company. I'm an employee myself as well. Raigmore is a very valued customer of ours. Particularly this ward."
+        dc "{font=times}Yes, our ambulance team probably even used one of your AEDs to correct your husband's heart rhythm. Hmmm… Perhaps he can appreciate that."
 
         show karla basic_sheepish_cas
         with chchange
 
         "Mom smiles sadly."
-        kamo "He probably would. Or rather… He'd probably be very troubled if it had been the competition's equipment that saved his life…"
+        kamo "{font=times}He probably would. Or rather… He'd probably be very troubled if it had been the competition's equipment that saved his life…"
         "She sighs before continuing."
-        kamo "The CEO of a company specializing in heart equipment suffering a heart attack… It sounds unreal, doesn't it?"
+        kamo "{font=times}The CEO of a company specializing in heart equipment suffering a heart attack… It sounds unreal, doesn't it?"
         "Doctor McElroy chuckles briefly."
-        dc "Not to me, to be honest. I've worked in a hospital in the past where I worked alongside another cardiologist who ended up suffering a minor heart attack himself."
-        dc "One of my old friends from university is a respiratory physician who's also an avid smoker whenever he's not on duty. And plenty of dentists have cavities from time to time."
-        dc "All of us are still only human, Mrs Satou. It's not uncommon to be knowledgable about illnesses or conditions and still fall prey to them, yourself."
-        dc "In fact, sometimes merely being knowledgable about something helps us fool ourselves into believing it won't happen to us…"
+        dc "{font=times}Not to me, to be honest. I've worked in a hospital in the past where I worked alongside another cardiologist who ended up suffering a minor heart attack himself."
+        dc "{font=times}One of my old friends from university is a respiratory physician who's also an avid smoker whenever he's not on duty. And plenty of dentists have cavities from time to time."
+        dc "{font=times}All of us are still only human, Mrs Satou. It's not uncommon to be knowledgable about illnesses or conditions and still fall prey to them, yourself."
+        dc "{font=times}In fact, sometimes merely being knowledgable about something helps us fool ourselves into believing it won't happen to us…"
         "His expression turns slightly more serious."
-        dc "…even in the face of overwhelming evidence to the contrary. But we can talk about that later. It's probably best if I give you an update on his condition first."
+        dc "{font=times}…even in the face of overwhelming evidence to the contrary. But we can talk about that later. It's probably best if I give you an update on his condition first."
 
         show karla basic_smileclosed_cas
         show lilly basic_listen_sum
         with chchange
 
-        kamo "Yes, that would be appreciated."
-        dc "The gist of it would be that your husband has been extremely lucky. Lucky that an ambulance was called immediately and that the ambulance crew was warned beforehand that it was probably a heart attack."
-        dc "Lucky to quickly receive CPR. And lucky that you live so close to the hospital."
+        kamo "{font=times}Yes, that would be appreciated."
+        dc "{font=times}The gist of it would be that your husband has been extremely lucky. Lucky that an ambulance was called immediately and that the ambulance crew was warned beforehand that it was probably a heart attack."
+        dc "{font=times}Lucky to quickly receive CPR. And lucky that you live so close to the hospital."
 
         show lilly basic_smile_sum
         show karla basic_smile_cas
         with chchange
 
         "Lilly immediately perks up at the doctor's words."
-        li "Doctor, are you saying that my father will probably make a full recovery?"
-        dc "From what we've been able to see, he doesn't appear to have suffered any brain damage. He can truly thank his lucky stars for that. However, I'm not sure if I can call his upcoming recovery process a ‘full recovery’."
+        li "{font=times}Doctor, are you saying that my father will probably make a full recovery?"
+        dc "{font=times}From what we've been able to see, he doesn't appear to have suffered any brain damage. He can truly thank his lucky stars for that. However, I'm not sure if I can call his upcoming recovery process a ‘full recovery’."
 
         show lilly basic_displeased_sum
         show karla basic_troubled_cas
         with chchange
 
-        dc "His fractured ribs will hurt him for some time, but they will heal completely eventually. His heart is a more complex story. A heart simply cannot get away from an event such as this completely unscathed."
-        dc "Under the right circumstances, such as a healthy lifestyle, he will be able to avoid this sort of thing from ever repeating itself."
-        dc "But the fact remains that someone who suffers from a heart attack will run an increased risk of further heart attacks in the future. That is something he cannot afford to ever ignore."
+        dc "{font=times}His fractured ribs will hurt him for some time, but they will heal completely eventually. His heart is a more complex story. A heart simply cannot get away from an event such as this completely unscathed."
+        dc "{font=times}Under the right circumstances, such as a healthy lifestyle, he will be able to avoid this sort of thing from ever repeating itself."
+        dc "{font=times}But the fact remains that someone who suffers from a heart attack will run an increased risk of further heart attacks in the future. That is something he cannot afford to ever ignore."
 
         show karla basic_ponder_cas
         with chchange
 
         "Mom nods."
-        kamo "A healthy lifestyle… Stress-free, I presume?"
-        dc "Yes. A heart attack caused by stress-related high blood pressure is a worst-case scenario, but as you have learned, even worst-case scenarios take place from time to time."
-        dc "I understand that your husband has been under a lot of stress?"
+        kamo "{font=times}A healthy lifestyle… Stress-free, I presume?"
+        dc "{font=times}Yes. A heart attack caused by stress-related high blood pressure is a worst-case scenario, but as you have learned, even worst-case scenarios take place from time to time."
+        dc "{font=times}I understand that your husband has been under a lot of stress?"
 
         show karla basic_speak_cas
         with chchange
 
-        kamo "I'm afraid so. We're on the verge of taking over a company abroad, and there's been a second interested party who hasn't completely left the picture yet. All in all, it's been a very trying time."
-        kamo "We were planning a vacation after this was all over, but until then, things would be extremely busy. The knowledge that he couldn't afford to fall ill right now may even have been an additional factor of stress."
+        kamo "{font=times}I'm afraid so. We're on the verge of taking over a company abroad, and there's been a second interested party who hasn't completely left the picture yet. All in all, it's been a very trying time."
+        kamo "{font=times}We were planning a vacation after this was all over, but until then, things would be extremely busy. The knowledge that he couldn't afford to fall ill right now may even have been an additional factor of stress."
 
         show karla basic_troubled_cas
         with chchange
 
-        dc "Your health starts faltering, you start worrying about what happens if you were to be put out of commission, you become more stressed, your health starts dropping more, so you start worrying more, etcetera, etcetera."
-        dc "That sort of thing can indeed create a vicious circle that is quite hard to get out of."
+        dc "{font=times}Your health starts faltering, you start worrying about what happens if you were to be put out of commission, you become more stressed, your health starts dropping more, so you start worrying more, etcetera, etcetera."
+        dc "{font=times}That sort of thing can indeed create a vicious circle that is quite hard to get out of."
 
         show lilly basic_concerned_sum
         with chchange
 
         "Lilly sighs."
-        li "And despite everything, he also committed to a trip with my friends and me, despite the fact that it required him to squeeze his workload into an even smaller timespan. If only…"
+        li "{font=times}And despite everything, he also committed to a trip with my friends and me, despite the fact that it required him to squeeze his workload into an even smaller timespan. If only…"
         "The doctor scrapes his throat to cut off Lilly's remark."
 
         show lilly basic_displeased_sum
         with chchange
 
-        dc "Please do not oversimplify the situation, Miss Satou. Maybe what you mentioned was the straw that broke the camel's back, and maybe it wasn't."
-        dc "Maybe he could have lasted until that vacation your mother spoke of, or maybe something else would have caused things to fall apart."
-        dc "I think the right thing to contemplate on right now isn't that last straw, but all the others that were already there."
-        aki "I think the doctor has a point, Lilly. The responsibility for this ultimately lies with Dad and not with you. He must have had at least a minor suspicion of where he was headed."
-        aki "I mean, when you spoke to his general practitioner on the phone, the man immediately told you to have a cardiologist look at Dad."
-        aki "That's a pretty quick conclusion to jump to without any context, so my gut says he knew about Dad's situation. It may have been going on for some time."
+        dc "{font=times}Please do not oversimplify the situation, Miss Satou. Maybe what you mentioned was the straw that broke the camel's back, and maybe it wasn't."
+        dc "{font=times}Maybe he could have lasted until that vacation your mother spoke of, or maybe something else would have caused things to fall apart."
+        dc "{font=times}I think the right thing to contemplate on right now isn't that last straw, but all the others that were already there."
+        aki "{font=times}I think the doctor has a point, Lilly. The responsibility for this ultimately lies with Dad and not with you. He must have had at least a minor suspicion of where he was headed."
+        aki "{font=times}I mean, when you spoke to his general practitioner on the phone, the man immediately told you to have a cardiologist look at Dad."
+        aki "{font=times}That's a pretty quick conclusion to jump to without any context, so my gut says he knew about Dad's situation. It may have been going on for some time."
 
         show karla basic_distant_cas
         with chchange
 
         "The doctor nods his head."
-        dc "We spoke to his general practitioner to get his account of things, too. The last time he saw your father was quite some time ago, but your father was somewhat of a risk case even then."
+        dc "{font=times}We spoke to his general practitioner to get his account of things, too. The last time he saw your father was quite some time ago, but your father was somewhat of a risk case even then."
 
         stop music fadeout 2.0
 
-        dc "According to doctor Thompson, your father has had high blood pressure for years. The only thing that surprised doctor Thompson was how long your father still managed to last."
+        dc "{font=times}According to doctor Thompson, your father has had high blood pressure for years. The only thing that surprised doctor Thompson was how long your father still managed to last."
 
         play music music_drama fadein 4.0
 
@@ -357,32 +357,32 @@ label sh_ch31:
         show karla basic_serious_cas
         with chchange
 
-        kamo "I suppose your comment about how tempting it is to believe these sorts of things only happen to others is particularly true here."
-        dc "…I suppose so."
+        kamo "{font=times}I suppose your comment about how tempting it is to believe these sorts of things only happen to others is particularly true here."
+        dc "{font=times}…I suppose so."
 
         show karla basic_sad_cas
         show lilly basic_sad_sum
         with chchange
 
-        kamo "So… What will happen now? And when do you think he can go home?"
-        dc "He is going to need a lot of time to recover. If you like, it's okay for you to go and visit him after you leave here if he's awake."
-        dc "How long we decide to keep him here will depend on how well his recovery progresses. It's still too early to make an accurate prediction."
-        kamo "He'd probably feel more comfortable recuperating at home than in a hospital room. We could hire a private duty nurse to keep an eye on him while he recovers."
-        kamo "We live very close to Raigmore, so dropping by for a daily checkup would not be impractical."
-        dc "We can consider that once he has recovered a bit. At this point, we still like to keep a close eye on him ourselves. We will reevaluate his situation in a week or two."
+        kamo "{font=times}So… What will happen now? And when do you think he can go home?"
+        dc "{font=times}He is going to need a lot of time to recover. If you like, it's okay for you to go and visit him after you leave here if he's awake."
+        dc "{font=times}How long we decide to keep him here will depend on how well his recovery progresses. It's still too early to make an accurate prediction."
+        kamo "{font=times}He'd probably feel more comfortable recuperating at home than in a hospital room. We could hire a private duty nurse to keep an eye on him while he recovers."
+        kamo "{font=times}We live very close to Raigmore, so dropping by for a daily checkup would not be impractical."
+        dc "{font=times}We can consider that once he has recovered a bit. At this point, we still like to keep a close eye on him ourselves. We will reevaluate his situation in a week or two."
 
         show karla basic_sheepish_cas
         with chchange
 
-        kamo "Of course."
-        dc "We can make an appointment next week to discuss the future. We will probably have a better idea of when he can leave the hospital."
-        dc "When you schedule a new appointment with the desk workers down the hall, they will be able to provide you with some pamphlets about how to adjust one's lifestyle in order to prevent further heart attacks."
-        kamo "I'll be sure to read them."
+        kamo "{font=times}Of course."
+        dc "{font=times}We can make an appointment next week to discuss the future. We will probably have a better idea of when he can leave the hospital."
+        dc "{font=times}When you schedule a new appointment with the desk workers down the hall, they will be able to provide you with some pamphlets about how to adjust one's lifestyle in order to prevent further heart attacks."
+        kamo "{font=times}I'll be sure to read them."
 
         show karla basic_troubled_cas
         with chchange
 
-        kamo "But, doctor…"
+        kamo "{font=times}But, doctor…"
 
         show karla basic_distant_cas
         with chchange
@@ -392,22 +392,22 @@ label sh_ch31:
         show karla basic_troubled_cas
         with chchange
 
-        kamo "…will he be able to return to work eventually, or is this the definite end of his career?"
-        dc "Given how far he's gone, I can only imagine that his job is very important to him."
+        kamo "{font=times}…will he be able to return to work eventually, or is this the definite end of his career?"
+        dc "{font=times}Given how far he's gone, I can only imagine that his job is very important to him."
 
         show karla basic_sad_cas
         with chchange
 
-        kamo "It's a bit complicated. He runs a family company, and family companies don't stop being part of one's life after retirement, voluntary or otherwise."
-        kamo "In fact, I think the company's always been part of his life, even when he was still attending school."
-        dc "We try to encourage people who are recovering from a heart attack to try and lead a life that's as normal as possible after their recuperation. Having a daily rhythm and interaction with colleagues is part of that."
-        dc "But the lifestyle your husband used to live cannot be described as normal or healthy. That lifestyle will have to change. He will have to pay more attention to his own needs from now on."
-        dc "It will be up to him to determine whether his current job and a healthy and stress-free lifestyle are two things that can be reconciled with one another or not."
+        kamo "{font=times}It's a bit complicated. He runs a family company, and family companies don't stop being part of one's life after retirement, voluntary or otherwise."
+        kamo "{font=times}In fact, I think the company's always been part of his life, even when he was still attending school."
+        dc "{font=times}We try to encourage people who are recovering from a heart attack to try and lead a life that's as normal as possible after their recuperation. Having a daily rhythm and interaction with colleagues is part of that."
+        dc "{font=times}But the lifestyle your husband used to live cannot be described as normal or healthy. That lifestyle will have to change. He will have to pay more attention to his own needs from now on."
+        dc "{font=times}It will be up to him to determine whether his current job and a healthy and stress-free lifestyle are two things that can be reconciled with one another or not."
 
         show karla basic_smileclosed_cas
         with chchange
 
-        kamo "We will keep that in mind. Thank you for your time, doctor."
+        kamo "{font=times}We will keep that in mind. Thank you for your time, doctor."
 
         scene bg raigmore_waitcard at truecenter:
             zoom 1.03
@@ -624,9 +624,9 @@ label sh_ch31:
 
         aki "There'll be time for that later. We're here."
         "Just as we arrive at room 702, I see a nurse walking out of it."
-        aki "Excuse me, miss. Is Mister Satou awake right now?"
+        aki "{font=times}Excuse me, miss. Is Mister Satou awake right now?"
         "She nods."
-        "Nurse" "He is. You can go and visit him if you like."
+        "Nurse" "{font=times}He is. You can go and visit him if you like."
 
         show lilly cane_sad_sum_close
         with chchange
@@ -658,7 +658,7 @@ label sh_ch31:
         with mediumflash
 
         "Hisao did look a lot less sordid than the person lying before us here."
-        "Unshaven, an IV needle sticking in his arm, and the movement of his chest betraying a strained breathing, Dad looks at least a decade older than he really is."
+        "Unkept, an IV needle sticking in his arm, and the movement of his chest betraying a strained breathing, Dad looks at least a decade older than he really is."
         "The expression in his eyes is less sharp and probing than it usually is, probably due to the painkillers he's on, but he's definitely conscious as I can see his gaze following us as we make our way over to the bed."
         "He gives a short sigh as an indication that he's aware of our presence."
         li "Hello, Father."

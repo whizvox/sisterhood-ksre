@@ -37,8 +37,9 @@ label sh_ch32:
 
         nvl clear
 
-        n "Push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once, push 15 times, breathe once…"
-        n "{vspace=30}I was on the edge of a breakdown the entire time, but as long as could keep these motions going, I wouldn't feel that crushing sense of helplessness, and I could keep teetering on that edge instead of going over it entirely. So I tuned out everything around me in a desperate effort to keep myself together. I vaguely remember hearing Lilly yell something at me, someone—not Hisao—forcefully grabbing me, and his face suddenly being close to mine and his shocked stare. And… I think I screamed in fright and flailed my arms at the time as I tried to get away from him."
+        n "Push 30 times, breathe twice, push 30 times, breathe twice, push 30 times, breathe twice, push 30 times, breathe twice, push 30 times, breathe twice…"
+        n "{vspace=30}I was on the edge of a breakdown the entire time, but as long as could keep these motions going, I wouldn't feel that crushing sense of helplessness, and I could keep teetering on that edge instead of going over it entirely. So I tuned out everything around me in a desperate effort to keep myself together."
+        n "I vaguely remember hearing Lilly yell something at me, someone—not Hisao—forcefully grabbing me, and his face suddenly being close to mine and his shocked stare. And… I think I screamed in fright and flailed my arms at the time as I tried to get away from him."
         n "The next thing I remember that wasn't some fevered blur was me sitting on the bed in our room with Hisao holding me in his arms. Despite the fact that his presence helped, it still took me a long time to stop shaking and calm my nerves to the point where my mind was capable of understanding what Hisao was saying and respond to his words with quick nods and shakes of my head."
         n "After convincing himself that another breakdown probably wasn't around the corner, Hisao left the room after telling me to get some sleep. Sleeping was the last thing I felt like doing despite being extremely tired. Nobody has ever gotten nightmares while staring at the ceiling."
 
@@ -303,7 +304,7 @@ label sh_ch32:
         "I briefly look at Hisao and notice his face has gotten a bit pale."
         "Despite the hospital atmosphere making me really jittery as well, I take his hand in mine, give it a reassuring squeeze, and make an attempt to give him my most encouraging smile."
 
-        show hisao basic_smile_polo_close
+        show hisao basic_sweet_polo_close
         with chchange
 
         "He gives my hand a little squeeze in return, and we share a brief look of mutual understanding."
@@ -326,13 +327,13 @@ label sh_ch32:
         "Kojima" "That is indeed the task that has been entrusted to me by your grandfather and the rest of the board. I could never hope to match up to your father's capabilities, but things are the way they are. It cannot be helped."
         aki "You will do fine."
 
-        show karla basic_smileclosed at left
+        show karla basic_smileclosed at leftsit
         with charaenter
 
         ka "Ah… Akira. Ikezawa and Nakai, too. Good afternoon."
         "We look past the businessman to see Lilly's mother walking up to us. She bows to us, and Akira responds with another graceful bow."
 
-        show karla at twoleft
+        show karla at twoleftsit
         show akira basic_ending
         with charachangealways
 
@@ -412,7 +413,7 @@ label sh_ch32:
         with chchange
 
         "As we peer through the doorway, we can see that the curtains around the bed are closed, and we can hear a female voice from behind the curtain."
-        "Nurse" "There, I think we're done for today. It might itch a little bit, but please try not to touch it."
+        "Nurse" "{font=times}There, I think we're done for today. It might itch a little bit, but please try not to touch it.{/font}"
 
         hide akira
         with charaexit
@@ -438,10 +439,10 @@ label sh_ch32:
 
         aki "Yo!"
         "Akira's greeting is met by a tortured cough."
-        "Nurse" "Ah, it seems you have a visitor, Mister Satou."
-        aki "Is this an inconvenient time to drop by?"
-        "Nurse" "I don't think it is. I just finished changing the dressing of his incision and checking the incision for possible infections. Everything seems to be in order, so I'll be on my way."
-        aki "Okay."
+        "Nurse" "{font=times}Ah, it seems you have a visitor, Mister Satou.{/font}"
+        aki "{font=times}Is this an inconvenient time to drop by?{/font}"
+        "Nurse" "{font=times}I don't think it is. I just finished changing the dressing of his incision and checking the incision for possible infections. Everything seems to be in order, so I'll be on my way.{/font}"
+        aki "{font=times}Okay.{/font}"
         "A middle-aged nurse appears from behind the curtain and leaves the room. I make sure to partially hide behind Hisao as she walks by."
         "Akira now steps behind the curtain so we can't see her anymore, though we can still hear her."
 
@@ -626,7 +627,7 @@ label sh_ch32:
         hi "I don't really understand what you were trying to achieve by starting that argument with him with us nearby."
         hi "I mean… if your father would have found out that we were listening in all the time, he probably would have been extremely upset."
         hi "Without wanting to take sides or point out who's right or wrong, one thing the doctors probably told your father was that he had to avoid stress for the time being."
-        hi "Ah… Speaking as a heart patient, your actions were probably kind of rash."
+        hi "Speaking as a heart patient, your actions further put his health at risk just now."
         aki "Hmmm…"
 
         show hisao basic_speak_polo

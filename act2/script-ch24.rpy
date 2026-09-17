@@ -1206,7 +1206,7 @@ label sh_ch24:
             anchor (0, 0) pos (-395, -185) zoom 0.75
         with vpunch
 
-        call screen doublespeak(ha, "Hhhhh!", hi, "Eaagh!") with vpunch
+        $ show_doublespeak(ha, "Hhhhh!", hi, "Eaagh!")
 
         show ev tipsyfun_doggystyle_closed:
             pos (-1254, -50) zoom 1.0

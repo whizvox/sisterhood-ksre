@@ -100,6 +100,7 @@ init 1 python:
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
     sh_sprites("lilly", ["cheerful", "concerned", "cry", "displeased", "giggle", "listen", "mad", "oops", "planned", "pout", "offended", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
+    sh_sprites("lilly", ["behind_smileclosed_nak", "behind_giggle_nak", "behind_concerned_nak"])
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
@@ -190,6 +191,7 @@ init 1:
     image bg suburb_roadcenter_run_rn = rain(sh_bg("suburb_roadcenter_run"))
     image bg satou_entrance_blur_ss = sunset(sh_bg("satou_entrance_blur"))
     image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
+    image bg city_coffeeshop_ss = sunset(sh_bg("city_coffeeshop"))
 
     # special events
     image ev pillowtalk_blanket dark = f"{sh_path}/event/pillowtalk/pillowtalk_blanket_dark.jpg"

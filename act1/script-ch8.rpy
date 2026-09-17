@@ -620,7 +620,7 @@ label sh_ch8:
 
         stop ambient fadeout 1.0
 
-        scene bg city_coffeeshop
+        scene bg city_coffeeshop_ss
         with locationskip
 
         queue music music_dreamy fadein 4.0
@@ -628,20 +628,20 @@ label sh_ch8:
         "The peaceful corner of the coffee shop where we decided to take a breather after leaving the arcade is a refreshing change from the bustling of the crowded arcade hall."
         "While my difficulty with crowds hasn't raised its head enough to ruin my fun this evening, it still feels good to relax in a quiet place for a while."
 
-        show hisao basic_neutral_polo at left
+        show hisao basic_neutral_polo_ss at left
         with charaenter
 
         hi "Sorry it took so long."
         "Hisao returns from the counter holding a bottle of soda and a cup of hot cocoa."
 
-        show hisao basic_frown_polo_close at center
+        show hisao basic_frown_polo_close_ss at center
         with charamovechangefaster
         show hisao at centersit
         with charamove
 
         "He sits down next to me, puts the soda in front of himself and shows me a frustrated frown for a moment before giving me the cocoa."
 
-        show hisao basic_speak_polo_close
+        show hisao basic_speak_polo_close_ss
         with chchange
 
         hi "The couple in front of me took ages to make up their mind about their order. I was about to give up and take you somewhere else."
@@ -677,27 +677,27 @@ label sh_ch8:
         hide niji_plush
         with None
 
-        show hisao basic_smile_polo_close at centersit
+        show hisao basic_smile_polo_close_ss at centersit
         with charaenter
 
         hi "A new member of our little, disabled family, huh?"
         "I nod."
         ha "I'm still deciding whether to let him live in my room or let Lilly take care of him."
 
-        show hisao cross_grin_polo_close
+        show hisao cross_grin_polo_close_ss
         with chchange
 
         hi "Maybe you should leave him with Lilly, so he and I don't end up becoming rivals for your affection."
         "I giggle at this weird idea."
         ha "I think I have more than enough affection for both of you."
 
-        show hisao cross_smile_polo_close
+        show hisao cross_smile_polo_close_ss
         with chchange
 
         hi "So, have you already decided on a name for him?"
         ha "Hmmmm… I think I'll call him ‘Niji’."
 
-        show hisao basic_neutral_polo_close
+        show hisao basic_neutral_polo_close_ss
         with chchange
 
         hi "Niji?"
@@ -709,7 +709,7 @@ label sh_ch8:
         ha "It's just… Everyone who wanted to take care of him was also tasked with walking the dog every few days. And that dog… really liked being outside and running in the park and playing with other dogs."
         ha "But I… d-didn't really like going outside. And w-walking your dog tends to make other people approach you for s-small talk, so… ummm… I thought he w-was in better hands with… other children."
 
-        show hisao basic_smile_polo_close
+        show hisao basic_smile_polo_close_ss
         with chchange
 
         hi "That's a shame, Hanako. That dog missed out on a great friend. And so did you, most likely."
@@ -719,7 +719,7 @@ label sh_ch8:
         ha "Y-yes, I am."
         ha "I… wouldn't mind going back to the game center some time. There were still many games we didn't get to play yet."
 
-        show hisao basic_grin_polo_close
+        show hisao basic_grin_polo_close_ss
         with chchange
 
         hi "Great. Good. I'm happy to hear that. I wouldn't mind going back there myself, either."
@@ -727,19 +727,19 @@ label sh_ch8:
         ha "H-Hisao… Did you have more planned?"
         ha "Does it have to do with that backpack you've been carrying around all the time?"
 
-        show hisao basic_smile_polo_close
+        show hisao basic_smile_polo_close_ss
         with chchange
 
         hi "The backpack contains, among a few other things, my medication."
         "His medication? Why would he take that along? Wait a second…"
         ha "H-Hisao, d-d-do you mean…?"
 
-        show hisao basic_neutral_polo_close
+        show hisao basic_neutral_polo_close_ss
         with chchange
 
         "He takes a deep breath, realizing it's probably too late to dismiss the issue and then looks me in the eyes."
 
-        show hisao basic_speak_polo_close
+        show hisao basic_speak_polo_close_ss
         with chchange
 
         hi "H-Hanako, would you like it if we… spent the night together somewhere around here?"
