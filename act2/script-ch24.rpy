@@ -194,7 +194,7 @@ label sh_ch24:
         show hanako emb_smile_sum_clip_close
         with { "master": chchange }
 
-        $ show_doublespeak(hi, _("Cheers!"), ha, _("C-cheers?"))
+        $ sh_show_doublespeak(hi, _("Cheers!"), ha, _("C-cheers?"))
 
         "Hanako blushes lightly, not sure how to deal with Lilly's praise, obviously not finding it completely unpleasant, but not completely comfortable either."
         "As if attempting to look for distraction, she puts her glass to her lips and starts sipping at it."
@@ -1206,7 +1206,7 @@ label sh_ch24:
             anchor (0, 0) pos (-395, -185) zoom 0.75
         with vpunch
 
-        $ show_doublespeak(ha, "Hhhhh!", hi, "Eaagh!")
+        call screen sh_doublespeak(ha, "Hhhhh!", hi, "Eaagh!") with vpunch
 
         show ev tipsyfun_doggystyle_closed:
             pos (-1254, -50) zoom 1.0

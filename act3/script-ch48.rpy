@@ -902,7 +902,7 @@ label sh_ch48:
         show hanako emb_determinedmessy
         with chchange
 
-        $ show_doublespeak(nt, _("Right!"), ha, _("Right."))
+        $ sh_show_doublespeak(nt, _("Right!"), ha, _("Right."))
 
         hide natsume
         hide hanako

@@ -677,43 +677,43 @@ label sh_ch30:
         play sound sfx_phonepickup
 
         "Moments later, I hear someone on the other end of the line picking up."
-        dc "{font=times}Thompson speaking."
-        li "{font=times}Doctor Thompson, good evening. This is Lilly Satou speaking. I hope I'm not intruding on you. I'm terribly sorry for calling you this late."
-        dc "{font=times}Not a problem, Miss… Satou?"
-        li "{font=times}Yes, you are my father's general practitioner, are you not?"
-        dc "{font=times}Why yes, I am. Is there anything wrong?"
-        li "{font=times}Father's been extremely busy with work lately. There's a very important event in his business coming up, and he's under a large amount of pressure right now. It seems to be… taking a toll on him."
-        dc "{font=times}Are there any specifics you can give me, Miss Satou?"
-        li "{font=times}Just… several things. He's been having trouble sleeping as of late. My mother said he complained about RSI in his shoulder earlier today. There's been talk of… hmmm… indigestion."
-        li "{font=times}He actually came home earlier today because he felt a little unwell and my friends said he looked rather pale. I noticed his breathing was a bit shallower than usual."
-        li "{font=times}I'm… probably worrying about nothing, but I was wondering if you would…"
-        dc "{font=times}Just a moment, Miss Satou. Did you say he felt unwell earlier?"
-        li "{font=times}Yes, but the sensation disappeared eventually."
-        dc "{font=times}What kind of sensation? Localized anywhere?"
-        li "{font=times}He didn't say."
-        dc "{font=times}..."
+        dc "{font=times}Thompson speaking.{/font}"
+        li "{font=times}Doctor Thompson, good evening. This is Lilly Satou speaking. I hope I'm not intruding on you. I'm terribly sorry for calling you this late.{/font}"
+        dc "{font=times}Not a problem, Miss… Satou?{/font}"
+        li "{font=times}Yes, you are my father's general practitioner, are you not?{/font}"
+        dc "{font=times}Why yes, I am. Is there anything wrong?{/font}"
+        li "{font=times}Father's been extremely busy with work lately. There's a very important event in his business coming up, and he's under a large amount of pressure right now. It seems to be… taking a toll on him.{/font}"
+        dc "{font=times}Are there any specifics you can give me, Miss Satou?{/font}"
+        li "{font=times}Just… several things. He's been having trouble sleeping as of late. My mother said he complained about RSI in his shoulder earlier today. There's been talk of… hmmm… indigestion.{/font}"
+        li "{font=times}He actually came home earlier today because he felt a little unwell and my friends said he looked rather pale. I noticed his breathing was a bit shallower than usual.{/font}"
+        li "{font=times}I'm… probably worrying about nothing, but I was wondering if you would…{/font}"
+        dc "{font=times}Just a moment, Miss Satou. Did you say he felt unwell earlier?{/font}"
+        li "{font=times}Yes, but the sensation disappeared eventually.{/font}"
+        dc "{font=times}What kind of sensation? Localized anywhere?{/font}"
+        li "{font=times}He didn't say.{/font}"
+        dc "{font=times}...{/font}"
         "A long silence."
-        li "{font=times}Doctor?"
-        dc "{font=times}Miss Satou, is there anyone present with a driver's license aside from your father?"
-        li "{font=times}Ah… there isn't. Mother is out of town this evening. I could perhaps call the housekeeper. She might be willing to take him to your place."
-        li "{font=times}But is there a reason why it'd be irresponsible for him to drive himself?"
-        dc "{font=times}There is no need for him to come by my place, Miss Satou. But I think it would not be a bad idea to quickly stop by at Raigmore and have someone there take a look at him. It's not very far from where you live, is it?"
+        li "{font=times}Doctor?{/font}"
+        dc "{font=times}Miss Satou, is there anyone present with a driver's license aside from your father?{/font}"
+        li "{font=times}Ah… there isn't. Mother is out of town this evening. I could perhaps call the housekeeper. She might be willing to take him to your place.{/font}"
+        li "{font=times}But is there a reason why it'd be irresponsible for him to drive himself?{/font}"
+        dc "{font=times}There is no need for him to come by my place, Miss Satou. But I think it would not be a bad idea to quickly stop by at Raigmore and have someone there take a look at him. It's not very far from where you live, is it?{/font}"
         "I let out a surprised gasp."
-        li "{font=times}The hospital?"
+        li "{font=times}The hospital?{/font}"
         "First Hanako and now the doctor…"
 
         stop music fadeout 10.0
 
         play ambient sfx_ticktock fadein 10.0
 
-        dc "{font=times}Yes. I'm going to make a quick phone call there and tell them to expect you. Have you been to Raigmore before? Do you know where the cardiology ward is located?"
-        dc "{font=times}Ah, then again, your father probably knows where it is, given his profession."
+        dc "{font=times}Yes. I'm going to make a quick phone call there and tell them to expect you. Have you been to Raigmore before? Do you know where the cardiology ward is located?{/font}"
+        dc "{font=times}Ah, then again, your father probably knows where it is, given his profession.{/font}"
         "I feel my blood freeze in my veins and a heavy sensation in the pit of my stomach."
-        li "{font=times}C-cardiology?"
-        dc "{font=times}Yes. The person on duty there will either be Doctor Morrison or Doctor McElroy."
-        li "{font=times}Doctor… What's going on?"
-        dc "{font=times}…could I speak briefly with your father, Miss Satou?"
-        li "{font=times}Of course…"
+        li "{font=times}C-cardiology?{/font}"
+        dc "{font=times}Yes. The person on duty there will either be Doctor Morrison or Doctor McElroy.{/font}"
+        li "{font=times}Doctor… What's going on?{/font}"
+        dc "{font=times}…could I speak briefly with your father, Miss Satou?{/font}"
+        li "{font=times}Of course…{/font}"
 
         stop ambient fadeout 1.0
 
@@ -737,8 +737,8 @@ label sh_ch30:
         "As my hand makes contact with it, I feel a shiver running down my spine."
         "It's a person, lying on the floor near the door."
         li "Father?"
-        "{i}Not an acknowledgement, nor a typing sound. Not even a breath.{/i}"
-        "{b}{i}NOT EVEN A BREATH!{/i}{/b}"
+        "Not an acknowledgement, nor a typing sound. Not even a breath."
+        "{b}NOT EVEN A BREATH!{/b}"
 
         scene ev withoutthinking_lilly
         with mediumflash
@@ -746,10 +746,10 @@ label sh_ch30:
         play music music_tragic
 
         li "{i}FATHER!{/i}"
-        dc "{font=times}Miss Satou!"
+        dc "{font=times}Miss Satou!{/font}"
         "The sound of the doctor's voice on the phone reminds me that I was on my way to hand over the phone."
-        dc "{font=times}Miss Satou, I'm going to hang up and call an ambulance to pick up your father this instant. Do not leave his side until they arrive."
-        "What's happening? What's going on? Is he…?"
+        dc "{font=times}Miss Satou, I'm going to hang up and call an ambulance to pick up your father this instant. Do not leave his side until they arrive.{/font}"
+        "{i}What's happening? What's going on? Is he…?{/i}"
         hi "Lilly? Is something wrong?"
         "I hear Hisao's and Hanako's footsteps hurriedly approaching, probably drawn here by my shout."
 
@@ -763,7 +763,7 @@ label sh_ch30:
         "Hanako's breathing, on the other hand, is becoming more pronounced by the second. I'd probably start worrying about her if I wasn't on the verge of panic myself."
         hi "Damn, should we give him artificial respiration? Does he even have a pulse?"
         li "I… I don't know. J-just d-do something, please."
-        "I'm not sure what's more unsettling—Hisao's panicked tone or Hanako's ragged breathing."
+        "I'm not sure what's more unsettling, Hisao's panicked tone or Hanako's ragged breathing."
         hi "I can't feel any pulse in his wrist. Is there a better way to do this?"
         "She's almost hyperventilating."
         li "I don't know!"
@@ -771,7 +771,7 @@ label sh_ch30:
         show ev withoutthinking_cpr
         with { "master": charachangeev }
 
-        $ show_doublespeak(li, _("Aah!"), hi, _("Hey!"))
+        $ sh_show_doublespeak(li, _("Aah!"), hi, _("Hey!"))
 
         "Hisao and I let out a surprised cry as we're suddenly violently being pushed aside, and I nearly hit my head on the table in the process."
         "When I catch my bearings, I become once again aware of Hanako's breathing, but it's different this time. Instead of the hyperventilating gasps she was letting out earlier, she's now letting out a steady stream of short, sharp breaths."
@@ -860,9 +860,9 @@ label sh_ch30:
 
         "The sound of the siren is now joined by the sound of a car screeching to a halt."
         "Then footsteps. Many footsteps. And voices."
-        "Paramedic" "{font=times}Lead the way, lad."
-        "Paramedic" "{font=times}The doctor who called said it was probably a heart attack. Bruce, you do the compressions!"
-        "Paramedic" "{font=times}Will do!"
+        "Paramedic" "{font=times}Lead the way, lad.{/font}"
+        "Paramedic" "{font=times}The doctor who called said it was probably a heart attack. Bruce, you do the compressions!{/font}"
+        "Paramedic" "{font=times}Will do!{/font}"
         ha "{i}*huff* *huff* *huff*{/i}"
 
         stop sound fadeout 0.5
@@ -874,24 +874,24 @@ label sh_ch30:
         with locationchange
 
         "I hear several people bursting into the room. I just sit there in a daze as everything plays out in front of me, unable to figure out how to act or what to say."
-        "Paramedic" "{font=times}Alright, lass, you can stop now. We'll take over from here."
+        "Paramedic" "{font=times}Alright, lass, you can stop now. We'll take over from here.{/font}"
         ha "{i}*huff* *huff* *huff*{/i}"
-        "Paramedic" "{font=times}Hey, didn't you hear me? You need to give us room to work!"
+        "Paramedic" "{font=times}Hey, didn't you hear me? You need to give us room to work!{/font}"
         ha "{i}*huff* *huff* *huff*{/i}"
-        "Paramedic" "{font=times}Damn, we don't have time for this. Ian, get her away from him so I can get started!"
-        "Paramedic" "{font=times}Sure."
+        "Paramedic" "{font=times}Damn, we don't have time for this. Ian, get her away from him so I can get started!{/font}"
+        "Paramedic" "{font=times}Sure.{/font}"
 
         show hanako defarms_shock_sum at center behind crowd
         with Dissolve(0.2)
 
         ha "AAAAAAAAHHH!"
-        "Paramedic" "{font=times}Whoa! Hey, no need to freak out. We're here to help!!"
+        "Paramedic" "{font=times}Whoa! Hey, no need to freak out. We're here to help!!{/font}"
 
         show hisao basic_annoy_polo at left
         with charaenter
 
         hi "Hey! Get your hands off of her!"
-        "Paramedic" "{font=times}What's he saying?"
+        "Paramedic" "{font=times}What's he saying?{/font}"
 
         show hisao basic_worry_polo at twoleft
         show hanako emb_downtimid_sum
@@ -904,60 +904,60 @@ label sh_ch30:
         hide hanako
         with charaexit
 
-        "Paramedic" "{font=times}Bruce!"
-        "Paramedic" "{font=times}I'm on it! Neil, get that adrenaline injection ready."
-        "Paramedic" "{font=times}Hey lass, maybe it's better if you go and check up on your… uh… friends."
-        "Paramedic" "{font=times}Lass, you with us?"
-        li "{font=times}Ah, I apologize. I'd… like to stay here if possible."
-        "Paramedic" "{font=times}Just don't get in our way, okay?"
-        "Paramedic" "{font=times}Okay, I'm giving him an adrenaline shot."
-        "Paramedic" "{font=times}Ian, get that defibrillator ready. Hopefully we get lucky and get a shockable rhythm."
-        "Paramedic" "{font=times}Man, what was with that girl? Why did she go nuts like that?"
-        "Paramedic" "{font=times}This is probably her dad. Can't blame her. I've seen worse reactions."
-        "Paramedic" "{font=times}Whadda you think that guy who let us in was saying?"
-        "Paramedic" "{font=times}Dunno, it sounded like Chinese or Japanese. Heck, look at this room. It's completely Asian style."
-        "Paramedic" "{font=times}Neil, one more injection."
-        "Paramedic" "{font=times}Gotcha."
-        "Paramedic" "{font=times}Keep going, people."
-        "Paramedic" "{font=times}Come on, come on!"
-        "Paramedic" "{font=times}Did you guys see that girl? That was one nasty burn on her face. Wonder how she got it."
-        "Paramedic" "{font=times}Hey, keep it down Neil!"
-        "Paramedic" "{font=times}Sorry."
-        "Paramedic" "{font=times}I think I'm getting something."
-        "Paramedic" "{font=times}Keep going, Bruce."
-        "Paramedic" "{font=times}Give him another shot?"
-        "Paramedic" "{font=times}Might not be necessary. Get those electrodes in place!"
-        "Paramedic" "{font=times}Right away!"
-        "Paramedic" "{font=times}That's a beat alright. Ian!"
+        "Paramedic" "{font=times}Bruce!{/font}"
+        "Paramedic" "{font=times}I'm on it! Neil, get that adrenaline injection ready.{/font}"
+        "Paramedic" "{font=times}Hey lass, maybe it's better if you go and check up on your… uh… friends.{/font}"
+        "Paramedic" "{font=times}Lass, you with us?{/font}"
+        li "{font=times}Ah, I apologize. I'd… like to stay here if possible.{/font}"
+        "Paramedic" "{font=times}Just don't get in our way, okay?{/font}"
+        "Paramedic" "{font=times}Okay, I'm giving him an adrenaline shot.{/font}"
+        "Paramedic" "{font=times}Ian, get that defibrillator ready. Hopefully we get lucky and get a shockable rhythm.{/font}"
+        "Paramedic" "{font=times}Man, what was with that girl? Why did she go nuts like that?{/font}"
+        "Paramedic" "{font=times}This is probably her dad. Can't blame her. I've seen worse reactions.{/font}"
+        "Paramedic" "{font=times}Whadda you think that guy who let us in was saying?{/font}"
+        "Paramedic" "{font=times}Dunno, it sounded like Chinese or Japanese. Heck, look at this room. It's completely Asian style.{/font}"
+        "Paramedic" "{font=times}Neil, one more injection.{/font}"
+        "Paramedic" "{font=times}Gotcha.{/font}"
+        "Paramedic" "{font=times}Keep going, people.{/font}"
+        "Paramedic" "{font=times}Come on, come on!{/font}"
+        "Paramedic" "{font=times}Did you guys see that girl? That was one nasty burn on her face. Wonder how she got it.{/font}"
+        "Paramedic" "{font=times}Hey, keep it down Neil!{/font}"
+        "Paramedic" "{font=times}Sorry.{/font}"
+        "Paramedic" "{font=times}I think I'm getting something.{/font}"
+        "Paramedic" "{font=times}Keep going, Bruce.{/font}"
+        "Paramedic" "{font=times}Give him another shot?{/font}"
+        "Paramedic" "{font=times}Might not be necessary. Get those electrodes in place!{/font}"
+        "Paramedic" "{font=times}Right away!{/font}"
+        "Paramedic" "{font=times}That's a beat alright. Ian!{/font}"
 
         play sound sfx_defibrillator_charge
 
-        "Paramedic" "{font=times}Okay, get back Bruce."
-        "Paramedic" "{font=times}He's all yours."
-        "Paramedic" "{font=times}Clear!"
+        "Paramedic" "{font=times}Okay, get back Bruce.{/font}"
+        "Paramedic" "{font=times}He's all yours.{/font}"
+        "Paramedic" "{font=times}Clear!{/font}"
 
         play sound sfx_defibrillator_discharge
 
         pause 2.0
 
-        "Paramedic" "{font=times}And…?"
-        "Paramedic" "{font=times}One more time."
-        "Paramedic" "{font=times}Clear!"
+        "Paramedic" "{font=times}And…?{/font}"
+        "Paramedic" "{font=times}One more time.{/font}"
+        "Paramedic" "{font=times}Clear!{/font}"
 
         play sound sfx_defibrillator_discharge
 
         pause 2.0
 
-        "Paramedic" "{font=times}I think we got a pulse. Get the respiratory device and ready the stretcher."
-        "Paramedic" "{font=times}Got it!"
-        "Paramedic" "{font=times}Hey lass. We're about to move out."
-        li "{font=times}W-will my father make it, sir?"
-        "Paramedic" "{font=times}We've done all we can here. It's up to the doctors at Raigmore to make it stick."
-        "Paramedic" "{font=times}Keith! Radio the Emergency Department that we'll be there in 8 minutes."
-        "Paramedic" "{font=times}Right!"
-        li "{font=times}Sir, would it be okay with you if I… came along?"
-        "Paramedic" "{font=times}Only if you come along with us right here and now. We can't wait for you."
-        li "{font=times}I understand."
+        "Paramedic" "{font=times}I think we got a pulse. Get the respiratory device and ready the stretcher.{/font}"
+        "Paramedic" "{font=times}Got it!{/font}"
+        "Paramedic" "{font=times}Hey lass. We're about to move out.{/font}"
+        li "{font=times}W-will my father make it, sir?{/font}"
+        "Paramedic" "{font=times}We've done all we can here. It's up to the doctors at Raigmore to make it stick.{/font}"
+        "Paramedic" "{font=times}Keith! Radio the Emergency Department that we'll be there in 8 minutes.{/font}"
+        "Paramedic" "{font=times}Right!{/font}"
+        li "{font=times}Sir, would it be okay with you if I… came along?{/font}"
+        "Paramedic" "{font=times}Only if you come along with us right here and now. We can't wait for you.{/font}"
+        li "{font=times}I understand.{/font}"
 
         stop music fadeout 2.0
 
@@ -1017,13 +1017,13 @@ label sh_ch30:
         with locationchange
 
         "He helps me get out of the car before giving an awkward cough."
-        "Paramedic" "{font=times}I have to get back on the road, but… uh… right in front of you is a nurse who'll be happy to look after you for a bit. Her name's Sally."
-        "Nurse" "{font=times}Hello, Miss. What's your name?"
-        li "{font=times}Ah, L-Lilly. About my father…"
-        "Nurse" "{font=times}They're taking him to the operating room as we speak. We're going to do everything we can to help him, so try not to worry, alright?"
-        li "{font=times}I'll… try."
-        "Nurse" "{font=times}I'm going to take you to the waiting area. We're going to inform you the moment we know more."
-        li "{font=times}Yes, t-thank you."
+        "Paramedic" "{font=times}I have to get back on the road, but… uh… right in front of you is a nurse who'll be happy to look after you for a bit. Her name's Sally.{/font}"
+        "Nurse" "{font=times}Hello, Miss. What's your name?{/font}"
+        li "{font=times}Ah, L-Lilly. About my father…{/font}"
+        "Nurse" "{font=times}They're taking him to the operating room as we speak. We're going to do everything we can to help him, so try not to worry, alright?{/font}"
+        li "{font=times}I'll… try.{/font}"
+        "Nurse" "{font=times}I'm going to take you to the waiting area. We're going to inform you the moment we know more.{/font}"
+        li "{font=times}Yes, t-thank you.{/font}"
 
         play ambient sfx_crowd_indoors fadein 1.0
 
@@ -1033,12 +1033,12 @@ label sh_ch30:
 
         "I place my hand on her arm and let her guide me through several hallways."
         "We finally reach an area where I hear several other people around me."
-        "Nurse" "{font=times}You can wait here. There's a seat right in front of you."
-        "Nurse" "{font=times}Is there anything I can do? Perhaps get you something to drink?"
+        "Nurse" "{font=times}You can wait here. There's a seat right in front of you.{/font}"
+        "Nurse" "{font=times}Is there anything I can do? Perhaps get you something to drink?{/font}"
         "They probably don't have a white cane lying around here. There wasn't time to retrieve my own, and I feel really disorientated and vulnerable in the middle of an unknown environment without even my cane to navigate."
         "No, there's probably no point in asking. But maybe…"
-        li "{font=times}Would it be possible… to make a quick phone call? My sister and my mother don't even know what has happened yet, and I left my own cell phone behind when I came here."
-        "Nurse" "{font=times}If it's just a very quick call, you can make one in our office. Let me take you there."
+        li "{font=times}Would it be possible… to make a quick phone call? My sister and my mother don't even know what has happened yet, and I left my own cell phone behind when I came here.{/font}"
+        "Nurse" "{font=times}If it's just a very quick call, you can make one in our office. Let me take you there.{/font}"
         li "Thank you."
 
         stop ambient fadeout 0.5
@@ -1057,7 +1057,7 @@ label sh_ch30:
         show akira basic_smile_phone at phonebox
         with charaenter
 
-        aki "{font=times}Good evening, this is Akira Satou speaking."
+        aki "{font=times}Good evening, this is Akira Satou speaking.{/font}"
         "I'm taken back by Akira's formal tone before realizing that she doesn't recognize the number I'm calling from."
         li "A-Akira, it's me."
 
@@ -1085,8 +1085,8 @@ label sh_ch30:
         with charaexit
 
         "Akira hangs up, and I hand the phone back to the nurse."
-        li "{font=times}Thank you. Could you… take me back to the waiting area, please?"
-        "Nurse" "{font=times}I will."
+        li "{font=times}Thank you. Could you… take me back to the waiting area, please?{/font}"
+        "Nurse" "{font=times}I will.{/font}"
 
         if _in_replay:
             return
@@ -1112,49 +1112,49 @@ label sh_ch30:
         with { "master": Dissolve(1.0) }
 
         "How could this have happened?"
-        mystery "{font=times}Daddy, it hurts! When can the doctor see us?"
+        mystery "{font=times}Daddy, it hurts! When can the doctor see us?{/font}"
 
         show darkness:
             alpha 0.2
         with { "master": Dissolve(1.0) }
 
         "And why?"
-        mystery "{font=times}Just a little while longer, Mary. There are other people here who also need help. Let me get you a glass of water."
+        mystery "{font=times}Just a little while longer, Mary. There are other people here who also need help. Let me get you a glass of water.{/font}"
 
         show darkness:
             alpha 0.3
         with { "master": Dissolve(1.0) }
 
         "Just when I finally had an opportunity to spend time with him."
-        mystery "{font=times}I don't want a glass of water! Why can't we see the doctor now?!"
+        mystery "{font=times}I don't want a glass of water! Why can't we see the doctor now?!{/font}"
 
         show darkness:
             alpha 0.4
         with { "master": Dissolve(1.0) }
 
         "To get to know him."
-        mystery "{font=times}Hey mommy, that girl sitting over there is staring really strangely."
+        mystery "{font=times}Hey mommy, that girl sitting over there is staring really strangely.{/font}"
 
         show darkness:
             alpha 0.5
         with { "master": Dissolve(1.0) }
 
         "There were so many things I still wanted to tell him. And ask him."
-        mystery "{font=times}Shush Kevin, don't be rude!"
+        mystery "{font=times}Shush Kevin, don't be rude!{/font}"
 
         show darkness:
             alpha 0.6
         with { "master": Dissolve(1.0) }
 
         "Will I ever get the opportunity now?"
-        mystery "{font=times}Mister McAdams, the doctor will see you now."
+        mystery "{font=times}Mister McAdams, the doctor will see you now.{/font}"
 
         show darkness:
             alpha 0.7
         with { "master": Dissolve(1.0) }
 
         "I've never felt so alone and miserable as I'm feeling right now."
-        mystery "{font=times}Thank God. Come on, dear."
+        mystery "{font=times}Thank God. Come on, dear.{/font}"
         "Father…"
         "Please make it through this."
         "Please."
@@ -1172,10 +1172,10 @@ label sh_ch30:
         li "{size=*0.8}Our Father in heaven,"
         li "{size=*0.8}hallowed be your name."
         li "{size=*0.8}Your kingdom come, your will be done, on earth, as it is in {i}*sniff*{/i} heaven."
-        mystery "{font=times}Doctor, is there any news about my wife?"
+        mystery "{font=times}Doctor, is there any news about my wife?{/font}"
         li "{size=*0.8}Give us this day our daily bread,"
         li "{size=*0.8}and forgive us our debts,"
-        mystery "{font=times}Please have a bit more patience, sir. My colleagues are doing the best they can."
+        mystery "{font=times}Please have a bit more patience, sir. My colleagues are doing the best they can.{/font}"
         li "{size=*0.8}as we also have forgiven our debtors."
         li "{size=*0.8}And {i}*sniff*{/i} lead us not into temptation,"
         li "{size=*0.8}but deliver us from evil."

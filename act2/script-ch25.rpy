@@ -1165,7 +1165,7 @@ label sh_ch25:
                 ease 0.05 xpos 0.5
         with { "master": Dissolvemove(0.2) }
 
-        $ show_doublespeak(hi, "Woah!", ha, "Ah!")
+        $ sh_show_doublespeak(hi, "Woah!", ha, "Ah!")
 
         "That proved trickier than I thought. Keeping your balance is quite difficult when someone on the same bike is trying to do the same at the exact same moment."
         "Lilly and her mother seem to be doing slightly better mostly due to Karla seeming better at anticipating her daughter's movements."

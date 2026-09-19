@@ -1392,6 +1392,10 @@ label sh_ch29:
         "Staying true to tradition, I lie next to him and place my hand on his chest, feeling his frantic heartbeat slowly return to normal and keeping an eye out for palpitations."
         "Eventually, Hisao's dazed eyes start regaining some focus, and after recognizing the look on my face he gives a careful deliberate nod. I give a reassured smile and a quick peck on the cheek back."
         ha "I'll… go and get something to clean you, Hisao."
+
+        stop sound
+        $ renpy.music.set_volume(1.0)
+
         "Without waiting for a response, I walk over to the bathroom area and get some tissues from a box on one of the shelves."
         "We have some tissues in our nightstand drawer too, but I also wanted an excuse to clean myself a bit. I don't think Hisao's going to kiss me like this."
         "I get myself a glass of water and drink it, slowly weakening the odd taste in my mouth until it's gone altogether. I return to the bed and kneel at Hisao's side, using the tissue to wipe his stomach clean."

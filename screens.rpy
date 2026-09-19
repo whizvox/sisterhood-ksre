@@ -2,6 +2,15 @@ init python:
     def sh_should_show_disclaimer():
         return persistent.sh_show_disclaimer and not renpy.seen_label("a4_hanako.adulthood")
 
+    def sh_show_doublespeak(char1, dialogue1, char2, dialogue2, prehide=True, postshow=True):
+        if prehide:
+            _window_hide(trans=Dissolve(0.2), auto=True)
+        renpy.call_screen("sh_doublespeak", char1, __(dialogue1), char2, __(dialogue2), _with_none=False)
+        renpy.with_statement(Dissolve(0.2))
+        if postshow:
+            _window_show(trans=Dissolve(0.2), auto=True)
+
+
 screen sisterhood():
     tag menu
     style_prefix "pxt"

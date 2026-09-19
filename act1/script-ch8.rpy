@@ -352,7 +352,8 @@ label sh_ch8:
 
         "{font=pixel}8:7{/font}"
 
-        play music music_ease volume 0.6 fadein 4.0
+        play music music_ease fadein 4.0
+        $ renpy.music.set_volume(0.6)
         play sound sfx_airhockey_rally loop
 
         show hisao basic_speak_polo
@@ -628,8 +629,11 @@ label sh_ch8:
         "The peaceful corner of the coffee shop where we decided to take a breather after leaving the arcade is a refreshing change from the bustling of the crowded arcade hall."
         "While my difficulty with crowds hasn't raised its head enough to ruin my fun this evening, it still feels good to relax in a quiet place for a while."
 
-        show hisao basic_neutral_polo_ss at left
-        with charaenter
+        show hisao basic_neutral_polo_ss at offscreenleft
+        with None
+
+        show hisao at left
+        with charamove
 
         hi "Sorry it took so long."
         "Hisao returns from the counter holding a bottle of soda and a cup of hot cocoa."
@@ -652,14 +656,10 @@ label sh_ch8:
         hide hisao
         with charaexit
 
-        show niji_plush:
-            truecenter
-            ypos 0.7 alpha 0.0
-            ease 1.0 truecenter alpha 1.0
+        show niji_plush at displayitemshow
         with Pause(1.0)
 
-        show niji_plush at truecenter:
-            alpha 1.0
+        show niji_plush at displayitem
         with None
 
         "We both look at the plush puppy we liberated from the crane game near the arcade's entrance through our combined efforts."
@@ -670,8 +670,7 @@ label sh_ch8:
 
         $ renpy.music.set_volume(1.0, 1.0, channel="music")
 
-        show niji_plush:
-            ease 1.0 ypos 0.7 alpha 0.0
+        show niji_plush at displayitemhide
         with Pause(1.0)
 
         hide niji_plush
