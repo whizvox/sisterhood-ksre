@@ -32,10 +32,10 @@ init 1 python:
                         _sh_sprites(char, variant, imgpath, nude_if and nude_if(imgpath))
                     closeimgpath = f"{sh_path}/sprites/{char}/close/{char}_{variant}_close.png"
                     if renpy.loadable(closeimgpath):
-                        _sh_sprites(char, f"{variant}_close", closeimgpath, nude_if and nude_if(imgpath))
+                        _sh_sprites(char, f"{variant}_close", closeimgpath, nude_if and nude_if(closeimgpath))
                     supercloseimgpath = f"{sh_path}/sprites/{char}/superclose/{char}_{variant}_superclose.png"
                     if renpy.loadable(supercloseimgpath):
-                        _sh_sprites(char, f"{variant}_superclose", supercloseimgpath, nude_if and nude_if(imgpath))
+                        _sh_sprites(char, f"{variant}_superclose", supercloseimgpath, nude_if and nude_if(supercloseimgpath))
 
     def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0, addwidth=0, addheight=0):
         for variant in variants:

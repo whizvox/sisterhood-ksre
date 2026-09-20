@@ -37,7 +37,7 @@ label sh_ch34:
 
         "I walk into the bathing area, and sure enough, Lilly's kneeling near the small shelves underneath the mirrors."
 
-        show lilly basic_oops_sum at twoleft
+        show lilly basic_oops_sum at twoleftsit
         with charaenter
 
         "There are several bottles and flasks around her, and Lilly's sweeping the ground with her hands in an attempt to locate them all."
@@ -63,7 +63,7 @@ label sh_ch34:
         ha "Oh… uh…"
         "I think I have a good idea of who created this little inconvenience for Lilly."
         ha "S-sorry, Lilly. That m-may have been me."
-        "Hisao and I took a bath together the day before Lilly's father had his incident. I meant to clean up after ourselves afterwards, but we got… distracted by other things while we were here."
+        "Hisao and I took a bath together the day before Lilly's father had his incident. I meant to clean up after ourselves afterwards, but we got… distracted by other things while we were here." # understatement
 
         show lilly basic_smileclosed_sum
         with chchange
@@ -116,9 +116,13 @@ label sh_ch34:
         show lilly basic_weaksmile_sum
         with chchange
 
-        "Lilly looks in deep thought for a moment. Then, she gives a small nod."
+        "Lilly looks in deep thought for a moment. Then she gives a small nod."
         li "I… would probably welcome that, Hanako."
         ha "G-great."
+
+        show lilly at twoleft
+        with charamove
+
         "Lilly gets up, and I allow her to take hold of my sleeve before helping her return to the changing area."
 
         scene bg satou_changingroom
@@ -181,14 +185,14 @@ label sh_ch34:
         li "To be honest, I had been hoping for a chance to take a soak together with you since we came here. I don't see us visiting a hot spring resort or anything like it anytime soon in Japan. Maybe this would be a good opportunity."
         ha "Ah… r-really?"
         "Lilly nods."
-        li "It's also easier to talk to each other when you're sitting next to me instead of half-way across the room. And as you may have noticed yourself, the bath is a bit on the large side for just one person."
+        li "It's also easier to talk to each other when you're sitting next to me instead of halfway across the room. And as you may have noticed yourself, the bath is a bit on the large side for just one person."
         li "It seems to have been built with group activity in mind. Or rather, family activity."
         ha "F-family activity?"
 
         show lilly behind_reminisce_nak
         with chchange
 
-        li "Yes, bathing was very much a family activity back in the days. I used to take baths with Mother and Akira all the time when I was young. Occupying such a large bath on one's own feels… off somehow."
+        li "Yes, bathing was very much a family activity back in the day. I used to take baths with Mother and Akira all the time when I was young. Occupying such a large bath on one's own feels… off somehow."
         ha "If it's a f-family activity to you, then…"
         "Lilly quickly shakes her head before I can finish my sentence."
 
@@ -283,6 +287,8 @@ label sh_ch34:
         "I make my way over to Lilly, and we allow ourselves to sink slowly into the water."
 
         scene ev sharedsoak_lilly_relax
+        show steam:
+            alpha 0.5
         with mediumflash
 
         li "Aaaaaahhhhh…"
@@ -309,12 +315,16 @@ label sh_ch34:
         ha "She… wanted to spend some time with me before I leave tomorrow. She wasn't sure when we'll meet each other again, after all."
         "She's also worried about you, but I don't think I should let that one slip. I don't like being so secretive, but if Lilly mistakenly believes that I'm only here because Akira sent me, she might clam up."
         li "That makes sense."
+        "…"
         ha "…Lilly?"
         li "Yes, Hanako?"
         "Maybe I should ask her straight out."
         ha "W-what d-did you mean when you said that… I f-felt more like f-family than anyone else? D-did you… mean that?"
 
         stop music fadeout 2.0
+
+        show ev sharedsoak_lilly_grimace
+        with charachangeev
 
         "Lilly doesn't immediately answer. I briefly wonder if she's just going to smile and dismiss the whole thing."
         "But then she sighs softly."
@@ -355,7 +365,7 @@ label sh_ch34:
         with charachangeev
 
         li "I had been hoping that Father's hospitalization would have resulted in a truce or even a new start, but it seems that even an event as major as this wasn't enough. I'm not really sure how to deal with Akira now."
-        "For a moment Lilly looks mildly frustrated."
+        "For a moment, Lilly looks mildly frustrated."
         li "I… really want to be understanding of Akira. She's endured a lot of hardships of her own. But… {i}*sigh*{/i} what kind of person starts a fight with someone who only just got off life support?"
         "And today was pretty much a rematch of the confrontation Lilly referred to."
         ha "It… is indeed a bit harsh."
@@ -385,12 +395,12 @@ label sh_ch34:
         "Lilly turns to me."
         li "Hanako, if you don't mind me asking… What do you think about my mother?"
         ha "Huh?"
-        li "Please just give me your honest impression. Surely you must have come here with certain expectations."
-        ha "Hmmm. She was… different from what I was expecting, but she was nevertheless very nice. I think I like her."
+        li "Please, just give me your honest impression. Surely you must have come here with certain expectations."
+        ha "Hmmm… She was… different from what I was expecting, but she was nevertheless very nice. I think I like her."
         li "May I ask what exactly you were expecting?"
         ha "I think I was expecting to meet an older version of you. Like… a formal and graceful upper-class woman with impeccable m-manners. Maybe, unlike you, even a bit haughty or s-snobbish. I know it's a bit silly."
         ha "But your mother actually reminds me quite a bit of Akira. I think I simply made the wrong guess."
-        li "You were expecting a so-called proper lady?"
+        li "You were expecting a so-called ‘proper lady’?"
         "I think I’ve heard Lilly's father utter that phrase a few times."
         ha "Yes. But it doesn't really matter that much to me. Why do you want to k-know all this?"
 
@@ -437,7 +447,7 @@ label sh_ch34:
         li "Yes?"
         ha "I… I think I know how you must have felt."
         li "You do?"
-        ha "When I was… still getting to know Hisao, I used to worry a lot about what he thought of me. I was often afraid that he looked d-down on me. That I was j-just someone for him to worry over."
+        ha "When I was… still getting to know Hisao, I used to worry a lot about what he thought of me. I was often afraid that he looked d-down on me, that I was j-just someone for him to worry over."
 
         show ev sharedsoak_lilly_grimace
         with charachangeev
@@ -472,7 +482,7 @@ label sh_ch34:
         show ev sharedsoak_lilly_grimace
         with charachangeev
 
-        ha "I was thinking… maybe… maybe the same is true with you and your father. Maybe your father… didn't really mean to d-disrespect you, but… he s-simply didn't know you well enough yet either. Maybe he's simply… ignorant."
+        ha "I was thinking… maybe… maybe the same is true with you and your father. Maybe your father… didn't really mean to d-disrespect you, but… he s-simply didn't know you well enough yet, either. Maybe he's simply… ignorant."
         "There's a long silence as Lilly ponders my words."
         li "Do you really think the two cases are similar, Hanako?"
         ha "I… think so. I think your father cares about you in his own way or he w-would not have offered to take us to Edinburgh while things were still so busy at work."
@@ -510,7 +520,7 @@ label sh_ch34:
 
         ha "Then… uh… I'll b-be your f-family… instead. Either way, you w-won't be alone."
 
-        scene ev sharedsoak_lilly_shoulder
+        show ev sharedsoak_lilly_shoulder
         with charachangeev
 
         "Lilly lets out a happy laugh at my remark."
@@ -519,7 +529,7 @@ label sh_ch34:
 
         stop music fadeout 0.2
 
-        scene ev sharedsoak_lilly_shoulder2
+        show ev sharedsoak_lilly_shoulder2
         with charachangeev
 
         "While I'm still in the middle of my sentence, I suddenly become aware that Lilly has softly put her hand on my shoulder."
@@ -527,19 +537,27 @@ label sh_ch34:
 
         play music music_rain
 
-        show black
-        with Dissolve(0.2)
-
         "I gasp and in a sudden fit of panic, I lunge forward in an attempt to get away."
 
+        show ev sharedsoak_lilly_recoil
+        with Dissolve(0.2)
+
+        pause 0.3
+
         play sound sfx_rocksplash
+
+        show black at truecenter:
+            zoom 1.02
+        with vpunch
 
         "However, due to the resistence of the water reaching to just above my knees, I promptly fall over, producing a loud splash in the process. In other circumstances, it'd probably be comical."
         "The splash gets some water in my nose, and I snort and cough a few times before I can regain my composure."
         "I finally calm down enough to realize that I just made an utter fool of myself in front of Lilly and anxiously look over my shoulder at my friend."
 
         scene bg satou_bathroom
-        show lilly behind_concerned_nak_close at rightsit
+        show lilly behind_concerned_nak_close at centersit
+        show steam:
+            alpha 0.5
         with charaenter
 
         "Lilly's smile has vanished and in its place is a worried, almost frightened, expression."
@@ -559,19 +577,25 @@ label sh_ch34:
         "Lilly seems to consider it and then slowly nods."
         li "I apologize. What was it that you wanted to say before I interrupted you?"
 
-        stop music fadeout 2.0
-        play music music_moonlight fadein 4.0
+        stop music fadeout 5.0
+
+        queue music music_moonlight fadein 5.0
 
         scene ev sharedsoak_lilly_grimace
+        show steam:
+            alpha 0.5
         with charachangeev
 
         "Having recollected myself, I return to my spot next to Lilly and swallow a lump in my throat before replying."
         ha "What I w-wanted to say was… that s-supporting your father is also simply the r-right thing to do. B-being stuck in the hospital after s-surgery is hard on everyone."
         ha "Your f-father probably f-feels he can't show it, b-but I think that d-deep down, he's feeling a little bit l-like Hisao m-must have felt. Or…"
         "An uneasy feeling starts welling up in my stomach before I can finish my sentence, but Lilly seems to have guessed what I was about to say."
+
+        stop music fadeout 4.0
+
         li "Or how you must have felt… Does this situation remind you of your own hospitalization, Hanako?"
 
-        play music music_hanako fadein 4.0
+        queue music music_hanako fadein 5.0
 
         show ev sharedsoak_lilly_history
         with charachangeev
@@ -582,8 +606,10 @@ label sh_ch34:
         li "Was that what it was like for you, Hanako?"
 
         scene ev hanakohistory_bed
+        show n_vignette:
+            alpha 0.3
         show darkness:
-            alpha 0.4
+            alpha 0.3
         with Fade(1, 0, 1)
 
         ha "I… d-don't really remember m-my own first week very well. I… w-was on very heavy medication at first. The strongest they had. M-my room was one of those s-sealed pods that w-was completely s-sterile. I b-barely survived the f-fire."
@@ -616,7 +642,7 @@ label sh_ch34:
         ha "My mother… tried to shield me. Th-that's the reason… I lived… and she… d-didn't."
         li "..."
         ha "I was… still on intensive care… f-fighting for my own l-life when the… c-c-cremation took place."
-        ha "M-maybe it w-was for the best. If… If I h-had been there when they… when they were… I d-don't think I w-would have… "
+        ha "M-maybe it w-was for the best. If… If I h-had been there when they… when they were… I d-don't think I w-would have…"
 
         hide ev
         show black behind darkness
@@ -628,7 +654,7 @@ label sh_ch34:
         "That comment makes me smile despite the mood of the moment."
         "It's just so much like Lilly to say something kind like that."
 
-        show ev hanakohistory_urn
+        show ev hanakohistory_urn behind darkness
         with charachangeev
 
         ha "Th-they're not. The funeral w-was already very costly, and it w-was decided not to s-spend additional money on a grave with just m-me to maintain it."
@@ -648,7 +674,7 @@ label sh_ch34:
         li "But you were all in the same boat, weren't you?"
 
         show ev hanakohistory_read_leave
-        with { "master": Dissolve(2.0) }
+        with { "master": Dissolve(5.0) }
 
         ha "I'm n-not sure. As th-the years went on, I realized… I was different. M-most of the children there were up for adoption, just like I was. But unlike me… they gradually left, o-one by one."
         ha "By the time I went to Yamaku, I was… among the oldest ch-children there. For a while, I h-helped with some of the y-younger children, but… I n-never really got to know them either."
@@ -665,7 +691,7 @@ label sh_ch34:
 
         ha "Friendship… was something I thought I'd g-given up on. I s-stopped believing in others… after what happened after the accident… B-before my accident happened, I got on well with p-people and other children."
         ha "I d-didn't have many friends, but… I didn't m-mind. I t-treasured the ones that I had. Afterwards, though…"
-        "I swallow with some difficulty. For some reason just the mere mentioning of this brings back fragments of the desperation I felt back then."
+        "I swallow with some difficulty. For some reason, just the mere mentioning of this brings back fragments of the desperation I felt back then."
 
         show ev hanakohistory_play_tease
         with charachangeev
@@ -697,6 +723,8 @@ label sh_ch34:
         "I rub my eyes a few times, trying to wipe away the tears."
 
         scene ev sharedsoak_lilly_cry
+        show steam:
+            alpha 0.5
         with Dissolve(1.0)
 
         "When I take a brief look at Lilly, I see that she's softly crying as well."
