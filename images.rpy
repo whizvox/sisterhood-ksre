@@ -7,7 +7,13 @@ init 1 python:
             else:
                 renpy.log("[SISTERHOOD] Could not load image: " + imgpath)
 
-    def sh_sprites(char, faces, poses=None, outfits=None):
+    def _sh_sprites(char, variant, image, nude=False):
+        renpy.image(f"{char} {variant}", adult(image, use_null=True) if nude else image)
+        renpy.image(f"{char} {variant}_ss", adult(sp_sunset(image), use_null=True) if nude else sp_sunset(image))
+        renpy.image(f"{char} {variant}_ni", adult(sp_night(image), use_null=True) if nude else sp_night(image))
+        renpy.image(f"{char} {variant}_rn", adult(sp_rain(image), use_null=True) if nude else sp_rain(image))
+
+    def sh_sprites(char, faces, poses=None, outfits=None, nude_if=None):
         if poses is None:
             poses = [""]
         if outfits is None:
@@ -23,22 +29,13 @@ init 1 python:
                         variant += "_" + outfit
                     imgpath = f"{sh_path}/sprites/{char}/{char}_{variant}.png"
                     if renpy.loadable(imgpath):
-                        renpy.image(f"{char} {variant}", imgpath)
-                        renpy.image(f"{char} {variant}_ss", sp_sunset(imgpath))
-                        renpy.image(f"{char} {variant}_ni", sp_night(imgpath))
-                        renpy.image(f"{char} {variant}_rn", sp_rain(imgpath))
+                        _sh_sprites(char, variant, imgpath, nude_if and nude_if(imgpath))
                     closeimgpath = f"{sh_path}/sprites/{char}/close/{char}_{variant}_close.png"
                     if renpy.loadable(closeimgpath):
-                        renpy.image(f"{char} {variant}_close", closeimgpath)
-                        renpy.image(f"{char} {variant}_close_ss", sp_sunset(closeimgpath))
-                        renpy.image(f"{char} {variant}_close_ni", sp_night(closeimgpath))
-                        renpy.image(f"{char} {variant}_close_rn", sp_rain(closeimgpath))
+                        _sh_sprites(char, f"{variant}_close", closeimgpath, nude_if and nude_if(imgpath))
                     supercloseimgpath = f"{sh_path}/sprites/{char}/superclose/{char}_{variant}_superclose.png"
                     if renpy.loadable(supercloseimgpath):
-                        renpy.image(f"{char} {variant}_superclose", supercloseimgpath)
-                        renpy.image(f"{char} {variant}_superclose_ss", sp_sunset(supercloseimgpath))
-                        renpy.image(f"{char} {variant}_superclose_ni", sp_night(supercloseimgpath))
-                        renpy.image(f"{char} {variant}_superclose_rn", sp_rain(supercloseimgpath))
+                        _sh_sprites(char, f"{variant}_superclose", supercloseimgpath, nude_if and nude_if(imgpath))
 
     def phonebox_sprites(char, variants, vanilla=True, xoff=0, yoff=0, cropxoff=0, cropyoff=0, addwidth=0, addheight=0):
         for variant in variants:
@@ -119,7 +116,7 @@ init 1 python:
     sh_sprites("misha", ["sign_sad_cas"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
     sh_sprites("lilly", ["cheerful", "concerned", "cry", "displeased", "giggle", "listen", "mad", "oops", "planned", "pout", "offended", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
-    sh_sprites("lilly", ["behind_smileclosed_nak", "behind_giggle_nak", "behind_concerned_nak"])
+    sh_sprites("lilly", ["behind_smileclosed_nak", "behind_giggle_nak", "behind_concerned_nak"], nude_if=lambda name: True)
     sh_sprites("doctor", ["bigsmile"])
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
