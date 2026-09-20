@@ -271,6 +271,7 @@ screen sisterhood_chapter_select(page=0):
     add "main_menu_bg" at colorblind(persistent.colorblind)
     add "blind"
 
+    default current_chapter_num = None
     default current_desc = None
 
     frame:
@@ -316,8 +317,14 @@ screen sisterhood_chapter_select(page=0):
                                     SetVariable("current_scene", chapter[1]),
                                     Start("sisterhood_replay_start")
                                 ]
-                                hovered SetScreenVariable("current_desc", f"{(chapter[1] + ' : ' if sh_debug else '')}{chapter[2]}")
-                                unhovered SetScreenVariable("current_desc", None)
+                                hovered [
+                                    SetScreenVariable("current_chapter_num", chapter[3] if len(chapter) > 4 else None),
+                                    SetScreenVariable("current_desc", f"{(chapter[1] + ' : ' if sh_debug else '')}{chapter[2]}")
+                                ]
+                                unhovered [
+                                    SetScreenVariable("current_chapter_num", None),
+                                    SetScreenVariable("current_desc", None),
+                                ]
                         else:
                             textbutton _("???") action None:
                                 left_margin 30
@@ -333,11 +340,14 @@ screen sisterhood_chapter_select(page=0):
             action ShowMenu("sisterhood")
 
     if current_desc:
-        text current_desc:
+        text f"{current_chapter_num + '\n' if current_chapter_num else ''}{current_desc}":
             color "#fff"
             size 36
             xalign 0.5
-            yalign 1.0
+            yanchor 1.0
+            ypos 0.98
+            text_align 0.5
+
 
     key "game_menu" action ShowMenu("sisterhood")
 
