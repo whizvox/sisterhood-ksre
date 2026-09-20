@@ -83,6 +83,25 @@ init 1 python:
         else:
             return vfxfile
 
+    # KS:RE's is_seen function checks for instances of the Trigger class, hence why it's inherited here
+    class Special(Trigger):
+        def __init__(self, image, trig=None, adult=False):
+            self.image = image
+            self.trig = image if trig is None else trig
+            self.adult = adult
+
+    class GalleryImageSet:
+        def __init__(self, thumb, *images, all_adult=False):
+            self.thumb = thumb
+            self.images = images
+            self.all_adult = all_adult
+
+        def get_sfw_images(self):
+            if self.all_adult:
+                return [img for img in self.images if isinstance(img, Special) and not img.adult]
+            else:
+                return [img for img in self.images if not isinstance(img, Special) or not img.adult]
+
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
     sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
@@ -119,7 +138,8 @@ init 1 python:
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("funindark", ["hug_rest", "hug_rest_large", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])
     sh_event("funindark", ["naked_touch", "naked_touch_close", "naked_hand", "naked_hand_close", "naked_breast", "naked_breast_large", "naked_grab", "naked_grab_close", "naked_masturbate", "naked_climax", "naked_climax_close"], mark_adult=True)
-    sh_event("hotel", ["onhanako", "onhanako_large", "onhisao", "onhisao_large", "mirror", "layontop", "thigh", "thigh_large", "thigh_climax", "masturbate", "masturbate_climax", "bed", "bed_climax"], mark_adult=True)
+    sh_event("hotel", ["onhanako", "onhanako_large"])
+    sh_event("hotel", ["onhisao", "onhisao_large", "mirror", "layontop", "thigh", "thigh_large", "thigh_climax", "masturbate", "masturbate_climax", "bed", "bed_climax"], mark_adult=True)
     sh_event("ballroomdance", ["emb_large", "emb_normal", "smile_large", "smile_normal"])
     sh_event("rooftopkiss", ["normal"])
     sh_event("caress", ["normal", "large"])
@@ -156,29 +176,35 @@ init 1 python:
 
 init 1:
     # gallery images
-    define sh_gallery_images = (
-        ("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
-        ("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
-        ("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax"),
-        ("hotel", "ev hotel_onhanako", "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax"),
-        ("pillowtalk", "ev pillowtalk_comfort dark", "evg pillowtalk dark g2","evg pillowtalk dark g3", "evg pillowtalk dark g4"),
-        ("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
-        ("rainyroad", "ev rainyroad"),
-        ("rooftopkiss", "ev rooftopkiss_normal"),
-        ("caress", "ev caress_normal"),
-        ("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
-        ("celloandwine_1", "ev celloandwine_cello_play", "ev celloandwine_cello_lookup"),
-        ("celloandwine_2", "ev celloandwine_block_pout", "ev celloandwine_block_grin", "ev celloandwine_lap_tease", "ev celloandwine_lap_rest", "ev celloandwine_lap_cover", "ev celloandwine_lap_feel", "ev celloandwine_lap_clap", "ev celloandwine_lap_victory", "ev celloandwine_lap_kiss"),
-        ("tipsyfun", "ev tipsyfun_stand_close", "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_doggystyle_closed", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_climaxclosed", "ev tipsyfun_collapse_morningclosed", "ev tipsyfun_collapse_morning"),
-        ("soapopera", "ev soapopera_hisao1_back", "ev soapopera_hisao1_lay", "ev soapopera_hanako1_back", "ev soapopera_hanako1_hair_large", "evg soapopera_hanako1_hairtalk", "ev soapopera_hisao2_hug", "ev soapopera_hisao2_erection", "ev soapopera_hisao2_handy_large", "ev soapopera_hisao2_climax_large", "ev soapopera_hanako2_caress_large", "ev soapopera_hanako2_spray_large", "ev soapopera_hanako2_climax"),
-        ("sharedsoak_hisao", Trigger("ev sharedsoak_hisao_talk", "evg sharedsoak_hisao_talk1"), "ev sharedsoak_hisao_talk", "evg sharedsoak_hisao_talk3", "ev sharedsoak_hisao_relax"),
-        ("eveningsnack", "ev eveningsnack_cuddle", "ev eveningsnack_cuddle_naked", "ev eveningsnack_hipamper", "ev eveningsnack_hiplay", "ev eveningsnack_bj1_look", "ev eveningsnack_bj1_lick", "ev eveningsnack_bj1_pleasure", "ev eveningsnack_bj1_awkward", "ev eveningsnack_bj2_pleasure", "ev eveningsnack_bj2_climax", "ev eveningsnack_hapamper", "ev eveningsnack_haplay", "ev eveningsnack_cun1_look", "ev eveningsnack_cun1_tounge", "ev eveningsnack_cun1_push", "ev eveningsnack_cun2_pleasure", "ev eveningsnack_cun2_eatout", "ev eveningsnack_cun2_climax"),
+    define sh_gallery_images = [
+        GalleryImageSet("wheatfield", "ev wheatfield_smile", "ev wheatfield_awkward", "ev wheatfield_dreamy", "ev wheatfield_talk"),
+        GalleryImageSet("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
+        GalleryImageSet("funindark_h", "ev funindark_naked_touch", "ev funindark_naked_hand", "ev funindark_naked_breast", "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax", all_adult=True),
+        GalleryImageSet("hotel", Special("ev hotel_onhanako"), "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax", all_adult=True),
+        GalleryImageSet("pillowtalk", "ev pillowtalk_comfort dark", "evg pillowtalk dark g2","evg pillowtalk dark g3", "evg pillowtalk dark g4"),
+        GalleryImageSet("ballroomdance", "ev ballroomdance_emb_normal", "ev ballroomdance_smile_normal"),
+        GalleryImageSet("rainyroad", "ev rainyroad"),
+        GalleryImageSet("rooftopkiss", "ev rooftopkiss_normal"),
+        GalleryImageSet("caress", "ev caress_normal"),
+        GalleryImageSet("planeride", "ev planeride_bliss", "ev planeride_pout", "ev planeride_blanket", "ev planeride_listen", "ev planeride_frown", "ev planeride_weaksmile"),
+        GalleryImageSet("celloandwine_1", "ev celloandwine_cello_play", "ev celloandwine_cello_lookup"),
+        GalleryImageSet("celloandwine_2", "ev celloandwine_block_pout", "ev celloandwine_block_grin", "ev celloandwine_lap_tease", "ev celloandwine_lap_rest", "ev celloandwine_lap_cover", "ev celloandwine_lap_feel", "ev celloandwine_lap_clap", "ev celloandwine_lap_victory", "ev celloandwine_lap_kiss"),
+        GalleryImageSet("tipsyfun", Special("ev tipsyfun_stand_close"), "ev tipsyfun_stand_naked", "ev tipsyfun_doggystyle", "ev tipsyfun_doggystyle_closed", "ev tipsyfun_collapse_climax", "ev tipsyfun_collapse_climaxclosed", Special("ev tipsyfun_collapse_morningclosed"), Special("ev tipsyfun_collapse_morning"), all_adult=True),
+        GalleryImageSet("soapopera", "ev soapopera_hisao1_back", "ev soapopera_hisao1_lay", "ev soapopera_hanako1_back", "ev soapopera_hanako1_hair_large", "evg soapopera_hanako1_hairtalk", "ev soapopera_hisao2_hug", "ev soapopera_hisao2_erection", "ev soapopera_hisao2_handy_large", "ev soapopera_hisao2_climax_large", "ev soapopera_hanako2_caress_large", "ev soapopera_hanako2_spray_large", "ev soapopera_hanako2_climax", all_adult=True),
+        GalleryImageSet("sharedsoak_hisao", Trigger("ev sharedsoak_hisao_talk", "evg sharedsoak_hisao_talk1"), "ev sharedsoak_hisao_talk", "evg sharedsoak_hisao_talk3", "ev sharedsoak_hisao_relax"),
+        GalleryImageSet("eveningsnack", Special("ev eveningsnack_cuddle"), "ev eveningsnack_cuddle_naked", "ev eveningsnack_hipamper", "ev eveningsnack_hiplay", "ev eveningsnack_bj1_look", "ev eveningsnack_bj1_lick", "ev eveningsnack_bj1_pleasure", "ev eveningsnack_bj1_awkward", "ev eveningsnack_bj2_pleasure", "ev eveningsnack_bj2_climax", "ev eveningsnack_hapamper", "ev eveningsnack_haplay", "ev eveningsnack_cun1_look", "ev eveningsnack_cun1_tounge", "ev eveningsnack_cun1_push", "ev eveningsnack_cun2_pleasure", "ev eveningsnack_cun2_eatout", "ev eveningsnack_cun2_climax", all_adult=True),
         # TODO add without thinking CGs
-        ("bedridden", "ev bedridden_lillyakira", "evg bedridden_lillyakira_2", "evg bedridden_lillyakira_3", "evg bedridden_lillyakira_4", "ev bedridden_akira", "evg bedridden_akira_2", "evg bedridden_akira_3", "evg bedridden_akira_4", "ev bedridden_akhiha", "evg bedridden_akhiha_2", "evg bedridden_akhiha_3", "evg bedridden_akhiha_4", "evg bedridden_akhiha_5", "evg bedridden_akhiha_6", "evg bedridden_akhiha_7", "evg bedridden_akhiha_8", "evg bedridden_akhiha_9"),
-        ("akirapast", "ev akirapast_vacation", "ev akirapast_unfavorite", "ev akirapast_elemschool", "ev akirapast_midschool", "ev akirapast_argument", "ev akirapast_promotion", "ev akirapast_grandparents1", "ev akirapast_grandparents2", "ev akirapast_study1", "ev akirapast_study2"),
-        ("sharedsoak_lilly", "ev sharedsoak_lilly_relax", "ev sharedsoak_lilly_smile", "ev sharedsoak_lilly_listen", "ev sharedsoak_lilly_grimace", "ev sharedsoak_lilly_speak", "ev sharedsoak_lilly_shoulder", "ev sharedsoak_lilly_shoulder2", "ev sharedsoak_lilly_recoil", "ev sharedsoak_lilly_history", "ev sharedsoak_lilly_sniffle", "ev sharedsoak_lilly_comfort", "ev sharedsoak_lilly_cry", "ev sharedsoak_lilly_hug", "ev sharedsoak_lilly_reciprocate", "ev sharedsoak_lilly_lean", "ev sharedsoak_lilly_support"),
-        ("hanakohistory", "ev hanakohistory_bed", "ev hanakohistory_bed_pain", "ev hanakohistory_fire", "ev hanakohistory_fire_alone", "ev hanakohistory_urn", "ev hanakohistory_read", "ev hanakohistory_read_leave", "ev hanakohistory_read_alone", "ev hanakohistory_play", "ev hanakohistory_play_tease", "ev hanakohistory_bully", "ev hanakohistory_bully_cry", "ev hanakohistory_gate"),
-    )
+        GalleryImageSet("bedridden", "ev bedridden_lillyakira", "evg bedridden_lillyakira_2", "evg bedridden_lillyakira_3", "evg bedridden_lillyakira_4", "ev bedridden_akira", "evg bedridden_akira_2", "evg bedridden_akira_3", "evg bedridden_akira_4", "ev bedridden_akhiha", "evg bedridden_akhiha_2", "evg bedridden_akhiha_3", "evg bedridden_akhiha_4", "evg bedridden_akhiha_5", "evg bedridden_akhiha_6", "evg bedridden_akhiha_7", "evg bedridden_akhiha_8", "evg bedridden_akhiha_9"),
+        GalleryImageSet("akirapast", "ev akirapast_vacation", "ev akirapast_unfavorite", "ev akirapast_elemschool", "ev akirapast_midschool", "ev akirapast_argument", "ev akirapast_promotion", "ev akirapast_grandparents1", "ev akirapast_grandparents2", "ev akirapast_study1", "ev akirapast_study2"),
+        GalleryImageSet("sharedsoak_lilly", "ev sharedsoak_lilly_relax", "ev sharedsoak_lilly_smile", "ev sharedsoak_lilly_listen", "ev sharedsoak_lilly_grimace", "ev sharedsoak_lilly_speak", "ev sharedsoak_lilly_shoulder", "ev sharedsoak_lilly_shoulder2", "ev sharedsoak_lilly_recoil", "ev sharedsoak_lilly_history", "ev sharedsoak_lilly_sniffle", "ev sharedsoak_lilly_comfort", "ev sharedsoak_lilly_cry", "ev sharedsoak_lilly_hug", "ev sharedsoak_lilly_reciprocate", "ev sharedsoak_lilly_lean", "ev sharedsoak_lilly_support"),
+        GalleryImageSet("hanakohistory", "ev hanakohistory_bed", "ev hanakohistory_bed_pain", "ev hanakohistory_fire", "ev hanakohistory_fire_alone", "ev hanakohistory_urn", "ev hanakohistory_read", "ev hanakohistory_read_leave", "ev hanakohistory_read_alone", "ev hanakohistory_play", "ev hanakohistory_play_tease", "ev hanakohistory_bully", "ev hanakohistory_bully_cry", "ev hanakohistory_gate"),
+    ]
+    define sh_sfw_gallery_images = []
+    python:
+        for imgs in sh_gallery_images:
+            images = imgs.get_sfw_images()
+            if len(images) > 0:
+                sh_sfw_gallery_images.append(GalleryImageSet(imgs.thumb, *images))
 
     # special sprites
     image takawa serious_close_blur1 = f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur1.png"

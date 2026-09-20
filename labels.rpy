@@ -4,7 +4,7 @@ default sh_skip_act = 0
 label sisterhood_memories:
     show screen sisterhood_memories(sh_memory_page)
     call screen sisterhood_memories(sh_memory_page)
-    
+
     return
 
 label sisterhood_watch_memories(images):

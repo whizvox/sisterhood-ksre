@@ -348,7 +348,6 @@ screen sisterhood_chapter_select(page=0):
             ypos 0.98
             text_align 0.5
 
-
     key "game_menu" action ShowMenu("sisterhood")
 
 screen sisterhood_about():
@@ -390,6 +389,7 @@ screen sisterhood_memories(page=0):
 
     default return_hovered = False
     default local_items = set()
+    default gallery_images = sh_sfw_gallery_images if persistent.hdisabled else sh_gallery_images
 
     on "show" action SetVariable("sh_memory_page", page)
 
@@ -414,18 +414,18 @@ screen sisterhood_memories(page=0):
             has grid 4 3
 
             for i in range(page * 12, (page + 1) * 12):
-                if i > len(sh_gallery_images) - 1:
+                if i > len(gallery_images) - 1:
                     add Null(220, 170)
-                elif is_seen(sh_gallery_images[i][1]) or config.developer:
+                elif is_seen(gallery_images[i].images[0]) or config.developer:
                     python:
-                        img = sh_gallery_images[i]
-                        thumb = im.Scale(f"{sh_path}/event/_thumb/{img[0]}.jpg", 200, 150)
+                        imgs = gallery_images[i]
+                        thumb = im.Scale(f"{sh_path}/event/_thumb/{imgs.thumb}.jpg", 200, 150)
 
                     button:
                         xysize 220, 170
                         hovered Function(local_items.add, i)
                         unhovered Function(local_items.discard, i)
-                        action [SetVariable("sh_memory_page", page), Call("sisterhood_watch_memories", img[1:])]
+                        action [SetVariable("sh_memory_page", page), Call("sisterhood_watch_memories", imgs.images)]
 
                         if i in local_items:
                             image Composite(
@@ -454,7 +454,7 @@ screen sisterhood_memories(page=0):
 
             text _("Page:")
 
-            for i in range((len(sh_gallery_images) - 1) // 12 + 1):
+            for i in range((len(gallery_images) - 1) // 12 + 1):
                 textbutton str(i + 1):
                     xpadding 4
                     xmargin 2
