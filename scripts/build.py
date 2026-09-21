@@ -3,6 +3,7 @@ import os
 import re
 import sys
 import tarfile
+import datetime
 from pathlib import Path
 
 from rpatool import RenPyArchive
@@ -146,7 +147,7 @@ def create_rpa(files: list[Path]) -> RenPyArchive:
     for file in files:
         cur_index += 1
         with file.open("rb") as fp:
-            relpath = Path("game/mods/sisterhood") / relative_to_sh_path(file)
+            relpath = Path("mods/sisterhood") / relative_to_sh_path(file)
             printr(f'({cur_index}/{len(files)}) Adding "{relpath}" to archive')
             archive.add(relpath, fp.read())
     printr_end("Finished constructing Ren'Py archive")
@@ -194,10 +195,11 @@ def main(args: dict):
     update_paths(args)
     include_all_sprites = args["allsprites"]
     files = get_project_files(include_all_sprites)
-    os.makedirs(resolve_path("scripts/build"), exist_ok=True)
+    builddir = Path(args["builddir"])
+    builddir.mkdir(exist_ok=True)
     if args["archive"] == "rpa":
         archive = create_rpa(files)
-        out_path = resolve_path("scripts/build/sisterhood.rpa")
+        out_path = Path(builddir / f"sisterhood_{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}.rpa")
         archive.save(out_path)
         print(f"Saved Ren'Py archive to {out_path}")
     elif args["archive"] == "zip":
@@ -224,5 +226,8 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "-A", "--allsprites", action="store_const", const=True, default=False
+    )
+    parser.add_argument(
+        "-b", "--builddir", required=True, help="location of build directory"
     )
     main(vars(parser.parse_args(sys.argv[1:])))
