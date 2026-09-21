@@ -384,7 +384,16 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Ch29 Evening Snack/15-2.png",          "event/eveningsnack/eveningsnack_cun2_pleasure.jpg"),
     ("@Event Art/Ch29 Evening Snack/16-3.png",          "event/eveningsnack/eveningsnack_cun2_eatout.jpg"),
     ("@Event Art/Ch29 Evening Snack/17.png",            "event/eveningsnack/eveningsnack_cun2_climax.jpg"),
-    # chapter 30+31
+    # chapter 30
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_1.1_marked.png", "event/withoutthinking/withoutthinking_lilly.jpg", [RESIZE_1080P]),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_1.2_marked.png", "event/withoutthinking/withoutthinking_lilly_crowd.jpg", [RESIZE_1080P]),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_2.1_marked.png", "event/withoutthinking/withoutthinking_cpr.jpg", [RESIZE_1080P]),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_2.2_marked.png", "event/withoutthinking/withoutthinking_cpr_nohisao.jpg", [RESIZE_1080P]),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_2.2_marked.png", "event/withoutthinking/withoutthinking_cpr_nohisao_large.jpg"),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_2.3_marked.png", "event/withoutthinking/withoutthinking_cpr_cover.jpg", [RESIZE_1080P]),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_2.3_marked.png", "event/withoutthinking/withoutthinking_cpr_cover_large.jpg"),
+    ("@Event Art/Without Thinking/WIP/Whizvox_5th_Without_Thinking_CG_WIP_2.4_marked.png", "event/withoutthinking/withoutthinking_cpr_paramedics.jpg", [RESIZE_1080P]),
+    # chapter 31+32
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_A_FINAL_1.0.jpg", "event/bedridden/bedridden_lillyakira.jpg", [RESIZE_1080P]),
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_B_FINAL_1.1.jpg", "event/bedridden/bedridden_akira.jpg", [RESIZE_1080P]),
     ("@Event Art/Bedridden/Whizvox_4th_CG_HOSPITAL_SET_C_FINAL_1.1.jpg", "event/bedridden/bedridden_akhiha.jpg"),
@@ -546,6 +555,7 @@ GALLERY_THUMBNAILS = [
     ("event/soapopera/soapopera_hisao1_back.jpg", "event/_thumb/soapopera.jpg", [resize(targetheight=150), crop(16, 0, 216, 150)]),
     ("event/sharedsoak/sharedsoak_hisao_talk.jpg", "event/_thumb/sharedsoak_hisao.jpg", [CompositeTransformation([(0, 0, "event/sharedsoak/sharedsoak_hisao_hisaosmile.png"), (0, 0, "event/sharedsoak/sharedsoak_hisao_hanakosmile.png")]), resize(targetheight=150), crop(55, 0, 255, 150)]),
     ("event/eveningsnack/eveningsnack_cuddle.jpg", "event/_thumb/eveningsnack.jpg", [resize(targetheight=150), crop(35, 0, 235, 150)]),
+    ("event/withoutthinking/withoutthinking_lilly.jpg", "event/_thumb/withoutthinking.jpg", [resize(targetheight=150), crop(21, 0, 221, 150)]),
     ("event/bedridden/bedridden_lillyakira.jpg", "event/_thumb/bedridden.jpg", [resize(targetheight=150), crop(53, 0, 253, 150)]),
     ("event/akirapast/akirapast_unfavorite.jpg", "event/_thumb/akirapast.jpg", [resize(targetheight=150), crop(9, 0, 209, 150)]),
     ("event/sharedsoak/sharedsoak_lilly_relax.jpg", "event/_thumb/sharedsoak_lilly.jpg", [resize(targetheight=150), crop(45, 0, 245, 150)]),

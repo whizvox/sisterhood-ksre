@@ -37,6 +37,14 @@
             "program": "${workspaceFolder}/scripts/build.py",
             "console": "integratedTerminal",
             "args": "-s ${workspaceFolder} -k ${config:sisterhood.ksreProjectDir} -b ${config:sisterhood.buildDir} ${command:pickArgs}",
+        },
+        {
+            "name": "Clean .rpyc Files",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/cleanrpyc.py",
+            "console": "integratedTerminal",
+            "args": "-s ${workspaceFolder}",
         }
     ]
 }

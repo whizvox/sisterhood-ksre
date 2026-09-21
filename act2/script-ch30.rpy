@@ -717,7 +717,8 @@ label sh_ch30:
 
         stop ambient fadeout 1.0
 
-        scene bg satou_study
+        scene bg satou_study at truecenter:
+            zoom 1.02
         with locationchange
 
         "A bit unsteadily, I head back to the study again."
@@ -730,6 +731,8 @@ label sh_ch30:
         li "Father, where are you?"
 
         play sound sfx_impact
+
+        with hpunch
 
         "I walk further into the room and almost immediately my foot hits something."
         "Something on the floor that wasn't here before."
@@ -753,7 +756,7 @@ label sh_ch30:
         hi "Lilly? Is something wrong?"
         "I hear Hisao's and Hanako's footsteps hurriedly approaching, probably drawn here by my shout."
 
-        show ev withoutthinking_crowd
+        show ev withoutthinking_lilly_crowd
         with charachangeev
 
         "As they come in, I hear two gasps."
@@ -795,6 +798,11 @@ label sh_ch30:
         with charachangeev
 
         "I hear Hisao running off, leaving me alone in the room with Hanako… and Father."
+
+        show ev withoutthinking_cpr_nohisao_large:
+            anchor (0, 0) pos (-427, -121)
+        with charachangeev
+
         "It doesn't happen often, but right now I'm cursing my blindness. My friends are both doing their part, and here I am, unable to do anything."
         li "Please d-do your best, Hanako. Let me know if you need anything…"
         "{i}Father…{/i}"
@@ -810,7 +818,7 @@ label sh_ch30:
         li "Hanako, please hang in there."
         "Is that the best I can come up with?"
         "I used to have no trouble finding the right words to encourage Hanako. And now, now that it matters more than ever, I find myself lost for words."
-        ha "{i}*huff* *huff*{/i}"
+        ha "{i}*huff*... *huff*... *huff*...{/i}"
         "Hanako's breathing is getting less steady. Is she getting worn out? What she's doing must be pretty tiring."
         "What if she gets too tired to continue and the ambulance hasn't arrived yet?"
         "How will she feel?"
@@ -819,17 +827,19 @@ label sh_ch30:
 
         play sound sfx_brokenbone
 
-        show ev withoutthinking_cpr_cover
-        with charachangeev
+        show ev withoutthinking_cpr_cover_large
+        with vpunch
 
         "A wave of nausea washes over me as I hear a soft crunch coming from the place where Father's lying."
-        "It's barely audible yet it chills me to the bone. Is this the sound of someone's ribs being fractured? That sounded really painful."
+        "It's barely audible, yet it chills me to the bone. Is this the sound of someone's ribs being fractured? That sounded really painful."
         li "Hanako, be careful!"
         "I manage to get a hold of myself just in time to refrain from making the terrible mistake of grabbing Hanako and yanking her away from Father. At this point, it seems stupid to worry about broken ribs."
         ha "{i}*huff* *huff* *huff*{/i}"
         "Hanako didn't even seem to have heard my scream. She just keeps going as if there's nobody else in existence."
 
         play sound sfx_brokenbone volume 0.8
+
+        with vpunch
 
         "I squeeze my eyes shut in order to hold back the tears and let out a tortured whimper as I hear a second crunch."
         "What if one of those ribs punctures his lung? What if they manage to revive him only for him to drown in his own blood moments later?"
@@ -844,7 +854,7 @@ label sh_ch30:
         "Before I can ponder my thought further, my attention is drawn by a distinctive sound coming from outside."
         "Is that a siren?"
 
-        show ev withoutthinking_cpr_nohisao
+        show ev withoutthinking_cpr_nohisao_large
         with charachangeev
 
         li "Hanako, I think I hear a siren!"
@@ -867,11 +877,11 @@ label sh_ch30:
 
         stop sound fadeout 0.5
 
-        play ambient sfx_crowdmale fadein 1.0
+        # TODO replace with something with fewer voices
+        play ambient sfx_crowdmale fadein 2.0
 
-        scene bg satou_study_blur
-        show crowd
-        with locationchange
+        show ev withoutthinking_cpr_paramedics at center
+        with charachangeev
 
         "I hear several people bursting into the room. I just sit there in a daze as everything plays out in front of me, unable to figure out how to act or what to say."
         "Paramedic" "{font=times}Alright, lass, you can stop now. We'll take over from here.{/font}"
@@ -881,8 +891,12 @@ label sh_ch30:
         "Paramedic" "{font=times}Damn, we don't have time for this. Ian, get her away from him so I can get started!{/font}"
         "Paramedic" "{font=times}Sure.{/font}"
 
-        show hanako defarms_shock_sum at center behind crowd
-        with Dissolve(0.2)
+        scene bg satou_study at truecenter:
+            zoom 1.02
+        show hanako defarms_shock_sum at center:
+            ypos 1.02
+        show crowd
+        with vpunch
 
         ha "AAAAAAAAHHH!"
         "Paramedic" "{font=times}Whoa! Hey, no need to freak out. We're here to help!!{/font}"
@@ -1039,7 +1053,7 @@ label sh_ch30:
         "No, there's probably no point in asking. But maybe…"
         li "{font=times}Would it be possible… to make a quick phone call? My sister and my mother don't even know what has happened yet, and I left my own cell phone behind when I came here.{/font}"
         "Nurse" "{font=times}If it's just a very quick call, you can make one in our office. Let me take you there.{/font}"
-        li "Thank you."
+        li "{font=times}Thank you.{/font}"
 
         stop ambient fadeout 0.5
 
