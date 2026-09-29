@@ -24,7 +24,7 @@ label sh_ch17alt:
         ke "How can you be so sure that the person who assaulted you wasn't a woman? A feminist or perhaps a lackey hired to take you out."
         "I wonder how Hanako and Lilly are doing right now."
         hi "It was a guy. A slightly older man on a bicycle."
-        hi "Hana… I mean, people at the scene confirmed it to me later. I don't think he was a feminist."
+        hi "Hana— I mean, people at the scene confirmed it to me later. I don't think he was a feminist."
 
         show kenji tsun
         with chchange
@@ -48,7 +48,7 @@ label sh_ch17alt:
         ke "The feminist movement is onto you. I bet that wasn't even a real ambulance that picked you up."
         "I can't really judge that since I was out like a light at that time, and what I know about that moment is from Hanako's recollection."
         "Since she's still very reluctant to talk about what happened that afternoon, I can't really get into the details."
-        hi "It was a pretty real hospital I woke up in though."
+        hi "It was a pretty real hospital I woke up in, though."
 
         show kenji happy
         with chchange
@@ -70,7 +70,7 @@ label sh_ch17alt:
 
         ke "They didn't say a single word during the whole operation. They were only communicating in coded gestures, like commandos on a mission."
         hi "Could it be that one of them was a deaf-mute and they were communicating in sign?"
-        ke "Maybe. It makes sense to pick a mute person for an infiltration job. When they're captured and interrogated they at least can't blab. Unless you untie their hands first. That's what they're counting on. They're trained for those kinds of situations."
+        ke "Maybe. It makes sense to pick a mute person for an infiltration job. When they're captured and interrogated, they can't blab at least. Unless you untie their hands first. That's what they're counting on. They're trained for those kinds of situations."
         "You're completely missing the point."
 
         hide kenji
@@ -84,8 +84,8 @@ label sh_ch17alt:
         show kenji tsun
         with charaenter
 
-        ke "After they left your room, I knew they'd be coming for me next. I knew they were gonna kidnap me, imprison me somewhere and then send a squad to my room to steal my blueprints and plans for resistance activities."
-        ke "So I locked my door, moved my bed in front of it and got to work on developing a defense mechanism. It's not finished yet, so maybe you can take a look at the designs at the next club meeting."
+        ke "After they left your room, I knew they'd be coming for me next. I knew they were gonna kidnap me, imprison me somewhere, and then send a squad to my room to steal my blueprints and plans for resistance activities."
+        ke "So I locked my door, moved my bed in front of it, and got to work on developing a defense mechanism. It's not finished yet, so maybe you can take a look at the designs at the next club meeting."
         hi "Really?"
 
         show kenji happy
@@ -111,7 +111,7 @@ label sh_ch17alt:
         with chchange
 
         "Kenji seems delighted at my quick offer of assistence, but then suddenly narrows his eyes and takes a step back."
-        hi "Something's wrong?"
+        hi "Something wrong?"
         ke "You're way too eager to agree all of a sudden. You're usually far more reserved about my plans. This doesn't sound right. Didn't you say they operated on you?"
         hi "Yeah."
         ke "How can I be sure that they didn't install a mind control device while you were out? Maybe you were merely being ordered to agree to help me just now and they'll make you sabotage my device the moment I turn my back."
@@ -124,7 +124,7 @@ label sh_ch17alt:
 
         ke "Hmmm… Maybe not a mind control device then. Probably a tracking device. Definitely a tracking device."
         hi "Why definitely a tracking device?"
-        ke "Last Saturday that tall blonde from my class came knocking and told me that you'd be arriving at noon and that they were going to ‘welcome you back’. They knew exactly where you were going to be and when."
+        ke "Last Saturday, that tall blonde from my class came knocking and told me that you'd be arriving at noon and that they were going to ‘welcome you back’. They knew exactly where you were going to be and when."
         ke "If they were confident enough of the success of their ambush to go and taunt me with it, they had to have placed a device on you somehow that allowed them to pinpoint your location."
         "It's kinda scary how seamlessly he manages to fit all of last weeks events into one big narrative and still get things completely wrong."
         hi "I'm not sure I want to know but… Since you knew they were setting up an ambush for me, did you do anything to try and thwart them?"
@@ -196,7 +196,7 @@ label sh_ch17alt:
 
         "Miss Takawa shakes her head and gives me a sad smile."
         ta "Miss Ikezawa's… mindset is not very different from people who've been in… similar circumstances. I've worked with several of them over the years."
-        ta "Eventually you get a feeling on how they react to certain situations and how they experience them."
+        ta "Eventually, you get a feeling on how they react to certain situations and how they experience them."
         hi "Like boyfriends with heart conditions?"
 
         show takawa smile
@@ -210,7 +210,7 @@ label sh_ch17alt:
         show takawa calculating
         with chchange
 
-        ta "Ahem… whenever a client has a breakdown like Miss Ikezawa had last week, we try to identify the possible causes and do our best to come up with ways to prevent those situations from ever occurring again in the future."
+        ta "Ahem… Whenever a client has a breakdown like Miss Ikezawa had last week, we try to identify the possible causes and do our best to come up with ways to prevent those situations from ever occurring again in the future."
 
         show takawa smile
         with chchange
@@ -247,15 +247,15 @@ label sh_ch17alt:
 
         ta "They're not really meant for students, but I see no practical problems in letting Miss Ikezawa attend. I'll need to consult with the trainer to be sure, of course."
         "I take a moment to consider the old woman's proposal."
-        "Hanako taking first aid classes? I have to admit the idea might have merit."
-        "She'd at least no longer feel helpless in a case of emergency. That's assuming she'd remain composed enough to remember whatever it is they'll end up teaching her."
+        "Hanako taking first aid classes? I have to admit, the idea might have merit."
+        "She'd at least no longer feel helpless in an emergency. That's assuming she'd remain composed enough to remember whatever it is they'll end up teaching her."
         hi "Do you really think that'll prevent another panic attack from taking place in a situation like last week?"
 
         show takawa calculating
         with chchange
 
         ta "No. That's probably unavoidable the way things are right now. The best we can probably hope for is trying to delay it."
-        ta "With luck, and keep in mind there are no guarantees, it'll allow her to keep herself occupied and distracted until the ambulance arrives and it'll prevent her from feeling guilty over any inaction on her part."
+        ta "With luck—and keep in mind there are no guarantees—it'll allow her to keep herself occupied and distracted until the ambulance arrives, and it'll prevent her from feeling guilty over any inaction on her part."
         ta "It would make a massive difference in the aftermath, I believe."
         hi "I think we should take whatever we can get. If Hanako is okay with this, I am too."
         ta "Seeing that this is something that could potentially benefit you in the future, there is no doubt in my mind that Miss Ikezawa will agree to participate in the training."
@@ -268,14 +268,14 @@ label sh_ch17alt:
             ease 2.0 right
         with None
 
-        "Miss Takawa gets up, takes the phone on the table in the corner of the room and makes two phone calls; one to sign herself up for next week's training and another longer one to explain Hanako's situation to the trainer."
+        "Miss Takawa gets up, takes the phone on the table in the corner of the room, and makes two phone calls: one to sign herself up for next week's training, and another longer one to explain Hanako's situation to the trainer."
 
         show takawa smile
         with chchange
 
         ta "The instructor has agreed to let Miss Ikezawa attend in my place and he will do his best to let her get in as much practice as possible."
         hi "That's good to hear. Let's hope she won't get too nervous about attending a class with people she's not familiar with."
-        ta "There will only be 7 other people attending from what I've just heard, so it's a relatively small group this time around and there may be a few familiar faces among them."
+        ta "There will only be 7 other people attending from what I've just heard, so it's a relatively small group this time around, and there may be a few familiar faces among them."
 
         show takawa at center
         with charamovefast
@@ -318,7 +318,7 @@ label sh_ch17alt:
         ta "Would that be Miss Ikezawa?"
         "I take a look at the screen of my phone. It's from Hanako alright."
         "But there's no word on how things turned out. Just a simple “Where are you right now?”."
-        "I let out a disappointed sigh and send a quick “Nurse staff building, heading for administration office.” back."
+        "I let out a disappointed sigh and send a quick “Nurse staff building, heading for administration office” back."
         hi "I convinced Hanako to give Lilly a chance to smooth things over between them. She and Lilly… Well…"
 
         show takawa serious
@@ -373,7 +373,7 @@ label sh_ch17alt:
         with chchange
 
         ta "That's the short version. You can look it over yourself before putting a signature down there."
-        "I do so, but as expected, a lot of the wording on there seems mumbo jumbo to me."
+        "I do so, but as expected, a lot of the wording on there looks like mumbo jumbo to me."
         "I quickly give up on trying to make sense of the whole thing and put my signature on the dotted line near the bottom."
         "I give the form back to Miss Takawa who's still in the process of writing a note to go with the form."
 
@@ -441,7 +441,7 @@ label sh_ch17alt:
         with chchange
 
         "She looks flustered by my exclamation, but I mean every word of it."
-        "Of course I'm happy for Hanako, but Lilly has become a close friend to me as well over the last months, and I was very disheartened to see her go myself."
+        "Of course I'm happy for Hanako, but Lilly has become a close friend to me as well over the last few months, and I was very disheartened to see her go myself."
         "Hearing about her decision to stay here after all is a huge relief for me as well. I give Hanako a quick kiss on the cheek to emphasize my approval."
 
         show hanako emb_blushing_close
@@ -462,7 +462,7 @@ label sh_ch17alt:
 
         ha "M-Miss Yumi!"
         ta "That's not what we've been practicing together. I think it's very important that you accept the praise you've earned today. I agree with Mister Nakai that Miss Satou is very lucky to have you."
-        "Her words, spoken in a warm, grandmotherly tone are emphasized by a deep and respectful bow."
+        "Her words, spoken in a warm, grandmotherly tone, are emphasized by a deep and respectful bow."
 
         show hanako emb_blushing
         with charachangealways
@@ -486,7 +486,7 @@ label sh_ch17alt:
         with charaenter
 
         "As we exit the building, I turn to Hanako."
-        hi "I have some interesting news for you too, but first I'd really like to hear a few more details on how you reconciled with Lilly."
+        hi "I have some interesting news for you too, but first, I'd really like to hear a few more details on how you reconciled with Lilly."
         ha "Okay."
         hi "Oh… and Hanako?"
 

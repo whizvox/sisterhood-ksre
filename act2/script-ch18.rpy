@@ -11,15 +11,15 @@ label sh_ch18:
 
         play music music_night fadein 4.0
 
-        "I nervously pace back and forth in front of the gate, occasionally checking my phone to re-read the message Akira sent me. It said: ‘Can we talk for a bit? Front gate.’"
+        "I nervously pace back and forth in front of the gate, occasionally checking my phone to re-read the message Akira sent me. It said: ‘Can we talk for a bit? Front gate’."
 
         nvl clear
         nvl show dissolve
 
         n "Lilly may be staying here, but Akira is still leaving tomorrow. Even though Lilly's decision to remain here has softened the blow a lot, I'm still going to miss Akira."
-        n "I can't say I'm as close with her as I am with Lilly, and I often felt a bit like a third wheel when Lilly and her sister were hanging out in her room, but nevertheless it was nice to have someone else who'd occasionally talk to me besides Lilly."
+        n "I can't say I'm as close with her as I am with Lilly, and I often felt a bit like a third wheel when Lilly and her sister were hanging out in her room, but nevertheless, it was nice to have someone else who'd occasionally talk to me besides Lilly."
         n "Even though Lilly is planning to visit Scotland again in the near future, we still decided to hold a small goodbye party for Akira this evening. Lilly, Hisao, and I went to town earlier today to shop for a few things—unfortunately neither of us are old enough to buy a few cans of beer for Akira—and we were busy setting things up in Lilly's room when I received Akira's message."
-        n "{vspace=60}I'm still not completely sure how Akira really feels about Lilly's change of heart. I know how close she and her sister are. Akira practically raised her during the most recent third of her life. Suddenly being half a world apart from her can't be easy."
+        n "{vspace=60}I'm still not completely sure how Akira really feels about Lilly's change of heart. I know how close she and her sister are; Akira practically raised her during the most recent third of her life. Suddenly being half a world apart from her can't be easy."
 
         nvl hide dissolve
 
@@ -69,7 +69,7 @@ label sh_ch18:
         play sound sfx_can
 
         "I carefully sit down next to her as she casually opens the can and takes a sip."
-        "I don't think she's allowed to drink that on the school grounds, but right now there doesn't seem to be anyone around here but us."
+        "I don't think she's allowed to drink that on the school grounds, but right now, there doesn't seem to be anyone around here but us."
 
         show akira basic_smile_close
         with chchange

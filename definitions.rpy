@@ -59,7 +59,7 @@ init:
     $ mods_with_menus["sisterhood"] = True
 
     # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
-    define sh_debug = True
+    define sh_debug = False
 
     define sisterhood_chapters = [
         (_("Act 1"), [
