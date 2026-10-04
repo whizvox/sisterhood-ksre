@@ -316,8 +316,8 @@ IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     ("@Event Art/Tipsy Fun/3.1_scene_fix.png",              "event/tipsyfun/tipsyfun_collapse_climax.jpg"),
     ("@Event Art/Tipsy Fun/3.2_v2night_fix.png",            "event/tipsyfun/tipsyfun_collapse_climaxclosed.jpg"),
     ("@Event Art/Tipsy Fun/3.2_scene.png",                  "event/tipsyfun/tipsyfun_collapse_morning.jpg"),
-    ("@Event Art/Tipsy Fun/3.2_v2morning.png",              "event/tipsyfun/tipsyfun_collapse_morningclosed.jpg"),
-    ("@Event Art/Tipsy Fun/3.2_v2morning.png",              "event/tipsyfun/tipsyfun_collapse_morningclosed_blur.jpg", [blur(40)]),
+    ("@Event Art/Tipsy Fun/3.2_v2morning_fix.png",          "event/tipsyfun/tipsyfun_collapse_morningclosed.jpg"),
+    ("@Event Art/Tipsy Fun/3.2_v2morning_fix.png",          "event/tipsyfun/tipsyfun_collapse_morningclosed_blur.jpg", [blur(40)]),
     # chapter 25
     ("bgs/satou_guestroom.jpg", "bgs/satou_guestroom_blur.jpg", [blur(8)]),
     # chapter 29 - Soap Opera
