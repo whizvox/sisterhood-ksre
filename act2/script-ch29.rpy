@@ -662,6 +662,8 @@ label sh_ch29:
         scene ev sharedsoak_hisao_talk
         show sharedsoakhanako smile
         show sharedsoakhisao smile
+        show steam at nightfilter:
+            alpha 0.6
         with Fade(1.0, 0.0, 1.0, color="#27265a")
 
         "We let out a long mutual sigh as the warm water envelops us."
@@ -704,6 +706,8 @@ label sh_ch29:
         scene ev sharedsoak_hisao_talk
         show sharedsoakhanako frown
         show sharedsoakhisao smile
+        show steam at truecenter, nightfilter:
+            alpha 0.6
         with charachangeev
 
         "When I take my head off Hisao's shoulder, I feel him turning towards me."
@@ -714,7 +718,7 @@ label sh_ch29:
 
         ha "I… wasn't asleep. Just… relaxing a bit."
 
-        show sharedsoakhanako frown
+        show sharedsoakhanako frown behind steam
         show sharedsoakhisao talk
         with charachangeev
 
@@ -726,8 +730,8 @@ label sh_ch29:
 
         ha "I think it's a little darker outside than it was before. Do you know what time it is?"
 
-        show sharedsoakhanako frown
-        show sharedsoakhisao smile
+        show sharedsoakhanako frown behind steam
+        show sharedsoakhisao smile behind steam
         with charachangeev
 
         hi "I don't know… or care. I don't have any further plans for the evening, so we can stay in here as long as we like."
@@ -746,7 +750,7 @@ label sh_ch29:
         hi "Yes?"
         ha "Is it… comfortable for you too?"
 
-        show sharedsoakhisao smile
+        show sharedsoakhisao smile behind steam
         with charachangeev
 
         hi "Sure."
@@ -762,7 +766,7 @@ label sh_ch29:
         hi "I'm sorry too."
         ha "Huh? W-why?"
 
-        show sharedsoakhisao talk
+        show sharedsoakhisao talk behind steam
         with charachangeev
 
         hi "When we came back from that picnic last week and you went to get some rest after dinner, Lilly's mom approached me and asked me if you were prone to heat illnesses."
@@ -779,8 +783,8 @@ label sh_ch29:
 
         ha "I'm sorry. I d-didn't mean to cause trouble."
 
-        show sharedsoakhanako frown
-        show sharedsoakhisao talk
+        show sharedsoakhanako frown behind steam
+        show sharedsoakhisao talk behind steam
         with charachangeev
 
         hi "It's fine. I felt a bit stupid though. I always overlooked the fact that maybe your… injuries came with some catches of their own."
@@ -812,7 +816,7 @@ label sh_ch29:
         ha "S-sometimes it's more noticable than other times. I only put it on immediately if it itches too m-much when I wake up."
         hi "Speaking of your scars being dry… That's kind of what that incident last week was about, wasn't it?"
 
-        show sharedsoakhanako frown
+        show sharedsoakhanako frown behind steam
         with charachangeev
 
         "I nod."
@@ -823,7 +827,7 @@ label sh_ch29:
         hi "Hmmm…"
         ha "Y-yes?"
 
-        show sharedsoakhisao talk
+        show sharedsoakhisao talk behind steam
         with charachangeev
 
         hi "Hanako… maybe this is a silly question, but is there any risk of you… uh… ‘getting overheated’ when we sleep together?"
@@ -853,14 +857,14 @@ label sh_ch29:
         hi "Yeah, I thought so."
         ha "That's m-most of it. If… it wasn't for my appearance, the s-scars would probably only be a minor inconvenience in everday life."
 
-        show sharedsoakhisao smile
+        show sharedsoakhisao smile behind steam
         with charachangeev
 
         hi "Okay. Thanks for telling me."
         ha "P-please don't go worrying about me."
         hi "I won't if you promise not to worry about me too much."
 
-        show sharedsoakhanako smile
+        show sharedsoakhanako smile behind steam
         with charachangeev
 
         ha "O-okay."
@@ -880,8 +884,8 @@ label sh_ch29:
         ha "W-we shouldn't. Lilly and her parents would think we're strange."
 
         show ev sharedsoak_hisao_talk
-        show sharedsoakhanako frown
-        show sharedsoakhisao talk
+        show sharedsoakhanako frown behind steam
+        show sharedsoakhisao talk behind steam
         with charachangeev
 
         hi "If they'd even notice. Lilly's mom's usually away from the home the whole day unless she's taken a day off, and I've barely seen Lilly's dad at all."
@@ -894,7 +898,7 @@ label sh_ch29:
         ha "Not for very long. But… he did tell me that if we wanted to read any of his books, we could borrow them."
         hi "You mean the contents of that bookcase in the study? I figured they were books on business or heart equipment and stuff."
 
-        show sharedsoakhanako smile
+        show sharedsoakhanako smile behind steam
         with charachangeev
 
         ha "No, almost all of it is fiction. And it's all in Japanese, too. He has a very impressive collection. You should have a look at it tomorrow."
@@ -937,7 +941,7 @@ label sh_ch29:
         ha "You noticed that, too?"
         hi "Uhuh. Well, Akira did say that Lilly wasn't very independent when their parents left Japan. Still, seeing them be this out of touch with Lilly kinda suggests some estrangement with a capital E, don't you think?"
 
-        show sharedsoakhanako frown
+        show sharedsoakhanako frown behind steam
         with charachangeev
 
         ha "I… d-don't know. I think the situation is… just r-really complicated."
@@ -957,7 +961,7 @@ label sh_ch29:
         hi "Her mom's already taken quite a bit of time off to spend with her, and her dad said he'd try to get some time off at the end of the week. It's a modest start, but it's still a start."
         hi "I don't think we need to do anything. Well, except maybe hang out and have fun with Lilly whenever she feels like it. But we're already doing that. And we'll just keep doing that, right?"
 
-        show sharedsoakhanako smile
+        show sharedsoakhanako smile behind steam
         with charachangeev
 
         ha "Yes! We will."
@@ -1056,7 +1060,7 @@ label sh_ch29:
         ha "Hisao?"
         hi "Yes?"
         ha "Ummm… it's not like this doesn't feel good, but… this… feels a little like last week, d-doesn't it?"
-        "‘Last week’ in this case referring to the evening he convinced me not to go with the usual way of him lying on top of me and give spooning a try. That same 'I want to try something new, but I'm not sure how to bring it up' expression was on his face back then as well."
+        "‘Last week’ in this case referring to the evening he convinced me not to go with the usual way of him lying on top of me and give spooning a try. That same ‘I want to try something new, but I'm not sure how to bring it up’-expression was on his face back then as well."
 
         show ev:
             zoom 1.0 crop (567, 529, 1920, 1080)
