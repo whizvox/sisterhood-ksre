@@ -239,14 +239,14 @@ jun = [
 ]
 
 nakamura = [
-    ("act 2 sprites/nakamura adjust/speak", "speak"),
-    ("act 2 sprites/nakamura adjust/instruct", "instruct"),
-    ("act 2 sprites/nakamura adjust/smile", "smile"),
-    ("act 2 sprites/nakamura adjust/awkward", "awkward"),
-    ("act 2 sprites/nakamura adjust/neutral", "neutral"),
-    ("act 2 sprites/NAKAMURA/6 STRAIN", "strain"),
-    ("act 2 sprites/NAKAMURA/7 BOW", "bow"),
-    ("act 2 sprites/nakamura adjust/thinking", "thinking"),
+    ("Sprites/Nakamura/edit/speak", "speak"),
+    ("Sprites/Nakamura/edit/instruct", "instruct"),
+    ("Sprites/Nakamura/edit/smile", "smile"),
+    ("Sprites/Nakamura/edit/awkward", "awkward"),
+    ("Sprites/Nakamura/edit/neutral", "neutral"),
+    ("Sprites/Nakamura/edit/strain", "strain"),
+    ("Sprites/Nakamura/original/7 BOW", "bow"),
+    ("Sprites/Nakamura/edit/thinking", "thinking"),
 ]
 
 karla = [
@@ -456,7 +456,7 @@ def main(args: dict):
             f"nakamura/nakamura_{entry[1]}",
             replace=replace_nakamura,
             crop=(0, 108, 1200, 1690),
-            target_height=1020,
+            target_height=1050,
         )
         crop_and_resize_image(
             f"{entry[0]}",

@@ -552,7 +552,7 @@ label sh_ch19:
         nvl clear
         nvl show dissolve
 
-        n "The girl, whose name is Jun Yamazaki, is the club member whom I was initially drafted to replace for a little while as assistent editor."
+        n "The girl, whose name is Jun Yamazaki, is the club member whom I was initially drafted to replace for a little while as assistant editor."
 
         show natsume hands_cheerful
         show naomi bend_smile

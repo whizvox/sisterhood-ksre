@@ -636,7 +636,7 @@ label sh_ch6:
 
         n "…"
         n "Hisao's breathing has already changed to the slow and steady rhythm of slumber."
-        n "{vspace=30}Right before I join him, one final though goes through my mind."
+        n "{vspace=30}Right before I join him, one final thought goes through my mind."
         n "Just before he nudged me over the edge, for only a single second, I wanted to go further… wanted him to go further."
         n "{vspace=30}I smile."
         n "With luck, it won't be too long before I'm ready to take another step with him."
