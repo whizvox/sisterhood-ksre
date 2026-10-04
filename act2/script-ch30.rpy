@@ -818,7 +818,7 @@ label sh_ch30:
         li "Hanako, please hang in there."
         "Is that the best I can come up with?"
         "I used to have no trouble finding the right words to encourage Hanako. And now, now that it matters more than ever, I find myself lost for words."
-        ha "{i}*huff*... *huff*... *huff*...{/i}"
+        ha "{i}*huff*… *huff*… *huff*…{/i}"
         "Hanako's breathing is getting less steady. Is she getting worn out? What she's doing must be pretty tiring."
         "What if she gets too tired to continue and the ambulance hasn't arrived yet?"
         "How will she feel?"

@@ -1151,7 +1151,7 @@ label sh_ch29:
         ha "Okay."
         "At least I have a general idea now. We share a few kisses and cuddles until my nervousness starts to die down a bit."
         "I suppose it's up to me now."
-        "{i}Use my hands without using my hands...{/i}"
+        "{i}Use my hands without using my hands…{/i}"
         "Okay then."
 
         show ev eveningsnack_hipamper
@@ -1197,13 +1197,13 @@ label sh_ch29:
             ease 1.0 xanchor 942
         with None
 
-        "Then I move downward a bit and kiss him again..."
+        "Then I move downward a bit and kiss him again…"
 
         show ev:
             ease 1.0 xanchor 1248
         with None
 
-        "...lower myself even more and kiss him once more."
+        "…lower myself even more and kiss him once more."
         "Laying a trail of kisses in the process, I work my way from his chest, past his tummy and finally down to his abdomen."
 
         show ev eveningsnack_bj1_look:

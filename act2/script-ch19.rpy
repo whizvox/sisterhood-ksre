@@ -237,41 +237,41 @@ label sh_ch19:
         show yuuko panic_up
         with chchange
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… {nw}" (what_suffix="")
 
         show yuuko neurotic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... {fast}so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… {fast}so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {nw}" (what_suffix="")
 
         show yuuko panic_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {fast}but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {fast}but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {nw}" (what_suffix="")
 
         show yuuko neurotic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {fast}but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {fast}but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {nw}" (what_suffix="")
 
         show yuuko cry_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {fast}and when we finally found him he told us he just put the keys back in my own pigeon hole, {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {fast}and when we finally found him he told us he just put the keys back in my own pigeon hole, {nw}" (what_suffix="")
 
         show yuuko panic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeon hole, {fast}so we had to return to the teacher's lounge to retrieve them {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeon hole, {fast}so we had to return to the teacher's lounge to retrieve them {nw}" (what_suffix="")
 
         show yuuko cry_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole... so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeon hole, so we had to return to the teacher's lounge to retrieve them {fast}and all the while I could tell my colleague was getting annoyed with me so I kept apologizing which somehow made her get more annoyed, and... uh..."
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeon hole, so we had to return to the teacher's lounge to retrieve them {fast}and all the while I could tell my colleague was getting annoyed with me so I kept apologizing which somehow made her get more annoyed, and… uh…"
 
         stop music fadeout 2.0
 
-        ha "Uh... umm..."
+        ha "Uh… umm…"
         "For a few seconds the entire room is silent as everyone is trying to digest what just happened, and for a moment, I'm too confused to remember I was in the middle of an attempt to flee the room in terror."
         "As my brain recovers from the sudden information overload it tried to process, I'm surprised to see a familiar face in front of me."
         ha "Y-Yuuko?"

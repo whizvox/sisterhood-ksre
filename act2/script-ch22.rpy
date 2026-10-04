@@ -174,7 +174,7 @@ label sh_ch22:
 
         "I take a quick shower, dry myself off and am about to put my clothes on when a thought suddenly hits me."
         "Most of my medication is still in my suitcase. If it stays in there, I might end up forgetting about it again just like what was nearly the case when we went to Hokkaido. Best to take care of that now. It'd be really inconvenient if I ended up in the hospital here."
-        "I wrap a towel around my waist and quickly leave the shower area..."
+        "I wrap a towel around my waist and quickly leave the shower area…"
         hi "Hey Hanako, do you mind if I put my medication on the little shelf above the sink so I won't…"
 
         stop music fadeout 1.0

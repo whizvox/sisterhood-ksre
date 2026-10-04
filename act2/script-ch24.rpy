@@ -590,7 +590,7 @@ label sh_ch24:
         with None
 
         n "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them. Nowadays women probably wear long dresses or pantsuits, but the knee-high summer skirt Lilly's been wearing this evening qualifies as neither."
-        n "The cello is large enough to prevent me from viewing anything inappropriate from where I'm sitting, though I imagine if she moved a bit or put the cello away, then..."
+        n "The cello is large enough to prevent me from viewing anything inappropriate from where I'm sitting, though I imagine if she moved a bit or put the cello away, then…"
 
         nvl hide None
 
