@@ -57,8 +57,6 @@ def find_used_sprites(script_path: Path, valid_chars: list[str]) -> set[Path]:
                 if (
                     char in valid_chars
                     and sprite not in ["at", "behind", "zorder"]
-                    and not sprite.endswith("_blur1")
-                    and not sprite.endswith("_blur2")
                 ):
                     if (
                         sprite.endswith("_ss")
@@ -73,7 +71,13 @@ def find_used_sprites(script_path: Path, valid_chars: list[str]) -> set[Path]:
                     elif sprite.endswith("_superclose"):
                         end_path = f"superclose/{char}_{sprite}"
                     else:
-                        end_path = f"{char}_{sprite}"
+                        # special exception for close blurred sprites
+                        # will match char_exp_close_blur and char_exp_close_blur2, for example
+                        m = re.search(r"_close_blur\d?$", sprite)
+                        if m is not None:
+                            end_path = f"close/{char}_{sprite}"
+                        else:
+                            end_path = f"{char}_{sprite}"
                     sprite_path = resolve_path(f"sprites/{char}/{end_path}.png")
                     if sprite_path.exists():
                         sprite_paths.add(sprite_path)
