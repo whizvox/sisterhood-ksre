@@ -179,7 +179,7 @@ init 1:
         GalleryImageSet("funindark_h", Trigger("ev funindark_naked_touch_close", "ev funindark_naked_touch"), Trigger("ev funindark_naked_hand_close", "ev funindark_naked_hand"), Trigger("ev funindark_naked_breast_large", "ev funindark_naked_breast"), "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax", all_adult=True),
         GalleryImageSet("hotel", Special("ev hotel_onhanako", trig="ev hotel_onhanako_large"), "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax", all_adult=True),
         GalleryImageSet("pillowtalk", "ev pillowtalk_comfort dark", Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g2"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g3"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g4")),
-        GalleryImageSet("ballroomdance", Trigger("ev ballroomdance_emb_large", "ev ballroomdance_emb_normal"), "ev ballroomdance_smile_normal"),
+        GalleryImageSet("ballroomdance", Trigger("ev ballroomdance_emb_large", "ev ballroomdance_emb_normal"), Trigger("ev ballroomdance_smile_large", "ev ballroomdance_smile_normal")),
         GalleryImageSet("rainyroad", "ev rainyroad"),
         GalleryImageSet("rooftopkiss", "ev rooftopkiss_normal"),
         GalleryImageSet("caress", "ev caress_normal"),
