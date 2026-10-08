@@ -436,10 +436,9 @@ label sh_ch24:
         "Eventually, Lilly smiles playfully."
         li "It seems you were spot-on about him, Hanako."
 
-        # TODO replace with clip variant
-        show hanako defarms_shock_sum
+        show hanako defarms_shock_sum_clip
         with charachangealways
-        show hanako defarms_shock_close
+        show hanako defarms_shock_sum_clip_close
         with charachangealways
         show hanako emb_timid_sum_clip_close
         with charachangealways
@@ -500,11 +499,14 @@ label sh_ch24:
         with charachangealways
 
         "I walk over to the corner and carefully carry the cello case to the couch Lilly's sitting on."
+        "She kneels down next to it and slowly feels her way over to the small latches on the side."
 
         play sound sfx_unlatch volume 0.6
 
-        "She kneels down next to it and slowly feels her way over to the small latches on the side."
         "Opening the case, she takes the instrument out of it and gently, almost tenderly, feels its neck, fingerbox and strings. As she starts toying with the tuning pegs and occasionally plucking a string before carefully adjusting the corresponding peg, a nostalgic look appears on her face."
+
+        stop sound fadeout 1.0
+
         "The way she's tuning this thing gives me the impression this is far from the first time she's handled an instrument like this."
         hi "From the looks of it, this isn't the first time you've handled a cello."
 
@@ -771,13 +773,16 @@ label sh_ch24:
 
         play music music_tension
 
-        # TODO use sum_clipunb variant sprite
-        show hanako defarms_shock_close
+        show hanako def_shock_sum_clipunb_close
         with chchangefast
 
         "SHIT! This is bad. If Lilly's parents catch us the way we are now they'll probably either drown us in the nearby bay or ship us back to Japan in the cargo hold of a plane. Or maybe both."
 
-        show hanako defarms_strain_sum
+        show lilly:
+            ease 1.0 twoleftsit
+        with None
+
+        show hanako defarms_strain_sum_clipunb
         with charadistant
 
         "When I look at Hanako, who's in the process of getting off my lap, I notice she looks scared as well. Lilly has already started messing with the endpin's screw, but can't really get it loose."
@@ -788,7 +793,7 @@ label sh_ch24:
 
         "I hurry over to her, grab hold of the screw, and give it a few hard twists until it's loose enough to dislodge the endpin."
 
-        show hanako defarms_strain_sum at offscreenright:
+        show hanako defarms_strain_sum_clipunb at offscreenright:
             alpha 0.0
         with None
 
@@ -802,7 +807,7 @@ label sh_ch24:
         "Somewhere in the house I can hear the sound of a door. We have to get out of here or this vacation will meet a very premature end."
         "As if some divine entity has decided we still have business here, a semi-acceptable excuse suddenly finds its way into my brain."
 
-        show hanako def_worry_close
+        show hanako def_uneasy_sum_clipunb_close
         with characlose
 
         "I quickly run over to Hanako who's still fumbling with her blouse."
@@ -843,8 +848,7 @@ label sh_ch24:
 
         stop music fadeout 6.0
 
-        # TODO transition from shock to worry
-        show hanako def_worry_sum_clipunb_close at offscreenright:
+        show hanako def_shock_sum_clipunb_close at offscreenright:
             alpha 0.0 yanchor 1.0 ypos 1.02
             ease 0.4 tworight ypos 1.02
         with None
@@ -860,6 +864,9 @@ label sh_ch24:
 
         play sound sfx_lock
 
+        show hanako def_uneasy_sum_clipunb_close
+        with chchange
+
         "When we reach our room I throw open the door, pull Hanako inside, close the door, and frantically lock it as if some demon from the netherworld has been chasing us."
 
         play ambient sfx_heartslow fadein 2.0
@@ -867,6 +874,10 @@ label sh_ch24:
         "As I confirm that the door is really locked, it takes me a few seconds to realize we're safe."
         "Man, what a screwup this could have been. I turn around to face Hanako, the both of us still panting heavily."
         hi "We're… safe… I think. We… got away… with it."
+
+        show hanako def_worry_sum_clipunb_close
+        with chchange
+
         ha "Y-yes…"
 
         stop ambient fadeout 2.0
@@ -886,58 +897,23 @@ label sh_ch24:
         with vpunch
 
         "I'm probably not the only one feeling that way as Hanako hugs me back less than gently and presses herself against me like she did after her birthday party. This time, however, she raises her head and aggressively kisses me."
-
-        show ev tipsyfun_stand_close at truecenter:
-            zoom 0.75 anchor (0, 0) pos (-384, -127)
-        with vpunch
-
         "In contrast to the few careful and quiet kisses we shared downstairs earlier, the ones we're exchanging now are passionate and filled with longing."
-
-        show ev:
-            zoom 1.0 pos (-784, -170)
-        with { "master": vpunch }
 
         play sound [ sfx_rustling, sfx_rustling, sfx_rustling, sfx_rustling ]
 
         "A slight aftertaste of the wine we've had earlier fills my mouth as our tongues dance around in a fevered embrace, and I feel my head getting a little fuzzy again. I can feel her hands move underneath my shirt and stroking my back."
 
-        show ev:
-            ease 0.2 ypos -625
-        with None
+        show ev tipsyfun_stand_close at truecenter:
+            zoom 0.75 anchor (0, 0) pos (-384, -127)
+        with vpunch
 
-        pause 0.2
-
-        show ev:
-            ease 0.2 ypos -450
-        with None
-
-        pause 0.2
+        pause 0.1
 
         show ev:
-            ease 0.4 ypos -505
-        with None
-
-        pause 0.4
+            zoom 1.0 pos (-784, -170)
+        with { "master": vpunch }
 
         "Eager to return the favor, I move my hands underneath her blouse. As soon as I do so, she lets go of me and starts shaking her shoulders, trying to shake off her blouse without breaking our kiss."
-
-        show ev:
-            ease 0.1 ypos -1080
-        with None
-
-        pause 0.1
-
-        show ev:
-            ease 0.1 ypos -880
-        with None
-
-        pause 0.1
-
-        show ev:
-            ease 0.1 ypos -1010
-        with None
-
-        pause 0.1
 
         "Since she's gotten slightly sweaty already, causing the blouse to stick to her body a bit, I decide to speed things up by taking it off myself."
 
@@ -956,14 +932,6 @@ label sh_ch24:
 
         play sound sfx_rustling
 
-        show ev:
-            ease 0.2 ypos -20
-            ease 0.2 ypos -90
-            ease 0.2 ypos -70
-        with None
-
-        pause 0.6
-
         "We resume our makeout session, and with more luck than skill, I manage to get Hanako's bra off in a single try."
 
         show ev:
@@ -972,12 +940,6 @@ label sh_ch24:
         with Pause(1.2)
 
         "We edge towards the bed step by step without breaking our embrace or our kisses and somehow manage to kick off our shoes on the way."
-
-        show ev:
-            ease 0.2 ypos -90
-            ease 0.2 ypos -20
-            ease 0.2 ypos -70
-        with Pause(0.6)
 
         "Keeping one arm around Hanako's waist, I start fondling her left breast with the other hand, drawing a nasal moan out of her in the middle of our kissing."
 
@@ -990,123 +952,47 @@ label sh_ch24:
 
         play sound [ sfx_rustling, sfx_rustling, sfx_rustling ]
 
-        show ev:
-            ease 0.2 ypos -90
-            ease 0.2 ypos -20
-            ease 0.2 ypos -70
-        with Pause(0.6)
-
         "I feverishly try to undo the button of my pants. It seems to take an eternity."
 
-        show ev tipsyfun_stand_naked:
-            zoom 1.0 pos (-606, -210)
-        with { "master": vpunch }
+        with vpunch
+
+        "The moment I get it loose and unfasten my zipper, I feel two hands grab hold of my pants and pull them down in one go, taking my boxers along with them."
 
         show ev:
-            ease 0.2 ypos -958
+            ease 0.5 ypos -1558
         with vpunch
-        pause 0.6
+        pause 0.4
 
         stop sound
 
-        "The moment I get it loose and unfasten my zipper, I feel two hands grab hold of my pants and pull them down in one go, taking my boxers along with them."
         "Emboldened by Hanako's act, I reach out, unbutton her pants, and a moment later, her pants and panties are around her ankles as well."
 
         show ev:
-            ease 0.2 ypos -100
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
+            ease 0.5 ypos -120
         with None
         pause 0.4
 
         "With the last pieces of clothing (somewhat) out of the way, we indulge in the mutual hunger we feel. As we act out our desire, it strikes me how different this is from how we usually do this."
 
         show ev:
-            ease 0.2 ypos -200
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -240
+            ease 0.4 ypos -240
         with None
         pause 0.4
 
         "Whenever we satisfied each other in the past, we made certain to build things up slowly and carefully, making sure to keep things tender and gradually explore more intimate areas as we proceeded."
 
         show ev:
-            ease 0.2 ypos -275
+            ease 0.5 ypos -310
         with None
         with vpunch
         pause 0.2
         show ev:
-            ease 0.2 ypos -100
-        with None
-        pause 0.4
-        show ev:
-            ease 0.2 ypos -170
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -310
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -250
+            ease 0.5 ypos -250
         with None
         pause 0.2
 
         "This is nothing like those other times. We're feverishly moving our hands across each other's body, almost at random as if we're possessed by an unbearable itch yet we can't find the correct spot to scratch."
-
-        show ev:
-            ease 0.2 ypos -160
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -250
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -350
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -310
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        pause 0.2
-        with None
-
         "The wine we've had this evening is probably at least partially responsible, but I don't think that's all there is to it anymore."
-
-        show ev:
-            ease 0.2 ypos -360
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -200
-        with None
-        pause 0.4
-        show ev:
-            ease 0.2 ypos -260
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
-
         "Is it the fact we were stimulating each other earlier while being forced to repress every signal our body was trying to let out? Or is it the fact we haven't done it in weeks and we're both dying to change that?"
 
         show ev tipsyfun_stand_naked:
@@ -1152,35 +1038,8 @@ label sh_ch24:
         pause 0.2
 
         "A feverish kiss, followed by a gasp."
-
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
-
         ha "Y-yes."
 
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
         show ev:
             ease 0.2 ypos -100
         with None
