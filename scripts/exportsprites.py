@@ -2,8 +2,8 @@ import os
 import sys
 from argparse import ArgumentParser
 
-from PIL import Image
 import sishoodutil
+from PIL import Image
 
 RESAMPLE_METHOD = Image.Resampling.BICUBIC
 
@@ -17,7 +17,9 @@ def crop_and_resize_image(
     target_height: int | None = None,
 ):
     input_path = (sishoodutil.ref_path / (base_input_path + ".png")).resolve()
-    output_path = (sishoodutil.sh_path / "sprites" / (base_output_path + ".png")).resolve()
+    output_path = (
+        sishoodutil.sh_path / "sprites" / (base_output_path + ".png")
+    ).resolve()
     if output_path.exists() and not replace:
         return
     try:
@@ -170,12 +172,27 @@ naomi = [
 ]
 
 natsume = [
+    # basic
+    ("Sprites/Natsume/Edits/basic angry", "basic_angry"),
     ("sprites2/Ooe Natsume/Natsume b cheerful", "basic_cheerful"),
     ("sprites2/Ooe Natsume/Natsume b neutral", "basic_neutral"),
-    ("sprites2/Ooe Natsume/Natsume b smile", "basic_smile"),
+    ("Sprites/Natsume/Edits/basic sad", "basic_sad"),
+    ("Sprites/Natsume/Edits/basic serious", "basic_serious"),
+    ("Sprites/Natsume/Edits/basic smile", "basic_smile"),
+    # hands
+    ("Sprites/Natsume/Edits/hands angry", "hands_angry"),
     ("sprites2/Ooe Natsume/Natsume h cheerful", "hands_cheerful"),
     ("sprites2/Ooe Natsume/Natsume h neutral", "hands_neutral"),
-    ("sprites2/Ooe Natsume/Natsume h smile", "hands_smile"),
+    ("Sprites/Natsume/Edits/hands sad", "hands_sad"),
+    ("Sprites/Natsume/Edits/hands serious", "hands_serious"),
+    ("Sprites/Natsume/Edits/hands smile", "hands_smile"),
+    # crutch
+    ("Sprites/Natsume/Edits/crutch angry", "crutch_angry"),
+    ("Sprites/Natsume/Edits/crutch cheerful", "crutch_cheerful"),
+    ("Sprites/Natsume/Edits/crutch neutral", "crutch_neutral"),
+    ("Sprites/Natsume/Edits/crutch sad", "crutch_sad"),
+    ("Sprites/Natsume/Edits/crutch serious", "crutch_serious"),
+    ("Sprites/Natsume/Edits/crutch smile", "crutch_smile"),
 ]
 
 hanako = [
@@ -235,7 +252,12 @@ jun = [
     ("act 2 sprites/jun revised/raised/8 JUN'S LAUGH", "raise_laugh"),
     # cast+raised
     ("act 2 sprites/jun revised/cast + raised/7 JUN'S SMUG", "castraise_smug"),
-    ("act 2 sprites/jun revised/cast + raised/8 JUN'S LAUGH", "castraise_laugh")
+    ("act 2 sprites/jun revised/cast + raised/8 JUN'S LAUGH", "castraise_laugh"),
+    # wrist brace
+    ("Sprites/Jun/Revised/wristbrace/JUN SMILE", "brace_smile"),
+    ("Sprites/Jun/Revised/wristbrace/JUN HAPPY", "brace_happy"),
+    ("Sprites/Jun/Revised/wristbrace/JUN SERIOUS", "brace_serious"),
+    ("Sprites/Jun/Revised/wristbrace/JUN SAD", "brace_sad"),
 ]
 
 nakamura = [
