@@ -100,7 +100,8 @@ init 1 python:
                 return [img for img in self.images if not isinstance(img, Special) or not img.adult]
 
     sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
-    sh_sprites("akira", ["angry", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
+    # overwrite the closeup "boo" sprite since the original is strangely low-quality
+    sh_sprites("akira", ["angry", "boo", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
     sh_sprites("hanako", ["determined", "downangry", "shutsmile"], poses=["emb"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
