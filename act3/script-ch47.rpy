@@ -685,7 +685,7 @@ label sh_ch47:
         show karla basic_sad_cas_close
         with chchange
 
-        hyd "Go ahead and take her back to the house. Then come back here afterwards to pick us up."
+        hyd "Go ahead and take her back to the house. Then come back here afterward to pick us up."
         aki "Sure."
 
         show hiroyuki serious at tworight:

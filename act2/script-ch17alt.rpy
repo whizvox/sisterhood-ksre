@@ -69,7 +69,7 @@ label sh_ch17alt:
         with chchange
 
         ke "They didn't say a single word during the whole operation. They were only communicating in coded gestures, like commandos on a mission."
-        hi "Could it be that one of them was a deaf-mute and they were communicating in sign?"
+        hi "Could it be that one of them was a deaf-mute, and they were communicating in sign?"
         ke "Maybe. It makes sense to pick a mute person for an infiltration job. When they're captured and interrogated, they can't blab at least. Unless you untie their hands first. That's what they're counting on. They're trained for those kinds of situations."
         "You're completely missing the point."
 
@@ -79,7 +79,7 @@ label sh_ch17alt:
         "I fiddle with my cell phone for a bit. I asked Hanako to send me a little text message when they're done."
         "In less than half an hour, I have a talk coming up with Hanako's therapist who asked me to come and see her, if Hanako and I managed to reconcile."
         "She was seeing a client earlier this day though and made it clear she didn't want me to wait outside her office, presumably for the sake of her client's privacy."
-        "So until her last appointment is over, at four o' clock apparently, I'm stuck playing along with Kenji's conspiracy theories."
+        "So until her last appointment is over, at four o'clock apparently, I'm stuck playing along with Kenji's conspiracy theories."
 
         show kenji tsun
         with charaenter
@@ -110,11 +110,11 @@ label sh_ch17alt:
         show kenji tsun
         with chchange
 
-        "Kenji seems delighted at my quick offer of assistence, but then suddenly narrows his eyes and takes a step back."
+        "Kenji seems delighted at my quick offer of assistance, but then suddenly narrows his eyes and takes a step back."
         hi "Something wrong?"
         ke "You're way too eager to agree all of a sudden. You're usually far more reserved about my plans. This doesn't sound right. Didn't you say they operated on you?"
         hi "Yeah."
-        ke "How can I be sure that they didn't install a mind control device while you were out? Maybe you were merely being ordered to agree to help me just now and they'll make you sabotage my device the moment I turn my back."
+        ke "How can I be sure that they didn't install a mind control device while you were out? Maybe you were merely being ordered to agree to help me just now, and they'll make you sabotage my device the moment I turn my back."
         "I'm not quite sure whether to be impressed by Kenji's justified suspicion of me or baffled by the leap of logic he took to explain it."
         hi "They operated on my chest. Doesn't a mind control device usually go in the brain?"
         "Why am I even arguing with him as if this is a serious conversation topic?"
@@ -126,7 +126,7 @@ label sh_ch17alt:
         hi "Why definitely a tracking device?"
         ke "Last Saturday, that tall blonde from my class came knocking and told me that you'd be arriving at noon and that they were going to ‘welcome you back’. They knew exactly where you were going to be and when."
         ke "If they were confident enough of the success of their ambush to go and taunt me with it, they had to have placed a device on you somehow that allowed them to pinpoint your location."
-        "It's kinda scary how seamlessly he manages to fit all of last weeks events into one big narrative and still get things completely wrong."
+        "It's kinda scary how seamlessly he manages to fit all of last week's events into one big narrative and still get things completely wrong."
         hi "I'm not sure I want to know but… Since you knew they were setting up an ambush for me, did you do anything to try and thwart them?"
 
         show kenji tsun
@@ -136,7 +136,7 @@ label sh_ch17alt:
         hi "That's okay. I managed to survive."
         ke "Maybe you were worth more to them alive. With that tracking device inside you, they may be monitoring us right now."
         ke "Maybe we shouldn't be seen together."
-        "I do my best to supress a groan and check my watch."
+        "I do my best to suppress a groan and check my watch."
         "It's almost time for my meeting with Miss Takawa. It'll take some time for me to reach the building where the medical staff resides, especially since I'm still forced to take it slowly for a little while, and I think I've heard enough crazy for one day."
         hi "Maybe you should do a perimeter check if that's what worries you. I have an appointment at the nurse's building. I'll have them check me for tracking devices."
         hi "Why don't you stay behind and make sure I'm not followed? Then you can check your theories for yourself."
@@ -229,13 +229,13 @@ label sh_ch17alt:
         show takawa serious
         with chchange
 
-        ta "Painful memories resurfacing. Desperation. A feeling of helplessness. Once what was happening to you started sinking in, all those things effectively paralyzed her. And that in turn created a strong sense of guilt afterwards."
+        ta "Painful memories resurfacing. Desperation. A feeling of helplessness. Once what was happening to you started sinking in, all those things effectively paralyzed her. And that in turn created a strong sense of guilt afterward."
         hi "So what are you suggesting?"
 
         show takawa calculating
         with chchange
 
-        ta "Even though this school has a nursing staff that's on-site 24 hours a day, all employees here such as teachers and other non-medical staff members are still expected to know some basic emergency first responder skills."
+        ta "Even though this school has a nursing staff that's on-site 24 hours a day, all employees here such as teachers and other nonmedical staff members are still expected to know some basic emergency first responder skills."
         ta "And every few years they're required to brush up on them. We hire a professional trainer from the nearby hospital a few times a year to instruct our people."
         ta "The next courses happen to take place the upcoming week. I took them myself last year, but I was thinking it might be a good idea for me to sign up for them again this time…"
         hi "I don't see how that…"
@@ -273,7 +273,7 @@ label sh_ch17alt:
         show takawa smile
         with chchange
 
-        ta "The instructor has agreed to let Miss Ikezawa attend in my place and he will do his best to let her get in as much practice as possible."
+        ta "The instructor has agreed to let Miss Ikezawa attend in my place, and he will do his best to let her get in as much practice as possible."
         hi "That's good to hear. Let's hope she won't get too nervous about attending a class with people she's not familiar with."
         ta "There will only be 7 other people attending from what I've just heard, so it's a relatively small group this time around, and there may be a few familiar faces among them."
 
@@ -283,7 +283,7 @@ label sh_ch17alt:
         with charachangealways
 
         "We finish our tea, and as Miss Takawa takes my bowl from me, she gives me a sincere look."
-        ta "The instructor asked me if he could have a look at your medical file before the courses start."
+        ta "The instructor asked me if he could take a look at your medical file before the courses start."
         ta "Since he's not directly affiliated with Yamaku and this is not an emergency situation, I'm going to need your written consent before I can oblige."
         hi "That's not a problem."
 
@@ -304,7 +304,7 @@ label sh_ch17alt:
 
         ta "Calming her down with words may not help much if she's in a state of irrational stress."
         ta "Activities such as cuddling cause oxytocin to be released in the brain that will allow her to relax and will lower the sense of stress and fear that she's feeling."
-        ta "In fact, I believe the practice has a benevolent effect on symptoms of post traumatic stress in general, so if she has trouble sleeping or is feeling anxious, this is probably the first thing you should try."
+        ta "In fact, I believe the practice has a benevolent effect on symptoms of post-traumatic stress in general, so if she has trouble sleeping or is feeling anxious, this is probably the first thing you should try."
         hi "I certainly don't mind that kind of advice. Anything else?"
 
         play sound sfx_phonenotif
@@ -354,7 +354,7 @@ label sh_ch17alt:
 
         ta "Establishing a bond of trust as friends often involves being able to show your vulnerable side to the other person, and I suspect that's not something that comes naturally to Miss Satou."
         hi "She has one alright, but it wasn't until last week that I actually got to see it, and I might have been the only one who witnessed her like that in years."
-        hi "The lengths she goes to to keep up appearances can be pretty unsettling at times."
+        hi "The lengths she goes to keep up appearances can be pretty unsettling at times."
         ta "It's something we encourage as a society, even in situations where it makes matters more difficult."
         ta "In addition, Miss Satou has a strong sense of pride. You can tell by the way she behaves and carries herself. And I'm sure it serves her well most of the time. Just… not always."
 

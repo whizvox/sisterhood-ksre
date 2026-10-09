@@ -14,11 +14,11 @@ label sh_ch20:
         nvl show dissolve
 
         n "My eyes go back and forth between three illustrations of a person lying on the ground, each one in a slightly different position."
-        n "The idea is to cross off the picture of the optimal recovery position, but picture B and C look really similar except for a slight difference in the angle of the head. Doing my best to recollect the position of the practice dummy during our excercises last Monday, I pick illustration B and move on to the next question."
+        n "The idea is to cross off the picture of the optimal recovery position, but picture B and C look really similar except for a slight difference in the angle of the head. Doing my best to recollect the position of the practice dummy during our exercises last Monday, I pick illustration B and move on to the next question."
 
         nvl clear
 
-        n "I'm currently the only person in class right now, except for the trainer. Everyone was present during the first three days, but the day afterwards, only Yuuko, a staff member whose name I forgot, and I were there, the three of us obviously being the only ones completely new at this."
+        n "I'm currently the only person in class right now, except for the trainer. Everyone was present during the first three days, but the day afterward, only Yuuko, a staff member whose name I forgot, and I were there, the three of us obviously being the only ones completely new at this."
         n "And today, the last day of the training, it's just me. Mister Nakamura took the opportunity this morning to make good on his promise and give me a private course through the chapter I skipped earlier this week—that being the chapter about burns and how to act in situations like someone's clothes catching fire or coming into contact with boiling water."
         n "The fact nobody else was in the room was probably the reason I didn't run out, lock myself in my room and hide under my bed."
         n "{vspace=30}Even so, I felt utterly miserable and ready to start screaming throughout the whole ordeal and was happy Nakamura did his best to go through it as quickly as possible without showing pictures or going into any more detail than absolutely necessary."
@@ -55,7 +55,7 @@ label sh_ch20:
         with charaenter
 
         "I quietly drop it on Nakamura's desk, which results in a satisfied nod."
-        nak "It won't take too long to correct this last one, Ikezawa. Why don't you wait around a bit until I'm finished and we can tie this whole thing up with a nice bow around it?"
+        nak "It won't take too long to correct this last one, Ikezawa. Why don't you wait around a bit until I'm finished, and we can tie this whole thing up with a nice bow around it?"
         ha "O-okay."
         "I return to my desk, fiddling with my hair a bit."
         ha "N-no more practice drills?"
@@ -221,7 +221,7 @@ label sh_ch20:
 
         nak "You hesitated a bit, but you still reacted within an acceptable timespan. So I think you really deserve this."
         "He takes a fancy piece of paper from behind his back that I can see has my name on it and puts his signature on the dotted line near the bottom before handing it to me."
-        nak "Congratulations on succesfully finishing the training, Ikezawa."
+        nak "Congratulations on successfully finishing the training, Ikezawa."
         "I take it from him, still a bit shaky but also filled with a modest sense of pride."
         ha "T-thank you."
 
@@ -235,7 +235,7 @@ label sh_ch20:
         show nakamura neutral
         with chchange
 
-        nak "A little bit. Unlike what movies would like you to believe, heart attacks are rarely instantanous. But warning signs may vary from person to person."
+        nak "A little bit. Unlike what movies would like you to believe, heart attacks are rarely instantaneous. But warning signs may vary from person to person."
         ha "Warning signs?"
         nak "You can find a list of the more common ones on page 34 of your binder. Though if you're currently thinking of your boyfriend, please be aware that what sent him to the hospital last time wasn't a traditional heart attack."
         ha "Ah…"
@@ -244,7 +244,7 @@ label sh_ch20:
         with chchange
 
         nak "Remember that actual heart attacks involve the coronary artery getting clogged, resulting in part of the heart being deprived of oxygen and being damaged as a result. Your boyfriend's arteries are probably fine."
-        nak "His problem is that his heart occasionally starts a disfunctional rhythm. It's a different problem altogether. That doesn't mean he never experiences any warning signs, but… I think it's best if you try not to worry about those."
+        nak "His problem is that his heart occasionally starts a dysfunctional rhythm. It's a different problem altogether. That doesn't mean he never experiences any warning signs, but… I think it's best if you try not to worry about those."
         "Not worry about them? Is he joking?"
 
         show nakamura neutral
@@ -258,9 +258,9 @@ label sh_ch20:
         show nakamura speak
         with chchange
 
-        nak "If his heart gets into a disfunctional rhythm it won't come out of, the best thing you can do is be aware of the location of the nearest AED."
+        nak "If his heart gets into a dysfunctional rhythm it won't come out of, the best thing you can do is be aware of the location of the nearest AED."
         nak "I've noticed this school has quite a few of them hanging on the walls. I'm sure the head nurse here can get you a map of their locations."
-        ha "And outside of the s-school?"
+        ha "And outside the s-school?"
         nak "I'd like to suggest him getting an AED of his own at some point, but that's easier said than done. The one you've been practicing with this week costs as much as I pay in rent over the course of two months."
         nak "Still, in the long term, it'd be a good investment."
         ha "A-anything else?"
@@ -346,7 +346,7 @@ label sh_ch20:
         "Jun just shakes her head. Naomi, on the other hand, nods enthusiastically."
         na "I'm going on a trip across Japan. Natsume's coming, too. We'll head north first, stay in Hokkaido for a bit, then head south towards Kyoto."
         ha "That sounds enjoyable, too."
-        na "It will be. I'll be sure to take plenty of pictures. We can swap photos afterwards."
+        na "It will be. I'll be sure to take plenty of pictures. We can swap photos afterward."
         "That might be a problem. My cell phone has a camera function, but it doesn't have enough capacity to store a large amount of photos, and I don't have an actual photo camera myself."
         ha "I could… buy a g-guidebook while I'm there."
 
@@ -556,7 +556,7 @@ label sh_ch20:
         show lilly basic_smileclosed_paj
         with chchange
 
-        li "That might not be a bad idea, Hisao. Let us assemble in my room tomorrow morning at ten o' clock. That'll leave us enough time to get to the station and take the train to the airport."
+        li "That might not be a bad idea, Hisao. Let us assemble in my room tomorrow morning at ten o'clock. That'll leave us enough time to get to the station and take the train to the airport."
 
         show hisao basic_smile_uni
         with chchange
@@ -586,7 +586,7 @@ label sh_ch20:
         play sound sfx_doorclose
 
         "We enter the room, and I take a seat on my bed. I feel tired and tense at the same time."
-        "Today was stressful and exhausting. First the lesson on burns that hit several sensitive nerves, and then the trainer's faked heart attack right in front of me. And tomorrow might even be more nervewracking."
+        "Today was stressful and exhausting. First the lesson on burns that hit several sensitive nerves, and then the trainer's faked heart attack right in front of me. And tomorrow might even be more nerve wracking."
 
         show hisao basic_worry_uni_close
         with characlose

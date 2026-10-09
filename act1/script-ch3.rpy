@@ -37,7 +37,7 @@ label sh_ch3:
         show nurse neutral_close
         with chchange
 
-        nk "Graduation is less than a year away, and Emi doesn't have any clear plans on what to do afterwards."
+        nk "Graduation is less than a year away, and Emi doesn't have any clear plans on what to do afterward."
         nk "She kind of likes to live by the day. She's not exactly a bookworm, if you know what I mean. But sports are something she's genuinely passionate about."
         "You don't have to tell me that."
         hi "Are you trying to talk her into becoming a trainer or a coach? Aren't those usually retired athletes?"

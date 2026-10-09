@@ -8,14 +8,14 @@ label sh_ch44:
         scene black
 
         "It's been a week since we went to that open house day, and a lot has happened since then."
-        "Hanako's panic attack, our coordinated effort to locate her on an unfamiliar campus, the silent journey back home, the cramming for the mock exams the days afterwards, and finally, last Wednesday and Thursday, the mock exams themselves."
+        "Hanako's panic attack, our coordinated effort to locate her on an unfamiliar campus, the silent journey back home, the cramming for the mock exams the days afterward, and finally, last Wednesday and Thursday, the mock exams themselves."
 
         scene bg school_scienceroom at center, sepia
         show muto normal at center, sepia
         with locationchange
 
         "I found them tougher than I anticipated, though worrying about Hanako may have played a role as well."
-        "Between Hanako, Lilly, and myself, we went out of our way to avoid bringing the subject up during the days afterwards."
+        "Between Hanako, Lilly, and myself, we went out of our way to avoid bringing the subject up during the days afterward."
 
         scene ev sadspooning_tearoom at center, sepia
         with { "master": locationchange }

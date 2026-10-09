@@ -200,7 +200,7 @@ label sh_ch8:
         show hisao basic_speak_polo
         with chchange
 
-        hi "You'd rather I didn't or you really don't want me to?"
+        hi "You'd rather I didn't, or you really don't want me to?"
         ha "Huh?"
         hi "That day we started our relationship, you were worried that you were useless. That you weren't able to do anything for the people you cared about."
         hi "Do you still feel that way?"
@@ -359,7 +359,7 @@ label sh_ch8:
         show hisao basic_speak_polo
         with chchange
 
-        hi "I'm not saying I don't enjoy getting a backrub in return on occasion, but it shouldn't be mandatory."
+        hi "I'm not saying I don't enjoy getting a back rub in return on occasion, but it shouldn't be mandatory."
 
         play sound sfx_airhockey_score1
 
@@ -551,7 +551,7 @@ label sh_ch8:
 
         play sound sfx_gameover volume 0.8
 
-        "I let out a slightly frustrated sigh. It sure was. Hisao and I crossed the finish line with only a 0.3 second difference on the clock. I'm pretty sure I can do better next race."
+        "I let out a slightly frustrated sigh. It sure was. Hisao and I crossed the finish line with only a 0.3-second difference on the clock. I'm pretty sure I can do better next race."
         "But as I prepare to push the start button in the center of the handlebar, Hisao stops me."
 
         show hisao basic_smile_polo_close
@@ -576,7 +576,7 @@ label sh_ch8:
         with charaexit
 
         "I quickly move over to the seat Hisao is sitting on and sit down behind him."
-        "It's still a tight fit because the seats have a depression in the middle for the player to sit and it's not quite made for two pairs of hips. I don't think either of us are sitting in a particularly stable or comfortable position."
+        "It's still a tight fit because the seats have a depression in the middle for the player to sit, and it's not quite made for two pairs of hips. I don't think either of us are sitting in a particularly stable or comfortable position."
         "As Hisao's screen lights up to reveal the starting line and seven other bike riders in front of us, I wrap my arms around him tightly."
         "A few minutes later we cross the finish line dead last. Steering turns out to be extremely tricky since it's impossible for us to lean left or right in precise tandem, meaning most of the turns we make are too late and too wide."
         "I giggle."

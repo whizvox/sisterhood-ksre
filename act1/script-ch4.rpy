@@ -146,7 +146,7 @@ label sh_ch4:
         aki "I'd like to stick around, but I still have a big distance to drive and a boyfriend to catch up with."
         hi "Aren't you at least a little bit tired after travelling for so long?"
         aki "Nope. When I was born, I hogged all the genetic jet-lag immunity I could get."
-        aki "As you'll find out soon, there wasn't anything left for Lilly afterwards."
+        aki "As you'll find out soon, there wasn't anything left for Lilly afterward."
 
         show lilly basic_displeased_cas:
             xalign 0.4
@@ -305,7 +305,7 @@ label sh_ch4:
         nvl clear
 
         n "We started with a quiet little dinner at the Shanghai, a familiar place without a lot of people around. It was here that I gave Hanako the hair clip that she's now carrying with her all the time."
-        n "After finishing our meal, I took her to a small movie theatre in the city. The movie we went to was actually a film adaption of a book we both read before, so neither of us was very surprised by most of the twists in the plot, but we had the benefit of having additional discussion material on our way home, and being able to avoid awkward silences with Hanako is always a good thing."
+        n "After finishing our meal, I took her to a small movie theater in the city. The movie we went to was actually a film adaption of a book we both read before, so neither of us was very surprised by most of the twists in the plot, but we had the benefit of having additional discussion material on our way home, and being able to avoid awkward silences with Hanako is always a good thing."
         n "I was even entertained at how passionate she got for a moment while we were debating the way the director changed a few things about the ending before slipping back into her usual meek demeanor."
         n "{vspace=60}One thing about our date that stood out was Hanako's uneasiness with the idea of me paying for everything, so we ended up paying for each other's meal and movie ticket."
 
@@ -351,7 +351,7 @@ label sh_ch4:
         li "I suppose it's settled then. We'll have to leave early in the morning in order to catch the train there."
         li "Maybe it'd be best if we retire for the evening for now. We won't be able to sleep in tomorrow."
         "Hanako gets up and gathers the tea cups and tea pot from the table."
-        ha "I'll go and clean the tea service downstairs. And I think I'll go to bed afterwards."
+        ha "I'll go and clean the tea service downstairs. And I think I'll go to bed afterward."
 
         hide hanako
         with charaexit

@@ -98,7 +98,7 @@ label sh_ch10:
         with charaenter
 
         nk "Hisao, can I have just one more moment?"
-        "I turn around and the nurse motions me to sit down again."
+        "I turn around, and the nurse motions me to sit down again."
 
         show nurse neutral
         with chchange
@@ -487,7 +487,7 @@ label sh_ch10:
 
         ha "Hmmm… She has been… seeming… a bit blue lately. I thought she could use some extra company."
         aki "Awww… Isn't that sweet? What do we say now, Sis?"
-        hi "Somehow you lecturing Lilly on etiquette, even in jest, feels extremely wrong."
+        hi "Somehow, you lecturing Lilly on etiquette, even in jest, feels extremely wrong."
 
         show akira basic_boo
         show lilly basic_giggle
@@ -661,7 +661,7 @@ label sh_ch10:
         li "That was still part of the reason, Hisao."
         li "I genuinely wanted you two to spend more time together in order to deepen your relationship and grow closer. And it seems that's exactly what you and Hanako have done."
         li "In that regard, I have no regrets."
-        li "But it is also true that this matter has been on my mind a lot and I've been needing time alone in order to sort things out for myself."
+        li "But it is also true that this matter has been on my mind a lot, and I've been needing time alone in order to sort things out for myself."
         hi "Just take care not to get stuck in permanent worry-mode."
         hi "Seeing that we know now, you can count on Hanako and me if you want a listening ear or a shoulder to support you. Both of us would happily sacrifice our ‘time together’ for your sake at this point."
 
@@ -928,7 +928,7 @@ label sh_ch10:
         with charachangeev
 
         hi "But you can now."
-        hi "She wasn't planning to tell us, but we found out and now we can be there for her, right? You can be there for her just like you're here for me."
+        hi "She wasn't planning to tell us, but we found out, and now we can be there for her, right? You can be there for her just like you're here for me."
         ha "M-maybe. But I don't want to ask her to stay for my sake."
         ha "W-what if she would rather live with her f-family and m-me asking her to stay would make her stay here out of a s-sense of duty towards me?"
         ha "W-what kind of friendship would we have then?"

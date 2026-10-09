@@ -39,7 +39,7 @@ label sh_ch24:
 
         aki "Don't drink it all at once, kids. It's tasty, but not the lightest stuff in the world."
         "After winning the pub quiz and getting two bottles of Scotch whisky as a prize, Akira made a deal with the bartender and exchanged the two bottles of Scotch for four bottles of wine."
-        "We didn't stay at the pub for much longer afterwards, opting to spend the rest of the evening at the Satou home. When we got there though, Akira expressed the desire to be brought back to her place."
+        "We didn't stay at the pub for much longer afterward, opting to spend the rest of the evening at the Satou home. When we got there though, Akira expressed the desire to be brought back to her place."
         "Karla seems a bit disappointed."
 
         show karla basic_sheepish
@@ -940,7 +940,6 @@ label sh_ch24:
         with Pause(1.2)
 
         "We edge towards the bed step by step without breaking our embrace or our kisses and somehow manage to kick off our shoes on the way."
-
         "Keeping one arm around Hanako's waist, I start fondling her left breast with the other hand, drawing a nasal moan out of her in the middle of our kissing."
 
         show ev:

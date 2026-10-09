@@ -25,7 +25,7 @@ label sh_ch1:
         show akira basic_smile at tworight
         with charaenter
 
-        aki "Hey, unlike you I've been up and about for four hours already."
+        aki "Hey, unlike you, I've been up and about for four hours already."
         aki "Besides, I have a reason to celebrate. Check out what I got this morning."
 
         show akira basic_smile_close at center
@@ -132,7 +132,7 @@ label sh_ch1:
         with charamovechangefaster
 
         aki "Of course, the old man didn't exactly hide the fact he pulled some strings to help me get this job, so I think we both know what'll be expected of me in return for taking it."
-        li "Wh-what would that be?"
+        li "W-what would that be?"
 
         play sound sfx_rockskip
         "{i}*splash* *splash* *splash*{/i}"
@@ -220,7 +220,7 @@ label sh_ch1:
         li "D-did you really consider all these things during the few seconds between when Father asked you and you accepted?"
         aki "Like I said, it was a gut feeling. It took me a whole night of mulling to figure out the specifics."
         "I am impressed. Akira wasn't the only one who was asked to move from Japan to Scotland."
-        "I too have been asked to move back in with our parents. But where she accepted almost immediately, I have been trying to avoid even thinking about the choice that has been offered to me."
+        "I, too have been asked to move back in with our parents. But where she accepted almost immediately, I have been trying to avoid even thinking about the choice that has been offered to me."
         "Akira trusts her instincts blindly. I'm not quite as confident in my gut feelings and tend to mull over things longer than I should."
 
         show akira basic_resigned

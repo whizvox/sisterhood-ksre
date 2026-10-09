@@ -23,7 +23,7 @@ label sh_ch0:
 
         ta "Good day, Miss Hanako."
         ha "G-good day, Miss Yumi."
-        "As I enter, Miss Yumi gets up, approaches me and we exchange greetings and polite bows."
+        "As I enter, Miss Yumi gets up, approaches me, and we exchange greetings and polite bows."
         ta "May I have the honor of getting you some tea, Miss Hanako?"
         ha "I-I humbly accept, Miss Yumi."
 
@@ -88,7 +88,7 @@ label sh_ch0:
         "{i}*tap*{/i}"
 
         ha "Not t-too badly."
-        "We usually have an agreement that only the person whose turn it is is allowed to speak. If I want things to slow down, I can simply wait a bit before placing my next stone."
+        "We usually have an agreement that only the person whose turn it is allowed to speak. If I want things to slow down, I can simply wait a bit before placing my next stone."
 
         play sound sfx_gostone_soft
         "{i}*tap*{/i}"
@@ -257,7 +257,7 @@ label sh_ch0:
         play sound sfx_gostone_soft
         "{i}*tap*{/i}"
 
-        ta "We could practice it if you'd like. I'm going to leave you a few openings now and then and it's up to you to spot them and exploit them as quickly as you can."
+        ta "We could practice it if you'd like. I'm going to leave you a few openings now and then, and it's up to you to spot them and exploit them as quickly as you can."
 
         show takawa smile_close
         with chchange
@@ -580,7 +580,7 @@ label sh_ch0:
         show takawa smile
         with chchange
 
-        "Then, her smile is back and the moment is lost as her words echo in the hallway."
+        "Then, her smile is back, and the moment is lost as her words echo in the hallway."
         ta "I hope to see you here again in three weeks."
         ta "Please take care."
 

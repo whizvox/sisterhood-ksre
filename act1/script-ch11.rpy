@@ -19,7 +19,7 @@ label sh_ch11:
         "I take another look at the small map I printed out and try to pinpoint our current location."
         "My orientation skills aren't particularly bad. In fact, they're probably better than my boyfriend's, but walking through an unfamiliar (and {i}crowded{/i}) part of the city keeping a keen eye on the surroundings while keeping my head down to avoid people's gazes has proven to be tough."
         "The fact that I'm holding onto Lilly, both for her benefit and my own assurance, and the fact that Lilly tends to attract people's attention due to her height and hair color aren't making things easier."
-        ha "I… I think I have our location. We n-need to take the s-street we just passed and it should be to the right somewhere."
+        ha "I… I think I have our location. We n-need to take the s-street we just passed, and it should be to the right somewhere."
 
         show lilly basic_smile_cas_close
         with chchange
@@ -100,7 +100,7 @@ label sh_ch11:
 
         ha "The room itself is rather large and tall…"
         ha "…there's a spacious dance floor near the center of the room…"
-        ha "…the tables for the patrons are in a semi-circle around it…"
+        ha "…the tables for the patrons are in a semicircle around it…"
         ha "…on the other side is the ensemble playing the music…"
         ha "…the furniture and decorations are a bit old-fashioned, but practical…"
         ha "…lighting is modest. There is some lighting equipment on the ceiling pointing at the dance floor, but it's not being used for this type of music."
@@ -366,7 +366,7 @@ label sh_ch11:
         li "When we spent time together in the past, she'd often go over her plans for the future in detail, and we enjoyed chattering about them."
         ha "Such as…?"
         li "Organizing a charity festival, setting up our own orphanage, setting up a school for the disabled similar to Yamaku… taking over the world one city council at a time."
-        ha "Pffff…w-what?"
+        ha "Pffff… W-what?"
 
         show lilly basic_weaksmile_cas_close
         with chchange
@@ -405,7 +405,7 @@ label sh_ch11:
         show lilly basic_weaksmile_cas_close
         with chchange
 
-        li "Before we enrolled at Yamaku, I used to cheer her on all the time and encourage her to follow her dreams."
+        li "Before we enrolled in Yamaku, I used to cheer her on all the time and encourage her to follow her dreams."
 
         show lilly basic_displeased_cas_close
         with chchange
@@ -456,7 +456,7 @@ label sh_ch11:
         li "Hanako… What a clever initiative. I never would have thought of that myself. Hisao will love this."
         ha "T-thanks. I really hope so."
         li "What did the newspaper club say about your idea?"
-        ha "Naomi liked the idea. However she said that only club members are allowed to submit articles."
+        ha "Naomi liked the idea. However, she said that only club members are allowed to submit articles."
         ha "So, I officially joined three days ago. Though… Hisao doesn't know that either."
 
         show lilly basic_cheerful_cas_close
@@ -688,7 +688,7 @@ label sh_ch11:
         "One more step back and this one goes without incidents."
         "Lilly gives me a pleased nod."
         li "Very good. Now we'll try the reverse. Take a slow step forward with your right foot."
-        "This time Lilly leans slightly back and I'm pulled forward a bit, but before I can lose my balance, she straightens herself out."
+        "This time, Lilly leans slightly back and I'm pulled forward a bit, but before I can lose my balance, she straightens herself out."
         "This is like some odd balancing game she's playing."
         li "One more time."
         "I take another step forward, trying hard not to bump into Lilly by accident."

@@ -905,7 +905,7 @@ label sh_ch41:
         show naomi bend_laugh_close
         with chchange
 
-        na "Awesomesauce!!! It's a date! Friday afternoon after we finish printing! Don't forget! And afterwards..."
+        na "Awesomesauce!!! It's a date! Friday afternoon after we finish printing! Don't forget! And afterward..."
 
         $ sh_mus_file = renpy.music.get_playing()
         $ sh_mus_pos = renpy.music.get_pos()
@@ -993,7 +993,7 @@ label sh_ch41:
 
         mu "Thank you, Kawana. You can tell your friend that he took a good picture."
         "Mutou nods at Misaki who came to show him a copy of the class photo she printed out. About 20 minutes ago, we took the class photo Naomi proposed this morning."
-        "Misaki Kawana, the girl who sits in front of Natsume during class and who is a member of the photography club, took a friend from her club along who was willing to operate the camera and quickly dropped by the copyshop afterwards to print out a preview for our teacher."
+        "Misaki Kawana, the girl who sits in front of Natsume during class and who is a member of the photography club, took a friend from her club along who was willing to operate the camera and quickly dropped by the copyshop afterward to print out a preview for our teacher."
         "Misaki" "Should we send the picture to the student council, teacher?"
 
         show muto normal
@@ -1133,7 +1133,7 @@ label sh_ch41:
         mu "As it is, someone else may be better at sweet-talking his way through a job interview, but if you have better credentials than the competition, you'll still have a good chance of being hired. You should see this as an opportunity to even the odds in your favor."
         mu "Here at this school we make it a point to push all our students to try for the very best universities they can possibly get into in order to compensate for possible disadvantages they might have on the job market later."
         mu "It is always better to attend a reputable university and appear slightly overqualified for the job of your choice later than to be passed up again and again."
-        "That's not a bad point. One of the selling points of attending a prestigious university used to be that it came with an almost guaranteed job offer afterwards. That's not really the case any longer, but the name of one's university still carries an extreme amount of weight."
+        "That's not a bad point. One of the selling points of attending a prestigious university used to be that it came with an almost guaranteed job offer afterward. That's not really the case any longer, but the name of one's university still carries an extreme amount of weight."
         "And if there's one thing I don’t have faith in, it's my ability to not bungle up a job interview, so I guess I really don't have much choice except to try and compensate in the credentials department as much as I can."
         ha "So... Another alternative option then?"
 
@@ -1293,7 +1293,7 @@ label sh_ch41:
         li "So what will you be spending it on?"
         ha "A... ‘girls night out’... as Naomi called it."
         ha "The next issue of our newspaper comes out the upcoming Friday, so our club members go to a coffee shop in town to celebrate the release as usual. Naomi, Jun and I will go there too, but leave early and take a bus to the city."
-        ha "We're going to look for a nice p-place to have dinner and then do k-karaoke afterwards. Whether we do anything else depends on how much of the prize money we'll have left."
+        ha "We're going to look for a nice p-place to have dinner and then do k-karaoke afterward. Whether we do anything else depends on how much of the prize money we'll have left."
 
         show lilly basic_satisfied_paj_close
         show hisao cross_smile_uni
@@ -1489,7 +1489,7 @@ label sh_ch41:
 
         "Lilly beams at those words."
         li "Really?"
-        "I recall what Miss Yumi once said about taking advantage of opportunities as they present themselves. This is probably one of those opportunities, and if Lilly can pull this off, I don't think I'll feel sorry about it afterwards."
+        "I recall what Miss Yumi once said about taking advantage of opportunities as they present themselves. This is probably one of those opportunities, and if Lilly can pull this off, I don't think I'll feel sorry about it afterward."
         ha "R-really."
 
         show lilly basic_cheerfulblush_paj_close at center

@@ -54,7 +54,7 @@ label sh_ch37:
 
         li "Perhaps it would be good if Fiona could make certain that the room is cleaned and vacuumed. Because of its distinct appearance, our visitor is certain to pay close attention to the state of its interior."
         "Allison" "As you wish. If I give Miss Wilson a hand, I am certain we'll be able to have it looking prim and proper in 10 minutes."
-        li "Wonderful. After Father's colleague called, I made a phone call to the nurse we hired to do Father's daily checkup, and she thinks he should be able to handle a short meeting as long as he rests up afterwards."
+        li "Wonderful. After Father's colleague called, I made a phone call to the nurse we hired to do Father's daily checkup, and she thinks he should be able to handle a short meeting as long as he rests up afterward."
         li "When our visitor arrives, I could perhaps do the serving while you wake up Father, make certain he looks presentable, and help him down the stairs. I might have trouble with some of those tasks myself."
         "Allison" "Not a problem. Do you wish me to help you make the tea, Miss Lilly?"
         li "I think I can manage. Assuming everything is still in the same place as it was yesterday."
@@ -292,7 +292,7 @@ label sh_ch37:
         with chchange
 
         hyf "...Very well, then."
-        "Mr. McLaughlin" "Great. I believe the first meeting is set to take place at ten o' clock our time, so I could be here at nine to set things up. We'll have plenty of time to run some tests and talk to our guys on the other side."
+        "Mr. McLaughlin" "Great. I believe the first meeting is set to take place at ten o'clock our time, so I could be here at nine to set things up. We'll have plenty of time to run some tests and talk to our guys on the other side."
 
         show hiroyuki thinking_close
         with chchange
@@ -435,7 +435,7 @@ label sh_ch37:
 
         n "Or is this about something else? Is it possible his words earlier weren't merely a reflection on my situation, but also on his own? I've learned from Father's and Akira's stories that the work culture between Japan and Scotland is radically different."
         n "In Japan, working overtime is pretty much a daily occurrance and leaving before the boss goes home is considered rude and bad for the team spirit, so people like Father would usually remain at the office until late in the evening."
-        n "Afterwards, the various teams would go out drinking together or visit karaoke establishments. Since so little time is spent at home, people's entire circle of friends tends to consist of the same colleagues they spent a large part of their week with."
+        n "Afterward, the various teams would go out drinking together or visit karaoke establishments. Since so little time is spent at home, people's entire circle of friends tends to consist of the same colleagues they spent a large part of their week with."
 
         nvl clear
 
@@ -513,7 +513,7 @@ label sh_ch37:
         with chchange
 
         aki "Dad, it's not like I've never been part of business meetings before. Everything will be fine, I promise."
-        hyf "Just act... like the person... standing in... for me is... expected to act.{w}\n\n{size=*0.7}And I will have your... mother buy you a vodka martini afterwards."
+        hyf "Just act... like the person... standing in... for me is... expected to act.{w}\n\n{size=*0.7}And I will have your... mother buy you a vodka martini afterward."
 
         show akira basic_lost_phone
         with chchange
@@ -602,7 +602,7 @@ label sh_ch37:
         scene bg satou_masterbed_ni
         with locationchange
 
-        li "He will be back here at eight o' clock tomorrow evening."
+        li "He will be back here at eight o'clock tomorrow evening."
         "After showing the system administrator out, I returned to Father's room."
         "Judging by the sound of his voice, he's either feeling less tired than I am right now or he's simply doing a better job at hiding it."
         hyf "That is good to hear."

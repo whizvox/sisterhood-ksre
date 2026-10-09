@@ -113,7 +113,7 @@ label sh_ch9:
         show hisao basic_smile_bath_close_ni
         with chchange
 
-        hi "It's both actually. Its main purpose is to act as a massage lotion, but since it's so smooth and slippery, it can double as a lubricant."
+        hi "It's both, actually. Its main purpose is to act as a massage lotion, but since it's so smooth and slippery, it can double as a lubricant."
         "I try to digest what Hisao's saying. He has put more thought into this whole thing than I expected."
         "A massage… So we'll be rubbing that stuff on each other?"
         "That explains why we're sitting on the floor and why he has covered the area with towels."
@@ -358,7 +358,7 @@ label sh_ch9:
             ease 10.0 zoom 1.0
         with Dissolve(2.0)
 
-        "I look and then it strikes me that I can still see my body fairly well."
+        "I look, and then it strikes me that I can still see my body fairly well."
         "Or at least, part of my body. Specifically the part of my body that isn't scarred."
         "Of course the scar tissue is still there, but due to the rough texture, it doesn't reflect the nearby light very well despite being covered in lotion and merely appears as a dark area covering part of me."
         "The other parts of my body and my freshly washed hair, on the other hand, are accentuated like never before, sparkling in the moonlight coming through the window due to the gel turning my smoothened skin into a semi-reflective surface."
@@ -423,11 +423,11 @@ label sh_ch9:
         "The prospect of an extended massage sounds infinitely better than the prospect of intercourse right now."
         "I push myself down a bit until just beneath his chest scar, then slide upwards again until I look him in the eyes once more where I am rewarded with an approving nod."
         "For a third time I slide down and up on top of him, this time a passionate kiss being my greeting."
-        "For nearly half an hour, we go on like this; kissing, rubbing our bodies against each other, me softly pushing myself off to drift back and forth on top of him and he occasionally raising his upper body or hips to let me slide on my own."
+        "For nearly half an hour, we go on like this: kissing, rubbing our bodies against each other, me softly pushing myself off to drift back and forth on top of him, and him occasionally raising his upper body or hips to let me slide on my own."
         "I'm enjoying the extensive body contact immensely and am surprised at how smoothly I'm able to move despite my scar tissue."
         "Neither of us says a word the whole time, the only sounds our excited breathing, the occasional soft moan and our awkward laughter throughout."
         "As we get more and more passionate in our movements, I can feel him pressing his loins up against mine."
-        "Our slip-and-slide fest, while certainly enjoyable, isn't the most efficient way to stimulate our most sensitive areas and I'm considering getting off of him and finishing the job by hand."
+        "Our slip-and-slide fest, while certainly enjoyable, isn't the most efficient way to stimulate our most sensitive areas, and I'm considering getting off of him and finishing the job by hand."
         "I already found out that I can probably afford to be a bit rougher this time without the risk of hurting him."
         "Just as I prepare to follow up on that plan, another idea flashes through my mind that might excite him more than the usual way we tend to end our intimate moments."
         ha "…H-Hisao…?"
@@ -464,7 +464,7 @@ label sh_ch9:
         "This almost feels like we're having intercourse. Except I'm the one doing the thrusting."
         "Hmmmm… really good…"
         "Because I have my back arched I can't see Hisao's face very well, but I can tell by the sounds he's making that he's getting close."
-        "Good thing my inner thighs are still slippery or he'd be groaning in pain right now."
+        "Good thing my inner thighs are still slippery, or he'd be groaning in pain right now."
         hi "Ahh… Hanako…"
         ha "Nnnng… Hisao…?"
         hi "{slowtype}S-slow down… hah… slow down a bit…"
@@ -573,7 +573,7 @@ label sh_ch9:
         ha "…s-sure… ahhhh…"
         "I can feel how his right hand slowly moves down as well."
         ha "W-what are you… hmmm… g-going to do—{i}WHAAaa!{/i}"
-        "Before I realize what's happening, his right hand has reached my lady bits and he's slowly pushing one of his fingers inside me."
+        "Before I realize what's happening, his right hand has reached my lady bits, and he's slowly pushing one of his fingers inside me."
         "I let out a yelp and reflexively grab his arm though because we're both still pretty slippery, I can't get enough grip to pull it away. He keeps his finger in place for a second and then slowly pulls out again, causing me to exhale in relief."
         hi "Sorry, did that hurt?"
         "I don't think it did. It felt really weird and awkward, but it wasn't exactly painful."
@@ -615,7 +615,7 @@ label sh_ch9:
         "As the sensations of the last contraction die down and Hisao ceases providing the intense stimulation I just endured, I breathe a long sigh of relief."
         "Hisao moves his legs away, wraps his arms around my waist and lets me catch my bearings while kissing my heavily flushed cheek and softly chuckling a bit to himself."
         ha "P-please d-don't laugh at me…"
-        "It wasn't as obvious when we were still keeping the lights off, but being pleasured can draw some pretty entertaining reactions out of people. It's really best not to think too hard about how you must have looked to someone else afterwards."
+        "It wasn't as obvious when we were still keeping the lights off, but being pleasured can draw some pretty entertaining reactions out of people. It's really best not to think too hard about how you must have looked to someone else afterward."
 
         show hisao basic_grin_nak_close_ni
         with charaenter
@@ -636,7 +636,7 @@ label sh_ch9:
 
         "I unsteadily get to my feet and lie down upon the bed."
         "Hisao takes the pillow we used as a head rest earlier and carefully places it under my hips."
-        "We're still completely covered in seaweed gel. This bed's gonna be a major mess afterwards."
+        "We're still completely covered in seaweed gel. This bed's gonna be a major mess afterward."
         "Good thing we won't be the ones who'll have to change the sheets."
         "For a moment we just look each other in the eyes."
         "A mutual look of uncertainty, then one of mutual reassurance."
@@ -657,7 +657,7 @@ label sh_ch9:
             ease 10.0 zoom 1.0
         with mediumflash
 
-        "I close my eyes and he gently spreads my legs, stroking the inside just a little and then I feel the sensation of something just a little larger than his two fingers smoothly sliding into me."
+        "I close my eyes, and he gently spreads my legs, stroking the inside just a little. And then, I feel the sensation of something just a little larger than his two fingers smoothly sliding into me."
         "For a moment we both take a surprised look at the place where we're joined now, and Hisao makes a few reluctant movements to check for signs of discomfort on my part."
         "When those signs fail to occur, we share a little laugh of relief, and Hisao lowers himself and lies down flatly on top of me."
         "He grabs hold of my shoulders and slides up my body as far as he can until we can look each other in the eyes."

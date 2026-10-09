@@ -107,7 +107,7 @@ label sh_ch40:
 
         n "I was annoyed and even a bit angry at his words and told him that “everybody else” didn't have a blind kid sister waiting for them at home and that I considered it more important to spend my limited free time with her than hanging out with coworkers and pretending to have fun."
         n "He apologized and left, and I later realized that it probably wasn't fair of me to blame him for pointing out what I already knew many people around the office thought about me. In fact, I came to appreciate the fact that he at least tried to do something about a bad situation instead of resigning himself to it and trying to avoid making waves, and he seemed to be understanding of my reasons to stay away rather than dismissive."
-        n "So the next lunch break, I approached him and sincerely thanked him for his concern. We ended up befriending each other soon afterwards."
+        n "So the next lunch break, I approached him and sincerely thanked him for his concern. We ended up befriending each other soon afterward."
 
         nvl clear
 
@@ -532,7 +532,7 @@ label sh_ch40:
         with chchange
 
         aki "Koji wasn't eager to see them move either. But Lilly and I made a pretty strong plea for moving, and Dad eventually took our side."
-        aki "When she flew to Japan to drop Lilly off, Mom even went to look at some houses afterwards, so she probably expected this outcome already. Our old house was sold some time ago, and they've moved into a new neighborhood. Made a brand new start as it were."
+        aki "When she flew to Japan to drop Lilly off, Mom even went to look at some houses afterward, so she probably expected this outcome already. Our old house was sold some time ago, and they've moved into a new neighborhood. Made a brand new start as it were."
 
         show yuichi neutral
         with chchange
@@ -595,7 +595,7 @@ label sh_ch40:
         
         n "I wasn't proud of my decision to move, and when we got into an argument I was prepared to take his reproaches in stride. I managed that just fine at first until the moment he argued that I was a lot more like my parents than I cared to admit."
         n "That was the one thing he shouldn't have said. I lost my temper, gave him a hard slap across the cheek, and stormed out of his apartment with the intention of never speaking with him again."
-        n "{vspace=30}I felt crappy about it afterwards but still didn't speak to him until we ran into each other this week while “uncle” Koji and I were at the Japanese office for a few days."
+        n "{vspace=30}I felt crappy about it afterward but still didn't speak to him until we ran into each other this week while “uncle” Koji and I were at the Japanese office for a few days."
 
         nvl hide dissolve
 

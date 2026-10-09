@@ -76,7 +76,7 @@ label sh_ch18:
 
         aki "I bet you're really happy about Lilly staying here. I mean, you looked pretty crushed before when she announced she considered leaving."
         "I try to gauge Akira's tone for any signs of hostility."
-        "I was exhilirated yesterday when Lilly made the decision to stay here, but when I received Akira's message half an hour ago, I was reminded of the fact that I also played a part in separating two sisters who've been extremely close over the last six years."
+        "I was exhilarated yesterday when Lilly made the decision to stay here, but when I received Akira's message half an hour ago, I was reminded of the fact that I also played a part in separating two sisters who've been extremely close over the last six years."
         ha "I'm s-sorry, Akira."
 
         show akira basic_resigned_close
@@ -157,7 +157,7 @@ label sh_ch18:
         "That must have been beyond excruciatingly uncomfortable. I'm really thankful I wasn't there to witness it."
         ha "W-what happened next?"
         "Akira gives an annoyed shrug."
-        aki "There was a painful pause for a second or two, Dad gave me a sharp glare for a moment and then we started talking about the weather."
+        aki "There was a painful pause for a second or two, Dad gave me a sharp glare for a moment, and then we started talking about the weather."
         aki "Well, not literally the weather, but a safe subject. I decided not to be the bad guy twice in one evening, so I went along with it. But that tendency to avoid conflicts is pretty telling of how I think our parents plan to get us back together."
         aki "By encouraging us to pretend they never left us alone in the first place. I don't think it's gonna work like that, and I'll be damned if I'm gonna play along with that."
         ha "Avoiding conflicts?"
@@ -220,7 +220,7 @@ label sh_ch18:
 
         play sound sfx_can_clatter
 
-        "Akira empties her can and casually tosses it into the nearby wastebin. As she continues, I can sense a touch of gloom in her voice."
+        "Akira empties her can and casually tosses it into the nearby garbage can. As she continues, I can sense a touch of gloom in her voice."
         aki "Mostly a tad angry with myself. I never got the impression that Lilly was very enthusiastic about moving, but I've never been able to get her to outright admit that she'd rather stay here either."
 
         show akira basic_sad_close
@@ -234,8 +234,8 @@ label sh_ch18:
 
         aki "If she'd have entrusted me with how she felt, that's exactly what I would have done. But she didn't, and that kinda stings."
         "I can't help but feel a little bit surprised at Akira's tone, which is so different from her usual confident-yet-playful attitude. I knew from the fact she practically raised Lilly for years that Akira has a responsible side, but this is one of the first times I've witnessed it myself."
-        ha "She d-didn't tell m-me about it until the l-last moment either. So erm…"
-        "I think in fact she only told me because her ‘back was against the wall’ at the time and she couldn't bear the thought of us parting with me harboring ill feelings towards her."
+        ha "She d-didn't tell m-me about it until the l-last moment either. So, erm…"
+        "I think in fact she only told me because her ‘back was against the wall’ at the time, and she couldn't bear the thought of us parting with me harboring ill feelings towards her."
 
         show akira basic_ending_close
         with chchange
@@ -281,7 +281,7 @@ label sh_ch18:
         show akira basic_sweet
         with chchange
 
-        "Once again, Akira looks me straight in the eye, and when I reflexively look away, she moves a bit to re-establish eyecontact."
+        "Once again, Akira looks me straight in the eye, and when I reflexively look away, she moves a bit to re-establish eye contact."
 
         show akira basic_peaceful
         with chchange
@@ -289,8 +289,8 @@ label sh_ch18:
         aki "I really appreciate what you did for Lilly the other day. Thanks Hanako. Really."
         "She finishes her statement with a bow that contains far more grace than I ever suspected Akira of possessing."
         "I fidget nervously. How am I supposed to react to something like that?"
-        "Hisao, Miss Yumi, and now Akira seem to regard me as some sort of hero, but all I did was give Lilly a small peptalk. It was Lilly who did the hard part afterwards."
-        ha "Lilly d-deserves most of the c-credit for m-making the phonecall."
+        "Hisao, Miss Yumi, and now Akira seem to regard me as some sort of hero, but all I did was give Lilly a small pep talk. It was Lilly who did the hard part afterward."
+        ha "Lilly d-deserves most of the c-credit for m-making the phone call."
 
         show akira basic_sweet
         with chchange
@@ -301,7 +301,7 @@ label sh_ch18:
         show akira basic_smile
         with locationchange
 
-        "We start heading towards the girls dorm, and I take advantage of the moment to address something that caught my attention earlier."
+        "We start heading towards the girls' dorm, and I take advantage of the moment to address something that caught my attention earlier."
         ha "You said… you were going to… d-drop by?"
         aki "Well, I still wanna see Lilly from time to time. Hopefully I'll be able to join the occasional business trip to the Japanese branch every now and then."
         ha "That would be nice."
@@ -316,14 +316,14 @@ label sh_ch18:
         "My eyes widen in shock as I try to digest Akira's seemingly ludicrous statement."
         "Me keeping an eye on Lilly? Not too long ago, Lilly was nothing less than a human crutch for me—my only connection to the rest of the student body and, most likely, to the rest of the world as well."
         "I've been trying to change our relationship lately, and I feel yesterday was a big milestone for both of us, but for Akira to suggest me to suddenly look out for Lilly seems like reality turned upside down."
-        ha "I… um…. don't think Lilly needs l-looking after."
+        ha "I… um… don't think Lilly needs l-looking after."
 
         show akira basic_wistful
         with charadistant
 
         "Akira seems to have been expecting that reaction and gives a short shrug."
         aki "Most of the time she doesn't. Lilly's a strong person, but she's not infallible."
-        aki "She may be able to handle things herself 99 out of a 100 times, but that one time when she's struggling with something and she's too damn stubborn to call on anyone else, it'll be good to know that there's someone around who has her best interests at heart."
+        aki "She may be able to handle things herself 99 out of 100 times, but that one time when she's struggling with something and she's too damn stubborn to call on anyone else, it'll be good to know that there's someone around who has her best interests at heart."
         aki "Someone to whom she feels close enough to confide things in. I'd say that description fits you to a tee. Probably more than anyone else around here."
         ha "R-really?"
 
@@ -333,7 +333,7 @@ label sh_ch18:
         "Akira stops walking and gives me a cheerful smile."
         aki "Let me tell you something that happened a little while back."
         aki "Lilly and I were speaking on the phone, and she noted how much you've changed recently. She liked the change in you, but it was also a bit uncomfortable for her."
-        aki "She didn't want to go back to the times where you were clinging to her as if your life was depending on it, but the fact that the role she was playing in your life was changing so suddenly and rapidly made her feel awkward."
+        aki "She didn't want to go back to the times when you were clinging to her as if your life was depending on it, but the fact that the role she was playing in your life was changing so suddenly and rapidly made her feel awkward."
 
         show akira basic_ending
         with chchange
@@ -346,7 +346,7 @@ label sh_ch18:
 
         aki "Your relationship with Lilly is almost exactly like my relationship with her, except it's one stage behind. Even when we were still living with our folks, I was often the one who had to keep an eye on Lilly, helping her navigate everywhere and occasionally worrying about her."
         aki "But eventually she started growing more independent, and I was left with the nagging feeling that she was drifting away from me."
-        aki "That was a bit of a rough time for me until I accepted that she wasn't gonna stay my little kiddie sister forever and we should try and become each other's responsibility instead if we didn't want to grow apart."
+        aki "That was a bit of a rough time for me until I accepted that she wasn't gonna stay my little kiddie sister forever, and we should try and become each other's responsibility instead if we didn't want to grow apart."
 
         show akira basic_ending
         with chchange
@@ -395,7 +395,7 @@ label sh_ch18:
 
         n "We've spent the last two hours hanging out in Lilly's room, eating the cake and sweets we obtained from the store in town this afternoon."
         n "{vspace=60}Despite it being a supposed farewell party, the mood has been surprisingly relaxed. Akira and Lilly spent most of the time exchanging cheerful banter with Hisao and each other."
-        n "I, for my part, have been content to just sit and listen to the rest, treasuring the fact that, even though Hisao, Lilly and I went through a week from hell, we were able to reconcile and we are able to sit here and spend time together once more, our bonds not just repaired but actually strengthened."
+        n "I, for my part, have been content to just sit and listen to the rest, treasuring the fact that, even though Hisao, Lilly, and I went through a week from hell, we were able to reconcile. And now, we're able to sit here and spend time together once more, our bonds not just repaired, but actually strengthened."
         n "Due to the fact that just a week ago I had been convinced that I'd never be able to face Lilly or Hisao again, I've grown to value the time we're spending together even more."
         n "{vspace=90}Eventually the conversation turned to my upcoming training courses which Akira was keen on learning more about."
 
@@ -625,7 +625,7 @@ label sh_ch18:
         "The Satous' summer home in Hokkaido was also unfamiliar at first, but that was just the three of us. Now we'll be staying with other people, in a country with a completely different culture and a language I don't speak fluently."
         "And before we get there, we'll have to travel through several crowded airports, including one of the busiest airports in the world."
         ha "Um… well…"
-        "But then again, ever since I joined the newspaper club, I've been playing with the thought of studying journalism. I'd never be able to stand in front of a camera or push a microphone in someones face, but I think I'd like the writing aspect of it."
+        "But then again, ever since I joined the newspaper club, I've been playing with the thought of studying journalism. I'd never be able to stand in front of a camera or push a microphone in someone's face, but I think I'd like the writing aspect of it."
         "But what would I write about if I'm too nervous to go and explore the world beyond my familiar little room? If I can't even visit an unfamiliar place with my two closest friends by my side, I'd probably be best off seeking another educational road altogether."
         "If anyone can ease my nerves, it's Lilly and Hisao. And I think I'd genuinely enjoy taking a vacation with the two most important people in my life."
         ha "I…I think I'd l-like that."

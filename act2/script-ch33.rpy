@@ -10,7 +10,7 @@ label sh_ch33:
 
         hi "Will you be the one seeing us off, or should we say our goodbyes right now?"
         "For a moment, it appears as if Akira didn't hear Hisao's question."
-        aki "What? Oh, if possible I'll try to be at the airport when you guys leave. It was eight o' clock in the morning, right?"
+        aki "What? Oh, if possible I'll try to be at the airport when you guys leave. It was eight o'clock in the morning, right?"
         hi "That's right. We'll hope to see you tomorrow, then."
         "We get out of Akira's car and wait for her response."
 
@@ -222,7 +222,7 @@ label sh_ch33:
         show noiseoverlay
         with { "master": Dissolve(1.0) }
 
-        aki "Like the annual New Year, when our parents, our grandparents, Lilly, and I would visit a shrine to pray for good luck the upcoming year and play games afterwards. Also, our trips to the summer house…"
+        aki "Like the annual New Year, when our parents, our grandparents, Lilly, and I would visit a shrine to pray for good luck the upcoming year and play games afterward. Also, our trips to the summer house…"
         ha "The one we visited?"
         aki "It was a different one back then, but in the same area. The three—and later the four—of us would go there from time to time, and that was also the place where Lilly and I'd get in touch with the British part of our heritage."
         aki "Our own home was kind of traditional, but the summer house was more like… Well, the residences here in the UK. We'd speak English all the time, eat with cutlery instead of chopsticks, and Mom would read us Scottish folk tales or parables as bedtime stories."
@@ -442,7 +442,7 @@ label sh_ch33:
 
         aki "Well, as you can see things between me and the folks weren't exactly peachy even before they left Japan, but things might have worked out if they hadn't upped and left just like that."
         ha "You were… 19 when they left, right?"
-        aki "Yeah. It was after I graduated from high school, which was fortunately not the same kind of place middle school was. I didn't really know what I wanted to do afterwards."
+        aki "Yeah. It was after I graduated from high school, which was fortunately not the same kind of place middle school was. I didn't really know what I wanted to do afterward."
         aki "Dad pulled a string or two at the company, and I was allowed to work at the legal department of SMT as a secretary. Back then, there were apparently already office rumors about a big change being in the wings."
         ha "Your parents moving?"
 

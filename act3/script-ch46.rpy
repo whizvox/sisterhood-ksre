@@ -324,14 +324,14 @@ label sh_ch46:
         n "It probably helped me too. I've always been very reluctant to talk about my condition. And more than a little uncomfortable, too."
         n "{vspace=30}But the knowledge that there was someone out there, someone related to one of my best friends no less, who might be drawing strength from my thoughts and impressions was a very effective push."
         n "And it also helped that Hanako never tried to force things. Whenever I started feeling uncomfortable, she'd never fail to soothe my nerves. She'd take my hand in hers, or snuggle up to me, or give me a soft kiss accompanied by that warm smile of hers, or let me rest my head in her lap while she ran her fingers through my hair."
-        n "{vspace=30}True to her usual ways, she'd hardly ever speak while doing all of that, but I always felt stronger and more at ease afterwards. She was such a sweetheart during those moments. The two of us probably got a lot closer during that time."
+        n "{vspace=30}True to her usual ways, she'd hardly ever speak while doing all of that, but I always felt stronger and more at ease afterward. She was such a sweetheart during those moments. The two of us probably got a lot closer during that time."
 
         nvl hide dissolve
 
         show karla basic_smile_cas_close
         with chchange
 
-        ka "I think it helped a lot. Lilly often used your example to remind my husband that it was possible to go through something like that and pick yourself up afterwards."
+        ka "I think it helped a lot. Lilly often used your example to remind my husband that it was possible to go through something like that and pick yourself up afterward."
         ka "So... thanks for that. I think we as a family owe you one."
         "It feels kind of weird to hear that my life has been used to offer comfort to a recovering heart patient. They should have seen me the way I was before Hanako and Lilly entered my life."
         hi "I mostly bounced back thanks to Hanako and your daughter. I'm happy I could do something back for Lilly."
@@ -941,7 +941,7 @@ label sh_ch46:
         show lilly basic_smileclosed_cas
         with chchange
 
-        ka "We can hold a big party here to celebrate afterwards in order to make up for the fact that the three of you had to spend such a large part of today burried in your books."
+        ka "We can hold a big party here to celebrate afterward in order to make up for the fact that the three of you had to spend such a large part of today burried in your books."
 
         show lilly basic_giggle_cas
         show karla basic_cheerful_cas

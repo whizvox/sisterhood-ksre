@@ -249,7 +249,7 @@ label sh_ch29:
             alpha 0.6
         with locationchange
 
-        "Afterwards, he sits up and looks at me from over his shoulder to indicate it's my turn."
+        "Afterward, he sits up and looks at me from over his shoulder to indicate it's my turn."
         "Suddenly feeling a little self-concious, I cover my genitals with one hand and use my other arm to cover my breasts as much as I can, drawing a small amused smile from him."
 
         show hisao basic_grin_nak_close_ni

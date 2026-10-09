@@ -34,7 +34,7 @@ label sh_ch39:
             matrixcolor SepiaMatrix(tint="#ffeee0")
         with charaenter
 
-        "Lilly's mother was first introduced to everyone and given a little explanation on how we usually go about putting a newspaper issue together. Afterwards, all usual activities for the day were put on hold, and we spent several hours listening to Karla's stories about her own time as a journalist."
+        "Lilly's mother was first introduced to everyone and given a little explanation on how we usually go about putting a newspaper issue together. Afterward, all usual activities for the day were put on hold, and we spent several hours listening to Karla's stories about her own time as a journalist."
 
         show karla basic_cheerful_cas
         show naomi bend_laugh at right:
@@ -103,7 +103,7 @@ label sh_ch39:
 
         nvl clear
 
-        n "I wasn't very sure how serious she was at first. Naomi has the tendency to be a bit impulsive from time to time, but when she approached me the day afterwards and repeated her invitation, I realized she was actually planning to go through with this."
+        n "I wasn't very sure how serious she was at first. Naomi has the tendency to be a bit impulsive from time to time, but when she approached me the day afterward and repeated her invitation, I realized she was actually planning to go through with this."
         n "{vspace=60}Long story short, she ended up convincing me to give it a try."
         n "{vspace=60}I wasn't sure if this was going to go anywhere, but I had been thinking of getting some writing practice myself, and since our teacher said he was willing to provide feedback on everything we submitted, this appeared to be a pretty good opportunity."
 
@@ -1453,7 +1453,7 @@ label sh_ch39:
         nvl clear
         nvl show dissolve
 
-        n "I'm a bit curious about that as well. I learned at the first aid training that people who just had a seizure are often in a disorientated and confused state for some time afterwards, but since Naomi's usually carried to the nurse's office on a stretcher after a seizure in class has died down, I've never really seen the aftermath until today."
+        n "I'm a bit curious about that as well. I learned at the first aid training that people who just had a seizure are often in a disorientated and confused state for some time afterward, but since Naomi's usually carried to the nurse's office on a stretcher after a seizure in class has died down, I've never really seen the aftermath until today."
         n "{vspace=30}It was kind of disturbing to see Naomi act like a lost and frightened little child rather than the bundle of energy she usually is."
 
         stop music fadeout 2.0
@@ -1480,7 +1480,7 @@ label sh_ch39:
 
         "Natsume's expression takes on a tinge of sadness."
         nt "Those epileptic fits are demeaning enough as they are, but I think that for the most part Naomi's resigned herself to the fact that they happen to her from time to time. But this is... different."
-        nt "After the first time this happened with me present, Naomi spent a good deal of the week avoiding me, and even afterwards she was really awkward with me for some time."
+        nt "After the first time this happened with me present, Naomi spent a good deal of the week avoiding me, and even afterward she was really awkward with me for some time."
         nt "I had been hoping to save you two the trouble of having to deal with that by cleaning things up before she became aware enough to notice what happened."
         nt "This night's events will probably remain a big blur in her mind, so if you two don't slip up, she won't ever know what happened other than the fact that she had an episode. Ignorance can be bliss sometimes."
 

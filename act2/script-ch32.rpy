@@ -24,7 +24,7 @@ label sh_ch32:
 
         nvl clear
 
-        n "For just a second, it wasn't Lilly's father I saw lying on the ground, but Hisao. And suddenly, my mind was filled with the same intense panic and helplessness I felt when Hisao was lying there on the street after accidentally colliding with someone. The flashback only lasted a second or so, but the sense of maddening fear remained even afterwards."
+        n "For just a second, it wasn't Lilly's father I saw lying on the ground, but Hisao. And suddenly, my mind was filled with the same intense panic and helplessness I felt when Hisao was lying there on the street after accidentally colliding with someone. The flashback only lasted a second or so, but the sense of maddening fear remained even afterward."
         n "The sight of a rapidly panicking Lilly kneeling down at his side managed to reach deep into my own mind, grab a firm hold of my own traumatizing memories, and drag them out kicking and screaming. As a result, I became unable to move as my mind started clouding slowly but steadily, even as Hisao rushed to Mister Satou's side."
         n "Things could have taken a turn for the worst there. Lilly's father could have died in front of us with me just standing by, despite my first aid training. If that would have happened, I don't think I'd ever be able to face Lilly again. The fact that that didn't happen was a coincidence I still have trouble wrapping my mind around."
 
@@ -233,7 +233,7 @@ label sh_ch32:
         show hisao basic_neutral_polo_close
         with chchange
 
-        hi "I guess that's a good point. We'll be going then. We probably won't be gone for very long. We'll be sure to tell you afterwards how he's holding up."
+        hi "I guess that's a good point. We'll be going then. We probably won't be gone for very long. We'll be sure to tell you afterward how he's holding up."
 
         show lilly basic_weaksmile_sum
         with chchange
@@ -271,7 +271,7 @@ label sh_ch32:
 
         aki "I could be a smart-ass and say Raigmore Hospital, but… I really don't know either how this is gonna play out."
         hi "By the way, why did your mother ask you to pick us up?"
-        aki "Apparently, there's someone with her, and she has to accompany him to the office immediately afterwards."
+        aki "Apparently, there's someone with her, and she has to accompany him to the office immediately afterward."
 
         show akira basic_ponder_close
         with chchange

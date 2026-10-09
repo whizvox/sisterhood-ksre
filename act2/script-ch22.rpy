@@ -64,8 +64,8 @@ label sh_ch22:
         show hanagown worry_close
         with chchange
 
-        ha "It's nearly five o' clock in the afternoon."
-        hi "Five o' clock in the afternoon already? Ugh, my sleeping patterns must have been more messed up than I thought."
+        ha "It's nearly five o'clock in the afternoon."
+        hi "Five o'clock in the afternoon already? Ugh, my sleeping patterns must have been more messed up than I thought."
         "I grin at Hanako embarrasedly."
         hi "I hope you didn't think I died in my sleep or something."
 
@@ -97,7 +97,7 @@ label sh_ch22:
         ha "Did you just sit here all the time while you were awake?"
         hi "At first I did, but then I decided to take a restroom break, and on my way back I ran into Lilly who heard me flush the toilet."
         hi "Turns out she couldn't sleep either, so she ended up giving me a tour of the house. Seeing that we went to bed almost immediately after getting here, I appreciated the chance to sightsee."
-        hi "Afterwards we spent time hanging out in the living room until we got sleepy again. Which was probably around half past 6 or so."
+        hi "Afterward, we spent time hanging out in the living room until we got sleepy again. Which was probably around half past 6 or so."
 
         show hanagown distant_close
         with chchange
@@ -421,7 +421,7 @@ label sh_ch22:
         show hanako emb_downsmile_sum
         with chchange
 
-        ha "N-not really. I woke up at ten o' clock. I just… wanted to finish m-my book first before going out."
+        ha "N-not really. I woke up at ten o'clock. I just… wanted to finish m-my book first before going out."
 
         show lilly basic_weaksmile_sum
         with chchange

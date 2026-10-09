@@ -42,7 +42,7 @@ label sh_ch19:
         show nakamura neutral
         with charaenter
 
-        "Just as I prepare to open my book again and use it to hide behind, a man in his mid thirties comes walking in with what appears to be another bodybag in his arms and a big backpack over his shoulder."
+        "Just as I prepare to open my book again and use it to hide behind, a man in his mid-thirties comes walking in with what appears to be another body bag in his arms and a big backpack over his shoulder."
 
         show nakamura bow
         with chchange
@@ -52,7 +52,7 @@ label sh_ch19:
         show nakamura speak
         with chchange
 
-        nak_ "Good morning everyone. I see it's nine o' clock right now, so I suggest we simply start now even though we're still one person short."
+        nak_ "Good morning everyone. I see it's nine o'clock right now, so I suggest we simply start now even though we're still one person short."
         nak_ "Allow me to introduce myself: my name is Kensuke Nakamura, and I am a first aid trainer employed at the nearby hospital. This is the fourth year I've been giving these courses here."
 
         show nakamura instruct
@@ -237,37 +237,37 @@ label sh_ch19:
         show yuuko panic_up
         with chchange
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… {nw}" (what_suffix="")
 
         show yuuko neurotic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… {fast}so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… {fast}so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, {nw}" (what_suffix="")
 
         show yuuko panic_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, {fast}but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, {fast}but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {nw}" (what_suffix="")
 
         show yuuko neurotic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {fast}but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {fast}but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {nw}" (what_suffix="")
 
         show yuuko cry_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {fast}and when we finally found him he told us he just put the keys back in my own pigeon hole, {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {fast}and when we finally found him he told us he just put the keys back in my own pigeonhole, {nw}" (what_suffix="")
 
         show yuuko panic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeon hole, {fast}so we had to return to the teacher's lounge to retrieve them {nw}" (what_suffix="")
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeonhole, {fast}so we had to return to the teacher's lounge to retrieve them {nw}" (what_suffix="")
 
         show yuuko cry_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeon hole… so we went back to the teacher's lounge and she checked her pigeon hole again, but then I realized I accidentally left the keys in the wrong pigeon hole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeon hole, so we had to return to the teacher's lounge to retrieve them {fast}and all the while I could tell my colleague was getting annoyed with me so I kept apologizing which somehow made her get more annoyed, and… uh…"
+        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeonhole, so we had to return to the teacher's lounge to retrieve them {fast}and all the while I could tell my colleague was getting annoyed with me, so I kept apologizing which somehow made her get more annoyed, and… uh…"
 
         stop music fadeout 2.0
 
@@ -399,7 +399,7 @@ label sh_ch19:
         show yuuko smile_up
         with chchange
 
-        yu "When I came in, that person who was going to pair up with me was chuckling at me. Since I'm a bit accident prone, I'd like a partner who isn't going to laugh at me when I screw up."
+        yu "When I came in, that person who was going to pair up with me was chuckling at me. Since I'm a bit accident-prone, I'd like a partner who isn't going to laugh at me when I screw up."
         "She gives me a wink."
 
         show yuuko happy_up
@@ -438,10 +438,10 @@ label sh_ch19:
         show nakamura speak
         with chchange
 
-        nak "First thing to do in case of an emergency is to see if the person is still responding and check for vital signs if that's not the case. Specifically, the victim's pulse and whether or not he's still breathing."
+        nak "First thing to do in case of an emergency is to see if the person is still responding and check for vital signs if that's not the case. Specifically, the victim's pulse and whether he's still breathing."
         nak "We can check a person's pulse by putting two fingers on this spot right here just beneath the victim's wrist joint. Or we can go for the spot here at the throat."
         "Pausing for a bit to make sure we all got the point, he then carefully moves the dummy's arm and leg a bit before rolling it on its side."
-        nak "If the person has a pulse and is breathing, you'll want to put them in the recovery position like this. This'll make certain the victim can't suffocate on his own tongue or whatever it is he recently ate that might get vomitted back out."
+        nak "If the person has a pulse and is breathing, you'll want to put them in the recovery position like this. This'll make certain the victim can't suffocate on his own tongue or whatever it is he recently ate that might get vomited back out."
         nak "Always watch the head. And be sure to remove or loosen any pieces of clothing that might hamper breathing."
 
         show nakamura smile at center
@@ -486,12 +486,12 @@ label sh_ch19:
         show nakamura smile
         with chchange
 
-        nak "It depends on whether the paramedics have already arrived on the scene or not. Movies like to pretend CPR involves pushing a victim's chest a few times and then they cough and get up good as new. But spontanous revivals are rare occurrances."
-        nak "In reality, you're supposed to keep going until the ambulance arrives or you're too exhausted to continue."
+        nak "It depends on whether the paramedics have already arrived on the scene or not. Movies like to pretend CPR involves pushing a victim's chest a few times, and then they cough and get up good as new. But spontaneous revivals are rare occurrences."
+        nak "In reality, you're supposed to keep going until the ambulance arrives, or you're too exhausted to continue."
         "It's that last part that actually has me terrified. I already know what it felt like to just sit there and be unable to do anything while Hisao was slipping away from me."
         "I don't ever, ever want to find out what it feels like to have some paramedic tell me they could have saved Hisao's life if I would have only lasted one more minute."
         nak "You were doing well, Ikezawa. Though you were probably a little bit too gentle. I don't think those were compressions of 5 centimeters. Try pressing deeper the next time."
-        nak "Remember: if a victim complains about his ribs hurting afterwards, it means you've done something right."
+        nak "Remember: if a victim complains about his ribs hurting afterward, it means you've done something right."
         ha "I-I'll try."
 
         hide yuuko
@@ -584,7 +584,7 @@ label sh_ch19:
         show naomi bend_grin
         with chchange
 
-        "Naomi throws me a mischievious wink."
+        "Naomi throws me a mischievous wink."
         na "Soooo… Did you guys have to practice mouth-to-mouth breathing? On each other? Did you see any teachers doing it?"
 
         show naomi bend_laugh
@@ -750,12 +750,12 @@ label sh_ch19:
         show hisao cross_smile_uni_close at center
         with charachangealways
 
-        "Mutou walks out of the room and before I can react, Hisao has wrapped one of his arms around me and uses his other hand to gently push my chin up before giving me a tender kiss on the lips."
+        "Mutou walks out of the room, and before I can react, Hisao has wrapped one of his arms around me and uses his other hand to gently push my chin up before giving me a tender kiss on the lips."
 
         show black
         with shuteye
 
-        "I freeze up for a moment, more than a little bit embarassed by the fact that we're in a classroom, but I then close my eyes and accept the kiss."
+        "I freeze up for a moment, more than a little bit embarrassed by the fact that we're in a classroom, but I then close my eyes and accept the kiss."
         "Not letting go of me just yet, Hisao pulls me even closer and softly whispers in my ear."
         hi "Hanako?"
         ha "Y-yes?"

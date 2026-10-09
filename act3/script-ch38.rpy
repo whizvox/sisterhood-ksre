@@ -419,7 +419,7 @@ label sh_ch38:
 
         "Lilly's mother looks a little wistful for a second."
         ka "When I married my husband, Mayoi was still living at home, so we lived under the same roof for some time until she got married and became part of the Hakamichi family."
-        ka "We barely saw each other anymore afterwards as she barely came home anymore after her marriage. Her husband and my husband didn't get along so well, either."
+        ka "We barely saw each other anymore afterward as she barely came home anymore after her marriage. Her husband and my husband didn't get along so well, either."
 
         show hisao basic_speak_uni
         with chchange
@@ -930,7 +930,7 @@ label sh_ch38:
         with chchange
 
         ka "Our staff manager is already looking for someone to replace me and when we find someone, I'll spend my remaining time in Scotland informing business contacts and teaching my successor the ropes."
-        ka "Afterwards, I'll be focusing on helping my husband get back into his daily routine. I haven't really thought of what to do after that. I'm sure I'll get plenty of time to think about it."
+        ka "Afterward, I'll be focusing on helping my husband get back into his daily routine. I haven't really thought of what to do after that. I'm sure I'll get plenty of time to think about it."
 
         show karla basic_confused_cas
         with chchange

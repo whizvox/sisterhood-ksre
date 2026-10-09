@@ -34,7 +34,7 @@ label sh_ch16:
         n "{i}I'm worthless.{/i}"
         n "{vspace=30}I stopped trying to survive from day to day and started considering my options for the future. If only things could have stayed like this for a little while longer."
         n "{vspace=30}{i}I'm worthless.{/i}"
-        n "{vspace=30}The person I considered my best friend announced she might be leaving the country and it seemed my efforts to sway her had the opposite effect. Then, last Monday, everything came crashing down. Once more, I became an emotional mess hiding away from the world."
+        n "{vspace=30}The person I considered my best friend announced she might be leaving the country, and it seemed my efforts to sway her had the opposite effect. Then, last Monday, everything came crashing down. Once more, I became an emotional mess hiding away from the world."
         n "{vspace=30}{i}I'm worthless.{/i}"
 
         nvl clear
@@ -300,7 +300,7 @@ label sh_ch16:
         hi "I couldn't help you either while you were having a panic attack, Hanako. Even though I promised myself that if what happened that day in science class would ever happen again, I'd be there to calm you down and reassure you."
         hi "I wasn't able to keep that promise."
         ha "B-but you were having a heart attack at the time. There's no way I could expect…"
-        hi "There no way I could expect you to keep your cool in the middle of a panic attack either."
+        hi "There's no way I could expect you to keep your cool in the middle of a panic attack either."
         ha "P-please stop comparing the two."
 
         show hisao basic_speak_swt_superclose_rn
@@ -380,7 +380,7 @@ label sh_ch16:
         with mediumflash
 
         "Again, he doesn't respond, but I see a small tear from one of his eyes. He then brings one hand up to my face, softly brushes my hair lock aside, and then presses his other hand to the side of my head until I hear a familiar click."
-        "My hairclip. He's kept it with him."
+        "My hair clip. He's kept it with him."
         "He doesn't ask me to be his girlfriend again. I don't bring it up either. We don't need words for this moment."
         "Instead, he simply presses his lips on mine, and we kiss again, longingly, passionately this time, throwing off the weights that have been on our shoulders the whole week."
 
@@ -497,7 +497,7 @@ label sh_ch16:
         hi "I've been lying in bed for nearly a week. I really need to stretch my legs a bit."
         hi "I'll be fine. I'm going to take my time, the whole way's downhill, and I'll be sure to take a short rest half-way through. Promise."
         ha "How about your way back?"
-        hi "Mom and Dad went there by car. They'll drive me back to school afterwards."
+        hi "Mom and Dad went there by car. They'll drive me back to school afterward."
         ha "Ummm… Can I walk along with you a bit?"
         hi "Fine with me. Be sure to drop those flowers off in your room first."
         ha "Y-yes. Meet at the gates?"

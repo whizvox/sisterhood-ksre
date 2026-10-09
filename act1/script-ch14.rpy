@@ -143,7 +143,7 @@ label sh_ch14:
 
         "I must have lost consciousness at some point."
         "The last thing I remember seeing before blacking out…"
-        dc "You might experience some side-effects from the medication we're giving you."
+        dc "You might experience some side effects from the medication we're giving you."
 
         $ renpy.music.set_volume(0.0, 0.5)
         show ev:
@@ -225,7 +225,7 @@ label sh_ch14:
         "This is odd. I expected her to be relieved, but her voice actually sounds frightened."
         "What's going on?"
         hi "I… just woke up. I'm at the hospital and had a keyhole surgery so they could check me up, but they don't want to operate if they don't have to."
-        hi "I'm stable right now. With luck I'll be able to leave here soon. I'm alright."
+        hi "I'm stable right now. With luck, I'll be able to leave here soon. I'm alright."
         hi "Well, maybe not right now, but I'm gonna be. Promise."
 
         show hanagown distant_phone
@@ -387,7 +387,7 @@ label sh_ch14:
         hide lilly
         with charaexit
 
-        "Neither of us feeling really up to the usual ritual of small talk, we hang up and my thoughts once again dwell on Hanako."
+        "With neither of us feeling really up to the usual ritual of small talk, we hang up, and my thoughts once again dwell on Hanako."
 
         nvl clear
         nvl show dissolve
@@ -475,7 +475,7 @@ label sh_ch14:
             alpha 0.0
         with charamovechangefaster
 
-        "As Shizune heads further into the room, Lilly hangs back in the doorframe."
+        "As Shizune heads further into the room, Lilly hangs back in the door frame."
         hi "Misha, did you walk on ahead?"
 
         show misha hips_grin at twoleft
@@ -508,7 +508,7 @@ label sh_ch14:
         show shizu adjust_happy
         with chchange
 
-        "I then notice a small envelope near the bottom of the bag. There's no post mark or stamp on it; only my own name written with what appeared to be shoddy or shaky handwriting."
+        "I then notice a small envelope near the bottom of the bag. There's no postmark or stamp on it, only my own name written with what appeared to be shoddy or shaky handwriting."
         "Curiously, I look at Shizune."
         hi "What's in the envelope?"
 
@@ -543,7 +543,7 @@ label sh_ch14:
 
         play music music_sadness fadein 4.0
 
-        hi "I-it's Hanako's hairclip."
+        hi "I-it's Hanako's hair clip."
         hi "I… I gave it to her when we started dating."
 
         show hanako_hairclip:
@@ -658,7 +658,7 @@ label sh_ch14:
         with chchange
 
         li "After your phone call, I went over to her room."
-        li "The door was locked of course and she didn't react to my knocking at first, but I kept trying and eventually she opened the door for me."
+        li "The door was locked, of course, and she didn't react to my knocking at first, but I kept trying and eventually, she opened the door for me."
         li "She told me I shouldn't have visited her. She said she wanted to see me off with a smile and she didn't want our last moments together to be like this."
         li "I told her that I asked Akira to postpone our departure, and with luck I could be here for her for a little while longer."
         li "I expected her to be happy or at least relieved, but she didn't react at all to this news."
@@ -745,7 +745,7 @@ label sh_ch14:
 
         "Her flood of tears slowly subsiding, Lilly lets go of me and sits down again next to my bed, taking out a fancy embroidered handkerchief to dry her tears."
         li "I probably shouldn't have pressured her the way I did."
-        hi "The last time Hanako locked herself away, I was the one who was dying to drag her out and you were the one who told me it was probably best to back down and let Hanako sort things out on her own."
+        hi "The last time Hanako locked herself away, I was the one who was dying to drag her out, and you were the one who told me it was probably best to back down and let Hanako sort things out on her own."
         hi "That advice might very well have prevented our relationship from failing before it even started. So I can't help but feel there's some irony in the way things played out."
         hi "It seems… a little unlike you."
 

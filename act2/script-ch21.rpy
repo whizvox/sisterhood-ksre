@@ -45,7 +45,7 @@ label sh_ch21:
         "During our trek through the main hall, we were suddenly approached by one of the security officials walking around the place who seemed drawn to Hanako in particular."
         "A very uncomfortable pause took place when he walked up to us and then suddenly backed away for a moment upon noticing Hanako's facial scarring, though Lilly was quick to take control of the situation."
         "When asked by Lilly if there was a problem, the guard explained to us that part of his job was to look out for people who were showing signs of unusually nervous behavior, and Hanako's body language caught his attention."
-        "We got a profuse apology afterwards, but the damage had already been done."
+        "We got a profuse apology afterward, but the damage had already been done."
         "Whenever I cast a sidelong glance at Hanako, I could see her eyes darting left and right as if watching out for other security officers who might see a potential smuggler or someone with some other form of guilty conscience in her."
         hi "Isn't that way too early?"
         "Neither Lilly nor I bothered suggesting to Hanako to try and act more casually. She'd be as likely to do that as she'd be to don a bikini in the middle of the terminal."
@@ -86,7 +86,7 @@ label sh_ch21:
         nvl show dissolve
 
         n "When we accepted Lilly's offer to join her on her trip, we were asked if either of us had ever been abroad before. When this didn't turn out to be the case, Akira was quick to point out we'd need to get ourselves a passport in order to accompany her sister."
-        n "The process of getting a passport in itself wasn't that big of a problem. The whole thing had to be finished on a very short notice, but thankfully getting a passport doesn't take too long a time in this country and Akira gave us plenty of pointers on how to complete the application process as quickly as possible. Hanako, Lilly and I skipped school the day afterwards in an attempt to get all the necessary steps on our part done before the end of the day."
+        n "The process of getting a passport in itself wasn't that big of a problem. The whole thing had to be finished on a very short notice, but thankfully getting a passport doesn't take too long a time in this country and Akira gave us plenty of pointers on how to complete the application process as quickly as possible. Hanako, Lilly and I skipped school the day afterward in an attempt to get all the necessary steps on our part done before the end of the day."
         n "{vspace=60}Everything went pretty well until it was time to submit the forms and the photos. There was a photo booth nearby, so getting mug shots wasn't a big deal, but we found out that there were some pretty strict guidelines regarding the pictures."
 
         nvl clear
@@ -733,7 +733,7 @@ label sh_ch21:
         nvl clear
 
         n "Lilly's suitcase is easy to recognize, containing both a sticker with the Japanese and a sticker with the Scottish flag on it, no doubt put there by Akira during their previous journey here. Hanako's suitcase, however, is as average as they come, and the only way it stands out is that it appears less used than most suitcases on the conveyor."
-        n "{vspace=60}As I rummage through the contents of the baggage carousel, I let out a loud yawn. It's nearly seven o' clock in the evening right now meaning it'd be about six o' clock in the morning in Japan. All three of us are about ready to faint from exhaustion."
+        n "{vspace=60}As I rummage through the contents of the baggage carousel, I let out a loud yawn. It's nearly seven o'clock in the evening right now meaning it'd be about six o'clock in the morning in Japan. All three of us are about ready to faint from exhaustion."
         n "Neither Lilly nor I have slept for the last 22 hours or so, and while Hanako did get some sleep in during our flight to London, the sheer amount of stress she's had to deal with, both before and after our international flight, has pretty much negated the advantage she had."
         n "London Heathrow was even bigger and busier than the airport we departed from, and both the crowdedness and the process of having to go through customs and security took a harsh toll on her."
 

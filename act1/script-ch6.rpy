@@ -32,7 +32,7 @@ label sh_ch6:
         play sound sfx_bedsheets volume 0.5
 
         "I hear the sound of shuffling steps slowly coming closer."
-        "Due to the heavy curtains covering the windows and the absence of street lights outside, the room is pitch black. I hope Hisao won't bump into something like I did when I nearly knocked over Lilly earlier."
+        "Due to the heavy curtains covering the windows and the absence of streetlights outside, the room is pitch black. I hope Hisao won't bump into something like I did when I nearly knocked over Lilly earlier."
 
         stop sound fadeout 0.5
 
@@ -75,7 +75,7 @@ label sh_ch6:
         "Hisao takes a long pause."
         hi "…I feel that last time, sleeping with me was just a means to an end to you. You didn't want the experience itself, you just wanted me to see you in a different light."
         hi "I did something to you that you didn't really want. Something very intimate that you didn't really want."
-        hi "Afterwards, when I learned your motivation, I felt like I had my way with you. Like I took advantage of you."
+        hi "Afterward, when I learned your motivation, I felt like I had my way with you. Like I took advantage of you."
         "I had no idea he felt this bad about it."
         "It's true I let him have sex with me, but I didn't feel like he forced me to."
         ha "…I… don't really see it that way. I… feel it was me who was t-taking advantage of you."
@@ -250,7 +250,7 @@ label sh_ch6:
         show ev funindark_hug_kiss
         with Dissolve(1.0)
 
-        "I limit myself to a few quick pecks on his mouth first, but when I feel his arms wrap around me I move in for a longer kiss, this time welcoming the touch of his lips."
+        "I limit myself to a few quick pecks on his mouth first, but when I feel his arms wrap around me, I move in for a longer kiss, this time welcoming the touch of his lips."
         "I feel him open his mouth just slightly as we press our lips together."
         "When I carefully pull away after kissing his lower lip for several moments, I feel no anxiety or fear, just a little nervousness and more than a little anticipation."
         "I move in again, this time going for his upper lip. This time he starts returning my kisses."
@@ -311,7 +311,7 @@ label sh_ch6:
         "Afraid of being… penetrated again. Afraid of the pain and awkwardness that came with it last time."
         "And above all… afraid of not being able to enjoy it."
         "Before this night, I might have ignored that fear. Last time, me enjoying it wasn't a priority or even a concern for me."
-        "But now that Hisao has told me how awful he felt afterwards about our last night together, I can't bear to sleep with him under false pretenses again."
+        "But now that Hisao has told me how awful he felt afterward about our last night together, I can't bear to sleep with him under false pretenses again."
         "I decide that killing the mood is better than betraying his trust."
 
         stop music fadeout 2.0
@@ -591,7 +591,7 @@ label sh_ch6:
 
         play sound sfx_rustling volume 0.6
 
-        "He shifts and I suddenly feel the covers being pulled back."
+        "He shifts, and I suddenly feel the covers being pulled back."
         ha "Hisao… You aren't going to…?"
         "Just then I feel something soft rubbing against my stomach."
         ha "What's that?"

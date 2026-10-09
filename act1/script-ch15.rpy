@@ -22,7 +22,7 @@ label sh_ch15:
         n "Yesterday was pretty eventful with my parents dropping by at noon and Lilly, Shizune, Misha and Akira visiting in the evening."
         n "{vspace=30}For some time, it seemed like nothing was out of the ordinary, with Akira playfully mentioning how interesting it was to see Lilly and Shizune made peace with one another, to which Shizune replied that “striking a wounded adversary” was simply against her moral code; a provocation which Lilly then used to refute Akira's suggestion. Both eventually got upset at my observation that the two of them were really too proud for their own good sometimes, a remark that amused Misha and Akira to no end."
         n "After Lilly and I were left alone again though, it quickly became clear she had simply been doing her best to keep up appearances, a trait of hers that both tends to impress and unnerve me."
-        n "It turned out that not much had changed. Lilly was still in a very depressed mood although she took my word for it when I assured her that Hanako hadn't been secretly resenting her all along as she had come to believe over the last two days."
+        n "It turned out that not much had changed. Lilly was still in a very depressed mood—although she took my word for it when I assured her that Hanako hadn't been secretly resenting her all along as she had come to believe over the last two days."
         n "I also learned that Akira has only been able to postpone their departure to Scotland for one week, and she won't be able to hold things off any longer."
 
         nvl clear
@@ -194,7 +194,7 @@ label sh_ch15:
 
         "The old woman raises a curious eyebrow at that news, but doesn't seem overly shocked."
         ta "Did she break up with you?"
-        hi "…I phoned her last Tuesday and she said she couldn't be my girlfriend anymore. Then she hung up. But she seems to be serious about it."
+        hi "…I phoned her last Tuesday, and she said she couldn't be my girlfriend anymore. Then she hung up. But she seems to be serious about it."
         ta "I see. And how about you, Mister Nakai? Are you planning to break up with her?"
         hi "Huh?"
 
@@ -233,7 +233,7 @@ label sh_ch15:
 
         ta "Perhaps I should explain a few things."
         ta "What I'd like you to understand is that what happened last Monday had nothing to do with her self-confidence, which has indeed improved a bit lately."
-        ta "I've worked with war veterans who were usually strong and confident men, yet they too had breakdowns in situations where their post traumatic stress was triggered."
+        ta "I've worked with war veterans who were usually strong and confident men, yet they too had breakdowns in situations where their post-traumatic stress was triggered."
         "She pauses for a second, puts her cup on the tray and absentmindedly fiddles with her shawl for a bit."
 
         show takawa smile
@@ -313,9 +313,9 @@ label sh_ch15:
         ta "Just be as sincere to her as you were to me when you told me why you liked her so much."
         hi "You still remember that?"
         ta "I was hoping that you'd be able to remember it as well during the times when your relationship with her is being tested."
-        "I remember it alright. And between then and now I've found several additional reasons to be attached to Hanako."
+        "I remember it alright. And between then and now, I've found several additional reasons to be attached to Hanako."
         "The problem isn't the fact I wouldn't like her anymore. The issue is the fact that I hurt her and scared her off even though it wasn't something I did on purpose."
-        "But Miss Takawa has a point as well. Hanako knew of my heart condition all along and yet she allowed herself to get close to me."
+        "But Miss Takawa has a point as well. Hanako knew of my heart condition all along, and yet, she allowed herself to get close to me."
         "I have to talk to her."
 
         show takawa at center
@@ -416,7 +416,7 @@ label sh_ch15:
         nvl show dissolve
 
         n "I pace around the hallway restlessly."
-        n "{vspace=60}After finishing breakfast this morning, the doctor came by, performed a few minor check-ups and informed me that we'd be having a short meeting in his office at twelve o' clock and that I was free to go back to Yamaku afterwards."
+        n "{vspace=60}After finishing breakfast this morning, the doctor came by, performed a few minor check-ups and informed me that we'd be having a short meeting in his office at twelve o'clock and that I was free to go back to Yamaku afterward."
         n "At least I don't need to stay here any longer."
 
         nvl clear
@@ -462,13 +462,13 @@ label sh_ch15:
         dc "No, you're just in time. I've only called in your son a minute ago."
         "Dad" "I apologize. We live rather far away from here."
         "My parents sit down next to me, and the doctor starts off with the predictable talk."
-        "That collision could have ended a lot worse than it did. I was lucky an ambulance was nearby. Of course I am warned to be more careful in the future."
+        "That collision could have ended a lot worse than it did. I was lucky an ambulance was nearby. Of course, I am warned to be more careful in the future."
         "It turns out this hospital has a special arrangement with Yamaku. The ambulance personnel got instant access to my medical history by scanning in my student ID. Good thing I was carrying it and I was still wearing my school uniform."
         "At least I get praised by the doctor for keeping up with my medication and improving my physical condition. It's probably the reason I didn't need heavier surgery."
         "I'll have to take it easy for a little while, but I'll be allowed to start engaging in light exercise in a few days."
         "I'll be put on some additional medication for a while. The nurse has been informed and will take it from here on out."
         "My parents visited me shortly after my surgery, but I was still recovering from the narcosis at that time and wasn't even aware of their presence."
-        "They came by again two days ago. Apparently they talked to the doctor afterwards, and he timed this meeting so they could make it here."
+        "They came by again two days ago. Apparently they talked to the doctor afterward, and he timed this meeting so they could make it here."
         "I wish they had let me in on this."
         dc "Take care, Mister Nakai. And good luck with school."
         hi "Ah? Oh, thank you."
@@ -499,7 +499,7 @@ label sh_ch15:
         "Mom" "I'm sorry, Hisao. We had no idea one of your friends was going to move away in the upcoming days. You should have let us know."
         hi "It's… okay, Mom."
         "We've arrived at the grounds of Yamaku and are now wandering along the path to the boys' dormitories."
-        "Dad" "I was already surprised. At first you hated the idea of going here, and now you just couldn't wait to get back."
+        "Dad" "I was already surprised. At first, you hated the idea of going here, and now you just couldn't wait to get back."
         hi "I guess I found my place here, Dad."
         "Dad" "You sure did. What's in that plastic bag you're carrying with you?"
         hi "Ah, nothing important."

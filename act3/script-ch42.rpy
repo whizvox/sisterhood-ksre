@@ -479,7 +479,7 @@ label sh_ch42:
         show naomi basic_smile
         with chchange
 
-        hy "I have looked up the day's program online and I believe it ends at half past 3. So I suggest we meet back here at four o' clock."
+        hy "I have looked up the day's program online and I believe it ends at half past 3. So I suggest we meet back here at four o'clock."
         "At least somebody came prepared. Since I spent most of yesterday cramming for the upcoming mock exams, I didn't even think of looking up today's schedule. And it seems like the same is true for the rest of us."
         hi "Fine by me."
         na "Sure."
@@ -490,7 +490,7 @@ label sh_ch42:
         with chchange
 
         "Lilly gently takes her father's arm."
-        li "We'll return here at four o' clock then. Shall we be off then? Have fun everyone."
+        li "We'll return here at four o'clockthen. Shall we be off then? Have fun everyone."
 
         show hiroyuki bow
         with charachangealways
@@ -888,7 +888,7 @@ label sh_ch42:
 
         "Conversation dries up, and we finish our lunch without making further small talk. I feel my nerves slowly easing, although I'm not sure how long that is going to last."
         "As Naomi suggests going back, I quickly check my watch."
-        "It's nearly one o' clock. Only three more hours to go. I can do this."
+        "It's nearly one o'clock. Only three more hours to go. I can do this."
 
         if _in_replay:
             return
@@ -1009,7 +1009,7 @@ label sh_ch42:
         show naomi basic_neutral_close
         with chchange
 
-        ha "B-but... We were g-going to meet at the entrance at four o' clock. If we attend that last p-presentation, won't we be late?"
+        ha "B-but... We were g-going to meet at the entrance at four o'clock. If we attend that last p-presentation, won't we be late?"
         "I didn't think about it before, but it seems our program finishes later than Lilly's. Looks like every faculty here has made its own schedule for today without worrying about the others."
         na "Only a bit. The campus entrance isn't that far from here. If we return there now, we'll be sitting there twirling our thumbs for like 40 minutes."
         "I personally wouldn't mind that much. We have our study books with us, and there are some benches there."

@@ -102,7 +102,7 @@ label sh_ch49:
         with chchange
 
         nk "The Center Test was on January the 19th. That was nearly a week ago, and you didn't think it was important to tell us until now?"
-        hi "I had exams that weekend and I went to bed rather early the night afterwards. After hearing that I passed the exams, I figured I'd take it slightly easier for a few days and things would be okay, but..."
+        hi "I had exams that weekend and I went to bed rather early the night afterward. After hearing that I passed the exams, I figured I'd take it slightly easier for a few days and things would be okay, but..."
         "The truth was probably that I also didn't want a lecture about how I had to slow down. I already know the problem without someone having to rub it in for good measure."
 
         show nurse concern_close
@@ -241,7 +241,7 @@ label sh_ch49:
 
         nk "I'd like you to get one hour of sleep a day more than you've had over the last few weeks. That's not a request, that's a condition."
         hi "Okay."
-        nk "If you feel anything out of the ordinary—anything at all—come back here and let me know about it. Not the week afterwards or even the day afterwards, but as soon as humanly possible!"
+        nk "If you feel anything out of the ordinary—anything at all—come back here and let me know about it. Not the week afterward or even the day afterward, but as soon as humanly possible!"
         hi "I will."
         "He finally lets go of the note, and I quickly put it in my pocket before he can change his mind after all."
 
@@ -484,7 +484,7 @@ label sh_ch49:
         with chchange
 
         na "Yeah, I get that you guys are all busy with studying, and it's really important, but I remember that the three of you used to study together all the time. It'd be a good opportunity to spend some time with one another and still get some studying done, right? Why not continue that?"
-        hi "We did that until the mock exams, but afterwards the school started dumping all those supplementary lessons on Hanako, and she was usually too tired to do a lot of studying with us afterwards."
+        hi "We did that until the mock exams, but afterward the school started dumping all those supplementary lessons on Hanako, and she was usually too tired to do a lot of studying with us afterward."
         hi "I didn't feel comfortable just studying with Lilly all day long, so we all ended up studying on our own."
         na "But those supplementary courses ended after the Center Test, didn't they?"
         hi "Yeah, but... uh... since we're all studying for an entrance exam in a completely different subject, studying together wouldn't really add much anymore."

@@ -23,7 +23,7 @@ label sh_ch43:
         with chchange
 
         hyf "Perhaps she is taking a restroom break right now."
-        li "Perhaps. But since it's nearly four o' clock already, I'd be surprised if they're not already at our meeting point. The building they went to was rather close to the entrance if I recall correctly."
+        li "Perhaps. But since it's nearly four o'clock already, I'd be surprised if they're not already at our meeting point. The building they went to was rather close to the entrance if I recall correctly."
 
         show hiroyuki eyebrow_close
         with chchange
@@ -785,7 +785,7 @@ label sh_ch43:
         show hiroyuki serious_phone
         with chchange
 
-        na "No. We figured we'd have time to explore the campus for a bit afterwards. We didn't want to be late."
+        na "No. We figured we'd have time to explore the campus for a bit afterward. We didn't want to be late."
 
         show hiroyuki thinking_phone
         with chchange
@@ -1704,7 +1704,7 @@ label sh_ch43:
         with chchange
 
         "Even my gloomy mood cannot prevent a smile from crossing my face for a moment, both at the unexpected sweetness and the endearing awkwardness of his gesture."
-        "I use his handkerchief to dry my tears, keeping it with me afterwards in case I tear up again later."
+        "I use his handkerchief to dry my tears, keeping it with me afterward in case I tear up again later."
         "As the stream of tears dries up, I let out a loud and tired sigh."
         li "Thank you."
 
@@ -1929,7 +1929,7 @@ label sh_ch43:
         show hiroyuki smileclosed_ni
         with chchange
 
-        hyf "Since you have mock exams this week and it is already ten o' clock, it may be a good idea to return to the car."
+        hyf "Since you have mock exams this week and it is already ten o'clock, it may be a good idea to return to the car."
         li "That late already?"
         hyf "Yes, today has been a long day. And your mother will probably not let me sleep until I have told her all that has happened."
 

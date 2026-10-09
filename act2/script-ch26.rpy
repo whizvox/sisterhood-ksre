@@ -105,7 +105,7 @@ label sh_ch26:
 
         ka "He got away to France, though he never attempted to organize another uprising, pretty much guaranteeing the eventual decline of the Stuart dynasty and marking the definite end of an era for Scotland."
         ka "Many of his followers weren't so lucky though. The son of the King, the Duke of Cumberland, was more concerned about squashing the insurrection than about appearing gracious in victory."
-        ka "After the battle, he had his soldiers search the battlefield for enemy survivors and execute anyone who was still capable of breathing. Afterwards, his troops were sent out to hunt down the escaped enemy soldiers."
+        ka "After the battle, he had his soldiers search the battlefield for enemy survivors and execute anyone who was still capable of breathing. Afterward, his troops were sent out to hunt down the escaped enemy soldiers."
         ka "They were particularly vicious about it, burning suspect settlements to the ground and killing all soldiers believed to be rebels. All in all, not a day fondly remembered around here…"
 
         show karla basic_worried_cas
@@ -668,7 +668,7 @@ label sh_ch26:
         ka "Heh, they used to say that even when not living in the same home, extended family should still live near enough to carry over a bowl of hot soup. I think it's a Japanese proverb of some kind they were reciting."
         "She pauses briefly while thinking to herself for a moment."
         ka "A bit ironic that they ended up giving my husband a job that sent him off to the other end of the earth, isn't it?"
-        hi "What became of them afterwards?"
+        hi "What became of them afterward?"
 
         show karla basic_ponder_cas
         with chchange
@@ -858,7 +858,7 @@ label sh_ch26:
         play music music_pearly fadein 4.0
 
         hi "So, Lilly…"
-        "If I readjusted my watch to Greenwich Mean Time correctly, it should be six o' clock right about now. Lilly and I are busy collecting the various bowls and plates that were strewn across the blanket and putting them back in the saddlebags."
+        "If I readjusted my watch to Greenwich Mean Time correctly, it should be six o'clock right about now. Lilly and I are busy collecting the various bowls and plates that were strewn across the blanket and putting them back in the saddlebags."
         "Hanako is still sitting in the spot she's been occupying all afternoon, gently rubbing her calves with a slightly uncomfortable expression on her face."
         "She appeared alright during most of the picnic, but got slight cramps shortly before we decided to head back home."
         "Lilly's mother is standing some distance away from us, engaged in a phone call on her cell phone."

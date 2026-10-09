@@ -63,7 +63,7 @@ label sh_ch34:
         ha "Oh… uh…"
         "I think I have a good idea of who created this little inconvenience for Lilly."
         ha "S-sorry, Lilly. That m-may have been me."
-        "Hisao and I took a bath together the day before Lilly's father had his incident. I meant to clean up after ourselves afterwards, but we got… distracted by other things while we were here." # understatement
+        "Hisao and I took a bath together the day before Lilly's father had his incident. I meant to clean up after ourselves afterward, but we got… distracted by other things while we were here." # understatement
 
         show lilly basic_smileclosed_sum
         with chchange
@@ -602,7 +602,7 @@ label sh_ch34:
 
         ha "B-being stuck in the hospital after s-something like this is a very miserable experience. In addition to the p-pain, there's the loneliness."
         ha "And there's all the t-time you have. S-so much time—too much time—and nothing to s-spend it on except w-wondering."
-        ha "W-wondering why t-this happened to y-you and what you d-did to deserve t-this. Wondering what y-your life will b-be like afterwards and r-realizing it will probably never b-be the same again."
+        ha "W-wondering why t-this happened to y-you and what you d-did to deserve t-this. Wondering what y-your life will b-be like afterward and r-realizing it will probably never b-be the same again."
         li "Was that what it was like for you, Hanako?"
 
         scene ev hanakohistory_bed
@@ -690,7 +690,7 @@ label sh_ch34:
         with charachangeev
 
         ha "Friendship… was something I thought I'd g-given up on. I s-stopped believing in others… after what happened after the accident… B-before my accident happened, I got on well with p-people and other children."
-        ha "I d-didn't have many friends, but… I didn't m-mind. I t-treasured the ones that I had. Afterwards, though…"
+        ha "I d-didn't have many friends, but… I didn't m-mind. I t-treasured the ones that I had. Afterward, though…"
         "I swallow with some difficulty. For some reason, just the mere mentioning of this brings back fragments of the desperation I felt back then."
 
         show ev hanakohistory_play_tease
@@ -910,7 +910,7 @@ label sh_ch34:
         nvl show dissolve
 
         n "And with that, Lilly and her mother disappear into the kitchen."
-        n "{vspace=30}An hour later the four of us share a simple, but delicious meal. Afterwards, Lilly accompanies Hisao and me on one last long walk through the neighborhood before the two of us retire for the evening."
+        n "{vspace=30}An hour later the four of us share a simple, but delicious meal. Afterward, Lilly accompanies Hisao and me on one last long walk through the neighborhood before the two of us retire for the evening."
 
         nvl hide dissolve
 

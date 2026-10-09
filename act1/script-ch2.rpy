@@ -90,7 +90,7 @@ label sh_ch2:
         show emi excited_happy_gym
         with Dissolve(0.2)
 
-        "Emi responds with a smile, but suddenly makes wide eyes and mouths a soundless “ahah” as if she just had a revelation of some kind."
+        "Emi responds with a smile, but suddenly makes wide eyes and mouths a soundless “Aha!” as if she just had a revelation of some kind."
 
         show emi excited_joy_gym
         with chchange
@@ -128,7 +128,7 @@ label sh_ch2:
         nvl show dissolve
 
         n "The laps around the track actually turn out better than I expected. The last time I participated in this activity took place a week after I was released from the hospital, and my physical condition was outright pathetic."
-        n "Nowadays, my condition is sufficient to allow me to walk from town back to school without feeling like an old man afterwards. Though I recently discovered it still wasn't good enough."
+        n "Nowadays, my condition is sufficient to allow me to walk from town back to school without feeling like an old man afterward. Though I recently discovered it still wasn't good enough."
         n "{vspace=60}I wonder how Emi and the nurse would react if they knew their teasing had an element of truth in it."
         n "Getting healthy enough to have sex wasn't the only reason behind my resolve to start working out, but the brief hiccup my heart experienced during the night Hanako and I slept together was enough to scare us both for a moment, and my condition hanging over our newly formed relationship like a dark cloud was something I wanted to avoid at all costs."
 

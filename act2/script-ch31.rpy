@@ -567,7 +567,7 @@ label sh_ch31:
         with chchange
 
         li "Yes."
-        kamo "Akira, you don't mind dropping off Lilly afterwards, do you?"
+        kamo "Akira, you don't mind dropping off Lilly afterward, do you?"
         li "Excuse me, but… You're not coming along, Mother?"
 
         show karla basic_troubled_cas
@@ -579,7 +579,7 @@ label sh_ch31:
         with chchange
 
         li "..."
-        aki "…Fine. I'll give her a ride afterwards."
+        aki "…Fine. I'll give her a ride afterward."
         kamo "Alright. I'll talk to you later, then."
 
         hide karla
@@ -869,7 +869,7 @@ label sh_ch31:
         with locationskip
 
         "After a short drive, we arrive. Lilly hasn't said a single word the entire time, which is a bit worrying."
-        aki "Okay, we're back. The front door is at twelve o' clock when you get out."
+        aki "Okay, we're back. The front door is at twelve o'clock when you get out."
 
         show lilly cane_sad_sum_close at twoleft
         with charaenter

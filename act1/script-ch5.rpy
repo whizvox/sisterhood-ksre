@@ -125,7 +125,7 @@ label sh_ch5:
 
         "After getting up early—too early—yesterday morning we took the train to Hokkaido and arrived at the Satou summer home late in the afternoon."
         "I failed to get a great deal of sleep the night before, so I spent a large part of the evening napping while Lilly and Hanako cleaned up the house and made supper. I felt a bit guilty about it, but neither seemed to mind it very much."
-        "The day afterwards, we walked to the nearby town which was more exhausting than I thought due to the heat. We had ice-cream to cool down once we reached our destination, and Hanako spent most of the time afterwards browsing clothes for Lilly, herself and me."
+        "The day afterward, we walked to the nearby town which was more exhausting than I thought due to the heat. We had ice-cream to cool down once we reached our destination, and Hanako spent most of the time afterward browsing clothes for Lilly, herself and me."
         "After a filling lunch in town and more shopping, we walked back to the summer home, had a delicious dinner and then went out for an evening walk while Lilly remained behind in order to finish the book she started on the train a day ago."
         "After lazily strolling through the surrounding area, we decided to take a break, and now we're lying side by side in the wheat field behind the summer home just staring at the sky."
 
@@ -153,11 +153,11 @@ label sh_ch5:
         hi "It feels like what?"
         ha "It… feels like…"
         ha "I… have a family again…"
-        hi "A family huh?"
+        hi "A family, huh?"
         ha "Y-yes. A small, disabled family, but a family all the same."
         "I think about Hanako's words for a bit. The atmosphere between us really has felt like that over the last two days."
         "The way Hanako and Lilly looked while preparing our meals together. The way we had breakfast and dinner together."
-        "The way we huddled on the couch while watching television together. The way we relaxed in the back yard, reading books or playing games."
+        "The way we huddled on the couch while watching television together. The way we relaxed in the backyard, reading books, or playing games."
         "It all felt so strangely comfortable."
         hi "I think I know what you mean."
         ha "You feel the same?"
@@ -220,7 +220,7 @@ label sh_ch5:
         ha "Is she avoiding us?"
         hi "Naw, she's just trying to give us some space. Wouldn't you do the same for her if it was her who just got a new boyfriend?"
         ha "P-probably… Maybe. It's just that it feels like she's trying to get us to hook up even though we're already together. So I don't really understand."
-        "Good point. It's like she's trying to play match maker, which seemed strange since we have all the time in the world to do this at our own pace, and unlike her cousin, Lilly isn't really the type to try and hurry people along."
+        "Good point. It's like she's trying to play matchmaker, which seemed strange since we have all the time in the world to do this at our own pace, and unlike her cousin, Lilly isn't really the type to try and hurry people along."
         "Then again, she did do something similar back when she had Akira take her and us to that pool club in town in an attempt to get Hanako and me closer to each other."
         hi "It's her motherly streak. She can get carried away with it at times. Just give it time. It'll probably blow over in a week or two."
         ha "You're probably right."
@@ -241,7 +241,7 @@ label sh_ch5:
 
         nvl clear
 
-        n "Still, the question how far Hanako and I were in “that” area lingers on my mind."
+        n "Still, the question of how far Hanako and I were in “that” area lingers on my mind."
         n "We have kissed each other of course, and sometimes shared a tight hug, but I'm not really sure if that was any indicator on the rest. We slept together once, but Hanako merely initiated that because she thought it was the only way to prevent me from drifting away from her, and she was so uncomfortable during the whole experience that it is clear to me in hindsight that she certainly wasn't ready for the act itself."
         n "{vspace=90}Is having that kind of intimacy something Hanako will ever be doing for her own enjoyment to begin with?"
         n "We have never mentioned that night we spent together again after we started dating, and I don't really know how Hanako sees sex."
@@ -321,7 +321,7 @@ label sh_ch5:
         show hanako emb_blushtimid_cas_nohat_clip_close_ni at onebounce
         with None
 
-        "Hanako's puzzled expression gets uncomfortable and she suddenly lets out a forced giggle."
+        "Hanako's puzzled expression gets uncomfortable, and she suddenly lets out a forced giggle."
         "I smile inwardly. This was the reaction I was hoping for."
 
         ha "H-hey, t-that tickles."

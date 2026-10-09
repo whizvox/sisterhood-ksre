@@ -336,7 +336,7 @@ label sh_ch12:
         show shizu adjust_smug
         with chchange
 
-        mi "I'm afraid you do not have the data to back that up, class rep. If you want a summary of what classes ended up running up against the deadlines most often, I'll be more than happy to procure one for you."
+        mi "I'm afraid you do not have the data to back that up, class rep. If you want a summary of which classes ran up against the deadlines most often, I'll be more than happy to procure one for you."
         li "It's good to hear that you've managed your schedule so well that you can afford to take part in these kinds of petty games."
 
         show shizu adjust_angry

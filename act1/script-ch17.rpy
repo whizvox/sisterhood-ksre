@@ -12,7 +12,7 @@ label sh_ch17:
         nvl show dissolve
 
         n "One more day."
-        n "{vspace=60}As I operate the Brailler in the student council room, my thoughts occasionally drift to last week's events."
+        n "{vspace=60}As I operate the brailler in the student council room, my thoughts occasionally drift to last week's events."
         n "Hisao was released from the hospital last Saturday and was dropped off at Yamaku by his parents. Hanako had been waiting for him at the gates all morning, but she was afraid to approach him with his parents being present and ran off."
         n "Hisao asked Shizune, Misha and me to give his mother and father a tour of the school while he went to do something important. The message was clear: “Keep them occupied for as long as necessary while I search for Hanako.”"
 
@@ -98,7 +98,7 @@ label sh_ch17:
         with chchange
 
         mi "WAHAHAHA~ HAHAHAHAHA~, looks like she's got you there, Shicchan!"
-        "I put away the Brailler as Misha's laughter slowly dies down."
+        "I put away the brailler as Misha's laughter slowly dies down."
         "Of course, my classmates' action was a surprise to me as well rather than anything planned, but I must admit getting a small victory over Shizune feels surprisingly good to me."
         "Maybe we really are more alike than either of us cares to admit."
 
@@ -313,7 +313,7 @@ label sh_ch17:
         show hanako emb_timid
         with chchange
 
-        ha "I-I'm s-sorry too f-for saying those horrible things to you. I… felt really bad about it afterwards."
+        ha "I-I'm s-sorry too f-for saying those horrible things to you. I… felt really bad about it afterward."
         li "But you were correct. I felt partially responsible for what happened to you that Monday, and I felt like simply leaving Yamaku and boarding the plane as if nothing happened would be like abandoning you and Hisao in a time of need."
         li "I was so focused on finding a way to help you that I didn't stop to think of whether it really was the right time to help."
         li "Hanako, I truly regret what I did. I wasn't thinking clearly."
@@ -510,7 +510,7 @@ label sh_ch17:
         play music music_friendship fadein 4.0
 
         li "There's some truth in what you said. I won't deny that. But there's something I want to tell you that's relevant to this matter."
-        li "You always were a good listener. Will you listen now? You can walk away afterwards and never speak to me again if you wish, but please hear me out until the end."
+        li "You always were a good listener. Will you listen now? You can walk away afterward and never speak to me again if you wish, but please hear me out until the end."
         ha "…"
 
         show hanako emb_timid
@@ -647,8 +647,8 @@ label sh_ch17:
         show hanako basic_normal_close
         with chchange
 
-        ha "Nearly four o' clock in the afternoon."
-        "That means it's eight o' clock in the morning in Scotland right now."
+        ha "Nearly four o'clock in the afternoon."
+        "That means it's eight o'clock in the morning in Scotland right now."
 
         play sound sfx_phonedial
         with chchange
@@ -749,7 +749,7 @@ label sh_ch17:
         with Dissolve(1.0)
 
         "As I hang up, I suddenly feel extremely tired."
-        "The reality of the situation is still in the process of setting in and my mind is struggling to wrap itself around the enormity of the change my life has just undergone within the last hour."
+        "The reality of the situation is still in the process of setting in, and my mind is struggling to wrap itself around the enormity of the change my life has just undergone within the last hour."
         "Through the daze, I can barely hear Hanako's voice whispering to me."
 
         show hanako emb_emb_close behind hanako_dormhisao_blur
@@ -822,7 +822,7 @@ label sh_ch17:
 
         aki "Don't worry, that went smoothly. It'll be a lonely flight without you, though it's probably good practice for me."
         li "What do you mean?"
-        aki "Word has it that you're planning a vacation in Inverness on a short notice. And three guesses who the folks are probably expecting to pick you up here and drop you off again afterwards."
+        aki "Word has it that you're planning a vacation in Inverness on a short notice. And three guesses who the folks are probably expecting to pick you up here and drop you off again afterward."
         li "They're expecting you to make two trips across the world on my behalf? That seems a bit excessive!"
 
         show akira basic_boo_phone
@@ -939,7 +939,7 @@ label sh_ch17:
         hide hanako
         with charaexit
 
-        "I can feel her move aside, and moments later I can hear a familiar snap. It's the sound of the hairclip she's always carrying with her."
+        "I can feel her move aside, and moments later I can hear a familiar snap. It's the sound of the hair clip she's always carrying with her."
 
         play music music_innocence
 

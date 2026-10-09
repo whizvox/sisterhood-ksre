@@ -184,7 +184,7 @@ label sh_ch35:
         with locationchange
 
         "Hisao's parents make their way to the entryway area in order to put on their shoes. Before leaving the room, Hisao's father turns to me."
-        hid "We expect to be back around nine o' clock. Maybe 8:45 if we're lucky and get an earlier train. There's no need to wait for us with dinner."
+        hid "We expect to be back around nine o'clock. Maybe 8:45 if we're lucky and get an earlier train. There's no need to wait for us with dinner."
         ha "I'll t-tell Hisao."
         hid "We'll see you this evening then. Bye."
         ha "B-bye."
@@ -637,7 +637,7 @@ label sh_ch35:
         "It isn't even certain we'll still be together by that time. Though I really hope we will."
         ha "It's... probably a little... early for long-term plans."
         hi "Yeah, there are still lots of things to do in the meantime. We both need to figure out a career path for ourselves. We'll have our grades to keep up."
-        hi "There'll be the National Center Test for University Admissions to worry about in January and probably some additional entrance exams afterwards, too. Then we'd have to finish university and apply for a job. We'll still have years ahead of us and lots of tough choices to make."
+        hi "There'll be the National Center Test for University Admissions to worry about in January and probably some additional entrance exams afterward, too. Then we'd have to finish university and apply for a job. We'll still have years ahead of us and lots of tough choices to make."
         ha "Yes."
 
         scene ev footsiefight_tendertalk

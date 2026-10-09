@@ -138,7 +138,7 @@ label sh_ch25:
         n "I get out of the shower, not really feeling any better but certainly feeling more awake. I still have a headache and feel rather exhausted. While it took me very little time to fall asleep, my sleep was restless for most of the night."
         n "I wonder if getting back into bed will be a good idea."
         n "I take a look at Hanako who's still lying on her stomach in exactly the same position as before and probably hasn't moved a muscle since I went to take my shower."
-        n "{vspace=30}I faintly remember collapsing on top of her last night when our lovemaking session reached its peak and somehow managing to get my hands on a sheet to pull over us afterwards."
+        n "{vspace=30}I faintly remember collapsing on top of her last night when our lovemaking session reached its peak and somehow managing to get my hands on a sheet to pull over us afterward."
         n "{vspace=60}Under other circumstances, I'd have no second thoughts about getting back in bed. Hanako's sleepy smile in the morning is one of the most beautiful things in the world to wake up to."
         n "This morning, however, it's pretty likely she'll feel as queasy as I'm feeling right now, and I'm not so sure how she'll react to the memory of last night's events, but smiling about the whole thing will probably be the least likely reaction."
 
@@ -451,7 +451,7 @@ label sh_ch25:
         show karla basic_smile_cas
         with chchange
 
-        ka "Make sure to get rehydrated and restock on the nutrients. Help yourself to the sandwiches Allison left in the kitchen, drink plenty, get some fresh air, and then get some additional rest. You'll feel a lot better afterwards."
+        ka "Make sure to get rehydrated and restock on the nutrients. Help yourself to the sandwiches Allison left in the kitchen, drink plenty, get some fresh air, and then get some additional rest. You'll feel a lot better afterward."
 
         stop music fadeout 2.0
 
@@ -676,7 +676,7 @@ label sh_ch25:
         with chchange
 
         ha "Yes?"
-        hi "I'm still kinda tired. What do you say we head back to our bedroom and get a few more hours of sleep. We'll probably feel better afterwards."
+        hi "I'm still kinda tired. What do you say we head back to our bedroom and get a few more hours of sleep. We'll probably feel better afterward."
         ha "What about the snacks?"
         hi "It's not going to take hours, and I'll help out if necessary. I'll set the alarm function of my cell phone to wake us up at half past 11. Lilly's mother won't be back until noon anyway."
         ha "Just a few hours then."
@@ -770,7 +770,7 @@ label sh_ch25:
         show lilly basic_smileclosed_sum
         with chchange
 
-        li "Four more minutes. If you could drain the water afterwards and put the macaroni in the bowl near the sink, that would be much appreciated."
+        li "Four more minutes. If you could drain the water afterward and put the macaroni in the bowl near the sink, that would be much appreciated."
         hi "I'm on it. Anything else?"
         li "Not at the moment."
         "It's hardly active work, but it's better than nothing."
@@ -886,7 +886,7 @@ label sh_ch25:
         show hanako basic_normal_sum
         with chchange
 
-        ha "The s-shallots, mint, vinegar, honey, salt, and pepper have to be whisked together. The pieces of pear, cucumber, jicama, and watermelon are added afterwards."
+        ha "The s-shallots, mint, vinegar, honey, salt, and pepper have to be whisked together. The pieces of pear, cucumber, jicama, and watermelon are added afterward."
         "As she says this, Hanako gets up and starts putting the various bowls, bottles, and cans with ingredients in front of Lilly, occasionally thinking for a moment before swapping two."
         "She finishes up by putting a large bowl and a whisk in front of Lilly."
         ha "I put all the ingredients in front of you. Anything else you w-want me to do?"
@@ -926,7 +926,7 @@ label sh_ch25:
 
         "Lilly lets out an amused giggle."
         li "Don't worry, Hisao. It's not. Hanako made sure to order the ingredients by type of container first and then alphabetically."
-        li "The ingredients required for the first step were placed at ten o' clock from my point of view and those required for the second step were placed at two o' clock."
+        li "The ingredients required for the first step were placed at ten o'clock from my point of view and those required for the second step were placed at two o'clock."
         hi "You mean to say you two have got a system in place for putting this kind of stuff in order?"
         li "We do. It's not the first time we've cooked together. Having a fixed location for everything isn't just important when cooking without sight."
         li "It's also essential in keeping your life in general in order when you're unable to see. Hanako knows almost exactly how I like things arranged, both in the kitchen and in my dorm room. She's one of the very few who do."

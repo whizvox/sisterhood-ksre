@@ -86,7 +86,7 @@ label sh_ch7:
         ha "Ummm…"
         "As usual when faced with an unexpected social situation, my mind completely froze up, and I couldn't come up with even a single way to formulate that simple request that most people could make without even having to think about it."
         "The fact that my neighbor is a very outgoing person herself didn't exactly ease my mind."
-        ha "E-exc…e-excuse me…"
+        ha "E-exc… E-excuse me…"
 
         show naomi basic_neutral at tworight:
             ypos 1.1
@@ -127,7 +127,7 @@ label sh_ch7:
         na "But you know that, don't you? You're usually stuck with the front row seat when I short out."
         "The last statement was accompanied by a cheerful wink."
         "{i}Too many questions!{/i}"
-        "While I was still reeling from Naomi's verbal machinegun fire, her neighbor Natsume cut in with a question of her own."
+        "While I was still reeling from Naomi's verbal machine gun fire, her neighbor Natsume cut in with a question of her own."
 
         show natsume basic_smile_close
         with chchange
@@ -155,7 +155,7 @@ label sh_ch7:
         hide natsume
         with charaexit
 
-        "We finished the assignment with a good amount of time to spare and my group mates had started on a piece of homework I already finished the other day."
+        "We finished the assignment with a good amount of time to spare, and my group mates had started on a piece of homework I already finished the other day."
         "If I had been working with Hisao, we'd probably have spent the remaining time talking with one another, but I don't think I'd be able to have small talk with my new group mates."
         "Keeping semi-normal interaction going with them had already drained most of my energy, and the tension I felt during our working session isn't fading nearly as quickly as I hoped."
 
@@ -166,7 +166,7 @@ label sh_ch7:
 
         na "Well, CRAP!"
         "I look at Naomi from behind my book, startled by her sudden exclamation, and see her wrestling with a pair of compasses."
-        "She's been playfully fiddling with them over the course of the entire assignment and now she seems to have jammed them somehow."
+        "She's been playfully fiddling with them over the course of the entire assignment, and now she seems to have jammed them somehow."
         na "Natsumeee…!"
 
         show natsume hands_neutral_close at twoleft
@@ -287,7 +287,7 @@ label sh_ch7:
         with chchange
 
         nt "Unfortunately, the girl who usually does the job is out of commission for a little while. She injured herself a few days ago and certainly won't be able to help before the deadline."
-        na "Yeah, she broke her hand after tripping outside her dorm room. She has this thing called os{cps=5}…{/cps}osto-{w=0.7}something."
+        na "Yeah, she broke her hand after tripping outside her dorm room. She has this thing called os{cps=5}...{/cps} osto-{w=0.7}something."
         na "Anyway she breaks easily. And now we need someone who can do the data entry and some minor editing jobs in her place for a few days."
         ha "B-but w-w-why me?"
         nt "There aren't that many students here who aren't already part of another club or don't have other tasks, like class representative duties to tend to, and who are also capable with computers."
@@ -296,7 +296,7 @@ label sh_ch7:
         show naomi basic_smile_close
         with chchange
 
-        na "Yeah, I mean, it's not a really complex task. And there's not a lot of distractions there, either. The place the club uses has a small side room where we keep the computers and archives."
+        na "Yeah, I mean, it's not a really complex task. And there are not a lot of distractions there, either. The place the club uses has a small side room where we keep the computers and archives."
         "I really don't know about this. The idea of getting involved in a club with nothing but people I'm unfamiliar with sounds terrifying."
 
         show naomi bend_smile_close
@@ -396,7 +396,7 @@ label sh_ch7:
         hi "Someone told me not too long ago that it's important to seize opportunities if they're handed to you on a platter like this."
         "Hisao has decided to jump into the fray, too."
         "I roll my eyes at his remark. Those are the exact same words I used last week to convince him to give Mutou's science club idea a chance."
-        "At first he was reluctant, afraid he'd have less time to spend with me. The last thing I wanted to do was hold him back, so I did my best to convince him to give the whole thing a try."
+        "At first, he was reluctant, afraid he'd have less time to spend with me. The last thing I wanted to do was hold him back, so I did my best to convince him to give the whole thing a try."
         "I knew the subject interested him, and I hoped this would also encourage him to make more definite plans for his future. He consistently scores the highest marks in class in Mutou's subject, and I genuinely believe that he'd do very well if he went for a career in that direction."
         ha "I-I know I said that last week. I'm not ruling the opportunity out r-right away."
 
@@ -404,7 +404,7 @@ label sh_ch7:
         with chchange
 
         li "You could choose to see it as a sign that fate is extending you a helping hand."
-        "By breaking somebody else's? That's kind of a cruel way to motivate someone. Fate must know how easily I can be guilt tripped."
+        "By breaking somebody else's? That's kind of a cruel way to motivate someone. Fate must know how easily I can be guilt-tripped."
         "I merely nod. I don't believe the work itself will give me much trouble."
         "What scares me is the idea of being thrown into a group of unfamiliar people who might stare at my scars, who might be put off by my stammering—which always gets worse whenever I'm feeling nervous—my shyness, and inability to make conversation."
         "A few weeks ago, I was still the “shy kid who kissed her first boyfriend in public” to people, but tomorrow I might be the “shy kid who panics at the most mundane things” once again."
@@ -412,7 +412,7 @@ label sh_ch7:
         show hisao cross_speak_uni_close
         with chchange
 
-        hi "Anyway, if you're considering it, it might be best to go this afternoon. I could pick you up afterwards when I'm done with my club meeting."
+        hi "Anyway, if you're considering it, it might be best to go this afternoon. I could pick you up afterward when I'm done with my club meeting."
         hi "If you're nervous and wait until tomorrow, you might lose sleep over it."
         "That's a pretty good point. Knowing myself, I'd probably mull over it all night long, and I'd only become more prone to messing up."
         ha "O-okay, I'll give it a t-try after classes t-today."
@@ -484,7 +484,7 @@ label sh_ch7:
         show naomi basic_smile at center
         with charaenter
 
-        "Putting them and a small pile of hand-written notes on the nearby desk, she makes a sweeping gesture over it."
+        "Putting them and a small pile of handwritten notes on the nearby desk, she makes a sweeping gesture over it."
         na "Here's what we have so far! Jun has already made a folder for the upcoming issue and a shortcut on the desktop."
         na "This memory stick is from Kaoru. He likes to type up all his articles himself, so all you have to do is copy them to the right folder and then print me a copy to look it over."
         "She takes out one of the recorders and picks up a small USB cable from the desk."
@@ -569,10 +569,10 @@ label sh_ch7:
         ha "I-it's not something rational. I really wish it was. It'd be a lot easier to control."
         "He starts carefully rubbing and kneading my neck and shoulders."
         "We've been giving each other these little massages for a while now, and I've really come to enjoy them."
-        "While I can't feel the sensation of his hand touching and rubbing the skin of my right shoulder, I still feel the result in my muscles there afterwards. It almost feels like I'm challenging my condition this way."
+        "While I can't feel the sensation of his hand touching and rubbing the skin of my right shoulder, I still feel the result in my muscles there afterward. It almost feels like I'm challenging my condition this way."
         hi "But it'll get less as you get used to it, right? You used to be awkward in my presence too, remember?"
         ha "Y-yes. It will get less as long as I can manage to keep going. At least, I hope it will."
-        hi "Then we'll keep helping you relax afterwards."
+        hi "Then we'll keep helping you relax afterward."
         hi "Lilly and me. We'll just repeat this evening tomorrow. And the day after tomorrow. Until it's no longer necessary."
         ha "T-thank you, Hisao."
         "We remain silent for a few minutes as Hisao finishes massaging my shoulders, neck and upper back."
@@ -611,7 +611,7 @@ label sh_ch7:
         "As I turn around to face him, Hisao gives me a playful wink."
         hi "If you want me to give you a more extensive massage…"
         "As I grasp the meaning behind his remark, I reflexively turn my head away, although I doubt my attempt at hiding my extensive blush is successful."
-        "Lately there have been a few times we started with a mutual backrub and ended up… doing… what we did that night in Hokkaido."
+        "Lately there have been a few times we started with a mutual back rub and ended up doing… what we did that night in Hokkaido."
         ha "N-n-not t-this t-time."
 
         show hisao basic_smile_uni_close
@@ -667,7 +667,7 @@ label sh_ch7:
 
         na "Could you print them all out? The pictures and templates for all the pages, too. And then come and sit here next to me."
         ha "I-I'm not done yet?"
-        na "I can't force you to do more than you want, but there's still something else to do and we're getting to the part that I think you'll like."
+        na "I can't force you to do more than you want, but there's still something else to do, and we're getting to the part that I think you'll like."
         "I simply nod and return to my seat."
 
         scene bg school_newspaper
@@ -675,12 +675,12 @@ label sh_ch7:
         with shorttimeskip
 
         "A few minutes later, I return to Naomi with a stack of paper containing everything I digitized over the last two days."
-        "Naomi is usually loud and somewhat chaotic, but in her role of editor-in-chief she becomes a bit more serious and structured than usual and I have an easier time keeping up (and putting up) with her."
+        "Naomi is usually loud and somewhat chaotic, but in her role of editor-in-chief, she becomes a bit more serious and structured than usual, and I have an easier time keeping up—and putting up—with her."
 
         show naomi basic_focus_close
         with characlose
 
-        na "So here's the templates we have for each page of the newspaper. Now we're gonna have to see what articles go where."
+        na "So here are the templates we have for each page of the newspaper. Now we're gonna have to see what articles go where."
         na "We have the front page for the main article, five pages for internal news, three pages for external news, one page for advertisements, one page for columns, and one page for sponsor-related stuff."
         ha "So n-now what?"
 
@@ -842,7 +842,7 @@ label sh_ch7:
         with charaexit
 
         "We spend the rest of the time making small talk with me occasionally answering questions about last week's activities."
-        "Lilly then lets out a small yawn from behind her hand and we take as a cue to retire for the night."
+        "Lilly then lets out a small yawn from behind her hand, and we take as a cue to retire for the night."
         "As Hisao and I rise to return to our dorm rooms, Lilly navigates her way around the table and approaches us."
 
         show lilly basic_displeased_close at center:
@@ -934,7 +934,7 @@ label sh_ch7:
         scene bg school_dormhanako
         with locationchange
 
-        "We go in and he places his hands on my shoulders."
+        "We go in, and he places his hands on my shoulders."
 
         show hisao basic_smile_uni_close
         with charaenter
