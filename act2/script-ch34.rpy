@@ -502,7 +502,7 @@ label sh_ch34:
         ha "If you… look after your f-father like you've looked after Hisao and me, he'll have no choice but to respect you."
         li "You make it sound more simple than it probably is."
         "I probably do. Lilly's pride was hurt in this whole mess, and I know that that's not something she can easily let go or overlook."
-        ha "If anyone can bring your f-family together, it's probably you. Also… I think if you give things your all while you're here, you can say that you've t-tried your best no matter what happens during the rest of your stay."
+        ha "If anyone can bring your f-family together, it's probably you. Also… I think if you give things your all while you're here, you can say that you t-tried your best no matter what happens during the rest of your stay."
         ha "If you… don't do that, then you might feel regrets when you're back at Yamaku."
         "I wonder if I myself would be able to practice what I'm preaching right now. I feel a bit hypocritical talking to Lilly about swallowing her pride and reaching out to her parents in good faith while I myself am frequently prone to bouts of cynicism."
         "But there's no doubt in my mind that if Lilly just allowed things to stay the way they are, she'd feel awful about her inactivity later."
@@ -550,7 +550,7 @@ label sh_ch34:
             zoom 1.02
         with vpunch
 
-        "However, due to the resistence of the water reaching to just above my knees, I promptly fall over, producing a loud splash in the process. In other circumstances, it'd probably be comical."
+        "However, due to the resistance of the water reaching to just above my knees, I promptly fall over, producing a loud splash in the process. In other circumstances, it'd probably be comical."
         "The splash gets some water in my nose, and I snort and cough a few times before I can regain my composure."
         "I finally calm down enough to realize that I just made an utter fool of myself in front of Lilly and anxiously look over my shoulder at my friend."
 
@@ -621,7 +621,7 @@ label sh_ch34:
         show ev hanakohistory_bed_pain
         with charachangeev
 
-        ha "Burned skin becomes really t-tight and it has to be s-stretched several times a day or I wouldn't be able to use those p-parts of my body at all anymore, eventually. That's what they s-said. But… I didn't s-see it that way at first."
+        ha "Burned skin becomes really t-tight and it has to be s-stretched several times a day, or I wouldn't be able to use those p-parts of my body at all anymore, eventually. That's what they s-said. But… I didn't s-see it that way at first."
         ha "All I knew was that several t-times a day, p-people would come into my room to cause me terrible pain."
         "For a moment my thoughts fly back to my time in the hospital. The constant pain that became unbearable when my limbs were moved or the wound dressing was changed."
         "The fear and panic I felt when I saw the nursing staff enter my room again. Their continuing reassurances how important it was to start these exercises as soon as possible."
@@ -648,7 +648,7 @@ label sh_ch34:
         show black behind darkness
         with Dissolve(1.0)
 
-        "I sniffle and it takes all the willpower I have to swallow the sudden lump in my throat."
+        "I sniffle, and it takes all the willpower I have to swallow the sudden lump in my throat."
         "When Lilly speaks up, her voice is rather tiny as well."
         li "H-Hanako… your parents' ashes… are they… kept at a grave somewhere? Because if so… perhaps I could go there with you some time and pay my respects."
         "That comment makes me smile despite the mood of the moment."
@@ -736,7 +736,7 @@ label sh_ch34:
 
         li "Hanako, you said you gave up on friendship, and yet I think that deep down you never stopped desiring other people in your life. The fact that our friendship came to be is proof of that because it was you who approached me."
         li "You chose me as a friend—your first real friend judging by what I just learned—and I feel very honored by that, even if I haven't always been able to live up to your expectations."
-        ha "I'm… n-not sure. I think… I really d-didn't believe in real friendship… back then. But… maybe a part of me wanted to start believing again despite my better judgement."
+        ha "I'm… n-not sure. I think… I really d-didn't believe in real friendship… back then. But… maybe a part of me wanted to start believing again despite my better judgment."
         ha "I thought… since you couldn't s-see what I looked like… t-things would be… different… somehow."
 
         show ev sharedsoak_lilly_listen

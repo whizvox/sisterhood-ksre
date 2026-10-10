@@ -33,7 +33,7 @@ label sh_ch28:
         call sh_ch28_journal_en
 
         "Not having anything else in mind to write down, I peer through the binoculars again to see if I can detect any movement in the water."
-        "A silly thought creeps into my mind and before I can reconsider the idea I whistle sharply on my fingers, cup my hands in front of my mouth and call out."
+        "A silly thought creeps into my mind. Before I can reconsider the idea, I whistle sharply on my fingers, cup my hands in front of my mouth, and call out."
         ha "Moonlight!"
         "I grin. There won't be any response, of course, but I just felt like trying it."
         mystery "Hanako!"
@@ -82,7 +82,7 @@ label sh_ch28:
         hi "If your dolphin isn't around, then maybe my company will do for the evening?"
         "I smile softly and nod."
         ha "I'm still d-dating you and not Moonlight."
-        "As I look Hisao over, I suddenly realize something. His hair is still dry and I can still spot several sweat drops on his face."
+        "As I look Hisao over, I suddenly realize something. His hair is still dry, and I can still spot several sweat drops on his face."
         ha "You d-didn't take a shower yet?"
         "He shakes his head."
 
@@ -104,7 +104,7 @@ label sh_ch28:
 
         hi "Well…"
         "From the hesitant look on his face, I can tell there's more he wants to say, but he isn't quite sure how to say it."
-        "I suddenly I get what he wants to ask."
+        "I suddenly get what he wants to ask."
         "He didn't come here to tell me he was going to use the bath. He came here to invite me along."
         "As I realize this, my fading blush quickly returns with a vengeance."
 

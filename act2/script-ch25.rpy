@@ -323,7 +323,7 @@ label sh_ch25:
         show karla basic_smug_cas
         with chchange
 
-        ka "My own mother used the the good ol' ladle and frying pan combination to get people out of bed. I should give that a try next time. I've always wanted to wake someone up that way."
+        ka "My own mother used the good ol' ladle and frying pan combination to get people out of bed. I should give that a try next time. I've always wanted to wake someone up that way."
 
         show lilly basic_reminisce_sum
         with chchange
@@ -373,7 +373,7 @@ label sh_ch25:
         with chchange
 
         ka "Last night we could already tell that Lilly had several glasses, so we left a message in the kitchen asking Allison to make and leave you some BLT sandwiches and plenty of juice in case you guys'd be suffering from a hangover."
-        ka "They'll help getting you back on your feet."
+        ka "They'll help get you back on your feet."
         hi "They actually help?"
         ka "They'll make you feel a little bit better."
         hi "Ummm… Not to pry into your affairs, but… was your husband very upset about Lilly drinking?"
@@ -519,7 +519,7 @@ label sh_ch25:
         "I'd really rather not address this matter at all, but if Lilly notices how awkward we are with each other right now, she'll almost certainly jump to conclusions."
         "I don't think we'll have much of a choice but to settle matters before Lilly gets back. She was probably puzzled enough already by our sudden escape from the living room last night."
         "As I reach out for one of the several small bottles of juice labelled ‘Irn-Bru’ or something, I suddenly have a flash of insight."
-        "What if Lilly heard us? We tried really hard not to make any sounds, but we couldn't supress everything. Her hearing can't be that good, can it? But she did hear the sound of her parents' car. I don't think I picked it up myself, and neither did Hanako."
+        "What if Lilly heard us? We tried really hard not to make any sounds, but we couldn't suppress everything. Her hearing can't be that good, can it? But she did hear the sound of her parents' car. I don't think I picked it up myself, and neither did Hanako."
         "Crap! What were we thinking anyway?"
         "Doing my best to put these thoughts aside, I help myself to a few of the bottles, put them in the bag, close the fridge and beckon Hanako to follow me outside."
 
@@ -570,7 +570,7 @@ label sh_ch25:
         show hanako emb_downsad_sum
         with chchange
 
-        ha "Ahahaha."
+        ha "Ahahaha…"
         "That has to be the most joyless laugh I've ever heard out of Hanako. I'm not sure if this is something Hanako will be able to laugh about later, but she certainly hasn't reached that stage right now yet."
         "Still, now that the subject's come up, it's probably best to press on."
         hi "So… um… About what happened between us last night…"
@@ -611,9 +611,9 @@ label sh_ch25:
         show hanako emb_blushing_sum
         with chchange
 
-        "Her face turns as red as the tomatos on the sandwiches, but eventually she manages to softly shake her head."
+        "Her face turns as red as the tomatoes on the sandwiches, but eventually she manages to softly shake her head."
         ha "N-no, b-but I… d-don't w-want to do it… l-like that again. Umm… Y-you…?"
-        "Since we're boyfriend and girlfriend now and since we've had sex before, I assumed that what we did was as consentual as we could make it, but maybe I'm wrong about that."
+        "Since we're boyfriend and girlfriend now and since we've had sex before, I assumed that what we did was as consensual as we could make it, but maybe I'm wrong about that."
         "She seemed to be enjoying it a lot last night, but now that I think about it, I doubt a sober Hanako would ever let me do it with her in a position that puts just about all her scars on full display like that. She's still really sensitive about them."
         "I hope I didn't overstep my bounds. That would give this whole thing a very bitter aftertaste."
         hi "I can't exactly say I hated it, but I get that we got a little carried away. I enjoyed the act itself though."
@@ -676,7 +676,7 @@ label sh_ch25:
         with chchange
 
         ha "Yes?"
-        hi "I'm still kinda tired. What do you say we head back to our bedroom and get a few more hours of sleep. We'll probably feel better afterward."
+        hi "I'm still kinda tired. What do you say we head back to our bedroom and get a few more hours of sleep? We'll probably feel better afterward."
         ha "What about the snacks?"
         hi "It's not going to take hours, and I'll help out if necessary. I'll set the alarm function of my cell phone to wake us up at half past 11. Lilly's mother won't be back until noon anyway."
         ha "Just a few hours then."
@@ -743,7 +743,7 @@ label sh_ch25:
         ha "Ah, okay."
         li "Has the oven already reached the right temperature? I believe it should be at 200 degrees."
         ha "Not just yet."
-        li "We should put the bread in as soon as we can or we won't be able to finish the sandwiches in time."
+        li "We should put the bread in as soon as we can, or we won't be able to finish the sandwiches in time."
 
         show hanako basic_worry_sum
         with chchange
@@ -903,7 +903,7 @@ label sh_ch25:
 
         "With that, Hanako and Lilly get back to work, and since the melon slaw Lilly's working on will be contained in just one large bowl, there's not a lot for me to do until she finishes."
         "As I watch Lilly getting started on the meal in front of her, something suddenly draws my attention. Lilly's hands are sweeping across the surface of the bowls, but she doesn't put her hands inside to feel the contents."
-        "Come to think of it, while she was working on the avocado and ham sandwiches, she also seemed to immediately know what bowl contained which ingredients yet I didn't hear Hanako instruct her beforehand."
+        "Come to think of it, while she was working on the avocado and ham sandwiches, she also seemed to immediately know what bowl contained which ingredients, yet I didn't hear Hanako instruct her beforehand."
         hi "Ah… Lilly?"
 
         show lilly basic_smileclosed_sum
@@ -1058,7 +1058,7 @@ label sh_ch25:
         show karla basic_smile_cas at tworight
         with charaenter
 
-        ka "One water bottle per person isn't really all that much but we should have plenty of beverages to fall back on if needed and we might be able to refill on the way. Anybody's willing to go and fill these up?"
+        ka "One water bottle per person isn't really all that much, but we should have plenty of beverages to fall back on if needed, and we might be able to refill on the way. Anybody's willing to go and fill these up?"
 
         show lilly cane_smile_sum at twoleft
         with chchange

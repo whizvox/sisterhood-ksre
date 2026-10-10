@@ -208,7 +208,7 @@ label sh_ch23:
         show hanako basic_normal_sum
         with chchange
 
-        hi "That couldn't have been easy, a 19-year old and a blind 12-year old living on their own, even with Lilly being as independent as she is."
+        hi "That couldn't have been easy, a 19-year-old and a blind 12-year-old living on their own, even with Lilly being as independent as she is."
         aki "Don't mention to her that I told you this, but back when our parents first moved to Scotland, Lilly wasn't independent at all."
 
         show akira basic_ponder_cas
@@ -385,7 +385,7 @@ label sh_ch23:
         show hanako basic_smile_sum at center
         with charachangealways
 
-        "I had fun at the time as well, though in a moment of naïvete, I also made a mistake that evening that nearly sank my chances with Hanako."
+        "I had fun at the time as well, though in a moment of naivete, I also made a mistake that evening that nearly sank my chances with Hanako."
         "When I told her, while she was in the process of opening up to me, that I was happy to protect her, it was a remark said with nothing but the best intentions."
         "It wasn't until our confession in the park that I realized just how denigrating that must have sounded to her."
         hi "I'll try not to mess up and say anything hurtful this time around."
@@ -405,7 +405,7 @@ label sh_ch23:
 
         play sound sfx_billiards_break
 
-        "Hanako reaims her cue and takes the shot, but misses her intended target, though her ball manages to touch the red ball before coming to a standstill."
+        "Hanako re-aims her cue and takes the shot, but misses her intended target, though her ball manages to touch the red ball before coming to a standstill."
         ha "I'm… trying n-not to ponder the p-past while I'm here."
         hi "You're right. Better to focus on the present."
         "As I move in to take my turn, I notice Hanako shaking her head with a shy smile."
@@ -632,9 +632,9 @@ label sh_ch23:
         ka_ "{font=times}It's not that bad. I can understand you well. Your… pronunciation is good.{/font}"
         hi "{font=times}That's… ah… good.{/font}"
         "I'm finding her rather easy to comprehend compared to most people here, and suddenly I realize why."
-        "Instead of a Scottish dialect, she's been speaking to us in common English without a very noticable trace of a local accent and it sounds like she's been doing her best to speak slowly and clearly."
+        "Instead of a Scottish dialect, she's been speaking to us in common English without a very noticeable trace of a local accent, and it sounds like she's been doing her best to speak slowly and clearly."
         hi "{font=times}You're… not from around here?{/font}"
-        ka_ "{font=times}I am, but I deal with many people from abroad at my work so I try to speak plain English when talking to people who aren't Scottish themselves. I can speak Scottish if you like.{/font}"
+        ka_ "{font=times}I am, but I deal with many people from abroad at my work, so I try to speak plain English when talking to people who aren't Scottish themselves. I can speak Scottish if you like.{/font}"
         hi "{font=times}Please don't.{/font}"
         ka_ "Or maybe I should speak in Japanese instead. It'll probably make it easier for us to understand one another."
 
@@ -655,7 +655,7 @@ label sh_ch23:
         show karla basic_cheerful
         with chchange
 
-        ka_ "Hmm hmmm. I've lived in Japan for over 20 years."
+        ka_ "Hmm-hmmm. I've lived in Japan for over 20 years."
 
         show karla basic_smile
         with charaenter
@@ -771,7 +771,7 @@ label sh_ch23:
         with chchange
 
         ka "Lilly told me the flight was kind of a taxing experience. Have you two gotten your bearings back already?"
-        hi "I'm still suffering from jetlag, but I'm pretty well-rested right now. The accommodations have been really good."
+        hi "I'm still suffering from jet lag, but I'm pretty well-rested right now. The accommodations have been really good."
 
         show karla basic_smile
         with chchange
@@ -862,7 +862,7 @@ label sh_ch23:
 
         play sound sfx_applause
 
-        "Finally the winner is announced and Karla brightens up."
+        "Finally, the winner is announced and Karla brightens up."
         ka "Well, well. Winner of tonight's quiz is ‘Oriental Express’. Heh, clever."
 
         scene bg inverness_pubdoor
@@ -909,7 +909,7 @@ label sh_ch23:
             ease 2.0 right alpha 1.0
         with None
 
-        aki "Man, those guys were no challenge at all. Imagine how easily we'd kick their asses if we'd take them on on our home turf."
+        aki "Man, those guys were no challenge at all. Imagine how easily we'd kick their asses if we'd take them on our home turf."
         hi "Well done you two."
 
         show hanako basic_bashful_sum

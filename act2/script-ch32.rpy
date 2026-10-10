@@ -26,7 +26,7 @@ label sh_ch32:
 
         n "For just a second, it wasn't Lilly's father I saw lying on the ground, but Hisao. And suddenly, my mind was filled with the same intense panic and helplessness I felt when Hisao was lying there on the street after accidentally colliding with someone. The flashback only lasted a second or so, but the sense of maddening fear remained even afterward."
         n "The sight of a rapidly panicking Lilly kneeling down at his side managed to reach deep into my own mind, grab a firm hold of my own traumatizing memories, and drag them out kicking and screaming. As a result, I became unable to move as my mind started clouding slowly but steadily, even as Hisao rushed to Mister Satou's side."
-        n "Things could have taken a turn for the worst there. Lilly's father could have died in front of us with me just standing by, despite my first aid training. If that would have happened, I don't think I'd ever be able to face Lilly again. The fact that that didn't happen was a coincidence I still have trouble wrapping my mind around."
+        n "Things could have taken a turn for the worst there. Lilly's father could have died in front of us with me just standing by, despite my first aid training. If that had happened, I don't think I'd ever be able to face Lilly again. The fact that that didn't happen was a coincidence I still have trouble wrapping my mind around."
 
         nvl clear
 
@@ -378,7 +378,7 @@ label sh_ch32:
         aki "My former boss. His name's Koji Kojima. He's in charge of running the Japanese branch. His father's a friend of our grandfather. He and Dad have known each other for a looong time."
         aki "He occupies the highest position in the company that's not filled by a Satou and ranks directly below Dad. I guess now that Dad's out of the running, they told him to finish the job."
         aki "But this expansion is apparently a process that's been a long time in the making, and the Japanese branch hasn't been heavily involved in it. Yet, now he's expected to suddenly pick it up at the last stage."
-        aki "I bet he's facing some tremendous pressure right now. Japanese business culture is all about taking your time to get to know your business parters before you go out and make deals with them. He's pretty much out of his element here."
+        aki "I bet he's facing some tremendous pressure right now. Japanese business culture is all about taking your time to get to know your business partners before you go out and make deals with them. He's pretty much out of his element here."
         hi "You think he can handle it?"
 
         show akira basic_wistful
@@ -583,7 +583,7 @@ label sh_ch32:
         "After a short while, we can hear the beeps of the heart monitor slowing down. We're still close enough to the doorway to pick up Akira's voice."
         aki "Uh, she and Hisao are in the waiting area."
         "I hear a sigh of relief coming from the room."
-        "Hisao nods and we quietly sneak off towards the place Akira mentioned."
+        "Hisao nods, and we quietly sneak off towards the place Akira mentioned."
 
         stop ambient fadeout 1.0
 
@@ -625,7 +625,7 @@ label sh_ch32:
         with chchange
 
         hi "I don't really understand what you were trying to achieve by starting that argument with him with us nearby."
-        hi "I mean… if your father would have found out that we were listening in all the time, he probably would have been extremely upset."
+        hi "I mean… if your father had found out that we were listening in all the time, he probably would have been extremely upset."
         hi "Without wanting to take sides or point out who's right or wrong, one thing the doctors probably told your father was that he had to avoid stress for the time being."
         hi "Speaking as a heart patient, your actions further put his health at risk just now."
         aki "Hmmm…"

@@ -19,10 +19,10 @@ label sh_ch26:
         show tandembikelilly at center
         with easeinmove
 
-        ka "Well, that place is part of the local history so I was hoping I'd get an opportunity to show it to you. There's a monument in the middle of the moor, but I don't think having a picnic there is a good idea. Not enough shade."
+        ka "Well, that place is part of the local history, so I was hoping I'd get an opportunity to show it to you. There's a monument in the middle of the moor, but I don't think having a picnic there is a good idea. Not enough shade."
         "After traversing the road through one of the nearby villages, we're now crossing the countryside again with nothing but open fields all around us."
         hi "Whew."
-        "I don't think we've gone on for that many kilometers yet, but all of us (with the exception of Lilly's mother) are nevertheless starting to get a little winded."
+        "I don't think we've gone on for that many kilometers yet, but all of us, with the exception of Lilly's mother, are nevertheless starting to get a little winded."
         "The wind provided some pleasant relief from the heat while we were riding through the streets of the village, but here in the middle of the open field, it's strong enough to start wearing us out."
 
         show tandembikekarla speak
@@ -44,7 +44,7 @@ label sh_ch26:
         with None
 
         "Though the ride is more taxing than I anticipated, I can't deny I'm somewhat enjoying it."
-        "It feels good to engage in some physical activity after two days of mostly sitting and sleeping and the route so far has offered plenty of interesting sights."
+        "It feels good to engage in some physical activity after two days of mostly sitting and sleeping, and the route so far has offered plenty of interesting sights."
         "Karla's statement that she likes to take bike rides around the countryside in her free time has been confirmed several times while we were riding through the village, as several people who seemed to recognize her waved at us when we passed by."
         hi "Damn, we might have to stop somewhere soon anyway. I see rationing water isn't really my strong suit."
         "As I notice my water bottle being nearly empty already, I mutter this to myself without intending anyone to hear it, but moments later I nevertheless feel something poke me in the back."
@@ -52,7 +52,7 @@ label sh_ch26:
         show hanako defarms_worry_sum_close at tworight
         with charaenter
 
-        "When I carefully look behind me I can see Hanako offering me hers. I nod in acknowledgement."
+        "When I carefully look behind me, I can see Hanako offering me hers. I nod in acknowledgement."
         hi "One little sip then. But that's all."
         "I take a small sip from Hanako's bottle, which is still about half-full, and then hold it out behind me until I can feel it being taken from my hand."
         hi "Thanks."
@@ -76,10 +76,10 @@ label sh_ch26:
         with charaenter
 
         ka "What lies before you right here is the Culloden battlefield."
-        ka "About 260 years ago, this moor was the site of a rather brutal battle between the rebels attempting to help the exiled prince Charles Edward Stuart claim the British throne and the loyalist army led by the son of the British King at the time."
+        ka "About 260 years ago, this moor was the site of a rather brutal battle between the rebels attempting to help the exiled Prince Charles Edward Stuart claim the British throne and the loyalist army led by the son of the British King at the time."
         ka "The battle has the dubious honor of being the last full-scale battle taking place in this country."
         "She does sound a bit like a tourist guide reciting stuff like this."
-        hi "I assume Scotland sided with prince Charles?"
+        hi "I assume Scotland sided with Prince Charles?"
 
         show karla basic_smile_cas
         with chchange
@@ -328,7 +328,7 @@ label sh_ch26:
         show karla basic_ponder_cas
         with chchange
 
-        ka "The name of the company is Satou Medical Technology and it's a family company that was founded by my husband's grandfather."
+        ka "The name of the company is Satou Medical Technology, and it's a family company that was founded by my husband's grandfather."
         ka "Eventually, his son inherited the business and expanded it using capital provided by his two younger brothers who both married into banking families and went into the business of investment banking."
         ka "The three of them are still the only members of the company's board of directors and officially have the final say on everything."
 
@@ -415,10 +415,10 @@ label sh_ch26:
         with chchange
 
         ka "It's actually not that far from the truth. Especially when we first moved here, I often acted like his secretary while he was still getting the hang of western business culture."
-        ka "But my official position is being in charge of public relations. I have accumulated a fair bit of unofficial clout on the workfloor, though."
+        ka "But my official position is being in charge of public relations. I have accumulated a fair bit of unofficial clout on the work floor, though."
         ka "I've been extremely involved in this whole deal as well, which is why I'll be accompanying my husband in a few weeks to see this thing through."
         "I'm a bit surprised to hear that Lilly's mother's working alongside her husband—almost like an equal business partner from the sound of it."
-        "If the Satous are really this traditional, wouldn't they consider a married woman working to be inappropriate? Especially at such an influental position."
+        "If the Satous are really this traditional, wouldn't they consider a married woman working to be inappropriate? Especially at such an influential position."
         hi "Did you already work for the company before you moved here?"
 
         show karla basic_sheepish_cas
@@ -478,7 +478,7 @@ label sh_ch26:
         show hanako emb_timid_sum
         with chchange
 
-        "Journalism huh? That's quite the recurring topic these days. I can see Hanako, who's been quiet for pretty much the entire time we've been here, perking up ever so slightly at Karla's words."
+        "Journalism, huh? That's quite the recurring topic these days. I can see Hanako, who's been quiet for pretty much the entire time we've been here, perking up ever so slightly at Karla's words."
         ha "J-j-journalism…?"
         ka "Yep."
         "I can tell that the conversation subject has caught Hanako's attention, but it's clear that she's not yet comfortable enough around Lilly's mother to ask her for details about her former job. Fortunately, Lilly takes this moment to come to Hanako's aid."
@@ -503,7 +503,7 @@ label sh_ch26:
         show hanako basic_bashful_sum
         with chchange
 
-        "Hanako meekly shakes her head, but Lilly takes her handbag, zips it open, and casually takes a copy of the lastest school newspaper out of it."
+        "Hanako meekly shakes her head, but Lilly takes her handbag, zips it open, and casually takes a copy of the latest school newspaper out of it."
 
         show hanako def_speechless_sum
         show lilly basic_planned_sum
@@ -526,7 +526,7 @@ label sh_ch26:
         show lilly basic_cheerful_sum
         with chchange
 
-        "Lilly grins mischieviously, but doesn't say anything back."
+        "Lilly grins mischievously, but doesn't say anything back."
         "Her mother, on the other hand, looks up from the paper."
 
         show karla basic_cheerful_cas
@@ -538,7 +538,7 @@ label sh_ch26:
         with chchange
 
         "Hanako nods."
-        ha "It's… p-pretty tough at times. W-we… ummm… c-convert the f-files with a computer program. The c-copyshop's Braille p-printer can then w-work with them. We h-have l-large font editions too… ah… f-for s-students with l-limited vision."
+        ha "It's… p-pretty tough at times. W-we… ummm… c-convert the f-files with a computer program. The c-copy shop's Braille p-printer can then w-work with them. We h-have l-large font editions too… ah… f-for s-students with l-limited vision."
         ka "That's pretty neat. Is it a lot of work making all those different editions?"
 
         show hanako emb_emb_sum
@@ -615,7 +615,7 @@ label sh_ch26:
 
         ka "A journalist's primary duty is to report the news and inform the public. People like to think of the news as a tool to help them form their own opinion."
         ka "If you subtly start making a case for something in your article, no matter how noble, people might become wary of reading your work because they don't like the idea of you trying to steer their opinion in a specific direction."
-        ka "Now, some news organisations are leaning heavier towards certain political mindsets than others, but as a rule, you want to try and be as objective as possible. Especially as a journalist who is still starting out."
+        ka "Now, some news organizations are leaning heavier towards certain political mindsets than others, but as a rule, you want to try and be as objective as possible. Especially as a journalist who is still starting out."
 
         show hanako basic_normal_sum
         with chchange
@@ -738,14 +738,14 @@ label sh_ch26:
         with chchange
 
         "Lilly takes this moment to chip in."
-        li "Perhaps being out in the field approaching people would not be the ideal occupation for Hanako. If she likes writing so much, maybe she should try become a writer instead. But is there a specific study for that?"
+        li "Perhaps being out in the field approaching people would not be the ideal occupation for Hanako. If she likes writing so much, maybe she should try becoming a writer instead. But is there a specific study for that?"
 
         show karla basic_smile_cas
         with chchange
 
         ka "Are you talking about fiction? Writing fiction for a living is nice work if you can get it, but it's definitely not the most stable career in the world."
-        ka "Writing non-fiction is more predictable, though. There are many people who want to publish something but lack either the time or the skills to write up something themselves, so they hire a ghost writer or biographer to do the job."
-        ka "Then there's copywriters, whose activities are somewhat related to what I do these days, content writers, report writers, technical writers, and speech writers."
+        ka "Writing non-fiction is more predictable, though. There are many people who want to publish something but lack either the time or the skills to write up something themselves, so they hire a ghostwriter or biographer to do the job."
+        ka "Then there are copywriters, whose activities are somewhat related to what I do these days, content writers, report writers, technical writers, and speechwriters."
 
         show hanako basic_worry_sum
         show lilly basic_smileclosed_sum
@@ -805,8 +805,7 @@ label sh_ch26:
         show karla basic_smile_cas
         with chchange
 
-        ka "Yep. See it as writing your own little private newspaper summarizing everything that happens during your stay here. Take an hour or so a day to update it. Stick with that one hour so you train yourself to work within the bounds of a limited timespan."
-        # "'a' second nature"? is this correct?
+        ka "Yep. See it as writing your own little private newspaper summarizing everything that happens during your stay here. Take an hour or so a day to update it. Stick with that one hour so you train yourself to work within the bounds of a limited time span."
         ka "If you take it seriously, processing and sorting information about events as they happen and memorizing the relevant details while dismissing the unimportant clutter will quickly become a second nature to you."
         ka "These are skills that both journalists and writers greatly benefit from. If you're interested, I probably have some unused diaries and notebooks lying somewhere in the study or the attic. Maybe you could take pictures, too."
 

@@ -114,7 +114,7 @@ label sh_ch33:
         show akira basic_ending
         with chchange
 
-        aki "Oh yeah, definitely. In fact, I was secretly hoping you'd ask for something like half of the family fortune or something equally outragous. You know, just to see how far you could stretch that gratitude of his."
+        aki "Oh yeah, definitely. In fact, I was secretly hoping you'd ask for something like half of the family fortune or something equally outrageous. You know, just to see how far you could stretch that gratitude of his."
         ha "I don't want that sort of thing."
 
         show akira basic_smile
@@ -131,7 +131,7 @@ label sh_ch33:
         aki "Heh, if you don't want the old man to keep stalking you for the rest of your life, that is."
         ha "Uhhhh…"
         aki "Relax, I was only joking. Still, I doubt this is the last you'll hear about this. Dad's got this old-fashioned ‘you saved my life, so now it belongs to you forevermore’-type of samurai mindset going."
-        "Akira's exaggerated eyerolling makes me giggle a bit."
+        "Akira's exaggerated eye-rolling makes me giggle a bit."
         ha "It's actually a rather… romantic mindset, don't you think?"
 
         show akira basic_resigned
@@ -199,7 +199,7 @@ label sh_ch33:
         with chchange
 
         aki "What I've learned over the last couple of weeks was that the matter may have been buried, but it was far from dead."
-        aki "After six long years, Mom and Dad were suddenly part of my daily life again and acting like nothing friggin happened. As you can see, I haven't been dealing with that very well… at all."
+        aki "After six long years, Mom and Dad were suddenly part of my daily life again and acting like nothing friggin' happened. As you can see, I haven't been dealing with that very well… at all."
         "She gives me a guilty look as I sit down next to her."
         aki "When I told you guys in the hospital that I simply screwed up, that was the truth. I didn't really mean to start a fight with the old man when he was in such a sorry state, but… well… it simply happened anyway."
 
@@ -398,7 +398,7 @@ label sh_ch33:
 
         aki "You know what the funny thing is about the labels we human beings tend to stick on others? We usually pick one label and run with it, ignoring everything else about a person."
         aki "In this case, I think people were so focused on the very obvious fact that Lilly was blind, they quickly forgot that she was half-foreign. It's weird, but I think it played a role."
-        "I wonder what label ended up sticking in people's minds for me: the one about my burn scars or my disfunctional behavior?"
+        "I wonder what label ended up sticking in people's minds for me: the one about my burn scars or my dysfunctional behavior?"
         aki "Anyway, by the time I was about to leave elementary school, I wasn't having that many conflicts anymore, and I was keeping my fingers crossed that things wouldn't get difficult once I'd get into middle school. Turns out I was right to worry."
         ha "You… went to the same school as Lilly, d-didn't you?"
 
@@ -418,7 +418,7 @@ label sh_ch33:
         with { "master": Dissolve(1.0) }
 
         aki "Surely you don't think they tossed me into a friggin' Japanese wife factory by accident? They were probably simply tired of relying on subtle correction attempts all the time, so they tried a more drastic method of molding me into a better daughter."
-        aki "Of course I told them that I hated it there, but all they said was to please hang in there and keep going. Dad even had the audacity to suggest that this was in my best interests and that I'd be grateful one day."
+        aki "Of course, I told them that I hated it there, but all they said was to please hang in there and keep going. Dad even had the audacity to suggest that this was in my best interests and that I'd be grateful one day."
         aki "It's been about ten years since I was released from that hellhole, and so far, I haven't had any sudden epiphanies of gratitude."
         "It's a little frightening how bitter Akira sounds, but there's one thing that scares me more than her tone."
         ha "Ummm… J-Japanese wife factory? D-does that m-mean that Lilly…?"
@@ -518,7 +518,7 @@ label sh_ch33:
         show noiseoverlay
         with { "master": Dissolve(1.0) }
 
-        aki "To be honest, I never really knew Granddad. He was at work even more often than Dad was. Of course, he ranked higher than Dad. On Sundays he'd be out golfing with business pals or reading in his study."
+        aki "To be honest, I never really knew Granddad. He was at work even more often than Dad was. Of course, he ranked higher than Dad. On Sundays, he'd be out golfing with business pals or reading in his study."
         aki "The rest of the days he was at work or hanging out with co-workers. The company was his life as well since he stayed at its helm for a very long time, even though he could have retired years earlier."
         aki "He even considered it a few years earlier before ultimately reconsidering. He was a pretty heavy smoker, and it came back to bite him six years ago when he developed lung cancer."
         aki "He was lucky they discovered it before it spread, but they still ended up removing a part of his right lung and with it an equally large part of his stamina."

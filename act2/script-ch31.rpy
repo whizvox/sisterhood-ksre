@@ -77,11 +77,11 @@ label sh_ch31:
         aki "{font=times}Different?{/font}"
         fer "{font=times}Your mother's an extraverted woman, always on the go, involved in a hundred things at once, and with a knack for quickly spotting and immediately pouncing on opportunities that present themselves.{/font}"
         fer "{font=times}Your father's more of an introvert, content to sit in his study and read through his book collection in the little free time he permits himself, and I've never seen him make decisions on a whim…{/font}"
-        fer "{font=times}He always tries to get to the bottom of whatever issue he faces before deciding on it and he usually pays a large amount of attention to the long-term consequences of whatever action he takes. More than anyone else I've ever met.{/font}"
+        fer "{font=times}He always tries to get to the bottom of whatever issue he faces before deciding on it, and he usually pays a large amount of attention to the long-term consequences of whatever action he takes. More than anyone else I've ever met.{/font}"
         aki "{font=times}I see.{/font}"
         "A gloomy expression appears on his face."
         fer "{font=times}Which is why this came as such a shock.{/font}"
-        fer "{font=times}I could see your father brushing off warning signs with explanations like ‘rsi’ or ‘indigestion’ in order to avoid worrying others, but I find it impossible to believe he failed to consider the possibility of a heart affliction, himself.{/font}"
+        fer "{font=times}I could see your father brushing off warning signs with explanations like ‘RSI’ or ‘indigestion’ in order to avoid worrying others, but I find it impossible to believe he failed to consider the possibility of a heart affliction, himself.{/font}"
         fer "{font=times}Especially since he, like many of us at the office, has taken the same first aid training we also offer our larger customers as part of our service. He must have known. And yet, he kept going.{/font}"
         aki "{font=times}He probably thought he would be able to hold on for a few more weeks. Mother had a vacation planned afterwards that he could use to get his bearings back.{/font}"
         aki "{font=times}I don't think she'll have much opportunity to take it easy any time soon. We don't even know when he's going to be released from the hospital yet.{/font}"
@@ -266,8 +266,8 @@ label sh_ch31:
         "Doctor McElroy chuckles briefly."
         dc "{font=times}Not to me, to be honest. I've worked in a hospital in the past where I worked alongside another cardiologist who ended up suffering a minor heart attack himself.{/font}"
         dc "{font=times}One of my old friends from university is a respiratory physician who's also an avid smoker whenever he's not on duty. And plenty of dentists have cavities from time to time.{/font}"
-        dc "{font=times}All of us are still only human, Mrs Satou. It's not uncommon to be knowledgable about illnesses or conditions and still fall prey to them, yourself.{/font}"
-        dc "{font=times}In fact, sometimes merely being knowledgable about something helps us fool ourselves into believing it won't happen to us…{/font}"
+        dc "{font=times}All of us are still only human, Mrs. Satou. It's not uncommon to be knowledgeable about illnesses or conditions and still fall prey to them, yourself.{/font}"
+        dc "{font=times}In fact, sometimes merely being knowledgeable about something helps us fool ourselves into believing it won't happen to us…{/font}"
         "His expression turns slightly more serious."
         dc "{font=times}…even in the face of overwhelming evidence to the contrary. But we can talk about that later. It's probably best if I give you an update on his condition first.{/font}"
 
@@ -319,7 +319,7 @@ label sh_ch31:
         with chchange
 
         "Lilly sighs."
-        li "{font=times}And despite everything, he also committed to a trip with my friends and me, despite the fact that it required him to squeeze his workload into an even smaller timespan. If only…{/font}"
+        li "{font=times}And despite everything, he also committed to a trip with my friends and me, despite the fact that it required him to squeeze his workload into an even smaller time span. If only…{/font}"
         "The doctor scrapes his throat to cut off Lilly's remark."
 
         show lilly basic_displeased_sum
@@ -486,7 +486,7 @@ label sh_ch31:
         with chchange
 
         "Lilly breathes a soft sigh of relief, but I'm not done with Mom yet."
-        aki "I'm not sure what kind of person you are. I believe you when you say that what doctor McElroy just said was new to you, too, but that does beg the question why you didn't know and how you couldn't have known about it."
+        aki "I'm not sure what kind of person you are. I believe you when you say that what doctor McElroy just said was new to you, too, but that does beg the question of why you didn't know and how you couldn't have known about it."
         aki "The two of you lived in the same house and worked at the same office. When he went to see doctor Thompson, didn't you bother to ask why he went or what the doctor said?"
         kamo "I would have, if I had known he went there in the first place. He must have gone there at a time I was away from the home."
         aki "Well, he certainly wasn't hurting for opportunities in that case."
@@ -545,7 +545,7 @@ label sh_ch31:
 
         stop music fadeout 2.0
 
-        "The distressed look on Lilly's face makes my anger fade a bit and replaces it with embarassment. Judging from the expression on Mom's face, she's probably feeling the same."
+        "The distressed look on Lilly's face makes my anger fade a bit and replaces it with embarrassment. Judging from the expression on Mom's face, she's probably feeling the same."
 
         show lilly cane_sad_sum
         with chchange
@@ -595,7 +595,7 @@ label sh_ch31:
         "I sigh."
         aki "Do you believe her?"
         li "I… I do. She seemed sincerely offended at your words."
-        "I notice a slightly accusing tone in her voice. It's only barely noticable, and I might have missed it if I wasn't so used to the subtleties of my sister's way of speaking."
+        "I notice a slightly accusing tone in her voice. It's only barely noticeable, and I might have missed it if I wasn't so used to the subtleties of my sister's way of speaking."
         aki "You think I went too far?"
 
         show lilly cane_sad_sum_close
@@ -885,7 +885,7 @@ label sh_ch31:
         show lilly cane_displeased_sum_close
         with charachangealways
 
-        "We get out and we say our goodbyes, but as Lilly turns around and heads for the front door, I suddenly think of something and put a hand on her shoulder."
+        "We get out and say our goodbyes, but as Lilly turns around and heads for the front door, I suddenly think of something and put a hand on her shoulder."
         aki "Hey Sis, I've been thinking… Have you considered the option of accompanying Hanako and Hisao back to Japan? I could drop by the airport and see if I can secure an additional ticket for that particular flight."
         aki "It might be better than having to put up with stuff like what just happened for an extended amount of time. A premature departure might just send a hint with enough impact to last."
         "Curiously enough, Lilly doesn't immediately react."

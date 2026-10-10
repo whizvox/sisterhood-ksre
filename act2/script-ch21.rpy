@@ -50,7 +50,7 @@ label sh_ch21:
         hi "Isn't that way too early?"
         "Neither Lilly nor I bothered suggesting to Hanako to try and act more casually. She'd be as likely to do that as she'd be to don a bikini in the middle of the terminal."
         "Both of us are aware she's emotionally in a bad place right now, but we also realize that openly worrying about her will only make her feel worse."
-        "We've come this far. The only way out is through and we're counting on the assumption that if we can get Hanako to her plane seat without her suffering a breakdown, she'll have plenty of opportunity to catch her bearings during the flight itself."
+        "We've come this far. The only way out is through, and we're counting on the assumption that if we can get Hanako to her plane seat without her suffering a breakdown, she'll have plenty of opportunity to catch her bearings during the flight itself."
 
         show lilly basic_weaksmile_cas
         with chchange
@@ -93,7 +93,7 @@ label sh_ch21:
 
         n "When Hanako realized that she was expected to have a picture taken that showed a full frontal, unobscured closeup of her face, we could tell that she was seriously considering backing out of the whole trip."
         n "With a lot of effort, Lilly and I managed to convince her to grit her teeth and go through with the whole thing, though it still took over 10 tries before we managed to take a picture where Hanako was able to force herself into keeping a relatively neutral expression on her face. The expression on her face when she submitted her passport photos to the clerk behind the counter was beyond troubled."
-        n "{vspace=60}The whole experience made me realize that for Hanako, willingly showing her face to someone was something she considered extremely intimate and she later confided in me that the whole thing very much felt to her like having a nude photo stuck on her passport."
+        n "{vspace=60}The whole experience made me realize that for Hanako, willingly showing her face to someone was something she considered extremely intimate, and she later confided in me that the whole thing very much felt to her like having a nude photo stuck on her passport."
         n "Needless to say, the prospect of having to show her passport to yet one more security guard and getting the almost guaranteed shocked look in return is something that makes her more than a little bit anxious."
 
         nvl hide dissolve
@@ -137,7 +137,7 @@ label sh_ch21:
 
         play music music_pearly fadein 4.0
 
-        "As Lilly predicted, the airline allowed us to board the plane before anyone else in economy class and we were all relieved we had the opportunity to get to our seats before the plane started filling with people."
+        "As Lilly predicted, the airline allowed us to board the plane before anyone else in economy class, and we were all relieved we had the opportunity to get to our seats before the plane started filling with people."
         "It looks like Akira put some thought into picking our seats. A place in the back meant there'd be fewer people around us and Hanako's scarred side would be facing the wall of the cabin."
         "We walk down the aisle with me in the lead, Lilly behind me with one hand on my shoulder, and Hanako following very close behind us."
         "As we get to our seats, three chairs next to each other in one corner in the back of the plane, I turn around."
@@ -246,7 +246,7 @@ label sh_ch21:
         "With a puzzled expression on her face, Hanako hands over the camera. I take it from her, get up and beckon a stewardess who's walking down our aisle."
         hi "Excuse me. Would you mind taking a picture of the three of us?"
         "Flight Attendant" "Of course not."
-        "As the stewardess readies the camera, I quickly wrap one arm around Hanako's waist, pulling her a little closer, and put my other hand on Lilly's shoulder. I give the stewardess a affirmative nod."
+        "As the stewardess readies the camera, I quickly wrap one arm around Hanako's waist, pulling her a little closer, and put my other hand on Lilly's shoulder. I give the stewardess an affirmative nod."
 
         show lilly basic_cheerful_cas_close
         show hanako cover_bashful_cas_close
@@ -360,14 +360,14 @@ label sh_ch21:
         show hanako emb_timid_cas_close
         with chchange
 
-        "Before we can continue the discussion, the announcement system above our heads springs to life and we hear a chime followed by a male voice."
+        "Before we can continue the discussion, the announcement system above our heads springs to life, and we hear a chime followed by a male voice."
         "Captain" "Good afternoon ladies and gentlemen and welcome to flight OCN007 to London. Thank you for flying with Oceanic Airlines."
         "Captain" "In a few minutes, we'll receive permission from the control tower to access the runway."
         "Captain" "In the meantime, please make certain that your seat is in the upright position, and keep your seat belt fastened for as long as the sign above your seat is lit."
         "Captain" "We're about to show you a short video with safety instructions detailing how to act in an emergency situation."
         "The displays on the back of the seats in front of us suddenly turn on, and a flight attendant is seen going through the safety regulations like the smoking prohibition and the request to turn off cell phones."
         "Captain" "…please take note of the nearest emergency exit indicated by the signs that are currently lit up. In case of limited visibility, follow the trail of emergency lights on the floor…"
-        "Judging from the seat chart the nearest emergency exit is right behind us although I seriously wonder if I'd be in a condition to even make it there in case of an emergency landing."
+        "Judging from the seat chart, the nearest emergency exit is right behind us. Although, I seriously wonder if I'd be in a condition to even make it there in case of an emergency landing."
 
         show hanako emb_downsad_cas_close
         with chchange
@@ -543,7 +543,7 @@ label sh_ch21:
 
         n "Opening the door, I'm taken aback for a moment at how cramped the thing is, but then take a deep breath and step inside. I'm pretty glad I'm not a claustrophobe right now."
         n "First taking the time to empty my bladder, I then open my backpack and get the usual dosage of pills out."
-        n "{vspace=60}A few hours earlier we had a modest meal (it was okay, though not exactly up to the standards of Lilly's cooking or Hanako's more succesful school lunches), and I made sure to order an additional flask of bottled mineral water for this occasion."
+        n "{vspace=60}A few hours earlier we had a modest meal. It was okay, though not exactly up to the standards of Lilly's cooking or Hanako's more successful school lunches. I made sure to order an additional flask of bottled mineral water for this occasion."
         n "{vspace=60}I use the water to flush the pills down my throat and yawn a bit."
         n "{vspace=30}It should probably be night already, but if you look through the windows it's still broad daylight. Since we're flying west, we're essentially keeping up with the sun, making this possibly the longest day of my life."
         n "When we get to London, it'll be late in the afternoon. I hope I'm not going to experience jet lag while we're in Scotland."
@@ -565,7 +565,7 @@ label sh_ch21:
 
         "As Lilly recognizes the click from the camera, she pouts with mock indignation."
         li "You should ask before taking pictures, Hisao. I probably looked a bit silly in this one."
-        hi "Nonsense, some of the best pictures are the ones taken spontanously."
+        hi "Nonsense, some of the best pictures are the ones taken spontaneously."
         hi "Ready to switch places again?"
 
         show ev planeride_bliss
@@ -612,7 +612,7 @@ label sh_ch21:
         hi "Exactly."
         "She sighs."
         li "Today was certainly confrontational for her."
-        hi "Yeah and yesterday wasn't really all that much better, with her being forced to sit through a lecture about burn injuries and her trainer scaring the living daylights out of her by faking a heart attack."
+        hi "Yeah, and yesterday wasn't really all that much better, with her being forced to sit through a lecture about burn injuries and her trainer scaring the living daylights out of her by faking a heart attack."
         hi "I really can't wait for this day to end."
         li "Hisao, do you know if Hanako has gone on any trips before she came to Yamaku?"
         hi "I asked her that myself a few days ago. You probably know the answer already. She hasn't been on vacation since she lost her family."
@@ -834,7 +834,7 @@ label sh_ch21:
         with chchange
 
         "Hanako and I immediately start looking around, and sure enough, less than 50 meters away from where we're standing, we can see a person with blond hair holding a cell phone to her ear with one hand and waving enthusiastically in our direction with the other."
-        hi "Nevermind, we spotted her. I guess neither of us thought of the possibility she'd be wearing plain clothes today."
+        hi "Never mind, we spotted her. I guess neither of us thought of the possibility she'd be wearing plain clothes today."
         "Lilly puts away her phone, and we hurry over to our welcoming committee."
 
         show lilly cane_cheerful_cas
@@ -873,7 +873,7 @@ label sh_ch21:
         show akira basic_laugh_cas
         with chchange
 
-        "Akira laughs heartily at my comment as we head over to her car and she opens the trunk and takes Lilly's suitcase from my hands."
+        "Akira laughs heartily at my comment as we head over to her car, then she opens the trunk and takes Lilly's suitcase from my hands."
 
         show akira basic_boo_cas
         with chchange

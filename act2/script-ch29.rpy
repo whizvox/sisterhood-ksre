@@ -30,7 +30,7 @@ label sh_ch29:
 
         n "Two of the changing area's walls look suspiciously like reinforced room dividers, suggesting that the bathroom and this tiny changing area used to be part of the same room before the Satous moved in."
         n "I conclude with a sense of relief that the outer door can be locked from the inside, meaning that even if Lilly or her parents were to come home early, there'd still be no risk of them accidentally walking in on us."
-        n "In addition to a shelf with baskets for clothing and a space for shoes along one wall, there are two cabinets near the exit: one containing bottles of liquid soap and several types of shampoo, and the other containing washcloths and towels. I take two of each, making sure to get a bottle of shampoo for myself that contains conditioner and suits my hair, and then slide away the inner door and enter the main bathroom."
+        n "In addition to a shelf with baskets for clothing and a space for shoes along one wall, there are two cabinets near the exit: one containing bottles of liquid soap and several types of shampoo, and the other containing wash cloths and towels. I take two of each, making sure to get a bottle of shampoo for myself that contains conditioner and suits my hair, and then slide away the inner door and enter the main bathroom."
 
         nvl hide dissolve
 
@@ -193,7 +193,7 @@ label sh_ch29:
         scene ev soapopera_hisao1_back
         with mediumflash
 
-        "I put down my stool behind Hisao, sit down and ready my washcloth before deciding it might be more fun to proceed without it."
+        "I put down my stool behind Hisao, sit down, and ready my wash cloth before deciding it might be more fun to proceed without it."
 
         play ambient sfx_shower2 fadein 1.0
 
@@ -250,7 +250,7 @@ label sh_ch29:
         with locationchange
 
         "Afterward, he sits up and looks at me from over his shoulder to indicate it's my turn."
-        "Suddenly feeling a little self-concious, I cover my genitals with one hand and use my other arm to cover my breasts as much as I can, drawing a small amused smile from him."
+        "Suddenly feeling a little self-conscious, I cover my genitals with one hand and use my other arm to cover my breasts as much as I can, drawing a small amused smile from him."
 
         show hisao basic_grin_nak_close_ni
         with chchange
@@ -322,7 +322,7 @@ label sh_ch29:
 
         ha "It… used to be just a little bit shorter when I was little, but I had my hair longer than shoulder-length even as a child. My…"
         "I hesitate for a moment, not sure whether to smile or feel sad at the resurfacing memory."
-        ha "My m-mother r-really liked my hair. She h-had hair j-just like mine. We'd always bathe together and she'd take her time washing it and telling me how b-beautiful she t-thought it w-was."
+        ha "My m-mother r-really liked my hair. She h-had hair j-just like mine. We'd always bathe together, and she'd take her time washing it and telling me how b-beautiful she t-thought it w-was."
 
         show soapopera_hisao talk behind steam at soapopera_talk
         with charachangeev
@@ -529,7 +529,7 @@ label sh_ch29:
 
         ha "Hisao…"
         "My voice is cut off when a shower of kisses descends on my left cheek and neckline. I'm so distracted by this that I barely notice how his hands are massaging my breasts, covering them with soap."
-        "Not content with just that, his hands proceed to carress my chest."
+        "Not content with just that, his hands proceed to caress my chest."
         "First he merely traces my breasts with his fingertips, but then he holds them in the palm of his hands before fondling them and kneading them, his fingers feverishly stroking my nipples."
         ha "Mmmmmmmm!"
         "Encouraged by my restrained moan, he slowly, but steadily moves his hand downwards. He has almost reached my private area when I suddenly think of something and quickly grab his hand."
@@ -797,7 +797,7 @@ label sh_ch29:
 
         "That's not a bad point. We're supposed to look out for each other. I never really talked to him about my burn injuries because I don't like talking about them in general. But after hearing what he said just now, I feel that it's not him who ought to apologize for dropping the ball, but me."
         ha "You d-don't need to apologize. I… probably should have told you."
-        hi "I'm willing to listen at anytime you're willing to talk."
+        hi "I'm willing to listen at any time you're willing to talk."
         ha "N-now?"
         hi "Only if you're comfortable with it."
         "I don't think this is a subject I'll ever be completely comfortable talking about, but I would like to get it out of the way, and I'm feeling fairly at ease right now."
@@ -807,13 +807,13 @@ label sh_ch29:
 
         ha "There's… n-not really that much to tell. There are a few minor things like… ummm…"
         "I think for a moment."
-        ha "My scars are usually r-really dry and stiff in the morning. I often have to do a few… stretching excercises after I get out of bed."
+        ha "My scars are usually r-really dry and stiff in the morning. I often have to do a few… stretching exercises after I get out of bed."
         hi "Because scarred skin can't produce sebum?"
         ha "Is… that's what it's called?"
         hi "Uh, yeah."
         ha "I… often use m-moisturizing cream to make them a bit more supple."
         hi "Yeah, I noticed the bottle in our room. But you usually don't put it on until you're ready to get dressed, do you? I mean, we've slept in several times this week…"
-        ha "S-sometimes it's more noticable than other times. I only put it on immediately if it itches too m-much when I wake up."
+        ha "S-sometimes it's more noticeable than other times. I only put it on immediately if it itches too m-much when I wake up."
         hi "Speaking of your scars being dry… That's kind of what that incident last week was about, wasn't it?"
 
         show sharedsoakhanako frown behind steam
@@ -855,7 +855,7 @@ label sh_ch29:
         ha "Umm… you know… I used to like my baths a little hotter than this too, but ever since… my accident… I've been a room-temperature person."
         ha "Hot and cold temperatures just quickly feel… uncomfortable to me now. Umm… S-scar tissue doesn't isolate as well as normal skin."
         hi "Yeah, I thought so."
-        ha "That's m-most of it. If… it wasn't for my appearance, the s-scars would probably only be a minor inconvenience in everday life."
+        ha "That's m-most of it. If… it wasn't for my appearance, the s-scars would probably only be a minor inconvenience in everyday life."
 
         show sharedsoakhisao smile behind steam
         with charachangeev
@@ -955,7 +955,7 @@ label sh_ch29:
         hi "I don't think we should meddle in this. Obviously a lot of stuff happened in the past, and we don't know anything about that, so getting involved would just mean getting in over our heads."
         ha "I know…"
         hi "I don't think Lilly came here expecting to undo six years worth of estrangement in only a few weeks."
-        hi "I think she simply meant this to be a beginning of something. Something she wants to maintain with weekly phonecalls while she's in Japan."
+        hi "I think she simply meant this to be a beginning of something. Something she wants to maintain with weekly phone calls while she's in Japan."
         hi "This is probably a long-term thing to her. At least, if she's realistically-minded, it should be a long-term thing to her."
         ha "Yes, you're probably right."
         hi "Her mom's already taken quite a bit of time off to spend with her, and her dad said he'd try to get some time off at the end of the week. It's a modest start, but it's still a start."
@@ -1311,7 +1311,7 @@ label sh_ch29:
         with charachangeev
 
         "I nod, and he lies down again. I lie down on my right side and lay my head on his belly as if it's a pillow. I gently take hold of him again with my left hand and wrap my lips around the head once more."
-        "This position is a lot more pleasant than the previous one and I soon become comfortable enough to make little nodding motions with my head while suckling on his tip as if it's an ice cream cone."
+        "This position is a lot more pleasant than the previous one, and I soon become comfortable enough to make little nodding motions with my head while suckling on his tip as if it's an ice cream cone."
         "He lets out a pleased sigh."
         hi "That's… really… good, Hanako."
 
@@ -1372,7 +1372,7 @@ label sh_ch29:
 
         with vpunch
 
-        "Hisao lets out a loud and prolonged groan, his member starts throbbing violently, his entire lower body starts jerking uncontrollably and his upper body rises slightly despite my head still resting on his belly."
+        "Hisao lets out a loud and prolonged groan, his member starts throbbing violently, his entire lower body starts jerking uncontrollably, and his upper body rises slightly despite my head still resting on his belly."
 
         with vpunch
 
@@ -1602,7 +1602,7 @@ label sh_ch29:
             alpha 0.4
         with { "master": charachangeev }
 
-        "I can feel my limit approaching as his tongue takes me past the point of no return. I grab the bed sheets tightly and arch my back in pleasure as I lose control."
+        "I can feel my limit approaching as his tongue takes me past the point of no return. I grab the bedsheets tightly and arch my back in pleasure as I lose control."
         ha "Ah… ah…"
 
         show white_vignette:
@@ -1668,7 +1668,7 @@ label sh_ch29:
 
         play music music_twinkle fadein 4.0
 
-        "I become vaguely aware of the lights being turned off and then I feel him get back in bed, cover me with the bed sheet, and hug me."
+        "I become vaguely aware of the lights being turned off, and then I feel him get back in bed, cover me with the bed sheet, and hug me."
         "I slowly start becoming more aware again as I feel his breath against my neck."
         "Eventually, I manage to recollect myself enough to open my eyes and turn my head towards him."
 
@@ -1703,7 +1703,7 @@ label sh_ch29:
         "I don't say anything back. Instead, I slowly rub myself against him, use my feet to play footsie with his and reach back to lovingly stroke his hair."
         "Hisao's all too eager to respond in kind, letting his hands run across my cheek and tummy."
         "Even though my experience left me tired, I still love cuddling like this. I'm feeling content, satisfied and very happy right now."
-        "As our caresses slow down and we start drifting into a peaceful slumber together, my thoughts return on the events of the day and the days that came before it."
+        "As our caresses slow down and we start drifting into a peaceful slumber together, my thoughts return to the events of the day and the days that came before it."
         "I'm having a great time right now, and we still have nearly two weeks to go before we have to go back. I don't think this vacation can get any better, but I'm nevertheless hoping that it will."
 
         show black

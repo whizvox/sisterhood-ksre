@@ -65,7 +65,7 @@ label sh_ch30:
 
         play ambient sfx_phonering2
 
-        "My thoughts are interrupted by the phone on one of the sidetables suddenly springing to life. After some hesitation, I pick it up."
+        "My thoughts are interrupted by the phone on one of the side tables suddenly springing to life. After some hesitation, I pick it up."
 
         stop ambient
 
@@ -214,7 +214,7 @@ label sh_ch30:
         li "Edinburgh, Hisao. Her older sister lives there."
         hi "Is this the same sister you and Akira visited in July?"
         li "It is. Mother promised her that she'd stop by before she and Father left on their business trip to the US."
-        li "Since it's about a 3 hour drive from Inverness to Edinburgh, she decided to spend the night at her sister's place and drive back very early tomorrow morning."
+        li "Since it's about a 3-hour drive from Inverness to Edinburgh, she decided to spend the night at her sister's place and drive back very early tomorrow morning."
 
         show hanako basic_bashful_sum_clip
         show hisao basic_neutral_polo
@@ -236,14 +236,14 @@ label sh_ch30:
         li "I was there only briefly during my last stay, but the city feels different from Inverness. Bigger and more crowded. Mother said it's literally ten times as populated as Inverness."
         li "Of course, Edinburgh is the capital of Scotland and the most populated city in the country after Glasgow, so it's quite unlike Inverness. I'm rather curious about your impressions of it."
         hi "You mentioned sightseeing. Any further information on where we'll be going, or is it going to be a surprise?"
-        "I open the drawer of one of the sidetables and pull out what I know is a tiny folder on Edinburgh's main tourist attractions, which I give to Hisao."
+        "I open the drawer of one of the side tables and pull out what I know is a tiny folder on Edinburgh's main tourist attractions, which I give to Hisao."
         li "You could take a little look in here and see if there's anything you like."
-        hi "Thanks…"
+        hi "Thanks… "
 
         show hisao basic_frown_polo
         with { "master": charachangealways }
 
-        extend " ugh, it's all in English."
+        extend "ugh, it's all in English."
         "I grin."
         li "Of course. But if you don't understand the meaning of certain words, just read the corresponding sentence to me and I'll tell you what it means."
         hi "If I do that, are you going to correct my mispronunciations again? The last time we did something like this, you turned it into a miniature English lesson."
@@ -993,7 +993,7 @@ label sh_ch30:
 
         play music music_sadness fadein 4.0
 
-        "I get up and feel out the shoulder of the ambulance worker who addressed me. We hurry outside and he quickly helps me into a seat."
+        "I get up and feel out the shoulder of the ambulance worker who addressed me. We hurry outside, and he quickly helps me into a seat."
         "I didn't get the opportunity to explain this to Hanako and Hisao, but I'm sure they'll understand."
 
         show bg raigmore_ambulance_blur:
@@ -1011,7 +1011,7 @@ label sh_ch30:
         nvl clear
         nvl show dissolve
 
-        n "During the short ride, I pick up a remark from the amulance driver mentioning we're lucky that our house is so close to the hospital."
+        n "During the short ride, I pick up a remark from the ambulance driver mentioning we're lucky that our house is so close to the hospital."
         n "A little bit later I hear the voice of someone on the radio giving us the number of the operating room Father will be taken to, but I'm barely able to process all of these things as my brain is still trying to digest what's happening."
         n "{vspace=90}Just a little while ago I was still sitting in the living room, relaxing, talking with my friends and planning our trip to Edinburgh without a care in the world."
         n "How could this suddenly turn into such a nightmare?"
@@ -1072,7 +1072,7 @@ label sh_ch30:
         with charaenter
 
         aki "{font=times}Good evening, this is Akira Satou speaking.{/font}"
-        "I'm taken back by Akira's formal tone before realizing that she doesn't recognize the number I'm calling from."
+        "I'm taken aback by Akira's formal tone before realizing that she doesn't recognize the number I'm calling from."
         li "A-Akira, it's me."
 
         show akira basic_cheerful_phone
@@ -1087,7 +1087,7 @@ label sh_ch30:
 
         aki "The hospital? Sheesh, Lils, what's happened? It's not Hisao, is it? Are you…?"
         li "It's F-Father. I… I don't know what happened. He just… collapsed. The doctor called an ambulance. They're… operating on him right now."
-        li "Please Akira…"
+        li "Please, Akira…"
 
         show akira basic_angry_phone
         with chchange
@@ -1463,7 +1463,7 @@ label sh_ch30:
         "My last bit of restraint broken, I return the phone to Akira and hold my face in my hands, sobbing uncontrollably—both in order to get rid of the fear, tension, and stress, as well as to express my relief."
         "Akira gives me a gentle squeeze in the shoulder, but doesn't respond."
         "Finally, the silence is broken by Hisao's voice over the phone."
-        hi "Thanks Akira. I'm really relieved to hear that."
+        hi "Thanks, Akira. I'm really relieved to hear that."
         hi "I'll… be sure to tell Hanako. Maybe… just maybe… we'll be able to get some sleep tonight after all."
 
         hide hisao

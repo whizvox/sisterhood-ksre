@@ -14,7 +14,7 @@ label sh_ch27:
         nvl show dissolve
 
         n "I'm woken from my sleep by the sunlight coming from the small gap between the curtains and the momentary stirring of the person sharing the bed with me. Letting out a yawn and rubbing the sleep out of my eyes, my attention shifts to the sleeping form of my boyfriend whom I've been using as a human hug pillow over the course of the last few nights."
-        n "{vspace=60}I cannot help but smile as I look upon his face. I was worried initially that with the combination of his jetlag and altered medication he was going to spend most of the nights wide awake, but after the first two nights, he's been sleeping very peacefully. I carefully bring my face close to his until it's hovering mere centimeters above him."
+        n "{vspace=60}I cannot help but smile as I look upon his face. I was worried initially that with the combination of his jet lag and altered medication he was going to spend most of the nights wide awake, but after the first two nights, he's been sleeping very peacefully. I carefully bring my face close to his until it's hovering mere centimeters above him."
         n "If he wakes up now I'll probably startle him, and he'll end up headbutting me."
         n "As I conclude that he's not going to wake up suddenly, I move in and carefully kiss the tip of his nose."
         n "{vspace=60}With some amusement, I notice that he reflexively sniffs with his nose a few times in response and I giggle at this cute sight."
@@ -88,7 +88,7 @@ label sh_ch27:
         "Traditional Japanese shoji cover the windows, and one of the walls is decorated with several elegant wall scrolls containing carefully calligraphed kanji."
         "The other wall is what draws most of my attention as it's almost entirely covered by a large bookcase containing what look like hundreds of books."
         "Before I can aim my camera to take a picture of it, I'm startled by a cheerful voice behind me, and as I jump back and turn around in surprise, I can see a young woman in her twenties standing behind me."
-        "I can't recall her name, but I know she's part of the cleaning staff here. The maid gives me a curious glance, probably not having expected my reaction, and then repeats her greeting while probably trying not to stare past my hairlock."
+        "I can't recall her name, but I know she's part of the cleaning staff here. The maid gives me a curious glance, probably not having expected my reaction, and then repeats her greeting while probably trying not to stare past my hair lock."
         "Maybe it's because she startled me and I didn't get the chance to carefully listen to her words, or maybe her accent is rather strong, but I can make neither heads nor tails of what she's saying, so I stammer out a reply."
         ha "{font=times}Ah… erm… E-excuse m-me? C-could y-you repeat y-yours-self?{/font}"
         "The maid seems to have trouble picking up on what I'm saying. Would she consider it rude if I just get out of here?"
@@ -203,7 +203,7 @@ label sh_ch27:
         nvl show dissolve
 
         n "Mister Satou is in many ways a sharp contrast with his wife. Appearance-wise, save for his above-average height, he looks just like the hundreds of salarymen you see every day around the city's train station."
-        n "Sporting silver-grey hair, bespectacled, and wearing a neat business suit, he is a dignified and extremely formal man in appearance, manners, and speech."
+        n "Sporting silver-gray hair, bespectacled, and wearing a neat business suit, he is a dignified and extremely formal man in appearance, manners, and speech."
         n "He's about as tall as his wife and, although he's been very friendly in his interactions with us, there's nevertheless something stern about him."
         n "His polite and reserved tone seems almost jarring compared to the up-beat personality possessed by his wife. And unlike Karla's energetic and fit appearance, Mister Satou comes across as though he hasn't slept in weeks."
         n "Unless he always has bags under his eyes, I suspect he was merely being polite when he assured me he had a good night's rest."
@@ -235,13 +235,13 @@ label sh_ch27:
 
         "I nod quietly and walk up to the bookcase. I initially intended to merely take a quick photo of it, but when I look a little closer, I notice something I hadn't picked up before."
         "I previously expected the books to be about management techniques or business practices, but a closer look reveals that the shelves are almost completely filled with Japanese fiction with only the occasional foreign title here and there."
-        "My interest piqued immediately, I eagerly start skimming the shelves and it turns out there are many authors and titles in there that I recognize."
+        "My interest piqued immediately, I eagerly start skimming the shelves, and it turns out there are many authors and titles in there that I recognize."
 
         show hiroyuki serious
         with chchange
 
         hys "Do you approve of my collection, Miss Ikezawa?"
-        "Mister Satou's voice drags me back to earth, and I realize with some embarassment I must have spent nearly 10 minutes checking the bookcase without saying a single word."
+        "Mister Satou's voice drags me back to earth, and I realize with some embarrassment I must have spent nearly 10 minutes checking the bookcase without saying a single word."
         ha "Umm… Are y-you a c-collector?"
 
         show hiroyuki speak
@@ -329,7 +329,7 @@ label sh_ch27:
         with chchange
 
         hys "If you do not mind me asking, are you interested in all the rooms in the house or merely those that stand out like a sore thumb?"
-        "I blush a bit. I did pay the most attention to the bathroom and the study because of their sheer contrast to the rest of the house and now I feel found out."
+        "I blush a bit. I did pay the most attention to the bathroom and the study because of their sheer contrast to the rest of the house, and now I feel found out."
 
         show hiroyuki thinking
         with chchange
@@ -353,7 +353,7 @@ label sh_ch27:
         hys "You are free to use the bath while you are here. If you have not already done so, you should consider taking a soak some time. It is a great way to relax if you take the time for it and have the time to spare."
         "The way he says it suggests that last part doesn't apply to him right now, and he's not particularly happy about it."
         ha "M-maybe."
-        "I think it's time for me to leave here and take a few shots of the patio and outside of the house. Maybe the nearby beach, too."
+        "I think it's time for me to leave here and take a few shots of the patio and outside the house. Maybe the nearby beach, too."
         "Before I can think about saying goodbye, Lilly's father closes his laptop, gets up, and curtly bows to me."
 
         show hiroyuki bow

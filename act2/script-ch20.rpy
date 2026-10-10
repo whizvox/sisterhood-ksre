@@ -219,7 +219,7 @@ label sh_ch20:
         show nakamura smile
         with chchange
 
-        nak "You hesitated a bit, but you still reacted within an acceptable timespan. So I think you really deserve this."
+        nak "You hesitated a bit, but you still reacted within an acceptable time span. So I think you really deserve this."
         "He takes a fancy piece of paper from behind his back that I can see has my name on it and puts his signature on the dotted line near the bottom before handing it to me."
         nak "Congratulations on successfully finishing the training, Ikezawa."
         "I take it from him, still a bit shaky but also filled with a modest sense of pride."
@@ -251,7 +251,7 @@ label sh_ch20:
         with chchange
 
         nak "Your boyfriend is probably well aware of his condition, and if any warning signs pop up that indicate an approaching episode, I'm willing to bet my life on it that he'll be aware of them long before you start noticing them."
-        nak "Ultimately, it's his responsibility to take action and either slow down or warn others. If you sound the alarm each time he looks a little bit unwell, instead of trusting his judgement on it, you'll probably drive him and yourself crazy sooner or later."
+        nak "Ultimately, it's his responsibility to take action and either slow down or warn others. If you sound the alarm each time he looks a little bit unwell, instead of trusting his judgment on it, you'll probably drive him and yourself crazy sooner or later."
         nak "He's still as susceptible to colds and stomach aches as any other person after all."
         "That's a pretty good point, though I've never been good at applying the ‘no worrying’ advice to my own life."
 
@@ -686,7 +686,7 @@ label sh_ch20:
         nvl show dissolve
 
         n "Hisao chuckles at my gasp and stops our makeout session to let his forehead rest against mine and look into my eyes for several seconds before giving me a quick peck on the lips."
-        n "{vspace=60}I know what that gesture means. He's used it several times in the past to get a question across that'd be too embarassing to ask with words."
+        n "{vspace=60}I know what that gesture means. He's used it several times in the past to get a question across that'd be too embarrassing to ask with words."
         n "{vspace=90}{space=30}{i}“Do you want to sleep together?”{/i}"
         n "{vspace=90}I also know how to give the affirmative response. If I respond with a quick peck back, the way things are now, it'll probably take less than 10 seconds for the last piece of clothing to hit the floor."
         n "Yet, there's a small sense of anxiety I feel that prevents me from immediately reciprocating his invitation. Maybe it's written on my face or maybe Hisao has noticed the pause."
@@ -710,7 +710,7 @@ label sh_ch20:
         n "I learned two things about myself during that period in time."
         n "{vspace=30}The first was the fact that I actually possess a sex drive. I still prefer the lights to be either dimmed or off altogether and Hisao tends to be the one to take the initiative. Despite that, I've been seeking him out all those times knowing full well that we'd probably end up between the sheets together, and, while we were busy doing the deed, I would find myself welcoming the experience."
         n "{vspace=30}The second thing I learned, however, was that my sex drive is also rather closely tied to my state of mind. So while I was busy taking Lilly on all sorts of outings, Hisao and I were far from hurting on the physical intimacy front. After Lilly announced her departure, however, I quickly found I was unable to get into the mood."
-        n "And during Hisao's time in the hospital, well, I didn't think I'd even get so much as a kiss out of him anymore ever again. Even though we reconciled nearly two weeks ago, Hisao's been forced to take it slowly ever since, and I obviously haven't been eager to push him past his limits."
+        n "And during Hisao's time in the hospital, well, I didn't think I'd even get so much as a kiss out of him ever again. Even though we reconciled nearly two weeks ago, Hisao's been forced to take it slowly ever since, and I obviously haven't been eager to push him past his limits."
 
         nvl hide dissolve
 
@@ -747,7 +747,7 @@ label sh_ch20:
 
         "I giggle. There's something bizarre about Hisao's impression."
         ha "I d-don't think…"
-        hi "{i}Hisao, guess what? I'm having a sale right now. Get one night between the sheets and you'll get a second one for free. Today only. What do you think?{/i}"
+        hi "{i}Hisao, guess what? I'm having a sale right now. Get one night between the sheets, and you'll get a second one for free. Today only. What do you think?{/i}"
         "I press my hand to my mouth to hold back a laugh."
         ha "That's… hee hee…"
 
@@ -759,14 +759,14 @@ label sh_ch20:
         show pillowtalkhanako up
         with charachangeev
 
-        "Realizing we're getting off track, Hisao gives me another peck on the lips and genly presses my chin up so I'm looking right into his eyes again."
+        "Realizing we're getting off track, Hisao gives me another peck on the lips and gently presses my chin up so I'm looking right into his eyes again."
 
         show pillowtalkhisao concern
         with charachangeev
 
-        hi "Look Hanako, the nurse isn't going to stick around for the rest of my life, so in the end, my own judgement will eventually be the thing I'll have to rely on."
+        hi "Look Hanako, the nurse isn't going to stick around for the rest of my life, so in the end, my own judgment will eventually be the thing I'll have to rely on."
         "That sounds a lot like what Nakamura told me earlier today… about not worrying about him too much."
-        ha "Hisao… I… I've been s-startled once a-already today, b-but if you really think you'll b-be okay, I'll t-trust your judgement."
+        ha "Hisao… I… I've been s-startled once a-already today, b-but if you really think you'll b-be okay, I'll t-trust your judgment."
         "I can see Hisao think for a moment, weighing the odds of his heart acting up."
         "I'm not really that frightened he'll die on me if we end up doing it. But after today, I don't think I'd take even a flutter very well."
         "Hisao seems to pick up on my thoughts and gives a short nod."
@@ -832,7 +832,7 @@ label sh_ch20:
         ha "Yes, like that."
         hi "You want it to be a bit romantic?"
         "Something like that. I like romance. At least, I think I do. But since silences between us are still awkward, our dates have centered around doing things that don't leave many silences—such as watching a movie or playing video games."
-        "Fun, but not the most romantic way to spend time together. I'd argue that the most romantic moments we've shared are when we're together like this and we can communicate our affection for the other through cuddling, kisses, and other non-verbal means."
+        "Fun, but not the most romantic way to spend time together. I'd argue that the most romantic moments we've shared are when we're together like this, and we can communicate our affection for the other through cuddling, kisses, and other non-verbal means."
         ha "Yes."
         hi "Okay then."
 

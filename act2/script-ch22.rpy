@@ -26,7 +26,7 @@ label sh_ch22:
         nvl hide dissolve
 
         "I look at the chairs in the corner again. My own clothes are folded over one of them. The other holds Hanako's clothes."
-        "I softly turn my head to the right, and I can see my girlfriend lying next to me. She's currently lying on her stomach and seems occupied scribbling words onto a small blocknote in front of her."
+        "I softly turn my head to the right, and I can see my girlfriend lying next to me. She's currently lying on her stomach and seems occupied scribbling words into a small notebook in front of her."
         "Since she's not wearing her hair clip, and a lock of hair is obscuring the right side of her face, it appears she hasn't noticed me waking up yet."
         "With the covers on her side of the bed pulled back and her nightgown pulled up slightly to reveal her lower back, Hanako is a pleasant sight to wake up to."
         "Taking care not to alert her, I sneak a hand over to the left side of her lower back and playfully tickle her there."
@@ -66,7 +66,7 @@ label sh_ch22:
 
         ha "It's nearly five o'clock in the afternoon."
         hi "Five o'clock in the afternoon already? Ugh, my sleeping patterns must have been more messed up than I thought."
-        "I grin at Hanako embarrasedly."
+        "I grin at Hanako embarrassedly."
         hi "I hope you didn't think I died in my sleep or something."
 
         show hanagown smile_close
@@ -85,8 +85,8 @@ label sh_ch22:
         show hanagown worry_close
         with chchange
 
-        ha "Did j-jetlag hit you that hard?"
-        hi "It's probably more than just jetlag in my case."
+        ha "Did j-jet lag hit you that hard?"
+        hi "It's probably more than just jet lag in my case."
         hi "I've been busy switching back to my regular medication over the last few days and due to the trip and the time differences, I wasn't able to take my meds according to the usual schedule yesterday. My chemical balance was probably as stable as a chair with a missing leg."
         ha "How about now?"
         hi "I took my meds before going back to sleep. I'll take my next batch after dinner. I'll be okay."
@@ -173,7 +173,7 @@ label sh_ch22:
         with charaexit
 
         "I take a quick shower, dry myself off and am about to put my clothes on when a thought suddenly hits me."
-        "Most of my medication is still in my suitcase. If it stays in there, I might end up forgetting about it again just like what was nearly the case when we went to Hokkaido. Best to take care of that now. It'd be really inconvenient if I ended up in the hospital here."
+        "Most of my medication is still in my suitcase. If it stays in there, I might end up forgetting about it again—just like what was nearly the case when we went to Hokkaido. Best to take care of that now. It'd be really inconvenient if I ended up in the hospital here."
         "I wrap a towel around my waist and quickly leave the shower area…"
         hi "Hey Hanako, do you mind if I put my medication on the little shelf above the sink so I won't…"
 
@@ -191,7 +191,7 @@ label sh_ch22:
         "Only to nearly bump into Lilly whom I didn't even hear come in."
         li "Ah. Good afternoon, Hisao."
         "When did she get here?"
-        "As she observes me standing there in nothing but a towel, Hanako's eyes grow wide and she puts her hand in front of her mouth in order to suppress a gasp."
+        "As she observes me standing there in nothing but a towel, Hanako's eyes grow wide, and she puts her hand in front of her mouth in order to suppress a gasp."
         hi "Lilly!"
         "Hanako's eyes dart back and forth between Lilly and me. I can tell she's trying to figure out what to say or do, but she doesn't seem quite able to think of anything."
         "Obviously, Lilly can't see me, though I bet she'll deduce that something's off if both of us just keep standing there without saying a word."
@@ -355,7 +355,7 @@ label sh_ch22:
         show lilly basic_displeased_sum
         with chchange
 
-        li "I don't mind playing interpretor every now and then, but I won't be around every moment of the day."
+        li "I don't mind playing interpreter every now and then, but I won't be around every moment of the day."
         li "Unless you intend to stay in your bedroom all the time while I'm away, which would be a terrible waste of opportunity, you'll have to interact with others without any help on my part at some point or another."
 
         show hanako basic_normal_sum
@@ -387,7 +387,7 @@ label sh_ch22:
         with chchange
 
         li "Are you two more interested in nature or culture? There's plenty of both in the area."
-        hi "I think I'd personally like a bit of both. I think the smartest thing is for Hanako and me to do the scenic parts by ourselves and save the cultural spots for when you're coming along so you can translate whatever the tour guides or videos have to say and we don't miss anything."
+        hi "I think I'd personally like a bit of both. I think the smartest thing is for Hanako and me to do the scenic parts by ourselves, and save the cultural spots for when you're coming along so you can translate whatever the tour guides or videos have to say and we don't miss anything."
 
         show hanako basic_smile_sum
         with chchange

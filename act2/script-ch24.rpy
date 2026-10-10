@@ -188,7 +188,7 @@ label sh_ch24:
         show lilly basic_satisfied_sum
         with chchange
 
-        li "A second toast this evening, this time for my wonderful friend Hanako, who has succesfully completed her first aid training and is now a qualified first responder."
+        li "A second toast this evening, this time for my wonderful friend Hanako, who has successfully completed her first aid training and is now a qualified first responder."
         li "May she never need the skills she was taught there, and may it be known that I admire and respect her very much."
 
         show hanako emb_smile_sum_clip_close
@@ -217,7 +217,7 @@ label sh_ch24:
         n "As Lilly finishes a story about a funny incident involving Akira, I can hear Hanako giggle and suddenly feel her hand ruffling my hair. That's probably the fourth time she's done this over the last fifteen minutes."
         n "{vspace=90}We've been hanging out here in the living room for well over an hour, and we opened up the second bottle of wine a little while ago. To say that the atmosphere is cheerful is quickly becoming an understatement. I don't think anyone's actually completely drunk yet, but I'm sure we've reached the point where each of us is getting rather tipsy."
         n "The fact that the wine Akira obtained for us is really tasty, that the atmosphere between us is completely relaxed, and that we don't have to be secretive about having a few glasses this time around probably all contributed to that."
-        n "{vspace=60}I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticibly less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy."
+        n "{vspace=60}I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticeably less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy."
         n "I'm starting to notice that aspect of her returning as the evening goes on."
 
         nvl hide dissolve
@@ -227,7 +227,7 @@ label sh_ch24:
         show lilly basic_smile_sum
         with chchange
 
-        li "Those occurences are indeed very rare. She's more responsible than she seems at first."
+        li "Those occurrences are indeed very rare. She's more responsible than she seems at first."
         hi "Like earlier this evening? When she joked about going back to that pub and pick up some guy, you seemed put off."
 
         stop music fadeout 4.0
@@ -255,7 +255,7 @@ label sh_ch24:
 
         li "She intended to spend the weekend with him there and tell him about her new job at the end of it. But it turned out he already knew about it."
         hi "How?"
-        li "Yuichi's employed at the sales department of the company's Japanese branch. He and Akira met at work, although they generally didn't see each other on the workfloor very often."
+        li "Yuichi's employed at the sales department of the company's Japanese branch. He and Akira met at work, although they generally didn't see each other on the work floor very often."
         li "He heard the news about Akira's promotion through the grapevine, so to speak, before we even got back. When she invited him to spend the weekend with her, he confronted her with the rumors he heard."
         hi "I suppose he wasn't very happy about it."
 
@@ -312,7 +312,7 @@ label sh_ch24:
         show hanako emb_timid_sum_clip_close
         with chchange
 
-        "As Lilly takes some time to think up an answer, I give Hanako a quick reassuring kiss on the cheek although it doesn't seem to completely get rid of her suspicious frown."
+        "As Lilly takes some time to think up an answer, I give Hanako a quick reassuring kiss on the cheek, although it doesn't seem to completely get rid of her suspicious frown."
 
         show lilly basic_smileclosed_sum
         with chchange
@@ -465,7 +465,7 @@ label sh_ch24:
         show hanako basic_normal_sum_clip_close
         with chchange
 
-        "I recall Hanako taking Lilly on an outing to a night club that held a ballroom dance night a few weeks ago, so it's a safe bet that Lilly's into that kind of music."
+        "I recall Hanako taking Lilly on an outing to a nightclub that held a ballroom dance night a few weeks ago, so it's a safe bet that Lilly's into that kind of music."
         li "Ballroom music is among the things I like to listen to. Classical music in general is something I really enjoy listening to. Perhaps youth nostalgia plays a role as well."
         hi "Youth nostalgia?"
         li "My mother used to play classical music, and me listening to her practice was one of the highlights of my day."
@@ -503,7 +503,7 @@ label sh_ch24:
 
         play sound sfx_unlatch volume 0.6
 
-        "Opening the case, she takes the instrument out of it and gently, almost tenderly, feels its neck, fingerbox and strings. As she starts toying with the tuning pegs and occasionally plucking a string before carefully adjusting the corresponding peg, a nostalgic look appears on her face."
+        "Opening the case, she takes the instrument out of it and gently, almost tenderly, feels its neck, pegbox, and strings. As she starts toying with the tuning pegs and occasionally plucking a string before carefully adjusting the corresponding peg, a nostalgic look appears on her face."
 
         stop sound fadeout 1.0
 
@@ -519,7 +519,7 @@ label sh_ch24:
         show lilly basic_weaksmile_sum
         with chchange
 
-        li "I don't think she did. I know how to play, but I'm not especially good at it. I haven't touched a cello after I graduated middle school."
+        li "I don't think she did. I know how to play, but I'm not especially good at it. I haven't touched a cello after I graduated from middle school."
         hi "But you do know a few pieces, right?"
         li "A few. It takes a bit of time to learn to play a song completely by ear and from one's memory, especially if you weren't familiar with it before."
         hi "Care to give us a demonstration?"
@@ -550,7 +550,7 @@ label sh_ch24:
         nvl clear
         nvl show dissolve
 
-        n "I can hear ruffling sounds coming from Lilly's direction, followed by a squeaking sound that's probably her adjusting the screw securing the endpin, followed by some more ruffling and finally silence."
+        n "I can hear ruffling sounds coming from Lilly's direction, followed by a squeaking sound that's probably her adjusting the screw securing the endpin, followed by some more ruffling, and finally silence."
 
         play music music_concord_cello_rough
 
@@ -573,7 +573,7 @@ label sh_ch24:
 
         play music music_concord_cello_good
 
-        "After a few moments however, her face relaxes again and she picks up where she left off."
+        "After a few moments however, her face relaxes again, and she picks up where she left off."
 
         nvl clear
         nvl show dissolve
@@ -591,7 +591,7 @@ label sh_ch24:
             ease 20.0 zoom 0.8
         with None
 
-        n "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them. Nowadays women probably wear long dresses or pantsuits, but the knee-high summer skirt Lilly's been wearing this evening qualifies as neither."
+        n "I remember reading once that the cello used to be considered an inappropriate instrument for women to play because the usual playing posture involves spreading the legs with the instrument between them. Nowadays, women probably wear long dresses or pantsuits, but the knee-high summer skirt Lilly's been wearing this evening qualifies as neither."
         n "The cello is large enough to prevent me from viewing anything inappropriate from where I'm sitting, though I imagine if she moved a bit or put the cello away, then…"
 
         nvl hide None
@@ -630,7 +630,7 @@ label sh_ch24:
         with shuteye
 
         "She moves a hand over my face as a gesture for me to close my eyes, which I reluctantly do. I concentrate, trying to pick up any sounds from her, but it's impossible to hear anything over Lilly's music."
-        "Just when I consider taking another peek to see what she's up to, I feel a weight dropping down on my lap."
+        "Just when I consider taking another peek to see what she's up to, I feel a weight dropping down onto my lap."
 
         hide black
         show ev celloandwine_lap_tease:
@@ -694,7 +694,7 @@ label sh_ch24:
         "As it becomes clear that the song's really over, Hanako lets go of me and leans back a bit so we can both give Lilly a round of applause."
         "Considering the fact she hasn't practiced in years, Lilly did rather well though one still wouldn't mistake her for a professional musician."
         hi "Great performance, Lilly."
-        ha "Well done, Lillly."
+        ha "Well done, Lilly."
         "I notice a slight slur in Hanako's voice, though it's not nearly as pronounced as it was during our last encounter with the bottle."
 
         show ev celloandwine_cello_lookup:
@@ -719,7 +719,7 @@ label sh_ch24:
 
         "As I raise my head to give Hanako a knowing look I can't help but notice the glowing smile on her face as if I just proposed to her."
         "I suddenly realize I've seen that type of triumphant smile before. It's an exaggerated version of the “Hurray, I won!”-smile she shows whenever she wins a game we play together. By her slightly intoxicated logic, this may very well have been a competition…"
-        "She felt Lilly was encroaching on her territory and me allowing her to remain on my lap for a little while longer confirmed to Hanako that she succesfully seduced me away from the “competition”."
+        "She felt Lilly was encroaching on her territory and me allowing her to remain on my lap for a little while longer confirmed to Hanako that she successfully seduced me away from the “competition”."
         "I can hear some ruffling behind Hanako as Lilly readies her instrument for a second song."
 
         play music music_concord_cello_good
@@ -742,7 +742,7 @@ label sh_ch24:
         with None
 
         n "I once again wrap my arms around her, and when we share another kiss, I notice that Hanako has started moving her hips a little."
-        n "{vspace=30}I give her a surprised look. She's taking it slightly farther than I anticipated. There's a playful smile on her face—broader than usual with just a tiny tinge of embarassment. Her face and upper chest look flushed, either from embarassment, intoxication, or arousal. Probably a combination of all three."
+        n "{vspace=30}I give her a surprised look. She's taking it slightly farther than I anticipated. There's a playful smile on her face—broader than usual with just a tiny tinge of embarrassment. Her face and upper chest look flushed, either from embarrassment, intoxication, or arousal. Probably a combination of all three."
         n "I'm not sure whether to feel nervous from or excited by Hanako's bold approach. Her motion, a slow but steady grind, has caused a pleasant feeling to start spreading from my groin to the rest of my body. As a sense of arousal starts building up inside me, I find that, without having noticed it, I've started making movements with my own hips to match hers."
 
         nvl clear
@@ -803,7 +803,7 @@ label sh_ch24:
             ease 0.5 center alpha 1.0
         with charamovefastest
 
-        "When I look back at Hanako, I notice she's frantically trying to button up her blouse, but her nervousness coupled with the effects of the wine she's had make her unable to get even a single button fastened."
+        "When I look back at Hanako, I notice she's frantically trying to button up her blouse, but her nervousness, coupled with the effects of the wine she's had, make her unable to get even a single button fastened."
         "Somewhere in the house I can hear the sound of a door. We have to get out of here or this vacation will meet a very premature end."
         "As if some divine entity has decided we still have business here, a semi-acceptable excuse suddenly finds its way into my brain."
 
@@ -990,7 +990,7 @@ label sh_ch24:
         with None
         pause 0.2
 
-        "This is nothing like those other times. We're feverishly moving our hands across each other's body, almost at random as if we're possessed by an unbearable itch yet we can't find the correct spot to scratch."
+        "This is nothing like those other times. We're feverishly moving our hands across each other's body—almost at random, as if we're possessed by an unbearable itch, yet we can't find the correct spot to scratch."
         "The wine we've had this evening is probably at least partially responsible, but I don't think that's all there is to it anymore."
         "Is it the fact we were stimulating each other earlier while being forced to repress every signal our body was trying to let out? Or is it the fact we haven't done it in weeks and we're both dying to change that?"
 
@@ -1006,7 +1006,7 @@ label sh_ch24:
 
         with vpunch
 
-        "However, in the next moment, my leg gets stuck, I lose my balance, and I nearly fall backwards. The only reason we remain standing is because Hanako manages to brace herself in time."
+        "However, in the next moment, my leg gets stuck, I lose my balance, and I nearly fall backwards. The only reason we remain standing is due to Hanako managing to brace herself in time."
         "That was close. I could have hit my head against the nearby dresser and broken my neck. What a pathetic way to go that'd be."
 
         hide black
@@ -1055,7 +1055,7 @@ label sh_ch24:
             truecenter zoom 1.02
         with dissolve
 
-        "Hanako gets onto our bed, crawls a little farther onto it, and then starts wiggling her feet in an attempt to get rid of her pants, only succesfully managing to free one of her legs. I nearly feel my heart stop at what I see before me."
+        "Hanako gets onto our bed, crawls a little farther onto it, and then starts wiggling her feet in an attempt to get rid of her pants, only successfully managing to free one of her legs. I nearly feel my heart stop at what I see before me."
         "The sight of a thoroughly exposed Hanako, on all fours and completely naked—save for her socks and the pants and panties around her ankle—is a temptation I can't resist. I get on my knees on the bed behind her and carefully, yet firmly take hold of her hips."
         hi "Hanako… c-can I…?"
         "The brief nod that follows is all I need. I position myself, put the tip of my member against her entrance and then push myself forward and into her."
@@ -1132,7 +1132,7 @@ label sh_ch24:
             repeat
         with None
 
-        "She doesn't react immediately, and for a second I believe she's not going for it. Then she furiously starts rubbing and I firmly grab hold of her buttocks with both hands and start thrusting again."
+        "She doesn't react immediately, and for a second, I believe she's not going for it. Then she furiously starts rubbing, and I firmly grab hold of her buttocks with both hands and start thrusting again."
 
         show ev tipsyfun_doggystyle at truecenter:
             pos (960, 540) zoom 0.52
@@ -1147,7 +1147,7 @@ label sh_ch24:
         with None
 
         "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips…"
-        "The sound of our heavy breathing, even the sound of my body slapping against hers (which we usually find embarassing) all combine to push us towards our rapidly approaching climax."
+        "The sound of our heavy breathing, even the sound of my body slapping against hers, which we usually find embarassing, all combine to push us towards our rapidly approaching climax."
 
         show ev tipsyfun_doggystyle_closed:
             ease 0.3 xpos 1000
@@ -1163,7 +1163,7 @@ label sh_ch24:
 
         pause 0.3
 
-        "Shaking the last few shreds of embarassment from my mind, I give in to lust and give us the final push towards the inevitable."
+        "Shaking the last few shreds of embarrassment from my mind, I give in to lust and give us the final push towards the inevitable."
 
         play sound sfx_impact
 
@@ -1188,7 +1188,7 @@ label sh_ch24:
         pause 0.5
         with vpunch
 
-        "I'm already too caught up in the moment to get back into position and simply keep thrusting for as long as the waves of extacy are coursing through my body."
+        "I'm already too caught up in the moment to get back into position and simply keep thrusting for as long as the waves of ecstacy are coursing through my body."
 
         show ev:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
