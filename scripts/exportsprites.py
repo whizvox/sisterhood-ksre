@@ -335,30 +335,37 @@ hiroyuki = [
     ("Sprites/Hiroyuki/THINKRAISED", "thinkraised"),
 ]
 
+miyagi = [
+    ("Sprites/Miyagi/Original/M.Miyagi Neutral", "basic_neutral"),
+    ("Sprites/Miyagi/Original/M.Miyagi Neutral-Smoke", "smoke_neutral"),
+    ("Sprites/Miyagi/Original/M.Miyagi Resigned", "basic_resigned"),
+    ("Sprites/Miyagi/Original/M.Miyagi Resigned-Smoke", "smoke_resigned"),
+    ("Sprites/Miyagi/Original/M.Miyagi Smile", "basic_smile"),
+]
+
 
 def main(args: dict):
     sishoodutil.update_paths(args)
     replace: list[str] = []
 
-    for arg in sys.argv:
-        if arg.startswith("--replace="):
-            chars = arg[10:].lower()
-            if chars == "all":
-                replace.extend(
-                    [
-                        "hisao",
-                        "takawa",
-                        "naomi",
-                        "natsume",
-                        "hanako",
-                        "jun",
-                        "nakamura",
-                        "karla",
-                        "hiroyuki",
-                    ]
-                )
-            else:
-                replace.extend(chars.split(","))
+    for char in args["replace"]:
+        if char == "all":
+            replace.extend(
+                [
+                    "hisao",
+                    "takawa",
+                    "naomi",
+                    "natsume",
+                    "hanako",
+                    "jun",
+                    "nakamura",
+                    "karla",
+                    "hiroyuki",
+                    "miyagi",
+                ]
+            )
+        else:
+            replace.append(char)
 
     replace_hisao = "hisao" in replace
     replace_takawa = "takawa" in replace
@@ -369,6 +376,7 @@ def main(args: dict):
     replace_nakamura = "nakamura" in replace
     replace_karla = "karla" in replace
     replace_hiroyuki = "hiroyuki" in replace
+    replace_miyagi = "miyagi" in replace
 
     for entry in hisao:
         if "Nak" not in entry[0]:
@@ -520,8 +528,25 @@ def main(args: dict):
             target_height=1080,
         )
 
+    for entry in miyagi:
+        crop_and_resize_image(
+            entry[0],
+            f"miyagi/miyagi_{entry[1]}",
+            replace=replace_miyagi,
+            crop=(0, 0, 1357, 2079),
+            target_height=1020,
+        )
+        crop_and_resize_image(
+            entry[0],
+            f"miyagi/close/miyagi_{entry[1]}_close",
+            replace=replace_miyagi,
+            crop=(0, 129, 1357, 1668),
+            target_height=1080,
+        )
+
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="Sisterhood sprite generation tool")
     sishoodutil.add_arguments(parser, refdir=True)
+    parser.add_argument("-p", "--replace", action="append", default=[])
     main(vars(parser.parse_args(sys.argv[1:])))
