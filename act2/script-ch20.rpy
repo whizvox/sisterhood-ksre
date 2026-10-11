@@ -48,7 +48,7 @@ label sh_ch20:
         with charaexit
 
         "This rather unusual practice drill was an idea of Mister Nakamura who thought that, instead of structured rehearsals, I'd be better off practicing at random intervals so I could learn how to act when taken by surprise."
-        "So we agreed that every time he set off his ringtone, I'd run up to one of the dummies and go through the motions until they become a second nature."
+        "So we agreed that every time he set off his ringtone, I'd run up to one of the dummies and go through the motions until they become second nature."
         "Back at my desk, I pick up my pen again and hurry to finish the remaining four questions on my answer sheet."
 
         show nakamura smile
