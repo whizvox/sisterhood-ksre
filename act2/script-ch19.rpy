@@ -24,20 +24,59 @@ label sh_ch19:
         "The first thing that draws my attention is the fact that a handful of chairs are positioned in a row near a flip chart, a beamer and several large bags that look remarkably like body bags."
         "The second thing is that there are four people here already. I can see two men I don't recognize talking to each other near the window and two teachers, a fit-looking man whom I recall being a PE teacher and a woman with short hair, sitting on the chairs near the beamer."
         "I tiptoe into the room, trying hard not to attract attention, and approach the chair at the far right end of the row."
+
+        show miyagi basic_neutral at tworight
+        with charaenter
+
         "Before I can sit down, the short-haired woman—whom I recognize as Lilly's homeroom teacher and our English teacher—notices me, frowns, and walks up to me."
-        "Miyagi" "Good morning Ikezawa. Do you have business with someone here?"
+
+        show miyagi basic_neutral at center
+        with charamove
+
+        miy "Good morning Ikezawa. Do you have business with anyone here?"
         "I softly shake my head at her."
         ha "Is t-there a f-f-first aid t-training here t-today?"
-        "Miyagi" "As a matter of fact there is. Why?"
+        miy "As a matter of fact there is. Why?"
         ha "I'm p-participating t-too."
+
+        show miyagi basic_resigned
+        with chchange
+
         "The teacher looks puzzled."
-        "Miyagi" "Are you certain about that? These courses are for staff members only."
+        miy "Are you certain about that? These courses are for staff members only."
         "I meekly nod."
         ha "M-Miss Takawa s-said she arranged it."
-        "The woman frowns again, then concludes this probably isn't her business to worry about, sits down again, and resumes her conversation with her colleague."
+
+        show miyagi basic_resigned
+        with chchange
+        show miyagi basic_neutral
+        with chchange
+
+        show miyagi basic_neutral at tworight
+        with charamove
+        hide miyagi
+        with charaexit
+
+        "The teacher frowns again, then concludes this probably isn't her business to worry about, sits down again, and resumes her conversation with her colleague."
         "I sit down, take a library book out of my bag, and try to read a few pages in order to calm my nerves."
         "Two more people enter. One is another person I don't recognize, but who is enthusiastically greeted by the two men who were talking near the window."
+
+        show nomiya smile at left:
+            alpha 0.0
+        with None
+
+        show nomiya smile at twoleft:
+            ease 1.0 alpha 1.0
+        with charamove
+
+        show nomiya veryhappy:
+            alpha 1.0
+        with chchange
+
         "The other is somewhat overweight, has silver-gray hair, and wears a colorful tie. He sits down on the chair next to me and greets me with a grin that makes me flinch."
+
+        hide nomiya
+        with charaexit
 
         show nakamura neutral
         with charaenter
@@ -47,7 +86,7 @@ label sh_ch19:
         show nakamura bow
         with chchange
 
-        "He gets to our corner of the classroom, puts the bag and backpack on the floor, checks his watch and then walks up to the door and closes it. He walks over to us again, clears his throat and then makes a polite bow which we return."
+        "He gets to our corner of the classroom, puts the bag and backpack on the floor, checks his watch, and then walks up to the door and closes it. He walks over to us again, clears his throat and then makes a polite bow which we return."
 
         show nakamura speak
         with chchange
@@ -71,16 +110,41 @@ label sh_ch19:
         "Hamasaki" "In attendance."
         "Those names don't ring a bell. They're probably administrative staff."
         nak "Ikezawa, filling in for Takawa."
-        "I quietly raise my left hand to indicate my presence. As I do so, I can see Lilly's homeroom teacher giving me a nod and a smile from the corner of my eye."
+
+        "I quietly raise my left hand to indicate my presence."
+
+        show miyagi basic_smile at right
+        with charaenter
+
+        "As I do so, I can see Lilly's homeroom teacher giving me a nod and a smile from the corner of my eye."
+
+        hide miyagi
+        with charaexit
+
         nak "Inaba."
         "Inaba" "Yes."
         "Somebody else working at the administration? He seemed to be friends with the other two I didn't recognize."
         nak "Miyagi."
-        "Miyagi" "Attending."
+
+        show miyagi basic_neutral at right
+        with charaenter
+
+        miy "Attending."
+
+        hide miyagi
+        with charaexit
+
         nak "Nishihama."
         "Nishihama" "Yes."
         nak "Nomiya."
+
+        show nomiya veryhappy at left
+        with charaenter
+
         no "Good to see you again."
+
+        hide nomiya
+        with charaexit
 
         show nakamura instruct
         with chchange
@@ -114,14 +178,24 @@ label sh_ch19:
         with charaexit
 
         "We're getting to a part that I really hate: making groups. Ever since elementary school, this has meant that other people make groups, and I'm the leftover that people reluctantly take if it suits them."
-        "I see the three people who greeted each other at the beginning of class bunching together, meaning the trio's already a done deal. Next, I see the PE teacher who was talking to Miss Miyagi earlier give her a playful nudge that she responds to with a quick nod."
+        "I see the three people who greeted each other at the beginning of class bunching together, meaning the trio's already a done deal."
 
-        show nomiya talk at twoleft
-        with chchange
+        show miyagi basic_smile at right
+        with charaenter
+
+        "Next, I see the PE teacher who was talking to Miss Miyagi earlier give her a playful nudge that she responds to with a quick nod."
+
+        hide miyagi
+        with charaexit
+
+        show nomiya talk at twoleft:
+            ypos 1.02
+        with charaenter
 
         "In less than five seconds, the groups seem to have been determined already. And my practice partner, the flamboyant art teacher, approaches me with a smile that feels part jolly and part predatory to me."
 
-        show nomiya at center
+        show nomiya at center:
+            ypos 1.02
         with charamove
 
         no "It seems you're stuck with me for the upcoming days. If you have any questions, just ask. I've followed this training several times in the past, so none of these things are new to me. I'm sure we'll work well with one another."
@@ -131,6 +205,10 @@ label sh_ch19:
         with chchange
 
         no "So, you're one of Takawa's wards, aren't you? Is this some sort of alternative therapy she's experimenting with?"
+
+        show nomiya laugh
+        with vpunch
+
         "He laughs just a little bit too loudly at his own remark, but I find myself cringing."
         "Of course, everyone in the room who knows Miss Yumi's occupation probably figured out my relationship with her in an instant, but I'm not particularly proud of the fact that I need therapy sessions, and I don't like it when other people bring them up."
 
@@ -237,32 +315,32 @@ label sh_ch19:
         show yuuko panic_up
         with chchange
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… {nw}" (what_suffix="")
+        yu "{slowtype=35}My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… {nw}{/slowtype}" (what_suffix="")
 
         show yuuko neurotic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… {fast}so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, {nw}" (what_suffix="")
+        yu "{slowtype=35}My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… {fast}so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, {nw}{/slowtype}" (what_suffix="")
 
         show yuuko panic_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, {fast}but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {nw}" (what_suffix="")
+        yu "{slowtype=35}My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, {fast}but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {nw}{/slowtype}" (what_suffix="")
 
         show yuuko neurotic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {fast}but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {nw}" (what_suffix="")
+        yu "{slowtype=35}My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, {fast}but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {nw}{/slowtype}" (what_suffix="")
 
         show yuuko cry_up
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {fast}and when we finally found him he told us he just put the keys back in my own pigeonhole, {nw}" (what_suffix="")
+        yu "{slowtype=35}My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there {fast}and when we finally found him he told us he just put the keys back in my own pigeonhole, {nw}{/slowtype}" (what_suffix="")
 
         show yuuko panic_down
         with { "master": Dissolve(0.2) }
 
-        yu "My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeonhole, {fast}so we had to return to the teacher's lounge to retrieve them {nw}" (what_suffix="")
+        yu "{slowtype=35}My replacement at the library this week came to me this morning and said I didn't hand over the keys so she couldn't get the library doors open, but I swore I put them in her pigeonhole… so we went back to the teacher's lounge and she checked her pigeonhole again, but then I realized I accidentally left the keys in the wrong pigeonhole, but fortunately I still remembered which one I left it in, but the person it belonged to wasn't around, so we had to go to the administration office to find him, but when we got there they told us that he went to the cafeteria to have breakfast, so we had to go back there and when we finally found him he told us he just put the keys back in my own pigeonhole, {fast}so we had to return to the teacher's lounge to retrieve them {nw}{/slowtype}" (what_suffix="")
 
         show yuuko cry_up
         with { "master": Dissolve(0.2) }

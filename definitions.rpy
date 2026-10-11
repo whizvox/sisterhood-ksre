@@ -224,6 +224,7 @@ init:
     define hyf = Character("Father", kind=hy)
     define hyd = Character("Dad", kind=hy)
     define dc = Character(_("Doctor"), who_color="#ffffff")
+    define miy = Character(_("Miyagi"), who_color="#9AC1E8")
     define fer = Character(_("Ferguson"), who_color="#ffffff")
 
     # unknown characters
