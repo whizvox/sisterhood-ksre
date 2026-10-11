@@ -567,6 +567,8 @@ label sh_ch19:
         nvl hide dissolve
 
         show naomi bend_laugh
+        show natsume hands_smile
+        show jun cast_smile
         with chchange
 
         na "Hey there, Hanako. All done for today? How was the training? What did you learn?"
@@ -588,7 +590,7 @@ label sh_ch19:
         na "Soooo… Did you guys have to practice mouth-to-mouth breathing? On each other? Did you see any teachers doing it?"
 
         show naomi bend_laugh
-        show natsume basic_neutral
+        show natsume basic_angry
         show jun cast_annoyed
         with chchange
 
@@ -600,6 +602,7 @@ label sh_ch19:
         na "Oh, come on. I thought it was funny."
 
         show jun cast_smile
+        show natsume basic_serious
         with chchange
 
         "Jun turns to me."
@@ -608,6 +611,7 @@ label sh_ch19:
         ha "Y-yes. Practice dummies. We… used them t-to practice CPR, too."
 
         show naomi basic_neutral
+        show natsume basic_neutral
         with chchange
 
         "Naomi, apparently deciding to drop the previous subject, gives a quick nod."
@@ -616,6 +620,7 @@ label sh_ch19:
         ha "W-wasn't the printing supposed to take place later this week?"
 
         show jun cast_serious
+        show natsume basic_serious
         with chchange
 
         na "According to the official schedule, yeah. Practically speaking, waiting that long would have been really stupid."
@@ -627,6 +632,8 @@ label sh_ch19:
         ha "…they're likely to take it along, so they h-have something to read during the trip back home."
 
         show naomi basic_laugh
+        show jun cast_smile
+        show natsume basic_smile
         with chchange
 
         "Naomi smiles, pleased that I picked up on her train of thought."
@@ -646,6 +653,10 @@ label sh_ch19:
         with charachangealways
 
         "As I turn to leave the room, Natsume gets up and hands me four copies of the latest edition—three ordinary ones and one with larger font for visually impaired students."
+
+        show natsume basic_cheerful_close
+        with chchange
+
         nt "While we were out there handing out newspapers, Naomi deliberately skipped the science club. She thought you'd want to be the one to hand them the latest issue."
 
         scene bg school_scienceroom
