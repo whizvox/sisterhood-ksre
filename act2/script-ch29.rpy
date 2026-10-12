@@ -190,26 +190,32 @@ label sh_ch29:
         ha "Ah… O-okay then. But c-can I… w-wash you first?"
         hi "Be my guest."
 
-        scene ev soapopera_hisao1_back
-        with mediumflash
+        if persistent.hdisabled:
+            scene black
+            with Dissolve(1.0)
+        else:
+            scene ev soapopera_hisao1_back
+            with mediumflash
 
         "I put down my stool behind Hisao, sit down, and ready my wash cloth before deciding it might be more fun to proceed without it."
 
         play ambient sfx_shower2 fadein 1.0
 
-        show steam at truecenter, nightfilter:
-            alpha 0.0
-            easein 10.0 alpha 0.6
-        with None
+        if not persistent.hdisabled:
+            show steam at truecenter, nightfilter:
+                alpha 0.0
+                easein 10.0 alpha 0.6
+            with None
 
-        "I unhook the shower head from the nearby wall, turn it on and briefly spray his back and his hair. I then put some liquid soap into my hands, rub them together for a moment, and start soaping his back."
+        "I unhook the shower head from the nearby wall, turn it on, and briefly spray his back and his hair. I then put some liquid soap into my hands, rub them together for a moment, and start soaping his back."
 
         stop ambient fadeout 1.0
 
-        show ev soapopera_hisao1_back_large:
-            anchor (0.5, 0.5) pos (0.55, 0.4)
-            ease 7.0 ypos 0.9
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            show ev soapopera_hisao1_back_large:
+                anchor (0.5, 0.5) pos (0.55, 0.4)
+                ease 7.0 ypos 0.9
+            with { "master": charachangeev }
 
         "I tenderly stroke his shoulders and upper back, occasionally pausing for a second to apply some more soap to my hands."
         "He exhales sharply as I move my hands down and playfully stroke his sides and armpits with my fingers."
@@ -221,18 +227,20 @@ label sh_ch29:
         hi "Huh?"
         "He seems puzzled for a moment, but then complies and carefully starts leaning backwards."
 
-        show ev soapopera_hisao1_lay at center
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev soapopera_hisao1_lay at center
+            with charachangeev
 
         "I use my hands to guide him until he's leaning against me with the back of his head resting against my chest. We both let out a slightly nervous laugh."
         hi "Is this really okay?"
         ha "J-just relax."
         "It's a bit of an odd feeling to be in this position, but it's also rather intimate."
 
-        show ev soapopera_hisao1_lay_large:
-            anchor (0.5, 0.5) pos (0.3, 0.4)
-            ease 8.0 ypos 0.9
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            show ev soapopera_hisao1_lay_large:
+                anchor (0.5, 0.5) pos (0.3, 0.4)
+                ease 8.0 ypos 0.9
+            with { "master": charachangeev }
 
         "I carefully get some shampoo from the bottle nearby, apply it to my hands, and then start running my hands through his hair, gently massaging his scalp in the process."
         "We stay like this for several minutes, neither of us saying a word the whole time, but the silence doesn't feel uncomfortable. I'm just happy caressing him like this, and he seems content to let me."
@@ -257,17 +265,22 @@ label sh_ch29:
 
         hi "Hanako, could you turn around and face the other way?"
 
-        scene ev soapopera_hanako1_back
-        show steam at truecenter, nightfilter:
-            alpha 0.6
-        with charachangeev
+        if persistent.hdisabled:
+            scene black
+            with charachangeev
+        else:
+            scene ev soapopera_hanako1_back
+            show steam at truecenter, nightfilter:
+                alpha 0.6
+            with charachangeev
 
         "I do as he asks, separate my long hair into two halves and drape it over both shoulders, exposing my back."
         "With my hair no longer partially covering the scars on my back I feel even more exposed than before, but my anxiety slowly starts ebbing away when Hisao sits down behind me and starts rubbing soap on my back and shoulders."
         "My upper back hasn't been very sensitive since my accident, but his touch nevertheless feels good in the places where I can feel the sensation."
 
-        show black
-        with shuteye
+        if not persistent.hdisabled:
+            show black
+            with shuteye
 
         "I close my eyes when, after finishing my back and shoulders, he gently pulls me backwards until I'm leaning against his chest."
 
@@ -286,14 +299,15 @@ label sh_ch29:
         ha "Shall we… s-split the workload?"
         hi "Split?"
 
-        hide black
-        show ev soapopera_hanako1_back_large:
-            anchor (0.5, 0.5) pos (0.5, 0.6)
-            ease 2.0 ypos 0.85
-        with openeye
+        if not persistent.hdisabled:
+            hide black
+            show ev soapopera_hanako1_back_large:
+                anchor (0.5, 0.5) pos (0.5, 0.6)
+                ease 2.0 ypos 0.85
+            with openeye
 
-        show ev soapopera_hanako1_hair_large
-        with charachangeev
+            show ev soapopera_hanako1_hair_large
+            with charachangeev
 
         "I take the half of my hair that's draped over my right shoulder and swing it back. He carefully takes the ends of it in his hand."
         hi "I guess I'll do this part then."
@@ -302,72 +316,85 @@ label sh_ch29:
         "I can't help but smile. I have to admit that his sudden curiosity about my hair is more than a little endearing."
         hi "I'll just watch and do what you do then."
         "I take the ends of my hair in my hands and start massaging the shampoo into them, carefully working my way up from the bottom."
-        "I've done this often enough to be able to do it in my sleep, but this time I deliberately slow down a bit so Hisao can see how it's done."
+        "I've done this often enough to be able to do it in my sleep, but this time, I deliberately slow down a bit so Hisao can see how it's done."
         "If he messes this up, I'll have two distinct halves of hair tomorrow. That'd be a real problem."
         hi "Man, long hair can be a real chore to maintain."
         ha "You get b-better at it after a while."
         hi "..."
         ha "..."
 
-        show soapopera_hisao talk behind steam at soapopera_talk
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev:
+                ypos 0.85
+            with None
+
+            show soapopera_hisao talk behind steam at soapopera_talk
+            with charachangeev
 
         hi "Hanako?"
         ha "Yes?"
         hi "I was wondering… Have you always had your hair this long even before your… accident?"
 
-        show soapopera_hanako talk behind steam at soapopera_talk
-        hide soapopera_hisao
-        with charachangeev
+        if not persistent.hdisabled:
+            show soapopera_hanako talk behind steam at soapopera_talk
+            hide soapopera_hisao
+            with charachangeev
 
         ha "It… used to be just a little bit shorter when I was little, but I had my hair longer than shoulder-length even as a child. My…"
         "I hesitate for a moment, not sure whether to smile or feel sad at the resurfacing memory."
         ha "My m-mother r-really liked my hair. She h-had hair j-just like mine. We'd always bathe together, and she'd take her time washing it and telling me how b-beautiful she t-thought it w-was."
 
-        show soapopera_hisao talk behind steam at soapopera_talk
-        with charachangeev
+        if not persistent.hdisabled:
+            show soapopera_hisao talk behind steam at soapopera_talk
+            with charachangeev
 
         hi "I think it's very beautiful as well. It's pretty eye-catching too."
         ha "R-really?"
         hi "Yeah. That day when Mutou introduced me to the class, you were the first student in class I took notice of. Your hair was probably the reason why."
 
-        hide soapopera_hisao
-        hide soapopera_hanako
-        with charachangeev
+        if not persistent.hdisabled:
+            hide soapopera_hisao
+            hide soapopera_hanako
+            with charachangeev
 
         "I'm not sure how to feel about that. I don't really like any part of me to be considered eye-catching, because trying to avoid standing out has always been part of my survival strategy."
         "But to hear Hisao say that I was the first person he took notice of in class and to hear him say that he considers my hair beautiful nevertheless makes me very happy."
         ha "Umm… T-thanks."
         "Truth be told, I really like my hair as well. Covering myself up with it makes me feel safe, as if I have my own personal protective cloak. Well… hardly completely safe, but just a little bit safer."
 
-        show soapopera_hisao talk behind steam at soapopera_talk
-        with charachangeev
+        if not persistent.hdisabled:
+            show soapopera_hisao talk behind steam at soapopera_talk
+            with charachangeev
 
         hi "Hanako?"
         ha "Yes?"
         hi "This may be a weird question, but… About your hair, do you… err…?"
         "I suppress an amused giggle at his awkwardness. I think I have a pretty clear idea of what he wants to ask."
 
-        show soapopera_hanako talk behind steam at soapopera_talk
-        hide soapopera_hisao
-        with charachangeev
+        if not persistent.hdisabled:
+            show soapopera_hanako talk behind steam at soapopera_talk
+            hide soapopera_hisao
+            with charachangeev
 
         ha "In the o-orphanage, one of the staff would cut my hair, so I w-wouldn't need to go to a barber. Eventually, I l-learned how to cut it myself."
         hi "Wow, really?"
         ha "Yes."
 
-        hide soapopera_hanako
-        with charachangeev
+        if not persistent.hdisabled:
+            hide soapopera_hanako
+            with charachangeev
 
         "What I don't say is that it was out of necessity. Going to the barber and exposing my facial scarring would be one of those things I could lose sleep over for days in advance."
 
-        show soapopera_hisao talk behind steam at soapopera_talk
-        with charachangeev
+        if not persistent.hdisabled:
+            show soapopera_hisao talk behind steam at soapopera_talk
+            with charachangeev
 
         hi "You're a girl of many talents, Hanako."
 
-        show black
-        with dissolve
+        if not persistent.hdisabled:
+            show black
+            with dissolve
 
         "He drapes the hair he was tending to back over my right shoulder, embraces me from behind, and kisses me on the cheek. Then he just holds me for a little while."
 
@@ -375,10 +402,11 @@ label sh_ch29:
 
         "Eventually, after determining that the conditioner must have had enough time to do its thing, I take the shower head and use it to rinse the shampoo away."
 
-        hide black
-        show ev soapopera_hanako1_back_large
-        hide soapopera_hisao
-        with charachangeev
+        if not persistent.hdisabled:
+            hide black
+            show ev soapopera_hanako1_back_large
+            hide soapopera_hisao
+            with charachangeev
 
         "I guess this is the point where we'll soap up the rest of our bodies. Or maybe…"
 
@@ -396,17 +424,19 @@ label sh_ch29:
 
         hi "Can I… soap your front as well?"
 
-        show soapopera_hanako talk at soapopera_talk behind steam
-        with charachangeev
+        if not persistent.hdisabled:
+            show soapopera_hanako talk at soapopera_talk behind steam
+            with charachangeev
 
         ha "M-my f-front?"
         hi "I… liked washing your back."
         ha "…If… If I can w-wash y-your f-front as well."
         hi "Sure."
 
-        show ev soapopera_hisao2_hug at center
-        hide soapopera_hanako
-        with Dissolve(1.0)
+        if not persistent.hdisabled:
+            show ev soapopera_hisao2_hug at center
+            hide soapopera_hanako
+            with Dissolve(1.0)
 
         "I think I can see the traces of an awkward smile on his face as he sits in front of me, using his hands to cover himself in order to prevent things from being too awkward."
         "I retrieve the soap, put some of it in my hands, and start running my hands up and down his legs and feet, then move behind him and continue on his arms."
@@ -416,22 +446,25 @@ label sh_ch29:
         "Keeping him occupied this way, I reach down, pour some more liquid soap into my cupped hand, and then start on his chest, paying special attention to the scar in the middle."
         "I feel his breathing speed up as my hands go lower and lower, rubbing his thighs and abdomen before stopping at the place his own hands are covering."
 
-        show ev soapopera_hisao2_hug_large:
-            crop (931, 96, 1920, 1080)
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev soapopera_hisao2_hug_large:
+                crop (931, 96, 1920, 1080)
+            with charachangeev
 
         "I break off our kiss and exchange an awkward look with him. I wonder if this is one spot he wants to do himself."
         ha "Uh, Hisao… D-do you… uh…?"
         "My boyfriend lets out a nervous laugh and then moves his hands away."
 
-        show ev soapopera_hisao2_erection_large
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev soapopera_hisao2_erection_large
+            with charachangeev
 
         "My eyes grow large, and I barely manage to suppress an uncomfortable giggle."
 
-        show ev:
-            ease 5.0 crop (361, 96, 3060, 1721)
-        with None
+        if not persistent.hdisabled:
+            show ev:
+                ease 5.0 crop (361, 96, 3060, 1721)
+            with None
 
         "The sights and sensations of our act have left his manhood completely erect and my mere glance is enough to make it quiver a bit."
         hi "I guess this was kind of inevitable…"
@@ -439,61 +472,66 @@ label sh_ch29:
         hi "Hanako, could you… uh… help me with this before we get into the bath?"
         "I blush heavily, but nevertheless find myself nodding."
 
-        scene ev soapopera_hisao2_handy_large:
-            zoom 0.5
-        show steam at truecenter, nightfilter:
-            alpha 0.6
-        with charachangeev
+        if not persistent.hdisabled:
+            scene ev soapopera_hisao2_handy_large:
+                zoom 0.5
+            show steam at truecenter, nightfilter:
+                alpha 0.6
+            with charachangeev
 
         "I apply some extra liquid soap to my hands and then I take hold of him, wrapping my other arm around him from behind."
         "I start kissing him once more, moving my hand as I do so. I consider slowly building things up, but by the way he's thrusting his hips I don't think he's in need of a warm-up at this point."
         "I tighten my grip a bit and move my hand up and down his length in tandem with his thrusts. I think I'm getting pretty excited myself from the reactions my caresses are drawing out of him."
 
-        show ev:
-            zoom 1.0 crop (1033, 88, 1920, 1080)
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            show ev:
+                zoom 1.0 crop (1033, 88, 1920, 1080)
+            with { "master": charachangeev }
 
         "Hisao probably had a point just now. When a girl and a boy who haven't been together for all that long get together in a bathroom, stuff like this is probably bound to happen."
         "I'm actually a little bit surprised that he didn't suggest doing it with me right here and now."
         "Maybe he was thinking the same thing I was: the only options we'd have here would be doing it on the bathroom floor or in the bath itself."
         "The first option probably would have been rather uncomfortable and the second option would have been a really bad idea."
 
-        show soapopera_hisao climax behind steam:
-            crop (1033, 88, 1920, 1080)
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            show soapopera_hisao climax behind steam:
+                crop (1033, 88, 1920, 1080)
+            with { "master": charachangeev }
 
         "I keep going, kissing his neck and cheek, using one hand to pleasure him and letting the other one roam across his chest and tummy until I can tell that he's nearing his limit."
 
-        hide soapopera_hisao
-        show ev soapopera_hisao2_climax_large at truecenter:
-            crop None anchor (1993, 628) transform_anchor True
-            ease 10.0 zoom 0.9
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            hide soapopera_hisao
+            show ev soapopera_hisao2_climax_large at truecenter:
+                crop None anchor (1993, 628) transform_anchor True
+                ease 10.0 zoom 0.9
+            with { "master": charachangeev }
 
         "Deciding to end things with a bang, I press myself against him even more tightly and start using both hands while rubbing myself against his back."
         "Since he's still covered with soap, it goes really smoothly, and I have to admit it feels pretty good to me too."
         "Both his breath and his movements grow faster and faster, and I enthusiastically adjust the speed of my own movement, pushing my hips forward in order to add a little bit more force to his own thrusts."
         "Suddenly, he exhales sharply and makes several jerking motions with his hips."
 
-        window auto hide dissolve
+        if not persistent.hdisabled:
+            window auto hide dissolve
 
-        show ev:
-            anchor (0.5, 0.45) zoom 0.65
-            ease 0.5 zoom 0.6
-            2.0
-            ease 5.0 blur 40
-        with charachangeev
+            show ev:
+                anchor (0.5, 0.45) zoom 0.65
+                ease 0.5 zoom 0.6
+                2.0
+                ease 5.0 blur 40
+            with charachangeev
 
-        pause 0.5
-        with vpunch
-        pause 0.5
-        with vpunch
-        pause 0.5
-        with vpunch
-        pause 0.5
+            pause 0.5
+            with vpunch
+            pause 0.5
+            with vpunch
+            pause 0.5
+            with vpunch
+            pause 0.5
 
-        scene black
-        with Fade(2.0, 1.0, 1.5, color="#FFF")
+            scene black
+            with Fade(2.0, 1.0, 1.5, color="#FFF")
 
         "I wait until his climax has subsided and then hold him in a tender embrace until I can feel him relax."
 
@@ -510,11 +548,12 @@ label sh_ch29:
         "I guess it's my turn next."
         "I'm not really sure what to do now, so I simply remain seated and wait until Hisao comes over to me, sits down behind me, and wraps his arms around me."
 
-        scene ev soapopera_hanako2_caress_large:
-            zoom 0.5
-        show steam at truecenter, nightfilter:
-            alpha 0.6
-        with Fade(1.0, 0.0, 1.0, color="#27265a")
+        if not persistent.hdisabled:
+            scene ev soapopera_hanako2_caress_large:
+                zoom 0.5
+            show steam at truecenter, nightfilter:
+                alpha 0.6
+            with Fade(1.0, 0.0, 1.0, color="#27265a")
 
         hi "You can lean into me a bit, Hanako."
         "I do so and try to relax as much as possible as he takes the bottle of soap, pours some into his hands, and starts rubbing it onto my arms and shoulders."
@@ -523,9 +562,10 @@ label sh_ch29:
         "Feeling a little bit flustered, I open my legs a bit and let him wash them though I quickly cover up my intimate area with one of my hands when he approaches my inner thighs."
         "He moves on to my tummy and sides without breaking stride, but pauses for a moment when he gets near my chest. Then he gently tucks my chin up with his finger."
 
-        show ev:
-            align (0.5, 0.21) zoom 1.0
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev:
+                align (0.5, 0.21) zoom 1.0
+            with charachangeev
 
         ha "Hisao…"
         "My voice is cut off when a shower of kisses descends on my left cheek and neckline. I'm so distracted by this that I barely notice how his hands are massaging my breasts, covering them with soap."
@@ -539,8 +579,9 @@ label sh_ch29:
         "Soap I'd rather not accidentally have forced inside me."
         hi "Oh… right."
 
-        show black
-        with charachangeev
+        if not persistent.hdisabled:
+            show black
+            with charachangeev
 
         play ambient sfx_shower2 fadein 1.0
 
@@ -550,8 +591,9 @@ label sh_ch29:
 
         "Then he sits down behind me again and hugs me once more, softly kneading my breasts for a second time."
 
-        hide black
-        with charachangeev
+        if not persistent.hdisabled:
+            hide black
+            with charachangeev
 
         "Now his hands are covered in soap again."
         ha "Uh… Hisao?"
@@ -561,8 +603,9 @@ label sh_ch29:
 
         play ambient sfx_shower2 fadein 1.0
 
-        show ev soapopera_hanako2_spray_large
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev soapopera_hanako2_spray_large
+            with charachangeev
 
         "Still fondling one of my breasts with one hand, he picks up the showerhead and aims the water spray at my chest."
         "I gasp for a moment when one of the jets of warm water hits my nipple for a moment. Looks like I'm still pretty sensitive from his touch earlier."
@@ -571,26 +614,29 @@ label sh_ch29:
         "His only response is another quick peck on my cheek."
         "Just when I'm about to ask him what he meant with that earlier comment, his other hand moves downward as well and the warm sensation that was focused on my chest earlier is now emanating from between my legs."
 
-        show ev at truecenter:
-            align (0.5, 0.45) zoom 0.7
-            ease 0.3 zoom 0.72
-            ease 0.2 zoom 0.7
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev at truecenter:
+                align (0.5, 0.45) zoom 0.7
+                ease 0.3 zoom 0.72
+                ease 0.2 zoom 0.7
+            with charachangeev
 
         "My body jumps a bit as my most intimate place is suddenly stimulated by several narrow streams of water at the same time."
         ha "H-hey!"
         "This is… a pretty new sensation. It's different from when he uses his fingers. The fact that the stimulation is continuous is… not bad at all."
 
-        show ev:
-            align (0.5, 0.21) zoom 1.0
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            show ev:
+                align (0.5, 0.21) zoom 1.0
+            with { "master": charachangeev }
 
         "Hisao's other hand moves up again and goes back to fondling my stomach, chest and collarbone. As I endure this strange new experience, I try to focus on the feeling in my chest since it's the more familiar one…"
         ha "Mmmm…"
 
-        show ev:
-            align (0.5, 0.45) zoom 0.7
-        with { "master": charachangeev }
+        if not persistent.hdisabled:
+            show ev:
+                align (0.5, 0.45) zoom 0.7
+            with { "master": charachangeev }
 
         "…which becomes harder and harder as the sensation from the water continues and starts feeling better and better, and I start getting more and more aroused because of it."
         "And then he turns the switch on the side, disabling the smaller jets and turning on the stronger stream from the holes in the center, which intensifies the sensation even more."
@@ -604,27 +650,30 @@ label sh_ch29:
         ha "Mmmmmmm!"
         "I squeeze my eyes shut and grit my teeth in an attempt to brace myself."
 
-        show ev soapopera_hanako2_climax at truecenter:
-            zoom 1.07
-            ease 0.5 zoom 1.02
-        with charachangeev
+        if not persistent.hdisabled:
+            show ev soapopera_hanako2_climax at truecenter:
+                zoom 1.07
+                ease 0.5 zoom 1.02
+            with charachangeev
 
-        with vpunch
+            with vpunch
 
-        pause 0.5
+            pause 0.5
 
-        with vpunch
+            with vpunch
 
         "And then the climax hits me; several jolts of intense pleasure that cause my body to shudder uncontrollably. It's like a white light flashes brightly in the back of my head."
 
-        with vpunch
+        if not persistent.hdisabled:
+            with vpunch
 
         "I let out a whimper of ecstasy before I can control myself."
 
         stop music fadeout 5.0
 
-        scene black
-        with Fade(2.0, 1.0, 1.5, color="#FFF")
+        if not persistent.hdisabled:
+            scene black
+            with Fade(2.0, 1.0, 1.5, color="#FFF")
 
         "After the last shock has passed through me, I instinctively push the showerhead away and let out a long, deep sigh."
 
@@ -1547,7 +1596,7 @@ label sh_ch29:
             ease 0.5 zoom 0.5
         with charachangeev
 
-        "My body jumps a little when I feel the wetness of his mouth again, but this time it's merely a kiss on the inside of my right thigh, followed by one on my left."
+        "My body jumps a little when I feel the wetness of his mouth again, but this time, it's merely a kiss on the inside of my right thigh, followed by one on my left."
         "He gently works his way to the center again, and I hold my breath when he reaches my lady parts once more, but this time, the intense pressure stays away and what comes in its place is a gentle lapping."
 
         show ev:
