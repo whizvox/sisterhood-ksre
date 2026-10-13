@@ -693,7 +693,8 @@ label sh_ch20:
 
         nvl hide dissolve
 
-        show ev pillowtalk_comfort
+        show ev pillowtalk_comfort:
+            zoom 1.0
         show pillowtalkhisao upsmile
         with Dissolve(1.0)
 
