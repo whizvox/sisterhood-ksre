@@ -1,26 +1,31 @@
-from PIL import ImageFilter, Image
-from pathlib import Path
-import math
 import argparse
-import sys
+import math
 import random
 import string
 import subprocess
-from sishoodutil import add_arguments, update_paths, relative_to_sh_path, resolve_path
+import sys
+from pathlib import Path
+
+from PIL import Image, ImageFilter
+from sishoodutil import (
+    add_arguments,
+    resolve_path,
+    update_paths,
+)
 
 waifu2x_path: Path = Path(".")
 
-def random_string(length: int) -> str:
-    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
 
-# def resolve_path(plainpath: str) -> Path:
-#     # paths that start with a tilde (~) should be in reference to the katawa shoujo game directory
-#     if len(plainpath) > 0 and plainpath[0] == "~":
-#         return Path(ks_path, "game", plainpath[1:])
-#     # otherwise, by default, paths will be in reference to the sisterhood directory
-#     else:
-#         #return Path(sh_path, plainpath)
-#         return resolve_path(plainpath)
+def random_string(length: int) -> str:
+    return "".join(
+        random.choices(string.ascii_uppercase + string.digits, k=length)
+    )
+
+
+class SisterhoodException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+
 
 class ImageTransformation:
     def __init__(self, name: str):
@@ -28,6 +33,7 @@ class ImageTransformation:
 
     def transform(self, img: Image.Image) -> Image.Image:
         raise RuntimeError("Not implemented: " + self.name)
+
 
 class ResizeTransformation(ImageTransformation):
     def __init__(self, targetwidth: int = -1, targetheight: int = -1):
@@ -50,8 +56,7 @@ class ResizeTransformation(ImageTransformation):
             fheight = targetheight
             fwidth = math.ceil(fwidth * (targetheight / img.height))
         if fwidth != img.width or fheight != img.height:
-            # idk why pylance has a problem with this line
-            return img.resize(size=(fwidth, fheight)) # type: ignore
+            return img.resize(size=(fwidth, fheight))
         return img
 
 
@@ -60,7 +65,9 @@ class BlurTransformation(ImageTransformation):
         super().__init__("blur")
         self.radius = radius
         if algorithm.lower() not in ("gaussian", "box", "default"):
-            raise Exception("Not a valid blur algorithm: " + algorithm)
+            raise SisterhoodException(
+                "Not a valid blur algorithm: " + algorithm
+            )
         self.algorithm = algorithm.lower()
 
     def transform(self, img: Image.Image) -> Image.Image:
@@ -86,7 +93,7 @@ class CropTransformation(ImageTransformation):
 
 
 class ConvertTransformation(ImageTransformation):
-    def __init__(self, mode: str="RGB"):
+    def __init__(self, mode: str = "RGB"):
         super().__init__("convert")
         self.mode = mode
 
@@ -114,8 +121,11 @@ class CheckSizeTransformation(ImageTransformation):
         if not check:
             minwidthstr = "any" if minwidth == -1 else str(minwidth)
             minheightstr = "any" if minheight == -1 else str(minheight)
-            raise Exception(f"Image does not meet valid size requirements! minimum={minwidthstr}x{minheightstr}, actual={img.width}x{img.height}")
+            raise SisterhoodException(
+                f"Image does not meet valid size requirements! minimum={minwidthstr}x{minheightstr}, actual={img.width}x{img.height}"
+            )
         return img
+
 
 class CompositeTransformation(ImageTransformation):
     def __init__(self, layers: list[tuple[int, int, str]]):
@@ -131,6 +141,7 @@ class CompositeTransformation(ImageTransformation):
                 img.paste(topimg, (x, y), topimg.convert("RGBA"))
         return img
 
+
 class UpscaleTransformation(ImageTransformation):
     def __init__(self, scale: int = 2, noise: int = 2):
         super().__init__("upscale")
@@ -145,45 +156,72 @@ class UpscaleTransformation(ImageTransformation):
         output = Path("tmp/post_upscale.png")
         input_str = str(input.resolve())
         output_str = str(output.resolve())
-        s = subprocess.check_output([str(waifu2x_path), "-i", input_str, "-o", output_str, "-s", str(self.scale), "-n", str(self.noise)])
+        s = subprocess.check_output([
+            str(waifu2x_path),
+            "-i",
+            input_str,
+            "-o",
+            output_str,
+            "-s",
+            str(self.scale),
+            "-n",
+            str(self.noise),
+        ])
         print(s.decode("utf-8"))
         with Image.open(output) as outimg:
             return outimg.copy()
 
+
 def resize(targetwidth: int = -1, targetheight: int = -1):
     return ResizeTransformation(targetwidth, targetheight)
 
+
 RESIZE_1080P = ResizeTransformation(targetheight=1080)
+
 
 def blur(radius: int, algorithm: str = "gaussian"):
     return BlurTransformation(radius, algorithm)
 
+
 def gaussian_blur(radius: int):
     return blur(radius)
+
 
 def crop(left: float, upper: float, right: float, lower: float):
     return CropTransformation((left, upper, right, lower))
 
+
 def convert(mode: str = "RGB"):
     return ConvertTransformation(mode)
+
 
 def convert_rgb():
     return convert()
 
+
 def check_size(minwidth: int = -1, minheight: int = -1):
     return CheckSizeTransformation(minwidth, minheight)
+
 
 def upscale(scale: int = 2, noise: int = 2):
     return UpscaleTransformation(scale, noise)
 
+
 CHECK_1080P = CheckSizeTransformation(1920, 1080)
 
+
 class ImageProcess:
-    def __init__(self, inpath: str | Path, outpath: str | Path, transforms: list[ImageTransformation] = [], **saveparams: any): # type: ignore
+    def __init__(
+        self,
+        inpath: str | Path,
+        outpath: str | Path,
+        transforms: list[ImageTransformation] | None = None,
+        **saveparams: any,
+    ):
         self.inpath = inpath
         self.outpath = outpath
-        self.transforms = transforms
-        self.saveparams = saveparams # type: ignore
+        self.transforms = [] if transforms is None else transforms
+        self.saveparams = saveparams
 
     def transform(self, replace: bool = False):
         inpath = Path(self.inpath)
@@ -201,7 +239,7 @@ class ImageProcess:
                 print(f"\tApplying {transform.name} transformation")
                 img = transform.transform(img)
             print(f"\tSaving image to <{outpath}>")
-            img.save(outpath, **self.saveparams) # type: ignore
+            img.save(outpath, **self.saveparams)
 
 IMAGES: list[tuple[str, str, list[ImageTransformation]]] = [
     # chapter 5
@@ -579,17 +617,25 @@ def main(args: dict):
         if entry in IMAGES and entry[1].endswith(".jpg"):
             transforms.append(CHECK_1080P)
             transforms.append(convert_rgb())
-        images_to_process.append(ImageProcess(inpath, outpath, transforms, quality=90))
+        images_to_process.append(
+            ImageProcess(inpath, outpath, transforms, quality=90)
+        )
 
     for process in images_to_process:
         process.transform(args["replace"])
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Sisterhood image export tool"
-    )
+    parser = argparse.ArgumentParser(description="Sisterhood image export tool")
     add_arguments(parser, refdir=True)
-    parser.add_argument("-w", "--waifu2x", required=False, help="location of waifu2x CLI tool")
-    parser.add_argument("-e", "--replace", action="store_true", default=False, help="whether to replace pre-existing image files")
+    parser.add_argument(
+        "-w", "--waifu2x", required=False, help="location of waifu2x CLI tool"
+    )
+    parser.add_argument(
+        "-e",
+        "--replace",
+        action="store_true",
+        default=False,
+        help="whether to replace pre-existing image files",
+    )
     main(vars(parser.parse_args(sys.argv[1:])))
