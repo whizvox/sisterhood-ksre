@@ -694,7 +694,7 @@ label sh_ch24:
         "As it becomes clear that the song's really over, Hanako lets go of me and leans back a bit so we can both give Lilly a round of applause."
         "Considering the fact she hasn't practiced in years, Lilly did rather well though one still wouldn't mistake her for a professional musician."
         hi "Great performance, Lilly."
-        ha "Well done, Lilly."
+        ha "Well done, Lillly."
         "I notice a slight slur in Hanako's voice, though it's not nearly as pronounced as it was during our last encounter with the bottle."
 
         show ev celloandwine_cello_lookup:
