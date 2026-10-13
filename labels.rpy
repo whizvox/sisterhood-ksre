@@ -143,77 +143,107 @@ label sisterhood_credits:
         xalign 0.5 yalign 0.0
         acdc20_warp 93.0 yalign 1.0
 
-    pause 11.0
+    pause 10.0
 
     show ev wheatfield_dreamy behind sh_credits_overlay:
         subpixel True pos (-618, 285)
-        linear 10.0 pos (-775, 126)
-    with Dissolve(3.0)
+        linear 8.0 pos (-775, 126)
+    with Dissolve(2.8)
 
-    pause 4.0
+    pause 2.3
 
     hide ev
-    with Dissolve(3.0)
+    with Dissolve(2.0)
 
     show ev funindark_hug_rest behind sh_credits_overlay:
         subpixel True pos (64, 298)
-        linear 10.0 pos (-222, 147)
-    with Dissolve(3.0)
+        linear 8.0 pos (-222, 147)
+    with Dissolve(2.8)
 
-    pause 4.0
-
-    hide ev
-    with Dissolve(3.0)
-
-    show ev hotel_layontop behind sh_credits_overlay:
-        subpixel True pos (-195, 94)
-        linear 10.0 pos (-394, 230)
-    with Dissolve(3.0)
-
-    pause 4.0
+    pause 2.3
 
     hide ev
-    with Dissolve(3.0)
+    with Dissolve(2.0)
 
     show ev ballroomdance_smile_normal behind sh_credits_overlay:
         subpixel True pos (-438, 289)
-        linear 10.0 pos (-260, 241)
-    with Dissolve(3.0)
+        linear 8.0 pos (-260, 241)
+    with Dissolve(2.8)
 
-    pause 4.0
-
-    hide ev
-    with Dissolve(3.0)
-
-    show ev rainyroad behind sh_credits_overlay:
-        subpixel True pos (-317, 286)
-        linear 10.0 pos (-317, 111)
-    with Dissolve(3.0)
-
-    pause 4.0
+    pause 2.3
 
     hide ev
-    with Dissolve(3.0)
-
-    show ev rooftopkiss_normal behind sh_credits_overlay:
-        subpixel True pos (-260, 263)
-        linear 10.0 pos (-445, 193)
-    with Dissolve(3.0)
-
-    pause 4.0
-
-    hide ev
-    with Dissolve(3.0)
+    with Dissolve(2.0)
 
     show ev caress_normal behind sh_credits_overlay:
         subpixel True pos (-527, 262)
-        linear 10.0 pos (-349, 193)
-    with Dissolve(3.0)
+        linear 8.0 pos (-349, 193)
+    with Dissolve(2.8)
 
-    pause 4.0
+    pause 2.3
 
     hide ev
-    with Dissolve(3.0)
+    with Dissolve(2.0)
+
+    show ev planeride_blanket behind sh_credits_overlay:
+        subpixel True pos (-864, 278)
+        linear 8.0 pos (-785, 128)
+    with Dissolve(2.8)
+
+    pause 2.3
+
+    hide ev
+    with Dissolve(2.0)
+
+    show ev celloandwine_cello_play behind sh_credits_overlay:
+        subpixel True zoom 0.5 pos (-481, 286)
+        linear 8.0 pos (-481, 112)
+    with Dissolve(2.8)
+
+    pause 2.3
+
+    hide ev
+    with Dissolve(2.0)
+
+    show ev tipsyfun_stand_close behind sh_credits_overlay:
+        subpixel True zoom 0.5 pos (-264, 192)
+        linear 8.0 pos (-449, 192)
+    with Dissolve(2.8)
+
+    pause 2.3
+
+    hide ev
+    with Dissolve(2.0)
+
+    show ev eveningsnack_cuddle behind sh_credits_overlay:
+        subpixel True zoom 0.5 pos (-306, 140)
+        linear 8.0 pos (-225, 1)
+    with Dissolve(2.8)
+
+    pause 2.3
+
+    hide ev
+    with Dissolve(2.0)
+
+    show evg bedridden_lillyakira_4 behind sh_credits_overlay:
+        subpixel True pos (-491, 272)
+        linear 8.0 pos (-673, 122)
+    with Dissolve(2.8)
+
+    pause 2.3
+
+    hide evg
+    with Dissolve(2.0)
+
+    show ev sharedsoak_lilly_reciprocate behind sh_credits_overlay:
+        subpixel True pos (-574, 127)
+        linear 8.0 pos (-746, 127)
+    with Dissolve(2.8)
+
+    pause 2.3
+
+    hide ev
+    with Dissolve(2.0)
 
     pause 12.0
 

@@ -491,7 +491,7 @@ init 1:
     ellie.vanderlip on FreeSound
     Kelieon on YouTube
     Yuval on FreeSound
-    Pagey1969
+    Pagey1969 on FreeSound
     USBMED Ambiences Sound Library on FreeSound
     Ataraxy ASMR on YouTube
     Super Street Figher II
@@ -557,9 +557,10 @@ init 1:
     {b}Sprite Edits{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
     nijo
-    Celestial Caesar
-    Guest Poster
+    ZenMaruki
     whizvox
+    Guest Poster
+    Celestial Caesar
     \n\n
     {b}Beta Testing{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}
@@ -579,6 +580,7 @@ init 1:
     Fleeting Heartbeat Studios
     Four Leaf Studios
     The Katawa Shoujo Community
+    The Sisterhood Project Discord Server
     \n\n\n\n
     """), color="#FFF", text_align=0.5, xalign=0.9, size=42)
 
