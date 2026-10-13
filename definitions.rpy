@@ -27,7 +27,7 @@ init python:
         else:
             store.chchange = persistent.charachange
             store.chchangefast = persistent.charachangefast
-    
+
     def sh_slowtype_tag(tag, argument, contents):
         if argument is None or argument == "":
             min_speed = 20
@@ -37,6 +37,10 @@ init python:
         return [(renpy.TEXT_TAG, u"cps={}".format(speed))] + contents + [(renpy.TEXT_TAG, u"/cps")]
 
     config.custom_text_tags["slowtype"] = sh_slowtype_tag
+
+    # can't dynamically insert the {nw} tag
+    def sh_waitifinst():
+        return "" if preferences.text_cps == 0 else "{nw}"
 
     # renpy doesnt like lambas :(
 
