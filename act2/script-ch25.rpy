@@ -6,6 +6,8 @@ label sh_ch25:
         play sound sfx_impact
         scene white
 
+        pause 2.5
+
         "I wish I was dead."
         "Was it this bad last time?"
         "It might have been, but there's no way to know for sure. Even digging through my memory feels like smashing my head into a wall."
@@ -22,8 +24,6 @@ label sh_ch25:
         show ev tipsyfun_collapse_morningclosed_blur as evblur:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461) matrixcolor BrightnessMatrix(1.0)
             ease 3.0 alpha 0.7 matrixcolor BrightnessMatrix(0.7)
-            # ease 1.0 alpha 0.7 matrixcolor BrightnessMatrix(0.7)
-            # ease 5.0 alpha 0.0 matrixcolor BrightnessMatrix(0.0)
         with None
 
         pause 3.0
@@ -50,7 +50,6 @@ label sh_ch25:
 
         hide evblur
         with None
-
 
         scene ev tipsyfun_collapse_morning:
             anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
@@ -95,6 +94,10 @@ label sh_ch25:
         nvl hide dissolve
 
         scene bg satou_guestroom
+        show white:
+            alpha 0.1
+        show white_vignette:
+            alpha 0.7
         with locationchange
 
         nvl clear
@@ -106,8 +109,8 @@ label sh_ch25:
         n "The way I'm feeling right now, even the effort of having to pull up my pants and underwear comes across as an excruciating task. Still, I'll have to do it if I want to make it over to the window."
         n "{vspace=30}Trying my hardest to ignore my body's protests, I manage to sit up, reach out, and pull up my pants. The window is only four to five steps away, but it feels more like fifty."
 
-        show black:
-            alpha 0.3
+        hide white
+        hide white_vignette
         with Dissolve(1.0)
 
         n "When I finally reach the window, I give a sharp pull on the curtain and sigh as the lighting in the room dims."

@@ -694,7 +694,7 @@ label sh_ch24:
         "As it becomes clear that the song's really over, Hanako lets go of me and leans back a bit so we can both give Lilly a round of applause."
         "Considering the fact she hasn't practiced in years, Lilly did rather well though one still wouldn't mistake her for a professional musician."
         hi "Great performance, Lilly."
-        ha "Well done, Lillly."
+        ha "Well done, {slowtype}Lillly{/slowtype}."
         "I notice a slight slur in Hanako's voice, though it's not nearly as pronounced as it was during our last encounter with the bottle."
 
         show ev celloandwine_cello_lookup:
@@ -763,6 +763,9 @@ label sh_ch24:
         with locationchange
 
         "Suddenly, I can hear something behind Hanako and when I look in Lilly's direction, I notice she has abruptly stopped playing and has gotten up from the couch."
+
+        play sound sfx_heartslow
+
         "My heart skips a beat and for a moment I worry I might end up having an episode right here on the spot. Did Lilly catch us?"
         hi "Lilly?"
 
@@ -776,7 +779,8 @@ label sh_ch24:
         show hanako def_shock_sum_clipunb_close
         with chchangefast
 
-        "SHIT! This is bad. If Lilly's parents catch us the way we are now they'll probably either drown us in the nearby bay or ship us back to Japan in the cargo hold of a plane. Or maybe both."
+        "SHIT!"
+        "This is bad. If Lilly's parents catch us the way we are now they'll probably either drown us in the nearby bay or ship us back to Japan in the cargo hold of a plane. Or maybe both."
 
         show lilly:
             ease 1.0 twoleftsit
@@ -804,7 +808,14 @@ label sh_ch24:
         with charamovefastest
 
         "When I look back at Hanako, I notice she's frantically trying to button up her blouse, but her nervousness, coupled with the effects of the wine she's had, make her unable to get even a single button fastened."
+
+        $ renpy.music.set_audio_filter("sound", renpy.audio.filter.Lowpass())
+        play sound sfx_dooropen volume 0.6
+
         "Somewhere in the house I can hear the sound of a door. We have to get out of here or this vacation will meet a very premature end."
+
+        $ renpy.music.set_audio_filter("sound", None)
+
         "As if some divine entity has decided we still have business here, a semi-acceptable excuse suddenly finds its way into my brain."
 
         show hanako def_uneasy_sum_clipunb_close
@@ -914,19 +925,22 @@ label sh_ch24:
         with { "master": vpunch }
 
         "Eager to return the favor, I move my hands underneath her blouse. As soon as I do so, she lets go of me and starts shaking her shoulders, trying to shake off her blouse without breaking our kiss."
-
         "Since she's gotten slightly sweaty already, causing the blouse to stick to her body a bit, I decide to speed things up by taking it off myself."
 
-        show ev tipsyfun_stand_naked:
-            zoom 1.3 pos (-950, -10)
-        with { "master": vpunch }
+        if persistent.hdisabled:
+            scene black
+            with charachangeev
+        else:
+            show ev tipsyfun_stand_naked:
+                zoom 1.3 pos (-950, -10)
+            with { "master": vpunch }
 
-        show ev:
-            ease 0.2 ypos -20
-            ease 0.2 ypos -70
-        with None
+            show ev:
+                ease 0.2 ypos -20
+                ease 0.2 ypos -70
+            with None
 
-        pause 0.4
+            pause 0.4
 
         "I raise my arms, hoping Hanako gets the message, and sure enough, a few seconds later my shirt is pulled over my head and dropped at my feet."
 
@@ -934,18 +948,20 @@ label sh_ch24:
 
         "We resume our makeout session, and with more luck than skill, I manage to get Hanako's bra off in a single try."
 
-        show ev:
-            ease 0.6 xpos -800
-            ease 0.6 xpos -850
-        with Pause(1.2)
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.6 xpos -800
+                ease 0.6 xpos -850
+            with Pause(1.2)
 
         "We edge towards the bed step by step without breaking our embrace or our kisses and somehow manage to kick off our shoes on the way."
         "Keeping one arm around Hanako's waist, I start fondling her left breast with the other hand, drawing a nasal moan out of her in the middle of our kissing."
 
-        show ev:
-            ease 0.6 xpos -700
-            ease 0.6 xpos -750
-        with Pause(1.2)
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.6 xpos -700
+                ease 0.6 xpos -750
+            with Pause(1.2)
 
         "When we finally reach the bed, there's only one thought on my mind: I want her. The desire she's awakened in me isn't going to be satisfied with mere kisses and fondling anymore."
 
@@ -953,267 +969,279 @@ label sh_ch24:
 
         "I feverishly try to undo the button of my pants. It seems to take an eternity."
 
-        with vpunch
+        if not persistent.hdisabled:
+            with vpunch
 
         "The moment I get it loose and unfasten my zipper, I feel two hands grab hold of my pants and pull them down in one go, taking my boxers along with them."
 
-        show ev:
-            ease 0.5 ypos -1558
-        with vpunch
-        pause 0.4
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.5 ypos -1558
+            with vpunch
+            pause 0.4
 
         stop sound
 
         "Emboldened by Hanako's act, I reach out, unbutton her pants, and a moment later, her pants and panties are around her ankles as well."
 
-        show ev:
-            ease 0.5 ypos -120
-        with None
-        pause 0.4
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.5 ypos -120
+            with None
+            pause 0.4
 
         "With the last pieces of clothing (somewhat) out of the way, we indulge in the mutual hunger we feel. As we act out our desire, it strikes me how different this is from how we usually do this."
 
-        show ev:
-            ease 0.4 ypos -240
-        with None
-        pause 0.4
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.4 ypos -240
+            with None
+            pause 0.4
 
         "Whenever we satisfied each other in the past, we made certain to build things up slowly and carefully, making sure to keep things tender and gradually explore more intimate areas as we proceeded."
 
-        show ev:
-            ease 0.5 ypos -310
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.5 ypos -250
-        with None
-        pause 0.2
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.5 ypos -310
+            with None
+            with vpunch
+            pause 0.2
+            show ev:
+                ease 0.5 ypos -250
+            with None
+            pause 0.2
 
         "This is nothing like those other times. We're feverishly moving our hands across each other's body—almost at random, as if we're possessed by an unbearable itch, yet we can't find the correct spot to scratch."
         "The wine we've had this evening is probably at least partially responsible, but I don't think that's all there is to it anymore."
         "Is it the fact we were stimulating each other earlier while being forced to repress every signal our body was trying to let out? Or is it the fact we haven't done it in weeks and we're both dying to change that?"
 
-        show ev tipsyfun_stand_naked:
-            pos (-65, -61) zoom 0.55
-        with { "master": Dissolve(1.0) }
+        if not persistent.hdisabled:
+            show ev tipsyfun_stand_naked:
+                pos (-65, -61) zoom 0.55
+            with { "master": Dissolve(1.0) }
 
         "Taking a moment to finger her, I can instantly tell that she's ready. We were probably both ready the moment we dashed into this bedroom. I lift one of my legs, trying to get my pants off without taking my hands off Hanako's body."
 
-        show black:
-            truecenter zoom 1.02
-        with shuteyefast
+        if not persistent.hdisabled:
+            show black:
+                truecenter zoom 1.02
+            with shuteyefast
 
-        with vpunch
+            with vpunch
 
         "However, in the next moment, my leg gets stuck, I lose my balance, and I nearly fall backwards. The only reason we remain standing is due to Hanako managing to brace herself in time."
         "That was close. I could have hit my head against the nearby dresser and broken my neck. What a pathetic way to go that'd be."
 
-        hide black
-        show ev tipsyfun_stand_naked:
-            zoom 1.0 pos (-606, -210)
-        with { "master": vpunch }
+        if not persistent.hdisabled:
+            hide black
+            show ev tipsyfun_stand_naked:
+                zoom 1.0 pos (-606, -210)
+            with { "master": vpunch }
 
         play sound sfx_impact
 
         "We'd better do this another way. I turn to the bed and pull back the sheets."
-        hi "Hanako… ah… let's get on the bed."
+        hi "{slowtype}Hanako… ah… let's get on the bed."
 
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.2 ypos -100
+            with None
+            pause 0.2
+            show ev:
+                ease 0.2 ypos -120
+            with None
+            pause 0.2
+            show ev:
+                ease 0.2 ypos -100
+            with None
+            pause 0.2
+            show ev:
+                ease 0.2 ypos -120
+            with None
+            pause 0.2
 
         "A feverish kiss, followed by a gasp."
-        ha "Y-yes."
+        ha "{slowtype}Y-yes."
 
-        show ev:
-            ease 0.2 ypos -100
-        with None
-        with vpunch
-        pause 0.2
-        show ev:
-            ease 0.2 ypos -120
-        with None
-        pause 0.2
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.2 ypos -100
+            with None
+            with vpunch
+            pause 0.2
+            show ev:
+                ease 0.2 ypos -120
+            with None
+            pause 0.2
 
         "Then one more."
 
-        show black:
-            truecenter zoom 1.02
-        with dissolve
+        if not persistent.hdisabled:
+            show black:
+                truecenter zoom 1.02
+            with dissolve
 
         "Hanako gets onto our bed, crawls a little farther onto it, and then starts wiggling her feet in an attempt to get rid of her pants, only successfully managing to free one of her legs. I nearly feel my heart stop at what I see before me."
         "The sight of a thoroughly exposed Hanako, on all fours and completely naked—save for her socks and the pants and panties around her ankle—is a temptation I can't resist. I get on my knees on the bed behind her and carefully, yet firmly take hold of her hips."
-        hi "Hanako… c-can I…?"
-        "The brief nod that follows is all I need. I position myself, put the tip of my member against her entrance and then push myself forward and into her."
+        hi "{slowtype}Hanako… c-can I…?"
+        "The brief nod that follows is all I need. I position myself, put the tip of my member against her entrance, and then push myself forward and into her."
 
-        scene ev tipsyfun_doggystyle_closed:
-            anchor (0, 0) pos (-395, -185) zoom 0.75
-        with vpunch
+        if persistent.hdisabled:
+            $ sh_show_doublespeak(ha, "Hhhhh!", hi, "Eaagh!")
 
-        call screen sh_doublespeak(ha, "Hhhhh!", hi, "Eaagh!") with vpunch
+        else:
+            scene ev tipsyfun_doggystyle_closed:
+                anchor (0, 0) pos (-395, -185) zoom 0.75
+            with vpunch
 
-        show ev tipsyfun_doggystyle_closed:
-            pos (-1254, -50) zoom 1.0
-        with { "master": Dissolve(1.0) }
+            call screen sh_doublespeak(ha, "Hhhhh!", hi, "Eaagh!") with vpunch
+
+            show ev tipsyfun_doggystyle_closed:
+                pos (-1254, -50) zoom 1.0
+            with { "master": Dissolve(1.0) }
 
         "Hanako gasps in surprise as I enter her, and the intense pleasure I feel as her insides envelop me forces a loud moan out of me. It's soft and warm inside of her and from this position I can penetrate her slightly deeper than usual."
 
-        show ev:
-            ease 1.0 pos (-952, -838)
-        with None
+        if not persistent.hdisabled:
+            show ev:
+                ease 1.0 pos (-952, -838)
+            with None
 
         "I remember to check on Hanako, but notice she shows no signs of discomfort."
 
-        show ev tipsyfun_doggystyle_closed:
-            pos (-395, -185) zoom 0.75
-        with charachangeev
-
-        show ev:
-            ease 0.2 xpos -415
-            ease 0.4 xpos -375
-            repeat
-        with None
+        if not persistent.hdisabled:
+            show ev tipsyfun_doggystyle_closed:
+                pos (-395, -185) zoom 0.75
+            with charachangeev
+            show ev:
+                ease 0.2 xpos -400
+                ease 0.4 xpos -375
+                repeat
+            with None
 
         "I feel a deep sense of satisfaction as I thrust my hips back and forth, as if I've been staring at a wrapped present for days on end and finally get to open it."
 
-        show ev tipsyfun_doggystyle_closed at truecenter:
-            pos (400, -100) zoom 1.4
-        with { "master": charachangeev }
-
-        pause 0.1
-
-        show ev:
-            ease 0.2 xpos 360
-            ease 0.4 xpos 400
-            repeat
-        with None
+        if not persistent.hdisabled:
+            show ev tipsyfun_doggystyle_closed at truecenter:
+                pos (400, -50) zoom 1.4
+            with { "master": charachangeev }
+            pause 0.1
+            show ev:
+                ease 0.2 xpos 400
+                ease 0.4 xpos 440
+                repeat
+            with None
 
         "The pleasure that shoots through my lower body is nearly enough to make my knees give out, and I hold onto Hanako's hips for added support. I notice the sounds that Hanako's making are a bit louder and more unrestrained than usual."
 
-        show ev:
-            ease 0.3 xpos 2200 ypos 220
-        with None
-        pause 0.3
-
-        show ev:
-            ease 0.4 xpos 2240
-            ease 0.2 xpos 2200
-            repeat
-        with None
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.3 xpos 2200 ypos 180
+            with None
+            pause 0.3
+            show ev:
+                ease 0.4 xpos 2140
+                ease 0.2 xpos 2100
+                repeat
+            with None
 
         "Wanting to pleasure her more, I bend over a bit and fondle her breast, then try to position my hand near the spot where we're joined, so I can finger her some more."
         "As I feel my way around, I suddenly feel Hanako's hand over my own as she guides me to the right spot. It's a bit awkward since I can't move as easily while bending over her like I am."
         "Still, Hanako's cute moans in response to the stimulation more than make up for that."
 
-        show ev:
-            ease 0.3 xpos 2200 ypos 220
-        with None
-        pause 0.3
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.3 xpos 2100 ypos 220
+            with None
+            pause 0.3
 
         "As I feel my limit approaching, I take hold of Hanako's hand, which is still resting on top of my own and press it against the spot I was focusing on until now."
 
-        show ev:
-            ease 0.4 xpos 2240
-            ease 0.2 xpos 2200
-            repeat
-        with None
+        if not persistent.hdisabled:
+            show ev:
+                ease 0.4 xpos 2140
+                ease 0.2 xpos 2100
+                repeat
+            with None
 
         "She doesn't react immediately, and for a second, I believe she's not going for it. Then she furiously starts rubbing, and I firmly grab hold of her buttocks with both hands and start thrusting again."
 
-        show ev tipsyfun_doggystyle at truecenter:
-            pos (960, 540) zoom 0.52
-        with { "master": charachangeev }
-
-        pause 0.3
-
-        show ev:
-            ease 0.3 xpos 1000
-            ease 0.2 xpos 960
-            repeat
-        with None
+        if not persistent.hdisabled:
+            show ev tipsyfun_doggystyle at truecenter:
+                pos (960, 540) zoom 0.52
+            with { "master": charachangeev }
+            pause 0.3
+            show ev:
+                ease 0.3 xpos 985
+                ease 0.2 xpos 960
+                repeat
+            with None
 
         "The sight of Hanako in front of me, the wonderful sensation that runs through me with each movement of my hips…"
         "The sound of our heavy breathing, even the sound of my body slapping against hers, which we usually find embarassing, all combine to push us towards our rapidly approaching climax."
 
-        show ev tipsyfun_doggystyle_closed:
-            ease 0.3 xpos 1000
-        with None
-
-        pause 0.3
-
-        show ev:
-            ease 0.2 xpos 960
-            ease 0.3 xpos 1000
-            repeat
-        with None
-
-        pause 0.3
+        if not persistent.hdisabled:
+            show ev tipsyfun_doggystyle_closed:
+                ease 0.3 xpos 960
+            with None
+            pause 0.3
+            show ev:
+                ease 0.3 xpos 985
+                ease 0.2 xpos 960
+                repeat
+            with None
+            pause 0.3
 
         "Shaking the last few shreds of embarrassment from my mind, I give in to lust and give us the final push towards the inevitable."
 
         play sound sfx_impact
 
-        show ev tipsyfun_collapse_climaxclosed:
-            pos (960, 540) zoom 0.52
-        with vpunch
+        if not persistent.hdisabled:
+            show ev tipsyfun_collapse_climaxclosed:
+                pos (960, 540) zoom 0.52
+            with vpunch
+            pause 0.1
+            show ev:
+                ease 0.3 xpos 985 ypos 530
+                ease 0.2 xpos 960 ypos 540
+                repeat
+            with None
+            pause 0.1
 
-        pause 0.1
+        "The combination of the wine slightly dulling my sense of balance and the first jolt that surges through my groin makes my knees buckle, and I collapse on top of Hanako, pinning her underneath me."
 
-        show ev:
-            ease 0.2 xpos 1000 ypos 520
-            ease 0.1 xpos 960 ypos 540
-            repeat
-        with None
-
-        pause 0.1
-
-        "The combination of the wine slightly dulling my sense of balance and the first jolt that surges through my groin makes my knees buckle and I collapse on top of Hanako, pinning her underneath me."
-
-        pause 0.5
-        with vpunch
-        pause 0.5
-        with vpunch
+        if not persistent.hdisabled:
+            pause 0.5
+            with vpunch
+            pause 0.5
+            with vpunch
 
         "I'm already too caught up in the moment to get back into position and simply keep thrusting for as long as the waves of ecstacy are coursing through my body."
 
-        show ev:
-            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
-        with { "master": Dissolve(1.0) }
-        with vpunch
+        if not persistent.hdisabled:
+            show ev:
+                anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+            with { "master": Dissolve(1.0) }
+            with vpunch
+            pause 0.5
+            with vpunch
+            pause 0.5
+            with vpunch
 
-        pause 0.5
-        with vpunch
-        pause 0.5
-        with vpunch
-
-        show ev tipsyfun_collapse_climax:
-            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
-        with Dissolve(1.0)
+            show ev tipsyfun_collapse_climax:
+                anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+            with Dissolve(1.0)
 
         "I'm only vaguely aware of Hanako underneath me suddenly crying out, tensing up and bucking her hips several times."
 
-        show ev tipsyfun_collapse_climaxclosed:
-            anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
-        with Dissolve(1.0)
-
-        pause 0.1
-
-        show black
-        with { "master": Dissolve(5.0) }
+        if not persistent.hdisabled:
+            show ev tipsyfun_collapse_climaxclosed:
+                anchor (0.0, 0.0) zoom 0.72 pos (-323, -461)
+            with Dissolve(1.0)
+            pause 0.1
+            show black
+            with { "master": Dissolve(5.0) }
 
         stop music fadeout 10.0
 
@@ -1225,6 +1253,8 @@ label sh_ch24:
         "As our bodies settle down from our act of passion, a mixture of weariness and utter bliss washes over me."
         "Before I give in to the sense of drowsiness, one last thought passes through my mind."
         "This is heaven!"
+
+        stop music
 
         scene black
         with shorttimeskip
