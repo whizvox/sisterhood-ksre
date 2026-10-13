@@ -80,6 +80,15 @@ init 1 python:
         else:
             return vfxfile
 
+    def simple_composite(name, images, size=(1920, 1080), **properties):
+        args = []
+        args.append(size)
+        for img in images:
+            args.append((0, 0))
+            args.append(img)
+        renpy.image(name, Composite(*args, **properties))
+
+
     # KS:RE's is_seen function checks for instances of the Trigger class, hence why it's inherited here
     class Special(Trigger):
         def __init__(self, image, trig=None, adult=False):
@@ -174,6 +183,12 @@ init 1 python:
     sh_bgs("smt", ["reception", "office"])
     sh_bgs("akira", ["car"])
 
+    # memory-specific event CGs
+    simple_composite("evg pillowtalk_2", ["ev pillowtalk_comfort", "pillowtalkhisao upsmile"])
+    simple_composite("evg pillowtalk_3", ["ev pillowtalk_comfort", "pillowtalkhisao concern", "pillowtalkhanako up"])
+    simple_composite("evg pillowtalk_4", ["ev pillowtalk_comfort", "pillowtalkhisao grin", "pillowtalkhanako grin"])
+    simple_composite("evg pillowtalk_5", ["ev pillowtalk_blanket", "pillowtalkhanako smileblush"])
+
 init 1:
     # gallery images
     define sh_gallery_images = [
@@ -181,7 +196,7 @@ init 1:
         GalleryImageSet("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
         GalleryImageSet("funindark_h", Trigger("ev funindark_naked_touch_close", "ev funindark_naked_touch"), Trigger("ev funindark_naked_hand_close", "ev funindark_naked_hand"), Trigger("ev funindark_naked_breast_large", "ev funindark_naked_breast"), "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax", all_adult=True),
         GalleryImageSet("hotel", Special("ev hotel_onhanako", trig="ev hotel_onhanako_large"), "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax", all_adult=True),
-        GalleryImageSet("pillowtalk", "ev pillowtalk_comfort dark", Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g2"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g3"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g4")),
+        GalleryImageSet("pillowtalk", "ev pillowtalk_comfort dark", Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g2"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g3"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g4"), "ev pillowtalk_kiss", Trigger("ev pillowtalk_comfort", "evg pillowtalk_2"), Trigger("ev pillowtalk_comfort", "evg pillowtalk_3"), Trigger("ev pillowtalk_comfort", "evg pillowtalk_4"), "ev pillowtalk_blanket", Trigger("ev pillowtalk_blanket", "evg pillowtalk_5"), "ev pillowtalk_caress"),
         GalleryImageSet("ballroomdance", Trigger("ev ballroomdance_emb_large", "ev ballroomdance_emb_normal"), Trigger("ev ballroomdance_smile_large", "ev ballroomdance_smile_normal")),
         GalleryImageSet("rainyroad", "ev rainyroad"),
         GalleryImageSet("rooftopkiss", "ev rooftopkiss_normal"),
