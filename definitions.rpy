@@ -59,6 +59,9 @@ init 1 python:
         for chapter in act[1]:
             scene_names[chapter[1]] = __("[[Sisterhood] ") + __(chapter[0])
     _tracks[f"{sh_path}/bgm/Waltz_in_A_Minor.ogg"] = _("Waltz in A Minor")
+    _tracks[f"{sh_path}/bgm/Concord_Cello_Good.ogg"] = _("Concord (Cello arr.) - Good ver.")
+    _tracks[f"{sh_path}/bgm/Concord_Cello_Pro.ogg"] = _("Concord (Cello arr.)")
+    _tracks[f"{sh_path}/bgm/Concord_Cello_Rough.ogg"] = _("Concord (Cello arr.) - Rough ver.")
 
     sh_update_sprite_transitions()
 
