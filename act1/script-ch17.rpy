@@ -1002,9 +1002,9 @@ label sh_ch17:
         scene white
         with Dissolve(5.0)
 
-        $ persistent.sh_unlocked_acts.append(2)
-
         if _in_replay:
             return
+        else:
+            $ sh_unlock_act(2)
 
     return

@@ -42,6 +42,10 @@ init python:
     def sh_waitifinst():
         return "" if preferences.text_cps == 0 else "{nw}"
 
+    def sh_unlock_act(act):
+        if act not in persistent.sh_unlocked_acts:
+            persistent.sh_unlocked_acts.append(act)
+
     # renpy doesnt like lambas :(
 
     def _sh_get_nvl_bg(st, at):

@@ -1094,5 +1094,7 @@ label sh_ch34:
 
         if _in_replay:
             return
+        else:
+            $ sh_unlock_act(3)
 
     return

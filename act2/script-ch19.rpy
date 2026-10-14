@@ -309,7 +309,6 @@ label sh_ch19:
         with charaenter
 
         yu "I'M SORRY!"
-
         "Taken aback by this person's sudden entrance, I stare in bewilderment as she makes an apologetic bow that's almost deep enough for her nose to touch her toes."
 
         show yuuko panic_up
