@@ -235,7 +235,7 @@ label sh_ch18:
         aki "If she'd have entrusted me with how she felt, that's exactly what I would have done. But she didn't, and that kinda stings."
         "I can't help but feel a little bit surprised at Akira's tone, which is so different from her usual confident-yet-playful attitude. I knew from the fact she practically raised Lilly for years that Akira has a responsible side, but this is one of the first times I've witnessed it myself."
         ha "She d-didn't tell m-me about it until the l-last moment either. So, erm…"
-        "I think in fact she only told me because her ‘back was against the wall’ at the time, and she couldn't bear the thought of us parting with me harboring ill feelings towards her."
+        "I think in fact she only told me because her “back was against the wall” at the time, and she couldn't bear the thought of us parting with me harboring ill feelings towards her."
 
         show akira basic_ending_close
         with chchange
@@ -429,7 +429,7 @@ label sh_ch18:
         show lilly basic_weaksmile
         with charachangealways
 
-        "Lilly reaches into Akira's bag, which is lying next to her, takes out a can of beer and hands it to her sister."
+        "Lilly reaches into Akira's bag, which is lying next to her, takes out a can of beer, and hands it to her sister."
         li "It is a bit of a shame that you didn't bring any of that tasty wine along this time. We could have performed a toast to your promotion."
         "Akira smirks at her sister's remark as she opens her can with a popping sound."
         aki "A toast, huh? Didn't take you long to get hooked on the grape."
@@ -513,7 +513,7 @@ label sh_ch18:
         show lilly basic_giggle
         with chchange
 
-        "Lilly, Akira and I all share a laugh at Hisao's remark, but then Lilly indicates that she likes to say something."
+        "Lilly, Akira, and I all share a laugh at Hisao's remark, but then Lilly indicates that she likes to say something."
 
         show akira basic_smile
         show lilly basic_smile

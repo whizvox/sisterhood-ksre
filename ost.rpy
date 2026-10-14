@@ -17,7 +17,7 @@ init 1 python:
         # plane
         "plane_aftertakeoff", "plane_beforetakeoff", "plane_dingdong", "plane_inflight", "plane_waiting",
         # pub
-        "applause", "billiards_blunder",
+        "applause", "billiardbuzzer", "billiards_blunder",
         # nature
         "bushes", "crickets", "nature", "waves",
         # cars

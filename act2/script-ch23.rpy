@@ -271,7 +271,12 @@ label sh_ch23:
         with charaenter
 
         "Akira walks over to it and takes one of the balls."
+
+        play sound sfx_billiardbuzzer volume 0.8 loop
+
         "Immediately, a high-pitched buzzer sounds, causing Lilly to flinch a bit. She quickly puts a coin into the coin slot and the noise stops."
+
+        stop sound
 
         show akira basic_smile_cas
         with chchange
@@ -791,6 +796,9 @@ label sh_ch23:
         with charaexit
 
         "Hanako and I resume our game, and true to her word, Karla mostly goes back and forth between watching our game and listening to the quiz host's questions without making a lot of conversation aside from occasional small talk."
+
+        play sound sfx_billiardbuzzer volume 0.8 loop
+
         "We hear the buzzer again after what turned out to be an intense neck-and-neck race, and I let out a sigh as I realize that I'm a handful of points behind Hanako."
         hi "Well, at least we kept the suspense going until the very end."
 
@@ -801,6 +809,9 @@ label sh_ch23:
         "Hanako permits herself to show a proud little smile."
         ha "It was a good game."
         ka "I guess you two are even now, huh?"
+
+        stop sound
+
         "Karla picks up the balls and puts them back on top of the time clock device, shutting down the annoying buzz."
         hi "We are. We may need a third game to break the tie."
 

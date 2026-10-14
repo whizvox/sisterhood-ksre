@@ -78,7 +78,7 @@ label sh_ch17alt:
 
         "I fiddle with my cell phone for a bit. I asked Hanako to send me a little text message when they're done."
         "In less than half an hour, I have a talk coming up with Hanako's therapist who asked me to come and see her, if Hanako and I managed to reconcile."
-        "She was seeing a client earlier this day though and made it clear she didn't want me to wait outside her office, presumably for the sake of her client's privacy."
+        "She was seeing a client earlier today though and made it clear she didn't want me to wait outside her office, presumably for the sake of her client's privacy."
         "So until her last appointment is over, at four o'clock apparently, I'm stuck playing along with Kenji's conspiracy theories."
 
         show kenji tsun
@@ -404,6 +404,8 @@ label sh_ch17alt:
             ypos 1.02
         with characlose
 
+        play sound sfx_heartfast
+
         with vpunch
 
         "Spotting me, Hanako takes a second to catch her breath, then struts over to me and hugs me so tightly I groan in discomfort, her body causing pressure on the wound from the surgery I had last week."
@@ -473,7 +475,7 @@ label sh_ch17alt:
         show takawa happy
         with chchange
 
-        "Then, after several painfully quiet seconds, she gives a barely visible and meek nod, her gaze still firmly focussed on the floor."
+        "Then, after several painfully quiet seconds, she gives a barely visible and meek nod, her gaze still firmly focused on the floor."
         ta "Congratulations, dear. I'll see you again at the usual time the upcoming weekend. I'm sure we'll have plenty of things to discuss."
 
         hide takawa

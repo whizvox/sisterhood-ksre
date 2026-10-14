@@ -186,6 +186,8 @@ def write_to_tar(files: list[Path]):
 
 def main(args: dict):
     update_paths(args)
+    print("Please make sure all Ren'Py source files have been compiled first! Press ENTER to continue...")
+    input()
     include_all_sprites = args["allsprites"]
     files = get_project_files(include_all_sprites)
     builddir = Path(args["builddir"])
