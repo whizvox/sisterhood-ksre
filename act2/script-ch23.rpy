@@ -10,7 +10,7 @@ label sh_ch23:
 
         aki "Let's get out here. The place should be around the corner."
 
-        # TODO play car door close SFX
+        play sound sfx_cardoorclose
 
         show hanako cover_bashful_sum_ss at tworight
         show lilly cane_smileclosed_sum_ss at twoleft

@@ -255,9 +255,9 @@ label sh_ch34:
         "I guide her to the stools while at the same time keeping a bit of additional distance between us so she can't accidentally touch any of my scarred areas. When we sit down, I also make sure that my stool isn't too close to hers."
         "I get a bit of a weird feeling when I pick up one of the shower heads, but then shake the sensation out of my mind and dutifully fill both Lilly's bucket and my own."
 
-        # TODO play washing SFX
+        play sound sfx_waterpour
 
-        "We quietly proceed to drench ourselves, soap ourselves up and then wash ourselves."
+        "We quietly proceed to drench ourselves, soap ourselves up, and then wash ourselves."
         "I feel a bit bad about not offering to wash Lilly's back, but I'm a bit afraid of doing so since I know she'd offer to return the favor, and me declining it would just lead to another awkward moment."
         "It takes me quite a while to get my hair over and done with, and when I finally rinse the remaining shampoo out of my hair and look at Lilly, I notice she's been absentmindedly toying with her bangs. I wonder how long she's been waiting without saying a word."
         ha "Lilly?"
@@ -841,8 +841,6 @@ label sh_ch34:
         "Lilly smiles and nods."
         li "Shall we go?"
         ha "Okay."
-
-        # TODO play water splash SFX
 
         scene bg satou_bathroom
         with locationchange

@@ -21,7 +21,7 @@ init 1 python:
         # nature
         "bushes", "crickets", "nature", "waves",
         # cars
-        "car_driveup", "cars_ambience",
+        "car_driveup", "cars_ambience", "cardoorclose",
         # rock skipping
         "rockskip_fail", "rockskip", "rocksplash",
         # lightswitch
