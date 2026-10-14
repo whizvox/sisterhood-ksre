@@ -1,9 +1,8 @@
 import argparse
-import os
+import datetime
 import re
 import sys
 import tarfile
-import datetime
 from pathlib import Path
 
 from rpatool import RenPyArchive
@@ -15,7 +14,7 @@ from sishoodutil import (
     sh_glob,
     update_paths,
 )
-from zipfile_xz import ZIP_XZ, ZipFile  # pyright: ignore[reportAttributeAccessIssue]
+from zipfile_xz import ZIP_XZ, ZipFile
 
 INCLUDED_DIRS = (
     "bgm",
@@ -34,38 +33,31 @@ def format_bytes(n: int) -> str:
     if n < 1000:
         return f"{n} B"
     elif n < 1_000_000:
-        return "{:.1f}".format(n / 1000) + " KB"
+        return f"{n / 1000:.1f} KB"
     elif n < 1_000_000_000:
-        return "{:.1f}".format(n / 1_000_000) + " MB"
+        return f"{n / 1_000_000:.1f} MB"
     else:
-        return "{:.1f}".format(n / 1_000_000_000) + " GB"
+        return f"{n / 1_000_000_000:.1f} GB"
 
 
 # attempt to be smart and only include sprites that are actually used in the game in the distributable
 def find_used_sprites(script_path: Path, valid_chars: list[str]) -> set[Path]:
-    global ks_path
     sprite_paths: set[Path] = set()
     with script_path.open(encoding="utf-8") as file:
-        linenum = 0
-        for line in file.readlines():
-            linenum += 1
+        for lineno, line in enumerate(file.readlines()):
             line = line.strip()
             m = re.search(r"^show ([a-zA-Z_]\w*) ([a-zA-Z_]\w*)", line)
             if m is not None:
                 char = m.group(1)
                 sprite = m.group(2)
-                if (
-                    char in valid_chars
-                    and sprite not in ["at", "behind", "zorder"]
-                ):
-                    if (
-                        sprite.endswith("_ss")
-                        or sprite.endswith("_ni")
-                        or sprite.endswith("_rn")
-                    ):
+                if char in valid_chars and sprite not in [
+                    "at",
+                    "behind",
+                    "zorder",
+                ]:
+                    if sprite.endswith(("_ss", "_ni", "_rn")):
                         sprite = sprite[:-3]
-                    if sprite.endswith("_phone"):
-                        sprite = sprite[:-6]
+                    sprite = sprite.removesuffix("_phone")
                     if sprite.endswith("_close"):
                         end_path = f"close/{char}_{sprite}"
                     elif sprite.endswith("_superclose"):
@@ -87,7 +79,7 @@ def find_used_sprites(script_path: Path, valid_chars: list[str]) -> set[Path]:
                         )
                         if not sprite_path2.exists():
                             print(
-                                f"Could not find sprite referenced by {relative_to_sh_path(script_path)}:{linenum} - {line}"
+                                f"Could not find sprite referenced by {relative_to_sh_path(script_path)}:{lineno} - {line}"
                             )
     return sprite_paths
 
@@ -95,19 +87,14 @@ def find_used_sprites(script_path: Path, valid_chars: list[str]) -> set[Path]:
 def get_project_files(include_all_sprites: bool = False) -> list[Path]:
     files = []
     for dirname in INCLUDED_DIRS:
-        for path in sh_glob(f"{dirname}/**/*.*"):
-            files.append(path)
+        files.extend(sh_glob(f"{dirname}/**/*.*"))
     # don't include incomplete translations
-    # for scriptpath in sh_glob("tl/**/*.rpyc"):
-    #     files.append(scriptpath)
+    # files.extend(sh_glob("tl/**/*.rpyc"))
     if include_all_sprites:
-        for path in sh_glob("sprites/**/*.*"):
-            files.append(path)
+        files.extend(sh_glob("sprites/**/*.*"))
         for dirname in SCRIPT_DIRS:
-            for path in sh_glob(f"{dirname}/**/*.rpyc"):
-                files.append(path)
-        for path in sh_glob("*.rpyc"):
-            files.append(path)
+            files.extend(sh_glob(f"{dirname}/**/*.rpyc"))
+        files.extend(sh_glob("*.rpyc"))
     else:
         sprite_files = set()
         valid_chars = []
@@ -119,7 +106,9 @@ def get_project_files(include_all_sprites: bool = False) -> list[Path]:
                 files.append(path)
                 rpy_path = Path(str(path)[:-1])
                 if rpy_path.exists():
-                    sprite_files.update(find_used_sprites(rpy_path, valid_chars))
+                    sprite_files.update(
+                        find_used_sprites(rpy_path, valid_chars)
+                    )
                 else:
                     print(
                         f"[ERROR] Could not find script file for {relative_to_sh_path(path)}"
@@ -139,17 +128,17 @@ def get_project_files(include_all_sprites: bool = False) -> list[Path]:
             if path not in sprite_files:
                 saved_files += 1
                 saved_space += path.stat().st_size
-        print(f"Skipped {saved_files} sprites and saved {format_bytes(saved_space)}")
+        print(
+            f"Skipped {saved_files} sprites and saved {format_bytes(saved_space)}"
+        )
         files.extend(sprite_files)
     return files
 
 
 def create_rpa(files: list[Path]) -> RenPyArchive:
     archive = RenPyArchive()
-    cur_index = 0
     printr()
-    for file in files:
-        cur_index += 1
+    for cur_index, file in enumerate(files):
         with file.open("rb") as fp:
             relpath = Path("mods/sisterhood") / relative_to_sh_path(file)
             printr(f'({cur_index}/{len(files)}) Adding "{relpath}" to archive')
@@ -160,10 +149,10 @@ def create_rpa(files: list[Path]) -> RenPyArchive:
 
 def write_to_zip(files: list[Path]):
     out_path = resolve_path("scripts/build/sisterhood.zip")
-    with ZipFile(out_path, mode="w", compression=ZIP_XZ, compresslevel=9) as zip:
-        cur_file = 0
-        for file in files:
-            cur_file += 1
+    with ZipFile(
+        out_path, mode="w", compression=ZIP_XZ, compresslevel=9
+    ) as zip:
+        for cur_file, file in enumerate(files):
             cur_path = Path("sisterhood") / relative_to_sh_path(file)
             printr(f"({cur_file}/{len(files)}) Writing {cur_path} to zip")
             zip.write(str(file.absolute()), str(cur_path))
@@ -175,7 +164,9 @@ def write_to_zipped_rpa(files: list[Path]):
     archive = create_rpa(files)
     archive.save(rpa_path)
     out_path = resolve_path("scripts/build/sisterhood.zip")
-    with ZipFile(out_path, mode="w", compression=ZIP_XZ, compresslevel=9) as zip:
+    with ZipFile(
+        out_path, mode="w", compression=ZIP_XZ, compresslevel=9
+    ) as zip:
         printr(f"Writing {rpa_path} to zip")
         zip.write(str(rpa_path.absolute()), "sisterhood.rpa")
     printr_end(f"Finished writing zip to {out_path}")
@@ -186,9 +177,7 @@ def write_to_tar(files: list[Path]):
     if out_path.exists():
         out_path.unlink()
     with tarfile.open(out_path, "x:xz") as tar:
-        cur_file = 0
-        for file in files:
-            cur_file += 1
+        for cur_file, file in enumerate(files):
             cur_path = Path("sisterhood") / relative_to_sh_path(file)
             printr(f"({cur_file}/{len(files)}) Writing {cur_path} to tarball")
             tar.add(file, str(cur_path))
@@ -203,7 +192,10 @@ def main(args: dict):
     builddir.mkdir(exist_ok=True)
     if args["archive"] == "rpa":
         archive = create_rpa(files)
-        out_path = Path(builddir / f"sisterhood_{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}.rpa")
+        out_path = Path(
+            builddir
+            / f"sisterhood_{datetime.datetime.now().strftime('%Y%m%d-%H%M%S')}.rpa"
+        )
         archive.save(out_path)
         print(f"Saved Ren'Py archive to {out_path}")
     elif args["archive"] == "zip":
@@ -217,7 +209,10 @@ def main(args: dict):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="build")
     parser.add_argument(
-        "-s", "--shdir", required=True, help="location of Sisterhood project directory"
+        "-s",
+        "--shdir",
+        required=True,
+        help="location of Sisterhood project directory",
     )
     parser.add_argument(
         "-k",
@@ -226,7 +221,10 @@ if __name__ == "__main__":
         help="location of Katawa Shoujo: Re-Engineered project directory",
     )
     parser.add_argument(
-        "-a", "--archive", choices=["rpa", "zip", "tar", "rpazip"], default="rpa"
+        "-a",
+        "--archive",
+        choices=["rpa", "zip", "tar", "rpazip"],
+        default="rpa",
     )
     parser.add_argument(
         "-A", "--allsprites", action="store_const", const=True, default=False
