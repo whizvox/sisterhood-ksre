@@ -45,7 +45,7 @@ screen sisterhood():
                 textbutton _("Memories") action If(main_menu, true=ShowMenu("sisterhood_memories"), false=None)
 
             vbox:
-                textbutton _("Credits") action If(main_menu, true=Start("sisterhood_credits"), false=None)
+                textbutton _("Credits") action If(main_menu and (renpy.seen_label("sh_ch34.s2") or sh_debug), true=Start("sisterhood_credits"), false=None)
 
         textbutton _("Return"):
             style "return_button"
