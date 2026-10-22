@@ -217,8 +217,11 @@ label sh_ch24:
         n "As Lilly finishes a story about a funny incident involving Akira, I can hear Hanako giggle and suddenly feel her hand ruffling my hair. That's probably the fourth time she's done this over the last fifteen minutes."
         n "{vspace=90}We've been hanging out here in the living room for well over an hour, and we opened up the second bottle of wine a little while ago. To say that the atmosphere is cheerful is quickly becoming an understatement. I don't think anyone's actually completely drunk yet, but I'm sure we've reached the point where each of us is getting rather tipsy."
         n "The fact that the wine Akira obtained for us is really tasty, that the atmosphere between us is completely relaxed, and that we don't have to be secretive about having a few glasses this time around probably all contributed to that."
-        n "{vspace=60}I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticeably less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy."
-        n "I'm starting to notice that aspect of her returning as the evening goes on."
+
+        nvl clear
+
+        n "I remember the time the three of us had our first encounter with alcohol during Hanako's birthday party. While Lilly merely became slightly more playful and forward than usual, the effect of the wine on Hanako was noticeably less subtle. Not only did her usually rigid inhibitions fall away after she had a couple of glasses, but she also became remarkably clingy."
+        n "{vspace=30}I'm starting to notice that aspect of her returning as the evening goes on."
 
         nvl hide dissolve
 
