@@ -365,7 +365,7 @@ label sh_ch33:
         show akira basic_sweet_close
         with chchange
 
-        ha "Ya know… uh… Even though Lilly's usually the one to do this kind of thing, I just wanted to tell you that if you ever wanna talk to someone about this sort of thing, I'm there as well. Don't be a stranger."
+        aki "Ya know… uh… Even though Lilly's usually the one to do this kind of thing, I just wanted to tell you that if you ever wanna talk to someone about this sort of thing, I'm there as well. Don't be a stranger."
         "Akira puts on a slightly awkward but sincere smile on, and I can't resist smiling back for a moment."
         "I'm not sure if I'd ever accept Akira's offer, but her gesture of emotional support nevertheless feels extremely good to me."
         ha "T-thank you."
@@ -673,7 +673,7 @@ label sh_ch33:
 
         queue music music_moonlight fadein 4.0
 
-        aki "It's not just Dad Lilly's been keeping at arms' length over the last two days."
+        aki "It's not just Dad; Lilly's been keeping me at arms' length over the last two days."
         ha "H-how can you be so sure?"
 
         show akira basic_lost
