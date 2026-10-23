@@ -162,7 +162,7 @@ init 1 python:
     sh_event("tipsyfun", ["stand_naked", "doggystyle", "doggystyle_closed", "collapse_climax", "collapse_climaxclosed"], mark_adult=True)
     sh_event("withoutthinking", ["lilly", "lilly_crowd", "cpr", "cpr_nohisao", "cpr_nohisao_large", "cpr_cover", "cpr_cover_large", "cpr_paramedics"])
     sh_event("bedridden", ["lillyakira", "akira", "akhiha"])
-    sh_event("sharedsoak", ["hisao_relax", "hisao_talk", "lilly_relax", "lilly_smile", "lilly_listen", "lilly_grimace", "lilly_speak", "lilly_shoulder", "lilly_shoulder2", "lilly_recoil", "lilly_history", "lilly_sniffle", "lilly_comfort", "lilly_cry", "lilly_hug", "lilly_reciprocate", "lilly_lean", "lilly_support"]),
+    sh_event("sharedsoak", ["hisao_relax", "hisao_talk", "lilly_relax", "lilly_shoulder", "lilly_recoil", "lilly_hug_large", "lilly_reciprocate", "lilly_lean", "lilly_support"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
     sh_event("akirapast", ["argument", "elemschool", "grandparents1", "grandparents2", "midschool", "promotion", "study1", "study2", "unfavorite", "vacation"])
 
@@ -188,6 +188,17 @@ init 1 python:
     simple_composite("evg pillowtalk_3", ["ev pillowtalk_comfort", "pillowtalkhisao concern", "pillowtalkhanako up"])
     simple_composite("evg pillowtalk_4", ["ev pillowtalk_comfort", "pillowtalkhisao grin", "pillowtalkhanako grin"])
     simple_composite("evg pillowtalk_5", ["ev pillowtalk_blanket", "pillowtalkhanako smileblush"])
+    simple_composite("evg sharedsoak_lilly_2", ["ev sharedsoak_lilly_relax", "sharedsoaklilly smile", "sharedsoakhanako2 anxious"])
+    simple_composite("evg sharedsoak_lilly_3", ["ev sharedsoak_lilly_relax", "sharedsoaklilly grimace", "sharedsoakhanako2 anxious"])
+    simple_composite("evg sharedsoak_lilly_4", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talksmile", "sharedsoakhanako2 listen"])
+    simple_composite("evg sharedsoak_lilly_4", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talkneutral", "sharedsoakhanako2 listen"])
+    simple_composite("evg sharedsoak_lilly_5", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talksheepish", "sharedsoakhanako2 neutral"])
+    simple_composite("evg sharedsoak_lilly_6", ["ev sharedsoak_lilly_relax", "sharedsoaklilly smile", "sharedsoakhanako2 neutral"])
+    simple_composite("evg sharedsoak_lilly_7", ["ev sharedsoak_lilly_relax", "sharedsoaklilly listen", "sharedsoakhanako2 talk"])
+    simple_composite("evg sharedsoak_lilly_8", ["ev sharedsoak_lilly_shoulder", "sharedsoakhanako2 shoulder"])
+    simple_composite("evg sharedsoak_lilly_9", ["ev sharedsoak_lilly_relax", "sharedsoaklilly listen", "sharedsoakhanako2 talksad"])
+    simple_composite("evg sharedsoak_lilly_10", ["ev sharedsoak_lilly_relax", "sharedsoaklilly grimace", "sharedsoakhanako2 cry"])
+    simple_composite("evg sharedsoak_lilly_11", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talkneutral", "sharedsoakhanako2 sniffle"])
 
 init 1:
     # gallery images
@@ -211,7 +222,7 @@ init 1:
         GalleryImageSet("withoutthinking", "ev withoutthinking_lilly", "ev withoutthinking_lilly_crowd", "ev withoutthinking_cpr", "ev withoutthinking_cpr_nohisao", "ev withoutthinking_cpr_cover", "ev withoutthinking_cpr_paramedics"),
         GalleryImageSet("bedridden", "ev bedridden_lillyakira", Trigger("ev bedridden_lillyakira", "evg bedridden_lillyakira_2"), Trigger("ev bedridden_lillyakira", "evg bedridden_lillyakira_3"), Trigger("ev bedridden_lillyakira", "evg bedridden_lillyakira_4"), "ev bedridden_akira", Trigger("ev bedridden_akira", "evg bedridden_akira_2"), Trigger("ev bedridden_akira", "evg bedridden_akira_3"), Trigger("ev bedridden_akira", "evg bedridden_akira_4"), "ev bedridden_akhiha", Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_2"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_3"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_4"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_5"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_6"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_7"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_8"), Trigger("ev bedridden_akhiha", "evg bedridden_akhiha_9")),
         GalleryImageSet("akirapast", "ev akirapast_vacation", "ev akirapast_unfavorite", "ev akirapast_elemschool", "ev akirapast_midschool", "ev akirapast_argument", "ev akirapast_promotion", "ev akirapast_grandparents1", "ev akirapast_grandparents2", "ev akirapast_study1", "ev akirapast_study2"),
-        GalleryImageSet("sharedsoak_lilly", "ev sharedsoak_lilly_relax", "ev sharedsoak_lilly_smile", "ev sharedsoak_lilly_listen", "ev sharedsoak_lilly_grimace", "ev sharedsoak_lilly_speak", "ev sharedsoak_lilly_shoulder", "ev sharedsoak_lilly_shoulder2", "ev sharedsoak_lilly_recoil", "ev sharedsoak_lilly_history", "ev sharedsoak_lilly_sniffle", "ev sharedsoak_lilly_comfort", "ev sharedsoak_lilly_cry", "ev sharedsoak_lilly_hug", "ev sharedsoak_lilly_reciprocate", "ev sharedsoak_lilly_lean", "ev sharedsoak_lilly_support"),
+        GalleryImageSet("sharedsoak_lilly", "ev sharedsoak_lilly_relax", Trigger("sharedsoaklilly smile", "evg sharedsoak_lilly_2"), Trigger("sharedsoaklilly grimace", "evg sharedsoak_lilly_3"), Trigger("sharedsoaklilly talkneutral", "evg sharedsoak_lilly_4"), Trigger("sharedsoaklilly talksheepish", "evg sharedsoak_lilly_5"), Trigger("sharedsoaklilly smile", "evg sharedsoak_lilly_6"), Trigger("sharedsoakhanako2 talk", "evg sharedsoak_lilly_7"),"ev sharedsoak_lilly_shoulder", Trigger("sharedsoakhanako2 shoulder", "evg sharedsoak_lilly_8"), "ev sharedsoak_lilly_recoil", Trigger("sharedsoakhanako2 talksad", "evg sharedsoak_lilly_9"), Trigger("sharedsoakhanako2 cry", "evg sharedsoak_lilly_10"), Trigger("sharedsoakhanako2 sniffle", "evg sharedsoak_lilly_11"), "ev sharedsoak_lilly_hug_large", "ev sharedsoak_lilly_reciprocate", "ev sharedsoak_lilly_lean", "ev sharedsoak_lilly_support"),
         GalleryImageSet("hanakohistory", "ev hanakohistory_bed", "ev hanakohistory_bed_pain", "ev hanakohistory_fire", "ev hanakohistory_fire_alone", "ev hanakohistory_urn", "ev hanakohistory_read", "ev hanakohistory_read_leave", "ev hanakohistory_read_alone", "ev hanakohistory_play", "ev hanakohistory_play_tease", "ev hanakohistory_bully", "ev hanakohistory_bully_cry", "ev hanakohistory_gate"),
     ]
     define sh_sfw_gallery_images = []
@@ -277,6 +288,21 @@ init 1:
     image sharedsoakhisao smile = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hisaosmile.png"
     image sharedsoakhanako smile = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hanakosmile.png"
     image sharedsoakhanako frown = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hanakofrown.png"
+
+    image sharedsoakhanako2 anxious = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakoanxious.png"
+    image sharedsoakhanako2 cry = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakocry.png"
+    image sharedsoakhanako2 listen = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakolisten.png"
+    image sharedsoakhanako2 neutral = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakoneutral.png"
+    image sharedsoakhanako2 shoulder = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakoshoulder.png"
+    image sharedsoakhanako2 sniffle = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakosniffle.png"
+    image sharedsoakhanako2 talk = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakotalk.png"
+    image sharedsoakhanako2 talksad = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakotalksad.png"
+    image sharedsoaklilly grimace = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillygrimace.png"
+    image sharedsoaklilly listen = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillylisten.png"
+    image sharedsoaklilly smile = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillysmile.png"
+    image sharedsoaklilly talkneutral = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillytalkneutral.png"
+    image sharedsoaklilly talksheepish = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillytalksheepish.png"
+    image sharedsoaklilly talksmile = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillytalksmile.png"
 
     image bedridden_lilly smile = f"{sh_path}/event/bedridden/bedridden_lilly_smile_overlay.png"
     image bedridden_lilly listen = f"{sh_path}/event/bedridden/bedridden_lilly_listen_overlay.png"

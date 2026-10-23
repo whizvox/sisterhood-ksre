@@ -302,12 +302,20 @@ label sh_ch34:
         "..."
         "Eventually though, Lilly breaks the silence."
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly smile behind steam
         with charachangeev
 
         li "So, Hanako… How was the visit to the hospital?"
+
+        show sharedsoakhanako2 neutral behind steam
+        with charachangeev
+
         ha "When we arrived, we briefly saw your mother and a person who just arrived here from Japan. Akira said he was the manager of the Japanese branch. Then, we went to s-see your father and… umm…"
         "I hesitate for a moment. I don't think Lilly needs to hear about Akira's verbal scuffle with her father."
+
+        show sharedsoakhanako2 anxious
+        with charachangeev
+
         ha "…he… uh… still seemed to have a lot of difficulty speaking, but he talked to us, even though it hurt."
         ha "He… thanked us for helping him and said to l-let him know if there was ever something he could do back. Then, he wished us a safe journey."
         li "I see."
@@ -323,7 +331,7 @@ label sh_ch34:
 
         stop music fadeout 2.0
 
-        show ev sharedsoak_lilly_grimace
+        show sharedsoaklilly grimace
         with charachangeev
 
         "Lilly doesn't immediately answer. I briefly wonder if she's just going to smile and dismiss the whole thing."
@@ -331,7 +339,8 @@ label sh_ch34:
 
         queue music music_moonlight fadein 4.0
 
-        show ev sharedsoak_lilly_speak
+        show sharedsoaklilly talkneutral
+        show sharedsoakhanako2 listen
         with charachangeev
 
         li "After Mother and Father left Japan, I've been telling myself for a long time that this was only temporary and that when they'd return, everything would be as it was before. But when Akira and I visited here in July, I think everyone could feel the distance."
@@ -354,21 +363,29 @@ label sh_ch34:
         li "So I ended up trying to deal with our parents' summoning on my own. I felt… very alone… in that."
         ha "Oh, Lilly…"
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly talksheepish
         with charachangeev
 
         "Lilly gives me a guilty smile."
         li "Of course, that's a little bit my own fault as well. I should have realized sooner that I also had you to confide in. I just hope you understand that usually what happens in the family is meant to stay in the family."
         ha "I understand."
 
-        show ev sharedsoak_lilly_speak
+        show sharedsoaklilly talkneutral
         with charachangeev
 
         li "I had been hoping that Father's hospitalization would have resulted in a truce or even a new start, but it seems that even an event as major as this wasn't enough. I'm not really sure how to deal with Akira now."
+
+        show sharedsoaklilly grimace
+        with charachangeev
+
         "For a moment, Lilly looks mildly frustrated."
         li "I… really want to be understanding of Akira. She's endured a lot of hardships of her own. But… {i}*sigh*{/i} what kind of person starts a fight with someone who only just got off life support?"
         "And today was pretty much a rematch of the confrontation Lilly referred to."
         ha "It… is indeed a bit harsh."
+
+        show sharedsoaklilly talkneutral
+        with charachangeev
+
         li "Of course, Father is hardly blameless himself. He took an unacceptable risk. And… when he mentioned that he did it for Akira and me, it almost made me feel partially responsible for what happened."
         li "As if having him in my life is somehow less important than a large sum of money in the bank."
         "She sighs again."
@@ -379,6 +396,10 @@ label sh_ch34:
         "Wow, she's really in a downer mood."
         ha "It's p-probably a little early to w-worry about that already."
         li "Hanako… Do you think I'm an ungrateful daughter for feeling this way?"
+
+        show sharedsoakhanako2 neutral
+        with charachangeev
+
         ha "N-no. I'd probably f-feel a little bit offended, too."
         li "That's somewhat of a relief to know."
         "Lilly thinks for a moment."
@@ -386,44 +407,77 @@ label sh_ch34:
         li "To be honest… I'm not really sure what to think of her to begin with."
         ha "I… noticed that things sometimes seemed a little awkward between your m-mother and you, but I didn't really understand why because your mother has been very friendly from the start."
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly talksheepish
         with charachangeev
 
         "Lilly nods and smiles sadly."
         li "It's probably just me. But even so…"
         ha "I… don't really understand the problem."
+
+        show sharedsoaklilly talkneutral
+        with charachangeev
+
         "Lilly turns to me."
         li "Hanako, if you don't mind me asking… What do you think about my mother?"
+
+        show sharedsoakhanako2 anxious
+        with charachangeev
+
         ha "Huh?"
         li "Please, just give me your honest impression. Surely you must have come here with certain expectations."
+
+        show sharedsoakhanako2 neutral
+        with charachangeev
+
         ha "Hmmm… She was… different from what I was expecting, but she was nevertheless very nice. I think I like her."
         li "May I ask what exactly you were expecting?"
+
+        show sharedsoaklilly listen
+        with charachangeev
+
         ha "I think I was expecting to meet an older version of you. Like… a formal and graceful upper-class woman with impeccable m-manners. Maybe, unlike you, even a bit haughty or s-snobbish. I know it's a bit silly."
         ha "But your mother actually reminds me quite a bit of Akira. I think I simply made the wrong guess."
         li "You were expecting a so-called ‘proper lady’?"
         "I think I’ve heard Lilly's father utter that phrase a few times."
         ha "Yes. But it doesn't really matter that much to me. Why do you want to k-know all this?"
+        "Lilly pauses for a second and then sighs."
 
-        show ev sharedsoak_lilly_speak
+        show sharedsoaklilly talksheepish
+        show sharedsoakhanako2 listen
         with charachangeev
 
-        "Lilly pauses for a second and then sighs."
         li "Because the way you imagined her is also the way I remember her."
         ha "The way you remember her?"
+
+        show sharedsoaklilly talksmile
+        with charachangeev
+
         li "I know it must be difficult for you to believe this, but Mother was a completely different person when she was still living with us in Japan."
         li "She was… graceful, gentle, friendly—though also just a little bit distant—and always very proper and appropriate. And she was completely devoted to Father and the family. While growing up, Mother was the person I always tried to emulate and resemble."
         ha "R-really?"
+
+        show sharedsoaklilly talksheepish
+        with charachangeev
+
         li "Being around her has been a very strange experience. I… have no idea how to act around her. Living abroad can change a person, I suppose, but…"
         "It's still very odd. And something doesn't make sense."
         ha "But Lilly, what about y-your first trip?"
+
+        show sharedsoaklilly talkneutral
+        with charachangeev
+
         li "During our first trip to Scotland, Mother took up her days off from work to spend time with her bedridden sister and us. Back then, she was still acting like her old self whenever she was with us. Well, for the largest part, anyway."
         li "She didn't start acting this casual until I returned here."
         "Lilly lets out an unhappy sigh."
         li "I could put up with the more casual way of interacting with me, but what really bothers me is the fact she seems to have been neglecting Father. That's… just so not her."
         li "I… really don't know what to think or what to do. This isn't the family I expected to find here."
+
+        show sharedsoakhanako2 neutral
+        with charachangeev
+
         ha "I… I'm sorry, Lilly."
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly smile
         with charachangeev
 
         li "It's okay, Hanako. Thank you for listening to me complaining like this."
@@ -435,7 +489,8 @@ label sh_ch34:
         "I try to recall the things Akira told me earlier today."
         "She said something along the lines of not wanting to trouble Lilly with her issues any further."
 
-        show ev sharedsoak_lilly_listen
+        show sharedsoaklilly listen
+        show sharedsoakhanako2 talk
         with charachangeev
 
         ha "Akira… umm… talked to me earlier and… she's not happy with the situation either. She said… she was going to try and b-back off a little. I don't think there's a lot you can do for her. This is probably something she'll have to… sort out herself."
@@ -446,20 +501,28 @@ label sh_ch34:
         ha "L-Lilly?"
         li "Yes?"
         ha "I… I think I know how you must have felt."
+
+        show sharedsoaklilly talkneutral
+        with charachangeev
+
         li "You do?"
         ha "When I was… still getting to know Hisao, I used to worry a lot about what he thought of me. I was often afraid that he looked d-down on me, that I was j-just someone for him to worry over."
 
-        show ev sharedsoak_lilly_grimace
+        show sharedsoaklilly grimace
         with charachangeev
 
         "Lilly suddenly looks very uncomfortable. This used to be a sensitive point between the two of us as well."
+
+        show sharedsoaklilly listen
+        with charachangeev
+
         li "I don't think that was all he saw you as, Hanako."
         ha "I don't know. I still remember that night when Akira took us to that jazz club. Hisao and I played a game of pool in the back and it was really fun… until he said something to me that r-really hurt."
         li "He did?"
         ha "While I was trying to ease my nerves, he said: ‘Don't worry. Even with Lilly away, I'll be there to protect you.’"
         ha "It was then that I realized that… to him… I was just a pitiful and helpless person who couldn't do anything on her own. Someone who would always have to b-be looked after."
 
-        show ev sharedsoak_lilly_listen
+        show sharedsoaklilly talkneutral
         with charachangeev
 
         li "I don't think he really meant it like that, Hanako. He may have acted in a bit of a misguided manner, but in the end, I believe he meant well. He simply didn't know you well enough yet."
@@ -467,22 +530,30 @@ label sh_ch34:
         li "I think he respects you now. And I think he also loves you very much. So he obviously came around, wouldn't you agree?"
         ha "Y-yes, it… took a lot, but… he came around eventually. And he apologized and c-confessed to me. I'm r-really happy that he did."
         li "Was there anything specific that triggered this?"
+
+        show sharedsoakhanako2 anxious
+        with charachangeev
+
         "I blush briefly upon hearing Lilly's question."
         "I think if I told Lilly that I let Hisao sleep with me in order to make him come around, she'd probably faint in shock."
-        "Actually, in the end it wasn't really Hisao and me taking each other's virginity that broke down the walls between us, but the painfully awkward talk we were forced to have the day after."
+        "Actually, in the end, it wasn't really Hisao and me taking each other's virginity that broke down the walls between us, but the painfully awkward talk we were forced to have the day after."
         ha "A… um… painfully awkward talk at some point. It's n-not really important."
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly smile
         with charachangeev
 
         li "I think you're right, Hanako. The important thing is the result."
         ha "Umm… L-Lilly?"
         li "Yes?"
 
-        show ev sharedsoak_lilly_grimace
+        show sharedsoakhanako2 talk
         with charachangeev
 
         ha "I was thinking… maybe… maybe the same is true with you and your father. Maybe your father… didn't really mean to d-disrespect you, but… he s-simply didn't know you well enough yet, either. Maybe he's simply… ignorant."
+
+        show sharedsoaklilly listen
+        with charachangeev
+
         "There's a long silence as Lilly ponders my words."
         li "Do you really think the two cases are similar, Hanako?"
         ha "I… think so. I think your father cares about you in his own way or he w-would not have offered to take us to Edinburgh while things were still so busy at work."
@@ -495,7 +566,7 @@ label sh_ch34:
         ha "Giving emotional support to people who need it, whether they're classmates or newly arrived transfer students, or even p-panicky neighbors with whom you never even spoke before, is simply what you do. It's like a s-second nature to you."
         ha "It was… the first thing I learned about you."
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly smile
         with charachangeev
 
         li "That's a very nice thing of you to say."
@@ -507,7 +578,7 @@ label sh_ch34:
         "I wonder if I myself would be able to practice what I'm preaching right now. I feel a bit hypocritical talking to Lilly about swallowing her pride and reaching out to her parents in good faith while I myself am frequently prone to bouts of cynicism."
         "But there's no doubt in my mind that if Lilly just allowed things to stay the way they are, she'd feel awful about her inactivity later."
 
-        show ev sharedsoak_lilly_listen
+        show sharedsoaklilly listen
         with charachangeev
 
         li "Maybe…"
@@ -518,9 +589,14 @@ label sh_ch34:
         stop music fadeout 2.0
         queue music music_friendship fadein 4.0
 
+        show sharedsoakhanako2 anxious
+        with charachangeev
+
         ha "Then… uh… I'll b-be your f-family… instead. Either way, you w-won't be alone."
 
         show ev sharedsoak_lilly_shoulder
+        hide sharedsoaklilly
+        hide sharedsoakhanako2
         with charachangeev
 
         "Lilly lets out a happy laugh at my remark."
@@ -529,7 +605,7 @@ label sh_ch34:
 
         stop music fadeout 0.2
 
-        show ev sharedsoak_lilly_shoulder2
+        show sharedsoakhanako2 shoulder behind steam
         with charachangeev
 
         "While I'm still in the middle of my sentence, I suddenly become aware that Lilly has softly put her hand on my shoulder."
@@ -540,6 +616,7 @@ label sh_ch34:
         "I gasp and in a sudden fit of panic, I lunge forward in an attempt to get away."
 
         show ev sharedsoak_lilly_recoil
+        hide sharedsoakhanako2
         with Dissolve(0.2)
 
         pause 0.3
@@ -581,12 +658,15 @@ label sh_ch34:
 
         queue music music_moonlight fadein 5.0
 
-        scene ev sharedsoak_lilly_grimace
+        "Having recollected myself, I return to my spot next to Lilly and swallow a lump in my throat before replying."
+
+        scene ev sharedsoak_lilly_relax
+        show sharedsoaklilly listen
+        show sharedsoakhanako2 talk
         show steam:
             alpha 0.5
         with charachangeev
 
-        "Having recollected myself, I return to my spot next to Lilly and swallow a lump in my throat before replying."
         ha "What I w-wanted to say was… that s-supporting your father is also simply the r-right thing to do. B-being stuck in the hospital after s-surgery is hard on everyone."
         ha "Your f-father probably f-feels he can't show it, b-but I think that d-deep down, he's feeling a little bit l-like Hisao m-must have felt. Or…"
         "An uneasy feeling starts welling up in my stomach before I can finish my sentence, but Lilly seems to have guessed what I was about to say."
@@ -597,7 +677,7 @@ label sh_ch34:
 
         queue music music_hanako fadein 5.0
 
-        show ev sharedsoak_lilly_history
+        show sharedsoakhanako2 talksad
         with charachangeev
 
         ha "B-being stuck in the hospital after s-something like this is a very miserable experience. In addition to the p-pain, there's the loneliness."
@@ -717,12 +797,15 @@ label sh_ch34:
         ha "After m-middle school, Yamaku was one of the options the s-staff brought up. It was… isolated and m-most students there were d-disabled. I d-didn't expect to m-make any friends there, but… at least p-people would leave me be."
         ha "That was… g-good enough for me. That was… even m-more than I c-could hope for."
 
+        scene black
         hide ev
         with Dissolve(1.0)
 
         "I rub my eyes a few times, trying to wipe away the tears."
 
-        scene ev sharedsoak_lilly_cry
+        scene ev sharedsoak_lilly_relax
+        show sharedsoaklilly grimace
+        show sharedsoakhanako2 cry
         show steam:
             alpha 0.5
         with Dissolve(1.0)
@@ -731,7 +814,7 @@ label sh_ch34:
         "For a long time, neither of us says a word."
         "When Lilly finally opens her mouth, there's a sad but tender tone in her voice."
 
-        show ev sharedsoak_lilly_smile
+        show sharedsoaklilly talksheepish
         with charachangeev
 
         li "Hanako, you said you gave up on friendship, and yet I think that deep down you never stopped desiring other people in your life. The fact that our friendship came to be is proof of that because it was you who approached me."
@@ -739,32 +822,46 @@ label sh_ch34:
         ha "I'm… n-not sure. I think… I really d-didn't believe in real friendship… back then. But… maybe a part of me wanted to start believing again despite my better judgment."
         ha "I thought… since you couldn't s-see what I looked like… t-things would be… different… somehow."
 
-        show ev sharedsoak_lilly_listen
+        show sharedsoaklilly listen
         with charachangeev
 
         li "And were they?"
-        ha "I'm… not really sure. Even though… you couldn't see my appearance, there… were still plenty of things wrong w-with me that you c-could notice."
-        ha "And sometimes… I wondered if it w-was just a m-matter of time before… you found out m-more about me and then d-decided you could… do better."
 
-        show ev sharedsoak_lilly_grimace
+        show sharedsoakhanako2 sniffle
         with charachangeev
 
+        ha "I'm… not really sure. Even though… you couldn't see my appearance, there… were still plenty of things wrong w-with me that you c-could notice."
+        ha "And sometimes… I wondered if it w-was just a m-matter of time before… you found out m-more about me and then d-decided you could… do better."
         "Lilly considers this for a moment."
         li "Hanako, would you do something for me?"
         ha "Yes?"
+
+        show sharedsoaklilly talkneutral
+        with charachangeev
+
         li "Can you… take my hand?"
         ha "Uh…?"
         "Lilly sits up a little, turns towards me and holds out her hand. A little hesitant, I get a little closer and carefully take her hand in mine, trying to avoid contact with the scar tissue on my wrist."
         "Lilly gives a pleased nod."
+
+        show sharedsoaklilly smile
+        with charachangeev
+
         li "Thank you. Don't be afraid."
+
+        show sharedsoakhanako2 talksad
+        with charachangeev
+
         ha "Huh?"
         "Lilly gently pulls her hands away and then puts them on top of my own. She gives me a reassuring smile."
         "Then, without waiting for my reaction, she moves her hand upwards along my arm until one is resting on my shoulder."
 
         stop music fadeout 0.5
 
-        show ev sharedsoak_lilly_hug:
-            yalign 0.5 zoom 1.02
+        show ev sharedsoak_lilly_hug_large at truecenter:
+            zoom 0.51
+        hide sharedsoaklilly
+        hide sharedsoakhanako2
         with vpunch
 
         "A moment later she leans forward, wraps her arms around me, and before I realize what's happening, Lilly has locked me in an embrace."
@@ -783,6 +880,11 @@ label sh_ch34:
         "She lowers her voice to a whisper."
         li "Just relax…"
         ha "I…"
+
+        show ev:
+            zoom 1.0 anchor (0.0, 0.0) pos (-1389, -195)
+        with { "master": Dissolve(15.0) }
+
         "As my anxiety slowly—very slowly—starts ebbing away, I become aware of Lilly's hands gently feeling my back and running through my hair."
         "As I slowly start to relax, Lilly pulls me even closer, letting her chin rest on my right shoulder and gently pressing the side of her face against my scarred cheek. Her hug is firm yet oddly tender."
         li "A blind girl and a burn victim being best friends… Several of my sighted friends at Yamaku have pointed out to me how strangely fitting it seems."
@@ -799,7 +901,7 @@ label sh_ch34:
         "It feels strangely pleasant, but it's not passion or desire, like I felt when Hisao and I were in here and he hugged me."
         "The gentle sensation of the warm water and Lilly's close presence feel vaguely familiar, a little bit like whenever Hisao is holding me after we make love. It's the same comfortable sense of safety and security, yet also different somehow."
 
-        show ev sharedsoak_lilly_reciprocate
+        show ev sharedsoak_lilly_reciprocate at center
         with charachangeev
 
         "I slowly feel the tense feeling leaving me as my past demons who were awakened briefly by my story are lulled back to sleep, and I eventually gain enough courage to return her hug."
