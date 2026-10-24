@@ -673,7 +673,7 @@ label sh_ch33:
 
         queue music music_moonlight fadein 4.0
 
-        aki "It's not just Dad; Lilly's been keeping me at arms' length over the last two days."
+        aki "It's not just Dad that Lilly's been keeping me at arms' length over the last two days."
         ha "H-how can you be so sure?"
 
         show akira basic_lost
