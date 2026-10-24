@@ -157,7 +157,7 @@ init 30 python:
     sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
     sh_sprites("hanako", ["strainmessy", "worrymessy", "determinedmessy", "downdeterminedmessy", "downsadcrymessy", "downsadmessy", "downtimidmessy", "sadmessy", "timidmessy"], poses=["defarms", "emb"])
     sh_sprites("jun", ["confused", "disturbed", "sadclosed", "sheepish", "smileclosed"], poses=["basic"])
-    sh_sprites("karla", ["confident", "pissed", "plead", "sad", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
+    sh_sprites("karla", ["confident", "pissed", "plead", "smileclosed", "wut"], poses=["basic", "cross"], outfits=["cas"])
     sh_sprites("kenji", ["worried"], outfits=["gym"])
     sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("hiroyuki", ["awkward", "smileclosed", "thinkraised"])

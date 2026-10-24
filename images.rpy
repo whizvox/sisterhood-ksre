@@ -133,7 +133,7 @@ init 1 python:
     sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
     sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
     sh_sprites("nakamura", ["awkward", "bow", "instruct", "neutral", "smile", "speak", "strain", "thinking"])
-    sh_sprites("karla", ["angry", "cheerful", "confused", "displeased", "distant", "laugh", "ponder", "serious", "sheepish", "sheepishclosed", "smile", "smileclosed", "smug", "speak", "troubled", "worried"], poses=["basic", "cross"], outfits=["", "cas"])
+    sh_sprites("karla", ["angry", "cheerful", "confused", "displeased", "distant", "laugh", "ponder", "sad", "serious", "sheepish", "sheepishclosed", "smile", "smileclosed", "smug", "speak", "troubled", "worried"], poses=["basic", "cross"], outfits=["", "cas"])
     sh_sprites("hiroyuki", ["bow", "eyebrow", "scold", "serious", "smile", "speak", "stern", "strained", "thinking"])
 
     phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo", "basic_cheerful", "basic_lost", "basic_angry"])
