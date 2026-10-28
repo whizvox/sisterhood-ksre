@@ -188,6 +188,9 @@ init 1 python:
     simple_composite("evg pillowtalk_3", ["ev pillowtalk_comfort", "pillowtalkhisao concern", "pillowtalkhanako up"])
     simple_composite("evg pillowtalk_4", ["ev pillowtalk_comfort", "pillowtalkhisao grin", "pillowtalkhanako grin"])
     simple_composite("evg pillowtalk_5", ["ev pillowtalk_blanket", "pillowtalkhanako smileblush"])
+    simple_composite("evg pillowtalk dark2", ["ev pillowtalk_blanket dark", "pillowtalkhisao concern dark", "pillowtalkhanako upblush dark"])
+    simple_composite("evg pillowtalk dark3", ["ev pillowtalk_blanket dark", "pillowtalkhisao grin dark", "pillowtalkhanako smileblush dark"])
+    simple_composite("evg pillowtalk dark4", ["ev pillowtalk_blanket dark", "pillowtalkhisao grin dark", "pillowtalkhanako grinblush dark"])
     simple_composite("evg sharedsoak_lilly_2", ["ev sharedsoak_lilly_relax", "sharedsoaklilly smile", "sharedsoakhanako2 anxious"])
     simple_composite("evg sharedsoak_lilly_3", ["ev sharedsoak_lilly_relax", "sharedsoaklilly grimace", "sharedsoakhanako2 anxious"])
     simple_composite("evg sharedsoak_lilly_4", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talksmile", "sharedsoakhanako2 listen"])
@@ -207,7 +210,7 @@ init 1:
         GalleryImageSet("funindark", "ev funindark_hug_rest", "ev funindark_hug_neck", "ev funindark_hug_cheek", "ev funindark_hug_kiss", "ev funindark_hug_look", "ev funindark_hug_awkward"),
         GalleryImageSet("funindark_h", Trigger("ev funindark_naked_touch_close", "ev funindark_naked_touch"), Trigger("ev funindark_naked_hand_close", "ev funindark_naked_hand"), Trigger("ev funindark_naked_breast_large", "ev funindark_naked_breast"), "ev funindark_naked_grab", "ev funindark_naked_masturbate", "ev funindark_naked_climax", all_adult=True),
         GalleryImageSet("hotel", Special("ev hotel_onhanako", trig="ev hotel_onhanako_large"), "ev hotel_onhisao", "ev hotel_mirror", "ev hotel_layontop", "ev hotel_thigh", "ev hotel_thigh_climax", "ev hotel_masturbate", "ev hotel_masturbate_climax", "ev hotel_bed", "ev hotel_bed_climax", all_adult=True),
-        GalleryImageSet("pillowtalk", "ev pillowtalk_comfort dark", Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g2"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g3"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g4"), "ev pillowtalk_kiss", Trigger("ev pillowtalk_comfort", "evg pillowtalk_2"), Trigger("ev pillowtalk_comfort", "evg pillowtalk_3"), Trigger("ev pillowtalk_comfort", "evg pillowtalk_4"), "ev pillowtalk_blanket", Trigger("ev pillowtalk_blanket", "evg pillowtalk_5"), "ev pillowtalk_caress"),
+        GalleryImageSet("pillowtalk", "ev pillowtalk_comfort dark", Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g2"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g3"), Trigger("ev pillowtalk_comfort dark", "evg pillowtalk dark g4"), "ev pillowtalk_kiss", Trigger("ev pillowtalk_comfort", "evg pillowtalk_2"), Trigger("ev pillowtalk_comfort", "evg pillowtalk_3"), Trigger("ev pillowtalk_comfort", "evg pillowtalk_4"), "ev pillowtalk_blanket", Trigger("ev pillowtalk_blanket", "evg pillowtalk_5"), "ev pillowtalk_caress", "ev pillowtalk_blanket dark", Trigger("ev pillowtalk_blanket dark", "evg pillowtalk dark2"), Trigger("ev pillowtalk_blanket dark", "evg pillowtalk dark3"), Trigger("ev pillowtalk_blanket dark", "evg pillowtalk dark4")),
         GalleryImageSet("ballroomdance", Trigger("ev ballroomdance_emb_large", "ev ballroomdance_emb_normal"), Trigger("ev ballroomdance_smile_large", "ev ballroomdance_smile_normal")),
         GalleryImageSet("rainyroad", "ev rainyroad"),
         GalleryImageSet("rooftopkiss", "ev rooftopkiss_normal"),
