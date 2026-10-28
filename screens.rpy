@@ -273,6 +273,12 @@ screen sisterhood_chapter_select(page=0):
 
     default current_chapter_num = None
     default current_desc = None
+    default selected_scene = None
+    default can_interact = False
+
+    # mobile devices immediately trigger a "hover" event if user's finger also overlaps one of the scene names when
+    # tapping the "Chapter Select" button. this prevents that from happening.
+    timer 0.2 action SetScreenVariable("can_interact", True)
 
     frame:
         style_suffix "interface"
@@ -312,19 +318,26 @@ screen sisterhood_chapter_select(page=0):
                         if renpy.seen_label(chapter[1]) or sh_debug:
                             textbutton chapter[0]:
                                 left_margin 30
-                                action [
+                                # special behavior for mobile devices that require tapping twice to read the replay
+                                action If(not (renpy.android or renpy.ios) or (selected_scene == chapter[1] and can_interact), true=[
+                                    SetScreenVariable("selected_scene", None),
                                     SetVariable("_current_replay", chapter[1]),
                                     SetVariable("current_scene", chapter[1]),
                                     Start("sisterhood_replay_start")
-                                ]
-                                hovered [
+                                ], false=SetScreenVariable("selected_scene", chapter[1]))
+                                # don't update the scene name and description if within the first moment of the screen
+                                # initializing
+                                hovered If(not (renpy.android or renpy.ios) or can_interact, true=[
                                     SetScreenVariable("current_chapter_num", chapter[3] if len(chapter) > 4 else None),
                                     SetScreenVariable("current_desc", f"{(chapter[1] + ' : ' if sh_debug else '')}{chapter[2]}")
-                                ]
-                                unhovered [
-                                    SetScreenVariable("current_chapter_num", None),
-                                    SetScreenVariable("current_desc", None),
-                                ]
+                                ], false=None)
+                                # mobile devices immediately unhover buttons after they're tapped, so stop that from
+                                # hiding the scene name and description
+                                if not renpy.android and not renpy.ios:
+                                    unhovered [
+                                        SetScreenVariable("current_chapter_num", None),
+                                        SetScreenVariable("current_desc", None),
+                                    ]
                         else:
                             textbutton _("???") action None:
                                 left_margin 30
