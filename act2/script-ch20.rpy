@@ -325,7 +325,7 @@ label sh_ch20:
         show naomi bend_smile
         with chchange
 
-        na "Oh, right. Still that first aid training, huh? How'd it go?"
+        na "Oh, right. Still on that first aid training, huh? How'd it go?"
         ha "I finished it today."
 
         show jun cast_happy
@@ -606,7 +606,7 @@ label sh_ch20:
         "He sits down behind me and gently starts massaging my shoulders."
         ha "That would be nice."
         "I let my head hang forward and try to relax as much as possible as Hisao massages the muscles of my neck and shoulders."
-        "This is something he's been doing for me since we started dating—a way to take away whatever stress I built up over the day."
+        "This is something he's been doing for me since we started dating—a way to remove whatever stress I built up over the day."
         ha "You can… d-do it a little more forcefully."
         hi "This might make a difference too."
         "Hisao reaches up and pulls the shoulders of my nightgown away, letting it slide down enough to expose my shoulders, before rubbing his hands together to warm them. Moments later, I feel a warm hand on my bare left shoulder stroking it and then kneading it firmly."
@@ -725,7 +725,7 @@ label sh_ch20:
         show pillowtalkhisao concern
         with charachangeev
 
-        hi "I've worked hard the last one and a half week to get back into shape. I did a light jog this morning without any troubles. My stamina's not at the point where it was prior to my accident just yet, but it's getting there. I'll probably be fine."
+        hi "I've worked hard the last one and a half weeks to get back into shape. I did a light jog this morning without any troubles. My stamina's not at the point where it was prior to my accident just yet, but it's getting there. I'll probably be fine."
         ha "Did you… t-talk to the nurse?"
         hi "Not about this."
         "I let out a soft but still audible sigh. I can't say I blame him very much. I certainly wouldn't be able to do it. But Hisao's a lot more confident than I am, and he sees the nurse on an almost daily basis. But still…"
