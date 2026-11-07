@@ -552,7 +552,7 @@ label sh_ch44:
         li "I will."
 
         scene bg school_dormhanako
-        show hanagown distantmessy_close:
+        show hanagown distant_messy_close:
             center
             xpos 0.39
         #show expression Solid("#00000022")
@@ -583,14 +583,14 @@ label sh_ch44:
         "An awkward silence, and then the door is opened further, allowing us to go inside."
 
         scene bg school_dormhanako
-        show hanagown distantmessy at right
+        show hanagown distant_messy at right
         with locationchange
 
         play music music_moonlight fadein 4.0
 
         "I'm not really sure what Hanako has been doing before we knocked on her door. There's no book on her nightstand nor are there any notes or study books on her desk."
 
-        show hanagown distantmessy at tworight
+        show hanagown distant_messy at tworight
         with charaenter
 
         "She's already wearing her nightgown, and she looks smaller than ever in it. It must be her slumped shoulders. She looks tired, even though it's not very late yet."
@@ -615,7 +615,7 @@ label sh_ch44:
         li "Miss Takawa?"
         hi "Yeah, I spoke with Mutou in the staff room, and she was nearby and joined the discussion. She said Hanako could approach either of them to discuss her exam results."
 
-        show hanagown distantmessy
+        show hanagown distant_messy
         show lilly basic_concerned_paj_close
         with chchange
 
@@ -634,13 +634,13 @@ label sh_ch44:
         "I suppose there's really no way around it. I take a deep breath and try to keep my tone as neutral as possible."
         hi "I probably could have done better. I ended up scoring a sixty five."
 
-        show hanagown shockmessy
+        show hanagown shock_messy
         with chchange
 
         ha "S-s-sixty five?"
         "Hanako's eyes grow the size of small saucers as she hears my grade. Then she shoots an unsure look at Lilly."
 
-        show hanagown pleadmessy
+        show hanagown plead_messy
         with chchange
 
         ha "L-Lilly?"
@@ -676,7 +676,7 @@ label sh_ch44:
         "She smiles awkwardly."
         li "I suppose we're... in luck."
 
-        show hanagown distantmessy
+        show hanagown distant_messy
         with chchange
 
         "Hanako looks a little uncertain, but then slowly nods her head. I scratch my head as I remember something."
@@ -704,7 +704,7 @@ label sh_ch44:
         li "Okay."
         hi "Yeah, okay. Just... don't neglect yourself, Hanako."
 
-        show hanagown distantmessy
+        show hanagown distant_messy
         with chchange
 
         ha "I w-won't."
@@ -714,7 +714,7 @@ label sh_ch44:
         play sound sfx_dooropen
 
         hide lilly
-        show hanagown remorsefulmessy_close:
+        show hanagown remorseful_messy_close:
             center
             xpos 0.39
         show expression Solid("#00000022")

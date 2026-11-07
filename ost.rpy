@@ -13,7 +13,7 @@ init 1 python:
         "gostone_hard", "gostone_stress1", "gostone_stress2", "gostone", "gostone_soft_stress1", "gostone_soft_stress2",
         "gostone_soft",
         # phone
-        "phonering", "phonering2", "phonedial", "phonenotif", "phonepickup",
+        "phonering", "phonering2", "phonering3", "phonedial", "phonenotif", "phonepickup",
         # plane
         "plane_aftertakeoff", "plane_beforetakeoff", "plane_dingdong", "plane_inflight", "plane_waiting",
         # pub
@@ -37,7 +37,7 @@ init 1 python:
         "bikeride", "ticktock", "windy",
         # other
         "alarmbeep", "bedsheets", "bicyclecrash", "camerashutter", "chairscrape", "clap", "collapse", "metalclink",
-        "shojidoor", "showerdrain", "shower2", "teacup_loudclink", "unlatch", "waterpour"
+        "shojidoor", "showerdrain", "shower2", "teacup_loudclink", "unlatch", "waterpour", "winecork"
     ])
 
 init:

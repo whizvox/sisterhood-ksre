@@ -142,50 +142,50 @@ init:
             (_("Rock Skipping Again"), "sh_ch33.s1", _("Hanako and Akira open up to each other."), _("Chapter 33"), "hanako"),
             (_("Present and Past"), "sh_ch34.s1", _("Hanako and Lilly have a heart-to-heart in the bath."), _("Chapter 34 p.1"), "hanako"),
             (_("Sendoff"), "sh_ch34.s2", _("Hanako and Hisao head back home."), _("Chapter 34 p.2"), "hanako")
+        ]),
+        (_("Act 3"), [
+            (_("Week at Hisao's"), "sh_ch35.s1", _("Hanako wakes up in Hisao's home and catches up with Lilly.")),
+            (_("Love is War"), "sh_ch35.s2", _("The lovebirds eat Hanako's home-cooked breakfast.")),
+            (_("Aquatic Artplay"), "sh_ch35.s3", _("Hanako and Hisao have some fun in the shower.")),
+            (_("A Blast from his Past"), "sh_ch36.s1", _("Hanako has an unexpected encounter during a karaoke date with Hisao.")),
+            (_("Lady of the House"), "sh_ch37.s1", _("Lilly looks after her father in her mother's absence."), "lilly"),
+            (_("Through Your Eyes"), "sh_ch37.s2", _("Lilly and her father start bonding with one another."), "lilly"),
+            (_("Second Homecoming"), "sh_ch38.s1", _("Hanako and Hisao welcome Lilly back to Japan... again."), "hanako"),
+            (_("Life Choices"), "sh_ch38.s2", _("Hanako has tea with Lilly and Karla and is let in on some surprising news."), "hanako"),
+            (_("Answering the Muse's Call"), "sh_ch39.s1", _("Hanako lets Lilly and Karla in on the establishment of a new writing club"), "hanako"),
+            (_("The Quill is Mightier than the Sword"), "sh_ch39.s2", _("Hanako attends the first meeting of the club."), "hanako"),
+            (_("Perspective Shift"), "sh_ch39.s3", _("Hanako and Jun reflect on the evening's events."), "hanako"),
+            (_("Just Friends"), "sh_ch40.s1", _("While visiting Japan, Akira has dinner with her former boyfriend."), "akira"),
+            (_("Just Friends?"), "sh_ch40.s2", _("Akira and her ex discuss office politics and inheritance."), "akira"),
+            (_("Morning Practice"), "sh_ch41.s1", _("Hanako convinces Hisao to practice indoors for a change."), "hanako"),
+            (_("Missing Star"), "sh_ch41.s2", _("Hanako learns that she and her club won a prize."), "hanako"),
+            (_("Orientation"), "sh_ch41.s3", _("Hanako has a talk about her university applications with Mutou."), "hanako"),
+            (_("The Promising Future"), "sh_ch41.s4", _("Hanako studies for the mock exams with Hisao and Lilly."), "hanako"),
+            (_("Morning Prep"), "sh_ch42.s1", _("Hanako prepares to attend an open house day."), "hanako"),
+            (_("Road Trip"), "sh_ch42.s2", _("Hanako and the others hit the road to Kasshoku."), "hanako"),
+            (_("Kasshoku"), "sh_ch42.s3", _("Hanako checks out the journalism facility with Naomi."), "hanako"),
+            (_("Time Out"), "sh_ch42.s4", _("Hanako has a quiet lunch with Naomi near the track field."), "hanako"),
+            (_("Fate's Call"), "sh_ch42.s5", _("The open house day comes to a dramatic conclusion."), "hanako"),
+            (_("Recriminations"), "sh_ch43.s1", _("Lilly, her father and Hisao discover what happened in the lecture hall."), "lilly"),
+            (_("Hide and Seek"), "sh_ch43.s2", _("Lilly and the others set out to search for Hanako."), "lilly"),
+            (_("Friend of a Friend"), "sh_ch43.s3", _("Lilly and Naomi talk about Hanako."), "lilly"),
+            (_("Deliberation"), "sh_ch43.s4", _("Lilly and her father ponder on the day's events."), "lilly"),
+            (_("Beyond Repair"), "sh_ch44.s1", _("An intimate moment between Hisao and Hanako ends on a sad note."), "hisao"),
+            (_("Academic Anxiety"), "sh_ch44.s2", _("Hisao gets his results of the mock exams."), "hisao"),
+            (_("Falling Behind"), "sh_ch44.s3", _("Hisao and Lilly visit Hanako in her room."), "hisao"),
+            (_("Not Guilty!"), "sh_ch45.s1", _("Lilly has a brief talk about exam prep with Misha."), "lilly"),
+            (_("The Stakes of the Game"), "sh_ch45.s2", _("Lilly and Hisao talk to Miss Takawa about Hanako."), "lilly"),
+            (_("Christmas Cramming"), "sh_ch46.s1", _("Hisao and Hanako visit the Satous for Christmas... and more studying."), "hisao"),
+            (_("Unwrapping the Present"), "sh_ch46.s2", _("Hisao's and Hanako's visit to the Satou residence ends with some unexpected gifts."), "hisao"),
+            (_("Family Reunion"), "sh_ch47.s1", _("Akira answers her family's call for the New Year's celebrations."), "akira"),
+            (_("The Fifth Wheel"), "sh_ch47.s2", _("The Satou family and Hanako visit a shrine for the New Year's celebration."), "akira"),
+            (_("Grievances"), "sh_ch47.s3", _("Akira and her mother get into a harsh argument."), "akira"),
+            (_("Black Sheep"), "sh_ch47.s4", _("Visiting the shrine again with Lilly and Hanako, Akira reflects on her relationship with her family."), "akira"),
+            (_("Close Call"), "sh_ch48.s1", _("Hisao has a frightening experience during the night before the Center Test."), "hisao"),
+            (_("Short Circuit"), "sh_ch48.s2", _("Tragedy strikes just before Hisao takes part in the Center Test."), "hisao"),
+            (_("Consultation"), "sh_ch49.s1", _("Hisao has a long overdue talk with the Nurse."), "hisao"),
         ])
     ]
-
-    # TRANSFORMS
-
-    transform phonebox:
-        xanchor 1.0 xpos 0.95 yanchor 1.0 ypos 0.82
-    transform centersit:
-        xpos 0.5 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    transform twoleftsit:
-        xpos 0.3 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    transform tworightsit:
-        xpos 0.7 xanchor 0.5 ypos 1.1 yanchor 1.0 alpha 1.0
-    transform leftsit:
-        xpos 0.0 xanchor 0.0 ypos 1.1 yanchor 1.0 alpha 1.0
-    transform rightsit:
-        xpos 1.0 xanchor 1.0 ypos 1.1 yanchor 1.0 alpha 1.0
-
-    transform displayitemshow(ya=0.5):
-        truecenter
-        ypos ya+0.2 alpha 0.0
-        easein 1.0 alpha 1.0 ypos ya
-    transform displayitem(ya=0.5):
-        truecenter
-        alpha 1.0 ypos ya
-    transform displayitemhide(ya=0.5):
-        ease 1.0 ypos ya+0.2 alpha 0.0
-    transform sepia:
-        matrixcolor SepiaMatrix(tint="#ffefd7")
-    transform sepiamuted:
-        matrixcolor TintMatrix("#ffefd7") * SaturationMatrix(0.5)
-    transform nightfilter:
-        matrixcolor TintMatrix(Color(rgb=(0.9, 0.92, 1.0))) * BrightnessMatrix(-0.05)
-    transform soapopera_talk:
-        anchor (0.5, 0.5) pos (0.5, 0.85)
-
-    define nextchapter = Dissolve(2.0)
-    define endchapter = Dissolve(3.0)
-    define mediumflash = Fade(1, 0, 1, color="#FFF")
-    define longflash = Fade(1.5, 0, 1.5, color="#FFF")
-    define easeinmove = MoveTransition(1.5, time_warp=_warper.easein)
-    define easeoutmove = MoveTransition(1.5, time_warp=_warper.easeout)
-
-    define erase = ImageDissolve(f"{sh_path}/gui/trans/erase.png", 2.0)
 
     # TINT COLORS
 
@@ -199,6 +199,7 @@ init:
 
     define config.font_name_map["pixel"] = f"{sh_path}/font/Quinquefive-ALoRM.ttf"
     define config.font_name_map["times"] = f"{sh_path}/font/Newsreader-VariableFont_opsz,wght.ttf"
+    define config.font_name_map["symbols"] = f"{sh_path}/font/Symbols.ttf"
 
     if sh_debug:
         $ config.log = "sisterhood.log"
@@ -237,8 +238,13 @@ init:
     define dc = Character(_("Doctor"), who_color="#ffffff")
     define miy = Character(_("Miyagi"), who_color="#9AC1E8")
     define fer = Character(_("Ferguson"), who_color="#ffffff")
+    define hid = Character(_("Dad"), who_color="#ffffff", screen="say_sh")
+    define him = Character(_("Mom"), who_color="#ffffff", screen="say_sh")
+    define yui = Character(_("Yuichi"), who_color="#b37b7b", screen="say_sh")
+    define my = Character(_("Miyagi"), who_color="#ffffff", screen="say_sh")
 
     # unknown characters
     define ta_ = Character(_("Old woman"), kind=ta)
     define nak_ = Character(_("Mid-thirties man"), kind=nak)
     define ka_ = Character(_("Pub patron"), kind=ka)
+    define iwa_ = Character(_("Girl"), who_color="#ffffff", screen="say_sh")

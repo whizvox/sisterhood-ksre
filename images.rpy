@@ -108,10 +108,11 @@ init 1 python:
             else:
                 return [img for img in self.images if not isinstance(img, Special) or not img.adult]
 
-    sh_sprites("takawa", ["serious", "smile", "happy", "worried", "calculating", "stern"])
+    ## returning character sprites
     # overwrite the closeup "boo" sprite since the original is strangely low-quality
     sh_sprites("akira", ["angry", "boo", "cheerful", "depressed", "distant", "peaceful", "pissed", "pleased", "ponder", "sad", "sheepish", "smug", "sweet", "wistful"], poses=["basic"])
     sh_sprites("akira", ["annoyed", "boo", "cheerful", "depressed", "ending", "evil", "kill", "laugh", "lost", "ponder", "resigned", "sad", "sheepish", "smile", "smug", "sweet", "wistful"], poses=["basic"], outfits=["cas"])
+    sh_sprites("hanagown", ["distant_messy", "remorseful_messy", "plead_messy", "shock_messy", "worry_blush", "worry_messy"])
     sh_sprites("hanako", ["determined", "downangry", "shutsmile"], poses=["emb"])
     sh_sprites("hanako", ["bashful", "distant", "downsmile", "emb", "worry"], poses=["basic", "emb"], outfits=["clip"])
     sh_sprites("hanako", ["blushtimid", "downsmile", "downtimid", "emb", "sad", "smile", "worry", "bashful"], poses=["emb", "basic", "cover"], outfits=["cas_clip", "cas_nohat_clip"])
@@ -119,30 +120,42 @@ init 1 python:
     sh_sprites("hanako", ["shock", "speechless", "strain", "worry"], poses=["def", "defarms"], outfits=["sum"])
     sh_sprites("hanako", ["shock", "strain", "uneasy", "worry"], poses=["def", "defarms"], outfits=["sum_clip", "sum_clipunb"])
     sh_sprites("hanako", ["blushing", "blushtimid", "downsad", "downsmile", "downtimid", "emb", "sad", "smile", "timid"], poses=["emb"], outfits=["sum", "sum_clip"])
-    sh_sprites("hanagown", ["worry_blush"])
-    sh_sprites("hisao", ["annoy", "emb", "bashful", "blush", "frown", "grin", "smile", "neutral", "pout", "speak", "worry", "neutralblush", "sweet"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
-    sh_sprites("naomi", ["focus", "grin", "laugh", "neutral", "shock", "smile", "wink"], poses=["basic", "bend"])
-    sh_sprites("natsume", ["angry", "cheerful", "neutral", "sad", "serious", "smile"], poses=["basic", "hands"])
-    sh_sprites("nomiya", ["laugh"])
-    sh_sprites("misha", ["sign_sad_cas"])
-    sh_sprites("miyagi", ["neutral", "resigned", "smile"], poses=["basic"])
+    sh_sprites("hanako", ["distant"], poses=["basic"], outfits=["cas_nohat"])
+    sh_sprites("hanako", ["speechless", "shock", "worry"], poses=["def", "defarms"], outfits=["cas_nohat"])
+    #sh_sprites("hanako", ["downmeek", "downsleep", "meek"], poses=["emb"]) # is this necessary?
+    sh_sprites("hanako", ["downmeek", "downsad", "downsmile", "downtimid", "meek", "smile", "timid"], poses=["emb"], outfits=["cas_nohat"])
+    sh_sprites("hanako", ["strainmessy", "worrymessy", "determinedmessy", "downdeterminedmessy", "downsadcrymessy", "downsadmessy", "downtimidmessy", "sadmessy", "timidmessy"], poses=["defarms", "emb"])
+    sh_sprites("kenji", ["happy", "neutral", "tsun", "worried"], outfits=["gym"])
     sh_sprites("lilly", ["basic_cheerful", "basic_satisfied", "cane_cry", "cane_offended_cas", "cane_offended", "cane_sad_cas", "cane_sad", "cane_satisfied_cas"])
+    sh_sprites("lilly", ["displeased", "emb", "overjoyed"], poses=["basic", "cane"], outfits=["cas"])
     sh_sprites("lilly", ["cheerful", "concerned", "cry", "displeased", "giggle", "listen", "mad", "oops", "planned", "pout", "offended", "reminisce", "sad", "satisfied", "sleepy", "smile", "smileclosed", "surprised", "weaksmile"], poses=["basic", "cane"], outfits=["sum"])
     sh_sprites("lilly", ["behind_smileclosed_nak", "behind_giggle_nak", "behind_concerned_nak"], nude_if=lambda name: True)
-    sh_sprites("doctor", ["bigsmile"])
-    sh_sprites("kenji", ["happy", "neutral", "tsun"], outfits=["gym"])
-    sh_sprites("jun", ["annoyed", "eyeroll", "happy", "laugh", "pout", "sad", "serious", "smile", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "castraise"])
-    sh_sprites("nakamura", ["awkward", "bow", "instruct", "neutral", "smile", "speak", "strain", "thinking"])
-    sh_sprites("karla", ["angry", "cheerful", "confused", "displeased", "distant", "laugh", "ponder", "sad", "serious", "sheepish", "sheepishclosed", "smile", "smileclosed", "smug", "speak", "troubled", "worried"], poses=["basic", "cross"], outfits=["", "cas"])
-    sh_sprites("hiroyuki", ["bow", "eyebrow", "scold", "serious", "smile", "speak", "stern", "strained", "thinking"])
+    sh_sprites("misha", ["sign_sad_cas", "suspicious", "weaksmile"], poses=["", "perky"])
+    sh_sprites("muto", ["eyebrow"])
+    sh_sprites("nomiya", ["laugh"])
+    sh_sprites("nurse", ["serious"])
+    sh_sprites("shizu", ["evil"], poses=["adjust"])
 
-    phonebox_sprites("akira", ["basic_smile", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo", "basic_cheerful", "basic_lost", "basic_angry"])
+    ## original character sprites
+    sh_sprites("hiroyuki", ["awkward", "bow", "eyebrow", "scold", "serious", "smile", "smileclosed", "speak", "stern", "strained", "thinking", "thinkraised"])
+    sh_sprites("hisao", ["annoy", "bashful", "blush", "emb", "frown", "grin", "neutral", "neutralblush", "pout", "smile", "smileclosed", "speak", "sweet", "worry"], poses=["basic", "cross"], outfits=["uni", "swt", "polo", "bath", "nak"])
+    sh_sprites("jun", ["annoyed", "confused", "disturbed", "eyeroll", "happy", "laugh", "pout", "sad", "sadclosed", "serious", "sheepish", "smile", "smileclosed", "smug", "speak", "weaksmile"], poses=["basic", "cast", "raise", "brace", "castraise"])
+    sh_sprites("karla", ["angry", "cheerful", "confident", "confused", "displeased", "distant", "laugh", "pissed", "plead", "ponder", "serious", "sheepish", "sheepishclosed", "smile", "smileclosed", "smug", "speak", "troubled", "worried", "wut"], poses=["basic", "cross"], outfits=["", "cas"])
+    sh_sprites("miyagi", ["neutral", "resigned", "smile"], poses=["basic", "smoke"])
+    sh_sprites("nakamura", ["awkward", "bow", "instruct", "neutral", "smile", "speak", "strain", "thinking"])
+    sh_sprites("naomi", ["angry", "annoyed", "concern", "confused", "focus", "grin", "grinclosed", "laugh", "neutral", "seizure", "serious", "sheepish", "shock", "smile", "smileclosed", "wink"], poses=["basic", "bend"])
+    sh_sprites("natsume", ["angry", "cheerful", "cry", "determined", "evil", "neutral", "sad", "serious", "smile", "weaksmile"], poses=["basic", "crutch", "hands"])
+    sh_sprites("takawa", ["calculating", "devious", "happy", "serious", "smile", "stern", "sweet", "weaksmile", "worried"])
+
+    phonebox_sprites("akira", ["basic_smile", "basic_smug", "basic_sweet", "basic_annoyed", "basic_resigned", "basic_laugh", "basic_lost", "basic_boo", "basic_cheerful", "basic_lost", "basic_angry"])
+    phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
     phonebox_sprites("hanako", ["basic_worry", "def_worry"], xoff=-45)
     phonebox_sprites("hanako", ["emb_smile", "emb_timid", "emb_blushing"])
-    phonebox_sprites("hanagown", ["worry", "distant", "irritated", "normal"])
-    phonebox_sprites("lilly", ["basic_smile", "basic_concerned", "basic_sad", "basic_displeased", "cane_oops", "basic_reminisce"], cropyoff=-40)
+    phonebox_sprites("hiroyuki", ["speak", "serious", "thinking", "awkward", "scold", "smileclosed", "smile"], xoff=-22, cropxoff=130, cropyoff=-110, addwidth=14)
+    phonebox_sprites("hisao", ["basic_grin_swt", "basic_neutral_polo", "basic_neutral_swt", "basic_neutral_uni", "basic_smile_swt", "basic_smile_uni", "basic_speak_polo", "basic_speak_uni", "basic_sweet_polo", "basic_worry_polo", "basic_sweet_swt"], cropxoff=95, cropyoff=-90)
     phonebox_sprites("karla", ["basic_smile_cas", "basic_sheepish_cas", "basic_ponder_cas", "basic_distant_cas", "basic_troubled_cas", "basic_displeased_cas", "basic_smileclosed_cas", "basic_cheerful_cas"], vanilla=False, xoff=20, cropxoff=150, cropyoff=-100)
-    phonebox_sprites("hisao", ["basic_worry_polo", "basic_speak_polo", "basic_neutral_polo", "basic_sweet_polo"], cropxoff=95, cropyoff=-90)
+    phonebox_sprites("lilly", ["basic_cheerful_sum", "basic_concerned", "basic_concerned_sum" "basic_displeased", "basic_displeased_sum", "cane_oops", "basic_reminisce", "basic_reminisce_sum", "basic_sad", "basic_sad_sum", "basic_sleepy_sum", "basic_smile_sum", "basic_smileclosed", "basic_smileclosed_sum", "basic_weaksmile", "basic_weaksmile_sum", "cane_giggle_sum", "cane_oops_sum", "cane_satisfied", "cane_satisfied_sum", "cane_sleepy"], cropyoff=-40)
+    phonebox_sprites("naomi", ["basic_angry", "basic_annoyed", "basic_concern", "basic_serious"], xoff=-20, cropyoff=-45)
 
     sh_event("wheatfield", ["smile", "talk", "dreamy", "awkward"])
     sh_event("funindark", ["hug_rest", "hug_rest_large", "hug_neck", "hug_cheek", "hug_kiss", "hug_look", "hug_awkward"])
@@ -165,15 +178,17 @@ init 1 python:
     sh_event("sharedsoak", ["hisao_relax", "hisao_talk", "lilly_relax", "lilly_shoulder", "lilly_recoil", "lilly_hug_large", "lilly_reciprocate", "lilly_lean", "lilly_support"]),
     sh_event("hanakohistory", ["bed", "bed_pain", "fire", "fire_alone", "urn", "read", "read_leave", "read_alone", "play", "play_tease", "bully", "bully_cry", "gate"])
     sh_event("akirapast", ["argument", "elemschool", "grandparents1", "grandparents2", "midschool", "promotion", "study1", "study2", "unfavorite", "vacation"])
+    sh_event("bedside", ["headsets", "papers", "sit", "soup", "wine"])
+    sh_event("sadspooning", ["tearoom"])
 
     sh_fireflies()
 
     sh_bgs("inverness", ["shore", "street", "pubdoor", "pubback", "pubbilliards", "field", "culloden", "tree"])
-    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "bathroom_ni", "bathroom_blur_ni", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
-    sh_bgs("school", ["firstaidclass", "hallway4", "newspaper", "office", "staircase3", "therapist", "therapist_blur1", "therapist_blur2"])
+    sh_bgs("satou", ["patio", "entrance", "entrance_blur", "grounds", "livingroom", "livingroom_ni", "masterbed_ni", "stairs", "stairs_blur", "guestroom", "kitchen", "kitchen_ni", "bathroom", "bathroom_ni", "bathroom_blur_ni", "study", "study_blur", "changingroom", "guestroom_blur", "guestroom_ni", "guest2"])
+    sh_bgs("school", ["dormcommon", "dormkitchen", "dormnaomi", "firstaidclass", "gymext", "gymint_exam", "hallway4", "newspaper", "office", "staircase3", "teacherlounge", "therapist", "therapist_blur1", "therapist_blur2"])
     sh_bgs("hok", ["field_ni", "houseext_ni", "bedroom", "newspaper"])
     sh_bgs("arcade", ["airhockey", "fightgame", "shooter", "floor", "crane", "bike"])
-    sh_bgs("city", ["coffeeshop"])
+    sh_bgs("city", ["coffeeshop", "karokebooth"])
     sh_bgs("hotel", ["bathroom", "room"])
     sh_bgs("fanres", ["entrance", "table"])
     sh_bgs("hosp", ["ceiling_blur", "hallway", "office", "room2_blur"])
@@ -181,27 +196,19 @@ init 1 python:
     sh_bgs("plane", ["cabin", "seat", "window_runway", "window_city", "window_clouds", "bathroom"])
     sh_bgs("raigmore", ["ambulance", "ambulance_blur", "elevator", "entrance", "hallway", "office", "room", "waitroom", "waitcard"])
     sh_bgs("smt", ["reception", "office"])
-    sh_bgs("akira", ["car"])
+    sh_bgs("misc", ["akira_car", "car_ss", "hiroyukicar", "hiroyukicar_ni"])
+    sh_bgs("hisao", ["livingroom", "kitchen", "bedroom"])
+    sh_bgs("satoujp", ["dining", "entryway", "ext", "guest", "kitchen_ni", "livingroom", "stairs", "station"])
+    sh_bgs("yuichi", ["intercom", "genkan", "dining"])
+    sh_bgs("kasshoku", ["entrance", "entrance_ni", "grounds", "journalentry", "journalhall", "classroom", "bleachers", "lecturehall", "englishcafe", "grounds2_ni", "restroom"])
+    sh_bgs("suburb", ["park_ni"])
+    sh_bgs("shrine", ["entrance", "ext", "ext_ni", "int", "tree_ni"])
 
     # memory-specific event CGs
     simple_composite("evg pillowtalk_2", ["ev pillowtalk_comfort", "pillowtalkhisao upsmile"])
     simple_composite("evg pillowtalk_3", ["ev pillowtalk_comfort", "pillowtalkhisao concern", "pillowtalkhanako up"])
     simple_composite("evg pillowtalk_4", ["ev pillowtalk_comfort", "pillowtalkhisao grin", "pillowtalkhanako grin"])
     simple_composite("evg pillowtalk_5", ["ev pillowtalk_blanket", "pillowtalkhanako smileblush"])
-    simple_composite("evg pillowtalk dark2", ["ev pillowtalk_blanket dark", "pillowtalkhisao concern dark", "pillowtalkhanako upblush dark"])
-    simple_composite("evg pillowtalk dark3", ["ev pillowtalk_blanket dark", "pillowtalkhisao grin dark", "pillowtalkhanako smileblush dark"])
-    simple_composite("evg pillowtalk dark4", ["ev pillowtalk_blanket dark", "pillowtalkhisao grin dark", "pillowtalkhanako grinblush dark"])
-    simple_composite("evg sharedsoak_lilly_2", ["ev sharedsoak_lilly_relax", "sharedsoaklilly smile", "sharedsoakhanako2 anxious"])
-    simple_composite("evg sharedsoak_lilly_3", ["ev sharedsoak_lilly_relax", "sharedsoaklilly grimace", "sharedsoakhanako2 anxious"])
-    simple_composite("evg sharedsoak_lilly_4", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talksmile", "sharedsoakhanako2 listen"])
-    simple_composite("evg sharedsoak_lilly_4", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talkneutral", "sharedsoakhanako2 listen"])
-    simple_composite("evg sharedsoak_lilly_5", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talksheepish", "sharedsoakhanako2 neutral"])
-    simple_composite("evg sharedsoak_lilly_6", ["ev sharedsoak_lilly_relax", "sharedsoaklilly smile", "sharedsoakhanako2 neutral"])
-    simple_composite("evg sharedsoak_lilly_7", ["ev sharedsoak_lilly_relax", "sharedsoaklilly listen", "sharedsoakhanako2 talk"])
-    simple_composite("evg sharedsoak_lilly_8", ["ev sharedsoak_lilly_shoulder", "sharedsoakhanako2 shoulder"])
-    simple_composite("evg sharedsoak_lilly_9", ["ev sharedsoak_lilly_relax", "sharedsoaklilly listen", "sharedsoakhanako2 talksad"])
-    simple_composite("evg sharedsoak_lilly_10", ["ev sharedsoak_lilly_relax", "sharedsoaklilly grimace", "sharedsoakhanako2 cry"])
-    simple_composite("evg sharedsoak_lilly_11", ["ev sharedsoak_lilly_relax", "sharedsoaklilly talkneutral", "sharedsoakhanako2 sniffle"])
 
 init 1:
     # gallery images
@@ -240,6 +247,7 @@ init 1:
     image takawa serious_close_blur2 = f"{sh_path}/sprites/takawa/close/takawa_serious_close_blur2.png"
     image takawa smile_close_blur1 = f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur1.png"
     image takawa smile_close_blur2 = f"{sh_path}/sprites/takawa/close/takawa_smile_close_blur2.png"
+    image naomi bend_laugh_superclose = f"{sh_path}/sprites/naomi/superclose/naomi_bend_laugh_superclose.png"
 
     # backgrounds
     image bg school_road_run_rn = rain(sh_bg("school_road_run"))
@@ -247,6 +255,8 @@ init 1:
     image bg satou_entrance_blur_ss = sunset(sh_bg("satou_entrance_blur"))
     image bg raigmore_entrance_ss = sunset(sh_bg("raigmore_entrance"))
     image bg city_coffeeshop_ss = sunset(sh_bg("city_coffeeshop"))
+    image bg kasshoku_grounds_ss = sunset(sh_bg("kasshoku_grounds"))
+    image bg kasshoku_entrance_ss = sunset(sh_bg("kasshoku_entrance"))
 
     # special events
     image ev pillowtalk_blanket dark = f"{sh_path}/event/pillowtalk/pillowtalk_blanket_dark.jpg"
@@ -269,6 +279,9 @@ init 1:
     image pillowtalkhisao talk dark = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_talk_dark.png"
     image pillowtalkhisao upsmile = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_upsmile.png"
     image pillowtalkhisao upsmile dark = f"{sh_path}/event/pillowtalk/pillowtalk_hisao_upsmile_dark.png"
+    image ev pillowtalk dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_dark2.png"
+    image pillowtalkhanako up dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_up_dark2.png"
+    image pillowtalkhanako down dark2 = f"{sh_path}/event/pillowtalk/pillowtalk_hanako_down_dark2.png"
 
     image ev rainyroad:
         block:
@@ -291,21 +304,6 @@ init 1:
     image sharedsoakhisao smile = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hisaosmile.png"
     image sharedsoakhanako smile = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hanakosmile.png"
     image sharedsoakhanako frown = f"{sh_path}/event/sharedsoak/sharedsoak_hisao_hanakofrown.png"
-
-    image sharedsoakhanako2 anxious = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakoanxious.png"
-    image sharedsoakhanako2 cry = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakocry.png"
-    image sharedsoakhanako2 listen = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakolisten.png"
-    image sharedsoakhanako2 neutral = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakoneutral.png"
-    image sharedsoakhanako2 shoulder = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakoshoulder.png"
-    image sharedsoakhanako2 sniffle = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakosniffle.png"
-    image sharedsoakhanako2 talk = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakotalk.png"
-    image sharedsoakhanako2 talksad = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_hanakotalksad.png"
-    image sharedsoaklilly grimace = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillygrimace.png"
-    image sharedsoaklilly listen = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillylisten.png"
-    image sharedsoaklilly smile = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillysmile.png"
-    image sharedsoaklilly talkneutral = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillytalkneutral.png"
-    image sharedsoaklilly talksheepish = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillytalksheepish.png"
-    image sharedsoaklilly talksmile = f"{sh_path}/event/sharedsoak/sharedsoak_lilly_lillytalksmile.png"
 
     image bedridden_lilly smile = f"{sh_path}/event/bedridden/bedridden_lilly_smile_overlay.png"
     image bedridden_lilly listen = f"{sh_path}/event/bedridden/bedridden_lilly_listen_overlay.png"
@@ -456,6 +454,25 @@ init 1:
         (0, 0), Transform("bedridden_hiroyuki content_large", crop=(1448, 158, 2083, 1171))
     )
 
+    image shrdraw_heart = Text(_("{size=133}{font=symbols}♡"))
+    image shrdraw_plus1 = Text(_("{size=133}{font=symbols}♡{/font} + 1"))
+    image shrdraw_plus2 = Text(_("{size=133}{font=symbols}♡{/font} + 2"))
+    image shrdraw_times10 = Text(_("{size=133}{font=symbols}♡{/font} x 10"))
+    image shrdraw_times100 = Text(_("{size=133}{font=symbols}♡{/font} x 100"))
+    image shrdraw_mathismypassion = Text(_("{size=133}{font=symbols}π²{/font}! x {font=symbols}♡"))
+    image shrdraw_cutiepie = Text(_("{size=133}CUTIEPIE"))
+    image shrdraw_honeybun = Text(_("{size=133}HONEYBUN"))
+    image shrdraw_sunshine = Text(_("{size=133}SUNSHINE"))
+    image shrdraw_cupcake = Text(_("{size=133}CUPCAKE"))
+    image shrdraw_cuddlebug = Text(_("{size=133}CUDDLEBUG"))
+    image shrdraw_sweetheart = Text(_("{size=133}SWEETHEART"))
+    image shrdraw_sweetheart_big = Text(_("{size=160}SWEETHEART!!!"))
+    image shrdraw_buttercup = Text(_("{size=133}BUTTERCUP"))
+    image shrdraw_dumpling = Text(_("{size=133}DUMPLING"))
+    image shrdraw_songbird = Text(_("{size=133}SONGBIRD"))
+    image shrdraw_snugglywuggle = Text(_("{size=133}SNUGGLYWUGGLE"))
+    image shrdraw_beautiful = Text(_("{size=133}BEAUTIFUL"))
+
     # vfx
     image go_board = f"{sh_path}/vfx/go_board.png"
     image hisao_roof_blur1 = f"{sh_path}/vfx/hisao_roof_blur1.jpg"
@@ -487,12 +504,25 @@ init 1:
     image tandembike karlalilly = f"{sh_path}/vfx/tandembike/karlalilly.png"
     image tandembikekarla speak = f"{sh_path}/vfx/tandembike/karla_speak.png"
     image tandembikelilly smileclosed = f"{sh_path}/vfx/tandembike/lilly_smileclosed.png"
+    image drizzle = Composite(
+        (1920, 1080),
+        (0, 0), sh_drizzle(),
+        (0, 0), sh_drizzle(0.1, -1.2, 1.2)
+    )
+    image newclassphoto = sh_vfx("newclassphoto")
+    image teddybear = sh_vfx("teddybear")
+    image carseats = sh_vfx("carseats", boxstrip=False)
+    image hankerchief = sh_vfx("hankerchief")
+    image aedunit = sh_vfx("aed")
+    image adoptionpapers1 = sh_vfx("adoptionpapers1", boxstrip=False)
 
     # logos
     image shlogo quill = f"{sh_path}/logo/logo_quill.png"
     image shlogo title = f"{sh_path}/logo/logo_title.png"
     image shlogo quill_outline = f"{sh_path}/logo/logo_quill_outline.png"
     image shlogo title_outline = f"{sh_path}/logo/logo_text_outline.png"
+    image shlogo text = f"{sh_path}/logo/logo_text.png"
+    image shlogo brokenquill = f"{sh_path}/logo/logo_brokenquill.png"
 
     # extra gui
     image white_vignette = f"{sh_path}/gui/white_vignette.png"
@@ -520,6 +550,12 @@ init 1:
     kanagawa-hotels.com
     TillTheMoneyRunsOut.com
     Loch Ness Gifts
+    japan-property.jp
+    SAKURA HOUSE CO., LTD.
+    Loyola University Maryland
+    Tokyo Furnished LLC
+    OMOSHIRO RENT-A-CAR
+    Baldwin Wallace University
     legendarysoulII
     Firefall
     whizvox
@@ -556,6 +592,7 @@ init 1:
     Robinhood76 on FreeSound
     magedu on FreeFound
     Eryliaa on Pixabay
+    Universfield of Pixabay
     whizvox
     \n\n
     {b}Fonts{/b}
@@ -597,6 +634,7 @@ init 1:
     nijo
     ShinyKerushi
     GoodFreePhotos.com
+    Marius Oberholster of Pixabay
     \n\n
     {b}Sprite Edits{/b}
     {image=mods/sisterhood/gui/credits/section_underline.png}

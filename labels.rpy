@@ -121,6 +121,33 @@ label sisterhood_timeskip:
 
     return
 
+label sisterhood_timeskip_broken(silent=False):
+    stop sound fadeout 2.0
+    stop music fadeout 2.0
+    stop ambient fadeout 2.0
+    pause 2.0
+
+    if not silent:
+        play music music_timeskip
+
+    show shlogo brokenquill at Transform(xalign=0.5, yalign=0.5)
+    with CropMove(2.0, "wipedown")
+
+    show shlogo text at Transform(xalign=0.5, yalign=0.5)
+    with CropMove(2.0, "wiperight")
+
+    pause 2.0
+
+    if not silent:
+        stop music fadeout 2.0
+
+    scene black
+    with erase
+
+    pause 2.0
+
+    return
+
 label sisterhood_credits:
     $ config.skipping = False
 
