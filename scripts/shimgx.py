@@ -139,6 +139,8 @@ class CompositeTransformation(ImageTransformation):
             toppath = layer[2]
             with Image.open(resolve_path(toppath)) as topimg:
                 img.paste(topimg, (x, y), topimg.convert("RGBA"))
+                # seems to work better with images with fuzzy alpha outlines
+                #img.alpha_composite(topimg.convert("RGBA"), (x, y))
         return img
 
 

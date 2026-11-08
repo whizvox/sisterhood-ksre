@@ -1,6 +1,7 @@
 import os
 import sys
 from argparse import ArgumentParser
+from pathlib import Path
 
 import sishoodutil
 from PIL import Image
@@ -8,26 +9,39 @@ from PIL import Image
 RESAMPLE_METHOD = Image.Resampling.BICUBIC
 
 
+def composite(images: list[Path]) -> Image:
+    if len(images) == 0:
+        raise Exception("Composite image must contain at least 1 image")
+    im = Image.open((sishoodutil.ref_path / f"{images[0]}.png").resolve())
+    for next_img_path in images[1:]:
+        with Image.open((sishoodutil.ref_path / f"{next_img_path}.png").resolve()) as next_img:
+            im.alpha_composite(next_img)
+    return im
+
+
 def crop_and_resize_image(
-    base_input_path: str,
+    input_image: str | Image,
     base_output_path: str,
     replace: bool = False,
     crop: tuple[float, float, float, float] | None = None,
     target_width: int | None = None,
     target_height: int | None = None,
 ):
-    input_path = (sishoodutil.ref_path / (base_input_path + ".png")).resolve()
     output_path = (
         sishoodutil.sh_path / "sprites" / (base_output_path + ".png")
     ).resolve()
     if output_path.exists() and not replace:
         return
-    try:
-        im = Image.open(input_path)
-    except Exception as e:
-        print(f"(ERROR) Could not process image: {input_path}\n{e}")
-        return
-    print(f"Processing <{input_path}>, exporting to <{output_path}>")
+    if type(input_image) == str:
+        input_path = (sishoodutil.ref_path / (input_image + ".png")).resolve()
+        try:
+            im = Image.open(input_path)
+        except Exception as e:
+            print(f"(ERROR) Could not process image: {input_path}\n{e}")
+            return
+        print(f"Processing <{input_path}>, exporting to <{output_path}>")
+    else:
+        im = input_image
     if crop is not None:
         im = im.crop(crop)
     new_width = 0
@@ -149,6 +163,7 @@ takawa = [
 ]
 
 naomi = [
+    # school uniform
     ("sprites2/Naomi Inoue/Naomi bend grin", "bend_grin"),
     ("sprites2/Naomi Inoue/Naomi bend laugh", "bend_laugh"),
     ("sprites2/Naomi Inoue/Naomi bend smile", "bend_smile"),
@@ -159,16 +174,40 @@ naomi = [
     ("sprites2/Naomi Inoue/Naomi neutral", "basic_neutral"),
     ("sprites2/Naomi Inoue/Naomi shocked", "basic_shock"),
     ("sprites2/Naomi Inoue/Naomi smile", "basic_smile"),
-    ("Sprites/Naomi/Naomi annoyed", "basic_annoyed"),
     ("Sprites/Naomi/Naomi confused", "basic_confused"),
     ("Sprites/Naomi/Naomi grin closed", "basic_grinclosed"),
-    ("Sprites/Naomi/Naomi seizure", "basic_seizure"),
     ("Sprites/Naomi/Naomi sheepish", "basic_sheepish"),
     ("Sprites/Naomi/Naomi smileclosed", "basic_smileclosed"),
     ("Sprites/Naomi/Naomi bend grinclosed", "bend_grinclosed"),
-    ("Sprites/Naomi/Naomi concern temp", "basic_concern"),
-    ("Sprites/Naomi/Naomi angry temp", "basic_angry"),
     ("Sprites/Naomi/Naomi serious temp", "basic_serious"),
+]
+
+naomi2 = [
+    # uniform
+    ("basic_angry", ["Sprites/Naomi/Naomi smile", "Sprites/Naomi/Parts/basic angry"]),
+    ("basic_annoyed", ["Sprites/Naomi/Naomi smile", "Sprites/Naomi/Parts/basic annoyed"]),
+    ("basic_concern", ["Sprites/Naomi/Naomi smile", "Sprites/Naomi/Parts/basic concern"]),
+    ("basic_seizure", ["Sprites/Naomi/Naomi smile", "Sprites/Naomi/Parts/basic seizure"]),
+    ("basic_smile", ["Sprites/Naomi/Naomi smile"]),
+    # casual
+    ("basic_angry_cas",   ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic angry"]),
+    ("basic_annoyed_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic annoyed"]),
+    ("basic_concern_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic concern"]),
+    ("basic_confused_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic confused"]),
+    ("basic_grin_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic grin"]),
+    ("basic_grinclosed_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic grinclosed"]),
+    ("basic_laugh_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic laugh"]),
+    ("basic_neutral_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic neutral"]),
+    ("basic_seizure_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic seizure"]),
+    ("basic_sheepish_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic sheepish"]),
+    ("basic_shocked_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic shocked"]),
+    ("basic_smile_cas",   ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic smile"]),
+    ("basic_smileclosed_cas", ["Sprites/Naomi/Parts/basic_cas", "Sprites/Naomi/Parts/basic smileclosed"]),
+    ("basicflip_angry_cas",   ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip angry"]),
+    ("basicflip_annoyed_cas", ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip annoyed"]),
+    ("basicflip_concern_cas", ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip concern"]),
+    ("basicflip_seizure_cas", ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip seizure"]),
+    ("basicflip_smile_cas",   ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip smile"]),
 ]
 
 natsume = [
@@ -439,6 +478,19 @@ def main(args: dict):
         replace=replace_naomi,
         crop=(0, 233, 1350, 1313),
     )
+    for entry in naomi2:
+        crop_and_resize_image(
+            composite(entry[1]),
+            f"naomi/naomi_{entry[0]}",
+            replace=replace_naomi,
+            target_height=1000
+        )
+        crop_and_resize_image(
+            composite(entry[1]),
+            f"naomi/close/naomi_{entry[0]}_close",
+            crop=(0, 0, 1350, 1800),
+            target_height=1080
+        )
 
     for entry in natsume:
         crop_and_resize_image(
