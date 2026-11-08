@@ -32,6 +32,7 @@ def crop_and_resize_image(
     ).resolve()
     if output_path.exists() and not replace:
         return
+    print(f"Processing output image <{output_path}>")
     if type(input_image) == str:
         input_path = (sishoodutil.ref_path / (input_image + ".png")).resolve()
         try:
@@ -39,7 +40,7 @@ def crop_and_resize_image(
         except Exception as e:
             print(f"(ERROR) Could not process image: {input_path}\n{e}")
             return
-        print(f"Processing <{input_path}>, exporting to <{output_path}>")
+        #print(f"Processing <{input_path}>, exporting to <{output_path}>")
     else:
         im = input_image
     if crop is not None:
@@ -382,6 +383,13 @@ miyagi = [
     ("Sprites/Miyagi/Original/M.Miyagi Smile", "basic_smile"),
 ]
 
+yuichi = [
+    ("annoyed",   ["Sprites/Yuichi/Adjust/neutral", "Sprites/Yuichi/Parts/annoyed"]),
+    ("neutral",   ["Sprites/Yuichi/Adjust/neutral"]),
+    ("smile",     ["Sprites/Yuichi/Adjust/neutral", "Sprites/Yuichi/Parts/smile"]),
+    ("thinking",  ["Sprites/Yuichi/Adjust/neutral", "Sprites/Yuichi/Parts/thinking"]),
+]
+
 
 def main(args: dict):
     sishoodutil.update_paths(args)
@@ -594,6 +602,22 @@ def main(args: dict):
             replace=replace_miyagi,
             crop=(0, 129, 1357, 1668),
             target_height=1080,
+        )
+
+    for entry in yuichi:
+        crop_and_resize_image(
+            composite(entry[1]),
+            f"yuichi/yuichi_{entry[0]}",
+            False,
+            crop=(250, 122, 1194, 2234),
+            target_height=1050
+        )
+        crop_and_resize_image(
+            composite(entry[1]),
+            f"yuichi/close/yuichi_{entry[0]}_close",
+            False,
+            crop=(250, 122, 1194, 1767),
+            target_height=1080
         )
 
 
