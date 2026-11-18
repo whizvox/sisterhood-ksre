@@ -1,7 +1,9 @@
 import sys
-from pathlib import Path
 from argparse import ArgumentParser
+from pathlib import Path
+
 from sishoodutil import add_arguments
+
 
 def find_rpyc_files(dir: Path) -> list[Path]:
     return [filepath for filepath in dir.glob("**/*.rpyc")]

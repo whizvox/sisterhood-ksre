@@ -2,8 +2,6 @@ init python:
     def sh_drizzle(my_offset = 0.0, my_xzoom = 1.0, my_yzoom = 1.0):
         return sh_drizzle_tf(my_offset, my_xzoom, my_yzoom)
 
-
-
 init:
     transform phonebox:
         xanchor 1.0 xpos 0.95 yanchor 1.0 ypos 0.82
