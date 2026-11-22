@@ -167,7 +167,7 @@ naomi = [
     # school uniform
     ("sprites2/Naomi Inoue/Naomi bend grin", "bend_grin"),
     ("sprites2/Naomi Inoue/Naomi bend laugh", "bend_laugh"),
-    ("sprites2/Naomi Inoue/Naomi bend smile", "bend_smile"),
+    ("Sprites/Naomi/Naomi bend smile", "bend_smile"),
     ("sprites2/Naomi Inoue/Naomi bend wink", "bend_wink"),
     ("sprites2/Naomi Inoue/Naomi focused", "basic_focus"),
     ("sprites2/Naomi Inoue/Naomi grin", "basic_grin"),
@@ -209,6 +209,13 @@ naomi2 = [
     ("basicflip_concern_cas", ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip concern"]),
     ("basicflip_seizure_cas", ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip seizure"]),
     ("basicflip_smile_cas",   ["Sprites/Naomi/Parts/basicflip_cas", "Sprites/Naomi/Parts/basicflip smile"]),
+    ("bend_concern_cas", ["Sprites/Naomi/Parts/bend_cas", "Sprites/Naomi/Parts/bend concern"]),
+    ("bend_grin_cas", ["Sprites/Naomi/Parts/bend_cas", "Sprites/Naomi/Parts/bend grin"]),
+    ("bend_grinclosed_cas", ["Sprites/Naomi/Parts/bend_cas", "Sprites/Naomi/Parts/bend grinclosed"]),
+    ("bend_laugh_cas", ["Sprites/Naomi/Parts/bend_cas", "Sprites/Naomi/Parts/bend laugh"]),
+    ("bend_smile_cas", ["Sprites/Naomi/Parts/bend_cas"]),
+    ("bend_tease_cas", ["Sprites/Naomi/Parts/bend_cas", "Sprites/Naomi/Parts/bend tease"]),
+    ("bend_wink_cas", ["Sprites/Naomi/Parts/bend_cas", "Sprites/Naomi/Parts/bend wink"]),
 ]
 
 natsume = [
