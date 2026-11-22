@@ -133,7 +133,7 @@ label sisterhood_timeskip_broken(silent=False):
     show shlogo brokenquill at Transform(xalign=0.5, yalign=0.5)
     with CropMove(2.0, "wipedown")
 
-    show shlogo text at Transform(xalign=0.5, yalign=0.5)
+    show shlogo text at Transform(xalign=0.5, yalign=0.5) as shlogo2
     with CropMove(2.0, "wiperight")
 
     pause 2.0

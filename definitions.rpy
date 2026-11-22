@@ -70,7 +70,7 @@ init:
     $ mods_with_menus["sisterhood"] = True
 
     # TODO SET TO FALSE BEFORE OFFICIAL RELEASE!!!
-    define sh_debug = False
+    define sh_debug = True
 
     define sisterhood_chapters = [
         (_("Act 1"), [
@@ -184,6 +184,10 @@ init:
             (_("Close Call"), "sh_ch48.s1", _("Hisao has a frightening experience during the night before the Center Test."), "hisao"),
             (_("Short Circuit"), "sh_ch48.s2", _("Tragedy strikes just before Hisao takes part in the Center Test."), "hisao"),
             (_("Consultation"), "sh_ch49.s1", _("Hisao has a long overdue talk with the Nurse."), "hisao"),
+            (_("Reminiscence"), "sh_ch50.s1", _("Hisao spends the night before graduation thinking back on all the people in his life."), "hisao"),
+            (_("Found Out"), "sh_ch50.s2", _("Hisao discusses Hanako's situation with Lilly."), "hisao"),
+            (_("Preparations"), "sh_ch50.s3", _("Hisao says goodbye to Kenji and prepares for the graduation ceremony."), "hisao"),
+            (_("Hollow Victory"), "sh_ch50.s4", _("Hisao's time at Yamaku ends on a painful note."), "hisao"),
         ])
     ]
 

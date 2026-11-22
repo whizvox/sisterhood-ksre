@@ -93,5 +93,6 @@ init:
     define easeinmove = MoveTransition(1.5, time_warp=_warper.easein)
     define easeoutmove = MoveTransition(1.5, time_warp=_warper.easeout)
     define clockwipefast = ImageDissolve(Tile("gui/trans/clockwipe.png"), 1.0, 8)
+    define fadeslow = Fade(1.0, 0.0, 1.0)
 
     define erase = ImageDissolve(f"{sh_path}/gui/trans/erase.png", 2.0)
